@@ -33,6 +33,13 @@ migrate_working_dir/
 /build/
 /coverage/
 
+# Local credentials and environment configuration. These must never be
+# committed; production keys are supplied by the host at run time.
+.env
+.env.*
+*.pem
+*.key
+
 # Symbolication related
 app.*.symbols
 
