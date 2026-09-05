@@ -34,6 +34,8 @@ class LotteryActivityFeedService {
 
   static const String _feedUrl = String.fromEnvironment(
     'LOTTERY_ACTIVITY_FEED_URL',
+    defaultValue:
+        'https://apollohouser-cpu.github.io/lottery_atlas/activity.json',
   );
   static const String _manifestUrl = String.fromEnvironment(
     'LOTTERY_ACTIVITY_FEED_MANIFEST_URL',

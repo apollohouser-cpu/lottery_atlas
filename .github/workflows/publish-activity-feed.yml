@@ -1,0 +1,66 @@
+name: Validate and publish lottery activity
+
+on:
+  schedule:
+    # Daily validation of approved official-source snapshots.
+    - cron: '17 11 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/**'
+      - 'tooling/approved_activity_sources.json'
+      - 'tooling/publish_activity_feed.dart'
+      - '.github/workflows/publish-activity-feed.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: lottery-atlas-activity-publish
+  cancel-in-progress: false
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - name: Validate verified activity and build the public feed
+        run: >-
+          dart run tooling/publish_activity_feed.dart
+          --sources tooling/approved_activity_sources.json
+          --output docs/activity.json
+      - name: Commit a changed feed
+        run: |
+          if git diff --quiet -- docs/activity.json; then
+            echo "No verified activity changes to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/activity.json
+          git commit -m "Publish verified lottery activity feed"
+          git push
+
+  deploy-pages:
+    needs: validate-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dart-lang/setup-dart@v1
+      - name: Build the deployment artifact
+        run: >-
+          dart run tooling/publish_activity_feed.dart
+          --sources tooling/approved_activity_sources.json
+          --output docs/activity.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4
