@@ -33,6 +33,10 @@ jobs:
         run: >-
           node tooling/import_north_carolina_current_winners.mjs
           data/north_carolina_current_winner_activity.generated.json
+      - name: Import current official Kentucky winner notices
+        run: >-
+          node tooling/import_kentucky_current_winners.mjs
+          data/kentucky_current_winner_activity.generated.json
       - name: Import the current official South Carolina Winners Report
         run: >-
           dart run tooling/import_south_carolina_winners_report.dart
@@ -44,13 +48,13 @@ jobs:
           --output docs/activity.json
       - name: Commit a changed feed
         run: |
-          if git diff --quiet -- docs/activity.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json; then
+          if git diff --quiet -- docs/activity.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json data/kentucky_current_winner_activity.generated.json; then
             echo "No verified activity changes to publish."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/activity.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json
+          git add docs/activity.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json data/kentucky_current_winner_activity.generated.json
           git commit -m "Publish verified lottery activity feed"
           git push
 
@@ -70,6 +74,10 @@ jobs:
         run: >-
           node tooling/import_north_carolina_current_winners.mjs
           data/north_carolina_current_winner_activity.generated.json
+      - name: Import current official Kentucky winner notices
+        run: >-
+          node tooling/import_kentucky_current_winners.mjs
+          data/kentucky_current_winner_activity.generated.json
       - name: Import the current official South Carolina Winners Report
         run: >-
           dart run tooling/import_south_carolina_winners_report.dart
