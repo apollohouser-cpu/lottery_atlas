@@ -8,8 +8,7 @@ on:
   push:
     paths:
       - 'data/**'
-      - 'tooling/approved_activity_sources.json'
-      - 'tooling/publish_activity_feed.dart'
+      - 'tooling/**'
       - '.github/workflows/publish-activity-feed.yml'
 
 permissions:
@@ -27,6 +26,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dart-lang/setup-dart@v1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Import current official North Carolina winner claims
+        run: >-
+          node tooling/import_north_carolina_current_winners.mjs
+          data/north_carolina_current_winner_activity.generated.json
+      - name: Import the current official South Carolina Winners Report
+        run: >-
+          dart run tooling/import_south_carolina_winners_report.dart
+          --output data/south_carolina_current_winner_activity.generated.json
       - name: Validate verified activity and build the public feed
         run: >-
           dart run tooling/publish_activity_feed.dart
@@ -34,13 +44,13 @@ jobs:
           --output docs/activity.json
       - name: Commit a changed feed
         run: |
-          if git diff --quiet -- docs/activity.json; then
+          if git diff --quiet -- docs/activity.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json; then
             echo "No verified activity changes to publish."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/activity.json
+          git add docs/activity.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json
           git commit -m "Publish verified lottery activity feed"
           git push
 
@@ -53,6 +63,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dart-lang/setup-dart@v1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Import current official North Carolina winner claims
+        run: >-
+          node tooling/import_north_carolina_current_winners.mjs
+          data/north_carolina_current_winner_activity.generated.json
+      - name: Import the current official South Carolina Winners Report
+        run: >-
+          dart run tooling/import_south_carolina_winners_report.dart
+          --output data/south_carolina_current_winner_activity.generated.json
       - name: Build the deployment artifact
         run: >-
           dart run tooling/publish_activity_feed.dart

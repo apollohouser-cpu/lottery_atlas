@@ -1385,6 +1385,11 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
         : verifiedHistoryStartYear;
   }
 
+  int _yearWindowMiddle() {
+    final start = _yearWindowStart();
+    return start + ((DateTime.now().year - start) / 2).floor();
+  }
+
   int _daysInMonth(DateTime date) => DateTime(date.year, date.month + 1, 0).day;
 
   DateTime _withTimeFrom(DateTime date, DateTime timeSource) => DateTime(
@@ -1686,7 +1691,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
     final labels = switch (_timelineGranularity) {
       TimelineGranularity.year => [
         '${_yearWindowStart()}',
-        '${_yearWindowStart() + 4}',
+        '${_yearWindowMiddle()}',
         '${DateTime.now().year}',
       ],
       TimelineGranularity.month => [

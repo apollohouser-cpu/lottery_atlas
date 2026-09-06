@@ -44,7 +44,9 @@ class LotteryActivityFeedService {
   static const List<String> _bootstrapAssets = [
     'data/north_carolina_activity.initial.json',
     'data/north_carolina_national_history.initial.json',
+    'data/north_carolina_current_winner_activity.generated.json',
     'data/south_carolina_historical_activity.initial.json',
+    'data/south_carolina_current_winner_activity.generated.json',
     'data/georgia_winner_activity.initial.json',
     'data/georgia_historical_activity.initial.json',
     'data/florida_winner_activity.initial.json',

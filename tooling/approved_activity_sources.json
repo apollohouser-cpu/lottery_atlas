@@ -1,6 +1,9 @@
 {
   "description": "Only these reviewed, official-source activity snapshots may be included in the public Lottery Atlas feed. Add a file only after every record has been checked against its official source, named retailer/location, and exact coordinates.",
   "feeds": [
+    "data/south_carolina_historical_activity.initial.json",
+    "data/south_carolina_current_winner_activity.generated.json",
+    "data/north_carolina_current_winner_activity.generated.json",
     "data/georgia_winner_activity.initial.json",
     "data/georgia_historical_activity.initial.json",
     "data/florida_winner_activity.initial.json",

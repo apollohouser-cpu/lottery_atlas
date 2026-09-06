@@ -1,8 +1,8 @@
 {
   "source": "South Carolina Education Lottery official winner news archive",
-  "updatedAt": "2026-08-28T00:00:00Z",
-  "sourceLastUpdated": "2026-08-28T00:00:00Z",
-  "coverage": "Verified South Carolina retailer-level Palmetto Cash 5 winner records spanning every calendar year from 2016 through 2026. This establishes a continuous historical baseline; it is not the complete South Carolina claims archive.",
+  "updatedAt": "2026-09-03T12:01:34-04:00",
+  "sourceLastUpdated": "2026-09-03T12:01:34-04:00",
+  "coverage": "Verified South Carolina retailer-level winner releases spanning every calendar year from 2016 through 2026. The latest current release is added only after its named retailer is resolved through the official SC Education Lottery retailer lookup and its address is geocoded through the U.S. Census geocoder. This is not the complete South Carolina claims archive.",
   "activities": [
     {
       "id": "sc-pc5-2016-taylors",
@@ -42,14 +42,15 @@
     },
     {
       "id": "sc-pc5-2018-union",
-      "latitude": 34.7154,
-      "longitude": -81.6237,
+      "latitude": 34.721967994711,
+      "longitude": -81.639494886628,
       "city": "Union",
       "county": "Union County",
       "state": "SC",
       "game": "state-draw",
       "gameName": "Palmetto Cash 5",
       "retailerName": "KC Mart",
+      "retailerAddress": "439 N Duncan Byp",
       "drawDate": "2018-10-09T12:00:00Z",
       "winningTickets": 1,
       "prizeAmount": 200000,
@@ -200,6 +201,23 @@
       "sourceUrl": "https://www.sceducationlottery.com/News/Latest?newsId=13481",
       "sourceLabel": "Official SC Education Lottery winner news",
       "isHistorical": true
+    },
+    {
+      "id": "sc-scratch-2026-09-03-greer-cash-money",
+      "latitude": 34.941643910003,
+      "longitude": -82.260398225971,
+      "city": "Greer",
+      "county": "Greenville County",
+      "state": "SC",
+      "game": "scratch-off",
+      "gameName": "Cash Money",
+      "retailerName": "QuikTrip #1113",
+      "retailerAddress": "1302 W Wade Hampton Blvd",
+      "drawDate": "2026-09-03T12:01:34-04:00",
+      "winningTickets": 1,
+      "prizeAmount": 500000,
+      "sourceUrl": "https://www.sceducationlottery.com/News/Latest?newsId=14614",
+      "sourceLabel": "Official SC Education Lottery winner news · September 3, 2026"
     }
   ]
 }
