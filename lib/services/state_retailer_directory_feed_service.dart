@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
+import 'package:http/http.dart' as http;
 
 import '../models/state_model.dart';
 import '../models/state_retailer.dart';
@@ -13,11 +14,18 @@ import 'state_retailer_directory_repository.dart';
 class StateRetailerDirectoryFeedService {
   StateRetailerDirectoryFeedService._();
 
+  static const String _feedUrl = String.fromEnvironment(
+    'STATE_RETAILER_DIRECTORY_FEED_URL',
+    defaultValue:
+        'https://apollohouser-cpu.github.io/lottery_atlas/kentucky_retailer_directory.json',
+  );
+
   static const List<String> _bootstrapAssets = <String>[
     'data/michigan_retailer_directory.initial.json',
+    'data/kentucky_retailer_directory.generated.json',
   ];
 
-  static Future<void> loadBundledDirectories() async {
+  static Future<void> loadBundledDirectories({http.Client? client}) async {
     final directories = <String, List<StateRetailer>>{};
     final sourceUrls = <String, String>{};
 
@@ -29,6 +37,27 @@ class StateRetailerDirectoryFeedService {
       } catch (_) {
         // An optional official directory must never prevent the map loading.
       }
+    }
+
+    final activeClient = client ?? http.Client();
+    try {
+      if (_feedUrl.trim().isNotEmpty) {
+        final response = await activeClient
+            .get(
+              Uri.parse(_feedUrl),
+              headers: const {'accept': 'application/json'},
+            )
+            .timeout(const Duration(seconds: 20));
+        if (response.statusCode == 200) {
+          final feed = _parse(response.body);
+          directories.addAll(feed.directories);
+          sourceUrls.addAll(feed.sourceUrls);
+        }
+      }
+    } catch (_) {
+      // The bundled verified directory remains available offline.
+    } finally {
+      if (client == null) activeClient.close();
     }
 
     StateRetailerDirectoryRepository.usePublishedDirectories(

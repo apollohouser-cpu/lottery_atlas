@@ -1,24 +1,25 @@
 /*
  * Imports the Kentucky Lottery's current official "Have You Heard?" winner
  * notices. Each published notice names the prize, game, retailer, and city.
- * The official Kentucky Lottery retailer finder supplies the retailer's
- * street address and county; the U.S. Census geocoder then provides a map
- * coordinate for that exact published address. Ambiguous retailer names and
- * unmatched addresses are excluded rather than estimated.
+ * The separately generated official Kentucky retailer directory supplies the
+ * street address, county, and coordinate that already passed strict Census or
+ * ArcGIS address verification. Ambiguous retailer names and unmatched
+ * addresses are excluded rather than estimated.
  *
  * The notice page is a rolling current feed, not a 2024 archive. This file is
  * intentionally labelled as current coverage only until the Kentucky Lottery
  * publishes a complete historic retailer-level winner source.
  */
-import {writeFile} from 'node:fs/promises';
+import {readFile, writeFile} from 'node:fs/promises';
 
 const winnersUrl = 'https://www.kylottery.com/apps/winners/index.html';
-const retailerUrl = 'https://www.kylottery.com/webhandlers/CashingAgentsInfo.xhtml';
-const censusUrl = 'https://geocoding.geo.census.gov/geocoder/locations/onelineaddress';
 const outputPath = process.argv[2];
+const retailerDirectoryPath = process.argv[3];
 
-if (!outputPath) {
-  console.error('Usage: node tooling/import_kentucky_current_winners.mjs OUTPUT.json');
+if (!outputPath || !retailerDirectoryPath) {
+  console.error(
+    'Usage: node tooling/import_kentucky_current_winners.mjs OUTPUT.json RETAILERS.json',
+  );
   process.exitCode = 1;
 } else {
   const normalize = (value) => value.toLowerCase().replace(/&nbsp;/g, ' ')
@@ -81,67 +82,56 @@ if (!outputPath) {
     }
     return notices;
   };
-  const retailersForCity = async (city) => {
-    const body = JSON.stringify({id: '', LocationSelect: 'City', city, CashingAgent: 'N'});
-    const response = await responseText(retailerUrl, {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-        'user-agent': 'LotteryAtlasOfficialDataBot/1.0',
-      },
-      body,
-    });
-    return JSON.parse(response).RETAILERS ?? [];
-  };
-  const coordinateFor = async (retailer) => {
-    const address = `${retailer.ADDRESS1}, ${retailer.CITY}, KY ${retailer.ZIP}`;
-    const url = new URL(censusUrl);
-    url.searchParams.set('address', address);
-    url.searchParams.set('benchmark', 'Public_AR_Current');
-    url.searchParams.set('format', 'json');
-    const json = JSON.parse(await responseText(url));
-    const match = json.result?.addressMatches?.[0];
-    if (!match?.coordinates || !Number.isFinite(match.coordinates.y) || !Number.isFinite(match.coordinates.x)) return null;
-    return {latitude: match.coordinates.y, longitude: match.coordinates.x};
-  };
-
   try {
     const notices = noticesFrom(await responseText(winnersUrl));
-    const retailersByCity = new Map();
-    const coordinateByAddress = new Map();
+    const directory = JSON.parse(await readFile(retailerDirectoryPath, 'utf8'));
+    const verifiedRetailers = directory.directories?.find(
+      (entry) => entry.state === 'Kentucky',
+    )?.retailers;
+    if (!Array.isArray(verifiedRetailers) || verifiedRetailers.length < 3000) {
+      throw new Error(
+        'The verified Kentucky retailer directory is missing or incomplete',
+      );
+    }
+    const retailersByNameAndCity = new Map();
+    for (const retailer of verifiedRetailers) {
+      const key = `${normalize(retailer.name)}|${normalize(retailer.city)}`;
+      const matches = retailersByNameAndCity.get(key) ?? [];
+      matches.push(retailer);
+      retailersByNameAndCity.set(key, matches);
+    }
     const activities = [];
     const skipped = new Set();
     for (const [index, notice] of notices.entries()) {
-      const cityKey = normalize(notice.city);
-      if (!retailersByCity.has(cityKey)) {
-        retailersByCity.set(cityKey, await retailersForCity(notice.city));
-      }
-      const candidates = retailersByCity.get(cityKey).filter((retailer) =>
-        normalize(retailer.NAME) === normalize(notice.retailerName));
+      const key = `${normalize(notice.retailerName)}|${normalize(notice.city)}`;
+      const candidates = retailersByNameAndCity.get(key) ?? [];
       if (candidates.length !== 1) {
         skipped.add(`${notice.retailerName} — ${notice.city}`);
         continue;
       }
       const retailer = candidates[0];
-      const address = `${retailer.ADDRESS1}, ${retailer.CITY}, KY ${retailer.ZIP}`;
-      if (!coordinateByAddress.has(address)) {
-        coordinateByAddress.set(address, await coordinateFor(retailer));
-      }
-      const coordinate = coordinateByAddress.get(address);
-      if (!coordinate) {
+      if (
+        !Number.isFinite(retailer.latitude) ||
+        !Number.isFinite(retailer.longitude) ||
+        !retailer.coordinateSource
+      ) {
         skipped.add(`${notice.retailerName} — ${notice.city}`);
         continue;
       }
+      const address =
+        `${retailer.address}, ${retailer.city}, KY ${retailer.postalCode}`;
       activities.push({
         id: `ky-current-${notice.date.toISOString().slice(0, 10)}-${normalize(notice.retailerName)}-${normalize(notice.city)}-${index}`,
-        ...coordinate,
-        city: retailer.CITY.replace(/\b\w/g, (letter) => letter.toUpperCase()),
-        county: `${retailer.COUNTY.replace(/\b\w/g, (letter) => letter.toUpperCase())} County`,
+        latitude: retailer.latitude,
+        longitude: retailer.longitude,
+        city: retailer.city,
+        county: retailer.county,
         state: 'KY',
         game: notice.game,
         gameName: notice.gameName,
-        retailerName: retailer.NAME,
+        retailerName: retailer.name,
         retailerAddress: address,
+        coordinateSource: retailer.coordinateSource,
         drawDate: notice.date.toISOString(),
         winningTickets: 1,
         prizeAmount: notice.prizeAmount,
@@ -155,7 +145,7 @@ if (!outputPath) {
       source: 'Kentucky Lottery official current winner notices and retailer finder',
       updatedAt: latest,
       sourceLastUpdated: latest,
-      coverage: `Current rolling Kentucky Lottery retailer-level winner notices. ${activities.length} notices were matched to a single official retailer listing and an exact Census geocode. ${skipped.size} published retailer notices were excluded because an exact unique official retailer and coordinate could not be verified. This source does not represent a complete historic Kentucky winner archive.`,
+      coverage: `Current rolling Kentucky Lottery retailer-level winner notices. ${activities.length} notices were matched to one official retailer listing with a previously verified precise coordinate. ${skipped.size} published retailer notices were excluded because an exact unique official retailer and coordinate could not be verified. This source does not represent a complete historic Kentucky winner archive.`,
       activities,
     };
     await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`);
