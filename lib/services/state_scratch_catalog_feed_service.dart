@@ -43,7 +43,7 @@ class StateScratchCatalogFeedService {
   static const String _feedUrl = String.fromEnvironment(
     'STATE_SCRATCH_CATALOG_FEED_URL',
     defaultValue:
-        'https://apollohouser-cpu.github.io/lottery_atlas/kentucky_scratch_catalog.json',
+        'https://apollohouser-cpu.github.io/lottery_atlas/state_scratch_catalogs.json',
   );
   static const String _manifestUrl = String.fromEnvironment(
     'STATE_SCRATCH_CATALOG_MANIFEST_URL',
@@ -64,6 +64,7 @@ class StateScratchCatalogFeedService {
     'data/kentucky_scratch_catalog.initial.json',
     'data/kentucky_scratch_catalog.generated.json',
     'data/virginia_scratch_catalog.initial.json',
+    'data/virginia_scratch_catalog.generated.json',
   ];
   static final SharedPreferencesAsync _store = SharedPreferencesAsync();
 

@@ -171,13 +171,23 @@ class StateLotterySourceRegistry {
         StateLotteryResource(
           title: 'Latest winning numbers',
           subtitle: 'Official Virginia Lottery winning numbers and draw times.',
-          url: 'https://www.valottery.com/',
+          url: 'https://www.valottery.com/en/alldrawgames',
         ),
         StateLotteryResource(
           title: 'Scratchers',
           subtitle:
               'Official Virginia Scratcher games and current game details.',
           url: 'https://www.valottery.com/scratcher-search?view=0',
+        ),
+        StateLotteryResource(
+          title: 'Latest winners and news',
+          subtitle: 'Official Virginia Lottery retailer-level winner releases.',
+          url: 'https://www.valottery.com/winnersnews/latestwinners',
+        ),
+        StateLotteryResource(
+          title: 'Find a retailer',
+          subtitle: 'Official Virginia Lottery statewide retailer finder.',
+          url: 'https://www.valottery.com/aboutus/findaretailer',
         ),
       ],
     ),

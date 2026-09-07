@@ -15,6 +15,7 @@ import '../../models/lottery_activity.dart';
 import '../../models/favorite_lottery_game.dart';
 import '../../models/favorite_place.dart';
 import '../../models/south_carolina_retailer.dart';
+import '../../models/state_retailer.dart';
 import '../../models/state_scratch_game.dart';
 import '../../models/state_lottery_data_profile.dart';
 import '../../app/app_route_observer.dart';
@@ -121,6 +122,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   String? _selectedCountyId;
   String? _focusedHeatCountyKey;
   String? _focusedRetailerId;
+  StateRetailer? _focusedDirectoryRetailer;
 
   static const Map<String, String> _stateFipsByName = {
     'Alabama': '01',
@@ -461,9 +463,16 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         );
         if (matches.isNotEmpty) {
           _focusRetailer(matches.first);
-        } else {
-          _focusStateByName(request.stateName);
+          return;
         }
+        final directoryMatches = StateRetailerDirectoryRepository.retailersFor(
+          request.stateName,
+        ).where((retailer) => retailer.id == retailerId);
+        if (directoryMatches.isNotEmpty) {
+          _focusDirectoryRetailer(directoryMatches.first);
+          return;
+        }
+        _focusStateByName(request.stateName);
     }
   }
 
@@ -1044,6 +1053,8 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
   String _normalizedCountyName(String county) => county
       .toLowerCase()
+      .replaceFirst(RegExp(r'\s+\(city\)$'), '')
+      .replaceFirst(RegExp(r'\s+city$'), '')
       .replaceFirst(RegExp(r'\s+county$'), '')
       .replaceAll(RegExp(r'[^a-z0-9]'), '');
 
@@ -1184,7 +1195,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   }
 
   double _retailerFocusScale(SouthCarolinaRetailer retailer) {
-    if (_focusedRetailerId != retailer.id) return 1;
+    return _retailerFocusScaleForId(retailer.id);
+  }
+
+  double _retailerFocusScaleForId(String retailerId) {
+    if (_focusedRetailerId != retailerId) return 1;
     final progress = Curves.easeOutCubic.transform(
       _retailerFocusAnimationController.value,
     );
@@ -1410,6 +1425,75 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
           onTap: () => _showRetailerDetails(retailer),
           child: Tooltip(
             message: '${retailer.name}\n${retailer.city}, SC',
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                if (isFocused)
+                  Transform.scale(
+                    scale: 1 + focusScale * 0.55,
+                    child: Container(
+                      width: 44,
+                      height: 44,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: const Color(0xFF38BDF8).withValues(
+                            alpha:
+                                0.72 *
+                                (1 - _retailerFocusAnimationController.value),
+                          ),
+                          width: 2,
+                        ),
+                      ),
+                    ),
+                  ),
+                Transform.scale(
+                  scale: focusScale,
+                  child: Container(
+                    width: 44,
+                    height: 44,
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF102638),
+                      borderRadius: BorderRadius.circular(13),
+                      border: Border.all(
+                        color: const Color(0xFF38BDF8),
+                        width: 2,
+                      ),
+                      boxShadow: const [
+                        BoxShadow(color: Colors.black54, blurRadius: 8),
+                      ],
+                    ),
+                    child: const Icon(
+                      Icons.storefront_rounded,
+                      color: Color(0xFF93C5FD),
+                      size: 22,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Marker _buildDirectoryRetailerMarker(StateRetailer retailer) {
+    final isFocused = _focusedRetailerId == retailer.id;
+    final focusScale = _retailerFocusScaleForId(retailer.id);
+
+    return Marker(
+      point: retailer.location,
+      width: 62,
+      height: 62,
+      alignment: Alignment.center,
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        child: GestureDetector(
+          onTap: () => _showDirectoryRetailerDetails(retailer),
+          child: Tooltip(
+            message:
+                '${retailer.name}\n${retailer.city}, ${retailer.stateAbbreviation}',
             child: Stack(
               alignment: Alignment.center,
               children: [
@@ -1744,11 +1828,40 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
     setState(() {
       _focusedRetailerId = retailer.id;
+      _focusedDirectoryRetailer = null;
       _selectedStateName = 'South Carolina';
       _selectedCountyId = matchingCounties.isEmpty
           ? null
           : matchingCounties.first.id;
       _hoveredCountyId = null;
+    });
+    _retailerFocusAnimationController.forward(from: 0);
+    _animateMapTo(retailer.location, 14.5);
+  }
+
+  void _focusDirectoryRetailer(StateRetailer retailer) {
+    final stateFips = _stateFipsByName[retailer.stateName];
+    final retailerCounty = retailer.county;
+    final matchingCounties = retailerCounty == null || stateFips == null
+        ? const <_CountyShape>[]
+        : _countyShapes
+              .where(
+                (county) =>
+                    county.stateFips == stateFips &&
+                    _normalizedCountyName(county.name) ==
+                        _normalizedCountyName(retailerCounty),
+              )
+              .toList(growable: false);
+
+    setState(() {
+      _focusedRetailerId = retailer.id;
+      _focusedDirectoryRetailer = retailer;
+      _selectedStateName = retailer.stateName;
+      _selectedCountyId = matchingCounties.isEmpty
+          ? null
+          : matchingCounties.first.id;
+      _hoveredCountyId = null;
+      _focusedHeatCountyKey = null;
     });
     _retailerFocusAnimationController.forward(from: 0);
     _animateMapTo(retailer.location, 14.5);
@@ -1778,14 +1891,18 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _hoveredCountyId = null;
       _focusedHeatCountyKey = null;
       _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
     });
     _animateMapTo(activity.location, 14.5);
   }
 
   void _returnToCountyFromRetailer() {
     final countyId = _selectedCountyId;
+    final stateName =
+        _focusedDirectoryRetailer?.stateName ?? _selectedStateName;
     setState(() {
       _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
       _focusedHeatCountyKey = null;
     });
 
@@ -1794,7 +1911,201 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       return;
     }
 
-    _focusStateByName('South Carolina');
+    if (stateName != null) _focusStateByName(stateName);
+  }
+
+  Future<void> _showDirectoryRetailerDetails(StateRetailer retailer) async {
+    _focusDirectoryRetailer(retailer);
+    final address =
+        '${retailer.address}, ${retailer.city}, '
+        '${retailer.stateAbbreviation} ${retailer.postalCode}';
+    final county = retailer.county;
+    final retailerFavorite = FavoritePlace(
+      key: 'retailer:${retailer.id}',
+      title: retailer.name,
+      subtitle: address,
+      kind: FavoritePlaceKind.retailer,
+      stateName: retailer.stateName,
+      retailerId: retailer.id,
+    );
+
+    await showModalBottomSheet<void>(
+      context: context,
+      backgroundColor: const Color(0xFF0B1D2C),
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+      ),
+      builder: (sheetContext) => SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(22, 16, 22, 30),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Container(
+                  width: 42,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: Colors.white24,
+                    borderRadius: BorderRadius.circular(99),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 18),
+              Row(
+                children: [
+                  IconButton(
+                    tooltip: 'Back to retailer list',
+                    onPressed: () => Navigator.of(sheetContext).pop(),
+                    icon: const Icon(Icons.arrow_back_rounded),
+                    color: const Color(0xFF93C5FD),
+                  ),
+                  const SizedBox(width: 4),
+                  Container(
+                    width: 48,
+                    height: 48,
+                    decoration: BoxDecoration(
+                      color: const Color(0x261478FF),
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: const Color(0xFF38BDF8)),
+                    ),
+                    child: const Icon(
+                      Icons.storefront_rounded,
+                      color: Color(0xFF93C5FD),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          retailer.name,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 21,
+                            fontWeight: FontWeight.w800,
+                          ),
+                        ),
+                        Text(
+                          county == null
+                              ? '${retailer.city}, ${retailer.stateAbbreviation}'
+                              : '${retailer.city} · $county',
+                          style: const TextStyle(color: Color(0xFF93C5FD)),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
+              Text(
+                address,
+                style: const TextStyle(color: Colors.white70, height: 1.35),
+              ),
+              const SizedBox(height: 14),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: const Color(0x3322C55E),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: const Color(0xFF22C55E)),
+                ),
+                child: const Text(
+                  'OFFICIAL LOTTERY RETAILER\n'
+                  'This location comes from the state lottery retailer directory. '
+                  'A retailer listing alone does not create a heat-map win.',
+                  style: TextStyle(
+                    color: Color(0xFFBBF7D0),
+                    fontSize: 12,
+                    height: 1.4,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 12),
+              ValueListenableBuilder<List<FavoritePlace>>(
+                valueListenable: FavoritePlacesService.places,
+                builder: (context, favorites, _) {
+                  final isFavorite = favorites.any(
+                    (place) => place.key == retailerFavorite.key,
+                  );
+                  return SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      onPressed: () async {
+                        final saved = await FavoritePlacesService.toggle(
+                          retailerFavorite,
+                        );
+                        if (!sheetContext.mounted) return;
+                        ScaffoldMessenger.of(sheetContext).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              saved
+                                  ? '${retailer.name} saved to Favorites.'
+                                  : '${retailer.name} removed from Favorites.',
+                            ),
+                          ),
+                        );
+                      },
+                      icon: Icon(
+                        isFavorite
+                            ? Icons.favorite_rounded
+                            : Icons.favorite_border_rounded,
+                      ),
+                      label: Text(
+                        isFavorite
+                            ? 'Remove retailer from Favorites'
+                            : 'Save retailer to Favorites',
+                      ),
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: isFavorite
+                            ? const Color(0xFFE94B6A)
+                            : const Color(0xFF93C5FD),
+                        side: BorderSide(
+                          color: isFavorite
+                              ? const Color(0xFFE94B6A)
+                              : const Color(0xFF355066),
+                        ),
+                        minimumSize: const Size.fromHeight(46),
+                      ),
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 8),
+              Align(
+                alignment: Alignment.centerLeft,
+                child: TextButton.icon(
+                  onPressed: () => _openDirectorySource(retailer.stateName),
+                  icon: const Icon(Icons.open_in_new_rounded, size: 17),
+                  label: Text('Open official ${retailer.stateName} directory'),
+                  style: TextButton.styleFrom(
+                    foregroundColor: const Color(0xFF93C5FD),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 8),
+              SizedBox(
+                width: double.infinity,
+                child: FilledButton.icon(
+                  onPressed: () => _openDirectoryRetailerDirections(retailer),
+                  icon: const Icon(Icons.directions_rounded),
+                  label: const Text('Get directions'),
+                  style: FilledButton.styleFrom(
+                    backgroundColor: const Color(0xFF1478FF),
+                    foregroundColor: Colors.white,
+                    minimumSize: const Size.fromHeight(50),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   Future<void> _openRetailerDirections(SouthCarolinaRetailer retailer) async {
@@ -1845,6 +2156,47 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     if (!opened && mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Could not open directions.')),
+      );
+    }
+  }
+
+  Future<void> _openDirectoryRetailerDirections(StateRetailer retailer) async {
+    final destination =
+        '${retailer.address}, ${retailer.city}, '
+        '${retailer.stateAbbreviation} ${retailer.postalCode}';
+    final useAppleMaps =
+        defaultTargetPlatform == TargetPlatform.iOS ||
+        defaultTargetPlatform == TargetPlatform.macOS;
+    final directionsUri = useAppleMaps
+        ? Uri.https('maps.apple.com', '/', {
+            'daddr': destination,
+            'dirflg': 'd',
+          })
+        : Uri.https('www.google.com', '/maps/dir/', {
+            'api': '1',
+            'destination': destination,
+          });
+    final opened = await launchUrl(
+      directionsUri,
+      mode: LaunchMode.externalApplication,
+    );
+    if (!opened && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Could not open directions.')),
+      );
+    }
+  }
+
+  Future<void> _openDirectorySource(String stateName) async {
+    final sourceUrl = StateRetailerDirectoryRepository.sourceFor(stateName);
+    if (sourceUrl == null) return;
+    final opened = await launchUrl(
+      Uri.parse(sourceUrl),
+      mode: LaunchMode.externalApplication,
+    );
+    if (!opened && mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Could not open the $stateName directory.')),
       );
     }
   }
@@ -2835,6 +3187,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         _selectedStateName = stateName;
         _selectedCountyId = null;
         _hoveredCountyId = null;
+        _focusedRetailerId = null;
+        _focusedDirectoryRetailer = null;
+        _focusedHeatCountyKey = null;
         _selectedStateActivityGameName = null;
         _showStateGames = false;
       });
@@ -2857,6 +3212,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedStateName = stateName;
       _selectedCountyId = null;
       _hoveredCountyId = null;
+      _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
+      _focusedHeatCountyKey = null;
       _selectedStateActivityGameName = null;
       _showStateGames = false;
     });
@@ -2940,6 +3298,19 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     if (stateName == 'South Carolina') {
       for (final retailer in _visibleSouthCarolinaRetailers()) {
         final countyKey = _normalizedCountyName(retailer.county);
+        retailersByCounty.update(
+          countyKey,
+          (count) => count + 1,
+          ifAbsent: () => 1,
+        );
+      }
+    } else {
+      for (final retailer in StateRetailerDirectoryRepository.retailersFor(
+        stateName,
+      )) {
+        final county = retailer.county;
+        if (county == null || county.trim().isEmpty) continue;
+        final countyKey = _normalizedCountyName(county);
         retailersByCounty.update(
           countyKey,
           (count) => count + 1,
@@ -3085,7 +3456,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                       final hasActivity = recordCount > 0;
                       final retailerText = retailerCount == 0
                           ? null
-                          : '$retailerCount ${retailerCount == 1 ? 'reported retailer' : 'reported retailers'}';
+                          : '$retailerCount ${retailerCount == 1 ? 'official retailer' : 'official retailers'}';
                       final subtitle = hasActivity
                           ? '$recordCount ${recordCount == 1 ? 'qualifying record' : 'qualifying records'}${retailerText == null ? '' : ' · $retailerText'}'
                           : retailerText == null
@@ -3140,6 +3511,217 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     }
   }
 
+  Future<void> _openStateRetailerPicker() async {
+    final stateName = _selectedStateName;
+    if (stateName == null) return;
+
+    if (stateName == 'South Carolina') {
+      await Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => const SouthCarolinaRetailersScreen(),
+        ),
+      );
+      return;
+    }
+
+    final retailers =
+        StateRetailerDirectoryRepository.retailersFor(stateName).toList()
+          ..sort((left, right) {
+            final cityOrder = left.city.compareTo(right.city);
+            return cityOrder != 0 ? cityOrder : left.name.compareTo(right.name);
+          });
+    if (retailers.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+            'An official statewide retailer directory is not available for '
+            '$stateName yet.',
+          ),
+        ),
+      );
+      return;
+    }
+
+    await _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    if (!mounted) return;
+
+    StateRetailer? selectedRetailer;
+    var retailerQuery = '';
+    try {
+      selectedRetailer = await showModalBottomSheet<StateRetailer>(
+        context: context,
+        backgroundColor: const Color(0xFF0B1D2C),
+        isScrollControlled: true,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+        ),
+        builder: (sheetContext) => StatefulBuilder(
+          builder: (context, setSheetState) {
+            final normalizedQuery = retailerQuery.trim().toLowerCase();
+            final matchingRetailers = normalizedQuery.isEmpty
+                ? retailers
+                : retailers
+                      .where((retailer) {
+                        final haystack =
+                            '${retailer.name} ${retailer.address} '
+                                    '${retailer.city} ${retailer.county ?? ''} '
+                                    '${retailer.postalCode}'
+                                .toLowerCase();
+                        return haystack.contains(normalizedQuery);
+                      })
+                      .toList(growable: false);
+
+            return SafeArea(
+              child: DraggableScrollableSheet(
+                expand: false,
+                initialChildSize: 0.72,
+                minChildSize: 0.42,
+                maxChildSize: 0.94,
+                builder: (context, scrollController) => Column(
+                  children: [
+                    const SizedBox(height: 10),
+                    Container(
+                      width: 42,
+                      height: 4,
+                      decoration: BoxDecoration(
+                        color: Colors.white24,
+                        borderRadius: BorderRadius.circular(99),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            '$stateName Retailers',
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 22,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            '${retailers.length} verified locations from the '
+                            'official state lottery directory.',
+                            style: const TextStyle(color: Colors.white60),
+                          ),
+                          const SizedBox(height: 14),
+                          TextField(
+                            autofocus: false,
+                            onChanged: (value) =>
+                                setSheetState(() => retailerQuery = value),
+                            style: const TextStyle(color: Colors.white),
+                            cursorColor: const Color(0xFF60A5FA),
+                            decoration: InputDecoration(
+                              hintText: 'Search name, city, county, or address',
+                              hintStyle: const TextStyle(color: Colors.white54),
+                              prefixIcon: const Icon(
+                                Icons.search_rounded,
+                                color: Color(0xFF93C5FD),
+                              ),
+                              filled: true,
+                              fillColor: const Color(0xFF102638),
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(14),
+                                borderSide: const BorderSide(
+                                  color: Color(0xFF355066),
+                                ),
+                              ),
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(14),
+                                borderSide: const BorderSide(
+                                  color: Color(0xFF60A5FA),
+                                ),
+                              ),
+                            ),
+                          ),
+                          if (normalizedQuery.isNotEmpty) ...[
+                            const SizedBox(height: 8),
+                            Text(
+                              '${matchingRetailers.length} matching locations',
+                              style: const TextStyle(
+                                color: Color(0xFF93C5FD),
+                                fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      child: matchingRetailers.isEmpty
+                          ? const Center(
+                              child: Text(
+                                'No retailers match that search.',
+                                style: TextStyle(color: Colors.white60),
+                              ),
+                            )
+                          : ListView.separated(
+                              controller: scrollController,
+                              padding: const EdgeInsets.fromLTRB(20, 0, 20, 30),
+                              itemCount: matchingRetailers.length,
+                              separatorBuilder: (_, _) => const Divider(
+                                color: Colors.white10,
+                                height: 1,
+                              ),
+                              itemBuilder: (context, index) {
+                                final retailer = matchingRetailers[index];
+                                final county = retailer.county;
+                                return ListTile(
+                                  contentPadding: const EdgeInsets.symmetric(
+                                    horizontal: 4,
+                                    vertical: 3,
+                                  ),
+                                  leading: const Icon(
+                                    Icons.storefront_rounded,
+                                    color: Color(0xFF60A5FA),
+                                  ),
+                                  title: Text(
+                                    retailer.name,
+                                    style: const TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  ),
+                                  subtitle: Text(
+                                    '${retailer.address}\n${retailer.city}'
+                                    '${county == null ? '' : ' · $county'}',
+                                    style: const TextStyle(
+                                      color: Colors.white60,
+                                    ),
+                                  ),
+                                  isThreeLine: true,
+                                  trailing: const Icon(
+                                    Icons.chevron_right_rounded,
+                                    color: Colors.white38,
+                                  ),
+                                  onTap: () =>
+                                      Navigator.of(sheetContext).pop(retailer),
+                                );
+                              },
+                            ),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        ),
+      );
+    } finally {
+      if (mounted) {
+        await _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+      }
+    }
+
+    if (mounted && selectedRetailer != null) {
+      await _showDirectoryRetailerDetails(selectedRetailer);
+    }
+  }
+
   void _navigateToSearchResult(MapSearchResult result) {
     final stateName = result.stateName;
 
@@ -3149,6 +3731,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         _selectedCountyId = null;
         _hoveredStateName = null;
         _hoveredCountyId = null;
+        _focusedRetailerId = null;
+        _focusedDirectoryRetailer = null;
+        _focusedHeatCountyKey = null;
       });
       _mapController.move(result.location, result.zoom);
       return;
@@ -3158,6 +3743,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedStateName = stateName;
       _selectedCountyId = null;
       _hoveredCountyId = null;
+      _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
+      _focusedHeatCountyKey = null;
     });
 
     if (stateName == 'Alaska') {
@@ -3453,6 +4041,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _hoveredStateName = null;
       _hoveredCountyId = null;
       _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
       _focusedHeatCountyKey = null;
       _selectedStateActivityGameName = null;
       _showStateGames = false;
@@ -3473,6 +4062,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _hoveredStateName = null;
       _hoveredCountyId = null;
       _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
       _focusedHeatCountyKey = null;
       _showNextDrawings = false;
       _showScratchOffs = false;
@@ -3527,6 +4117,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedCountyId = null;
       _hoveredCountyId = null;
       _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
       _focusedHeatCountyKey = null;
     });
 
@@ -3614,6 +4205,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     final showSouthCarolinaRetailers =
         SouthCarolinaRetailerMapService.isVisible.value;
     final visibleSouthCarolinaRetailers = _visibleSouthCarolinaRetailers();
+    final stateDirectoryRetailerCount = selectedState == null
+        ? 0
+        : StateRetailerDirectoryRepository.countFor(selectedState.name);
     final southCarolinaVisibleRecordCount = visibleActivity
         .where((activity) => activity.state == 'SC')
         .length;
@@ -3905,6 +4499,12 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         .map(_buildRetailerMarker)
                         .toList(growable: false),
                   ),
+                if (_focusedDirectoryRetailer != null)
+                  MarkerLayer(
+                    markers: [
+                      _buildDirectoryRetailerMarker(_focusedDirectoryRetailer!),
+                    ],
+                  ),
                 if (_mapDetailMode == MapDetailMode.standard)
                   const RichAttributionWidget(
                     attributions: [TextSourceAttribution('Tiles © Esri')],
@@ -4174,6 +4774,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   onClose: _resetMap,
                   onClearCounty: _returnToSelectedState,
                   onOpenCounties: _openCountyPicker,
+                  onOpenRetailers: _openStateRetailerPicker,
                   isHomeState: _homeStateName == selectedState.name,
                   onSetHomeState: _setSelectedStateAsHome,
                   onRefreshData: _refreshPublishedActivityFeed,
@@ -4220,6 +4821,20 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                     );
                   },
                   onClear: SouthCarolinaRetailerMapService.hide,
+                ),
+              ),
+
+            if (selectedState != null &&
+                selectedState.name != 'South Carolina' &&
+                stateDirectoryRetailerCount > 0 &&
+                _focusedDirectoryRetailer == null)
+              Positioned(
+                right: 20,
+                bottom: mapMenuBottom.toDouble(),
+                child: _StateRetailerDirectoryBanner(
+                  stateAbbreviation: selectedState.abbreviation,
+                  count: stateDirectoryRetailerCount,
+                  onTap: _openStateRetailerPicker,
                 ),
               ),
 
@@ -4495,6 +5110,63 @@ class _SouthCarolinaRetailerBanner extends StatelessWidget {
             visualDensity: VisualDensity.compact,
           ),
         ],
+      ),
+    ),
+  );
+}
+
+class _StateRetailerDirectoryBanner extends StatelessWidget {
+  const _StateRetailerDirectoryBanner({
+    required this.stateAbbreviation,
+    required this.count,
+    required this.onTap,
+  });
+
+  final String stateAbbreviation;
+  final int count;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) => Material(
+    color: const Color(0xEE102638),
+    borderRadius: BorderRadius.circular(14),
+    child: InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(14),
+      child: Container(
+        width: 270,
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: const Color(0xFF38BDF8)),
+        ),
+        child: Row(
+          children: [
+            const Icon(
+              Icons.storefront_rounded,
+              size: 18,
+              color: Color(0xFF93C5FD),
+            ),
+            const SizedBox(width: 8),
+            Expanded(
+              child: Text(
+                '$count official $stateAbbreviation retailers',
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+            const Icon(
+              Icons.chevron_right_rounded,
+              size: 20,
+              color: Colors.white70,
+            ),
+          ],
+        ),
       ),
     ),
   );
@@ -5384,6 +6056,7 @@ class _StateLotteryPanel extends StatefulWidget {
     required this.onClose,
     required this.onClearCounty,
     required this.onOpenCounties,
+    required this.onOpenRetailers,
     required this.isHomeState,
     required this.onSetHomeState,
     this.onRefreshData,
@@ -5395,6 +6068,7 @@ class _StateLotteryPanel extends StatefulWidget {
   final VoidCallback onClose;
   final VoidCallback onClearCounty;
   final Future<void> Function() onOpenCounties;
+  final Future<void> Function() onOpenRetailers;
   final bool isHomeState;
   final Future<void> Function() onSetHomeState;
   final Future<void> Function()? onRefreshData;
@@ -5768,16 +6442,7 @@ class _StateLotteryPanelState extends State<_StateLotteryPanel> {
                 context,
                 icon: Icons.storefront_outlined,
                 label: 'Retailers',
-                onTap: widget.state.name == 'South Carolina'
-                    ? () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute<void>(
-                            builder: (_) =>
-                                const SouthCarolinaRetailersScreen(),
-                          ),
-                        );
-                      }
-                    : null,
+                onTap: () async => widget.onOpenRetailers(),
               ),
             ],
           ],

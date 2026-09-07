@@ -17,12 +17,13 @@ class StateRetailerDirectoryFeedService {
   static const String _feedUrl = String.fromEnvironment(
     'STATE_RETAILER_DIRECTORY_FEED_URL',
     defaultValue:
-        'https://apollohouser-cpu.github.io/lottery_atlas/kentucky_retailer_directory.json',
+        'https://apollohouser-cpu.github.io/lottery_atlas/state_retailer_directories.json',
   );
 
   static const List<String> _bootstrapAssets = <String>[
     'data/michigan_retailer_directory.initial.json',
     'data/kentucky_retailer_directory.generated.json',
+    'data/virginia_retailer_directory.generated.json',
   ];
 
   static Future<void> loadBundledDirectories({http.Client? client}) async {
