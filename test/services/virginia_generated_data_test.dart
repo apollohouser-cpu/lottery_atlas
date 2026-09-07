@@ -2,12 +2,20 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
+import 'package:lottery_atlas/services/lottery_activity_feed_service.dart';
+import 'package:lottery_atlas/services/lottery_activity_repository.dart';
 import 'package:lottery_atlas/services/lottery_schedule_service.dart';
+import 'package:shared_preferences_platform_interface/in_memory_shared_preferences_async.dart';
+import 'package:shared_preferences_platform_interface/shared_preferences_async_platform_interface.dart';
 
 Map<String, dynamic> _readObject(String path) =>
     Map<String, dynamic>.from(jsonDecode(File(path).readAsStringSync()) as Map);
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+
   test('Virginia generated Scratcher catalog is complete and valid', () {
     final root = _readObject('data/virginia_scratch_catalog.generated.json');
     final catalog = Map<String, dynamic>.from(
@@ -128,4 +136,30 @@ void main() {
     expect(catalogStates, containsAll(<String>{'Kentucky', 'Virginia'}));
     expect(directoryStates, containsAll(<String>{'Kentucky', 'Virginia'}));
   });
+
+  test(
+    'Virginia heat activity is available from bundled data offline',
+    () async {
+      SharedPreferencesAsyncPlatform.instance =
+          InMemorySharedPreferencesAsync.empty();
+      final offlineClient = MockClient(
+        (_) async => http.Response('offline', 503),
+      );
+
+      await LotteryActivityFeedService.loadConfiguredFeed(
+        client: offlineClient,
+      );
+
+      final virginia = LotteryActivityRepository.activity
+          .where((activity) => activity.state == 'VA')
+          .toList(growable: false);
+      expect(virginia.length, greaterThanOrEqualTo(90));
+      expect(
+        virginia.map((activity) => activity.drawDate.year).toSet(),
+        containsAll(<int>[
+          for (var year = 2024; year <= DateTime.now().year; year++) year,
+        ]),
+      );
+    },
+  );
 }

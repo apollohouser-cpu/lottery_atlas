@@ -56,6 +56,7 @@ class LotteryActivityFeedService {
     'data/kentucky_winner_activity.initial.json',
     'data/kentucky_historical_activity.generated.json',
     'data/kentucky_current_winner_activity.generated.json',
+    'data/virginia_winner_activity.generated.json',
     'data/maryland_winner_activity.initial.json',
     'data/maryland_historical_activity.initial.json',
     'data/delaware_winner_activity.initial.json',
