@@ -65,6 +65,7 @@ class StateScratchCatalogFeedService {
     'data/kentucky_scratch_catalog.generated.json',
     'data/virginia_scratch_catalog.initial.json',
     'data/virginia_scratch_catalog.generated.json',
+    'data/new_york_scratch_catalog.generated.json',
   ];
   static final SharedPreferencesAsync _store = SharedPreferencesAsync();
 

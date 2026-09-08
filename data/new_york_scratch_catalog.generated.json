@@ -1,0 +1,782 @@
+{
+  "source": "New York Lottery official Scratch-Off game-data API",
+  "updatedAt": "2026-09-08T04:23:30.202Z",
+  "sourceLastUpdated": "2026-09-07T11:30:03.000Z",
+  "coverage": "All 109 retail Scratch-Off games returned by the official New York Lottery API, including ticket price, advertised top prize, and current remaining top-prize count.",
+  "catalogs": [
+    {
+      "state": "New York",
+      "source": "https://nylottery.ny.gov/scratch-off-games/",
+      "games": [
+        {
+          "id": "1453",
+          "name": "WIN FOR LIFE",
+          "cost": 2,
+          "topPrize": 1000,
+          "topPrizesRemaining": 1,
+          "topPrizeLabel": "$1,000 A Week for Life"
+        },
+        {
+          "id": "1489",
+          "name": "$10,000,000 DELUXE",
+          "cost": 30,
+          "topPrize": 10000000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1512",
+          "name": "X SERIES: 200X",
+          "cost": 30,
+          "topPrize": 10000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1528",
+          "name": "$300,000,000 CASH PAYOUT",
+          "cost": 20,
+          "topPrize": 5000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1531",
+          "name": "CASHWORD DOUBLER",
+          "cost": 2,
+          "topPrize": 20000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1540",
+          "name": "MILLIONAIRE MAKER",
+          "cost": 20,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 3
+        },
+        {
+          "id": "1546",
+          "name": "VIP MILLIONS",
+          "cost": 30,
+          "topPrize": 5000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1552",
+          "name": "LOOSE CHANGE",
+          "cost": 1,
+          "topPrize": 500,
+          "topPrizesRemaining": 54
+        },
+        {
+          "id": "1561",
+          "name": "INSTANT $500",
+          "cost": 10,
+          "topPrize": 500,
+          "topPrizesRemaining": 943
+        },
+        {
+          "id": "1571",
+          "name": "ALL CASH",
+          "cost": 20,
+          "topPrize": 5000,
+          "topPrizesRemaining": 155
+        },
+        {
+          "id": "1574",
+          "name": "INSTANT TAKE 5",
+          "cost": 1,
+          "topPrize": 5555,
+          "topPrizesRemaining": 24
+        },
+        {
+          "id": "1577",
+          "name": "WILD CASH MULTIPLIER",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1579",
+          "name": "$5,000,000 CASH ROYALE",
+          "cost": 20,
+          "topPrize": 5000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1584",
+          "name": "$10,000 A WEEK FOR LIFE",
+          "cost": 20,
+          "topPrize": 10000,
+          "topPrizesRemaining": 0,
+          "topPrizeLabel": "$10,000 a Week For Life"
+        },
+        {
+          "id": "1585",
+          "name": "JACKPOT FORTUNE",
+          "cost": 30,
+          "topPrize": 10000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1596",
+          "name": "XTREME WINNINGS",
+          "cost": 5,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1597",
+          "name": "XTREME BUCKS",
+          "cost": 2,
+          "topPrize": 25000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1600",
+          "name": "$500,000 BLAST",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1603",
+          "name": "SHOW ME $500",
+          "cost": 10,
+          "topPrize": 500,
+          "topPrizesRemaining": 522
+        },
+        {
+          "id": "1604",
+          "name": "WIN $250",
+          "cost": 5,
+          "topPrize": 250,
+          "topPrizesRemaining": 494
+        },
+        {
+          "id": "1606",
+          "name": "$10,000,000 CASH",
+          "cost": 30,
+          "topPrize": 10000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1608",
+          "name": "DOUBLE DEUCES",
+          "cost": 2,
+          "topPrize": 25000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1609",
+          "name": "$2,000,000 CASHWORD",
+          "cost": 20,
+          "topPrize": 2000000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1610",
+          "name": "DOUBLE WIN",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1611",
+          "name": "LUCKY LINES",
+          "cost": 3,
+          "topPrize": 60000,
+          "topPrizesRemaining": 4
+        },
+        {
+          "id": "1612",
+          "name": "$3,000,000 MAX",
+          "cost": 10,
+          "topPrize": 3000000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1613",
+          "name": "BIG MONEY X20",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1617",
+          "name": "TRIPLE 7-11-21",
+          "cost": 2,
+          "topPrize": 21000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1618",
+          "name": "LOOSE CHANGE",
+          "cost": 1,
+          "topPrize": 500,
+          "topPrizesRemaining": 59
+        },
+        {
+          "id": "1619",
+          "name": "CASHWORD DOUBLER",
+          "cost": 2,
+          "topPrize": 20000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1624",
+          "name": "WIN FOR LIFE",
+          "cost": 2,
+          "topPrize": 1000,
+          "topPrizesRemaining": 5,
+          "topPrizeLabel": "$1,000 a Week for Life"
+        },
+        {
+          "id": "1627",
+          "name": "CASH DROP",
+          "cost": 2,
+          "topPrize": 25000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1628",
+          "name": "INSTANT TAKE 5",
+          "cost": 1,
+          "topPrize": 5555,
+          "topPrizesRemaining": 19
+        },
+        {
+          "id": "1629",
+          "name": "$100, $200 0R $500",
+          "cost": 30,
+          "topPrize": 500,
+          "topPrizesRemaining": 1016
+        },
+        {
+          "id": "1631",
+          "name": "MULTIPLY YOUR NUMBERS",
+          "cost": 3,
+          "topPrize": 60000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1632",
+          "name": "DOUBLE TRIPLE CASHWORD",
+          "cost": 5,
+          "topPrize": 300000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1638",
+          "name": "BONUS 5X",
+          "cost": 1,
+          "topPrize": 5000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1639",
+          "name": "SET FOR LIFE",
+          "cost": 10,
+          "topPrize": 5000,
+          "topPrizesRemaining": 2,
+          "topPrizeLabel": "$5,000 a Week for Life"
+        },
+        {
+          "id": "1640",
+          "name": "BONUS 50X",
+          "cost": 10,
+          "topPrize": 3000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1641",
+          "name": "BONUS 20X",
+          "cost": 5,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1642",
+          "name": "BONUS 10X",
+          "cost": 2,
+          "topPrize": 25000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1643",
+          "name": "BONUS 100X",
+          "cost": 20,
+          "topPrize": 5000000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1645",
+          "name": "BONUS 15X CASHWORD",
+          "cost": 3,
+          "topPrize": 60000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1646",
+          "name": "$50 OR $100",
+          "cost": 10,
+          "topPrize": 100,
+          "topPrizesRemaining": 1821
+        },
+        {
+          "id": "1647",
+          "name": "BINGO MULTIPLIER",
+          "cost": 5,
+          "topPrize": 300000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1648",
+          "name": "3-2-WON!",
+          "cost": 1,
+          "topPrize": 3000,
+          "topPrizesRemaining": 3
+        },
+        {
+          "id": "1649",
+          "name": "CASHWORD",
+          "cost": 2,
+          "topPrize": 10000,
+          "topPrizesRemaining": 6
+        },
+        {
+          "id": "1650",
+          "name": "ULTIMATE CASH",
+          "cost": 30,
+          "topPrize": 10000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1651",
+          "name": "NEW YORK MILLIONAIRE",
+          "cost": 5,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1652",
+          "name": "BLACKJACK DOUBLER",
+          "cost": 2,
+          "topPrize": 21000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1653",
+          "name": "LUCKY 7'S",
+          "cost": 1,
+          "topPrize": 7000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1654",
+          "name": "MONEY MATCH",
+          "cost": 10,
+          "topPrize": 3000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1655",
+          "name": "$1,000,000 GOLD",
+          "cost": 5,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1656",
+          "name": "UNLOCK IT!",
+          "cost": 3,
+          "topPrize": 60000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1657",
+          "name": "WIN EITHER $100 OR $200!",
+          "cost": 20,
+          "topPrize": 200,
+          "topPrizesRemaining": 16950
+        },
+        {
+          "id": "1658",
+          "name": "$500,000 MATCH TO WIN",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1659",
+          "name": "TRIPLE MATCH",
+          "cost": 1,
+          "topPrize": 3000,
+          "topPrizesRemaining": 5
+        },
+        {
+          "id": "1660",
+          "name": "BONUS BUCKS",
+          "cost": 10,
+          "topPrize": 3000000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1661",
+          "name": "CASINO NIGHTS",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1662",
+          "name": "CASHWORD EXTRA!",
+          "cost": 3,
+          "topPrize": 60000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1663",
+          "name": "MYSTERY MULTIPLIER",
+          "cost": 20,
+          "topPrize": 5000000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1664",
+          "name": "WINNING STREAK 25X",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1665",
+          "name": "9S IN A LINE DOUBLER",
+          "cost": 1,
+          "topPrize": 999,
+          "topPrizesRemaining": 4
+        },
+        {
+          "id": "1666",
+          "name": "$1,000,000 BONUS CASHWORD",
+          "cost": 10,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1667",
+          "name": "$3,000,000 CA$H",
+          "cost": 10,
+          "topPrize": 3000000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1668",
+          "name": "MORE MONEY",
+          "cost": 5,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1669",
+          "name": "$25,000 EXTRA CA$H",
+          "cost": 2,
+          "topPrize": 25000,
+          "topPrizesRemaining": 4
+        },
+        {
+          "id": "1670",
+          "name": "CASHWORD DOUBLER",
+          "cost": 2,
+          "topPrize": 20000,
+          "topPrizesRemaining": 14
+        },
+        {
+          "id": "1671",
+          "name": "$5,000,000 BLITZ",
+          "cost": 20,
+          "topPrize": 5000000,
+          "topPrizesRemaining": 3
+        },
+        {
+          "id": "1672",
+          "name": "LUCKY 13",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1673",
+          "name": "WIN $60,000",
+          "cost": 3,
+          "topPrize": 60000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1674",
+          "name": "$5,000 HOLIDAY FRENZY/$5,000 GOLD",
+          "cost": 10,
+          "topPrize": 5000,
+          "topPrizesRemaining": 37
+        },
+        {
+          "id": "1675",
+          "name": "$500 HOLIDAY BONUS",
+          "cost": 5,
+          "topPrize": 500,
+          "topPrizesRemaining": 174
+        },
+        {
+          "id": "1676",
+          "name": "$100s FOR THE HOLIDAYS",
+          "cost": 2,
+          "topPrize": 100,
+          "topPrizesRemaining": 305
+        },
+        {
+          "id": "1677",
+          "name": "$100, $200 OR $500!",
+          "cost": 30,
+          "topPrize": 500,
+          "topPrizesRemaining": 2769
+        },
+        {
+          "id": "1678",
+          "name": "2026",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1679",
+          "name": "10Xtra",
+          "cost": 1,
+          "topPrize": 5000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1680",
+          "name": "INSTANT TAKE 5",
+          "cost": 1,
+          "topPrize": 5555,
+          "topPrizesRemaining": 56
+        },
+        {
+          "id": "1681",
+          "name": "100Xtra",
+          "cost": 10,
+          "topPrize": 3000000,
+          "topPrizesRemaining": 3
+        },
+        {
+          "id": "1682",
+          "name": "$500,000 YEAR OF THE HORSE",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1683",
+          "name": "20Xtra",
+          "cost": 2,
+          "topPrize": 25000,
+          "topPrizesRemaining": 0
+        },
+        {
+          "id": "1684",
+          "name": "200Xtra",
+          "cost": 20,
+          "topPrize": 5000000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1685",
+          "name": "50Xtra",
+          "cost": 5,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1686",
+          "name": "$10,000 A WEEK FOR LIFE",
+          "cost": 20,
+          "topPrize": 10000,
+          "topPrizesRemaining": 2,
+          "topPrizeLabel": "$10,000 A Week For Life"
+        },
+        {
+          "id": "1687",
+          "name": "30Xtra CASHWORD",
+          "cost": 3,
+          "topPrize": 60000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1688",
+          "name": "$3,000,000 BONUS STARS",
+          "cost": 10,
+          "topPrize": 3000000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1689",
+          "name": "BINGO TIMES 20",
+          "cost": 5,
+          "topPrize": 300000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1690",
+          "name": "7-11-21 TRIPLER",
+          "cost": 1,
+          "topPrize": 2100,
+          "topPrizesRemaining": 6
+        },
+        {
+          "id": "1691",
+          "name": "300X THE MONEY",
+          "cost": 30,
+          "topPrize": 10000000,
+          "topPrizesRemaining": 3
+        },
+        {
+          "id": "1692",
+          "name": "$1,000,000 MUST LOVE DOGS",
+          "cost": 5,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1693",
+          "name": "BONUS BLACKJACK",
+          "cost": 2,
+          "topPrize": 21000,
+          "topPrizesRemaining": 6
+        },
+        {
+          "id": "1694",
+          "name": "$2,000,000 100X CASHWORD",
+          "cost": 20,
+          "topPrize": 2000000,
+          "topPrizesRemaining": 3
+        },
+        {
+          "id": "1695",
+          "name": "POT OF GOLD",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1696",
+          "name": "MATCH 7s",
+          "cost": 3,
+          "topPrize": 70000,
+          "topPrizesRemaining": 4
+        },
+        {
+          "id": "1697",
+          "name": "$3,000,000 MAX MULTIPLIER",
+          "cost": 10,
+          "topPrize": 3000000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1698",
+          "name": "DOUBLE YOUR MONEY",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 1
+        },
+        {
+          "id": "1699",
+          "name": "LUCKY 7s",
+          "cost": 1,
+          "topPrize": 7000,
+          "topPrizesRemaining": 16
+        },
+        {
+          "id": "1700",
+          "name": "MILLIONAIRE RICHES",
+          "cost": 20,
+          "topPrize": 5000000,
+          "topPrizesRemaining": 4
+        },
+        {
+          "id": "1701",
+          "name": "HOT DOG!",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 2
+        },
+        {
+          "id": "1702",
+          "name": "DIAMOND CASHWORD",
+          "cost": 3,
+          "topPrize": 60000,
+          "topPrizesRemaining": 5
+        },
+        {
+          "id": "1703",
+          "name": "$1,000,000 50X CASHWORD",
+          "cost": 10,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 3
+        },
+        {
+          "id": "1704",
+          "name": "$50 OR $100",
+          "cost": 10,
+          "topPrize": 100,
+          "topPrizesRemaining": 143660
+        },
+        {
+          "id": "1705",
+          "name": "LADY LUCK 25X",
+          "cost": 5,
+          "topPrize": 500000,
+          "topPrizesRemaining": 4
+        },
+        {
+          "id": "1706",
+          "name": "WIN IT ALL",
+          "cost": 2,
+          "topPrize": 25000,
+          "topPrizesRemaining": 7
+        },
+        {
+          "id": "1707",
+          "name": "LOOSE CHANGE",
+          "cost": 1,
+          "topPrize": 500,
+          "topPrizesRemaining": 1438
+        },
+        {
+          "id": "1708",
+          "name": "DOUBLE TRIPLE CASHWORD",
+          "cost": 5,
+          "topPrize": 300000,
+          "topPrizesRemaining": 10
+        },
+        {
+          "id": "1709",
+          "name": "$5,000,000 SPECTACULAR",
+          "cost": 20,
+          "topPrize": 5000000,
+          "topPrizesRemaining": 4
+        },
+        {
+          "id": "1710",
+          "name": "MONEY VAULT MULTIPLIER",
+          "cost": 5,
+          "topPrize": 1000000,
+          "topPrizesRemaining": 4
+        },
+        {
+          "id": "1711",
+          "name": "MONEY BAGS",
+          "cost": 1,
+          "topPrize": 5000,
+          "topPrizesRemaining": 10
+        }
+      ]
+    }
+  ]
+}

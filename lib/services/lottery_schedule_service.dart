@@ -644,6 +644,22 @@ class LotteryScheduleService {
           salesCutoffMinutes: 30,
           accentColor: Color(0xFFFFB300),
         ),
+        StateLotteryDrawSchedule(
+          name: 'LOTTO',
+          weekdays: [DateTime.wednesday, DateTime.saturday],
+          hour: 20,
+          minute: 15,
+          salesCutoffMinutes: 15,
+          accentColor: Color(0xFFFFB300),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Millionaire for Life',
+          weekdays: _everyDay,
+          hour: 23,
+          minute: 15,
+          salesCutoffMinutes: 60,
+          accentColor: Color(0xFF10B981),
+        ),
       ];
     }
 
