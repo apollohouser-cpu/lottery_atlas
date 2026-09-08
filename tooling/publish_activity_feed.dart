@@ -12,6 +12,8 @@
 import 'dart:convert';
 import 'dart:io';
 
+final DateTime _launchWindowStart = DateTime.utc(2026);
+
 Never _fail(String message) => throw FormatException(message);
 
 Map<String, String> _arguments(List<String> arguments) {
@@ -152,6 +154,11 @@ Future<void> main(List<String> arguments) async {
           final record = Map<String, dynamic>.from(item);
           final context = '$sourcePath record ${record['id'] ?? '<unknown>'}';
           _validateRecord(record, context);
+          final drawDate = _date(record['drawDate'], 'drawDate', context);
+          if (drawDate.isBefore(_launchWindowStart)) {
+            count += 1;
+            continue;
+          }
           final id = record['id']!.toString();
           final existing = records[id];
           if (existing != null && jsonEncode(existing) != jsonEncode(record)) {
@@ -190,7 +197,8 @@ Future<void> main(List<String> arguments) async {
       if (sourceDates.isNotEmpty)
         'sourceLastUpdated': sourceDates.last.toIso8601String(),
       'coverage':
-          'Merged verified official state snapshots for ${stateCodes.length} states. '
+          'Merged verified official state snapshots from January 1, 2026 through '
+          'the current date for ${stateCodes.length} states. '
           'Every published heat-map record identifies a named retailer or official '
           'winning location, has supplied coordinates, and links to an official source. '
           'Coverage varies by state and game.',

@@ -153,12 +153,14 @@ void main() {
       final virginia = LotteryActivityRepository.activity
           .where((activity) => activity.state == 'VA')
           .toList(growable: false);
-      expect(virginia.length, greaterThanOrEqualTo(90));
+      expect(virginia.length, greaterThanOrEqualTo(50));
+      expect(
+        virginia.every((activity) => activity.drawDate.year >= 2026),
+        isTrue,
+      );
       expect(
         virginia.map((activity) => activity.drawDate.year).toSet(),
-        containsAll(<int>[
-          for (var year = 2024; year <= DateTime.now().year; year++) year,
-        ]),
+        contains(DateTime.now().year),
       );
     },
   );

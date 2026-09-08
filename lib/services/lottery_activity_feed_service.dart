@@ -32,6 +32,10 @@ import 'lottery_activity_repository.dart';
 class LotteryActivityFeedService {
   LotteryActivityFeedService._();
 
+  /// Launch view intentionally begins in 2026. Older verified source records
+  /// remain bundled and can be restored in a later historical expansion.
+  static final DateTime _launchWindowStart = DateTime.utc(2026);
+
   static const String _feedUrl = String.fromEnvironment(
     'LOTTERY_ACTIVITY_FEED_URL',
     defaultValue:
@@ -277,7 +281,9 @@ class LotteryActivityFeedService {
     }
 
     final uniqueRecords = <String, LotteryActivity>{
-      for (final record in records) record.id: record,
+      for (final record in records)
+        if (!record.drawDate.toUtc().isBefore(_launchWindowStart))
+          record.id: record,
     }.values.toList(growable: false);
     if (uniqueRecords.isEmpty) {
       throw const FormatException('The activity feed has no valid records.');

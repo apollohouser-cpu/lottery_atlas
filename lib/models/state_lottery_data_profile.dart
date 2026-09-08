@@ -28,7 +28,7 @@ class StateLotteryDataProfile {
   /// Lottery Atlas’ current verified-history target. Earlier records remain
   /// available when an official source publishes them, but state readiness and
   /// the map timeline use this common nationwide window.
-  static const int verifiedHistoryStartYear = 2024;
+  static const int verifiedHistoryStartYear = 2026;
 
   const StateLotteryDataProfile({
     required this.stateName,
@@ -42,7 +42,7 @@ class StateLotteryDataProfile {
     required this.hasVerifiedSchedule,
     required this.firstRecordAt,
     required this.latestRecordAt,
-    required this.hasVerifiedRecordsEachYearSince2024,
+    required this.hasVerifiedRecordsInLaunchWindow,
     required this.isSampleMapData,
     required this.readiness,
   });
@@ -58,7 +58,7 @@ class StateLotteryDataProfile {
   final bool hasVerifiedSchedule;
   final DateTime? firstRecordAt;
   final DateTime? latestRecordAt;
-  final bool hasVerifiedRecordsEachYearSince2024;
+  final bool hasVerifiedRecordsInLaunchWindow;
   final bool isSampleMapData;
   final StateLotteryDataReadiness readiness;
 
@@ -74,8 +74,8 @@ class StateLotteryDataProfile {
     if (!hasMapActivity || firstRecordAt == null || latestRecordAt == null) {
       return 'Historical activity not yet published';
     }
-    if (hasVerifiedRecordsEachYearSince2024) {
-      return 'Live coverage: 2024–${latestRecordAt!.year}';
+    if (hasVerifiedRecordsInLaunchWindow) {
+      return 'Live coverage: 2026–${latestRecordAt!.year}';
     }
     return 'Verified records span ${firstRecordAt!.year}–${latestRecordAt!.year}';
   }

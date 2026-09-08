@@ -57,7 +57,7 @@ class StateLotteryDataRegistry {
         .map((record) => record.drawDate.year)
         .toSet();
     final currentYear = DateTime.now().year;
-    final hasVerifiedRecordsEachYearSince2024 =
+    final hasVerifiedRecordsInLaunchWindow =
         !LotteryActivityRepository.isSampleData &&
         activityYears.isNotEmpty &&
         List<int>.generate(
@@ -91,7 +91,7 @@ class StateLotteryDataRegistry {
       ),
       firstRecordAt: dates.isEmpty ? null : dates.first,
       latestRecordAt: dates.isEmpty ? null : dates.last,
-      hasVerifiedRecordsEachYearSince2024: hasVerifiedRecordsEachYearSince2024,
+      hasVerifiedRecordsInLaunchWindow: hasVerifiedRecordsInLaunchWindow,
       isSampleMapData: LotteryActivityRepository.isSampleData,
       readiness: readiness,
     );

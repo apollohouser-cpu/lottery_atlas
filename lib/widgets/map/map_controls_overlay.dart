@@ -1379,7 +1379,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
   }
 
   int _yearWindowStart() {
-    const verifiedHistoryStartYear = 2024;
+    const verifiedHistoryStartYear = 2026;
     return _firstAvailableDate.year > verifiedHistoryStartYear
         ? _firstAvailableDate.year
         : verifiedHistoryStartYear;

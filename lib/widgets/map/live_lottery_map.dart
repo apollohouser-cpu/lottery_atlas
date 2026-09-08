@@ -6625,7 +6625,7 @@ class _StateDataCoverageCard extends StatelessWidget {
           : '${profile.hasVerifiedSchedule ? 'Verified drawings' : 'Drawing schedule pending'} · '
                 '${profile.hasScratchCatalog ? '${profile.scratchCatalogGameCount} verified Scratch-Off tickets' : 'Scratch-Off catalog pending'} · '
                 '${profile.retailerRecordCount > 0 ? '${profile.retailerRecordCount} retailer claims' : 'Retailer feed pending'}\n'
-                '${profile.historicalCoverageLabel}${profile.hasVerifiedRecordsEachYearSince2024 ? ' · live coverage verified' : ' · coverage in progress'}',
+                '${profile.historicalCoverageLabel}${profile.hasVerifiedRecordsInLaunchWindow ? ' · live coverage verified' : ' · coverage in progress'}',
       style: const TextStyle(
         color: Color(0xFFBFDBFE),
         fontSize: 11,
