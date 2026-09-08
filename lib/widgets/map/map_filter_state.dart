@@ -72,7 +72,7 @@ class MapFilterState {
   factory MapFilterState.initial() {
     return MapFilterState(
       dateRange: DateTimeRange(
-        start: DateTime(2015, 1, 1),
+        start: DateTime(2026, 1, 1),
         end: DateTime.now(),
       ),
     );

@@ -53,7 +53,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 builder: (context, constraints) {
                   // The map gets the previously unused vertical space. Its
                   // heat index and timeline remain docked at the map bottom,
-                  // and the Trending States card naturally moves down below it.
+                  // and the timeline-aware ranking card sits directly below it.
                   final mapHeight = (constraints.maxHeight * 0.84).clamp(
                     720.0,
                     1040.0,

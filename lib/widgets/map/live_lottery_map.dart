@@ -25,6 +25,7 @@ import '../../services/favorite_games_service.dart';
 import '../../services/lottery_activity_feed_service.dart';
 import '../../services/lottery_activity_repository.dart';
 import '../../services/map_focus_service.dart';
+import '../../services/map_ranking_service.dart';
 import '../../services/north_carolina_scratch_catalog.dart';
 import '../../services/south_carolina_lottery_map_filter_service.dart';
 import '../../services/south_carolina_scratch_catalog.dart';
@@ -120,9 +121,12 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
   String? _hoveredCountyId;
   String? _selectedCountyId;
+  String? _selectedCityName;
   String? _focusedHeatCountyKey;
   String? _focusedRetailerId;
   StateRetailer? _focusedDirectoryRetailer;
+  bool _rankingUpdateQueued = false;
+  MapRankingSnapshot? _pendingRankingSnapshot;
 
   static const Map<String, String> _stateFipsByName = {
     'Alabama': '01',
@@ -435,6 +439,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         setState(() {
           _selectedStateName = request.stateName;
           _selectedCountyId = null;
+          _selectedCityName = null;
           _hoveredCountyId = null;
         });
         _focusCountyById(countyId);
@@ -443,9 +448,12 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         if (location == null) return;
         setState(() {
           _selectedStateName = request.stateName;
-          _selectedCountyId = null;
+          _selectedCountyId = request.countyId;
+          _selectedCityName = request.city;
           _hoveredCountyId = null;
           _focusedHeatCountyKey = null;
+          _focusedRetailerId = null;
+          _focusedDirectoryRetailer = null;
         });
         _animateMapTo(location, 10.8);
       case MapFocusKind.retailer:
@@ -455,7 +463,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
           (activity) => activity.id == retailerId,
         );
         if (activityMatches.isNotEmpty) {
-          _focusActivityRetailer(activityMatches.first);
+          final activity = activityMatches.first;
+          _focusActivityRetailer(activity);
+          unawaited(_showActivityDetails(activity));
           return;
         }
         final matches = SouthCarolinaRetailerRepository.retailers.where(
@@ -487,6 +497,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _filterState = _filterState.copyWith(game: LotteryGame.scratchOff);
       _selectedStateName = 'South Carolina';
       _selectedCountyId = null;
+      _selectedCityName = null;
       _hoveredCountyId = null;
     });
     _restartHeatBubbleAnimation();
@@ -506,6 +517,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _filterState = _filterState.copyWith(game: selection.game);
       _selectedStateName = 'South Carolina';
       _selectedCountyId = null;
+      _selectedCityName = null;
       _hoveredCountyId = null;
     });
     _restartHeatBubbleAnimation();
@@ -523,6 +535,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     setState(() {
       _selectedStateName = null;
       _selectedCountyId = null;
+      _selectedCityName = null;
       _hoveredCountyId = null;
     });
     _mapController.move(_southCarolinaCenter, 6.4);
@@ -1178,7 +1191,25 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   }
 
   void _focusCountyHeatBubble(_CountyActivitySummary countyActivity) {
-    setState(() => _focusedHeatCountyKey = _countyHeatKey(countyActivity));
+    final stateName = StateNavigationService.getStateByAbbreviation(
+      countyActivity.state,
+    )?.name;
+    final stateFips = stateName == null ? null : _stateFipsByName[stateName];
+    final matchingCounty = _countyShapes.where(
+      (county) =>
+          county.stateFips == stateFips &&
+          _normalizedCountyName(county.name) ==
+              _normalizedCountyName(countyActivity.county),
+    );
+    setState(() {
+      _focusedHeatCountyKey = _countyHeatKey(countyActivity);
+      _selectedCountyId = matchingCounty.isEmpty
+          ? _selectedCountyId
+          : matchingCounty.first.id;
+      _selectedCityName = null;
+      _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
+    });
     _countyFocusAnimationController.forward(from: 0);
     unawaited(_showCountyActivityDetails(countyActivity));
   }
@@ -1833,6 +1864,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedCountyId = matchingCounties.isEmpty
           ? null
           : matchingCounties.first.id;
+      _selectedCityName = retailer.city;
       _hoveredCountyId = null;
     });
     _retailerFocusAnimationController.forward(from: 0);
@@ -1860,6 +1892,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedCountyId = matchingCounties.isEmpty
           ? null
           : matchingCounties.first.id;
+      _selectedCityName = retailer.city;
       _hoveredCountyId = null;
       _focusedHeatCountyKey = null;
     });
@@ -1888,9 +1921,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedCountyId = matchingCounties.isEmpty
           ? null
           : matchingCounties.first.id;
+      _selectedCityName = activity.city;
       _hoveredCountyId = null;
       _focusedHeatCountyKey = null;
-      _focusedRetailerId = null;
+      _focusedRetailerId = activity.id;
       _focusedDirectoryRetailer = null;
     });
     _animateMapTo(activity.location, 14.5);
@@ -1904,6 +1938,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
       _focusedHeatCountyKey = null;
+      _selectedCityName = null;
     });
 
     if (countyId != null) {
@@ -1912,6 +1947,55 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     }
 
     if (stateName != null) _focusStateByName(stateName);
+  }
+
+  void _returnToCityFromRetailer() {
+    final cityName = _selectedCityName;
+    setState(() {
+      _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
+      _focusedHeatCountyKey = null;
+    });
+    if (cityName == null) {
+      _returnToCountyFromRetailer();
+      return;
+    }
+
+    final cityActivity = _visibleActivity()
+        .where(
+          (activity) =>
+              _normalizedCountyName(activity.city) ==
+              _normalizedCountyName(cityName),
+        )
+        .toList(growable: false);
+    if (cityActivity.isEmpty) return;
+    final latitude = cityActivity.fold<double>(
+      0,
+      (total, activity) => total + activity.location.latitude,
+    );
+    final longitude = cityActivity.fold<double>(
+      0,
+      (total, activity) => total + activity.location.longitude,
+    );
+    _animateMapTo(
+      LatLng(latitude / cityActivity.length, longitude / cityActivity.length),
+      10.8,
+    );
+  }
+
+  void _returnToCountyFromCity() {
+    final countyId = _selectedCountyId;
+    setState(() {
+      _selectedCityName = null;
+      _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
+      _focusedHeatCountyKey = null;
+    });
+    if (countyId != null) {
+      _focusCountyById(countyId);
+    } else {
+      _returnToSelectedState();
+    }
   }
 
   Future<void> _showDirectoryRetailerDetails(StateRetailer retailer) async {
@@ -3186,6 +3270,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       setState(() {
         _selectedStateName = stateName;
         _selectedCountyId = null;
+        _selectedCityName = null;
         _hoveredCountyId = null;
         _focusedRetailerId = null;
         _focusedDirectoryRetailer = null;
@@ -3211,6 +3296,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     setState(() {
       _selectedStateName = stateName;
       _selectedCountyId = null;
+      _selectedCityName = null;
       _hoveredCountyId = null;
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
@@ -3250,6 +3336,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
     setState(() {
       _selectedCountyId = countyId;
+      _selectedCityName = null;
+      _focusedRetailerId = null;
+      _focusedDirectoryRetailer = null;
     });
 
     _animateCameraFit(
@@ -3729,6 +3818,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       setState(() {
         _selectedStateName = null;
         _selectedCountyId = null;
+        _selectedCityName = null;
         _hoveredStateName = null;
         _hoveredCountyId = null;
         _focusedRetailerId = null;
@@ -3742,6 +3832,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     setState(() {
       _selectedStateName = stateName;
       _selectedCountyId = null;
+      _selectedCityName = null;
       _hoveredCountyId = null;
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
@@ -4038,6 +4129,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     setState(() {
       _selectedStateName = null;
       _selectedCountyId = null;
+      _selectedCityName = null;
       _hoveredStateName = null;
       _hoveredCountyId = null;
       _focusedRetailerId = null;
@@ -4059,6 +4151,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     setState(() {
       _selectedStateName = null;
       _selectedCountyId = null;
+      _selectedCityName = null;
       _hoveredStateName = null;
       _hoveredCountyId = null;
       _focusedRetailerId = null;
@@ -4083,6 +4176,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     setState(() {
       _selectedStateName = stateName;
       _selectedCountyId = null;
+      _selectedCityName = null;
       _hoveredStateName = null;
       _hoveredCountyId = null;
     });
@@ -4115,6 +4209,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
     setState(() {
       _selectedCountyId = null;
+      _selectedCityName = null;
       _hoveredCountyId = null;
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
@@ -4152,6 +4247,64 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     );
   }
 
+  void _queueRankingSnapshot({
+    required StateModel? selectedState,
+    required _CountyShape? selectedCounty,
+    required List<_CountyShape> visibleCounties,
+    required List<LotteryActivity> visibleActivity,
+  }) {
+    LotteryActivity? focusedActivity;
+    SouthCarolinaRetailer? focusedSouthCarolinaRetailer;
+    final focusedId = _focusedRetailerId;
+    if (focusedId != null) {
+      for (final activity in visibleActivity) {
+        if (activity.id == focusedId) {
+          focusedActivity = activity;
+          break;
+        }
+      }
+      if (focusedActivity == null) {
+        for (final retailer in SouthCarolinaRetailerRepository.retailers) {
+          if (retailer.id == focusedId) {
+            focusedSouthCarolinaRetailer = retailer;
+            break;
+          }
+        }
+      }
+    }
+
+    _pendingRankingSnapshot = MapRankingSnapshot(
+      records: List<LotteryActivity>.unmodifiable(visibleActivity),
+      dateRangeStart: _filterState.dateRange.start,
+      dateRangeEnd: _filterState.dateRange.end,
+      stateName: selectedState?.name,
+      stateAbbreviation: selectedState?.abbreviation.toUpperCase(),
+      countyName: selectedCounty?.name,
+      countyId: selectedCounty?.id,
+      cityName: _selectedCityName,
+      retailerName:
+          focusedActivity?.retailerName ??
+          _focusedDirectoryRetailer?.name ??
+          focusedSouthCarolinaRetailer?.name,
+      retailerAddress:
+          focusedActivity?.retailerAddress ??
+          _focusedDirectoryRetailer?.address ??
+          focusedSouthCarolinaRetailer?.address,
+      countyIds: <String, String>{
+        for (final county in visibleCounties)
+          _normalizedCountyName(county.name): county.id,
+      },
+    );
+    if (_rankingUpdateQueued) return;
+    _rankingUpdateQueued = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _rankingUpdateQueued = false;
+      final snapshot = _pendingRankingSnapshot;
+      _pendingRankingSnapshot = null;
+      if (mounted && snapshot != null) MapRankingService.publish(snapshot);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final selectedState = _selectedStateName == null
@@ -4184,6 +4337,12 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     }
 
     final visibleActivity = _visibleActivity();
+    _queueRankingSnapshot(
+      selectedState: selectedState,
+      selectedCounty: selectedCounty,
+      visibleCounties: visibleCounties,
+      visibleActivity: visibleActivity,
+    );
     final selectedStateActivity = selectedState == null
         ? const <LotteryActivity>[]
         : LotteryActivityRepository.activity
@@ -4845,13 +5004,17 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 onReset: _resetMap,
                 onHome: _homeStateName == null ? null : _goToHomeState,
                 onBack: _focusedRetailerId != null
-                    ? _returnToCountyFromRetailer
+                    ? _returnToCityFromRetailer
+                    : _selectedCityName != null
+                    ? _returnToCountyFromCity
                     : _selectedCountyId != null
                     ? _returnToSelectedState
                     : _selectedStateName == null
                     ? null
                     : _returnToNationalMap,
                 backTooltip: _focusedRetailerId != null
+                    ? 'Back to city or town'
+                    : _selectedCityName != null
                     ? 'Back to county map'
                     : _selectedCountyId != null
                     ? 'Back to state map'

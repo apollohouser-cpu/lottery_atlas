@@ -23,8 +23,8 @@ class MapFocusRequest {
     required this.stateName,
     required this.city,
     required this.location,
+    this.countyId,
   }) : kind = MapFocusKind.city,
-       countyId = null,
        retailerId = null;
 
   const MapFocusRequest.retailer({
@@ -68,11 +68,13 @@ class MapFocusService {
     required String stateName,
     required String city,
     required LatLng location,
+    String? countyId,
   }) {
     requestedFocus.value = MapFocusRequest.city(
       stateName: stateName,
       city: city,
       location: location,
+      countyId: countyId,
     );
   }
 

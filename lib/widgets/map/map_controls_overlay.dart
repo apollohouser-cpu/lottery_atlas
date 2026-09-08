@@ -99,8 +99,6 @@ class MapControlsOverlay extends StatefulWidget {
 }
 
 class _MapControlsOverlayState extends State<MapControlsOverlay> {
-  static final DateTime _firstAvailableDate = DateTime(2015, 1, 1);
-
   late MapFilterState _filterState;
   // The map opens in a practical "right now" view. Historical scales remain
   // one tap away when the user wants to explore older activity.
@@ -611,7 +609,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
     _stopTimelinePlayback();
     final selectedDate = await showDatePicker(
       context: context,
-      firstDate: _firstAvailableDate,
+      firstDate: DateTime(2026, 1, 1),
       lastDate: DateTime.now(),
       initialDate: _timelineAnchor,
       helpText: 'CHOOSE TIMELINE DATE',
@@ -1203,7 +1201,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
             _timelineAnchor.month == now.month;
         return isCurrentMonth ? now.day - 1 : _daysInMonth(_timelineAnchor) - 1;
       case TimelineGranularity.year:
-        return _maximumTimelineValue().round();
+        return _timelineAnchor.year == now.year ? _yearWeekIndex(now) : 51;
     }
   }
 
@@ -1287,7 +1285,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
       case TimelineGranularity.month:
         return _daysInMonth(_timelineAnchor).toDouble() - 1;
       case TimelineGranularity.year:
-        return (DateTime.now().year - _yearWindowStart()).toDouble();
+        return 51;
     }
   }
 
@@ -1300,9 +1298,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
       case TimelineGranularity.month:
         return (_timelineAnchor.day - 1).toDouble();
       case TimelineGranularity.year:
-        return (_timelineAnchor.year - _yearWindowStart())
-            .clamp(0, _maximumTimelineValue().round())
-            .toDouble();
+        return _yearWeekIndex(_timelineAnchor).toDouble();
     }
   }
 
@@ -1352,13 +1348,17 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
             .subtract(const Duration(milliseconds: 1));
         nextAnchor = _withTimeFrom(start, previousAnchor);
       case TimelineGranularity.year:
-        start = DateTime(_yearWindowStart() + rounded, 1, 1);
-        end = DateTime(
-          start.year + 1,
-          1,
-          1,
-        ).subtract(const Duration(milliseconds: 1));
-        nextAnchor = _anchorInYear(start.year, previousAnchor);
+        final year = _timelineAnchor.year;
+        start = DateTime(year, 1, 1).add(Duration(days: rounded * 7));
+        end = rounded == 51
+            ? DateTime(year + 1, 1, 1).subtract(const Duration(milliseconds: 1))
+            : start
+                  .add(const Duration(days: 7))
+                  .subtract(const Duration(milliseconds: 1));
+        nextAnchor =
+            !previousAnchor.isBefore(start) && !previousAnchor.isAfter(end)
+            ? previousAnchor
+            : _withTimeFrom(start, previousAnchor);
     }
 
     final now = DateTime.now();
@@ -1378,19 +1378,12 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
     );
   }
 
-  int _yearWindowStart() {
-    const verifiedHistoryStartYear = 2026;
-    return _firstAvailableDate.year > verifiedHistoryStartYear
-        ? _firstAvailableDate.year
-        : verifiedHistoryStartYear;
-  }
-
-  int _yearWindowMiddle() {
-    final start = _yearWindowStart();
-    return start + ((DateTime.now().year - start) / 2).floor();
-  }
-
   int _daysInMonth(DateTime date) => DateTime(date.year, date.month + 1, 0).day;
+
+  int _yearWeekIndex(DateTime date) {
+    final dayOfYear = date.difference(DateTime(date.year, 1, 1)).inDays;
+    return (dayOfYear ~/ 7).clamp(0, 51);
+  }
 
   DateTime _withTimeFrom(DateTime date, DateTime timeSource) => DateTime(
     date.year,
@@ -1402,20 +1395,6 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
     timeSource.millisecond,
     timeSource.microsecond,
   );
-
-  DateTime _anchorInYear(int year, DateTime previousAnchor) {
-    final lastDayOfMonth = DateTime(year, previousAnchor.month + 1, 0).day;
-    return DateTime(
-      year,
-      previousAnchor.month,
-      previousAnchor.day.clamp(1, lastDayOfMonth),
-      previousAnchor.hour,
-      previousAnchor.minute,
-      previousAnchor.second,
-      previousAnchor.millisecond,
-      previousAnchor.microsecond,
-    );
-  }
 
   String _timelineLabel() {
     final range = _filterState.dateRange;
@@ -1434,7 +1413,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
       'Dec',
     ];
     if (_timelineGranularity == TimelineGranularity.year) {
-      return '${range.start.year}';
+      return 'Week ${_yearWeekIndex(range.start) + 1} · ${range.start.year}';
     }
     if (_timelineGranularity == TimelineGranularity.month) {
       return '${months[range.start.month - 1]} ${range.start.day}';
@@ -1654,7 +1633,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
             value: _initialTimelineValue(),
             min: 0,
             max: _maximumTimelineValue(),
-            // Each slider step is a year, calendar day, weekday, or hour,
+            // Each slider step is a week, calendar day, weekday, or hour,
             // depending on the selected timeline scale.
             divisions: _maximumTimelineValue().round().clamp(1, 10000).toInt(),
             label: _timelineLabel(),
@@ -1689,18 +1668,32 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
 
   Widget _timelineAxis() {
     final labels = switch (_timelineGranularity) {
-      TimelineGranularity.year => [
-        '${_yearWindowStart()}',
-        '${_yearWindowMiddle()}',
-        '${DateTime.now().year}',
-      ],
+      TimelineGranularity.year => const ['Week 1', '13', '26', '39', 'Week 52'],
       TimelineGranularity.month => [
         '1',
+        '8',
         '${(_daysInMonth(_timelineAnchor) + 1) ~/ 2}',
+        '22',
         '${_daysInMonth(_timelineAnchor)}',
       ],
-      TimelineGranularity.week => const ['Mon', 'Wed', 'Sun'],
-      TimelineGranularity.day => const ['12 AM', '12 PM', '11 PM'],
+      TimelineGranularity.week => const [
+        'Mon',
+        'Tue',
+        'Wed',
+        'Thu',
+        'Fri',
+        'Sat',
+        'Sun',
+      ],
+      TimelineGranularity.day => const [
+        '12 AM',
+        '4',
+        '8',
+        '12 PM',
+        '4',
+        '8',
+        '11 PM',
+      ],
     };
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1710,7 +1703,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
               label,
               style: TextStyle(
                 color: Colors.white70,
-                fontSize: 12,
+                fontSize: labels.length > 5 ? 9 : 11,
                 fontWeight: FontWeight.w500,
               ),
             ),
