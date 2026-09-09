@@ -698,6 +698,21 @@ class StateLotterySourceRegistry {
           url:
               'https://www.coloradolottery.com/en/player-tools/winning-history/',
         ),
+        StateLotteryResource(
+          title: 'Scratch games',
+          subtitle: 'Official live Scratch catalog and remaining top prizes.',
+          url: 'https://www.coloradolottery.com/en/games/scratch/',
+        ),
+        StateLotteryResource(
+          title: "Who's winning",
+          subtitle: 'Official dated Colorado Lottery retailer-level winners.',
+          url: 'https://www.coloradolottery.com/en/player-tools/whos-winning/',
+        ),
+        StateLotteryResource(
+          title: 'Find a retailer',
+          subtitle: 'Official statewide Colorado Lottery retailer directory.',
+          url: 'https://www.coloradolottery.com/en/retailers/',
+        ),
       ],
     ),
     'New Mexico': StateLotterySource(
@@ -763,7 +778,25 @@ class StateLotterySourceRegistry {
           title: 'Current Scratch-Off games',
           subtitle: 'Official Texas Lottery current Scratch-Off game list.',
           url:
-              'https://www.txbingo.org/export/sites/lottery/Games/Scratch_Offs/all.html_1537077106.html',
+              'https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/all.html',
+        ),
+        StateLotteryResource(
+          title: 'Drawing schedule',
+          subtitle: 'Official schedule for every current Texas draw game.',
+          url:
+              'https://www.texaslottery.com/export/sites/lottery/Games/Drawing_Schedule/',
+        ),
+        StateLotteryResource(
+          title: 'Top-prize selling retailers',
+          subtitle: 'Official dated Texas Scratch winner retailer reports.',
+          url:
+              'https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/all.html',
+        ),
+        StateLotteryResource(
+          title: 'Retailer directory',
+          subtitle: 'Official statewide Texas Lottery retailer dataset.',
+          url:
+              'https://data.texas.gov/See-Category-Tile/Texas-Lottery-Sales-by-Fiscal-Month-Year-Game-and-/beka-uwfq',
         ),
       ],
     ),

@@ -189,6 +189,132 @@ class LotteryScheduleService {
   /// South Carolina is the first verified state adapter. Other states keep a
   /// clearly marked sample schedule until their official source is connected.
   static List<StateLotteryDrawSchedule> stateDrawsFor(String stateName) {
+    if (stateName == 'Texas') {
+      // Source: Texas Lottery official drawing schedule. Times are Central.
+      return const [
+        StateLotteryDrawSchedule(
+          name: 'Lotto Texas',
+          weekdays: [DateTime.monday, DateTime.wednesday, DateTime.saturday],
+          hour: 22,
+          minute: 12,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFFFFB300),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Texas Two Step',
+          weekdays: [DateTime.monday, DateTime.thursday],
+          hour: 22,
+          minute: 12,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF86EFAC),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Cash Five',
+          weekdays: _mondayToSaturday,
+          hour: 22,
+          minute: 12,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF2CC36B),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Pick 3 · Morning',
+          weekdays: _mondayToSaturday,
+          hour: 10,
+          minute: 0,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF60A5FA),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Pick 3 · Day',
+          weekdays: _mondayToSaturday,
+          hour: 12,
+          minute: 27,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF60A5FA),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Pick 3 · Evening',
+          weekdays: _mondayToSaturday,
+          hour: 18,
+          minute: 0,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF60A5FA),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Pick 3 · Night',
+          weekdays: _mondayToSaturday,
+          hour: 22,
+          minute: 12,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF60A5FA),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Daily 4 · Morning',
+          weekdays: _mondayToSaturday,
+          hour: 10,
+          minute: 0,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF7C5CFC),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Daily 4 · Day',
+          weekdays: _mondayToSaturday,
+          hour: 12,
+          minute: 27,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF7C5CFC),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Daily 4 · Evening',
+          weekdays: _mondayToSaturday,
+          hour: 18,
+          minute: 0,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF7C5CFC),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'Daily 4 · Night',
+          weekdays: _mondayToSaturday,
+          hour: 22,
+          minute: 12,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFF7C5CFC),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'All or Nothing · Morning',
+          weekdays: _mondayToSaturday,
+          hour: 10,
+          minute: 0,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFFEC4899),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'All or Nothing · Day',
+          weekdays: _mondayToSaturday,
+          hour: 12,
+          minute: 27,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFFEC4899),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'All or Nothing · Evening',
+          weekdays: _mondayToSaturday,
+          hour: 18,
+          minute: 0,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFFEC4899),
+        ),
+        StateLotteryDrawSchedule(
+          name: 'All or Nothing · Night',
+          weekdays: _mondayToSaturday,
+          hour: 22,
+          minute: 12,
+          salesCutoffMinutes: 10,
+          accentColor: Color(0xFFEC4899),
+        ),
+      ];
+    }
+
     if (stateName == 'Georgia') {
       return const [
         StateLotteryDrawSchedule(

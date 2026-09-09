@@ -25,6 +25,9 @@ class StateRetailerDirectoryFeedService {
     'data/kentucky_retailer_directory.generated.json',
     'data/virginia_retailer_directory.generated.json',
     'data/new_york_retailer_directory.generated.json',
+    'data/ohio_retailer_directory.generated.json',
+    'data/colorado_retailer_directory.generated.json',
+    'data/texas_retailer_directory.generated.json',
   ];
 
   static Future<void> loadBundledDirectories({http.Client? client}) async {
