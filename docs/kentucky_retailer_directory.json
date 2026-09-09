@@ -1,6 +1,6 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-07T06:26:01.622Z",
+  "retrievedAt": "2026-09-09T11:25:48.881Z",
   "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3469 unique retailers; 3376 received exact Census or verified ArcGIS point-address coordinates. 93 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
@@ -3239,6 +3239,17 @@
           "county": "Shelby County",
           "latitude": 38.210286376164,
           "longitude": -85.348077055695,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
+          "id": "ky-159eba5972ee7eff",
+          "name": "SMITTY'S CARRYOUT",
+          "address": "4676 Hwy 2565",
+          "city": "Louisa",
+          "postalCode": "41230",
+          "county": "Lawrence County",
+          "latitude": 38.123484602256,
+          "longitude": -82.622375852718,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
@@ -35161,17 +35172,6 @@
           "county": "Jefferson County",
           "latitude": 38.171700761764,
           "longitude": -85.770570843621,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "ky-f31ba5ea78bc73ba",
-          "name": "BRENTLEYS FINE CIGARS & TOBACC",
-          "address": "5023 Hinkleville Road",
-          "city": "Paducah",
-          "postalCode": "42001",
-          "county": "Mccracken County",
-          "latitude": 37.077424897042,
-          "longitude": -88.684442807589,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {

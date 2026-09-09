@@ -1,7 +1,7 @@
 {
   "source": "Virginia Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-07T16:40:16.232Z",
-  "coverage": "Queried all 135 county/city options in the official Virginia Lottery finder. It returned 5432 unique retailers; 5367 received exact Census or verified ArcGIS address coordinates. 65 unresolved addresses were excluded from the map rather than estimated.",
+  "retrievedAt": "2026-09-09T11:26:17.819Z",
+  "coverage": "Queried all 135 county/city options in the official Virginia Lottery finder. It returned 5430 unique retailers; 5365 received exact Census or verified ArcGIS address coordinates. 65 unresolved addresses were excluded from the map rather than estimated.",
   "directories": [
     {
       "state": "Virginia",
@@ -3924,17 +3924,6 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
-          "id": "va-10e6c0eb5abb9b3d",
-          "name": "BUCKOS PANTRY 3",
-          "address": "820 Roanoke St",
-          "city": "Christiansburg",
-          "postalCode": "24073",
-          "county": "Montgomery",
-          "latitude": 37.131948442847,
-          "longitude": -80.392185921201,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
           "id": "va-10e7127f9299f066",
           "name": "7-ELEVEN 2514-36007F",
           "address": "3597 Holland Road",
@@ -6165,6 +6154,17 @@
           "county": "Virginia Beach",
           "latitude": 36.851448737537,
           "longitude": -76.026933377718,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "va-1b67ee3e2fde7cfd",
+          "name": "TRIPSTOP BUCKOS - CHRISTIANSBURG",
+          "address": "820 Roanoke St",
+          "city": "Christiansburg",
+          "postalCode": "24073",
+          "county": "Montgomery",
+          "latitude": 37.131948442847,
+          "longitude": -80.392185921201,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -23284,17 +23284,6 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
-          "id": "va-66f850d74469b69a",
-          "name": "BUCKOS PANTRY 1",
-          "address": "7554 Peppers Ferry Blvd",
-          "city": "Radford",
-          "postalCode": "24141",
-          "county": "Montgomery",
-          "latitude": 37.154271684572,
-          "longitude": -80.573146476781,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
           "id": "va-66ff9b0ec101d58b",
           "name": "BOBCAT'S BAIT & TACKLE",
           "address": "12690 Hwy. 15 South",
@@ -26889,6 +26878,17 @@
           "county": "Chesterfield",
           "latitude": 37.387848378805,
           "longitude": -77.514589902719,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
+          "id": "va-768a6ea4ab2eb477",
+          "name": "TRIPSTOP BUCKOS - DUBLIN",
+          "address": "629 E Broad Street",
+          "city": "Dublin",
+          "postalCode": "24084",
+          "county": "Pulaski",
+          "latitude": 37.109761935244,
+          "longitude": -80.67972520398,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
@@ -33624,17 +33624,6 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
-          "id": "va-9376abac356fc41a",
-          "name": "7-ELEVEN 1156-23934 C",
-          "address": "2922 Richmond Hwy",
-          "city": "Richmond",
-          "postalCode": "23234",
-          "county": "Richmond (City)",
-          "latitude": 37.483091190217,
-          "longitude": -77.445263433012,
-          "coordinateSource": "ArcGIS World Geocoder verified point address"
-        },
-        {
           "id": "va-937c5031f4c7e60b",
           "name": "SUNNY QUICK SHOP",
           "address": "3000 Sinai Rd",
@@ -33701,17 +33690,6 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
-          "id": "va-93b2ac036e208c94",
-          "name": "BUCKOS PANTRY 2",
-          "address": "629 E Broad Street",
-          "city": "Dublin",
-          "postalCode": "24084",
-          "county": "Pulaski",
-          "latitude": 37.109761935244,
-          "longitude": -80.67972520398,
-          "coordinateSource": "ArcGIS World Geocoder verified point address"
-        },
-        {
           "id": "va-93cc75b39a18e24d",
           "name": "7-ELEVEN 2554-22685 F",
           "address": "6327 S. Kings Hwy",
@@ -33720,6 +33698,17 @@
           "county": "Fairfax",
           "latitude": 38.779818133117,
           "longitude": -77.081449446217,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "va-93d8d271d9873722",
+          "name": "TRIPSTOP BUCKOS - RADFORD",
+          "address": "1700 W Main Street",
+          "city": "Radford",
+          "postalCode": "24141",
+          "county": "Radford",
+          "latitude": 37.119716108752,
+          "longitude": -80.590198582454,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -43920,6 +43909,17 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
+          "id": "va-bff0ebf1df14e0d9",
+          "name": "TRIPSTOP BUCKOS - FAIRLAWN",
+          "address": "7554 Peppers Ferry Blvd",
+          "city": "Fairlawn",
+          "postalCode": "24141",
+          "county": "Pulaski",
+          "latitude": 37.154271684572,
+          "longitude": -80.573146476781,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
           "id": "va-bff3ad8570db390d",
           "name": "PLEASANT SHADE LLC",
           "address": "5955 Pleasant Shade Dr",
@@ -46382,17 +46382,6 @@
           "latitude": 38.261992451576,
           "longitude": -78.819601625849,
           "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "va-ca73d9ce839a9c06",
-          "name": "CORNERSTONE SOUTH MAIN",
-          "address": "960 South Main Street",
-          "city": "Emporia",
-          "postalCode": "23847",
-          "county": "Emporia",
-          "latitude": 36.675105731317,
-          "longitude": -77.550743733324,
-          "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
           "id": "va-ca7bf21e6dc6758b",
@@ -50616,17 +50605,6 @@
           "county": "Loudoun",
           "latitude": 38.999753970666,
           "longitude": -77.405278991492,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "va-dc0efef0c6554ee9",
-          "name": "BUCKOS PANTRY 4",
-          "address": "1700 W Main Street",
-          "city": "Radford",
-          "postalCode": "24141",
-          "county": "Radford",
-          "latitude": 37.119716108752,
-          "longitude": -80.590198582454,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
