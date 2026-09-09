@@ -2,12 +2,20 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
+import 'package:lottery_atlas/services/lottery_activity_feed_service.dart';
+import 'package:lottery_atlas/services/lottery_activity_repository.dart';
 import 'package:lottery_atlas/services/lottery_schedule_service.dart';
+import 'package:shared_preferences_platform_interface/in_memory_shared_preferences_async.dart';
+import 'package:shared_preferences_platform_interface/shared_preferences_async_platform_interface.dart';
 
 Map<String, dynamic> _readObject(String path) =>
     Map<String, dynamic>.from(jsonDecode(File(path).readAsStringSync()) as Map);
 
 void main() {
+  TestWidgetsFlutterBinding.ensureInitialized();
+
   test('Ohio generated Scratch-Off catalog is complete and valid', () {
     final root = _readObject('data/ohio_scratch_catalog.generated.json');
     final catalog = Map<String, dynamic>.from(
@@ -78,6 +86,41 @@ void main() {
     );
   });
 
+  test('Ohio activity is exact retailer-verified throughout 2026', () {
+    final root = _readObject('data/ohio_winner_activity.generated.json');
+    final records = (root['activities'] as List)
+        .map((record) => Map<String, dynamic>.from(record as Map))
+        .toList(growable: false);
+    final months = records.map((record) {
+      final date = DateTime.parse(record['drawDate'] as String);
+      return date.month;
+    }).toSet();
+    final latest = records
+        .map((record) => DateTime.parse(record['drawDate'] as String))
+        .reduce((left, right) => left.isAfter(right) ? left : right);
+
+    expect(records.length, greaterThanOrEqualTo(100));
+    expect(
+      months,
+      containsAll(<int>[for (var month = 1; month <= latest.month; month++) month]),
+    );
+    expect(
+      records.where((record) => record['game'] == 'scratch-off').length,
+      greaterThanOrEqualTo(50),
+    );
+    for (final record in records) {
+      expect(DateTime.parse(record['drawDate'] as String).year, 2026);
+      expect(record['state'], 'OH');
+      expect(record['retailerName'].toString().trim(), isNotEmpty);
+      expect(record['retailerAddress'].toString().trim(), isNotEmpty);
+      expect(record['sourceUrl'].toString(), startsWith('https://www.ohiolottery.com/'));
+      expect(record['coordinateSource'].toString().trim(), isNotEmpty);
+      expect(record['latitude'] as num, inInclusiveRange(38.3, 42.1));
+      expect(record['longitude'] as num, inInclusiveRange(-85.0, -80.4));
+      expect(record['prizeAmount'] as num, greaterThan(0));
+    }
+  });
+
   test('combined public state feeds include Ohio', () {
     final catalogStates =
         (_readObject('docs/state_scratch_catalogs.json')['catalogs'] as List)
@@ -90,5 +133,20 @@ void main() {
             .toSet();
     expect(catalogStates, contains('Ohio'));
     expect(directoryStates, contains('Ohio'));
+  });
+
+  test('Ohio heat activity is available from bundled data offline', () async {
+    SharedPreferencesAsyncPlatform.instance =
+        InMemorySharedPreferencesAsync.empty();
+    final offlineClient = MockClient((_) async => http.Response('offline', 503));
+
+    await LotteryActivityFeedService.loadConfiguredFeed(client: offlineClient);
+
+    final ohio = LotteryActivityRepository.activity
+        .where((activity) => activity.state == 'OH')
+        .toList(growable: false);
+    expect(ohio.length, greaterThanOrEqualTo(100));
+    expect(ohio.every((activity) => activity.drawDate.year == 2026), isTrue);
+    expect(ohio.map((activity) => activity.drawDate.month).toSet(), contains(9));
   });
 }

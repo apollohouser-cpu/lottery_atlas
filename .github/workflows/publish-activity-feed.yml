@@ -84,6 +84,12 @@ jobs:
           node tooling/import_ohio_retailer_directory.mjs
           data/ohio_retailer_directory.generated.json
           assets/maps/us_counties.geojson
+      - name: Import official Ohio physical winner activity
+        run: >-
+          node tooling/import_ohio_winners.mjs
+          data/ohio_winner_activity.generated.json
+          data/ohio_retailer_directory.generated.json
+          data/ohio_scratch_catalog.generated.json
       - name: Import the current official South Carolina Winners Report
         run: >-
           dart run tooling/import_south_carolina_winners_report.dart
@@ -110,13 +116,13 @@ jobs:
             data/ohio_retailer_directory.generated.json
       - name: Commit a changed feed
         run: |
-          if [[ -z "$(git status --porcelain -- docs/activity.json docs/kentucky_scratch_catalog.json docs/kentucky_retailer_directory.json docs/state_scratch_catalogs.json docs/state_retailer_directories.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json data/kentucky_historical_activity.generated.json data/kentucky_current_winner_activity.generated.json data/kentucky_scratch_catalog.generated.json data/kentucky_retailer_directory.generated.json data/virginia_scratch_catalog.generated.json data/virginia_retailer_directory.generated.json data/virginia_winner_activity.generated.json data/new_york_scratch_catalog.generated.json data/new_york_retailer_directory.generated.json data/new_york_winner_activity.generated.json data/ohio_scratch_catalog.generated.json data/ohio_retailer_directory.generated.json)" ]]; then
+          if [[ -z "$(git status --porcelain -- docs/activity.json docs/kentucky_scratch_catalog.json docs/kentucky_retailer_directory.json docs/state_scratch_catalogs.json docs/state_retailer_directories.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json data/kentucky_historical_activity.generated.json data/kentucky_current_winner_activity.generated.json data/kentucky_scratch_catalog.generated.json data/kentucky_retailer_directory.generated.json data/virginia_scratch_catalog.generated.json data/virginia_retailer_directory.generated.json data/virginia_winner_activity.generated.json data/new_york_scratch_catalog.generated.json data/new_york_retailer_directory.generated.json data/new_york_winner_activity.generated.json data/ohio_scratch_catalog.generated.json data/ohio_retailer_directory.generated.json data/ohio_winner_activity.generated.json)" ]]; then
             echo "No verified activity changes to publish."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/activity.json docs/kentucky_scratch_catalog.json docs/kentucky_retailer_directory.json docs/state_scratch_catalogs.json docs/state_retailer_directories.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json data/kentucky_historical_activity.generated.json data/kentucky_current_winner_activity.generated.json data/kentucky_scratch_catalog.generated.json data/kentucky_retailer_directory.generated.json data/virginia_scratch_catalog.generated.json data/virginia_retailer_directory.generated.json data/virginia_winner_activity.generated.json data/new_york_scratch_catalog.generated.json data/new_york_retailer_directory.generated.json data/new_york_winner_activity.generated.json data/ohio_scratch_catalog.generated.json data/ohio_retailer_directory.generated.json
+          git add docs/activity.json docs/kentucky_scratch_catalog.json docs/kentucky_retailer_directory.json docs/state_scratch_catalogs.json docs/state_retailer_directories.json data/south_carolina_current_winner_activity.generated.json data/north_carolina_current_winner_activity.generated.json data/kentucky_historical_activity.generated.json data/kentucky_current_winner_activity.generated.json data/kentucky_scratch_catalog.generated.json data/kentucky_retailer_directory.generated.json data/virginia_scratch_catalog.generated.json data/virginia_retailer_directory.generated.json data/virginia_winner_activity.generated.json data/new_york_scratch_catalog.generated.json data/new_york_retailer_directory.generated.json data/new_york_winner_activity.generated.json data/ohio_scratch_catalog.generated.json data/ohio_retailer_directory.generated.json data/ohio_winner_activity.generated.json
           git commit -m "Publish verified lottery activity feed"
           git push
 
@@ -187,6 +193,12 @@ jobs:
           node tooling/import_ohio_retailer_directory.mjs
           data/ohio_retailer_directory.generated.json
           assets/maps/us_counties.geojson
+      - name: Import official Ohio physical winner activity
+        run: >-
+          node tooling/import_ohio_winners.mjs
+          data/ohio_winner_activity.generated.json
+          data/ohio_retailer_directory.generated.json
+          data/ohio_scratch_catalog.generated.json
       - name: Import the current official South Carolina Winners Report
         run: >-
           dart run tooling/import_south_carolina_winners_report.dart
