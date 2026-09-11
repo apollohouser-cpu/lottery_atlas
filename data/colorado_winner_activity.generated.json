@@ -1,9 +1,9 @@
 {
   "source": "Colorado Lottery official Who's Winning, Winning Stores, and retailer API",
   "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/",
-  "updatedAt": "2026-09-10T11:26:42.317Z",
-  "sourceLastUpdated": "2026-09-08T12:00:00.000Z",
-  "coverage": "1088 exact physical retailer-level Colorado Lottery wins from January 1, 2026 through the current official report. Each dated winner row is joined to one exact official winning-store address and one exact official retailer coordinate; unmatched rows are excluded.",
+  "updatedAt": "2026-09-11T11:26:33.118Z",
+  "sourceLastUpdated": "2026-09-09T12:00:00.000Z",
+  "coverage": "1093 exact physical retailer-level Colorado Lottery wins from January 1, 2026 through the current official report. Each dated winner row is joined to one exact official winning-store address and one exact official retailer coordinate; unmatched rows are excluded.",
   "activities": [
     {
       "id": "co-2026-01-02-powerball-co-138572-ronald-e",
@@ -19588,6 +19588,96 @@
       "prizeAmount": 1000,
       "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=scratch&timeframe=sincestart",
       "sourceLabel": "Official Colorado Lottery Who's Winning report · $500,000 Crossword · Sept. 8, 2026"
+    },
+    {
+      "id": "co-2026-09-09-cash-5-co-129464-john-b",
+      "latitude": 39.8776997,
+      "longitude": -105.0968437,
+      "city": "Westminster",
+      "county": "Jefferson",
+      "state": "CO",
+      "game": "state-draw",
+      "gameName": "Cash 5",
+      "retailerName": "SHELL #146",
+      "retailerAddress": "9991 Wadsworth Pkwy, Westminster, CO 80021",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-09-09T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 20000,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=cash5&timeframe=sincestart",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · Cash 5 · Sept. 9, 2026"
+    },
+    {
+      "id": "co-2026-09-09-pick-3-co-32754-nancy-s",
+      "latitude": 37.2998913,
+      "longitude": -107.8701145,
+      "city": "Durango",
+      "county": "La Plata",
+      "state": "CO",
+      "game": "state-draw",
+      "gameName": "Pick 3",
+      "retailerName": "CITY MARKET #421",
+      "retailerAddress": "3130 Main Ave, Durango, CO 81301",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-09-09T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 1650,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=pick3&timeframe=180",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · Pick 3 · Sept. 9, 2026"
+    },
+    {
+      "id": "co-2026-09-09-mad-money-co-139455-samuel-a",
+      "latitude": 37.5797783,
+      "longitude": -106.1407267,
+      "city": "Monte Vista",
+      "county": "Rio Grande",
+      "state": "CO",
+      "game": "scratch-off",
+      "gameName": "MAD MONEY",
+      "retailerName": "ALTA CONVENIENCE #3401",
+      "retailerAddress": "1331 Grand Ave, Monte Vista, CO 81144",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-09-09T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 1000,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=scratch&timeframe=sincestart",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · MAD MONEY · Sept. 9, 2026"
+    },
+    {
+      "id": "co-2026-09-09-extreme-cash-co-139679-greg-w",
+      "latitude": 38.9937508,
+      "longitude": -105.0589946,
+      "city": "Woodland Park",
+      "county": "Teller",
+      "state": "CO",
+      "game": "scratch-off",
+      "gameName": "EXTREME CASH",
+      "retailerName": "VALERO",
+      "retailerAddress": "520 W Us Highway 24, Woodland Park, CO 80863",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-09-09T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 10000,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=scratch&timeframe=sincestart",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · EXTREME CASH · Sept. 9, 2026"
+    },
+    {
+      "id": "co-2026-09-09-mad-money-co-139501-clayton-c",
+      "latitude": 38.7271927,
+      "longitude": -108.0659568,
+      "city": "Delta",
+      "county": "Delta",
+      "state": "CO",
+      "game": "scratch-off",
+      "gameName": "MAD MONEY",
+      "retailerName": "ALTA CONVENIENCE #6127",
+      "retailerAddress": "1502 Howard St, Delta, CO 81416",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-09-09T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 1000,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=scratch&timeframe=sincestart",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · MAD MONEY · Sept. 9, 2026"
     }
   ],
   "excluded": [
@@ -21408,6 +21498,14 @@
       "reason": "No exact official store row matched"
     },
     {
+      "gameName": "Plus",
+      "winnerName": "ZACHARY W.",
+      "store": "WINNERS CORNER CO",
+      "city": "Peetz",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
       "gameName": "Cash 5",
       "winnerName": "SALLY R.",
       "store": "MAVERIK #5360",
@@ -21501,278 +21599,6 @@
       "store": "WINNERS CORNER CO",
       "city": "Commerce City",
       "date": "Aug. 24, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "SMOKER FRIENDLY #124",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "SMOKER FRIENDLY #124",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "SMOKER FRIENDLY #124",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "SMOKER FRIENDLY #124",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "7-ELEVEN #37198A",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #01",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "CITY MARKET #417",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "CITY MARKET #417",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "WALMART #3127 NHM",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "7-ELEVEN #38364A",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #16",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #16",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #16",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #16",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #16",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "MAVERIK #400",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "WINNERS CORNER CO",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "K&T GAS STATION",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "MURPHY EXPRESS #8947",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "MAVERIK #5240",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "MURPHY EXPRESS #8587",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #107",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #105",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "BOWMAR&#x27;S GAS EXPRESS",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #83",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "7-ELEVEN #27213B",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "7-ELEVEN #34570A",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "7-ELEVEN #23727A",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #01",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KWIK WAY 740",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "MAVERIK #494",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "SAFEWAY #3836",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "KING SOOPERS #132",
-      "city": "N/A",
-      "date": "March 14, 2026",
-      "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Pick 3",
-      "winnerName": ".",
-      "store": "PILOT TRAVEL CENTER #1110",
-      "city": "N/A",
-      "date": "March 14, 2026",
       "reason": "No exact official store row matched"
     },
     {
@@ -71336,6 +71162,102 @@
       "reason": "No exact official store row matched"
     },
     {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "CHAMBERS LLC",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "MAVERIK #701",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "KING SOOPERS #153",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "ALL IN ONE",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "7-ELEVEN #32810B",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "CHAMBERS LIQ MART AURORA",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "TULOTERO USA CO",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "7-ELEVEN #13203D",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "PLAYERS CAFE CO LLC",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "WINNERS CORNER CO",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "KING SOOPERS #53",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "KING SOOPERS #53",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
       "gameName": "$500,000 Crossword",
       "winnerName": "EMILIO C.",
       "store": "MIDWEST GAS & GROCERY",
@@ -75464,6 +75386,14 @@
       "reason": "No exact official store row matched"
     },
     {
+      "gameName": "MAD MONEY",
+      "winnerName": "LACEY C.",
+      "store": "IN N OUT CONOCO",
+      "city": "Florence",
+      "date": "Sept. 9, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
       "gameName": "Powerball Double Play",
       "winnerName": "AIMABLE S.",
       "store": "7-ELEVEN #38357A",
@@ -75501,6 +75431,14 @@
       "store": "SAFEWAY STORES INC #1599",
       "city": "Golden",
       "date": "Sept. 2, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Powerball Double Play",
+      "winnerName": "ROBIN C.",
+      "store": "MAVERIK #5204",
+      "city": "Colorado Springs",
+      "date": "Sept. 9, 2026",
       "reason": "No exact official store row matched"
     },
     {
@@ -76421,6 +76359,14 @@
       "store": "JR&#x27;S COUNTRY STORE #503",
       "city": "N/A",
       "date": "Sept. 5, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Cash 5 EZ Match",
+      "winnerName": ".",
+      "store": "SMOKER FRIENDLY #165",
+      "city": "N/A",
+      "date": "Sept. 9, 2026",
       "reason": "No exact official store row matched"
     }
   ]
