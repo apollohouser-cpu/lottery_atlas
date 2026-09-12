@@ -1,7 +1,7 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-11T11:25:07.978Z",
-  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3475 unique retailers; 3381 received exact Census or verified ArcGIS point-address coordinates. 94 unresolved addresses were excluded rather than estimated.",
+  "retrievedAt": "2026-09-12T11:22:37.804Z",
+  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3473 unique retailers; 3378 received exact Census or verified ArcGIS point-address coordinates. 95 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
       "state": "Kentucky",
@@ -1677,17 +1677,6 @@
           "county": "Kenton County",
           "latitude": 39.003799079214,
           "longitude": -84.494659142919,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "ky-0a4b705d3156e5ba",
-          "name": "SPEEDWAY #44092",
-          "address": "246 Southland Dr",
-          "city": "Lexington",
-          "postalCode": "40503",
-          "county": "Fayette County",
-          "latitude": 38.013844345597,
-          "longitude": -84.521535036479,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -5989,17 +5978,6 @@
           "county": "Meade County",
           "latitude": 37.965977372002,
           "longitude": -86.13611597373,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "ky-2a69e08d5800d8c3",
-          "name": "SKYLINE LIQUORS",
-          "address": "1190 Skyline Dr",
-          "city": "Hopkinsville",
-          "postalCode": "42240",
-          "county": "Christian County",
-          "latitude": 36.84234778642,
-          "longitude": -87.477583860599,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -22118,17 +22096,6 @@
           "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
-          "id": "ky-99d0dc358ceeb35b",
-          "name": "FIVE STAR #9000",
-          "address": "1830 Commerce Dr",
-          "city": "Scottsville",
-          "postalCode": "42164",
-          "county": "Allen County",
-          "latitude": 36.75627855433,
-          "longitude": -86.222520026482,
-          "coordinateSource": "ArcGIS World Geocoder verified point address"
-        },
-        {
           "id": "ky-99d87b1c3ebc4949",
           "name": "GOOD TO GO",
           "address": "5160 S Hwy 27",
@@ -37374,6 +37341,14 @@
           "city": "Hartford",
           "postalCode": "42347",
           "county": "Ohio County",
+          "reason": "No precise address-level coordinate passed verification"
+        },
+        {
+          "name": "FIVE STAR #9000",
+          "address": "1209 Commerce Dr",
+          "city": "Scottsville",
+          "postalCode": "42164",
+          "county": "Allen County",
           "reason": "No precise address-level coordinate passed verification"
         },
         {
