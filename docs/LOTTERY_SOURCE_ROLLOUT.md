@@ -34,6 +34,8 @@ complete enough to infer statewide retailer rankings. Direct scripted access
 to the release index returned HTTP 403 on September 13; retain the dated
 snapshot and pursue a supported machine-readable feed or permissioned access
 before claiming automatic weekly updates.
+The standard New Jersey data inquiry was sent September 13, 2026 to the
+Public Information address shown on its official weekly prize release.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
