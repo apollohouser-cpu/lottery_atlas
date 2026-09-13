@@ -24,3 +24,13 @@ Next step: obtain an official comprehensive winner export with game, prize,
 win date, selling retailer identifier or exact address, and source provenance.
 Confirm that the retailer API response is a complete statewide active roster.
 Then normalize and validate the records before enabling Oregon in the app.
+
+On September 13, 2026, a data inquiry was sent to
+`publicaffairs.lottery@lottery.oregon.gov`, the contact listed on the
+[Lottery's official legal page](https://www.oregonlottery.org/about/legal/).
+It asks for existing draw and Scratch-it winning-ticket/claim counts,
+retailer-linked winner records, count definitions, refresh cadence, and
+confirmation of retailer API completeness. Gmail confirmed “Message sent.”
+The [official records request form](https://www.oregonlottery.org/public-information/request-form/)
+is available if the Lottery routes the inquiry to that process. This request
+does not change the current source gate.
