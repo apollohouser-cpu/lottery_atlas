@@ -50,6 +50,8 @@ The Oregon data inquiry was sent September 13, 2026 to the Lottery's
 published Public Affairs address for routing to its data or records team.
 The Maryland Public Information Act request was sent September 13, 2026 to
 the agency's published PIA representative for winner counts and retailer data.
+The Georgia data inquiry was sent September 13, 2026 to the Lottery's
+published general email for routing to the records or data team.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of

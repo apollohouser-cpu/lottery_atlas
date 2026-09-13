@@ -17,3 +17,11 @@ official game links remain available in Lottery Atlas.
 The dated official Scratcher table can be disclosed at its actual source date;
 slower updates alone do not block inclusion. Complete retailer and physical
 winner coverage remain unverified. Tennessee is the next source candidate.
+
+On September 13, 2026, a data inquiry was sent to `glottery@galottery.org`,
+the address published in the [Lottery's current privacy policy](https://www.galottery.com/en-us/content/privacy-policy.html).
+It requests draw and Scratcher winning-ticket/claim counts, active retailer
+records, data definitions and refresh cadence, and asks for routing to the
+records or data team. Gmail confirmed “Message sent.” This was an inquiry to
+the published general contact, not confirmation of a formal open-records
+submission or complete state coverage.
