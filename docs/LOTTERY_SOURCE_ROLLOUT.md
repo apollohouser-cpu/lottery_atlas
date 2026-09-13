@@ -56,6 +56,8 @@ The Tennessee data inquiry was sent September 13, 2026 to its published
 Communications Director for routing to data or records staff.
 Arizona's official records portal requires a verified commercial-use
 attestation. Source screening is recorded separately; no request was sent.
+The Arkansas data inquiry was sent September 13, 2026 to the Lottery's
+published contact address for ticket counts and retailer data.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
