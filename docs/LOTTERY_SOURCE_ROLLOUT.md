@@ -65,6 +65,9 @@ published corporation email for routing to the appropriate records custodian.
 The Delaware data inquiry was sent September 13, 2026 to the Director's
 published email for routing to the data or records custodian. Its public
 Multi-Win Lotto counts are potentially useful only as a scoped subset.
+The Illinois FOIA request was sent September 13, 2026 to its published FOIA
+Officer email, with potential commercial use disclosed. Its published wins
+page covers only tickets over $25,000 and some retailer fields are pending.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
