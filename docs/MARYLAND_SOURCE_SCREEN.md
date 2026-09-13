@@ -19,3 +19,11 @@ A slower official publication cadence would be acceptable with a clear source
 date and state-specific notice. The remaining blockers are directory and winner
 coverage. Recheck for a lottery-published full retailer export and claims feed
 before promoting Maryland to testing. Georgia is the next source candidate.
+
+On September 13, 2026, a Public Information Act request was sent to
+`seth.elkin@maryland.gov`, the agency's [designated PIA contact](https://www.mdgaming.com/welcome/contact-us/)
+also listed in the [Maryland Attorney General's PIA directory](https://oag.maryland.gov/resources-info/Documents/pdfs/Appendix_J.pdf).
+It requests existing draw and Scratch-Off winning-ticket counts, selling
+retailer links where maintained, a current retailer directory, field
+definitions and update cadence. Gmail confirmed “Message sent”; no new
+coverage has been verified from this request yet.
