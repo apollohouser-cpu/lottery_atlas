@@ -71,6 +71,8 @@ page covers only tickets over $25,000 and some retailer fields are pending.
 The Indiana data and APRA-routing inquiry was sent September 13, 2026 to
 the public-records email on its portal; a formal portal filing is not yet
 confirmed because that form requires login.
+The Louisiana data inquiry was sent September 13, 2026 to the Communications
+Director in its official press kit for routing to data or records staff.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
