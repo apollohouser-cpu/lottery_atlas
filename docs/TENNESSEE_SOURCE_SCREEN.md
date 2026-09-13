@@ -20,3 +20,16 @@ official draw and instant-game links remain in place.
 Slower source publication would be acceptable if its actual date and cadence
 are displayed. Here the remaining blockers are verified statewide coordinates
 and comprehensive physical-winner coverage. New Jersey is the next candidate.
+
+The [official newsroom](https://tnlottery.com/about-us/newsroom/) also reports
+weekly statewide prize dollars, including $21,597,622 for July 26–August 1,
+2026. Dollars paid cannot be used as a count of winning tickets or as a
+retailer-level ranking.
+
+On September 13, 2026, a data inquiry was sent to
+`kym.gerlock@tnlottery.com`, the media contact named on the Lottery's
+newsroom and [Powerball's media directory](https://www.powerball.com/media-center).
+It asks for routing to data or records staff, existing draw/instant ticket
+counts, selling retailer links, directory coverage, count definitions, and
+refresh cadence. Gmail confirmed “Message sent.” This inquiry does not by
+itself resolve the state source gate.
