@@ -21,3 +21,11 @@ To resume, verify access to a complete official active-retailer feed and a
 comprehensive winner feed with source-specific dates and disclosed cadence.
 Match winner retailers only by official identifiers or exact published
 locations; do not infer addresses.
+
+The Department of Revenue's [August 2026 public-records notice](https://www.revenue.wi.gov/DORFAQ/openrec.pdf)
+names Lottery Division Administrator Cindy Polzin as the Lottery records
+custodian and accepts requests by email. A records request was sent to her
+official address on September 13, 2026, seeking existing draw-game ticket
+counts, Scratch-Off game/tier counts, retailer data where public, the meaning
+of the published Big Winners subset, and update cadence. No fee was authorized;
+the request asks for notice before any fee is incurred.
