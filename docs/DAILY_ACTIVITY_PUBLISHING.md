@@ -1,4 +1,4 @@
-# Daily verified activity publishing
+# Verified activity publishing
 
 Lottery Atlas can now host its public activity feed from this repository at:
 
@@ -25,12 +25,21 @@ Then open the **Actions** tab, choose **Validate and publish lottery activity**,
 and click **Run workflow** once. When the run is green, open the feed URL above
 in a browser. It should display JSON.
 
-## What runs daily
+## Refresh cadence and freshness
 
-At 11:17 UTC each day, GitHub Actions validates the files listed in
+At 00:17, 06:17, 12:17, and 18:17 UTC, GitHub Actions validates the files listed in
 `tooling/approved_activity_sources.json`, builds `docs/activity.json`, and
 publishes it to GitHub Pages. It also runs whenever an approved source file is
 pushed.
+
+Lottery Atlas checks refreshable sources every six hours where possible. The
+state lottery's own publishing cadence can be slower. A weekly or monthly
+official source may be included only with a clear state-specific cadence and
+source-date disclosure; it must not be described as live or current-day data.
+A successful workflow run or a newly published file does **not** prove the
+underlying source changed. Each state-specific importer should retain the
+source's actual update time. A one-time export remains a dated snapshot, not
+an automatic feed. GitHub's scheduled runs can also be delayed or fail.
 
 The publisher rejects a record unless it has a game, prize, winning date,
 named retailer or official winning location, address, exact coordinates, and a

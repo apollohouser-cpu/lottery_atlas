@@ -2,8 +2,8 @@ name: Validate and publish lottery activity
 
 on:
   schedule:
-    # Daily validation of approved official-source snapshots.
-    - cron: '17 11 * * *'
+    # Recheck refreshable official sources every six hours.
+    - cron: '17 */6 * * *'
   workflow_dispatch:
   push:
     paths:
@@ -266,6 +266,7 @@ jobs:
       - name: Build the deployment artifact
         run: |
           dart run tooling/publish_activity_feed.dart --sources tooling/approved_activity_sources.json --output docs/activity.json
+          node tooling/publish_state_totals.mjs data/state_winning_ticket_totals.json docs/state_winning_ticket_totals.json
           cp data/kentucky_scratch_catalog.generated.json docs/kentucky_scratch_catalog.json
           cp data/kentucky_retailer_directory.generated.json docs/kentucky_retailer_directory.json
           node tooling/build_state_data_feeds.mjs \

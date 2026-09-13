@@ -47,6 +47,8 @@ import '../../screens/state/lottery_overview_screen.dart';
 import '../../services/state_navigation_service.dart';
 import '../../services/state_lottery_data_registry.dart';
 import '../../services/state_lottery_source_registry.dart';
+import '../../services/state_source_cadence_registry.dart';
+import '../../services/state_winning_ticket_total_service.dart';
 import 'map_controls_overlay.dart';
 import 'map_detail_mode.dart';
 import 'map_filter_state.dart';
@@ -210,6 +212,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     _stateHitNotifier.addListener(_updateHoveredState);
     _countyHitNotifier.addListener(_updateHoveredCounty);
     LotteryActivityRepository.changes.addListener(_onActivityFeedChanged);
+    StateWinningTicketTotalService.totals.addListener(_onActivityFeedChanged);
     StateScratchCatalogRegistry.changes.addListener(_onScratchCatalogChanged);
     SouthCarolinaScratchMapFilterService.selection.addListener(
       _onSouthCarolinaScratchFilterChanged,
@@ -316,6 +319,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     _stateHitNotifier.dispose();
     _countyHitNotifier.dispose();
     LotteryActivityRepository.changes.removeListener(_onActivityFeedChanged);
+    StateWinningTicketTotalService.totals.removeListener(
+      _onActivityFeedChanged,
+    );
     StateScratchCatalogRegistry.changes.removeListener(
       _onScratchCatalogChanged,
     );
@@ -388,6 +394,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
     final refresh = Future.wait([
       _loadPublishedActivityFeed(),
+      StateWinningTicketTotalService.refresh(),
       _loadPublishedRetailerFeed(),
       _loadPublishedScratchCatalogFeed(),
       _loadBundledRetailerDirectories(),
@@ -4452,11 +4459,29 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                             : _mapDetailMode == MapDetailMode.standard
                             ? const Color(0x8A26343E)
                             : const Color(0x142196F3);
-                        // The state base stays neutral. Heat bubbles alone
-                        // visualize the currently selected game, prize range,
-                        // and timeline window, so no unrelated state appears
-                        // active (such as New Mexico previously did).
-                        final stateFillColor = defaultStateFillColor;
+                        // Official state counts may color the state only.
+                        // They never create county or retailer heat points.
+                        final stateTotal = StateWinningTicketTotalService
+                            .totals
+                            .value
+                            .where(
+                              (total) =>
+                                  total.state ==
+                                  StateNavigationService.getStateByName(
+                                    shape.name,
+                                  )?.abbreviation,
+                            )
+                            .firstOrNull;
+                        final stateFillColor = stateTotal == null
+                            ? defaultStateFillColor
+                            : Color.lerp(
+                                const Color(0x4426365A),
+                                const Color(0xBBF97316),
+                                (math.log(stateTotal.count + 1) / 15).clamp(
+                                  0.0,
+                                  1.0,
+                                ),
+                              )!;
 
                         return Polygon<String>(
                           points: shape.points,
@@ -6651,6 +6676,10 @@ class _StateDataCoverageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final profile = StateLotteryDataRegistry.forStateName(stateName);
+    final cadenceNotice = StateSourceCadenceRegistry.noticeFor(stateName);
+    final officialTotal = StateWinningTicketTotalService.totals.value
+        .where((total) => total.state == profile.abbreviation)
+        .firstOrNull;
     final hasPublishedActivity =
         profile.readiness == StateLotteryDataReadiness.mapDataReady;
     final hasNoStateLottery =
@@ -6728,6 +6757,39 @@ class _StateDataCoverageCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 _coverageSummary(profile),
+                if (officialTotal != null) ...[
+                  const SizedBox(height: 8),
+                  Text(
+                    '${officialTotal.count} verified winning tickets in the published ${officialTotal.coverage} count through ${officialTotal.periodEnd.month}/${officialTotal.periodEnd.day}/${officialTotal.periodEnd.year}. Source date: ${officialTotal.sourceDate.month}/${officialTotal.sourceDate.day}/${officialTotal.sourceDate.year}. Selling retailers are not verified by this total; county and retailer heat points require separate location evidence.',
+                    style: const TextStyle(
+                      color: Color(0xFFFDE68A),
+                      fontSize: 11,
+                      height: 1.35,
+                    ),
+                  ),
+                ],
+                if (officialTotal == null && !hasNoStateLottery) ...[
+                  const SizedBox(height: 8),
+                  const Text(
+                    'A verified statewide winning-ticket total has not been published in Lottery Atlas for this state. Available retailer heat points reflect only individually verified locations; missing stores are not estimated.',
+                    style: TextStyle(
+                      color: Color(0xFFFDE68A),
+                      fontSize: 11,
+                      height: 1.35,
+                    ),
+                  ),
+                ],
+                if (cadenceNotice != null) ...[
+                  const SizedBox(height: 8),
+                  Text(
+                    cadenceNotice,
+                    style: const TextStyle(
+                      color: Color(0xFFFDE68A),
+                      fontSize: 11,
+                      height: 1.35,
+                    ),
+                  ),
+                ],
                 if (hasPublishedActivity) ...[
                   const SizedBox(height: 8),
                   Container(

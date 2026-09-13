@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../services/state_lottery_source_registry.dart';
+import '../../services/state_source_cadence_registry.dart';
 
 /// Reusable official-resource screen for states added to the source registry.
 class StateLotterySourceScreen extends StatelessWidget {
@@ -24,56 +25,76 @@ class StateLotterySourceScreen extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) => Scaffold(
-    backgroundColor: const Color(0xFF071827),
-    appBar: AppBar(
+  Widget build(BuildContext context) {
+    final cadenceNotice = StateSourceCadenceRegistry.noticeFor(
+      source.stateName,
+    );
+    return Scaffold(
       backgroundColor: const Color(0xFF071827),
-      foregroundColor: Colors.white,
-      title: Text('${source.stateName} Lottery'),
-    ),
-    body: ListView(
-      padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
-      children: [
-        Container(
-          padding: const EdgeInsets.all(18),
-          decoration: BoxDecoration(
-            color: const Color(0xFF102638),
-            borderRadius: BorderRadius.circular(18),
-            border: Border.all(color: const Color(0xFF355066)),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text(
-                'OFFICIAL STATE SOURCE',
-                style: TextStyle(
-                  color: Color(0xFF60A5FA),
-                  fontSize: 12,
-                  letterSpacing: 1.1,
-                  fontWeight: FontWeight.w800,
+      appBar: AppBar(
+        backgroundColor: const Color(0xFF071827),
+        foregroundColor: Colors.white,
+        title: Text('${source.stateName} Lottery'),
+      ),
+      body: ListView(
+        padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
+        children: [
+          Container(
+            padding: const EdgeInsets.all(18),
+            decoration: BoxDecoration(
+              color: const Color(0xFF102638),
+              borderRadius: BorderRadius.circular(18),
+              border: Border.all(color: const Color(0xFF355066)),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'OFFICIAL STATE SOURCE',
+                  style: TextStyle(
+                    color: Color(0xFF60A5FA),
+                    fontSize: 12,
+                    letterSpacing: 1.1,
+                    fontWeight: FontWeight.w800,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 8),
-              Text(
-                'Lottery Atlas opens current information directly from ${source.providerName}. Always verify a ticket with the official lottery.',
-                style: const TextStyle(color: Colors.white70, height: 1.35),
-              ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 20),
-        ...source.resources.map(
-          (resource) => Padding(
-            padding: const EdgeInsets.only(bottom: 10),
-            child: _OfficialResourceButton(
-              resource: resource,
-              onTap: () => _open(context, resource.url),
+                const SizedBox(height: 8),
+                Text(
+                  'Lottery Atlas opens current information directly from ${source.providerName}. Always verify a ticket with the official lottery.',
+                  style: const TextStyle(color: Colors.white70, height: 1.35),
+                ),
+              ],
             ),
           ),
-        ),
-      ],
-    ),
-  );
+          if (cadenceNotice != null) ...[
+            const SizedBox(height: 12),
+            Container(
+              padding: const EdgeInsets.all(14),
+              decoration: BoxDecoration(
+                color: const Color(0xFF4A340D),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: const Color(0xFFFBBF24)),
+              ),
+              child: Text(
+                cadenceNotice,
+                style: const TextStyle(color: Colors.white, height: 1.35),
+              ),
+            ),
+          ],
+          const SizedBox(height: 20),
+          ...source.resources.map(
+            (resource) => Padding(
+              padding: const EdgeInsets.only(bottom: 10),
+              child: _OfficialResourceButton(
+                resource: resource,
+                onTap: () => _open(context, resource.url),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
 class _OfficialResourceButton extends StatelessWidget {

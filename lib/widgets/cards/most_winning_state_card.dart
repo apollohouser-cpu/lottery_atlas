@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+import '../../models/state_winning_ticket_total.dart';
 import '../../services/map_focus_service.dart';
 import '../../services/map_ranking_service.dart';
+import '../../services/state_navigation_service.dart';
+import '../../services/state_winning_ticket_total_service.dart';
 
 /// Timeline-aware top-five rankings for the exact activity visible on the map.
 /// The same card drills from states to counties, cities, retailers, and games.
@@ -79,6 +83,11 @@ class MostWinningStateCard extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
+              if (snapshot.level == MapRankingLevel.state)
+                ValueListenableBuilder<List<StateWinningTicketTotal>>(
+                  valueListenable: StateWinningTicketTotalService.totals,
+                  builder: (context, totals, _) => _officialTotals(totals),
+                ),
               if (rankings.isEmpty)
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 24),
@@ -108,6 +117,63 @@ class MostWinningStateCard extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+
+  Widget _officialTotals(List<StateWinningTicketTotal> totals) {
+    if (totals.isEmpty) {
+      return const Padding(
+        padding: EdgeInsets.only(bottom: 10),
+        child: Text(
+          'Statewide winning-ticket totals are awaiting verified official feeds. Retailer locations cannot be inferred from game counts.',
+          style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
+        ),
+      );
+    }
+    final sorted = [...totals]..sort((a, b) => b.count.compareTo(a.count));
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          'OFFICIAL STATE TOTALS · SOURCE PERIODS VARY',
+          style: TextStyle(
+            color: Color(0xFFFDE68A),
+            fontSize: 10,
+            fontWeight: FontWeight.w800,
+          ),
+        ),
+        const SizedBox(height: 4),
+        const Text(
+          'Counts include only the games and prize tiers each source reports. Rankings may not be directly comparable. Retailer locations are not verified by these totals.',
+          style: TextStyle(color: Colors.white60, fontSize: 10),
+        ),
+        const SizedBox(height: 7),
+        for (final total in sorted.take(5))
+          ListTile(
+            dense: true,
+            contentPadding: EdgeInsets.zero,
+            title: Text(
+              '${StateNavigationService.getStateByAbbreviation(total.state)?.name ?? total.state}  ·  ${_numberText(total.count)}',
+              style: const TextStyle(color: Colors.white, fontSize: 12),
+            ),
+            subtitle: Text(
+              '${total.coverage} · through ${_month(total.periodEnd.month)} ${total.periodEnd.day}, ${total.periodEnd.year} · source ${_month(total.sourceDate.month)} ${total.sourceDate.day}',
+              style: const TextStyle(color: Colors.white54, fontSize: 10),
+            ),
+            trailing: const Icon(
+              Icons.open_in_new,
+              size: 15,
+              color: Colors.white54,
+            ),
+            onTap: () => launchUrl(Uri.parse(total.sourceUrl)),
+          ),
+        const Divider(color: Colors.white24),
+        const Text(
+          'LOCATION-VERIFIED RANKINGS',
+          style: TextStyle(color: Color(0xFF93C5FD), fontSize: 10),
+        ),
+        const SizedBox(height: 6),
+      ],
     );
   }
 
