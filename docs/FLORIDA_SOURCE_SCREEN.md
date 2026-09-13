@@ -26,3 +26,11 @@ with a clear state-specific cadence and source date. Florida's blocker here is
 coverage and verified geolocation, not a stated publishing interval. Recheck
 the Lottery's official directory/export and comprehensive winner data before
 promoting Florida to the verified statewide map.
+
+On September 13, 2026, a public-records request was sent to
+`opengov@flalottery.com`, the custodian contact identified in a
+[Florida Lottery procurement document hosted by the state](https://www.myflorida.com/apps/vbs/adoc/F1640987843_ITN0321819andAttachmentsBankingServices.pdf).
+It requests existing draw and Scratch-Off winning-ticket/claim counts,
+retailer identifiers and locations, definitions, and update cadence, with
+notice before any fees. Gmail confirmed “Message sent.” Await a response;
+no new counts or retailer points are verified by this request itself.
