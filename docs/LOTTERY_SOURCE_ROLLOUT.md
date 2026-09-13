@@ -39,6 +39,8 @@ Public Information address shown on its official weekly prize release.
 The Wisconsin public-records request was sent September 13, 2026 to the
 Lottery records custodian identified in the Department of Revenue's current
 public-records notice.
+The Missouri data inquiry was sent September 13, 2026 to its published
+Communications Manager for routing to the data or records custodian.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of

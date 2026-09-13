@@ -22,3 +22,12 @@ To resume, obtain official statewide active-retailer and retailer-level
 winner feeds with source-specific timestamps and disclosed publishing
 cadences. Confirm full coverage and exact locations before enabling Missouri
 as a map state.
+
+On September 13, 2026, a data inquiry was sent to Wendy Baker, the
+Communications Manager listed on the Lottery's [press-contact page](https://www.molottery.com/news/presscontacts.jsp)
+and [fact book](https://www.molottery.com/news/files/documents/202520Book%20Final.pdf).
+It asks her to route the request to the data or records team for existing
+draw-game ticket counts, Scratcher game/tier counts, retailer feeds where
+public, count definitions, correction behavior, and publication cadence.
+This is not yet a formal Sunshine Law request to a designated custodian;
+ask for that contact if the inquiry is redirected. No fees were authorized.
