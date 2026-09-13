@@ -23,3 +23,10 @@ Weekly official data is allowed with a state-specific notice; the app now
 shows one for Nebraska. To complete Nebraska, verify a full official active
 retailer directory and comprehensive retailer-level winner feed, preserving
 each source's real publication date and cadence.
+
+The Lottery's [public-records page](https://nelottery.com/homeapp/about/publicrecords)
+identifies `lottery@nelottery.com` for written requests addressed to Director
+Brian Rockey. A request was sent September 13, 2026 for existing draw-game
+winning-ticket counts, Scratch game/tier original and claimed counts,
+retailer records where public, source definitions, and update cadence. The
+request provided a name and reply email and asked for notice before any fees.
