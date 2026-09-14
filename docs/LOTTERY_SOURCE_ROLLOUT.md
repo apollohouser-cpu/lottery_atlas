@@ -132,6 +132,10 @@ were screened September 14. They do not establish actual all-tier ticket
 counts or a retailer join; its official records route is being identified.
 An inquiry was sent September 14 to the Lottery headquarters email on its
 official contact page, requesting routing to the records/data custodian.
+New Mexico's $5,000-plus Winners page and estimated unclaimed top-prizes page
+were screened September 14. A process/data inquiry was sent to its published
+records custodian. Formal written filing requires requester mailing address
+and phone under the Lottery's published notice; no filing is confirmed.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
