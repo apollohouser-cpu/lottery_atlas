@@ -89,6 +89,10 @@ email published in its records policy. A formal request must be mailed with
 requestor address and phone unless the agency confirms another route.
 Printed Scratch prize counts and selected winner releases do not establish
 complete winning-ticket totals.
+The Montana data and records-routing inquiry was sent September 14, 2026 to
+the Lottery's published contact address. Formal public-information requests
+go through OPIR, whose New Request route required MT.gov sign-in. Published
+Scratch odds are not actual winning-ticket totals; see the source screen.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
