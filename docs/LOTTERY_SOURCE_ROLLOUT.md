@@ -110,6 +110,9 @@ The Montana data and records-routing inquiry was sent September 14, 2026 to
 the Lottery's published contact address. Formal public-information requests
 go through OPIR, whose New Request route required MT.gov sign-in. Published
 Scratch odds are not actual winning-ticket totals; see the source screen.
+The Lottery later referred OPIR access questions to the state's
+`publicrecords@mt.gov`; a new-requester submission-route inquiry was sent
+there September 14. Formal filing remains unconfirmed.
 The North Carolina routing/data inquiry was sent September 14, 2026 to the
 Lottery's published Player Service email. Its daily Scratch prize-remaining
 table and weekly $5,000-plus Winners pages are scoped, useful sources, but

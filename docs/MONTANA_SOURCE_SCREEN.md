@@ -21,3 +21,10 @@ selling-retailer references, and the supported submission route. It excludes
 winner-identifying private information and discloses a public application.
 Gmail confirmed “Message sent.” This inquiry is **not** a formal OPIR filing.
 No substantive response or complete ticket-count dataset has been received.
+
+Later September 14: The Lottery replied that it does not manage OPIR and
+directed portal access issues to `publicrecords@mt.gov`, suggesting an Okta
+password reset. No existing Okta account is known. An inquiry to that official
+records address asked how a new requester can create an account or use another
+accepted filing route, and whether email is accepted. Gmail confirmed it was
+sent. This is still not a filed formal request; no ticket-count data arrived.
