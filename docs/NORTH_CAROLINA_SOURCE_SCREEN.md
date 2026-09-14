@@ -21,3 +21,9 @@ Scratch counts, a retailer directory and public winner joins, source dates,
 corrections, cadence, fees, and the proper filing route. Gmail confirmed
 “Message sent.” No substantive response or complete dataset has arrived;
 North Carolina is not ready for full-state testing.
+
+Later September 14: Player Service directed the inquiry to
+`https://records.lotterync.net` for a public records request. The form has
+required name, email, description, and request-type fields; its address and
+phone fields are shown without a required marker. A formal request was not
+successfully submitted during this screen, so no case number exists yet.

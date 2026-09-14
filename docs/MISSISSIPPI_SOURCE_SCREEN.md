@@ -35,3 +35,8 @@ selected-winner, retailer-finder, and printed-odds pages and asked for exact
 URLs of actual all-tier winning tickets or claims, retailer joins, cadence,
 and confirmation of the formal submission route. Gmail confirmed it was sent.
 The general-site reply alone does not establish complete verified coverage.
+
+Later September 14: The Public Records team confirmed that a physical mailed
+request is required under its policy. It will review the request once the
+tangible copy arrives. The formal filing still requires the requestor's
+mailing address and telephone; the email correspondence does not replace it.

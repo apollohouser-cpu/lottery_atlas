@@ -76,6 +76,8 @@ Multi-Win Lotto counts are potentially useful only as a scoped subset.
 The Illinois FOIA request was sent September 13, 2026 to its published FOIA
 Officer email, with potential commercial use disclosed. Its published wins
 page covers only tickets over $25,000 and some retailer fields are pending.
+Illinois requested a narrower period September 14; an August 1–31, 2026
+clarification was sent, with no report or fee estimate received yet.
 The Indiana data and APRA-routing inquiry was sent September 13, 2026 to
 the public-records email on its portal; a formal portal filing is not yet
 confirmed because that form requires login.
@@ -102,6 +104,8 @@ is publicly available on its general website, without identifying the
 all-tier actual ticket counts or retailer joins. A follow-up requested exact
 report URLs and clarification of the formal email route; no complete dataset
 has been established by that reply.
+Mississippi then confirmed a physical mailed formal request is required;
+requestor mailing address and phone remain necessary for that filing.
 The Montana data and records-routing inquiry was sent September 14, 2026 to
 the Lottery's published contact address. Formal public-information requests
 go through OPIR, whose New Request route required MT.gov sign-in. Published
@@ -110,6 +114,8 @@ The North Carolina routing/data inquiry was sent September 14, 2026 to the
 Lottery's published Player Service email. Its daily Scratch prize-remaining
 table and weekly $5,000-plus Winners pages are scoped, useful sources, but
 do not establish all-tier draw counts or a complete retailer heat map.
+Player Service directed North Carolina requests to its official records
+portal; no formal submission or case number is confirmed yet.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of

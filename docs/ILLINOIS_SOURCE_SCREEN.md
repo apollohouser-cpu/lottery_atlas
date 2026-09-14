@@ -1,5 +1,12 @@
 # Illinois source screen — September 13, 2026
 
+Update September 14: The FOIA office said the original request lacked a time
+range and was too broad. A clarification specified August 1–31, 2026 for
+existing draw and Scratch reports, available selling-retailer fields and the
+current directory, with a request for definitions, normal cadence and a fee
+estimate before any paid work. Gmail confirmed “Message sent.” No responsive
+records have arrived yet.
+
 Illinois is not ready for a complete state winning-ticket total or a
 statewide retailer ranking. The official [Jackpot & Daily Game Wins](https://www.illinoislottery.com/winning/more-wins)
 page lists draw-game tickets over $25,000, not all prizes or all games.
