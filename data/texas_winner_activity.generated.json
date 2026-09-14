@@ -1,28 +1,10 @@
 {
   "source": "Texas Lottery official Scratch top-prize selling-retailer reports",
   "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/all.html",
-  "updatedAt": "2026-09-14T12:46:54.301Z",
+  "updatedAt": "2026-09-14T18:38:32.877Z",
   "sourceLastUpdated": "2026-09-13T12:00:00.000Z",
-  "coverage": "5894 exact physical retailer-level 2026 Texas Scratch top-prize claims. Every record joins one official dated selling-store address to the official statewide retailer roster; unmatched or ungeocoded rows are excluded.",
+  "coverage": "5886 exact physical retailer-level 2026 Texas Scratch top-prize claims. Every record joins one official dated selling-store address to the official statewide retailer roster; unmatched or ungeocoded rows are excluded.",
   "activities": [
-    {
-      "id": "tx-2026-01-02-2648-tx-193975-503125-7",
-      "latitude": 30.180948008867,
-      "longitude": -97.687317029427,
-      "city": "Austin",
-      "county": "Travis",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Super Loteria",
-      "retailerName": "WEIRDO",
-      "retailerAddress": "4829 Us Highway 183 S, Austin, TX 78744",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-01-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699605.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2648 · 01/02/26"
-    },
     {
       "id": "tx-2026-01-02-2622-tx-495501-28097-103",
       "latitude": 28.805446684736,
@@ -40,6 +22,24 @@
       "prizeAmount": 30000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699673.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2622 · 01/02/26"
+    },
+    {
+      "id": "tx-2026-01-02-2648-tx-193975-503125-7",
+      "latitude": 30.180948008867,
+      "longitude": -97.687317029427,
+      "city": "Austin",
+      "county": "Travis",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Super Loteria",
+      "retailerName": "WEIRDO",
+      "retailerAddress": "4829 Us Highway 183 S, Austin, TX 78744",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-01-02T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699605.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2648 · 01/02/26"
     },
     {
       "id": "tx-2026-01-02-2700-tx-1435146-104971-1",
@@ -114,24 +114,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2667 · 01/05/26"
     },
     {
-      "id": "tx-2026-01-07-2647-tx-156252-69197-33",
-      "latitude": 27.503479094256,
-      "longitude": -99.50672658136,
-      "city": "Laredo",
-      "county": "Webb",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Cash Line Bingo",
-      "retailerName": "GOOD NEWS VARIETY STORE INC",
-      "retailerAddress": "1113 Iturbide Street, Laredo, TX 78040",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-01-07T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 30000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699606.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2647 · 01/07/26"
-    },
-    {
       "id": "tx-2026-01-07-2628-tx-178628-198725-70",
       "latitude": 26.362915507687,
       "longitude": -98.326668403264,
@@ -148,6 +130,24 @@
       "prizeAmount": 50000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699667.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2628 · 01/07/26"
+    },
+    {
+      "id": "tx-2026-01-07-2647-tx-156252-69197-33",
+      "latitude": 27.503479094256,
+      "longitude": -99.50672658136,
+      "city": "Laredo",
+      "county": "Webb",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Cash Line Bingo",
+      "retailerName": "GOOD NEWS VARIETY STORE INC",
+      "retailerAddress": "1113 Iturbide Street, Laredo, TX 78040",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-01-07T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 30000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699606.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2647 · 01/07/26"
     },
     {
       "id": "tx-2026-01-08-2653-tx-487515-361588-3",
@@ -294,6 +294,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 01/24/26"
     },
     {
+      "id": "tx-2026-01-28-2711-tx-605341-7832-99",
+      "latitude": 29.491299222918,
+      "longitude": -98.611907669628,
+      "city": "Leon Valley",
+      "county": "Bexar",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "30X The Cash Word Search",
+      "retailerName": "QUIKTRIP #4016",
+      "retailerAddress": "6461 Bandera Rd, Leon Valley, TX 78238",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-01-28T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 60000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698744.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2711 · 01/28/26"
+    },
+    {
       "id": "tx-2026-01-28-2710-tx-180901-16067-114",
       "latitude": 30.097374399238,
       "longitude": -96.068208429994,
@@ -328,24 +346,6 @@
       "prizeAmount": 500,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698745.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 01/28/26"
-    },
-    {
-      "id": "tx-2026-01-28-2711-tx-605341-7832-99",
-      "latitude": 29.491299222918,
-      "longitude": -98.611907669628,
-      "city": "Leon Valley",
-      "county": "Bexar",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "30X The Cash Word Search",
-      "retailerName": "QUIKTRIP #4016",
-      "retailerAddress": "6461 Bandera Rd, Leon Valley, TX 78238",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-01-28T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 60000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698744.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2711 · 01/28/26"
     },
     {
       "id": "tx-2026-01-29-2714-tx-606421-73221-19",
@@ -1140,24 +1140,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 03/03/26"
     },
     {
-      "id": "tx-2026-03-04-2648-tx-187819-613606-42",
-      "latitude": 29.445735574442,
-      "longitude": -95.998751118779,
-      "city": "Kendleton",
-      "county": "Fort Bend",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Super Loteria",
-      "retailerName": "KENDLETON GROCERY",
-      "retailerAddress": "13541 Us-59, Kendleton, TX 77451",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-03-04T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699605.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2648 · 03/04/26"
-    },
-    {
       "id": "tx-2026-03-04-2653-tx-118962-538266-16",
       "latitude": 31.579780451294,
       "longitude": -97.172441427216,
@@ -1174,6 +1156,24 @@
       "prizeAmount": 1000000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699579.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2653 · 03/04/26"
+    },
+    {
+      "id": "tx-2026-03-04-2648-tx-187819-613606-42",
+      "latitude": 29.445735574442,
+      "longitude": -95.998751118779,
+      "city": "Kendleton",
+      "county": "Fort Bend",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Super Loteria",
+      "retailerName": "KENDLETON GROCERY",
+      "retailerAddress": "13541 Us-59, Kendleton, TX 77451",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-03-04T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699605.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2648 · 03/04/26"
     },
     {
       "id": "tx-2026-03-04-2710-tx-191954-8248-52",
@@ -2166,22 +2166,22 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2632 · 04/13/26"
     },
     {
-      "id": "tx-2026-04-13-2712-tx-131555-122593-24",
-      "latitude": 29.737829980318,
-      "longitude": -95.379164021173,
-      "city": "Houston",
-      "county": "Harris",
+      "id": "tx-2026-04-13-2710-tx-498554-36314-12",
+      "latitude": 29.929450064816,
+      "longitude": -93.923913989493,
+      "city": "Groves",
+      "county": "Jefferson",
       "state": "TX",
       "game": "scratch-off",
-      "gameName": "50X The Cash",
-      "retailerName": "WINNER'S CORNER #4",
-      "retailerAddress": "1025 Alabama, Houston, TX 77004",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "gameName": "9s In A Line",
+      "retailerName": "HEB PANTRY FOODS #053",
+      "retailerAddress": "5000 32nd St, Groves, TX 77619",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
       "drawDate": "2026-04-13T12:00:00.000Z",
       "winningTickets": 1,
-      "prizeAmount": 200000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698743.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2712 · 04/13/26"
+      "prizeAmount": 500,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698745.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 04/13/26"
     },
     {
       "id": "tx-2026-04-13-2713-tx-153809-126688-35",
@@ -2202,22 +2202,22 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2713 · 04/13/26"
     },
     {
-      "id": "tx-2026-04-13-2710-tx-498554-36314-12",
-      "latitude": 29.929450064816,
-      "longitude": -93.923913989493,
-      "city": "Groves",
-      "county": "Jefferson",
+      "id": "tx-2026-04-13-2712-tx-131555-122593-24",
+      "latitude": 29.737829980318,
+      "longitude": -95.379164021173,
+      "city": "Houston",
+      "county": "Harris",
       "state": "TX",
       "game": "scratch-off",
-      "gameName": "9s In A Line",
-      "retailerName": "HEB PANTRY FOODS #053",
-      "retailerAddress": "5000 32nd St, Groves, TX 77619",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "gameName": "50X The Cash",
+      "retailerName": "WINNER'S CORNER #4",
+      "retailerAddress": "1025 Alabama, Houston, TX 77004",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
       "drawDate": "2026-04-13T12:00:00.000Z",
       "winningTickets": 1,
-      "prizeAmount": 500,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698745.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 04/13/26"
+      "prizeAmount": 200000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698743.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2712 · 04/13/26"
     },
     {
       "id": "tx-2026-04-14-2710-tx-195563-20064-125",
@@ -2436,24 +2436,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2660 · 04/22/26"
     },
     {
-      "id": "tx-2026-04-23-2627-tx-188714-67310-10",
-      "latitude": 30.150181772257,
-      "longitude": -96.410289069829,
-      "city": "Brenham",
-      "county": "Washington",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "$5 Million Titanium Black",
-      "retailerName": "BUCCANEER",
-      "retailerAddress": "1309 Prairie Lea, Brenham, TX 77833",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-04-23T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699668.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2627 · 04/23/26"
-    },
-    {
       "id": "tx-2026-04-23-2710-tx-1433643-77070-85",
       "latitude": 30.118598216573,
       "longitude": -95.398082879458,
@@ -2670,24 +2652,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 05/03/26"
     },
     {
-      "id": "tx-2026-05-04-2636-tx-178135-87620-40",
-      "latitude": 29.885373981616,
-      "longitude": -95.620209032493,
-      "city": "Houston",
-      "county": "Harris",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "$1,000,000 Riches",
-      "retailerName": "VICTORY LIQUOR & SMOKE",
-      "retailerAddress": "7350 Jackrabbit Rd, Houston, TX 77095",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-05-04T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 1000000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699638.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2636 · 05/04/26"
-    },
-    {
       "id": "tx-2026-05-04-2587-tx-175345-177191-1",
       "latitude": 29.494842637561,
       "longitude": -95.047371013539,
@@ -2704,6 +2668,24 @@
       "prizeAmount": 7500000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252700443.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2587 · 05/04/26"
+    },
+    {
+      "id": "tx-2026-05-04-2636-tx-178135-87620-40",
+      "latitude": 29.885373981616,
+      "longitude": -95.620209032493,
+      "city": "Houston",
+      "county": "Harris",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "$1,000,000 Riches",
+      "retailerName": "VICTORY LIQUOR & SMOKE",
+      "retailerAddress": "7350 Jackrabbit Rd, Houston, TX 77095",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-05-04T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 1000000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699638.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2636 · 05/04/26"
     },
     {
       "id": "tx-2026-05-04-2710-tx-191269-104911-121",
@@ -4506,24 +4488,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 05/20/26"
     },
     {
-      "id": "tx-2026-05-21-2710-tx-176895-87604-108",
-      "latitude": 32.27808271967,
-      "longitude": -95.279417309611,
-      "city": "Tyler",
-      "county": "Smith",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "9s In A Line",
-      "retailerName": "MULTI MART",
-      "retailerAddress": "6393 Paluxy Dr, Tyler, TX 75703",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-05-21T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 500,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698745.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 05/21/26"
-    },
-    {
       "id": "tx-2026-05-21-2689-tx-1436024-21482-3",
       "latitude": 32.390468983344,
       "longitude": -95.292347502164,
@@ -4540,6 +4504,24 @@
       "prizeAmount": 1000000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699480.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2689 · 05/21/26"
+    },
+    {
+      "id": "tx-2026-05-21-2710-tx-176895-87604-108",
+      "latitude": 32.27808271967,
+      "longitude": -95.279417309611,
+      "city": "Tyler",
+      "county": "Smith",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "9s In A Line",
+      "retailerName": "MULTI MART",
+      "retailerAddress": "6393 Paluxy Dr, Tyler, TX 75703",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-05-21T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 500,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698745.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 05/21/26"
     },
     {
       "id": "tx-2026-05-21-2715-tx-190420-12782-95",
@@ -8428,24 +8410,6 @@
       "prizeAmount": 500,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698745.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 05/25/26"
-    },
-    {
-      "id": "tx-2026-05-25-2715-tx-188690-10293-46",
-      "latitude": 32.01077170298,
-      "longitude": -102.068944006259,
-      "city": "Midland",
-      "county": "Midland",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Find $200",
-      "retailerName": "ONE STOP 12",
-      "retailerAddress": "1203 N Lamesa, Midland, TX 79701",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-05-25T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 200,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 05/25/26"
     },
     {
       "id": "tx-2026-05-25-2715-tx-609012-9674-92",
@@ -15270,24 +15234,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/01/26"
     },
     {
-      "id": "tx-2026-06-01-2715-tx-179081-3195-65",
-      "latitude": 29.356046653984,
-      "longitude": -98.448229049541,
-      "city": "San Antonio",
-      "county": "Bexar",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Find $200",
-      "retailerName": "CITY BASE MARKET",
-      "retailerAddress": "2703 Lasses, San Antonio, TX 78223",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-06-01T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 200,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/01/26"
-    },
-    {
       "id": "tx-2026-06-01-2715-tx-194170-29491-1",
       "latitude": 29.827563402027,
       "longitude": -95.366867461978,
@@ -18222,6 +18168,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/04/26"
     },
     {
+      "id": "tx-2026-06-05-2711-tx-147134-54663-117",
+      "latitude": 32.759297987603,
+      "longitude": -97.183031247169,
+      "city": "Fort Worth",
+      "county": "Tarrant",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "30X The Cash Word Search",
+      "retailerName": "COOKS SHELL MART",
+      "retailerAddress": "1401 Cooks Ln, Fort Worth, TX 76120",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-06-05T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 60000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698744.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2711 · 06/05/26"
+    },
+    {
       "id": "tx-2026-06-05-2710-tx-141276-131131-67",
       "latitude": 31.834310177636,
       "longitude": -106.444869277275,
@@ -19552,24 +19516,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/05/26"
-    },
-    {
-      "id": "tx-2026-06-05-2711-tx-147134-54663-117",
-      "latitude": 32.759297987603,
-      "longitude": -97.183031247169,
-      "city": "Fort Worth",
-      "county": "Tarrant",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "30X The Cash Word Search",
-      "retailerName": "COOKS SHELL MART",
-      "retailerAddress": "1401 Cooks Ln, Fort Worth, TX 76120",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-06-05T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 60000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698744.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2711 · 06/05/26"
     },
     {
       "id": "tx-2026-06-06-2710-tx-194109-117421-70",
@@ -22182,6 +22128,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 06/09/26"
     },
     {
+      "id": "tx-2026-06-09-2727-tx-1434269-21646-25",
+      "latitude": 32.520899965201,
+      "longitude": -97.34782745306,
+      "city": "Burleson",
+      "county": "Johnson",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "All About the 8s",
+      "retailerName": "TIGER FARMS MARKET",
+      "retailerAddress": "1411 Sw Wilshire Blvd, Burleson, TX 76028",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-06-09T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698707.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2727 · 06/09/26"
+    },
+    {
       "id": "tx-2026-06-09-2715-tx-601498-10632-34",
       "latitude": 35.172079045592,
       "longitude": -101.862033415747,
@@ -23046,24 +23010,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/09/26"
     },
     {
-      "id": "tx-2026-06-09-2727-tx-1434269-21646-25",
-      "latitude": 32.520899965201,
-      "longitude": -97.34782745306,
-      "city": "Burleson",
-      "county": "Johnson",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "All About the 8s",
-      "retailerName": "TIGER FARMS MARKET",
-      "retailerAddress": "1411 Sw Wilshire Blvd, Burleson, TX 76028",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-06-09T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698707.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2727 · 06/09/26"
-    },
-    {
       "id": "tx-2026-06-10-2710-tx-607874-118097-45",
       "latitude": 30.028683907909,
       "longitude": -99.119656542055,
@@ -23098,6 +23044,42 @@
       "prizeAmount": 500,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698745.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 06/10/26"
+    },
+    {
+      "id": "tx-2026-06-10-2727-tx-1434140-49497-42",
+      "latitude": 30.518236924204,
+      "longitude": -97.666539967836,
+      "city": "Round Rock",
+      "county": "Williamson",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "All About the 8s",
+      "retailerName": "LUCKY CORNER",
+      "retailerAddress": "1250 E Palm Valley Blvd, Round Rock, TX 78664",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-06-10T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698707.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2727 · 06/10/26"
+    },
+    {
+      "id": "tx-2026-06-10-2720-tx-194453-77753-49",
+      "latitude": 29.787679624157,
+      "longitude": -94.96414039986,
+      "city": "Baytown",
+      "county": "Harris",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Chameleon Cash",
+      "retailerName": "TIME MAXX #13",
+      "retailerAddress": "5745 North Main St, Baytown, TX 77521",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-06-10T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698714.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2720 · 06/10/26"
     },
     {
       "id": "tx-2026-06-10-2715-tx-599360-10602-105",
@@ -23728,42 +23710,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/10/26"
-    },
-    {
-      "id": "tx-2026-06-10-2727-tx-1434140-49497-42",
-      "latitude": 30.518236924204,
-      "longitude": -97.666539967836,
-      "city": "Round Rock",
-      "county": "Williamson",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "All About the 8s",
-      "retailerName": "LUCKY CORNER",
-      "retailerAddress": "1250 E Palm Valley Blvd, Round Rock, TX 78664",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-06-10T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698707.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2727 · 06/10/26"
-    },
-    {
-      "id": "tx-2026-06-10-2720-tx-194453-77753-49",
-      "latitude": 29.787679624157,
-      "longitude": -94.96414039986,
-      "city": "Baytown",
-      "county": "Harris",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Chameleon Cash",
-      "retailerName": "TIME MAXX #13",
-      "retailerAddress": "5745 North Main St, Baytown, TX 77521",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-06-10T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698714.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2720 · 06/10/26"
     },
     {
       "id": "tx-2026-06-11-2715-tx-311919-10184-77",
@@ -24628,6 +24574,24 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/11/26"
+    },
+    {
+      "id": "tx-2026-06-12-2725-tx-599360-110035-21",
+      "latitude": 32.814550284332,
+      "longitude": -97.438583332454,
+      "city": "Lake Worth",
+      "county": "Tarrant",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Power 20s",
+      "retailerName": "MURPHY EXPRESS 8779",
+      "retailerAddress": "6781 Lake Worth Blvd, Lake Worth, TX 76135",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-06-12T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 1000000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698709.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2725 · 06/12/26"
     },
     {
       "id": "tx-2026-06-12-2715-tx-600347-10428-59",
@@ -25636,24 +25600,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/12/26"
-    },
-    {
-      "id": "tx-2026-06-12-2725-tx-599360-110035-21",
-      "latitude": 32.814550284332,
-      "longitude": -97.438583332454,
-      "city": "Lake Worth",
-      "county": "Tarrant",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Power 20s",
-      "retailerName": "MURPHY EXPRESS 8779",
-      "retailerAddress": "6781 Lake Worth Blvd, Lake Worth, TX 76135",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-06-12T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 1000000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698709.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2725 · 06/12/26"
     },
     {
       "id": "tx-2026-06-13-2715-tx-311928-10151-48",
@@ -29400,6 +29346,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 06/18/26"
     },
     {
+      "id": "tx-2026-06-18-2728-tx-186884-87770-55",
+      "latitude": 30.099280427027,
+      "longitude": -93.746002881205,
+      "city": "Orange",
+      "county": "Orange",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Yellowstone",
+      "retailerName": "CYPRESS PLAZA #3",
+      "retailerAddress": "1610 W Park Ave, Orange, TX 77630",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-06-18T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698706.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2728 · 06/18/26"
+    },
+    {
       "id": "tx-2026-06-18-2715-tx-311975-10084-49",
       "latitude": 31.796840219016,
       "longitude": -106.453964239487,
@@ -30028,24 +29992,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/18/26"
-    },
-    {
-      "id": "tx-2026-06-18-2728-tx-186884-87770-55",
-      "latitude": 30.099280427027,
-      "longitude": -93.746002881205,
-      "city": "Orange",
-      "county": "Orange",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Yellowstone",
-      "retailerName": "CYPRESS PLAZA #3",
-      "retailerAddress": "1610 W Park Ave, Orange, TX 77630",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-06-18T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698706.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2728 · 06/18/26"
     },
     {
       "id": "tx-2026-06-18-2739-tx-142244-7743-18",
@@ -34278,6 +34224,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 06/26/26"
     },
     {
+      "id": "tx-2026-06-26-2736-tx-151711-62965-31",
+      "latitude": 31.207139511223,
+      "longitude": -97.302276369791,
+      "city": "Troy",
+      "county": "Bell",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Monaco Cash",
+      "retailerName": "THE PIT STOP",
+      "retailerAddress": "5 N Central Avenue Ste B, Troy, TX 76579",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-06-26T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 200000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698677.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2736 · 06/26/26"
+    },
+    {
       "id": "tx-2026-06-26-2715-tx-175958-12662-95",
       "latitude": 32.465824010999,
       "longitude": -97.267974939788,
@@ -34870,24 +34834,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 06/26/26"
-    },
-    {
-      "id": "tx-2026-06-26-2736-tx-151711-62965-31",
-      "latitude": 31.207139511223,
-      "longitude": -97.302276369791,
-      "city": "Troy",
-      "county": "Bell",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Monaco Cash",
-      "retailerName": "THE PIT STOP",
-      "retailerAddress": "5 N Central Avenue Ste B, Troy, TX 76579",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-06-26T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 200000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698677.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2736 · 06/26/26"
     },
     {
       "id": "tx-2026-06-27-2715-tx-311854-10231-110",
@@ -36978,6 +36924,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 07/01/26"
     },
     {
+      "id": "tx-2026-07-01-2728-tx-184755-14767-44",
+      "latitude": 27.60476234828,
+      "longitude": -99.518136881488,
+      "city": "Laredo",
+      "county": "Webb",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Yellowstone",
+      "retailerName": "YUMM #5",
+      "retailerAddress": "11801 Mines Rd, Laredo, TX 78045",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-07-01T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698706.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2728 · 07/01/26"
+    },
+    {
       "id": "tx-2026-07-01-2715-tx-176209-14000-48",
       "latitude": 32.471655762043,
       "longitude": -95.388843862055,
@@ -37336,24 +37300,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 07/01/26"
-    },
-    {
-      "id": "tx-2026-07-01-2728-tx-184755-14767-44",
-      "latitude": 27.60476234828,
-      "longitude": -99.518136881488,
-      "city": "Laredo",
-      "county": "Webb",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Yellowstone",
-      "retailerName": "YUMM #5",
-      "retailerAddress": "11801 Mines Rd, Laredo, TX 78045",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-07-01T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698706.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2728 · 07/01/26"
     },
     {
       "id": "tx-2026-07-02-2710-tx-194875-152670-54",
@@ -37732,6 +37678,24 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 07/02/26"
+    },
+    {
+      "id": "tx-2026-07-03-2724-tx-202456-100791-39",
+      "latitude": 33.057576736063,
+      "longitude": -96.696595635264,
+      "city": "Plano",
+      "county": "Collin",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Slots of Luck",
+      "retailerName": "RACETRAC #526",
+      "retailerAddress": "309 W Spring Creek Pkwy, Plano, TX 75023",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-07-03T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 250000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698710.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2724 · 07/03/26"
     },
     {
       "id": "tx-2026-07-03-2715-tx-506901-11030-117",
@@ -38434,24 +38398,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 07/03/26"
-    },
-    {
-      "id": "tx-2026-07-03-2724-tx-202456-100791-39",
-      "latitude": 33.057576736063,
-      "longitude": -96.696595635264,
-      "city": "Plano",
-      "county": "Collin",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Slots of Luck",
-      "retailerName": "RACETRAC #526",
-      "retailerAddress": "309 W Spring Creek Pkwy, Plano, TX 75023",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-07-03T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 250000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698710.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2724 · 07/03/26"
     },
     {
       "id": "tx-2026-07-04-2710-tx-135451-134576-73",
@@ -44736,6 +44682,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2744 · 07/16/26"
     },
     {
+      "id": "tx-2026-07-17-2724-tx-229354-20710-7",
+      "latitude": 35.184995753311,
+      "longitude": -101.794987116845,
+      "city": "Amarillo",
+      "county": "Potter",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Slots of Luck",
+      "retailerName": "TOOT'N TOTUM 33",
+      "retailerAddress": "2615 S. Grand, Amarillo, TX 79103",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-07-17T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 250000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698710.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2724 · 07/17/26"
+    },
+    {
       "id": "tx-2026-07-17-2715-tx-498147-11035-67",
       "latitude": 34.836766226732,
       "longitude": -102.405461823569,
@@ -45256,24 +45220,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 07/17/26"
-    },
-    {
-      "id": "tx-2026-07-17-2724-tx-229354-20710-7",
-      "latitude": 35.184995753311,
-      "longitude": -101.794987116845,
-      "city": "Amarillo",
-      "county": "Potter",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Slots of Luck",
-      "retailerName": "TOOT'N TOTUM 33",
-      "retailerAddress": "2615 S. Grand, Amarillo, TX 79103",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-07-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 250000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698710.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2724 · 07/17/26"
     },
     {
       "id": "tx-2026-07-17-2733-tx-188281-33981-35",
@@ -50964,6 +50910,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2710 · 07/31/26"
     },
     {
+      "id": "tx-2026-07-31-2720-tx-157270-47150-74",
+      "latitude": 29.433721728885,
+      "longitude": -98.587614991024,
+      "city": "San Antonio",
+      "county": "Bexar",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Chameleon Cash",
+      "retailerName": "123 KWIK STOP",
+      "retailerAddress": "123 S Acme Road, San Antonio, TX 78237",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-07-31T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698714.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2720 · 07/31/26"
+    },
+    {
       "id": "tx-2026-07-31-2715-tx-142692-14155-49",
       "latitude": 31.962446259317,
       "longitude": -95.224438614782,
@@ -51430,24 +51394,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 07/31/26"
-    },
-    {
-      "id": "tx-2026-07-31-2720-tx-157270-47150-74",
-      "latitude": 29.433721728885,
-      "longitude": -98.587614991024,
-      "city": "San Antonio",
-      "county": "Bexar",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Chameleon Cash",
-      "retailerName": "123 KWIK STOP",
-      "retailerAddress": "123 S Acme Road, San Antonio, TX 78237",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-07-31T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698714.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2720 · 07/31/26"
     },
     {
       "id": "tx-2026-08-01-2710-tx-194124-165557-49",
@@ -53034,24 +52980,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 08/03/26"
     },
     {
-      "id": "tx-2026-08-03-2747-tx-186822-30187-38",
-      "latitude": 29.851556983707,
-      "longitude": -95.516248035951,
-      "city": "Houston",
-      "county": "Harris",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Ms.PAC-MAN",
-      "retailerName": "M & G MARKET",
-      "retailerAddress": "8102 W Tidwell Road Ste A, Houston, TX 77040",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-08-03T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698645.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2747 · 08/03/26"
-    },
-    {
       "id": "tx-2026-08-03-2739-tx-605575-50742-8",
       "latitude": 31.128315800395,
       "longitude": -102.221632610178,
@@ -53068,6 +52996,24 @@
       "prizeAmount": 30000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698674.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2739 · 08/03/26"
+    },
+    {
+      "id": "tx-2026-08-03-2747-tx-186822-30187-38",
+      "latitude": 29.851556983707,
+      "longitude": -95.516248035951,
+      "city": "Houston",
+      "county": "Harris",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Ms.PAC-MAN",
+      "retailerName": "M & G MARKET",
+      "retailerAddress": "8102 W Tidwell Road Ste A, Houston, TX 77040",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-08-03T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698645.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2747 · 08/03/26"
     },
     {
       "id": "tx-2026-08-04-2650-tx-597633-16529-47",
@@ -62772,24 +62718,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2678 · 08/10/26"
     },
     {
-      "id": "tx-2026-08-10-2678-tx-127605-53740-10",
-      "latitude": 29.598634045847,
-      "longitude": -95.216119562595,
-      "city": "Houston",
-      "county": "Harris",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "$100, $200, $500 OR $1,000!",
-      "retailerName": "CORNER STOP",
-      "retailerAddress": "11402 Hughes Rd, Houston, TX 77089",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-08-10T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 1000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699512.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2678 · 08/10/26"
-    },
-    {
       "id": "tx-2026-08-10-2678-tx-141016-50891-5",
       "latitude": 32.757584272305,
       "longitude": -96.768740740031,
@@ -67398,24 +67326,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 08/13/26"
     },
     {
-      "id": "tx-2026-08-13-2715-tx-189253-47511-83",
-      "latitude": 30.805759928652,
-      "longitude": -97.612868760482,
-      "city": "Jarrell",
-      "county": "Williamson",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Find $200",
-      "retailerName": "STAR MART 18",
-      "retailerAddress": "133 County Rd 313, Jarrell, TX 76537",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-08-13T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 200,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 08/13/26"
-    },
-    {
       "id": "tx-2026-08-13-2715-tx-181250-47088-3",
       "latitude": 29.999416018836,
       "longitude": -95.196785039826,
@@ -71052,24 +70962,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2650 · 08/16/26"
     },
     {
-      "id": "tx-2026-08-16-2650-tx-188714-66908-1",
-      "latitude": 30.150181772257,
-      "longitude": -96.410289069829,
-      "city": "Brenham",
-      "county": "Washington",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "$50, $100 OR $500!",
-      "retailerName": "BUCCANEER",
-      "retailerAddress": "1309 Prairie Lea, Brenham, TX 77833",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
-      "drawDate": "2026-08-16T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 500,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699582.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2650 · 08/16/26"
-    },
-    {
       "id": "tx-2026-08-16-2650-tx-186437-66192-6",
       "latitude": 30.676193688973,
       "longitude": -96.369628094919,
@@ -72114,24 +72006,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 08/16/26"
     },
     {
-      "id": "tx-2026-08-17-2647-tx-2000564-85557-26",
-      "latitude": 29.682390556075,
-      "longitude": -95.088096243886,
-      "city": "La Porte",
-      "county": "Harris",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Cash Line Bingo",
-      "retailerName": "STRIPES STORE 40990H",
-      "retailerAddress": "1700 Underwood Rd, La Porte, TX 77571",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-08-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 30000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699606.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2647 · 08/17/26"
-    },
-    {
       "id": "tx-2026-08-17-2650-tx-191752-10371-22",
       "latitude": 29.347686082752,
       "longitude": -99.11824687343,
@@ -72520,24 +72394,6 @@
       "gameName": "$50, $100 OR $500!",
       "retailerName": "KAYS CONVENIENCE",
       "retailerAddress": "8803 Grissom Rd, San Antonio, TX 78251",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-08-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 500,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699582.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2650 · 08/17/26"
-    },
-    {
-      "id": "tx-2026-08-17-2650-tx-127605-48435-22",
-      "latitude": 29.598634045847,
-      "longitude": -95.216119562595,
-      "city": "Houston",
-      "county": "Harris",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "$50, $100 OR $500!",
-      "retailerName": "CORNER STOP",
-      "retailerAddress": "11402 Hughes Rd, Houston, TX 77089",
       "coordinateSource": "U.S. Census Geocoder exact address match",
       "drawDate": "2026-08-17T12:00:00.000Z",
       "winningTickets": 1,
@@ -73102,6 +72958,24 @@
       "prizeAmount": 500,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699582.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2650 · 08/17/26"
+    },
+    {
+      "id": "tx-2026-08-17-2647-tx-2000564-85557-26",
+      "latitude": 29.682390556075,
+      "longitude": -95.088096243886,
+      "city": "La Porte",
+      "county": "Harris",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Cash Line Bingo",
+      "retailerName": "STRIPES STORE 40990H",
+      "retailerAddress": "1700 Underwood Rd, La Porte, TX 77571",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-08-17T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 30000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699606.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2647 · 08/17/26"
     },
     {
       "id": "tx-2026-08-17-2678-tx-156874-10871-8",
@@ -76661,24 +76535,6 @@
       "retailerName": "CIRCLE K #2741827",
       "retailerAddress": "11311 Us Hwy 281, San Antonio, TX 78221",
       "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-08-20T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 500,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699582.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2650 · 08/20/26"
-    },
-    {
-      "id": "tx-2026-08-20-2650-tx-179081-75302-39",
-      "latitude": 29.356046653984,
-      "longitude": -98.448229049541,
-      "city": "San Antonio",
-      "county": "Bexar",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "$50, $100 OR $500!",
-      "retailerName": "CITY BASE MARKET",
-      "retailerAddress": "2703 Lasses, San Antonio, TX 78223",
-      "coordinateSource": "ArcGIS World Geocoder verified point address",
       "drawDate": "2026-08-20T12:00:00.000Z",
       "winningTickets": 1,
       "prizeAmount": 500,
@@ -86352,24 +86208,6 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2650 · 08/27/26"
     },
     {
-      "id": "tx-2026-08-27-2700-tx-177514-176865-59",
-      "latitude": 30.056686018415,
-      "longitude": -94.801908432163,
-      "city": "Liberty",
-      "county": "Liberty",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Break the Bank",
-      "retailerName": "DILLON'S LIQUOR",
-      "retailerAddress": "1501 Hwy 90, Liberty, TX 77575",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-08-27T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 30000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698776.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2700 · 08/27/26"
-    },
-    {
       "id": "tx-2026-08-27-2678-tx-184983-104404-4",
       "latitude": 32.811499074254,
       "longitude": -96.849517134805,
@@ -86530,6 +86368,24 @@
       "prizeAmount": 1000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699512.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2678 · 08/27/26"
+    },
+    {
+      "id": "tx-2026-08-27-2700-tx-177514-176865-59",
+      "latitude": 30.056686018415,
+      "longitude": -94.801908432163,
+      "city": "Liberty",
+      "county": "Liberty",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Break the Bank",
+      "retailerName": "DILLON'S LIQUOR",
+      "retailerAddress": "1501 Hwy 90, Liberty, TX 77575",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-08-27T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 30000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698776.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2700 · 08/27/26"
     },
     {
       "id": "tx-2026-08-27-2715-tx-185329-21450-99",
@@ -94578,6 +94434,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 09/02/26"
     },
     {
+      "id": "tx-2026-09-03-2662-tx-1434240-90572-24",
+      "latitude": 32.65660311563,
+      "longitude": -96.750259090704,
+      "city": "Dallas",
+      "county": "Dallas",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Cashword",
+      "retailerName": "BONNIEVIEW DALLAS",
+      "retailerAddress": "7410 Bonnie View Rd, Dallas, TX 75241",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-09-03T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 50000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699549.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2662 · 09/03/26"
+    },
+    {
       "id": "tx-2026-09-03-2650-tx-177837-10007-33",
       "latitude": 29.561042772462,
       "longitude": -97.969089740605,
@@ -95440,24 +95314,6 @@
       "prizeAmount": 500,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699582.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2650 · 09/03/26"
-    },
-    {
-      "id": "tx-2026-09-03-2662-tx-1434240-90572-24",
-      "latitude": 32.65660311563,
-      "longitude": -96.750259090704,
-      "city": "Dallas",
-      "county": "Dallas",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Cashword",
-      "retailerName": "BONNIEVIEW DALLAS",
-      "retailerAddress": "7410 Bonnie View Rd, Dallas, TX 75241",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-09-03T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 50000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699549.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2662 · 09/03/26"
     },
     {
       "id": "tx-2026-09-03-2678-tx-605460-104989-24",
@@ -97152,6 +97008,24 @@
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2678 · 09/04/26"
     },
     {
+      "id": "tx-2026-09-04-2728-tx-153800-57227-47",
+      "latitude": 31.100528560433,
+      "longitude": -97.711728569271,
+      "city": "Killeen",
+      "county": "Bell",
+      "state": "TX",
+      "game": "scratch-off",
+      "gameName": "Yellowstone",
+      "retailerName": "SPEEDY PAC #2",
+      "retailerAddress": "2705 Zephyr Rd, Killeen, TX 76543",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-09-04T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698706.html",
+      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2728 · 09/04/26"
+    },
+    {
       "id": "tx-2026-09-04-2715-tx-178945-13640-64",
       "latitude": 31.306246780415,
       "longitude": -96.889132494407,
@@ -97546,24 +97420,6 @@
       "prizeAmount": 200,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
       "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · 09/04/26"
-    },
-    {
-      "id": "tx-2026-09-04-2728-tx-153800-57227-47",
-      "latitude": 31.100528560433,
-      "longitude": -97.711728569271,
-      "city": "Killeen",
-      "county": "Bell",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Yellowstone",
-      "retailerName": "SPEEDY PAC #2",
-      "retailerAddress": "2705 Zephyr Rd, Killeen, TX 76543",
-      "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-09-04T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698706.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2728 · 09/04/26"
     },
     {
       "id": "tx-2026-09-05-2650-tx-157144-12536-41",
@@ -106100,6 +105956,26 @@
   ],
   "excluded": [
     {
+      "gameId": "2627",
+      "gameName": "$5 Million Titanium Black",
+      "date": "04/23/26",
+      "retailerName": "BUCCANEER",
+      "retailerAddress": "1309 PRAIRIE LEA",
+      "city": "BRENHAM",
+      "postalCode": "77833",
+      "reason": "No exact geocoded official retailer row matched"
+    },
+    {
+      "gameId": "2656",
+      "gameName": "Crazy 8s",
+      "date": "04/03/26",
+      "retailerName": "MURPHY USA 7368",
+      "retailerAddress": "4419 S HWY 83",
+      "city": "LAREDO",
+      "postalCode": "78041",
+      "reason": "No exact geocoded official retailer row matched"
+    },
+    {
       "gameId": "2650",
       "gameName": "$50, $100 OR $500!",
       "date": "09/13/26",
@@ -106472,6 +106348,16 @@
     {
       "gameId": "2650",
       "gameName": "$50, $100 OR $500!",
+      "date": "08/20/26",
+      "retailerName": "CITY BASE MARKET",
+      "retailerAddress": "2703 LASSES",
+      "city": "SAN ANTONIO",
+      "postalCode": "78223",
+      "reason": "No exact geocoded official retailer row matched"
+    },
+    {
+      "gameId": "2650",
+      "gameName": "$50, $100 OR $500!",
       "date": "08/19/26",
       "retailerName": "HEB FOOD STORE #544",
       "retailerAddress": "725 EAST VILLA MARIA RD",
@@ -106513,10 +106399,30 @@
       "gameId": "2650",
       "gameName": "$50, $100 OR $500!",
       "date": "08/17/26",
+      "retailerName": "CORNER STOP",
+      "retailerAddress": "11402 HUGHES RD",
+      "city": "HOUSTON",
+      "postalCode": "77089",
+      "reason": "Multiple exact official retailer rows matched"
+    },
+    {
+      "gameId": "2650",
+      "gameName": "$50, $100 OR $500!",
+      "date": "08/17/26",
       "retailerName": "DAILY STOP",
       "retailerAddress": "7801 GLENVIEW DR",
       "city": "NORTH RICHLAND HILLS",
       "postalCode": "76180",
+      "reason": "No exact geocoded official retailer row matched"
+    },
+    {
+      "gameId": "2650",
+      "gameName": "$50, $100 OR $500!",
+      "date": "08/16/26",
+      "retailerName": "BUCCANEER",
+      "retailerAddress": "1309 PRAIRIE LEA",
+      "city": "BRENHAM",
+      "postalCode": "77833",
       "reason": "No exact geocoded official retailer row matched"
     },
     {
@@ -106710,16 +106616,6 @@
       "reason": "No exact geocoded official retailer row matched"
     },
     {
-      "gameId": "2671",
-      "gameName": "Instant Millions",
-      "date": "01/27/26",
-      "retailerName": "CIRCLE K #2740924",
-      "retailerAddress": "9697 SAN PEDRO",
-      "city": "SAN ANTONIO",
-      "postalCode": "78216",
-      "reason": "No exact geocoded official retailer row matched"
-    },
-    {
       "gameId": "2660",
       "gameName": "In the Green",
       "date": "04/17/26",
@@ -106730,24 +106626,14 @@
       "reason": "No exact geocoded official retailer row matched"
     },
     {
-      "gameId": "2656",
-      "gameName": "Crazy 8s",
-      "date": "04/03/26",
-      "retailerName": "MURPHY USA 7368",
-      "retailerAddress": "4419 S HWY 83",
-      "city": "LAREDO",
-      "postalCode": "78041",
+      "gameId": "2671",
+      "gameName": "Instant Millions",
+      "date": "01/27/26",
+      "retailerName": "CIRCLE K #2740924",
+      "retailerAddress": "9697 SAN PEDRO",
+      "city": "SAN ANTONIO",
+      "postalCode": "78216",
       "reason": "No exact geocoded official retailer row matched"
-    },
-    {
-      "gameId": "2700",
-      "gameName": "Break the Bank",
-      "date": "07/14/26",
-      "retailerName": "NORTH END GROCERY",
-      "retailerAddress": "400 MCKINNEY AVE",
-      "city": "PRINCETON",
-      "postalCode": "75407",
-      "reason": "Multiple exact official retailer rows matched"
     },
     {
       "gameId": "2678",
@@ -106822,6 +106708,16 @@
     {
       "gameId": "2678",
       "gameName": "$100, $200, $500 OR $1,000!",
+      "date": "08/10/26",
+      "retailerName": "CORNER STOP",
+      "retailerAddress": "11402 HUGHES RD",
+      "city": "HOUSTON",
+      "postalCode": "77089",
+      "reason": "Multiple exact official retailer rows matched"
+    },
+    {
+      "gameId": "2678",
+      "gameName": "$100, $200, $500 OR $1,000!",
       "date": "08/07/26",
       "retailerName": "DEERPARK EXXON",
       "retailerAddress": "1901 S BATTLEGROUND RD",
@@ -106838,6 +106734,16 @@
       "city": "LITTLE ELM",
       "postalCode": "75068",
       "reason": "No exact geocoded official retailer row matched"
+    },
+    {
+      "gameId": "2700",
+      "gameName": "Break the Bank",
+      "date": "07/14/26",
+      "retailerName": "NORTH END GROCERY",
+      "retailerAddress": "400 MCKINNEY AVE",
+      "city": "PRINCETON",
+      "postalCode": "75407",
+      "reason": "Multiple exact official retailer rows matched"
     },
     {
       "gameId": "2710",
@@ -106917,6 +106823,16 @@
       "retailerAddress": "2719 E SAUNDERS STREET",
       "city": "LAREDO",
       "postalCode": "78041",
+      "reason": "No exact geocoded official retailer row matched"
+    },
+    {
+      "gameId": "2736",
+      "gameName": "Monaco Cash",
+      "date": "05/18/26",
+      "retailerName": "MIGALITOS SUPERMERCADO #5",
+      "retailerAddress": "3160 SATURN DR",
+      "city": "GARLAND",
+      "postalCode": "75041",
       "reason": "No exact geocoded official retailer row matched"
     },
     {
@@ -107077,6 +106993,16 @@
       "retailerAddress": "12989 MARTIN LUTHER KING JR BLVD",
       "city": "HOUSTON",
       "postalCode": "77048",
+      "reason": "No exact geocoded official retailer row matched"
+    },
+    {
+      "gameId": "2715",
+      "gameName": "Find $200",
+      "date": "08/13/26",
+      "retailerName": "STAR MART 18",
+      "retailerAddress": "133 COUNTY RD 313",
+      "city": "JARRELL",
+      "postalCode": "76537",
       "reason": "No exact geocoded official retailer row matched"
     },
     {
@@ -108303,6 +108229,16 @@
       "gameId": "2715",
       "gameName": "Find $200",
       "date": "06/01/26",
+      "retailerName": "CITY BASE MARKET",
+      "retailerAddress": "2703 LASSES",
+      "city": "SAN ANTONIO",
+      "postalCode": "78223",
+      "reason": "No exact geocoded official retailer row matched"
+    },
+    {
+      "gameId": "2715",
+      "gameName": "Find $200",
+      "date": "06/01/26",
       "retailerName": "PINE WINE SPIRITS BEER & MORE",
       "retailerAddress": "2810 N O'CONNOR",
       "city": "IRVING",
@@ -108437,6 +108373,16 @@
       "retailerAddress": "600 N ANDERSON LANE",
       "city": "ROUND ROCK",
       "postalCode": "78664",
+      "reason": "No exact geocoded official retailer row matched"
+    },
+    {
+      "gameId": "2715",
+      "gameName": "Find $200",
+      "date": "05/25/26",
+      "retailerName": "ONE STOP 12",
+      "retailerAddress": "1203 N LAMESA",
+      "city": "MIDLAND",
+      "postalCode": "79701",
       "reason": "No exact geocoded official retailer row matched"
     },
     {
@@ -108667,16 +108613,6 @@
       "retailerAddress": "1024 FM 517 RD WEST",
       "city": "DICKINSON",
       "postalCode": "77539",
-      "reason": "No exact geocoded official retailer row matched"
-    },
-    {
-      "gameId": "2736",
-      "gameName": "Monaco Cash",
-      "date": "05/18/26",
-      "retailerName": "MIGALITOS SUPERMERCADO #5",
-      "retailerAddress": "3160 SATURN DR",
-      "city": "GARLAND",
-      "postalCode": "75041",
       "reason": "No exact geocoded official retailer row matched"
     }
   ]
