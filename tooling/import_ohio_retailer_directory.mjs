@@ -24,15 +24,27 @@ if (!outputPath || !countyGeometryPath) {
     (_, prefix, letter) => `${prefix}${letter.toUpperCase()}`,
   );
   const responseJson = async (url, options = {}) => {
-    const response = await fetch(url, {
-      ...options,
-      headers: {
-        'user-agent': 'LotteryAtlasOfficialDataBot/1.0',
-        ...(options.headers ?? {}),
-      },
-    });
-    if (!response.ok) throw new Error(`${url} returned HTTP ${response.status}`);
-    return response.json();
+    for (let attempt = 1; attempt <= 4; attempt++) {
+      try {
+        const response = await fetch(url, {
+          ...options,
+          headers: {
+            'user-agent': 'LotteryAtlasOfficialDataBot/1.0',
+            ...(options.headers ?? {}),
+          },
+        });
+        if (response.ok) return response.json();
+        if (response.status !== 429 && response.status < 500) {
+          throw new Error(`${url} returned HTTP ${response.status}`);
+        }
+        if (attempt === 4) throw new Error(`${url} returned HTTP ${response.status}`);
+        console.warn(`${url} returned HTTP ${response.status}; retrying`);
+      } catch (error) {
+        if (attempt === 4 || /returned HTTP (?!429|5\d\d)/.test(error.message)) throw error;
+        console.warn(`${url} attempt ${attempt} failed: ${error.message}`);
+      }
+      await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
+    }
   };
   const token = async () => {
     const applicationResponse = await fetch(applicationUrl, {
