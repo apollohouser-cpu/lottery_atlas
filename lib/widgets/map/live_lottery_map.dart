@@ -6715,7 +6715,7 @@ class _StateDataCoverageCard extends StatelessWidget {
     final detail = hasNoStateLottery
         ? '${profile.stateName} does not operate a state lottery, so Lottery Atlas has no draw, Scratch-Off, retailer, or heat-map activity to display for this state.'
         : hasPublishedActivity
-        ? 'Published ${profile.stateName} activity is ready for the heat map. Game selection, prize filtering, and the timeline only use matching records.'
+        ? 'Published ${profile.stateName} records appear on the heat map. Game selection, prize filtering, and the timeline only use matching records. This does not establish complete statewide winning-ticket or retailer coverage.'
         : profile.readiness == StateLotteryDataReadiness.sourceLinked
         ? 'Official ${profile.providerName} links are ready. Verified county-level activity will appear here after its data feed is onboarded.'
         : 'County activity and local-game schedules are sample data. National Powerball and Mega Millions results are available separately through MUSL.';

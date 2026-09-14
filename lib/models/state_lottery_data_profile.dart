@@ -19,7 +19,7 @@ extension StateLotteryDataReadinessDetails on StateLotteryDataReadiness {
       case StateLotteryDataReadiness.sourceLinked:
         return 'Official source linked';
       case StateLotteryDataReadiness.mapDataReady:
-        return 'Map data ready';
+        return 'Verified map records published';
     }
   }
 }
