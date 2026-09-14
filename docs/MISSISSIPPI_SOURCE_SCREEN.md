@@ -25,5 +25,13 @@ requires a written formal request mailed to P.O. Box 321433, Flowood, MS
 2026, an email inquiry was sent there asking whether electronic submission
 is accepted and how to obtain existing all-tier draw/Scratch counts and
 public retailer joins on a daily-capable cadence. Gmail confirmed “Message
-sent.” This is **not** a filed formal mailed records request. No response,
-complete count, or retailer-linked winner archive has been verified.
+sent.” This is **not** a filed formal mailed records request. No complete
+count or retailer-linked winner archive has been verified.
+
+Update September 14: Communications replied that the requested information is
+publicly available at `mslottery.com`, without exact report links or a count
+definition. A follow-up identified the already reviewed winning-numbers,
+selected-winner, retailer-finder, and printed-odds pages and asked for exact
+URLs of actual all-tier winning tickets or claims, retailer joins, cadence,
+and confirmation of the formal submission route. Gmail confirmed it was sent.
+The general-site reply alone does not establish complete verified coverage.

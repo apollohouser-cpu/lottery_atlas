@@ -25,6 +25,9 @@ on the Lottery's official open-records page. It requests existing draw-game
 winner counts, Scratch-Off prize counts, retailer records where public, and
 the cadence/access method. Pennsylvania's formal request is pending a mailing
 address required by its Department of Revenue process.
+On September 14, Iowa staff entered that request in the State of Iowa
+NextRequest system as **#26-4068**. Its notice says an update is expected
+within 10 business days. No records have been supplied yet.
 
 New Jersey has an official weekly partial count: 8 players won draw/Scratch-Off
 prizes of at least $10,000 for August 31–September 6, published September 8.
@@ -94,6 +97,11 @@ email published in its records policy. A formal request must be mailed with
 requestor address and phone unless the agency confirms another route.
 Printed Scratch prize counts and selected winner releases do not establish
 complete winning-ticket totals.
+Mississippi Communications replied September 14 that the requested information
+is publicly available on its general website, without identifying the
+all-tier actual ticket counts or retailer joins. A follow-up requested exact
+report URLs and clarification of the formal email route; no complete dataset
+has been established by that reply.
 The Montana data and records-routing inquiry was sent September 14, 2026 to
 the Lottery's published contact address. Formal public-information requests
 go through OPIR, whose New Request route required MT.gov sign-in. Published
