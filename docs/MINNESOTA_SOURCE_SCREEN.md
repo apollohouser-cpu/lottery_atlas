@@ -1,8 +1,12 @@
 # Minnesota source screen — September 14, 2026
 
 The existing app has one geocoded [official winner release](https://www.mnlottery.com/news-release-record-breaking-408-972-north-nbsp-5-jackpot)
-and a dated active Scratch Game catalog snapshot. Both are partial historical
-records, not a current, complete statewide count. The [Winners page](https://www.mnlottery.com/winners/game)
+and a dated active Scratch Game catalog snapshot. The six-hour publisher now
+imports the games listed on the official [Scratch Games page](https://www.mnlottery.com/games/scratch)
+(40 at screening),
+validating each detail page's game number, price and printed top prize. This
+is a catalog of currently listed games, not claims, remaining prizes, or a
+complete statewide winner count. The [Winners page](https://www.mnlottery.com/winners/game)
 offers game, week, type, prize, and retailer filters, but its displayed
 retailer names and cities alone do not verify every street address or a
 complete record archive. The [Unclaimed Prizes page](https://www.mnlottery.com/games/unclaimed-prizes)
