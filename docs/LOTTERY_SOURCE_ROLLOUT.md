@@ -47,8 +47,10 @@ The Florida public-records request was sent September 13, 2026 to the
 Lottery's published public-records custodian email, requesting existing
 electronic winner counts, retailer records, definitions, and cadence.
 Florida's Open Government office acknowledged receipt September 14, 2026.
-The request is under review; a substantive response and any associated costs
-are pending. No dataset was supplied in the acknowledgment.
+It stated the requested data are not maintained as a public API or download,
+but existing-data reports can be supplied if given a date range. An August
+1–31, 2026 range and request for report scope, cadence, and fee estimate was
+sent the same day. No report or cost estimate has been received.
 The Oregon data inquiry was sent September 13, 2026 to the Lottery's
 published Public Affairs address for routing to its data or records team.
 The Maryland Public Information Act request was sent September 13, 2026 to
