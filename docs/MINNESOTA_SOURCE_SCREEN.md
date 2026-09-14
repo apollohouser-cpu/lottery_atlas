@@ -31,3 +31,9 @@ snapshot. It excludes private winner information and requests advance notice
 of charges. Gmail confirmed “Message sent.” No complete all-tier ticket
 count or live retailer join has been verified; Minnesota is not yet ready for
 a complete statewide ranking or heat-map test.
+
+An automatic reply arrived September 14 at 12:27 AM Eastern. It says the
+inbox is generally monitored Tuesday through Thursday (except vacations),
+requests are processed as resources permit, and simpler requests take
+precedence. It points to the public Winners page but supplies no responsive
+records, ticket-count definition, or estimated completion date.
