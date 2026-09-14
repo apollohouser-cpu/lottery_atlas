@@ -31,6 +31,9 @@ At 00:17, 06:17, 12:17, and 18:17 UTC, GitHub Actions validates the files listed
 `tooling/approved_activity_sources.json`, builds `docs/activity.json`, and
 publishes it to GitHub Pages. It also runs whenever an approved source file is
 pushed.
+The source import and feed validation run once per workflow; the Pages job
+deploys the exact artifact from that successful validation. It does not
+repeat live source requests during deployment.
 
 Lottery Atlas checks refreshable sources every six hours where possible. The
 state lottery's own publishing cadence can be slower. A weekly or monthly
