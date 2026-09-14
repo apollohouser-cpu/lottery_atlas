@@ -100,7 +100,7 @@ if (!outputPath || !retailerDirectoryPath) {
       gameName: compact(titleMatch?.[1] ?? 'Virginia Scratcher'),
     };
   };
-  const fetchYear = async (year) => {
+  const fetchYearOnce = async (year) => {
     const response = await fetch(winnersApiUrl, {
       method: 'POST',
       headers: {
@@ -124,6 +124,23 @@ if (!outputPath || !retailerDirectoryPath) {
       throw new Error(`${year} archive did not return one complete official page`);
     }
     return payload.data;
+  };
+  const fetchYear = async (year) => {
+    let lastError;
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        return await fetchYearOnce(year);
+      } catch (error) {
+        lastError = error;
+        // A changed archive shape or incomplete pagination needs investigation,
+        // whereas network and HTTP failures can clear on the next request.
+        if (/did not return one complete official page/.test(error.message) ||
+            attempt === 3) break;
+        console.warn(`${year} archive attempt ${attempt} failed: ${error.message}`);
+        await new Promise((resolve) => setTimeout(resolve, 1000 * attempt));
+      }
+    }
+    throw lastError;
   };
 
   try {
