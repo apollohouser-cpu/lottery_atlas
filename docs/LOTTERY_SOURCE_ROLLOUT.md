@@ -136,6 +136,10 @@ New Mexico's $5,000-plus Winners page and estimated unclaimed top-prizes page
 were screened September 14. A process/data inquiry was sent to its published
 records custodian. Formal written filing requires requester mailing address
 and phone under the Lottery's published notice; no filing is confirmed.
+New York's official daily draw-results dataset, Scratch top-prize page and
+retailer locator were screened September 14; they do not establish all-tier
+winner totals or selling-retailer joins. A data/FOIL-routing inquiry was sent
+to the Commission contact named in its open-data metadata.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
