@@ -73,6 +73,9 @@ the public-records email on its portal; a formal portal filing is not yet
 confirmed because that form requires login.
 The Louisiana data inquiry was sent September 13, 2026 to the Communications
 Director in its official press kit for routing to data or records staff.
+The Maine FOAA request was sent September 13, 2026 to the DAFS address
+published on the Lottery contact page. Its daily instant-prize page reports
+unclaimed top prizes and dollars, not complete winning-ticket counts.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
