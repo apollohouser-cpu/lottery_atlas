@@ -25,3 +25,11 @@ records, data definitions and refresh cadence, and asks for routing to the
 records or data team. Gmail confirmed “Message sent.” This was an inquiry to
 the published general contact, not confirmation of a formal open-records
 submission or complete state coverage.
+
+Update September 14: Georgia Lottery response ticket **361412** says the
+requested compilation is not an existing record kept in the ordinary course
+of business and that it is not required to create a new report. It also cited
+lottery-security and equal-chance concerns about nonpublic prize-availability
+information. No dataset or public full-coverage feed was supplied. The
+complete-count and retailer-ranking route remains deferred; use only clearly
+scoped public pages, with their own dates and limitations.

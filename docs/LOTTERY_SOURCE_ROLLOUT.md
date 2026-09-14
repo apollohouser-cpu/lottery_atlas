@@ -60,6 +60,10 @@ The Maryland Public Information Act request was sent September 13, 2026 to
 the agency's published PIA representative for winner counts and retailer data.
 The Georgia data inquiry was sent September 13, 2026 to the Lottery's
 published general email for routing to the records or data team.
+Georgia replied September 14 under ticket 361412 that the requested
+compilation is not an existing record and raised security/equal-chance
+concerns about nonpublic prize availability. Its full-coverage route remains
+deferred; public subsets retain their source-specific limits.
 The Tennessee data inquiry was sent September 13, 2026 to its published
 Communications Director for routing to data or records staff.
 Arizona's official records portal requires a verified commercial-use
@@ -68,6 +72,8 @@ The Arkansas data inquiry was sent September 13, 2026 to the Lottery's
 published contact address for ticket counts and retailer data.
 The California Public Records Act request was sent September 13, 2026 to
 the Lottery's published PRA coordinator for ticket counts and retailers.
+The coordinator acknowledged September 14 that it will process the request;
+no records have arrived.
 The Connecticut FOIA request was sent September 13, 2026 to the Lottery's
 published corporation email for routing to the appropriate records custodian.
 The Delaware data inquiry was sent September 13, 2026 to the Director's

@@ -21,3 +21,7 @@ It requests existing draw and Scratchers ticket/claim counts, selling
 retailer links, a statewide active retailer directory, data definitions and
 publication cadence. Gmail confirmed “Message sent.” No new counts are
 verified merely by submitting the request.
+
+Update September 14: The PRA Coordinator replied, “Thank you we will
+process.” This acknowledges the request but supplies no records, definitions,
+fee estimate, or coverage confirmation. California remains pending.
