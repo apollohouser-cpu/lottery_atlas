@@ -76,6 +76,10 @@ Director in its official press kit for routing to data or records staff.
 The Maine FOAA request was sent September 13, 2026 to the DAFS address
 published on the Lottery contact page. Its daily instant-prize page reports
 unclaimed top prizes and dollars, not complete winning-ticket counts.
+The Massachusetts public-records request was sent September 13, 2026 to the
+Lottery's published records email. Its official Winners query has a $600
+threshold and a `totalNumberOfWinners` field; ticket identity and all-tier
+coverage remain unverified, so no statewide ticket count is published.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
