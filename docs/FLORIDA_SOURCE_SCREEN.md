@@ -1,5 +1,10 @@
 # Florida source screen — September 12, 2026
 
+Update September 14, 2026: The Lottery's Open Government office acknowledged
+receipt of the September 13 public-records request and said it is under review.
+It will respond with any associated costs. The acknowledgment contains no
+winning-ticket or retailer dataset, so the status below remains unchanged.
+
 Florida is **not yet ready for a complete verified heat map**. Existing official
 draw links and partial, explicitly labeled winner snapshots remain available.
 
