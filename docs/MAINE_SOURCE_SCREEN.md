@@ -17,3 +17,8 @@ On September 13, 2026, a written FOAA request was sent there for existing
 all-tier draw and Scratch-Off counts, retailer records, definitions, source
 dates, history and refresh cadence. Gmail confirmed “Message sent.” No
 responsive records or complete count have been verified yet.
+
+DAFS acknowledged the FOAA request by email on September 13, 2026 at
+8:25 PM Eastern. It will review the material, estimate response time and
+potential costs, and identify any withheld records. This is an acknowledgment,
+not a delivered dataset or an estimated completion date.
