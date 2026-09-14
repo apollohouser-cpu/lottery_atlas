@@ -80,6 +80,10 @@ The Massachusetts public-records request was sent September 13, 2026 to the
 Lottery's published records email. Its official Winners query has a $600
 threshold and a `totalNumberOfWinners` field; ticket identity and all-tier
 coverage remain unverified, so no statewide ticket count is published.
+The Minnesota written data-practices request was sent September 14, 2026 to
+the Lottery's published address, seeking existing draw/Scratch counts and
+public retailer joins. Its winner releases and unclaimed-prize listings do
+not establish a complete all-tier winning-ticket count.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
