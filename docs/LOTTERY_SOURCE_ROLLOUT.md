@@ -119,12 +119,17 @@ Scratch odds are not actual winning-ticket totals; see the source screen.
 The Lottery later referred OPIR access questions to the state's
 `publicrecords@mt.gov`; a new-requester submission-route inquiry was sent
 there September 14. Formal filing remains unconfirmed.
+OPIR support later identified the MT.gov “Sign up” route for new requesters;
+account creation and formal filing are still pending.
 The North Carolina routing/data inquiry was sent September 14, 2026 to the
 Lottery's published Player Service email. Its daily Scratch prize-remaining
 table and weekly $5,000-plus Winners pages are scoped, useful sources, but
 do not establish all-tier draw counts or a complete retailer heat map.
 Player Service directed North Carolina requests to its official records
 portal; no formal submission or case number is confirmed yet.
+New Hampshire's current Scratch schedule, result pages and retailer finder
+were screened September 14. They do not establish actual all-tier ticket
+counts or a retailer join; its official records route is being identified.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
