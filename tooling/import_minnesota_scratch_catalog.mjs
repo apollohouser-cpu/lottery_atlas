@@ -8,9 +8,21 @@ if (!outputPath) {
   process.exitCode = 1;
 } else try {
   const fetchHtml = async (url) => {
-    const response = await fetch(url, {headers: {'user-agent': 'LotteryAtlasOfficialDataBot/1.0'}});
-    if (!response.ok) throw new Error(`${url} returned HTTP ${response.status}`);
-    return response.text();
+    for (let attempt = 1; attempt <= 4; attempt++) {
+      try {
+        const response = await fetch(url, {headers: {'user-agent': 'LotteryAtlasOfficialDataBot/1.0'}});
+        if (response.ok) return response.text();
+        if (response.status !== 429 && response.status < 500) {
+          throw new Error(`${url} returned HTTP ${response.status}`);
+        }
+        if (attempt === 4) throw new Error(`${url} returned HTTP ${response.status}`);
+        console.warn(`${url} returned HTTP ${response.status}; retrying`);
+      } catch (error) {
+        if (attempt === 4 || /returned HTTP (?!429|5\d\d)/.test(error.message)) throw error;
+        console.warn(`${url} request attempt ${attempt} failed: ${error.message}`);
+      }
+      await new Promise((resolve) => setTimeout(resolve, attempt * 1000));
+    }
   };
   const plain = (html) => html.replace(/<[^>]*>/g, ' ').replace(/&amp;/g, '&')
     .replace(/&nbsp;|&#160;/g, ' ').replace(/&#0?39;|&apos;/g, "'")
@@ -28,8 +40,8 @@ if (!outputPath) {
     throw new Error(`Minnesota Scratch listing incomplete (${cards.length} parsed)`);
   }
   const games = [];
-  for (let offset = 0; offset < cards.length; offset += 5) {
-    const batch = await Promise.all(cards.slice(offset, offset + 5).map(async (card) => {
+  for (let offset = 0; offset < cards.length; offset += 3) {
+    const batch = await Promise.all(cards.slice(offset, offset + 3).map(async (card) => {
       const detail = await fetchHtml(card.url);
       const prizeTable = detail.match(/<table class="bulletin-matrix-table[^\"]*">([\s\S]*?)<\/table>/)?.[1] ?? '';
       const prizeAmounts = [...prizeTable.matchAll(/<tr>\s*<td>([\s\S]*?)<\/td>/g)]
