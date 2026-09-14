@@ -130,6 +130,8 @@ portal; no formal submission or case number is confirmed yet.
 New Hampshire's current Scratch schedule, result pages and retailer finder
 were screened September 14. They do not establish actual all-tier ticket
 counts or a retailer join; its official records route is being identified.
+An inquiry was sent September 14 to the Lottery headquarters email on its
+official contact page, requesting routing to the records/data custodian.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of

@@ -17,6 +17,11 @@ winning-ticket retailer joins were not established.
 
 No complete all-tier national, state-draw and Scratch claim dataset or
 retailer-linked heat-map feed was verified in this initial screen. The
-public-records custodian and supported submission route still need to be
-confirmed before sending the standard request. New Hampshire is not ready
+[official contact page](https://www.nhlottery.com/contact-us) lists
+`webmaster@lottery.nh.gov` for Lottery headquarters. A routing and data
+inquiry was sent there September 14 asking for existing all-tier counts,
+Scratch claims or remaining, retailer directory and public winner joins,
+source definitions, cadence, fees, and the formal records route. Gmail
+confirmed “Message sent.” The recipient's role as records custodian is not
+established; no complete records have arrived. New Hampshire is not ready
 for full-state testing.
