@@ -28,3 +28,9 @@ password reset. No existing Okta account is known. An inquiry to that official
 records address asked how a new requester can create an account or use another
 accepted filing route, and whether email is accepted. Gmail confirmed it was
 sent. This is still not a filed formal request; no ticket-count data arrived.
+
+Later September 14: The OPIR help desk replied that a new requester should
+visit `https://login.mt.gov`, scroll to “Don't have an account? Sign up,” and
+follow the account-creation instructions. It attached instructions. This
+resolves the portal route, but no MT.gov account or formal case has been
+created, and no records have been supplied.
