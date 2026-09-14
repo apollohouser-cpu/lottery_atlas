@@ -84,6 +84,11 @@ The Minnesota written data-practices request was sent September 14, 2026 to
 the Lottery's published address, seeking existing draw/Scratch counts and
 public retailer joins. Its winner releases and unclaimed-prize listings do
 not establish a complete all-tier winning-ticket count.
+The Mississippi records-process inquiry was sent September 14, 2026 to the
+email published in its records policy. A formal request must be mailed with
+requestor address and phone unless the agency confirms another route.
+Printed Scratch prize counts and selected winner releases do not establish
+complete winning-ticket totals.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
