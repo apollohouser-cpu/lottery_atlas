@@ -110,8 +110,10 @@ is publicly available on its general website, without identifying the
 all-tier actual ticket counts or retailer joins. A follow-up requested exact
 report URLs and clarification of the formal email route; no complete dataset
 has been established by that reply.
-Mississippi then confirmed a physical mailed formal request is required;
-requestor mailing address and phone remain necessary for that filing.
+Mississippi then confirmed a physical mailed formal request is required. A
+printable one-page request letter was prepared September 15 with the requester
+contact information supplied outside this repository; it still requires a
+handwritten signature and physical mailing.
 The Montana data and records-routing inquiry was sent September 14, 2026 to
 the Lottery's published contact address. Formal public-information requests
 go through OPIR, whose New Request route required MT.gov sign-in. Published
@@ -163,6 +165,12 @@ Pennsylvania's focused Department of Revenue Right-to-Know Law request was
 submitted by email September 15 after the requester supplied the required
 contact information. It seeks existing August 2026 all-tier draw, Scratch,
 retailer directory and winner-to-retailer records; a response is pending.
+South Carolina's official Winners Report and Scratch-Off inventory sources were
+screened September 15. The Winners Report is retailer-linked but limited to
+claimed prizes of $500 or more from the past three months, while prizes
+remaining are estimates rather than actual all-tier ticket counts. A focused
+August 2026 request is prepared in SCEL's official FOIA contact form; submission
+is pending its interactive CAPTCHA.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
