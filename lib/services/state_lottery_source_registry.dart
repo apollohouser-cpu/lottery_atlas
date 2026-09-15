@@ -889,6 +889,18 @@ class StateLotterySourceRegistry {
           subtitle: 'Official South Dakota Scratch games and prize details.',
           url: 'https://lottery.sd.gov/scratch-games/',
         ),
+        StateLotteryResource(
+          title: 'Published winning players',
+          subtitle:
+              'Official selected winner records with game, prize, date, and selling retailer.',
+          url: 'https://lottery.sd.gov/winning-players/',
+        ),
+        StateLotteryResource(
+          title: 'Retailer locations',
+          subtitle:
+              'Official retailer search with addresses and published winner activity.',
+          url: 'https://lottery.sd.gov/locations/',
+        ),
       ],
     ),
     'West Virginia': StateLotterySource(

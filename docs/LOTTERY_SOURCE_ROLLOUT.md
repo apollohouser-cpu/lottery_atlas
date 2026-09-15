@@ -171,6 +171,11 @@ claimed prizes of $500 or more from the past three months, while prizes
 remaining are estimates rather than actual all-tier ticket counts. A focused
 August 2026 request is prepared in SCEL's official FOIA contact form; submission
 is pending its interactive CAPTCHA.
+South Dakota's selected-winner and retailer-location sources were screened
+September 15. They provide useful official retailer-linked winner activity but
+do not establish all-tier completeness. A focused August 2026 data and records-
+routing request was sent to the Lottery's published email; a response is
+pending.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
