@@ -183,6 +183,11 @@ is ready for partial-coverage testing with the existing disclaimer, but is not
 an all-tier state total. A focused August 2026 request for the remaining draw
 and Scratch ticket counts and retailer joins was sent to the official Public
 Information Office email.
+Vermont's public Winners table and game inventory pages were screened September
+15. The winner rows contain date, store, town, game and prize but publish no
+stated threshold, completeness guarantee, exact address or stable retailer ID.
+A focused August 2026 request for all-tier counts, a retailer directory and
+winner joins was sent to the Lottery's published public-information contact.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of

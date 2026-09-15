@@ -350,6 +350,17 @@ class StateLotterySourceRegistry {
           subtitle: 'Official Vermont Lottery rules, schedules, and guidance.',
           url: 'https://vtlottery.com/about/faq',
         ),
+        StateLotteryResource(
+          title: 'Published winners',
+          subtitle:
+              'Official selected winner records with date, store, town, game, and prize.',
+          url: 'https://vtlottery.com/win/winners',
+        ),
+        StateLotteryResource(
+          title: 'Public information requests',
+          subtitle: 'Official Vermont Lottery records-request contact.',
+          url: 'https://vtlottery.com/contact-info',
+        ),
       ],
     ),
     'Massachusetts': StateLotterySource(
