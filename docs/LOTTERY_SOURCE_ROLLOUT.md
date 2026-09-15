@@ -149,6 +149,11 @@ Ohio's daily Scratch prizes-remaining report, draw-results pages and published
 public-records policy were screened September 14. A focused request for existing
 August 2026 all-tier draw, Scratch validation, retailer directory and retailer-
 linked records was sent to the Lottery's official Records Administrator email.
+Oklahoma's Scratcher, Fast Play, draw and retailer sources were screened
+September 14. The advertised records portal displayed Arizona law and contact
+details and required requester address and phone, so a data/routing inquiry was
+sent to the Lottery's official information email instead of claiming a formal
+filing through an internally inconsistent form.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
