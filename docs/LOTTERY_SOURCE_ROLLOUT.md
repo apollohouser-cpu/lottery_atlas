@@ -153,6 +153,10 @@ New York's official daily draw-results dataset, Scratch top-prize page and
 retailer locator were screened September 14; they do not establish all-tier
 winner totals or selling-retailer joins. A data/FOIL-routing inquiry was sent
 to the Commission contact named in its open-data metadata.
+The Commission replied September 15 that a formal request must be submitted
+through its GovQA Records Access Center. The official portal was verified; it
+requires a requester account with a user-selected password and an interactive
+CAPTCHA, so the formal filing remains pending those human verification steps.
 North Dakota's official games, winners and retailer pages were screened
 September 14. Public winner listings are expressly partial, and the winning
 retailer table is limited to prizes of $5,000 or more. An inquiry was sent to

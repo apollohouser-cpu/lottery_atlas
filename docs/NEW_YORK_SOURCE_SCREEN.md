@@ -21,3 +21,9 @@ definitions, cadence, corrections and any fees. Gmail confirmed “Message
 sent.” This is not a confirmed formal FOIL filing. No complete count or
 retailer-linked source is verified; New York is not ready for full-state
 testing.
+
+On September 15, the Commission replied that these records require a formal
+FOIL request through its official GovQA Records Access Center. The portal was
+opened and verified, but submission requires creating a requester account with
+a user-selected password and completing an interactive CAPTCHA. The request
+cannot be treated as filed until those human verification steps are completed.
