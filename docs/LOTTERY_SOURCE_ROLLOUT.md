@@ -161,6 +161,11 @@ The Commission replied September 15 that a formal request must be submitted
 through its GovQA Records Access Center. The official portal was verified; it
 requires a requester account with a user-selected password and an interactive
 CAPTCHA, so the formal filing remains pending those human verification steps.
+Wyoming's $100-or-more winner list, current game catalog and retailer finder
+were screened September 15. A request sent to the published media contact
+produced a corrected official public-records form after the prior link returned
+404. The August 2026 request is fully entered and awaits only the portal's
+interactive reCAPTCHA; no fees are authorized.
 North Dakota's official games, winners and retailer pages were screened
 September 14. Public winner listings are expressly partial, and the winning
 retailer table is limited to prizes of $5,000 or more. An inquiry was sent to
