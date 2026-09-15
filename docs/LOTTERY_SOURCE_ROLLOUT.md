@@ -195,6 +195,11 @@ is ready for partial-coverage testing with its existing disclaimer. A focused
 August 2026 request for all-tier records was sent to the official FOIA email;
 the Lottery's published policy may limit an out-of-state requester to records
 already available online.
+Washington's Scratch prizes-paid and remaining report, draw unclaimed-prize
+page and public-records route were screened September 15. The current Scratch
+report is detailed enough for a refreshable active-game snapshot, but it is
+cumulative and lacks historical claim dates and retailer joins. A focused
+August 2026 request was sent to the official Public Records Coordinator.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of

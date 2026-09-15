@@ -641,6 +641,17 @@ class StateLotterySourceRegistry {
           subtitle: 'Official Washington Lottery draw-game results.',
           url: 'https://walottery.com/WinningNumbers/Default.aspx',
         ),
+        StateLotteryResource(
+          title: 'Scratch prizes paid and remaining',
+          subtitle:
+              'Official tier-level total, paid, and remaining prize counts.',
+          url: 'https://www.walottery.com/Scratch/TopPrizesRemaining.aspx',
+        ),
+        StateLotteryResource(
+          title: 'Public records requests',
+          subtitle: 'Official Washington Lottery records contacts and form.',
+          url: 'https://walottery.com/Contact/',
+        ),
       ],
     ),
     'Idaho': StateLotterySource(
