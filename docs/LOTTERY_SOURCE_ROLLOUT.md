@@ -159,6 +159,10 @@ Revenue APRA routes were screened September 15. Public winner tables are scoped
 subsets. The online APRA form requires a CAPTCHA, while the Lottery-specific
 offline form requests a mailing address, phone and signature without publishing
 an email destination; no formal request is claimed yet.
+Pennsylvania's focused Department of Revenue Right-to-Know Law request was
+submitted by email September 15 after the requester supplied the required
+contact information. It seeks existing August 2026 all-tier draw, Scratch,
+retailer directory and winner-to-retailer records; a response is pending.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of

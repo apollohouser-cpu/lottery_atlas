@@ -29,3 +29,12 @@ directory with exact addresses and verified coordinates, plus comprehensive
 winner-location records with game, prize, date, and selling retailer identifier
 or exact address. Validate source-specific timestamps and disclose the actual
 publishing cadence for each dataset before enabling Pennsylvania as launch-ready.
+
+Update September 15: a focused Right-to-Know Law request was emailed to the
+Department of Revenue's official Agency Open Records Officer route for existing
+August 1–31, 2026 all-tier draw, Scratch validation, retailer directory and
+winner-to-retailer records, including definitions, cadence and corrections.
+The requester contact fields required by the Department were supplied directly
+in the email and were not stored in this repository. Gmail confirmed “Message
+sent.” Pennsylvania remains deferred until responsive records establish the
+requested coverage.
