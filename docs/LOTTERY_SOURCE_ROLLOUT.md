@@ -81,6 +81,10 @@ Arizona's official records portal requires a verified commercial-use
 attestation. Source screening is recorded separately; no request was sent.
 The Arkansas data inquiry was sent September 13, 2026 to the Lottery's
 published contact address for ticket counts and retailer data.
+The Office of the Arkansas Lottery denied the request September 15 under Ark.
+Code Ann. § 25-19-105(a)(1)(A), stating that public-record inspection is
+limited to Arkansas citizens and the South Carolina requester information did
+not establish eligibility. It provided no data and referred to the public site.
 The California Public Records Act request was sent September 13, 2026 to
 the Lottery's published PRA coordinator for ticket counts and retailers.
 The coordinator acknowledged September 14 that it will process the request;

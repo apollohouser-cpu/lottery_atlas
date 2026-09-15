@@ -20,3 +20,11 @@ It requests existing draw and instant ticket/claim counts, selling retailer
 links, active retailer directory, count definitions and cadence, without
 personal winner information. Gmail confirmed “Message sent.” No additional
 coverage is verified from sending the inquiry.
+
+On September 15, the Office of the Arkansas Lottery issued a written denial.
+It cited Ark. Code Ann. § 25-19-105(a)(1)(A), stating that Arkansas public
+records are open for inspection only to Arkansas citizens and that the supplied
+South Carolina requester information did not establish Arkansas citizenship.
+The response supplied no requested data and referred only to the public lottery
+website. Arkansas therefore remains deferred; its public subsets must retain
+their stated scope and cannot be presented as complete statewide coverage.
