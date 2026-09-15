@@ -798,6 +798,13 @@ class StateLotterySourceRegistry {
           url:
               'https://data.texas.gov/See-Category-Tile/Texas-Lottery-Sales-by-Fiscal-Month-Year-Game-and-/beka-uwfq',
         ),
+        StateLotteryResource(
+          title: 'Public information requests',
+          subtitle:
+              'Official request route for additional Texas Lottery records.',
+          url:
+              'https://www.texaslottery.com/export/sites/lottery/About_Us/Agency_Directory/Public_Information_Request.html',
+        ),
       ],
     ),
     'Arkansas': StateLotterySource(

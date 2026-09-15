@@ -176,6 +176,13 @@ September 15. They provide useful official retailer-linked winner activity but
 do not establish all-tier completeness. A focused August 2026 data and records-
 routing request was sent to the Lottery's published email; a response is
 pending.
+Texas's current automated implementation was reviewed September 15. It has a
+complete current Scratch catalog, 19,612 mapped current retailer licenses and
+5,889 exact 2026 Scratch top-prize retailer records through September 13. Texas
+is ready for partial-coverage testing with the existing disclaimer, but is not
+an all-tier state total. A focused August 2026 request for the remaining draw
+and Scratch ticket counts and retailer joins was sent to the official Public
+Information Office email.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
