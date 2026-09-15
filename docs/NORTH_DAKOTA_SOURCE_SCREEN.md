@@ -16,9 +16,14 @@ Lottery also says it has more than 400 licensed retailers and links a locations
 PDF, but a current machine-readable directory with stable retailer identifiers
 and a complete winning-ticket join has not been verified.
 
-On September 14, an inquiry was sent to `ndlottery@nd.gov`, the email on the
-Lottery's official contact page. It asks for existing all-tier reports or APIs,
-retailer records and joins, update cadence and corrections, the public-records
-route, and written confirmation of whether North Dakota offers Scratch/instant
-games. Gmail confirmed “Message sent.” No reply or complete dataset has been
-received, so North Dakota is not ready for full-state testing.
+On September 15, the North Dakota Lottery replied that it does not track
+low-tier prizes and that the public Winners page includes the retailer that sold
+each published winning ticket. It identified its FAQ retailer list and the
+Winning Retailers page for sellers receiving a bonus on prizes of $5,000 or
+more. The Lottery also confirmed that these website updates have no fixed
+cadence and are made when the Sales and Marketing Manager has time, and that
+North Dakota offers no Scratch/instant tickets because state law permits only
+multi-state games. This agency response verifies the scope and cadence but also
+confirms that the requested complete all-tier count is not maintained. North
+Dakota remains a partial public-winner subset and is not ready for full-state
+testing.

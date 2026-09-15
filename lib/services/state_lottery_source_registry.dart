@@ -954,6 +954,19 @@ class StateLotterySourceRegistry {
           url:
               'https://wvlottery.com/content/beginners-guide-check-lottery-ticket-wv-lottery',
         ),
+        StateLotteryResource(
+          title: 'Scratch-Off games and prizes remaining',
+          subtitle:
+              'Official game and tier-level total and remaining prize counts.',
+          url: 'https://wvlottery.com/games/scratch-offs/',
+        ),
+        StateLotteryResource(
+          title: 'Recent winners',
+          subtitle:
+              'Official selected winner and selling-retailer announcements.',
+          url:
+              'https://wvlottery.com/news-and-winning/recent-winners/full-list-of-winners/retail-winners',
+        ),
       ],
     ),
   };

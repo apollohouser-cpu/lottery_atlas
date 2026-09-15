@@ -200,6 +200,14 @@ page and public-records route were screened September 15. The current Scratch
 report is detailed enough for a refreshable active-game snapshot, but it is
 cumulative and lacks historical claim dates and retailer joins. A focused
 August 2026 request was sent to the official Public Records Coordinator.
+West Virginia's Scratch catalog, recent-winner sources and existing two-ticket
+Cash 25 snapshot were screened September 15. Scratch game pages can support
+cumulative paid counts but do not provide claim dates or retailer joins. A
+focused August 2026 FOIA request was sent to the official agency email.
+North Dakota replied September 15 that it does not track low-tier prizes, has no
+Scratch/instant games, and updates its public winner and retailer pages without
+a fixed cadence. Its public winner data is therefore a verified subset rather
+than a complete all-tier state total.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
