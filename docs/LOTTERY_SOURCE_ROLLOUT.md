@@ -145,6 +145,10 @@ September 14. Public winner listings are expressly partial, and the winning
 retailer table is limited to prizes of $5,000 or more. An inquiry was sent to
 the Lottery's published email for all-tier data, retailer joins, cadence,
 records routing and confirmation of whether the state offers Scratch games.
+Ohio's daily Scratch prizes-remaining report, draw-results pages and published
+public-records policy were screened September 14. A focused request for existing
+August 2026 all-tier draw, Scratch validation, retailer directory and retailer-
+linked records was sent to the Lottery's official Records Administrator email.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
