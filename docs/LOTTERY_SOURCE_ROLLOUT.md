@@ -154,6 +154,11 @@ September 14. The advertised records portal displayed Arizona law and contact
 details and required requester address and phone, so a data/routing inquiry was
 sent to the Lottery's official information email instead of claiming a formal
 filing through an internally inconsistent form.
+Rhode Island's official winner tables, retailer finder and Department of
+Revenue APRA routes were screened September 15. Public winner tables are scoped
+subsets. The online APRA form requires a CAPTCHA, while the Lottery-specific
+offline form requests a mailing address, phone and signature without publishing
+an email destination; no formal request is claimed yet.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
