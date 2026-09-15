@@ -58,6 +58,12 @@ The Oregon data inquiry was sent September 13, 2026 to the Lottery's
 published Public Affairs address for routing to its data or records team.
 The Maryland Public Information Act request was sent September 13, 2026 to
 the agency's published PIA representative for winner counts and retailer data.
+On September 15, the agency requested a date range and prize-tier scope and
+said vendor work beyond two hours may incur a fee. It confirmed daily
+Scratch-Off unclaimed-prize counts at every tier, while cautioning that an
+unclaimed ticket's sold status is unknown. The request was narrowed to August
+1–31, 2026, all prize tiers, with a preference for existing standard reports
+and a written estimate before any fee; no paid work was authorized.
 The Georgia data inquiry was sent September 13, 2026 to the Lottery's
 published general email for routing to the records or data team.
 Georgia replied September 14 under ticket 361412 that the requested

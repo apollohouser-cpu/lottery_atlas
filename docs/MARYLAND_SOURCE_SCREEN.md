@@ -27,3 +27,12 @@ It requests existing draw and Scratch-Off winning-ticket counts, selling
 retailer links where maintained, a current retailer directory, field
 definitions and update cadence. Gmail confirmed “Message sent”; no new
 coverage has been verified from this request yet.
+
+On September 15, the agency asked for a date range and prize-tier scope and
+said a central-system vendor may be needed. Work beyond two hours may incur a
+fee. The agency also confirmed that its Scratch-Off pages update unclaimed
+winning-ticket counts daily at every prize tier, but that those counts cannot
+show whether an unclaimed ticket has been sold. A reply narrowed the initial
+request to August 1–31, 2026, retained all prize tiers for draw and Scratch-Off
+games, asked for existing standard reports and future reporting cadence, and
+required a written estimate before any paid work. No fees were authorized.
