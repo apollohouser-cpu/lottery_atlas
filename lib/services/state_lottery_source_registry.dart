@@ -189,6 +189,11 @@ class StateLotterySourceRegistry {
           subtitle: 'Official Virginia Lottery statewide retailer finder.',
           url: 'https://www.valottery.com/aboutus/findaretailer',
         ),
+        StateLotteryResource(
+          title: 'Public records requests',
+          subtitle: 'Official Virginia Lottery FOIA process and data contact.',
+          url: 'https://www.valottery.com/foiarequest',
+        ),
       ],
     ),
     'Kentucky': StateLotterySource(

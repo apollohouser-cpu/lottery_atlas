@@ -188,6 +188,13 @@ Vermont's public Winners table and game inventory pages were screened September
 stated threshold, completeness guarantee, exact address or stable retailer ID.
 A focused August 2026 request for all-tier counts, a retailer directory and
 winner joins was sent to the Lottery's published public-information contact.
+Virginia's automated implementation was reviewed September 15. It has 92
+current Scratchers, 5,365 exactly mapped retailers and 62 verified 2026
+retailer-level winner releases across 39 localities through August 26. Virginia
+is ready for partial-coverage testing with its existing disclaimer. A focused
+August 2026 request for all-tier records was sent to the official FOIA email;
+the Lottery's published policy may limit an out-of-state requester to records
+already available online.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
