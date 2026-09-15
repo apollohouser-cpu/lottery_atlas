@@ -140,6 +140,11 @@ New York's official daily draw-results dataset, Scratch top-prize page and
 retailer locator were screened September 14; they do not establish all-tier
 winner totals or selling-retailer joins. A data/FOIL-routing inquiry was sent
 to the Commission contact named in its open-data metadata.
+North Dakota's official games, winners and retailer pages were screened
+September 14. Public winner listings are expressly partial, and the winning
+retailer table is limited to prizes of $5,000 or more. An inquiry was sent to
+the Lottery's published email for all-tier data, retailer joins, cadence,
+records routing and confirmation of whether the state offers Scratch games.
 
 The app registry contains 45 lottery jurisdictions; Alabama, Alaska, Hawaii,
 Nevada, and Utah are marked as having no state lottery. The District of
