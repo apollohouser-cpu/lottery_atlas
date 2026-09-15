@@ -64,6 +64,11 @@ Scratch-Off unclaimed-prize counts at every tier, while cautioning that an
 unclaimed ticket's sold status is unknown. The request was narrowed to August
 1–31, 2026, all prize tiers, with a preference for existing standard reports
 and a written estimate before any fee; no paid work was authorized.
+The agency subsequently confirmed that its estimate will cover all winning
+draw tickets sold and Scratch-Off tickets redeemed in August, including game,
+prize, claim date, and selling-retailer name/address. A same-day reply added
+game type, draw date, retailer/locality identifiers, a non-personal record key,
+cadence, repeatable extracts, and an existing directory export where maintained.
 The Georgia data inquiry was sent September 13, 2026 to the Lottery's
 published general email for routing to the records or data team.
 Georgia replied September 14 under ticket 361412 that the requested

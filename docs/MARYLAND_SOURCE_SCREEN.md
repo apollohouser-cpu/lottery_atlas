@@ -36,3 +36,11 @@ show whether an unclaimed ticket has been sold. A reply narrowed the initial
 request to August 1–31, 2026, retained all prize tiers for draw and Scratch-Off
 games, asked for existing standard reports and future reporting cadence, and
 required a written estimate before any paid work. No fees were authorized.
+
+Later September 15, the agency confirmed that it is scoping all winning draw
+game tickets sold and Scratch-Off tickets redeemed during August 2026, with
+game name, prize amount, claim date, and selling-retailer name and address.
+The requester added game type, draw date, retailer identifier and complete
+locality fields, and a non-personal record identifier where already maintained.
+The reply also repeated the request for update cadence, repeatable future
+extracts, an existing retailer-directory export, and an estimate before fees.
