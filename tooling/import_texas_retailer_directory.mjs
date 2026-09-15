@@ -117,7 +117,14 @@ if (!outputPath) {
   const missing = official.filter((row) => !cached.has(keyFor(row)));
   for (let offset = 0; offset < missing.length; offset += 1000) {
     const batch = missing.slice(offset, offset + 1000);
-    const matches = await censusBatch(batch);
+    let matches = new Map();
+    try {
+      matches = await censusBatch(batch);
+    } catch (error) {
+      // A transient Census outage must not discard the official retailer
+      // roster. Unmatched rows continue through the verified ArcGIS fallback.
+      console.warn(`Census batch ${offset / 1000 + 1} skipped: ${error.message}`);
+    }
     for (const [index, coordinate] of matches) cached.set(keyFor(batch[index]), coordinate);
   }
   const arcMissing = official.filter((row) => !cached.has(keyFor(row)));
