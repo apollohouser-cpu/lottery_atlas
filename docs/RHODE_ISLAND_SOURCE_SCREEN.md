@@ -13,12 +13,12 @@ Selected winner stories and tables therefore cannot support a complete state
 heat map or ranking.
 
 The Department of Revenue's [APRA page](https://dor.ri.gov/apra-requests)
-provides an online request form with a CAPTCHA. Its Lottery-specific offline
-form requests the requester's mailing address, telephone, email and signature;
-the Department says requests may be mailed, emailed or faxed, but the published
-Lottery form does not identify an email destination. The online CAPTCHA cannot
-be completed unattended, and the requester address and phone are not available
-in the project context. No formal APRA request is represented as filed.
+provides an online request form with a CAPTCHA. A focused request was submitted
+through that form on September 16, 2026 to the Division of Lottery for August
+2026 all-tier draw and Instant Ticket records, the active retailer directory,
+retailer joins, definitions, cadence, corrections and any existing regularly
+updated file or API. It excludes personal winner information and requests one
+electronic copy. The website confirmed receipt. No fees were authorized.
 
 Rhode Island remains suitable only for clearly labeled public subsets until an
 official all-tier source and complete retailer join are obtained. It is not

@@ -164,8 +164,9 @@ CAPTCHA, so the formal filing remains pending those human verification steps.
 Wyoming's $100-or-more winner list, current game catalog and retailer finder
 were screened September 15. A request sent to the published media contact
 produced a corrected official public-records form after the prior link returned
-404. The August 2026 request is fully entered and awaits only the portal's
-interactive reCAPTCHA; no fees are authorized.
+404. The request was submitted successfully September 16 for the most recent
+complete 12-month period, with a fallback to the most recent complete month;
+the portal confirmed that the ticket was created. No fees are authorized.
 North Dakota's official games, winners and retailer pages were screened
 September 14. Public winner listings are expressly partial, and the winning
 retailer table is limited to prizes of $5,000 or more. An inquiry was sent to
@@ -182,9 +183,11 @@ sent to the Lottery's official information email instead of claiming a formal
 filing through an internally inconsistent form.
 Rhode Island's official winner tables, retailer finder and Department of
 Revenue APRA routes were screened September 15. Public winner tables are scoped
-subsets. The online APRA form requires a CAPTCHA, while the Lottery-specific
-offline form requests a mailing address, phone and signature without publishing
-an email destination; no formal request is claimed yet.
+subsets. A focused August 2026 request was submitted through the Department's
+online APRA form on September 16 to the Division of Lottery for all-tier draw
+and Instant Ticket records, the active retailer directory, retailer joins,
+definitions, cadence, corrections and any existing recurring source. The site
+confirmed receipt. No fees were authorized.
 Pennsylvania's focused Department of Revenue Right-to-Know Law request was
 submitted by email September 15 after the requester supplied the required
 contact information. It seeks existing August 2026 all-tier draw, Scratch,
@@ -193,8 +196,9 @@ South Carolina's official Winners Report and Scratch-Off inventory sources were
 screened September 15. The Winners Report is retailer-linked but limited to
 claimed prizes of $500 or more from the past three months, while prizes
 remaining are estimates rather than actual all-tier ticket counts. A focused
-August 2026 request is prepared in SCEL's official FOIA contact form; submission
-is pending its interactive CAPTCHA.
+August 2026 request was submitted through SCEL's official FOIA contact form on
+September 16. The website confirmed receipt and stated that SCEL would review
+the information and respond within 48 business hours. No fees were authorized.
 South Dakota's selected-winner and retailer-location sources were screened
 September 15. They provide useful official retailer-linked winner activity but
 do not establish all-tier completeness. A focused August 2026 data and records-

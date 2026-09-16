@@ -18,12 +18,13 @@ directory with stable location identifiers.
 SCEL's official [contact page](https://www.sceducationlottery.com/Lottery/Contact)
 specifically routes Freedom of Information Act requests through its contact
 form and links the agency's [FOIA fee schedule](https://www.sceducationlottery.com/documents/lottery/FOIAFeeSchedule.pdf).
-A focused August 1–31, 2026 request has been prepared in that form for all-tier
+A focused August 1–31, 2026 request was submitted through that form on
+September 16, 2026 for all-tier
 draw and Scratch-Off records, a complete retailer directory, retailer joins,
 definitions, cadence and corrections. It excludes claimant personal
 information in light of SCEL's published lottery-prize-winner information
-exemption. Submission remains pending only because the official form requires
-an interactive CAPTCHA.
+exemption. The website confirmed receipt and said the Lottery would review the
+information and respond within 48 business hours. No fees were authorized.
 
 South Carolina can show the public $500-plus activity with that limitation and
 the source update time. It is not ready for full-state testing until the request
