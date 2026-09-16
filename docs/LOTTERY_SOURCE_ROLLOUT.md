@@ -158,9 +158,10 @@ retailer locator were screened September 14; they do not establish all-tier
 winner totals or selling-retailer joins. A data/FOIL-routing inquiry was sent
 to the Commission contact named in its open-data metadata.
 The Commission replied September 15 that a formal request must be submitted
-through its GovQA Records Access Center. The official portal was verified; it
-requires a requester account with a user-selected password and an interactive
-CAPTCHA, so the formal filing remains pending those human verification steps.
+through its GovQA Records Access Center. A requester account was created and
+the formal request was submitted September 16. The portal assigned reference
+`R000200-091626`, acknowledged receipt and promised a status update by October
+15, 2026. No fees were authorized.
 Wyoming's $100-or-more winner list, current game catalog and retailer finder
 were screened September 15. A request sent to the published media contact
 produced a corrected official public-records form after the prior link returned
