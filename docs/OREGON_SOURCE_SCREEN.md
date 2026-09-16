@@ -40,4 +40,9 @@ Consultant, replied that the Lottery does not offer API data access and
 directed this inquiry to its [official public-records form](https://www.oregonlottery.org/public-information/request-form/).
 That statement concerns requested data access; the already observed public
 retailer and Scratch-it endpoints still require their own provenance and
-completeness checks. The formal form request has not yet been submitted.
+completeness checks. The formal 2026 year-to-date request was submitted on
+September 16 through the linked Wufoo form. The confirmation said “Public
+Records Request received.” It asks for existing all-tier draw and Scratch-it
+counts, retailer roster and selling-retailer joins, with a recent-month sample
+accepted only as a first format check. No fees were authorized. Responsive
+records and a repeatable update route remain pending.

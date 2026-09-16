@@ -79,6 +79,9 @@ Its legal director replied September 16 with draw-game Excel downloads and
 Scratcher and large-winner pages, and offered a complete retailer list.
 Validate the spreadsheet's tier and date coverage before publishing counts;
 the directory and all-tier Scratch/winner joins remain pending.
+One Powerball workbook contains 110 January 3–September 14, 2026 draw rows
+with main and Double Play prize-tier fields. A reply requested confirmation
+of Missouri-only counts, composite tier values and overlap before importing.
 The Nebraska written public-records request was sent September 13, 2026 to
 the address on the Lottery's official public-records page.
 Lottery counsel requested concrete examples September 16; a reply narrowed
@@ -96,7 +99,8 @@ The Oregon data inquiry was sent September 13, 2026 to the Lottery's
 published Public Affairs address for routing to its data or records team.
 Its records consultant replied September 16 that it does not offer API data
 access and directed a formal request to the public-records web form. The
-requested winner dataset remains unavailable pending that filing.
+2026 year-to-date request was submitted through that form September 16 and
+the site confirmed receipt. The requested winner dataset remains pending.
 The Maryland Public Information Act request was sent September 13, 2026 to
 the agency's published PIA representative for winner counts and retailer data.
 On September 15, the agency requested a date range and prize-tier scope and

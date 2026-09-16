@@ -43,3 +43,22 @@ show game-level prize and unclaimed figures, and to the large-prize retailer
 map. These do not by themselves establish 2026 year-to-date all-tier Scratch
 claims or complete retailer-linked winners. He offered to obtain a complete
 retailer list; await that file and validate identifiers and coordinates.
+
+September 16 workbook check: the official Powerball Excel download at
+`https://www.molottery.com/powerball/past-winning-numbers.do?order=desc`
+returned an XLSX with 3,262 draw rows and 27 columns. It includes 110 rows
+dated January 3–September 14, 2026, game-tier ticket-count columns for the
+main drawing and Double Play, and composite values such as `201+28` that need
+the Lottery's definition before normalization. The source date is the
+download date, not necessarily each draw's final correction date. The initial
+read-only workbook reader reported only the first row; opening it in normal
+mode exposed the full sheet. Do not publish an aggregate yet: verify whether
+all counts refer only to Missouri-sold tickets, what the plus-separated
+values represent, whether double-play columns overlap, and coverage of all
+other draw games. The XLSX was inspected locally, not committed as app data.
+
+A September 16 reply to the legal director and communications manager asked
+for confirmation of Missouri-only counts, plus-separated tier semantics,
+Double Play overlap, correction/source dates, 2026 Scratcher claim counts,
+and the promised retailer directory and winner joins. Gmail confirmed
+“Message sent” at 7:28 p.m. ET. No data were promoted to the map yet.
