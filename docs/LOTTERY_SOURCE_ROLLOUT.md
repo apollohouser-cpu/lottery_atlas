@@ -46,6 +46,9 @@ The Missouri data inquiry was sent September 13, 2026 to its published
 Communications Manager for routing to the data or records custodian.
 The Nebraska written public-records request was sent September 13, 2026 to
 the address on the Lottery's official public-records page.
+Lottery counsel requested concrete examples September 16; a reply narrowed
+the initial period to August and described the desired draw, Scratch and
+retailer records for routing. Responsive records remain pending.
 The Florida public-records request was sent September 13, 2026 to the
 Lottery's published public-records custodian email, requesting existing
 electronic winner counts, retailer records, definitions, and cadence.
@@ -198,6 +201,10 @@ September 14. The advertised records portal displayed Arizona law and contact
 details and required requester address and phone, so a data/routing inquiry was
 sent to the Lottery's official information email instead of claiming a formal
 filing through an internally inconsistent form.
+The Lottery replied September 16 that it cannot provide the requested feeds
+or reports, pointing only to public Scratcher and Fast Play original/remaining
+prize information. Oklahoma's complete draw and retailer-linked coverage
+remains deferred.
 Rhode Island's official winner tables, retailer finder and Department of
 Revenue APRA routes were screened September 15. Public winner tables are scoped
 subsets. A focused August 2026 request was submitted through the Department's

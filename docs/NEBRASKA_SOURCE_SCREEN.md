@@ -30,3 +30,11 @@ Brian Rockey. A request was sent September 13, 2026 for existing draw-game
 winning-ticket counts, Scratch game/tier original and claimed counts,
 retailer records where public, source definitions, and update cadence. The
 request provided a name and reply email and asked for notice before any fees.
+
+On September 16, Lottery counsel Jordan Mruz confirmed receipt and asked for a
+concrete example to route the request. A reply narrowed the initial period to
+August 2026 and described example rows for Nebraska-sold draw-game winning
+counts by drawing and tier, Scratch prize counts by game and tier, the active
+retailer directory, and any releasable selling-retailer link. It accepted
+existing standard reports and partial production with clear coverage, and
+requested an estimate before billable work. Gmail showed the sent reply.

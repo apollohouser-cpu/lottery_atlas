@@ -26,4 +26,14 @@ On September 14, a data and routing inquiry was emailed to
 existing August 1–31, 2026 all-tier draw, Scratcher, Fast Play, retailer and
 retailer-linked reports and asks the Lottery to confirm the correct Oklahoma
 records route. Gmail confirmed “Message sent.” No complete dataset or response
-has been received, so Oklahoma is not ready for full-state testing.
+had been received at screening time, so Oklahoma was not ready for full-state
+testing.
+
+On September 16, Oklahoma Lottery replied that it cannot provide the
+requested datasets, reports, APIs or direct feeds. It said some requested
+reports or connections do not exist and other information cannot be provided
+for privacy and security reasons. It pointed to public original and remaining
+prize information for Scratchers and Fast Play. This supports only a dated,
+limited prize-inventory view; it does not verify all-tier draw winning counts
+or a complete retailer-linked ranking. Oklahoma remains deferred for those
+features.
