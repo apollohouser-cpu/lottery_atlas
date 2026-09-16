@@ -100,6 +100,9 @@ On September 16 it asked for a time frame and flagged potential $175/hour
 programming. A reply narrowed the initial search to August 2026, requested
 existing reports and an itemized estimate, and authorized no paid work. No
 records have arrived.
+The coordinator then asked about a $1,000 prize threshold. A September 16
+reply kept all-tier aggregate counts in scope and accepted $1,000-plus
+retailer-linked records only as a clearly labeled partial subset.
 The Connecticut FOIA request was sent September 13, 2026 to the Lottery's
 published corporation email for routing to the appropriate records custodian.
 The Delaware data inquiry was sent September 13, 2026 to the Director's

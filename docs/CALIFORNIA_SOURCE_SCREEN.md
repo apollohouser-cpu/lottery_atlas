@@ -33,3 +33,10 @@ requested all-tier draw, Scratchers, retailer directory and releasable selling-
 retailer fields, and asked for existing reports or readily exportable records.
 It requested an itemized estimate before any programming; no paid work was
 authorized. Gmail showed the sent reply. Responsive data remain pending.
+
+Later September 16, the coordinator asked whether "winning tickets" meant
+prizes above $1,000. A reply clarified that aggregate counts are requested for
+**all prize tiers**, including lower tiers, while an existing $1,000-plus
+retailer-linked report would be useful as a labeled partial subset. The reply
+retained the Scratchers and active-retailer requests and again required a cost
+estimate before any paid work. Gmail showed the sent reply.
