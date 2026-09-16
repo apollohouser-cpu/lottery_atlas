@@ -20,6 +20,11 @@ still require separately verified selling locations.
 | 3 | Oregon, Maryland, Georgia, Tennessee | Review published game-level reports and request any missing aggregate fields. |
 | 4 | Remaining lottery jurisdictions | Apply the same request and importer contract, prioritizing official machine-readable feeds. |
 
+Colorado's official Who's Winning, Winning Stores and Scratch pages were
+screened September 16. They provide useful selected-winner/store reports and
+printed Scratch prize inventories, but do not establish a complete all-tier
+winning-ticket total or retailer ranking. See `COLORADO_SOURCE_SCREEN.md`.
+
 Iowa open-records request sent September 13, 2026 to the email address listed
 on the Lottery's official open-records page. It requests existing draw-game
 winner counts, Scratch-Off prize counts, retailer records where public, and
