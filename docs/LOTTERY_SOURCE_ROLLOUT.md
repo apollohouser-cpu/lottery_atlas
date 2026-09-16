@@ -24,6 +24,10 @@ Colorado's official Who's Winning, Winning Stores and Scratch pages were
 screened September 16. They provide useful selected-winner/store reports and
 printed Scratch prize inventories, but do not establish a complete all-tier
 winning-ticket total or retailer ranking. See `COLORADO_SOURCE_SCREEN.md`.
+Idaho's Scratch catalog, Idaho Cash draw-tier winner table, retailer finder
+and records form were screened September 16. The Idaho Cash table supports a
+single-game latest-draw count, while statewide historical coverage remains
+unverified. See `IDAHO_SOURCE_SCREEN.md`.
 
 Iowa open-records request sent September 13, 2026 to the email address listed
 on the Lottery's official open-records page. It requests existing draw-game
