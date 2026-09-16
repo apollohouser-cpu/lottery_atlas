@@ -31,6 +31,13 @@ sent. This is still not a filed formal request; no ticket-count data arrived.
 
 Later September 14: The OPIR help desk replied that a new requester should
 visit `https://login.mt.gov`, scroll to “Don't have an account? Sign up,” and
-follow the account-creation instructions. It attached instructions. This
-resolves the portal route, but no MT.gov account or formal case has been
-created, and no records have been supplied.
+follow the account-creation instructions. It attached instructions.
+
+On September 16, 2026, the MT.gov account was created and verified, and a
+formal request was submitted through OPIR to `LOT - Lottery`. It requests
+September 1, 2025 through August 31, 2026 all-tier draw and Scratch records,
+retailer records and joins, definitions, cadence, corrections and any existing
+recurring source, with a fallback to the most recent complete month. Delivery
+is through the web portal; the requester asked for an estimate before any paid
+processing. The portal displayed a successful-submission confirmation. Its
+confirmation email and case number have not yet arrived.
