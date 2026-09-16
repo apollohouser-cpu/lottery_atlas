@@ -31,3 +31,15 @@ draw-game ticket counts, Scratcher game/tier counts, retailer feeds where
 public, count definitions, correction behavior, and publication cadence.
 This is not yet a formal Sunshine Law request to a designated custodian;
 ask for that contact if the inquiry is redirected. No fees were authorized.
+
+Update September 16: Jay Boresi, Director of Legal Services, replied that
+individual [draw-game result pages](https://www.molottery.com/powerball/winning-numbers.jsp)
+offer Excel downloads with winning numbers and tickets sold, updated regularly.
+The Powerball page's download points to a game-specific `.xlsx` export;
+its contents, 2026 date range, tier definitions and completeness still require
+validation before publishing a draw winner total. He also pointed to the
+[current Scratcher pages](https://www.molottery.com/scratchers-list.do), which
+show game-level prize and unclaimed figures, and to the large-prize retailer
+map. These do not by themselves establish 2026 year-to-date all-tier Scratch
+claims or complete retailer-linked winners. He offered to obtain a complete
+retailer list; await that file and validate identifiers and coordinates.

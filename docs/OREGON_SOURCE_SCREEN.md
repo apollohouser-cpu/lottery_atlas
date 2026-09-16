@@ -34,3 +34,10 @@ confirmation of retailer API completeness. Gmail confirmed “Message sent.”
 The [official records request form](https://www.oregonlottery.org/public-information/request-form/)
 is available if the Lottery routes the inquiry to that process. This request
 does not change the current source gate.
+
+Update September 16: Jessica Nelson, Oregon Lottery Records Management
+Consultant, replied that the Lottery does not offer API data access and
+directed this inquiry to its [official public-records form](https://www.oregonlottery.org/public-information/request-form/).
+That statement concerns requested data access; the already observed public
+retailer and Scratch-it endpoints still require their own provenance and
+completeness checks. The formal form request has not yet been submitted.

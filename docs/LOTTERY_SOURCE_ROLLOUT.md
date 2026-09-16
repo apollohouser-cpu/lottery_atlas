@@ -37,6 +37,9 @@ Michigan's official instant-game prize inventory and retailer finder were
 screened September 16. Remaining prize counts include unsold tickets, and
 complete 2026 winner counts and selling-retailer joins are unverified. See
 `MICHIGAN_SOURCE_SCREEN.md`.
+The written Michigan FOIA request was sent to the Bureau's official coordinator
+September 16 for 2026 year-to-date all-tier data, a retailer directory and
+selling-retailer joins. Gmail confirmed sent; acknowledgment is pending.
 Idaho's Scratch catalog, Idaho Cash draw-tier winner table, retailer finder
 and records form were screened September 16. The Idaho Cash table supports a
 single-game latest-draw count, while statewide historical coverage remains
@@ -72,6 +75,10 @@ Lottery records custodian identified in the Department of Revenue's current
 public-records notice.
 The Missouri data inquiry was sent September 13, 2026 to its published
 Communications Manager for routing to the data or records custodian.
+Its legal director replied September 16 with draw-game Excel downloads and
+Scratcher and large-winner pages, and offered a complete retailer list.
+Validate the spreadsheet's tier and date coverage before publishing counts;
+the directory and all-tier Scratch/winner joins remain pending.
 The Nebraska written public-records request was sent September 13, 2026 to
 the address on the Lottery's official public-records page.
 Lottery counsel requested concrete examples September 16; a reply narrowed
@@ -87,6 +94,9 @@ but existing-data reports can be supplied if given a date range. An August
 sent the same day. No report or cost estimate has been received.
 The Oregon data inquiry was sent September 13, 2026 to the Lottery's
 published Public Affairs address for routing to its data or records team.
+Its records consultant replied September 16 that it does not offer API data
+access and directed a formal request to the public-records web form. The
+requested winner dataset remains unavailable pending that filing.
 The Maryland Public Information Act request was sent September 13, 2026 to
 the agency's published PIA representative for winner counts and retailer data.
 On September 15, the agency requested a date range and prize-tier scope and

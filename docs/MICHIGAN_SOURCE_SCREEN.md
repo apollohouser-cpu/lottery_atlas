@@ -5,3 +5,9 @@ Michigan's [official instant-game FAQ](https://help.michiganlottery.com/support/
 This screen has not established a complete 2026 year-to-date all-tier winning-ticket count, a current downloadable statewide retailer directory, or comprehensive selling-retailer joins. Michigan remains source-linked, not ready for a complete statewide ranking or retailer heat map. A dated instant-game inventory can be added as a separately labeled snapshot after an importer validates its coverage and update cadence.
 
 The [Bureau of State Lottery FOIA process](https://www.michigan.gov/cg/panel-contact/foia) identifies `MSL-FOIA@michigan.gov` for written requests and requires requester name, phone, mailing address and email. Request existing January 1, 2026 to latest available all-tier draw and instant-game validation/claim records, retailer directory and selling-retailer joins, definitions and update cadence; accept a recent-month sample for format, but do not mistake it for year-to-date coverage. Ask for a fee estimate before paid work.
+
+The written FOIA request was emailed to that address September 16 with the
+required requester details, an electronic-delivery preference, and an estimate
+request before any paid work. Gmail confirmed “Message sent.” Agency receipt
+and responsive records remain pending; private contact details are not stored
+in this repository.
