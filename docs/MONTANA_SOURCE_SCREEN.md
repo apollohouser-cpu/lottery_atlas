@@ -42,3 +42,8 @@ is through the web portal; the requester asked for an estimate before any paid
 processing. The portal displayed a successful-submission confirmation. Its
 confirmation email arrived at 2:58 a.m. Eastern on September 16 and assigned
 case `26-PIR-2200` (queue: Intake). No responsive dataset has arrived.
+At 11:00 a.m. Eastern, OPIR sent a formal acknowledgment letter confirming
+receipt under that same case number. It says OPIR will review the request,
+clarify or deny if necessary, or provide records, and will supply a cost
+estimate as soon as possible if staff time is billable. The letter includes
+general timing guidance, not a committed delivery date for this request.

@@ -143,9 +143,11 @@ The account was created and verified September 16, and a formal request was
 submitted through OPIR to `LOT - Lottery` for September 1, 2025 through August
 31, 2026 all-tier draw and Scratch records, retailer records and joins,
 definitions, cadence, corrections and recurring sources. The portal confirmed
-successful submission; its confirmation email and case number are pending.
+successful submission.
 OPIR subsequently emailed case `26-PIR-2200` on September 16, with the request
-in its Intake queue. No responsive dataset has arrived.
+in its Intake queue. A formal acknowledgment letter followed at 11:00 a.m.
+Eastern, confirming receipt and explaining review paths and potential cost
+estimates. No responsive dataset has arrived.
 The North Carolina routing/data inquiry was sent September 14, 2026 to the
 Lottery's published Player Service email. Its daily Scratch prize-remaining
 table and weekly $5,000-plus Winners pages are scoped, useful sources, but
