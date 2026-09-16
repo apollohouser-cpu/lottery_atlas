@@ -27,3 +27,12 @@ Later September 14: Player Service directed the inquiry to
 required name, email, description, and request-type fields; its address and
 phone fields are shown without a required marker. A formal request was not
 successfully submitted during this screen, so no case number exists yet.
+
+On September 16, the portal's embedded form was retried in the in-app browser
+and Chrome. Its email and request-type controls did not reliably retain input,
+so no portal submission was claimed. A complete written August 2026 request
+was instead emailed to `publicinfo@lotterync.net`, the public-records contact
+provided in Player Service's reply. It asks the custodian to accept and assign
+a tracking number or provide a working alternative route, discloses potential
+commercial use, and asks for a fee estimate before paid processing. Gmail
+confirmed “Message sent.” Acceptance and responsive data remain pending.

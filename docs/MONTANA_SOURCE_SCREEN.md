@@ -40,4 +40,5 @@ retailer records and joins, definitions, cadence, corrections and any existing
 recurring source, with a fallback to the most recent complete month. Delivery
 is through the web portal; the requester asked for an estimate before any paid
 processing. The portal displayed a successful-submission confirmation. Its
-confirmation email and case number have not yet arrived.
+confirmation email arrived at 2:58 a.m. Eastern on September 16 and assigned
+case `26-PIR-2200` (queue: Intake). No responsive dataset has arrived.

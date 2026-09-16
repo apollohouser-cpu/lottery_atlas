@@ -144,12 +144,18 @@ submitted through OPIR to `LOT - Lottery` for September 1, 2025 through August
 31, 2026 all-tier draw and Scratch records, retailer records and joins,
 definitions, cadence, corrections and recurring sources. The portal confirmed
 successful submission; its confirmation email and case number are pending.
+OPIR subsequently emailed case `26-PIR-2200` on September 16, with the request
+in its Intake queue. No responsive dataset has arrived.
 The North Carolina routing/data inquiry was sent September 14, 2026 to the
 Lottery's published Player Service email. Its daily Scratch prize-remaining
 table and weekly $5,000-plus Winners pages are scoped, useful sources, but
 do not establish all-tier draw counts or a complete retailer heat map.
 Player Service directed North Carolina requests to its official records
 portal; no formal submission or case number is confirmed yet.
+The portal form was retried September 16 but did not reliably retain required
+field input. A complete written request was emailed to its published public
+records contact, `publicinfo@lotterync.net`; Gmail confirmed delivery for
+sending, but the agency has not yet accepted or assigned a case number.
 New Hampshire's current Scratch schedule, result pages and retailer finder
 were screened September 14. They do not establish actual all-tier ticket
 counts or a retailer join; its official records route is being identified.
