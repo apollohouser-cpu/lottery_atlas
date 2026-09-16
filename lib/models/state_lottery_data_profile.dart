@@ -25,9 +25,8 @@ extension StateLotteryDataReadinessDetails on StateLotteryDataReadiness {
 }
 
 class StateLotteryDataProfile {
-  /// Lottery Atlas’ current verified-history target. Earlier records remain
-  /// available when an official source publishes them, but state readiness and
-  /// the map timeline use this common nationwide window.
+  /// Lottery Atlas' current collection target starts January 1, 2026.
+  /// Older records may be displayed, but ten-year history is a future phase.
   static const int verifiedHistoryStartYear = 2026;
 
   const StateLotteryDataProfile({
@@ -67,15 +66,14 @@ class StateLotteryDataProfile {
   bool get hasRetailerActivity => retailerRecordCount > 0;
   bool get hasScratchCatalog => scratchCatalogGameCount > 0;
 
-  /// This measures continuity of the records currently loaded in the app.
-  /// It deliberately does not claim that a state lottery's entire claim
-  /// archive has been imported.
+  /// This describes the dated records loaded in the app, not full year-to-date
+  /// completeness across all games and prize tiers.
   String get historicalCoverageLabel {
     if (!hasMapActivity || firstRecordAt == null || latestRecordAt == null) {
       return 'Historical activity not yet published';
     }
     if (hasVerifiedRecordsInLaunchWindow) {
-      return 'Live coverage: 2026–${latestRecordAt!.year}';
+      return 'Verified records in 2026 through ${latestRecordAt!.month}/${latestRecordAt!.day}/${latestRecordAt!.year}';
     }
     return 'Verified records span ${firstRecordAt!.year}–${latestRecordAt!.year}';
   }

@@ -2,6 +2,15 @@
 
 ## Acceptance rule
 
+The current collection and launch target is January 1, 2026 through each
+source's latest available publication date. Request and import 2026 year-to-date
+records where maintained; a single August 2026 month may be used as an initial
+sample to establish format, definitions, cost, and refresh access, but does not
+satisfy year-to-date coverage. The app's ten-year timeline is a future data
+expansion and is not a prerequisite for state testing. Show the actual covered
+dates and source cadence; do not imply that a few 2026 records cover the full
+year.
+
 For each jurisdiction, record the game and tier coverage, count definition
 (winning tickets, claims, or prizes remaining), period, source publication
 date, official URL, update cadence, and whether retailer locations are
