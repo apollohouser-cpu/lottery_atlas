@@ -100,8 +100,10 @@ page covers only tickets over $25,000 and some retailer fields are pending.
 Illinois requested a narrower period September 14; an August 1–31, 2026
 clarification was sent, with no report or fee estimate received yet.
 The Indiana data and APRA-routing inquiry was sent September 13, 2026 to
-the public-records email on its portal; a formal portal filing is not yet
-confirmed because that form requires login.
+the public-records email on its portal. An Access Indiana account was created
+and a formal APRA request was submitted through the Hoosier Lottery portal on
+September 16. The portal confirmed successful submission; a response is
+pending.
 The Louisiana data inquiry was sent September 13, 2026 to the Communications
 Director in its official press kit for routing to data or records staff.
 The Maine FOAA request was sent September 13, 2026 to the DAFS address

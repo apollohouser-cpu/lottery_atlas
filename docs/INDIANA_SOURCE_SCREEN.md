@@ -19,3 +19,11 @@ winning or claimed counts, retailer data, definitions and update cadence.
 Gmail confirmed “Message sent.” It asks whether the email can be accepted
 as a request or requires a separate portal filing; do not mark a formal
 APRA request filed until confirmed. No responsive dataset is verified yet.
+
+On September 16, 2026, an Access Indiana account was created and its email
+verified. A formal APRA request was submitted through the Hoosier Lottery
+portal for existing August 2026 all-tier draw and Scratch-Off winning-ticket
+records, retailer records and joins, definitions, update cadence, corrections
+and any existing regularly updated source. The portal displayed “Form
+submitted successfully” and said it would review the request and provide a
+follow-up email. No fee was authorized. No responsive dataset has arrived.
