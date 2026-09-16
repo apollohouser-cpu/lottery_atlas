@@ -28,6 +28,12 @@ Idaho's Scratch catalog, Idaho Cash draw-tier winner table, retailer finder
 and records form were screened September 16. The Idaho Cash table supports a
 single-game latest-draw count, while statewide historical coverage remains
 unverified. See `IDAHO_SOURCE_SCREEN.md`.
+Kansas instant-game prize-remaining tables and selected winner notices were
+screened September 16. The official open-records policy identifies a written
+request route; complete ticket counts remain unverified. See
+`KANSAS_SOURCE_SCREEN.md`.
+A focused August 2026 written request was sent September 16 to the Lottery's
+published open-records address; responsive records remain pending.
 
 Iowa open-records request sent September 13, 2026 to the email address listed
 on the Lottery's official open-records page. It requests existing draw-game
