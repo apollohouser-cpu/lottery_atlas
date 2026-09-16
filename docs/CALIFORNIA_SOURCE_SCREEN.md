@@ -25,3 +25,11 @@ verified merely by submitting the request.
 Update September 14: The PRA Coordinator replied, “Thank you we will
 process.” This acknowledges the request but supplies no records, definitions,
 fee estimate, or coverage confirmation. California remains pending.
+
+Update September 16: The coordinator asked for a search time frame, warning
+that a longer period could delay delivery and require programming at $175 per
+hour. A reply selected August 1–31, 2026 for the initial search, retained the
+requested all-tier draw, Scratchers, retailer directory and releasable selling-
+retailer fields, and asked for existing reports or readily exportable records.
+It requested an itemized estimate before any programming; no paid work was
+authorized. Gmail showed the sent reply. Responsive data remain pending.

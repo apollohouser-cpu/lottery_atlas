@@ -90,8 +90,11 @@ limited to Arkansas citizens and the South Carolina requester information did
 not establish eligibility. It provided no data and referred to the public site.
 The California Public Records Act request was sent September 13, 2026 to
 the Lottery's published PRA coordinator for ticket counts and retailers.
-The coordinator acknowledged September 14 that it will process the request;
-no records have arrived.
+The coordinator acknowledged September 14 that it will process the request.
+On September 16 it asked for a time frame and flagged potential $175/hour
+programming. A reply narrowed the initial search to August 2026, requested
+existing reports and an itemized estimate, and authorized no paid work. No
+records have arrived.
 The Connecticut FOIA request was sent September 13, 2026 to the Lottery's
 published corporation email for routing to the appropriate records custodian.
 The Delaware data inquiry was sent September 13, 2026 to the Director's
