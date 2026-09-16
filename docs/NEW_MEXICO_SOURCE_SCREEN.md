@@ -22,3 +22,12 @@ contact requirements for electronic delivery. Gmail confirmed “Message
 sent.” This inquiry is not a formal filed records request. No responsive
 data or complete state coverage is verified; New Mexico is not ready for
 full-state testing.
+
+On September 16, after the requester supplied the required mailing address
+and telephone, a formal written IPRA request was emailed to the Lottery's
+published records custodian. It asks for existing August 2026 all-tier draw
+and Scratchers validation/claim records, the public retailer directory and
+available winner-to-retailer joins, definitions, corrections, cadence and
+recurring sources. It excludes private winner identifiers, discloses possible
+commercial use and asks for a fee estimate before paid work. Gmail confirmed
+“Message sent.” Agency acknowledgment and responsive records are pending.

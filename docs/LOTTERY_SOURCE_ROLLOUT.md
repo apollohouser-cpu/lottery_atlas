@@ -23,8 +23,8 @@ still require separately verified selling locations.
 Iowa open-records request sent September 13, 2026 to the email address listed
 on the Lottery's official open-records page. It requests existing draw-game
 winner counts, Scratch-Off prize counts, retailer records where public, and
-the cadence/access method. Pennsylvania's formal request is pending a mailing
-address required by its Department of Revenue process.
+the cadence/access method. Pennsylvania's formal request was later filed with
+the required requester contact details; see its September 15 update below.
 On September 14, Iowa staff entered that request in the State of Iowa
 NextRequest system as **#26-4068**. Its notice says an update is expected
 within 10 business days. No records have been supplied yet.
@@ -163,8 +163,10 @@ An inquiry was sent September 14 to the Lottery headquarters email on its
 official contact page, requesting routing to the records/data custodian.
 New Mexico's $5,000-plus Winners page and estimated unclaimed top-prizes page
 were screened September 14. A process/data inquiry was sent to its published
-records custodian. Formal written filing requires requester mailing address
-and phone under the Lottery's published notice; no filing is confirmed.
+records custodian. After the requester supplied the required mailing address
+and phone, a formal written August 2026 IPRA request was emailed to the
+published custodian September 16. Gmail confirmed sending; acknowledgment and
+responsive records are pending.
 New York's official daily draw-results dataset, Scratch top-prize page and
 retailer locator were screened September 14; they do not establish all-tier
 winner totals or selling-retailer joins. A data/FOIL-routing inquiry was sent
@@ -204,7 +206,11 @@ confirmed receipt. No fees were authorized.
 Pennsylvania's focused Department of Revenue Right-to-Know Law request was
 submitted by email September 15 after the requester supplied the required
 contact information. It seeks existing August 2026 all-tier draw, Scratch,
-retailer directory and winner-to-retailer records; a response is pending.
+retailer directory and winner-to-retailer records. On September 16, the deputy
+open-records officer asked whether $1,000-plus retailer-level records would
+suffice. A reply accepted that as a partial subset only and retained lower-tier
+and directory scope, requesting the lowest maintained tier and any cost
+estimate before paid work. Responsive records remain pending.
 South Carolina's official Winners Report and Scratch-Off inventory sources were
 screened September 15. The Winners Report is retailer-linked but limited to
 claimed prizes of $500 or more from the past three months, while prizes

@@ -38,3 +38,11 @@ The requester contact fields required by the Department were supplied directly
 in the email and were not stored in this repository. Gmail confirmed “Message
 sent.” Pennsylvania remains deferred until responsive records establish the
 requested coverage.
+
+Update September 16: the Department's deputy open-records officer asked
+whether retailer-level winning-ticket or claim records limited to prizes of
+$1,000 or more would suffice. A reply said that subset is useful only as a
+clearly labeled partial set, retained the lower-tier and active-retailer
+requests, and asked for the lowest maintained retailer-level threshold,
+lower-tier aggregate records and any fee estimate before paid processing.
+Gmail confirmed “Message sent.” No responsive records have arrived.
