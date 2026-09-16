@@ -211,6 +211,9 @@ open-records officer asked whether $1,000-plus retailer-level records would
 suffice. A reply accepted that as a partial subset only and retained lower-tier
 and directory scope, requesting the lowest maintained tier and any cost
 estimate before paid work. Responsive records remain pending.
+The officer also flagged overlap between the September 12 and 15 requests.
+A September 16 reply consolidated them around the focused August scope and
+deferred the broader historical period pending availability and cost details.
 South Carolina's official Winners Report and Scratch-Off inventory sources were
 screened September 15. The Winners Report is retailer-linked but limited to
 claimed prizes of $500 or more from the past three months, while prizes

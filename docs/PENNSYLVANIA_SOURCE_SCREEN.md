@@ -46,3 +46,12 @@ clearly labeled partial set, retained the lower-tier and active-retailer
 requests, and asked for the lowest maintained retailer-level threshold,
 lower-tier aggregate records and any fee estimate before paid processing.
 Gmail confirmed “Message sent.” No responsive records have arrived.
+
+Later September 16, the same officer asked whether the September 12 and 15
+requests should both be processed. A reply made the September 15 August 2026
+request the controlling initial scope and asked the Department to consolidate
+the overlapping requests. It retained the full active-retailer directory,
+all-tier draw counts, Scratch-Off records and existing selling-retailer joins.
+The broader January-to-present period was deferred pending an availability and
+cost estimate. Gmail showed the sent reply in the conversation. No paid work
+was authorized.
