@@ -33,6 +33,10 @@ Colorado's official Who's Winning, Winning Stores and Scratch pages were
 screened September 16. They provide useful selected-winner/store reports and
 printed Scratch prize inventories, but do not establish a complete all-tier
 winning-ticket total or retailer ranking. See `COLORADO_SOURCE_SCREEN.md`.
+Michigan's official instant-game prize inventory and retailer finder were
+screened September 16. Remaining prize counts include unsold tickets, and
+complete 2026 winner counts and selling-retailer joins are unverified. See
+`MICHIGAN_SOURCE_SCREEN.md`.
 Idaho's Scratch catalog, Idaho Cash draw-tier winner table, retailer finder
 and records form were screened September 16. The Idaho Cash table supports a
 single-game latest-draw count, while statewide historical coverage remains
@@ -253,6 +257,13 @@ estimate before paid work. Responsive records remain pending.
 The officer also flagged overlap between the September 12 and 15 requests.
 A September 16 reply consolidated them around the focused August scope and
 deferred the broader historical period pending availability and cost details.
+The officer later advised separate handling after consulting his team and
+asked to clarify retailer activation status and dates. A 5:24 p.m. ET reply
+agreed to separate handling, removed redundant active-status wording, and
+specified maintained opening/closing dates or an as-of date for the directory.
+It identified August as a format sample toward January 1, 2026 to latest-date
+coverage and requested existing export availability and a fee estimate. Gmail
+confirmed sent; responsive records remain pending.
 South Carolina's official Winners Report and Scratch-Off inventory sources were
 screened September 15. The Winners Report is retailer-linked but limited to
 claimed prizes of $500 or more from the past three months, while prizes

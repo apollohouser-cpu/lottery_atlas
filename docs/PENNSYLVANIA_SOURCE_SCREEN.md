@@ -55,3 +55,17 @@ all-tier draw counts, Scratch-Off records and existing selling-retailer joins.
 The broader January-to-present period was deferred pending an availability and
 cost estimate. Gmail showed the sent reply in the conversation. No paid work
 was authorized.
+
+Further update September 16: after consulting its open-records team, the
+deputy officer reversed the proposed consolidation and asked to handle the
+September 12 and September 15 requests separately. He also asked whether the
+activation-status field could be removed from the active-retailer-directory
+request and what “relevant dates” meant. A reply agreed to separate handling,
+removed the redundant status field, and clarified that dates mean existing
+opening/closing or effective dates indicating activity in August; a current
+active directory and its as-of date suffice if historical dates are not
+maintained. It retained retailer identifiers, addresses and maintained
+coordinates, identified August as an initial format sample and January 1,
+2026 to latest publication as the eventual coverage target, and asked for
+existing export availability and a fee estimate before paid work. Gmail
+confirmed “Message sent” at 5:24 p.m. ET. No records or fee estimate yet.
