@@ -1,4 +1,4 @@
-# Connecticut source screen — September 13, 2026
+# Connecticut source screen — September 17, 2026
 
 Connecticut is not yet ready for complete winning-ticket totals or a
 retailer heat map. The [official Scratch Games page](https://www.ctlottery.org/ScratchGames)
@@ -23,3 +23,10 @@ On September 13, 2026, a FOIA request was sent to
 to route it to the custodian. It requests existing draw and Scratch counts,
 selling retailer links, an active directory, definitions and cadence. Gmail
 confirmed “Message sent.” No records have been verified from the request yet.
+
+On September 17, assistant corporate counsel Jeffrey Yue acknowledged the
+request as **FOIA #2026-025** and asked for the requester's name and date
+range before processing. The intended range for ticket and claim records is
+**January 1, 2026 through the latest available date**; the retailer directory
+and Scratch catalog should be the latest available snapshots. The clarification
+has not yet been sent, and no agency data has been delivered.
