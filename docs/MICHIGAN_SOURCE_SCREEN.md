@@ -1,4 +1,4 @@
-# Michigan source screen — September 16, 2026
+# Michigan source screen — September 17, 2026
 
 Michigan's [official instant-game FAQ](https://help.michiganlottery.com/support/solutions/articles/158000441491-in-store-instant-game-tickets-faq) links to current games, prizes remaining and the retailer finder. Individual [official game pages](https://api.michiganlottery.com/games/0649-instore-instant-win-big) show prize-tier start and remaining inventory with a dated update. The Lottery explicitly says remaining prizes include tickets that may or may not have been sold, so subtracting remaining from starting inventory does not establish validated winning tickets in 2026. The retailer finder identifies where games may be sold, not where each winning ticket was sold.
 
@@ -8,6 +8,8 @@ The [Bureau of State Lottery FOIA process](https://www.michigan.gov/cg/panel-con
 
 The written FOIA request was emailed to that address September 16 with the
 required requester details, an electronic-delivery preference, and an estimate
-request before any paid work. Gmail confirmed “Message sent.” Agency receipt
-and responsive records remain pending; private contact details are not stored
-in this repository.
+request before any paid work. Gmail confirmed “Message sent.” In a September 17
+extension letter, the Bureau deemed the request received that day and extended
+its response deadline to **October 8, 2026**, citing staff availability and
+coordination among divisions. No responsive data or fee estimate has arrived.
+Private contact details are not stored in this repository.
