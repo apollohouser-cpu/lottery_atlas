@@ -70,3 +70,13 @@ four explicit winner-tier columns (`5of5` through `2of5`). Its dates use
 two-digit years, unlike the Powerball workbook. This is another usable
 game-scoped candidate pending Missouri-only scope and correction confirmation;
 it does not establish complete coverage across all draw and Scratch games.
+
+The official Pick 3 Excel export at
+`https://www.molottery.com/pick3/past-winning-numbers.do?order=desc`
+contains 516 January 1–September 15, 2026 Midday/Evening rows, but its
+populated columns are draw date, draw time, winning numbers and Wild Ball;
+there are no winning-ticket count fields in that export. The public statement
+that draw spreadsheets include tickets sold therefore cannot be generalized
+to every game. The latest repository Pages workflow completed successfully at
+commit `0a79fb2`; this is a publishing check, not validation of Missouri
+coverage.
