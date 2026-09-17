@@ -28,3 +28,12 @@ Scratch remaining-prize snapshots only with exact game, drawing or source date,
 count definition and coverage notices. It is not yet ready for a complete
 statewide winning-ticket total or retailer heat ranking. Historical access,
 refresh cadence and correction handling require verification.
+
+September 17: a written 2026 year-to-date public-records request was sent to
+`info@lottery.idaho.gov`, the email printed on the Lottery's official request
+form. It asks for Idaho-sold all-tier draw-game counts, Scratch prize/claim
+inventories, an active retailer directory, any maintained retailer joins, and
+source cadence and correction definitions. An August 2026 sample is acceptable
+for initial routing, but does not replace the requested year-to-date period.
+Gmail confirmed the message was sent; agency acknowledgment and records are
+pending. No fees were authorized.
