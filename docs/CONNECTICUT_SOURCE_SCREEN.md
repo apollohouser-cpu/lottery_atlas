@@ -28,7 +28,8 @@ On September 17, assistant corporate counsel Jeffrey Yue acknowledged the
 request as **FOIA #2026-025** and asked for the requester's name and date
 range before processing. The intended range for ticket and claim records is
 **January 1, 2026 through the latest available date**; the retailer directory
-and Scratch catalog should be the latest available snapshots. The clarification
-was reported sent by the requester on September 17. Gmail confirmation could
-not yet be independently checked because browser control timed out. No agency
-data has been delivered.
+and Scratch catalog should be the latest available snapshots. The requester
+sent a clarification on September 17 naming Apollo Houser and specifying
+January 1, 2026 through the latest available date for winning-ticket and claim
+records, while requesting a fee estimate before billable work. The sent message
+was verified in Gmail. No agency data has been delivered.
