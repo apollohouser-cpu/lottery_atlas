@@ -82,6 +82,10 @@ the directory and all-tier Scratch/winner joins remain pending.
 One Powerball workbook contains 110 January 3–September 14, 2026 draw rows
 with main and Double Play prize-tier fields. A reply requested confirmation
 of Missouri-only counts, composite tier values and overlap before importing.
+The in-state Show Me Cash export has four unambiguous tiers and 258 complete
+daily draws from January 1 through September 15, totaling 1,962,060 tickets.
+Its game-only count is staged with an explicit partial-coverage label in the
+state-total feed and a six-hour importer; do not treat it as an all-game total.
 The Nebraska written public-records request was sent September 13, 2026 to
 the address on the Lottery's official public-records page.
 Lottery counsel requested concrete examples September 16; a reply narrowed

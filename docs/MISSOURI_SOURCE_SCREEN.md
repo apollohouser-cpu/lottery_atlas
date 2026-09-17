@@ -80,3 +80,16 @@ that draw spreadsheets include tickets sold therefore cannot be generalized
 to every game. The latest repository Pages workflow completed successfully at
 commit `0a79fb2`; this is a publishing check, not validation of Missouri
 coverage.
+
+September 16 implementation: a narrowly scoped Show Me Cash importer reads
+the official game workbook and validates consecutive daily draw dates from
+January 1, 2026 through the latest available draw, the four winner-tier
+columns, and nonnegative integer counts. On the September 16 download it
+found 258 draws through September 15 and 1,962,060 winning tickets across
+5-of-5 through 2-of-5. Show Me Cash is an in-state game, and the Lottery's
+legal director described the game downloads as winning tickets sold. The
+state-total feed labels this explicitly as **Show Me Cash only**, excluding
+other draw games and Scratchers; it cannot be interpreted as a complete
+Missouri total or retailer ranking. The six-hour workflow will refresh the
+source and stop on schema or date gaps. `sourceDate` records download day
+because the workbook does not provide a separate publication timestamp.
