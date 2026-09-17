@@ -102,3 +102,14 @@ The validated 259 daily draws from January 1 through September 16 total
 `fd37f70` passed all 48 Flutter tests and the publishing workflow; the live
 Pages JSON was checked after deployment. The same game-only and retailer
 limitations remain in force.
+
+September 17 MO Millions check: the official
+[`mo-millions/past-winning-numbers.do` workbook](https://www.molottery.com/mo-millions/past-winning-numbers.do?order=desc)
+contains 74 drawing rows from January 3 through September 16, 2026. It has
+separate main-draw and Double Play winner-tier columns, with integer-valued
+counts represented as `.0` in the workbook and some blank tier cells. This is
+a promising additional in-state game source, but the main and Double Play
+counts are not added to the published state total pending confirmation of
+whether a ticket can appear in both sets and how blank/composite Bulls-Eye
+tiers should be interpreted. The current Show Me Cash-only label remains
+accurate.
