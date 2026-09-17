@@ -29,4 +29,6 @@ request as **FOIA #2026-025** and asked for the requester's name and date
 range before processing. The intended range for ticket and claim records is
 **January 1, 2026 through the latest available date**; the retailer directory
 and Scratch catalog should be the latest available snapshots. The clarification
-has not yet been sent, and no agency data has been delivered.
+was reported sent by the requester on September 17. Gmail confirmation could
+not yet be independently checked because browser control timed out. No agency
+data has been delivered.
