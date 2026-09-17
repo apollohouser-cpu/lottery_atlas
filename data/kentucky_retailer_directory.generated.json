@@ -1,7 +1,7 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-16T12:35:49.568Z",
-  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3472 unique retailers; 3377 received exact Census or verified ArcGIS point-address coordinates. 95 unresolved addresses were excluded rather than estimated.",
+  "retrievedAt": "2026-09-17T12:35:08.331Z",
+  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3474 unique retailers; 3379 received exact Census or verified ArcGIS point-address coordinates. 95 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
       "state": "Kentucky",
@@ -3537,6 +3537,17 @@
           "latitude": 37.586297647835,
           "longitude": -84.283444846181,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
+          "id": "ky-176fcf79b4d6a076",
+          "name": "LOBBY TERMINAL CORP",
+          "address": "1011 West Main St",
+          "city": "Louisville",
+          "postalCode": "40202",
+          "county": "Jefferson County",
+          "latitude": 38.257777983441,
+          "longitude": -85.766584063902,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
           "id": "ky-177433d36889bc5e",
@@ -29694,6 +29705,17 @@
           "county": "Perry County",
           "latitude": 37.344086252779,
           "longitude": -83.271920878101,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
+          "id": "ky-cdf496a4afe12b30",
+          "name": "NIAGARA FOOD MART",
+          "address": "3949 State Route 416 W",
+          "city": "Henderson",
+          "postalCode": "42420",
+          "county": "Henderson County",
+          "latitude": 37.721237529871,
+          "longitude": -87.486493926256,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
