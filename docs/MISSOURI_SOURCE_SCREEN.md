@@ -62,3 +62,11 @@ for confirmation of Missouri-only counts, plus-separated tier semantics,
 Double Play overlap, correction/source dates, 2026 Scratcher claim counts,
 and the promised retailer directory and winner joins. Gmail confirmed
 “Message sent” at 7:28 p.m. ET. No data were promoted to the map yet.
+
+The official Show Me Cash Excel download at
+`https://www.molottery.com/show-me-cash/past-winning-numbers.do?order=desc`
+also returned an XLSX with 258 rows dated January 1–September 15, 2026 and
+four explicit winner-tier columns (`5of5` through `2of5`). Its dates use
+two-digit years, unlike the Powerball workbook. This is another usable
+game-scoped candidate pending Missouri-only scope and correction confirmation;
+it does not establish complete coverage across all draw and Scratch games.

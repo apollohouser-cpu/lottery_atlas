@@ -101,6 +101,8 @@ Its records consultant replied September 16 that it does not offer API data
 access and directed a formal request to the public-records web form. The
 2026 year-to-date request was submitted through that form September 16 and
 the site confirmed receipt. The requested winner dataset remains pending.
+An Oregon Lottery confirmation email separately confirmed receipt at 7:26
+p.m. ET September 16.
 The Maryland Public Information Act request was sent September 13, 2026 to
 the agency's published PIA representative for winner counts and retailer data.
 On September 15, the agency requested a date range and prize-tier scope and
@@ -302,6 +304,8 @@ Vermont's public Winners table and game inventory pages were screened September
 stated threshold, completeness guarantee, exact address or stable retailer ID.
 A focused August 2026 request for all-tier counts, a retailer directory and
 winner joins was sent to the Lottery's published public-information contact.
+The director acknowledged September 16 and extended the response window to
+ten business days from September 15; no records have been supplied.
 Virginia's automated implementation was reviewed September 15. It has 92
 current Scratchers, 5,365 exactly mapped retailers and 62 verified 2026
 retailer-level winner releases across 39 localities through August 26. Virginia

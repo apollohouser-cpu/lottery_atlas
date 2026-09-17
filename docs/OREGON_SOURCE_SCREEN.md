@@ -46,3 +46,6 @@ Records Request received.” It asks for existing all-tier draw and Scratch-it
 counts, retailer roster and selling-retailer joins, with a recent-month sample
 accepted only as a first format check. No fees were authorized. Responsive
 records and a repeatable update route remain pending.
+
+An Oregon Lottery confirmation email also arrived at 7:26 p.m. ET September
+16 and explicitly confirmed receipt of the public-records request.

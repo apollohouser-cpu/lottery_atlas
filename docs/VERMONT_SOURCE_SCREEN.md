@@ -27,3 +27,10 @@ this repository.
 Vermont remains suitable only for a clearly labeled public winner subset until
 the prize threshold and completeness are confirmed and exact retailer records
 are obtained. It is not ready for map testing.
+
+Update September 16: Hannah Chauvin, Director of External Affairs, acknowledged
+the September 15 request and extended the response deadline to ten business
+days from receipt because of the volume of distinct records to search and
+examine. No responsive data or fee estimate accompanied the notice. Track the
+agency response around September 29, subject to its business-day calendar;
+keep the existing partial-coverage limitation meanwhile.
