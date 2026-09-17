@@ -24,6 +24,11 @@ retailer joins, definitions, cadence and corrections. Gmail confirmed “Message
 sent.” Requester contact information was supplied directly and is not stored in
 this repository.
 
+On September 17, public records coordinator Tiffany Pringle confirmed receipt
+of the September 15 request, forwarded it to the IS Department, and estimated
+a response by **October 15, 2026**. She will forward an earlier response or
+advise if more time is needed. This acknowledgment contains no data yet.
+
 The existing bundled Washington Scratch catalog is a dated August 30 snapshot.
 The detailed official report is a candidate for a six-hour importer, but
 Washington is not ready for map testing until exact current retailer records
