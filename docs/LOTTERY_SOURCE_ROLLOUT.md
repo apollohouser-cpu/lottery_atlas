@@ -84,8 +84,10 @@ with main and Double Play prize-tier fields. A reply requested confirmation
 of Missouri-only counts, composite tier values and overlap before importing.
 The in-state Show Me Cash export has four unambiguous tiers and 258 complete
 daily draws from January 1 through September 15, totaling 1,962,060 tickets.
-Its game-only count is staged with an explicit partial-coverage label in the
+Its game-only count is live with an explicit partial-coverage label in the
 state-total feed and a six-hour importer; do not treat it as an all-game total.
+The September 17 refresh includes 259 daily draws through September 16 and
+1,970,077 Show Me Cash winning tickets; the Pages deployment passed.
 The Nebraska written public-records request was sent September 13, 2026 to
 the address on the Lottery's official public-records page.
 Lottery counsel requested concrete examples September 16; a reply narrowed

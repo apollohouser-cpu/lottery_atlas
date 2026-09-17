@@ -1,8 +1,10 @@
 # Missouri source screen — September 12, 2026
 
-Missouri is **deferred for the current-data launch heat map**. Preserve the
+Missouri's **Show Me Cash-only state total is ready for partial-coverage
+testing**, while its current-data retailer heat map is deferred. Preserve the
 existing Missouri schedules, official links, starter Scratch catalog, and
-verified historical winner point.
+verified historical winner point. This count does not cover other draw games
+or Scratchers and cannot rank Missouri retailers.
 
 - The [official Where to Play page](https://www.molottery.com/where-to-play/where-to-play.do)
   searches by city or ZIP within local, 15-, 30-, or 45-mile radii. This does
@@ -93,3 +95,10 @@ other draw games and Scratchers; it cannot be interpreted as a complete
 Missouri total or retailer ranking. The six-hour workflow will refresh the
 source and stop on schema or date gaps. `sourceDate` records download day
 because the workbook does not provide a separate publication timestamp.
+
+September 17 refresh: the official workbook added the September 16 drawing.
+The validated 259 daily draws from January 1 through September 16 total
+**1,970,077 Show Me Cash winning tickets** across the four listed tiers. Commit
+`fd37f70` passed all 48 Flutter tests and the publishing workflow; the live
+Pages JSON was checked after deployment. The same game-only and retailer
+limitations remain in force.
