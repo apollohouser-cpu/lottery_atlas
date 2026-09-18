@@ -1,4 +1,4 @@
-# Nebraska source screen — September 12, 2026
+# Nebraska source screen — September 18, 2026
 
 Nebraska is **not yet ready for a complete verified heat map**. Its existing
 official source links and draw schedule remain in place.
@@ -38,3 +38,16 @@ counts by drawing and tier, Scratch prize counts by game and tier, the active
 retailer directory, and any releasable selling-retailer link. It accepted
 existing standard reports and partial production with clear coverage, and
 requested an estimate before billable work. Gmail showed the sent reply.
+
+On September 18, counsel said he was still coordinating with multiple people
+to determine what records are publicly available. He identified the current
+[Scratch catalog](https://nelottery.com/scratch), whose game details give prize
+tiers and total winners for each game; a separate
+[prizes-remaining report](https://nelottery.com/images/media/Scratch_Prizes_Remaining.pdf);
+[closing-game notices](https://nelottery.com/scratch-games-closing); and
+[draw-game results](https://nelottery.com/lotto-detail?gamename=Mega+Millions),
+which he described as showing only the latest draw. These sources may support
+a dated catalog and cumulative game inventory, but they do not by themselves
+establish January 1, 2026-to-current validated winning-ticket counts or
+selling-retailer joins. The request for those records remains open; no fee
+estimate or responsive extract was provided in this message.
