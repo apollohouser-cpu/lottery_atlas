@@ -29,3 +29,12 @@ official address on September 13, 2026, seeking existing draw-game ticket
 counts, Scratch-Off game/tier counts, retailer data where public, the meaning
 of the published Big Winners subset, and update cadence. No fee was authorized;
 the request asks for notice before any fee is incurred.
+
+On September 18, Wisconsin Lottery's Chuck Klink asked what the phrase
+“winner records linked to verified selling retailer IDs” means. The intended
+records are existing validated winning-ticket or prize-claim entries, or an
+aggregate report by selling retailer, game, prize tier and draw/claim date,
+when the Lottery maintains a selling-retailer association. Personal winner
+identities and ticket serial numbers are not requested. If no such association
+exists, all-tier statewide counts and the active retailer directory are still
+useful separately. This clarification has not yet been sent.
