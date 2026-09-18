@@ -1,9 +1,9 @@
 {
   "source": "Colorado Lottery official Who's Winning, Winning Stores, and retailer API",
   "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/",
-  "updatedAt": "2026-09-18T06:35:44.576Z",
-  "sourceLastUpdated": "2026-09-16T12:00:00.000Z",
-  "coverage": "1122 exact physical retailer-level Colorado Lottery wins from January 1, 2026 through the current official report. Each dated winner row is joined to one exact official winning-store address and one exact official retailer coordinate; unmatched rows are excluded.",
+  "updatedAt": "2026-09-18T18:32:36.496Z",
+  "sourceLastUpdated": "2026-09-17T12:00:00.000Z",
+  "coverage": "1123 exact physical retailer-level Colorado Lottery wins from January 1, 2026 through the current official report. Each dated winner row is joined to one exact official winning-store address and one exact official retailer coordinate; unmatched rows are excluded.",
   "activities": [
     {
       "id": "co-2026-01-02-powerball-co-138572-ronald-e",
@@ -13074,24 +13074,6 @@
       "sourceLabel": "Official Colorado Lottery Who's Winning report · Plus · June 30, 2026"
     },
     {
-      "id": "co-2026-06-30-pick-3-co-139949-daniel-l",
-      "latitude": 38.8940694,
-      "longitude": -104.757472,
-      "city": "Colorado Springs",
-      "county": "El Paso",
-      "state": "CO",
-      "game": "state-draw",
-      "gameName": "Pick 3",
-      "retailerName": "CORNER MARKET",
-      "retailerAddress": "4295 N Academy Blvd, Colorado Springs, CO 80918",
-      "coordinateSource": "Colorado Lottery published retailer coordinate",
-      "drawDate": "2026-06-30T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 2500,
-      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=pick3&timeframe=180",
-      "sourceLabel": "Official Colorado Lottery Who's Winning report · Pick 3 · June 30, 2026"
-    },
-    {
       "id": "co-2026-06-30-3-000-000-millionaire-maker-co-140047-jacqueline-g",
       "latitude": 38.8368846,
       "longitude": -107.9663316,
@@ -20200,6 +20182,42 @@
       "prizeAmount": 1000,
       "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=scratch&timeframe=sincestart",
       "sourceLabel": "Official Colorado Lottery Who's Winning report · COLORADO GOLD RUSH · Sept. 16, 2026"
+    },
+    {
+      "id": "co-2026-09-17-mega-millions-co-140132-darren-s",
+      "latitude": 40.4374581,
+      "longitude": -104.9039271,
+      "city": "Windsor",
+      "county": "Weld",
+      "state": "CO",
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "retailerName": "MAVERIK #5408",
+      "retailerAddress": "450 Crossroads Blvd, Windsor, CO 80550",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-09-17T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 1500,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=megamillions&timeframe=sincestart",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · Mega Millions · Sept. 17, 2026"
+    },
+    {
+      "id": "co-2026-09-17-pick-3-co-140768-buddy-l",
+      "latitude": 39.091154,
+      "longitude": -108.4508657,
+      "city": "Clifton",
+      "county": "Mesa",
+      "state": "CO",
+      "game": "state-draw",
+      "gameName": "Pick 3",
+      "retailerName": "MAVERIK #417",
+      "retailerAddress": "3249 F Road, Clifton, CO 81520",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-09-17T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 660,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=pick3&timeframe=180",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · Pick 3 · Sept. 17, 2026"
     }
   ],
   "excluded": [
@@ -21788,6 +21806,14 @@
       "reason": "No exact official store row matched"
     },
     {
+      "gameName": "Colorado Lotto+",
+      "winnerName": "VICTOR T.",
+      "store": "SMOKER FRIENDLY #159",
+      "city": "MACK",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
       "gameName": "Plus",
       "winnerName": "DOUGLAS H.",
       "store": "C & L GAS",
@@ -22121,7 +22147,7 @@
       "store": "WALMART #3126 NHM",
       "city": "Aurora",
       "date": "Aug. 21, 2026",
-      "reason": "No exact official store row matched"
+      "reason": "No official retailer address matched"
     },
     {
       "gameName": "Cash 5",
@@ -49253,6 +49279,14 @@
     },
     {
       "gameName": "Pick 3",
+      "winnerName": "DANIEL L.",
+      "store": "CORNER MARKET",
+      "city": "Colorado Springs",
+      "date": "June 30, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
       "winnerName": ".",
       "store": "ALL IN ONE",
       "city": "N/A",
@@ -71937,6 +71971,286 @@
       "store": "SMOKER FRIENDLY #164",
       "city": "N/A",
       "date": "Sept. 16, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "WALMART #3740 NHM",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "JR&#x27;S COUNTRY STORE #214",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "KING SOOPERS #131",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "SHELL #185",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "ALL IN ONE STORE",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "STOCKADE WINE AND LIQUOR",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "LOAF N JUG #97",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "KING SOOPERS #126",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "KING SOOPERS #84",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "MAVERIK #5257",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "MAVERIK #5257",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "MAVERIK #5257",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "KING SOOPERS #640 FUEL CENTER",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "WALMART SUPERCENTER#1231",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "BINAYAK FOOD AND GAS",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "BINAYAK FOOD AND GAS",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "CIRCLE K #2744048",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "C & F FOOD STORE #4",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "SOUTH CIRCLE STATION",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "7-ELEVEN #29024A",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "KING SOOPERS #03",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "ACCELOIL 6TH AVE",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "WINNERS CORNER CO",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "WINNERS CORNER CO",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "WINNERS CORNER CO",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "KING SOOPERS #114",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "7-ELEVEN #18589",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "LOAF N JUG #750822",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "GLASS BOTTLE LIQUORS",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "7-ELEVEN #39848 BCP S&S FUEL",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "7-ELEVEN #39848 BCP S&S FUEL",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "7-ELEVEN #42018A",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "WINNERS CORNER CO",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "PREMIUM SUPER MART",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Pick 3",
+      "winnerName": ".",
+      "store": "MAVERIK #5310",
+      "city": "N/A",
+      "date": "Sept. 17, 2026",
       "reason": "No exact official store row matched"
     },
     {
