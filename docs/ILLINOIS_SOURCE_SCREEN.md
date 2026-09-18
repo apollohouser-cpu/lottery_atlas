@@ -1,4 +1,4 @@
-# Illinois source screen — September 13, 2026
+# Illinois source screen — September 18, 2026
 
 Update September 14: The FOIA office said the original request lacked a time
 range and was too broad. A clarification specified August 1–31, 2026 for
@@ -23,4 +23,8 @@ address for existing all-tier draw counts, Scratch-Off ticket or claim
 counts, retailer records and links, definitions, history and cadence. The
 request explicitly disclosed potential commercial use of records in the
 public-facing app and asked for fees to be stated before incurring them.
-Gmail confirmed “Message sent.” No responsive records have been verified yet.
+Gmail confirmed “Message sent.” On September 18, Mike Beavers at the Illinois
+FOIA office shared a secure OneDrive folder for **FOIA Request 26-226** and
+said the requested Lottery data was attached. The folder requires recipient
+email verification; its contents and coverage have not yet been inspected.
+No counts or retailer records from this response have been published.
