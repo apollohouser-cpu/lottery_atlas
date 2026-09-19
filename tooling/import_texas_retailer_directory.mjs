@@ -28,6 +28,17 @@ const parseCsv = (line) => {
   cells.push(cell); return cells;
 };
 
+const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));
+const fetchWithRetry = async (url, options = {}, attempts = 4) => {
+  let response;
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    response = await fetch(url, options);
+    if (response.ok || ![429, 500, 502, 503, 504].includes(response.status)) return response;
+    if (attempt < attempts) await wait(1000 * (2 ** (attempt - 1)));
+  }
+  return response;
+};
+
 const fetchRetailers = async () => {
   const select = [
     'retailer_number', 'location_name', 'location_address', 'location_address2',
@@ -38,7 +49,10 @@ const fetchRetailers = async () => {
   url.searchParams.set('$where', "month_end_date >= '2026-08-01T00:00:00.000' AND location_state = 'TX'");
   url.searchParams.set('$group', select);
   url.searchParams.set('$limit', '50000');
-  const response = await fetch(url, {headers: {'user-agent': 'LotteryAtlasOfficialDataBot/1.0'}});
+  const response = await fetchWithRetry(
+    url,
+    {headers: {'user-agent': 'LotteryAtlasOfficialDataBot/1.0'}},
+  );
   if (!response.ok) throw new Error(`Texas retailer data returned HTTP ${response.status}`);
   const rows = await response.json();
   const byId = new Map();
@@ -107,9 +121,22 @@ if (!outputPath) {
   console.error('Usage: node tooling/import_texas_retailer_directory.mjs OUTPUT.json');
   process.exitCode = 1;
 } else try {
-  const official = await fetchRetailers();
   let previous = null;
   try { previous = JSON.parse(await readFile(outputPath, 'utf8')); } catch (_) {}
+  let official;
+  try {
+    official = await fetchRetailers();
+  } catch (error) {
+    const previousRetailers = previous?.directories?.[0]?.retailers;
+    if (Array.isArray(previousRetailers) && previousRetailers.length >= 19000) {
+      console.warn(
+        `Texas retailer source temporarily unavailable; retained the verified ` +
+        `${previousRetailers.length}-retailer directory from ${previous.retrievedAt}: ${error.message}`,
+      );
+      process.exit(0);
+    }
+    throw error;
+  }
   const cached = new Map((previous?.directories?.[0]?.retailers ?? []).map((row) =>
     [keyFor(row), {latitude: row.latitude, longitude: row.longitude,
       coordinateSource: row.coordinateSource}],
