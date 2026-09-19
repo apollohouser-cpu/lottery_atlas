@@ -1,9 +1,9 @@
 {
   "source": "Colorado Lottery official Who's Winning, Winning Stores, and retailer API",
   "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/",
-  "updatedAt": "2026-09-18T18:32:36.496Z",
+  "updatedAt": "2026-09-19T00:36:30.064Z",
   "sourceLastUpdated": "2026-09-17T12:00:00.000Z",
-  "coverage": "1123 exact physical retailer-level Colorado Lottery wins from January 1, 2026 through the current official report. Each dated winner row is joined to one exact official winning-store address and one exact official retailer coordinate; unmatched rows are excluded.",
+  "coverage": "1126 exact physical retailer-level Colorado Lottery wins from January 1, 2026 through the current official report. Each dated winner row is joined to one exact official winning-store address and one exact official retailer coordinate; unmatched rows are excluded.",
   "activities": [
     {
       "id": "co-2026-01-02-powerball-co-138572-ronald-e",
@@ -1951,8 +1951,8 @@
     },
     {
       "id": "co-2026-01-27-diamond-10s-co-137588-shanna-m",
-      "latitude": 39.2190396,
-      "longitude": -104.5366046,
+      "latitude": 39.2238674,
+      "longitude": -104.5365743,
       "city": "Elbert",
       "county": "Elbert",
       "state": "CO",
@@ -4867,8 +4867,8 @@
     },
     {
       "id": "co-2026-03-12-lucky-for-life-co-137588-matthew-n",
-      "latitude": 39.2190396,
-      "longitude": -104.5366046,
+      "latitude": 39.2238674,
+      "longitude": -104.5365743,
       "city": "Elbert",
       "county": "Elbert",
       "state": "CO",
@@ -17664,6 +17664,24 @@
       "sourceLabel": "Official Colorado Lottery Who's Winning report · Mega Millions · Aug. 21, 2026"
     },
     {
+      "id": "co-2026-08-21-cash-5-co-138401-michael-c",
+      "latitude": 39.6252651,
+      "longitude": -104.7940404,
+      "city": "Aurora",
+      "county": "Arapahoe",
+      "state": "CO",
+      "game": "state-draw",
+      "gameName": "Cash 5",
+      "retailerName": "WALMART #3126 NHM",
+      "retailerAddress": "16746 E Smoky Hill Rd, Aurora, CO 80015",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-08-21T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 20000,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=cash5&timeframe=sincestart",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · Cash 5 · Aug. 21, 2026"
+    },
+    {
       "id": "co-2026-08-21-pick-3-co-136467-elemi-b",
       "latitude": 39.7820889,
       "longitude": -104.7725868,
@@ -20218,6 +20236,42 @@
       "prizeAmount": 660,
       "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=pick3&timeframe=180",
       "sourceLabel": "Official Colorado Lottery Who's Winning report · Pick 3 · Sept. 17, 2026"
+    },
+    {
+      "id": "co-2026-09-17-magnificent-millions-co-200813-linda-b",
+      "latitude": 37.4694491,
+      "longitude": -105.8700214,
+      "city": "Alamosa",
+      "county": "Alamosa",
+      "state": "CO",
+      "game": "scratch-off",
+      "gameName": "MAGNIFICENT MILLIONS",
+      "retailerName": "LOAF N JUG #10",
+      "retailerAddress": "102 E Hwy 160, Alamosa, CO 81101",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-09-17T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 5000,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=scratch&timeframe=sincestart",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · MAGNIFICENT MILLIONS · Sept. 17, 2026"
+    },
+    {
+      "id": "co-2026-09-17-uno-co-140168-patricia-g",
+      "latitude": 39.655971,
+      "longitude": -105.0484371,
+      "city": "Denver",
+      "county": "Denver",
+      "state": "CO",
+      "game": "scratch-off",
+      "gameName": "UNO™",
+      "retailerName": "BEAR VALLEY WINE & SPIRITS",
+      "retailerAddress": "3100 S Sheridan Blvd Unit F, Denver, CO 80227",
+      "coordinateSource": "Colorado Lottery published retailer coordinate",
+      "drawDate": "2026-09-17T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 1000,
+      "sourceUrl": "https://www.coloradolottery.com/en/player-tools/whos-winning/?game=scratch&timeframe=sincestart",
+      "sourceLabel": "Official Colorado Lottery Who's Winning report · UNO™ · Sept. 17, 2026"
     }
   ],
   "excluded": [
@@ -22140,14 +22194,6 @@
       "city": "Arvada",
       "date": "Aug. 11, 2026",
       "reason": "No exact official store row matched"
-    },
-    {
-      "gameName": "Cash 5",
-      "winnerName": "MICHAEL C.",
-      "store": "WALMART #3126 NHM",
-      "city": "Aurora",
-      "date": "Aug. 21, 2026",
-      "reason": "No official retailer address matched"
     },
     {
       "gameName": "Cash 5",
@@ -76451,6 +76497,22 @@
       "store": "7-ELEVEN #39082C",
       "city": "Denver",
       "date": "Sept. 16, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "Decade of Dollars",
+      "winnerName": "JEVONE M.",
+      "store": "WINNERS CORNER CO",
+      "city": "Denver",
+      "date": "Sept. 17, 2026",
+      "reason": "No exact official store row matched"
+    },
+    {
+      "gameName": "$250,000 JUMBO BUCKS CROSSWORD",
+      "winnerName": "DIEDRE M.",
+      "store": "KING SOOPERS #40",
+      "city": "Centennial",
+      "date": "Sept. 17, 2026",
       "reason": "No exact official store row matched"
     },
     {
