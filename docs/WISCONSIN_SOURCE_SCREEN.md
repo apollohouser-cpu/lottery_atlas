@@ -37,4 +37,5 @@ aggregate report by selling retailer, game, prize tier and draw/claim date,
 when the Lottery maintains a selling-retailer association. Personal winner
 identities and ticket serial numbers are not requested. If no such association
 exists, all-tier statewide counts and the active retailer directory are still
-useful separately. This clarification has not yet been sent.
+useful separately. The clarification was sent and Gmail confirmed delivery on
+September 18. Wisconsin's substantive response is pending.
