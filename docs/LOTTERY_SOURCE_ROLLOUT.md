@@ -157,7 +157,12 @@ The Illinois FOIA request was sent September 13, 2026 to its published FOIA
 Officer email, with potential commercial use disclosed. Its published wins
 page covers only tickets over $25,000 and some retailer fields are pending.
 Illinois requested a narrower period September 14; an August 1–31, 2026
-clarification was sent, with no report or fee estimate received yet.
+clarification was sent. On September 18 the FOIA office delivered 25 official
+Excel workbooks containing 1,235,948 paid draw-game rows and 4,745,780
+instant-game winning-ticket rows for August 1–31, each with retailer fields
+except 16 instant rows. The active-retailer directory, definitions and update
+cadence remain outstanding. Import, aggregation and address geocoding are in
+progress; Illinois is not yet a 2026 year-to-date total.
 The Indiana data and APRA-routing inquiry was sent September 13, 2026 to
 the public-records email on its portal. An Access Indiana account was created
 and a formal APRA request was submitted through the Hoosier Lottery portal on
