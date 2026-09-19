@@ -1,6 +1,6 @@
 {
   "source": "Virginia Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-18T12:34:11.245Z",
+  "retrievedAt": "2026-09-19T12:33:05.810Z",
   "coverage": "Queried all 135 county/city options in the official Virginia Lottery finder. It returned 5431 unique retailers; 5366 received exact Census or verified ArcGIS address coordinates. 65 unresolved addresses were excluded from the map rather than estimated.",
   "directories": [
     {
@@ -5132,6 +5132,17 @@
           "latitude": 38.782141217395,
           "longitude": -77.472744508401,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
+          "id": "va-15ff885a572043bb",
+          "name": "WAVERLY MINI MART",
+          "address": "349 East Main St.",
+          "city": "Waverly",
+          "postalCode": "23890",
+          "county": "Sussex",
+          "latitude": 37.037619395707,
+          "longitude": -77.084505732592,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
           "id": "va-1601a9d4649be927",
@@ -20069,17 +20080,6 @@
           "county": "Virginia Beach",
           "latitude": 36.765284273706,
           "longitude": -76.014414761709,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "va-59d5c70a891c2b42",
-          "name": "ANDYS STORE",
-          "address": "415 Gate City Hwy - Ste 106",
-          "city": "Bristol",
-          "postalCode": "24201",
-          "county": "Bristol",
-          "latitude": 36.598494775721,
-          "longitude": -82.214961254646,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {

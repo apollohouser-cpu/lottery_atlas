@@ -1,7 +1,7 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-18T12:33:44.025Z",
-  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3473 unique retailers; 3378 received exact Census or verified ArcGIS point-address coordinates. 95 unresolved addresses were excluded rather than estimated.",
+  "retrievedAt": "2026-09-19T12:32:34.742Z",
+  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3474 unique retailers; 3379 received exact Census or verified ArcGIS point-address coordinates. 95 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
       "state": "Kentucky",
@@ -13439,17 +13439,6 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
-          "id": "ky-5bdf02c18e466d80",
-          "name": "STURGIS MINI MART",
-          "address": "9384 Us Highway 60 W",
-          "city": "Sturgis",
-          "postalCode": "42459",
-          "county": "Union County",
-          "latitude": 37.56370037215,
-          "longitude": -87.977663058777,
-          "coordinateSource": "ArcGIS World Geocoder verified point address"
-        },
-        {
           "id": "ky-5beadd3aa5bf9128",
           "name": "NEWBURG LIQUOR STORE",
           "address": "5104 East Indian Trail",
@@ -21049,6 +21038,17 @@
           "latitude": 39.049527338426,
           "longitude": -84.576519600645,
           "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "ky-929fa2e93a8cf3c9",
+          "name": "KROGER 756 FUEL CENTER",
+          "address": "3409 Hayden Rd",
+          "city": "Owensboro",
+          "postalCode": "42303",
+          "county": "Daviess County",
+          "latitude": 37.775061502683,
+          "longitude": -87.041861994574,
+          "coordinateSource": "ArcGIS World Geocoder verified numbered street address"
         },
         {
           "id": "ky-92a11806cac0f2e2",
@@ -30574,6 +30574,17 @@
           "county": "Pulaski County",
           "latitude": 36.991690759078,
           "longitude": -84.603173297179,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
+          "id": "ky-d2fe7e86a0cbb056",
+          "name": "STURGIS MINIMART",
+          "address": "9384 Us Highway 60 W",
+          "city": "Sturgis",
+          "postalCode": "42459",
+          "county": "Union County",
+          "latitude": 37.56370037215,
+          "longitude": -87.977663058777,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
