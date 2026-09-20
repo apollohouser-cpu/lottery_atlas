@@ -44,6 +44,13 @@ Idaho's Scratch catalog, Idaho Cash draw-tier winner table, retailer finder
 and records form were screened September 16. The Idaho Cash table supports a
 single-game latest-draw count, while statewide historical coverage remains
 unverified. See `IDAHO_SOURCE_SCREEN.md`.
+September 19: the official site's public API was verified for all 261 daily
+Idaho Cash drawings from January 1 through September 18. A reproducible audit
+preserves all four prize tiers, including free tickets, without treating the
+counts as distinct tickets or an all-game state total. The site's retailer
+JSON contains 1,368 IDs but includes coordinate and game-scope exceptions.
+Neither source has entered the public map; count definitions and selling-store
+joins remain pending under the existing records request.
 Kansas instant-game prize-remaining tables and selected winner notices were
 screened September 16. The official open-records policy identifies a written
 request route; complete ticket counts remain unverified. See
