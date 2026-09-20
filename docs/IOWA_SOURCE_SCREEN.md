@@ -66,3 +66,27 @@ Next step: turn the validated extraction into a tested importer, retain the
 $50 threshold and cumulative inventory notes in the app, and publish the fresh
 catalog after normal checks. Iowa case #26-4068 remains pending; no new agency
 reply arrived. Iowa is not yet ready for retailer heat-map testing.
+
+## September 20 tested importer and fresh catalog
+
+`tooling/import_iowa_scratch_catalog.py` now performs a fresh report retrieval,
+validates the exact source date and table schema, selects Scratch rows by their
+explicit game type, and verifies every game's advertised top prize and separate
+date fields against its official detail page. Six regression tests cover
+highest-tier counts, cross-type exclusion, malformed/duplicate counts, distinct
+end dates, top-prize mismatches and missing source metadata.
+
+The fresh import validated 71 Scratch games with the report's actual source
+date of **September 18, 2026**. The generated catalog and refreshed bundled
+snapshot preserve all 368 published $50-plus tier rows, cumulative claimed and
+unclaimed measures, and a visible scope/date note. No all-tier or 2026 claim
+total is inferred. A game remains a record in this dated report even if a later
+detail page lists an end or redemption date; those dates are shown explicitly,
+not interpreted as evidence of current store inventory.
+
+The six-hour publisher now checks Iowa and includes validated output in the
+combined catalog feed. All detail pages must pass before the output is replaced;
+source/schema failures preserve the previous file and stop the publishing run.
+The poll cadence is distinct from the source's unconfirmed publication cadence.
+Catalog readiness is reported after live deployment verification. Iowa remains
+incomplete for retailer-linked winner coverage under request #26-4068.
