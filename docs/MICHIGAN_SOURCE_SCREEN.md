@@ -13,3 +13,22 @@ extension letter, the Bureau deemed the request received that day and extended
 its response deadline to **October 8, 2026**, citing staff availability and
 coordination among divisions. No responsive data or fee estimate has arrived.
 Private contact details are not stored in this repository.
+
+## September 20 importer recheck
+
+The existing prizes-remaining GraphQL query returned 49 rows with no reported
+GraphQL errors. The current importer retained only 39 because it infers ticket
+price from the game title; ten rows have no match for that expression. Examples
+include `CASH-A-PILLAR $.50`, `JACKPOT 2S`, `TACO BOUT WINNING ($.50)` and
+`LET FREEDOM RING`. The importer stopped at its minimum-size guard and no
+catalog was written or published. The raw official response is retained locally
+in `work/michigan_prizes_source.json` for further source validation.
+
+Do not lower that guard or describe the retained rows as a complete catalog.
+Title parsing does not prove ticket price, and fractional-price entries also
+need an explicit game-type decision and compatible app representation. Before
+activation, obtain explicit official ticket prices and verify whether this
+query covers Scratch games, Pull-tabs, or a mixed retail collection; join by
+confirmed official game IDs and validate every included row. The existing
+importer is not wired into the production publisher. The FOIA extension remains
+pending and no new agency reply arrived during this check.
