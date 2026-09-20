@@ -66,3 +66,19 @@ source-page HTML, inventory HTML, ending-page HTML, reproducible `audit.py`,
 and `audit.json`. All price/count fields and unique identities passed checks.
 No public New Mexico feed changed during this pass. The IPRA request remains
 pending; no duplicate request or fee commitment was made.
+
+### Validated import
+
+A fresh import validates 54 unexpired report entries and excludes the nine
+expired games listed above. Ended-but-redeemable entries retain both official
+dates in their data and visible inventory note. Every game labels remaining
+counts as estimates and warns about sold/unredeemed tickets. The literal
+source timestamp is preserved with a null timezone; no UTC offset is guessed.
+
+Five regression tests cover zero/invalid counts, estimate labels, inclusive
+claim-deadline boundaries, future source dates, matched impossible dates,
+unrelated historical anomalies and changed table headers. An offline app test
+checks expired-game exclusion and visible deadline/estimate notes. The importer
+validates before atomic file replacement. Six-hour publication now includes
+this catalog; it remains top-prize inventory coverage, not all-tier dated claims
+or a fully developed state.

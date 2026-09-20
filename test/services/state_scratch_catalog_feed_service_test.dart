@@ -112,6 +112,26 @@ void main() {
     );
   });
 
+  test(
+    'New Mexico offline catalog excludes expired games and labels estimates',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('New Mexico');
+      expect(games, hasLength(54));
+      expect(games.where((g) => g.id == '639'), isEmpty);
+      expect(
+        games.firstWhere((g) => g.id == '581').inventoryNote,
+        contains('redeem by 2026-11-19'),
+      );
+      expect(
+        games.every((g) => g.inventoryNote?.contains('Estimated') ?? false),
+        isTrue,
+      );
+    },
+  );
+
   test('newer downloaded catalog survives an offline reload', () async {
     await StateScratchCatalogFeedService.loadConfiguredFeed(
       client: MockClient((_) async => http.Response(feed(), 200)),
