@@ -81,6 +81,24 @@ void main() {
     );
   });
 
+  test(
+    'Nebraska offline inventory preserves dated and unknown counts',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('Nebraska');
+      expect(games, hasLength(25));
+      expect(
+        games.firstWhere((g) => g.id == '1344').topPrizesRemaining,
+        isNull,
+      );
+      final dated = games.firstWhere((g) => g.id == '1335');
+      expect(dated.topPrizesRemaining, 10);
+      expect(dated.inventoryNote, contains('2026-09-13'));
+    },
+  );
+
   test('newer downloaded catalog survives an offline reload', () async {
     await StateScratchCatalogFeedService.loadConfiguredFeed(
       client: MockClient((_) async => http.Response(feed(), 200)),

@@ -80,3 +80,20 @@ in this pass. Next implementation should preserve the weekly report date,
 selected-tier scope, distinct printed and routing IDs, closing/claim dates,
 and the unmatched Power Play count while testing joins and repeated prize
 amounts. The agency's request for broader records remains pending.
+
+### Verified catalog import
+
+The September 20 import validates all 25 current catalog games and joins 24
+top-prize counts from the visually reviewed September 13 PDF. Power Play
+1344 keeps an unknown remaining count. The reviewed JSON records the PDF's
+SHA-256, date and manual-review method; counts require a new document review
+to update. The automatic six-hour job refreshes catalog details only, never
+changes the report date, and does not imply current inventory verification.
+Each game displays its dated inventory or explicitly unknown count.
+
+The importer checks printed identities, listing/detail names, explicit ticket
+prices, structure-column labels, and matching top-prize amounts before writing.
+Repeated prize amounts remain separate structure rows. Free-ticket and mixed
+cash/ticket combinations retain their labels without a guessed cash value.
+The combined feed and offline bundle both include Nebraska. This is catalog
+and dated top-prize coverage only, not a fully developed state or claims heat map.
