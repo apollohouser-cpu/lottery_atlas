@@ -35,6 +35,12 @@ The source import and feed validation run once per workflow; the Pages job
 deploys the exact artifact from that successful validation. It does not
 repeat live source requests during deployment.
 
+Publishing is restricted to `main`. Each queued run explicitly checks out the
+latest `main` branch at job start rather than the older commit captured when
+its event was queued. This prevents a scheduled run waiting behind another
+publisher from regenerating files on a stale baseline and conflicting with
+the preceding feed commit. Workflow concurrency continues to serialize runs.
+
 Lottery Atlas checks refreshable sources every six hours where possible. The
 state lottery's own publishing cadence can be slower. A weekly or monthly
 official source may be included only with a clear state-specific cadence and

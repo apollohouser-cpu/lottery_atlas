@@ -6,6 +6,7 @@ on:
     - cron: '17 */6 * * *'
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - 'data/**'
       - 'tooling/**'
@@ -23,9 +24,14 @@ concurrency:
 
 jobs:
   validate-and-build:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Queued events can reference a commit from before the preceding
+          # feed run pushed its generated files. Import from today's branch tip.
+          ref: main
       - uses: dart-lang/setup-dart@v1
       - uses: actions/setup-node@v4
         with:
