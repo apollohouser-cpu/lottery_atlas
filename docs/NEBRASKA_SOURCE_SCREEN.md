@@ -51,3 +51,32 @@ a dated catalog and cumulative game inventory, but they do not by themselves
 establish January 1, 2026-to-current validated winning-ticket counts or
 selling-retailer joins. The request for those records remains open; no fee
 estimate or responsive extract was provided in this message.
+
+## September 20 catalog and inventory reconciliation
+
+Retrieved the current official catalog and all 25 linked detail pages. They
+contain 630 prize-structure rows under `Prize / Odds / Winners**`. Prize amounts
+can repeat within a game (different winning combinations). These rows must
+not be treated as dated claims or as remaining inventory. The source cautions
+that quantities can vary with omissions, unsold tickets, reorders and unclaimed
+prizes. A URL's `gameid` is a routing identifier, not the printed game number:
+for example `gameid=1035` displays game 1335, Pocket Change 5X. Join using the
+printed identity, not arithmetic on routing IDs.
+
+The separate one-page remaining-prizes PDF was downloaded, text-extracted,
+rendered and visually inspected. It is explicitly dated September 13, 2026
+and shows selected top prize tiers for 25 games, not every prize tier. The
+report and current catalog overlap on 24 printed game numbers. Current game
+1344 Power Play is absent from the report; report game 1357 50X is absent from
+the current catalog. Missing remaining counts must stay unknown, never zero.
+The September 13 closing page also separates closing dates from expiration
+(last claim) dates. The PDF explains that tickets can remain on sale during
+the closing process; a closing notice does not establish retailer stock.
+
+Audit materials are in ignored `work/nebraska_catalog/`: official PDF,
+listing/closing HTML, 25 detail pages, reproducible detail audit script,
+`catalog_audit.json` and `join_audit.json`. No public Nebraska feed changed
+in this pass. Next implementation should preserve the weekly report date,
+selected-tier scope, distinct printed and routing IDs, closing/claim dates,
+and the unmatched Power Play count while testing joins and repeated prize
+amounts. The agency's request for broader records remains pending.
