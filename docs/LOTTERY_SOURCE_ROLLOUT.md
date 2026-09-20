@@ -376,3 +376,13 @@ and [media/contact directory](https://www.naspl.org/media-room). For Iowa,
 the [Lottery's open-records page](https://ialottery.com/Pages/Legal/OpenRecords.aspx)
 identifies its request channel. Use each lottery's own records/contact process
 for submission and retain request dates and response identifiers here.
+
+September 20 catalog update: Washington's 57-game Scratch report is live with
+annuity/non-cash labels, source date and closing-game notes. Wisconsin's source
+recovered after a temporary HTTP 500 outage; its fresh 92-game current/closing
+Scratch catalog is now wired into the six-hour publisher. Wisconsin publishes
+remaining top-prize counts for 70 games and omits them for 22, which remain
+unknown. Source counts are verified weekly, with no printed verification date;
+retrieval time is labeled separately. Neither catalog adds retailer heat points
+or a statewide winning-ticket total. See the state source screens for validation
+and scope details.

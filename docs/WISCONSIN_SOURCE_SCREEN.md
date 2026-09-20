@@ -139,3 +139,21 @@ Next run: recheck source availability, complete a fresh import, then wire the
 validated output into the combined live feed and refresh the bundled snapshot.
 Do not relabel the archived audit as a new retrieval. No user intervention is
 needed for this agency website outage.
+
+## September 20 source recovery and catalog publication
+
+The first listing page recovered to HTTP 200 on the next scheduled check.
+A complete fresh run of the importer then validated all 22 listing pages and
+**92 eligible Scratch games**. The current output replaces the dated bundled
+snapshot and is included in the combined live catalog. Seventy games publish
+remaining top-prize counts; 22 retain unknown counts. Redemption deadlines,
+instant-prize wording, retrieval date, weekly verification cadence and the
+absence of a printed source verification date are retained in visible notes.
+
+The normal six-hour publisher now runs the Wisconsin importer and commits its
+validated generated output. A failed retrieval or validation leaves the previous
+output file untouched and fails publication rather than substituting partial
+results. This refresh adds a game catalog only: Wisconsin still has no newly
+verified retailer activity or all-tier winning-ticket total. Catalog testing
+can begin after the publishing workflow and live-feed comparison pass; retailer
+heat-map testing remains deferred pending the existing records request.
