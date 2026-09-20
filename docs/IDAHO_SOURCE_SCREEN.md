@@ -74,6 +74,14 @@ County-polygon and address checks remain necessary before map integration.
 Do not assign nearby coordinates or describe this as a fully verified active
 Draw/Scratch directory merely because the export is statewide.
 
+A local point-in-polygon audit against the bundled 44 Idaho Census counties
+found 1,216 of all entries in exactly one county, 137 with missing coordinates
+and 15 outside those polygons. Within the 1,135 Draw/Scratch entries, 1,020
+matched one county and 115 had missing coordinates; none were assigned to a
+nearest county. This verifies containment of the published points, not an
+independent street-address match. The working audit is retained locally in
+`work/idaho_retailer_coordinate_audit.json` for the directory integration step.
+
 The September 17 records request remains pending. A defined distinct-ticket
 measure, winner-to-selling-retailer joins, publication/correction timing and
 coordinate exceptions are still unresolved. Idaho is **not yet ready for
