@@ -25,3 +25,44 @@ To resume, obtain an up-to-date comprehensive retailer-level winner source
 and exact matchable retailer locations. Preserve the actual publication dates
 of the directory, Scratch catalog, and winner feed and disclose each source's
 cadence separately. Winner records must be matchable without heuristic joins.
+
+## September 20 remaining-prize and game-status audit
+
+The official report now states **remaining prizes through end of day September
+18, 2026**. All 513 published rows were parsed and validated: 368 Scratch tier
+rows across 71 games, 137 InstaPlay tier rows across 24 games, and eight PullTab
+rows across eight games. Game type remains explicit; the collections must not
+be merged into a Scratch catalog. Each row has a game number, consistent game
+name/price, a prize amount of at least $50, and nonnegative integer claimed and
+unclaimed counts. Duplicate prize amounts within a game are rejected.
+
+The report expressly covers **prizes of $50 or more**. Its cumulative claimed
+column is not a January-to-date claim history and must not become an all-tier
+winning-ticket total. Preserve the actual September 18 source date separately
+from retrieval. This dated snapshot can be useful despite its publication lag;
+the earlier screen's 24-hour observation is not a standalone exclusion rule.
+
+All 71 Scratch game detail pages were checked at their official
+`Pages/Games-Scratch/ScratchGamesDetail.aspx?g=GAME_NUMBER` routes. Each advertised
+top prize matches the highest tier in the report. Each publishes a start date;
+none of these 71 currently prints an End Distribution, Official Game End or
+Last Day To Redeem Prizes date. These fields are distinct and must be retained
+separately when present, never inferred from one another. As an excluded-game
+example, [Beat The Heat (712)](https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=712)
+prints an End Distribution date of May 5, 2026, with the other two dates blank;
+it does not appear among the audited 71 report games.
+
+The dated bundled catalog has 67 games. Five of the 71 current report IDs are
+new to that snapshot. The next import should replace the scoped report catalog,
+not append new rows indefinitely or carry missing games forward as current.
+No store availability or winner-location evidence is inferred from these pages.
+A formal source update cadence still needs confirmation.
+
+The downloaded report, 71 detail pages, SHA-256 provenance, normalized audit and
+status reconciliation are retained under `work/iowa_catalog/`. The audit scripts
+validate table identity, game type, numerical counts, unique tiers, detail dates
+and top-prize agreement. No public feed or application code changed in this run.
+Next step: turn the validated extraction into a tested importer, retain the
+$50 threshold and cumulative inventory notes in the app, and publish the fresh
+catalog after normal checks. Iowa case #26-4068 remains pending; no new agency
+reply arrived. Iowa is not yet ready for retailer heat-map testing.
