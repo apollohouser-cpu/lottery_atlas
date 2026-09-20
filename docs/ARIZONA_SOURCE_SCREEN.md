@@ -20,3 +20,10 @@ require a commercial/noncommercial-use attestation under penalty of perjury.
 No attestation or request has been submitted. Determine the appropriate use
 classification and a supported contact route before sending a formal request;
 continue screening other states in the meantime.
+
+September 20 source-access check: a direct local HTTPS fetch of the official
+Scratchers page returned HTTP 403. The browser-search reader could access the
+page, but several listing cards exposed a blank top-prize amount; details would
+need independent validation. No automated Arizona import was enabled and no
+records-use attestation was made. Continue with accessible official sources
+while preserving this limitation.
