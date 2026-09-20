@@ -47,3 +47,31 @@ receipt under that same case number. It says OPIR will review the request,
 clarify or deny if necessary, or provide records, and will supply a cost
 estimate as soon as possible if staff time is billable. The letter includes
 general timing guidance, not a committed delivery date for this request.
+
+## September 20, 2026 full listing audit
+
+Fetched all 11 pages of the official Scratch catalog using its published
+`e-page-eeedf9c` pagination links. The pages contain 53 unique CMS listings
+and 1,032 rows under `WIN / PRIZE / ODDS`. Each listing has one explicit
+price taxonomy; every listing has a prize table. These are prize structures
+and odds, not remaining inventory, dated winning-ticket counts or claims.
+No remaining-count series was established in this audit.
+
+Special prizes require semantic handling. Can-Am lists a vehicle valued at
+$53,583, a separate $50,000 cash prize, and a second-chance vehicle row with
+`1:0.00` odds. Selecting the largest numeric prize would wrongly flatten
+vehicle and second-chance semantics into a cash top prize. Free-ticket rows
+use the label `Ticket` and must not be turned into cash. Repeated cash amounts
+can represent different winning combinations rather than duplicate rows.
+
+CMS post IDs identify website entries, not printed lottery game numbers.
+Some official game-spec image filenames include apparent game numbers, but
+those have not yet been independently matched to printed ticket identities
+for all 53 entries. Do not manufacture an identity from a CMS ID or assume
+all published listings are currently on sale. Verify game identities and
+closing/claim notices before publication; remaining counts should stay unknown
+unless a separate official inventory source is verified.
+
+Read-only audit files live under ignored `work/montana_catalog/`: all 11
+HTML pages, `audit.py` and `audit.json`. No Montana public catalog or activity
+feed changed during this pass. OPIR case 26-PIR-2200 remains pending.
