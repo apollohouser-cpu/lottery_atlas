@@ -178,6 +178,7 @@ class StateScratchCatalogFeedService {
     final knownStates = allStates.map((state) => state.name).toSet();
     final catalogs = <String, List<StateScratchGame>>{};
     final sourceUrls = <String, String>{};
+    final updatedAtByState = <String, DateTime>{};
     for (final item in rawCatalogs) {
       if (item is! Map) continue;
       final catalog = Map<String, dynamic>.from(item);
@@ -207,35 +208,59 @@ class StateScratchCatalogFeedService {
       if (games.isEmpty) continue;
       catalogs[stateName] = List.unmodifiable(games);
       sourceUrls[stateName] = sourceUrl;
+      // This is feed freshness, not a prize-verification or winning-ticket date.
+      // Legacy cache entries without timestamps yield to dated snapshots.
+      updatedAtByState[stateName] =
+          DateTime.tryParse(
+            (catalog['updatedAt'] ?? root['updatedAt'])?.toString() ?? '',
+          )?.toUtc() ??
+          DateTime.fromMillisecondsSinceEpoch(0, isUtc: true);
     }
     if (catalogs.isEmpty) {
       throw const FormatException('Catalog feed has no valid state catalogs.');
     }
-    return _ScratchCatalogFeed(catalogs: catalogs, sourceUrls: sourceUrls);
+    return _ScratchCatalogFeed(
+      catalogs: catalogs,
+      sourceUrls: sourceUrls,
+      updatedAtByState: updatedAtByState,
+    );
   }
 
   static _ScratchCatalogFeed _merge(List<_ScratchCatalogFeed> feeds) {
     final catalogs = <String, List<StateScratchGame>>{};
     final sourceUrls = <String, String>{};
+    final updatedAtByState = <String, DateTime>{};
     for (final feed in feeds) {
-      catalogs.addAll(feed.catalogs);
-      sourceUrls.addAll(feed.sourceUrls);
+      for (final entry in feed.catalogs.entries) {
+        final incoming = feed.updatedAtByState[entry.key]!;
+        final existing = updatedAtByState[entry.key];
+        if (existing != null && incoming.isBefore(existing)) continue;
+        catalogs[entry.key] = entry.value;
+        sourceUrls[entry.key] = feed.sourceUrls[entry.key]!;
+        updatedAtByState[entry.key] = incoming;
+      }
     }
-    return _ScratchCatalogFeed(catalogs: catalogs, sourceUrls: sourceUrls);
+    return _ScratchCatalogFeed(
+      catalogs: catalogs,
+      sourceUrls: sourceUrls,
+      updatedAtByState: updatedAtByState,
+    );
   }
 
-  static String _encode(_ScratchCatalogFeed feed) =>
-      jsonEncode(<String, dynamic>{
-        'catalogs': feed.catalogs.entries
-            .map(
-              (entry) => <String, dynamic>{
-                'state': entry.key,
-                'source': feed.sourceUrls[entry.key],
-                'games': entry.value.map((game) => game.toJson()).toList(),
-              },
-            )
-            .toList(),
-      });
+  static String _encode(_ScratchCatalogFeed feed) => jsonEncode(
+    <String, dynamic>{
+      'catalogs': feed.catalogs.entries
+          .map(
+            (entry) => <String, dynamic>{
+              'state': entry.key,
+              'source': feed.sourceUrls[entry.key],
+              'updatedAt': feed.updatedAtByState[entry.key]!.toIso8601String(),
+              'games': entry.value.map((game) => game.toJson()).toList(),
+            },
+          )
+          .toList(),
+    },
+  );
 
   static Future<_ScratchCatalogFeed?> _restoreCachedCatalogs() async {
     try {
@@ -255,8 +280,13 @@ class StateScratchCatalogFeedService {
 }
 
 class _ScratchCatalogFeed {
-  const _ScratchCatalogFeed({required this.catalogs, required this.sourceUrls});
+  const _ScratchCatalogFeed({
+    required this.catalogs,
+    required this.sourceUrls,
+    required this.updatedAtByState,
+  });
 
   final Map<String, List<StateScratchGame>> catalogs;
   final Map<String, String> sourceUrls;
+  final Map<String, DateTime> updatedAtByState;
 }
