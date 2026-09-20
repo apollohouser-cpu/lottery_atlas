@@ -49,3 +49,29 @@ records and a repeatable update route remain pending.
 
 An Oregon Lottery confirmation email also arrived at 7:26 p.m. ET September
 16 and explicitly confirmed receipt of the public-records request.
+
+## September 20 catalog refresh
+
+The official public Scratch-it API returned 467 records and `NextItems: 0`;
+51 records fall within their published availability dates as of retrieval.
+`tooling/import_oregon_scratch_catalog.mjs` now validates pagination, unique game
+numbers, calendar dates, positive integer prices/prizes and nonnegative integer
+unclaimed top-prize counts. Missing counts are rejected rather than coerced to
+zero. Ended and future games are excluded, and redemption deadlines are retained
+where published. Five regression tests cover source semantics, date boundaries,
+unknown versus zero counts, duplicate/truncated responses and redemption dates.
+
+The [official Scratch-it list](https://www.oregonlottery.org/scratch-its/list/)
+says prize/ticket information updates once daily and defines top prizes
+unclaimed as not yet redeemed, which does not establish store stock. The new
+catalog notes preserve that definition, daily cadence and retrieval date;
+a separate source publication timestamp is not supplied by this response and
+is not invented. The six-hour publisher now checks this catalog and includes
+its validated output in the combined state catalog feed. The bundled snapshot
+is refreshed for offline use.
+
+This adds a dated game inventory only. It does not establish complete statewide
+winning-ticket counts or authorize Oregon retailer heat points. The existing
+public-records request and the retailer/winner-location coverage requirements
+remain pending. Catalog testing is a separate milestone from full-state
+completion; deployment verification is reported in the task.

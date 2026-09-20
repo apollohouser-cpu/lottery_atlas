@@ -1,10 +1,14 @@
 {
-  "source": "Oregon Lottery official current Scratch-its catalog snapshot",
-  "updatedAt": "2026-08-30T00:00:00-07:00",
+  "source": "Oregon Lottery official Scratch-it inventory",
+  "updatedAt": "2026-09-20T07:43:39.823Z",
   "catalogs": [
     {
       "state": "Oregon",
       "source": "https://www.oregonlottery.org/scratch-its/list/",
+      "retrievedDate": "2026-09-20",
+      "sourceDate": null,
+      "updateCadence": "Source updates once daily; checked every six hours.",
+      "coverage": "API-listed Scratch-its available by retrieval date and before their game end date. Unclaimed top prizes only, not claims, all-tier winning tickets or retailer availability.",
       "games": [
         {
           "stateName": "Oregon",
@@ -12,15 +16,9 @@
           "name": "Phoenix Crossword",
           "cost": 20,
           "topPrize": 175000,
-          "topPrizesRemaining": 1
-        },
-        {
-          "stateName": "Oregon",
-          "id": "1580",
-          "name": "Cash Game",
-          "cost": 10,
-          "topPrize": 100000,
-          "topPrizesRemaining": 0
+          "topPrizesRemaining": 1,
+          "startDate": "2025-05-08",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -28,7 +26,9 @@
           "name": "$100 Or $200 Limited",
           "cost": 20,
           "topPrize": 200,
-          "topPrizesRemaining": 5981
+          "topPrizesRemaining": 5028,
+          "startDate": "2026-02-10",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -36,7 +36,9 @@
           "name": "One Word Crossword",
           "cost": 20,
           "topPrize": 125000,
-          "topPrizesRemaining": 3
+          "topPrizesRemaining": 3,
+          "startDate": "2026-08-11",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -44,7 +46,9 @@
           "name": "Raining $50 Or $100",
           "cost": 10,
           "topPrize": 100,
-          "topPrizesRemaining": 504
+          "topPrizesRemaining": 496,
+          "startDate": "2025-02-25",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -52,7 +56,9 @@
           "name": "All the Wishes",
           "cost": 30,
           "topPrize": 100000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2025-08-12",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -60,7 +66,9 @@
           "name": "50X",
           "cost": 20,
           "topPrize": 150000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2025-01-14",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -68,7 +76,9 @@
           "name": "Stop the Presses Crossword",
           "cost": 10,
           "topPrize": 100000,
-          "topPrizesRemaining": 0
+          "topPrizesRemaining": 0,
+          "startDate": "2025-04-23",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -76,23 +86,9 @@
           "name": "$50 or $100 Bonanza",
           "cost": 10,
           "topPrize": 100,
-          "topPrizesRemaining": 1636
-        },
-        {
-          "stateName": "Oregon",
-          "id": "1617",
-          "name": "Wild Side",
-          "cost": 10,
-          "topPrize": 100000,
-          "topPrizesRemaining": 1
-        },
-        {
-          "stateName": "Oregon",
-          "id": "1622",
-          "name": "Ruby Red 7s",
-          "cost": 10,
-          "topPrize": 80000,
-          "topPrizesRemaining": 0
+          "topPrizesRemaining": 1360,
+          "startDate": "2025-11-07",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -100,7 +96,9 @@
           "name": "Diamond White 7s",
           "cost": 20,
           "topPrize": 150000,
-          "topPrizesRemaining": 0
+          "topPrizesRemaining": 0,
+          "startDate": "2025-05-13",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -108,7 +106,9 @@
           "name": "Red Carpet Crossword",
           "cost": 3,
           "topPrize": 25000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 0,
+          "startDate": "2025-09-16",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -116,7 +116,9 @@
           "name": "Starry Crossword",
           "cost": 5,
           "topPrize": 50000,
-          "topPrizesRemaining": 0
+          "topPrizesRemaining": 0,
+          "startDate": "2025-09-30",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -124,7 +126,9 @@
           "name": "Level Up!",
           "cost": 2,
           "topPrize": 10000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2025-06-10",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -132,7 +136,9 @@
           "name": "Jackpot Spin",
           "cost": 10,
           "topPrize": 100000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2025-09-09",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -140,7 +146,9 @@
           "name": "Strike It Rich! Bingo",
           "cost": 2,
           "topPrize": 10000,
-          "topPrizesRemaining": 2
+          "topPrizesRemaining": 2,
+          "startDate": "2025-08-20",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -148,15 +156,9 @@
           "name": "Mega Slots",
           "cost": 10,
           "topPrize": 100000,
-          "topPrizesRemaining": 1
-        },
-        {
-          "stateName": "Oregon",
-          "id": "1634",
-          "name": "State Parks Adventures",
-          "cost": 5,
-          "topPrize": 50000,
-          "topPrizesRemaining": 0
+          "topPrizesRemaining": 1,
+          "startDate": "2025-11-12",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -164,7 +166,9 @@
           "name": "Pocket Change",
           "cost": 1,
           "topPrize": 1000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2025-11-12",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -172,7 +176,9 @@
           "name": "Gold Rush",
           "cost": 5,
           "topPrize": 50000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2025-12-09",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -180,7 +186,9 @@
           "name": "Ka Pow!",
           "cost": 5,
           "topPrize": 50000,
-          "topPrizesRemaining": 0
+          "topPrizesRemaining": 0,
+          "startDate": "2026-02-10",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -188,7 +196,9 @@
           "name": "Crossword Nectar",
           "cost": 10,
           "topPrize": 100000,
-          "topPrizesRemaining": 4
+          "topPrizesRemaining": 4,
+          "startDate": "2025-11-07",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -196,7 +206,9 @@
           "name": "Full Moon Crossword",
           "cost": 2,
           "topPrize": 15000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-01-15",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -204,7 +216,9 @@
           "name": "Tropic Cash",
           "cost": 2,
           "topPrize": 10000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2025-12-09",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -212,7 +226,9 @@
           "name": "Buffalo Chip Bingo",
           "cost": 3,
           "topPrize": 25000,
-          "topPrizesRemaining": 3
+          "topPrizesRemaining": 3,
+          "startDate": "2026-02-05",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -220,7 +236,9 @@
           "name": "Cowboy Crossword",
           "cost": 5,
           "topPrize": 50000,
-          "topPrizesRemaining": 3
+          "topPrizesRemaining": 2,
+          "startDate": "2026-05-12",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -228,7 +246,9 @@
           "name": "High Roller",
           "cost": 5,
           "topPrize": 40000,
-          "topPrizesRemaining": 0
+          "topPrizesRemaining": 0,
+          "startDate": "2025-10-07",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -236,7 +256,9 @@
           "name": "Cash Frenzy",
           "cost": 10,
           "topPrize": 100000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2025-12-09",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -244,7 +266,9 @@
           "name": "Crossword Detective",
           "cost": 3,
           "topPrize": 25000,
-          "topPrizesRemaining": 4
+          "topPrizesRemaining": 4,
+          "startDate": "2026-03-10",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -252,7 +276,9 @@
           "name": "$50 Or $100 Blast",
           "cost": 10,
           "topPrize": 100,
-          "topPrizesRemaining": 27694
+          "topPrizesRemaining": 26122,
+          "startDate": "2026-04-14",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -260,7 +286,9 @@
           "name": "Mega 5x Multiplier",
           "cost": 2,
           "topPrize": 10000,
-          "topPrizesRemaining": 0
+          "topPrizesRemaining": 0,
+          "startDate": "2026-01-13",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -268,7 +296,9 @@
           "name": "Mega 10X Multiplier",
           "cost": 5,
           "topPrize": 30000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-01-13",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -276,7 +306,9 @@
           "name": "Mega 20X Multiplier",
           "cost": 10,
           "topPrize": 60000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-01-13",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -284,7 +316,9 @@
           "name": "Mega 50X Multiplier",
           "cost": 20,
           "topPrize": 120000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-01-13",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -292,7 +326,9 @@
           "name": "Mega 100X Multiplier",
           "cost": 30,
           "topPrize": 150000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-01-13",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -300,7 +336,9 @@
           "name": "Money Rush",
           "cost": 5,
           "topPrize": 40000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-04-14",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -308,7 +346,9 @@
           "name": "$75,000 Jackpot",
           "cost": 10,
           "topPrize": 75000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-06-09",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -316,7 +356,9 @@
           "name": "Turtle Tripler",
           "cost": 2,
           "topPrize": 8000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-02-10",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -324,7 +366,9 @@
           "name": "Extreme 8s",
           "cost": 2,
           "topPrize": 8000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-03-10",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -332,7 +376,9 @@
           "name": "24 Karat Gold",
           "cost": 5,
           "topPrize": 40000,
-          "topPrizesRemaining": 2
+          "topPrizesRemaining": 2,
+          "startDate": "2026-08-11",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -340,7 +386,9 @@
           "name": "20X Blitz",
           "cost": 5,
           "topPrize": 20000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-07-14",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -348,7 +396,9 @@
           "name": "Fast Cash Poker",
           "cost": 10,
           "topPrize": 75000,
-          "topPrizesRemaining": 2
+          "topPrizesRemaining": 2,
+          "startDate": "2026-07-14",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -356,7 +406,9 @@
           "name": "$10,000 Gold Rush",
           "cost": 2,
           "topPrize": 10000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-05-12",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -364,7 +416,9 @@
           "name": "$30,000 Gold Rush",
           "cost": 5,
           "topPrize": 30000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-05-12",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -372,7 +426,9 @@
           "name": "$60,000 Gold Rush",
           "cost": 10,
           "topPrize": 60000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-05-12",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -380,7 +436,9 @@
           "name": "$120,000 Gold Rush",
           "cost": 20,
           "topPrize": 120000,
-          "topPrizesRemaining": 1
+          "topPrizesRemaining": 1,
+          "startDate": "2026-05-12",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -388,7 +446,9 @@
           "name": "Discover Oregon State Parks",
           "cost": 5,
           "topPrize": 40000,
-          "topPrizesRemaining": 2
+          "topPrizesRemaining": 2,
+          "startDate": "2026-06-09",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -396,7 +456,9 @@
           "name": "Cash Landing",
           "cost": 2,
           "topPrize": 8000,
-          "topPrizesRemaining": 2
+          "topPrizesRemaining": 2,
+          "startDate": "2026-06-09",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -404,7 +466,19 @@
           "name": "Hen House Hundreds",
           "cost": 1,
           "topPrize": 500,
-          "topPrizesRemaining": 7
+          "topPrizesRemaining": 6,
+          "startDate": "2026-04-14",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
+        },
+        {
+          "stateName": "Oregon",
+          "id": "1683",
+          "name": "Cash Money",
+          "cost": 20,
+          "topPrize": 100000,
+          "topPrizesRemaining": 2,
+          "startDate": "2026-09-08",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -412,7 +486,9 @@
           "name": "Ace in the Hole",
           "cost": 2,
           "topPrize": 9000,
-          "topPrizesRemaining": 2
+          "topPrizesRemaining": 2,
+          "startDate": "2026-08-11",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         },
         {
           "stateName": "Oregon",
@@ -420,7 +496,29 @@
           "name": "Potion Payout",
           "cost": 2,
           "topPrize": 9000,
-          "topPrizesRemaining": 2
+          "topPrizesRemaining": 2,
+          "startDate": "2026-07-14",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
+        },
+        {
+          "stateName": "Oregon",
+          "id": "1688",
+          "name": "Slow Much Money",
+          "cost": 2,
+          "topPrize": 8000,
+          "topPrizesRemaining": 2,
+          "startDate": "2026-09-08",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
+        },
+        {
+          "stateName": "Oregon",
+          "id": "1689",
+          "name": "Opossum Pocket Change",
+          "cost": 1,
+          "topPrize": 1000,
+          "topPrizesRemaining": 9,
+          "startDate": "2026-09-08",
+          "inventoryNote": "Retrieved 2026-09-20; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock."
         }
       ]
     }

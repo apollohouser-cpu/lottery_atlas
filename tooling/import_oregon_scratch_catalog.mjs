@@ -1,10 +1,9 @@
-/* Imports every currently for-sale Scratch-it from the Oregon Lottery API. */
+/* Imports current Oregon Scratch-its; inventory is not winner activity. */
 import {readFile, writeFile} from 'node:fs/promises';
-
+import {pathToFileURL} from 'node:url';
+import {fetchSourceJson} from './source_json_fetch.mjs';
 const sourceUrl = 'https://www.oregonlottery.org/scratch-its/list/';
 const apiUrl = 'https://api.oregonlottery.org/gameinfo/v1/instant/games?count=1000';
-const outputPath = process.argv[2];
-
 const headers = {
   // These credentials are published by the official public Scratch-it page.
   client_id: 'a007b1b3898e4f87aea756e5a9f327f2',
@@ -12,39 +11,72 @@ const headers = {
   'user-agent': 'LotteryAtlasOfficialDataBot/1.0',
 };
 
-if (!outputPath) {
-  console.error('Usage: node tooling/import_oregon_scratch_catalog.mjs OUTPUT.json');
-  process.exitCode = 1;
-} else try {
-  const response = await fetch(apiUrl, {headers});
-  if (!response.ok) throw new Error(`Oregon Scratch API returned HTTP ${response.status}`);
-  const body = await response.json();
-  const today = new Date();
-  const games = (body.InstantGames ?? []).filter((game) => {
-    const available = new Date(game.DateAvailable);
-    const ended = game.GameEndDate ? new Date(game.GameEndDate) : null;
-    return Number.isFinite(available.valueOf()) && available <= today && (!ended || ended > today);
-  }).map((game) => ({
-    id: String(game.GameNumber), name: String(game.GameNameTitle ?? '').trim(),
-    cost: Number(game.TicketPrice), topPrize: Number(game.TopPrize),
-    topPrizesRemaining: Number(game.TopPrizesRemaining),
-  }));
-  if (games.length < 20 || games.some((game) => !game.id || !game.name || !game.cost ||
-      !game.topPrize || !Number.isInteger(game.topPrizesRemaining) || game.topPrizesRemaining < 0) ||
-      new Set(games.map((game) => game.id)).size !== games.length) {
-    throw new Error(`Oregon Scratch catalog was incomplete (${games.length} games)`);
+function calendarDate(value) {
+  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$/.test(value)) {
+    throw new Error('Missing or invalid official game date');
   }
+  const day = value.slice(0, 10);
+  const parsed = new Date(`${day}T00:00:00Z`);
+  if (!Number.isFinite(parsed.valueOf()) || parsed.toISOString().slice(0, 10) !== day) {
+    throw new Error('Invalid calendar date');
+  }
+  return day;
+}
+
+export function parseOregonCatalog(body, today) {
+  calendarDate(`${today}T00:00:00`);
+  if (!Array.isArray(body?.InstantGames) || body.NextItems !== 0 || body.InstantGames.length >= 1000) {
+    throw new Error('Incomplete Oregon API response or unhandled pagination');
+  }
+  const ids = new Set();
+  const games = [];
+  for (const row of body.InstantGames) {
+    if (!row || typeof row.GameNumber !== 'string' || !/^\d+$/.test(row.GameNumber) || ids.has(row.GameNumber)) {
+      throw new Error('Missing or duplicate official game number');
+    }
+    ids.add(row.GameNumber);
+    const start = calendarDate(row.DateAvailable);
+    const end = row.GameEndDate ? calendarDate(row.GameEndDate) : null;
+    if (end && end < start) throw new Error('Game end precedes availability');
+    if (start > today || (end && end <= today)) continue;
+    if (typeof row.GameNameTitle !== 'string' || !row.GameNameTitle.trim() ||
+        !Number.isSafeInteger(row.TicketPrice) || row.TicketPrice <= 0 ||
+        !Number.isSafeInteger(row.TopPrize) || row.TopPrize <= 0 ||
+        !Number.isSafeInteger(row.TopPrizesRemaining) || row.TopPrizesRemaining < 0) {
+      throw new Error('Invalid current game name, price or prize inventory');
+    }
+    const redeem = row.ValidationEndDate ? calendarDate(row.ValidationEndDate) : null;
+    if (redeem && (redeem < start || (end && redeem < end))) throw new Error('Invalid redemption deadline');
+    games.push({stateName: 'Oregon', id: row.GameNumber, name: row.GameNameTitle.trim(),
+      cost: row.TicketPrice, topPrize: row.TopPrize, topPrizesRemaining: row.TopPrizesRemaining,
+      startDate: start, ...(end ? {gameEndDate: end} : {}), ...(redeem ? {lastDayToRedeem: redeem} : {}),
+      inventoryNote: `Retrieved ${today}; source updates daily, publication timestamp unavailable. Remaining means unclaimed, not store stock.${redeem ? ` Redeem by ${redeem}.` : ''}`,
+    });
+  }
+  if (!games.length) throw new Error('No current Oregon games');
   games.sort((a, b) => a.id.localeCompare(b.id, undefined, {numeric: true}));
-  const catalogs = [{state: 'Oregon', source: sourceUrl, games}];
-  let previous; try { previous = JSON.parse(await readFile(outputPath, 'utf8')); } catch (_) {}
-  const changed = JSON.stringify(previous?.catalogs) !== JSON.stringify(catalogs);
-  const updatedAt = changed ? new Date().toISOString() : previous?.updatedAt ?? new Date().toISOString();
-  await writeFile(outputPath, `${JSON.stringify({
-    source: 'Oregon Lottery official current Scratch-it catalog', updatedAt, retrievedAt: updatedAt,
-    coverage: `All ${games.length} currently for-sale Oregon Lottery Scratch-its with official price, top prize, and remaining top-prize count.`, catalogs,
-  }, null, 2)}\n`);
-  console.log(`Imported ${games.length} current Oregon Scratch-its.`);
-} catch (error) {
-  console.error(`Oregon Scratch import stopped: ${error.message}`);
-  process.exitCode = 1;
+  return {state: 'Oregon', source: sourceUrl, retrievedDate: today, sourceDate: null,
+    updateCadence: 'Source updates once daily; checked every six hours.',
+    coverage: 'API-listed Scratch-its available by retrieval date and before their game end date. Unclaimed top prizes only, not claims, all-tier winning tickets or retailer availability.', games};
+}
+
+async function main(outputPath) {
+  if (!outputPath) throw new Error('Usage: node tooling/import_oregon_scratch_catalog.mjs OUTPUT.json');
+  const body = await fetchSourceJson(apiUrl, {fetchImpl: (url, options) =>
+    fetch(url, {...options, headers: {...options.headers, ...headers}})});
+  const today = new Intl.DateTimeFormat('en-CA', {timeZone: 'America/Los_Angeles'}).format(new Date());
+  const catalog = parseOregonCatalog(body, today);
+  if (catalog.games.length < 20) throw new Error('Unexpectedly small current Oregon catalog');
+  let previous;
+  try { previous = JSON.parse(await readFile(outputPath, 'utf8')); } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+  }
+  const catalogs = [catalog];
+  const updatedAt = JSON.stringify(previous?.catalogs) === JSON.stringify(catalogs)
+    ? previous.updatedAt : new Date().toISOString();
+  await writeFile(outputPath, `${JSON.stringify({source: 'Oregon Lottery official Scratch-it inventory', updatedAt, catalogs}, null, 2)}\n`);
+  console.log(`Validated ${catalog.games.length} current Oregon Scratch-its.`);
+}
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main(process.argv[2]).catch(error => {console.error(`Oregon Scratch import stopped: ${error.message}`); process.exitCode = 1;});
 }
