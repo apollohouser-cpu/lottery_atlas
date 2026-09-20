@@ -27,3 +27,32 @@ notification; no responsive dataset has arrived.
 Kansas can display dated official remaining-prize and selected-winner subsets
 with their precise definitions, but is not ready for a complete statewide
 winning-ticket total or retailer heat ranking.
+
+## September 20, 2026 redesigned-site audit
+
+The old `kslottery.com/games/instants/` URLs now redirect to the PlayOn
+homepage. The replacement official [Scratch and Pull Tab catalog](https://playonkansas.com/games/scratch-and-pull-tabs)
+embeds a complete `scratchOffs` array in the page's Next.js response, even
+though the rendered first page shows only twelve games. The array contains
+109 entries: 103 explicitly marked Scratch and six Pull Tabs. All 109 detail
+pages were retrieved and checked against the listing: game numbers, ticket
+prices and advertised top prizes agree. Every detail page has prize rows;
+free-ticket rows remain categorical prizes rather than cash.
+
+The listing includes historical games: 58 of the 103 Scratch entries have
+end dates before September 20, leaving 45 without a passed end date. Those
+45 detail pages contain 421 prize rows. Do not import all 103 as active games.
+Keep end dates separate from claim deadlines; ended games may still be
+redeemable. Remaining inventory is not a dated winning-ticket total.
+
+A date discrepancy still requires an explicit handling decision before
+publication: game 490's listing metadata says August 24, 2026, but its detail
+page displays August 23. Do not silently choose a launch date. The detail
+pages state that remaining quantities update hourly, but do not display the
+actual inventory verification timestamp. Retrieval time must not be called
+source verification time. Example [100x detail page](https://playonkansas.com/games/scratch-and-pull-tabs/100x).
+
+Local reproducible audit files are under ignored `work/kansas_catalog/`:
+`audit.py`, `list.html`, `listing.json`, all 109 detail pages and `audit.json`.
+No Kansas public feed was changed during this audit. The existing records
+request remains pending; no duplicate request was sent.
