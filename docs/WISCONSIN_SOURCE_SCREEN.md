@@ -39,3 +39,45 @@ identities and ticket serial numbers are not requested. If no such association
 exists, all-tier statewide counts and the active retailer directory are still
 useful separately. The clarification was sent and Gmail confirmed delivery on
 September 18. Wisconsin's substantive response is pending.
+
+## September 20 catalog pagination and date audit
+
+The public Scratch listing was followed through all 22 linked pages. The saved
+HTML contains 2,120 rows, representing 2,117 distinct detail URLs after three
+identical repeated rows across page boundaries. The page route alone does not
+filter game type: published attributes identify 2,090 Scratch entries, 26
+Pull-tab entries and one `pulltab-vc` entry. A refresh must enforce type and
+follow pagination rather than treating the first 100 rows as a complete catalog.
+The local working audit, source URLs and HTML SHA-256 checksums are retained in
+`work/wisconsin_catalog/audit.json`, alongside the downloaded pages and script.
+These are observations of the listing, not a verified catalog replacement.
+
+As of September 20, Scratch entries have 2,017 past `data-endd` dates, 29 end
+dates not yet past and 44 blank end dates. Blank does **not** establish current
+availability: the blank-date group includes old Gold Rush (48), Wind Fall (147)
+and Spin N Win (61) entries without a displayed top-prize label. Historical
+URLs also repeat numeric suffixes; treat a suffix as a candidate identifier
+until the detail page confirms its Game Number. Do not silently combine games
+by URL suffix or infer an active game from a missing date.
+
+Listing end dates and redemption deadlines must remain separate. For example,
+[Cash Boom (2665)](https://www.wilottery.com/games/instant-games/cash-boom-2665)
+has listing `data-endd` February 21, 2026, while its detail page prints
+**Redeem By August 20, 2026**. The detail page is the source for the claim
+deadline; the listing attribute must not be substituted for it.
+
+The [Crossword Millionaire (2767) detail page](https://www.wilottery.com/games/instant-games/crossword-millionaire-2767)
+prints game number, price, start date, total and remaining top-prize counts,
+and says counts are verified weekly. It does not print a dated last-verification
+timestamp. The [Green & Gold Crossword (2780) page](https://www.wilottery.com/games/instant-games/green-gold-crossword-2780)
+labels its $50,000 amount as the top **instant** prize and separately describes
+bonus drawings. Preserve that distinction; do not add promotional prizes into
+instant-ticket inventory. Report retrieval time separately from unknown source
+verification time, and do not describe a six-hour poll as six-hour source updates.
+
+Next: verify detail-page identity, start/end/redemption semantics and historical
+exclusions before implementing a refresh of the dated bundled catalog. Preserve
+unknown or unavailable counts as unknown. No Wisconsin game data or winner
+locations were changed by this audit. The records clarification remains pending;
+no new agency replies were received during this check. Wisconsin remains
+unready for retailer heat-map testing.
