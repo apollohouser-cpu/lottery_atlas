@@ -99,6 +99,19 @@ void main() {
     },
   );
 
+  test('South Dakota offline catalog discloses subset coverage', () async {
+    await StateScratchCatalogFeedService.loadConfiguredFeed(
+      client: MockClient((_) async => http.Response('offline', 503)),
+    );
+    final games = StateScratchCatalogRegistry.gamesFor('South Dakota');
+    expect(games, hasLength(32));
+    expect(games.firstWhere((g) => g.id == '1197').topPrize, 75000);
+    expect(
+      games.every((g) => g.inventoryNote?.contains('subset') ?? false),
+      isTrue,
+    );
+  });
+
   test('newer downloaded catalog survives an offline reload', () async {
     await StateScratchCatalogFeedService.loadConfiguredFeed(
       client: MockClient((_) async => http.Response(feed(), 200)),

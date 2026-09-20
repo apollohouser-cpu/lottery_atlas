@@ -61,3 +61,20 @@ Reproducible read-only audit materials are in ignored
 `work/south_dakota_catalog/`: source HTML/JavaScript, `active_listing.json`,
 32 official inventory responses, `audit.py` and `inventory_audit.json`.
 The September 15 records request remains pending; no duplicate was sent.
+
+### Validated subset import
+
+A fresh official fetch validated 32 explicitly active games and 268 prize tiers.
+The importer verifies Scratch type, unique identifiers, active-status agreement,
+explicit listing/API ticket prices, cents conversion, unique tier numbers and
+nonnegative integer inventory with paid <= original winning inventory. It finds
+the maximum prize rather than relying on API tier order. Ambiguous top tiers,
+missing fields and contradictory status stop publication before file replacement.
+
+The combined feed and offline bundle now carry this subset. Every game discloses
+published-subset scope, cumulative inventory semantics and unknown verification
+time/store availability. `sourceDate` remains null; `updatedAt` is retrieval/change
+time. Distribution and disable dates are deliberately not mapped to claim dates.
+The six-hour refresh checks these same constraints. Five importer regression tests
+and an offline app-loading test cover the core boundaries. This is catalog-ready
+partial coverage, not all-state claims coverage or a completed retailer heat map.
