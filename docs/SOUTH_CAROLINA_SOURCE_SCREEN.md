@@ -30,3 +30,18 @@ South Carolina can show the public $500-plus activity with that limitation and
 the source update time. It is not ready for full-state testing until the request
 is submitted and responsive records establish all-tier coverage or the app is
 explicitly tested as a partial-coverage state.
+
+### September 20 source timeout recovery
+
+Scheduled run 35529179544 stopped at a Winners Report connection timeout;
+the subsequent run succeeded. The importer now uses a bounded HTTP helper:
+four attempts, a 30-second whole-request limit per attempt, and short increasing
+retry delays. Only connection/HTTP transport errors, timeouts and temporary
+HTTP statuses are retried. Permanent HTTP errors and malformed response encoding
+fail immediately. Exhausted retries still stop publication; no dates or claims
+are manufactured, and source parsing/geocoding validation remains unchanged.
+
+Five standalone local-HTTP regression checks exercise recovery after HTTP 503,
+no retry on 404, exhausted retry bounds, response timeout and invalid UTF-8.
+These checks also run in the publisher before imports and need no package
+resolution. This change improves availability without expanding data coverage.

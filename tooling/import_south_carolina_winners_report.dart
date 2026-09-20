@@ -5,6 +5,8 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'source_http_fetch.dart';
+
 const _reportUrl = 'https://www.sceducationlottery.com/Games/WinnersReport';
 const _censusBatchUrl =
     'https://geocoding.geo.census.gov/geocoder/locations/addressbatch';
@@ -333,24 +335,7 @@ Future<Map<String, Map<String, double>>> _geocodeBatch(
   return results;
 }
 
-Future<String> _fetchReport() async {
-  final client = HttpClient();
-  try {
-    final request = await client.getUrl(Uri.parse(_reportUrl));
-    request.headers.set(
-      HttpHeaders.userAgentHeader,
-      'LotteryAtlasOfficialDataBot/1.0',
-    );
-    final response = await request.close();
-    final body = await utf8.decoder.bind(response).join();
-    if (response.statusCode != HttpStatus.ok) {
-      _fail('SC Winners Report returned HTTP ${response.statusCode}.');
-    }
-    return body;
-  } finally {
-    client.close(force: true);
-  }
-}
+Future<String> _fetchReport() => fetchOfficialSource(Uri.parse(_reportUrl));
 
 Future<Map<String, dynamic>?> _readExisting(File file) async {
   if (!await file.exists()) return null;

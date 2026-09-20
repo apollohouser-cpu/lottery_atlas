@@ -33,6 +33,8 @@ jobs:
           # feed run pushed its generated files. Import from today's branch tip.
           ref: main
       - uses: dart-lang/setup-dart@v1
+      - name: Test bounded source HTTP requests
+        run: dart test/tooling/source_http_fetch_check.dart
       - uses: actions/setup-node@v4
         with:
           node-version: 22
