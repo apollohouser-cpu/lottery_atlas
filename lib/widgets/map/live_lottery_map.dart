@@ -6166,8 +6166,7 @@ class _ScratchOffMenuTile extends StatelessWidget {
                     const SizedBox(height: 2),
                     Text(
                       subtitle,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
+                      softWrap: true,
                       style: const TextStyle(
                         color: Colors.white60,
                         fontSize: 11,
