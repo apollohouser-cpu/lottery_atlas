@@ -27,3 +27,26 @@ records, retailer records and joins, definitions, update cadence, corrections
 and any existing regularly updated source. The portal displayed “Form
 submitted successfully” and said it would review the request and provide a
 follow-up email. No fee was authorized. No responsive dataset has arrived.
+
+## September 20, 2026 inventory import
+
+The unfiltered official Scratch-off Stats table contains 64 games, with
+explicit game numbers, ticket prices, cash top prizes, unclaimed top prizes,
+original top-prize totals, on-sale dates and estimated odds. No pagination
+was present. The importer preserves these fields and checks unique IDs,
+column identity, integer counts, remaining counts against original totals,
+and valid on-sale dates. Missing counts, noncash prize labels, pagination,
+or an unexpectedly small response stop publication rather than invent values.
+
+The source does not print an inventory verification date or publication
+cadence. `sourceDate` remains null; `updatedAt` records retrieval/change time.
+Each game discloses that the counts cover unclaimed top prizes only, with
+store availability unverified. The table does not supply game ending or
+redemption dates. These listings do not establish active stock at retailers.
+The six-hour publisher now refreshes this catalog; this remains partial
+inventory coverage, not all-tier 2026 winning-ticket totals or a fully
+developed state. The September 16 APRA request remains pending.
+
+Six regression tests cover valid zero remaining, missing and malformed
+counts, impossible inventory, duplicate games, invalid/future dates, changed
+columns, pagination and unsupported prize labels.
