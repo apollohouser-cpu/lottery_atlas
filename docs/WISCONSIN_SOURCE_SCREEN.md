@@ -118,3 +118,24 @@ must preserve top-instant-prize wording, unknown counts, redemption dates,
 retrieval date and weekly source cadence without inventing a verification date.
 No public game records changed in this verification run. Agency replies remain
 pending, and the last deployment continues to pass.
+
+## September 20 importer implementation — live refresh deferred
+
+`tooling/import_wisconsin_scratch_catalog.py` now implements the audited
+pagination, game-type selection, 180-day candidate window and detail-page
+identity/price/start-date checks. It preserves instant-prize labels, weekly
+verification wording, unknown remaining counts and exact redemption dates.
+Seven regression tests cover these rules, repeated-page conflicts, invalid
+counts and the source's paragraph-inside-heading markup. The importer validates
+all 92 eligible games against the previously saved official responses; the
+result is retained privately as `work/wisconsin_catalog/importer_validated_catalog.json`.
+
+A new live retrieval returned HTTP 500 repeatedly, including a separate curl
+check of the first listing page. No generated catalog was published and the
+six-hour Wisconsin importer was **not enabled**. The current production workflow
+remains unchanged so this source failure cannot block other states. The importer
+writes its output atomically only after every required response validates.
+Next run: recheck source availability, complete a fresh import, then wire the
+validated output into the combined live feed and refresh the bundled snapshot.
+Do not relabel the archived audit as a new retrieval. No user intervention is
+needed for this agency website outage.
