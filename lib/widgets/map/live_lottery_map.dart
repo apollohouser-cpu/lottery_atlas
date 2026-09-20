@@ -5981,9 +5981,11 @@ class _VerifiedStateScratchOffsPanel extends StatelessWidget {
   String _gameSummary(StateScratchGame game) {
     final remaining = game.topPrizesRemaining;
     final topPrize = game.topPrizeLabel ?? _money(game.topPrize);
-    return remaining == null
+    final summary = remaining == null
         ? '\$${game.cost} ticket · Top prize $topPrize'
         : '\$${game.cost} ticket · Top $topPrize · $remaining remaining';
+    final note = game.inventoryNote;
+    return note == null || note.isEmpty ? summary : '$summary · $note';
   }
 
   String _money(int amount) {

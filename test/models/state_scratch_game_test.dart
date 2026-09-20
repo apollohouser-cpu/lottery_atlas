@@ -17,6 +17,27 @@ void main() {
     expect(game.topPrizesRemaining, 2);
   });
 
+  test(
+    'preserves special prize labels and source notes through cache JSON',
+    () {
+      final game = StateScratchGame.fromJson(<String, dynamic>{
+        'stateName': 'Washington',
+        'id': '2004',
+        'name': 'Keys and Cash',
+        'cost': 10,
+        'topPrize': 25000,
+        'topPrizeLabel': 'BRONCO',
+        'topPrizesRemaining': 2,
+        'inventoryNote':
+            'Prize inventory as of 2026-09-19; store availability unverified.',
+      });
+      final restored = StateScratchGame.fromJson(game.toJson());
+      expect(restored.topPrizeLabel, 'BRONCO');
+      expect(restored.topPrizesRemaining, 2);
+      expect(restored.inventoryNote, game.inventoryNote);
+    },
+  );
+
   test('rejects a catalog ticket without its verified price', () {
     expect(
       () => StateScratchGame.fromJson(<String, dynamic>{

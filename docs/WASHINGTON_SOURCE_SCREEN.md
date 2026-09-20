@@ -78,3 +78,26 @@ availability depends on printing, testing, distribution, sales and claims.
 Inventory arithmetic alone does not establish a dated claim history or store
 availability. The October 15 agency response estimate remains pending; no new
 reply was received during this check.
+
+## September 19 catalog implementation
+
+`tooling/import_washington_scratch_catalog.py` now validates and imports all
+seven report categories. Five regression tests cover annuity parsing, special
+prize counts, malformed inventory, missing categories, mixed timestamps and
+cross-category duplicates. The generated catalog and refreshed bundled snapshot
+contain 57 games and all 606 tier inventories with the September 19 source date.
+Game 1780 preserves `$40,000/yr/25 years` and uses the explicit $1,000,000
+nominal annuity total for amount filtering. LIFE and BRONCO retain their exact
+published labels; their numeric amount filter uses the highest separately
+listed cash tier, not an invented valuation. Remaining counts refer to each
+advertised top tier. The three corrected counts are respectively 0, 1 and 2.
+
+Each game carries a visible source-date/availability note and any published
+redemption deadline. The model preserves these notes when caching. The workflow
+checks Washington every six hours and includes its catalog in the combined live
+feed; it refuses an incomplete or internally inconsistent replacement. Output
+`updatedAt` records retrieval/change time, separately from the printed source
+timestamp and date (whose timezone remains unstated). Closing games are retained
+with their deadline rather than treated as proof of current sales. This is a
+catalog refresh only; no Washington winner totals or retailer heat points are
+created. Deployment validation is recorded in the task status.

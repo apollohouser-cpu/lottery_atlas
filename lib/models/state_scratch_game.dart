@@ -11,6 +11,7 @@ class StateScratchGame {
     required this.topPrize,
     this.topPrizeLabel,
     this.topPrizesRemaining,
+    this.inventoryNote,
   });
 
   final String stateName;
@@ -19,12 +20,15 @@ class StateScratchGame {
   final int cost;
   final int topPrize;
 
-  /// Optional official non-cash label for a top prize, such as a vehicle.
+  /// Optional official annuity or non-cash label for a top prize, such as a vehicle.
   /// [topPrize] remains the highest cash prize for amount-based filtering.
   final String? topPrizeLabel;
 
   /// Null when the official catalog does not publish a current count.
   final int? topPrizesRemaining;
+
+  /// Source date and redemption/availability limits supplied by the catalog.
+  final String? inventoryNote;
 
   /// Parses one verified ticket from a published state catalog feed.
   ///
@@ -63,6 +67,7 @@ class StateScratchGame {
           ? null
           : topPrizeLabel,
       topPrizesRemaining: topPrizesRemaining,
+      inventoryNote: json['inventoryNote']?.toString(),
     );
   }
 
@@ -74,6 +79,7 @@ class StateScratchGame {
     'topPrize': topPrize,
     'topPrizeLabel': topPrizeLabel,
     'topPrizesRemaining': topPrizesRemaining,
+    'inventoryNote': inventoryNote,
   };
 
   static int? _integer(Object? value) {
