@@ -66,6 +66,21 @@ void main() {
     },
   );
 
+  test('Kansas inventory is available offline with coverage caveats', () async {
+    await StateScratchCatalogFeedService.loadConfiguredFeed(
+      client: MockClient((_) async => http.Response('offline', 503)),
+    );
+    final games = StateScratchCatalogRegistry.gamesFor('Kansas');
+    expect(games, hasLength(45));
+    expect(games.every((g) => g.topPrizesRemaining != null), isTrue);
+    expect(
+      games.every(
+        (g) => g.inventoryNote?.contains('launch dates conflict') ?? false,
+      ),
+      isTrue,
+    );
+  });
+
   test('newer downloaded catalog survives an offline reload', () async {
     await StateScratchCatalogFeedService.loadConfiguredFeed(
       client: MockClient((_) async => http.Response(feed(), 200)),

@@ -56,3 +56,27 @@ Local reproducible audit files are under ignored `work/kansas_catalog/`:
 `audit.py`, `list.html`, `listing.json`, all 109 detail pages and `audit.json`.
 No Kansas public feed was changed during this audit. The existing records
 request remains pending; no duplicate request was sent.
+
+### Conservative catalog import
+
+The importer now selects only explicitly typed Scratch games with no announced
+end date or claim deadline and a metadata launch date before retrieval day.
+A fresh September 20 fetch verified 45 games and 421 prize tiers. Each game's
+identity, price and top prize must match its detail page; the detail expiration
+must be TBD. The displayed prize table's accessibility and visual values must
+agree and are counted only once. Unknown numeric counts and unsupported
+noncash labels stop publication. Free-ticket tiers retain their categorical
+label and do not acquire a cash amount.
+
+Both original launch representations are retained as provenance fields
+(`sourceLaunchMetadata`, `sourceLaunchDisplayed`). Neither is mapped to the
+app's normalized `startDate`. Each game discloses the conflict and unknown
+inventory verification time. `sourceDate` is null; retrieval/change time is
+separate. The source states hourly updates; the publisher checks every six
+hours. This is intentionally the no-announced-end subset, not every redeemable
+game, all-tier dated claims, or a fully developed state's retailer coverage.
+
+Six regression tests cover eligibility, missing type/date fields, duplicate
+identities, zero counts, free-ticket semantics, conflicting source identity or
+amounts, expiration disagreements, and duplicate rendering. A malformed source
+cannot overwrite the previous file; the full import validates before replacement.
