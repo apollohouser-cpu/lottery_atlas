@@ -19,6 +19,22 @@ non-overlapping and the label explains exactly what is included. A source with
 unknown completeness remains a partial count. County/retailer heat points
 still require separately verified selling locations.
 
+## State completion standard — confirmed September 20, 2026
+
+A fully developed state requires the complete applicable game catalog and
+schedules; verified January 1, 2026-to-latest coverage across applicable games
+and prize tiers; a complete verified retailer directory and official selling-
+retailer joins for mapped activity; working state/county/retailer/game/date
+filters and coverage-aware rankings; reliable refresh and outage behavior;
+and passing data, app, build, deployment and visual/interaction checks.
+Claims, winning tickets and remaining inventory must stay distinct measures.
+
+A catalog-ready state is ready to test that catalog only. A partial activity
+layer is ready to test only its disclosed subset. Neither milestone establishes
+full-state completion. Essential unavailable records keep the state labeled
+partial coverage; never mark it fully developed merely because import code,
+a game menu or some winning retailer points are present.
+
 ## Current queue — September 13, 2026
 
 | Batch | Jurisdictions | Immediate work |
