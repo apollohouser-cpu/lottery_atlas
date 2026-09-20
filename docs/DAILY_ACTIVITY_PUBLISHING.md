@@ -49,6 +49,16 @@ named retailer or official winning location, address, exact coordinates, and a
 direct official source link. A failed validation leaves the previously
 published feed untouched.
 
+New York retailer imports retry temporary service and network failures up to
+four times, with a 30-second timeout per request. If the service remains
+unavailable, the importer may retain the complete, previously verified New York
+directory. It checks the cached source, date, retailer count, unique IDs, required
+fields, and coordinates before doing so. The file and its retrieval date stay
+unchanged, and the workflow emits a warning that the refresh was deferred.
+Malformed responses, incomplete exports, duplicate retailers, permanent HTTP
+errors, and invalid caches still fail the update. Retaining the old directory
+does not mean that New York's retailer data was refreshed successfully.
+
 This workflow is intentionally not a generic web scraper. Adding fresh state
 data still requires a state-specific official-source importer or an authorized
 lottery export. That is what keeps the daily feed accurate rather than merely

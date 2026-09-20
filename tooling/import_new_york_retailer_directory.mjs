@@ -5,6 +5,7 @@
  * Census county polygons; a row is never assigned to a nearest county.
  */
 import {readFile, writeFile} from 'node:fs/promises';
+import {fetchSourceJson as fetchJson, SourceUnavailableError} from './source_json_fetch.mjs';
 
 const apiUrl = 'https://data.ny.gov/resource/2vvn-pdyi.json';
 const sourceUrl =
@@ -23,27 +24,6 @@ if (!outputPath || !countyGeometryPath) {
     /(^|[\s'/-])([a-z])/g,
     (_, prefix, letter) => `${prefix}${letter.toUpperCase()}`,
   );
-  const fetchJson = async (url) => {
-    let lastError;
-    for (let attempt = 1; attempt <= 4; attempt++) {
-      try {
-        const response = await fetch(url, {
-          headers: {
-            accept: 'application/json',
-            'user-agent': 'LotteryAtlasOfficialDataBot/1.0',
-          },
-        });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return await response.json();
-      } catch (error) {
-        lastError = error;
-        if (attempt < 4) {
-          await new Promise((resolve) => setTimeout(resolve, attempt * 750));
-        }
-      }
-    }
-    throw new Error(`${url} failed: ${lastError.message}`);
-  };
   const pointOnSegment = (point, start, end) => {
     const [x, y] = point;
     const [x1, y1] = start;
@@ -189,12 +169,13 @@ if (!outputPath || !countyGeometryPath) {
       const latitude = Number(row.latitude);
       const longitude = Number(row.longitude);
       if (
-        !id || !ids.add(id) || !name || !address || !city ||
+        !id || ids.has(id) || !name || !address || !city ||
         !/^\d{5}$/.test(postalCode) ||
         !Number.isFinite(latitude) || !Number.isFinite(longitude)
       ) {
         throw new Error(`Incomplete or duplicate official retailer row ${id || '?'}`);
       }
+      ids.add(id);
       let exactLatitude = latitude;
       let exactLongitude = longitude;
       let county = countyFor(longitude, latitude, counties);
@@ -265,7 +246,38 @@ if (!outputPath || !countyGeometryPath) {
     await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`);
     console.log(`Imported all ${retailers.length} active New York Lottery retailers.`);
   } catch (error) {
-    console.error(`New York retailer-directory import stopped: ${error.message}`);
-    process.exitCode = 1;
+    const existing = await existingOutput();
+    const directory = existing?.directories?.length === 1
+      ? existing.directories[0] : null;
+    const cachedIds = new Set();
+    const validCache = directory?.state === 'New York' &&
+      directory.source === sourceUrl &&
+      Number.isFinite(Date.parse(existing?.retrievedAt)) &&
+      Array.isArray(directory.unresolvedRetailers) &&
+      directory.unresolvedRetailers.length === 0 &&
+      Array.isArray(directory.retailers) && directory.retailers.length >= 12000 &&
+      directory.retailers.every((row) => {
+        if (!row || !/^ny-\d+$/.test(row.id) || cachedIds.has(row.id)) return false;
+        cachedIds.add(row.id);
+        return ['name', 'address', 'city', 'county', 'coordinateSource'].every(
+          (field) => typeof row[field] === 'string' && row[field].trim().length > 0,
+        ) && /^\d{5}$/.test(row.postalCode) &&
+          Number.isFinite(row.latitude) && row.latitude >= 40 && row.latitude <= 46 &&
+          Number.isFinite(row.longitude) && row.longitude >= -80 && row.longitude <= -71;
+      });
+    if (error instanceof SourceUnavailableError && validCache) {
+      const warning = `New York retailer source temporarily unavailable; retained the ` +
+        `verified ${directory.retailers.length}-retailer directory from ` +
+        `${existing.retrievedAt} without changing its data or retrieval date: ${error.message}`;
+      console.warn(warning);
+      if (process.env.GITHUB_ACTIONS === 'true') {
+        const escaped = warning.replace(/%/g, '%25').replace(/\r/g, '%0D').replace(/\n/g, '%0A');
+        console.warn(`::warning title=New York retailer refresh deferred::${escaped}`);
+      }
+      process.exitCode = 0;
+    } else {
+      console.error(`New York retailer-directory import stopped: ${error.message}`);
+      process.exitCode = 1;
+    }
   }
 }

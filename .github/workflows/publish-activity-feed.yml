@@ -9,6 +9,7 @@ on:
     paths:
       - 'data/**'
       - 'tooling/**'
+      - 'test/tooling/**'
       - '.github/workflows/publish-activity-feed.yml'
 
 permissions:
@@ -29,6 +30,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Test source outage handling and data validation
+        run: node --test test/tooling/*.mjs
       - name: Import current official North Carolina winner claims
         run: >-
           node tooling/import_north_carolina_current_winners.mjs
