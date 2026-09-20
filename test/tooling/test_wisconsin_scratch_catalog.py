@@ -60,3 +60,57 @@ class WisconsinTest(unittest.TestCase):
         with self.assertRaises(ValueError):m.build_catalog(pages.__getitem__,TODAY)
 
 if __name__=='__main__':unittest.main()
+
+class WisconsinOutageTest(unittest.TestCase):
+    def test_connection_outage_retries_four_times(self):
+        from unittest.mock import patch
+        with patch.object(m, 'urlopen', side_effect=m.URLError('timed out')) as opened, patch.object(m.time, 'sleep'):
+            with self.assertRaises(m.SourceUnavailableError): m.fetch(m.SOURCE)
+        self.assertEqual(opened.call_count, 4)
+
+    def test_permanent_http_error_is_not_outage(self):
+        from unittest.mock import patch
+        with patch.object(m, 'urlopen', side_effect=m.HTTPError(m.SOURCE, 404, 'missing', {}, None)) as opened:
+            with self.assertRaises(m.HTTPError): m.fetch(m.SOURCE)
+        self.assertEqual(opened.call_count, 1)
+
+    def test_valid_fallback_remains_byte_identical(self):
+        import tempfile
+        from unittest.mock import patch
+        source=Path(__file__).resolve().parents[2]/'data/wisconsin_scratch_catalog.generated.json'
+        with tempfile.TemporaryDirectory() as folder:
+            path=Path(folder)/'feed.json';path.write_bytes(source.read_bytes())
+            import json
+            root=json.loads(path.read_text());root['catalogs'][0]['retrievedDate']=TODAY.isoformat();root['updatedAt']='2026-09-20T00:00:00+00:00'
+            path.write_text(json.dumps(root));before=path.read_bytes()
+            with patch.object(m, 'build_catalog', side_effect=m.SourceUnavailableError('offline')):
+                m.refresh_catalog(path,TODAY)
+            self.assertEqual(path.read_bytes(),before)
+
+    def test_bad_fallback_dates_and_counts_rejected(self):
+        import json,tempfile
+        source=Path(__file__).resolve().parents[2]/'data/wisconsin_scratch_catalog.generated.json'
+        for field,value in [('retrievedDate','2026-09-01'),('retrievedDate','2026-09-21'),('state','Other')]:
+            with self.subTest(field=field,value=value), tempfile.TemporaryDirectory() as folder:
+                root=json.loads(source.read_text());root['catalogs'][0][field]=value
+                path=Path(folder)/'feed.json';path.write_text(json.dumps(root))
+                with self.assertRaises(ValueError):m.validate_fallback(path,TODAY)
+
+    def test_invalid_fallback_inventory_rejected(self):
+        import json,tempfile
+        source=Path(__file__).resolve().parents[2]/'data/wisconsin_scratch_catalog.generated.json'
+        for value in [-1, True, 'unknown']:
+            with self.subTest(value=value), tempfile.TemporaryDirectory() as folder:
+                root=json.loads(source.read_text());root['catalogs'][0]['retrievedDate']=TODAY.isoformat()
+                root['updatedAt']='2026-09-20T00:00:00+00:00'
+                root['catalogs'][0]['games'][0]['topPrizesRemaining']=value
+                path=Path(folder)/'feed.json';path.write_text(json.dumps(root))
+                with self.assertRaises(ValueError):m.validate_fallback(path,TODAY)
+
+    def test_parse_failure_never_uses_fallback(self):
+        from unittest.mock import patch
+        with patch.object(m,'build_catalog',side_effect=ValueError('changed schema')), patch.object(m,'validate_fallback') as fallback:
+            with self.assertRaises(ValueError):m.refresh_catalog(Path('unused'),TODAY)
+            fallback.assert_not_called()
+
+if __name__ == '__main__': unittest.main()

@@ -146,34 +146,81 @@ def build_catalog(fetch, today):
                 coverage='Published Scratch listing, including games in its 180-day closing window, excluding expired redemption deadlines. Top-prize inventory only; not dated claims, all-tier winning tickets or retailer stock. Missing counts remain unknown.',
                 listingPageCount=len(seen), games=games)
 
+class SourceUnavailableError(RuntimeError):
+    """Official source remained unavailable after bounded retries."""
+
 def fetch(url):
     for attempt in range(4):
         try:
             with urlopen(Request(url, headers={'User-Agent': 'LotteryAtlasOfficialDataBot/1.0'}), timeout=30) as response:
                 return response.read()
         except HTTPError as error:
-            if error.code not in (408, 429, 500, 502, 503, 504) or attempt == 3:
+            if error.code not in (408, 429, 500, 502, 503, 504):
                 raise
-        except (URLError, TimeoutError):
             if attempt == 3:
-                raise
+                raise SourceUnavailableError('Wisconsin source HTTP outage') from error
+        except (URLError, TimeoutError) as error:
+            if attempt == 3:
+                raise SourceUnavailableError('Wisconsin source connection outage') from error
         time.sleep(attempt + 1)
+
+def validate_fallback(path, today):
+    previous = json.loads(path.read_text())
+    catalogs = previous.get('catalogs')
+    if not isinstance(catalogs, list) or len(catalogs) != 1:
+        raise ValueError('Invalid Wisconsin fallback catalogs')
+    catalog = catalogs[0]
+    if catalog.get('state') != 'Wisconsin' or catalog.get('source') != SOURCE:
+        raise ValueError('Invalid Wisconsin fallback provenance')
+    retrieved = date.fromisoformat(catalog['retrievedDate'])
+    if not 0 <= (today - retrieved).days <= 7:
+        raise ValueError('Wisconsin fallback retrieval date outside seven-day window')
+    stamp = datetime.fromisoformat(previous['updatedAt'])
+    if stamp.tzinfo is None or stamp.date() > today:
+        raise ValueError('Invalid Wisconsin fallback timestamp')
+    games = catalog.get('games')
+    if not isinstance(games, list) or len(games) < 30:
+        raise ValueError('Missing Wisconsin fallback games')
+    seen = set()
+    for game in games:
+        gid = game.get('id')
+        if not isinstance(gid, str) or not gid.isdigit() or gid in seen:
+            raise ValueError('Invalid Wisconsin fallback identity')
+        seen.add(gid)
+        if game.get('stateName') != 'Wisconsin' or not game.get('name') or not game.get('inventoryNote'):
+            raise ValueError('Missing Wisconsin fallback labels')
+        for field in ('cost', 'topPrize'):
+            value = game.get(field)
+            if type(value) not in (int, float) or not 0 < value < float('inf'):
+                raise ValueError('Invalid Wisconsin fallback price')
+        remaining = game.get('topPrizesRemaining')
+        if remaining is not None and (type(remaining) is not int or remaining < 0):
+            raise ValueError('Invalid Wisconsin fallback inventory')
+    return previous
+
+def refresh_catalog(path, today, fetcher=fetch):
+    try:
+        catalog = build_catalog(fetcher, today)
+    except SourceUnavailableError:
+        previous = validate_fallback(path, today)
+        print(f"::warning::Wisconsin source unavailable after retries; retaining validated catalog retrieved {previous['catalogs'][0]['retrievedDate']} without changing dates.")
+        return
+    result = dict(source='Wisconsin Lottery published Scratch catalog', updatedAt=datetime.now(timezone.utc).isoformat(), catalogs=[catalog])
+    if path.exists():
+        previous = json.loads(path.read_text())
+        if previous.get('catalogs') == result['catalogs']:
+            result['updatedAt'] = previous['updatedAt']
+    temporary = path.with_suffix('.tmp')
+    temporary.write_text(json.dumps(result, indent=2) + '\n')
+    temporary.replace(path)
+    print(f"Validated {len(catalog['games'])} Wisconsin games across {catalog['listingPageCount']} pages")
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('output', type=Path)
     args = parser.parse_args()
     today = datetime.now(ZoneInfo('America/Chicago')).date()
-    catalog = build_catalog(fetch, today)
-    result = dict(source='Wisconsin Lottery published Scratch catalog', updatedAt=datetime.now(timezone.utc).isoformat(), catalogs=[catalog])
-    if args.output.exists():
-        previous = json.loads(args.output.read_text())
-        if previous.get('catalogs') == result['catalogs']:
-            result['updatedAt'] = previous['updatedAt']
-    temporary = args.output.with_suffix('.tmp')
-    temporary.write_text(json.dumps(result, indent=2) + '\n')
-    temporary.replace(args.output)
-    print(f"Validated {len(catalog['games'])} Wisconsin games across {catalog['listingPageCount']} pages")
+    refresh_catalog(args.output, today)
 
 if __name__ == '__main__':
     main()

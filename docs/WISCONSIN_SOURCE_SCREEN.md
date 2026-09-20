@@ -157,3 +157,15 @@ results. This refresh adds a game catalog only: Wisconsin still has no newly
 verified retailer activity or all-tier winning-ticket total. Catalog testing
 can begin after the publishing workflow and live-feed comparison pass; retailer
 heat-map testing remains deferred pending the existing records request.
+
+### September 20 publisher outage handling
+
+Scheduled run 35510861331 exhausted all four connection attempts to the
+Wisconsin listing and stopped publication. The importer now distinguishes
+exhausted transient connection/HTTP failures from malformed data and permanent
+HTTP errors. During a transient outage only, it may retain the existing
+Wisconsin catalog after validating provenance, dates, game identities, prices
+and counts. The previous retrieval date must be no more than seven days old;
+a missing, invalid, future-dated or older fallback still stops publication.
+The retained file is byte-for-byte unchanged and a workflow warning exposes
+the outage. Source/schema validation failures never use this fallback.
