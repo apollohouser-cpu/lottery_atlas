@@ -32,3 +32,39 @@ query covers Scratch games, Pull-tabs, or a mixed retail collection; join by
 confirmed official game IDs and validate every included row. The existing
 importer is not wired into the production publisher. The FOIA extension remains
 pending and no new agency reply arrived during this check.
+
+## September 20 source correction and verified catalog join
+
+Inspection of the JavaScript loaded by the official page established the exact
+source enum: `PrizesRemainingGameTypeIdentifier.INSTANT` is uppercase `INSTANT`.
+The former lowercase `instant` query returned a different collection: 46 of its
+49 inventory rows join to CMS records explicitly classified as Pull Tabs, with
+three unmatched IDs. This explains the misleading fractional-price entries.
+The importer now uses the same uppercase enum as the official instant-game page.
+
+The official `getCMSGames` query supplies explicit `igtId`, game category,
+`displayedTicketPrice`, `displayedTopPrize`, store availability and web-listing
+flags. The new importer selects the 106 listed, in-store records classified
+`RETAIL_INSTANT_GAMES_CATEGORY` and joins each to the uppercase instant-prize
+query by IGT ID. All 106 join uniquely, their displayed top prizes reconcile
+with the highest inventory tier, and all counts pass nonnegative integer and
+remaining-versus-starting checks. Ticket price comes from its explicit field,
+never from the game title. Five regression tests cover type/price selection,
+missing joins, duplicate identities, invalid counts, top-prize agreement and
+zero-versus-unknown semantics.
+
+The correct prize query contains 119 inventory IDs. Thirteen do not match the
+106 listed CMS games and are explicitly excluded, not silently treated as
+current catalog records: 157, 158, 162, 163, 164, 617, 626, 657, 667, 761, 765,
+766 and 768. Thus the published scope is the official **listed retail instant
+catalog**, not every inventory record or a complete historical collection.
+Raw responses are retained locally in `work/michigan_catalog_metadata.json` and
+`work/michigan_instant_prizes_source.json`.
+
+The refreshed bundled and generated catalogs preserve each prize tier and a
+visible retrieval/coverage note. The response does not establish its verification
+date or update cadence; both remain unconfirmed. The official application warns
+that remaining prizes include tickets that may already have been sold. No paid
+or 2026 winning-ticket total is inferred. The six-hour publisher now checks this
+verified catalog join. Catalog readiness depends on deployment verification;
+Michigan's retailer activity and full-state completion remain pending.
