@@ -62,3 +62,27 @@ A scoped next import can cover the 36 catalog games with verified maximum
 awards, retain two unknown remaining counts, disclose the excluded game and
 current-catalog scope, and fail on any conflicting date relevant to its games.
 The pending FOAA request is separate from these independently fetched sources.
+
+### Validated current-catalog import
+
+The fresh importer publishes 36 games with verified maximum awards, excluding
+game 725 and retaining unknown top-prize remaining counts for games 721 and
+714. Each game discloses current-price-category scope, the exclusion, report
+date/time, unknown source timezone, daily cadence and inventory limitations.
+The 31 report-only games are not silently promoted into the current catalog.
+
+The importer validates report headers and continuation rows, unique printed
+identities and tiers, integer counts, price agreement, launch dates (both
+published colon and hyphen formats), and relevant cash deadlines. Historical
+date anomalies outside the imported IDs do not block these games; conflicting
+or impossible dates for an imported game stop publication. A shipment end date
+is never labeled a retailer sales cutoff. Missing maximum-tier counts stay
+unknown even when lower remaining tiers exist.
+
+Seven Python regression tests cover continuation grouping, unknown versus zero,
+missing maximum awards, deadline inclusion, shipment semantics, malformed
+reports, price/prize mismatches and source date formatting. The app's offline
+test checks the 36-game subset, exclusion and two unknown counts. Generated
+and offline feeds are wired into the six-hour publisher and combined feed,
+now containing 22 state catalogs. This is catalog coverage, not dated claims
+or a complete retailer map; Maine's FOAA response remains pending.

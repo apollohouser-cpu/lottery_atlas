@@ -149,6 +149,26 @@ void main() {
   );
 
   test(
+    'Maine offline catalog preserves unknown counts and exclusions',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('Maine');
+      expect(games, hasLength(36));
+      expect(games.where((g) => g.id == '725'), isEmpty);
+      expect(games.firstWhere((g) => g.id == '721').topPrizesRemaining, isNull);
+      expect(games.firstWhere((g) => g.id == '714').topPrizesRemaining, isNull);
+      expect(
+        games.every(
+          (g) => g.inventoryNote!.contains('current price-category subset'),
+        ),
+        isTrue,
+      );
+    },
+  );
+
+  test(
     'Connecticut offline catalog excludes disputed cash and labels annuities',
     () async {
       await StateScratchCatalogFeedService.loadConfiguredFeed(
