@@ -1,5 +1,6 @@
 /* Imports exact 2026 Colorado Lottery winner/store records from official reports. */
 import {readFile, writeFile} from 'node:fs/promises';
+import {retainColoradoScratchHistory, fetchColoradoReport} from './colorado_report_pages.mjs';
 
 const outputPath = process.argv[2];
 const directoryPath = process.argv[3];
@@ -20,7 +21,7 @@ const rows = (html) => [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)].map((ma
   [...match[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map((cell) => compact(cell[1])),
 ).filter((cells) => cells.length);
 const officialHtml = async (url) => {
-  const response = await fetch(url, {headers: {'user-agent': 'LotteryAtlasOfficialDataBot/1.0'}});
+  const response = await fetch(url, {signal: AbortSignal.timeout(30000), headers: {'user-agent': 'LotteryAtlasOfficialDataBot/1.0'}});
   if (!response.ok) throw new Error(`${url} returned HTTP ${response.status}`);
   return response.text();
 };
@@ -44,16 +45,19 @@ if (!outputPath || !directoryPath) {
     const list = retailerByAddress.get(key) ?? [];
     list.push(retailer); retailerByAddress.set(key, list);
   }
+  let previous = null;
+  try { previous = JSON.parse(await readFile(outputPath, 'utf8')); } catch (error) { if(error.code !== 'ENOENT') throw error; }
   const activities = []; const excluded = [];
+  let scratchWindowStart = null;
   for (const game of games) {
     // The official Pick 3 since-start report times out server-side. Its 180-day
-    // report remains a current daily supplement; the other official game
-    // reports establish the complete January-to-current launch window.
-    const timeframe = game === 'pick3' ? '180' : 'sincestart';
+    // report remains a current daily supplement. Scratch since-start currently
+    // ends in 2022; use its 180-day report and retain older verified history.
+    const timeframe = ['pick3', 'scratch'].includes(game) ? '180' : 'sincestart';
     const query = `game=${game}&timeframe=${timeframe}`;
     const [winnerHtml, storeHtml] = await Promise.all([
-      officialHtml(`${base}/whos-winning/?${query}`),
-      officialHtml(`${base}/winning-stores/?${query}`),
+      fetchColoradoReport(`${base}/whos-winning/?${query}`, officialHtml, rows),
+      fetchColoradoReport(`${base}/winning-stores/?${query}`, officialHtml, rows),
     ]);
     const stores = new Map();
     for (const cells of rows(storeHtml)) {
@@ -68,6 +72,7 @@ if (!outputPath || !directoryPath) {
       const [gameName, winnerName, amountText, city, store, dateText] = cells;
       const won = date(dateText); const prizeAmount = money(amountText);
       if (!won || won.getUTCFullYear() !== 2026 || !prizeAmount || !store || !city) continue;
+      if (game === 'scratch' && (!scratchWindowStart || won < scratchWindowStart)) scratchWindowStart = won;
       // The official winning-stores report groups every instant ticket under
       // "Scratch", while the dated winner report retains the ticket's name.
       const storeGameName = game === 'scratch' ? 'Scratch' : gameName;
@@ -105,6 +110,9 @@ if (!outputPath || !directoryPath) {
       });
     }
   }
+  if (!scratchWindowStart || !activities.some(row => row.game === 'scratch-off')) throw new Error('Recent Colorado Scratch report has no matched dated records');
+  const retained = retainColoradoScratchHistory(previous, scratchWindowStart.toISOString());
+  activities.push(...retained);
   const unique = [...new Map(activities.map((item) => [item.id, item])).values()]
     .sort((a, b) => a.drawDate.localeCompare(b.drawDate));
   const months = new Set(unique.map((item) => new Date(item.drawDate).getUTCMonth() + 1));
@@ -112,8 +120,6 @@ if (!outputPath || !directoryPath) {
   if (unique.length < 300 || [...Array(latestMonth)].some((_, index) => !months.has(index + 1))) {
     throw new Error(`Only ${unique.length} qualifying Colorado records across ${months.size} months`);
   }
-  let previous = null;
-  try { previous = JSON.parse(await readFile(outputPath, 'utf8')); } catch (_) {}
   const changed = JSON.stringify(previous?.activities) !== JSON.stringify(unique) ||
     JSON.stringify(previous?.excluded) !== JSON.stringify(excluded);
   const updatedAt = changed ? new Date().toISOString() : previous?.updatedAt ?? new Date().toISOString();
@@ -121,7 +127,8 @@ if (!outputPath || !directoryPath) {
     source: "Colorado Lottery official Who's Winning, Winning Stores, and retailer API",
     sourceUrl: `${base}/whos-winning/`, updatedAt,
     sourceLastUpdated: unique.at(-1).drawDate,
-    coverage: `${unique.length} exact physical retailer-level Colorado Lottery wins from January 1, 2026 through the current official report. Each dated winner row is joined to one exact official winning-store address and one exact official retailer coordinate; unmatched rows are excluded.`,
+    coverage: `${retained.length} older Scratch records retain their prior verified source snapshot; recent Scratch records use the official 180-day report starting ${scratchWindowStart.toISOString().slice(0,10)}. ${unique.length} exact physical retailer-level Colorado Lottery wins from January 1, 2026 through the current official report. Each dated winner row is joined to one exact official winning-store address and one exact official retailer coordinate; unmatched rows are excluded.`,
+    retainedScratchHistoryCount: retained.length, scratchWindowStart: scratchWindowStart.toISOString(),
     activities: unique, excluded,
   }, null, 2)}\n`);
   console.log(`Imported ${unique.length} Colorado winner locations; excluded ${excluded.length}.`);
