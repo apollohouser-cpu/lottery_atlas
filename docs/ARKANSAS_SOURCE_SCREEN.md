@@ -28,3 +28,8 @@ South Carolina requester information did not establish Arkansas citizenship.
 The response supplied no requested data and referred only to the public lottery
 website. Arkansas therefore remains deferred; its public subsets must retain
 their stated scope and cannot be presented as complete statewide coverage.
+
+September 20 follow-up: the direct local fetch of the official instant-game
+catalog returned HTTP 403. No automated import was enabled from an incomplete
+response, and the September 15 records denial remains unchanged. Continue
+with accessible official sources; do not infer any new coverage from this check.
