@@ -132,3 +132,9 @@ catalog/detail inventory, source structure, source cadence, future launches,
 inclusive ending dates, and explicit conflicting deadlines. All 25 existing
 catalogs remained unchanged. Idaho is ready for local current-catalog testing;
 live publication is checked separately from this build.
+
+Live verification September 21: publisher run 35665265146 succeeded. All 32
+Idaho games were present in the live combined catalog, which exactly matched
+the publisher's repository snapshot. The live activity and retailer feeds also
+matched their repository snapshots. Idaho is ready for current-catalog testing;
+its broader winning-ticket and retailer-map limitations remain unchanged.
