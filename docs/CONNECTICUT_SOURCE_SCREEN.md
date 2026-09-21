@@ -122,3 +122,18 @@ September 20. The generated feed and offline bundle are registered in the
 six-hour publisher and combined feed (now 21 state catalogs). The original
 74-game audit remains accurate for the source; the one-game difference is
 the explicitly excluded game 1725, not an unreported completeness claim.
+
+### September 21 connection-failure recovery
+
+Publisher run 35596079756 stopped on curl exit 7 fetching game 1892; the next
+scheduled run 35599991940 succeeded and published Maine as well as Connecticut.
+The importer now retries DNS/connect failures (curl exit 6 or 7) up to four
+attempts with one-, two- and three-second delays. Existing bounded curl retries
+for supported transient HTTP/timeouts remain. Permanent HTTP and certificate
+failures are not retried by this additional loop; no saved data or source dates
+are relabeled as fresh on failure.
+
+Three regression tests verify recovery, four-attempt exhaustion, and no added
+retry for HTTP/certificate errors. All 94 Python tests pass. A live fetch of
+previously failed game 1892 succeeded after the change. This is a transport
+resilience change only; catalog coverage and exclusions remain unchanged.

@@ -3,6 +3,8 @@ from datetime import date
 from pathlib import Path
 import json
 import unittest
+from unittest.mock import patch
+import subprocess
 
 spec = importlib.util.spec_from_file_location('ct', Path(__file__).resolve().parents[2] / 'tooling/import_connecticut_scratch_catalog.py')
 m = importlib.util.module_from_spec(spec)
@@ -63,6 +65,31 @@ class ConnecticutTest(unittest.TestCase):
         for rows in [[GAME, GAME], [{**GAME, 'status': 'unknown'}], [{**GAME, 'ticketCostRaw': -1}]]:
             with self.subTest(rows=rows), self.assertRaises(ValueError):
                 m.listing(wrap(rows))
+
+
+class ConnecticutFetchTest(unittest.TestCase):
+    def test_connection_and_dns_failures_recover(self):
+        failures = [subprocess.CalledProcessError(code, ['curl']) for code in [7, 6]]
+        response = subprocess.CompletedProcess(['curl'], 0, stdout=b'verified page')
+        with patch.object(m.subprocess, 'run', side_effect=[*failures, response]) as run, patch.object(m.time, 'sleep') as sleep:
+            self.assertEqual(m.fetch('https://www.ctlottery.org/example'), b'verified page')
+            self.assertEqual(run.call_count, 3)
+            self.assertEqual([c.args[0] for c in sleep.call_args_list], [1, 2])
+
+    def test_connection_retry_is_bounded(self):
+        failure = subprocess.CalledProcessError(7, ['curl'])
+        with patch.object(m.subprocess, 'run', side_effect=failure) as run, patch.object(m.time, 'sleep'):
+            with self.assertRaises(subprocess.CalledProcessError):
+                m.fetch('https://www.ctlottery.org/example')
+            self.assertEqual(run.call_count, 4)
+
+    def test_permanent_http_and_tls_errors_are_not_retried(self):
+        for code in [22, 60]:
+            with self.subTest(code=code), patch.object(m.subprocess, 'run', side_effect=subprocess.CalledProcessError(code, ['curl'])) as run, patch.object(m.time, 'sleep') as sleep:
+                with self.assertRaises(subprocess.CalledProcessError):
+                    m.fetch('https://www.ctlottery.org/example')
+                self.assertEqual(run.call_count, 1)
+                sleep.assert_not_called()
 
 
 if __name__ == '__main__':

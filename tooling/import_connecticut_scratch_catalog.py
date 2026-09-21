@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import re
 import subprocess
+import time
 from zoneinfo import ZoneInfo
 from lxml import html
 
@@ -143,7 +144,15 @@ def detail(raw, game, today):
 
 
 def fetch(url):
-    return subprocess.run(['curl', '-fsSL', '--max-time', '30', '--retry', '3', url], capture_output=True, check=True).stdout
+    # curl's default retry policy does not cover every DNS/connect failure.
+    # Retry those transport failures only; permanent HTTP errors still fail.
+    for attempt in range(4):
+        try:
+            return subprocess.run(['curl', '-fsSL', '--max-time', '30', '--retry', '3', url], capture_output=True, check=True).stdout
+        except subprocess.CalledProcessError as error:
+            if error.returncode not in {6, 7} or attempt == 3:
+                raise
+            time.sleep(attempt + 1)
 
 
 def main():
