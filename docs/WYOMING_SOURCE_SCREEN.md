@@ -20,3 +20,24 @@ and Scratch records where maintained, retailer records and identifiers, joins,
 definitions, cadence, and any existing regularly updated report, API, dataset,
 or file. It also permits the most recent complete month if the full period is
 burdensome. No fees were authorized.
+
+## September 21 agency response and limited-data path
+
+David Stevens, Chief of Security & Enforcement, declined the requested winning-
+ticket data citing winner anonymity, declined a retailer-list export, and said
+retailer joins are limited to the public winners list. He directed us to
+`https://wyolotto.com/wyo-wins`, `/find-retailer`, and `/wyo-wins/winners-list`.
+He confirmed that Wyoming offers no Scratch or instant-ticket games and asked
+for clarification of definitions/cadence/revisions. No dataset was delivered.
+This is an explicit refusal of requested records, distinct from a pending reply.
+
+A September 21 reply clarified that no winner personal information is sought,
+accepted existing nonpersonal aggregate August 2026 counts by game/tier and
+partial reports, and asked about the public list's date meaning, prize threshold,
+completeness, selling versus validating retailer, update frequency and corrections.
+No new report or paid work was requested; no fees were authorized. Gmail confirmed
+sending. A shared Wyoming data-limitation notice now appears on the map coverage
+card and state source screen. App completion can proceed with verified public
+information and honest missing-data notices; no complete heat-map coverage is
+claimed. The absence of Scratch games is a confirmed product limitation, not a
+missing Scratch dataset.

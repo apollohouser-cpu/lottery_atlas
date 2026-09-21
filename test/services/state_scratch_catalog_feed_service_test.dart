@@ -293,4 +293,24 @@ void main() {
       expect(bank.inventoryNote, contains('2027-04-10'));
     },
   );
+  test(
+    'New Hampshire offline catalog preserves annuity and missing-game limits',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('New Hampshire');
+      expect(games, hasLength(58));
+      expect(games.any((g) => g.id == '1698'), isFalse);
+      final diamond = games.singleWhere((g) => g.id == '1621');
+      expect(diamond.topPrizesRemaining, 0);
+      expect(diamond.topPrize, 1350000);
+      expect(diamond.topPrizeLabel, contains('30 years'));
+      expect(diamond.inventoryNote, contains('1698'));
+      expect(
+        games.singleWhere((g) => g.id == '1608').inventoryNote,
+        contains('Source dates disagree'),
+      );
+    },
+  );
 }

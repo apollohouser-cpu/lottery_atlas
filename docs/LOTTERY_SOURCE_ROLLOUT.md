@@ -25,7 +25,7 @@ The user accepts completing the app with the verified data available when
 agencies deny access or do not maintain requested records. Unavailable data
 alone does not block app completion. Each affected state must clearly disclose
 its specific limitation, available coverage, source dates and missing features.
-Arkansas, Georgia, Oklahoma and North Dakota now have shared notices on the
+Arkansas, Georgia, Oklahoma, North Dakota and Wyoming now have shared notices on the
 state map coverage card and official-source screen.
 
 App completion requires working supported game catalogs, schedules, available

@@ -14,6 +14,10 @@ class StateDataLimitationRegistry {
       'Oklahoma' =>
         'The lottery said some requested reports do not exist and other '
             'information is restricted for privacy and security reasons.',
+      'Wyoming' =>
+        'The lottery declined requested ticket records, a retailer-list export '
+            'and retailer joins, directing us to its public winner and retailer pages. '
+            'Wyoming offers no Scratch or instant-ticket games.',
       'North Dakota' =>
         'The lottery reports that it does not track lower-tier prizes. '
             'Public winner listings cover only a subset of prizes.',

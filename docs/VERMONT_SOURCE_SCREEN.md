@@ -131,3 +131,7 @@ establish all-tier claims, retailer-linked activity or complete map coverage.
 Validation passed: 99 Python tests, 39 Node tests, 63 Flutter tests, five HTTP
 checks, Flutter analysis (12 existing informational notices only), and a macOS
 debug build. Publication verification is tracked separately from local readiness.
+
+Publication verified September 21: workflow 35628051981 succeeded and the live
+combined catalog contains all 82 Vermont games. This confirms feed deployment;
+the local macOS build and catalog tests remain separate from complete map coverage.

@@ -75,3 +75,32 @@ Do not silently normalize these disagreements or assume API activation is the
 consumer on-sale date. Five games have annuity top prizes: 1621, 1657, 1658,
 1687 and 1692. These findings support a future limited catalog import with
 explicit date/coverage handling; no app/feed data was changed by this audit.
+
+### September 21 limited catalog implementation
+
+The importer now publishes **58 schedule-matched games and 575 prize tiers**.
+Game 1698 is explicitly excluded because its schedule record is missing; each
+game's notice discloses that omission. Nine conflicting start dates are retained
+as separate CMS and schedule fields, with no normalized start date. Future
+launches and expired prize claims are excluded using New Hampshire's local date;
+redemption deadlines are inclusive. Price, printed identity, original top prize,
+nonnegative counts and remaining/original bounds must validate before writing.
+
+The source UTC timestamp is preserved in each inventory note. Cadence remains
+unconfirmed. Five annuity prizes retain their advertised totals and payment terms;
+amount-based filters use their published cash alternatives. The importer checks
+that the official frontend still contains the verified annuity footnotes. Fresh
+CMS metadata for game 1706 labels its top prize `200,000` without a dollar sign;
+this explicit top-prize field is accepted only when it matches the API's dollar
+amount. It is never derived from the game name.
+
+The generated catalog is included in offline assets and the scheduled combined
+feed. Two consecutive fresh imports produced identical catalogs. Validation
+passed 106 Python, 39 Node and 64 Flutter tests, plus five bounded HTTP checks.
+Flutter analysis reports 12 existing informational notices only. Local readiness
+and live publication are tracked separately; this is catalog coverage, not a
+complete dated claims or retailer activity dataset.
+
+The macOS debug build also passed. New Hampshire is ready for local catalog
+testing with the above limitations. Live deployment verification remains pending
+until the publisher completes and its output is checked.
