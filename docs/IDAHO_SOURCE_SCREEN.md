@@ -87,3 +87,48 @@ measure, winner-to-selling-retailer joins, publication/correction timing and
 coordinate exceptions are still unresolved. Idaho is **not yet ready for
 retailer heat-map testing**. The new API access advances historical-source
 availability without removing those coverage limits.
+
+## September 21 current Scratch catalog integration
+
+A fresh official catalog and all 32 linked detail pages were validated against
+one another and the separate [Scratch Claim Dates](https://www.idaholottery.com/games/claim-scratch)
+schedule. The initial catalog contains **32 games and 222 remaining-prize tiers
+of $25 or more**. All 317 printed prize-structure rows were inspected; the other
+95 rows explicitly say remaining quantities are unavailable. Those amounts are
+preserved separately as unknown, never converted to zero or used to infer claims.
+The detail pages also publish original prize quantities, refining the earlier
+September 16 listing-only screen. Original quantities are not dated claims.
+
+The official detail-page statement specifies once-daily prize updates and excludes
+remaining counts below $25. No inventory verification date is printed, so
+`sourceDate` stays null and retrieval time stays separate. There are no verified
+store-stock or winner-to-retailer joins. This is current Scratch inventory, not
+a statewide or January-to-date winning-ticket total.
+
+The importer checks unique official website game IDs, matching detail-image game
+numbers, game names, ticket prices, top prizes, every published remaining tier,
+original-prize bounds, and launch dates. It checks explicit end/claim dates and
+excludes past-ended or future-launch games. Single-digit date components, such
+as Galactic Cash's November 3, 2025 launch, are parsed without guessing. Current
+catalog and detail disagreements stop publication before replacing the last
+verified snapshot. There are currently no current-catalog/claim-schedule overlaps.
+
+Three older claim-schedule rows disagree with the site's general 180-day rule:
+1845 Lemon Twist Bingo (179 days), 1900 50X Multiplier (165 days), and 1892
+Feelin Lucky (179 days). The parser preserves the dates exactly as published and
+flags their window mismatch; it does not calculate replacement deadlines. None
+is in the current catalog. A current eligible game's conflicting deadline would
+stop the import for review.
+
+The catalog is bundled for offline use and added to the recurring feed publisher.
+Idaho Cash draw-tier and retailer audits above remain separate and are not
+promoted to complete winning-ticket totals or retailer heat rankings by this work.
+
+Validation: 118 Python, 48 Node and 69 Flutter tests passed, plus five HTTP
+checks and the macOS debug build. Analysis retained only the 12 existing
+informational notices. Regression coverage includes unknown lower-tier counts,
+zero remaining prizes, original-prize bounds, duplicate identities, mismatched
+catalog/detail inventory, source structure, source cadence, future launches,
+inclusive ending dates, and explicit conflicting deadlines. All 25 existing
+catalogs remained unchanged. Idaho is ready for local current-catalog testing;
+live publication is checked separately from this build.

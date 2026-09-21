@@ -61,3 +61,9 @@ notices. Tests cover zero inventory, duplicate/shared designs, report-only
 exclusion, conflicting joins, malformed source structure, and inclusive sales-end
 dates. All 24 existing catalogs were unchanged by this integration. The catalog
 is ready for local testing; live feed publication is verified separately.
+
+Live verification September 21: publisher run 35660292296 succeeded. The live
+combined catalog exactly matched the publisher's repository snapshot, including
+all 35 Delaware games. Activity and retailer feeds also matched their published
+snapshots. Delaware is ready for current-catalog testing; full map coverage is
+still limited as described above.

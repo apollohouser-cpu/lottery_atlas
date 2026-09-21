@@ -293,6 +293,22 @@ void main() {
       expect(bank.inventoryNote, contains('2027-04-10'));
     },
   );
+  test(
+    'Idaho offline catalog preserves the lower-tier coverage limit',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('Idaho');
+      expect(games, hasLength(32));
+      final mega = games.singleWhere((g) => g.id == '1919');
+      expect(mega.topPrize, 1000000);
+      expect(mega.topPrizesRemaining, 2);
+      expect(mega.inventoryNote, contains('prizes \$25 or more'));
+      expect(mega.inventoryNote, contains('not zero'));
+      expect(mega.inventoryNote, contains('does not publish an inventory'));
+    },
+  );
   test('Delaware offline catalog counts shared ticket designs once', () async {
     await StateScratchCatalogFeedService.loadConfiguredFeed(
       client: MockClient((_) async => http.Response('offline', 503)),
