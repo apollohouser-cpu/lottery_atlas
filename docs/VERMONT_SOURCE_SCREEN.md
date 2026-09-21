@@ -64,3 +64,25 @@ but its cause is not established. Do not silently deduplicate and label 77
 games complete. The importer must establish a stable sort/full export or an
 independently reconciled source before publication. The audit intentionally
 fails its uniqueness check; saved pages preserve the evidence.
+
+### September 21 unpaginated report reconciliation
+
+The official `/games/instant-tickets/outstanding-prizes` page contains one
+unpaginated table with **82 unique printed IDs and 217 listed prize tiers**.
+It includes every ID found in the earlier pagination audit plus the five
+missing games: 1811, 1836, 1852, 1873 and 1880. Each row supplies a detail
+link, price, name and matching parallel prize/count lists, including explicit
+zeroes. This provides a candidate source that avoids the pagination gap.
+
+The separate `/games/instant-tickets/last-day-to-redeem` table contains 108
+unique IDs. All 82 report games join to it; their advertised top prizes agree
+with the maximum report tier and none has a passed claim deadline as of
+September 21. Dates mix two- and four-digit years and use TBD for unknowns.
+Preserve TBD as unknown. Printed tickets, percent sold and total unclaimed
+dollars remain separate from tier counts.
+
+`work/vermont_catalog/audit_reports.py` reproduces these joins and records
+`report_audit.json`. The earlier failing pagination audit remains useful
+regression evidence. Full detail validation, source-date/cadence verification
+and second-chance inventory interpretation remain before enabling an import.
+No Vermont app/feed data changed during this pass.

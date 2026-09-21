@@ -69,3 +69,25 @@ coordinates, identified August as an initial format sample and January 1,
 2026 to latest publication as the eventual coverage target, and asked for
 existing export availability and a fee estimate before paid work. Gmail
 confirmed “Message sent” at 5:24 p.m. ET. No records or fee estimate yet.
+
+## September 21 interim response — request 2026-097
+
+Eric Veronikis sent a two-page interim response for RTKL request **2026-097**
+at 13:21 UTC. The signed letter, dated September 21, says Revenue received
+this request September 14 and needs up to 30 additional days from the original
+due date for legal review of record existence/custody and disclosure exemptions.
+It expressly says this is not a final response. It delivers no dataset, makes
+no final denial, and provides no fee estimate. It says estimated or actual fees,
+if applicable, will be addressed in the final response; no fees are authorized.
+
+The letter identifies the requested active-retailer directory and January 1,
+2026-to-present retailer-linked winning-ticket/claim records. It confirms that
+request 2026-098 remains separate. Do not apply this extension to 2026-098
+without a corresponding agency notice. The letter does not state a calendar
+final-response date, and none is asserted here. Continue monitoring both
+requests; no new user action is requested by this letter.
+
+The complete original PDF was downloaded, text-extracted and visually reviewed
+on both pages. It is retained privately in ignored
+`work/pennsylvania_records/2026-097-interim-response.pdf`; no attachment or
+requester contact information was added to the public repository.
