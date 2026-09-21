@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../services/state_lottery_source_registry.dart';
 import '../../services/state_source_cadence_registry.dart';
+import '../../services/state_data_limitation_registry.dart';
 
 /// Reusable official-resource screen for states added to the source registry.
 class StateLotterySourceScreen extends StatelessWidget {
@@ -27,6 +28,9 @@ class StateLotterySourceScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cadenceNotice = StateSourceCadenceRegistry.noticeFor(
+      source.stateName,
+    );
+    final limitationNotice = StateDataLimitationRegistry.noticeFor(
       source.stateName,
     );
     return Scaffold(
@@ -66,6 +70,20 @@ class StateLotterySourceScreen extends StatelessWidget {
               ],
             ),
           ),
+          if (limitationNotice != null) ...[
+            const SizedBox(height: 12),
+            Container(
+              padding: const EdgeInsets.all(14),
+              decoration: BoxDecoration(
+                color: const Color(0xFF4A340D),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                limitationNotice,
+                style: const TextStyle(color: Colors.white, height: 1.4),
+              ),
+            ),
+          ],
           if (cadenceNotice != null) ...[
             const SizedBox(height: 12),
             Container(

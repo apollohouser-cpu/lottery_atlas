@@ -19,21 +19,28 @@ non-overlapping and the label explains exactly what is included. A source with
 unknown completeness remains a partial count. County/retailer heat points
 still require separately verified selling locations.
 
-## State completion standard — confirmed September 20, 2026
+## State completion standard — revised September 21, 2026
 
-A fully developed state requires the complete applicable game catalog and
-schedules; verified January 1, 2026-to-latest coverage across applicable games
-and prize tiers; a complete verified retailer directory and official selling-
-retailer joins for mapped activity; working state/county/retailer/game/date
-filters and coverage-aware rankings; reliable refresh and outage behavior;
-and passing data, app, build, deployment and visual/interaction checks.
-Claims, winning tickets and remaining inventory must stay distinct measures.
+The user accepts completing the app with the verified data available when
+agencies deny access or do not maintain requested records. Unavailable data
+alone does not block app completion. Each affected state must clearly disclose
+its specific limitation, available coverage, source dates and missing features.
+Arkansas, Georgia, Oklahoma and North Dakota now have shared notices on the
+state map coverage card and official-source screen.
 
-A catalog-ready state is ready to test that catalog only. A partial activity
-layer is ready to test only its disclosed subset. Neither milestone establishes
-full-state completion. Essential unavailable records keep the state labeled
-partial coverage; never mark it fully developed merely because import code,
-a game menu or some winning retailer points are present.
+App completion requires working supported game catalogs, schedules, available
+activity and retailer views, filters and coverage-aware rankings; reliable
+refresh and outage behavior; and passing data, app, build, deployment and
+visual/interaction checks. Unsupported features must have honest empty states.
+A disclaimer does not excuse broken features or unverified imports.
+
+Data completeness is tracked separately: full statewide coverage still requires
+verified January 1, 2026-to-latest records across applicable games and tiers,
+a complete retailer directory and verified selling-retailer joins for maps.
+Partial datasets remain labeled partial even when the app experience is ready.
+Missing records are unknown, not zero; claims, winning tickets, remaining prize
+inventory and retailer stock remain distinct. Continue pursuing additional
+records without holding the available-data app release indefinitely.
 
 ## Current queue — September 13, 2026
 

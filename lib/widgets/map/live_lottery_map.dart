@@ -48,6 +48,7 @@ import '../../services/state_navigation_service.dart';
 import '../../services/state_lottery_data_registry.dart';
 import '../../services/state_lottery_source_registry.dart';
 import '../../services/state_source_cadence_registry.dart';
+import '../../services/state_data_limitation_registry.dart';
 import '../../services/state_winning_ticket_total_service.dart';
 import 'map_controls_overlay.dart';
 import 'map_detail_mode.dart';
@@ -6678,6 +6679,7 @@ class _StateDataCoverageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final profile = StateLotteryDataRegistry.forStateName(stateName);
     final cadenceNotice = StateSourceCadenceRegistry.noticeFor(stateName);
+    final limitationNotice = StateDataLimitationRegistry.noticeFor(stateName);
     final officialTotal = StateWinningTicketTotalService.totals.value
         .where((total) => total.state == profile.abbreviation)
         .firstOrNull;
@@ -6777,6 +6779,17 @@ class _StateDataCoverageCard extends StatelessWidget {
                       color: Color(0xFFFDE68A),
                       fontSize: 11,
                       height: 1.35,
+                    ),
+                  ),
+                ],
+                if (limitationNotice != null) ...[
+                  const SizedBox(height: 8),
+                  Text(
+                    limitationNotice,
+                    style: const TextStyle(
+                      color: Color(0xFFFDE68A),
+                      fontSize: 12,
+                      height: 1.4,
                     ),
                   ),
                 ],
