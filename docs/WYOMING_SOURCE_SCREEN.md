@@ -41,3 +41,9 @@ card and state source screen. App completion can proceed with verified public
 information and honest missing-data notices; no complete heat-map coverage is
 claimed. The absence of Scratch games is a confirmed product limitation, not a
 missing Scratch dataset.
+
+Later September 21, Stevens replied that the narrowed aggregate reports are not
+built or available and again referred us to the website's winner information.
+No new dataset or field/cadence clarification was supplied. Continue with the
+explicitly limited public-source path; no further intervention is needed for
+that approach.

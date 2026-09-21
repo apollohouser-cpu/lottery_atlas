@@ -14,6 +14,10 @@ class StateDataLimitationRegistry {
       'Oklahoma' =>
         'The lottery said some requested reports do not exist and other '
             'information is restricted for privacy and security reasons.',
+      'Rhode Island' =>
+        'The lottery supplied an active retailer directory dated September 15, 2026. '
+            'Requested winning-ticket data requires paid assembly that has not '
+            'been authorized, and ticket identifiers will not be provided.',
       'Wyoming' =>
         'The lottery declined requested ticket records, a retailer-list export '
             'and retailer joins, directing us to its public winner and retailer pages. '

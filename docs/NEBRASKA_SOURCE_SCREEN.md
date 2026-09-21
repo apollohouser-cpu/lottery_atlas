@@ -97,3 +97,17 @@ Repeated prize amounts remain separate structure rows. Free-ticket and mixed
 cash/ticket combinations retain their labels without a guessed cash value.
 The combined feed and offline bundle both include Nebraska. This is catalog
 and dated top-prize coverage only, not a fully developed state or claims heat map.
+
+## September 21 publisher repair
+
+Runs 35634946372 and 35638874764 failed because the Scratch page added two
+promotional navigation links with no catalog prices. The importer had included
+all detail links. It now excludes only the explicit `sbm_contain_all` navigation
+container and retains strict price/name and duplicate checks for actual catalog
+cards. A regression test covers navigation duplicates and malformed real cards.
+A fresh import validated the same 25 games and 24 dated report counts. The
+manually reviewed inventory date remains September 13; this repair does not
+refresh those counts or invent prices for promotional cards.
+
+Repair validation passed 107 Python tests and 64 Flutter tests. Analysis found
+only the 12 existing informational notices; the macOS debug build passed.

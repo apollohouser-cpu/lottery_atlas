@@ -23,3 +23,43 @@ electronic copy. The website confirmed receipt. No fees were authorized.
 Rhode Island remains suitable only for clearly labeled public subsets until an
 official all-tier source and complete retailer join are obtained. It is not
 ready for full-state testing.
+
+## September 21 partial delivery and fee estimate
+
+The Lottery supplied `Active Retailer List Report as of 9-15-2026.xlsx` and
+Valerie Morozov's September 21 two-page response to the September 16 APRA request.
+The original attachments are preserved privately under ignored
+`work/rhode_island_records/`; the letter was visually reviewed in full.
+
+The workbook has one sheet, `Active Retailer List Report`, with headers on row 7
+and 1,119 data rows (8–1126). All 1,119 retailer IDs are unique, all statuses are
+Active, and all records have name, address, city, state and ZIP. ZIP values are
+text and retain leading zeroes. No coordinates, county, game-specific licenses,
+or winning-ticket joins are supplied. Do not invent locations or infer product
+eligibility from name suffixes. Exact coordinate validation remains necessary
+before a map layer is ready.
+
+The letter says no existing record matches the requested winning-ticket format,
+but the agency could assemble it from several sources for an estimated 14 hours
+at $15/hour, totaling $210. It says the free hour has already been used, actual
+cost may exceed the estimate, and no further work starts without response and
+payment. Ticket/record identifiers would be withheld; other redactions may apply.
+This is a partial delivery, fee-conditioned assembly offer, and partial withholding,
+not a blanket refusal of every requested record. No fees are authorized.
+
+A reply thanked the agency for the directory, kept paid work on hold, and narrowed
+the remaining request to existing no-cost aggregate August game/tier reports or
+public downloads without custom compilation, personal data, identifiers or
+retailer joins. Gmail confirmed sending. The app now has a Rhode Island notice
+explaining the available directory and unavailable winning-ticket data. The
+user's limited-data completion policy permits continuing with these disclosures.
+
+The reproducible private audit `work/rhode_island_records/audit_retailers.py`
+produced `validated_retailers.json` with the workbook SHA-256 and source row
+numbers. Three records have out-of-state addresses: 100143 (Walmart Chain Head,
+Arkansas), 100291 (BJ'S WHOLESALE, Massachusetts), and 100358 (PRICE RITE -
+WAKEFERN FOOD CORP, New Jersey). These are flagged for address review, not mapped
+as Rhode Island storefronts. Eleven exact address/city/ZIP groups have multiple
+records; preserve their distinct agency IDs pending interpretation. Thus 1,119
+active records must not be represented as 1,119 distinct Rhode Island physical
+stores. All ZIP strings satisfy the supplied five-digit/ZIP+4 format.

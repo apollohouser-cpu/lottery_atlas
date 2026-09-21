@@ -19,6 +19,9 @@ def count(text):
 def parse_listing(raw):
     tree=html.fromstring(raw);games=[];seen=set()
     for a in tree.xpath('//a[contains(@href,"scratch-detail?")]'):
+        # Promotional navigation repeats games without catalog prices or structure.
+        if a.xpath('ancestor::*[contains(concat(" ",normalize-space(@class)," ")," sbm_contain_all ")]'):
+            continue
         link=a.get('href')
         if not re.fullmatch(r'/scratch-detail\?gameid=\d+',link) or link in seen:raise ValueError('Invalid detail link')
         seen.add(link)
