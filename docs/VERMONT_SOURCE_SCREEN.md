@@ -86,3 +86,31 @@ dollars remain separate from tier counts.
 regression evidence. Full detail validation, source-date/cadence verification
 and second-chance inventory interpretation remain before enabling an import.
 No Vermont app/feed data changed during this pass.
+
+### September 21 complete detail reconciliation
+
+Fetched all 82 report-linked detail pages with bounded requests and two
+concurrent workers. `work/vermont_catalog/audit_details.py` validated each
+printed game ID, ticket price, advertised top prize, start date and last cash
+date against the report/deadline tables. It parsed 217 explicit unclaimed
+prize tiers, preserving zero counts; all tier labels and counts exactly matched
+the report snapshot. Printed-ticket totals were positive and percent-sold
+fields were within 0–100. Results and HTML are retained in ignored
+`detail_audit.json` and `detail-ID.html` files.
+
+No published inventory timestamp or update cadence was established on the
+inspected detail/report pages or FAQ. A future importer must use null for
+sourceDate/cadence, retain retrieval time separately and say that remaining
+prizes are not store inventory or dated winning-ticket totals. The official
+FAQ says some expired unclaimed prize money funds promotions/second-chance
+drawings; that statement does not establish a reserved-prize adjustment to
+these current table counts. Do not subtract an invented reserve or apply
+Tennessee's separate reservation rule to Vermont.
+
+The report/detail/deadline combination is now a validated importer candidate,
+independent of the unstable paginated catalog. Next implementation should
+require unique printed IDs, exact price/top-prize/date joins, parallel tier
+lists, explicit unknown dates, inclusive claim deadlines, and source-specific
+coverage notices. No Vermont app data changed or state-testing readiness was
+claimed in this audit. Pennsylvania's previously reviewed interim letter is
+still the only September 21 agency reply found during this check.
