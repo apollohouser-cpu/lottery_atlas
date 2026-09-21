@@ -44,3 +44,33 @@ The requester added game type, draw date, retailer identifier and complete
 locality fields, and a non-personal record identifier where already maintained.
 The reply also repeated the request for update cadence, repeatable future
 extracts, an existing retailer-directory export, and an estimate before fees.
+
+## September 21 public catalog audit
+
+The official finder loads its tickets using the public request defined in
+`/wp-content/themes/mdlottery/js/scratch-offs.js`: GET `/wp-admin/admin-ajax.php`
+with `action=jquery_shortcode`, `shortcode=scratch_offs`, and `atts={"null":"null"}`.
+The initial page alone contains promotional slides, not the full catalog.
+The ticket response contains 95 unique printed game IDs and 966 prize tiers.
+All tiers have nonnegative remaining counts no greater than original counts;
+all card top-prize counts match their labeled tier, and each card's all-prizes
+remaining count equals its tier sum. All inventory dates are September 19,
+2026; preserve that printed date and the agency-confirmed daily cadence.
+
+Game 791 THE BIG SPIN advertises a categorical BIG SPIN top prize, with
+separate cash and digital-spin tiers. Game 741 Let's Make a Deal includes
+labels such as `250.00 (SPIN)` without a dollar prefix. Preserve these labels
+and separate categories; do not coerce BIG SPIN to a cash maximum or merge
+same-value cash and spin tiers. Decode source HTML as UTF-8 explicitly.
+
+Claim deadlines are published for a subset; games 733 and 731 have a last
+claim date of September 21, 2026. A future importer must include the deadline
+itself and exclude them the next local day, independently of positive counts.
+A listing or future claim deadline does not prove current retail stock.
+Remaining totals may include sold tickets that have not been cashed.
+
+Reproducible audit materials are in ignored `work/maryland_catalog/`:
+`list.html`, `source.js`, `tickets.html`, `audit.py`, and `audit.json`.
+This is an import candidate only; no Maryland catalog was published in this
+pass. The broader August records request remains pending and is separate
+from this independently retrieved public inventory.
