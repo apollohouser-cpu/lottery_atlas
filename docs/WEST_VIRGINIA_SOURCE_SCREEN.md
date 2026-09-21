@@ -25,3 +25,17 @@ supplied directly and is not stored in this repository.
 West Virginia is not ready for map testing. Its current verified map data is a
 two-ticket Cash 25 subset, and the disclaimer must remain until a current
 retailer directory and broader verified winner coverage are available.
+
+## September 21 formal submission
+
+Lottery Web Response replied to the September 15 request and directed it to the
+[official FOIA form](https://wvlottery.com/customer-service/customer-resources/FOIA-request-form).
+This was routing guidance, not a denial or data delivery. The form was completed
+September 21 with the previously supplied requester contact details. Its
+500-character description limit required a concise scope incorporating the
+September 15 email: August 2026 draw/scratch winning-ticket or paid-prize records,
+retailer directory and joins, definitions/cadence/revisions, available partial
+records with coverage limits, and an estimate before any chargeable work. No
+fees were authorized. The page confirmed: “Your request has been submitted
+successfully.” No case number was displayed; agency response remains pending.
+Private requester contact details are not stored in this repository.

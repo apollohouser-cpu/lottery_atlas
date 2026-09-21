@@ -114,3 +114,20 @@ lists, explicit unknown dates, inclusive claim deadlines, and source-specific
 coverage notices. No Vermont app data changed or state-testing readiness was
 claimed in this audit. Pennsylvania's previously reviewed interim letter is
 still the only September 21 agency reply found during this check.
+
+### September 21 catalog implementation
+
+The importer now publishes all 82 eligible report games and 217 verified listed
+tiers, preserving explicit zeroes. It checks report/detail/deadline identities,
+prices, top prizes and dates, excludes future launches and expired claim
+periods, and retains ended games through the inclusive redemption deadline.
+Unknown inventory dates remain null; retrieval time and the six-hour checking
+schedule do not imply a published update cadence. Each game carries these
+limitations and any announced end/redemption dates.
+
+The catalog is bundled for offline use and included in the combined feed and
+scheduled publisher. Vermont is ready for local catalog testing; this does not
+establish all-tier claims, retailer-linked activity or complete map coverage.
+Validation passed: 99 Python tests, 39 Node tests, 63 Flutter tests, five HTTP
+checks, Flutter analysis (12 existing informational notices only), and a macOS
+debug build. Publication verification is tracked separately from local readiness.

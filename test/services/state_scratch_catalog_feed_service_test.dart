@@ -279,4 +279,18 @@ void main() {
       );
     },
   );
+  test(
+    'Vermont offline catalog preserves zeroes and unknown inventory date',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('Vermont');
+      expect(games, hasLength(82));
+      final bank = games.singleWhere((g) => g.id == '1824');
+      expect(bank.topPrizesRemaining, 0);
+      expect(bank.inventoryNote, contains('not published'));
+      expect(bank.inventoryNote, contains('2027-04-10'));
+    },
+  );
 }
