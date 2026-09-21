@@ -71,3 +71,21 @@ itself to the verified no-end-date subset and retain unknown source date and
 cadence, with tests for identity, duplicated rendering, money formatting and
 inventory arithmetic. The agency's September 16 response still limits broader
 records availability.
+
+### Validated catalog import
+
+The fresh importer validates the 44 no-end-date games against their detail
+payloads before publishing. It verifies unique printed and internal identifiers,
+prices, eligibility, launch dates, prize formatting and inventory arithmetic.
+It accepts the source's literal double-dollar prefix as dollar formatting,
+checks maximum tier against advertised top prize, and rejects duplicate tiers
+instead of counting desktop/mobile copies. Missing/negative counts and source
+schema or status changes stop publication before atomic replacement.
+
+The six-hour publisher and refreshed offline bundle now include this subset.
+Each game discloses scope and unknown verification timestamp/cadence. The
+catalog's `sourceDate` stays null; retrieval/change time is separate. Five
+importer regression tests and an offline app-loading test cover identity,
+ended/future eligibility, zero/invalid counts, joins and duplicate tiers.
+This remains catalog inventory coverage, not dated all-tier claims or a
+fully developed retailer map.

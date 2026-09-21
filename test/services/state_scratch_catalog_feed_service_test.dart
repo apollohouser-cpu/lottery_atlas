@@ -132,6 +132,22 @@ void main() {
     },
   );
 
+  test(
+    'Oklahoma offline inventory uses printed identifiers and scope labels',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('Oklahoma');
+      expect(games, hasLength(44));
+      expect(games.firstWhere((g) => g.id == '842').topPrize, 200000);
+      expect(
+        games.every((g) => g.inventoryNote?.contains('no-end-date') ?? false),
+        isTrue,
+      );
+    },
+  );
+
   test('newer downloaded catalog survives an offline reload', () async {
     await StateScratchCatalogFeedService.loadConfiguredFeed(
       client: MockClient((_) async => http.Response(feed(), 200)),
