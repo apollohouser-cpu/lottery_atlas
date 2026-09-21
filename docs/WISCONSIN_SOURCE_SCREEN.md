@@ -169,3 +169,13 @@ and counts. The previous retrieval date must be no more than seven days old;
 a missing, invalid, future-dated or older fallback still stops publication.
 The retained file is byte-for-byte unchanged and a workflow warning exposes
 the outage. Source/schema validation failures never use this fallback.
+
+### Local-date fallback boundary correction
+
+A regression reproduced an evening failure: `2026-09-21T01:30:00Z` is still
+September 20 in Wisconsin, but comparing its unconverted UTC date against
+Wisconsin's local retrieval day falsely marked it future-dated. Fallback
+validation now converts the aware timestamp to `America/Chicago` before the
+date comparison. Equivalent UTC/local representations are accepted identically;
+a timestamp on the next Wisconsin calendar day still fails. Stored timestamps
+and the seven-day retrieval-age limit are unchanged. Both boundary tests pass.

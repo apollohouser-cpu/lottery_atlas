@@ -107,6 +107,30 @@ class WisconsinOutageTest(unittest.TestCase):
                 path=Path(folder)/'feed.json';path.write_text(json.dumps(root))
                 with self.assertRaises(ValueError):m.validate_fallback(path,TODAY)
 
+    def test_utc_next_day_is_same_wisconsin_evening(self):
+        import json,tempfile
+        source=Path(__file__).resolve().parents[2]/'data/wisconsin_scratch_catalog.generated.json'
+        with tempfile.TemporaryDirectory() as folder:
+            root=json.loads(source.read_text())
+            root['catalogs'][0]['retrievedDate']=TODAY.isoformat()
+            root['updatedAt']='2026-09-21T01:30:00+00:00'
+            path=Path(folder)/'feed.json';path.write_text(json.dumps(root))
+            self.assertEqual(m.validate_fallback(path,TODAY)['updatedAt'],root['updatedAt'])
+            # The same instant expressed in state local time has equal validity.
+            root['updatedAt']='2026-09-20T20:30:00-05:00'
+            path.write_text(json.dumps(root))
+            self.assertEqual(m.validate_fallback(path,TODAY)['updatedAt'],root['updatedAt'])
+
+    def test_actual_future_local_date_still_rejected(self):
+        import json,tempfile
+        source=Path(__file__).resolve().parents[2]/'data/wisconsin_scratch_catalog.generated.json'
+        with tempfile.TemporaryDirectory() as folder:
+            root=json.loads(source.read_text())
+            root['catalogs'][0]['retrievedDate']=TODAY.isoformat()
+            root['updatedAt']='2026-09-21T05:00:00+00:00'
+            path=Path(folder)/'feed.json';path.write_text(json.dumps(root))
+            with self.assertRaises(ValueError):m.validate_fallback(path,TODAY)
+
     def test_parse_failure_never_uses_fallback(self):
         from unittest.mock import patch
         with patch.object(m,'build_catalog',side_effect=ValueError('changed schema')), patch.object(m,'validate_fallback') as fallback:

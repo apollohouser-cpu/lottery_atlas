@@ -176,7 +176,7 @@ def validate_fallback(path, today):
     if not 0 <= (today - retrieved).days <= 7:
         raise ValueError('Wisconsin fallback retrieval date outside seven-day window')
     stamp = datetime.fromisoformat(previous['updatedAt'])
-    if stamp.tzinfo is None or stamp.date() > today:
+    if stamp.tzinfo is None or stamp.astimezone(ZoneInfo('America/Chicago')).date() > today:
         raise ValueError('Invalid Wisconsin fallback timestamp')
     games = catalog.get('games')
     if not isinstance(games, list) or len(games) < 30:
