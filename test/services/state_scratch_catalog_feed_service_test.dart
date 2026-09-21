@@ -148,6 +148,24 @@ void main() {
     },
   );
 
+  test(
+    'Louisiana offline inventory preserves timestamps and excludes expired game',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('Louisiana');
+      expect(games, hasLength(39));
+      expect(games.where((g) => g.id == '1605'), isEmpty);
+      expect(
+        games.every(
+          (g) => g.inventoryNote?.contains('Inventory as of') ?? false,
+        ),
+        isTrue,
+      );
+    },
+  );
+
   test('newer downloaded catalog survives an offline reload', () async {
     await StateScratchCatalogFeedService.loadConfiguredFeed(
       client: MockClient((_) async => http.Response(feed(), 200)),

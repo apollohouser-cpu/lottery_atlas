@@ -77,3 +77,21 @@ with 39 saved detail pages, `detail_audit.json` and `identity_audit.json`.
 No source-validation failures occurred in this pass. Public import remains
 pending implementation and regression tests; this audit does not claim that
 Louisiana is ready for app testing or a complete statewide heat map.
+
+### Validated publication path
+
+The importer now fetches the report and all candidate detail pages, verifies
+printed identity, ticket price, launch date, top prize, full tier arithmetic,
+source timestamp and detail eligibility, and writes only after validation.
+A fresh run produced 39 eligible games. Inventory counts come from each detail
+page rather than combining differently timed summary and detail counts.
+Per-game source timestamps retain explicit CDT/CST offsets; the catalog-level
+report timestamp describes candidate discovery. Retrieval time is separate.
+
+Expired detail pages and passed claim deadlines are excluded even if remaining
+inventory is positive. Noncash TICKET tiers remain categorical. Five importer
+regression tests cover expiration, inclusive deadlines, zero/noncash prizes,
+arithmetic and identity/price/timestamp errors; an offline app test covers
+expired-game exclusion and visible timestamps. The six-hour publisher and
+bundled catalog now include Louisiana. This is inventory coverage, not
+January-to-current dated claims or verified retailer heat-map completeness.
