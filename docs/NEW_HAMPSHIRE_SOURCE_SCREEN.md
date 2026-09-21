@@ -104,3 +104,8 @@ complete dated claims or retailer activity dataset.
 The macOS debug build also passed. New Hampshire is ready for local catalog
 testing with the above limitations. Live deployment verification remains pending
 until the publisher completes and its output is checked.
+
+Publication verified September 21 after workflow 35648049856 succeeded: the
+live combined catalog exactly matched the repository feed and contained all
+58 New Hampshire games. New Hampshire is ready for catalog testing with its
+missing-schedule and conflicting-date notices intact.

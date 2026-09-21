@@ -179,3 +179,12 @@ validation now converts the aware timestamp to `America/Chicago` before the
 date comparison. Equivalent UTC/local representations are accepted identically;
 a timestamp on the next Wisconsin calendar day still fails. Stored timestamps
 and the seven-day retrieval-age limit are unchanged. Both boundary tests pass.
+
+## September 21 records acknowledgment
+
+Amy R. Blaskowski, DOR Executive Staff Assistant, acknowledged the request with
+receipt date September 14. The notice says DOR strives to respond within ten
+business days and will provide a revised timeline if needed. This is an
+acknowledgment, not a data delivery or denial; it contains no fee estimate.
+Continue the verified public catalog with its existing coverage/cadence limits
+while awaiting the records response. No requester action was requested.

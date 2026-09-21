@@ -313,4 +313,92 @@ void main() {
       );
     },
   );
+  test(
+    'state-scoped download repairs inflated legacy cache without losing offline data',
+    () async {
+      final legacy = jsonDecode(feed()) as Map<String, dynamic>;
+      final catalog =
+          (legacy['catalogs'] as List).single as Map<String, dynamic>;
+      catalog['updatedAt'] = legacy.remove('updatedAt');
+      await SharedPreferencesAsync().setString(
+        'lottery_atlas.state_scratch_catalogs.v1',
+        jsonEncode(legacy),
+      );
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      expect(
+        StateScratchCatalogRegistry.gamesFor('Wisconsin').single.id,
+        'test-current',
+      );
+      final fresh =
+          jsonDecode(feed(date: '2098-09-20T00:00:00Z'))
+              as Map<String, dynamic>;
+      final current =
+          (fresh['catalogs'] as List).single as Map<String, dynamic>;
+      current['updatedAt'] = fresh.remove('updatedAt');
+      current['timestampScope'] = 'state';
+      (current['games'] as List).single['id'] = 'repaired-state';
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response(jsonEncode(fresh), 200)),
+      );
+      expect(
+        StateScratchCatalogRegistry.gamesFor('Wisconsin').single.id,
+        'repaired-state',
+      );
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      expect(
+        StateScratchCatalogRegistry.gamesFor('Wisconsin').single.id,
+        'repaired-state',
+      );
+    },
+  );
+  test(
+    'legacy timestamp repair still chooses a newer bundled snapshot',
+    () async {
+      final legacy = jsonDecode(feed()) as Map<String, dynamic>;
+      final catalog =
+          (legacy['catalogs'] as List).single as Map<String, dynamic>;
+      catalog['updatedAt'] = legacy.remove('updatedAt');
+      await SharedPreferencesAsync().setString(
+        'lottery_atlas.state_scratch_catalogs.v1',
+        jsonEncode(legacy),
+      );
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient(
+          (_) async => http.Response(feed(date: '2000-01-01T00:00:00Z'), 200),
+        ),
+      );
+      expect(
+        StateScratchCatalogRegistry.gamesFor(
+          'Wisconsin',
+        ).any((g) => g.id == 'test-current'),
+        isFalse,
+      );
+    },
+  );
+  test(
+    'legacy combined downloads remain usable until their publisher upgrades',
+    () async {
+      final legacy = jsonDecode(feed()) as Map<String, dynamic>;
+      final catalogs = legacy['catalogs'] as List;
+      catalogs.add({
+        ...catalogs.single as Map<String, dynamic>,
+        'state': 'Vermont',
+      });
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response(jsonEncode(legacy), 200)),
+      );
+      expect(
+        StateScratchCatalogRegistry.gamesFor('Wisconsin').single.id,
+        'test-current',
+      );
+      expect(
+        StateScratchCatalogRegistry.gamesFor('Vermont').single.id,
+        'test-current',
+      );
+    },
+  );
 }

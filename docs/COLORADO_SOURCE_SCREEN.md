@@ -60,3 +60,8 @@ bounded HTTP checks. Analysis reported only the 12 existing informational
 notices; the macOS debug build passed. The activity publisher validated 23,157
 records across 19 states. This is the current approved-source subset, not an
 all-tier statewide total or a new agency data delivery.
+
+Deployment verified September 21: workflow 35648049856 succeeded, and the live
+activity feed exactly matched the repository output, including the preserved
+historical Scratch labels. New Hampshire's catalog also published successfully
+in that run.

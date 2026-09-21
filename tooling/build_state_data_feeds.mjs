@@ -11,14 +11,18 @@ if (!catalogOutput || !directoryOutput || inputs.length === 0) {
   try {
     const catalogs = [];
     const directories = [];
-    const timestamps = [];
+    const valid = value => typeof value === 'string' && Number.isFinite(Date.parse(value));
+    const stamp = (item, root) => {
+      const updatedAt = [item.updatedAt, root.updatedAt, root.retrievedAt].find(valid) ?? new Date(0).toISOString();
+      return {...item, updatedAt, timestampScope: 'state'};
+    };
+    const newest = items => items.reduce((latest, item) =>
+      Date.parse(item.updatedAt) > Date.parse(latest) ? item.updatedAt : latest,
+      new Date(0).toISOString());
     for (const path of inputs) {
       const root = JSON.parse(await readFile(path, 'utf8'));
-      if (Array.isArray(root.catalogs)) catalogs.push(...root.catalogs);
-      if (Array.isArray(root.directories)) directories.push(...root.directories);
-      for (const timestamp of [root.updatedAt, root.retrievedAt]) {
-        if (timestamp && !Number.isNaN(Date.parse(timestamp))) timestamps.push(timestamp);
-      }
+      if (Array.isArray(root.catalogs)) catalogs.push(...root.catalogs.map(item => stamp(item, root)));
+      if (Array.isArray(root.directories)) directories.push(...root.directories.map(item => stamp(item, root)));
     }
     catalogs.sort((left, right) => left.state.localeCompare(right.state));
     directories.sort((left, right) => left.state.localeCompare(right.state));
@@ -31,12 +35,11 @@ if (!catalogOutput || !directoryOutput || inputs.length === 0) {
     if (catalogs.length === 0 || directories.length === 0) {
       throw new Error('Both catalogs and directories are required');
     }
-    const updatedAt = timestamps.sort().at(-1) ?? new Date(0).toISOString();
     await writeFile(
       catalogOutput,
       `${JSON.stringify({
         source: 'Lottery Atlas verified official state Scratch-Off catalogs',
-        updatedAt,
+        updatedAt: newest(catalogs),
         catalogs,
       }, null, 2)}\n`,
     );
@@ -44,7 +47,7 @@ if (!catalogOutput || !directoryOutput || inputs.length === 0) {
       directoryOutput,
       `${JSON.stringify({
         source: 'Lottery Atlas verified official state retailer directories',
-        updatedAt,
+        updatedAt: newest(directories),
         directories,
       }, null, 2)}\n`,
     );
