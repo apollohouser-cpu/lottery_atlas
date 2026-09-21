@@ -149,6 +149,29 @@ void main() {
   );
 
   test(
+    'Maryland offline catalog retains BIG SPIN and claim deadlines',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('Maryland');
+      expect(games, hasLength(95));
+      final spin = games.firstWhere((g) => g.id == '791');
+      expect(spin.topPrizeLabel, 'BIG SPIN');
+      expect(spin.topPrize, 50000);
+      expect(spin.inventoryNote, contains('highest fixed cash prize'));
+      expect(
+        games.firstWhere((g) => g.id == '731').inventoryNote,
+        contains('Last day to claim: 2026-09-21'),
+      );
+      expect(
+        games.every((g) => g.inventoryNote!.contains('Inventory as of')),
+        isTrue,
+      );
+    },
+  );
+
+  test(
     'Louisiana offline inventory preserves timestamps and excludes expired game',
     () async {
       await StateScratchCatalogFeedService.loadConfiguredFeed(

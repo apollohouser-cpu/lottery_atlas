@@ -63,6 +63,7 @@ class StateScratchCatalogFeedService {
     'data/south_dakota_scratch_catalog.initial.json',
     'data/new_mexico_scratch_catalog.initial.json',
     'data/louisiana_scratch_catalog.initial.json',
+    'data/maryland_scratch_catalog.initial.json',
     'data/oregon_scratch_catalog.initial.json',
     'data/ohio_scratch_catalog.initial.json',
     'data/michigan_scratch_catalog.initial.json',

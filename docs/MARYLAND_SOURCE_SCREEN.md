@@ -74,3 +74,20 @@ Reproducible audit materials are in ignored `work/maryland_catalog/`:
 This is an import candidate only; no Maryland catalog was published in this
 pass. The broader August records request remains pending and is separate
 from this independently retrieved public inventory.
+
+### Validated catalog import
+
+The importer now fetches the public finder directly and validates printed IDs,
+prices, tier headers, nonnegative inventory, original/remaining bounds,
+card/tier top-prize agreement, and the sum of all remaining prizes. It preserves
+UTF-8 names, separate digital-spin categories and per-game source dates.
+BIG SPIN remains a displayed categorical top prize; amount filters use the
+highest fixed cash prize, explicitly disclosed in the game's inventory note.
+Future launches and games past the inclusive local claim deadline are excluded.
+
+The fresh import produced 95 eligible games. The six-hour publisher and offline
+bundle include this dated catalog. Five Python regression tests cover special
+prizes, zero counts, claim deadlines, future launches, malformed fields,
+identities and changed schemas; the app test verifies offline labels and dates.
+This supports catalog testing only. Remaining prizes do not prove tickets are
+unsold or locate any winning ticket; the broader agency records request is open.
