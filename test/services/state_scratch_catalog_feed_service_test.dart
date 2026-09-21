@@ -293,6 +293,18 @@ void main() {
       expect(bank.inventoryNote, contains('2027-04-10'));
     },
   );
+  test('Delaware offline catalog counts shared ticket designs once', () async {
+    await StateScratchCatalogFeedService.loadConfiguredFeed(
+      client: MockClient((_) async => http.Response('offline', 503)),
+    );
+    final games = StateScratchCatalogRegistry.gamesFor('Delaware');
+    expect(games, hasLength(35));
+    final shared = games.singleWhere((g) => g.id == '528');
+    expect(shared.topPrizesRemaining, 3);
+    expect(shared.inventoryNote, contains('not once per design'));
+    expect(shared.inventoryNote, contains('timezone unspecified'));
+    expect(games.any((g) => g.id == '410'), isFalse);
+  });
   test(
     'New Hampshire offline catalog preserves annuity and missing-game limits',
     () async {
