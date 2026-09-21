@@ -62,3 +62,34 @@ concatenated `rsc.txt`, `games.json`, and `detail1891.html`. Full per-game detai
 joins, annuity/cash labels, eligibility and source-date validation remain before
 import. No Connecticut catalog was published in this pass. This public-source
 work is separate from pending FOIA #2026-025.
+
+### September 21 full detail validation
+
+Fetched all 74 listed game detail pages with two concurrent requests. The
+reproducible `work/connecticut_catalog/audit_details.py` validated printed
+identity, ticket price, advertised top-prize label, top-tier original and
+remaining counts, exact tier-table headers, and nonnegative original/remaining
+bounds for **740 tiers**. Every detail's inventory date was September 20, 2026.
+`detail_audit.json` retains each result and source excerpt locally.
+
+`audit_metadata.py` independently reconciled all 74 launch, end and last-claim
+dates against the listing. The listing's 2099 dates correspond to visible TBD;
+real dates agree. The 26 ended games must be labeled claimable ended games,
+not currently on sale. `metadata_audit.json` records the date and cash-option
+checks; nine of ten advertised annuity games have a rules-described cash
+option matching `topPrizeRaw`.
+
+**Unresolved source conflict:** game 1725, $20,000 A YEAR FOR LIFE, has catalog
+`topPrizeRaw=575000`, but the detail rules explicitly describe a $440,000
+one-time gross cash option, $20,000 per year for life and a $400,000 guaranteed
+minimum payout. Its displayed life-prize label and top-tier counts agree.
+Do not publish $575,000 as a verified cash option. An importer must quarantine
+that amount or disclose the conflict with a source-specific rule; it must not
+silently prefer one numeric source. Preserve the life-prize label and avoid
+representing a guaranteed minimum as the full lifetime payout.
+
+No app/feed changed during this audit. The next importer should preserve
+per-game dates, separate annuity and cash values, distinguish ended claimable
+games from active games, omit TBD dates, and explicitly handle game 1725 before
+enabling Connecticut catalog testing. The existing Maryland live catalog and
+publisher remain verified; no agency reply arrived during this check.
