@@ -93,3 +93,32 @@ per-game dates, separate annuity and cash values, distinguish ended claimable
 games from active games, omit TBD dates, and explicitly handle game 1725 before
 enabling Connecticut catalog testing. The existing Maryland live catalog and
 publisher remain verified; no agency reply arrived during this check.
+
+### Importer with explicit disputed-game exclusion
+
+The importer excludes game 1725 entirely, with its reason recorded in the
+catalog and disclosed in each game's inventory note. It does not publish
+either conflicting cash value. Other annuity games require an exact cash-option
+match between the listing and detail rules; the advertised annuity remains
+the display label and amount filters use the verified cash option.
+
+Per-game detail inventory supplies counts and dates, so a later detail refresh
+is not mixed with undated listing counts. Original top-tier counts still must
+agree. Eligibility, displayed status, prices, printed IDs, tier bounds and
+dates are validated. TBD/2099 dates are omitted. Ended but unexpired games are
+explicitly labeled with sales-ending and claim dates. Two listing records lack
+HTML display names; their plain official game names are retained instead.
+
+Six Python tests cover annuity/cash agreement, zero detail counts independent
+of listing counts, the disputed-game exclusion, inclusive claim deadlines,
+placeholder dates, missing HTML names, and invalid listing/price/identity/date/
+inventory fields. An offline app test covers the exclusion, annuity label,
+verified cash filter value and ended-game notice. Catalog readiness remains
+separate from unavailable dated claims and retailer-linked activity.
+
+Fresh-source import on September 21 produced 73 games and 731 prize tiers:
+43 active, 4 new, and 26 ended but still claimable. All inventory dates were
+September 20. The generated feed and offline bundle are registered in the
+six-hour publisher and combined feed (now 21 state catalogs). The original
+74-game audit remains accurate for the source; the one-game difference is
+the explicitly excluded game 1725, not an unreported completeness claim.

@@ -149,6 +149,29 @@ void main() {
   );
 
   test(
+    'Connecticut offline catalog excludes disputed cash and labels annuities',
+    () async {
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      final games = StateScratchCatalogRegistry.gamesFor('Connecticut');
+      expect(games, hasLength(73));
+      expect(games.where((g) => g.id == '1725'), isEmpty);
+      final annuity = games.firstWhere((g) => g.id == '1860');
+      expect(annuity.topPrizeLabel, r'$2,000,000 annuity');
+      expect(annuity.topPrize, 1500000);
+      expect(
+        games.firstWhere((g) => g.id == '1866').inventoryNote,
+        contains('Sales ended'),
+      );
+      expect(
+        games.every((g) => g.inventoryNote!.contains('excludes game 1725')),
+        isTrue,
+      );
+    },
+  );
+
+  test(
     'Maryland offline catalog retains BIG SPIN and claim deadlines',
     () async {
       await StateScratchCatalogFeedService.loadConfiguredFeed(
