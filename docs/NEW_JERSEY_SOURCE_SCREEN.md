@@ -14,3 +14,9 @@ Do not put the weekly player figure into `winningTickets`, and do not shade New 
 ## Next source request
 
 An inquiry was sent September 13, 2026 from the connected Gmail account to `PublicInfo@lottery.nj.gov`, the address printed on the official weekly release. It asks for an existing machine-readable report or API with counts of winning **tickets** by draw date, game, tier, and New Jersey jurisdiction; Scratch-Off winning-ticket/claimed-ticket counts by game and tier with an as-of date; weekly-release count semantics; correction behavior; retailer identifiers; and update cadence. This is a data inquiry, not a formal OPRA filing. The Lottery's [FAQ](https://www.njlottery.com/en-us/aboutus/faqs.html/) says public-record requests require OPRA submission; use that process if the data team redirects us or does not provide an existing feed.
+
+September 21 recheck: a direct request to the official active Scratch-Off
+catalog again returned HTTP 403. No new catalog was imported. This is a source
+access limitation, not a new agency denial; the September 13 inquiry remains
+pending. Preserve available verified subsets and their limitations while the
+repeatable catalog source is unresolved.

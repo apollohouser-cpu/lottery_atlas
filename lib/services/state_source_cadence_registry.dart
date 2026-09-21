@@ -6,6 +6,11 @@ class StateSourceCadenceRegistry {
 
   static String? noticeFor(String stateName) {
     switch (stateName) {
+      case 'Tennessee':
+        return 'Tennessee updates its published top-tier remaining prizes weekly. '
+            'The totals include one prize per game reserved for a Play It Again! '
+            'second-chance drawing. They do not establish prizes still available '
+            'in tickets for sale or retailer stock; check the report date.';
       case 'Iowa':
         return 'Iowa retailer data is published weekly by the state. '
             'Winner and Scratch-Off data may follow different schedules. '

@@ -33,3 +33,20 @@ It asks for routing to data or records staff, existing draw/instant ticket
 counts, selling retailer links, directory coverage, count definitions, and
 refresh cadence. Gmail confirmed “Message sent.” This inquiry does not by
 itself resolve the state source gate.
+
+## September 21 access and inventory-scope check
+
+Direct requests to both the remaining-prizes and new-instant-games pages
+returned HTTP 403. The web reader could retrieve the official remaining-prizes
+page, whose inspected rows were dated September 20, 2026. The page explicitly
+says top-tier remaining prizes are updated weekly and include one top-tier
+prize per game reserved for a Play It Again! drawing after the game ends.
+These figures cannot be presented as prizes still obtainable by buying a
+Scratch ticket. An ended-games fetch also failed; eligibility is unverified.
+
+Added a Tennessee-specific source notice to the shared cadence registry,
+visible in the state coverage card and official-source screen. No catalog was
+imported from the web reader: repeatable direct access, explicit prices,
+printed-ID joins and ending/claim-date checks remain unverified. Existing
+verified subsets and official links remain available under the revised
+available-data completion standard.
