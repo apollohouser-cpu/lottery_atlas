@@ -55,3 +55,25 @@ report pages, Louisiana Seasons detail and `audit.json`. No Louisiana public
 feed changed during this audit. Before import, validate the 39 candidate detail
 pages and their explicit eligibility, then test identity joins, expiry, remaining
 arithmetic and noncash tiers. The records-routing inquiry remains pending.
+
+### Full candidate-detail validation
+
+All 39 report candidates were fetched and validated against their detail pages.
+The 378 detail prize rows reconcile exactly: total = claimed + remaining.
+Every detail's maximum cash prize matches its report top prize, and every
+top-prize remaining count agrees with the report. No candidate detail is marked
+expired. The excluded Louisiana Seasons page remains the negative control for
+an expired game that still carries positive lower-tier inventory.
+
+Printed identities in page titles, explicit ticket prices and launch dates
+also agree for all 39 candidates. Every detail provides a source timestamp
+with an explicit CDT timezone (the parser should also support CST), allowing
+per-game inventory timestamps to remain distinct from the earlier summary
+report timestamp and importer retrieval time. The only noncash tier label
+observed was `TICKET`; do not assign it a cash value or fold it into cash tiers.
+
+The reproducible detail audit is `work/louisiana_catalog/audit_details.py`,
+with 39 saved detail pages, `detail_audit.json` and `identity_audit.json`.
+No source-validation failures occurred in this pass. Public import remains
+pending implementation and regression tests; this audit does not claim that
+Louisiana is ready for app testing or a complete statewide heat map.
