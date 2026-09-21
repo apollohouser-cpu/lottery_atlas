@@ -50,3 +50,28 @@ A CSV export control is visible, but this audit did not capture a usable export.
 The next step is to establish a reproducible inventory source and reconcile it
 with the schedule and advertised original top prizes. No New Hampshire catalog
 has been imported or declared ready for testing in this pass.
+
+### September 21 reproducible inventory source
+
+The official page's referenced frontend bundle identifies its public game-data
+service, `https://prod.game-data.gambytservices.com/v1/instant-game/prizes-remaining`,
+with the page's published API configuration. A read-only request returned
+**586 tiers for 59 games**, with explicit UTC timestamp
+`2026-09-21T03:06:59.475Z`. This resolves the instant behind the browser's
+September 20 11:06 PM display without guessing its timezone. No update cadence
+has yet been established. The bundle also documents that the CSV uses
+`prizeAmountInDollars`, `startingCount`, `remainingCount`, and the data-service
+join to printed `gameId`; ticket prices are separately expressed in cents.
+
+`work/new_hampshire_catalog/audit.py` reproduces the saved-source checks. All
+59 inventories join to retail scratch CMS records; all 586 remaining counts
+are nonnegative and at most their original counts. Prices agree between API,
+CMS and matched schedule rows. Advertised top prizes agree after retaining
+annuity markers. The schedule has 109 distinct games (plus a duplicate mobile
+presentation, which is not another dataset). Inventory game 1698, Double Match
+Doubler, has no schedule row. Nine CMS start dates differ by one day from the
+schedule on-sale dates: 1636, 1608, 1650, 1629, 1628, 1640, 1643, 1699 and 1651.
+Do not silently normalize these disagreements or assume API activation is the
+consumer on-sale date. Five games have annuity top prizes: 1621, 1657, 1658,
+1687 and 1692. These findings support a future limited catalog import with
+explicit date/coverage handling; no app/feed data was changed by this audit.
