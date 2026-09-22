@@ -113,3 +113,42 @@ counts are not added to the published state total pending confirmation of
 whether a ticket can appear in both sets and how blank/composite Bulls-Eye
 tiers should be interpreted. The current Show Me Cash-only label remains
 accurate.
+
+## September 21 Scratcher inventory audit
+
+The official [Scratcher listing](https://www.molottery.com/scratchers-list.do)
+has 71 distinct games in its main grid. Three featured cards duplicate games
+561, 563 and 567; they must not be counted again. The main grid's 278 top-tier
+rows match the corresponding rows in all 71 linked game-detail tables. Those
+detail tables contain 843 unique-per-game prize amounts with original and
+unclaimed counts; all counts are nonnegative integers, unclaimed does not exceed
+original, and the highest detail tier agrees with each listed top prize.
+
+Every detail page labels the figures **Estimated Unclaimed Prizes**, states
+daily updates, and warns that tickets may already have been purchased but not
+redeemed. Second-chance promotional prizes are explicitly excluded. No dated
+inventory verification timestamp was established. Do not turn original minus
+unclaimed into a dated claim total, or remaining prizes into retailer stock.
+
+Twenty-five listed games have announced end dates, from April 17 through
+September 18, 2026. They are ended, not necessarily claim-expired. The official
+[claiming instructions](https://www.molottery.com/claiming-prizes/claiming-prizes.jsp)
+allow 180 days after the official end; all 25 remain within that window on
+September 21. The other 46 list their end as TBD. Preserve this difference in
+catalog labels, and do not infer exact store availability from a listing.
+
+Eighteen games advertise top prizes above $1 million. The official
+[2026 Fact Book](https://www.molottery.com/news/files/documents/2026FactBook2.pdf)
+explains that some Scratchers offer annuity and cash options. The audited detail
+pages do not spell out those options. Game-specific treatment must be verified
+before treating advertised totals as immediate cash or inserting an estimated
+cash value. The remaining integration checks include detail price/identity and
+date joins, claim-deadline handling, and clear source-date/coverage notes.
+
+Raw listing, all 71 details, claiming page, and repeatable read-only audit are
+retained under ignored `work/missouri_catalog/`. The source's malformed document
+structure requires scoped XPath extraction; reading only the first HTML root's
+text incorrectly omits the main content and daily-update footnote. Scope the
+main grid explicitly to avoid the featured duplicates. No new Missouri catalog,
+state total or retailer activity was published during this audit. Its existing
+Show Me Cash-only coverage remains unchanged.
