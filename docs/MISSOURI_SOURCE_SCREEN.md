@@ -194,3 +194,19 @@ succeeded after the pending-draw repair. All four live JSON feeds matched the
 repository at `7fda8a1`, including the Show Me Cash total. A later publisher
 failure occurred in Nebraska catalog parsing, not the Missouri workbook step;
 the last successful published feeds remain accessible.
+
+### September 22 identity/date preparation
+
+A second read-only audit of the previously captured September 21 catalog/details
+validated all 71 printed game numbers, names, explicit ticket prices, start dates
+and end dates against their listing cards. No start date was after capture. All
+25 ended games have internally ordered dates. The source also has a separate
+Search heading, so game-name extraction must use the heading beside the printed
+game number rather than every h1 on the page.
+
+`work/missouri_catalog/audit_identity_dates.py` and `identity_date_audit.json`
+retain the checks and each detail file's hash. Calculated 180-day claim-window
+ends are labeled candidates derived from official general guidance, not separately
+published game deadlines. This audit does not refresh inventory or its source
+date. Game-specific annuity/cash interpretation remains unresolved; no new
+Missouri catalog or claim activity was published.
