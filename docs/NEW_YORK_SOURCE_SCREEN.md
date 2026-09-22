@@ -88,3 +88,15 @@ historical addresses, plus existing Scratch IDs and correction/update informatio
 It authorizes no fees or new paid compilation. Continue independent preparation
 while awaiting clarification. New York's app notice now explicitly discloses the
 Commission's $600 threshold; existing verified public feeds remain available.
+
+### Private row-preserving preparation
+
+The September 22 preparation pass staged all 159,140 supplied rows in ignored
+`work/new_york_records/claims.sqlite`. The local builder `stage_claims.py` verifies
+the original workbook hash and headers, preserves source row numbers and identical
+records, and marks every row unpublished. Source hash plus row number identifies
+an input row only, never a distinct ticket. The database reconciles exactly to
+the earlier audit's total, all 12 monthly counts, and 31,815 repetitions beyond
+first occurrences; SQLite integrity verification passed. `staging_manifest.json`
+records those checks and the database hash. No public counts, coordinates, or
+claim-layer assets changed; agency definitions remain pending.
