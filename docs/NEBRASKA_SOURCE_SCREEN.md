@@ -145,3 +145,9 @@ Validation: 130 Python, 50 Node and 70 Flutter tests passed, plus five HTTP chec
 Live publication of this repair is checked separately from local validation.
 The macOS debug build also passed; analysis reported only the 12 existing
 informational notices. Other states in the combined catalog were unchanged.
+
+September 22 deployment verification: publisher 35741615131 succeeded after the
+Connecticut follow-up repair. All four live feeds matched published commit
+9936bdf. Nebraska's 24 games and explicit identity exclusion are live and ready
+for catalog testing; inventory still carries September 13. This does not establish
+a complete claims heat map.

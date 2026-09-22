@@ -1,4 +1,4 @@
-/// Agency-confirmed limits, reviewed September 21, 2026.
+/// Agency-confirmed limits, reviewed September 22, 2026.
 /// Keep access limitations separate from source cadence and app readiness.
 class StateDataLimitationRegistry {
   StateDataLimitationRegistry._();
@@ -25,6 +25,9 @@ class StateDataLimitationRegistry {
       'North Dakota' =>
         'The lottery reports that it does not track lower-tier prizes. '
             'Public winner listings cover only a subset of prizes.',
+      'New York' =>
+        'The Gaming Commission says it maintains claims data only for prizes '
+            'of \$600 or more. Its records response does not cover lower-tier prizes.',
       _ => null,
     };
     if (reason == null) return null;

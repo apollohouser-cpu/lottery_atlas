@@ -50,3 +50,41 @@ paid work. Gmail confirmed that reply as `1a0c98ab2e4ebe5b`. Monitor for the fil
 do not add it to verified delivery totals or publish an activity layer before
 inspection. Existing public catalog, retailer and scoped winner feeds remain
 available with their existing limitations.
+
+### Responsive workbook received and inspected
+
+At 15:08 UTC September 22, Robin McFee emailed the requested workbook directly.
+This resolves the download obstacle above without a user login. The original is
+retained privately at `work/new_york_records/winning_claims.xlsx`, SHA-256
+`336276b6473a5dae1d92aaadc26a6c26da0663ccffd077c640e88b3c2eae37cd`.
+New York is now the third agency to deliver a directly inspectable dataset,
+after Illinois and Rhode Island; that is not a count of full-state-ready layers.
+
+The single sheet, `Claimed $600 or More`, has **159,140 data rows** with claim dates
+from **September 1, 2025 through August 31, 2026**, covering all 365 dates. Fields:
+CLAIM DATE, GAME, PRIZE AMT, SELLING AGENT, BUSINESS NAME, ADDRESS, CITY1. All prize
+amounts are at least $600. There are 12,004 distinct selling-agent field values
+and 128 rows missing both address and city. There is no ticket/claim identifier,
+Scratch game number, drawing date, ZIP, county, coordinate, correction field or
+separate data dictionary. All twelve calendar months are represented.
+
+There are **13,944 identical-row groups**, containing **31,815 repetitions beyond
+the first row**. These have been retained: different tickets can share all seven
+fields. Do not deduplicate these rows or label the row total a verified distinct
+winning-ticket count. Annuity/full-prize/payment meaning also remains unconfirmed.
+The raw workbook and audit JSON remain outside the public repository.
+
+A conservative comparison to the current official retailer directory found
+152,667 rows matching numeric agent ID, address and city after case/punctuation
+normalization; 5,753 rows have an agent absent from today's directory; 695 match
+an ID but need address/city review; 25 have an invalid/nonpositive agent ID.
+These categories partition all rows. The matching rows are only candidates:
+current IDs/addresses do not establish the historical selling location. No fuzzy
+or nearest-location matches were made. No claim rows or new map points are public.
+
+A reply to McFee (Gmail `1a0c9c1b731e154d`) asks for existing definitions of row
+identity, repeated rows, claim dates, prize amounts, stable selling-agent IDs and
+historical addresses, plus existing Scratch IDs and correction/update information.
+It authorizes no fees or new paid compilation. Continue independent preparation
+while awaiting clarification. New York's app notice now explicitly discloses the
+Commission's $600 threshold; existing verified public feeds remain available.

@@ -160,3 +160,9 @@ excluded. The combined feed retains its scope and ended-game notices.
 Validation passed 131 Python, 50 Node and 70 Flutter tests, plus five HTTP checks.
 Deployment remains a separate check; the last successful live feed stays available
 while this publisher repair is pending.
+
+September 22 deployment verification: publisher 35741615131 succeeded, and all
+four live feeds matched published commit 9936bdf. The 74-game Connecticut catalog
+with September 21 inventory is live and ready for catalog testing. The existing
+cash-value exclusion and ended-game notices remain; no all-tier claims map is
+implied.
