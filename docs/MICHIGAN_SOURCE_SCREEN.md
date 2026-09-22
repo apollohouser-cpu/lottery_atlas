@@ -68,3 +68,33 @@ that remaining prizes include tickets that may already have been sold. No paid
 or 2026 winning-ticket total is inferred. The six-hour publisher now checks this
 verified catalog join. Catalog readiness depends on deployment verification;
 Michigan's retailer activity and full-state completion remain pending.
+
+## September 21 missing-inventory refresh repair
+
+Scheduled publisher run 35672483932 stopped at Michigan because the official
+INSTANT inventory removed game 630, 500X Money Maker, while the CMS still lists
+it in stores at $50 with a $6,000,000 top prize. The inventory now has 118 IDs;
+105 of the 106 listed games have inventory. No agency explanation or inventory
+verification timestamp was supplied. The absence does not establish zero prizes,
+a final-prize claim, or that the game has ended.
+
+The importer now keeps authoritative catalog fields for a listed game whose
+inventory row is absent or whose tier array is explicitly empty. Its remaining
+count is null and its visible note says inventory is unavailable, unknown rather
+than zero, and earlier counts are not current. It does not carry forward game
+630's previous count of one as fresh data. A later valid inventory row restores
+its counts through the normal refresh.
+
+Malformed responses/arrays, duplicate identities, invalid counts and conflicting
+published top prizes still fail. A response with no matched inventory fails,
+and production still requires at least 40 games with validated inventory,
+so a general inventory outage cannot silently replace the feed with unknowns.
+Only game 630's data changed in this repair; the other 105 Michigan games and
+the other 25 state catalogs remained unchanged. The published scope remains a
+listed retail catalog with partial inventory, not a complete winning-ticket map.
+
+Local verification: 50 Node, 118 Python and 70 Flutter tests passed, along with
+five HTTP checks and the macOS debug build. Analysis reported only the 12
+existing informational notices. New regression cases cover missing/empty
+inventory, malformed/systemic loss, restored counts, and offline null handling.
+Live publishing verification is separate from these local checks.

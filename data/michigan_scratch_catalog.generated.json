@@ -1,14 +1,17 @@
 {
   "source": "Michigan Lottery listed retail instant inventory",
-  "updatedAt": "2026-09-21T09:54:37.755Z",
+  "updatedAt": "2026-09-22T00:54:42.314Z",
   "catalogs": [
     {
       "state": "Michigan",
       "source": "https://www.michiganlottery.com/resources/instant-games-prizes-remaining",
       "retrievedDate": "2026-09-21",
       "sourceDate": null,
-      "coverage": "Retail instant games listed in the official web lobby and available in stores, matched by official IGT ID. Prize inventory is not dated claims or retailer-linked winning activity. Pull Tabs and unlisted inventory rows are excluded.",
+      "coverage": "Retail instant games listed in the official web lobby and available in stores, matched by official IGT ID where published. Listed games without inventory retain catalog price and top prize with unknown remaining counts. Prize inventory is not dated claims or retailer-linked winning activity. Pull Tabs and unlisted inventory rows are excluded.",
       "updateCadence": "Checked every six hours; source cadence unconfirmed.",
+      "unavailableInventoryIds": [
+        630
+      ],
       "excludedInventoryIds": [
         157,
         158,
@@ -551,58 +554,9 @@
           "name": "500X Money Maker",
           "cost": 50,
           "topPrize": 6000000,
-          "topPrizesRemaining": 1,
-          "inventoryNote": "Retrieved 2026-09-21; source verification date and refresh cadence unconfirmed. Remaining prizes include tickets that may already be sold.",
-          "prizeTiers": [
-            {
-              "prizeLevel": 1,
-              "prizeAmount": 75,
-              "startingPrizes": 851315,
-              "remainingPrizes": 26736
-            },
-            {
-              "prizeLevel": 2,
-              "prizeAmount": 100,
-              "startingPrizes": 917831,
-              "remainingPrizes": 28132
-            },
-            {
-              "prizeLevel": 3,
-              "prizeAmount": 200,
-              "startingPrizes": 359257,
-              "remainingPrizes": 9134
-            },
-            {
-              "prizeLevel": 4,
-              "prizeAmount": 300,
-              "startingPrizes": 133212,
-              "remainingPrizes": 3380
-            },
-            {
-              "prizeLevel": 5,
-              "prizeAmount": 500,
-              "startingPrizes": 67387,
-              "remainingPrizes": 1610
-            },
-            {
-              "prizeLevel": 6,
-              "prizeAmount": 5000,
-              "startingPrizes": 526,
-              "remainingPrizes": 19
-            },
-            {
-              "prizeLevel": 7,
-              "prizeAmount": 50000,
-              "startingPrizes": 27,
-              "remainingPrizes": 1
-            },
-            {
-              "prizeLevel": 8,
-              "prizeAmount": 6000000,
-              "startingPrizes": 3,
-              "remainingPrizes": 1
-            }
-          ]
+          "topPrizesRemaining": null,
+          "prizeTiers": [],
+          "inventoryNote": "Retrieved 2026-09-21; listed in the official retail instant catalog, but current prize inventory is unavailable. Remaining prizes are unknown, not zero. Earlier counts are not presented as current. Source verification date and refresh cadence unconfirmed; store stock is unverified."
         },
         {
           "stateName": "Michigan",

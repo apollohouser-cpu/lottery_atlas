@@ -293,6 +293,19 @@ void main() {
       expect(bank.inventoryNote, contains('2027-04-10'));
     },
   );
+  test('Michigan missing inventory remains unknown offline', () async {
+    await StateScratchCatalogFeedService.loadConfiguredFeed(
+      client: MockClient((_) async => http.Response('offline', 503)),
+    );
+    final games = StateScratchCatalogRegistry.gamesFor('Michigan');
+    expect(games, hasLength(106));
+    final missing = games.singleWhere((g) => g.id == '630');
+    expect(missing.topPrize, 6000000);
+    expect(missing.cost, 50);
+    expect(missing.topPrizesRemaining, isNull);
+    expect(missing.inventoryNote, contains('unknown, not zero'));
+    expect(games.where((g) => g.topPrizesRemaining != null), hasLength(105));
+  });
   test(
     'Idaho offline catalog preserves the lower-tier coverage limit',
     () async {
