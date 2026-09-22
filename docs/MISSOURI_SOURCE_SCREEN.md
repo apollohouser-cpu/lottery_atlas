@@ -152,3 +152,39 @@ text incorrectly omits the main content and daily-update footnote. Scope the
 main grid explicitly to avoid the featured duplicates. No new Missouri catalog,
 state total or retailer activity was published during this audit. Its existing
 Show Me Cash-only coverage remains unchanged.
+
+## September 21 newest-draw publication repair
+
+Publisher run 35677718108 stopped on the September 21 Show Me Cash row because
+one or more tier values were missing or noninteger. The failing workbook was
+not retained, so the precise intermediate cell representation is unconfirmed.
+A fresh official workbook now supplies all four tiers for that drawing: 0,
+11, 512 and 5,531. The validated January 1–September 21 sequence has 264 daily
+drawings and **2,006,744 Show Me Cash winning tickets**. This remains game-only
+coverage, not a complete Missouri lottery total or retailer ranking.
+
+The importer now separates one newest recent drawing with blank tier cells from
+completed drawings. Such a pending drawing must immediately follow the complete
+consecutive year-to-date sequence and be dated today or yesterday in Missouri's
+America/Chicago timezone. It is excluded entirely until all four tiers are
+published, with its date explicitly named in the coverage note. Blanks are never
+zero-filled and published partial tiers are not summed. Historical missing
+counts, multiple pending drawings, date gaps, future/duplicate dates and any
+nonblank noninteger value still fail. Previously complete coverage cannot move
+backward. Zeroes explicitly published in all four cells are valid complete data.
+
+The next successful complete response removes the pending note and includes the
+new draw. Unchanged totals, period and coverage retain their existing source date;
+a routine recheck does not manufacture a fresh source timestamp. SourceDate
+continues to mean workbook retrieval date because a separate correction/verified
+inventory timestamp is unavailable. Error messages now include the actual public
+tier-cell values for future diagnosis.
+
+Four regression tests cover blank/partially blank newest draws, later completion,
+explicit zeroes, historical/stale/duplicate/future/gapped/bad values, pending-note
+removal, unrelated-state preservation, and prevention of coverage regression.
+
+Validation: 127 Python, 50 Node and 70 Flutter tests passed, plus five HTTP
+checks and the macOS debug build. Analysis retained only the 12 existing
+informational notices. All other state totals were unchanged. Live publication
+is verified separately; the last successful feed remains available until then.
