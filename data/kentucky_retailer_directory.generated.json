@@ -1,7 +1,7 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-20T11:33:26.721Z",
-  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3475 unique retailers; 3380 received exact Census or verified ArcGIS point-address coordinates. 95 unresolved addresses were excluded rather than estimated.",
+  "retrievedAt": "2026-09-22T14:44:07.328Z",
+  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3477 unique retailers; 3382 received exact Census or verified ArcGIS point-address coordinates. 95 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
       "state": "Kentucky",
@@ -10192,6 +10192,17 @@
           "latitude": 37.218752911882,
           "longitude": -83.058227693224,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
+          "id": "ky-484629234e2325b5",
+          "name": "COACH STOP",
+          "address": "2825 Highway 25",
+          "city": "Dry Ridge",
+          "postalCode": "41035",
+          "county": "Grant County",
+          "latitude": 38.762726480186,
+          "longitude": -84.605997416322,
+          "coordinateSource": "ArcGIS World Geocoder verified numbered street address"
         },
         {
           "id": "ky-4855feae40902845",
@@ -36217,6 +36228,17 @@
           "county": "Powell County",
           "latitude": 37.840053065566,
           "longitude": -83.858133139774,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "ky-f9bfa68046accf31",
+          "name": "STOP SHOP & GO",
+          "address": "10356 Dixie Hwy",
+          "city": "Florence",
+          "postalCode": "41042",
+          "county": "Boone County",
+          "latitude": 38.94590638141,
+          "longitude": -84.62221593821,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
