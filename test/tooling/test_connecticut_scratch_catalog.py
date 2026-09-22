@@ -39,6 +39,16 @@ class ConnecticutTest(unittest.TestCase):
     def test_disputed_game_excluded(self):
         self.assertIsNone(m.detail('', {**GAME, 'gameNo': 1725}, TODAY))
 
+    def test_optional_odds_row_does_not_control_identity(self):
+        raw = page().replace('Overall Odds 1 in 3.54', '')
+        self.assertEqual(m.detail(raw, GAME, TODAY), m.detail(page(), GAME, TODAY))
+        ended = {**GAME, 'status': 'ended', 'stopDate': '2026-09-01', 'endValDate': '2026-09-25'}
+        raw = raw.replace('Active', 'Ended').replace('Game End TBD', 'Game End Sep. 1, 2026').replace('Last Day to Claim TBD', 'Last Day to Claim Sep. 25, 2026')
+        self.assertIn('Sales ended', m.detail(raw, ended, TODAY)['inventoryNote'])
+        for bad in [raw.replace('Game # 1860', 'Game # 9999'), raw.replace('Price $30', 'Price $3'), raw.replace('Game Start', 'Unknown Section')]:
+            with self.subTest(raw=bad), self.assertRaises(ValueError):
+                m.detail(bad, ended, TODAY)
+
     def test_conflicting_cash_identity_price_inventory_fail(self):
         for raw in [page().replace('cash option of $1,500,000', 'cash option of $1,400,000'),
                     page().replace('Game # 1860', 'Game # 1861'),

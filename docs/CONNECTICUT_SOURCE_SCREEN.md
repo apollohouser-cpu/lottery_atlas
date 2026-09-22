@@ -137,3 +137,26 @@ Three regression tests verify recovery, four-attempt exhaustion, and no added
 retry for HTTP/certificate errors. All 94 Python tests pass. A live fetch of
 previously failed game 1892 succeeded after the change. This is a transport
 resilience change only; catalog coverage and exclusions remain unchanged.
+
+### September 22 optional odds row repair
+
+Publisher 35733918009 passed the Nebraska repair, then failed at Connecticut's
+identity/price check. A complete fresh source capture identified game 1840,
+MEGA BUCKS, as the only failing entry. Its page omits Overall Odds and puts Game
+Start directly after Price. Its game number, $5 price, $50,000 top prize,
+listing/detail dates, and prize table agree. Sales ended October 20, 2025;
+it remains claimable through September 25, 2026. The missing odds row is not
+needed for the fields this importer publishes.
+
+The parser now accepts either of those two exact headings after the price.
+Wrong IDs/prices and missing date headings still fail; error messages include
+the game number. One regression test exercises absent odds and those invalid
+cases. A complete capture of the official catalog and all detail pages is kept
+privately under `work/connecticut_september22`. Running the full importer against
+that capture validated **74 eligible games and 742 tiers**, dated September 21.
+Game 1840 is newly listed relative to the prior generated feed. Game 1725 stays
+excluded. The combined feed retains its scope and ended-game notices.
+
+Validation passed 131 Python, 50 Node and 70 Flutter tests, plus five HTTP checks.
+Deployment remains a separate check; the last successful live feed stays available
+while this publisher repair is pending.

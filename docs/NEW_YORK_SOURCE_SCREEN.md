@@ -31,3 +31,22 @@ Scratch-Off records, retailer records and joins, definitions, cadence,
 corrections and any existing recurring source, with a fallback to the most
 recent complete month. The Commission said it will provide a status update by
 October 15, 2026. No fees were authorized.
+
+## September 22 FOIL response — R000200-091626
+
+The Commission sent its fulfillment response at 13:50 UTC, before the previously
+promised October 15 status date. It says a responsive document is available in
+the records center and that it maintains prize data only for **$600 or more**.
+It directs the retailer-directory portion to the State of New York public
+retailer dataset. The response closes the request and describes a 30-day appeal
+option. No appeal or paid work has been authorized. This is a limited records
+offer, not an all-tier delivery or a blanket denial.
+
+The records link was opened but requires portal sign-in. The offered file has
+not yet been downloaded or validated; its actual period, fields, retailer joins,
+and row count are unknown. A same-thread reply requested the existing document
+by attachment or a direct link without login, with no additional compilation or
+paid work. Gmail confirmed that reply as `1a0c98ab2e4ebe5b`. Monitor for the file;
+do not add it to verified delivery totals or publish an activity layer before
+inspection. Existing public catalog, retailer and scoped winner feeds remain
+available with their existing limitations.

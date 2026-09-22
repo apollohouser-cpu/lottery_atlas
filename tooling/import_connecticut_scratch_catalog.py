@@ -70,9 +70,10 @@ def detail(raw, game, today):
     for node in tree.xpath('//script|//style'):
         node.drop_tree()
     text = plain(tree)
-    match = re.search(r'Game #\s*(\d+)\s+(Active|Ended)\s+Top Prize (.*?) Price \$(\d+) Overall Odds', text)
+    # Some ended games omit the optional odds row; the dates follow price directly.
+    match = re.search(r'Game #\s*(\d+)\s+(Active|Ended)\s+Top Prize (.*?) Price \$(\d+) (?:Overall Odds|Game Start)', text)
     if not match or integer(match[1]) != gid or integer(match[4]) != game['ticketCostRaw']:
-        raise ValueError('Detail identity or price mismatch')
+        raise ValueError(f'Detail identity or price mismatch for game {gid}')
     label = (game.get('displayTopPrize') or game['topPrize']).replace('$$', '$')
     if match[3] != label or (match[2] == 'Ended') != (game['status'] == 'ended'):
         raise ValueError('Display prize or status mismatch')
