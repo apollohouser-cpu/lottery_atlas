@@ -98,3 +98,15 @@ Cash 25 subset remains available with its limited coverage.
 At this check all four live JSON feeds still matched the current repository;
 no publishing failure or new user intervention was found. This pass changed
 source documentation only, so the previously passing app checks were not rerun.
+
+### Private preparation while definitions are pending
+
+The September 22 staging script `work/west_virginia_records/stage_records.py`
+verifies the original attachment hashes and exact spreadsheet headers, then
+preserves all 1,513 license rows and all 125 prize rows in private
+`staged_records.json`. Source row numbers and raw field labels are retained;
+identical prize rows are not removed. Every record is explicitly unpublished.
+Review reasons identify the 35 claim-only-terminal rows, digital/promotional
+entries, and non-WV or malformed state fields. Counts reconcile to the initial
+audit. No coordinates are inferred and no public activity or retailer feed is
+changed. This prepares consistent inputs for review once definitions arrive.
