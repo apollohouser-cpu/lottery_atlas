@@ -88,13 +88,14 @@ void main() {
         client: MockClient((_) async => http.Response('offline', 503)),
       );
       final games = StateScratchCatalogRegistry.gamesFor('Nebraska');
-      expect(games, hasLength(25));
+      expect(games, hasLength(24));
       expect(
-        games.firstWhere((g) => g.id == '1344').topPrizesRemaining,
+        games.firstWhere((g) => g.id == '1403').topPrizesRemaining,
         isNull,
       );
-      final dated = games.firstWhere((g) => g.id == '1335');
-      expect(dated.topPrizesRemaining, 10);
+      expect(games.any((g) => g.name == 'Black Diamond Blowout'), isFalse);
+      final dated = games.firstWhere((g) => g.id == '1308');
+      expect(dated.topPrizesRemaining, 1);
       expect(dated.inventoryNote, contains('2026-09-13'));
     },
   );

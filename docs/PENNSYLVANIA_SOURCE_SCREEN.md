@@ -91,3 +91,17 @@ The complete original PDF was downloaded, text-extracted and visually reviewed
 on both pages. It is retained privately in ignored
 `work/pennsylvania_records/2026-097-interim-response.pdf`; no attachment or
 requester contact information was added to the public repository.
+
+## September 22 interim response — request 2026-098
+
+Revenue sent a separate two-page interim letter for **2026-098** at 12:49 UTC,
+covering the August 2026 request received September 15. It confirms separate
+handling from 2026-097 and the previously agreed retailer-field clarification.
+The agency says legal review requires up to 30 additional days from the original
+due date. No calendar final-response date is stated. This is an interim response,
+not a denial or data delivery. No fee estimate or new requester action is given;
+no paid work is authorized. Continue monitoring both requests independently.
+
+Both pages of the original PDF were extracted and visually reviewed. The private
+copy is `work/pennsylvania_records/2026-098-interim-response.pdf`; neither the
+attachment nor requester contact details are published in the repository.

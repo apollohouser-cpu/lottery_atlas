@@ -188,3 +188,9 @@ Validation: 127 Python, 50 Node and 70 Flutter tests passed, plus five HTTP
 checks and the macOS debug build. Analysis retained only the 12 existing
 informational notices. All other state totals were unchanged. Live publication
 is verified separately; the last successful feed remains available until then.
+
+September 22 live verification: publisher runs 35681378970 and 35695369372
+succeeded after the pending-draw repair. All four live JSON feeds matched the
+repository at `7fda8a1`, including the Show Me Cash total. A later publisher
+failure occurred in Nebraska catalog parsing, not the Missouri workbook step;
+the last successful published feeds remain accessible.

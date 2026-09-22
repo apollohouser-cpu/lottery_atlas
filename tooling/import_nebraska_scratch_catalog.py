@@ -1,5 +1,6 @@
 """Join current Nebraska game details to a separately reviewed dated report."""
 import argparse
+from copy import deepcopy
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime
 import json
@@ -10,6 +11,17 @@ from zoneinfo import ZoneInfo
 from lxml import html
 SOURCE='https://nelottery.com/scratch'
 REPORT='https://nelottery.com/images/media/Scratch_Prizes_Remaining.pdf'
+
+class IdentityConflict(ValueError):
+    """A catalog entry whose heading and ticket-art identity disagree."""
+
+def listing_name(node):
+    node=deepcopy(node)
+    # The source nests a separate promotional badge inside the name's strong tag.
+    # Never strip words from a game's actual name or ignore arbitrary span text.
+    for badge in node.xpath('./span'):
+        if plain(badge)=='New!':badge.drop_tree()
+    return plain(node)
 
 def plain(node):return ' '.join(node.text_content().split())
 def count(text):
@@ -30,8 +42,9 @@ def parse_listing(raw):
         names=card.xpath('.//strong')
         if len(prices)!=1 or len(names)!=1 or not re.fullmatch(r'\$\d+',prices[0]):raise ValueError('Ambiguous listing price/name')
         price=count(prices[0][1:])
-        if not price or not plain(names[0]):raise ValueError('Empty listing identity')
-        games.append(dict(url='https://nelottery.com'+link,name=plain(names[0]),cost=price))
+        name=listing_name(names[0])
+        if not price or not name:raise ValueError('Empty listing identity')
+        games.append(dict(url='https://nelottery.com'+link,name=name,cost=price))
     if not games:raise ValueError('Empty catalog')
     return games
 
@@ -40,7 +53,12 @@ def parse_detail(raw,listing):
     names=[plain(x) for x in tree.xpath('//strong') if re.match(r'^\d{4} ',plain(x))]
     if len(names)!=1:raise ValueError('Missing printed game identity')
     gid,name=names[0].split(' ',1)
-    if name.casefold()!=listing['name'].casefold():raise ValueError('Detail/listing name mismatch')
+    if name.casefold()!=listing['name'].casefold():raise ValueError(f"Detail/listing name mismatch at {listing['url']}: {name!r} vs {listing['name']!r}")
+    art=tree.xpath('//img[contains(@src,"/scratch/ticket_art/")]/@src')
+    if len(art)!=1:raise ValueError('Missing or ambiguous ticket-art identity')
+    match=re.fullmatch(r'/images/scratch/ticket_art/(\d{4})_art\.jpg(?:#.*)?',art[0])
+    if not match:raise ValueError('Changed ticket-art identity format')
+    if match[1]!=gid:raise IdentityConflict(f"Heading game {gid} conflicts with ticket-art filename {match[1]}; identity unverified.")
     tables=tree.xpath('//table')
     if len(tables)!=1:raise ValueError('Missing prize structure')
     rows=tables[0].xpath('.//tr')
@@ -52,8 +70,8 @@ def parse_detail(raw,listing):
         label,odds,winners=cells
         if not re.fullmatch(r'[\d,]+\.\d{2}',odds):raise ValueError('Invalid published odds')
         tier=dict(prizeLabel=label,publishedOdds=odds,publishedStructureWinners=count(winners))
-        if re.fullmatch(r'\$[\d,]+',label):
-            amount=count(label[1:])
+        if re.fullmatch(r'\$?[\d,]+',label):
+            amount=count(label.removeprefix('$'))
             if not amount:raise ValueError('Nonpositive prize')
             tier['prizeAmount']=amount;cash.append(amount)
         elif not re.fullmatch(r'(?:Free \$\d+ Ticket|\$\d+ Free Ticket)(?: \+ \$\d+)?',label):raise ValueError('Unsupported prize label')
@@ -74,7 +92,7 @@ def reviewed_counts(root,today):
         counts[gid]=g
     return counts
 
-def join_report(games,report,today):
+def join_report(games,report,today,excluded=None):
     counts=reviewed_counts(report,today);seen=set()
     for game in games:
         if game['id'] in seen:raise ValueError('Duplicate printed game identity')
@@ -86,10 +104,22 @@ def join_report(games,report,today):
         else:
             game['inventoryNote']=f"Remaining count unknown: absent from reviewed {report['sourceDate']} report."
         game['inventoryNote']+=' Prize-structure winners are not dated claims. Store availability unverified.'
-    return dict(state='Nebraska',source=SOURCE,sourceDate=report['sourceDate'],inventorySource=REPORT,
+    catalog=dict(state='Nebraska',source=SOURCE,sourceDate=report['sourceDate'],inventorySource=REPORT,
                 coverage='Current catalog joined by printed game number to a manually reviewed dated top-prize report. Unknown unmatched counts remain missing. Prize-structure rows are not claims or remaining inventory. Excludes report-only games absent from current catalog; no retailer joins.',
                 updateCadence='Official remaining-prize report is weekly; this reviewed snapshot is not automatically refreshed. Catalog details checked every six hours.',
                 games=sorted(games,key=lambda g:int(g['id'])))
+    if excluded:
+        catalog['excludedGames']=excluded
+        catalog['coverage']+=' Excluded unverified identities: '+ '; '.join(f"{g['name']} (conflicting published game numbers)" for g in excluded)+'.'
+    return catalog
+
+def import_details(listing):
+    def checked(g):
+        raw=fetch(g['url'])
+        try:return parse_detail(raw,g),None
+        except IdentityConflict as e:return None,dict(name=g['name'],sourceUrl=g['url'],reason=str(e))
+    with ThreadPoolExecutor(max_workers=3) as pool:results=list(pool.map(checked,listing))
+    return [g for g,e in results if g is not None],[e for g,e in results if e is not None]
 
 def fetch(url):return subprocess.run(['curl','-fsSL','--max-time','30','--retry','3',url],capture_output=True,check=True).stdout
 
@@ -97,13 +127,13 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('output',type=Path);args=parser.parse_args()
     today=datetime.now(ZoneInfo('America/Chicago'))
     listing=parse_listing(fetch(SOURCE))
-    with ThreadPoolExecutor(max_workers=3) as pool:games=list(pool.map(lambda g:parse_detail(fetch(g['url']),g),listing))
+    games,excluded=import_details(listing)
     if len(games)<15:raise ValueError('Unexpectedly small catalog')
     report=json.loads((Path(__file__).resolve().parents[1]/'data/nebraska_top_prizes.reviewed.json').read_text())
-    catalog=join_report(games,report,today.date());result=dict(source='Nebraska official catalog and reviewed dated top-prize inventory',updatedAt=today.isoformat(),catalogs=[catalog])
+    catalog=join_report(games,report,today.date(),excluded);result=dict(source='Nebraska official catalog and reviewed dated top-prize inventory',updatedAt=today.isoformat(),catalogs=[catalog])
     if args.output.exists():
         old=json.loads(args.output.read_text())
         if old.get('catalogs')==result['catalogs']:result['updatedAt']=old['updatedAt']
     temp=args.output.with_suffix('.tmp');temp.write_text(json.dumps(result,indent=2)+'\n');temp.replace(args.output)
-    print(f"Validated {len(games)} Nebraska games; {sum('topPrizesRemaining' in g for g in games)} dated counts")
+    print(f"Validated {len(games)} Nebraska games; {sum('topPrizesRemaining' in g for g in games)} dated counts; {len(excluded)} excluded identities")
 if __name__=='__main__':main()

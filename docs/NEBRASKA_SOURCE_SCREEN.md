@@ -111,3 +111,37 @@ refresh those counts or invent prices for promotional cards.
 
 Repair validation passed 107 Python tests and 64 Flutter tests. Analysis found
 only the 12 existing informational notices; the macOS debug build passed.
+
+## September 22 catalog changes and publisher repair
+
+Publisher 35727865287 stopped because two new catalog names contained nested
+`New!` badges. The importer now removes only that exact separate badge, retains
+actual name text and strict listing/detail matching, and accepts explicit numeric
+cash amounts in the source's Prize column with or without a dollar sign. Original
+labels remain in the prize structure; structure winners never become inventory.
+
+The fresh source has 25 listings. **24 validate**, including Buffalo Blitz 1403
+with unknown remaining inventory. Pocket Change 5X and Power Play are no longer
+listed; 50X 1357 is listed again. The other 22 previously published games retain
+identical fields. There are 23 counts from the same manually reviewed September
+13 report; that report and its date were not changed.
+
+Black Diamond Blowout is excluded because its detail heading says **1417**, while
+its ticket-art filename says **1416**. The ticket image confirms the name and
+$10 price but does not resolve the number. Neither identity is guessed. The
+importer checks heading/art-file identity for every entry, records this specific
+conflict in excludedGames and visible catalog coverage, and will restore the
+entry when those identifiers agree. Missing/malformed artwork, changed columns,
+name mismatches, and other validation errors still stop publication. A minimum
+catalog-size check still applies; exclusions are not silent successful imports.
+
+The offline snapshot and combined feed use these 24 verified entries and disclose
+the exclusion. Three new Python regression tests cover badges, numeric prize
+labels, explicit identity exclusion/restoration, and continued failure on invalid
+source data. The offline Flutter test verifies the new unknown count, preserved
+September 13 inventory, and absence of the conflicting game.
+
+Validation: 130 Python, 50 Node and 70 Flutter tests passed, plus five HTTP checks.
+Live publication of this repair is checked separately from local validation.
+The macOS debug build also passed; analysis reported only the 12 existing
+informational notices. Other states in the combined catalog were unchanged.
