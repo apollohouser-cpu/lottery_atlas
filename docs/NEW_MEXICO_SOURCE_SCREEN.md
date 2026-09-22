@@ -82,3 +82,23 @@ checks expired-game exclusion and visible deadline/estimate notes. The importer
 validates before atomic file replacement. Six-hour publication now includes
 this catalog; it remains top-prize inventory coverage, not all-tier dated claims
 or a fully developed state.
+
+## September 21 formal acknowledgment
+
+The Custodian of Records acknowledged the September 16 August 2026 IPRA
+request in a one-page letter dated September 21, delivered at 01:05 UTC on
+September 22 (September 21 locally). The letter repeats all four requested
+categories: draw-game counts, Scratcher claims or dated inventories, retailer
+directory/joins, and definitions/cadence/corrections. It states that the Lottery
+will respond **by October 1, 2026**. This is a promised response date, not a
+promise that all records will be delivered by then.
+
+The acknowledgment contains no denial, dataset, fee estimate, assigned case
+number, or request for clarification. No user action or fees are required.
+Continue monitoring through October 1, then follow up if no substantive response
+arrives. The validated existing public Scratcher catalog remains available.
+
+The original letter is preserved privately at
+`work/new_mexico_records/2026-09-21-acknowledgment.pdf`; its full page was rendered
+and visually reviewed. Gmail message: `1a0c6a60df62c11d`. The letter and requester
+contact information are not included in published data.

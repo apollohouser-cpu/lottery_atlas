@@ -98,3 +98,10 @@ five HTTP checks and the macOS debug build. Analysis reported only the 12
 existing informational notices. New regression cases cover missing/empty
 inventory, malformed/systemic loss, restored counts, and offline null handling.
 Live publishing verification is separate from these local checks.
+
+Live verification: repair publisher run 35673935184 succeeded. The live combined
+catalog exactly matches the repository, including game 630 with a null remaining
+count and the visible unavailable-inventory note. Live activity and retailer
+feeds also match the new successful snapshot. Michigan is ready to test the
+missing-inventory behavior; no complete winning-ticket or retailer coverage is
+implied. The same run also published Idaho's expanded 34-game catalog.
