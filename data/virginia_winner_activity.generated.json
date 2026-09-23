@@ -1,8 +1,8 @@
 {
   "source": "Virginia Lottery official Latest Winners archive and statewide retailer finder",
-  "updatedAt": "2026-09-17T09:03:00.000Z",
-  "sourceLastUpdated": "2026-09-17T09:03:00.000Z",
-  "coverage": "108 physical retailer-level winner releases from 2024 through 2026, each matched to exactly one official Virginia Lottery retailer address with a previously verified precise coordinate. 58 online-only releases, 47 releases without an exact current-directory address match, and 2 shared-address matches were excluded rather than inferred. drawDate stores the official publication timestamp because the archive does not publish a structured draw/claim date for every record.",
+  "updatedAt": "2026-09-23T10:05:00.000Z",
+  "sourceLastUpdated": "2026-09-23T10:05:00.000Z",
+  "coverage": "111 physical retailer-level winner releases from 2024 through 2026, each matched to exactly one official Virginia Lottery retailer address with a previously verified precise coordinate. 58 online-only releases, 47 releases without an exact current-directory address match, and 2 shared-address matches were excluded rather than inferred. drawDate stores the official publication timestamp because the archive does not publish a structured draw/claim date for every record.",
   "activities": [
     {
       "id": "va-2024-01-08-21c58ed6-176f-4638-834e-68d04f0c4fdc",
@@ -1947,6 +1947,60 @@
       "prizeAmount": 100000,
       "sourceUrl": "https://www.valottery.com/winnersnews/latestwinners?itemId=8fed53d5-ea68-4bb5-b635-8ea6c20e3c26",
       "sourceLabel": "Official Virginia Lottery winner release · Sep 17, 2026"
+    },
+    {
+      "id": "va-2026-09-23-b0aaa504-f671-4303-9751-2ceee4721273",
+      "latitude": 38.714651513513,
+      "longitude": -77.263852054144,
+      "city": "Lorton",
+      "county": "Fairfax",
+      "state": "VA",
+      "game": "state-draw",
+      "gameName": "Pick 5",
+      "retailerName": "GIANT FOOD #798 (FRONT OFFICE)",
+      "retailerAddress": "8941 Ox Road, Lorton, VA 22079",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-09-23T09:16:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 200000,
+      "sourceUrl": "https://www.valottery.com/winnersnews/latestwinners?itemId=b0aaa504-f671-4303-9751-2ceee4721273",
+      "sourceLabel": "Official Virginia Lottery winner release · Sep 23, 2026"
+    },
+    {
+      "id": "va-2026-09-23-b12e6104-b9f9-4f49-9309-422ef233e3ac",
+      "latitude": 37.31405049903,
+      "longitude": -80.003244932742,
+      "city": "Roanoke",
+      "county": "Roanoke (City)",
+      "state": "VA",
+      "game": "scratch-off",
+      "gameName": "Double The Money",
+      "retailerName": "FOOD LION #278",
+      "retailerAddress": "2631 Peters Creek Rd., Roanoke, VA 24017",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-09-23T10:05:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 100000,
+      "sourceUrl": "https://www.valottery.com/winnersnews/latestwinners?itemId=b12e6104-b9f9-4f49-9309-422ef233e3ac",
+      "sourceLabel": "Official Virginia Lottery winner release · Sep 23, 2026"
+    },
+    {
+      "id": "va-2026-09-23-e25c7995-2119-4950-916f-8a1507518ab0",
+      "latitude": 36.944686663659,
+      "longitude": -76.271230770297,
+      "city": "Norfolk",
+      "county": "Norfolk",
+      "state": "VA",
+      "game": "scratch-off",
+      "gameName": "Platinum 7s",
+      "retailerName": "LOVE FOOD MART 12",
+      "retailerAddress": "298 W Bay Ave, Norfolk, VA 23503",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-09-23T09:31:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 2000000,
+      "sourceUrl": "https://www.valottery.com/winnersnews/latestwinners?itemId=e25c7995-2119-4950-916f-8a1507518ab0",
+      "sourceLabel": "Official Virginia Lottery winner release · Sep 23, 2026"
     }
   ]
 }

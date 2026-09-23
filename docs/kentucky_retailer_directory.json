@@ -1,7 +1,7 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-23T12:40:33.829Z",
-  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3472 unique retailers; 3377 received exact Census or verified ArcGIS point-address coordinates. 95 unresolved addresses were excluded rather than estimated.",
+  "retrievedAt": "2026-09-23T18:38:09.716Z",
+  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3472 unique retailers; 3378 received exact Census or verified ArcGIS point-address coordinates. 94 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
       "state": "Kentucky",
@@ -17881,6 +17881,17 @@
           "latitude": 37.748205046052,
           "longitude": -83.066225537595,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
+          "id": "ky-7b9ca14ccab2aed8",
+          "name": "KEAVY MARKET",
+          "address": "25 East Hwy 312",
+          "city": "Keavy",
+          "postalCode": "40737",
+          "county": "Laurel County",
+          "latitude": 36.998938320188,
+          "longitude": -84.169421190565,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
           "id": "ky-7bb9a6ced4b219a5",
@@ -37450,14 +37461,6 @@
           "city": "Fordsville",
           "postalCode": "42343",
           "county": "Ohio County",
-          "reason": "No precise address-level coordinate passed verification"
-        },
-        {
-          "name": "KEAVY MARKET",
-          "address": "25 East Hwy 312",
-          "city": "Keavy",
-          "postalCode": "40737",
-          "county": "Laurel County",
           "reason": "No precise address-level coordinate passed verification"
         },
         {
