@@ -151,3 +151,16 @@ Connecticut follow-up repair. All four live feeds matched published commit
 9936bdf. Nebraska's 24 games and explicit identity exclusion are live and ready
 for catalog testing; inventory still carries September 13. This does not establish
 a complete claims heat map.
+
+## September 23 transient source timeout
+
+Scheduled publisher 35827366105 attempt 1 stopped fetching the Nebraska listing:
+curl exited 28 after its bounded timeout retries. This was a transport timeout,
+not a schema or identity validation error. A subsequent live request succeeded,
+and the importer parsed all 25 listing entries. No parser, inventory counts,
+reviewed report date or cache timestamps were changed for this transient failure.
+
+All four existing live feeds still matched the repository. The failed GitHub
+jobs were explicitly retried after source recovery (API accepted the request).
+Verify attempt 2 before claiming that scheduled refresh completed. No user
+action or new agency response was required at this check.
