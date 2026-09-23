@@ -164,3 +164,10 @@ All four existing live feeds still matched the repository. The failed GitHub
 jobs were explicitly retried after source recovery (API accepted the request).
 Verify attempt 2 before claiming that scheduled refresh completed. No user
 action or new agency response was required at this check.
+
+Retry outcome: attempt 2 succeeded. All four live feeds were verified against
+publisher commit e6340ee on September 23. The transient outage is resolved;
+the manually reviewed September 13 inventory date remains unchanged. The
+subsequent 35 targeted tests for the six integrated retailer states, rankings,
+offline data and calendar timeline passed. This does not replace visual
+interaction acceptance or establish all-tier state completeness.
