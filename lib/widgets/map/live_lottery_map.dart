@@ -2397,6 +2397,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     required String source,
     required DateTime? updatedAt,
     required Color color,
+    String? timestampNote,
   }) => Container(
     width: double.infinity,
     padding: const EdgeInsets.all(12),
@@ -2428,7 +2429,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         ),
         const SizedBox(height: 3),
         Text(
-          _formattedDataUpdatedAt(updatedAt),
+          timestampNote ?? _formattedDataUpdatedAt(updatedAt),
           style: const TextStyle(color: Colors.white60, fontSize: 12),
         ),
       ],
@@ -2581,7 +2582,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                     const SizedBox(width: 12),
                     Expanded(
                       child: _activityInfoCard(
-                        label: 'DRAW DATE',
+                        label: activity.state == 'TX'
+                            ? 'CLAIM DATE'
+                            : 'DRAW DATE',
                         value: formattedDate,
                         color: const Color(0xFF1478FF),
                       ),
@@ -2718,6 +2721,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                       activity.sourceLabel ??
                       LotteryActivityRepository.activitySourceLabel,
                   updatedAt: LotteryActivityRepository.activityUpdatedAt,
+                  timestampNote: activity.state == 'TX'
+                      ? 'Claim date shown above; time of day unavailable. '
+                            'A separate source publication timestamp is not supplied for this claim. '
+                            'The combined feed refresh time is not a claim verification date.'
+                      : null,
                   color: const Color(0xFF60A5FA),
                 ),
                 if (activity.sourceUrl != null)

@@ -135,3 +135,7 @@ debug build. Publication verification is tracked separately from local readiness
 Publication verified September 21: workflow 35628051981 succeeded and the live
 combined catalog contains all 82 Vermont games. This confirms feed deployment;
 the local macOS build and catalog tests remain separate from complete map coverage.
+
+## September 24 records update
+
+September 24: Hannah Chauvin estimated $1,368.00 to provide the requested records and asked whether to continue. No fee or paid work is authorized. Keep the request on hold; use public data for scoped app completion. No records delivered.

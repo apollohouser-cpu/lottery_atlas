@@ -300,3 +300,24 @@ entry point and was not committed or deployed.
 Initial feed checks matched live files; mail contained only the already-recorded
 South Carolina reply. No new action needed. Remaining Texas acceptance focuses
 on per-record source/date visibility and county/prize filter combinations.
+
+## September 24 Texas claim-date semantics repair
+
+Inspected the individual activity detail path and found Texas claims still
+labeled DRAW DATE, with a global merged-feed refresh timestamp beneath the
+individual official source. Changed Texas's label to CLAIM DATE and replaced
+that ambiguous timestamp display with an explicit explanation: time of day and
+a separate source publication timestamp are not supplied for the claim; the
+combined feed refresh is not its verification date. No source dates or records
+were fabricated or changed.
+
+Eleven Texas/timeline tests and the standard macOS debug build pass. Analysis
+retains the 12 existing notices (the ignored offline harness import was also
+corrected). Native inspection of this particular detail sheet remains pending,
+as do county/prize filter combinations. Texas remains the active state.
+
+Initial live-feed checks matched all published files. New agency responses:
+Vermont quoted $1,368 and remains on hold under the no-fee instruction;
+Washington estimates a January 18, 2027 response after a December 21 vendor
+response and redaction review. These are recorded in source-screen documents
+and do not block scoped app completion. No fee was authorized.

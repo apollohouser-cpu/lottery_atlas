@@ -101,3 +101,7 @@ timestamp and date (whose timezone remains unstated). Closing games are retained
 with their deadline rather than treated as proof of current sales. This is a
 catalog refresh only; no Washington winner totals or retailer heat points are
 created. Deployment validation is recorded in the task status.
+
+## September 24 records update
+
+September 24: Tiffany Pringle says the vendor expects to respond to the agency December 21, 2026; following redaction review, she estimates a response to the requester January 18, 2027, possibly earlier if the vendor responds sooner. This is an estimated response date, not guaranteed data delivery. Continue public-source app work.
