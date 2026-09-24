@@ -18,9 +18,7 @@ class StateLotterySourceScreen extends StatelessWidget {
     );
     if (!launched && context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Could not open the official lottery site.'),
-        ),
+        const SnackBar(content: Text('Could not open this page.')),
       );
     }
   }
@@ -108,6 +106,15 @@ class StateLotterySourceScreen extends StatelessWidget {
                 onTap: () => _open(context, resource.url),
               ),
             ),
+          ),
+          const SizedBox(height: 12),
+          TextButton.icon(
+            onPressed: () => _open(
+              context,
+              'https://apollohouser-cpu.github.io/lottery_atlas/state_refresh_status.html',
+            ),
+            icon: const Icon(Icons.update),
+            label: const Text('Lottery Atlas data refresh status'),
           ),
         ],
       ),
