@@ -4741,6 +4741,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 detailMode: _mapDetailMode,
                 filterState: _filterState,
                 showHeaderControls: selectedState == null,
+                dayOnlyActivity: selectedState?.name == 'Texas',
                 onDetailModeChanged: (mode) {
                   setState(() {
                     _mapDetailMode = mode;

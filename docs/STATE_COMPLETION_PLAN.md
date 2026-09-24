@@ -141,3 +141,27 @@ August 14 records disappeared, then appeared in the whole-day bucket. Resolve
 that date-precision mismatch without inventing claim times, then finish
 Scratch game reset and larger-window checks. Texas remains unaccepted pending
 these remaining checks.
+
+## September 24 Texas date precision acceptance pass
+
+Texas now uses daily-or-coarser timeline buckets because its verified claims
+source supplies dates without claim times. Entering Texas from an hourly view
+automatically selects a whole-day bucket; the hourly Day option is hidden and
+the timeline explicitly says “Claim dates only; times unavailable.” Original
+source dates and records are unchanged. Other states retain their existing
+controls pending their own source-precision review.
+
+Rebuilt and restarted the native app at 800 × 632. Entered Texas through Find a
+State, verified automatic Week selection and the precision notice, then selected
+August 14, 2026. County activity appeared immediately without a manual scale
+change, resolving the previously observed misleading empty hourly view.
+
+All 72 Flutter tests pass, including initial and transition date-precision
+regressions; the macOS debug build passes. Analysis retains 12 existing
+informational notices. Initial checks found no new agency mail and verified
+all four live feeds plus refresh-status JSON against the published files.
+This is a native-app fix, not a new public feed deployment.
+
+Next acceptance work remains Scratch game-filter reset, larger-window layout,
+and integrated source/scope and offline behavior. Texas remains the active
+state and is not yet signed off for its full available-data experience.

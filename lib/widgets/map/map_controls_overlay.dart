@@ -78,6 +78,7 @@ class MapControlsOverlay extends StatefulWidget {
     this.onStateSelected,
     this.onActivityRefresh,
     this.showHeaderControls = true,
+    this.dayOnlyActivity = false,
   });
 
   final MapDetailMode detailMode;
@@ -93,6 +94,8 @@ class MapControlsOverlay extends StatefulWidget {
   // State and county views keep the timeline, while their dedicated panel
   // replaces the national header controls.
   final bool showHeaderControls;
+  // The selected source supplies dates, not verified times of day.
+  final bool dayOnlyActivity;
 
   @override
   State<MapControlsOverlay> createState() => _MapControlsOverlayState();
@@ -115,6 +118,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
     super.initState();
     _filterState = widget.filterState ?? MapFilterState.initial();
     _timelineAnchor = widget.filterState?.dateRange.end ?? DateTime.now();
+    _respectDatePrecision();
   }
 
   @override
@@ -124,6 +128,22 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
         widget.filterState != oldWidget.filterState) {
       _filterState = widget.filterState!;
     }
+    if (widget.dayOnlyActivity != oldWidget.dayOnlyActivity) {
+      _respectDatePrecision();
+    }
+  }
+
+  void _respectDatePrecision() {
+    if (!widget.dayOnlyActivity ||
+        _timelineGranularity != TimelineGranularity.day) {
+      return;
+    }
+    _stopTimelinePlayback();
+    _timelineGranularity = TimelineGranularity.week;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || !widget.dayOnlyActivity) return;
+      _setTimelineValue(_initialTimelineValue());
+    });
   }
 
   @override
@@ -1584,7 +1604,10 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
               ),
             ),
             const Spacer(),
-            for (final mode in TimelineGranularity.values)
+            for (final mode in TimelineGranularity.values.where(
+              (mode) =>
+                  !widget.dayOnlyActivity || mode != TimelineGranularity.day,
+            ))
               Padding(
                 padding: const EdgeInsets.only(left: 4),
                 child: ChoiceChip(
@@ -1612,7 +1635,8 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
         Padding(
           padding: const EdgeInsets.only(left: 2, top: 2),
           child: Text(
-            'Now showing: ${_timelineLabel()}',
+            'Now showing: ${_timelineLabel()}'
+            '${widget.dayOnlyActivity ? ' · Claim dates only; times unavailable' : ''}',
             style: const TextStyle(
               color: Color(0xFF93C5FD),
               fontSize: 11,
