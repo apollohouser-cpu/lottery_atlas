@@ -8,7 +8,9 @@ class StateDataLimitationRegistry {
       'Texas' =>
         'Mapped activity includes selected Scratch top-prize claims with '
             'verified selling-retailer matches. Claim dates have no verified '
-            'time of day. This is not an all-tier or draw-game claims feed. '
+            'time of day. Selling-retailer reports include fully processed claims; '
+            'recently filed claims can appear in game-page counts before these reports. '
+            'This is not an all-tier or draw-game claims feed. '
             'The retailer directory is separate and does not establish wins.',
       'Arkansas' =>
         'The lottery declined our records request because Arkansas citizenship '

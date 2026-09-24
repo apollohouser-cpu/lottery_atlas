@@ -31,3 +31,18 @@ Scratch catalog, verified retailer heat points, filters and timeline, together
 with the in-app warning that published records do not establish complete
 statewide winning-ticket coverage. Texas must not appear in a complete all-tier
 state ranking until responsive records establish that broader scope.
+
+## September 24 processing and date limitation
+
+The game 2678 [official top-prize selling-retailer report](https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252699512.html),
+opened from the app during native acceptance, states that its rows cover fully
+processed Claim Center claims. Filed claims can enter game-page counts before
+appearing in the retailer report. Its page-level as-of date was September 23.
+The in-app Texas limitation notice now explains this processing delay.
+
+The importer currently sets sourceLastUpdated to the latest included claim
+date, not the report footer's as-of date. These dates must not be treated as
+equivalent. No date was changed or inferred in this pass. The shared report
+as-of metadata path remains a follow-up; the linked official page exposes the
+report date. The historical September 15 counts above are snapshots, not current
+counts. Final available-coverage acceptance is governed by STATE_COMPLETION_PLAN.

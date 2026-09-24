@@ -372,3 +372,19 @@ this processing limitation is accessible and inspect whether imported metadata
 can preserve the report as-of date without pretending it is a claim timestamp.
 Remaining county/prize filter combinations and resets still need interaction
 evidence before Texas's available-coverage sign-off.
+
+## September 24 Texas processing limitation implementation
+
+Added the official report's fully-processed-claims limitation to the shared
+Texas notice used by the source screen and map coverage surfaces. It explains
+why recently filed claims may already appear in game-page counts while absent
+from selling-retailer reports. Eight Texas loader/data tests and the standard
+macOS debug build pass. The enlarged notice still needs a native layout check;
+this pass does not close integrated visual acceptance.
+
+Inspected the importer: sourceLastUpdated currently holds the latest included
+claim date, not the page's report as-of date. Recorded this distinction in the
+Texas source screen and left original dates unchanged. Initial checks found a
+clean repository, all five live JSON files matching, and no new agency replies
+beyond the recorded September 24 messages. Next work remains county/prize
+filter-reset interactions and the expanded notice's layout.
