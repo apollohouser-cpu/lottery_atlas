@@ -193,3 +193,27 @@ Texas remains active. Next: integrated source/cadence accessibility, offline
 loading/reconnection, and remaining county/prize filter combinations. This
 partial acceptance and native-app copy fix do not constitute final readiness
 or a new feed deployment.
+
+## September 24 Texas offline cache retention repair
+
+Found a loader regression while advancing offline acceptance: it restored a
+valid device cache, then replaced it with bundled assets when remote downloads
+failed. Downloaded Texas claims absent from an older bundle could disappear,
+and the repository lost its cached-data status.
+
+The loader now retains the restored snapshot when no remote feed succeeds.
+First-run offline behavior still loads bundled verified records. Added a
+regression that downloads a Texas fixture, simulates HTTP 503, verifies all
+records and original update/source dates survive with cached status, then
+reconnects to the same feed and checks records/dates remain unchanged while
+cached status clears. The fixture is test-only and never published.
+
+All 73 Flutter tests pass; analysis retains 12 existing informational notices.
+The macOS debug build passes. This verifies the loader/cache/repository path,
+not yet a complete native offline visual/reconnection acceptance pass.
+
+Scheduled publisher 35999880720 succeeded. Fast-forwarded its aaf9f06 feed
+commit and independently verified all four public feeds plus status JSON match.
+Initial agency-mail check found no new responses. Texas remains active; native
+offline/source accessibility and remaining county/prize filter checks remain
+before a final available-coverage sign-off.

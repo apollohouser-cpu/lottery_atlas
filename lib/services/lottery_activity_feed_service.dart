@@ -88,19 +88,28 @@ class LotteryActivityFeedService {
       _feedUrl.trim().isNotEmpty || _manifestUrl.trim().isNotEmpty;
 
   static Future<void> loadConfiguredFeed({http.Client? client}) async {
-    await _restoreCachedFeed();
+    final restoredCache = await _restoreCachedFeed();
 
     final activeClient = client ?? http.Client();
     try {
       final feeds = <_LotteryActivityFeed>[];
       feeds.addAll(await _loadBundledVerifiedFeeds());
+      var downloadedFeed = false;
       if (_feedUrl.trim().isNotEmpty) {
         final feed = await _downloadFeed(activeClient, _feedUrl);
-        if (feed != null) feeds.add(feed);
+        if (feed != null) {
+          feeds.add(feed);
+          downloadedFeed = true;
+        }
       }
       if (_manifestUrl.trim().isNotEmpty) {
-        feeds.addAll(await _downloadManifestFeeds(activeClient));
+        final remoteFeeds = await _downloadManifestFeeds(activeClient);
+        feeds.addAll(remoteFeeds);
+        downloadedFeed = downloadedFeed || remoteFeeds.isNotEmpty;
       }
+      // Keep the validated device snapshot when the network is unavailable.
+      // Bundled assets can be older and must not overwrite that cache.
+      if (restoredCache && !downloadedFeed) return;
       if (feeds.isEmpty) return;
 
       final feed = _mergeFeeds(feeds);
@@ -245,9 +254,9 @@ class LotteryActivityFeedService {
     return _ActivityFeedManifest(feeds);
   }
 
-  static Future<void> _restoreCachedFeed() async {
+  static Future<bool> _restoreCachedFeed() async {
     final rawCache = await _store.getString(_cacheKey);
-    if (rawCache == null || rawCache.isEmpty) return;
+    if (rawCache == null || rawCache.isEmpty) return false;
     try {
       final feed = _parseFeed(rawCache);
       LotteryActivityRepository.usePublishedActivity(
@@ -258,8 +267,10 @@ class LotteryActivityFeedService {
         sourceLastUpdated: feed.sourceLastUpdated,
         coverageNote: feed.coverageNote,
       );
+      return true;
     } catch (_) {
       // A malformed or obsolete cache must never block the map.
+      return false;
     }
   }
 

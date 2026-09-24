@@ -122,4 +122,59 @@ void main() {
         .toList();
     expect(texas.length, greaterThanOrEqualTo(100));
   });
+  test(
+    'Texas downloaded claims survive offline reload and reconnect unchanged',
+    () async {
+      SharedPreferencesAsyncPlatform.instance =
+          InMemorySharedPreferencesAsync.empty();
+      final original =
+          (_read('data/texas_winner_activity.generated.json')['activities']
+                      as List)
+                  .first
+              as Map;
+      final record = Map<String, dynamic>.from(original)
+        ..['id'] = 'texas-cache-regression';
+      final remote = jsonEncode({
+        'source': 'Texas offline regression fixture',
+        'updatedAt': '2026-09-24T00:00:00Z',
+        'sourceLastUpdated': '2026-09-23T00:00:00Z',
+        'activities': [record],
+      });
+      await LotteryActivityFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response(remote, 200)),
+      );
+      final before = LotteryActivityRepository.activity
+          .map((r) => r.toJson())
+          .toList();
+      final updated = LotteryActivityRepository.activityUpdatedAt;
+      final sourceUpdated = LotteryActivityRepository.activitySourceLastUpdated;
+      expect(before.any((r) => r['id'] == 'texas-cache-regression'), isTrue);
+      await LotteryActivityFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      expect(
+        LotteryActivityRepository.activity.map((r) => r.toJson()).toList(),
+        before,
+      );
+      expect(LotteryActivityRepository.isCachedActivityData, isTrue);
+      expect(LotteryActivityRepository.activityUpdatedAt, updated);
+      expect(
+        LotteryActivityRepository.activitySourceLastUpdated,
+        sourceUpdated,
+      );
+      await LotteryActivityFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response(remote, 200)),
+      );
+      expect(
+        LotteryActivityRepository.activity.map((r) => r.toJson()).toList(),
+        before,
+      );
+      expect(LotteryActivityRepository.isCachedActivityData, isFalse);
+      expect(LotteryActivityRepository.activityUpdatedAt, updated);
+      expect(
+        LotteryActivityRepository.activitySourceLastUpdated,
+        sourceUpdated,
+      );
+    },
+  );
 }
