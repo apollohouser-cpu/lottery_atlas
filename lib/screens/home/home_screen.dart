@@ -54,10 +54,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   // The map gets the previously unused vertical space. Its
                   // heat index and timeline remain docked at the map bottom,
                   // and the timeline-aware ranking card sits directly below it.
-                  final mapHeight = (constraints.maxHeight * 0.84).clamp(
-                    720.0,
-                    1040.0,
-                  );
+                  final mapHeight = (constraints.maxHeight * 0.84)
+                      .clamp(720.0, 1040.0)
+                      .clamp(0.0, constraints.maxHeight);
 
                   return ListView(
                     controller: _scrollController,

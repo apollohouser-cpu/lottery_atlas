@@ -119,3 +119,25 @@ Next acceptance work: exercise game-filter reset and date/timeline controls
 with known covered dates, then resize and inspect those flows. The current
 compact window clips most of the bottom timeline behind navigation, so its
 layout and reachability need particular attention before state sign-off.
+
+## September 24 Texas timeline reachability pass
+
+Fixed the home map's forced 720-pixel minimum exceeding the available window
+height. Its height now respects the available viewport, keeping the timeline
+above bottom navigation. Rebuilt and restarted at 800 × 632; date anchor,
+Day/Week/Month/Year controls, slider and return-to-now action are now visible.
+Find a State search also successfully opened Texas at this size.
+
+Selected August 14, 2026 (a date present in the verified Texas feed), then Week
+scale's whole-day bucket: Texas county activity appeared and the scoped empty
+notice disappeared. Return-to-now restored September 24 and the corresponding
+no-matching-activity notice. Six targeted Texas/timeline tests and the macOS
+build passed; analysis retains 12 existing informational notices. Live feeds
+remain unchanged and verified; no new agency replies were found.
+
+Next accuracy gap: Day scale selects an hourly bucket, but Texas claims are
+provided with day-level dates rather than verified claim times. At 6 AM the
+August 14 records disappeared, then appeared in the whole-day bucket. Resolve
+that date-precision mismatch without inventing claim times, then finish
+Scratch game reset and larger-window checks. Texas remains unaccepted pending
+these remaining checks.
