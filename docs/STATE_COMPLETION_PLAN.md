@@ -253,3 +253,24 @@ publisher; no September 24 agency responses appeared in the initial check.
 This closes the specific source-screen reachability/cadence/coverage-copy gap.
 Per-record date inspection, native offline/reconnection and remaining
 county/prize filter combinations still need acceptance; Texas remains active.
+
+## September 24 Texas catalog/directory offline acceptance tests
+
+Extended Texas loader acceptance to verify first-run HTTP-503 fallback loads
+the complete bundled catalog and directory, preserves its official source URL,
+and does not add any records to the separate claims repository. Added a cached
+catalog regression using a test-only future-dated fixture: newer cached games
+and their state-scoped timestamp survive offline reload and an unchanged
+reconnection. Tests use one in-memory preference platform cleared per test so
+static service instances share the same store. All eight Texas tests pass.
+No production data or importer behavior changed in this pass.
+
+Limitation: retailer directories currently have bundled fallback but no
+persistent downloaded-directory cache. A failed refresh therefore uses the
+app-bundled directory, not necessarily the last downloaded directory. Native
+offline/reconnection and per-record date/filter interaction acceptance remain
+open; these service tests alone do not sign off Texas.
+
+Initial live checks matched all four feeds and status JSON. South Carolina's
+September 24 response is recorded in its source screen: requested consolidated
+report unavailable, narrowing assistance offered, no delivery or fee approval.

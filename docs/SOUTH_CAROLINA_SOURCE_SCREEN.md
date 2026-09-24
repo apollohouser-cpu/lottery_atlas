@@ -81,3 +81,14 @@ feeds were independently checked and match published commit 55b9631. This
 resolves the refresh interruption described above; the bounded Census retry
 change is included in the successful run. Existing coverage limitations and
 pending agency definitions remain unchanged. No user intervention was needed.
+
+## September 24 records response
+
+David Ross replied at 15:31 UTC that SCEL does not maintain the consolidated
+report/dataset requested and will not create a new compilation. He invited a
+narrower request identifying existing records or maintained fields and offered
+assistance determining availability. This is a refusal of the requested form
+and detail, not evidence that every underlying record is unavailable. No data
+was delivered and no paid work is authorized. Next request should seek existing
+report names/field definitions or separate existing exports without compilation;
+public-source app coverage continues independently.

@@ -4,6 +4,11 @@ import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
+import 'package:lottery_atlas/services/state_scratch_catalog_feed_service.dart';
+import 'package:lottery_atlas/services/state_scratch_catalog_registry.dart';
+import 'package:lottery_atlas/services/state_retailer_directory_feed_service.dart';
+import 'package:lottery_atlas/services/state_retailer_directory_repository.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:lottery_atlas/services/lottery_activity_feed_service.dart';
 import 'package:lottery_atlas/services/lottery_activity_repository.dart';
 import 'package:lottery_atlas/services/lottery_schedule_service.dart';
@@ -15,6 +20,9 @@ Map<String, dynamic> _read(String path) =>
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
+  SharedPreferencesAsyncPlatform.instance =
+      InMemorySharedPreferencesAsync.empty();
+  setUp(() async => SharedPreferencesAsync().clear());
 
   test('Texas live Scratch catalog is complete', () {
     final catalog = Map<String, dynamic>.from(
@@ -112,8 +120,6 @@ void main() {
   });
 
   test('Texas heat activity is bundled for offline use', () async {
-    SharedPreferencesAsyncPlatform.instance =
-        InMemorySharedPreferencesAsync.empty();
     await LotteryActivityFeedService.loadConfiguredFeed(
       client: MockClient((_) async => http.Response('offline', 503)),
     );
@@ -125,8 +131,6 @@ void main() {
   test(
     'Texas downloaded claims survive offline reload and reconnect unchanged',
     () async {
-      SharedPreferencesAsyncPlatform.instance =
-          InMemorySharedPreferencesAsync.empty();
       final original =
           (_read('data/texas_winner_activity.generated.json')['activities']
                       as List)
@@ -175,6 +179,88 @@ void main() {
         LotteryActivityRepository.activitySourceLastUpdated,
         sourceUpdated,
       );
+    },
+  );
+  test(
+    'Texas catalog and directory load offline without creating claims',
+    () async {
+      final claimsBefore = LotteryActivityRepository.activity
+          .map((r) => r.toJson())
+          .toList();
+      final offline = MockClient((_) async => http.Response('offline', 503));
+      await StateScratchCatalogFeedService.loadConfiguredFeed(client: offline);
+      await StateRetailerDirectoryFeedService.loadBundledDirectories(
+        client: offline,
+      );
+      final catalog =
+          (_read('data/texas_scratch_catalog.generated.json')['catalogs']
+                      as List)
+                  .single
+              as Map;
+      expect(
+        StateScratchCatalogRegistry.gamesFor('Texas').length,
+        (catalog['games'] as List).length,
+      );
+      final directory =
+          (_read('data/texas_retailer_directory.generated.json')['directories']
+                      as List)
+                  .single
+              as Map;
+      expect(
+        StateRetailerDirectoryRepository.countFor('Texas'),
+        (directory['retailers'] as List).length,
+      );
+      expect(
+        StateRetailerDirectoryRepository.sourceFor('Texas'),
+        directory['source'],
+      );
+      expect(
+        LotteryActivityRepository.activity.map((r) => r.toJson()).toList(),
+        claimsBefore,
+      );
+    },
+  );
+
+  test(
+    'Texas cached catalog retains source timestamp across offline and reconnect',
+    () async {
+      final feed = _read('data/texas_scratch_catalog.generated.json');
+      final catalog = (feed['catalogs'] as List).single as Map;
+      // Future fixture freshness isolates the cache from moving bundle dates.
+      catalog['timestampScope'] = 'state';
+      catalog['updatedAt'] = '2099-01-01T00:00:00Z';
+      (catalog['games'] as List).removeLast();
+      final remote = jsonEncode(feed);
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response(remote, 200)),
+      );
+      final before = StateScratchCatalogRegistry.gamesFor(
+        'Texas',
+      ).map((g) => g.toJson()).toList();
+      Future<dynamic> cachedTexas() async {
+        final saved = await SharedPreferencesAsync().getString(
+          'lottery_atlas.state_scratch_catalogs.v1',
+        );
+        return (jsonDecode(saved!)['catalogs'] as List).singleWhere(
+          (c) => c['state'] == 'Texas',
+        );
+      }
+
+      final savedBefore = await cachedTexas();
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response('offline', 503)),
+      );
+      expect(
+        StateScratchCatalogRegistry.gamesFor(
+          'Texas',
+        ).map((g) => g.toJson()).toList(),
+        before,
+      );
+      expect(await cachedTexas(), savedBefore);
+      await StateScratchCatalogFeedService.loadConfiguredFeed(
+        client: MockClient((_) async => http.Response(remote, 200)),
+      );
+      expect(await cachedTexas(), savedBefore);
     },
   );
 }
