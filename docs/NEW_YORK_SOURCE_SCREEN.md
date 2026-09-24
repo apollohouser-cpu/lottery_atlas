@@ -100,3 +100,15 @@ the earlier audit's total, all 12 monthly counts, and 31,815 repetitions beyond
 first occurrences; SQLite integrity verification passed. `staging_manifest.json`
 records those checks and the database hash. No public counts, coordinates, or
 claim-layer assets changed; agency definitions remain pending.
+
+### September 24 Census response-format interruption
+
+Publisher 35945318934 passed the Kentucky import after the bounded Census retry
+fix, then stopped at New York's directory import: the Census oneline lookup for
+676 West Main Street, Hancock returned HTML instead of JSON. Malformed JSON
+remains a hard validation failure; the importer did not reuse it, infer a new
+location, or advance publication. A direct recheck returned HTTP 200 with
+application/json and one address match. A failed-job retry was accepted;
+its outcome is pending. All four live feeds still match commit 658664c.
+This public-directory lookup issue is separate from the private FOIL workbook,
+whose row definitions and historical retailer joins remain unconfirmed.
