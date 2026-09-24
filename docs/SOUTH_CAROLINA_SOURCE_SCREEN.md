@@ -45,3 +45,15 @@ Five standalone local-HTTP regression checks exercise recovery after HTTP 503,
 no retry on 404, exhausted retry bounds, response timeout and invalid UTF-8.
 These checks also run in the publisher before imports and need no package
 resolution. This change improves availability without expanding data coverage.
+
+### September 24 Census service failure
+
+Scheduled publisher 35939079754 stopped when the Census batch geocoder returned
+HTTP 502 during the South Carolina Winners Report import. The failure was in
+geocoding transport, not evidence of changed claim data. All four live feeds
+still matched the last successful publication, commit 658664c; no incomplete
+refresh was deployed. A retry of the failed job was accepted by GitHub on
+September 24. Its outcome and all four live feeds must be checked before calling
+this recovered. The existing bounded GET helper does not cover this multipart
+Census POST; adding bounded retries there remains a reliability follow-up.
+No user access, fees, or source-definition changes are required for this retry.
