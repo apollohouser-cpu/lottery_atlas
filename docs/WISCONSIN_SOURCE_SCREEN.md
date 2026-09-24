@@ -188,3 +188,7 @@ business days and will provide a revised timeline if needed. This is an
 acknowledgment, not a data delivery or denial; it contains no fee estimate.
 Continue the verified public catalog with its existing coverage/cadence limits
 while awaiting the records response. No requester action was requested.
+
+## September 23 agency response — reviewed September 24
+
+September 23 agency reply says the request is still being worked on. No delivery or response deadline was supplied.

@@ -210,3 +210,7 @@ ends are labeled candidates derived from official general guidance, not separate
 published game deadlines. This audit does not refresh inventory or its source
 date. Game-specific annuity/cash interpretation remains unresolved; no new
 Missouri catalog or claim activity was published.
+
+## September 23 agency response — reviewed September 24
+
+Jay Boresi emailed an active retailer workbook September 23 (All Active Retailers (19).xlsx). Attachment presence is verified, but its contents have not yet been downloaded or audited in this pass; do not count it as an inspected delivery or publish coordinates. He says the previously linked draw spreadsheets update at least daily; remaining questions are still being researched. Queue private workbook audit independently of Texas acceptance.

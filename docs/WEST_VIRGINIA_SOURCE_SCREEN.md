@@ -110,3 +110,7 @@ Review reasons identify the 35 claim-only-terminal rows, digital/promotional
 entries, and non-WV or malformed state fields. Counts reconcile to the initial
 audit. No coordinates are inferred and no public activity or retailer feed is
 changed. This prepares consistent inputs for review once definitions arrive.
+
+## September 23 agency response — reviewed September 24
+
+Courtney Shamblin replied September 23 that the agency has supplied its responsive non-exempt records and considers the response complete. The clarification questions were not answered. Definitions and selling-location semantics remain unresolved; do not continue describing clarification as an expected pending reply or publish unverified joins.

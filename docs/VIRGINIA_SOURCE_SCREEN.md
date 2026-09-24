@@ -37,3 +37,7 @@ complete current Scratcher catalog, retailer map, filters and timeline, and the
 in-app warning that these winner releases are not complete statewide ticket
 coverage. Virginia must remain outside any all-tier state ranking until the
 broader records are verified.
+
+## September 23 agency response — reviewed September 24
+
+Virginia Lottery replied September 23 that workload prevents fulfilling requests outside its stated Commonwealth citizen/media eligibility categories. Treat this request as declined, not pending. Public-source app development continues; do not assert requester eligibility or require a new request for scoped completion.

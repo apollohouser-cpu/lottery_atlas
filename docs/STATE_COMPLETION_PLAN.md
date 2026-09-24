@@ -217,3 +217,21 @@ commit and independently verified all four public feeds plus status JSON match.
 Initial agency-mail check found no new responses. Texas remains active; native
 offline/source accessibility and remaining county/prize filter checks remain
 before a final available-coverage sign-off.
+
+## September 24 Texas source-cadence gap
+
+The shared official-source screen already exposes limitation notices and the
+public refresh-status link, but Texas had no cadence notice. Added an explicit
+distinction between Lottery Atlas's six-hour import attempts and the unconfirmed
+agency publication cadence, with instructions to check individual source dates
+and an explanation of retained data after failed refreshes. This notice is
+also used by the map's existing source/coverage surface. Native visual
+acceptance of this notice and offline reconnection remains outstanding.
+
+A broader mail search discovered September 23 replies missed by prior narrow
+checks. Updated Virginia (declined eligibility scope), Connecticut (public
+referrals/unavailable joins), West Virginia (agency response closed, unresolved
+definitions), Missouri (workbook received but not audited; daily draw-sheet
+cadence), and Wisconsin (pending). Use an overlapping date window for future
+mail checks and consult recorded responses to avoid duplicate follow-ups.
+Texas remains active; these replies do not block scoped acceptance.

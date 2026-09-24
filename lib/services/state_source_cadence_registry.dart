@@ -6,6 +6,12 @@ class StateSourceCadenceRegistry {
 
   static String? noticeFor(String stateName) {
     switch (stateName) {
+      case 'Texas':
+        return 'Lottery Atlas attempts Texas imports every six hours. '
+            'This is our refresh schedule, not a guaranteed Texas Lottery '
+            'publication schedule. Source update cadence is unconfirmed; '
+            'check each record or catalog date. Failed refreshes retain '
+            'previous verified data and its original dates.';
       case 'Tennessee':
         return 'Tennessee updates its published top-tier remaining prizes weekly. '
             'The totals include one prize per game reserved for a Play It Again! '

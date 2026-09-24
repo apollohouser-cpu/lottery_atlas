@@ -166,3 +166,7 @@ four live feeds matched published commit 9936bdf. The 74-game Connecticut catalo
 with September 21 inventory is live and ready for catalog testing. The existing
 cash-value exclusion and ended-game notices remain; no all-tier claims map is
 implied.
+
+## September 23 agency response — reviewed September 24
+
+Jeff Yue replied September 23: no requested public download/API; draw/game/tier counts and Scratch prize inventory are on ctlottery.com. CLC says it has no existing records in the requested form tracing draw or Scratch winners to selling retailers and maintains no retailer coordinates. It referred to https://elicense.ct.gov/Lookup/GenerateRoster.aspx (Gaming licenses → Lottery Sales Agents) for a downloadable roster. This is a substantive response with unavailable fields and public-source referrals, not a verified data delivery or blanket refusal of all public data.
