@@ -70,3 +70,27 @@ Monitor New Mexico's October 1 promised response and Pennsylvania's extensions.
 Previously identified Arizona user attestation and Mississippi signature/mail
 requirements are separate optional records tasks; do not ask again for supplied
 mailing address or phone. None prevents finishing available-data app flows.
+
+## September 24 Texas acceptance pass
+
+At an 800 × 632 macOS window, navigated from South Carolina to the national
+map and selected Texas. Opened the Scratch catalog and selected Bonus Break the
+Bank; the panel closed and the scoped no-matching-activity notice remained.
+This checks interaction only, not correctness across all date/filter settings.
+
+Found and fixed severely overlapping county names at statewide zoom. Labels now
+reserve measured screen space, prioritize selected/hovered counties, and reveal
+additional names as zoom increases. Rebuilt, restarted the actual app, and
+visually verified Texas at overview and one closer zoom. County boundaries and
+underlying activity data are unchanged. Build passed; analysis retains the 12
+existing informational notices. This is partial visual acceptance, not a state
+completion sign-off.
+
+Next concrete gap: the official retailer shortcut overlays the expanded Scratch
+catalog panel at this window size. Resolve that stacking/interference, then
+continue the filter-reset, timeline, retailer details and broader window checks.
+
+Publisher 35970788624 succeeded: all four live feeds plus the new JSON/HTML
+refresh-status report match 734d2b5. New Hampshire was retained after importer
+failure while other states updated, demonstrating the independent-state policy.
+Oklahoma's updated catalog is live; this does not expand claims-map coverage.

@@ -1589,8 +1589,20 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   List<Marker> _buildCountyLabels(List<_CountyShape> counties) {
     final labeledCountyIds = <String>{};
     final labels = <Marker>[];
+    final occupied = <Rect>[];
+    // Place interactive labels first; lower-priority names wait until zoomed in.
+    int priority(_CountyShape county) => county.id == _selectedCountyId
+        ? 2
+        : county.id == _hoveredCountyId
+        ? 1
+        : 0;
+    final ordered = counties.toList()
+      ..sort((a, b) {
+        final rank = priority(b).compareTo(priority(a));
+        return rank != 0 ? rank : a.id.compareTo(b.id);
+      });
 
-    for (final county in counties) {
+    for (final county in ordered) {
       final isHighlighted =
           county.id == _hoveredCountyId || county.id == _selectedCountyId;
 
@@ -1598,9 +1610,32 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         continue;
       }
 
+      final style = TextStyle(
+        color: isHighlighted ? const Color(0xFFFFD600) : Colors.white,
+        fontSize: isHighlighted ? 12 : 10,
+        fontWeight: isHighlighted ? FontWeight.w800 : FontWeight.w600,
+        shadows: const [Shadow(color: Colors.black, blurRadius: 5)],
+      );
+      final point = _labelPosition(county.points);
+      final screenPoint = _mapController.camera.latLngToScreenPoint(point);
+      final painter = TextPainter(
+        text: TextSpan(text: county.name, style: style),
+        textDirection: Directionality.of(context),
+        textScaler: MediaQuery.textScalerOf(context),
+        maxLines: 1,
+      )..layout(maxWidth: 130);
+      final bounds = Rect.fromCenter(
+        center: Offset(screenPoint.x, screenPoint.y),
+        width: painter.width + 8,
+        height: painter.height + 4,
+      );
+      painter.dispose();
+      if (occupied.any((other) => other.overlaps(bounds))) continue;
+      occupied.add(bounds);
+
       labels.add(
         Marker(
-          point: _labelPosition(county.points),
+          point: point,
           width: 130,
           height: 22,
           alignment: Alignment.center,
@@ -1610,12 +1645,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
               textAlign: TextAlign.center,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                color: isHighlighted ? const Color(0xFFFFD600) : Colors.white,
-                fontSize: isHighlighted ? 12 : 10,
-                fontWeight: isHighlighted ? FontWeight.w800 : FontWeight.w600,
-                shadows: const [Shadow(color: Colors.black, blurRadius: 5)],
-              ),
+              style: style,
             ),
           ),
         ),
