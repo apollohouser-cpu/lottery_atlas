@@ -2458,365 +2458,380 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       context,
     ).formatMediumDate(activity.drawDate);
 
-    await showModalBottomSheet<void>(
-      context: context,
-      backgroundColor: const Color(0xFF0B1D2C),
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
-      ),
-      builder: (sheetContext) {
-        return SafeArea(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.fromLTRB(22, 16, 22, 30),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  width: 42,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: Colors.white24,
-                    borderRadius: BorderRadius.circular(99),
+    await _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    if (!mounted) return;
+    try {
+      await showModalBottomSheet<void>(
+        context: context,
+        backgroundColor: const Color(0xFF0B1D2C),
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
+        ),
+        builder: (sheetContext) {
+          return SafeArea(
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.fromLTRB(22, 16, 22, 30),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Container(
+                    width: 42,
+                    height: 4,
+                    decoration: BoxDecoration(
+                      color: Colors.white24,
+                      borderRadius: BorderRadius.circular(99),
+                    ),
                   ),
-                ),
-                const SizedBox(height: 20),
-                Row(
-                  children: [
-                    Container(
-                      width: 48,
-                      height: 48,
-                      decoration: BoxDecoration(
-                        color: activityColor.withValues(alpha: 0.16),
-                        shape: BoxShape.circle,
-                        border: Border.all(color: activityColor, width: 2),
+                  const SizedBox(height: 20),
+                  Row(
+                    children: [
+                      Container(
+                        width: 48,
+                        height: 48,
+                        decoration: BoxDecoration(
+                          color: activityColor.withValues(alpha: 0.16),
+                          shape: BoxShape.circle,
+                          border: Border.all(color: activityColor, width: 2),
+                        ),
+                        child: Icon(
+                          Icons.location_on_rounded,
+                          color: activityColor,
+                        ),
                       ),
-                      child: Icon(
-                        Icons.location_on_rounded,
-                        color: activityColor,
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              '${activity.city}, ${activity.state}',
+                              style: const TextStyle(
+                                color: Colors.white,
+                                fontSize: 22,
+                                fontWeight: FontWeight.w700,
+                              ),
+                            ),
+                            Text(
+                              activity.gameName ?? activity.game.label,
+                              style: const TextStyle(
+                                color: Color(0xFF1478FF),
+                                fontSize: 15,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      if (isFavorite)
+                        const Icon(
+                          Icons.favorite_rounded,
+                          color: Color(0xFFE94B6A),
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  if (LotteryActivityRepository.isSampleData)
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: const Color(0x332196F3),
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(
+                          color: const Color(
+                            0xFF60A5FA,
+                          ).withValues(alpha: 0.45),
+                        ),
+                      ),
+                      child: const Text(
+                        'Sample activity record — official lottery data will be added by state.',
+                        style: TextStyle(
+                          color: Color(0xFFBFDBFE),
+                          fontSize: 12,
+                          height: 1.3,
+                        ),
                       ),
                     ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Column(
+                  if (activity.isHistorical) ...[
+                    const SizedBox(height: 12),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: const Color(0x33FACC15),
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(
+                          color: const Color(
+                            0xFFFACC15,
+                          ).withValues(alpha: 0.45),
+                        ),
+                      ),
+                      child: const Text(
+                        'Historical archive record — coverage is partial and this individual entry links to its supporting official source.',
+                        style: TextStyle(
+                          color: Color(0xFFFEF3C7),
+                          fontSize: 12,
+                          height: 1.3,
+                        ),
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: 22),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: _activityInfoCard(
+                          label: 'WINNING TICKETS',
+                          value: '${activity.winningTickets}',
+                          color: activityColor,
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: _activityInfoCard(
+                          label: activity.state == 'TX'
+                              ? 'CLAIM DATE'
+                              : 'DRAW DATE',
+                          value: formattedDate,
+                          color: const Color(0xFF1478FF),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  _activityInfoCard(
+                    label: 'TOP PRIZE AT THIS LOCATION',
+                    value: activity.formattedPrizeAmount,
+                    color: const Color(0xFF22C55E),
+                  ),
+                  if (activity.retailerName != null) ...[
+                    const SizedBox(height: 12),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF102638),
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: const Color(0xFF355066)),
+                      ),
+                      child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            '${activity.city}, ${activity.state}',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 22,
-                              fontWeight: FontWeight.w700,
-                            ),
+                          const Icon(
+                            Icons.storefront_rounded,
+                            color: Color(0xFF93C5FD),
                           ),
-                          Text(
-                            activity.gameName ?? activity.game.label,
-                            style: const TextStyle(
-                              color: Color(0xFF1478FF),
-                              fontSize: 15,
-                              fontWeight: FontWeight.w600,
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Text(
+                                  'REPORTED TICKET RETAILER',
+                                  style: TextStyle(
+                                    color: Color(0xFF93C5FD),
+                                    fontSize: 10,
+                                    fontWeight: FontWeight.w800,
+                                    letterSpacing: 0.7,
+                                  ),
+                                ),
+                                const SizedBox(height: 3),
+                                Text(
+                                  activity.retailerName!,
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w800,
+                                  ),
+                                ),
+                                if (activity.retailerAddress != null) ...[
+                                  const SizedBox(height: 2),
+                                  Text(
+                                    activity.retailerAddress!,
+                                    style: const TextStyle(
+                                      color: Colors.white70,
+                                      height: 1.3,
+                                    ),
+                                  ),
+                                ],
+                              ],
                             ),
                           ),
                         ],
                       ),
                     ),
-                    if (isFavorite)
-                      const Icon(
-                        Icons.favorite_rounded,
-                        color: Color(0xFFE94B6A),
-                      ),
-                  ],
-                ),
-                const SizedBox(height: 12),
-                if (LotteryActivityRepository.isSampleData)
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: const Color(0x332196F3),
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        color: const Color(0xFF60A5FA).withValues(alpha: 0.45),
-                      ),
-                    ),
-                    child: const Text(
-                      'Sample activity record — official lottery data will be added by state.',
-                      style: TextStyle(
-                        color: Color(0xFFBFDBFE),
-                        fontSize: 12,
-                        height: 1.3,
-                      ),
-                    ),
-                  ),
-                if (activity.isHistorical) ...[
-                  const SizedBox(height: 12),
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: const Color(0x33FACC15),
-                      borderRadius: BorderRadius.circular(10),
-                      border: Border.all(
-                        color: const Color(0xFFFACC15).withValues(alpha: 0.45),
-                      ),
-                    ),
-                    child: const Text(
-                      'Historical archive record — coverage is partial and this individual entry links to its supporting official source.',
-                      style: TextStyle(
-                        color: Color(0xFFFEF3C7),
-                        fontSize: 12,
-                        height: 1.3,
-                      ),
-                    ),
-                  ),
-                ],
-                const SizedBox(height: 22),
-                Row(
-                  children: [
-                    Expanded(
-                      child: _activityInfoCard(
-                        label: 'WINNING TICKETS',
-                        value: '${activity.winningTickets}',
-                        color: activityColor,
-                      ),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: _activityInfoCard(
-                        label: activity.state == 'TX'
-                            ? 'CLAIM DATE'
-                            : 'DRAW DATE',
-                        value: formattedDate,
-                        color: const Color(0xFF1478FF),
-                      ),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 12),
-                _activityInfoCard(
-                  label: 'TOP PRIZE AT THIS LOCATION',
-                  value: activity.formattedPrizeAmount,
-                  color: const Color(0xFF22C55E),
-                ),
-                if (activity.retailerName != null) ...[
-                  const SizedBox(height: 12),
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(12),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF102638),
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: const Color(0xFF355066)),
-                    ),
-                    child: Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Icon(
-                          Icons.storefront_rounded,
-                          color: Color(0xFF93C5FD),
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              const Text(
-                                'REPORTED TICKET RETAILER',
-                                style: TextStyle(
-                                  color: Color(0xFF93C5FD),
-                                  fontSize: 10,
-                                  fontWeight: FontWeight.w800,
-                                  letterSpacing: 0.7,
-                                ),
-                              ),
-                              const SizedBox(height: 3),
-                              Text(
-                                activity.retailerName!,
-                                style: const TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                              if (activity.retailerAddress != null) ...[
-                                const SizedBox(height: 2),
-                                Text(
-                                  activity.retailerAddress!,
-                                  style: const TextStyle(
-                                    color: Colors.white70,
-                                    height: 1.3,
-                                  ),
-                                ),
-                              ],
-                            ],
+                    if (activity.retailerAddress != null)
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: TextButton.icon(
+                          onPressed: () =>
+                              _openActivityRetailerDirections(activity),
+                          icon: const Icon(Icons.directions_rounded, size: 17),
+                          label: const Text('Get directions to retailer'),
+                          style: TextButton.styleFrom(
+                            foregroundColor: const Color(0xFF93C5FD),
                           ),
                         ),
-                      ],
-                    ),
+                      ),
+                    if (retailerFavorite != null)
+                      ValueListenableBuilder<List<FavoritePlace>>(
+                        valueListenable: FavoritePlacesService.places,
+                        builder: (context, favorites, _) {
+                          final saved = favorites.any(
+                            (place) => place.key == retailerFavorite.key,
+                          );
+                          return Align(
+                            alignment: Alignment.centerLeft,
+                            child: TextButton.icon(
+                              onPressed: () async {
+                                final isSaved =
+                                    await FavoritePlacesService.toggle(
+                                      retailerFavorite,
+                                    );
+                                if (!sheetContext.mounted) return;
+                                ScaffoldMessenger.of(sheetContext).showSnackBar(
+                                  SnackBar(
+                                    content: Text(
+                                      isSaved
+                                          ? '${retailerFavorite.title} saved to favorite retailers.'
+                                          : '${retailerFavorite.title} removed from favorite retailers.',
+                                    ),
+                                  ),
+                                );
+                              },
+                              icon: Icon(
+                                saved
+                                    ? Icons.favorite_rounded
+                                    : Icons.favorite_border_rounded,
+                                size: 17,
+                              ),
+                              label: Text(
+                                saved
+                                    ? 'Remove retailer from Favorites'
+                                    : 'Save retailer to Favorites',
+                              ),
+                              style: TextButton.styleFrom(
+                                foregroundColor: saved
+                                    ? const Color(0xFFE94B6A)
+                                    : const Color(0xFF93C5FD),
+                              ),
+                            ),
+                          );
+                        },
+                      ),
+                  ],
+                  const SizedBox(height: 12),
+                  _dataSourceCard(
+                    heading: activity.isHistorical
+                        ? 'HISTORICAL RECORD SOURCE'
+                        : 'ACTIVITY DATA SOURCE',
+                    source:
+                        activity.sourceLabel ??
+                        LotteryActivityRepository.activitySourceLabel,
+                    updatedAt: LotteryActivityRepository.activityUpdatedAt,
+                    timestampNote: activity.state == 'TX'
+                        ? 'Claim date shown above; time of day unavailable. '
+                              'A separate source publication timestamp is not supplied for this claim. '
+                              'The combined feed refresh time is not a claim verification date.'
+                        : null,
+                    color: const Color(0xFF60A5FA),
                   ),
-                  if (activity.retailerAddress != null)
+                  if (activity.sourceUrl != null)
                     Align(
                       alignment: Alignment.centerLeft,
                       child: TextButton.icon(
                         onPressed: () =>
-                            _openActivityRetailerDirections(activity),
-                        icon: const Icon(Icons.directions_rounded, size: 17),
-                        label: const Text('Get directions to retailer'),
+                            _openActivitySource(activity.sourceUrl!),
+                        icon: const Icon(Icons.open_in_new_rounded, size: 17),
+                        label: Text(
+                          activity.sourceLabel ??
+                              'Open supporting official source',
+                        ),
+                        style: TextButton.styleFrom(
+                          foregroundColor: const Color(0xFF93C5FD),
+                        ),
+                      ),
+                    )
+                  else if (activity.state == 'SC')
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: TextButton.icon(
+                        onPressed: _openSouthCarolinaWinnersReport,
+                        icon: const Icon(Icons.open_in_new_rounded, size: 17),
+                        label: const Text('Open official SC Winners Report'),
                         style: TextButton.styleFrom(
                           foregroundColor: const Color(0xFF93C5FD),
                         ),
                       ),
                     ),
-                  if (retailerFavorite != null)
-                    ValueListenableBuilder<List<FavoritePlace>>(
-                      valueListenable: FavoritePlacesService.places,
-                      builder: (context, favorites, _) {
-                        final saved = favorites.any(
-                          (place) => place.key == retailerFavorite.key,
-                        );
-                        return Align(
-                          alignment: Alignment.centerLeft,
-                          child: TextButton.icon(
-                            onPressed: () async {
-                              final isSaved =
-                                  await FavoritePlacesService.toggle(
-                                    retailerFavorite,
-                                  );
-                              if (!sheetContext.mounted) return;
-                              ScaffoldMessenger.of(sheetContext).showSnackBar(
-                                SnackBar(
-                                  content: Text(
-                                    isSaved
-                                        ? '${retailerFavorite.title} saved to favorite retailers.'
-                                        : '${retailerFavorite.title} removed from favorite retailers.',
-                                  ),
-                                ),
-                              );
-                            },
-                            icon: Icon(
-                              saved
-                                  ? Icons.favorite_rounded
-                                  : Icons.favorite_border_rounded,
-                              size: 17,
-                            ),
-                            label: Text(
-                              saved
-                                  ? 'Remove retailer from Favorites'
-                                  : 'Save retailer to Favorites',
-                            ),
-                            style: TextButton.styleFrom(
-                              foregroundColor: saved
-                                  ? const Color(0xFFE94B6A)
-                                  : const Color(0xFF93C5FD),
+                  const SizedBox(height: 20),
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      onPressed: () {
+                        _toggleFavorite(activity);
+                        Navigator.of(sheetContext).pop();
+
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              isFavorite
+                                  ? '${activity.city} removed from favorites.'
+                                  : '${activity.city} added to favorites.',
                             ),
                           ),
                         );
                       },
-                    ),
-                ],
-                const SizedBox(height: 12),
-                _dataSourceCard(
-                  heading: activity.isHistorical
-                      ? 'HISTORICAL RECORD SOURCE'
-                      : 'ACTIVITY DATA SOURCE',
-                  source:
-                      activity.sourceLabel ??
-                      LotteryActivityRepository.activitySourceLabel,
-                  updatedAt: LotteryActivityRepository.activityUpdatedAt,
-                  timestampNote: activity.state == 'TX'
-                      ? 'Claim date shown above; time of day unavailable. '
-                            'A separate source publication timestamp is not supplied for this claim. '
-                            'The combined feed refresh time is not a claim verification date.'
-                      : null,
-                  color: const Color(0xFF60A5FA),
-                ),
-                if (activity.sourceUrl != null)
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: TextButton.icon(
-                      onPressed: () => _openActivitySource(activity.sourceUrl!),
-                      icon: const Icon(Icons.open_in_new_rounded, size: 17),
+                      icon: Icon(
+                        isFavorite
+                            ? Icons.favorite_rounded
+                            : Icons.favorite_border_rounded,
+                      ),
                       label: Text(
-                        activity.sourceLabel ??
-                            'Open supporting official source',
+                        isFavorite
+                            ? 'Remove from Favorites'
+                            : 'Add to Favorites',
                       ),
-                      style: TextButton.styleFrom(
-                        foregroundColor: const Color(0xFF93C5FD),
-                      ),
-                    ),
-                  )
-                else if (activity.state == 'SC')
-                  Align(
-                    alignment: Alignment.centerLeft,
-                    child: TextButton.icon(
-                      onPressed: _openSouthCarolinaWinnersReport,
-                      icon: const Icon(Icons.open_in_new_rounded, size: 17),
-                      label: const Text('Open official SC Winners Report'),
-                      style: TextButton.styleFrom(
-                        foregroundColor: const Color(0xFF93C5FD),
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: const Color(0xFFE94B6A),
+                        side: const BorderSide(color: Color(0xFFE94B6A)),
+                        minimumSize: const Size.fromHeight(48),
                       ),
                     ),
                   ),
-                const SizedBox(height: 20),
-                SizedBox(
-                  width: double.infinity,
-                  child: OutlinedButton.icon(
-                    onPressed: () {
-                      _toggleFavorite(activity);
-                      Navigator.of(sheetContext).pop();
-
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            isFavorite
-                                ? '${activity.city} removed from favorites.'
-                                : '${activity.city} added to favorites.',
+                  const SizedBox(height: 10),
+                  SizedBox(
+                    width: double.infinity,
+                    child: FilledButton.icon(
+                      onPressed: () {
+                        Navigator.of(sheetContext).pop();
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(
+                              '${activity.city} lottery details are coming soon.',
+                            ),
                           ),
-                        ),
-                      );
-                    },
-                    icon: Icon(
-                      isFavorite
-                          ? Icons.favorite_rounded
-                          : Icons.favorite_border_rounded,
-                    ),
-                    label: Text(
-                      isFavorite ? 'Remove from Favorites' : 'Add to Favorites',
-                    ),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: const Color(0xFFE94B6A),
-                      side: const BorderSide(color: Color(0xFFE94B6A)),
-                      minimumSize: const Size.fromHeight(48),
+                        );
+                      },
+                      icon: const Icon(Icons.analytics_outlined),
+                      label: const Text('View Lottery Details'),
+                      style: FilledButton.styleFrom(
+                        backgroundColor: const Color(0xFF1478FF),
+                        foregroundColor: Colors.white,
+                        minimumSize: const Size.fromHeight(50),
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(height: 10),
-                SizedBox(
-                  width: double.infinity,
-                  child: FilledButton.icon(
-                    onPressed: () {
-                      Navigator.of(sheetContext).pop();
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            '${activity.city} lottery details are coming soon.',
-                          ),
-                        ),
-                      );
-                    },
-                    icon: const Icon(Icons.analytics_outlined),
-                    label: const Text('View Lottery Details'),
-                    style: FilledButton.styleFrom(
-                      backgroundColor: const Color(0xFF1478FF),
-                      foregroundColor: Colors.white,
-                      minimumSize: const Size.fromHeight(50),
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        );
-      },
-    );
+          );
+        },
+      );
+    } finally {
+      if (mounted) {
+        await _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+      }
+    }
   }
 
   Future<void> _showCountyActivityDetails(
@@ -2928,6 +2943,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 const SizedBox(height: 12),
                 _dataSourceCard(
                   heading: 'HEAT-POINT ACTIVITY SOURCE',
+                  timestampNote: countyActivity.state == 'TX'
+                      ? 'Selected Scratch top-prize claims only. Open a record for its claim date and official source. Combined feed refresh time does not verify each claim.'
+                      : null,
                   source: LotteryActivityRepository.activitySourceLabel,
                   updatedAt: LotteryActivityRepository.activityUpdatedAt,
                   color: const Color(0xFF60A5FA),
@@ -3071,7 +3089,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         ),
                         onTap: () {
                           Navigator.of(sheetContext).pop();
-                          _showActivityDetails(activity);
+                          WidgetsBinding.instance.addPostFrameCallback((_) {
+                            if (mounted) _showActivityDetails(activity);
+                          });
                         },
                       ),
                     ),
@@ -3108,7 +3128,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                             ),
                             onTap: () {
                               Navigator.of(sheetContext).pop();
-                              _showActivityDetails(activity);
+                              WidgetsBinding.instance.addPostFrameCallback((_) {
+                                if (mounted) _showActivityDetails(activity);
+                              });
                             },
                           ),
                         )

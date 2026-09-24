@@ -321,3 +321,29 @@ Vermont quoted $1,368 and remains on hold under the no-fee instruction;
 Washington estimates a January 18, 2027 response after a December 21 vendor
 response and redaction review. These are recorded in source-screen documents
 and do not block scoped app completion. No fee was authorized.
+
+## September 24 county-to-claim detail acceptance
+
+On August 14, selected the Texas heat point for Johnson County: the county
+sheet showed one qualifying record and a $1K prize; its list opened the
+Burleson claim for game 2678. Verified CLAIM DATE reads Fri, Aug 14.
+Found mouse-wheel input was still routed to the map after the county sheet
+opened an individual claim, preventing source-section access. The individual
+sheet now releases/restores native map scroll handling, and county-to-claim
+navigation waits for the next frame so the closing county sheet cannot
+re-enable map scrolling over the new sheet.
+
+Rebuilt/restarted and repeated the exact flow at 800 × 632. Scrolling now
+reaches the official game/date source label and supporting source link. The
+source explanation correctly distinguishes claim date from an unavailable
+publication timestamp. Also replaced the county summary's ambiguous merged
+refresh date with its partial top-prize scope and a direction to individual
+claim evidence. Both source sections were visually verified. Eleven targeted
+Texas/timeline tests and the macOS build pass; analysis retains 12 infos.
+
+Latest publisher 36041852687 succeeded; fast-forwarded 110cb9f and independently
+verified all public feeds/status. No new agency replies beyond recorded ones.
+Next concrete gap: the individual claim sheet still offers View Lottery
+Details, which currently invokes a coming-soon message. Remove or implement
+that unsupported action for Texas, then finish remaining filter acceptance.
+Texas is still active, without a final readiness sign-off.
