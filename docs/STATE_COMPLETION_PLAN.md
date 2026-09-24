@@ -43,10 +43,10 @@ This scope does not include complete all-tier statewide winning-ticket totals.
       unknown and remaining prizes are not described as store stock.
 - [ ] Map loads verified points and retailer details; a directory location alone
       never becomes a winning-ticket record.
-- [ ] State, county, game, prize and date filters behave consistently wherever
+- [x] State, county, game, prize and date filters behave consistently wherever
       offered, including clearing filters and returning to the default view.
 - [ ] Timeline date semantics and source coverage are visible and accurate.
-- [ ] No-results views explain missing or filtered data without implying zero
+- [x] No-results views explain missing or filtered data without implying zero
       statewide wins; denied/unavailable features have scoped explanations.
 - [ ] Sources, periods, cadence and partial-coverage limitations are accessible.
 - [x] Bundled/cached data loads offline and reconnecting does not inflate dates.
@@ -388,3 +388,27 @@ Texas source screen and left original dates unchanged. Initial checks found a
 clean repository, all five live JSON files matching, and no new agency replies
 beyond the recorded September 24 messages. Next work remains county/prize
 filter-reset interactions and the expanded notice's layout.
+
+## September 24 Texas county/prize reset and notice visual acceptance
+
+Restarted the latest standard native build at 800 × 632. The expanded Texas
+source-screen notice displays the processing delay, date precision, partial
+coverage and separate-directory explanation without clipping; cadence remains
+visible below it. This closes the preceding notice-layout follow-up.
+
+Selected August 14 and Johnson County, inspected its one qualifying $1K record,
+dismissed the detail sheet and used Back. The map returned to the Texas overview
+and preserved August 14. A second Back returned to the national controls.
+Applied the shared prize range displayed as $109K–$30.0M, re-entered Texas and
+verified the same date produced the scoped no-matching-activity explanation.
+Returned to the shared prize controls, restored $1–$60M and applied it. Re-entering
+Texas restored mapped claims on August 14 without changing the date. This adds
+prize inheritance/reset and county-back evidence to earlier game/date resets.
+The filter and scoped no-results checklist items are now accepted for these
+supported flows. Prize controls currently require returning to the national
+view; they are not offered directly by Texas's compact toolbar.
+
+No production code changed, so no redundant build/test run was needed. Live
+feeds/status independently match repository files; mail has no new responses.
+Texas remains active: catalog remaining-count semantics and supported draw
+flows need final integrated review before the overall testing-ready sign-off.
