@@ -73,3 +73,11 @@ retries, stalled response bodies, and malformed encoding. Analysis of changed
 Dart files reports no issues. All four live feeds still match 658664c. The next
 publisher must succeed and its live output must be checked before declaring
 recovery; local retry tests alone do not establish service recovery.
+
+### September 24 verified publishing recovery
+
+Publisher 35945318934 attempt 2 succeeded at 03:21 UTC. All four live JSON
+feeds were independently checked and match published commit 55b9631. This
+resolves the refresh interruption described above; the bounded Census retry
+change is included in the successful run. Existing coverage limitations and
+pending agency definitions remain unchanged. No user intervention was needed.

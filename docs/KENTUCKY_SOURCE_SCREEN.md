@@ -34,3 +34,11 @@ whole-request limit per attempt. Permanent errors still fail immediately;
 exhausted retries still stop publication. Existing address matching and county
 validation rules are unchanged. Five new Node HTTP regression tests passed as
 part of the 55-test suite. Deployment recovery remains to be verified separately.
+
+### September 24 verified publishing recovery
+
+Publisher 35945318934 attempt 2 succeeded at 03:21 UTC. All four live JSON
+feeds were independently checked and match published commit 55b9631. This
+resolves the refresh interruption described above; the bounded Census retry
+change is included in the successful run. Existing coverage limitations and
+pending agency definitions remain unchanged. No user intervention was needed.

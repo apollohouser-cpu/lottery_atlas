@@ -112,3 +112,11 @@ application/json and one address match. A failed-job retry was accepted;
 its outcome is pending. All four live feeds still match commit 658664c.
 This public-directory lookup issue is separate from the private FOIL workbook,
 whose row definitions and historical retailer joins remain unconfirmed.
+
+### September 24 verified publishing recovery
+
+Publisher 35945318934 attempt 2 succeeded at 03:21 UTC. All four live JSON
+feeds were independently checked and match published commit 55b9631. This
+resolves the refresh interruption described above; the bounded Census retry
+change is included in the successful run. Existing coverage limitations and
+pending agency definitions remain unchanged. No user intervention was needed.
