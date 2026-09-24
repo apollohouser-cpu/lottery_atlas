@@ -347,3 +347,28 @@ Next concrete gap: the individual claim sheet still offers View Lottery
 Details, which currently invokes a coming-soon message. Remove or implement
 that unsupported action for Texas, then finish remaining filter acceptance.
 Texas is still active, without a final readiness sign-off.
+
+## September 24 Texas official claim action acceptance
+
+Replaced the Texas individual claim sheet's unfinished View Lottery Details
+action with Open Official Claim Source. It opens the record's existing source
+URL, and is omitted if that URL is absent. At 800 × 632 in the native app,
+opened the August 14 Johnson County claim for Burleson/game 2678, scrolled to
+the action and clicked it. Chrome opened the corresponding official Texas
+top-prize selling-retailer report; its date and retailer matched the displayed
+record. No ticket or pack identifiers were copied into public data or this log.
+
+All 75 Flutter tests and the standard macOS debug build pass; analysis retains
+12 existing informational notices. Independently compared all four live feeds
+and refresh-status JSON with the repository: all match. Agency mail contains
+only the already-recorded September 24 South Carolina, Vermont and Washington
+responses. This is a native-app action fix, not a new feed deployment.
+
+The opened report also supplies a page-level September 23 as-of date and says
+its rows include fully processed claims; filed claims may appear in game-page
+counts before this report. That page-level date is distinct from an individual
+claim date or the combined Atlas refresh. Follow-up acceptance should ensure
+this processing limitation is accessible and inspect whether imported metadata
+can preserve the report as-of date without pretending it is a claim timestamp.
+Remaining county/prize filter combinations and resets still need interaction
+evidence before Texas's available-coverage sign-off.

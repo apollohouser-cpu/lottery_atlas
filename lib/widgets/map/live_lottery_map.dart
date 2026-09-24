@@ -2799,28 +2799,39 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                     ),
                   ),
                   const SizedBox(height: 10),
-                  SizedBox(
-                    width: double.infinity,
-                    child: FilledButton.icon(
-                      onPressed: () {
-                        Navigator.of(sheetContext).pop();
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          SnackBar(
-                            content: Text(
-                              '${activity.city} lottery details are coming soon.',
-                            ),
-                          ),
-                        );
-                      },
-                      icon: const Icon(Icons.analytics_outlined),
-                      label: const Text('View Lottery Details'),
-                      style: FilledButton.styleFrom(
-                        backgroundColor: const Color(0xFF1478FF),
-                        foregroundColor: Colors.white,
-                        minimumSize: const Size.fromHeight(50),
+                  if (activity.state != 'TX' || activity.sourceUrl != null)
+                    SizedBox(
+                      width: double.infinity,
+                      child: FilledButton.icon(
+                        onPressed: activity.state == 'TX'
+                            ? () => _openActivitySource(activity.sourceUrl!)
+                            : () {
+                                Navigator.of(sheetContext).pop();
+                                ScaffoldMessenger.of(context).showSnackBar(
+                                  SnackBar(
+                                    content: Text(
+                                      '${activity.city} lottery details are coming soon.',
+                                    ),
+                                  ),
+                                );
+                              },
+                        icon: Icon(
+                          activity.state == 'TX'
+                              ? Icons.open_in_new_rounded
+                              : Icons.analytics_outlined,
+                        ),
+                        label: Text(
+                          activity.state == 'TX'
+                              ? 'Open Official Claim Source'
+                              : 'View Lottery Details',
+                        ),
+                        style: FilledButton.styleFrom(
+                          backgroundColor: const Color(0xFF1478FF),
+                          foregroundColor: Colors.white,
+                          minimumSize: const Size.fromHeight(50),
+                        ),
                       ),
                     ),
-                  ),
                 ],
               ),
             ),
