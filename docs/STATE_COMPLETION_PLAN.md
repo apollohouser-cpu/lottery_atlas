@@ -94,3 +94,28 @@ Publisher 35970788624 succeeded: all four live feeds plus the new JSON/HTML
 refresh-status report match 734d2b5. New Hampshire was retained after importer
 failure while other states updated, demonstrating the independent-state policy.
 Oklahoma's updated catalog is live; this does not expand claims-map coverage.
+
+## September 24 Texas catalog and retailer interaction pass
+
+Resolved the expanded-catalog overlap by rendering the compact state toolbar
+above map shortcuts and controls. At 800 × 632, rebuilt and restarted the native
+app, entered Texas, expanded its catalog and scrolled to Texas Loteria. Clicking
+that row at the old retailer-shortcut position selected the game and closed the
+panel; it did not open the underlying picker. After closing the panel, the
+retailer shortcut opened normally. This validates both stacking and tap routing.
+
+Searched the Texas retailer picker for Abbott: three matching locations were
+shown. Selected Abbott's Travel Center and verified the address/county detail
+sheet and the explicit statement that a directory listing alone does not create
+a heat-map win. No directions or gambling transaction was initiated.
+
+Nine targeted Texas/map/timeline tests and the macOS debug build passed.
+Analysis retains the same 12 informational notices. All four live feeds and
+refresh-status JSON still match the successful publication; no agency replies
+were found during the initial check. This code is a native-app change, not a
+new feed deployment.
+
+Next acceptance work: exercise game-filter reset and date/timeline controls
+with known covered dates, then resize and inspect those flows. The current
+compact window clips most of the bottom timeline behind navigation, so its
+layout and reachability need particular attention before state sign-off.

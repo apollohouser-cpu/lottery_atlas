@@ -4780,6 +4780,142 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 ),
               ),
 
+            if (!usesCompactStateToolbar)
+              Positioned(
+                left: 16,
+                top: selectedState == null ? 148 : 160,
+                child: MouseRegion(
+                  onEnter: (_) => _magicMouseChannel.invokeMethod<void>(
+                    'setMapActive',
+                    false,
+                  ),
+                  onExit: (_) => _magicMouseChannel.invokeMethod<void>(
+                    'setMapActive',
+                    true,
+                  ),
+                  child: NextDrawingsPanel(
+                    width: selectedState == null ? headerControlWidth : null,
+                    stateName: _selectedStateName,
+                    isExpanded: _showNextDrawings,
+                    onExpandedChanged: (isExpanded) {
+                      setState(() {
+                        _showNextDrawings = isExpanded;
+                      });
+                    },
+                    onViewNationalResults: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const NationalDrawResultsScreen(),
+                        ),
+                      );
+                    },
+                    onStateDrawSelected: _showSouthCarolinaDrawGameOnMap,
+                  ),
+                ),
+              ),
+
+            if (selectedState != null && !usesCompactStateToolbar)
+              Positioned(
+                top: 24,
+                right: 24,
+                child: _StateLotteryPanel(
+                  state: selectedState,
+                  selectedCountyName: selectedCounty?.name,
+                  selectedCountyId: selectedCounty?.id,
+                  onClose: _resetMap,
+                  onClearCounty: _returnToSelectedState,
+                  onOpenCounties: _openCountyPicker,
+                  onOpenRetailers: _openStateRetailerPicker,
+                  isHomeState: _homeStateName == selectedState.name,
+                  onSetHomeState: _setSelectedStateAsHome,
+                  onRefreshData: _refreshPublishedActivityFeed,
+                ),
+              ),
+
+            if (activeScratchFilter != null)
+              Positioned(
+                right: 20,
+                bottom: mapMenuBottom.toDouble(),
+                child: _SouthCarolinaScratchFilterBanner(
+                  label: activeScratchFilter.label,
+                  recordCount: southCarolinaVisibleRecordCount,
+                  onTap: _openSouthCarolinaGamePicker,
+                  onInsights: _openCountyHeatInsights,
+                  onClear: SouthCarolinaScratchMapFilterService.clear,
+                ),
+              ),
+
+            if (activeSouthCarolinaFilter != null)
+              Positioned(
+                right: 20,
+                bottom: mapMenuBottom.toDouble(),
+                child: _SouthCarolinaScratchFilterBanner(
+                  label: activeSouthCarolinaFilter.label,
+                  recordCount: southCarolinaVisibleRecordCount,
+                  onTap: _openSouthCarolinaGamePicker,
+                  onInsights: _openCountyHeatInsights,
+                  onClear: SouthCarolinaLotteryMapFilterService.clear,
+                ),
+              ),
+
+            if (showSouthCarolinaRetailers)
+              Positioned(
+                right: 20,
+                bottom: mapMenuBottom.toDouble(),
+                child: _SouthCarolinaRetailerBanner(
+                  count: visibleSouthCarolinaRetailers.length,
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute<void>(
+                        builder: (_) => const SouthCarolinaRetailersScreen(),
+                      ),
+                    );
+                  },
+                  onClear: SouthCarolinaRetailerMapService.hide,
+                ),
+              ),
+
+            if (selectedState != null &&
+                selectedState.name != 'South Carolina' &&
+                stateDirectoryRetailerCount > 0 &&
+                _focusedDirectoryRetailer == null)
+              Positioned(
+                right: 20,
+                bottom: mapMenuBottom.toDouble(),
+                child: _StateRetailerDirectoryBanner(
+                  stateAbbreviation: selectedState.abbreviation,
+                  count: stateDirectoryRetailerCount,
+                  onTap: _openStateRetailerPicker,
+                ),
+              ),
+
+            Positioned(
+              right: 20,
+              bottom: 160,
+              child: MapActionControls(
+                onReset: _resetMap,
+                onHome: _homeStateName == null ? null : _goToHomeState,
+                onBack: _focusedRetailerId != null
+                    ? _returnToCityFromRetailer
+                    : _selectedCityName != null
+                    ? _returnToCountyFromCity
+                    : _selectedCountyId != null
+                    ? _returnToSelectedState
+                    : _selectedStateName == null
+                    ? null
+                    : _returnToNationalMap,
+                backTooltip: _focusedRetailerId != null
+                    ? 'Back to city or town'
+                    : _selectedCityName != null
+                    ? 'Back to county map'
+                    : _selectedCountyId != null
+                    ? 'Back to state map'
+                    : 'Back to U.S. map',
+                onZoomIn: () => _zoomBy(1),
+                onZoomOut: () => _zoomBy(-1),
+              ),
+            ),
+            // Expanded state menus must receive taps before map shortcuts.
             if (usesCompactStateToolbar)
               Positioned(
                 left: 24,
@@ -4944,141 +5080,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   ],
                 ),
               ),
-            if (!usesCompactStateToolbar)
-              Positioned(
-                left: 16,
-                top: selectedState == null ? 148 : 160,
-                child: MouseRegion(
-                  onEnter: (_) => _magicMouseChannel.invokeMethod<void>(
-                    'setMapActive',
-                    false,
-                  ),
-                  onExit: (_) => _magicMouseChannel.invokeMethod<void>(
-                    'setMapActive',
-                    true,
-                  ),
-                  child: NextDrawingsPanel(
-                    width: selectedState == null ? headerControlWidth : null,
-                    stateName: _selectedStateName,
-                    isExpanded: _showNextDrawings,
-                    onExpandedChanged: (isExpanded) {
-                      setState(() {
-                        _showNextDrawings = isExpanded;
-                      });
-                    },
-                    onViewNationalResults: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute<void>(
-                          builder: (_) => const NationalDrawResultsScreen(),
-                        ),
-                      );
-                    },
-                    onStateDrawSelected: _showSouthCarolinaDrawGameOnMap,
-                  ),
-                ),
-              ),
-
-            if (selectedState != null && !usesCompactStateToolbar)
-              Positioned(
-                top: 24,
-                right: 24,
-                child: _StateLotteryPanel(
-                  state: selectedState,
-                  selectedCountyName: selectedCounty?.name,
-                  selectedCountyId: selectedCounty?.id,
-                  onClose: _resetMap,
-                  onClearCounty: _returnToSelectedState,
-                  onOpenCounties: _openCountyPicker,
-                  onOpenRetailers: _openStateRetailerPicker,
-                  isHomeState: _homeStateName == selectedState.name,
-                  onSetHomeState: _setSelectedStateAsHome,
-                  onRefreshData: _refreshPublishedActivityFeed,
-                ),
-              ),
-
-            if (activeScratchFilter != null)
-              Positioned(
-                right: 20,
-                bottom: mapMenuBottom.toDouble(),
-                child: _SouthCarolinaScratchFilterBanner(
-                  label: activeScratchFilter.label,
-                  recordCount: southCarolinaVisibleRecordCount,
-                  onTap: _openSouthCarolinaGamePicker,
-                  onInsights: _openCountyHeatInsights,
-                  onClear: SouthCarolinaScratchMapFilterService.clear,
-                ),
-              ),
-
-            if (activeSouthCarolinaFilter != null)
-              Positioned(
-                right: 20,
-                bottom: mapMenuBottom.toDouble(),
-                child: _SouthCarolinaScratchFilterBanner(
-                  label: activeSouthCarolinaFilter.label,
-                  recordCount: southCarolinaVisibleRecordCount,
-                  onTap: _openSouthCarolinaGamePicker,
-                  onInsights: _openCountyHeatInsights,
-                  onClear: SouthCarolinaLotteryMapFilterService.clear,
-                ),
-              ),
-
-            if (showSouthCarolinaRetailers)
-              Positioned(
-                right: 20,
-                bottom: mapMenuBottom.toDouble(),
-                child: _SouthCarolinaRetailerBanner(
-                  count: visibleSouthCarolinaRetailers.length,
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute<void>(
-                        builder: (_) => const SouthCarolinaRetailersScreen(),
-                      ),
-                    );
-                  },
-                  onClear: SouthCarolinaRetailerMapService.hide,
-                ),
-              ),
-
-            if (selectedState != null &&
-                selectedState.name != 'South Carolina' &&
-                stateDirectoryRetailerCount > 0 &&
-                _focusedDirectoryRetailer == null)
-              Positioned(
-                right: 20,
-                bottom: mapMenuBottom.toDouble(),
-                child: _StateRetailerDirectoryBanner(
-                  stateAbbreviation: selectedState.abbreviation,
-                  count: stateDirectoryRetailerCount,
-                  onTap: _openStateRetailerPicker,
-                ),
-              ),
-
-            Positioned(
-              right: 20,
-              bottom: 160,
-              child: MapActionControls(
-                onReset: _resetMap,
-                onHome: _homeStateName == null ? null : _goToHomeState,
-                onBack: _focusedRetailerId != null
-                    ? _returnToCityFromRetailer
-                    : _selectedCityName != null
-                    ? _returnToCountyFromCity
-                    : _selectedCountyId != null
-                    ? _returnToSelectedState
-                    : _selectedStateName == null
-                    ? null
-                    : _returnToNationalMap,
-                backTooltip: _focusedRetailerId != null
-                    ? 'Back to city or town'
-                    : _selectedCityName != null
-                    ? 'Back to county map'
-                    : _selectedCountyId != null
-                    ? 'Back to state map'
-                    : 'Back to U.S. map',
-                onZoomIn: () => _zoomBy(1),
-                onZoomOut: () => _zoomBy(-1),
-              ),
-            ),
           ],
         );
       },
