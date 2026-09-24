@@ -165,3 +165,31 @@ This is a native-app fix, not a new public feed deployment.
 Next acceptance work remains Scratch game-filter reset, larger-window layout,
 and integrated source/scope and offline behavior. Texas remains the active
 state and is not yet signed off for its full available-data experience.
+
+## September 24 Texas game reset and ranking scope pass
+
+At 800 × 632, selected Bonus Break the Bank, then August 14, 2026.
+The scoped no-matching-activity message appeared. Reopened Scratch and verified
+that game was selected; choosing All Texas Scratch-Off activity restored mapped
+activity without changing the date. This closes the specific Scratch game-reset
+interaction gap, not every county/prize filter combination.
+
+Zoomed the native window to the desktop size. Timeline, map controls and the
+county ranking were visible. The ranking previously said “winning tickets”
+without a local coverage warning. Texas rankings now say “published claims”
+and explain that only selected Scratch top-prize claims with verified retailer
+matches are included, filtered to the current view, not all Texas wins or tiers.
+Rebuilt/restarted and visually verified the heading, metric and scope notice in
+the larger layout, including its filtered-empty state. No underlying data changed.
+
+The macOS debug build and targeted Texas/ranking tests passed; analysis remains
+at 12 existing informational notices. All live feeds/status matched local
+published files at the initial check; no new agency replies were found. One
+initial computer-control attempt reported the app quit; relaunch restored it
+and repeated catalog interactions succeeded. No reproducible catalog crash was
+established.
+
+Texas remains active. Next: integrated source/cadence accessibility, offline
+loading/reconnection, and remaining county/prize filter combinations. This
+partial acceptance and native-app copy fix do not constitute final readiness
+or a new feed deployment.
