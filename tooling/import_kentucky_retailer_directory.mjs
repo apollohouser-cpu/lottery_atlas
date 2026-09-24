@@ -8,6 +8,7 @@
  * provide coordinates; unresolved addresses are excluded rather than placed
  * approximately.
  */
+import {fetchCensusBatch} from './census_batch_fetch.mjs';
 import {createHash} from 'node:crypto';
 import {readFile, writeFile} from 'node:fs/promises';
 
@@ -118,16 +119,9 @@ if (!outputPath) {
       new Blob([`${csv}\n`], {type: 'text/csv'}),
       'kentucky-retailers.csv',
     );
-    const response = await fetch(censusBatchUrl, {
-      method: 'POST',
-      headers: {'user-agent': 'LotteryAtlasOfficialDataBot/1.0'},
-      body: form,
-    });
-    if (!response.ok) {
-      throw new Error(`Census batch geocoder returned HTTP ${response.status}`);
-    }
+    const responseBody = await fetchCensusBatch(censusBatchUrl, form);
     const coordinates = new Map();
-    for (const line of (await response.text()).split(/\r?\n/)) {
+    for (const line of responseBody.split(/\r?\n/)) {
       if (!line.trim()) continue;
       const cells = parseCsv(line);
       const index = Number(cells[0]);

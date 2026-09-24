@@ -1,5 +1,6 @@
 // Standalone: no package resolution or Flutter SDK required in the publisher.
 import 'dart:async';
+import 'dart:convert';
 import 'dart:io';
 import '../../tooling/source_http_fetch.dart';
 
@@ -10,10 +11,20 @@ void check(bool condition, String message) {
 Future<void> main() async {
   final server = await HttpServer.bind(InternetAddress.loopbackIPv4, 0);
   final calls = <String, int>{};
+  final postedBodies = <String>[];
   final subscription = server.listen((request) async {
     final path = request.uri.path;
     final count = calls.update(path, (n) => n + 1, ifAbsent: () => 1);
-    if (path == '/recover') {
+    if (path == '/lookup') {
+      check(request.method == 'POST', 'Lookup changed method');
+      check(
+        request.headers.contentType?.mimeType == 'multipart/form-data',
+        'Lookup lost content type',
+      );
+      postedBodies.add(await utf8.decoder.bind(request).join());
+      request.response.statusCode = count == 1 ? 502 : 200;
+      request.response.write('geocoded');
+    } else if (path == '/recover') {
       request.response.statusCode = count == 1 ? 503 : 200;
       request.response.write('official report');
     } else if (path == '/missing') {
@@ -37,6 +48,25 @@ Future<void> main() async {
         : const Duration(seconds: 2),
   );
   try {
+    const body = '--boundary\r\naddress lookup\r\n--boundary--\r\n';
+    check(
+      await fetchOfficialSource(
+            uri('/lookup'),
+            lookupBody: body,
+            lookupContentType: ContentType(
+              'multipart',
+              'form-data',
+              parameters: {'boundary': 'boundary'},
+            ),
+            retryDelay: Duration.zero,
+          ) ==
+          'geocoded',
+      'Lookup recovery failed',
+    );
+    check(
+      postedBodies.length == 2 && postedBodies.every((value) => value == body),
+      'Lookup body was not replayed exactly',
+    );
     check(await fetch('/recover') == 'official report', 'Recovery lost body');
     check(calls['/recover'] == 2, 'Transient response not retried');
     try {
@@ -64,7 +94,7 @@ Future<void> main() async {
       check(calls['/bad-utf8'] == 1, 'Malformed body retried');
     }
     stdout.writeln(
-      'Passed 5 source HTTP checks: recovery, permanent errors, retry bounds, timeout, malformed data.',
+      'Passed 6 source HTTP checks: multipart POST recovery, recovery, permanent errors, retry bounds, timeout, malformed data.',
     );
   } finally {
     await server.close(force: true);

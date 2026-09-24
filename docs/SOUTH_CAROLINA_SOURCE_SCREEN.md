@@ -57,3 +57,19 @@ September 24. Its outcome and all four live feeds must be checked before calling
 this recovered. The existing bounded GET helper does not cover this multipart
 Census POST; adding bounded retries there remains a reliability follow-up.
 No user access, fees, or source-definition changes are required for this retry.
+
+The retry (attempt 2) also failed with Census HTTP 502, this time while importing
+Kentucky's retailer directory, before reaching South Carolina. This identifies
+a shared external geocoding outage rather than a South Carolina report change.
+Both Census multipart lookups now use four bounded attempts with a 120-second
+whole-request timeout per attempt and short increasing delays. Temporary HTTP
+statuses and transport timeouts may retry; permanent HTTP errors and invalid
+UTF-8 fail without retry. Exhaustion still prevents publication. No fallback
+coordinates, claim counts, or refreshed source dates are invented.
+
+Validation: all 55 Node tests and six standalone Dart HTTP checks passed,
+including multipart body replay, HTTP 502 recovery, permanent errors, exhausted
+retries, stalled response bodies, and malformed encoding. Analysis of changed
+Dart files reports no issues. All four live feeds still match 658664c. The next
+publisher must succeed and its live output must be checked before declaring
+recovery; local retry tests alone do not establish service recovery.

@@ -24,3 +24,13 @@ authorized. Await the agency's reply on permissible access and the records.
 Current partial data can test source labels, retailer location display and
 selected-winner points. It cannot validate a complete statewide winning-ticket
 heat map or an all-tier comparison with other states.
+
+### September 24 Census transport failure
+
+Publisher 35939079754 attempt 2 stopped at this directory's Census batch lookup
+with HTTP 502. The previous live directory remains available. Census multipart
+lookups now retry temporary service failures up to four times, with a 120-second
+whole-request limit per attempt. Permanent errors still fail immediately;
+exhausted retries still stop publication. Existing address matching and county
+validation rules are unchanged. Five new Node HTTP regression tests passed as
+part of the 55-test suite. Deployment recovery remains to be verified separately.

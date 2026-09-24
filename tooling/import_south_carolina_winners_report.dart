@@ -283,53 +283,48 @@ Future<Map<String, Map<String, double>>> _geocodeBatch(
     }
     final boundary =
         '----LotteryAtlasCensus${DateTime.now().microsecondsSinceEpoch}';
-    final client = HttpClient();
-    try {
-      final request = await client.postUrl(Uri.parse(_censusBatchUrl));
-      request.headers.contentType = ContentType(
+    final body = StringBuffer();
+    void field(String name, String value) {
+      body.write('--$boundary\r\n');
+      body.write('Content-Disposition: form-data; name="$name"\r\n\r\n');
+      body.write('$value\r\n');
+    }
+
+    field('benchmark', 'Public_AR_Current');
+    body.write('--$boundary\r\n');
+    body.write(
+      'Content-Disposition: form-data; name="addressFile"; filename="sc-winners.csv"\r\n',
+    );
+    body.write('Content-Type: text/csv\r\n\r\n');
+    body.write(csv.toString());
+    body.write('\r\n--$boundary--\r\n');
+    final responseBody = await fetchOfficialSource(
+      Uri.parse(_censusBatchUrl),
+      lookupBody: body.toString(),
+      lookupContentType: ContentType(
         'multipart',
         'form-data',
-        parameters: <String, String>{'boundary': boundary},
-      );
-      void field(String name, String value) {
-        request.write('--$boundary\r\n');
-        request.write('Content-Disposition: form-data; name="$name"\r\n\r\n');
-        request.write('$value\r\n');
+        parameters: {'boundary': boundary},
+      ),
+      timeout: const Duration(seconds: 120),
+    );
+    for (final row in _csvRows(responseBody)) {
+      if (row.length < 6 || row[2] != 'Match' || row[5].isEmpty) continue;
+      final rowIndex = int.tryParse(row[0]);
+      final pair = row[5].split(',');
+      if (rowIndex == null ||
+          rowIndex < 0 ||
+          rowIndex >= batch.length ||
+          pair.length != 2) {
+        continue;
       }
-
-      field('benchmark', 'Public_AR_Current');
-      request.write('--$boundary\r\n');
-      request.write(
-        'Content-Disposition: form-data; name="addressFile"; filename="sc-winners.csv"\r\n',
-      );
-      request.write('Content-Type: text/csv\r\n\r\n');
-      request.write(csv.toString());
-      request.write('\r\n--$boundary--\r\n');
-      final response = await request.close();
-      final responseBody = await utf8.decoder.bind(response).join();
-      if (response.statusCode != HttpStatus.ok) {
-        _fail('Census batch geocoder returned HTTP ${response.statusCode}.');
-      }
-      for (final row in _csvRows(responseBody)) {
-        if (row.length < 6 || row[2] != 'Match' || row[5].isEmpty) continue;
-        final rowIndex = int.tryParse(row[0]);
-        final pair = row[5].split(',');
-        if (rowIndex == null ||
-            rowIndex < 0 ||
-            rowIndex >= batch.length ||
-            pair.length != 2) {
-          continue;
-        }
-        final longitude = double.tryParse(pair[0]);
-        final latitude = double.tryParse(pair[1]);
-        if (latitude == null || longitude == null) continue;
-        results[batch[rowIndex].key] = <String, double>{
-          'latitude': latitude,
-          'longitude': longitude,
-        };
-      }
-    } finally {
-      client.close(force: true);
+      final longitude = double.tryParse(pair[0]);
+      final latitude = double.tryParse(pair[1]);
+      if (latitude == null || longitude == null) continue;
+      results[batch[rowIndex].key] = <String, double>{
+        'latitude': latitude,
+        'longitude': longitude,
+      };
     }
   }
   return results;

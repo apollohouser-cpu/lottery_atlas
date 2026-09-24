@@ -11,6 +11,9 @@ class SourceHttpException implements Exception {
 
 Future<String> fetchOfficialSource(
   Uri uri, {
+  // POST is limited to repeatable, read-only lookups such as Census geocoding.
+  String? lookupBody,
+  ContentType? lookupContentType,
   int attempts = 4,
   Duration timeout = const Duration(seconds: 30),
   Duration retryDelay = const Duration(seconds: 1),
@@ -21,11 +24,20 @@ Future<String> fetchOfficialSource(
     final client = HttpClient()..connectionTimeout = timeout;
     try {
       return await (() async {
-        final request = await client.getUrl(uri);
+        final request = await client.openUrl(
+          lookupBody == null ? 'GET' : 'POST',
+          uri,
+        );
         request.headers.set(
           HttpHeaders.userAgentHeader,
           'LotteryAtlasOfficialDataBot/1.0',
         );
+        if (lookupBody != null) {
+          if (lookupContentType != null) {
+            request.headers.contentType = lookupContentType;
+          }
+          request.add(utf8.encode(lookupBody));
+        }
         final response = await request.close();
         if (response.statusCode != HttpStatus.ok) {
           throw SourceHttpException(response.statusCode);
