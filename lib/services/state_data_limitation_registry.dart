@@ -1,10 +1,15 @@
-/// Agency-confirmed limits, reviewed September 22, 2026.
+/// Verified source and agency-response limits.
 /// Keep access limitations separate from source cadence and app readiness.
 class StateDataLimitationRegistry {
   StateDataLimitationRegistry._();
 
   static String? noticeFor(String stateName) {
     final reason = switch (stateName) {
+      'Texas' =>
+        'Mapped activity includes selected Scratch top-prize claims with '
+            'verified selling-retailer matches. Claim dates have no verified '
+            'time of day. This is not an all-tier or draw-game claims feed. '
+            'The retailer directory is separate and does not establish wins.',
       'Arkansas' =>
         'The lottery declined our records request because Arkansas citizenship '
             'was not established.',

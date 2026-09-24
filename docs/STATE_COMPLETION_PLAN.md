@@ -235,3 +235,21 @@ definitions), Missouri (workbook received but not audited; daily draw-sheet
 cadence), and Wisconsin (pending). Use an overlapping date window for future
 mail checks and consult recorded responses to avoid duplicate follow-ups.
 Texas remains active; these replies do not block scoped acceptance.
+
+## September 24 Texas source-screen visual acceptance
+
+Rebuilt and opened Texas through Find a State, then TX Lottery at 800 × 632.
+Verified the six-hour Atlas refresh explanation is readable and distinguishes
+it from unconfirmed agency cadence. Scrolling reaches dated top-prize retailer
+reports, retailer directory, request links and the Atlas refresh-status button.
+Found this screen lacked a Texas-specific coverage notice; added the verified
+Scratch top-prize/selling-retailer/date-only scope and the separate-directory
+limitation through the shared limitation registry. Rebuilt/restarted and
+visually verified the complete notice and cadence text without clipping.
+
+Build passes; analysis retains the 12 existing informational notices. No data
+or parsing changed. Public feeds and status still match the latest successful
+publisher; no September 24 agency responses appeared in the initial check.
+This closes the specific source-screen reachability/cadence/coverage-copy gap.
+Per-record date inspection, native offline/reconnection and remaining
+county/prize filter combinations still need acceptance; Texas remains active.
