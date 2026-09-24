@@ -89,3 +89,26 @@ importer regression tests and an offline app-loading test cover identity,
 ended/future eligibility, zero/invalid counts, joins and duplicate tiers.
 This remains catalog inventory coverage, not dated all-tier claims or a
 fully developed retailer map.
+
+### September 24 newly launched games without inventory
+
+Publisher 35965100425 stopped because six newly launched game detail payloads
+explicitly set `prizeDetails` to null. A fresh official-source inspection found
+50 eligible games among 102 listed entries: 44 still have validated inventory;
+printed IDs 871, 856, 861, 858, 857 and 859 have September 24 launch dates,
+verified listing/detail identities and advertised prizes, but no prize tables.
+Raw captures and a local trial catalog are private in
+`work/oklahoma_september24/`.
+
+The importer now retains catalog metadata for explicit-null inventory with
+`topPrizesRemaining: null`, empty prize tiers and an unknown-inventory notice.
+It never translates missing inventory into zero or carries an older count
+forward. Missing fields, malformed/ambiguous structures, identity conflicts and
+invalid published counts still fail. Fewer than 20 games with validated prize
+tables also stop publication, so broad inventory loss cannot silently produce
+an apparently complete refreshed feed. Source date remains unknown.
+
+The fresh local import validated all 50 games. All 134 Python tests passed,
+including three new regression tests covering unknown inventory, malformed
+structures and broad inventory loss. Publishing and live verification are still
+pending; this does not establish all-tier claims or retailer-map completeness.

@@ -27,4 +27,19 @@ class OklahomaTest(unittest.TestCase):
             with self.subTest(key=key),self.assertRaises(ValueError):m.parse_detail(page('cms',d),GAME)
         d=detail();d['prizeDetails'][0]['matches'].append(d['prizeDetails'][0]['matches'][0])
         with self.assertRaises(ValueError):m.parse_detail(page('cms',d),GAME)
+    def test_explicit_null_inventory_is_unknown(self):
+        d=detail();d['prizeDetails']=None
+        g=m.parse_detail(page('cms',d),GAME)
+        self.assertIsNone(g['topPrizesRemaining']);self.assertEqual(g['prizeTiers'],[])
+        self.assertIn('unknown',g['inventoryNote']);self.assertEqual(g['topPrize'],200000)
+    def test_missing_and_malformed_structure_still_fail(self):
+        for value in [[],{},[{},{}],[{'matches':[]}]]:
+            d=detail();d['prizeDetails']=value
+            with self.subTest(value=value),self.assertRaises(ValueError):m.parse_detail(page('cms',d),GAME)
+        d=detail();del d['prizeDetails']
+        with self.assertRaises(ValueError):m.parse_detail(page('cms',d),GAME)
+    def test_mass_inventory_loss_stops_publication(self):
+        with self.assertRaises(ValueError):m.validate_inventory_coverage([{'prizeTiers':[]}]*50)
+        with self.assertRaises(ValueError):m.validate_inventory_coverage([{'prizeTiers':[1]}]*19)
+        m.validate_inventory_coverage([{'prizeTiers':[1]}]*20+[{'prizeTiers':[]}]*6)
 if __name__=='__main__':unittest.main()

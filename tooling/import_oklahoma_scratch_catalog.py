@@ -51,9 +51,13 @@ def parse_detail(raw,game):
         if d.get(k)!=game[k]:raise ValueError('Detail/listing mismatch: '+k)
     if d.get('pullTab') is not False or 'endDate' not in d or 'claimEndDate' not in d or d['endDate'] is not None or d['claimEndDate'] is not None:raise ValueError('Changed detail eligibility')
     groups=d.get('prizeDetails')
-    if not isinstance(groups,list) or len(groups)!=1:raise ValueError('Ambiguous prize structure')
-    rows=groups[0].get('matches')
-    if not isinstance(rows,list) or not rows:raise ValueError('Missing prize tiers')
+    if 'prizeDetails' not in d:raise ValueError('Missing prize structure field')
+    if groups is None:
+        rows=[]
+    else:
+        if not isinstance(groups,list) or len(groups)!=1:raise ValueError('Ambiguous prize structure')
+        rows=groups[0].get('matches')
+        if not isinstance(rows,list) or not rows:raise ValueError('Missing prize tiers')
     tiers=[];seen=set()
     for row in rows:
         label=row.get('prize')
@@ -63,9 +67,13 @@ def parse_detail(raw,game):
         seen.add(amount);remaining=integer(row.get('remainingPrizes'));total=integer(row.get('totalPrizes'))
         if remaining>total:raise ValueError('Impossible inventory')
         tiers.append(dict(prizeAmount=amount,remainingPrizes=remaining,totalPrizes=total))
-    if max(t['prizeAmount'] for t in tiers)!=game['topPrize']:raise ValueError('Top tier mismatch')
-    top=next(t for t in tiers if t['prizeAmount']==game['topPrize'])
-    return dict(stateName='Oklahoma',id=game['gameNumber'],name=game['title'],cost=game['ticketPrice'],topPrize=game['topPrize'],topPrizesRemaining=top['remainingPrizes'],internalGameId=game['gameId'],startDate=datetime.fromisoformat(game['startDate']).date().isoformat(),totalTickets=integer(d.get('totalTickets'),True),prizeTiers=tiers,sourceUrl=SOURCE+'/'+game['slug'],inventoryNote='Published no-end-date Scratcher subset. Remaining prize inventory, not dated claims. Source verification timestamp/cadence and store availability unconfirmed.')
+    if tiers and max(t['prizeAmount'] for t in tiers)!=game['topPrize']:raise ValueError('Top tier mismatch')
+    top=next((t for t in tiers if t['prizeAmount']==game['topPrize']),None)
+    return dict(stateName='Oklahoma',id=game['gameNumber'],name=game['title'],cost=game['ticketPrice'],topPrize=game['topPrize'],topPrizesRemaining=top['remainingPrizes'] if top else None,internalGameId=game['gameId'],startDate=datetime.fromisoformat(game['startDate']).date().isoformat(),totalTickets=integer(d.get('totalTickets'),True),prizeTiers=tiers,sourceUrl=SOURCE+'/'+game['slug'],inventoryNote=('Prize inventory not published for this game; remaining counts are unknown. ' if not tiers else '')+'Published no-end-date Scratcher subset. Remaining prize inventory, not dated claims. Source verification timestamp/cadence and store availability unconfirmed.')
+
+def validate_inventory_coverage(games):
+    if sum(bool(g['prizeTiers']) for g in games)<20:
+        raise ValueError('Unexpectedly small published inventory coverage')
 
 def fetch(url):return subprocess.run(['curl','-fsSL','--max-time','30','--retry','3',url],capture_output=True,check=True).stdout
 
@@ -74,6 +82,7 @@ def main():
     now=datetime.now(ZoneInfo('America/Chicago'));games,total=parse_listing(fetch(SOURCE),now.date())
     with ThreadPoolExecutor(max_workers=2) as pool:verified=list(pool.map(lambda g:parse_detail(fetch(SOURCE+'/'+g['slug']),g),games))
     if len(verified)<20:raise ValueError('Unexpectedly small catalog')
+    validate_inventory_coverage(verified)
     catalog=dict(state='Oklahoma',source=SOURCE,sourceDate=None,publishedListingCount=total,coverage='Published Scratcher entries with no end or claim deadline and launched by retrieval date. Original prize totals, remaining prizes and total tickets are distinct; no dated claims or retailer joins.',updateCadence='Checked every six hours; official Scratcher inventory update cadence unconfirmed.',games=sorted(verified,key=lambda g:int(g['id'])))
     result=dict(source='Oklahoma official no-end-date Scratcher inventory',updatedAt=now.isoformat(),catalogs=[catalog])
     if args.output.exists():
