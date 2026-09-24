@@ -49,7 +49,9 @@ This scope does not include complete all-tier statewide winning-ticket totals.
 - [ ] No-results views explain missing or filtered data without implying zero
       statewide wins; denied/unavailable features have scoped explanations.
 - [ ] Sources, periods, cadence and partial-coverage limitations are accessible.
-- [ ] Bundled/cached data loads offline and reconnecting does not inflate dates.
+- [x] Bundled/cached data loads offline and reconnecting does not inflate dates.
+      Evidence: native blocked-network pass below plus loader reconnection tests;
+      offline street tiles and downloaded-directory persistence are not promised.
 - [ ] Integrated visual/interaction checks pass at representative window sizes.
 - [ ] Relevant automated checks pass; live feeds are independently verified.
 - [ ] Evidence is recorded and Texas is explicitly announced ready for testing.
@@ -274,3 +276,27 @@ open; these service tests alone do not sign off Texas.
 Initial live checks matched all four feeds and status JSON. South Carolina's
 September 24 response is recorded in its source screen: requested consolidated
 report unavailable, narrowing assistance offered, no delivery or fee approval.
+
+## September 24 native Texas offline acceptance
+
+Built a private acceptance entry point in ignored work/offline_acceptance.dart.
+Its Dart HttpOverrides directs HttpClient traffic to a refused loopback proxy
+(port 1, connection-refused verified), without changing computer network settings.
+This tests application HTTP failure, not OS-wide airplane mode or external
+browser links. Rebuilt and launched the actual macOS app at 800 × 632.
+
+Verified offline navigation to Texas, the 19,655-location bundled directory
+count, Scratch catalog rows, and August 14 whole-day mapped claim activity.
+Opened Abbott's Travel Center from the directory and inspected the address,
+county and explicit directory-is-not-a-win warning. Street-map tiles are not
+guaranteed offline; local boundaries and lottery data remained usable.
+
+Restored the standard lib/main.dart build, restarted it and verified normal
+startup. Both final builds passed. Earlier service reconnection tests verify
+records and source dates remain unchanged when the same feed returns; this
+pass adds actual offline UI evidence. The private harness is not a production
+entry point and was not committed or deployed.
+
+Initial feed checks matched live files; mail contained only the already-recorded
+South Carolina reply. No new action needed. Remaining Texas acceptance focuses
+on per-record source/date visibility and county/prize filter combinations.
