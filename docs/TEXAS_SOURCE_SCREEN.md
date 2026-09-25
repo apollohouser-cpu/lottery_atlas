@@ -46,3 +46,10 @@ equivalent. No date was changed or inferred in this pass. The shared report
 as-of metadata path remains a follow-up; the linked official page exposes the
 report date. The historical September 15 counts above are snapshots, not current
 counts. Final available-coverage acceptance is governed by STATE_COMPLETION_PLAN.
+
+## September 25 UTC acceptance
+
+Texas is ready for testing of its explicitly limited available-data experience.
+See STATE_COMPLETION_PLAN.md for native filter, source, layout and offline
+evidence and the final automated checks. This supersedes the earlier provisional
+readiness statement; it does not establish complete statewide claims coverage.

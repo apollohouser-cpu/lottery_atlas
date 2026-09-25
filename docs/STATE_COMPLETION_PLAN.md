@@ -3,16 +3,17 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
-## Active work: Texas
+## Active work: Kentucky
 
-Finish Texas's verified available-data experience, then Kentucky, then Virginia.
+Texas is accepted for its available-data scope as of September 25, 2026 UTC.
+Finish Kentucky next, then Virginia.
 Do not expand to a new state merely because another source is available. Agency
 requests continue in parallel without blocking a scoped state release.
 
 Two separate outcomes must be reported: **accepted for available coverage** and
 **complete statewide data**. The former requires the checklist below; the latter
-requires affirmative source evidence. No state is currently signed off by this
-plan. An unavailable feature needs an honest explanation, not fabricated data.
+requires affirmative source evidence. Texas is signed off only for its
+explicitly limited available-data experience. An unavailable feature needs an honest explanation, not fabricated data.
 
 ## Session rules
 
@@ -41,26 +42,25 @@ This scope does not include complete all-tier statewide winning-ticket totals.
 
 - [x] Catalog browsing and available filters work; unknown remaining counts stay
       unknown and remaining prizes are not described as store stock.
-- [ ] Map loads verified points and retailer details; a directory location alone
+- [x] Map loads verified points and retailer details; a directory location alone
       never becomes a winning-ticket record.
 - [x] State, county, game, prize and date filters behave consistently wherever
       offered, including clearing filters and returning to the default view.
-- [ ] Timeline date semantics and source coverage are visible and accurate.
+- [x] Timeline date semantics and source coverage are visible and accurate.
 - [x] No-results views explain missing or filtered data without implying zero
       statewide wins; denied/unavailable features have scoped explanations.
-- [ ] Sources, periods, cadence and partial-coverage limitations are accessible.
+- [x] Sources, periods, cadence and partial-coverage limitations are accessible.
 - [x] Bundled/cached data loads offline and reconnecting does not inflate dates.
       Evidence: native blocked-network pass below plus loader reconnection tests;
       offline street tiles and downloaded-directory persistence are not promised.
-- [ ] Integrated visual/interaction checks pass at representative window sizes.
-- [ ] Relevant automated checks pass; live feeds are independently verified.
-- [ ] Evidence is recorded and Texas is explicitly announced ready for testing.
+- [x] Integrated visual/interaction checks pass at representative window sizes.
+- [x] Relevant automated checks pass; live feeds are independently verified.
+- [x] Evidence is recorded and Texas is explicitly announced ready for testing.
 
 Existing automated evidence: Texas generated catalog/directory/activity, draw
 menu and offline activity checks exist in `test/services/texas_generated_data_test.dart`.
-Those checks do not close the unverified interaction items above. First next
-task: run the Texas flow in the app and record/fix the first concrete acceptance
-gap. Kentucky and Virginia follow the same checklist adapted to their sources.
+The native interaction evidence below closes the corresponding items.
+Kentucky and Virginia follow the same checklist adapted to their sources.
 
 ## External requests and user actions
 
@@ -454,3 +454,42 @@ Pulled the scheduled a87e221 publication and independently verified all four
 live feeds and refresh-status JSON match. Agency mail had no new messages
 beyond recorded replies. No private records or new coordinates were published
 by this app change.
+
+## September 25 UTC Texas available-coverage acceptance
+
+Texas is **ready for testing of the available-data experience** at c320f46,
+with published data a87e221. This is not complete statewide claims coverage.
+The previously unchecked items were reconciled with recorded evidence: Abbott
+retailer details and the separate-directory warning; August 14 county/claim
+inspection; date-only timeline and reset; source-screen cadence and coverage;
+compact and desktop-size native visual passes; offline HTTP-failure pass and
+loader reconnect tests. These are completed checks, not new untested promises.
+
+Final review: all 75 Flutter tests pass; analysis has the same 12 informational
+notices and no errors/warnings. The latest standard macOS build passed in the
+preceding draw-recovery pass. All five live JSON files independently match
+repository publication. No new agency mail appeared in the initial check.
+
+Compared the implemented Texas state schedules with official sources on
+September 25 UTC: Lotto Texas Monday/Wednesday/Saturday; Two Step Monday/Thursday;
+Cash Five Monday–Saturday, each at 22:12 Central. Pick 3, Daily 4 and All or
+Nothing use Monday–Saturday 10:00, 12:27, 18:00 and 22:12 Central. References:
+[official drawing schedule](https://www.texaslottery.com/export/sites/lottery/Games/Drawing_Schedule/),
+[Daily 4](https://www.texaslottery.com/export/sites/lottery/Games/Daily_4/),
+[All or Nothing](https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/),
+[Two Step](https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/).
+The native menu, selected-draw limitation and Scratch recovery were verified
+in preceding passes. Schedule availability does not imply mapped draw claims.
+
+Accepted limitations: selected Scratch top-prize claims with verified joins
+only; claim dates have no times; directory is separate; remote directory is not
+persistently cached; offline street tiles are not guaranteed; report as-of
+metadata remains distinct from latest included claim date and is accessible at
+the official source. Isolated app-control quit reports did not reproduce during
+repeated navigation; retain them as a testing observation. No claim of zero
+defects, complete records, or a newly deployed native application is made.
+
+Kentucky is now active. Its next pass must read KENTUCKY_SOURCE_SCREEN.md,
+identify its supported scope, and execute the equivalent native acceptance
+checklist. Texas records requests and future data improvements continue
+independently of Kentucky acceptance.
