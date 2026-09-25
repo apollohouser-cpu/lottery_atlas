@@ -999,3 +999,12 @@ explicitly without tier reconciliation, exact times or retailer locations. Lates
 selection uses verified draw-ID ordering, resolving the repeated-date ambiguity.
 All 82 Node tests pass. Aggregate-only UI/feed integration is still pending; the
 current public table scope stays at ten reports. Kentucky remains active.
+
+### September 25 aggregate snapshot collection
+
+Kentucky Keno/Cash Pop collection now checks history/detail consistency and
+regression, preserves unchanged snapshot dates, and rejects partial collection.
+Fifteen Kentucky Node checks pass. Public scope stays at ten tier reports;
+aggregate presentation and integrated acceptance remain open. Maryland sent a
+retailer PDF and a $438.75 ticket-extract estimate; replied with no-fee hold and
+request for existing free alternatives. Directory content audit is separate.

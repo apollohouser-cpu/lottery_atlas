@@ -24,3 +24,25 @@ export function parseKentuckyAggregate(data,game) {
     drawTime:null,sourcePublicationDate:null,reportedWinners:winners,reportedPayout:payout,
     tiers:null,coverage:'Source-reported totals for this draw only. Prize tiers, exact draw time and retailer locations are unavailable in this response. These totals cannot be independently reconciled against tiers. Not a daily total, complete history or live feed.'};
 }
+
+// Preparation collector: aggregate snapshots stay separate from reconciled tier reports.
+export async function collectKentuckyAggregates({fetchReport, previous=null, now=new Date().toISOString()}) {
+  if(typeof fetchReport!=='function'||!Number.isFinite(Date.parse(now)))throw Error('Invalid collection options');
+  const reports=[], sourceReports=[];
+  for(const game of [22,19]){
+    const history=await fetchReport({gameNumber:game,infoRequest:'11'});
+    const latest=latestKentuckyAggregateDraw(history,game,Date.parse(now));
+    const detail=await fetchReport({gameNumber:String(game),infoRequest:'17',drawNumber:latest.DRAW_ID});
+    if(detail.DRAW_ID!==latest.DRAW_ID || detail.DRAW_DATE!==latest.DRAW_DATE || JSON.stringify(detail.SPECIAL_ARGS)!==JSON.stringify(latest.SPECIAL_ARGS))throw Error('Aggregate history/detail disagreement');
+    const report=parseKentuckyAggregate(detail,game);
+    const prior=previous?.reports?.find(r=>r.gameNumber===game);
+    if(prior && (report.drawDate<prior.drawDate || report.drawId<prior.drawId))throw Error('Aggregate source regressed; retain previous snapshot');
+    reports.push(report);sourceReports.push(detail);
+  }
+  return {
+    updatedAt:previous && JSON.stringify(previous.reports)===JSON.stringify(reports)?previous.updatedAt:now,
+    sourceUrl:'https://www.kylottery.com/apps/draw_games/pastwinning.html',
+    cadence:'Atlas refresh attempts every six hours; not a live four-minute results service. Agency publication cadence unconfirmed.',
+    reports,sourceReports,
+  };
+}

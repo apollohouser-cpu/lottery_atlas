@@ -91,3 +91,21 @@ prizes, zero counts, claim deadlines, future launches, malformed fields,
 identities and changed schemas; the app test verifies offline labels and dates.
 This supports catalog testing only. Remaining prizes do not prove tickets are
 unsold or locate any winning ticket; the broader agency records request is open.
+
+## September 25 agency delivery and fee hold
+
+Seth Elkin replied at 20:42 UTC in message 1a0da4ea3cdbac9c with
+`Houser PIA Letter - 9-25-26.pdf` and `Retailer Listing 09252026.pdf`.
+The letter's extracted text says the current retailer listing is supplied, while
+the August winning-ticket extract requires an estimated $438.75 before work
+commences (8.75 vendor hours at $65, less two free hours). Actual cost may vary.
+The proposed extract describes individual ticket rows, Scratch claim dates and
+draw-ticket sale dates; none of those rows has been delivered or inspected.
+The retailer attachment still requires private download/content audit. Do not
+infer verified coordinates, historical locations or winning-ticket coverage.
+
+Sent reply 1a0da62e904f6f04 acknowledging attachments without claiming content
+validation, withholding all fees/payment/paid work, and asking whether a smaller
+existing report or portion is available within the no-charge allowance. Paid
+extract remains on hold. This is a received directory attachment, not an audited
+map import; public-source app completion continues independently.

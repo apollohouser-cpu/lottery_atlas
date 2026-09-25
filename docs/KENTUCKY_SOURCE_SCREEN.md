@@ -323,3 +323,16 @@ All 82 Node tests pass. These games are prepared for a distinct aggregate-only
 presentation; the published ten-report table feed has not changed. Next step:
 connect those summaries with prominent draw ID, scope and snapshot freshness,
 then finish integrated Kentucky acceptance. Deadline unchanged.
+
+### September 25 aggregate collection safeguards
+
+Added an injectable Keno/Cash Pop collector, keeping aggregate snapshots separate
+from reconciled prize-tier reports. It selects the verified latest draw identity,
+requires history/detail dates and totals to agree, rejects regression, and retains
+snapshot update time when the returned reports have not changed. A failed second
+game cannot return a partially collected replacement. Fifteen focused Kentucky
+Node checks pass, including disagreement, regression, unchanged reconnection and
+transport failure. No public feed or UI changed; presentation/integration remains
+the next named acceptance gap, followed by integrated Kentucky flows.
+Startup publisher 36183713245 succeeded; live Kentucky table bytes match the
+checked-in ten-report feed. Release deadline remains September 28 at 18:00 ET.
