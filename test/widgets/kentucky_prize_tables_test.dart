@@ -90,21 +90,24 @@ void main() {
           findsOneWidget,
         );
         expect(find.text(report['tableNote']), findsOneWidget);
-        if (i == 4)
+        if (i == 4) {
           expect(
             find.textContaining('annuity/cash basis not established'),
             findsOneWidget,
           );
-        if (i == 5)
+        }
+        if (i == 5) {
           expect(
             find.textContaining('Excluded from base totals'),
             findsOneWidget,
           );
-        if (i >= 6)
+        }
+        if (i >= 6) {
           expect(
             find.text('${report['gameName']} · ${report['drawingSession']}'),
             findsOneWidget,
           );
+        }
         expect(tester.takeException(), isNull);
       }
     },
