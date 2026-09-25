@@ -44,3 +44,14 @@ It requests existing draw and Scratch-Off winning-ticket/claim counts,
 retailer identifiers and locations, definitions, and update cadence, with
 notice before any fees. Gmail confirmed “Message sent.” Await a response;
 no new counts or retailer points are verified by this request itself.
+
+### September 25 cost estimate — paid processing on hold
+
+Open Government replied at 15:18 UTC in Gmail message 1a0d92564939ca2a with
+PRR Invoice - Apollo Houser.pdf. The extracted one-page invoice estimates $46.81
+for one hour of IT resources and requires payment before review/processing/release;
+actual cost may vary. The September 14 clarification had limited initial reports
+to August 1–31, 2026 and explicitly withheld fee authorization.
+No payment or paid work is authorized. Keep this assembly on hold; the estimate
+is not a data delivery and does not establish any additional coverage. Existing
+verified public sources remain usable independently of this records request.

@@ -75,3 +75,15 @@ unless a separate official inventory source is verified.
 Read-only audit files live under ignored `work/montana_catalog/`: all 11
 HTML pages, `audit.py` and `audit.json`. No Montana public catalog or activity
 feed changed during this pass. OPIR case 26-PIR-2200 remains pending.
+
+### September 25 release notification — documents not yet inspected
+
+Gmail message 1a0d91d1e84517e3 at 15:09 UTC marks 26-PIR-2200 complete and says
+released documents are available. The official Open Documents link redirects to
+MT.gov sign-in; no released file is attached to the notification. This supersedes
+pending-request status but is not yet an inspectable data delivery.
+A standard no-fee delivery follow-up was sent to the notification's assigned
+contact, celina.clift@mt.gov, requesting the already released files by attachment
+or a direct download without a new account. Sent message 1a0d94e847b234fe.
+No additional assembly or fees were authorized. Monitor that delivery reply;
+Montana implementation remains queued while Kentucky stays active.

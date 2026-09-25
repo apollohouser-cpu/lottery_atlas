@@ -203,3 +203,34 @@ feed byte-for-byte (SHA-256
 1dea651e67136bf331376c76dcab08459854e17a9803c06607939fa46c0cab6b).
 The native debug build's two-game table flow is ready for testing; the live JSON
 feed is published, not a new mobile-store or web-app binary release.
+
+### September 25 remaining draw-game scope reconciliation
+
+Queried the official results page's listed game IDs (not guessed endpoints), using
+its documented read-only history/detail requests. Private raw responses are in
+work/kentucky_story_review/history-{game}.json and details-{game}.json. The
+following scoped implementation gaps are now explicit:
+
+| Game | Direct evidence inspected | Remaining acceptance gap |
+| --- | --- | --- |
+| Powerball / Power Play | September 23 draw 4245: 7,152 Kentucky winners, including 1,324 Power Play winners; $55,894 reported payout | Connect reviewed parser to tables and native acceptance. Power Play is a subset, not additional winners. |
+| Powerball Double Play | Separate nine-tier group: 704 winners, $7,032 | Keep its own counts, identity and table; never combine with base Powerball. |
+| Mega Millions | September 22 table already integrated and accepted for testing | Included in final integrated Kentucky pass. |
+| Powerball Xs & Os | September 20 table already integrated | Distinct product; confirm applicability/schedule separately. |
+| Millionaire For Life | September 24: nine tiers reconcile 958 winners / $10,569 | Import with explicit top-prize annuity/cash semantics; do not flatten source top amounts into guaranteed cash. |
+| Pick 3 | September 24 contains both MIDDAY and EVENING identities; midday 983 / $91,340 | Fetch and validate both sessions, not max(date) selecting the first tied row. |
+| Pick 4 | September 24 contains both MIDDAY and EVENING identities; midday 22 / $6,900 | Same two-session requirement. |
+| Cash Ball 225 | September 24 base tiers reconcile 2,637 / $9,778; separate EZ totals 685 / $2,219 | Preserve base versus EZ scope; EZ has no tier group in reviewed response. |
+| Keno | Inspected draw 1416942, September 25: 3 / $7; empty tier group | Draw IDs matter because many draws share date. Treat aggregate-only response separately; do not manufacture tiers or exact times. |
+| Cash Pop | Inspected draw 748335, September 25: 2 / $12; empty tier group | Same aggregate-only and draw-identity requirement. |
+| Fast Play / online instant games | Not represented in this official past-results dropdown | Explicit unavailable claims/retailer activity scope until a reviewed official source supports it. |
+| Scratch | Existing catalog and selected notices remain supported | Finish catalog, notice-date, source and favorites acceptance; selected notices are not statewide claims. |
+
+The Powerball page template labels TIER_SPECIAL_DRAW as KY Power Play Winners.
+The reconciled payout is base prize × total winners plus the Power Play uplift
+for that subset; match-five uses 2X. Double Play uses its separate field prefix
+and published totals. Added a real-response fixture and bounded parser that
+rejects unknown groups, missing tiers, impossible subsets, inconsistent totals
+and unreviewed top-prize winners. These additional games are not yet published
+in the two-game table feed. This is source/layout reconciliation, not final
+Kentucky release acceptance. Remaining data have no selling-retailer locations.

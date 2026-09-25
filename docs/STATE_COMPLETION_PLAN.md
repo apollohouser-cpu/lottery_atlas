@@ -950,3 +950,15 @@ analysis has only the 12 existing infos. See Kentucky source screen for details.
 This advances Kentucky's draw-game checklist, but does not close it: ordinary
 Powerball and remaining state-game reconciliation and broader integrated flows
 are still pending. Deadlines unchanged.
+
+### September 25 Kentucky remaining game scope reconciled
+
+The source-screen matrix now explicitly covers Powerball/Power Play, Double Play,
+Mega Millions, Xs & Os, Millionaire For Life, both Pick 3/4 sessions, Cash Ball/EZ,
+Keno, Cash Pop, Fast Play/online instant limitations, and Scratch. Official dynamic
+responses establish which have tiers and which only aggregate totals. Added and
+tested a Powerball/Double Play parser with subset-safe counts. Next implementation
+step is expanding the separate table feed with reviewed layouts; do not map these
+unlocated totals or misrepresent the current two-game sheet as final acceptance.
+The scope inventory is recorded before September 26 06:58 ET. Release deadline
+remains September 28 18:00 ET; broader integrated acceptance is still required.
