@@ -254,3 +254,25 @@ macOS debug build passes; analysis remains at 12 existing infos. Commit d1970e6
 published successfully in run 36164788118; independent live retrieval of
 kentucky_draw_tiers.json matches the checked-in four-report feed byte-for-byte.
 The expanded table flow is ready for testing, not final Kentucky acceptance.
+
+### September 25 state-game parser acceptance
+
+Added reviewed real-response fixtures and a bounded parser for Millionaire For
+Life, Cash Ball 225, and both Pick 3/4 sessions. Fetched the official September
+24 evening detail records directly: Pick 3 draw 22608 reconciles 434 reported
+winners / $52,200; Pick 4 draw 21036 reconciles 180 / $113,100. All six inspected
+state-game reports reconcile their source tier counts and payouts.
+
+The session selector explicitly returns MIDDAY and EVENING separately, rejecting
+missing or ambiguous sessions rather than selecting the first record tied on a
+calendar date. Cash Ball EZ totals remain a separate aggregate, not extra base
+tier rows. Millionaire For Life preserves source-listed amounts and rejects any
+top-two-tier winner pending annuity/cash review. No source publication time or
+retailer location is inferred. Negative/unsafe counts, missing tiers, unknown
+groups and inconsistent totals fail closed.
+
+All 79 Node checks pass. This is parser/fixture acceptance only: the public sheet
+still has four reports. Next step is integrating these six reports with session
+labels, source dates, separate EZ scope and top-prize limitations, followed by
+native acceptance and live verification. No new agency response arrived during
+this session; existing four-report deployment remains healthy and byte-matched.

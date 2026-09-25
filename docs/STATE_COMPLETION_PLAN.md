@@ -972,3 +972,11 @@ Six focused Flutter tests, 76 Node tests and macOS build pass; 12 existing analy
 infos remain. Publisher 36164788118 succeeded and live feed bytes match d1970e6.
 Next: implement reviewed Kentucky state-game layouts and finish integrated
 activity/catalog/favorites checks. Kentucky stays active; deadline unchanged.
+
+### September 25 state-game parsing milestone
+
+Kentucky's six reviewed state-game reports now have tested parsers and real-source
+fixtures, including both Pick 3/4 sessions. Correctly scoped EZ totals and annuity
+limitations are preserved. All 79 Node checks pass. Public table integration and
+native acceptance for these six reports remain pending; do not mark them ready
+or advance to Virginia. Kentucky's September 28 release deadline is unchanged.
