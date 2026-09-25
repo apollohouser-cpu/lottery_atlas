@@ -171,3 +171,14 @@ the manually reviewed September 13 inventory date remains unchanged. The
 subsequent 35 targeted tests for the six integrated retailer states, rankings,
 offline data and calendar timeline passed. This does not replace visual
 interaction acceptance or establish all-tier state completeness.
+
+### September 25 remaining-request clarification
+
+Jordan Mruz asked which requested records were not covered by his public links
+(message 1a0d9f767d9b4d0f). Replied that the existing Scratch catalog/inventory
+sources have been reviewed and need not be reproduced. Narrowed the outstanding
+request to existing August 2026 Nebraska draw-tier winning-ticket counts and an
+existing active retailer ID/name/address export, with any already-maintained,
+releasable selling-retailer linkage optional. Existing standard reports and partial
+fields are acceptable; no new report or paid work is authorized. Sent reply
+1a0da2bafebffbf0. Await a response; no additional data or map coverage established.

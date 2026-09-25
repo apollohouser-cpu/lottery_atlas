@@ -991,3 +991,11 @@ pass; 12 existing analysis infos remain. Publisher 36177493029 and independent
 live-byte comparison verify deployment. Next: aggregate-only Keno/Cash Pop scope
 and remaining integrated activity/catalog/favorites acceptance. Kentucky remains
 active and its September 28 18:00 ET release deadline is unchanged.
+
+### September 25 Keno/Cash Pop aggregate scope verified
+
+Added tested parsing and source fixtures for individual-draw aggregate counts,
+explicitly without tier reconciliation, exact times or retailer locations. Latest
+selection uses verified draw-ID ordering, resolving the repeated-date ambiguity.
+All 82 Node tests pass. Aggregate-only UI/feed integration is still pending; the
+current public table scope stays at ten reports. Kentucky remains active.

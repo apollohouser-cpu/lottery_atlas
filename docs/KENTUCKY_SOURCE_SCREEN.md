@@ -304,3 +304,22 @@ Publisher 36177493029 succeeded at ee76851. Independent HTTPS retrieval confirms
 the live ten-report Kentucky feed matches checked-in bytes. These six new reports
 are ready for testing; Kentucky's overall acceptance remains open for aggregate-only
 games and the remaining integrated app checklist.
+
+### September 25 aggregate-only games prepared
+
+Resolved latest-record selection for Keno and Cash Pop. Official page code indexes
+history rows by DRAW_ID and reverses the order; selecting the first maximum-date
+row is wrong when many draws share one date. Fresh history/detail requests inspect
+Keno draw 1417102 (79 reported winners / $240) and Cash Pop draw 748496 (2 / $19),
+both September 25. These are individual draw snapshots, not daily totals or a live
+stream. The returned window contains 101 records per game, not complete history.
+
+Both detail responses have TIER_LIST=[[]]. Added real-source fixtures and a parser
+that preserves aggregate totals while explicitly leaving tiers and exact draw
+time unknown. No claim of tier reconciliation is made. The selector uses the
+highest draw ID and rejects duplicate IDs, future dates and date-order inversions.
+An unexpected tier layout requires review rather than silently changing semantics.
+All 82 Node tests pass. These games are prepared for a distinct aggregate-only
+presentation; the published ten-report table feed has not changed. Next step:
+connect those summaries with prominent draw ID, scope and snapshot freshness,
+then finish integrated Kentucky acceptance. Deadline unchanged.
