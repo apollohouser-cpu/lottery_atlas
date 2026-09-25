@@ -74,6 +74,45 @@ class _TexasPrizeTablesSheetState extends State<TexasPrizeTablesSheet> {
         );
   }
 
+  void _showMissingGames() => showDialog<void>(
+    context: context,
+    builder: (context) => AlertDialog(
+      title: const Text('Pick 3 and Daily 4 coverage'),
+      content: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Official September 24, 2026 detail reports show drawn numbers and FIREBALL combinations, but no winner-count or selling-retailer table. Reviewed September 25. This does not mean there were zero winners. These games are excluded from the statewide prize tables and retailer activity until supporting records are available.',
+            ),
+            const SizedBox(height: 12),
+            for (final game in const {
+              'Pick 3': 'Pick_3',
+              'Daily 4': 'Daily_4',
+            }.entries)
+              TextButton.icon(
+                onPressed: () => launchUrl(
+                  Uri.parse(
+                    'https://www.texaslottery.com/export/sites/lottery/Games/${game.value}/Winning_Numbers/index.html',
+                  ),
+                  mode: LaunchMode.externalApplication,
+                ),
+                icon: const Icon(Icons.open_in_new),
+                label: Text('${game.key} official results'),
+              ),
+          ],
+        ),
+      ),
+      actions: [
+        TextButton(
+          onPressed: () => Navigator.pop(context),
+          child: const Text('Close'),
+        ),
+      ],
+    ),
+  );
+
   @override
   Widget build(BuildContext context) => SafeArea(
     child: SizedBox(
@@ -212,13 +251,22 @@ class _TexasPrizeTablesSheetState extends State<TexasPrizeTablesSheet> {
                   '${data['coverage']}',
                   style: const TextStyle(fontSize: 11),
                 ),
-                TextButton.icon(
-                  onPressed: () => launchUrl(
-                    Uri.parse(report['sourceUrl'] as String),
-                    mode: LaunchMode.externalApplication,
-                  ),
-                  icon: const Icon(Icons.open_in_new),
-                  label: const Text('Open official draw report'),
+                Wrap(
+                  spacing: 8,
+                  children: [
+                    TextButton.icon(
+                      onPressed: () => launchUrl(
+                        Uri.parse(report['sourceUrl'] as String),
+                        mode: LaunchMode.externalApplication,
+                      ),
+                      icon: const Icon(Icons.open_in_new),
+                      label: const Text('Open official draw report'),
+                    ),
+                    TextButton(
+                      onPressed: _showMissingGames,
+                      child: const Text('Missing games?'),
+                    ),
+                  ],
                 ),
               ],
             );

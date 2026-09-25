@@ -38,6 +38,18 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('10X Winners'), findsOneWidget);
       expect(find.text('Open official draw report'), findsOneWidget);
+      await tester.tap(find.text('Missing games?'));
+      await tester.pumpAndSettle();
+      expect(find.text('Pick 3 and Daily 4 coverage'), findsOneWidget);
+      expect(
+        find.textContaining('does not mean there were zero winners'),
+        findsOneWidget,
+      );
+      expect(find.text('Pick 3 official results'), findsOneWidget);
+      expect(find.text('Daily 4 official results'), findsOneWidget);
+      await tester.tap(find.text('Close'));
+      await tester.pumpAndSettle();
+      expect(find.text('Mega Millions'), findsWidgets);
       expect(tester.takeException(), isNull);
     },
   );

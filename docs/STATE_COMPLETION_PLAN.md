@@ -552,9 +552,9 @@ and source accessibility before marking the full date checklist complete.
 
 - [x] Verify and import available Powerball retailer-level winner records.
 - [x] Verify and import available Mega Millions retailer-level winner records.
-- [ ] Inventory each other Texas draw game's official counts/location sources; implement supported flows.
+- [x] Inventory each other Texas draw game's official counts/location sources; implement supported flows.
 - [x] Distinguish game, tier, draw/claim/publication dates, period and missing coverage.
-- [ ] Verify map selection, filters, resets, defaults and source links for both national games.
+- [x] Verify map selection, filters, resets, defaults and source links for both national games.
 - [x] Integrate refresh/retention validation, tests, build and independent live verification.
 - [ ] Reconcile full Texas acceptance before advancing any other state.
 
@@ -671,3 +671,26 @@ before the scrollbar refinement; the targeted widget test and macOS debug build
 passed again afterward. All 66 Node checks pass. Analysis retains 12 prior infos.
 Texas remains active; next gap is Pick 3/Daily 4 statewide source review and final
 acceptance reconciliation. Complete statewide retailer claims are not asserted.
+
+### September 25 Pick 3 / Daily 4 source review and coverage flow
+
+Inspected both September 24 official detail pages, reached through their current
+Winning Numbers indexes. The main content contains drawn digits and FIREBALL
+combinations, no HTML prize-count table and no Where Sold section. This is a
+concrete limitation of these reviewed reports, not a claim that no such records
+exist elsewhere or that there were zero winners. Detail URLs:
+
+- https://www.texaslottery.com/export/sites/lottery/Games/Pick_3/Winning_Numbers/details.html_1158379760.html
+- https://www.texaslottery.com/export/sites/lottery/Games/Daily_4/Winning_Numbers/details.html_1158379760.html
+
+Added an accessible “Missing games?” explanation beside the statewide table's
+source button, with direct official results links for both games. Native 800×632
+inspection confirmed readable explanation and both links without overflow;
+widget interaction test and macOS build pass. The original no-fee request remains
+pending; no new request or fabricated count was created. Startup mail check had
+no new agency messages. Publisher 36105817217 succeeded and the live nine-table
+feed still exactly matches the validated local copy.
+
+The eight-game source inventory is now reviewed. Texas stays active. Remaining
+acceptance work: explicitly exercise the newly added table view's bundled/cache
+fallback and reconnection, then reconcile the revised full Texas checklist.
