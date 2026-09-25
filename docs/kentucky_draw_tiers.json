@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-25T17:02:57.230Z",
+  "updatedAt": "2026-09-25T19:03:38.193Z",
   "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
   "endpoint": "https://www.kylottery.com/webhandlers/WinningNumbers.xhtml",
-  "coverage": "Latest returned Kentucky draw for Mega Millions, Powerball Xs & Os, Powerball and Double Play. Power Play winners are a subset of Powerball winners. Xs & Os is separate from ordinary Powerball. Other game layouts remain under review. These statewide tier totals are not retailer locations, validated claims, or a complete historical archive. Source publication dates unavailable. Refresh attempted every six hours; agency publication cadence unconfirmed.",
+  "coverage": "Latest returned Kentucky draw per reviewed game/session. Power Play is a subset; Double Play and Cash Ball EZ stay separate. Includes both Pick 3 and Pick 4 sessions. Keno, Cash Pop and instant-game layouts are not included. No retailer locations or complete historical claims archive. Source publication dates unavailable. Refresh attempted every six hours; agency publication cadence unconfirmed.",
   "reports": [
     {
       "gameNumber": 26,
@@ -565,6 +565,508 @@
         "$7,032"
       ],
       "tableNote": "Double Play is a separate drawing; its winners are not added to Powerball totals."
+    },
+    {
+      "gameNumber": 14,
+      "gameName": "Millionaire For Life",
+      "drawId": 215,
+      "drawingSession": null,
+      "drawDate": "2026-09-24",
+      "sourcePublicationDate": null,
+      "reportedWinners": 958,
+      "reportedPayout": 10569,
+      "prizeBasis": "Source-listed tier amounts; top annuity/cash basis not established. No top-tier winners in this reviewed report.",
+      "tiers": [
+        [
+          "Match 5 + 1",
+          "Top prize basis unverified",
+          "0",
+          "$0"
+        ],
+        [
+          "Match 5 + 0",
+          "Top prize basis unverified",
+          "0",
+          "$0"
+        ],
+        [
+          "Match 4 + 1",
+          "$7,500",
+          "0",
+          "$0"
+        ],
+        [
+          "Match 4 + 0",
+          "$500",
+          "0",
+          "$0"
+        ],
+        [
+          "Match 3 + 1",
+          "$250",
+          "3",
+          "$750"
+        ],
+        [
+          "Match 3 + 0",
+          "$50",
+          "11",
+          "$550"
+        ],
+        [
+          "Match 2 + 1",
+          "$25",
+          "101",
+          "$2,525"
+        ],
+        [
+          "Match 2 + 0",
+          "$8",
+          "346",
+          "$2,768"
+        ],
+        [
+          "Match 1 + 1",
+          "$8",
+          "497",
+          "$3,976"
+        ]
+      ],
+      "ezTotals": null,
+      "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
+      "headers": [
+        "Match",
+        "Source tier amount",
+        "Kentucky winners",
+        "Tier payout"
+      ],
+      "reportedTotals": [
+        "Total",
+        "",
+        "958",
+        "$10,569"
+      ],
+      "tableNote": "Source-listed tier amounts; top annuity/cash basis not established. No top-tier winners in this reviewed report."
+    },
+    {
+      "gameNumber": 13,
+      "gameName": "Cash Ball 225",
+      "drawId": 8355,
+      "drawingSession": null,
+      "drawDate": "2026-09-24",
+      "sourcePublicationDate": null,
+      "reportedWinners": 2637,
+      "reportedPayout": 9778,
+      "prizeBasis": "Source-listed tier amounts; not verified cash claims or retailer locations.",
+      "tiers": [
+        [
+          "4 of 4 + Cash Ball",
+          "$225,000",
+          "0",
+          "$0"
+        ],
+        [
+          "4 of 4",
+          "$2,250",
+          "0",
+          "$0"
+        ],
+        [
+          "3 of 4 + Cash Ball",
+          "$225",
+          "4",
+          "$900"
+        ],
+        [
+          "3 of 4",
+          "$50",
+          "77",
+          "$3,850"
+        ],
+        [
+          "2 of 4 + Cash Ball",
+          "$25",
+          "45",
+          "$1,125"
+        ],
+        [
+          "2 of 4",
+          "$1",
+          "1,532",
+          "$1,532"
+        ],
+        [
+          "1 of 4 + Cash Ball",
+          "$5",
+          "348",
+          "$1,740"
+        ],
+        [
+          "0 of 4 + Cash Ball",
+          "$1",
+          "631",
+          "$631"
+        ]
+      ],
+      "ezTotals": {
+        "reportedWinners": 685,
+        "reportedPayout": 2219,
+        "coverage": "Separate source-reported EZ totals; no EZ tier breakdown in this response. Not added to Cash Ball base totals."
+      },
+      "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
+      "headers": [
+        "Match",
+        "Source tier amount",
+        "Kentucky winners",
+        "Tier payout"
+      ],
+      "reportedTotals": [
+        "Total",
+        "",
+        "2,637",
+        "$9,778"
+      ],
+      "tableNote": "Source-listed tier amounts; not verified cash claims or retailer locations. Separate EZ: 685 reported winners / $2,219 payout; no EZ tier breakdown. Excluded from base totals."
+    },
+    {
+      "gameNumber": 16,
+      "gameName": "Pick 3",
+      "drawId": 22609,
+      "drawingSession": "MIDDAY",
+      "drawDate": "2026-09-25",
+      "sourcePublicationDate": null,
+      "reportedWinners": 596,
+      "reportedPayout": 61130,
+      "prizeBasis": "Source-listed tier amounts; not verified cash claims or retailer locations.",
+      "tiers": [
+        [
+          "FRONT PAIR",
+          "$30",
+          "4",
+          "$120"
+        ],
+        [
+          "BACK PAIR",
+          "$30",
+          "4",
+          "$120"
+        ],
+        [
+          "SPLIT PAIR",
+          "$30",
+          "3",
+          "$90"
+        ],
+        [
+          "STRAIGHT",
+          "$300",
+          "20",
+          "$6,000"
+        ],
+        [
+          "BOX 6",
+          "$50",
+          "470",
+          "$23,500"
+        ],
+        [
+          "BOX 3",
+          "$100",
+          "0",
+          "$0"
+        ],
+        [
+          "STRAIGHT/BOX 6",
+          "$350",
+          "56",
+          "$19,600"
+        ],
+        [
+          "STRAIGHT/BOX 3",
+          "$400",
+          "0",
+          "$0"
+        ],
+        [
+          "SUPER STRAIGHT 6",
+          "$300",
+          "39",
+          "$11,700"
+        ],
+        [
+          "SUPER STRAIGHT 3",
+          "$300",
+          "0",
+          "$0"
+        ]
+      ],
+      "ezTotals": null,
+      "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
+      "headers": [
+        "Match",
+        "Source tier amount",
+        "Kentucky winners",
+        "Tier payout"
+      ],
+      "reportedTotals": [
+        "Total",
+        "",
+        "596",
+        "$61,130"
+      ],
+      "tableNote": "Source-listed tier amounts; not verified cash claims or retailer locations."
+    },
+    {
+      "gameNumber": 16,
+      "gameName": "Pick 3",
+      "drawId": 22608,
+      "drawingSession": "EVENING",
+      "drawDate": "2026-09-24",
+      "sourcePublicationDate": null,
+      "reportedWinners": 434,
+      "reportedPayout": 52200,
+      "prizeBasis": "Source-listed tier amounts; not verified cash claims or retailer locations.",
+      "tiers": [
+        [
+          "FRONT PAIR",
+          "$30",
+          "0",
+          "$0"
+        ],
+        [
+          "BACK PAIR",
+          "$30",
+          "0",
+          "$0"
+        ],
+        [
+          "SPLIT PAIR",
+          "$30",
+          "0",
+          "$0"
+        ],
+        [
+          "STRAIGHT",
+          "$300",
+          "16",
+          "$4,800"
+        ],
+        [
+          "BOX 6",
+          "$50",
+          "327",
+          "$16,350"
+        ],
+        [
+          "BOX 3",
+          "$100",
+          "0",
+          "$0"
+        ],
+        [
+          "STRAIGHT/BOX 6",
+          "$350",
+          "75",
+          "$26,250"
+        ],
+        [
+          "STRAIGHT/BOX 3",
+          "$400",
+          "0",
+          "$0"
+        ],
+        [
+          "SUPER STRAIGHT 6",
+          "$300",
+          "16",
+          "$4,800"
+        ],
+        [
+          "SUPER STRAIGHT 3",
+          "$300",
+          "0",
+          "$0"
+        ]
+      ],
+      "ezTotals": null,
+      "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
+      "headers": [
+        "Match",
+        "Source tier amount",
+        "Kentucky winners",
+        "Tier payout"
+      ],
+      "reportedTotals": [
+        "Total",
+        "",
+        "434",
+        "$52,200"
+      ],
+      "tableNote": "Source-listed tier amounts; not verified cash claims or retailer locations."
+    },
+    {
+      "gameNumber": 17,
+      "gameName": "Pick 4",
+      "drawId": 21037,
+      "drawingSession": "MIDDAY",
+      "drawDate": "2026-09-25",
+      "sourcePublicationDate": null,
+      "reportedWinners": 16,
+      "reportedPayout": 5700,
+      "prizeBasis": "Source-listed tier amounts; not verified cash claims or retailer locations.",
+      "tiers": [
+        [
+          "STRAIGHT",
+          "$2,500",
+          "0",
+          "$0"
+        ],
+        [
+          "BOX 24",
+          "$100",
+          "0",
+          "$0"
+        ],
+        [
+          "BOX 12",
+          "$200",
+          "15",
+          "$3,000"
+        ],
+        [
+          "BOX 6",
+          "$400",
+          "0",
+          "$0"
+        ],
+        [
+          "BOX 4",
+          "$600",
+          "0",
+          "$0"
+        ],
+        [
+          "STRAIGHT/BOX 24",
+          "$2,600",
+          "0",
+          "$0"
+        ],
+        [
+          "STRAIGHT/BOX 12",
+          "$2,700",
+          "1",
+          "$2,700"
+        ],
+        [
+          "STRAIGHT/BOX 6",
+          "$2,900",
+          "0",
+          "$0"
+        ],
+        [
+          "STRAIGHT/BOX 4",
+          "$3,100",
+          "0",
+          "$0"
+        ]
+      ],
+      "ezTotals": null,
+      "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
+      "headers": [
+        "Match",
+        "Source tier amount",
+        "Kentucky winners",
+        "Tier payout"
+      ],
+      "reportedTotals": [
+        "Total",
+        "",
+        "16",
+        "$5,700"
+      ],
+      "tableNote": "Source-listed tier amounts; not verified cash claims or retailer locations."
+    },
+    {
+      "gameNumber": 17,
+      "gameName": "Pick 4",
+      "drawId": 21036,
+      "drawingSession": "EVENING",
+      "drawDate": "2026-09-24",
+      "sourcePublicationDate": null,
+      "reportedWinners": 180,
+      "reportedPayout": 113100,
+      "prizeBasis": "Source-listed tier amounts; not verified cash claims or retailer locations.",
+      "tiers": [
+        [
+          "STRAIGHT",
+          "$2,500",
+          "16",
+          "$40,000"
+        ],
+        [
+          "BOX 24",
+          "$100",
+          "0",
+          "$0"
+        ],
+        [
+          "BOX 12",
+          "$200",
+          "0",
+          "$0"
+        ],
+        [
+          "BOX 6",
+          "$400",
+          "161",
+          "$64,400"
+        ],
+        [
+          "BOX 4",
+          "$600",
+          "0",
+          "$0"
+        ],
+        [
+          "STRAIGHT/BOX 24",
+          "$2,600",
+          "0",
+          "$0"
+        ],
+        [
+          "STRAIGHT/BOX 12",
+          "$2,700",
+          "0",
+          "$0"
+        ],
+        [
+          "STRAIGHT/BOX 6",
+          "$2,900",
+          "3",
+          "$8,700"
+        ],
+        [
+          "STRAIGHT/BOX 4",
+          "$3,100",
+          "0",
+          "$0"
+        ]
+      ],
+      "ezTotals": null,
+      "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
+      "headers": [
+        "Match",
+        "Source tier amount",
+        "Kentucky winners",
+        "Tier payout"
+      ],
+      "reportedTotals": [
+        "Total",
+        "",
+        "180",
+        "$113,100"
+      ],
+      "tableNote": "Source-listed tier amounts; not verified cash claims or retailer locations."
     }
   ],
   "sourceReports": [
@@ -1235,6 +1737,617 @@
         "POWERBALL"
       ],
       "DOUBLE_PLAY_DRAW_DATE": 1790136000000
+    },
+    {
+      "GAME_NUMBER": [
+        14
+      ],
+      "DRAW_ID": 215,
+      "PAYOUT": "$0",
+      "TIER_LIST": [
+        [
+          {
+            "TIER_ID": 1,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 18000000,
+            "TIER_DESCRIPTION": "Match 5 + 1"
+          },
+          {
+            "TIER_ID": 2,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2200000,
+            "TIER_DESCRIPTION": "Match 5 + 0"
+          },
+          {
+            "TIER_ID": 3,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 7500,
+            "TIER_DESCRIPTION": "Match 4 + 1"
+          },
+          {
+            "TIER_ID": 4,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 500,
+            "TIER_DESCRIPTION": "Match 4 + 0"
+          },
+          {
+            "TIER_ID": 5,
+            "TIER_WINNER_COUNT": 3,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 250,
+            "TIER_DESCRIPTION": "Match 3 + 1"
+          },
+          {
+            "TIER_ID": 6,
+            "TIER_WINNER_COUNT": 11,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 50,
+            "TIER_DESCRIPTION": "Match 3 + 0"
+          },
+          {
+            "TIER_ID": 7,
+            "TIER_WINNER_COUNT": 101,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 25,
+            "TIER_DESCRIPTION": "Match 2 + 1"
+          },
+          {
+            "TIER_ID": 8,
+            "TIER_WINNER_COUNT": 346,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 8,
+            "TIER_DESCRIPTION": "Match 2 + 0"
+          },
+          {
+            "TIER_ID": 9,
+            "TIER_WINNER_COUNT": 497,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 8,
+            "TIER_DESCRIPTION": "Match 1 + 1"
+          }
+        ]
+      ],
+      "DRAW_VALUES": [
+        {
+          "DRAW_NUMBER_POSITION": 1,
+          "DRAW_VALUE": 1
+        },
+        {
+          "DRAW_NUMBER_POSITION": 2,
+          "DRAW_VALUE": 4
+        },
+        {
+          "DRAW_NUMBER_POSITION": 3,
+          "DRAW_VALUE": 17
+        },
+        {
+          "DRAW_NUMBER_POSITION": 4,
+          "DRAW_VALUE": 25
+        },
+        {
+          "DRAW_NUMBER_POSITION": 5,
+          "DRAW_VALUE": 40
+        }
+      ],
+      "SPECIAL_ARGS": {
+        "MILLIONAIREFORLIFEBALL": 3,
+        "TOTAL_WINNERS": 958,
+        "TOTAL_PRIZE": "$    10,569"
+      },
+      "DRAW_DATE": 1790222400000,
+      "GAME_NAME": [
+        "MILLIONAIREFORLIFE"
+      ]
+    },
+    {
+      "GAME_NUMBER": [
+        13
+      ],
+      "DRAW_ID": 8355,
+      "PAYOUT": "$0",
+      "TIER_LIST": [
+        [
+          {
+            "TIER_ID": 1,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 225000,
+            "TIER_DESCRIPTION": "4 of 4 + Cash Ball"
+          },
+          {
+            "TIER_ID": 2,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2250,
+            "TIER_DESCRIPTION": "4 of 4"
+          },
+          {
+            "TIER_ID": 3,
+            "TIER_WINNER_COUNT": 4,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 225,
+            "TIER_DESCRIPTION": "3 of 4 + Cash Ball"
+          },
+          {
+            "TIER_ID": 4,
+            "TIER_WINNER_COUNT": 77,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 50,
+            "TIER_DESCRIPTION": "3 of 4"
+          },
+          {
+            "TIER_ID": 5,
+            "TIER_WINNER_COUNT": 45,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 25,
+            "TIER_DESCRIPTION": "2 of 4 + Cash Ball"
+          },
+          {
+            "TIER_ID": 6,
+            "TIER_WINNER_COUNT": 1532,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 1,
+            "TIER_DESCRIPTION": "2 of 4"
+          },
+          {
+            "TIER_ID": 7,
+            "TIER_WINNER_COUNT": 348,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 5,
+            "TIER_DESCRIPTION": "1 of 4 + Cash Ball"
+          },
+          {
+            "TIER_ID": 8,
+            "TIER_WINNER_COUNT": 631,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 1,
+            "TIER_DESCRIPTION": "0 of 4 + Cash Ball"
+          }
+        ]
+      ],
+      "DRAW_VALUES": [
+        {
+          "DRAW_NUMBER_POSITION": 1,
+          "DRAW_VALUE": 8
+        },
+        {
+          "DRAW_NUMBER_POSITION": 2,
+          "DRAW_VALUE": 10
+        },
+        {
+          "DRAW_NUMBER_POSITION": 3,
+          "DRAW_VALUE": 13
+        },
+        {
+          "DRAW_NUMBER_POSITION": 4,
+          "DRAW_VALUE": 28
+        }
+      ],
+      "SPECIAL_ARGS": {
+        "TOTAL_WINNER_EZ": 685,
+        "CASHBALL": 14,
+        "TOTAL_WINNERS": 2637,
+        "TOTAL_PAYOUT_EZ": "$  2,219.00",
+        "TOTAL_PRIZE": "$     9,778"
+      },
+      "DRAW_DATE": 1790222400000,
+      "GAME_NAME": [
+        "CASHBALL"
+      ]
+    },
+    {
+      "DRAW_TIME": "MIDDAY",
+      "GAME_NUMBER": [
+        16
+      ],
+      "DRAW_ID": 22609,
+      "PAYOUT": "$0",
+      "TIER_LIST": [
+        [
+          {
+            "TIER_ID": 1,
+            "TIER_WINNER_COUNT": 4,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 30,
+            "TIER_DESCRIPTION": "FRONT PAIR"
+          },
+          {
+            "TIER_ID": 2,
+            "TIER_WINNER_COUNT": 4,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 30,
+            "TIER_DESCRIPTION": "BACK PAIR"
+          },
+          {
+            "TIER_ID": 3,
+            "TIER_WINNER_COUNT": 3,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 30,
+            "TIER_DESCRIPTION": "SPLIT PAIR"
+          },
+          {
+            "TIER_ID": 4,
+            "TIER_WINNER_COUNT": 20,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 300,
+            "TIER_DESCRIPTION": "STRAIGHT"
+          },
+          {
+            "TIER_ID": 5,
+            "TIER_WINNER_COUNT": 470,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 50,
+            "TIER_DESCRIPTION": "BOX 6"
+          },
+          {
+            "TIER_ID": 6,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 100,
+            "TIER_DESCRIPTION": "BOX 3"
+          },
+          {
+            "TIER_ID": 7,
+            "TIER_WINNER_COUNT": 56,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 350,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 6"
+          },
+          {
+            "TIER_ID": 8,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 400,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 3"
+          },
+          {
+            "TIER_ID": 9,
+            "TIER_WINNER_COUNT": 39,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 300,
+            "TIER_DESCRIPTION": "SUPER STRAIGHT 6"
+          },
+          {
+            "TIER_ID": 10,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 300,
+            "TIER_DESCRIPTION": "SUPER STRAIGHT 3"
+          }
+        ]
+      ],
+      "DRAW_VALUES": [
+        {
+          "DRAW_NUMBER_POSITION": 1,
+          "DRAW_VALUE": 6
+        },
+        {
+          "DRAW_NUMBER_POSITION": 2,
+          "DRAW_VALUE": 7
+        },
+        {
+          "DRAW_NUMBER_POSITION": 3,
+          "DRAW_VALUE": 3
+        }
+      ],
+      "SPECIAL_ARGS": {
+        "TOTAL_WINNERS": 596,
+        "TOTAL_PRIZE": "$    61,130"
+      },
+      "DRAW_DATE": 1790308800000,
+      "GAME_NAME": [
+        "PICK3"
+      ]
+    },
+    {
+      "DRAW_TIME": "EVENING",
+      "GAME_NUMBER": [
+        16
+      ],
+      "DRAW_ID": 22608,
+      "PAYOUT": "$0",
+      "TIER_LIST": [
+        [
+          {
+            "TIER_ID": 1,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 30,
+            "TIER_DESCRIPTION": "FRONT PAIR"
+          },
+          {
+            "TIER_ID": 2,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 30,
+            "TIER_DESCRIPTION": "BACK PAIR"
+          },
+          {
+            "TIER_ID": 3,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 30,
+            "TIER_DESCRIPTION": "SPLIT PAIR"
+          },
+          {
+            "TIER_ID": 4,
+            "TIER_WINNER_COUNT": 16,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 300,
+            "TIER_DESCRIPTION": "STRAIGHT"
+          },
+          {
+            "TIER_ID": 5,
+            "TIER_WINNER_COUNT": 327,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 50,
+            "TIER_DESCRIPTION": "BOX 6"
+          },
+          {
+            "TIER_ID": 6,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 100,
+            "TIER_DESCRIPTION": "BOX 3"
+          },
+          {
+            "TIER_ID": 7,
+            "TIER_WINNER_COUNT": 75,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 350,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 6"
+          },
+          {
+            "TIER_ID": 8,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 400,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 3"
+          },
+          {
+            "TIER_ID": 9,
+            "TIER_WINNER_COUNT": 16,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 300,
+            "TIER_DESCRIPTION": "SUPER STRAIGHT 6"
+          },
+          {
+            "TIER_ID": 10,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 300,
+            "TIER_DESCRIPTION": "SUPER STRAIGHT 3"
+          }
+        ]
+      ],
+      "DRAW_VALUES": [
+        {
+          "DRAW_NUMBER_POSITION": 1,
+          "DRAW_VALUE": 4
+        },
+        {
+          "DRAW_NUMBER_POSITION": 2,
+          "DRAW_VALUE": 6
+        },
+        {
+          "DRAW_NUMBER_POSITION": 3,
+          "DRAW_VALUE": 9
+        }
+      ],
+      "SPECIAL_ARGS": {
+        "TOTAL_WINNERS": 434,
+        "TOTAL_PRIZE": "$    52,200"
+      },
+      "DRAW_DATE": 1790222400000,
+      "GAME_NAME": [
+        "PICK3"
+      ]
+    },
+    {
+      "DRAW_TIME": "MIDDAY",
+      "GAME_NUMBER": [
+        17
+      ],
+      "DRAW_ID": 21037,
+      "PAYOUT": "$0",
+      "TIER_LIST": [
+        [
+          {
+            "TIER_ID": 1,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2500,
+            "TIER_DESCRIPTION": "STRAIGHT"
+          },
+          {
+            "TIER_ID": 2,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 100,
+            "TIER_DESCRIPTION": "BOX 24"
+          },
+          {
+            "TIER_ID": 3,
+            "TIER_WINNER_COUNT": 15,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 200,
+            "TIER_DESCRIPTION": "BOX 12"
+          },
+          {
+            "TIER_ID": 4,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 400,
+            "TIER_DESCRIPTION": "BOX 6"
+          },
+          {
+            "TIER_ID": 5,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 600,
+            "TIER_DESCRIPTION": "BOX 4"
+          },
+          {
+            "TIER_ID": 6,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2600,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 24"
+          },
+          {
+            "TIER_ID": 7,
+            "TIER_WINNER_COUNT": 1,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2700,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 12"
+          },
+          {
+            "TIER_ID": 8,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2900,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 6"
+          },
+          {
+            "TIER_ID": 9,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 3100,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 4"
+          }
+        ]
+      ],
+      "DRAW_VALUES": [
+        {
+          "DRAW_NUMBER_POSITION": 1,
+          "DRAW_VALUE": 9
+        },
+        {
+          "DRAW_NUMBER_POSITION": 2,
+          "DRAW_VALUE": 2
+        },
+        {
+          "DRAW_NUMBER_POSITION": 3,
+          "DRAW_VALUE": 8
+        },
+        {
+          "DRAW_NUMBER_POSITION": 4,
+          "DRAW_VALUE": 2
+        }
+      ],
+      "SPECIAL_ARGS": {
+        "TOTAL_WINNERS": 16,
+        "TOTAL_PRIZE": "$     5,700"
+      },
+      "DRAW_DATE": 1790308800000,
+      "GAME_NAME": [
+        "PICK4"
+      ]
+    },
+    {
+      "DRAW_TIME": "EVENING",
+      "GAME_NUMBER": [
+        17
+      ],
+      "DRAW_ID": 21036,
+      "PAYOUT": "$0",
+      "TIER_LIST": [
+        [
+          {
+            "TIER_ID": 1,
+            "TIER_WINNER_COUNT": 16,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2500,
+            "TIER_DESCRIPTION": "STRAIGHT"
+          },
+          {
+            "TIER_ID": 2,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 100,
+            "TIER_DESCRIPTION": "BOX 24"
+          },
+          {
+            "TIER_ID": 3,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 200,
+            "TIER_DESCRIPTION": "BOX 12"
+          },
+          {
+            "TIER_ID": 4,
+            "TIER_WINNER_COUNT": 161,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 400,
+            "TIER_DESCRIPTION": "BOX 6"
+          },
+          {
+            "TIER_ID": 5,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 600,
+            "TIER_DESCRIPTION": "BOX 4"
+          },
+          {
+            "TIER_ID": 6,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2600,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 24"
+          },
+          {
+            "TIER_ID": 7,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2700,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 12"
+          },
+          {
+            "TIER_ID": 8,
+            "TIER_WINNER_COUNT": 3,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 2900,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 6"
+          },
+          {
+            "TIER_ID": 9,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 3100,
+            "TIER_DESCRIPTION": "STRAIGHT/BOX 4"
+          }
+        ]
+      ],
+      "DRAW_VALUES": [
+        {
+          "DRAW_NUMBER_POSITION": 1,
+          "DRAW_VALUE": 0
+        },
+        {
+          "DRAW_NUMBER_POSITION": 2,
+          "DRAW_VALUE": 4
+        },
+        {
+          "DRAW_NUMBER_POSITION": 3,
+          "DRAW_VALUE": 4
+        },
+        {
+          "DRAW_NUMBER_POSITION": 4,
+          "DRAW_VALUE": 0
+        }
+      ],
+      "SPECIAL_ARGS": {
+        "TOTAL_WINNERS": 180,
+        "TOTAL_PRIZE": "$   113,100"
+      },
+      "DRAW_DATE": 1790222400000,
+      "GAME_NAME": [
+        "PICK4"
+      ]
     }
   ]
 }

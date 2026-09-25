@@ -276,3 +276,19 @@ still has four reports. Next step is integrating these six reports with session
 labels, source dates, separate EZ scope and top-prize limitations, followed by
 native acceptance and live verification. No new agency response arrived during
 this session; existing four-report deployment remains healthy and byte-matched.
+
+### September 25 six state reports integrated
+
+Expanded the separate statewide feed from four to ten reports with Millionaire
+For Life, Cash Ball 225, Pick 3 MIDDAY/EVENING and Pick 4 MIDDAY/EVENING. Each
+session selects its own latest returned date and identity; sessions can therefore
+have different dates. The publication validator reconstructs all ten reports from
+source responses and enforces the session order. Earlier two/four-report caches
+remain readable during rollout. State refresh remains transactional.
+
+Millionaire For Life's top-tier amounts are displayed as basis unverified rather
+than as verified cash awards. Cash Ball EZ aggregate counts and payouts appear in
+a separate note, explicitly excluded from base totals. Keno, Cash Pop and instant
+game layouts remain outside this table scope. No statewide totals become map
+points. Seven focused Flutter checks and all 79 Node checks pass. Native visual
+acceptance and independent live verification are recorded separately below.

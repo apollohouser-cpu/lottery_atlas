@@ -19,13 +19,30 @@ class KentuckyPrizeTablesLoader {
   Map<String, dynamic> _decode(String raw) {
     final data = Map<String, dynamic>.from(jsonDecode(raw) as Map);
     final reports = data['reports'] as List;
-    if (![2, 4].contains(reports.length) ||
+    if (![2, 4, 10].contains(reports.length) ||
         reports[0]['gameName'] != 'Mega Millions' ||
         reports[1]['gameName'] != 'Powerball Xs & Os' ||
-        (reports.length == 4 &&
+        (reports.length >= 4 &&
             (reports[2]['gameName'] != 'Powerball' ||
                 reports[3]['gameName'] != 'Powerball Double Play'))) {
       throw const FormatException('Unreviewed Kentucky games');
+    }
+    if (reports.length == 10) {
+      const names = [
+        'Millionaire For Life',
+        'Cash Ball 225',
+        'Pick 3',
+        'Pick 3',
+        'Pick 4',
+        'Pick 4',
+      ];
+      const sessions = [null, null, 'MIDDAY', 'EVENING', 'MIDDAY', 'EVENING'];
+      for (var i = 0; i < names.length; i++) {
+        if (reports[i + 4]['gameName'] != names[i] ||
+            reports[i + 4]['drawingSession'] != sessions[i]) {
+          throw const FormatException('Unreviewed Kentucky session');
+        }
+      }
     }
     for (final report in reports) {
       final headers = report['headers'] as List;
