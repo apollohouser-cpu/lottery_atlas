@@ -962,3 +962,13 @@ step is expanding the separate table feed with reviewed layouts; do not map thes
 unlocated totals or misrepresent the current two-game sheet as final acceptance.
 The scope inventory is recorded before September 26 06:58 ET. Release deadline
 remains September 28 18:00 ET; broader integrated acceptance is still required.
+
+### September 25 Powerball table gap closed
+
+Kentucky statewide tables now include ordinary Powerball with a separate Power
+Play subset column and a distinct Double Play report. Native interaction checks
+verify both reconciled totals, scrolling, game-switch reset and source dates.
+Six focused Flutter tests, 76 Node tests and macOS build pass; 12 existing analysis
+infos remain. Publisher 36164788118 succeeded and live feed bytes match d1970e6.
+Next: implement reviewed Kentucky state-game layouts and finish integrated
+activity/catalog/favorites checks. Kentucky stays active; deadline unchanged.

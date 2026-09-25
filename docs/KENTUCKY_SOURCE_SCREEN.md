@@ -246,3 +246,11 @@ remains readable during rollout; failed imports retain validated prior data.
 Six focused Flutter tests pass including selection of both new reports and their
 separate counts. All 76 Node checks pass. Other state games and final integrated
 Kentucky acceptance remain outstanding; the September 28 deadline is unchanged.
+
+Native 800×632 acceptance passed for both new reports: scrollbars reach Powerball
+7,152 total / 1,324 Power Play subset / $55,894 payout and Double Play 704 / $7,032;
+game switching resets scroll position, source date and explanatory note correctly.
+macOS debug build passes; analysis remains at 12 existing infos. Commit d1970e6
+published successfully in run 36164788118; independent live retrieval of
+kentucky_draw_tiers.json matches the checked-in four-report feed byte-for-byte.
+The expanded table flow is ready for testing, not final Kentucky acceptance.
