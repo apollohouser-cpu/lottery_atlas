@@ -591,3 +591,10 @@ requests remain no-fee; unavailable data is not permission to invent points.
   1a0d714b2dc394b0, requesting receipt/status and existing row/prize/location/cadence
   definitions and missing Pick 3/Daily 4 retailer reports. August request unchanged.
 - Texas remains active through final deployment and acceptance reconciliation.
+
+Publication speed correction: push-triggered runs validate and publish the
+checked-in reviewed data without refetching every state's sources. Scheduled and
+manual runs retain the full six-hour refresh workflow and per-state rollback.
+Push-only publication does not advance refresh/source dates. This removes an
+unrelated multi-state import delay from Texas acceptance without weakening
+publication validation.

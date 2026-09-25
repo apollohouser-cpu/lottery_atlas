@@ -44,7 +44,9 @@ jobs:
         run: |
           python3 -m pip install lxml==6.1.1
           python3 -m unittest discover -s test/tooling -p 'test_*.py'
+      # Pushes publish already reviewed data. Scheduled/manual runs refresh sources.
       - name: Refresh states independently and report retained data
+        if: github.event_name != 'push'
         run: python3 tooling/refresh_states.py
       - name: Validate verified activity and build the public feed
         run: >-
