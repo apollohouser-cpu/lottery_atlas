@@ -980,3 +980,14 @@ fixtures, including both Pick 3/4 sessions. Correctly scoped EZ totals and annui
 limitations are preserved. All 79 Node checks pass. Public table integration and
 native acceptance for these six reports remain pending; do not mark them ready
 or advance to Virginia. Kentucky's September 28 release deadline is unchanged.
+
+### September 25 six state reports ready for testing
+
+Kentucky statewide tables now include Millionaire For Life, Cash Ball 225, and
+both Pick 3/4 sessions, bringing the reviewed table count to ten. Per-session dates,
+separate EZ totals and explicit top-prize limitations are integrated. Seven focused
+Flutter checks, 79 Node checks, native 800×632 inspection and macOS debug build
+pass; 12 existing analysis infos remain. Publisher 36177493029 and independent
+live-byte comparison verify deployment. Next: aggregate-only Keno/Cash Pop scope
+and remaining integrated activity/catalog/favorites acceptance. Kentucky remains
+active and its September 28 18:00 ET release deadline is unchanged.

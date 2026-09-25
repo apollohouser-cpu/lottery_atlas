@@ -292,3 +292,15 @@ a separate note, explicitly excluded from base totals. Keno, Cash Pop and instan
 game layouts remain outside this table scope. No statewide totals become map
 points. Seven focused Flutter checks and all 79 Node checks pass. Native visual
 acceptance and independent live verification are recorded separately below.
+
+Native 800×632 review verified the expanded ten-item game/session menu, visible
+Millionaire For Life top-prize limitation and Cash Ball's separate EZ note.
+Switching Pick 3 MIDDAY to EVENING correctly changes September 25 to September
+24, rather than applying one date to both sessions. Automated interaction checks
+exercise all six new reports, including both Pick 4 sessions. macOS debug build
+passes; analysis is back to the 12 existing infos. A concurrent scheduled data
+commit (08a2a8d) was preserved through rebase; no source files were discarded.
+Publisher 36177493029 succeeded at ee76851. Independent HTTPS retrieval confirms
+the live ten-report Kentucky feed matches checked-in bytes. These six new reports
+are ready for testing; Kentucky's overall acceptance remains open for aggregate-only
+games and the remaining integrated app checklist.
