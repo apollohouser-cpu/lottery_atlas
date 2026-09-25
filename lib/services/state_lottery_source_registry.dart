@@ -202,8 +202,9 @@ class StateLotterySourceRegistry {
       resources: [
         StateLotteryResource(
           title: 'Latest winning numbers',
-          subtitle: 'Official Kentucky Lottery results and game information.',
-          url: 'https://www.kylottery.com/',
+          subtitle:
+              'Official results and Kentucky-only payout details; not retailer win counts.',
+          url: 'https://www.kylottery.com/apps/draw_games/pastwinning.html',
         ),
         StateLotteryResource(
           title: 'Available Scratch-Off games',

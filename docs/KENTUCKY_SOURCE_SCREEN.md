@@ -97,3 +97,44 @@ Next work: inspect current Powerball stories and the official result pages, then
 exercise Kentucky native game/date/detail flows. Texas remains closed.
 
 Kentucky generated-data checks and the macOS debug build passed after the notice-date label correction. Public data is unchanged; this native UI change does not require a feed deployment.
+
+### September 25 Powerball story audit and official results access
+
+Advanced the current Powerball selling-store evidence gap. Three official story
+pages were inspected directly and compared with the current verified directory:
+
+- https://www.kylottery.com/apps/winners/all/LaGrangeWomanWinsPowerballPrize
+  describes July 15, 2026 and a $50,000 prize; its winners-card summary instead
+  says $150,000. The body identifies Smart Shop in Pendleton as seller, but no
+  verified directory entry matches that store name. Hold this candidate.
+- https://www.kylottery.com/apps/winners/all/PitStopPayDay describes August 1,
+  2026 and $150,000 including Power Play, while its summary card says $50,000.
+  It identifies Pilot Travel Center in Franklin, where the directory has three
+  plausible stores (#046, #661, #438). Do not choose one from proximity or names.
+- https://www.kylottery.com/apps/winners/all/CampbellsvillePowerballWinners
+  describes two separate $50,000 tickets. The Lexington Kroger address has a
+  malformed ZIP and abbreviated directory candidate. T-MART Campbellsville has
+  one directory candidate, but the article gives only a relative draw date for
+  that ticket and omits the year from the other ticket's April 18 date. Neither
+  is ready for a dated map point without additional official evidence.
+
+All candidates remain unpublished. Local originals are staged in ignored
+work/kentucky_story_review. Summary cards cannot safely supply prize amounts or
+winner residence as selling location; no new retailer coordinates were invented.
+This review resolves why these visible stories cannot simply be auto-imported;
+it does not imply absence of other usable official records.
+
+The official past-winning-numbers page now loads. Its payout disclaimer explicitly
+limits displayed payouts to Kentucky, separate from national results. Replaced
+the app's generic Kentucky homepage result link with this direct verified page
+and a scope-aware subtitle. Dynamic result rows still require inspection before
+any statewide count import. The page explicitly identifies Powerball Xs & Os,
+resolving the earlier opaque 'xno' label; this is a distinct product requiring its
+own applicability/results review, not ordinary Powerball activity.
+
+Source: https://www.kylottery.com/apps/draw_games/pastwinning.html
+Next named gaps: inspect dynamic per-game results/definitions (especially Mega
+Millions and Xs & Os), then Kentucky native notice-date/game-selection acceptance.
+No new agency mail. Scheduled publisher 36135693365 succeeded; fast-forwarded the
+clean checkout to 2bac915 and verified live activity matches again. The initial
+mismatch was the scheduled refresh, not deployment failure. Deadline unchanged.
