@@ -336,3 +336,30 @@ transport failure. No public feed or UI changed; presentation/integration remain
 the next named acceptance gap, followed by integrated Kentucky flows.
 Startup publisher 36183713245 succeeded; live Kentucky table bytes match the
 checked-in ten-report feed. Release deadline remains September 28 at 18:00 ET.
+
+### September 25 Keno/Cash Pop integrated and verified
+
+The existing feed now carries a separate aggregateSnapshot alongside the ten
+reconciled tier reports. Import validation reconstructs both aggregates from
+source responses; collection requires history/detail agreement, prevents source
+regression and preserves unchanged aggregate timestamps independently of tier
+report dates. Older feeds without aggregates remain readable. A failed collection
+still retains the previous state output through the existing state isolation.
+
+The Kentucky Statewide prize tables selector now offers Keno and Cash Pop with a
+distinct individual-draw summary instead of fabricated prize tiers. It shows draw
+ID, calendar date, snapshot update time, reported count/payout, unavailable exact
+time/publication date and the lack of tier reconciliation or retailer locations.
+It explicitly distinguishes six-hour Atlas checks from a live four-minute service.
+Fresh official capture: Keno 1417133, September 25, 66 / $162; Cash Pop 748526,
+September 25, 1 / $10. These are draw snapshots, never daily totals.
+
+Nine focused Flutter tests and all 83 Node tests pass. macOS debug build passes;
+analysis retains 12 existing infos. Native 800×632 inspection selected both new
+menu entries using the scrollbar and verified readable totals, identities,
+freshness and scope. Automated interaction also switches back to a tier table.
+Publisher 36195042965 succeeded; independent HTTPS retrieval byte-matched the
+expanded live feed at d3d7da8. These two summaries are ready for testing; Kentucky
+as a whole remains active for catalog/activity/filter/favorites/offline integrated
+acceptance. September 28 at 18:00 ET deadline unchanged. No new agency responses
+at the startup check; Maryland's previous fee-hold reply is already recorded.

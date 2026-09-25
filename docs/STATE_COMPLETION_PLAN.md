@@ -1008,3 +1008,14 @@ Fifteen Kentucky Node checks pass. Public scope stays at ten tier reports;
 aggregate presentation and integrated acceptance remain open. Maryland sent a
 retailer PDF and a $438.75 ticket-extract estimate; replied with no-fee hold and
 request for existing free alternatives. Directory content audit is separate.
+
+### September 25 aggregate-only games ready for testing
+
+Keno and Cash Pop are now separate individual-draw summaries in Kentucky's
+statewide report selector, with draw IDs, dates, snapshot freshness and explicit
+no-tier/no-retailer limitations. Nine focused Flutter tests, 83 Node tests, macOS
+build and native 800×632 checks pass; analysis retains 12 existing infos.
+Publisher 36195042965 succeeded and the live feed independently byte-matched.
+This closes the aggregate presentation gap. Continue remaining integrated
+Kentucky catalog/activity/filter/favorites/offline acceptance; do not add new
+scope or advance to Virginia before the full release decision. Deadline unchanged.
