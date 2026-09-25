@@ -104,8 +104,9 @@ class _KentuckyPrizeTablesSheetState extends State<KentuckyPrizeTablesSheet> {
                   'Draw date: ${report['drawDate']} • Source publication date unavailable',
                 ),
                 const SizedBox(height: 8),
-                const Text(
-                  'Base prize and multiplier are separate. Tier payout is their product times reported Kentucky winners, not verified cash claims. Scroll horizontally for all columns.',
+                Text(
+                  report['tableNote'] as String? ??
+                      'Base prize and multiplier are separate. Tier payout is their product times reported Kentucky winners, not verified cash claims. Scroll horizontally for all columns.',
                 ),
                 const SizedBox(height: 8),
                 Expanded(

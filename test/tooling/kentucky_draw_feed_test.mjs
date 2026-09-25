@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {collectKentuckyTierFeed,validateKentuckyTierFeed} from '../../tooling/import_kentucky_draw_tiers.mjs';
-const fixtures = Object.fromEntries([[26,'mega-millions'],[24,'powerball-xo']].map(([g,n])=>[g,JSON.parse(readFileSync(new URL(`./fixtures/kentucky-${n}-tiers.json`,import.meta.url)))]));
+const fixtures = Object.fromEntries([[26,'mega-millions'],[24,'powerball-xo'],[12,'powerball']].map(([g,n])=>[g,JSON.parse(readFileSync(new URL(`./fixtures/kentucky-${n}-tiers.json`,import.meta.url)))]));
 const fetchReport=async body=>{
  const detail=structuredClone(fixtures[body.gameNumber]);
  return body.infoRequest==='11' ? {GAME_NUMBER:detail.GAME_NUMBER,DRAW_HISTORY:[{DRAW_ID:detail.DRAW_ID,DRAW_DATE:detail.DRAW_DATE,SPECIAL_ARGS:detail.SPECIAL_ARGS}]} : detail;
@@ -11,7 +11,7 @@ test('Kentucky feed preserves unchanged dates and keeps game identities separate
  const first=await collectKentuckyTierFeed({fetchReport,now:'2026-09-25T15:00:00Z'});
  const second=await collectKentuckyTierFeed({fetchReport,previous:first,now:'2026-09-26T15:00:00Z'});
  assert.equal(second.updatedAt,first.updatedAt);
- assert.deepEqual(second.reports.map(r=>r.gameName),['Mega Millions','Powerball Xs & Os']);
+ assert.deepEqual(second.reports.map(r=>r.gameName),['Mega Millions','Powerball Xs & Os','Powerball','Powerball Double Play']);
  assert.equal(second.reports[0].reportedTotals[3],'2,465');
  assert.equal(second.reports[0].reportedTotals[4],'$49,433');
  assert.equal(second.reports[0].tiers[0][1],'Jackpot (no KY winners)');

@@ -234,3 +234,15 @@ rejects unknown groups, missing tiers, impossible subsets, inconsistent totals
 and unreviewed top-prize winners. These additional games are not yet published
 in the two-game table feed. This is source/layout reconciliation, not final
 Kentucky release acceptance. Remaining data have no selling-retailer locations.
+
+### September 25 Powerball and Double Play table integration
+
+Expanded the Kentucky statewide feed/sheet to four reports: Mega Millions,
+Xs & Os, Powerball, and Powerball Double Play. Power Play has a visibly labeled
+subset column; a per-report note explains the draw's multiplier and match-five
+2X treatment. Double Play has its own report and totals. Both preserve September
+23 source draw dates and unavailable publication dates. Existing two-report cache
+remains readable during rollout; failed imports retain validated prior data.
+Six focused Flutter tests pass including selection of both new reports and their
+separate counts. All 76 Node checks pass. Other state games and final integrated
+Kentucky acceptance remain outstanding; the September 28 deadline is unchanged.

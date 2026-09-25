@@ -87,3 +87,13 @@ contact, celina.clift@mt.gov, requesting the already released files by attachmen
 or a direct download without a new account. Sent message 1a0d94e847b234fe.
 No additional assembly or fees were authorized. Monitor that delivery reply;
 Montana implementation remains queued while Kentucky stays active.
+
+### September 25 workbook emailed
+
+The delivery follow-up succeeded: message 1a0d963017e17b69 at 16:25 UTC attaches
+26-PIR-2200.xlsx (220,068 bytes). Rebecca Narmore directs subsequent questions to
+rebecca.narmore2@mt.gov because the request is closed. The login-only delivery
+obstacle is resolved. Gmail marks this application/octet-stream attachment as
+unsupported for connector extraction; do not call its attachment reader for it.
+The workbook still needs a private browser download and content/semantics audit.
+Do not count it as inspected or publish any new Montana claims from this notice.

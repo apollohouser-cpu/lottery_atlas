@@ -41,6 +41,22 @@ void main() {
       await tester.tap(find.text('Powerball Xs & Os').last);
       await tester.pumpAndSettle();
       expect(find.text('831'), findsOneWidget);
+      await tester.tap(find.byType(DropdownButton<int>));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Powerball').last);
+      await tester.pumpAndSettle();
+      expect(find.text('7,152'), findsOneWidget);
+      expect(find.text('1,324'), findsOneWidget);
+      expect(
+        find.textContaining('included in Kentucky winners'),
+        findsOneWidget,
+      );
+      await tester.tap(find.byType(DropdownButton<int>));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Powerball Double Play').last);
+      await tester.pumpAndSettle();
+      expect(find.text('704'), findsOneWidget);
+      expect(find.textContaining('separate drawing'), findsOneWidget);
       expect(find.text('2,465'), findsNothing);
       expect(find.text('Open official draw report'), findsOneWidget);
       expect(tester.takeException(), isNull);

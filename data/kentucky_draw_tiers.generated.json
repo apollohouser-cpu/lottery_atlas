@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-25T15:02:57.699Z",
+  "updatedAt": "2026-09-25T17:02:57.230Z",
   "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
   "endpoint": "https://www.kylottery.com/webhandlers/WinningNumbers.xhtml",
-  "coverage": "Latest returned Kentucky draw for Mega Millions and Powerball Xs & Os only. Xs & Os is separate from ordinary Powerball. Other game layouts remain under review. These statewide tier totals are not retailer locations, validated claims, or a complete historical archive. Source publication dates unavailable. Refresh attempted every six hours; agency publication cadence unconfirmed.",
+  "coverage": "Latest returned Kentucky draw for Mega Millions, Powerball Xs & Os, Powerball and Double Play. Power Play winners are a subset of Powerball winners. Xs & Os is separate from ordinary Powerball. Other game layouts remain under review. These statewide tier totals are not retailer locations, validated claims, or a complete historical archive. Source publication dates unavailable. Refresh attempted every six hours; agency publication cadence unconfirmed.",
   "reports": [
     {
       "gameNumber": 26,
@@ -381,6 +381,190 @@
         "831",
         "$14,738"
       ]
+    },
+    {
+      "gameName": "Powerball",
+      "reportedWinners": 7152,
+      "reportedPayout": 55894,
+      "powerPlayWinners": 1324,
+      "tiers": [
+        [
+          "5 of 5 + PB",
+          "Top prize (no KY winners)",
+          "0",
+          "0",
+          "$0"
+        ],
+        [
+          "5 of 5",
+          "$1,000,000",
+          "0",
+          "0",
+          "$0"
+        ],
+        [
+          "4 of 5 + PB",
+          "$50,000",
+          "0",
+          "0",
+          "$0"
+        ],
+        [
+          "4 of 5",
+          "$100",
+          "7",
+          "1",
+          "$1,100"
+        ],
+        [
+          "3 of 5 + PB",
+          "$100",
+          "14",
+          "0",
+          "$1,400"
+        ],
+        [
+          "3 of 5",
+          "$7",
+          "401",
+          "87",
+          "$5,243"
+        ],
+        [
+          "2 of 5 + PB",
+          "$7",
+          "265",
+          "55",
+          "$3,395"
+        ],
+        [
+          "1 of 5 + PB",
+          "$4",
+          "1,859",
+          "338",
+          "$12,844"
+        ],
+        [
+          "Powerball Only",
+          "$4",
+          "4,606",
+          "843",
+          "$31,912"
+        ]
+      ],
+      "gameNumber": 12,
+      "drawId": 4245,
+      "drawDate": "2026-09-23",
+      "sourcePublicationDate": null,
+      "drawingSession": null,
+      "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
+      "headers": [
+        "Match",
+        "Base prize",
+        "Kentucky winners",
+        "Power Play subset",
+        "Tier payout"
+      ],
+      "reportedTotals": [
+        "Total",
+        "",
+        "7,152",
+        "1,324",
+        "$55,894"
+      ],
+      "tableNote": "Power Play winners are included in Kentucky winners. Power Play is 5X for this draw; match-five is 2X. Payout includes that subset uplift."
+    },
+    {
+      "gameName": "Powerball Double Play",
+      "reportedWinners": 704,
+      "reportedPayout": 7032,
+      "powerPlayWinners": 0,
+      "tiers": [
+        [
+          "5 of 5 + PB",
+          "Top prize (no KY winners)",
+          "0",
+          "—",
+          "$0"
+        ],
+        [
+          "5 of 5",
+          "$500,000",
+          "0",
+          "—",
+          "$0"
+        ],
+        [
+          "4 of 5 + PB",
+          "$50,000",
+          "0",
+          "—",
+          "$0"
+        ],
+        [
+          "4 of 5",
+          "$500",
+          "0",
+          "—",
+          "$0"
+        ],
+        [
+          "3 of 5 + PB",
+          "$500",
+          "1",
+          "—",
+          "$500"
+        ],
+        [
+          "3 of 5",
+          "$20",
+          "44",
+          "—",
+          "$880"
+        ],
+        [
+          "2 of 5 + PB",
+          "$20",
+          "37",
+          "—",
+          "$740"
+        ],
+        [
+          "1 of 5 + PB",
+          "$10",
+          "186",
+          "—",
+          "$1,860"
+        ],
+        [
+          "Powerball Only",
+          "$7",
+          "436",
+          "—",
+          "$3,052"
+        ]
+      ],
+      "gameNumber": 12,
+      "drawId": 4245,
+      "drawDate": "2026-09-23",
+      "sourcePublicationDate": null,
+      "drawingSession": null,
+      "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
+      "headers": [
+        "Match",
+        "Base prize",
+        "Kentucky winners",
+        "Power Play subset",
+        "Tier payout"
+      ],
+      "reportedTotals": [
+        "Total",
+        "",
+        "704",
+        "—",
+        "$7,032"
+      ],
+      "tableNote": "Double Play is a separate drawing; its winners are not added to Powerball totals."
     }
   ],
   "sourceReports": [
@@ -846,6 +1030,211 @@
       "GAME_NAME": [
         "POWERBALLXO"
       ]
+    },
+    {
+      "GAME_NUMBER": [
+        12
+      ],
+      "DOUBLE_PLAY_PAYOUT": "$0",
+      "DRAW_ID": 4245,
+      "PAYOUT": "$0",
+      "DRAW_VALUES": [
+        {
+          "DRAW_NUMBER_POSITION": 1,
+          "DRAW_VALUE": 5
+        },
+        {
+          "DRAW_NUMBER_POSITION": 2,
+          "DRAW_VALUE": 15
+        },
+        {
+          "DRAW_NUMBER_POSITION": 3,
+          "DRAW_VALUE": 26
+        },
+        {
+          "DRAW_NUMBER_POSITION": 4,
+          "DRAW_VALUE": 29
+        },
+        {
+          "DRAW_NUMBER_POSITION": 5,
+          "DRAW_VALUE": 30
+        }
+      ],
+      "JACKPOT_VALUE": 332,
+      "DOUBLE_PLAY_DRAW_ID": 4245,
+      "DOUBLE_PLAY_SPECIAL_ARGS": {
+        "DOUBLE_PLAY_POWERBALL": 6,
+        "DOUBLE_PLAY_TOTAL_PRIZE": "$     7,032",
+        "DOUBLE_PLAY_TOTAL_WINNERS": 704
+      },
+      "JACKPOT_CASH": 141.7,
+      "TIER_LIST": [
+        [
+          {
+            "TIER_ID": 1,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 0,
+            "TIER_MULTIPLIER": 0,
+            "TIER_DESCRIPTION": "5 of 5 + PB"
+          },
+          {
+            "TIER_ID": 2,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 1000000,
+            "TIER_MULTIPLIER": 2,
+            "TIER_DESCRIPTION": "5 of 5"
+          },
+          {
+            "TIER_ID": 3,
+            "TIER_WINNER_COUNT": 0,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 50000,
+            "TIER_DESCRIPTION": "4 of 5 + PB"
+          },
+          {
+            "TIER_ID": 4,
+            "TIER_WINNER_COUNT": 7,
+            "TIER_SPECIAL_DRAW": 1,
+            "TIER_JACKPOT": 100,
+            "TIER_DESCRIPTION": "4 of 5"
+          },
+          {
+            "TIER_ID": 5,
+            "TIER_WINNER_COUNT": 14,
+            "TIER_SPECIAL_DRAW": 0,
+            "TIER_JACKPOT": 100,
+            "TIER_DESCRIPTION": "3 of 5 + PB"
+          },
+          {
+            "TIER_ID": 6,
+            "TIER_WINNER_COUNT": 401,
+            "TIER_SPECIAL_DRAW": 87,
+            "TIER_JACKPOT": 7,
+            "TIER_DESCRIPTION": "3 of 5"
+          },
+          {
+            "TIER_ID": 7,
+            "TIER_WINNER_COUNT": 265,
+            "TIER_SPECIAL_DRAW": 55,
+            "TIER_JACKPOT": 7,
+            "TIER_DESCRIPTION": "2 of 5 + PB"
+          },
+          {
+            "TIER_ID": 8,
+            "TIER_WINNER_COUNT": 1859,
+            "TIER_SPECIAL_DRAW": 338,
+            "TIER_JACKPOT": 4,
+            "TIER_DESCRIPTION": "1 of 5 + PB"
+          },
+          {
+            "TIER_ID": 9,
+            "TIER_WINNER_COUNT": 4606,
+            "TIER_SPECIAL_DRAW": 843,
+            "TIER_JACKPOT": 4,
+            "TIER_DESCRIPTION": "Powerball Only"
+          }
+        ],
+        [
+          {
+            "DOUBLE_PLAY_TIER_ID": 1,
+            "DOUBLE_PLAY_TIER_DESCRIPTION": "5 of 5 + PB",
+            "DOUBLE_PLAY_TIER_JACKPOT": 10000000,
+            "DOUBLE_PLAY_TIER_SPECIAL_DRAW": 0,
+            "DOUBLE_PLAY_TIER_WINNER_COUNT": 0
+          },
+          {
+            "DOUBLE_PLAY_TIER_ID": 2,
+            "DOUBLE_PLAY_TIER_DESCRIPTION": "5 of 5",
+            "DOUBLE_PLAY_TIER_JACKPOT": 500000,
+            "DOUBLE_PLAY_TIER_SPECIAL_DRAW": 0,
+            "DOUBLE_PLAY_TIER_WINNER_COUNT": 0
+          },
+          {
+            "DOUBLE_PLAY_TIER_ID": 3,
+            "DOUBLE_PLAY_TIER_DESCRIPTION": "4 of 5 + PB",
+            "DOUBLE_PLAY_TIER_JACKPOT": 50000,
+            "DOUBLE_PLAY_TIER_SPECIAL_DRAW": 0,
+            "DOUBLE_PLAY_TIER_WINNER_COUNT": 0
+          },
+          {
+            "DOUBLE_PLAY_TIER_ID": 4,
+            "DOUBLE_PLAY_TIER_DESCRIPTION": "4 of 5",
+            "DOUBLE_PLAY_TIER_JACKPOT": 500,
+            "DOUBLE_PLAY_TIER_SPECIAL_DRAW": 0,
+            "DOUBLE_PLAY_TIER_WINNER_COUNT": 0
+          },
+          {
+            "DOUBLE_PLAY_TIER_ID": 5,
+            "DOUBLE_PLAY_TIER_DESCRIPTION": "3 of 5 + PB",
+            "DOUBLE_PLAY_TIER_JACKPOT": 500,
+            "DOUBLE_PLAY_TIER_SPECIAL_DRAW": 0,
+            "DOUBLE_PLAY_TIER_WINNER_COUNT": 1
+          },
+          {
+            "DOUBLE_PLAY_TIER_ID": 6,
+            "DOUBLE_PLAY_TIER_DESCRIPTION": "3 of 5",
+            "DOUBLE_PLAY_TIER_JACKPOT": 20,
+            "DOUBLE_PLAY_TIER_SPECIAL_DRAW": 0,
+            "DOUBLE_PLAY_TIER_WINNER_COUNT": 44
+          },
+          {
+            "DOUBLE_PLAY_TIER_ID": 7,
+            "DOUBLE_PLAY_TIER_DESCRIPTION": "2 of 5 + PB",
+            "DOUBLE_PLAY_TIER_JACKPOT": 20,
+            "DOUBLE_PLAY_TIER_SPECIAL_DRAW": 0,
+            "DOUBLE_PLAY_TIER_WINNER_COUNT": 37
+          },
+          {
+            "DOUBLE_PLAY_TIER_ID": 8,
+            "DOUBLE_PLAY_TIER_DESCRIPTION": "1 of 5 + PB",
+            "DOUBLE_PLAY_TIER_JACKPOT": 10,
+            "DOUBLE_PLAY_TIER_SPECIAL_DRAW": 0,
+            "DOUBLE_PLAY_TIER_WINNER_COUNT": 186
+          },
+          {
+            "DOUBLE_PLAY_TIER_ID": 9,
+            "DOUBLE_PLAY_TIER_DESCRIPTION": "Powerball Only",
+            "DOUBLE_PLAY_TIER_JACKPOT": 7,
+            "DOUBLE_PLAY_TIER_SPECIAL_DRAW": 0,
+            "DOUBLE_PLAY_TIER_WINNER_COUNT": 436
+          }
+        ]
+      ],
+      "SPECIAL_ARGS": {
+        "TOTAL_WINNERS": 7152,
+        "POWERBALL": 14,
+        "POWERPLAY": 5,
+        "TOTAL_PRIZE": "$    55,894"
+      },
+      "DRAW_DATE": 1790136000000,
+      "DOUBLE_PLAY_DRAW_VALUES": [
+        {
+          "DOUBLE_PLAY_DRAW_VALUE": 10,
+          "DOUBLE_PLAY_DRAW_NUMBER_POSITION": 1
+        },
+        {
+          "DOUBLE_PLAY_DRAW_VALUE": 17,
+          "DOUBLE_PLAY_DRAW_NUMBER_POSITION": 2
+        },
+        {
+          "DOUBLE_PLAY_DRAW_VALUE": 19,
+          "DOUBLE_PLAY_DRAW_NUMBER_POSITION": 3
+        },
+        {
+          "DOUBLE_PLAY_DRAW_VALUE": 21,
+          "DOUBLE_PLAY_DRAW_NUMBER_POSITION": 4
+        },
+        {
+          "DOUBLE_PLAY_DRAW_VALUE": 40,
+          "DOUBLE_PLAY_DRAW_NUMBER_POSITION": 5
+        }
+      ],
+      "GAME_NAME": [
+        "POWERBALL"
+      ],
+      "DOUBLE_PLAY_DRAW_DATE": 1790136000000
     }
   ]
 }

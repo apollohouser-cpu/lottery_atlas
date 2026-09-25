@@ -5,4 +5,4 @@ if (!input || !output) throw Error('Input and output required');
 const raw=await readFile(input,'utf8');
 validateKentuckyTierFeed(JSON.parse(raw));
 await writeFile(output,raw);
-console.log('Published two validated Kentucky statewide tables with original dates.');
+console.log('Published validated Kentucky statewide tables with original dates.');
