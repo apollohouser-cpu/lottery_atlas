@@ -4818,6 +4818,12 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   child: _MapActivityEmptyNotice(
                     stateName: selectedState.name,
                     hasPublishedStateActivity: selectedStateActivity.isNotEmpty,
+                    unavailableDrawGame:
+                        selectedState.name == 'Texas' &&
+                            _filterState.game != LotteryGame.allGames &&
+                            _filterState.game != LotteryGame.scratchOff
+                        ? (_selectedStateActivityGameName ?? 'Draw games')
+                        : null,
                   ),
                 ),
               ),
@@ -5133,17 +5139,23 @@ class _MapActivityEmptyNotice extends StatelessWidget {
   const _MapActivityEmptyNotice({
     required this.stateName,
     required this.hasPublishedStateActivity,
+    this.unavailableDrawGame,
   });
 
   final String stateName;
   final bool hasPublishedStateActivity;
+  final String? unavailableDrawGame;
 
   @override
   Widget build(BuildContext context) {
-    final title = hasPublishedStateActivity
+    final title = unavailableDrawGame != null
+        ? '$unavailableDrawGame: claim locations unavailable'
+        : hasPublishedStateActivity
         ? 'No $stateName activity matches this view'
         : 'No published $stateName claim locations yet';
-    final detail = hasPublishedStateActivity
+    final detail = unavailableDrawGame != null
+        ? 'Texas mapped claims cover selected Scratch top prizes only. Choose All Texas Scratch-Off activity to return to that coverage.'
+        : hasPublishedStateActivity
         ? 'Try another game, a wider prize range, or a longer timeline period.'
         : 'Draw times and ticket catalogs can be available before official winner reports provide retailer-level map activity.';
 

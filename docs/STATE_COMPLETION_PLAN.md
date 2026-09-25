@@ -434,3 +434,23 @@ interruption remains noted rather than classified as a reproduced catalog crash.
 Initial repository was clean; all five live JSON files matched; agency mail
 contained only previously recorded replies. Texas remains active, not yet
 announced ready for the full available-coverage experience.
+
+## September 24 Texas draw selection and recovery acceptance
+
+Selecting Lotto Texas previously displayed a generic suggestion to widen the
+prize/date filters even though Texas's mapped feed has no draw-game claims.
+The Texas empty notice now names the selected draw game, states that claim
+locations are unavailable, explains the selected Scratch top-prize scope and
+points to All Texas Scratch-Off activity as the recovery action.
+
+Rebuilt/restarted at 800 × 632, selected Lotto Texas and visually verified the
+complete new notice. Selected All Texas Scratch-Off activity, then August 14:
+mapped Scratch claims returned and the draw-specific notice disappeared. Eight
+Texas tests and the standard macOS build pass. This closes selected-draw
+feedback and recovery, without asserting draw-claim coverage. Final acceptance
+review must reconcile the remaining checklist and schedule-source evidence.
+
+Pulled the scheduled a87e221 publication and independently verified all four
+live feeds and refresh-status JSON match. Agency mail had no new messages
+beyond recorded replies. No private records or new coordinates were published
+by this app change.
