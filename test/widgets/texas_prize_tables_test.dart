@@ -1,10 +1,39 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:lottery_atlas/services/texas_prize_tables_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lottery_atlas/widgets/map/texas_prize_tables_sheet.dart';
 
 void main() {
+  testWidgets(
+    'offline bundled table supports game selection and coverage dialog',
+    (tester) async {
+      final raw = File(
+        'data/texas_draw_tiers.generated.json',
+      ).readAsStringSync();
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: TexasPrizeTablesSheet(
+              loader: TexasPrizeTablesLoader(
+                readCache: () async => null,
+                fetchRemote: () async => throw const SocketException('offline'),
+                readBundle: () async => raw,
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(find.byType(DropdownButton<int>), findsOneWidget);
+      await tester.tap(find.text('Missing games?'));
+      await tester.pumpAndSettle();
+      expect(find.text('Pick 3 and Daily 4 coverage'), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    },
+  );
+
   testWidgets(
     'Texas statewide report is separate, dated, scrollable and switches games',
     (tester) async {

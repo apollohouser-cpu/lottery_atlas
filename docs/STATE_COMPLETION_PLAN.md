@@ -556,7 +556,7 @@ and source accessibility before marking the full date checklist complete.
 - [x] Distinguish game, tier, draw/claim/publication dates, period and missing coverage.
 - [x] Verify map selection, filters, resets, defaults and source links for both national games.
 - [x] Integrate refresh/retention validation, tests, build and independent live verification.
-- [ ] Reconcile full Texas acceptance before advancing any other state.
+- [x] Reconcile full Texas acceptance before advancing any other state.
 
 Do not call schedules plus Scratch-only points fully developed Texas. Agency
 requests remain no-fee; unavailable data is not permission to invent points.
@@ -694,3 +694,33 @@ feed still exactly matches the validated local copy.
 The eight-game source inventory is now reviewed. Texas stays active. Remaining
 acceptance work: explicitly exercise the newly added table view's bundled/cache
 fallback and reconnection, then reconcile the revised full Texas checklist.
+
+### September 25 full supported Texas acceptance reconciliation
+
+The supported Texas experience is accepted for the verified coverage described
+below. This supersedes the earlier Scratch-only acceptance; it does not establish
+complete statewide claim data. Texas remains the active state for follow-up.
+
+- Scratch: catalog, directory, 6,473 mapped top-prize claims, claim/report dates,
+  opaque public IDs, filters/reset/favorites and sources accepted.
+- Powerball and Mega Millions: 10 verified mapped second-tier records combined,
+  latest mapped-date shortcuts, camera focus, filters, details and sources accepted.
+- Lotto Texas, Texas Two Step, Cash Five and All or Nothing: supported mapped
+  activity accepted; all six draw games total 144 mapped records. Exact-address
+  exclusions and nominal-prize limitations remain explicit.
+- Statewide tier tables: nine reports across those six games, separate from map
+  counts, preserve tier/multiplier columns, dates and official source links.
+- Pick 3/Daily 4: schedules/results links and evidence-based unavailable-count/
+  location explanations accepted. Reviewed reports lack counts/Where Sold tables;
+  the existing no-fee records request seeks missing coverage. No zero inferred.
+- Compact/larger native interaction evidence is recorded above. New loader tests
+  now exercise first-launch offline bundle, saved cache, corrupt response/cache,
+  reconnection with unchanged source dates and persistence failure. An integrated
+  offline widget test opens the actual table and coverage dialog. A cache-write
+  failure no longer discards a valid downloaded report.
+
+83 Flutter tests and macOS debug build pass. Live nine-table feed matches the
+validated local data independently; publisher 36105817217 succeeded. This change
+only affects the native loader/tests, so no public data publication is required.
+Complete statewide retailer claims and lower tiers remain unavailable; acceptance
+of supported flows does not imply that missing data has been obtained.
