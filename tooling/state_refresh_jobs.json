@@ -264,7 +264,8 @@
     "outputs": [
       "data/kentucky_scratch_catalog.generated.json",
       "data/kentucky_retailer_directory.generated.json",
-      "data/kentucky_current_winner_activity.generated.json"
+      "data/kentucky_current_winner_activity.generated.json",
+      "data/kentucky_draw_tiers.generated.json"
     ],
     "commands": [
       [
@@ -283,6 +284,11 @@
         "tooling/import_kentucky_current_winners.mjs",
         "data/kentucky_current_winner_activity.generated.json",
         "data/kentucky_retailer_directory.generated.json"
+      ],
+      [
+        "node",
+        "tooling/import_kentucky_draw_tiers.mjs",
+        "data/kentucky_draw_tiers.generated.json"
       ]
     ]
   },

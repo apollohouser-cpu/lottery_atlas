@@ -21,6 +21,10 @@ export function parseKentuckyTiers(data, expectedGame) {
     winners += r.TIER_WINNER_COUNT;
     payout += r.TIER_WINNER_COUNT * r.TIER_JACKPOT * (multiplier || 1);
   }
+  const expectedKeys = expectedGame === 26
+    ? ['1:0', ...Array.from({length:8},(_,i)=>[2,3,4,5,10].map(m=>`${i+2}:${m}`)).flat()]
+    : Array.from({length:5},(_,i)=>`${i+1}:1`);
+  if (keys.size !== expectedKeys.length || expectedKeys.some(k=>!keys.has(k))) throw Error('Missing or unreviewed prize tiers');
   const rawPayout = data.SPECIAL_ARGS?.TOTAL_PRIZE;
   if (typeof rawPayout !== 'string' || !/^\$\s*\d[\d,]*$/.test(rawPayout)) throw Error('Invalid reported payout');
   if (winners !== data.SPECIAL_ARGS.TOTAL_WINNERS || payout !== Number(rawPayout.replace(/[$,\s]/g,''))) throw Error('Tier reconciliation failed');

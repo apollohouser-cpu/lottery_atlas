@@ -13,7 +13,7 @@ test('Xs and Os stays a distinct game with Kentucky-only tier totals',()=>{
  assert.equal(result.drawDate,'2026-09-20');assert.equal(result.reportedWinners,831);assert.equal(result.reportedPayout,14738);
 });
 test('unknown groups, mismatched totals and jackpot winners fail closed',()=>{
- for (const mutate of [d=>d.GAME_NUMBER=[24],d=>d.TIER_LIST.push([]),d=>d.TIER_LIST[0][1].TIER_WINNER_COUNT++,d=>d.TIER_LIST[0].push(d.TIER_LIST[0][1]),d=>d.TIER_LIST[0][0].TIER_WINNER_COUNT=1]) {
+ for (const mutate of [d=>d.GAME_NUMBER=[24],d=>d.TIER_LIST[0].splice(1,1),d=>d.TIER_LIST.push([]),d=>d.TIER_LIST[0][1].TIER_WINNER_COUNT++,d=>d.TIER_LIST[0].push(d.TIER_LIST[0][1]),d=>d.TIER_LIST[0][0].TIER_WINNER_COUNT=1]) {
   const d=fixture('mega-millions');mutate(d);assert.throws(()=>parseKentuckyTiers(d,26));
  }
 });

@@ -937,3 +937,16 @@ separate Kentucky table view, inspect other game layouts, and exercise native
 selection/notice-date flows. This resolves the earlier inability to inspect the
 dynamic response; Mega Millions statewide data is available even though retailer
 locations are absent. Kentucky deadline unchanged.
+
+### September 25 Kentucky statewide table milestone
+
+Implemented the separate Kentucky Drawings → Statewide prize tables flow for
+verified Mega Millions and Powerball Xs & Os, with source dates, tier/multiplier
+separation, coverage limitations, cache and bundled offline fallback. Native
+800×632 interaction acceptance verifies both game selections, date changes,
+scroll-position reset, horizontal/vertical access to reconciled totals and visible
+limitations. Six focused Flutter checks, 74 Node checks and macOS debug build pass;
+analysis has only the 12 existing infos. See Kentucky source screen for details.
+This advances Kentucky's draw-game checklist, but does not close it: ordinary
+Powerball and remaining state-game reconciliation and broader integrated flows
+are still pending. Deadlines unchanged.

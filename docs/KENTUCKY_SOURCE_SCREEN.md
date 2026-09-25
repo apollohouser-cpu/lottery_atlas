@@ -165,3 +165,34 @@ separate Kentucky table view, inspect other game layouts, and exercise native
 selection/notice-date flows. This resolves the earlier inability to inspect the
 dynamic response; Mega Millions statewide data is available even though retailer
 locations are absent. Kentucky deadline unchanged.
+
+### September 25 statewide table integration and native acceptance
+
+Kentucky Drawings now opens a separate Statewide prize tables sheet for the two
+reviewed layouts, Mega Millions and Powerball Xs & Os. The latter remains distinct
+from ordinary Powerball. Source draw dates, unavailable publication dates, base
+prizes, multipliers, Kentucky winner counts and reconciled tier payouts are visible.
+The sheet explicitly excludes retailer locations and complete historical claims.
+Other games remain under review; this is not Kentucky's final release decision.
+
+The new importer discovers each latest returned draw from official history,
+requires matching detail identity/date/totals, rejects missing/unknown tiers and
+source regression, and writes only after both reports reconcile. Scheduled
+six-hour refresh joins Kentucky's existing transaction: a failed Kentucky command
+restores its previous validated files and dates. Unchanged reports retain the
+original feed timestamp. Publication revalidates source responses and their
+rendered tables. The public feed contains only official draw-level responses;
+no ticket identifiers or inferred store coordinates are involved.
+
+Native 800×632 acceptance passed: Kentucky selection → Drawings → Statewide prize
+tables; Mega Millions September 22; horizontal and vertical scrollbar navigation
+to totals 2,465 / $49,433; switching to Xs & Os resets scroll positions and shows
+September 20, with totals 831 / $14,738. Coverage and official-source controls are
+visible without overflow. Offline bundle/cache, malformed remote, persistence
+failure and game switching have six passing Flutter checks. All 74 Node checks
+pass; macOS debug build passes; analysis remains at 12 existing infos.
+
+Next acceptance gaps remain other draw-game layouts and integrated Kentucky
+activity/date/favorites flows. Scope reconciliation and release deadlines remain
+September 26 06:58 ET and September 28 18:00 ET respectively. No new agency reply
+beyond the already recorded Texas acknowledgment was found this session.

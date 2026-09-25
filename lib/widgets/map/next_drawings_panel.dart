@@ -1,3 +1,4 @@
+import 'kentucky_prize_tables_sheet.dart';
 import 'dart:async';
 import 'texas_prize_tables_sheet.dart';
 
@@ -383,6 +384,17 @@ class _NextDrawingsPanelState extends State<NextDrawingsPanel> {
                             ),
                           ),
                           const SizedBox(height: 10),
+                          if (widget.stateName == 'Kentucky')
+                            TextButton.icon(
+                              onPressed: () => showModalBottomSheet<void>(
+                                context: context,
+                                isScrollControlled: true,
+                                builder: (_) =>
+                                    const KentuckyPrizeTablesSheet(),
+                              ),
+                              icon: const Icon(Icons.table_chart_outlined),
+                              label: const Text('Statewide prize tables'),
+                            ),
                           if (widget.stateName == 'Texas' &&
                               widget.onStateDrawSelected != null) ...[
                             TextButton.icon(
