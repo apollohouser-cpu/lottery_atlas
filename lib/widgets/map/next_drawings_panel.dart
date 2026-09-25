@@ -563,7 +563,7 @@ class _StateDrawingRow extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 18),
             child: Text(
-              '$dateLabel · $timeLabel${onTap == null ? '' : ' · Show on map'}',
+              '$dateLabel · $timeLabel${onTap == null ? '' : ' · Game activity on map'}',
               style: const TextStyle(color: Colors.white70, fontSize: 11),
             ),
           ),

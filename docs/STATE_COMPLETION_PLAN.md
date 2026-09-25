@@ -572,3 +572,22 @@ requests remain no-fee; unavailable data is not permission to invent points.
   integration. 75 Flutter tests and macOS build pass (12 existing analysis infos).
 - Texas remains active. Other draw-game source inventory and integrated full-game
   acceptance are outstanding; this is not a new Texas completion declaration.
+
+### September 25 expanded draw-game acceptance
+
+- Official 2026 Where Sold coverage now includes Lotto Texas, Texas Two Step,
+  Cash Five and All or Nothing in addition to Powerball and Mega Millions.
+  Native game switching verified September 5, September 10, September 16 and
+  August 3 latest mapped dates respectively. County details verified Lotto Texas
+  Houston $7.5 million. Individual source copy distinguishes nominal prizes from
+  verified cash payouts and draw dates from claims. Camera targets latest records
+  so the timeline does not hide the selected point.
+- Daily 4 native selection correctly explains unavailable selling locations,
+  without claiming zero statewide wins. Pick 3 has the same evidence limitation.
+- Seven draw importer checks (62 Node checks total), 75 Flutter tests, macOS build
+  and analysis pass with only the 12 pre-existing infos. Offline fixture checks
+  now require all six draw games. Live verification remains pending publication.
+- No-fee follow-up sent in the existing Texas records thread, message
+  1a0d714b2dc394b0, requesting receipt/status and existing row/prize/location/cadence
+  definitions and missing Pick 3/Daily 4 retailer reports. August request unchanged.
+- Texas remains active through final deployment and acceptance reconciliation.

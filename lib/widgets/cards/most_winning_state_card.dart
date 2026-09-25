@@ -73,7 +73,7 @@ class MostWinningStateCard extends StatelessWidget {
                   ),
                   Text(
                     snapshot.stateName == 'Texas'
-                        ? 'PUBLISHED CLAIMS'
+                        ? 'PUBLISHED RECORDS'
                         : 'WINNING TICKETS',
                     style: const TextStyle(
                       color: Colors.white38,
@@ -89,7 +89,7 @@ class MostWinningStateCard extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.only(bottom: 10),
                   child: Text(
-                    'Selected Scratch top-prize claims and national draw second-tier records with verified retailer matches only. '
+                    'Selected Scratch top-prize claims and selected draw-game Where Sold records with verified retailer matches only. '
                     'Rankings reflect the current filters, not all Texas wins or all prize tiers.',
                     style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
                   ),
@@ -346,13 +346,13 @@ class MostWinningStateCard extends StatelessWidget {
   String _heading(MapRankingSnapshot snapshot) {
     if (snapshot.stateName == 'Texas') {
       return switch (snapshot.level) {
-        MapRankingLevel.county => 'TOP COUNTIES BY PUBLISHED CLAIMS · Texas',
+        MapRankingLevel.county => 'TOP COUNTIES BY PUBLISHED RECORDS · Texas',
         MapRankingLevel.city =>
-          'TOP CITIES BY PUBLISHED CLAIMS · ${snapshot.countyName}',
+          'TOP CITIES BY PUBLISHED RECORDS · ${snapshot.countyName}',
         MapRankingLevel.retailer =>
-          'TOP RETAILERS BY PUBLISHED CLAIMS · ${snapshot.cityName}',
+          'TOP RETAILERS BY PUBLISHED RECORDS · ${snapshot.cityName}',
         MapRankingLevel.game =>
-          'GAMES BY PUBLISHED CLAIMS · ${snapshot.retailerName}',
+          'GAMES BY PUBLISHED RECORDS · ${snapshot.retailerName}',
         MapRankingLevel.state => 'TOP 5 WINNING STATES',
       };
     }

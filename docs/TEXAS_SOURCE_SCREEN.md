@@ -89,3 +89,23 @@ and reset checks, and independent live verification of this addition. Official
 Lotto Texas pages also expose draw results and tier totals; retailer-level
 coverage must be inspected before declaring those games unavailable. The
 September 15 August records request remains unanswered in the checked mailbox.
+
+### Additional state draw reports, September 25
+
+Expanded the same 2026 audit to Lotto Texas (114 draw pages), Texas Two Step
+(77), Cash Five (229) and All or Nothing (916 individual drawing pages). The
+feed now has 144 matched selling-location rows: Powerball 9, Mega Millions 1,
+Lotto Texas 3, Texas Two Step 19, Cash Five 106 and All or Nothing 6. Thirteen
+rows are excluded: eight unmatched addresses, two ambiguous address joins and
+three advertised/shared jackpot amounts. Each state report's top-tier winner
+count must match its selling-row count before import. Repeated Cash Five rows
+are retained because the official winner count reconciles with the row count.
+All or Nothing's named drawing session is preserved in the source label without
+inventing an exact event time. Lotto Texas amounts are source-listed nominal
+jackpots; cash-value election does not make that nominal amount a cash payout.
+
+September 24 Pick 3 and Daily 4 detail pages were inspected. They provide results
+and prize information but no Where Sold retailer table. They remain unsupported
+for retailer heat points; this is not evidence of zero wins. Existing official
+records correspondence seeks the missing retailer/count evidence. Complete
+statewide data remains a separate outcome from acceptance of available features.

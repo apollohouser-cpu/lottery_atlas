@@ -129,6 +129,14 @@ void main() {
     expect(texas.length, greaterThanOrEqualTo(100));
     expect(texas.any((r) => r.gameName == 'Powerball'), isTrue);
     expect(texas.any((r) => r.gameName == 'Mega Millions'), isTrue);
+    for (final game in [
+      'Lotto Texas',
+      'Texas Two Step',
+      'Cash Five',
+      'All or Nothing',
+    ]) {
+      expect(texas.any((r) => r.gameName == game), isTrue, reason: game);
+    }
   });
   test(
     'Texas downloaded claims survive offline reload and reconnect unchanged',

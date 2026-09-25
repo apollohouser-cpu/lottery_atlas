@@ -10,3 +10,20 @@ test('bad or missing reports fail rather than silently wiping previous data',()=
 test('explicit no top-tier winners is valid but does not imply no statewide wins',()=>{assert.deepEqual(parseDraw('<h2>Winning Numbers for 01/16/2026 were:</h2>There were no Mega Millions jackpot or 2nd prize winners','2026-01-16'),[]);});
 test('identical published rows are not silently deduplicated',()=>{const rows=parseDraw(html,'2026-01-16');const r=joinRows([rows[0],rows[0]],[store],'mega-millions','u');assert.equal(r.activities.length,2);assert.notEqual(r.activities[0].id,r.activities[1].id);});
 test('shared advertised jackpots are not represented as an individual payout',()=>{const r=parseDraw(html,'2026-01-16')[0];const joined=joinRows([{...r,tier:'5 of 5 w/Powerball',prizeAmount:20000000}],[store],'powerball','u');assert.equal(joined.activities.length,0);assert.match(joined.excluded[0].reason,/shared/);});
+
+test('state draw rows reconcile with source counts and retain repeated Cash Five tickets', async () => {
+ const {parseStateDraw}=await import('../../tooling/import_texas_draw_winners.mjs');
+ for(const [file,date,name,count,prize] of [
+  ['lotto','2026-09-05','Lotto Texas',1,7500000],
+  ['two-step','2026-09-10','Texas Two Step',1,225000],
+  ['cash-five','2026-09-16','Cash Five',5,15000],
+  ['all-or-nothing','2026-08-03','All or Nothing',1,250000],
+ ]){
+  const h=readFileSync(new URL(`./fixtures/texas-${file}-where-sold.html`,import.meta.url),'utf8');
+  const rows=parseStateDraw(h,date,name);
+  assert.equal(rows.length,count);assert.equal(rows[0].prizeAmount,prize);
+  if(file==='all-or-nothing')assert.equal(rows[0].session,'Evening');
+  assert.throws(()=>parseStateDraw(h,'2026-01-01',name));
+  assert.throws(()=>parseStateDraw(h.replace('<td>Yes</td>','<td>Yes</td><td>unexpected</td>').replace('<td>No</td>','<td>No</td><td>unexpected</td>'),date,name));
+ }
+});

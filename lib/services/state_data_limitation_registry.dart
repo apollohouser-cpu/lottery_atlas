@@ -6,11 +6,11 @@ class StateDataLimitationRegistry {
   static String? noticeFor(String stateName) {
     final reason = switch (stateName) {
       'Texas' =>
-        'Mapped activity includes selected Scratch top-prize claims with '
+        'Mapped 2026 activity includes selected Scratch top-prize claims with '
             'verified selling-retailer matches, plus selected Powerball and Mega Millions '
-            'second-tier Where Sold records with exact address matches. Scratch '
+            'second-tier records and selected Lotto Texas, Texas Two Step, Cash Five and All or Nothing top-tier Where Sold records with exact address matches. Scratch '
             'records use claim dates; draw records use draw dates, with no verified '
-            'time of day. Selling-retailer reports include fully processed claims; '
+            'time of day. Scratch selling-retailer reports include fully processed claims; '
             'recently filed claims can appear in game-page counts before these reports. '
             'Draw maps exclude other tiers, unverified locations and advertised shared jackpots. '
             'This is not an all-tier statewide feed. '

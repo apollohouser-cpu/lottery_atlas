@@ -31,15 +31,39 @@ export function parseDraw(html, expectedDate) {
  }
  if(!rows.length)throw Error('Empty Where Sold table');return rows;
 }
+export function parseStateDraw(html, expectedDate, gameName) {
+ const date=text(html).match(/Winning Numbers for (\d{2})\/(\d{2})\/(\d{4})(?: (Morning|Day|Evening|Night))? (?:were|are)/);
+ if(!date || `${date[3]}-${date[1]}-${date[2]}`!==expectedDate) throw Error('State draw date mismatch');
+ const tables=[...html.matchAll(/<table\b[^>]*>([\s\S]*?)<\/table>/gi)].map(m=>m[1]);
+ const cells=t=>[...t.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)].map(m=>[...m[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)].map(c=>text(c[1]))).filter(c=>c.length);
+ const prizes=tables.find(t=>/Number Correct/.test(t)&&/Prize Amount/.test(t));
+ if(!prizes)throw Error('Missing state prize table');
+ const topTiers=gameName==='Lotto Texas'?['6 of 6']:gameName==='Texas Two Step'?['4 of 4 w/Bonus']:gameName==='Cash Five'?['5 of 5']:['12 of 12','0 of 12'];
+ const tierRows=cells(prizes).filter(c=>topTiers.includes(c[0]));
+ if(tierRows.length!==topTiers.length)throw Error('Missing top tier');
+ const expected=tierRows.reduce((n,c)=>{const v=c[2].replaceAll(',','');if(v==='Roll')return n;if(!/^\d+$/.test(v))throw Error('Unknown winner count');return n+Number(v);},0);
+ const sold=tables.find(t=>/Retailer.*(?:Address|Zip)/s.test(t));
+ if(!sold){if(expected!==0)throw Error('Winner count without selling retailers');return [];}
+ const rows=cells(sold);
+ if(rows.length!==expected)throw Error('Selling rows differ from official top-tier winner count');
+ return rows.map(c=>{
+  if(c.length!==6)throw Error('Unexpected state selling table');
+  const [tier,name,address,city,zip]=c;
+  const pr=tierRows.find(p=>p[0]===tier);
+  if(!pr||!name||!address||!city||!/^\d{5}$/.test(zip))throw Error('Invalid state selling row');
+  return {tier,name,address,city,zip,date:expectedDate,session:date[4]||null,prizeAmount:money(pr[1]),gameName,
+   sharedJackpot: (gameName==='Lotto Texas'||gameName==='Texas Two Step')&&Number(pr[2].replaceAll(',',''))>1};
+ });
+}
 export function joinRows(rows, retailers, game, sourceUrl) {
  const activities=[],excluded=[];
  rows.forEach((r,index)=>{
-  if(/w\//i.test(r.tier)){excluded.push({...r,game,sourceUrl,reason:'Advertised jackpot may be shared; per-ticket prize not established by this table'});return;}
+  if((game!=='state-draw' && /w\//i.test(r.tier)) || r.sharedJackpot){excluded.push({...r,game,sourceUrl,reason:'Advertised jackpot may be shared; per-ticket prize not established by this table'});return;}
   const candidates=retailers.filter(x=>key(x.address)===key(r.address)&&key(x.city)===key(r.city)&&x.postalCode===r.zip);
   if(candidates.length!==1){excluded.push({...r,game,sourceUrl,reason:`${candidates.length} exact geocoded address matches`});return;}
   const p=candidates[0];
   const id=createHash('sha256').update(JSON.stringify([game,r,index])).digest('hex').slice(0,24);
-  activities.push({id:`tx-draw-${id}`,latitude:p.latitude,longitude:p.longitude,city:r.city,county:p.county.replace(/ County$/i,''),state:'TX',game,gameName:game==='powerball'?'Powerball':'Mega Millions',retailerName:r.name,retailerAddress:`${r.address}, ${r.city}, TX ${r.zip}`,coordinateSource:p.coordinateSource,drawDate:`${r.date}T12:00:00.000Z`,winningTickets:1,prizeAmount:r.prizeAmount,sourceUrl,sourceLabel:`Official Texas Lottery Where Sold · ${r.tier} · draw ${r.date}`});
+  activities.push({id:`tx-draw-${id}`,latitude:p.latitude,longitude:p.longitude,city:r.city,county:p.county.replace(/ County$/i,''),state:'TX',game,gameName:r.gameName || (game==='powerball'?'Powerball':'Mega Millions'),retailerName:r.name,retailerAddress:`${r.address}, ${r.city}, TX ${r.zip}`,coordinateSource:p.coordinateSource,drawDate:`${r.date}T12:00:00.000Z`,winningTickets:1,prizeAmount:r.prizeAmount,sourceUrl,sourceLabel:`Official Texas Lottery Where Sold · ${r.tier} · draw ${r.date}${r.session?' '+r.session:''}`});
  });return {activities,excluded};
 }
 async function get(url){
@@ -55,7 +79,7 @@ export async function run(directoryPath, outputPath, year=2026){
  const retailers=root.directories.find(x=>x.state==='Texas')?.retailers;
  if(!retailers||retailers.length<10000)throw Error('Missing verified Texas directory');
  const activities=[],excluded=[],reports=[];
- for(const [game,folder] of [['powerball','Powerball'],['mega-millions','Mega_Millions']]){
+ for(const [game,folder] of [['powerball','Powerball'],['mega-millions','Mega_Millions'],['state-draw','Lotto_Texas'],['state-draw','Texas_Two_Step'],['state-draw','Cash_Five'],['state-draw','All_or_Nothing']]){
   const base=`https://www.texaslottery.com/export/sites/lottery/Games/${folder}/Winning_Numbers/`;
   const index=await get(base+'index.html');
   const option=[...index.matchAll(/<option\s+value="([^"]+)"[^>]*>\s*(\d{4})\s*<\/option>/gi)].find(m=>Number(m[2])===year);
@@ -67,16 +91,16 @@ export async function run(directoryPath, outputPath, year=2026){
   }
   if(links.size<20)throw Error(`Incomplete ${game} archive: ${links.size}`);
   const jobs=[...links];let next=0;const results=[];
-  await Promise.all(Array.from({length:4},async()=>{while(next<jobs.length){const [url,day]=jobs[next++];const rows=parseDraw(await get(url),day);results.push({url,day,...joinRows(rows,retailers,game,url),sourceRows:rows.length});}}));
+  await Promise.all(Array.from({length:4},async()=>{while(next<jobs.length){const [url,day]=jobs[next++];const html=await get(url);const rows=game==='state-draw'?parseStateDraw(html,day,folder.replaceAll('_',' ')):parseDraw(html,day);results.push({url,day,...joinRows(rows,retailers,game,url),sourceRows:rows.length});}}));
   results.sort((a,b)=>a.day.localeCompare(b.day));
-  for(const r of results){activities.push(...r.activities);excluded.push(...r.excluded);reports.push({game,date:r.day,sourceUrl:r.url,sourceRows:r.sourceRows,mappedRows:r.activities.length});}
-  console.log(`${game}: inspected ${links.size} draws`);
+  for(const r of results){activities.push(...r.activities);excluded.push(...r.excluded);reports.push({game,gameName:folder.replaceAll('_',' '),date:r.day,sourceUrl:r.url,sourceRows:r.sourceRows,mappedRows:r.activities.length});}
+  console.log(`${folder}: inspected ${links.size} draws`);
  }
  activities.sort((a,b)=>a.drawDate.localeCompare(b.drawDate)||a.id.localeCompare(b.id));
  if(!['powerball','mega-millions'].every(g=>activities.some(a=>a.game===g)))throw Error('No exact mapped winners for one game');
  let old;try{old=JSON.parse(await readFile(outputPath,'utf8'));}catch{}
  const changed=JSON.stringify(old?.activities)!==JSON.stringify(activities)||JSON.stringify(old?.reports)!==JSON.stringify(reports)||JSON.stringify(old?.excluded)!==JSON.stringify(excluded);
- const result={source:'Texas Lottery official Powerball and Mega Millions draw-specific Where Sold tables',updatedAt:changed?new Date().toISOString():old.updatedAt,sourceLastUpdated:reports.map(r=>r.date).sort().at(-1)+'T12:00:00.000Z',coverage:`${year} draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.`,activities,excluded,reports};
+ const result={source:'Texas Lottery official draw-specific Where Sold tables',updatedAt:changed?new Date().toISOString():old.updatedAt,sourceLastUpdated:reports.map(r=>r.date).sort().at(-1)+'T12:00:00.000Z',coverage:`${year} draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.`,activities,excluded,reports};
  await writeFile(outputPath,JSON.stringify(result,null,2)+'\n');console.log(`Mapped ${activities.length}; excluded ${excluded.length}.`);
 }
 if(process.argv[1] && import.meta.url===pathToFileURL(process.argv[1]).href){run(...process.argv.slice(2)).catch(e=>{console.error(e);process.exitCode=1;});}
