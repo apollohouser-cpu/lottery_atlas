@@ -39,7 +39,7 @@ Scope: current official Scratch catalog, mapped verified retailer directory,
 selected Scratch top-prize claim activity, and supported draw-game information.
 This scope does not include complete all-tier statewide winning-ticket totals.
 
-- [ ] Catalog browsing and available filters work; unknown remaining counts stay
+- [x] Catalog browsing and available filters work; unknown remaining counts stay
       unknown and remaining prizes are not described as store stock.
 - [ ] Map loads verified points and retailer details; a directory location alone
       never becomes a winning-ticket record.
@@ -412,3 +412,25 @@ No production code changed, so no redundant build/test run was needed. Live
 feeds/status independently match repository files; mail has no new responses.
 Texas remains active: catalog remaining-count semantics and supported draw
 flows need final integrated review before the overall testing-ready sign-off.
+
+## September 24 Texas catalog semantics acceptance
+
+At 800 × 632, found the catalog's numeric “remaining” label ambiguous. Shared
+verified-catalog rows now explicitly say “top prizes remaining”; missing counts
+say “Remaining count unavailable” without substituting zero. The panel explains
+that remaining top prizes are not store stock. Rebuilt/restarted the standard
+app and visually verified the explanation and both first rows fit correctly.
+Together with earlier catalog scroll, selection and reset passes, this closes
+the catalog checklist item for the available Texas catalog. Eight Texas tests
+and the macOS debug build pass; no data or counts changed.
+
+Opened Drawings in Texas and observed named draw games, CDT schedule labels
+and countdowns. Selecting Lotto Texas closes the panel and produces the scoped
+no-matching-activity view. Remaining draw acceptance should inspect selected-game
+feedback and reset behavior; this observation alone does not establish schedule
+accuracy or full draw-flow acceptance. An initial app-control attempt reported
+the app quit; relaunch and repeated catalog actions succeeded. This intermittent
+interruption remains noted rather than classified as a reproduced catalog crash.
+Initial repository was clean; all five live JSON files matched; agency mail
+contained only previously recorded replies. Texas remains active, not yet
+announced ready for the full available-coverage experience.

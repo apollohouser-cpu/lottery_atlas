@@ -5990,7 +5990,7 @@ class _VerifiedStateScratchOffsPanel extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(12, 12, 12, 18),
                     children: [
                       const Text(
-                        'Verified ticket snapshot. Select a ticket to focus any published claim activity for that game. Retailer locations appear only when an official winner feed provides them.',
+                        'Verified ticket snapshot. Remaining top prizes are not store stock. Select a ticket to focus published claim activity. Retailer locations appear only when an official winner feed provides them.',
                         style: TextStyle(
                           color: Colors.white70,
                           fontSize: 11,
@@ -6056,8 +6056,8 @@ class _VerifiedStateScratchOffsPanel extends StatelessWidget {
     final remaining = game.topPrizesRemaining;
     final topPrize = game.topPrizeLabel ?? _money(game.topPrize);
     final summary = remaining == null
-        ? '\$${game.cost} ticket · Top prize $topPrize'
-        : '\$${game.cost} ticket · Top $topPrize · $remaining remaining';
+        ? '\$${game.cost} ticket · Top prize $topPrize · Remaining count unavailable'
+        : '\$${game.cost} ticket · Top $topPrize · $remaining top prizes remaining';
     final note = game.inventoryNote;
     return note == null || note.isEmpty ? summary : '$summary · $note';
   }
