@@ -55,3 +55,7 @@ to August 1–31, 2026 and explicitly withheld fee authorization.
 No payment or paid work is authorized. Keep this assembly on hold; the estimate
 is not a data delivery and does not establish any additional coverage. Existing
 verified public sources remain usable independently of this records request.
+
+### September 25 correspondence follow-through
+
+Sent September 25 follow-up 1a0da387a9aed9f8 explicitly withholding payment and paid processing. Asked for separate existing reports, directory, definitions or public links available without charge or custom programming. No fee was approved.

@@ -105,3 +105,7 @@ created. Deployment validation is recorded in the task status.
 ## September 24 records update
 
 September 24: Tiffany Pringle says the vendor expects to respond to the agency December 21, 2026; following redaction review, she estimates a response to the requester January 18, 2027, possibly earlier if the vendor responds sooner. This is an estimated response date, not guaranteed data delivery. Continue public-source app work.
+
+### September 25 correspondence follow-through
+
+Sent September 25 follow-up 1a0da38852ec11aa acknowledging the January 18, 2027 estimated response date and asking whether separate agency-held records can be provided earlier without charge. Explicitly withheld all fees and paid work, superseding the original $25 wording. No earlier installment or date has been promised.

@@ -92,3 +92,7 @@ and detail, not evidence that every underlying record is unavailable. No data
 was delivered and no paid work is authorized. Next request should seek existing
 report names/field definitions or separate existing exports without compilation;
 public-source app coverage continues independently.
+
+### September 25 correspondence follow-through
+
+Sent September 25 narrowed request 1a0da387f9504df7 to David Ross and the original FOIA mailbox. Requested separate existing retailer reports, August 2026 game/prize summaries and existing definitions in their maintained formats; asked for available report names if necessary. Removed any need for custom consolidation, ticket identifiers or new retailer joins. No fees or paid work authorized.

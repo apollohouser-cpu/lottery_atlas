@@ -120,3 +120,21 @@ feeds were independently checked and match published commit 55b9631. This
 resolves the refresh interruption described above; the bounded Census retry
 change is included in the successful run. Existing coverage limitations and
 pending agency definitions remain unchanged. No user intervention was needed.
+
+## September 22 clarification — reconciled September 25
+
+Robin McFee replied at 16:16 UTC in message 1a0c9e783ade67a2. This
+supersedes the earlier notes describing all definitions as pending:
+
+- Available Commission data cannot establish whether rows represent distinct
+  tickets, multiple plays, shared claims or other reasons.
+- Claim date is the claim processing date; prize amount is the full prize amount.
+- Selling agent identifiers are consistent across platforms, are not reassigned,
+  and indicate current locations.
+- The reply points to the public Scratch-off catalog for game numbers; it does
+  not add game numbers to the delivered workbook or establish a historical join.
+
+Do not count rows as verified distinct tickets, deduplicate identical rows, or
+infer historical selling addresses from current locations. Update/correction
+information remains unstated. No new public claim layer was published. The
+reply had not been reconciled in this source document before this audit.

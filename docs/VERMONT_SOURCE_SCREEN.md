@@ -139,3 +139,7 @@ the local macOS build and catalog tests remain separate from complete map covera
 ## September 24 records update
 
 September 24: Hannah Chauvin estimated $1,368.00 to provide the requested records and asked whether to continue. No fee or paid work is authorized. Keep the request on hold; use public data for scoped app completion. No records delivered.
+
+### September 25 correspondence follow-through
+
+Sent September 25 follow-up 1a0da3875155aeac explicitly declining the $1,368 charge and all paid work, superseding the original $25 wording. Asked for any separate existing reports, directory, definitions or public downloads available without charge; fee-bearing work remains on hold.
