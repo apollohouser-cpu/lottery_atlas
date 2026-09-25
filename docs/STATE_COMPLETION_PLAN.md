@@ -616,3 +616,24 @@ build; reconcile per-game limitations and the Scratch report footer as-of date
 with the current latest-claim-date metadata; then review the full checklist.
 Agency-only lower-tier and Pick 3/Daily 4 selling locations stay explicitly
 unavailable and do not prevent finishing the supported app experience.
+
+
+### Final provenance release verified September 25
+
+Publisher 36100256963 succeeded for commit 489feb3. Live activity again matches
+local validation exactly: 6,473 Texas Scratch claim records plus 144 draw records.
+All current public Scratch IDs are opaque hashes; all Scratch record labels show
+the report's September 23 as-of date separately from the claim date. Migration
+normalizes old bundled/cache IDs and saved map favorites. 76 Flutter tests pass;
+macOS build passes and analysis remains at 12 existing informational notices.
+
+Final native Powerball inspection verified automatic August 8 date/focus, source
+and nominal-prize limitations, add/remove favorite persistence (test addition
+removed), and the official source button opening the correct draw report. Both
+national games and all four supported state draw games have been exercised.
+Scratch reset and compact/larger layouts have been checked. The expanded Texas
+experience is ready for testing; complete statewide all-tier coverage is not
+claimed. Texas remains the active state. The next available-data enhancement is
+separate statewide draw-tier totals, which must never be mapped onto retailers
+or summed across overlapping multiplier columns. Missing retail-location data
+continues through the existing no-fee request.
