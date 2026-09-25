@@ -2627,6 +2627,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                               activity.state == 'TX' &&
                                   activity.game == LotteryGame.scratchOff
                               ? 'CLAIM DATE'
+                              : activity.state == 'KY' &&
+                                    (activity.id.startsWith('ky-current-') ||
+                                        activity.id.startsWith('ky-retained-'))
+                              ? 'NOTICE DATE'
                               : 'DRAW DATE',
                           value: formattedDate,
                           color: const Color(0xFF1478FF),

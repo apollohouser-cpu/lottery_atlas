@@ -824,3 +824,48 @@ Do not reopen for routine polishing or another unchanged verification pass;
 reopen only for an actual defect or meaningful verified new data with a named,
 bounded task. Preserve privacy, original dates, exclusions and partial-coverage
 labels. Kentucky work must not wait for these agency-only data expansions.
+
+### September 25 Kentucky scope and per-game gap inventory
+
+Scope is all supported physical lottery games and official result information,
+not Scratch alone. Release deadline remains September 28, 6 PM ET. This is an
+initial inventory; open source/interaction gaps below must be resolved or evidenced
+before acceptance. Official sources inspected September 25:
+
+- https://www.kylottery.com/apps/ — current game menu and results headings.
+- https://www.kylottery.com/apps/winners/index.html — current winner stories and
+  date-grouped retailer notices (latest notice heading September 23).
+- https://www.kylottery.com/apps/draw_games/pastwinning.html — official results
+  destination; web reader timed out this session, so details remain unverified.
+
+| Game/product | Existing verified app evidence | Required acceptance work |
+| --- | --- | --- |
+| Scratch | Catalog, separate directory, 35 current selected notices plus retained history | Catalog/reset, location/details, date/provenance, offline and final visual checks |
+| Powerball, including any Double Play coverage | Two retained Powerball records; current official winners page also links Powerball stories | Inspect current stories for selling-store evidence; verify national-game selection and latest mapped date; distinguish Double Play |
+| Mega Millions | Official current game/results presence; no record in the current/retained KY imports inspected | Review official result/winner sources; import supported selling-store evidence or explicitly document missing evidence, then exercise empty-state/source flow |
+| Millionaire for Life | One current selected retailer notice; schedule configured | Verify game matching, annual-prize semantics (not a lifetime/cash total), date and source |
+| Cash Ball 225 | Separate initial activity record and configured schedule | Verify provenance/date and game selection against official results |
+| Pick 3 / Pick 4 | Midday/evening schedules configured | Verify official schedule/results, winner-count/location availability and honest empty-state flows |
+| Keno / Cash Pop | Recurring schedules configured; homepage says every four minutes | Verify schedule window and source/result access; no fabricated map records |
+| Fast Play | Official game menu/winner story presence | Review store-versus-online evidence and supported information flow; do not invent a draw schedule |
+| Powerball xno homepage label | Separate current homepage result heading/link observed | Establish official product identity and applicability before mapping it to a game or treating it as unsupported |
+| Online instant games | Official stories exist, including online-only prizes | Exclude from physical-retailer heat points; no inferred store or residence coordinates |
+
+Current imported counts are selected rows, never statewide ticket totals. The
+current importer contains 36 rows (35 Scratch, one Millionaire for Life), retained
+history has eight rows (six Scratch, two Powerball), plus a separate initial Cash
+Ball record. Records need overlap/semantic review before aggregating any display.
+
+Fixed one concrete acceptance defect: current and retained Kentucky notice rows
+were labeled DRAW DATE in individual details. These imported ID families now show
+NOTICE DATE; the initial Cash Ball record keeps its separate draw-date semantics.
+The timeline already uses date-only Kentucky labels. This label fix still needs
+native details inspection in the next acceptance pass; no checklist is falsely
+marked complete by a build alone.
+
+Startup repository clean, no matching new agency mail, publisher 36121391338
+successful; activity/catalog/directory feeds independently matched local copies.
+Next work: inspect current Powerball stories and the official result pages, then
+exercise Kentucky native game/date/detail flows. Texas remains closed.
+
+Kentucky generated-data checks and the macOS debug build passed after the notice-date label correction. Public data is unchanged; this native UI change does not require a feed deployment.
