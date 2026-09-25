@@ -185,3 +185,37 @@ pass. No source data or app UI changed. Existing live tables matched at startup;
 no new agency replies. Texas remains active and its supported acceptance remains
 as documented above. This strengthens publication acceptance without claiming
 additional statewide coverage.
+
+### September 25, 06:58 AM ET — Texas release decision: accepted and closed
+
+Decision: the full supported Texas experience is complete for the verified
+available coverage. This includes Scratch, verified Powerball/Mega Millions
+retailer activity, four other draw-game activity layers, nine statewide prize
+tables, and evidence-based Pick 3/Daily 4 unavailable-data explanations with
+results links. It is not a declaration of complete statewide claim coverage.
+No release-blocking defect remains in the recorded acceptance evidence. No
+extension was used. Kentucky becomes active under the approved deadline rules.
+
+Acceptance evidence reviewed, without inventing additional prerequisites:
+
+- Native compact/larger layout, game selection, date/focus/reset, source details,
+  favorite add/remove, source navigation and the table/coverage dialogs are
+  documented in the September 25 acceptance entries above.
+- 83 Flutter tests, including integrated offline tables and cache/reconnection
+  validation, pass. macOS debug build passes; analysis has 12 existing infos.
+- 68 Node checks pass, including publication validation and rejection tests.
+- Publisher 36121391338 succeeded. Fresh independent downloads this session
+  matched all five local public feeds byte-for-byte: activity, Texas tables,
+  state catalogs, retailer directories and state totals.
+- Repository was clean at review. No new matching agency email arrived.
+
+Distribution distinction: public JSON feeds are live; the accepted app build is
+local macOS debug. This decision does not assert an App Store/mobile release.
+
+Texas backlog, outside completed supported scope: broader historical/all-tier
+retailer coverage and Pick 3/Daily 4 count/location records, subject to official
+responses and verified definitions. The existing no-fee request remains open.
+Do not reopen for routine polishing or another unchanged verification pass;
+reopen only for an actual defect or meaningful verified new data with a named,
+bounded task. Preserve privacy, original dates, exclusions and partial-coverage
+labels. Kentucky work must not wait for these agency-only data expansions.

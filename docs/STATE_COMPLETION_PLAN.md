@@ -11,7 +11,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Texas | Next substantive session; no later than September 25, 2026, 6:00 PM ET | Reconcile existing full supported acceptance and close, or identify one concrete release blocker. |
+| Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
 | Kentucky | September 28, 2026, 6:00 PM ET | Implementation starts only after Texas's full supported release decision. |
 | Virginia | October 1, 2026, 6:00 PM ET | Implementation starts only after Kentucky's supported release decision. |
 
@@ -49,18 +49,24 @@ Notify release decisions, deadline misses/extensions, material failures and user
 actions; remain quiet for unchanged status. This planning edit does not itself
 constitute Texas's final acceptance session.
 
-## Active work: Texas
+## Active work: Kentucky
 
-User correction September 25: finish Texas before moving to Kentucky or Virginia.
-The earlier Scratch-only acceptance is provisional and is not Texas completion.
-Kentucky implementation is on hold. Powerball and Mega Millions activity are
-required acceptance gaps; unavailable official data must be evidenced, not assumed.
-Do not expand to a new state merely because another source is available. Agency
-requests continue in parallel without blocking a scoped state release.
+Texas's full supported release decision was completed September 25, 2026 at
+06:58 AM ET, before its deadline. Development is closed for the verified available
+coverage, including Powerball and Mega Millions activity. Complete statewide
+claims remain unavailable and are tracked separately. See the release decision
+at the end of this document; earlier Texas-active statements are historical.
 
-Two separate outcomes must be reported: **accepted for available coverage** and
-**complete statewide data**. The former requires the checklist below; the latter
-requires affirmative source evidence. Texas's earlier limited acceptance does not satisfy the updated completion requirement. An unavailable feature needs an honest explanation, not fabricated data.
+Kentucky is now active. Its release decision remains due September 28 at 6:00 PM
+ET; scope and per-game gaps must be reconciled by September 26 at 06:58 AM ET.
+Use the existing Kentucky checklist and source screen. Explicitly inventory
+Powerball, Mega Millions and all supported Kentucky draw games as well as Scratch
+before defining acceptance; do not repeat the earlier Scratch-only scope error.
+Virginia remains queued until Kentucky acceptance, due October 1 at 6:00 PM ET.
+
+Two separate outcomes remain mandatory: **accepted for available coverage** and
+**complete statewide data**. Missing records do not establish zero wins. Accepted
+scope must include all supported flows with evidenced unavailable features.
 
 ## Session rules
 
@@ -784,3 +790,37 @@ pass. No source data or app UI changed. Existing live tables matched at startup;
 no new agency replies. Texas remains active and its supported acceptance remains
 as documented above. This strengthens publication acceptance without claiming
 additional statewide coverage.
+
+### September 25, 06:58 AM ET — Texas release decision: accepted and closed
+
+Decision: the full supported Texas experience is complete for the verified
+available coverage. This includes Scratch, verified Powerball/Mega Millions
+retailer activity, four other draw-game activity layers, nine statewide prize
+tables, and evidence-based Pick 3/Daily 4 unavailable-data explanations with
+results links. It is not a declaration of complete statewide claim coverage.
+No release-blocking defect remains in the recorded acceptance evidence. No
+extension was used. Kentucky becomes active under the approved deadline rules.
+
+Acceptance evidence reviewed, without inventing additional prerequisites:
+
+- Native compact/larger layout, game selection, date/focus/reset, source details,
+  favorite add/remove, source navigation and the table/coverage dialogs are
+  documented in the September 25 acceptance entries above.
+- 83 Flutter tests, including integrated offline tables and cache/reconnection
+  validation, pass. macOS debug build passes; analysis has 12 existing infos.
+- 68 Node checks pass, including publication validation and rejection tests.
+- Publisher 36121391338 succeeded. Fresh independent downloads this session
+  matched all five local public feeds byte-for-byte: activity, Texas tables,
+  state catalogs, retailer directories and state totals.
+- Repository was clean at review. No new matching agency email arrived.
+
+Distribution distinction: public JSON feeds are live; the accepted app build is
+local macOS debug. This decision does not assert an App Store/mobile release.
+
+Texas backlog, outside completed supported scope: broader historical/all-tier
+retailer coverage and Pick 3/Daily 4 count/location records, subject to official
+responses and verified definitions. The existing no-fee request remains open.
+Do not reopen for routine polishing or another unchanged verification pass;
+reopen only for an actual defect or meaningful verified new data with a named,
+bounded task. Preserve privacy, original dates, exclusions and partial-coverage
+labels. Kentucky work must not wait for these agency-only data expansions.
