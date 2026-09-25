@@ -3,6 +3,52 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
+## Completion deadlines — approved September 25
+
+These rules supersede open-ended development and repeated acceptance passes.
+All calendar deadlines use America/New_York (Eastern time). A deadline requires
+an evidenced release decision; it never permits skipping checks or inventing data.
+
+| State | Release-decision deadline | Current gate |
+| --- | --- | --- |
+| Texas | Next substantive session; no later than September 25, 2026, 6:00 PM ET | Reconcile existing full supported acceptance and close, or identify one concrete release blocker. |
+| Kentucky | September 28, 2026, 6:00 PM ET | Implementation starts only after Texas's full supported release decision. |
+| Virginia | October 1, 2026, 6:00 PM ET | Implementation starts only after Kentucky's supported release decision. |
+
+Texas's release includes the supported draw-game experience, specifically verified
+Powerball and Mega Millions activity. Scratch-only acceptance never satisfies it.
+The current evidence already records expanded supported acceptance; the next
+session must decide closure rather than invent another enhancement prerequisite.
+Once that decision is recorded, advance the active state to Kentucky, then Virginia.
+Missing complete statewide records remain a separately tracked data outcome.
+
+For subsequent states, record a calendar deadline at activation: 72 hours for an
+existing working import or 120 hours for substantial implementation. Define the
+full supported scope and all game gaps within the first 24 hours, included in that
+budget. Reserve the final substantive session for integrated acceptance and live
+verification. Finish sooner whenever the checklist passes; do not fill the budget.
+These are elapsed calendar windows, not a promise of uninterrupted compute time.
+
+At the deadline, release supported coverage with evidence and explicit unavailable
+features, or record a concrete release-blocking defect, the unfinished acceptance
+item, and one extension: at most 24 hours for a 72-hour state, or 48 hours for a
+120-hour state. Texas may receive at most one 24-hour extension. Record and notify
+the reason and revised timestamp immediately. No silent or repeated extensions.
+If still blocked after that extension, report the blocker and required intervention;
+continue independent checklist work without declaring completion or advancing to
+another state. A host outage also requires a visible schedule revision, not an
+invisible reset. Reforecast dependent calendar dates explicitly if a predecessor's
+extension affects them; never work on two active states to hide a missed deadline.
+
+After acceptance, put enhancements in a backlog. Reopen only for an actual defect
+or meaningful newly verified data, with a named gap and bounded deadline. Routine
+refactoring, extra research and unchanged polling never reopen completed scope.
+Agency requests retain their own promised response/follow-up dates and do not
+extend app deadlines. No fees, privacy exceptions or weaker validation are allowed.
+Notify release decisions, deadline misses/extensions, material failures and user
+actions; remain quiet for unchanged status. This planning edit does not itself
+constitute Texas's final acceptance session.
+
 ## Active work: Texas
 
 User correction September 25: finish Texas before moving to Kentucky or Virginia.
