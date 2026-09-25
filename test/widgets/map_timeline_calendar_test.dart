@@ -102,7 +102,7 @@ void main() {
     expect(find.text('Day'), findsOneWidget);
   });
 
-  testWidgets('date-only initial timeline emits a whole-day range', (
+  testWidgets('published-date initial timeline emits a whole-day range', (
     tester,
   ) async {
     await tester.binding.setSurfaceSize(const Size(900, 1000));
@@ -113,6 +113,7 @@ void main() {
         home: Scaffold(
           body: MapControlsOverlay(
             dayOnlyActivity: true,
+            dayOnlyDateLabel: 'Published dates',
             filterState: MapFilterState(
               dateRange: DateTimeRange(
                 start: DateTime(2026, 8, 14, 18),
@@ -127,6 +128,10 @@ void main() {
     await tester.pump();
     expect(emitted!.dateRange.start, DateTime(2026, 8, 14));
     expect(emitted!.dateRange.end.hour, 23);
+    expect(
+      find.textContaining('Published dates only; times unavailable'),
+      findsOneWidget,
+    );
     expect(find.text('Day'), findsNothing);
   });
 }

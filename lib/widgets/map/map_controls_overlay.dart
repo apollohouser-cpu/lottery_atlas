@@ -79,6 +79,7 @@ class MapControlsOverlay extends StatefulWidget {
     this.onActivityRefresh,
     this.showHeaderControls = true,
     this.dayOnlyActivity = false,
+    this.dayOnlyDateLabel = 'Claim dates',
   });
 
   final MapDetailMode detailMode;
@@ -96,6 +97,7 @@ class MapControlsOverlay extends StatefulWidget {
   final bool showHeaderControls;
   // The selected source supplies dates, not verified times of day.
   final bool dayOnlyActivity;
+  final String dayOnlyDateLabel;
 
   @override
   State<MapControlsOverlay> createState() => _MapControlsOverlayState();
@@ -1636,7 +1638,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
           padding: const EdgeInsets.only(left: 2, top: 2),
           child: Text(
             'Now showing: ${_timelineLabel()}'
-            '${widget.dayOnlyActivity ? ' · Claim dates only; times unavailable' : ''}',
+            '${widget.dayOnlyActivity ? ' · ${widget.dayOnlyDateLabel} only; times unavailable' : ''}',
             style: const TextStyle(
               color: Color(0xFF93C5FD),
               fontSize: 11,

@@ -4782,7 +4782,13 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 detailMode: _mapDetailMode,
                 filterState: _filterState,
                 showHeaderControls: selectedState == null,
-                dayOnlyActivity: selectedState?.name == 'Texas',
+                dayOnlyActivity: const {
+                  'Texas',
+                  'Kentucky',
+                }.contains(selectedState?.name),
+                dayOnlyDateLabel: selectedState?.name == 'Kentucky'
+                    ? 'Published dates'
+                    : 'Claim dates',
                 onDetailModeChanged: (mode) {
                   setState(() {
                     _mapDetailMode = mode;

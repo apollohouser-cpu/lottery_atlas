@@ -528,3 +528,21 @@ responses. Next concrete gap: current and historical notice importers encode
 date-only headings at synthetic noon, while Kentucky still offers hourly
 timeline filtering. Resolve precision/display semantics before accepting dates.
 The checklist remains open; this pass establishes visible coverage/cadence only.
+
+## September 25 Kentucky timeline precision repair
+
+Kentucky now uses whole-day or coarser timeline buckets. Entering from an hourly
+state automatically selects Week and shows “Published dates only; times
+unavailable”; Texas retains its existing claim-date wording. Original imported
+dates remain unchanged. The shared initial-range regression now verifies the
+published-date label and whole-day emission, alongside the existing transition
+and calendar tests: all three pass. Standard macOS build passes; analysis
+retains 12 informational notices.
+
+Restarted native app at 800 × 632, entered Kentucky from South Carolina's hourly
+view and verified Day is absent and the new wording is readable. Selected
+September 23, 2026; mapped notice activity appeared immediately without any
+manual scale adjustment. All live JSON files matched at startup; no new agency
+mail. Next date acceptance gap: individual Kentucky details still use the shared
+DRAW DATE label and merged-feed timestamp; review their notice-date semantics
+and source accessibility before marking the full date checklist complete.
