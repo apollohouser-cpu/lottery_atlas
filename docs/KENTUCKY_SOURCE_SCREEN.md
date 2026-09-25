@@ -196,3 +196,10 @@ Next acceptance gaps remain other draw-game layouts and integrated Kentucky
 activity/date/favorites flows. Scope reconciliation and release deadlines remain
 September 26 06:58 ET and September 28 18:00 ET respectively. No new agency reply
 beyond the already recorded Texas acknowledgment was found this session.
+
+Deployment evidence: commit c4ddf57 published successfully in run 36152041101.
+Independent HTTPS retrieval of kentucky_draw_tiers.json matched the checked-in
+feed byte-for-byte (SHA-256
+1dea651e67136bf331376c76dcab08459854e17a9803c06607939fa46c0cab6b).
+The native debug build's two-game table flow is ready for testing; the live JSON
+feed is published, not a new mobile-store or web-app binary release.
