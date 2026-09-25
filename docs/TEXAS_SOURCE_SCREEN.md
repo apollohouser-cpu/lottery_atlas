@@ -129,3 +129,22 @@ pack/ticket components are no longer printed in the current public feed. Legacy
 bundled/cached IDs and saved map favorites normalize to the same hash to avoid
 double-counting and preserve saved selections in the updated app. Historical
 repository versions are not rewritten by this change.
+
+### September 25 statewide prize-table implementation
+
+Added a separate Drawings in Texas → Statewide prize tables view with nine
+latest-draw reports across Powerball, Mega Millions, Lotto Texas, Texas Two Step,
+Cash Five and the four All or Nothing sessions. Each table retains official tier,
+prize and winner columns independently; no rows become retailer map activity.
+Mega Millions multiplier partitions are validated against each tier total.
+Source publication dates remain explicitly unavailable; draw dates are shown.
+Pick 3/Daily 4 are explicitly excluded from this view pending source review.
+
+The importer participates in Texas transactional refresh/rollback and six-hour
+publication, with bundled/cache fallback. At 800×632, native acceptance verified
+readable wrapped headers, game switching, horizontal scrollbar access to 10X
+columns, and vertical access to the final total row. 77 Flutter tests passed
+before the scrollbar refinement; the targeted widget test and macOS debug build
+passed again afterward. All 66 Node checks pass. Analysis retains 12 prior infos.
+Texas remains active; next gap is Pick 3/Daily 4 statewide source review and final
+acceptance reconciliation. Complete statewide retailer claims are not asserted.

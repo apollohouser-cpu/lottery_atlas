@@ -11,7 +11,7 @@ export function parseTierReport(html, {gameName, drawDate, sourceUrl}) {
     .some(m => text(m[1]).includes(gameName));
   if (!gameHeading) throw new Error('Tier report game mismatch');
   const tables = [...html.matchAll(/<table\b[^>]*>([\s\S]*?)<\/table>/gi)]
-    .map(m => m[1]).filter(t => /Number Correct/.test(t) && /Prize Amount/.test(t));
+    .map(m => m[1]).filter(t => /Number Correct/.test(text(t)) && /Prize Amount/.test(text(t)));
   if (tables.length !== 1) throw new Error('Expected one unambiguous prize table');
   const table = tables[0];
   if (/\b(?:colspan|rowspan)\s*=/i.test(table)) {
@@ -39,6 +39,13 @@ export function parseTierReport(html, {gameName, drawDate, sourceUrl}) {
     const reported = count(totals[0][i]);
     const sum = tiers.reduce((n, row) => n + (count(row[i]) ?? 0), 0);
     if (reported === null || sum !== reported) throw new Error('Tier sum differs from reported column total');
+  }
+  if (gameName === 'Mega Millions') {
+    const expectedHeaders = ['Total Texas Winners','2X Winners','3X Winners','4X Winners','5X Winners','10X Winners'];
+    if (JSON.stringify(winnerColumns.map(i=>headers[i])) !== JSON.stringify(expectedHeaders)) throw new Error('Unreviewed Mega Millions multiplier layout');
+    for (const row of tiers.slice(1)) {
+      if (count(row[2]) !== winnerColumns.slice(1).reduce((n,i)=>n+(count(row[i])??0),0)) throw new Error('Multiplier counts differ from tier total');
+    }
   }
   return {
     gameName, drawDate, drawingSession: heading[4] ?? null, sourceUrl,

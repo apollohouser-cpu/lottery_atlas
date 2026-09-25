@@ -1,0 +1,44 @@
+import 'dart:convert';
+import 'dart:io';
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:lottery_atlas/widgets/map/texas_prize_tables_sheet.dart';
+
+void main() {
+  testWidgets(
+    'Texas statewide report is separate, dated, scrollable and switches games',
+    (tester) async {
+      final data =
+          jsonDecode(
+                File('data/texas_draw_tiers.generated.json').readAsStringSync(),
+              )
+              as Map<String, dynamic>;
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(body: TexasPrizeTablesSheet(reportsOverride: data)),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(
+        find.text('Reported winners by tier • Not retailer map counts'),
+        findsOneWidget,
+      );
+      expect(
+        find.textContaining('Source publication date unavailable'),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+      final dropdown = tester.widget<DropdownButton<int>>(
+        find.byType(DropdownButton<int>),
+      );
+      final mm = (data['reports'] as List).indexWhere(
+        (r) => r['gameName'] == 'Mega Millions',
+      );
+      dropdown.onChanged!(mm);
+      await tester.pumpAndSettle();
+      expect(find.text('10X Winners'), findsOneWidget);
+      expect(find.text('Open official draw report'), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    },
+  );
+}

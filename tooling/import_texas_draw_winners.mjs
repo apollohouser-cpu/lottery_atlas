@@ -92,7 +92,7 @@ export async function run(directoryPath, outputPath, year=2026){
   if(links.size<20)throw Error(`Incomplete ${game} archive: ${links.size}`);
   const jobs=[...links];let next=0;const results=[];
   await Promise.all(Array.from({length:4},async()=>{while(next<jobs.length){const [url,day]=jobs[next++];const html=await get(url);const rows=game==='state-draw'?parseStateDraw(html,day,folder.replaceAll('_',' ')):parseDraw(html,day);results.push({url,day,...joinRows(rows,retailers,game,url),sourceRows:rows.length});}}));
-  results.sort((a,b)=>a.day.localeCompare(b.day));
+  results.sort((a,b)=>a.day.localeCompare(b.day)||a.url.localeCompare(b.url));
   for(const r of results){activities.push(...r.activities);excluded.push(...r.excluded);reports.push({game,gameName:folder.replaceAll('_',' '),date:r.day,sourceUrl:r.url,sourceRows:r.sourceRows,mappedRows:r.activities.length});}
   console.log(`${folder}: inspected ${links.size} draws`);
  }

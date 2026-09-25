@@ -29,3 +29,12 @@ test('Lotto Extra totals remain separate, including the Extra-only two-number ti
  assert.equal(extraOnly[2],'N/A');assert.equal(extraOnly[5],'35,446');
  assert.equal(r.totalWinningTickets,undefined);
 });
+test('Mega Millions multiplier partitions reconcile without being added to total winners',()=>{
+ const source=readFileSync(new URL('./fixtures/texas-mega-millions-prize-tiers.html',import.meta.url),'utf8');
+ const meta={gameName:'Mega Millions',drawDate:'2026-01-16',sourceUrl:'https://www.texaslottery.com/report'};
+ const r=parseTierReport(source,meta);
+ assert.deepEqual(r.winnerColumns,[2,4,6,8,10,12]);
+ assert.equal(r.reportedTotals[2],'20,913');assert.equal(r.reportedTotals[4],'9,682');
+ assert.equal(r.tiers[1][1],'$1 Million');assert.equal(r.tiers[1][3],'$2 Million');
+ assert.throws(()=>parseTierReport(source.replace('<td>415</td>','<td>416</td>').replace('9,682','9,683'),meta),/Multiplier counts/);
+});
