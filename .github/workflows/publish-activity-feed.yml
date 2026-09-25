@@ -53,9 +53,9 @@ jobs:
           dart run tooling/publish_activity_feed.dart
           --sources tooling/approved_activity_sources.json
           --output docs/activity.json
-      - name: Stage Kentucky's live catalog and retailer feeds
+      - name: Validate and stage public state feeds
         run: |
-          cp data/texas_draw_tiers.generated.json docs/texas_draw_tiers.json
+          node tooling/publish_texas_draw_tiers.mjs data/texas_draw_tiers.generated.json docs/texas_draw_tiers.json
           node tooling/publish_state_totals.mjs data/state_winning_ticket_totals.json docs/state_winning_ticket_totals.json
           cp data/kentucky_scratch_catalog.generated.json docs/kentucky_scratch_catalog.json
           cp data/kentucky_retailer_directory.generated.json docs/kentucky_retailer_directory.json

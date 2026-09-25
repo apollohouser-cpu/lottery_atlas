@@ -171,3 +171,17 @@ feed still exactly matches the validated local copy.
 The eight-game source inventory is now reviewed. Texas stays active. Remaining
 acceptance work: explicitly exercise the newly added table view's bundled/cache
 fallback and reconnection, then reconcile the revised full Texas checklist.
+
+### September 25 publication acceptance follow-up
+
+Closed a publication gap in the new statewide tables: pushes skip source refresh,
+so the prior plain file copy could publish an edited JSON file without validating
+its report structure. The publisher now checks the nine unique game/session
+reports, official game-specific URLs, real calendar dates, provenance, row shape,
+winner-column totals and Mega Millions multiplier partitions before writing.
+It preserves the exact validated bytes and source dates. Two regression checks
+cover current data and malformed/missing/duplicate reports; all 68 Node checks
+pass. No source data or app UI changed. Existing live tables matched at startup;
+no new agency replies. Texas remains active and its supported acceptance remains
+as documented above. This strengthens publication acceptance without claiming
+additional statewide coverage.
