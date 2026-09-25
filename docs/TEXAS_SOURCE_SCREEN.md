@@ -53,3 +53,39 @@ Texas is ready for testing of its explicitly limited available-data experience.
 See STATE_COMPLETION_PLAN.md for native filter, source, layout and offline
 evidence and the final automated checks. This supersedes the earlier provisional
 readiness statement; it does not establish complete statewide claims coverage.
+
+## September 25 correction: national draw activity
+
+The user rejected Scratch-only sign-off. Texas is active; Kentucky and Virginia
+remain on hold. The earlier readiness statement is superseded for full-state
+acceptance.
+
+The official Powerball and Mega Millions annual archives link per-draw **Where
+Sold** tables. The new importer inspected 114 Powerball and 76 Mega Millions
+2026 draw pages, through September 23 and September 22 respectively. It mapped
+nine Powerball and one Mega Millions second-tier records using a unique exact
+address/city/ZIP join to verified directory coordinates. Source retailer names
+are retained, even when the current directory name differs. This verifies the
+address, not historical retailer/license identity. Three unmatched addresses
+remain excluded; the May 2 Powerball jackpot is excluded because the advertised
+jackpot is not evidence of the individual ticket's share.
+
+Each included row has game, prize tier, draw date, source-listed prize amount and
+its official report link. Dates are draw dates, not claim or purchase dates.
+No validation time, claim time, cash payout or complete all-tier retailer counts
+are inferred. The latest inspected draw date is sourceLastUpdated; it is not a
+page publication timestamp. The six-hour refresh checks all inspected draw pages
+and Texas rollback preserves the prior validated files if any importer fails.
+
+Native acceptance verified both game shortcuts, automatic latest mapped date,
+Dallas Powerball August 8 ($2 million), Wichita Falls Mega Millions January 16
+($2 million), county summaries, individual records and visible source/date
+limitations. A discovered camera issue after county inspection was fixed: game
+selection now returns to Texas bounds. All 75 Flutter tests, six new importer
+checks and a macOS debug build passed; analysis retains 12 pre-existing infos.
+
+Remaining acceptance work includes the other Texas draw games, full-game filter
+and reset checks, and independent live verification of this addition. Official
+Lotto Texas pages also expose draw results and tier totals; retailer-level
+coverage must be inspected before declaring those games unavailable. The
+September 15 August records request remains unanswered in the checked mailbox.

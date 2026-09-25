@@ -65,6 +65,7 @@ class LotteryActivityFeedService {
     'data/ohio_winner_activity.generated.json',
     'data/colorado_winner_activity.generated.json',
     'data/texas_winner_activity.generated.json',
+    'data/texas_draw_activity.generated.json',
     'data/maryland_winner_activity.initial.json',
     'data/maryland_historical_activity.initial.json',
     'data/delaware_winner_activity.initial.json',

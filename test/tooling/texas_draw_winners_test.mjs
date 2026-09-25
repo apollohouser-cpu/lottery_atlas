@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {parseDraw,joinRows,money} from '../../tooling/import_texas_draw_winners.mjs';
+const html=readFileSync(new URL('./fixtures/texas-mega-millions-where-sold.html',import.meta.url),'utf8');
+const store={address:'911 Kemp Blvd',city:'Wichita Falls',postalCode:'76301',county:'Wichita County',latitude:33.9,longitude:-98.5,coordinateSource:'test exact address',name:'Different current name'};
+test('official MM multiplier amount and date are retained, not base prize or claim date',()=>{const rows=parseDraw(html,'2026-01-16');assert.equal(rows.length,1);assert.equal(rows[0].prizeAmount,2000000);assert.equal(rows[0].tier,'5 of 5');const r=joinRows(rows,[store],'mega-millions','https://www.texaslottery.com/report');assert.equal(r.activities[0].retailerName,'WF D S TEXAS SAVER');assert.equal(r.activities[0].drawDate,'2026-01-16T12:00:00.000Z');});
+test('ambiguous and unmatched addresses are excluded, never guessed',()=>{const rows=parseDraw(html,'2026-01-16');assert.equal(joinRows(rows,[store,store],'mega-millions','u').activities.length,0);assert.equal(joinRows(rows,[{...store,address:'912 Kemp Blvd'}],'mega-millions','u').excluded.length,1);});
+test('bad or missing reports fail rather than silently wiping previous data',()=>{assert.throws(()=>parseDraw(html,'2026-01-17'));assert.throws(()=>parseDraw('<h2>Winning Numbers for 01/16/2026 were:</h2>','2026-01-16'));assert.throws(()=>money('To be determined'));});
+test('explicit no top-tier winners is valid but does not imply no statewide wins',()=>{assert.deepEqual(parseDraw('<h2>Winning Numbers for 01/16/2026 were:</h2>There were no Mega Millions jackpot or 2nd prize winners','2026-01-16'),[]);});
+test('identical published rows are not silently deduplicated',()=>{const rows=parseDraw(html,'2026-01-16');const r=joinRows([rows[0],rows[0]],[store],'mega-millions','u');assert.equal(r.activities.length,2);assert.notEqual(r.activities[0].id,r.activities[1].id);});
+test('shared advertised jackpots are not represented as an individual payout',()=>{const r=parseDraw(html,'2026-01-16')[0];const joined=joinRows([{...r,tier:'5 of 5 w/Powerball',prizeAmount:20000000}],[store],'powerball','u');assert.equal(joined.activities.length,0);assert.match(joined.excluded[0].reason,/shared/);});

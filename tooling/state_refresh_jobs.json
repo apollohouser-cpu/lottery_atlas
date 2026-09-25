@@ -413,7 +413,8 @@
     "outputs": [
       "data/texas_scratch_catalog.generated.json",
       "data/texas_retailer_directory.generated.json",
-      "data/texas_winner_activity.generated.json"
+      "data/texas_winner_activity.generated.json",
+      "data/texas_draw_activity.generated.json"
     ],
     "commands": [
       [
@@ -432,6 +433,12 @@
         "data/texas_scratch_catalog.generated.json",
         "data/texas_retailer_directory.generated.json",
         "data/texas_winner_activity.generated.json"
+      ],
+      [
+        "node",
+        "tooling/import_texas_draw_winners.mjs",
+        "data/texas_retailer_directory.generated.json",
+        "data/texas_draw_activity.generated.json"
       ]
     ]
   },

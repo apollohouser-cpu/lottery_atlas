@@ -382,6 +382,38 @@ class _NextDrawingsPanelState extends State<NextDrawingsPanel> {
                             ),
                           ),
                           const SizedBox(height: 10),
+                          if (widget.stateName == 'Texas' &&
+                              widget.onStateDrawSelected != null) ...[
+                            const Text(
+                              'TEXAS MAPPED WINNERS',
+                              style: TextStyle(
+                                color: Color(0xFF93C5FD),
+                                fontSize: 11,
+                              ),
+                            ),
+                            const Text(
+                              'Selected second-tier records only. Opens latest mapped draw date.',
+                              style: TextStyle(
+                                color: Colors.white70,
+                                fontSize: 11,
+                              ),
+                            ),
+                            Wrap(
+                              spacing: 8,
+                              children: [
+                                for (final name in [
+                                  'Powerball',
+                                  'Mega Millions',
+                                ])
+                                  OutlinedButton(
+                                    onPressed: () =>
+                                        widget.onStateDrawSelected!(name),
+                                    child: Text('$name activity'),
+                                  ),
+                              ],
+                            ),
+                            const SizedBox(height: 10),
+                          ],
                           if (hasVerifiedStateDraws) ...[
                             _stateRows(),
                             const Padding(

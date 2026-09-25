@@ -89,7 +89,7 @@ class MostWinningStateCard extends StatelessWidget {
                 const Padding(
                   padding: EdgeInsets.only(bottom: 10),
                   child: Text(
-                    'Selected Scratch top-prize claims with verified retailer matches only. '
+                    'Selected Scratch top-prize claims and national draw second-tier records with verified retailer matches only. '
                     'Rankings reflect the current filters, not all Texas wins or all prize tiers.',
                     style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
                   ),

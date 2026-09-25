@@ -7,10 +7,13 @@ class StateDataLimitationRegistry {
     final reason = switch (stateName) {
       'Texas' =>
         'Mapped activity includes selected Scratch top-prize claims with '
-            'verified selling-retailer matches. Claim dates have no verified '
+            'verified selling-retailer matches, plus selected Powerball and Mega Millions '
+            'second-tier Where Sold records with exact address matches. Scratch '
+            'records use claim dates; draw records use draw dates, with no verified '
             'time of day. Selling-retailer reports include fully processed claims; '
             'recently filed claims can appear in game-page counts before these reports. '
-            'This is not an all-tier or draw-game claims feed. '
+            'Draw maps exclude other tiers, unverified locations and advertised shared jackpots. '
+            'This is not an all-tier statewide feed. '
             'The retailer directory is separate and does not establish wins.',
       'Kentucky' =>
         'Mapped activity includes selected official winner notices with verified '

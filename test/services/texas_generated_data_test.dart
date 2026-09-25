@@ -127,6 +127,8 @@ void main() {
         .where((row) => row.state == 'TX')
         .toList();
     expect(texas.length, greaterThanOrEqualTo(100));
+    expect(texas.any((r) => r.gameName == 'Powerball'), isTrue);
+    expect(texas.any((r) => r.gameName == 'Mega Millions'), isTrue);
   });
   test(
     'Texas downloaded claims survive offline reload and reconnect unchanged',

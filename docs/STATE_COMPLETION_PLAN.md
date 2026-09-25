@@ -3,17 +3,18 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
-## Active work: Kentucky
+## Active work: Texas
 
-Texas is accepted for its available-data scope as of September 25, 2026 UTC.
-Finish Kentucky next, then Virginia.
+User correction September 25: finish Texas before moving to Kentucky or Virginia.
+The earlier Scratch-only acceptance is provisional and is not Texas completion.
+Kentucky implementation is on hold. Powerball and Mega Millions activity are
+required acceptance gaps; unavailable official data must be evidenced, not assumed.
 Do not expand to a new state merely because another source is available. Agency
 requests continue in parallel without blocking a scoped state release.
 
 Two separate outcomes must be reported: **accepted for available coverage** and
 **complete statewide data**. The former requires the checklist below; the latter
-requires affirmative source evidence. Texas is signed off only for its
-explicitly limited available-data experience. An unavailable feature needs an honest explanation, not fabricated data.
+requires affirmative source evidence. Texas's earlier limited acceptance does not satisfy the updated completion requirement. An unavailable feature needs an honest explanation, not fabricated data.
 
 ## Session rules
 
@@ -546,3 +547,28 @@ manual scale adjustment. All live JSON files matched at startup; no new agency
 mail. Next date acceptance gap: individual Kentucky details still use the shared
 DRAW DATE label and merged-feed timestamp; review their notice-date semantics
 and source accessibility before marking the full date checklist complete.
+
+## September 25 user-directed Texas completion requirements
+
+- [ ] Verify and import available Powerball retailer-level winner records.
+- [ ] Verify and import available Mega Millions retailer-level winner records.
+- [ ] Inventory each other Texas draw game's official counts/location sources; implement supported flows.
+- [ ] Distinguish game, tier, draw/claim/publication dates, period and missing coverage.
+- [ ] Verify map selection, filters, resets, defaults and source links for both national games.
+- [ ] Integrate refresh/retention validation, tests, build and independent live verification.
+- [ ] Reconcile full Texas acceptance before advancing any other state.
+
+Do not call schedules plus Scratch-only points fully developed Texas. Agency
+requests remain no-fee; unavailable data is not permission to invent points.
+
+### September 25 Powerball / Mega Millions implementation progress
+
+- Implemented an official Where Sold importer: 190 draw pages, 10 exact-address
+  mapped second-tier records; three unmatched addresses and one shared-jackpot
+  amount excluded. No complete all-tier coverage implied.
+- Added explicit map shortcuts opening the latest mapped draw date and resetting
+  Texas camera bounds. Native inspection verified both games and source details.
+- Added bundled/offline coverage, six importer checks and Texas refresh rollback
+  integration. 75 Flutter tests and macOS build pass (12 existing analysis infos).
+- Texas remains active. Other draw-game source inventory and integrated full-game
+  acceptance are outstanding; this is not a new Texas completion declaration.

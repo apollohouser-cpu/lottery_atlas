@@ -760,6 +760,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       return;
     }
 
+    if (_selectedStateName == 'Texas') {
+      _focusStateByName('Texas');
+    }
+
     final game = switch (gameName) {
       'Powerball' => LotteryGame.powerball,
       'Mega Millions' => LotteryGame.megaMillions,
@@ -769,6 +773,29 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     SouthCarolinaLotteryMapFilterService.clear();
     setState(() {
       _filterState = _filterState.copyWith(game: game);
+      if (_selectedStateName == 'Texas' &&
+          (game == LotteryGame.powerball || game == LotteryGame.megaMillions)) {
+        final records =
+            LotteryActivityRepository.activity
+                .where((a) => a.state == 'TX' && a.game == game)
+                .toList()
+              ..sort((a, b) => b.drawDate.compareTo(a.drawDate));
+        if (records.isNotEmpty) {
+          final date = records.first.drawDate;
+          final start = DateTime(date.year, date.month, date.day);
+          _filterState = _filterState.copyWith(
+            dateRange: DateTimeRange(
+              start: start,
+              end: start
+                  .add(const Duration(days: 1))
+                  .subtract(const Duration(microseconds: 1)),
+            ),
+            minimumPrize: 1,
+            maximumPrize: null,
+            replaceMaximumPrize: true,
+          );
+        }
+      }
       _selectedStateActivityGameName = gameName;
       _showNextDrawings = false;
     });
@@ -2589,7 +2616,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                       const SizedBox(width: 12),
                       Expanded(
                         child: _activityInfoCard(
-                          label: activity.state == 'TX'
+                          label:
+                              activity.state == 'TX' &&
+                                  activity.game == LotteryGame.scratchOff
                               ? 'CLAIM DATE'
                               : 'DRAW DATE',
                           value: formattedDate,
@@ -2729,9 +2758,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         LotteryActivityRepository.activitySourceLabel,
                     updatedAt: LotteryActivityRepository.activityUpdatedAt,
                     timestampNote: activity.state == 'TX'
-                        ? 'Claim date shown above; time of day unavailable. '
-                              'A separate source publication timestamp is not supplied for this claim. '
-                              'The combined feed refresh time is not a claim verification date.'
+                        ? (activity.game == LotteryGame.scratchOff
+                              ? 'Claim date shown above; time of day unavailable. Combined refresh time is not a claim verification date.'
+                              : 'Draw date shown above, not claim or purchase date. Official Where Sold record; validation is not established by this listing. Combined refresh time is not the source publication date.')
                         : null,
                     color: const Color(0xFF60A5FA),
                   ),
@@ -2822,7 +2851,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         ),
                         label: Text(
                           activity.state == 'TX'
-                              ? 'Open Official Claim Source'
+                              ? 'Open Official Record Source'
                               : 'View Lottery Details',
                         ),
                         style: FilledButton.styleFrom(
@@ -2955,7 +2984,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 _dataSourceCard(
                   heading: 'HEAT-POINT ACTIVITY SOURCE',
                   timestampNote: countyActivity.state == 'TX'
-                      ? 'Selected Scratch top-prize claims only. Open a record for its claim date and official source. Combined feed refresh time does not verify each claim.'
+                      ? 'Selected Scratch top-prize claims and national draw second-tier records only. Open a record for its date type and official source. Combined refresh time does not verify each record.'
                       : null,
                   source: LotteryActivityRepository.activitySourceLabel,
                   updatedAt: LotteryActivityRepository.activityUpdatedAt,
@@ -4779,6 +4808,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
             Positioned.fill(
               child: MapControlsOverlay(
+                key: ValueKey(
+                  '$_selectedStateName:$_selectedStateActivityGameName',
+                ),
                 detailMode: _mapDetailMode,
                 filterState: _filterState,
                 showHeaderControls: selectedState == null,
@@ -4788,7 +4820,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 }.contains(selectedState?.name),
                 dayOnlyDateLabel: selectedState?.name == 'Kentucky'
                     ? 'Published dates'
-                    : 'Claim dates',
+                    : 'Source dates',
                 onDetailModeChanged: (mode) {
                   setState(() {
                     _mapDetailMode = mode;
@@ -4826,8 +4858,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                     hasPublishedStateActivity: selectedStateActivity.isNotEmpty,
                     unavailableDrawGame:
                         selectedState.name == 'Texas' &&
-                            _filterState.game != LotteryGame.allGames &&
-                            _filterState.game != LotteryGame.scratchOff
+                            _filterState.game == LotteryGame.stateDraw
                         ? (_selectedStateActivityGameName ?? 'Draw games')
                         : null,
                   ),
@@ -5160,7 +5191,7 @@ class _MapActivityEmptyNotice extends StatelessWidget {
         ? 'No $stateName activity matches this view'
         : 'No published $stateName claim locations yet';
     final detail = unavailableDrawGame != null
-        ? 'Texas mapped claims cover selected Scratch top prizes only. Choose All Texas Scratch-Off activity to return to that coverage.'
+        ? 'This Texas state draw game has no mapped records. Selected Scratch top prizes and Powerball/Mega Millions second-tier records are available; choose another game.'
         : hasPublishedStateActivity
         ? 'Try another game, a wider prize range, or a longer timeline period.'
         : 'Draw times and ticket catalogs can be available before official winner reports provide retailer-level map activity.';
