@@ -1,5 +1,6 @@
 import {readFile, writeFile, rename} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
+import {collectKentuckyAggregates,parseKentuckyAggregate} from './kentucky_draw_aggregates.mjs';
 import {parseKentuckyTiers} from './kentucky_draw_tiers.mjs';
 import {parseKentuckyPowerball} from './kentucky_powerball_tiers.mjs';
 import {latestKentuckyStateDraws,parseKentuckyStateTiers} from './kentucky_state_draw_tiers.mjs';
@@ -61,6 +62,12 @@ export function validateKentuckyTierFeed(data) {
     if(JSON.stringify(expected.slice(6).map(r=>r.drawingSession))!==JSON.stringify(['MIDDAY','EVENING','MIDDAY','EVENING']))throw Error('Missing or reordered sessions');
   }
   if (JSON.stringify(data.reports) !== JSON.stringify(expected)) throw Error('Rendered reports differ from reconciled source');
+  if(data.aggregateSnapshot){
+    const snapshot=data.aggregateSnapshot;
+    if(!Number.isFinite(Date.parse(snapshot.updatedAt)) || snapshot.sourceUrl!==sourceUrl || !Array.isArray(snapshot.sourceReports) || snapshot.sourceReports.length!==2)throw Error('Invalid aggregate provenance');
+    const aggregates=snapshot.sourceReports.map((raw,i)=>parseKentuckyAggregate(raw,[22,19][i]));
+    if(JSON.stringify(aggregates)!==JSON.stringify(snapshot.reports))throw Error('Aggregate reports differ from source');
+  }
   return data;
 }
 async function request(body) {
@@ -101,8 +108,9 @@ export async function collectKentuckyTierFeed({fetchReport=request, previous=nul
       sourceReports.push(detail);reports.push(report);
     }
   }
+  const aggregateSnapshot=await collectKentuckyAggregates({fetchReport,previous:previous?.aggregateSnapshot,now});
   const updatedAt=previous && JSON.stringify(previous.reports)===JSON.stringify(reports) ? previous.updatedAt : now;
-  return validateKentuckyTierFeed({updatedAt,sourceUrl,endpoint,coverage,reports,sourceReports});
+  return validateKentuckyTierFeed({updatedAt,sourceUrl,endpoint,coverage,reports,sourceReports,aggregateSnapshot});
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
   const output=process.argv[2];

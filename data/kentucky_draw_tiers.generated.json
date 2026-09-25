@@ -2349,5 +2349,162 @@
         "PICK4"
       ]
     }
-  ]
+  ],
+  "aggregateSnapshot": {
+    "updatedAt": "2026-09-25T22:05:16.021Z",
+    "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
+    "cadence": "Atlas refresh attempts every six hours; not a live four-minute results service. Agency publication cadence unconfirmed.",
+    "reports": [
+      {
+        "gameNumber": 22,
+        "gameName": "Keno",
+        "drawId": 1417133,
+        "drawDate": "2026-09-25",
+        "drawTime": null,
+        "sourcePublicationDate": null,
+        "reportedWinners": 66,
+        "reportedPayout": 162,
+        "tiers": null,
+        "coverage": "Source-reported totals for this draw only. Prize tiers, exact draw time and retailer locations are unavailable in this response. These totals cannot be independently reconciled against tiers. Not a daily total, complete history or live feed."
+      },
+      {
+        "gameNumber": 19,
+        "gameName": "Cash Pop",
+        "drawId": 748526,
+        "drawDate": "2026-09-25",
+        "drawTime": null,
+        "sourcePublicationDate": null,
+        "reportedWinners": 1,
+        "reportedPayout": 10,
+        "tiers": null,
+        "coverage": "Source-reported totals for this draw only. Prize tiers, exact draw time and retailer locations are unavailable in this response. These totals cannot be independently reconciled against tiers. Not a daily total, complete history or live feed."
+      }
+    ],
+    "sourceReports": [
+      {
+        "GAME_NUMBER": [
+          22
+        ],
+        "DRAW_ID": 1417133,
+        "TIER_LIST": [
+          []
+        ],
+        "DRAW_VALUES": [
+          {
+            "DRAW_NUMBER_POSITION": 1,
+            "DRAW_VALUE": 5
+          },
+          {
+            "DRAW_NUMBER_POSITION": 2,
+            "DRAW_VALUE": 20
+          },
+          {
+            "DRAW_NUMBER_POSITION": 3,
+            "DRAW_VALUE": 21
+          },
+          {
+            "DRAW_NUMBER_POSITION": 4,
+            "DRAW_VALUE": 26
+          },
+          {
+            "DRAW_NUMBER_POSITION": 5,
+            "DRAW_VALUE": 34
+          },
+          {
+            "DRAW_NUMBER_POSITION": 6,
+            "DRAW_VALUE": 42
+          },
+          {
+            "DRAW_NUMBER_POSITION": 7,
+            "DRAW_VALUE": 44
+          },
+          {
+            "DRAW_NUMBER_POSITION": 8,
+            "DRAW_VALUE": 45
+          },
+          {
+            "DRAW_NUMBER_POSITION": 9,
+            "DRAW_VALUE": 46
+          },
+          {
+            "DRAW_NUMBER_POSITION": 10,
+            "DRAW_VALUE": 52
+          },
+          {
+            "DRAW_NUMBER_POSITION": 11,
+            "DRAW_VALUE": 55
+          },
+          {
+            "DRAW_NUMBER_POSITION": 12,
+            "DRAW_VALUE": 59
+          },
+          {
+            "DRAW_NUMBER_POSITION": 13,
+            "DRAW_VALUE": 61
+          },
+          {
+            "DRAW_NUMBER_POSITION": 14,
+            "DRAW_VALUE": 64
+          },
+          {
+            "DRAW_NUMBER_POSITION": 15,
+            "DRAW_VALUE": 65
+          },
+          {
+            "DRAW_NUMBER_POSITION": 16,
+            "DRAW_VALUE": 67
+          },
+          {
+            "DRAW_NUMBER_POSITION": 17,
+            "DRAW_VALUE": 68
+          },
+          {
+            "DRAW_NUMBER_POSITION": 18,
+            "DRAW_VALUE": 70
+          },
+          {
+            "DRAW_NUMBER_POSITION": 19,
+            "DRAW_VALUE": 74
+          },
+          {
+            "DRAW_NUMBER_POSITION": 20,
+            "DRAW_VALUE": 79
+          }
+        ],
+        "DRAW_DATE": 1790308800000,
+        "SPECIAL_ARGS": {
+          "MULTIPLIER": 2,
+          "BULLSEYE": 45,
+          "TOTAL_WINNERS": 66,
+          "TOTAL_PRIZE": "$    162.00"
+        },
+        "GAME_NAME": [
+          "KENO"
+        ]
+      },
+      {
+        "GAME_NUMBER": [
+          19
+        ],
+        "DRAW_ID": 748526,
+        "TIER_LIST": [
+          []
+        ],
+        "DRAW_VALUES": [
+          {
+            "DRAW_NUMBER_POSITION": 1,
+            "DRAW_VALUE": 12
+          }
+        ],
+        "SPECIAL_ARGS": {
+          "TOTAL_WINNERS": 1,
+          "TOTAL_PRIZE": "$     10.00"
+        },
+        "DRAW_DATE": 1790308800000,
+        "GAME_NAME": [
+          "CASHPOP"
+        ]
+      }
+    ]
+  }
 }

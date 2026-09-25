@@ -51,10 +51,19 @@ class _KentuckyPrizeTablesSheetState extends State<KentuckyPrizeTablesSheet> {
               );
             }
             final data = snapshot.data!;
-            final reports = data['reports'] as List;
+            final aggregate = data['aggregateSnapshot'] as Map?;
+            final tierReports = data['reports'] as List;
+            final reports = [
+              ...tierReports,
+              ...?aggregate?['reports'] as List?,
+            ];
+            final isAggregate = _selected >= tierReports.length;
             final report = reports[_selected] as Map;
-            final headers = report['headers'] as List;
-            final rows = [...report['tiers'] as List, report['reportedTotals']];
+            final headers = report['headers'] as List? ?? [];
+            final rows = [
+              ...?report['tiers'] as List?,
+              if (!isAggregate) report['reportedTotals'],
+            ];
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -76,8 +85,10 @@ class _KentuckyPrizeTablesSheetState extends State<KentuckyPrizeTablesSheet> {
                     ),
                   ],
                 ),
-                const Text(
-                  'Reported winners by tier • Not retailer map counts',
+                Text(
+                  isAggregate
+                      ? 'Individual draw snapshot • No prize-tier breakdown'
+                      : 'Reported winners by tier • Not retailer map counts',
                 ),
                 const SizedBox(height: 12),
                 DropdownButton<int>(
@@ -105,70 +116,101 @@ class _KentuckyPrizeTablesSheetState extends State<KentuckyPrizeTablesSheet> {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  report['tableNote'] as String? ??
-                      'Base prize and multiplier are separate. Tier payout is their product times reported Kentucky winners, not verified cash claims. Scroll horizontally for all columns.',
+                  isAggregate
+                      ? 'Draw ID: ${report['drawId']} • Exact draw time unavailable'
+                      : report['tableNote'] as String? ??
+                            'Base prize and multiplier are separate. Tier payout is their product times reported Kentucky winners, not verified cash claims. Scroll horizontally for all columns.',
                 ),
                 const SizedBox(height: 8),
                 Expanded(
-                  child: LayoutBuilder(
-                    builder: (context, constraints) => Scrollbar(
-                      controller: _vertical,
-                      thumbVisibility: true,
-                      notificationPredicate: (notification) =>
-                          notification.metrics.axis == Axis.vertical,
-                      child: Scrollbar(
-                        controller: _horizontal,
-                        thumbVisibility: true,
-                        child: SingleChildScrollView(
-                          controller: _horizontal,
-                          scrollDirection: Axis.horizontal,
-                          child: SizedBox(
-                            width: headers.length * 166.0 + 48,
-                            height: constraints.maxHeight,
-                            child: SingleChildScrollView(
-                              controller: _vertical,
-                              key: ValueKey(_selected),
-                              child: DataTable(
-                                headingRowHeight: 80,
-                                dataRowMinHeight: 48,
-                                dataRowMaxHeight: 72,
-                                columns: [
-                                  for (final header in headers)
-                                    DataColumn(
-                                      label: SizedBox(
-                                        width: 110,
-                                        child: Text(
-                                          '$header',
-                                          softWrap: true,
-                                          maxLines: 4,
-                                        ),
-                                      ),
-                                    ),
-                                ],
-                                rows: [
-                                  for (final row in rows)
-                                    DataRow(
-                                      cells: [
-                                        for (final cell in row as List)
-                                          DataCell(
-                                            SizedBox(
+                  child: isAggregate
+                      ? SingleChildScrollView(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Reported Kentucky winners: ${report['reportedWinners']}',
+                                style: const TextStyle(fontSize: 20),
+                              ),
+                              Text(
+                                'Reported payout: \$${(report['reportedPayout'] as num).toStringAsFixed(2)}',
+                                style: const TextStyle(fontSize: 20),
+                              ),
+                              const SizedBox(height: 12),
+                              const Text(
+                                'Source-reported totals for this draw only. Prize tiers are unavailable, so totals cannot be independently reconciled against tiers. No retailer locations, daily total or complete history.',
+                              ),
+                              const SizedBox(height: 12),
+                              Text(
+                                'Snapshot updated: ${aggregate!['updatedAt']}',
+                              ),
+                              const Text(
+                                'Atlas checks every six hours. This is not a live four-minute results service. Agency publication cadence is unconfirmed.',
+                              ),
+                            ],
+                          ),
+                        )
+                      : LayoutBuilder(
+                          builder: (context, constraints) => Scrollbar(
+                            controller: _vertical,
+                            thumbVisibility: true,
+                            notificationPredicate: (notification) =>
+                                notification.metrics.axis == Axis.vertical,
+                            child: Scrollbar(
+                              controller: _horizontal,
+                              thumbVisibility: true,
+                              child: SingleChildScrollView(
+                                controller: _horizontal,
+                                scrollDirection: Axis.horizontal,
+                                child: SizedBox(
+                                  width: headers.length * 166.0 + 48,
+                                  height: constraints.maxHeight,
+                                  child: SingleChildScrollView(
+                                    controller: _vertical,
+                                    key: ValueKey(_selected),
+                                    child: DataTable(
+                                      headingRowHeight: 80,
+                                      dataRowMinHeight: 48,
+                                      dataRowMaxHeight: 72,
+                                      columns: [
+                                        for (final header in headers)
+                                          DataColumn(
+                                            label: SizedBox(
                                               width: 110,
-                                              child: Text('$cell'),
+                                              child: Text(
+                                                '$header',
+                                                softWrap: true,
+                                                maxLines: 4,
+                                              ),
                                             ),
                                           ),
                                       ],
+                                      rows: [
+                                        for (final row in rows)
+                                          DataRow(
+                                            cells: [
+                                              for (final cell in row as List)
+                                                DataCell(
+                                                  SizedBox(
+                                                    width: 110,
+                                                    child: Text('$cell'),
+                                                  ),
+                                                ),
+                                            ],
+                                          ),
+                                      ],
                                     ),
-                                ],
+                                  ),
+                                ),
                               ),
                             ),
                           ),
                         ),
-                      ),
-                    ),
-                  ),
                 ),
                 Text(
-                  '${data['coverage']}',
+                  isAggregate
+                      ? 'Statewide totals are not map activity or verified claims.'
+                      : '${data['coverage']}',
                   style: const TextStyle(fontSize: 11),
                 ),
                 Wrap(
@@ -176,7 +218,10 @@ class _KentuckyPrizeTablesSheetState extends State<KentuckyPrizeTablesSheet> {
                   children: [
                     TextButton.icon(
                       onPressed: () => launchUrl(
-                        Uri.parse(report['sourceUrl'] as String),
+                        Uri.parse(
+                          (report['sourceUrl'] ?? aggregate?['sourceUrl'])
+                              as String,
+                        ),
                         mode: LaunchMode.externalApplication,
                       ),
                       icon: const Icon(Icons.open_in_new),

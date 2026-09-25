@@ -58,6 +58,33 @@ class KentuckyPrizeTablesLoader {
         throw const FormatException('Nonofficial source');
       }
     }
+    final aggregate = data['aggregateSnapshot'];
+    if (aggregate != null) {
+      final summaries = aggregate['reports'] as List;
+      if (summaries.length != 2 ||
+          aggregate['sourceUrl'] != data['sourceUrl'] ||
+          DateTime.tryParse(aggregate['updatedAt'] as String) == null) {
+        throw const FormatException('Invalid aggregate snapshot');
+      }
+      for (var i = 0; i < summaries.length; i++) {
+        final r = summaries[i];
+        if (r['gameNumber'] != [22, 19][i] ||
+            r['gameName'] != ['Keno', 'Cash Pop'][i] ||
+            r['tiers'] != null ||
+            r['drawTime'] != null ||
+            r['sourcePublicationDate'] != null ||
+            r['drawId'] is! int ||
+            r['drawId'] < 0 ||
+            DateTime.tryParse(r['drawDate'] as String) == null ||
+            r['reportedWinners'] is! int ||
+            r['reportedWinners'] < 0 ||
+            r['reportedPayout'] is! num ||
+            !(r['reportedPayout'] as num).isFinite ||
+            r['reportedPayout'] < 0) {
+          throw const FormatException('Invalid aggregate report');
+        }
+      }
+    }
     return data;
   }
 
@@ -81,6 +108,33 @@ class KentuckyPrizeTablesLoader {
           await prefs.setString(cacheKey, raw);
         }
       } catch (_) {}
+      final aggregate = data['aggregateSnapshot'];
+      if (aggregate != null) {
+        final summaries = aggregate['reports'] as List;
+        if (summaries.length != 2 ||
+            aggregate['sourceUrl'] != data['sourceUrl'] ||
+            DateTime.tryParse(aggregate['updatedAt'] as String) == null) {
+          throw const FormatException('Invalid aggregate snapshot');
+        }
+        for (var i = 0; i < summaries.length; i++) {
+          final r = summaries[i];
+          if (r['gameNumber'] != [22, 19][i] ||
+              r['gameName'] != ['Keno', 'Cash Pop'][i] ||
+              r['tiers'] != null ||
+              r['drawTime'] != null ||
+              r['sourcePublicationDate'] != null ||
+              r['drawId'] is! int ||
+              r['drawId'] < 0 ||
+              DateTime.tryParse(r['drawDate'] as String) == null ||
+              r['reportedWinners'] is! int ||
+              r['reportedWinners'] < 0 ||
+              r['reportedPayout'] is! num ||
+              !(r['reportedPayout'] as num).isFinite ||
+              r['reportedPayout'] < 0) {
+            throw const FormatException('Invalid aggregate report');
+          }
+        }
+      }
       return data;
     } catch (_) {}
     return cached ??

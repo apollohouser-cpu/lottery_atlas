@@ -112,4 +112,48 @@ void main() {
       }
     },
   );
+  testWidgets(
+    'aggregate games disclose draw identity and switch back to tiers',
+    (tester) async {
+      final data =
+          jsonDecode(
+                File(
+                  'data/kentucky_draw_tiers.generated.json',
+                ).readAsStringSync(),
+              )
+              as Map<String, dynamic>;
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(body: KentuckyPrizeTablesSheet(reportsOverride: data)),
+        ),
+      );
+      await tester.pumpAndSettle();
+      for (var i = 10; i < 12; i++) {
+        tester
+            .widget<DropdownButton<int>>(find.byType(DropdownButton<int>))
+            .onChanged!(i);
+        await tester.pumpAndSettle();
+        final report = data['aggregateSnapshot']['reports'][i - 10];
+        expect(
+          find.textContaining('Draw ID: ${report['drawId']}'),
+          findsOneWidget,
+        );
+        expect(
+          find.textContaining(
+            'Reported Kentucky winners: ${report['reportedWinners']}',
+          ),
+          findsOneWidget,
+        );
+        expect(find.textContaining('not a live four-minute'), findsOneWidget);
+        expect(find.byType(DataTable), findsNothing);
+        expect(tester.takeException(), isNull);
+      }
+      tester
+          .widget<DropdownButton<int>>(find.byType(DropdownButton<int>))
+          .onChanged!(0);
+      await tester.pumpAndSettle();
+      expect(find.byType(DataTable), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    },
+  );
 }

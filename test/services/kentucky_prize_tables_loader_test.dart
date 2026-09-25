@@ -86,4 +86,19 @@ void main() {
     ).load();
     expect(result, fixture);
   });
+  test('invalid aggregate totals cannot displace cached snapshot', () async {
+    final invalid = jsonDecode(raw);
+    invalid['aggregateSnapshot']['reports'][0]['reportedWinners'] = -1;
+    var writes = 0;
+    final result = await KentuckyPrizeTablesLoader(
+      readCache: () async => raw,
+      fetchRemote: () async => jsonEncode(invalid),
+      writeCache: (_) async {
+        writes++;
+      },
+      readBundle: () async => throw StateError('cache must win'),
+    ).load();
+    expect(result, fixture);
+    expect(writes, 0);
+  });
 }
