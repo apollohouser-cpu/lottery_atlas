@@ -1,19 +1,19 @@
 {
-  "attemptedAt": "2026-09-25T12:57:52.888773+00:00",
+  "attemptedAt": "2026-09-25T18:46:13.583341+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
       "state": "Iowa",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/iowa_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Indiana",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/indiana_scratch_catalog.generated.json"
       ]
@@ -52,8 +52,8 @@
     },
     {
       "state": "Oklahoma",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/oklahoma_scratch_catalog.generated.json"
       ]
@@ -68,40 +68,40 @@
     },
     {
       "state": "Maryland",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/maryland_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Connecticut",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/connecticut_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Maine",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/maine_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Vermont",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/vermont_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "New Hampshire",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "retained_after_failure",
+      "message": "Importer failed validation or could not retrieve its source.",
       "files": [
         "data/new_hampshire_scratch_catalog.generated.json"
       ]
@@ -116,16 +116,16 @@
     },
     {
       "state": "Idaho",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/idaho_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Michigan",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/michigan_scratch_catalog.generated.json"
       ]
@@ -140,36 +140,37 @@
     },
     {
       "state": "Wisconsin",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/wisconsin_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Washington",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/washington_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "North Carolina",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/north_carolina_current_winner_activity.generated.json"
       ]
     },
     {
       "state": "Kentucky",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/kentucky_scratch_catalog.generated.json",
         "data/kentucky_retailer_directory.generated.json",
-        "data/kentucky_current_winner_activity.generated.json"
+        "data/kentucky_current_winner_activity.generated.json",
+        "data/kentucky_draw_tiers.generated.json"
       ]
     },
     {
@@ -182,8 +183,8 @@
     },
     {
       "state": "Virginia",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/virginia_scratch_catalog.generated.json",
         "data/virginia_retailer_directory.generated.json",
@@ -192,8 +193,8 @@
     },
     {
       "state": "New York",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/new_york_scratch_catalog.generated.json",
         "data/new_york_retailer_directory.generated.json",
@@ -202,8 +203,8 @@
     },
     {
       "state": "Ohio",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/ohio_scratch_catalog.generated.json",
         "data/ohio_retailer_directory.generated.json",
@@ -212,8 +213,8 @@
     },
     {
       "state": "Colorado",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/colorado_scratch_catalog.generated.json",
         "data/colorado_retailer_directory.generated.json",
@@ -222,8 +223,8 @@
     },
     {
       "state": "Texas",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "retained_after_failure",
+      "message": "Importer failed validation or could not retrieve its source.",
       "files": [
         "data/texas_scratch_catalog.generated.json",
         "data/texas_retailer_directory.generated.json",
@@ -234,8 +235,8 @@
     },
     {
       "state": "South Carolina",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/south_carolina_current_winner_activity.generated.json"
       ]
