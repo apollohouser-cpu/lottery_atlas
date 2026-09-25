@@ -637,3 +637,18 @@ claimed. Texas remains the active state. The next available-data enhancement is
 separate statewide draw-tier totals, which must never be mapped onto retailers
 or summed across overlapping multiplier columns. Missing retail-location data
 continues through the existing no-fee request.
+
+### September 25 follow-up: statewide tier parsing
+
+Started the separate Texas statewide prize-table path. The new parser preserves
+source headers, each tier and each reported total column independently; it does
+not produce map points or a combined ticket total. Real Powerball August 8 and
+Lotto Texas September 5 fixtures demonstrate why: Power Play counts overlap the
+base count, while Lotto Extra includes an Extra-only two-number tier. Each column
+must reconcile independently. Unknown values, wrong dates/games, spanning cells
+and inconsistent totals fail closed. Three new regression checks pass; 65 Node
+checks pass overall. This is parser preparation, not a newly shipped app feature.
+Next: inspect Mega Millions' multiplier layout and connect reviewed per-game
+reports to a separately labeled statewide table view. Do not repurpose map counts
+or the all-tier state ranking. Live deployed activity remains unchanged and
+matches local; no new reply arrived in the checked Texas/NY/WV mailbox search.
