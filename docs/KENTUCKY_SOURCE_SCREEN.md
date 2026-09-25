@@ -42,3 +42,13 @@ feeds were independently checked and match published commit 55b9631. This
 resolves the refresh interruption described above; the bounded Census retry
 change is included in the successful run. Existing coverage limitations and
 pending agency definitions remain unchanged. No user intervention was needed.
+
+### September 25 acceptance scope update
+
+The September 17 counts above are historical snapshots. Current generated
+imports include 36 current notices and eight retained 2024–2025 notices, plus
+a separate initial record; they must not be summed into a complete statewide
+winning-ticket count. The native source screen now explains selected coverage,
+separate retailer locations and unconfirmed agency cadence. Source date precision
+is under active acceptance review: current and historical importers encode
+date-only headings at noon, which is not a verified event time.

@@ -12,6 +12,11 @@ class StateSourceCadenceRegistry {
             'publication schedule. Source update cadence is unconfirmed; '
             'check each record or catalog date. Failed refreshes retain '
             'previous verified data and its original dates.';
+      case 'Kentucky':
+        return 'Lottery Atlas attempts Kentucky imports every six hours. '
+            'Agency publication cadence is unconfirmed; current and retained '
+            'winner listings cover different periods. Check each source date. '
+            'Failed refreshes retain previous verified data and original dates.';
       case 'Tennessee':
         return 'Tennessee updates its published top-tier remaining prizes weekly. '
             'The totals include one prize per game reserved for a Play It Again! '

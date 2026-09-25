@@ -12,6 +12,12 @@ class StateDataLimitationRegistry {
             'recently filed claims can appear in game-page counts before these reports. '
             'This is not an all-tier or draw-game claims feed. '
             'The retailer directory is separate and does not establish wins.',
+      'Kentucky' =>
+        'Mapped activity includes selected official winner notices with verified '
+            'retailer matches, including retained historical listings. This is '
+            'not a complete winner archive or an all-tier statewide count. '
+            'Unmatched locations are excluded. The retailer directory is separate '
+            'and does not establish wins; notice dates do not establish a sale time.',
       'Arkansas' =>
         'The lottery declined our records request because Arkansas citizenship '
             'was not established.',

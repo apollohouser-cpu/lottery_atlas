@@ -34,6 +34,22 @@ explicitly limited available-data experience. An unavailable feature needs an ho
    required action. Keep unchanged monitoring quiet. No fees, invented retailer
    locations, guessed counts, or hidden coverage expansion are authorized.
 
+## Kentucky acceptance checklist
+
+Scope: official Scratch catalog, verified retailer directory, selected current
+and retained historical winner notices, and supported draw information. No
+complete statewide winner counts or retailer win ranking is implied.
+
+- [ ] Catalog browsing, selection, remaining-count semantics and reset.
+- [ ] Verified map points, retailer details and separate-directory explanation.
+- [ ] State/county/game/prize/date filters, reset and scoped empty states.
+- [ ] Notice-date precision and timeline semantics; no invented event times.
+- [ ] Accessible source, period, cadence and partial-coverage explanations.
+- [ ] Bundled/cached offline behavior and unchanged-date reconnection.
+- [ ] Compact and larger native layout and interaction checks.
+- [ ] Appropriate automated checks and independently verified live feeds.
+- [ ] Evidence reconciled and Kentucky explicitly announced ready for testing.
+
 ## Texas acceptance checklist
 
 Scope: current official Scratch catalog, mapped verified retailer directory,
@@ -493,3 +509,22 @@ Kentucky is now active. Its next pass must read KENTUCKY_SOURCE_SCREEN.md,
 identify its supported scope, and execute the equivalent native acceptance
 checklist. Texas records requests and future data improvements continue
 independently of Kentucky acceptance.
+
+## September 25 Kentucky first source-screen acceptance pass
+
+Opened Kentucky's source screen in the native app at 800 × 632. It had no
+state-specific limitation or cadence notice. Added selected-winner and retained
+historical coverage, excluded unmatched locations, separate-directory limits
+and notice-date caution. The cadence notice distinguishes Atlas's six-hour
+attempts from unconfirmed agency publication cadence and retained source dates.
+The standard macOS build passes. Rebuilt/restarted and verified both notices
+are completely readable without clipping at the compact size. No data changed.
+
+Current generated files contain 36 current notices dated August 31–September 23,
+2026 and eight retained historical notices dated March 8, 2024–December 12, 2025.
+These are source-specific record counts, not distinct-ticket or statewide totals.
+Initial live feeds/status matched and agency mail contained only recorded
+responses. Next concrete gap: current and historical notice importers encode
+date-only headings at synthetic noon, while Kentucky still offers hourly
+timeline filtering. Resolve precision/display semantics before accepting dates.
+The checklist remains open; this pass establishes visible coverage/cadence only.
