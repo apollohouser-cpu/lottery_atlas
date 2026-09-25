@@ -550,12 +550,12 @@ and source accessibility before marking the full date checklist complete.
 
 ## September 25 user-directed Texas completion requirements
 
-- [ ] Verify and import available Powerball retailer-level winner records.
-- [ ] Verify and import available Mega Millions retailer-level winner records.
+- [x] Verify and import available Powerball retailer-level winner records.
+- [x] Verify and import available Mega Millions retailer-level winner records.
 - [ ] Inventory each other Texas draw game's official counts/location sources; implement supported flows.
-- [ ] Distinguish game, tier, draw/claim/publication dates, period and missing coverage.
+- [x] Distinguish game, tier, draw/claim/publication dates, period and missing coverage.
 - [ ] Verify map selection, filters, resets, defaults and source links for both national games.
-- [ ] Integrate refresh/retention validation, tests, build and independent live verification.
+- [x] Integrate refresh/retention validation, tests, build and independent live verification.
 - [ ] Reconcile full Texas acceptance before advancing any other state.
 
 Do not call schedules plus Scratch-only points fully developed Texas. Agency
@@ -598,3 +598,21 @@ manual runs retain the full six-hour refresh workflow and per-state rollback.
 Push-only publication does not advance refresh/source dates. This removes an
 unrelated multi-state import delay from Texas acceptance without weakening
 publication validation.
+
+
+### Live publication verified September 25
+
+Publisher 36099818061 succeeded. Independently downloaded the live activity feed:
+it is byte-for-byte identical to the local validated feed and contains all 144
+Texas draw records across six games. The three other public catalog/directory/
+state-total feeds also returned valid JSON. The native debug build succeeds;
+75 Flutter, 62 Node and the Python suite pass, with 12 existing analysis infos.
+Larger-window layout and return from draw selection to All Texas Scratch-Off
+activity were visually checked. Texas draw activity is ready for testing.
+
+Texas is **not** being advanced to Kentucky. Remaining acceptance work: complete
+national-game prize/date/favorite/source-link interaction checks on the final
+build; reconcile per-game limitations and the Scratch report footer as-of date
+with the current latest-claim-date metadata; then review the full checklist.
+Agency-only lower-tier and Pick 3/Daily 4 selling locations stay explicitly
+unavailable and do not prevent finishing the supported app experience.

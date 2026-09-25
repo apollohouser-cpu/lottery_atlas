@@ -109,3 +109,11 @@ and prize information but no Where Sold retailer table. They remain unsupported
 for retailer heat points; this is not evidence of zero wins. Existing official
 records correspondence seeks the missing retailer/count evidence. Complete
 statewide data remains a separate outcome from acceptance of available features.
+
+
+Publisher 36099818061 successfully deployed the expanded feed September 25.
+Independent live download matched the locally validated activity file exactly,
+including all 144 draw records. This addition is ready for testing; final Texas
+acceptance remains active in STATE_COMPLETION_PLAN.md. A no-fee follow-up in the
+existing August request thread (message 1a0d714b2dc394b0) asks for receipt/status,
+existing definitions and missing retailer reports without withdrawing the request.
