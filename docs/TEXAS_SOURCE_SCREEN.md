@@ -219,3 +219,12 @@ Do not reopen for routine polishing or another unchanged verification pass;
 reopen only for an actual defect or meaningful verified new data with a named,
 bounded task. Preserve privacy, original dates, exclusions and partial-coverage
 labels. Kentucky work must not wait for these agency-only data expansions.
+
+### September 25 request acknowledgment (no new data)
+
+TLC/TDLR entered the definitions and missing Pick 3/Daily 4/lower-tier retailer
+report inquiry as R030290-092526 on September 25. Gmail message
+1a0d8da9922f46af, received 13:56 UTC, confirms routing to the appropriate division.
+It supplies no data, definitions, fee estimate or calendar completion date.
+No fees authorized. This acknowledgment does not reopen the accepted Texas app
+scope; monitor alongside the original request and preserve existing limitations.

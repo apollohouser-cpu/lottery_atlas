@@ -910,3 +910,30 @@ Millions and Xs & Os), then Kentucky native notice-date/game-selection acceptanc
 No new agency mail. Scheduled publisher 36135693365 succeeded; fast-forwarded the
 clean checkout to 2bac915 and verified live activity matches again. The initial
 mismatch was the scheduled refresh, not deployment failure. Deadline unchanged.
+
+### September 25 Kentucky statewide tier source unlocked
+
+Inspected the actual public results page's request code, then used its read-only
+WinningNumbers.xhtml requests: infoRequest 11 for history and 17 plus drawNumber
+for details. Game 26 is Mega Millions; game 24 is POWERBALLXO (distinct Xs & Os).
+The current response contains 51 Mega Millions draws and two Xs & Os draws; this
+is only the returned window, not a complete archive. No retailer fields supplied.
+
+Latest reviewed Mega Millions draw 2380 (September 22) reconciles 2,465 reported
+Kentucky winners and $49,433 payout across separate tier/multiplier rows. Xs & Os
+draw 2 (September 20) reconciles 831 winners and $14,738. Draw timestamps encode
+the Eastern calendar date; they are not evidence of exact event time. Source
+publication dates remain unavailable. Official page disclaimer scopes payouts
+to Kentucky: https://www.kylottery.com/apps/draw_games/pastwinning.html
+
+Added a bounded parser and real-response regression fixtures for these two
+layouts. It preserves base prize/multiplier fields and rejects wrong games,
+unreviewed groups, inconsistent totals, duplicate tiers and jackpot-winner rows
+requiring separate payout treatment. All 71 Node tests pass. No statewide totals
+have been mapped onto stores or added to the public ranking/feed.
+
+Next concrete acceptance work: connect these validated statewide results to a
+separate Kentucky table view, inspect other game layouts, and exercise native
+selection/notice-date flows. This resolves the earlier inability to inspect the
+dynamic response; Mega Millions statewide data is available even though retailer
+locations are absent. Kentucky deadline unchanged.
