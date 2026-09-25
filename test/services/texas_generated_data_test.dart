@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:lottery_atlas/models/lottery_activity.dart';
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
@@ -93,6 +94,18 @@ void main() {
     );
   });
 
+  test('legacy Texas ticket IDs migrate to stable opaque IDs', () {
+    const legacy = 'tx-2026-01-01-test-retailer-pack-ticket';
+    const expected =
+        'tx-claim-d666175dff415436be1c80b7651b27f1f295f8f7038b58af3f6656a66fdcd595';
+    expect(LotteryActivity.normalizeRecordId(legacy), expected);
+    expect(LotteryActivity.normalizeRecordId(expected), expected);
+    expect(
+      LotteryActivity.normalizeRecordId('tx-draw-example'),
+      'tx-draw-example',
+    );
+  });
+
   test('Texas activity contains exact official 2026 retailer winners', () {
     final records =
         (_read('data/texas_winner_activity.generated.json')['activities']
@@ -108,6 +121,8 @@ void main() {
     );
     for (final record in records) {
       expect(record['state'], 'TX');
+      expect(record['id'], matches(RegExp(r'^tx-claim-[0-9a-f]{64}$')));
+      expect(record['sourceLabel'], contains('report as of'));
       expect(record['game'], 'scratch-off');
       expect(record['retailerName'].toString(), isNotEmpty);
       expect(record['retailerAddress'].toString(), isNotEmpty);

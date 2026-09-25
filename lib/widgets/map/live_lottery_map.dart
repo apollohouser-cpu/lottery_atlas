@@ -1399,7 +1399,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     setState(() {
       _favoriteActivityKeys
         ..clear()
-        ..addAll(savedKeys);
+        ..addAll(savedKeys.map(LotteryActivity.normalizeRecordId));
     });
   }
 

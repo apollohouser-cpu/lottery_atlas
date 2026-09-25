@@ -1,3 +1,5 @@
+import 'dart:convert';
+import 'package:crypto/crypto.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../widgets/map/map_filter_state.dart';
@@ -24,6 +26,11 @@ class LotteryActivity {
     this.isHistorical = false,
     this.isFavorite = false,
   });
+
+  static String normalizeRecordId(String id) =>
+      RegExp(r'^tx-20\d{2}-\d{2}-\d{2}-').hasMatch(id)
+      ? 'tx-claim-${sha256.convert(utf8.encode(id))}'
+      : id;
 
   final String id;
   final LatLng location;
@@ -56,7 +63,10 @@ class LotteryActivity {
     Map<String, dynamic> json, {
     bool defaultIsHistorical = false,
   }) {
-    final id = json['id']?.toString().trim() ?? '';
+    final rawId = json['id']?.toString().trim() ?? '';
+    // Normalize old bundled/cache IDs so migration neither exposes ticket
+    // identifiers nor double-counts the same records beside the new feed.
+    final id = normalizeRecordId(rawId);
     final city = json['city']?.toString().trim() ?? '';
     final county = json['county']?.toString().trim() ?? '';
     final state = json['state']?.toString().trim().toUpperCase() ?? '';

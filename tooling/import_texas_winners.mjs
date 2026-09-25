@@ -1,5 +1,6 @@
 /* Imports exact 2026 Texas Scratch top-prize selling retailers. */
 import {readFile, writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 
 const catalogPath = process.argv[2];
 const directoryPath = process.argv[3];
@@ -38,7 +39,7 @@ if (!catalogPath || !directoryPath || !outputPath) {
   const detailsByGame = new Map([...currentHtml.matchAll(
     /href="([^"]*details\.html_([^"]+))"[^>]*>(\d+)<\/a>/gi,
   )].map((match) => [match[3], match[1].replace('details.html_', 'retailerswhosoldtopprizes.html_')]));
-  const activities = []; const excluded = [];
+  const activities = []; const excluded = []; const reportDates = [];
   let next = 0;
   const worker = async () => {
     while (next < games.length) {
@@ -51,6 +52,11 @@ if (!catalogPath || !directoryPath || !outputPath) {
       if (response.status === 404) continue;
       if (!response.ok) throw new Error(`Texas game ${game.id} report returned HTTP ${response.status}`);
       const html = await response.text();
+      const asOf = compact(html).match(/Scratch Ticket Prizes Claimed as of ([A-Za-z]+ \d{1,2}, \d{4})/);
+      const reportDate = asOf ? new Date(asOf[1] + ' 12:00:00 UTC') : null;
+      if (reportDate && !Number.isNaN(reportDate.valueOf())) reportDates.push(reportDate.toISOString());
+      const reportLabel = reportDate && !Number.isNaN(reportDate.valueOf())
+        ? ` · report as of ${reportDate.toISOString().slice(0,10)}` : ' · report as-of date unavailable';
       for (const match of html.matchAll(/<tr>([\s\S]*?)<\/tr>/gi)) {
         const cells = [...match[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map((cell) => compact(cell[1]));
         if (cells.length !== 7) continue;
@@ -67,21 +73,22 @@ if (!catalogPath || !directoryPath || !outputPath) {
         }
         const retailer = candidates[0]; const iso = claimed.toISOString();
         activities.push({
-          id: `tx-${iso.slice(0, 10)}-${game.id}-${slug(retailer.id)}-${slug(cells[5])}-${slug(cells[6])}`,
+          id: 'tx-claim-' + createHash('sha256').update(`tx-${iso.slice(0, 10)}-${game.id}-${slug(retailer.id)}-${slug(cells[5])}-${slug(cells[6])}`).digest('hex'),
           latitude: retailer.latitude, longitude: retailer.longitude, city: retailer.city,
           county: retailer.county.replace(/ County$/i, ''), state: 'TX', game: 'scratch-off',
           gameName: game.name, retailerName: retailer.name,
           retailerAddress: `${retailer.address}, ${retailer.city}, TX ${retailer.postalCode}`,
           coordinateSource: retailer.coordinateSource, drawDate: iso, winningTickets: 1,
           prizeAmount: game.topPrize, sourceUrl,
-          sourceLabel: `Official Texas Lottery top-prize selling retailer · Game ${game.id} · ${cells[0]}`,
+          sourceLabel: `Official Texas Lottery top-prize selling retailer · Game ${game.id} · claimed ${cells[0]}${reportLabel}`,
         });
       }
     }
   };
   await Promise.all(Array.from({length: 8}, worker));
   const unique = [...new Map(activities.map((item) => [item.id, item])).values()]
-    .sort((a, b) => a.drawDate.localeCompare(b.drawDate));
+    .sort((a, b) => a.drawDate.localeCompare(b.drawDate) || a.id.localeCompare(b.id));
+  excluded.sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b)));
   if (unique.length < 100) throw new Error(`Only ${unique.length} exact 2026 Texas winners qualified`);
   let previous = null;
   try { previous = JSON.parse(await readFile(outputPath, 'utf8')); } catch (_) {}
@@ -91,7 +98,8 @@ if (!catalogPath || !directoryPath || !outputPath) {
   await writeFile(outputPath, `${JSON.stringify({
     source: 'Texas Lottery official Scratch top-prize selling-retailer reports',
     sourceUrl: 'https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/all.html',
-    updatedAt, sourceLastUpdated: unique.at(-1).drawDate,
+    updatedAt, sourceLastUpdated: reportDates.sort().at(-1) ?? unique.at(-1).drawDate,
+    latestClaimDate: unique.at(-1).drawDate,
     coverage: `${unique.length} exact physical retailer-level 2026 Texas Scratch top-prize claims. Every record joins one official dated selling-store address to the official statewide retailer roster; unmatched or ungeocoded rows are excluded.`,
     activities: unique, excluded,
   }, null, 2)}\n`);

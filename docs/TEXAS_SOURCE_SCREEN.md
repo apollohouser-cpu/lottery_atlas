@@ -117,3 +117,15 @@ including all 144 draw records. This addition is ready for testing; final Texas
 acceptance remains active in STATE_COMPLETION_PLAN.md. A no-fee follow-up in the
 existing August request thread (message 1a0d714b2dc394b0) asks for receipt/status,
 existing definitions and missing retailer reports without withdrawing the request.
+
+### Scratch provenance and identifier correction
+
+The current 6,473 mapped Scratch rows now carry the report footer's actual as-of
+date in each source label (September 23 in this import), separately from their
+individual claim dates. The feed retains latestClaimDate separately and uses
+report dates for sourceLastUpdated. Missing report dates are explicitly labeled.
+Public IDs are now SHA-256 hashes of the former internal composite identifiers;
+pack/ticket components are no longer printed in the current public feed. Legacy
+bundled/cached IDs and saved map favorites normalize to the same hash to avoid
+double-counting and preserve saved selections in the updated app. Historical
+repository versions are not rewritten by this change.
