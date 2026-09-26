@@ -142,9 +142,10 @@ New York, Illinois, Rhode Island and West Virginia deliveries remain limited by
 their documented definitions/joins. Keep private originals private and do not
 deduplicate unidentified claims. Rhode Island paid assembly remains on hold.
 Monitor New Mexico's October 1 promised response and Pennsylvania's extensions.
-Previously identified Arizona user attestation and Mississippi signature/mail
-requirements are separate optional records tasks; do not ask again for supplied
-mailing address or phone. None prevents finishing available-data app flows.
+Arizona user attestation remains a separate optional records task. On September
+26 the user confirmed the Mississippi request was mailed; its mailing action is
+complete, with agency receipt/response unconfirmed. Do not ask again for supplied
+mailing address or phone. Neither prevents finishing available-data app flows.
 
 ## September 24 Texas acceptance pass
 

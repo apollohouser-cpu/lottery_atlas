@@ -229,8 +229,9 @@ report URLs and clarification of the formal email route; no complete dataset
 has been established by that reply.
 Mississippi then confirmed a physical mailed formal request is required. A
 printable one-page request letter was prepared September 15 with the requester
-contact information supplied outside this repository; it still requires a
-handwritten signature and physical mailing.
+contact information supplied outside this repository. On September 26 the user
+confirmed the request was mailed, completing the mailing action. The actual
+postmark and agency receipt dates remain unconfirmed; monitor for a response.
 The Montana data and records-routing inquiry was sent September 14, 2026 to
 the Lottery's published contact address. Formal public-information requests
 go through OPIR, whose New Request route required MT.gov sign-in. Published

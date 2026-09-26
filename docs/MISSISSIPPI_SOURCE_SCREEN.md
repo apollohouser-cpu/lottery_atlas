@@ -1,4 +1,4 @@
-# Mississippi source screen — September 14, 2026
+# Mississippi source screen — updated September 26, 2026
 
 The [winning-number archive](https://www.mslottery.com/browse-winning-numbers/)
 shows draw-date “Winners” detail controls, but the Lottery warns that the
@@ -40,3 +40,14 @@ Later September 14: The Public Records team confirmed that a physical mailed
 request is required under its policy. It will review the request once the
 tangible copy arrives. The formal filing still requires the requestor's
 mailing address and telephone; the email correspondence does not replace it.
+
+## September 26 user confirmation — request mailed
+
+The requester confirmed that the Mississippi request was mailed. The outstanding
+user mailing action is complete. September 26 is the confirmation date, not an
+asserted postmark or delivery date. Agency receipt, acceptance and response remain
+unconfirmed; monitor correspondence without treating the earlier email inquiry
+as the formal filing or inferring a response deadline. Do not request a duplicate
+signature/mailing unless the agency identifies a specific submission defect.
+No fees are authorized, and no additional records or coverage are established by
+mailing the request.
