@@ -1167,3 +1167,27 @@ county/game/prize filter checks are still open; automated interactions do not
 close the native checklist. Kentucky deadline remains September 28 at 18:00 ET.
 Startup mail and deployment were unchanged; live Kentucky report bytes match the
 successful publisher. No agency follow-up is currently required.
+
+### September 26 county scope and larger-layout regression
+
+Extended the production-app offline interaction harness at both 800×632 and
+1280×900. On the covered August 31 date, Kentucky has multiple county groups.
+Production county navigation to Warren yields only Bowling Green's one published
+record in the county ranking; the visible Back to state map control restores the
+state grouping. Adair yields an empty county ranking, and the scrolled ranking
+card explicitly says no verified activity matches the current map/timeline
+filters. Returning to the map and clearing the county preserves the date and
+restores the earlier activity/detail/reset flow.
+
+Both integrated widget scenarios pass, including the existing bundled statewide
+report route, NOTICE DATE/source access and unobstructed timeline reset. The test
+uses the production focus service for county navigation and programmatic home
+scrolling to inspect the lazy ranking card; it does not claim pointer selection
+of a county polygon or native visual acceptance. Clearing the test asset cache
+between independent app boots avoids a stale async asset future across test zones.
+No product or public data changed in this pass.
+
+Native app-control tools are still unavailable. Remaining game/prize interaction
+and native visual checks stay open. Startup publisher/live feed/mail checks were
+healthy and unchanged. Kentucky remains active, due September 28 at 18:00 ET;
+Virginia remains queued. Scope was already reconciled before its morning deadline.
