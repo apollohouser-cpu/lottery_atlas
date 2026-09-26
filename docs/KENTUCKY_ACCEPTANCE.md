@@ -49,3 +49,17 @@ tests and the macOS debug build, with 12 existing analysis infos. A scheduled dr
 refresh changed Mega Millions totals; its UI regression now compares every displayed
 total cell and draw date to the selected validated report, avoiding stale literals.
 Importer/source reconciliation rules are unchanged.
+
+## Native review candidate — September 26, 04:07 ET session
+
+Rebuilt the macOS debug app successfully from 60b6134, including scheduled data
+98a107f. Local artifact: `build/macos/Build/Products/Debug/lottery_atlas.app`.
+This replaces the previous local build's older bundled draw reports. Current live
+Kentucky report bytes still match; publisher 36224080527 remains successful.
+
+The release is now waiting for native review. Desktop-control capability is absent
+from the available tool set; no native interaction or screenshots were obtained.
+The user has been asked to perform the final native checklist above and report
+any problems. Preserve the September 28 deadline and keep Virginia queued. Do not
+add routine tests or enhancements to fill the waiting period; resume native review
+when available and handle actual defects or meaningful new agency data meanwhile.

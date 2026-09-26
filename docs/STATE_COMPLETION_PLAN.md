@@ -1242,3 +1242,17 @@ Consolidated evidence and the final native check sequence in KENTUCKY_ACCEPTANCE
 Closed only the automated/live-verification checklist entry. Native control tools
 remain unavailable; Kentucky stays active and its deadline is unchanged. Mail
 contained no new agency response requiring action.
+
+### September 26 native review candidate and explicit remaining blocker
+
+Successfully rebuilt the macOS app from 60b6134 with the latest 98a107f bundled
+data. This advances preparation for the remaining native acceptance pass; it is
+not visual evidence. Repository/deployment/mail startup checks were healthy and
+unchanged. The current Kentucky live report byte-matches the published data.
+
+Native desktop-control capability remains absent, so the final checklist cannot
+be completed by this session. The user is being notified with the built artifact
+and final native checklist. No further routine tests or enhancements are needed
+to unblock this gate. Keep Kentucky active and Virginia queued; September 28 at
+18:00 ET remains the release-decision deadline, without an extension or silent
+reset. Resume native review when capability or user observations become available.
