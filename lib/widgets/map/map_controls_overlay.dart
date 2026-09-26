@@ -78,6 +78,7 @@ class MapControlsOverlay extends StatefulWidget {
     this.onStateSelected,
     this.onActivityRefresh,
     this.showHeaderControls = true,
+    this.onTimelineHeightChanged,
     this.dayOnlyActivity = false,
     this.dayOnlyDateLabel = 'Claim dates',
   });
@@ -95,6 +96,7 @@ class MapControlsOverlay extends StatefulWidget {
   // State and county views keep the timeline, while their dedicated panel
   // replaces the national header controls.
   final bool showHeaderControls;
+  final ValueChanged<double>? onTimelineHeightChanged;
   // The selected source supplies dates, not verified times of day.
   final bool dayOnlyActivity;
   final String dayOnlyDateLabel;
@@ -104,6 +106,8 @@ class MapControlsOverlay extends StatefulWidget {
 }
 
 class _MapControlsOverlayState extends State<MapControlsOverlay> {
+  final _timelineKey = GlobalKey();
+  double? _reportedTimelineHeight;
   late MapFilterState _filterState;
   // The map opens in a practical "right now" view. Historical scales remain
   // one tap away when the user wants to explore older activity.
@@ -999,40 +1003,50 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
   }
 
   @override
-  Widget build(BuildContext context) => Stack(
-    children: [
-      if (widget.showHeaderControls)
-        Positioned(
-          top: 16,
-          left: 16,
-          right: 16,
-          child: Column(
-            children: [
-              _brandHeader(),
-              const SizedBox(height: 14),
-              Row(
-                children: [
-                  Expanded(child: _gameButton()),
-                  const SizedBox(width: 12),
-                  Expanded(child: _filterButton()),
-                ],
-              ),
-              const SizedBox(height: 10),
-              LayoutBuilder(
-                builder: (context, constraints) => Align(
-                  alignment: Alignment.centerRight,
-                  child: SizedBox(
-                    width: (constraints.maxWidth - 12) / 2,
-                    child: _stateFinderButton(),
+  Widget build(BuildContext context) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final height = _timelineKey.currentContext?.size?.height;
+      if (height != null && height != _reportedTimelineHeight) {
+        _reportedTimelineHeight = height;
+        widget.onTimelineHeightChanged?.call(height);
+      }
+    });
+    return Stack(
+      children: [
+        if (widget.showHeaderControls)
+          Positioned(
+            top: 16,
+            left: 16,
+            right: 16,
+            child: Column(
+              children: [
+                _brandHeader(),
+                const SizedBox(height: 14),
+                Row(
+                  children: [
+                    Expanded(child: _gameButton()),
+                    const SizedBox(width: 12),
+                    Expanded(child: _filterButton()),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                LayoutBuilder(
+                  builder: (context, constraints) => Align(
+                    alignment: Alignment.centerRight,
+                    child: SizedBox(
+                      width: (constraints.maxWidth - 12) / 2,
+                      child: _stateFinderButton(),
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
-      Positioned(left: 20, right: 20, bottom: 16, child: _timelineDock()),
-    ],
-  );
+        Positioned(left: 20, right: 20, bottom: 16, child: _timelineDock()),
+      ],
+    );
+  }
 
   Widget _brandHeader() => Row(
     children: [
@@ -1452,6 +1466,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
   }
 
   Widget _timelineDock() => Container(
+    key: _timelineKey,
     padding: const EdgeInsets.fromLTRB(14, 10, 14, 12),
     decoration: BoxDecoration(
       color: const Color(0xF0091826),

@@ -101,7 +101,7 @@ class MostWinningStateCard extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.only(bottom: 10),
                     child: Text(
-                      'Selected official winner records with verified retailer matches only, including retained history. '
+                      'Selected official winner records dated January 1, 2026 onward with verified retailer matches only. '
                       'Rankings reflect the current filters, not all Kentucky wins or all prize tiers. '
                       'Statewide draw summaries are separate and do not add retailer wins.',
                       style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),

@@ -89,8 +89,8 @@ scope must include all supported flows with evidenced unavailable features.
 
 ## Kentucky acceptance checklist
 
-Scope: official Scratch catalog, verified retailer directory, selected current
-and retained historical winner notices, and supported draw information. No
+Scope: official Scratch catalog, verified retailer directory, selected winner
+notices within the existing January 1, 2026 onward launch window, and supported draw information. Earlier retained imports are archived, not displayed. No
 complete statewide winner counts or retailer win ranking is implied.
 
 - [x] Catalog browsing, selection, remaining-count semantics and reset.
@@ -1139,3 +1139,31 @@ live Kentucky report bytes still match checked-in data, and no new agency email
 requires action. This is integrated automated evidence, not native visual sign-off.
 Native app-control tools remain unavailable; covered-date/filter/detail and visual
 checks remain open. Kentucky remains active, due September 28 at 18:00 ET.
+
+### September 26 covered notice, detail and reset acceptance
+
+Extended the integrated offline app flow to select August 31, 2026 through the
+calendar's date input. The actual imported $10,000 24K Gold Warren County notice
+appears in the map's published ranking snapshot. Production retailer-focus
+navigation opens its detail sheet; NOTICE DATE and the official August 31 source
+link are reachable. Dismissing the sheet and returning the timeline to now removes
+that dated notice from the filtered records.
+
+This caught a real compact-layout defect: fixed 160-pixel positioning let the map
+action buttons cover the timeline reset control when the timeline wrapped. Map
+controls and auxiliary shortcuts now reserve the measured timeline height. The
+regression checks separation and successfully taps reset at retailer zoom.
+
+Also reconciled an inaccurate disclosure: the established activity loader and
+published launch feed exclude records before January 1, 2026. Older Kentucky
+imports are retained in source files, not displayed in the app. Removed the claim
+that displayed rankings include that older history and stated the existing launch
+window. The initially attempted 2024 calendar check identified this intentional
+boundary; no historical expansion or date-range change was introduced.
+
+Seven focused widget checks and the macOS debug build pass; analysis retains
+the 12 existing informational notices. Native visual acceptance and the remaining
+county/game/prize filter checks are still open; automated interactions do not
+close the native checklist. Kentucky deadline remains September 28 at 18:00 ET.
+Startup mail and deployment were unchanged; live Kentucky report bytes match the
+successful publisher. No agency follow-up is currently required.

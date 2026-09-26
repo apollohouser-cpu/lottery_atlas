@@ -114,6 +114,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   double _currentZoom = _initialZoom;
   bool _showTimeZones = false;
   bool _showNextDrawings = false;
+  double _timelineDockHeight = 132;
   bool _showScratchOffs = false;
   bool _showStateGames = false;
   String? _selectedStateActivityGameName;
@@ -4492,8 +4493,12 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     // Auxiliary map menus must sit above the full control stack. A selected
     // state adds the back button, which otherwise overlaps this banner.
     final actionControlCount = _selectedStateName == null ? 3 : 4;
+    final actionControlsBottom = _timelineDockHeight + 28;
     final mapMenuBottom =
-        160 + (actionControlCount * 52) + ((actionControlCount - 1) * 10) + 12;
+        actionControlsBottom +
+        (actionControlCount * 52) +
+        ((actionControlCount - 1) * 10) +
+        12;
     // In the U.S. view, the national-draw menu occupies the lower-left cell
     // of the same two-by-two toolbar grid as Game Filter, Filters, and Find a
     // State. Keeping one shared width prevents the menu from looking offset.
@@ -4825,6 +4830,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 detailMode: _mapDetailMode,
                 filterState: _filterState,
                 showHeaderControls: selectedState == null,
+                onTimelineHeightChanged: (height) {
+                  if (mounted && height != _timelineDockHeight) {
+                    setState(() => _timelineDockHeight = height);
+                  }
+                },
                 dayOnlyActivity: const {
                   'Texas',
                   'Kentucky',
@@ -4993,7 +5003,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
             Positioned(
               right: 20,
-              bottom: 160,
+              bottom: actionControlsBottom,
               child: MapActionControls(
                 onReset: _resetMap,
                 onHome: _homeStateName == null ? null : _goToHomeState,

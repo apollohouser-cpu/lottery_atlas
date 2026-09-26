@@ -373,3 +373,17 @@ header/game selector. Also corrected the shared ranking card's Material ancestry
 so its links retain ink feedback. Four focused interaction checks, changed-file
 analysis and macOS debug build pass. No data/coverage changes. Native visual and
 remaining filter/detail acceptance are still pending; see STATE_COMPLETION_PLAN.
+
+### September 26 displayed period and covered-date acceptance
+
+Correction to earlier scope wording: retained 2024–2025 imports are archived in
+source files, but the established launch activity loader/public feed starts on
+January 1, 2026. The app's Kentucky coverage/ranking disclosures now state that
+boundary; older imports are not included in displayed rankings. This preserves
+the existing launch scope rather than introducing a historical expansion.
+
+Integrated offline widget navigation selects the real August 31 Warren County
+notice, opens its retailer details, reaches NOTICE DATE and the official source,
+and resets the timeline to now. Fixed action buttons overlapping reset at compact
+width by reserving the actual rendered timeline height. Seven focused checks pass;
+native visual and remaining filter acceptance are still open. See completion plan.
