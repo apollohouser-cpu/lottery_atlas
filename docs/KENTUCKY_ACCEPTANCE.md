@@ -2,7 +2,7 @@
 
 Status: **ready for native acceptance, not released as complete**.
 Release decision due September 28, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: cc053d8.
+Implementation: a0aa40a. Latest verified scheduled data: 44252c3.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -30,7 +30,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match cc053d8; publisher 36242210487 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 44252c3; publisher 36262793374 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -78,3 +78,15 @@ No coverage or validation rules changed.
 The local native candidate above still bundles 98a107f; it was not rebuilt for this
 scheduled data refresh. Final native review remains open, with no new observations
 or desktop-control capability. The release deadline and Virginia queue are unchanged.
+
+## Scheduled report acceptance — September 26, 15:17 ET session
+
+Publisher 36262793374 succeeded at data commit 44252c3. All eight public JSON
+files independently byte-match the checkout. Nine Kentucky loader/report widget
+tests pass. Pick 3/4 MIDDAY reports now identify September 26 draws; Keno/Cash Pop
+snapshots advanced independently. Catalog, directory and supported map scope are
+unchanged. Native candidate and final-review blocker remain as documented above.
+
+The same publication reports Texas retained_after_failure; its listed state files
+were verified byte-for-byte unchanged from the preceding publication. This does
+not invalidate Kentucky's report acceptance or establish a new Texas source date.

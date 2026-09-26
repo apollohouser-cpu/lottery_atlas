@@ -1256,3 +1256,17 @@ and final native checklist. No further routine tests or enhancements are needed
 to unblock this gate. Keep Kentucky active and Virginia queued; September 28 at
 18:00 ET remains the release-decision deadline, without an extension or silent
 reset. Resume native review when capability or user observations become available.
+
+### September 26, 15:17 ET — Kentucky reports accepted; Texas refresh failure
+
+Kentucky's updated Pick 3/4 MIDDAY and aggregate snapshots passed nine focused
+loader/report tests and independent eight-file live byte verification against
+44252c3 (publisher 36262793374). Final native review remains open; no deadline change.
+
+The publisher disclosed a Texas importer failure (source retrieval or validation;
+the public status does not identify which). All listed Texas files remain exactly
+the preceding validated bytes, preserving original source dates. Do not weaken
+validation or reopen accepted product scope. Bounded refresh-recovery follow-up:
+check the next scheduled result; if still failing, investigate and report by
+September 27 at 15:17 ET. New Hampshire's retained failure is unchanged. No agency
+reply changed the active-state work in this session.
