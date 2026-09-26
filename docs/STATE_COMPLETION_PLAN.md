@@ -1064,3 +1064,21 @@ Native app control is unavailable in this resumed tool session. No visual check
 was claimed or previous evidence repeated as new. Keep integrated offline UI,
 covered notice-date/details, remaining filters/source surfaces and larger-layout
 acceptance open. This is automated recovery evidence, not Kentucky release closure.
+
+### September 25 Kentucky ranking-scope correction
+
+Source/coverage acceptance review found the shared ranking card still labeled
+Kentucky selected notices as generic winning-ticket county rankings, without a
+local partial-coverage explanation. Kentucky now uses published-record headings
+and a visible notice that only selected official records with verified retailer
+matches are ranked, including retained history. It states that current filters
+apply, coverage excludes other wins/tiers, and statewide draw summaries do not
+create retailer wins. No counts, coordinates or underlying records changed.
+
+Three ranking-service tests and the macOS debug build pass; changed-file analysis
+has no issues. Native visual acceptance remains open because app-control tools
+are unavailable in this session. This corrects a named coverage gap without
+claiming the remaining integrated checklist is complete. Deadline unchanged.
+Startup found no new agency replies. Publisher 36205337159 succeeded; live Kentucky
+reports match scheduled commit 9c964b1, explaining the initial local comparison
+difference. Preserve that scheduled update when integrating this UI correction.

@@ -72,7 +72,8 @@ class MostWinningStateCard extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    snapshot.stateName == 'Texas'
+                    (snapshot.stateName == 'Texas' ||
+                            snapshot.stateName == 'Kentucky')
                         ? 'PUBLISHED RECORDS'
                         : 'WINNING TICKETS',
                     style: const TextStyle(
@@ -91,6 +92,16 @@ class MostWinningStateCard extends StatelessWidget {
                   child: Text(
                     'Selected Scratch top-prize claims and selected draw-game Where Sold records with verified retailer matches only. '
                     'Rankings reflect the current filters, not all Texas wins or all prize tiers.',
+                    style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
+                  ),
+                ),
+              if (snapshot.stateName == 'Kentucky')
+                const Padding(
+                  padding: EdgeInsets.only(bottom: 10),
+                  child: Text(
+                    'Selected official winner records with verified retailer matches only, including retained history. '
+                    'Rankings reflect the current filters, not all Kentucky wins or all prize tiers. '
+                    'Statewide draw summaries are separate and do not add retailer wins.',
                     style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
                   ),
                 ),
@@ -344,9 +355,10 @@ class MostWinningStateCard extends StatelessWidget {
   }
 
   String _heading(MapRankingSnapshot snapshot) {
-    if (snapshot.stateName == 'Texas') {
+    if (snapshot.stateName == 'Texas' || snapshot.stateName == 'Kentucky') {
       return switch (snapshot.level) {
-        MapRankingLevel.county => 'TOP COUNTIES BY PUBLISHED RECORDS · Texas',
+        MapRankingLevel.county =>
+          'TOP COUNTIES BY PUBLISHED RECORDS · ${snapshot.stateName}',
         MapRankingLevel.city =>
           'TOP CITIES BY PUBLISHED RECORDS · ${snapshot.countyName}',
         MapRankingLevel.retailer =>
