@@ -1,6 +1,6 @@
 {
   "source": "Virginia Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-25T12:41:15.050Z",
+  "retrievedAt": "2026-09-26T12:39:48.178Z",
   "coverage": "Queried all 135 county/city options in the official Virginia Lottery finder. It returned 5432 unique retailers; 5367 received exact Census or verified ArcGIS address coordinates. 65 unresolved addresses were excluded from the map rather than estimated.",
   "directories": [
     {
@@ -24076,17 +24076,6 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
-          "id": "va-69be8e1104acef6e",
-          "name": "RT 33 TOBACCO",
-          "address": "16618 Mountain Rd",
-          "city": "Montpelier",
-          "postalCode": "23192",
-          "county": "Hanover",
-          "latitude": 37.814520053084,
-          "longitude": -77.661475435981,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
           "id": "va-69d462bf91552b32",
           "name": "FOOD CITY #893",
           "address": "517 Front Street West",
@@ -39210,6 +39199,17 @@
           "latitude": 37.300433363673,
           "longitude": -78.386978704865,
           "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "va-ab78fe83858de211",
+          "name": "ROUTE 33 TOBACCO",
+          "address": "16618 Mountain Rd Ste H",
+          "city": "Montpelier",
+          "postalCode": "23192",
+          "county": "Hanover",
+          "latitude": 37.814748681995,
+          "longitude": -77.662677428528,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
           "id": "va-ab9018e34341910b",
