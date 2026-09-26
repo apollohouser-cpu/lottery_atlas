@@ -93,8 +93,8 @@ Scope: official Scratch catalog, verified retailer directory, selected current
 and retained historical winner notices, and supported draw information. No
 complete statewide winner counts or retailer win ranking is implied.
 
-- [ ] Catalog browsing, selection, remaining-count semantics and reset.
-- [ ] Verified map points, retailer details and separate-directory explanation.
+- [x] Catalog browsing, selection, remaining-count semantics and reset.
+- [x] Verified map points, retailer details and separate-directory explanation.
 - [ ] State/county/game/prize/date filters, reset and scoped empty states.
 - [ ] Notice-date precision and timeline semantics; no invented event times.
 - [ ] Accessible source, period, cadence and partial-coverage explanations.
@@ -1019,3 +1019,26 @@ Publisher 36195042965 succeeded and the live feed independently byte-matched.
 This closes the aggregate presentation gap. Continue remaining integrated
 Kentucky catalog/activity/filter/favorites/offline acceptance; do not add new
 scope or advance to Virginia before the full release decision. Deadline unchanged.
+
+### September 25 Kentucky catalog, retailer and Favorites acceptance
+
+At 800×632, opened the Scratch catalog and verified its remaining-prizes versus
+store-stock explanation. Selected $1,000,000 Luck, reopened to confirm the selected
+row, reset to All Kentucky Scratch-Off activity and reopened to verify the reset.
+The scoped no-matching-activity notice remains accurate for the current date.
+
+Opened the 3,380-location official retailer picker and selected ADAIRVILLE MARKET,
+135 S Main St, Adairville, KY 42202, Logan County. Its detail explicitly states that
+a directory listing does not create a heat-map win. Saved this previously unsaved
+retailer, verified its exact address in Favorites, opened the favorite to its map
+point, and reopened matching retailer details. Removed the test favorite and
+verified the save action returned, preserving pre-existing favorites.
+
+These interactions close the catalog and retailer checklist entries. Other
+filters, notice-date details, broader source access, offline/reconnection and
+larger-layout acceptance remain open; Kentucky is not yet fully accepted.
+No code/data changes or new tests were needed for this interaction-only pass.
+Startup found no new agency replies; publisher 36195042965 remains successful,
+and independent live Kentucky report retrieval still matches checked-in bytes.
+Deadline remains September 28 at 18:00 ET. Next pass should use a known covered
+notice date to verify activity details and date/filter behavior.
