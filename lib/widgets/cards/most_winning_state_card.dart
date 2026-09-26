@@ -26,116 +26,119 @@ class MostWinningStateCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(22),
             border: Border.all(color: const Color(0xFF456074)),
           ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Container(
-                    width: 38,
-                    height: 38,
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF1478FF).withValues(alpha: 0.16),
-                      borderRadius: BorderRadius.circular(12),
+          child: Material(
+            color: Colors.transparent,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      width: 38,
+                      height: 38,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF1478FF).withValues(alpha: 0.16),
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: const Icon(
+                        Icons.leaderboard_rounded,
+                        color: Color(0xFF60A5FA),
+                      ),
                     ),
-                    child: const Icon(
-                      Icons.leaderboard_rounded,
-                      color: Color(0xFF60A5FA),
+                    const SizedBox(width: 11),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            _heading(snapshot),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                          const SizedBox(height: 2),
+                          Text(
+                            _rangeLabel(snapshot),
+                            style: const TextStyle(
+                              color: Color(0xFF93C5FD),
+                              fontSize: 11,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Text(
+                      (snapshot.stateName == 'Texas' ||
+                              snapshot.stateName == 'Kentucky')
+                          ? 'PUBLISHED RECORDS'
+                          : 'WINNING TICKETS',
+                      style: const TextStyle(
+                        color: Colors.white38,
+                        fontSize: 9,
+                        fontWeight: FontWeight.w800,
+                        letterSpacing: 0.6,
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                if (snapshot.stateName == 'Texas')
+                  const Padding(
+                    padding: EdgeInsets.only(bottom: 10),
+                    child: Text(
+                      'Selected Scratch top-prize claims and selected draw-game Where Sold records with verified retailer matches only. '
+                      'Rankings reflect the current filters, not all Texas wins or all prize tiers.',
+                      style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
                     ),
                   ),
-                  const SizedBox(width: 11),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                if (snapshot.stateName == 'Kentucky')
+                  const Padding(
+                    padding: EdgeInsets.only(bottom: 10),
+                    child: Text(
+                      'Selected official winner records with verified retailer matches only, including retained history. '
+                      'Rankings reflect the current filters, not all Kentucky wins or all prize tiers. '
+                      'Statewide draw summaries are separate and do not add retailer wins.',
+                      style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
+                    ),
+                  ),
+                if (snapshot.level == MapRankingLevel.state)
+                  ValueListenableBuilder<List<StateWinningTicketTotal>>(
+                    valueListenable: StateWinningTicketTotalService.totals,
+                    builder: (context, totals, _) => _officialTotals(totals),
+                  ),
+                if (rankings.isEmpty)
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 24),
+                    child: Row(
                       children: [
-                        Text(
-                          _heading(snapshot),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 16,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          _rangeLabel(snapshot),
-                          style: const TextStyle(
-                            color: Color(0xFF93C5FD),
-                            fontSize: 11,
-                            fontWeight: FontWeight.w600,
+                        Icon(Icons.info_outline_rounded, color: Colors.white38),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            'No verified activity matches the current map and timeline filters.',
+                            style: TextStyle(color: Colors.white60),
                           ),
                         ),
                       ],
                     ),
-                  ),
-                  Text(
-                    (snapshot.stateName == 'Texas' ||
-                            snapshot.stateName == 'Kentucky')
-                        ? 'PUBLISHED RECORDS'
-                        : 'WINNING TICKETS',
-                    style: const TextStyle(
-                      color: Colors.white38,
-                      fontSize: 9,
-                      fontWeight: FontWeight.w800,
-                      letterSpacing: 0.6,
+                  )
+                else
+                  ...rankings.indexed.map(
+                    (ranked) => _rankingRow(
+                      snapshot: snapshot,
+                      rank: ranked.$1 + 1,
+                      entry: ranked.$2,
+                      showDivider: ranked.$1 < rankings.length - 1,
                     ),
                   ),
-                ],
-              ),
-              const SizedBox(height: 10),
-              if (snapshot.stateName == 'Texas')
-                const Padding(
-                  padding: EdgeInsets.only(bottom: 10),
-                  child: Text(
-                    'Selected Scratch top-prize claims and selected draw-game Where Sold records with verified retailer matches only. '
-                    'Rankings reflect the current filters, not all Texas wins or all prize tiers.',
-                    style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
-                  ),
-                ),
-              if (snapshot.stateName == 'Kentucky')
-                const Padding(
-                  padding: EdgeInsets.only(bottom: 10),
-                  child: Text(
-                    'Selected official winner records with verified retailer matches only, including retained history. '
-                    'Rankings reflect the current filters, not all Kentucky wins or all prize tiers. '
-                    'Statewide draw summaries are separate and do not add retailer wins.',
-                    style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
-                  ),
-                ),
-              if (snapshot.level == MapRankingLevel.state)
-                ValueListenableBuilder<List<StateWinningTicketTotal>>(
-                  valueListenable: StateWinningTicketTotalService.totals,
-                  builder: (context, totals, _) => _officialTotals(totals),
-                ),
-              if (rankings.isEmpty)
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 24),
-                  child: Row(
-                    children: [
-                      Icon(Icons.info_outline_rounded, color: Colors.white38),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          'No verified activity matches the current map and timeline filters.',
-                          style: TextStyle(color: Colors.white60),
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-              else
-                ...rankings.indexed.map(
-                  (ranked) => _rankingRow(
-                    snapshot: snapshot,
-                    rank: ranked.$1 + 1,
-                    entry: ranked.$2,
-                    showDivider: ranked.$1 < rankings.length - 1,
-                  ),
-                ),
-            ],
+              ],
+            ),
           ),
         );
       },

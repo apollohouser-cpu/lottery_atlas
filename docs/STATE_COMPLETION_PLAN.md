@@ -1116,3 +1116,26 @@ native app-control tools are unavailable. Scope was already reconciled before
 its September 26 morning deadline; no new features are prerequisites. Kentucky
 release remains due September 28, 18:00 ET. Startup repository/deployment/mail
 checks were healthy and unchanged; no new agency response required action.
+
+### September 26 integrated offline map-to-report check
+
+Added an 800×632 widget-harness flow that boots the production app with all HTTP
+requests rejected, loads bundled data, focuses Kentucky through the production
+map navigation service, opens Drawings → Statewide prize tables, reaches the
+source link and returns to the map. This exercises composition/navigation and the
+real loader rather than injecting report data into an isolated sheet.
+
+The flow exposed two defects missed by isolated component tests: the national
+ranking card's decorated background obscured ListTile ink and triggered a Flutter
+assertion, and the Kentucky sheet overflowed by two pixels under the compact modal
+constraints. Added a local transparent Material for ranking interactions and made
+the report body scrollable while keeping its title/close/game selector accessible.
+The table retains independent horizontal/vertical scrolling; changing games resets
+the report body. No source records, coverage or timestamps changed.
+
+Four focused Flutter interaction checks pass, changed-file analysis is clean and
+the macOS debug build succeeds. Startup publisher 36205337159 remains successful;
+live Kentucky report bytes still match checked-in data, and no new agency email
+requires action. This is integrated automated evidence, not native visual sign-off.
+Native app-control tools remain unavailable; covered-date/filter/detail and visual
+checks remain open. Kentucky remains active, due September 28 at 18:00 ET.

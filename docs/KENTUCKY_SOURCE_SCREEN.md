@@ -363,3 +363,13 @@ expanded live feed at d3d7da8. These two summaries are ready for testing; Kentuc
 as a whole remains active for catalog/activity/filter/favorites/offline integrated
 acceptance. September 28 at 18:00 ET deadline unchanged. No new agency responses
 at the startup check; Maryland's previous fee-hold reply is already recorded.
+
+### September 26 compact offline navigation regression
+
+A production-app widget flow now covers Kentucky map → Drawings → statewide
+reports → source-link reachability → map return with network requests rejected.
+Fixed a compact modal overflow by scrolling the report body beneath its persistent
+header/game selector. Also corrected the shared ranking card's Material ancestry
+so its links retain ink feedback. Four focused interaction checks, changed-file
+analysis and macOS debug build pass. No data/coverage changes. Native visual and
+remaining filter/detail acceptance are still pending; see STATE_COMPLETION_PLAN.
