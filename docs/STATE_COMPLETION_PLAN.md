@@ -1100,3 +1100,19 @@ open Warren County and the $10,000 24K Gold notice, verify NOTICE DATE/source,
 then exercise prize/game filtering and reset. No deadline extension or state
 advancement is justified by this partial evidence. No new agency replies; live
 Kentucky report bytes still match the successful 36205337159 deployment.
+
+### September 25 Kentucky source-screen reachability
+
+Exercised the production Kentucky official-source screen at 800×632 and 1280×900
+with widget scrolling. Partial-coverage and missing-data notices, cadence/source-
+date guidance, the three official resource links and refresh-status link remain
+reachable without layout exceptions. Both checks pass; changed-test analysis has
+no issues. The initial compact test assumed an offscreen lazy child existed;
+using actual scrolling resolved that test-harness error, with no product change.
+
+This advances source-access acceptance but does not substitute for integrated
+native navigation or a visual review. Those items remain explicitly open while
+native app-control tools are unavailable. Scope was already reconciled before
+its September 26 morning deadline; no new features are prerequisites. Kentucky
+release remains due September 28, 18:00 ET. Startup repository/deployment/mail
+checks were healthy and unchanged; no new agency response required action.
