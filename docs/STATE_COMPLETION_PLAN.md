@@ -1191,3 +1191,32 @@ Native app-control tools are still unavailable. Remaining game/prize interaction
 and native visual checks stay open. Startup publisher/live feed/mail checks were
 healthy and unchanged. Kentucky remains active, due September 28 at 18:00 ET;
 Virginia remains queued. Scope was already reconciled before its morning deadline.
+
+### September 26 state game/prize controls and filter acceptance
+
+Found that selecting a state hid the general game/prize picker along with the
+national toolbar. Added a Game and prize filters action beside the state timeline,
+so Kentucky users can change categories and prize bounds without leaving the state
+or losing the chosen date. Changing categories clears a previous specific state-
+game selection. Existing source data and the January 2026 launch boundary remain
+unchanged.
+
+The integrated 800×632 and 1280×900 flows now select Mega Millions on the covered
+August 31 date and verify the scoped no-matching-activity notice. All Games restores
+the verified Scratch notice. Dragging the prize slider minimum above $10,000
+excludes it; dragging back to $1 and applying restores it. The same flows continue
+through Warren/Adair county scope, back navigation, notice/source details and now
+reset. No missing map records are interpreted as statewide zero wins.
+
+Adding the control exposed insufficient compact horizontal space and interference
+between the wrapped timeline and the tall map-navigation stack. Timeline actions
+now wrap within available width; short windows arrange navigation buttons in a
+row above the measured timeline. Both integrated scenarios pass after the fix.
+Native visual acceptance remains explicitly open because desktop-control tools
+are unavailable. Kentucky's September 28, 18:00 ET deadline is unchanged.
+
+Validation for this change: all 99 Flutter tests pass, macOS debug build succeeds,
+and analysis retains the same 12 informational notices. Startup deployment remains
+successful and the independent live Kentucky report hash matches checked-in data.
+No new agency replies required action. The new controls are ready for a native
+visual/interaction test pass; this is not Kentucky's final release acceptance.

@@ -1176,6 +1176,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _previousCountyHeatColors
         ..clear()
         ..addAll(currentColors);
+      if (_filterState.game != filterState.game) {
+        _selectedStateActivityGameName = null;
+      }
       _filterState = filterState;
     });
     _restartHeatBubbleAnimation();
@@ -4493,11 +4496,13 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     // Auxiliary map menus must sit above the full control stack. A selected
     // state adds the back button, which otherwise overlaps this banner.
     final actionControlCount = _selectedStateName == null ? 3 : 4;
+    final horizontalActions = MediaQuery.sizeOf(context).height < 750;
     final actionControlsBottom = _timelineDockHeight + 28;
     final mapMenuBottom =
         actionControlsBottom +
-        (actionControlCount * 52) +
-        ((actionControlCount - 1) * 10) +
+        (horizontalActions
+            ? 52
+            : (actionControlCount * 52) + ((actionControlCount - 1) * 10)) +
         12;
     // In the U.S. view, the national-draw menu occupies the lower-left cell
     // of the same two-by-two toolbar grid as Game Filter, Filters, and Find a
@@ -5005,6 +5010,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
               right: 20,
               bottom: actionControlsBottom,
               child: MapActionControls(
+                horizontal: horizontalActions,
                 onReset: _resetMap,
                 onHome: _homeStateName == null ? null : _goToHomeState,
                 onBack: _focusedRetailerId != null

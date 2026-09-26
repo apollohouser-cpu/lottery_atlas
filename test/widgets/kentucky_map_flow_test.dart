@@ -80,6 +80,71 @@ void main() {
           MapRankingService.snapshot.value.records.map((row) => row.id),
           contains('ky-current-2026-08-31-amexpress9-bowlinggreen-35'),
         );
+        Future<void> selectGame(String label) async {
+          await tester.tap(find.byTooltip('Game and prize filters'));
+          await tester.pumpAndSettle();
+          await tester.ensureVisible(find.text(label));
+          await tester.tap(find.text(label));
+          await tester.ensureVisible(find.text('Apply Game Filter'));
+          await tester.tap(find.text('Apply Game Filter'));
+          await tester.pumpAndSettle();
+        }
+
+        await selectGame('Mega Millions');
+        expect(MapRankingService.snapshot.value.records, isEmpty);
+        expect(
+          find.text('No Kentucky activity matches this view'),
+          findsOneWidget,
+        );
+        await selectGame('All Games');
+        expect(
+          MapRankingService.snapshot.value.records.map((row) => row.id),
+          contains('ky-current-2026-08-31-amexpress9-bowlinggreen-35'),
+        );
+        await tester.tap(find.byTooltip('Game and prize filters'));
+        await tester.pumpAndSettle();
+        final prizeSlider = find.byType(RangeSlider);
+        await tester.ensureVisible(prizeSlider);
+        final sliderRect = tester.getRect(prizeSlider);
+        await tester.dragFrom(
+          Offset(sliderRect.left + 24, sliderRect.center.dy),
+          const Offset(100, 0),
+        );
+        await tester.pumpAndSettle();
+        final narrowed = tester.widget<RangeSlider>(prizeSlider);
+        expect(narrowed.values.start, greaterThan(10000));
+        await tester.ensureVisible(find.text('Apply Game Filter'));
+        await tester.tap(find.text('Apply Game Filter'));
+        await tester.pumpAndSettle();
+        expect(MapRankingService.snapshot.value.records, isEmpty);
+        expect(
+          find.text('No Kentucky activity matches this view'),
+          findsOneWidget,
+        );
+        await tester.tap(find.byTooltip('Game and prize filters'));
+        await tester.pumpAndSettle();
+        await tester.ensureVisible(prizeSlider);
+        final restoredRect = tester.getRect(prizeSlider);
+        final currentSlider = tester.widget<RangeSlider>(prizeSlider);
+        final thumbX =
+            restoredRect.left +
+            24 +
+            (restoredRect.width - 48) *
+                (currentSlider.values.start - currentSlider.min) /
+                (currentSlider.max - currentSlider.min);
+        await tester.dragFrom(
+          Offset(thumbX, restoredRect.center.dy),
+          Offset(restoredRect.left - thumbX, 0),
+        );
+        await tester.pumpAndSettle();
+        expect(tester.widget<RangeSlider>(prizeSlider).values.start, 1);
+        await tester.ensureVisible(find.text('Apply Game Filter'));
+        await tester.tap(find.text('Apply Game Filter'));
+        await tester.pumpAndSettle();
+        expect(
+          MapRankingService.snapshot.value.records.map((row) => row.id),
+          contains('ky-current-2026-08-31-amexpress9-bowlinggreen-35'),
+        );
         final stateSnapshot = MapRankingService.snapshot.value;
         final stateCounties = MapRankingService.rankings(stateSnapshot);
         expect(stateCounties.length, greaterThan(1));

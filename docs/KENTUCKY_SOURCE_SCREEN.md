@@ -387,3 +387,13 @@ notice, opens its retailer details, reaches NOTICE DATE and the official source,
 and resets the timeline to now. Fixed action buttons overlapping reset at compact
 width by reserving the actual rendered timeline height. Seven focused checks pass;
 native visual and remaining filter acceptance are still open. See completion plan.
+
+### September 26 game and prize interaction
+
+The state timeline now exposes the general game/prize picker. Integrated checks
+at 800×632 and 1280×900 verify category changes, the selected-date Mega Millions
+empty state, restoration to All Games, pointer dragging to exclude the $10,000
+notice by minimum prize and restoring the full range. County/back/detail/reset
+flows also pass. Compact timeline and navigation actions adapt to avoid overlap.
+These are app changes only; no additional winner coverage is implied. Native
+visual acceptance remains open; see the completion plan for release evidence.

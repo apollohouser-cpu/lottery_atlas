@@ -10,6 +10,7 @@ class MapActionControls extends StatelessWidget {
     this.onHome,
     this.onBack,
     this.backTooltip = 'Back to U.S. map',
+    this.horizontal = false,
   });
 
   final VoidCallback onReset;
@@ -18,10 +19,13 @@ class MapActionControls extends StatelessWidget {
   final VoidCallback? onHome;
   final VoidCallback? onBack;
   final String backTooltip;
+  final bool horizontal;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Flex(
+      direction: horizontal ? Axis.horizontal : Axis.vertical,
+      mainAxisSize: MainAxisSize.min,
       children: [
         if (onBack != null) ...[
           _MapActionButton(
@@ -29,20 +33,20 @@ class MapActionControls extends StatelessWidget {
             tooltip: backTooltip,
             onTap: onBack!,
           ),
-          const SizedBox(height: 10),
+          SizedBox(width: horizontal ? 10 : 0, height: horizontal ? 0 : 10),
         ],
         _MapActionButton(
           icon: onHome == null ? Icons.my_location_rounded : Icons.home_rounded,
           tooltip: onHome == null ? 'Recenter map' : 'Go to home state',
           onTap: onHome ?? onReset,
         ),
-        const SizedBox(height: 10),
+        SizedBox(width: horizontal ? 10 : 0, height: horizontal ? 0 : 10),
         _MapActionButton(
           icon: Icons.add_rounded,
           tooltip: 'Zoom in',
           onTap: onZoomIn,
         ),
-        const SizedBox(height: 10),
+        SizedBox(width: horizontal ? 10 : 0, height: horizontal ? 0 : 10),
         _MapActionButton(
           icon: Icons.remove_rounded,
           tooltip: 'Zoom out',

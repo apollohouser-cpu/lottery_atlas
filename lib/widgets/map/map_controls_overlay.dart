@@ -1480,8 +1480,9 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
         LayoutBuilder(
           builder: (context, constraints) {
             final isCompact = constraints.maxWidth < 620;
-            final details = Row(
-              mainAxisSize: MainAxisSize.min,
+            final details = Wrap(
+              crossAxisAlignment: WrapCrossAlignment.center,
+              runSpacing: 6,
               children: [
                 HorizontalHeatLegend(
                   isSampleData: LotteryActivityRepository.isSampleData,
@@ -1499,6 +1500,14 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
                   ),
                 ),
                 const SizedBox(width: 4),
+                if (!widget.showHeaderControls)
+                  IconButton(
+                    tooltip: 'Game and prize filters',
+                    onPressed: _selectGame,
+                    icon: const Icon(Icons.filter_alt_outlined, size: 19),
+                    color: const Color(0xFF93C5FD),
+                    visualDensity: VisualDensity.compact,
+                  ),
                 Tooltip(
                   message: 'Return timeline to now',
                   child: IconButton(
