@@ -38,7 +38,7 @@ unavailable in this session. Do not repeatedly add test-only work as a substitut
 for this final gate, and do not advance to Virginia without the release decision.
 
 For the final native pass, use August 31, 2026 and Warren County's $10,000 24K Gold
-notice at AM EXPRESS #9. Repeat the game/prize/reset sequence above, inspect source
+notice at AM EXPRESS 9. Repeat the game/prize/reset sequence above, inspect source
 and date disclosures, open the statewide table selector, and inspect the compact
 and larger layouts. Preserve existing Favorites. Record actual observations and
 any defects; close the checklist only after those checks pass.
