@@ -1,3 +1,5 @@
+import 'dart:convert';
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lottery_atlas/widgets/map/map_controls_overlay.dart';
@@ -134,4 +136,57 @@ void main() {
     );
     expect(find.text('Day'), findsNothing);
   });
+  testWidgets(
+    'Kentucky published notice remains in whole-day selection at compact size',
+    (tester) async {
+      final data = jsonDecode(
+        File(
+          'data/kentucky_current_winner_activity.generated.json',
+        ).readAsStringSync(),
+      );
+      final record = (data['activities'] as List).first;
+      final date = DateTime.parse(record['drawDate'] as String).toLocal();
+      final day = DateTime(date.year, date.month, date.day);
+      await tester.binding.setSurfaceSize(const Size(800, 632));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+      MapFilterState? emitted;
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: MapControlsOverlay(
+              dayOnlyActivity: true,
+              dayOnlyDateLabel: 'Published dates',
+              filterState: MapFilterState(
+                dateRange: DateTimeRange(
+                  start: day.add(const Duration(hours: 18)),
+                  end: day.add(const Duration(hours: 19)),
+                ),
+              ),
+              onFilterChanged: (value) => emitted = value,
+            ),
+          ),
+        ),
+      );
+      await tester.pump();
+      expect(emitted, isNotNull);
+      expect(date.isBefore(emitted!.dateRange.start), isFalse);
+      expect(date.isAfter(emitted!.dateRange.end), isFalse);
+      expect(find.text('Day'), findsNothing);
+      expect(
+        find.textContaining('Published dates only; times unavailable'),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+      await tester.tap(find.text('Month'));
+      await tester.pump();
+      expect(tester.takeException(), isNull);
+      await tester.tap(find.text('Week'));
+      await tester.pump();
+      expect(
+        find.textContaining('Published dates only; times unavailable'),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    },
+  );
 }

@@ -1082,3 +1082,21 @@ claiming the remaining integrated checklist is complete. Deadline unchanged.
 Startup found no new agency replies. Publisher 36205337159 succeeded; live Kentucky
 reports match scheduled commit 9c964b1, explaining the initial local comparison
 difference. Preserve that scheduled update when integrating this UI correction.
+
+### September 25 Kentucky covered-date timeline verification
+
+Advanced the notice-date acceptance gap with the actual bundled August 31
+$10,000 24K Gold notice from Warren County. A compact 800×632 widget interaction
+starts with an evening-only interval, enters published-date mode and verifies
+the emitted whole-day interval includes the source notice. Hourly Day selection
+is absent, the unavailable-time label is visible, and Month/Week switching has
+no layout exceptions. All four timeline widget checks pass; changed-test analysis
+has no issues. This tests the production timeline component with a real imported
+notice, not a fabricated public activity row or verified claim time.
+
+Full native notice-details/filter acceptance remains open: native app-control
+tools are still unavailable. Next integrated pass should select August 31, 2026,
+open Warren County and the $10,000 24K Gold notice, verify NOTICE DATE/source,
+then exercise prize/game filtering and reset. No deadline extension or state
+advancement is justified by this partial evidence. No new agency replies; live
+Kentucky report bytes still match the successful 36205337159 deployment.
