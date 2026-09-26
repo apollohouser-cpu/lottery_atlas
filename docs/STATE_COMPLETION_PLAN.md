@@ -1042,3 +1042,25 @@ Startup found no new agency replies; publisher 36195042965 remains successful,
 and independent live Kentucky report retrieval still matches checked-in bytes.
 Deadline remains September 28 at 18:00 ET. Next pass should use a known covered
 notice date to verify activity details and date/filter behavior.
+
+### September 25 power-outage recovery and Kentucky offline acceptance
+
+User reported a power outage and requested continuation. Checkout was clean at
+1bcf553; all prior acceptance work was saved and pushed. The deployed Kentucky
+report still byte-matched the checked-in feed. A scheduled publisher was running,
+not established as failed. No new agency reply required action. No calendar
+extension is currently needed: Kentucky remains due September 28, 18:00 ET and
+Virginia October 1, 18:00 ET; outage duration was not inferred.
+
+Added Kentucky loader/repository regression coverage with a test-only downloaded
+notice. Verified HTTP-failure reload retains exact cached records, cached status,
+feed update date and original source date; unchanged reconnection preserves all
+records/dates and clears cached status. Verified bundled Kentucky catalog and
+retailer directory load offline with their expected counts/source attribution
+without creating activity. Existing aggregate/tier offline loader and interaction
+checks also pass: 14 focused Flutter tests, no analysis issues in the changed test.
+
+Native app control is unavailable in this resumed tool session. No visual check
+was claimed or previous evidence repeated as new. Keep integrated offline UI,
+covered notice-date/details, remaining filters/source surfaces and larger-layout
+acceptance open. This is automated recovery evidence, not Kentucky release closure.
