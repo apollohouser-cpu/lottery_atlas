@@ -2,7 +2,7 @@
 
 Status: **ready for native acceptance, not released as complete**.
 Release decision due September 28, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 98a107f.
+Implementation: a0aa40a. Latest verified scheduled data: cc053d8.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -30,7 +30,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 98a107f; publisher 36224080527 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match cc053d8; publisher 36242210487 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -63,3 +63,18 @@ The user has been asked to perform the final native checklist above and report
 any problems. Preserve the September 28 deadline and keep Virginia queued. Do not
 add routine tests or enhancements to fill the waiting period; resume native review
 when available and handle actual defects or meaningful new agency data meanwhile.
+
+## Scheduled data acceptance — September 26, 09:14 ET session
+
+Validated publication cc053d8 after publisher 36242210487 succeeded. All eight
+public JSON files independently byte-match the checkout. Fourteen Kentucky
+catalog/directory, offline/cache/reconnect and statewide-report widget tests pass.
+The 81-game Scratch catalog now carries September 25 inventory; the official
+retailer refresh removes THE PIT STOP, leaving 3,379 verified mapped locations
+from 3,473 unique source entries, with 94 unresolved. Keno and Cash Pop snapshots
+remain individual-draw aggregates, separate from mapped winner notices and tiers.
+No coverage or validation rules changed.
+
+The local native candidate above still bundles 98a107f; it was not rebuilt for this
+scheduled data refresh. Final native review remains open, with no new observations
+or desktop-control capability. The release deadline and Virginia queue are unchanged.
