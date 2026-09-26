@@ -100,8 +100,12 @@ complete statewide winner counts or retailer win ranking is implied.
 - [ ] Accessible source, period, cadence and partial-coverage explanations.
 - [ ] Bundled/cached offline behavior and unchanged-date reconnection.
 - [ ] Compact and larger native layout and interaction checks.
-- [ ] Appropriate automated checks and independently verified live feeds.
+- [x] Appropriate automated checks and independently verified live feeds.
 - [ ] Evidence reconciled and Kentucky explicitly announced ready for testing.
+
+Current evidence and the bounded final native pass are consolidated in
+[KENTUCKY_ACCEPTANCE.md](KENTUCKY_ACCEPTANCE.md). Native visual gates remain open;
+the completed automated/live item does not authorize state advancement.
 
 ## Texas acceptance checklist
 
@@ -1220,3 +1224,21 @@ and analysis retains the same 12 informational notices. Startup deployment remai
 successful and the independent live Kentucky report hash matches checked-in data.
 No new agency replies required action. The new controls are ready for a native
 visual/interaction test pass; this is not Kentucky's final release acceptance.
+
+### September 26 publication reconciliation and acceptance handoff
+
+Scheduled publisher 36224080527 succeeded; fast-forwarded cleanly to its data
+commit 98a107f. Independently retrieved all eight relevant public JSON files:
+activity, combined catalogs/directories/totals, Kentucky reports/catalog/directory,
+and refresh status. All byte-match that commit. Initial differences were the new
+scheduled publication, not a deployment failure. Kentucky's September 25 draw
+reports and aggregate snapshot are updated; map scope is unchanged.
+
+The new Mega Millions report exposed one stale hardcoded count in the widget
+regression. It now checks the complete displayed total row and date for each
+selected validated report; importer reconciliation/validation is unchanged.
+Nine Kentucky loader/report tests pass and changed-test analysis is clean.
+Consolidated evidence and the final native check sequence in KENTUCKY_ACCEPTANCE.
+Closed only the automated/live-verification checklist entry. Native control tools
+remain unavailable; Kentucky stays active and its deadline is unchanged. Mail
+contained no new agency response requiring action.

@@ -12,6 +12,21 @@ void main() {
       final raw = File(
         'data/kentucky_draw_tiers.generated.json',
       ).readAsStringSync();
+      final reports =
+          (jsonDecode(raw) as Map<String, dynamic>)['reports'] as List;
+      void expectDisplayedTotals(int reportIndex) {
+        final table = tester.widget<DataTable>(find.byType(DataTable));
+        final displayed = table.rows.last.cells.map((cell) {
+          final value = (cell.child as SizedBox).child! as Text;
+          return value.data;
+        }).toList();
+        expect(displayed, reports[reportIndex]['reportedTotals']);
+        expect(
+          find.textContaining('Draw date: ${reports[reportIndex]['drawDate']}'),
+          findsOneWidget,
+        );
+      }
+
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
@@ -31,7 +46,7 @@ void main() {
         find.text('Reported winners by tier • Not retailer map counts'),
         findsOneWidget,
       );
-      expect(find.text('2,465'), findsOneWidget);
+      expectDisplayedTotals(0);
       expect(
         find.textContaining('Source publication date unavailable'),
         findsOneWidget,
@@ -41,13 +56,12 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.text('Powerball Xs & Os').last);
       await tester.pumpAndSettle();
-      expect(find.text('831'), findsOneWidget);
+      expectDisplayedTotals(1);
       await tester.tap(find.byType(DropdownButton<int>));
       await tester.pumpAndSettle();
       await tester.tap(find.text('Powerball').last);
       await tester.pumpAndSettle();
-      expect(find.text('7,152'), findsOneWidget);
-      expect(find.text('1,324'), findsOneWidget);
+      expectDisplayedTotals(2);
       expect(
         find.textContaining('included in Kentucky winners'),
         findsOneWidget,
@@ -56,9 +70,8 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.text('Powerball Double Play').last);
       await tester.pumpAndSettle();
-      expect(find.text('704'), findsOneWidget);
+      expectDisplayedTotals(3);
       expect(find.textContaining('separate drawing'), findsOneWidget);
-      expect(find.text('2,465'), findsNothing);
       expect(find.text('Open official draw report'), findsOneWidget);
       expect(tester.takeException(), isNull);
     },
