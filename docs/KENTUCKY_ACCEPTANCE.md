@@ -30,7 +30,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 5dd6add; publisher 36319348936 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 53e75a1; Kentucky retains validated 5dd6add data | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -127,3 +127,17 @@ report/loader tests pass. Native review and its deadline remain unchanged.
 
 Indiana's catalog refresh failed; its prior file is byte-for-byte preserved.
 Texas updated successfully again. New Hampshire retention is unchanged.
+
+## Refresh failure retention acceptance — September 27, 15:42 ET session
+
+Publisher 36340903590 succeeded overall at 53e75a1 but isolated a Kentucky
+importer failure. All four Kentucky transaction files (catalog, directory,
+current notices and draw reports) remain byte-for-byte identical to 90dbd23's
+validated baseline, preserving source dates. Eight public JSON files independently
+match the published checkout, including retained Kentucky data and the disclosed
+refresh status. No new tests were needed for unchanged Kentucky bytes.
+
+The public status and job annotation identify retrieval/validation failure without
+a narrower cause. Check the next scheduled result and investigate persistent failure
+by September 28 at 15:42 ET, before the existing 18:00 release decision. This does
+not relax validation, change supported scope, or close the native-review gate.

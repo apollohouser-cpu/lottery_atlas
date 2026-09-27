@@ -1299,3 +1299,17 @@ bytes and dates are unchanged; no substitute data or relaxed validation was used
 Notify this isolated failure, check the next scheduled attempt, and investigate
 if it persists by September 28 at 09:39 ET. This maintenance follow-up does not
 advance Indiana implementation or replace Kentucky as the active state.
+
+### September 27, 15:42 ET — Kentucky refresh failure isolated
+
+Publisher 36340903590 at 53e75a1 reports Kentucky retained_after_failure. Verified
+all four state transaction files retained byte-for-byte, including original dates;
+eight live publication files match the checkout. Previous supported flows remain
+available. Public job annotations give only retrieval/validation failure, not an
+exact cause. No validation or coverage requirements changed. Indiana and New
+Hampshire retention persists without new status changes.
+
+Kentucky recovery follow-up: check next scheduled result; investigate persistent
+failure by September 28 at 15:42 ET. This maintenance checkpoint precedes and does
+not reset the September 28, 18:00 ET release decision. Native review remains open;
+Virginia stays queued. Notify the new isolated failure, not completion.
