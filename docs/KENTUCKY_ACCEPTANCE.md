@@ -2,7 +2,7 @@
 
 Status: **ready for native acceptance, not released as complete**.
 Release decision due September 28, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 305a618.
+Implementation: a0aa40a. Latest verified scheduled data: 5dd6add.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -30,7 +30,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 305a618; publisher 36300455228 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 5dd6add; publisher 36319348936 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -116,3 +116,14 @@ Texas's full scheduled transaction recovered with status updated. The live Texas
 tier report also byte-matches 305a618. Close the September 27, 15:17 ET recovery
 follow-up; no validation changes or accepted product-scope changes were needed.
 The exact cause of the preceding failures remains unconfirmed.
+
+## Scheduled source acceptance — September 27, 09:39 ET session
+
+Successful publisher 36319348936 produced 5dd6add. Eight public JSON files
+independently byte-match the checkout. Kentucky's ten tier reports are unchanged;
+individual-draw aggregates refreshed. The 81-game Scratch catalog now carries
+September 26 inventory with six decreased remaining-top-prize counts. Nine
+report/loader tests pass. Native review and its deadline remain unchanged.
+
+Indiana's catalog refresh failed; its prior file is byte-for-byte preserved.
+Texas updated successfully again. New Hampshire retention is unchanged.

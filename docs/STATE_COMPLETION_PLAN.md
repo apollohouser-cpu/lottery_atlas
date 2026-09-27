@@ -1286,3 +1286,16 @@ Kentucky's six refreshed tier reports and aggregate snapshots passed nine focuse
 loader/widget tests. Final native review is still blocked by absent desktop-control
 capability and no user observations; September 28, 18:00 ET remains unchanged.
 Virginia stays queued. No new agency correspondence required action.
+
+### September 27, 09:39 ET — Kentucky refresh verified; Indiana isolated failure
+
+Kentucky's updated aggregate snapshots and September 26 Scratch inventory are
+live at 5dd6add, publisher 36319348936. Eight public files match independently;
+nine report/loader tests pass. Final native review remains open and due September
+28 at 18:00 ET. Texas refreshed successfully again.
+
+Indiana's importer reported a new retained_after_failure. Its previous catalog
+bytes and dates are unchanged; no substitute data or relaxed validation was used.
+Notify this isolated failure, check the next scheduled attempt, and investigate
+if it persists by September 28 at 09:39 ET. This maintenance follow-up does not
+advance Indiana implementation or replace Kentucky as the active state.
