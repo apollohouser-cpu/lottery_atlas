@@ -2,7 +2,7 @@
 
 Status: **ready for native acceptance, not released as complete**.
 Release decision due September 28, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 44252c3.
+Implementation: a0aa40a. Latest verified scheduled data: 7555c1e.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -30,7 +30,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 44252c3; publisher 36262793374 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 7555c1e; publisher 36283014017 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -90,3 +90,16 @@ unchanged. Native candidate and final-review blocker remain as documented above.
 The same publication reports Texas retained_after_failure; its listed state files
 were verified byte-for-byte unchanged from the preceding publication. This does
 not invalidate Kentucky's report acceptance or establish a new Texas source date.
+
+## Scheduled aggregate acceptance — September 26, 21:26 ET session
+
+Publication 7555c1e (successful publisher 36283014017) advances Kentucky's
+individual-draw aggregate snapshots without changing the ten tier reports,
+catalog, directory or map scope. Nine report/loader tests pass; eight public
+JSON files independently match the checkout. Native acceptance remains open.
+
+Texas retention recurred in this publication. Public job annotations confirm
+retention but provide no narrower cause. An isolated local Scratch catalog fetch
+successfully parsed 75 games into a temporary diagnostic file; this does not
+establish recovery of the full Texas transaction or replace any public/bundled
+file. The existing September 27, 15:17 ET recovery follow-up remains open.
