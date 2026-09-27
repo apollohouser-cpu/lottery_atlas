@@ -2,7 +2,7 @@
 
 Status: **ready for native acceptance, not released as complete**.
 Release decision due September 28, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 7555c1e.
+Implementation: a0aa40a. Latest verified scheduled data: 305a618.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -30,7 +30,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 7555c1e; publisher 36283014017 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 305a618; publisher 36300455228 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -103,3 +103,16 @@ retention but provide no narrower cause. An isolated local Scratch catalog fetch
 successfully parsed 75 games into a temporary diagnostic file; this does not
 establish recovery of the full Texas transaction or replace any public/bundled
 file. The existing September 27, 15:17 ET recovery follow-up remains open.
+
+## Scheduled draw acceptance — September 27, 03:34 ET session
+
+Publisher 36300455228 succeeded with data commit 305a618. Kentucky Powerball,
+Double Play, Millionaire For Life, Cash Ball 225 and Pick 3/4 EVENING now carry
+September 26 draws. Nine report/loader tests pass. All eight relevant public JSON
+files independently byte-match this commit. Native review remains open; the local
+native candidate has not been rebuilt for scheduled data changes.
+
+Texas's full scheduled transaction recovered with status updated. The live Texas
+tier report also byte-matches 305a618. Close the September 27, 15:17 ET recovery
+follow-up; no validation changes or accepted product-scope changes were needed.
+The exact cause of the preceding failures remains unconfirmed.

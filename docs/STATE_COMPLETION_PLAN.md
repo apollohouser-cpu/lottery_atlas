@@ -1271,3 +1271,18 @@ validation or reopen accepted product scope. Bounded refresh-recovery follow-up:
 check the next scheduled result; if still failing, investigate and report by
 September 27 at 15:17 ET. New Hampshire's retained failure is unchanged. No agency
 reply changed the active-state work in this session.
+
+### September 27, 03:34 ET — Texas refresh recovered; Kentucky reports verified
+
+Scheduled publisher 36300455228 completed successfully at 305a618. Texas's full
+transaction reports updated, including newer draw activity/tier reports. Nine
+public JSON files (the eight Kentucky/shared publication files plus Texas tiers)
+independently byte-match the checkout. Close the bounded Texas refresh-recovery
+follow-up before its September 27, 15:17 ET deadline. Previous failures did not
+alter validated files/dates; no validation was weakened. Their precise cause was
+not established. New Hampshire retention remains unchanged.
+
+Kentucky's six refreshed tier reports and aggregate snapshots passed nine focused
+loader/widget tests. Final native review is still blocked by absent desktop-control
+capability and no user observations; September 28, 18:00 ET remains unchanged.
+Virginia stays queued. No new agency correspondence required action.
