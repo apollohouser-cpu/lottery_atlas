@@ -2,7 +2,7 @@
 
 Status: **ready for native acceptance, not released as complete**.
 Release decision due September 28, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 9c9fbec.
+Implementation: a0aa40a. Latest verified scheduled data: 1e7549f.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -30,7 +30,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 9c9fbec; publisher 36362927118 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 1e7549f; publisher 36387439013 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -150,3 +150,12 @@ checkout, and nine report/loader tests pass. Close the September 28, 15:42 ET
 recovery checkpoint. No validation changes were required; the preceding failure's
 exact cause remains unconfirmed. Native review remains open and the September 28,
 18:00 ET release decision is unchanged. Indiana/New Hampshire retention persists.
+
+## Scheduled draw acceptance — September 28, 03:51 ET session
+
+Publisher 36387439013 succeeded at 1e7549f. Eight public files independently
+byte-match the checkout; nine report/loader tests pass. Powerball Xs & Os,
+Millionaire For Life, Cash Ball 225 and Pick 3/4 EVENING now carry September 27
+draws. The supported scope is unchanged. Native review remains open and due today
+at 18:00 ET; South Carolina is next only after acceptance. Indiana's retention and
+09:39 ET maintenance checkpoint remain open. No new agency response required action.
