@@ -1313,3 +1313,13 @@ Kentucky recovery follow-up: check next scheduled result; investigate persistent
 failure by September 28 at 15:42 ET. This maintenance checkpoint precedes and does
 not reset the September 28, 18:00 ET release decision. Native review remains open;
 Virginia stays queued. Notify the new isolated failure, not completion.
+
+### September 27, 21:48 ET — Kentucky refresh recovered
+
+Publisher 36362927118 completed successfully at 9c9fbec with Kentucky updated.
+Eight live public JSON files independently match; nine report/loader tests pass.
+Close the September 28, 15:42 ET recovery checkpoint. The prior validated data
+was retained during the failure; no validation changes or invented dates were
+needed. Native review remains open, the September 28, 18:00 ET release decision
+is unchanged, and Virginia remains queued. Indiana's September 28, 09:39 ET
+maintenance checkpoint remains open; its retained failure is unchanged.

@@ -2,7 +2,7 @@
 
 Status: **ready for native acceptance, not released as complete**.
 Release decision due September 28, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 5dd6add.
+Implementation: a0aa40a. Latest verified scheduled data: 9c9fbec.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -30,7 +30,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 53e75a1; Kentucky retains validated 5dd6add data | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 9c9fbec; publisher 36362927118 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -141,3 +141,12 @@ The public status and job annotation identify retrieval/validation failure witho
 a narrower cause. Check the next scheduled result and investigate persistent failure
 by September 28 at 15:42 ET, before the existing 18:00 release decision. This does
 not relax validation, change supported scope, or close the native-review gate.
+
+## Refresh recovery — September 27, 21:48 ET session
+
+Kentucky's full scheduled transaction recovered with status updated in 9c9fbec,
+publisher 36362927118. Eight public JSON files independently byte-match the
+checkout, and nine report/loader tests pass. Close the September 28, 15:42 ET
+recovery checkpoint. No validation changes were required; the preceding failure's
+exact cause remains unconfirmed. Native review remains open and the September 28,
+18:00 ET release decision is unchanged. Indiana/New Hampshire retention persists.
