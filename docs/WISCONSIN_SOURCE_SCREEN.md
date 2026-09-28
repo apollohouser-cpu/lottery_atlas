@@ -192,3 +192,36 @@ while awaiting the records response. No requester action was requested.
 ## September 23 agency response — reviewed September 24
 
 September 23 agency reply says the request is still being worked on. No delivery or response deadline was supplied.
+
+## September 28 partial records delivery — audit pending
+
+Charles Klink supplied message 1a0e8f94c4120d45 at 17:03 UTC with two workbooks:
+`draw-game winning-ticket counts 1-1-2026 - 9-22-2026.xlsx` (154,022 bytes) and
+`Active Retailers 9.24.xlsx` (247,557 bytes). This supersedes the acknowledgment-only
+status above. Remaining Scratch and retailer questions are still under review,
+with no stated delivery date or fee estimate. No fees are authorized.
+
+Agency-confirmed semantics:
+
+- Draw counts cover January 1 through September 22, 2026, with dates down rows
+  and games/prize divisions across columns. No correction/finality or multistate
+  flags are supplied; Powerball and Mega Millions are its multistate games.
+- Pick 3/4 count every play in 50-cent units: one winning $1 play appears as two
+  wins. The workbook cannot separate them. Do not label these as distinct tickets
+  or divide every count by two; the mixture of play amounts is unknown.
+- The retailer directory is current as of September 27 per the email, despite
+  the filename's 9.24 label. It includes for-profit/nonprofit retailers and the
+  Madison validation-office retail location. It is not a historical selling join.
+- Retailer IDs are expressly withheld. Do not reconstruct or invent agency IDs.
+- The public Big Winners page includes claimed prizes of $600 and higher.
+- Scratch Features and Procedures, section 3, describes initial tier counts and
+  odds, which may vary during a game's life; this does not supply current claims.
+
+Connector previews show All or Nothing, Badger 5, Daily Pick 3, Daily Pick 4, Mega
+Millions, Megabucks, Powerball and Supercash! columns, plus retailer name/address/
+city/ZIP/latitude/longitude fields. These are incomplete previews, not a full
+workbook audit. Both original download URLs returned HTTP 403. Full row counts,
+null/zero semantics, daily/session grouping, tier reconciliation, duplicates,
+coordinate validation and directory exceptions remain unverified. No new counts,
+retailer pins or claims layer was published. Preserve this distinction from a
+fully inspectable delivery; retrieve originals when attachment access is restored.

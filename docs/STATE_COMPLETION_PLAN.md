@@ -1385,3 +1385,18 @@ Kentucky repository/deployment remain unchanged and healthy at the previously
 verified publication. Final native review remains blocked by absent interaction
 tools and no new user observations. No repeat tests, enhancements or queued-state
 implementation were added. Today's 18:00 ET release decision is unchanged.
+
+### September 28, 14:00 ET — Wisconsin partial delivery received
+
+Wisconsin delivered draw-count and active-retailer workbooks, with explicit
+Pick 3/4 50-cent-unit counting and retailer-ID withholding. Source-screen notes
+record all agency limitations, September 27 directory as-of date, and the $600
+Big Winners threshold. Connector previews are readable but incomplete; both
+original downloads returned HTTP 403. Full private audit remains pending, with
+no public data changes and no claim of a verified statewide map. Remaining agency
+items are still under review. No fees authorized.
+
+Kentucky's checked publication remains unchanged and successful. Final native
+review remains open with no available desktop-interaction tools or new user
+observations. Today's 18:00 ET release decision and the South Carolina/Virginia
+queue remain unchanged; no redundant tests or new prerequisites were introduced.
