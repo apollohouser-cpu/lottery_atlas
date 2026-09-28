@@ -228,3 +228,20 @@ report inquiry as R030290-092526 on September 25. Gmail message
 It supplies no data, definitions, fee estimate or calendar completion date.
 No fees authorized. This acknowledgment does not reopen the accepted Texas app
 scope; monitor alongside the original request and preserve existing limitations.
+
+### September 28 response to original request — retrieval pending
+
+Message 1a0e847999d7d4da at 13:50 UTC responds to R030267-092126.
+The agency says responsive item #3 retailer documents are available in My Request
+Center and refers the remaining items to the Texas Open Data Portal dataset
+`54pj-3dxy` (Winners List of Texas Lottery Prizes). This referral does not itself
+verify all-tier scope, date semantics, historical joins or coverage completeness.
+No portal document has been downloaded or audited in this session. The agency
+reports 0.08 personnel hours for this request and FY2027; this is not a fee invoice.
+
+Desktop/browser interaction is unavailable. Sent reply 1a0e84e9974fa0b4 requesting
+an email copy of the existing item #3 documents, without new compilation, fees
+or paid work. Bounded follow-up: inspect those documents when accessible, then
+compare against existing directory evidence before proposing any data change.
+Texas's accepted supported release stays closed. The separate September 25
+definitions inquiry remains distinct; no new retailer points or claims published.

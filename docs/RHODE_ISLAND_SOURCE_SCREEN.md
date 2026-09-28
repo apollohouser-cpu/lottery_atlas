@@ -105,3 +105,17 @@ tests exercise exact-versus-publishable handling, unmatched/tied records, missin
 or duplicated IDs, mismatched input, non-exact/ZIP/house/county exceptions,
 invalid coordinates, overlapping polygons and polygon holes. All 123 Python
 tests passed. No app assets, public directory or map activity changed.
+
+## September 28 follow-up letter — content not yet readable
+
+Terri Kiernan, copying attorney Valerie Morozov, sent message 1a0e847a356dfb89
+at 13:49 UTC with `APRA - Apollo Houser Ltr 9.28.26.pdf` (1,049,324 bytes,
+two pages). Attachment extraction returned no text or page images. The original
+download returned HTTP 403; therefore this session has not inspected the letter
+and makes no claim about its decision, fee terms, deadlines or delivered records.
+
+Sent reply 1a0e84e9f23339ce requesting text in the email body or an existing
+searchable copy, without new report compilation or fees. The previous paid
+assembly remains on hold. Keep existing directory/Census staging limitations;
+no new winning-ticket records or verified coordinates have been established.
+Read the letter when accessible and reconcile any actual agency requirements.

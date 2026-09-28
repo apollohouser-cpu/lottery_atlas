@@ -1356,3 +1356,18 @@ Maryland confirmed no free custom extract and identified public tier pages; Flor
 identified public draw-tier, Scratch and locator pages. Both paid requests remain
 on hold, with no new claims delivery or mapped locations. Their source screens
 record the September 28 replies; no duplicate request or payment is needed.
+
+### September 28, 09:56 ET — agency document access follow-ups
+
+Kentucky publication and repository are unchanged from the preceding acceptance
+entry; no duplicate tests or scope additions were made. Native-control tools are
+still unavailable and no native observations have arrived. Today's 18:00 ET
+release decision remains unchanged, with South Carolina and Virginia queued.
+
+Texas's original records response announces retailer documents behind My Request
+Center and refers other items to a public dataset; requested existing documents
+by email without fees. This does not reopen Texas development or establish new
+coverage. Rhode Island's new two-page scanned letter could not be extracted or
+downloaded (HTTP 403); requested readable text without fees. Its contents and any
+new terms remain unknown. Details and sent-message evidence are in the respective
+source screens. No user payment, repeat mailing or new signature requested.
