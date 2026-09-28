@@ -1415,3 +1415,15 @@ Open a bounded refresh-recovery follow-up: inspect the next scheduled result and
 investigate if still failing by September 29, 15:00 ET. This is importer maintenance,
 not a reopening of accepted Texas features. No validation was relaxed. New
 Hampshire's existing retention is unchanged. Notify the new Texas failure.
+
+### September 28, 16:00 ET — Wyoming contact confirmation handled
+
+Wyoming requested project/business name and phone for its existing support ticket.
+Supplied the previously provided contact details without asking the user again,
+with no fees, duplicate request or new compilation authorized. Existing substantive
+refusals remain unchanged; no dataset was delivered. Public notes omit the phone.
+
+Kentucky's repository and checked live reports remain unchanged; publisher
+36466064335 is successful. Native interaction tools remain absent and there are
+no new native observations. Today's 18:00 ET release decision remains in place.
+Texas retention and its September 29, 15:00 ET maintenance checkpoint are unchanged.

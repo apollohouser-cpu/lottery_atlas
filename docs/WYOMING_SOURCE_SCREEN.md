@@ -47,3 +47,17 @@ built or available and again referred us to the website's winner information.
 No new dataset or field/cadence clarification was supplied. Continue with the
 explicitly limited public-source path; no further intervention is needed for
 that approach.
+
+## September 28 administrative contact confirmation
+
+WyoLotto Support asked for business name and phone in message 1a0e96dfea81e416
+at 19:11 UTC to confirm the existing request (support ticket 488). Reply
+1a0e99ba2ed3fd63 supplied Lottery Atlas as the project name, Apollo Houser as
+requester, and the phone already provided in prior official records correspondence.
+The phone is intentionally omitted from this public source-screen document.
+
+The reply linked this administrative confirmation to David Stevens's existing
+responses and explicitly avoided a duplicate request, new compilation or fees.
+Email delivery remains preferred. This does not reverse the September 21 refusals
+or establish a new substantive review, deadline or data delivery. No user action
+is required; preserve the public-source limitations above.
