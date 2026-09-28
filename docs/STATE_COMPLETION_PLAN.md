@@ -12,14 +12,15 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
 | Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
-| Kentucky | September 28, 2026, 6:00 PM ET | Implementation starts only after Texas's full supported release decision. |
-| Virginia | October 1, 2026, 6:00 PM ET | Implementation starts only after Kentucky's supported release decision. |
+| Kentucky | September 28, 2026, 6:00 PM ET | Active; final native acceptance remains open. |
+| South Carolina | Set at activation after Kentucky acceptance: 72 or 120 hours under the rules below | Next, per user home-state priority confirmed September 28. |
+| Virginia | Former October 1 target superseded by the user queue change; revised calendar date to be recorded when South Carolina activates | Queued after South Carolina acceptance. |
 
 Texas's release includes the supported draw-game experience, specifically verified
 Powerball and Mega Millions activity. Scratch-only acceptance never satisfies it.
 The current evidence already records expanded supported acceptance; the next
 session must decide closure rather than invent another enhancement prerequisite.
-Once that decision is recorded, advance the active state to Kentucky, then Virginia.
+Once that decision is recorded, advance the active state to Kentucky, then South Carolina, then Virginia.
 Missing complete statewide records remain a separately tracked data outcome.
 
 For subsequent states, record a calendar deadline at activation: 72 hours for an
@@ -62,7 +63,11 @@ ET; scope and per-game gaps must be reconciled by September 26 at 06:58 AM ET.
 Use the existing Kentucky checklist and source screen. Explicitly inventory
 Powerball, Mega Millions and all supported Kentucky draw games as well as Scratch
 before defining acceptance; do not repeat the earlier Scratch-only scope error.
-Virginia remains queued until Kentucky acceptance, due October 1 at 6:00 PM ET.
+South Carolina is next after Kentucky acceptance, per the user's September 28
+request to prioritize their home state. Virginia follows South Carolina. Its
+former October 1 deadline is superseded by this explicit queue change; record
+South Carolina's deadline and the revised Virginia forecast when South Carolina
+activates. Kentucky's September 28 deadline is unchanged.
 
 Two separate outcomes remain mandatory: **accepted for available coverage** and
 **complete statewide data**. Missing records do not establish zero wins. Accepted
@@ -1323,3 +1328,14 @@ was retained during the failure; no validation changes or invented dates were
 needed. Native review remains open, the September 28, 18:00 ET release decision
 is unchanged, and Virginia remains queued. Indiana's September 28, 09:39 ET
 maintenance checkpoint remains open; its retained failure is unchanged.
+
+### September 28 — user-directed queue change
+
+Persisted the user's request to prioritize South Carolina, their home state,
+immediately after Kentucky. Kentucky remains active with final native review open
+and its September 28, 18:00 ET release decision unchanged. South Carolina has not
+started; assign its 72/120-hour deadline at activation, inventory every supported
+game within 24 hours, and record the downstream Virginia calendar forecast then.
+Virginia's former October 1 target is explicitly superseded, not silently reset.
+Automation instructions were reconciled to this order. Repository/mail checks
+showed no new agency action; the scheduled publisher was still running.
