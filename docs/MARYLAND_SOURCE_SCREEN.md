@@ -109,3 +109,20 @@ validation, withholding all fees/payment/paid work, and asking whether a smaller
 existing report or portion is available within the no-charge allowance. Paid
 extract remains on hold. This is a received directory attachment, not an audited
 map import; public-source app completion continues independently.
+
+## September 28 no-fee response
+
+Seth Elkin replied in message 1a0e8007366fbbb2 at 08:32 ET that compiling the
+requested data would incur agency/vendor costs; a free custom extract is not
+available. The $438.75 paid extract remains on hold with no authorization.
+He identified existing public detailed prize-tier results for
+[Powerball](https://www.mdlottery.com/games/powerball/detailed-results/),
+[Powerball Xs & Os](https://www.mdlottery.com/games/powerball-xs-os/detailed-results/),
+[Mega Millions](https://www.mdlottery.com/games/mega-millions/detailed-results/),
+[Multi-Match](https://www.mdlottery.com/games/multi-match/detailed-results/),
+[Scratch-Offs](https://www.mdlottery.com/games/scratch-offs/) and
+[Fast Play](https://www.mdlottery.com/games/fast-play/).
+These are agency-identified alternatives, not newly audited/imported draw reports
+or retailer-level claims. The previously delivered directory still requires a
+private content audit. No further duplicate clarification is needed; public-source
+implementation can proceed in its assigned state scope without paying for records.

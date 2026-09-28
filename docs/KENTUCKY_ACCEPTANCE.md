@@ -2,7 +2,7 @@
 
 Status: **ready for native acceptance, not released as complete**.
 Release decision due September 28, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 1e7549f.
+Implementation: a0aa40a. Latest verified scheduled data: 49a8838.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -30,12 +30,12 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 1e7549f; publisher 36387439013 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 49a8838; publisher 36422961467 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
 unavailable in this session. Do not repeatedly add test-only work as a substitute
-for this final gate, and do not advance to Virginia without the release decision.
+for this final gate, and do not advance to South Carolina before Kentucky acceptance; Virginia follows South Carolina.
 
 For the final native pass, use August 31, 2026 and Warren County's $10,000 24K Gold
 notice at AM EXPRESS 9. Repeat the game/prize/reset sequence above, inspect source
@@ -159,3 +159,17 @@ Millionaire For Life, Cash Ball 225 and Pick 3/4 EVENING now carry September 27
 draws. The supported scope is unchanged. Native review remains open and due today
 at 18:00 ET; South Carolina is next only after acceptance. Indiana's retention and
 09:39 ET maintenance checkpoint remain open. No new agency response required action.
+
+## Scheduled source acceptance — September 28, 08:55 ET session
+
+Publisher 36422961467 succeeded at 49a8838. All eight public JSON files
+independently byte-match the checkout. Fourteen Kentucky catalog/directory,
+offline/reconnect and report/loader widget tests pass. The 81-game Scratch
+catalog advances to September 27 inventory with four reduced top-prize counts.
+Keno/Cash Pop individual-draw snapshots advance to September 28; ten tier reports,
+directory and supported map scope remain unchanged. Native review remains open
+and due today at 18:00 ET. The local native candidate has not been rebuilt.
+
+Indiana's importer recovered with status updated; close its September 28, 09:39 ET
+maintenance checkpoint. New Hampshire is the only retained state failure in this
+publication. Recovery does not imply a complete Indiana claims map.

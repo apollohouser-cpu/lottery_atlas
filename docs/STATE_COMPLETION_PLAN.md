@@ -1339,3 +1339,20 @@ game within 24 hours, and record the downstream Virginia calendar forecast then.
 Virginia's former October 1 target is explicitly superseded, not silently reset.
 Automation instructions were reconciled to this order. Repository/mail checks
 showed no new agency action; the scheduled publisher was still running.
+
+### September 28, 08:55 ET — source acceptance and Indiana recovery
+
+Accepted Kentucky's September 27 Scratch inventory and September 28 individual-draw
+aggregate snapshots at 49a8838, publisher 36422961467. Fourteen focused tests pass
+and eight public JSON files independently byte-match; see KENTUCKY_ACCEPTANCE.md.
+Final native review remains open; today's 18:00 ET release decision is unchanged.
+South Carolina remains next after acceptance, followed by Virginia.
+
+Indiana's scheduled import recovered before its September 28, 09:39 ET checkpoint;
+close that maintenance follow-up. New Hampshire remains retained. No validation
+was relaxed and previous source dates were preserved during the failure.
+
+Maryland confirmed no free custom extract and identified public tier pages; Florida
+identified public draw-tier, Scratch and locator pages. Both paid requests remain
+on hold, with no new claims delivery or mapped locations. Their source screens
+record the September 28 replies; no duplicate request or payment is needed.
