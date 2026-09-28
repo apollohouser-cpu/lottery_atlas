@@ -1,7 +1,8 @@
 # Kentucky release evidence
 
 Status: **ready for native acceptance, not released as complete**.
-Release decision due September 28, 2026, 18:00 America/New_York.
+Original September 28, 2026, 18:00 deadline missed. Single extension ends
+September 29, 2026, 18:00 America/New_York.
 Implementation: a0aa40a. Latest verified scheduled data: 77fabaf.
 The scope/per-game inventory was completed September 25, before its deadline.
 
@@ -185,3 +186,13 @@ open, with today's 18:00 ET release decision unchanged.
 Texas reports a new retained_after_failure; all five transaction files match the
 preceding validated commit byte-for-byte, including dates. This isolated refresh
 failure does not alter Kentucky acceptance or reopen Texas's supported release.
+
+## Deadline decision — September 28, 18:00 ET
+
+Not accepted: the final native checks above remain unobserved because desktop
+interaction capability is unavailable and no new user observations have arrived.
+No new product defect is asserted. One 24-hour extension ends September 29 at
+18:00 ET; no repeat extension. Ready for native testing using the existing local
+macOS debug candidate described above. Restore interaction capability or provide
+actual results from the checklist; automated evidence alone does not close it.
+South Carolina remains queued until acceptance, with Virginia following.

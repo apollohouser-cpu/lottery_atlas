@@ -12,7 +12,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
 | Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
-| Kentucky | September 28, 2026, 6:00 PM ET | Active; final native acceptance remains open. |
+| Kentucky | One extension: September 29, 2026, 6:00 PM ET (original September 28 deadline missed) | Active; final native acceptance blocked by unavailable desktop interaction and absent native observations. |
 | South Carolina | Set at activation after Kentucky acceptance: 72 or 120 hours under the rules below | Next, per user home-state priority confirmed September 28. |
 | Virginia | Former October 1 target superseded by the user queue change; revised calendar date to be recorded when South Carolina activates | Queued after South Carolina acceptance. |
 
@@ -58,8 +58,9 @@ coverage, including Powerball and Mega Millions activity. Complete statewide
 claims remain unavailable and are tracked separately. See the release decision
 at the end of this document; earlier Texas-active statements are historical.
 
-Kentucky is now active. Its release decision remains due September 28 at 6:00 PM
-ET; scope and per-game gaps must be reconciled by September 26 at 06:58 AM ET.
+Kentucky remains active. Its original September 28, 6:00 PM ET deadline was
+missed; its single 24-hour extension ends September 29, 6:00 PM ET. Scope and
+per-game gaps were reconciled September 25, before the September 26 deadline.
 Use the existing Kentucky checklist and source screen. Explicitly inventory
 Powerball, Mega Millions and all supported Kentucky draw games as well as Scratch
 before defining acceptance; do not repeat the earlier Scratch-only scope error.
@@ -67,7 +68,7 @@ South Carolina is next after Kentucky acceptance, per the user's September 28
 request to prioritize their home state. Virginia follows South Carolina. Its
 former October 1 deadline is superseded by this explicit queue change; record
 South Carolina's deadline and the revised Virginia forecast when South Carolina
-activates. Kentucky's September 28 deadline is unchanged.
+activates. Kentucky's single extension and downstream impact are recorded below.
 
 Two separate outcomes remain mandatory: **accepted for available coverage** and
 **complete statewide data**. Missing records do not establish zero wins. Accepted
@@ -1427,3 +1428,34 @@ Kentucky's repository and checked live reports remain unchanged; publisher
 36466064335 is successful. Native interaction tools remain absent and there are
 no new native observations. Today's 18:00 ET release decision remains in place.
 Texas retention and its September 29, 15:00 ET maintenance checkpoint are unchanged.
+
+### September 28, 18:00 ET — Kentucky deadline decision: not accepted; one extension
+
+The original release deadline was missed. Concrete blocker: final native visual
+and interaction acceptance cannot be performed because desktop-control tools
+remain unavailable, and no new user test observations were supplied. This is an
+acceptance-evidence gap, not a newly discovered app defect or missing agency data.
+Unfinished checks: actual compact/larger layouts, county/date/game/prize/reset
+controls, notice/source readability, table scrolling and offline display. The
+existing integrated widget/native partial evidence does not close those checks.
+
+Use the one 24-hour extension, ending **September 29, 2026, 18:00 ET**. No further
+extension is permitted. Kentucky is ready for native testing, but is not accepted
+as complete. Required intervention: restore desktop interaction capability or
+provide actual observations from the native checklist in KENTUCKY_ACCEPTANCE.md.
+The existing local macOS debug app is available; no payment, agency response or
+new feature is required for this gate. If still blocked at the extended deadline,
+report required intervention and continue independent work without advancing.
+
+South Carolina remains inactive until Kentucky acceptance. Its potential start
+shifts with this extension, up to September 29 if acceptance occurs by that date;
+its 72/120-hour deadline will be fixed at actual activation. Virginia follows,
+and its former October 1 target remains superseded. Do not silently retain an
+old downstream target or begin queued-state implementation. Record the revised
+Virginia calendar forecast when South Carolina activates.
+
+Repository and checked live feeds are unchanged; publisher 36466064335 succeeded.
+Reuse the existing 99-test/build evidence and latest nine focused tests/eight-feed
+verification rather than repeat unchanged checks. Texas's separate recovery
+checkpoint remains September 29, 15:00 ET. California announced an agency response
+by October 12; this is separate from app deadlines and not a data delivery.

@@ -40,3 +40,14 @@ prizes above $1,000. A reply clarified that aggregate counts are requested for
 retailer-linked report would be useful as a labeled partial subset. The reply
 retained the Scratchers and active-retailer requests and again required a cost
 estimate before any paid work. Gmail showed the sent reply.
+
+## September 28 agency extension
+
+Message 1a0e9f267b4d46c9 states that the agency needs additional time to examine
+a voluminous set of records and promises a further response on or before
+**October 12, 2026**. Record that date as the agency's stated response commitment,
+not a guaranteed records-delivery date or an independent legal deadline calculation.
+No records, fee authorization or coverage confirmation accompanies this notice.
+The narrowed August scope and all-tier clarification remain as recorded above;
+no fees or paid programming are authorized. Monitor October 12 separately from
+app completion deadlines. No duplicate acknowledgment/request is necessary.
