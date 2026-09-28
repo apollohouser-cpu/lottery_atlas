@@ -2,7 +2,7 @@
 
 Status: **ready for native acceptance, not released as complete**.
 Release decision due September 28, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 49a8838.
+Implementation: a0aa40a. Latest verified scheduled data: 77fabaf.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -30,7 +30,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 49a8838; publisher 36422961467 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 77fabaf; publisher 36466064335 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -173,3 +173,15 @@ and due today at 18:00 ET. The local native candidate has not been rebuilt.
 Indiana's importer recovered with status updated; close its September 28, 09:39 ET
 maintenance checkpoint. New Hampshire is the only retained state failure in this
 publication. Recovery does not imply a complete Indiana claims map.
+
+## Scheduled report acceptance — September 28, 15:00 ET session
+
+Publisher 36466064335 succeeded at 77fabaf. Eight public JSON files independently
+byte-match the checkout; nine Kentucky report/loader widget tests pass. Pick 3/4
+MIDDAY reports now cover September 28 and individual-draw aggregate snapshots
+refreshed. Catalog, directory and map scope are unchanged. Native review remains
+open, with today's 18:00 ET release decision unchanged.
+
+Texas reports a new retained_after_failure; all five transaction files match the
+preceding validated commit byte-for-byte, including dates. This isolated refresh
+failure does not alter Kentucky acceptance or reopen Texas's supported release.

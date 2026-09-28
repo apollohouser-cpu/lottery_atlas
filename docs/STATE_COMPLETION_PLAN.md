@@ -1400,3 +1400,18 @@ Kentucky's checked publication remains unchanged and successful. Final native
 review remains open with no available desktop-interaction tools or new user
 observations. Today's 18:00 ET release decision and the South Carolina/Virginia
 queue remain unchanged; no redundant tests or new prerequisites were introduced.
+
+### September 28, 15:00 ET — Kentucky report acceptance; Texas retention
+
+Accepted refreshed Kentucky Pick 3/4 MIDDAY and aggregate reports at 77fabaf,
+publisher 36466064335. Nine focused tests pass; eight public files independently
+match the checkout. Native review remains open and due today at 18:00 ET. No
+new agency messages arrived; South Carolina and Virginia remain queued.
+
+Texas's scheduled transaction failed again after its prior recovery. All five
+state files are byte-for-byte preserved from aaa69df, with original source dates.
+The status identifies retrieval/validation failure but not a narrower cause.
+Open a bounded refresh-recovery follow-up: inspect the next scheduled result and
+investigate if still failing by September 29, 15:00 ET. This is importer maintenance,
+not a reopening of accepted Texas features. No validation was relaxed. New
+Hampshire's existing retention is unchanged. Notify the new Texas failure.
