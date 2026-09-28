@@ -1371,3 +1371,17 @@ coverage. Rhode Island's new two-page scanned letter could not be extracted or
 downloaded (HTTP 403); requested readable text without fees. Its contents and any
 new terms remain unknown. Details and sent-message evidence are in the respective
 source screens. No user payment, repeat mailing or new signature requested.
+
+### September 28, 10:58 ET — Rhode Island access resolved, fee hold retained
+
+Rhode Island supplied its September 28 letter text in message 1a0e8532f8e09661.
+The narrower August summary/redemption reports would cost an estimated $30,
+possibly more; no work starts before payment. This is distinct from the earlier
+$210 assembly offer. Both remain on hold under the no-fee instruction. No data
+was delivered and no user payment action is requested. Source-screen evidence
+is updated; the letter-content access follow-up is closed.
+
+Kentucky repository/deployment remain unchanged and healthy at the previously
+verified publication. Final native review remains blocked by absent interaction
+tools and no new user observations. No repeat tests, enhancements or queued-state
+implementation were added. Today's 18:00 ET release decision is unchanged.

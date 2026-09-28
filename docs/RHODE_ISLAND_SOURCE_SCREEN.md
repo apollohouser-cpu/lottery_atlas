@@ -106,7 +106,7 @@ or duplicated IDs, mismatched input, non-exact/ZIP/house/county exceptions,
 invalid coordinates, overlapping polygons and polygon holes. All 123 Python
 tests passed. No app assets, public directory or map activity changed.
 
-## September 28 follow-up letter — content not yet readable
+## September 28 follow-up letter — initial access failure (resolved below)
 
 Terri Kiernan, copying attorney Valerie Morozov, sent message 1a0e847a356dfb89
 at 13:49 UTC with `APRA - Apollo Houser Ltr 9.28.26.pdf` (1,049,324 bytes,
@@ -119,3 +119,24 @@ searchable copy, without new report compilation or fees. The previous paid
 assembly remains on hold. Keep existing directory/Census staging limitations;
 no new winning-ticket records or verified coordinates have been established.
 Read the letter when accessible and reconcile any actual agency requirements.
+
+## September 28 readable response — narrower reports still fee-conditioned
+
+Message 1a0e8532f8e09661 supplies the complete letter text in the email body,
+resolving the content-access obstacle above. The original scanned PDF has not
+been downloaded; the agency-provided text is the evidence for this update.
+
+For the narrowed August 2026 request, the agency offers separate draw summary
+and draw redemption reports for various draw games and instant tickets. Keno
+would require daily reports with multiple tiers because draws occur every four
+minutes. It says the free hour has been exhausted and estimates $30 (two hours
+at $15/hour), with possible additional charges payable before delivery. Work
+will not commence without response and payment. The letter also identifies
+appeal avenues, but no appeal or legal determination is made by this audit.
+
+This $30 offer covers the narrower follow-up, distinct from the earlier $210
+assembly estimate. Neither is authorized. Keep both paid paths on hold; no check,
+payment, further paid work or duplicate narrowing request is needed. The prior
+reply already expressly withheld fees. No winning-ticket report was delivered,
+and definitions, completeness and retailer joins remain unverified. The existing
+directory and private Census candidates retain all prior limitations.
