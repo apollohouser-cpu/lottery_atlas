@@ -196,3 +196,17 @@ No new product defect is asserted. One 24-hour extension ends September 29 at
 macOS debug candidate described above. Restore interaction capability or provide
 actual results from the checklist; automated evidence alone does not close it.
 South Carolina remains queued until acceptance, with Virginia following.
+
+## Refresh retention verified — September 28, 21:00 ET session
+
+Publisher 36503918862 succeeded at f531338, but Kentucky's state transaction
+reports retained_after_failure. All four Kentucky generated files are byte-for-byte
+identical to the validated preceding checkout, including source dates. Eight
+public JSON files independently match the publication. No repeat tests were run
+for unchanged Kentucky data. The status gives retrieval/validation failure,
+without a confirmed narrower cause. Previously supported coverage remains intact.
+
+Check the next scheduled result; investigate if failure persists by September 29
+at 15:00 ET, before the single native-review extension ends at 18:00 ET. This
+maintenance checkpoint does not reset or extend acceptance. Texas's five files
+also remain byte-for-byte retained; its existing 15:00 ET checkpoint is unchanged.

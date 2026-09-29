@@ -1459,3 +1459,18 @@ Reuse the existing 99-test/build evidence and latest nine focused tests/eight-fe
 verification rather than repeat unchanged checks. Texas's separate recovery
 checkpoint remains September 29, 15:00 ET. California announced an agency response
 by October 12; this is separate from app deadlines and not a data delivery.
+
+### September 28, 21:00 ET — Kentucky refresh failure isolated
+
+Publication f531338 / publisher 36503918862 succeeded overall but Kentucky
+reported retained_after_failure. All four state files, including dates, match the
+previous validated checkout byte-for-byte. Eight live JSON files independently
+match. No source data, validation rules or native acceptance evidence changed.
+
+Bounded maintenance follow-up: check next scheduled result and investigate a
+persistent Kentucky failure by September 29, 15:00 ET. The single acceptance
+extension remains September 29, 18:00 ET, with native checks still unobserved.
+Do not add another extension or advance queued states. Texas's five retained
+files also match and its existing 15:00 ET checkpoint is unchanged. New Hampshire
+retention and agency correspondence are unchanged. Notify the new Kentucky
+refresh failure; it does not invalidate the retained supported experience.
