@@ -1,6 +1,6 @@
 {
   "source": "Virginia Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-26T12:39:48.178Z",
+  "retrievedAt": "2026-09-29T12:43:47.434Z",
   "coverage": "Queried all 135 county/city options in the official Virginia Lottery finder. It returned 5432 unique retailers; 5367 received exact Census or verified ArcGIS address coordinates. 65 unresolved addresses were excluded from the map rather than estimated.",
   "directories": [
     {
@@ -13821,6 +13821,17 @@
           "county": "Fairfax",
           "latitude": 38.692641771917,
           "longitude": -77.218054029564,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "va-3de24dc836ae959e",
+          "name": "FAS MART 415",
+          "address": "502 Powell Vly Rd",
+          "city": "Big Stone Gap",
+          "postalCode": "24219",
+          "county": "Wise",
+          "latitude": 36.877099928706,
+          "longitude": -82.738224575482,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -41456,17 +41467,6 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
-          "id": "va-b59829e7b2848f17",
-          "name": "THE RAILWAY DEPOT LLC",
-          "address": "1557 Front St",
-          "city": "Richlands",
-          "postalCode": "24641",
-          "county": "Tazewell",
-          "latitude": 37.093971035809,
-          "longitude": -81.799869717242,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
           "id": "va-b59a2e989ba3d852",
           "name": "D&D SPEEDY MART",
           "address": "1225 Roanoke Street",
@@ -41927,17 +41927,6 @@
           "latitude": 37.149061284563,
           "longitude": -82.461302076681,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
-        },
-        {
-          "id": "va-b7c1de7f69bcea96",
-          "name": "FAS MART 415",
-          "address": "412 Powell Valley Road",
-          "city": "Big Stone Gap",
-          "postalCode": "24219",
-          "county": "Wise",
-          "latitude": 36.877791482451,
-          "longitude": -82.73859327379,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
           "id": "va-b7c3996e40b13112",
@@ -54279,6 +54268,17 @@
           "county": "Frederick",
           "latitude": 39.160215306321,
           "longitude": -78.153114194995,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "va-ebc1fbfbfddb231b",
+          "name": "JIMMY'S MARKET",
+          "address": "543 W Main St",
+          "city": "Abingdon",
+          "postalCode": "24210",
+          "county": "Washington",
+          "latitude": 36.706317035929,
+          "longitude": -81.988706383686,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
