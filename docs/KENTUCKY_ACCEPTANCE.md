@@ -3,7 +3,7 @@
 Status: **ready for native acceptance, not released as complete**.
 Original September 28, 2026, 18:00 deadline missed. Single extension ends
 September 29, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 77fabaf.
+Implementation: a0aa40a. Latest verified scheduled data: f27bc08.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -31,7 +31,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 77fabaf; publisher 36466064335 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match f27bc08; publisher 36531895999 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -210,3 +210,15 @@ Check the next scheduled result; investigate if failure persists by September 29
 at 15:00 ET, before the single native-review extension ends at 18:00 ET. This
 maintenance checkpoint does not reset or extend acceptance. Texas's five files
 also remain byte-for-byte retained; its existing 15:00 ET checkpoint is unchanged.
+
+## Refresh recovery — September 29, 03:00 ET session
+
+Kentucky and Texas both report updated at f27bc08, successful publisher
+36531895999. All nine checked live files (eight Kentucky/shared plus Texas tiers)
+independently byte-match. Fourteen focused Kentucky generated-data, report/loader
+and widget tests pass. Close both September 29, 15:00 ET recovery checkpoints.
+No validation was weakened; exact prior failure causes remain unconfirmed.
+
+Kentucky's native-review gate remains open, with the single extension ending
+today at 18:00 ET. The local native candidate has not been rebuilt for this
+scheduled data change. South Carolina and Virginia remain queued.

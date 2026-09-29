@@ -1474,3 +1474,16 @@ Do not add another extension or advance queued states. Texas's five retained
 files also match and its existing 15:00 ET checkpoint is unchanged. New Hampshire
 retention and agency correspondence are unchanged. Notify the new Kentucky
 refresh failure; it does not invalidate the retained supported experience.
+
+### September 29, 03:00 ET — Kentucky and Texas refresh recovery
+
+Publisher 36531895999 succeeded at f27bc08; Kentucky and Texas transactions
+report updated. Nine live files independently match, and fourteen focused
+Kentucky tests pass. Close both September 29, 15:00 ET recovery checkpoints.
+No validation or supported-scope changes were needed; prior failure causes
+remain unconfirmed. New Hampshire retention is unchanged.
+
+Final native acceptance is still blocked by unavailable interaction tools and
+absent new native observations. Kentucky's single extension ends today at
+18:00 ET with no further extension allowed. South Carolina and Virginia stay
+queued. No new matching agency correspondence arrived.
