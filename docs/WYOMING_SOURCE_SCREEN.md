@@ -61,3 +61,13 @@ responses and explicitly avoided a duplicate request, new compilation or fees.
 Email delivery remains preferred. This does not reverse the September 21 refusals
 or establish a new substantive review, deadline or data delivery. No user action
 is required; preserve the public-source limitations above.
+
+## September 29 administrative forwarding acknowledgment
+
+At 17:22 UTC, WyoLotto Support confirmed receipt of the contact details and said
+the correspondence had been forwarded to David Stevens for review (message
+1a0ee30c62f4adaa; subject references tickets 488 and 515). No records, revised
+substantive decision, response deadline or fee request accompanied this message.
+The September 21 refusals remain the latest substantive disposition. Monitor
+for a further response; no reply or user action is required for this acknowledgment.
+No fees or new compilation are authorized, and no public data changed.
