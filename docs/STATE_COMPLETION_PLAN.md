@@ -1487,3 +1487,12 @@ Final native acceptance is still blocked by unavailable interaction tools and
 absent new native observations. Kentucky's single extension ends today at
 18:00 ET with no further extension allowed. South Carolina and Virginia stay
 queued. No new matching agency correspondence arrived.
+
+### September 29, 09:00 ET — scheduled Kentucky source acceptance
+
+Accepted refreshed Kentucky catalog/directory/aggregate data at 7f9c048,
+publisher 36569315894. Fourteen focused tests pass and eight live files match.
+Directory now has 3,381 mapped entries, with 94 unresolved exclusions retained;
+81-game catalog inventory is dated September 28. No added win coverage is implied.
+Native-review blocker and today's 18:00 ET single-extension deadline remain
+unchanged. No new agency correspondence or material failure; retain quiet status.

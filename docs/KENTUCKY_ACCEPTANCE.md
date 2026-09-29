@@ -3,7 +3,7 @@
 Status: **ready for native acceptance, not released as complete**.
 Original September 28, 2026, 18:00 deadline missed. Single extension ends
 September 29, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: f27bc08.
+Implementation: a0aa40a. Latest verified scheduled data: 7f9c048.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -31,7 +31,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match f27bc08; publisher 36531895999 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match 7f9c048; publisher 36569315894 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
@@ -222,3 +222,17 @@ No validation was weakened; exact prior failure causes remain unconfirmed.
 Kentucky's native-review gate remains open, with the single extension ending
 today at 18:00 ET. The local native candidate has not been rebuilt for this
 scheduled data change. South Carolina and Virginia remain queued.
+
+## Scheduled source acceptance — September 29, 09:00 ET session
+
+Publication 7f9c048, successful publisher 36569315894, passes fourteen focused
+Kentucky generated-data/report/loader widget tests. Eight public JSON files
+independently byte-match. The 81-game catalog has September 28 inventory; the
+retailer directory now has 3,381 mapped entries from 3,475 source retailers, with
+94 unresolved exclusions. Four entries were added and two removed by the validated
+refresh. Directory entries do not create winning-ticket activity. Aggregate draw
+snapshots also refreshed. No validation or supported-coverage rules changed.
+
+Native review remains open; no new native observations or desktop interaction
+capability are available. The single extension ends today at 18:00 ET. No new
+matching agency messages or importer failures require notification this session.
