@@ -1496,3 +1496,20 @@ Directory now has 3,381 mapped entries, with 94 unresolved exclusions retained;
 81-game catalog inventory is dated September 28. No added win coverage is implied.
 Native-review blocker and today's 18:00 ET single-extension deadline remain
 unchanged. No new agency correspondence or material failure; retain quiet status.
+
+
+### September 29, 15:00 ET — notice refresh and bounded Texas recurrence
+
+Accepted Kentucky publication bd8f181 / publisher 36613049951 after fourteen
+focused tests and independent eight-feed byte comparisons passed. The native
+checklist now uses the September 28 Graves County notice because its previous
+August 31 fixture rolled out of the live source. No native pass is claimed;
+the single extension still ends today at 18:00 ET.
+
+Texas again reports retained_after_failure. All five listed files and dates
+match the preceding validated commit exactly. This is a new bounded maintenance
+follow-up after the earlier recovery: check the next scheduled run and investigate
+persistent failure by September 30, 15:00 ET. Do not reopen accepted supported
+coverage or reset Kentucky's deadline. New Hampshire retention is unchanged.
+Illinois denied clarification questions; a new no-fee request seeks existing
+definition documents, as recorded in its source screen. No Illinois map published.

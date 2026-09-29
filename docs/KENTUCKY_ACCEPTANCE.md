@@ -3,7 +3,7 @@
 Status: **ready for native acceptance, not released as complete**.
 Original September 28, 2026, 18:00 deadline missed. Single extension ends
 September 29, 2026, 18:00 America/New_York.
-Implementation: a0aa40a. Latest verified scheduled data: 7f9c048.
+Implementation: a0aa40a. Latest verified scheduled data: bd8f181.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -31,15 +31,17 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
-| Live deployment | Eight public JSON files byte-match 7f9c048; publisher 36569315894 succeeded | Recheck only after relevant publication changes |
+| Live deployment | Eight public JSON files byte-match bd8f181; publisher 36613049951 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
 layout exceptions, not native visual appearance. Desktop-control tools remain
 unavailable in this session. Do not repeatedly add test-only work as a substitute
 for this final gate, and do not advance to South Carolina before Kentucky acceptance; Virginia follows South Carolina.
 
-For the final native pass, use August 31, 2026 and Warren County's $10,000 24K Gold
-notice at AM EXPRESS 9. Repeat the game/prize/reset sequence above, inspect source
+For the final native pass using current live data, use September 28, 2026 and
+Graves County's $10,000 24K Gold notice at KY CHEK MART II in Mayfield. The
+August 31 AM EXPRESS 9 notice used by the earlier integrated evidence has rolled
+out of the current source; use it only with the documented older bundled snapshot. Repeat the game/prize/reset sequence above, inspect source
 and date disclosures, open the statewide table selector, and inspect the compact
 and larger layouts. Preserve existing Favorites. Record actual observations and
 any defects; close the checklist only after those checks pass.
@@ -236,3 +238,16 @@ snapshots also refreshed. No validation or supported-coverage rules changed.
 Native review remains open; no new native observations or desktop interaction
 capability are available. The single extension ends today at 18:00 ET. No new
 matching agency messages or importer failures require notification this session.
+
+
+## September 29, 15:00 ET — refreshed notice acceptance
+
+Publication bd8f181 / publisher 36613049951 independently matches all eight
+live JSON files. Fourteen focused Kentucky tests pass. The rolling source now
+contains 37 matched notices and no unmatched published notices; this is not
+complete statewide claims coverage. Five September 28 notices include Powerball
+at CASEY'S #4665 and four Scratch notices. August 31 entries rolled out. The
+native checklist above now identifies an available September 28 Graves County
+notice; historical integrated evidence remains labeled with its original fixture.
+Catalog/directory scope is unchanged. Native checks remain unobserved; today's
+18:00 ET final extension and queued-state restrictions remain unchanged.

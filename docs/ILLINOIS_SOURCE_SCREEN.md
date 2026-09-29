@@ -79,7 +79,7 @@ A reply was sent September 19 to the FOIA office, copying Mike Beavers,
 acknowledging successful receipt and asking for the retailer-field role,
 row/ticket definitions, treatment of online sales, completeness, extraction
 date, corrections, active directory, refresh arrangements and availability of
-2026 year-to-date records. No fees were authorized. The response is pending.
+2026 year-to-date records. No fees were authorized. The clarification questions were denied September 29; see below.
 Illinois is **not yet ready for map testing**.
 
 The original workbooks remain outside the repository. `work/illinois_source`
@@ -100,3 +100,23 @@ per-file reconciliation and game-level counts. The source date and August
 coverage remain fixed; processing this snapshot does not make it current.
 Ten regression tests cover source extraction, dates, invalid fields, duplicate
 rows, distinct ticket counting and preservation of previous outputs on failure.
+
+
+## September 29 partial denial and existing-document request
+
+Angela Lockett sent message 1a0ee7e349777dae at 18:46 UTC with a two-page
+partial-grant letter for request 26-226. The attachment tool's text preview
+states that the earlier files were supplied and denies the subsequent
+clarification questions, directing further document requests to a new request.
+The tool marked extraction incomplete, so this is not a claim of full visual
+or original-PDF inspection. No additional data was delivered with the message.
+The delivery and local audit above remain valid; retailer semantics, completeness
+and corrections are still unresolved, and no claim map has been published.
+
+Sent new narrow request 1a0ee8b96b228c1e to Angela.Lockett3@illinois.gov for existing
+data dictionaries, field layouts, report specifications, code legends or written
+instructions for the delivered August files, including retailer roles and online/
+claim-office entries. No answers, new analysis, compilation or paid work were
+requested. Electronic copies/links and any available no-fee portion suffice.
+This is a new records request, not an appeal or a duplicate request for the data.
+Monitor its response separately from the denied clarification questions.
