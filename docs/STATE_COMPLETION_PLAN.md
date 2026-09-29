@@ -12,7 +12,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
 | Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
-| Kentucky | One extension: September 29, 2026, 6:00 PM ET (original September 28 deadline missed) | Active; final native acceptance blocked by unavailable desktop interaction and absent native observations. |
+| Kentucky | Final extension expired September 29, 2026, 6:00 PM ET; no further extension | Active, not accepted; intervention required for unobserved native checks. |
 | South Carolina | Set at activation after Kentucky acceptance: 72 or 120 hours under the rules below | Next, per user home-state priority confirmed September 28. |
 | Virginia | Former October 1 target superseded by the user queue change; revised calendar date to be recorded when South Carolina activates | Queued after South Carolina acceptance. |
 
@@ -59,7 +59,8 @@ claims remain unavailable and are tracked separately. See the release decision
 at the end of this document; earlier Texas-active statements are historical.
 
 Kentucky remains active. Its original September 28, 6:00 PM ET deadline was
-missed; its single 24-hour extension ends September 29, 6:00 PM ET. Scope and
+missed; its single 24-hour extension expired September 29, 6:00 PM ET. No further
+extension is permitted; native-check intervention is required. Scope and
 per-game gaps were reconciled September 25, before the September 26 deadline.
 Use the existing Kentucky checklist and source screen. Explicitly inventory
 Powerball, Mega Millions and all supported Kentucky draw games as well as Scratch
@@ -1513,3 +1514,28 @@ persistent failure by September 30, 15:00 ET. Do not reopen accepted supported
 coverage or reset Kentucky's deadline. New Hampshire retention is unchanged.
 Illinois denied clarification questions; a new no-fee request seeks existing
 definition documents, as recorded in its source screen. No Illinois map published.
+
+
+### September 29, 18:00 ET — final extension expired; intervention required
+
+Kentucky is not accepted as complete. The single extension expired with final
+native visual/interaction checks still unobserved: desktop interaction tools are
+unavailable and no new user observations arrived. This is an evidence/access
+blocker, not a newly demonstrated app defect or missing agency-data prerequisite.
+No second extension or replacement release deadline is assigned.
+
+Required intervention: restore desktop interaction capability or obtain actual
+native checklist observations at 800×632 and 1280×900, covering notice date/source,
+county and game/prize/reset controls, compact navigation and sheet scrolling,
+Favorites preservation, and offline behavior. Use the current live September 28
+Graves County KY CHEK MART II notice or explicitly label an older bundled snapshot;
+see KENTUCKY_ACCEPTANCE.md. Existing widget tests do not substitute for this gate.
+
+The latest fourteen focused tests and eight-feed verification remain valid;
+repository and checked live feeds are unchanged, with no new agency messages.
+Continue independent work on verified new data and actual defects without adding
+acceptance prerequisites or repeating unchanged tests. South Carolina activation
+is delayed until Kentucky acceptance; Virginia remains after South Carolina and
+its former October 1 target remains superseded. Neither queued state is activated.
+Their calendar deadlines/forecast will be recorded at South Carolina activation.
+Texas's separate September 30, 15:00 ET recovery checkpoint remains unchanged.

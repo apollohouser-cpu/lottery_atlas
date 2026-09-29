@@ -1,8 +1,8 @@
 # Kentucky release evidence
 
-Status: **ready for native acceptance, not released as complete**.
-Original September 28, 2026, 18:00 deadline missed. Single extension ends
-September 29, 2026, 18:00 America/New_York.
+Status: **final extension expired; native intervention required; not accepted as complete**.
+Original September 28, 2026, 18:00 deadline missed. The single extension expired
+September 29, 2026, 18:00 America/New_York. No further extension is permitted.
 Implementation: a0aa40a. Latest verified scheduled data: bd8f181.
 The scope/per-game inventory was completed September 25, before its deadline.
 
@@ -251,3 +251,14 @@ native checklist above now identifies an available September 28 Graves County
 notice; historical integrated evidence remains labeled with its original fixture.
 Catalog/directory scope is unchanged. Native checks remain unobserved; today's
 18:00 ET final extension and queued-state restrictions remain unchanged.
+
+
+## September 29, 18:00 ET — final acceptance blocked after extension
+
+No native observations or desktop interaction capability became available before
+the extended deadline. Required intervention is restored desktop interaction or
+actual observations of the remaining native checks above at both documented
+window sizes. The app remains ready for those checks; it is not accepted complete.
+No new release deadline is assigned and no queued state is activated. Preserve
+existing test/live evidence and continue only independent checklist work, actual
+defect handling and verified new-data preparation while this gate remains open.
