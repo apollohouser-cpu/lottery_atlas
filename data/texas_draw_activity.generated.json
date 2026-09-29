@@ -1,7 +1,7 @@
 {
   "source": "Texas Lottery official draw-specific Where Sold tables",
-  "updatedAt": "2026-09-27T06:48:54.399Z",
-  "sourceLastUpdated": "2026-09-26T12:00:00.000Z",
+  "updatedAt": "2026-09-29T06:48:44.832Z",
+  "sourceLastUpdated": "2026-09-28T12:00:00.000Z",
   "coverage": "2026 draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.",
   "activities": [
     {
@@ -2613,6 +2613,24 @@
       "prizeAmount": 25000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379761.html",
       "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-09-25"
+    },
+    {
+      "id": "tx-draw-166875f52f2aba7336d08ae1",
+      "latitude": 32.837401705507,
+      "longitude": -97.082546412377,
+      "city": "EULESS",
+      "county": "Tarrant",
+      "state": "TX",
+      "game": "state-draw",
+      "gameName": "Texas Two Step",
+      "retailerName": "QUIK TRIP #1868",
+      "retailerAddress": "106 N MAIN ST, EULESS, TX 76040",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-09-28T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 650000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/Winning_Numbers/details.html_1158379764.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 4 of 4 w/Bonus · draw 2026-09-28"
     }
   ],
   "excluded": [
@@ -3718,6 +3736,14 @@
       "gameName": "Powerball",
       "date": "2026-09-26",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158379762.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "date": "2026-09-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158379764.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -5259,6 +5285,14 @@
     },
     {
       "game": "state-draw",
+      "gameName": "Lotto Texas",
+      "date": "2026-09-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Lotto_Texas/Winning_Numbers/details.html_1158379764.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
       "gameName": "Texas Two Step",
       "date": "2026-01-01",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/Winning_Numbers/details.html_1158372007.html",
@@ -5872,6 +5906,14 @@
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/Winning_Numbers/details.html_1158379760.html",
       "sourceRows": 0,
       "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Texas Two Step",
+      "date": "2026-09-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/Winning_Numbers/details.html_1158379764.html",
+      "sourceRows": 1,
+      "mappedRows": 1
     },
     {
       "game": "state-draw",
@@ -7718,6 +7760,14 @@
       "gameName": "Cash Five",
       "date": "2026-09-26",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379762.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "date": "2026-09-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379764.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -15110,6 +15160,38 @@
       "gameName": "All or Nothing",
       "date": "2026-09-26",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_770665142.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1163926576.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1452737292.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1808108668.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_770605560.html",
       "sourceRows": 0,
       "mappedRows": 0
     }
