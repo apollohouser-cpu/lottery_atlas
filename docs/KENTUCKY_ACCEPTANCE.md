@@ -444,3 +444,26 @@ No engine patch, SDK replacement, source-candidate change or repeat acceptance
 test was made. Continue with semantics-update diagnostics, preserving all local
 candidates; do not use more ordinary pointer checks as evidence of resolution.
 Mailbox and latest publisher remain unchanged.
+
+## Null-parent state captured before fault — September 30, 07:07 ET
+
+Attached LLDB to the existing idle process, with a conditional breakpoint at
+AccessibilityBridge::CreateRemoveReparentedNodesUpdate +168 when x8 is zero.
+One native bottom-right resize reached that breakpoint before the invalid memory
+read. The child exists and has ID 50, but its parent pointer is null; pending
+parent update ID 5 includes child 50. Disassembly confirms the faulting instruction
+reads the parent's ID at null +0x48. The latest private crash report has the same
+offset, null register and child ID. This confirms the immediate failure mechanism,
+not just a stack-based inference.
+
+The pending parent contains timeline/heat-index and state empty-view semantics.
+Its tooltip includes Return timeline to now; that does not establish a tooltip
+as the cause. The originating malformed update or earlier AXTree failure is still
+unidentified. Next diagnostic target is the earliest tree-update error and the
+framework semantics that produced it, not another uninstrumented acceptance run.
+Private disassembly and small memory captures are retained under ignored
+work/native_crash_diagnostics/sep30-null-parent. No engine, register or source
+patch was made. The stopped debug process was deliberately terminated and the
+app relaunched; no debugger remains attached. All three candidates remain local
+and unaccepted. Mailbox and latest successful publisher are unchanged. Kentucky
+remains unaccepted and the state queue does not advance.
