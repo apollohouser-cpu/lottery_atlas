@@ -3,7 +3,7 @@
 Status: **final extension expired; targeted native crash mitigation verified; integrated acceptance pending; not accepted as complete**.
 Original September 28, 2026, 18:00 deadline missed. The single extension expired
 September 29, 2026, 18:00 America/New_York. No further extension is permitted.
-Implementation: a0aa40a. Latest verified scheduled data: bd8f181.
+Implementation includes native mitigation a9de73f. Latest verified scheduled data: c4f3475.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -25,10 +25,10 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | --- | --- | --- |
 | Scratch selection/reset | Native 800×632 catalog pass; remaining prizes versus stock explained | Repeat only if latest layout affects access |
 | Directory/Favorites | Native Adairville retailer/address/save/open/remove pass | Confirm compact shortcuts after latest layout |
-| Statewide reports | Native ten-table and aggregate-game passes; current loader/widget checks | Inspect scrolling after compact sheet correction |
+| Statewide reports | Native ten-table and aggregate-game passes; compact scrolling/footer and larger selector/source passes September 29 | Existing evidence retained; include national and state games in final reconciliation |
 | Date/detail/source | Integrated real-app offline selection of Aug 31, Warren County notice; NOTICE DATE and source link reachable | Visually inspect date label and source in actual app |
-| County scope/reset | Warren → one Bowling Green record; Adair → scoped empty ranking; back restores state | Pointer county selection and back controls |
-| Game/prize/reset | Mega Millions scoped empty → All Games restores notice; slider excludes/reincludes $10,000 record at both sizes | Actual app filter/slider and unobstructed reset |
+| County scope/reset | Native compact Boone/detail/back and Clay empty/back passed September 30; integrated both-size checks retained | Larger native empty/back observation remains to reconcile |
+| Game/prize/reset | Native category/reset and prize exclusion/reset observed at both sizes; compact September 30 11:08 entry | Complete; repeat only after relevant changes |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
 | Live deployment | Eight public JSON files byte-match bd8f181; publisher 36613049951 succeeded | Recheck only after relevant publication changes |
@@ -595,3 +595,22 @@ crash. Empty-county native verification and offline/reconnect remain open;
 remaining national/state draw-game scope must be reconciled before acceptance.
 The publisher check still showed 36716247461 successful, and the mailbox held
 only the already-answered Texas clarification. No unchanged tests were repeated.
+
+## Compact empty-county scope — September 30, 13:03 ET
+
+Native pointer selection of Clay County at 800x632 logical opened the county
+map. Wheel scrolling over the timeline revealed the entire TOP CITIES BY
+PUBLISHED RECORDS · Clay card, September 28 date, selected-record coverage
+disclaimer and “No verified activity matches the current map and timeline
+filters.” This is a scoped absence of verified records, not a zero-wins claim.
+The visible Back control restored Kentucky and all five published records
+(Boone, Fayette/Powerball, Hardin, Graves and Pike). PID 74640 stayed unchanged
+with no observed crash. This closes the previously unobserved compact empty
+county/back flow; the earlier Adair mis-hit is not used as evidence.
+
+Reconciled the summary table with previously recorded report scrolling/footer
+and game/prize native passes rather than repeating them. Native offline/reconnect,
+compact directory shortcut confirmation and remaining larger county/source
+reconciliation still prevent acceptance. Publisher 36716247461 remains successful;
+mail search found only the answered Texas clarification. No new tests or builds
+were needed for this observation-only session. No queued state was activated.
