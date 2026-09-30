@@ -423,3 +423,24 @@ flows as sufficient stability evidence; engine/semantics investigation must
 precede another acceptance attempt. Preserve all three local source candidates
 and the expanded home regression. No SDK change or release was made.
 Mailbox and publisher checks were unchanged.
+
+## Idle control for accessibility investigation — September 30, 06:03 ET
+
+Compared private launch/capture timestamps: the four recent fresh-launch crashes
+occurred approximately 20–23 seconds after launch, whereas the first September
+29 report belonged to an app launched September 25. Timing alone therefore
+cannot establish resizing as the unique cause. A controlled restart using the
+existing candidate followed by no resize, click or wheel actions survived at
+least 57 seconds (same PID 60512); no new crash report appeared. The process
+found before that deliberate restart had also remained alive for about 59
+minutes after the previous tool-assisted relaunch. Idle startup is not currently
+a deterministic reproduction. These controls do not establish stability.
+
+Inspected the installed engine's common bridge: it asserts child->parent() then
+dereferences that parent while processing reparented semantics. The macOS
+controller feeds updates into that same bridge. A null-parent state is consistent
+with the reports, but the originating framework update remains unidentified.
+No engine patch, SDK replacement, source-candidate change or repeat acceptance
+test was made. Continue with semantics-update diagnostics, preserving all local
+candidates; do not use more ordinary pointer checks as evidence of resolution.
+Mailbox and latest publisher remain unchanged.
