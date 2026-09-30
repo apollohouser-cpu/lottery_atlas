@@ -467,3 +467,26 @@ patch was made. The stopped debug process was deliberately terminated and the
 app relaunched; no debugger remains attached. All three candidates remain local
 and unaccepted. Mailbox and latest successful publisher are unchanged. Kentucky
 remains unaccepted and the state queue does not advance.
+
+## First native tree update isolated — September 30, 08:06 ET
+
+The next instrumented session found the existing AXTree root pointer equals the
+failing child-50 pointer, with an empty tree error string. This is an incorrectly
+rooted tree, rather than evidence of an earlier reported Unserialize failure.
+Disassembly of GetRootAsAXNode confirms the root-pointer field used for inspection.
+
+Launched the current candidate under LLDB with CommitUpdates breakpoint enabled
+from startup. The first observed bridge commit contained only one pending node,
+ID 50. Unserialize returned true; the resulting native tree root was ID 50 and
+the error string remained empty. Subsequent parent updates explain the observed
+attempt to reparent that root. Why the bridge first receives a partial update
+remains unresolved. The startup ensureSemantics candidate must be compared with
+the baseline while tracing native semantics enablement and the first complete
+framework tree; do not interpret it as an accepted mitigation.
+
+Private logs, disassembly and small memory captures are saved under ignored
+work/native_crash_diagnostics/sep30-first-update. No SDK/register/source change
+was made. Stopped diagnostic processes were terminated deliberately; the app
+was relaunched without the debugger. All candidates remain preserved. No repeat
+widget tests were needed for this diagnostic-only session. Mailbox and publisher
+were unchanged. Kentucky remains unaccepted; queued states remain inactive.
