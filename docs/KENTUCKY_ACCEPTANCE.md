@@ -657,3 +657,26 @@ files were byte-identical to b92b63b. New Hampshire's retained catalog was also
 byte-identical. Public refresh status discloses both failures. See Texas source
 screen for the bounded follow-up; Kentucky acceptance remains separate.
 No new agency reply was found. No next-state activation or deadline reset.
+
+## Native network-failure probe — September 30, 16:07 ET
+
+A private entrypoint in ignored work/native_offline_check/main.dart delegates
+to the unchanged app main after setting Dart HttpClient.findProxy to an
+unavailable local proxy (127.0.0.1:9). Native launch succeeded; connection-refused
+logs confirm failed network requests. This is injected network failure, not a
+claim that the Mac was physically disconnected. Mac networking and caches were
+not modified. Native Kentucky selection still showed 3384 retailers, September
+28 published notices including Fayette Powerball, and the saved Mega Millions
+September 25 table (2,362 reported winners, $47,127 tier payout). It retained
+the older source draw date rather than representing it as the afternoon refresh.
+National/state drawing controls remained exposed. Reconnection observation is
+still pending; this does not yet close acceptance.
+
+The first attempted harness used sandbox-exec. Two launches terminated before
+app initialization with EXC_BREAKPOINT in _libsecinit_appsandbox and signature
+SYSCALL_SET_USERLAND_PROFILE. This is distinct from the previous Flutter
+AccessibilityBridge EXC_BAD_ACCESS. That harness was abandoned, normal launch
+was verified, and a private crash report/logs were preserved in the ignored probe
+directory. No security settings or SDK patches were made. The proxy test process
+was intentionally quit and the ordinary lib/main.dart build restored afterward.
+Publisher/mail checks were unchanged. No queued state was activated.
