@@ -2351,31 +2351,31 @@
     }
   ],
   "aggregateSnapshot": {
-    "updatedAt": "2026-09-30T06:42:35.432Z",
+    "updatedAt": "2026-09-30T12:47:11.802Z",
     "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
     "cadence": "Atlas refresh attempts every six hours; not a live four-minute results service. Agency publication cadence unconfirmed.",
     "reports": [
       {
         "gameNumber": 22,
         "gameName": "Keno",
-        "drawId": 1418507,
-        "drawDate": "2026-09-29",
+        "drawId": 1418563,
+        "drawDate": "2026-09-30",
         "drawTime": null,
         "sourcePublicationDate": null,
-        "reportedWinners": 0,
-        "reportedPayout": 0,
+        "reportedWinners": 45,
+        "reportedPayout": 572,
         "tiers": null,
         "coverage": "Source-reported totals for this draw only. Prize tiers, exact draw time and retailer locations are unavailable in this response. These totals cannot be independently reconciled against tiers. Not a daily total, complete history or live feed."
       },
       {
         "gameNumber": 19,
         "gameName": "Cash Pop",
-        "drawId": 749901,
-        "drawDate": "2026-09-29",
+        "drawId": 749956,
+        "drawDate": "2026-09-30",
         "drawTime": null,
         "sourcePublicationDate": null,
-        "reportedWinners": 1,
-        "reportedPayout": 5,
+        "reportedWinners": 2,
+        "reportedPayout": 20,
         "tiers": null,
         "coverage": "Source-reported totals for this draw only. Prize tiers, exact draw time and retailer locations are unavailable in this response. These totals cannot be independently reconciled against tiers. Not a daily total, complete history or live feed."
       }
@@ -2385,7 +2385,7 @@
         "GAME_NUMBER": [
           22
         ],
-        "DRAW_ID": 1418507,
+        "DRAW_ID": 1418563,
         "TIER_LIST": [
           []
         ],
@@ -2396,87 +2396,87 @@
           },
           {
             "DRAW_NUMBER_POSITION": 2,
-            "DRAW_VALUE": 8
+            "DRAW_VALUE": 10
           },
           {
             "DRAW_NUMBER_POSITION": 3,
-            "DRAW_VALUE": 16
+            "DRAW_VALUE": 11
           },
           {
             "DRAW_NUMBER_POSITION": 4,
-            "DRAW_VALUE": 17
-          },
-          {
-            "DRAW_NUMBER_POSITION": 5,
             "DRAW_VALUE": 19
           },
           {
-            "DRAW_NUMBER_POSITION": 6,
+            "DRAW_NUMBER_POSITION": 5,
             "DRAW_VALUE": 23
           },
           {
+            "DRAW_NUMBER_POSITION": 6,
+            "DRAW_VALUE": 24
+          },
+          {
             "DRAW_NUMBER_POSITION": 7,
-            "DRAW_VALUE": 29
+            "DRAW_VALUE": 28
           },
           {
             "DRAW_NUMBER_POSITION": 8,
-            "DRAW_VALUE": 33
+            "DRAW_VALUE": 39
           },
           {
             "DRAW_NUMBER_POSITION": 9,
-            "DRAW_VALUE": 40
+            "DRAW_VALUE": 45
           },
           {
             "DRAW_NUMBER_POSITION": 10,
-            "DRAW_VALUE": 50
+            "DRAW_VALUE": 46
           },
           {
             "DRAW_NUMBER_POSITION": 11,
-            "DRAW_VALUE": 55
+            "DRAW_VALUE": 48
           },
           {
             "DRAW_NUMBER_POSITION": 12,
-            "DRAW_VALUE": 56
+            "DRAW_VALUE": 50
           },
           {
             "DRAW_NUMBER_POSITION": 13,
-            "DRAW_VALUE": 58
+            "DRAW_VALUE": 52
           },
           {
             "DRAW_NUMBER_POSITION": 14,
-            "DRAW_VALUE": 61
+            "DRAW_VALUE": 53
           },
           {
             "DRAW_NUMBER_POSITION": 15,
-            "DRAW_VALUE": 68
+            "DRAW_VALUE": 62
           },
           {
             "DRAW_NUMBER_POSITION": 16,
-            "DRAW_VALUE": 69
+            "DRAW_VALUE": 68
           },
           {
             "DRAW_NUMBER_POSITION": 17,
-            "DRAW_VALUE": 70
+            "DRAW_VALUE": 69
           },
           {
             "DRAW_NUMBER_POSITION": 18,
-            "DRAW_VALUE": 72
+            "DRAW_VALUE": 71
           },
           {
             "DRAW_NUMBER_POSITION": 19,
-            "DRAW_VALUE": 73
+            "DRAW_VALUE": 76
           },
           {
             "DRAW_NUMBER_POSITION": 20,
-            "DRAW_VALUE": 74
+            "DRAW_VALUE": 79
           }
         ],
-        "DRAW_DATE": 1790654400000,
+        "DRAW_DATE": 1790740800000,
         "SPECIAL_ARGS": {
-          "MULTIPLIER": 1,
-          "BULLSEYE": 70,
-          "TOTAL_WINNERS": 0,
-          "TOTAL_PRIZE": "$      0.00"
+          "MULTIPLIER": 3,
+          "BULLSEYE": 10,
+          "TOTAL_WINNERS": 45,
+          "TOTAL_PRIZE": "$    572.00"
         },
         "GAME_NAME": [
           "KENO"
@@ -2486,21 +2486,21 @@
         "GAME_NUMBER": [
           19
         ],
-        "DRAW_ID": 749901,
+        "DRAW_ID": 749956,
         "TIER_LIST": [
           []
         ],
         "DRAW_VALUES": [
           {
             "DRAW_NUMBER_POSITION": 1,
-            "DRAW_VALUE": 7
+            "DRAW_VALUE": 12
           }
         ],
         "SPECIAL_ARGS": {
-          "TOTAL_WINNERS": 1,
-          "TOTAL_PRIZE": "$      5.00"
+          "TOTAL_WINNERS": 2,
+          "TOTAL_PRIZE": "$     20.00"
         },
-        "DRAW_DATE": 1790654400000,
+        "DRAW_DATE": 1790740800000,
         "GAME_NAME": [
           "CASHPOP"
         ]
