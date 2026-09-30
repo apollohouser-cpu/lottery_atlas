@@ -105,6 +105,22 @@ The one mailbox check returned only previously handled Illinois/Wyoming messages
 Publisher 36651309931 remains successful; current live Kentucky draw tiers and
 refresh status were checked separately against the checkout after a2b785a.
 
+## Native game/date and notice check — September 30, 00:04 ET
+
+At 1280×900 logical, pointer selection of Monday set September 28 and retained
+the published-date/time-unavailable disclosure. Applying Mega Millions produced
+the scoped empty-state notice. Reopening the picker, selecting All Games and
+pressing Apply restored five heat points. Clicking the western point selected
+Graves County and displayed one qualifying $10,000 record; opening that record
+showed Mayfield, 24K Gold, NOTICE DATE Mon, Sep 28, and KY CHEK MART II at
+300 Wyatt Drive. Native wheel scrolling exposed the official Kentucky Lottery
+Have You Heard source/date and unobstructed external link. Favorites were not
+changed. These close the larger-size game category reset and date/detail visual
+checks only; prize slider, county back/empty/reset, compact equivalents and native
+offline checks remain outstanding. No additional crash report was present at
+session start. Mail and publisher checks were unchanged. No new tests, release
+claim, extension or queued-state activation.
+
 ## Native review candidate — September 26, 04:07 ET session
 
 Rebuilt the macOS debug app successfully from 60b6134, including scheduled data
