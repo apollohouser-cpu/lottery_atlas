@@ -344,3 +344,24 @@ county empty-state review, offline review or stability acceptance. The two
 September 29 crash reports remain the newest; no new crash was recorded during
 this flow. The semantics candidate remains local and unaccepted. Mail and the
 latest publisher were unchanged. No release decision or queue advancement.
+
+## Recurring accessibility crash and ranking scroll — September 30, 02:05 ET
+
+At 1280×900, selecting Adair showed the county heading with no mapped notice.
+Wheel scrolling over the ranking header instead zoomed the map, leaving the
+explanation below the viewport. A local HomeScreen MouseRegion candidate releases
+the native wheel interceptor when the pointer leaves the map and reenables it
+on route-current reentry. The new home-scroll regression and existing report-modal
+regression both pass in separate test files; changed-file analysis is clean and
+the macOS debug build succeeds. Native confirmation remains pending.
+
+After deliberately quitting and reopening this rebuilt candidate (which also
+contains the existing ensureSemantics startup candidate), the app crashed during
+a resize/scroll sequence at 02:05:32 ET. The new private report
+lottery_atlas-2026-09-30-020532.ips again records EXC_BAD_ACCESS at 0x48 in
+AccessibilityBridge::CreateRemoveReparentedNodesUpdate. Exact triggering action
+within that sequence is not yet isolated. The startup workaround is therefore
+insufficient; the earlier crash-free observations do not establish resolution.
+Preserve both local candidates and the new regression file for investigation.
+Kentucky remains unaccepted, with no replacement deadline or queued-state start.
+No new agency email was found and publisher 36651309931 remains successful.
