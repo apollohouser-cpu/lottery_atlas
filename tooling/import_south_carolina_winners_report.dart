@@ -122,7 +122,7 @@ num _amount(String value) {
   return amount;
 }
 
-String _gameType(String gameName) {
+String southCarolinaGameType(String gameName) {
   final normalized = _keyPart(gameName);
   if (normalized == 'powerball') return 'powerball';
   if (normalized == 'mega millions') return 'mega-millions';
@@ -131,6 +131,7 @@ String _gameType(String gameName) {
     'pick 4',
     'palmetto cash 5',
     'cash pop',
+    'xs and os',
   }.contains(normalized)) {
     return 'state-draw';
   }
@@ -372,7 +373,7 @@ Future<void> main(List<String> arguments) async {
         'city': claim.city,
         'county': claim.county,
         'state': 'SC',
-        'game': _gameType(claim.gameName),
+        'game': southCarolinaGameType(claim.gameName),
         'gameName': claim.gameName,
         'retailerName': claim.retailerName,
         'retailerAddress': claim.address,

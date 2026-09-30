@@ -30,6 +30,11 @@ class SouthCarolinaLotteryMapFilter {
 
   static const List<SouthCarolinaLotteryMapFilter> drawGames = [
     SouthCarolinaLotteryMapFilter._(
+      gameName: 'Xs and Os',
+      game: LotteryGame.stateDraw,
+      label: 'SC Powerball Xs & Os',
+    ),
+    SouthCarolinaLotteryMapFilter._(
       gameName: 'Powerball',
       game: LotteryGame.powerball,
       label: 'SC Powerball',

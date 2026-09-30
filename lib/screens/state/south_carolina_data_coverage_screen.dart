@@ -139,7 +139,7 @@ class _SouthCarolinaDataCoverageScreenState
           const SizedBox(height: 12),
           _pipelineCard(pipelineProfile),
           const SizedBox(height: 20),
-          _sectionTitle('DRAW GAMES', 'All six South Carolina draw games'),
+          _sectionTitle('DRAW GAMES', 'All seven South Carolina draw games'),
           const SizedBox(height: 8),
           ...drawCoverage.map(_coverageTile),
           const SizedBox(height: 20),
@@ -158,7 +158,7 @@ class _SouthCarolinaDataCoverageScreenState
               border: Border.all(color: const Color(0xFF355066)),
             ),
             child: const Text(
-              'A game without map records is not treated as zero lottery activity. It means the published South Carolina Winners Report currently has no qualifying claim record for that title. The app never invents missing activity.',
+              'A game without map records is not treated as zero lottery activity. It means no qualifying mapped record is available here. The report excludes prizes below \$500, and records without verified coordinates are also excluded. The app never invents missing activity.',
               style: TextStyle(color: Color(0xFFBFDBFE), height: 1.4),
             ),
           ),

@@ -2637,8 +2637,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                       Expanded(
                         child: _activityInfoCard(
                           label:
-                              activity.state == 'TX' &&
-                                  activity.game == LotteryGame.scratchOff
+                              (activity.state == 'SC' &&
+                                      activity.id.startsWith('sc-winners-')) ||
+                                  (activity.state == 'TX' &&
+                                      activity.game == LotteryGame.scratchOff)
                               ? 'CLAIM DATE'
                               : activity.state == 'KY' &&
                                     (activity.id.startsWith('ky-current-') ||
@@ -2781,7 +2783,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         activity.sourceLabel ??
                         LotteryActivityRepository.activitySourceLabel,
                     updatedAt: LotteryActivityRepository.activityUpdatedAt,
-                    timestampNote: activity.state == 'TX'
+                    timestampNote:
+                        activity.state == 'SC' &&
+                            activity.id.startsWith('sc-winners-')
+                        ? 'Claim date shown above; draw date and time of day are not supplied by this report. Only mapped claims of at least \$500 are included.'
+                        : activity.state == 'TX'
                         ? (activity.game == LotteryGame.scratchOff
                               ? 'Claim date shown above; time of day unavailable. Combined refresh time is not a claim verification date.'
                               : 'Draw date shown above, not claim or purchase date. Official Where Sold record; validation is not established by this listing. Prize is the source-listed amount, not a verified cash payout. Combined refresh time is not the source publication date.')
@@ -4867,6 +4873,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 dayOnlyActivity: const {
                   'Texas',
                   'Kentucky',
+                  'South Carolina',
                 }.contains(selectedState?.name),
                 dayOnlyDateLabel: selectedState?.name == 'Kentucky'
                     ? 'Published dates'

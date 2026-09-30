@@ -201,6 +201,12 @@ class SouthCarolinaLotteryScreen extends StatelessWidget {
             onTap: () => _showDrawGame(context, 'Powerball'),
           ),
           _ScheduleCard(
+            icon: Icons.sports_football_outlined,
+            title: 'Powerball Xs & Os',
+            time: 'Sunday · 10:00 PM ET',
+            onTap: () => _showDrawGame(context, 'Xs and Os'),
+          ),
+          _ScheduleCard(
             icon: Icons.auto_awesome_outlined,
             title: 'Mega Millions',
             time: 'Tue, Fri · 11:00 PM ET',

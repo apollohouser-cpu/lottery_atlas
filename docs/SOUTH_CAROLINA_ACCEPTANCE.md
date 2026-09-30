@@ -70,3 +70,20 @@ September 30 opening check: clean repository, latest publisher 36759391265
 successful, no new agency reply beyond the already-handled Texas clarification.
 No repeated Kentucky/Texas acceptance tests were run. Pending SC narrowed request
 and historical evidence remain in SOUTH_CAROLINA_SOURCE_SCREEN.md.
+
+
+## September 30 classification and date corrections
+
+Implemented Xs and Os as a distinct draw filter/card using the report's exact
+`Xs and Os` title. Corrected importer classification and only the two affected
+snapshot game codes; claim counts, coordinates, dates and source freshness are
+unchanged. Coverage now lists seven draw games and explains geocode exclusions
+instead of asserting that absent mapped data means absent source claims.
+
+Current `sc-winners-` detail records show CLAIM DATE and explain missing draw/time
+information. South Carolina's timeline uses the existing whole-day source mode,
+preventing synthetic noon timestamps from becoming hourly activity.
+Five focused classification/calendar tests pass; changed classification/screens
+analyze cleanly. Native verification and independently published data verification
+remain pending. Statewide draw-report integration remains the next implementation
+gap. No release decision or deadline change.
