@@ -1,8 +1,8 @@
 {
   "source": "Virginia Lottery official Scratcher Search API and game details",
-  "updatedAt": "2026-09-29T06:41:51.176Z",
-  "retrievedAt": "2026-09-29T06:41:51.176Z",
-  "coverage": "All 92 retail Scratchers returned by the official Virginia Lottery search API. Price, top prize, and current unclaimed top-prize count were validated against each official game detail page.",
+  "updatedAt": "2026-09-30T06:42:51.633Z",
+  "retrievedAt": "2026-09-30T06:42:51.633Z",
+  "coverage": "All 96 retail Scratchers returned by the official Virginia Lottery search API. Price, top prize, and current unclaimed top-prize count were validated against each official game detail page.",
   "catalogs": [
     {
       "state": "Virginia",
@@ -203,7 +203,7 @@
           "name": "Bursting with $5,000s",
           "cost": 30,
           "topPrize": 5000,
-          "topPrizesRemaining": 954,
+          "topPrizesRemaining": 951,
           "topPrizeLabel": "$5K"
         },
         {
@@ -275,7 +275,7 @@
           "name": "CASH BLOWOUT",
           "cost": 10,
           "topPrize": 500,
-          "topPrizesRemaining": 2456
+          "topPrizesRemaining": 2449
         },
         {
           "id": "2323",
@@ -338,7 +338,7 @@
           "name": "CASH BLAST",
           "cost": 20,
           "topPrize": 600,
-          "topPrizesRemaining": 3000
+          "topPrizesRemaining": 2990
         },
         {
           "id": "2351",
@@ -523,6 +523,14 @@
           "topPrizeLabel": "$100K"
         },
         {
+          "id": "2381",
+          "name": "$500,000 Disco Dollars",
+          "cost": 10,
+          "topPrize": 500000,
+          "topPrizesRemaining": 3,
+          "topPrizeLabel": "$500K"
+        },
+        {
           "id": "2382",
           "name": "10X The Money",
           "cost": 5,
@@ -544,6 +552,14 @@
           "cost": 1,
           "topPrize": 50,
           "topPrizesRemaining": 1138
+        },
+        {
+          "id": "2388",
+          "name": "BANK BUSTER",
+          "cost": 5,
+          "topPrize": 100000,
+          "topPrizesRemaining": 3,
+          "topPrizeLabel": "$100K"
         },
         {
           "id": "2389",
@@ -613,7 +629,7 @@
           "name": "Loaded with $100s",
           "cost": 2,
           "topPrize": 100,
-          "topPrizesRemaining": 1062
+          "topPrizesRemaining": 1042
         },
         {
           "id": "2398",
@@ -687,6 +703,14 @@
           "topPrizeLabel": "$500K"
         },
         {
+          "id": "2414",
+          "name": "PREMIER PLAY",
+          "cost": 50,
+          "topPrize": 3000000,
+          "topPrizesRemaining": 3,
+          "topPrizeLabel": "$3M*"
+        },
+        {
           "id": "2415",
           "name": "Double The Money",
           "cost": 5,
@@ -699,7 +723,7 @@
           "name": "Loaded with $2,000s",
           "cost": 20,
           "topPrize": 2000,
-          "topPrizesRemaining": 1653,
+          "topPrizesRemaining": 1637,
           "topPrizeLabel": "$2K"
         },
         {
@@ -730,6 +754,13 @@
           "topPrize": 2000000,
           "topPrizesRemaining": 2,
           "topPrizeLabel": "$2M*"
+        },
+        {
+          "id": "2426",
+          "name": "HAUNTED HUNDREDS",
+          "cost": 2,
+          "topPrize": 100,
+          "topPrizesRemaining": 5340
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "source": "Texas Lottery official draw-specific Where Sold tables",
-  "updatedAt": "2026-09-29T06:48:44.832Z",
-  "sourceLastUpdated": "2026-09-28T12:00:00.000Z",
+  "updatedAt": "2026-09-30T06:48:02.860Z",
+  "sourceLastUpdated": "2026-09-29T12:00:00.000Z",
   "coverage": "2026 draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.",
   "activities": [
     {
@@ -885,6 +885,24 @@
       "prizeAmount": 25000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158374891.html",
       "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-04-02"
+    },
+    {
+      "id": "tx-draw-e595694323ba8298bdb1463f",
+      "latitude": 33.046433487879,
+      "longitude": -97.468851357085,
+      "city": "RHOME",
+      "county": "Wise",
+      "state": "TX",
+      "game": "powerball",
+      "gameName": "Powerball",
+      "retailerName": "QUIKTRIP #1873",
+      "retailerAddress": "277 N US HWY 287, RHOME, TX 76078",
+      "coordinateSource": "ArcGIS World Geocoder verified numbered street address",
+      "drawDate": "2026-04-04T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 1000000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158374893.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-04-04"
     },
     {
       "id": "tx-draw-0feb4b0f580b0f198b52ee40",
@@ -2647,18 +2665,6 @@
       "reason": "0 exact geocoded address matches"
     },
     {
-      "tier": "5 of 5",
-      "name": "QUIKTRIP #1873",
-      "address": "277 N US HWY 287",
-      "city": "RHOME",
-      "zip": "76078",
-      "prizeAmount": 1000000,
-      "date": "2026-04-04",
-      "game": "powerball",
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158374893.html",
-      "reason": "0 exact geocoded address matches"
-    },
-    {
       "tier": "5 of 5 w/Powerball",
       "name": "QUIKTRIP #4165",
       "address": "10742 E CRYSTAL FALLS PKWY",
@@ -3137,7 +3143,7 @@
       "date": "2026-04-04",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158374893.html",
       "sourceRows": 1,
-      "mappedRows": 0
+      "mappedRows": 1
     },
     {
       "game": "powerball",
@@ -4360,6 +4366,14 @@
       "gameName": "Mega Millions",
       "date": "2026-09-25",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Mega_Millions/Winning_Numbers/details.html_1158379761.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "date": "2026-09-29",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Mega_Millions/Winning_Numbers/details.html_1158379765.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -7768,6 +7782,14 @@
       "gameName": "Cash Five",
       "date": "2026-09-28",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379764.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "date": "2026-09-29",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379765.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -15192,6 +15214,38 @@
       "gameName": "All or Nothing",
       "date": "2026-09-28",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_770605560.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-29",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1388230385.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-29",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1779479517.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-29",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_290073043.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-29",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_770575769.html",
       "sourceRows": 0,
       "mappedRows": 0
     }

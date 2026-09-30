@@ -1,7 +1,7 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-09-29T12:43:06.871Z",
-  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3475 unique retailers; 3381 received exact Census or verified ArcGIS point-address coordinates. 94 unresolved addresses were excluded rather than estimated.",
+  "retrievedAt": "2026-09-30T06:42:34.791Z",
+  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3475 unique retailers; 3384 received exact Census or verified ArcGIS point-address coordinates. 91 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
       "state": "Kentucky",
@@ -3900,6 +3900,17 @@
           "latitude": 39.038671269218,
           "longitude": -84.529028639012,
           "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "ky-1a4216060f17dfea",
+          "name": "KROGER N-535 FUEL",
+          "address": "350 West 31 By Pass",
+          "city": "Bowling Green",
+          "postalCode": "42101",
+          "county": "Warren County",
+          "latitude": 36.982035728629,
+          "longitude": -86.440071401391,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
           "id": "ky-1a5648c553741bb1",
@@ -9906,6 +9917,17 @@
           "latitude": 38.795488784486,
           "longitude": -84.355786007199,
           "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "ky-46c312b651b7a0f1",
+          "name": "FIVE STAR #3010",
+          "address": "55 Summit Dr",
+          "city": "Danville",
+          "postalCode": "40422",
+          "county": "Boyle County",
+          "latitude": 37.64432631789,
+          "longitude": -84.803718125822,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
           "id": "ky-46c53bda0de57438",
@@ -28718,6 +28740,17 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
+          "id": "ky-c7365cca7627decb",
+          "name": "FIVE STAR #9000",
+          "address": "1209 Commerce Dr",
+          "city": "Scottsville",
+          "postalCode": "42164",
+          "county": "Allen County",
+          "latitude": 36.75627855433,
+          "longitude": -86.222520110301,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
           "id": "ky-c747417189caed08",
           "name": "SPEEDY MART #25",
           "address": "1054 Barret Ave",
@@ -37361,27 +37394,11 @@
           "reason": "No precise address-level coordinate passed verification"
         },
         {
-          "name": "FIVE STAR #3010",
-          "address": "55 Summit Dr",
-          "city": "Danville",
-          "postalCode": "40422",
-          "county": "Boyle County",
-          "reason": "No precise address-level coordinate passed verification"
-        },
-        {
           "name": "FIVE STAR #4455",
           "address": "25 Commerce Drive",
           "city": "Hartford",
           "postalCode": "42347",
           "county": "Ohio County",
-          "reason": "No precise address-level coordinate passed verification"
-        },
-        {
-          "name": "FIVE STAR #9000",
-          "address": "1209 Commerce Dr",
-          "city": "Scottsville",
-          "postalCode": "42164",
-          "county": "Allen County",
           "reason": "No precise address-level coordinate passed verification"
         },
         {
@@ -37550,14 +37567,6 @@
           "city": "Ashland",
           "postalCode": "41101",
           "county": "Boyd County",
-          "reason": "No precise address-level coordinate passed verification"
-        },
-        {
-          "name": "KROGER N-535 FUEL",
-          "address": "350 West 31 By Pass",
-          "city": "Bowling Green",
-          "postalCode": "42101",
-          "county": "Warren County",
           "reason": "No precise address-level coordinate passed verification"
         },
         {
