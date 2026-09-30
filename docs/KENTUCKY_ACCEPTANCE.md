@@ -1,6 +1,6 @@
 # Kentucky release evidence
 
-Status: **final extension expired; native intervention required; not accepted as complete**.
+Status: **final extension expired; native access restored; native crash under investigation; not accepted as complete**.
 Original September 28, 2026, 18:00 deadline missed. The single extension expired
 September 29, 2026, 18:00 America/New_York. No further extension is permitted.
 Implementation: a0aa40a. Latest verified scheduled data: bd8f181.
@@ -34,8 +34,8 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Live deployment | Eight public JSON files byte-match bd8f181; publisher 36613049951 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
-layout exceptions, not native visual appearance. Desktop-control tools remain
-unavailable in this session. Do not repeatedly add test-only work as a substitute
+layout exceptions, not native visual appearance. Desktop control was restored
+September 29 in the evening; see the crash investigation below. Do not repeatedly add test-only work as a substitute
 for this final gate, and do not advance to South Carolina before Kentucky acceptance; Virginia follows South Carolina.
 
 For the final native pass using current live data, use September 28, 2026 and
@@ -52,6 +52,42 @@ tests and the macOS debug build, with 12 existing analysis infos. A scheduled dr
 refresh changed Mega Millions totals; its UI regression now compares every displayed
 total cell and draw date to the selected validated report, avoiding stale literals.
 Importer/source reconciliation rules are unchanged.
+
+## Native crash investigation — September 29, evening
+
+Computer Use can now capture and operate the native app. Rebuilding the current
+checkout replaced the older local bundle. Two macOS crash reports at 21:07 and
+21:08 ET record EXC_BAD_ACCESS / SIGSEGV in Flutter's
+AccessibilityBridge::CreateRemoveReparentedNodesUpdate(), followed by
+CommitUpdates() and FlutterViewController updateSemantics. The crash reports
+remain local/private. This is a real engine crash, separate from deliberate
+quit/relaunch during rebuilding; the precise triggering interaction is unproven.
+
+A local, unaccepted startup candidate keeps macOS semantics enabled from the
+first frame. Its debug build succeeds. At 800×632, native state search, Kentucky
+entry, September 28 date selection, opening/changing/dismissing the game filter,
+and opening the statewide table selector then switching Mega Millions to
+Powerball succeeded without a new crash report during this short observation.
+This does not establish crash resolution, filter application/reset acceptance,
+or completion at either required size. Native accessibility still exposes only
+the window/menu tree to the desktop tool, so these observations used screenshots
+and pointer actions. Continue investigating stability and finish the existing
+checklist before accepting Kentucky. No replacement deadline or queue activation.
+
+## Native report scroll correction — September 29, 22:05 ET
+
+At 800×632, wheel scrolling in the native statewide report did nothing while
+dragging its scrollbar moved the rows. Leaving the drawings MouseRegion could
+reenable the native map scroll interceptor after a modal had covered the map.
+Map enable requests now respect whether its hosting route is current. A real-app
+mouse regression fails on the original code (map active behind report) and passes
+with the correction. The debug build succeeds. Native wheel scrolling now moves
+through Mega Millions rows to its total of 2,362, with the header/selector fixed.
+This advances the compact table-scroll check only; remaining source/footer,
+larger-layout and other acceptance checks stay open. No new crash report appeared;
+the earlier semantics startup candidate remains local and unaccepted separately.
+The startup mailbox search found only already-handled messages; latest publisher
+36651309931 succeeded at 6f04150. No agency reply or data-layer change was needed.
 
 ## Native review candidate — September 26, 04:07 ET session
 

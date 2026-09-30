@@ -209,7 +209,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     )..addListener(_advanceRetailerFocusAnimation);
 
     _magicMouseChannel.setMethodCallHandler(_handleNativeMouseEvent);
-    _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+    _magicMouseChannel.invokeMethod<void>(
+      'setMapActive',
+      _hostingRoute?.isCurrent ?? true,
+    );
 
     _stateHitNotifier.addListener(_updateHoveredState);
     _countyHitNotifier.addListener(_updateHoveredCounty);
@@ -282,7 +285,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   @override
   void didPopNext() {
     if (mounted) {
-      _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+      _magicMouseChannel.invokeMethod<void>(
+        'setMapActive',
+        _hostingRoute?.isCurrent ?? true,
+      );
     }
   }
 
@@ -672,7 +678,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+        await _magicMouseChannel.invokeMethod<void>(
+          'setMapActive',
+          _hostingRoute?.isCurrent ?? true,
+        );
       }
     }
 
@@ -2884,7 +2893,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+        await _magicMouseChannel.invokeMethod<void>(
+          'setMapActive',
+          _hostingRoute?.isCurrent ?? true,
+        );
       }
     }
   }
@@ -3198,7 +3210,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+        await _magicMouseChannel.invokeMethod<void>(
+          'setMapActive',
+          _hostingRoute?.isCurrent ?? true,
+        );
       }
     }
   }
@@ -3714,7 +3729,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+        await _magicMouseChannel.invokeMethod<void>(
+          'setMapActive',
+          _hostingRoute?.isCurrent ?? true,
+        );
       }
     }
 
@@ -3925,7 +3943,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+        await _magicMouseChannel.invokeMethod<void>(
+          'setMapActive',
+          _hostingRoute?.isCurrent ?? true,
+        );
       }
     }
 
@@ -4203,7 +4224,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>('setMapActive', true);
+        await _magicMouseChannel.invokeMethod<void>(
+          'setMapActive',
+          _hostingRoute?.isCurrent ?? true,
+        );
       }
     }
   }
@@ -4908,7 +4932,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   ),
                   onExit: (_) => _magicMouseChannel.invokeMethod<void>(
                     'setMapActive',
-                    true,
+                    _hostingRoute?.isCurrent ?? true,
                   ),
                   child: NextDrawingsPanel(
                     width: selectedState == null ? headerControlWidth : null,
@@ -5068,7 +5092,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                           ),
                           onExit: (_) => _magicMouseChannel.invokeMethod<void>(
                             'setMapActive',
-                            true,
+                            _hostingRoute?.isCurrent ?? true,
                           ),
                           child: NextDrawingsPanel(
                             width: double.infinity,
@@ -5110,7 +5134,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                           ),
                           onExit: (_) => _magicMouseChannel.invokeMethod<void>(
                             'setMapActive',
-                            true,
+                            _hostingRoute?.isCurrent ?? true,
                           ),
                           child: isSouthCarolinaSelected
                               ? _SouthCarolinaScratchOffsPanel(
