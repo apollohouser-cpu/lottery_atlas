@@ -330,3 +330,17 @@ window sizes. The app remains ready for those checks; it is not accepted complet
 No new release deadline is assigned and no queued state is activated. Preserve
 existing test/live evidence and continue only independent checklist work, actual
 defect handling and verified new-data preparation while this gate remains open.
+
+## Native prize range and county back — September 30, 01:00 ET session
+
+At 1280×900 logical on the existing native candidate, dragged the minimum-prize
+handle from $1 to the displayed $10.8M and pressed Apply. The Graves heat point
+disappeared and the scoped no-matching-activity explanation appeared. Reopened
+the picker, dragged the handle to its minimum and applied; the Graves point
+returned. The county Back control then restored the Kentucky county-ranking
+heading while preserving September 28. This verifies the larger native prize
+filter/reset and county-back interaction; it does not close compact equivalents,
+county empty-state review, offline review or stability acceptance. The two
+September 29 crash reports remain the newest; no new crash was recorded during
+this flow. The semantics candidate remains local and unaccepted. Mail and the
+latest publisher were unchanged. No release decision or queue advancement.
