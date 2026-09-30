@@ -490,3 +490,37 @@ was made. Stopped diagnostic processes were terminated deliberately; the app
 was relaunched without the debugger. All candidates remain preserved. No repeat
 widget tests were needed for this diagnostic-only session. Mailbox and publisher
 were unchanged. Kentucky remains unaccepted; queued states remain inactive.
+
+## Baseline failure traced to slider portal — September 30, 09:12 ET
+
+Preserved the rejected startup ensureSemantics candidate privately at
+work/native_crash_diagnostics/sep30-baseline/main_startup_candidate.dart, then
+restored main.dart to committed baseline for comparison. The first native commit
+now contained 38 nodes, but Unserialize returned false with the exact error
+“37 will not be in the tree and is not the new root”. A second instrumented
+launch captured the initial node graph; node 37 had no parent edge. The framework
+semantics dump omitted node 37, while the render-tree dump identified its owner
+as _RenderDeferredLayoutBox beneath OverlayPortal, whose child is the timeline
+Slider's _RenderValueIndicator. This provides a specific widget source for the
+initial failure. The startup workaround masks this initial failure and is no
+longer active; its source is preserved privately.
+
+Setting showValueIndicator to never still emitted the disconnected portal node,
+so that experiment was removed. A new local macOS-only timeline candidate uses
+CupertinoSlider, retaining the visible selected-time label and semantics. Other
+platforms retain Material Slider. With baseline main.dart and this candidate,
+the actual native accessibility tree exposes the full app controls for the first
+time in these diagnostics. One native resize from 800x632 to approximately
+825x900 logical and a subsequent slider drag attempt preserved PID 74640 without
+a crash. The drag did not produce an observed selection change, so slider
+interaction is still pending; neither this short flow nor these dimensions
+constitute full acceptance at the documented sizes.
+
+The two existing home/modal regression tests pass and debug build passes; analysis
+reports only four existing Radio API infos. Test output includes map-tile HTTP400
+messages; no native live-source failure was established by these test messages.
+Keep the HomeScreen/timeline wheel candidates, new slider candidate and test
+local until interaction, accessibility and Kentucky acceptance checks pass.
+No engine or SDK patch was made. Debuggers are detached and the candidate app
+is running. Mailbox was unchanged; publisher 36716247461 was in progress at the
+single deployment check and has not been declared successful.
