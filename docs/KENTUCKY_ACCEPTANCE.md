@@ -1,6 +1,6 @@
 # Kentucky release evidence
 
-Status: **final extension expired; native access restored; native crash under investigation; not accepted as complete**.
+Status: **final extension expired; targeted native crash mitigation verified; integrated acceptance pending; not accepted as complete**.
 Original September 28, 2026, 18:00 deadline missed. The single extension expired
 September 29, 2026, 18:00 America/New_York. No further extension is permitted.
 Implementation: a0aa40a. Latest verified scheduled data: bd8f181.
@@ -575,3 +575,23 @@ county, source, offline/reconnect and national/state draw-game observations must
 still be reconciled with the existing checklist. No unchanged tests or builds
 were repeated. Publisher 36716247461 remained successful at the single check.
 South Carolina and Virginia remain queued.
+
+## Compact county notice and return — September 30, 12:04 ET
+
+At 800x632 logical, selecting Boone's heat point opened its county summary
+with one qualifying $50K record. Native wheel scrolling reached the record,
+and selecting it opened Walton's Millionaire Club Scratch-off notice. The
+NOTICE DATE (Mon, Sep 28), PILOT TRAVEL CENTER #278 and 118 Richwood Rd
+address were exposed. Scrolling reached a visually legible source/date panel,
+September 30 9:03 AM refresh timestamp, official Have You Heard? source link,
+and unobstructed action buttons. This verifies source-link reachability, not
+an external-browser load. Dismissing the notice and using the map back control
+restored Kentucky and the Boone/Fayette/Hardin rankings for September 28.
+
+A subsequent pointer attempt at Adair instead hit Hardin's overlapping heat
+point; it is not evidence for an empty-county check. That summary was dismissed
+and the state view restored. PID 74640 remained unchanged with no observed
+crash. Empty-county native verification and offline/reconnect remain open;
+remaining national/state draw-game scope must be reconciled before acceptance.
+The publisher check still showed 36716247461 successful, and the mailbox held
+only the already-answered Texas clarification. No unchanged tests were repeated.
