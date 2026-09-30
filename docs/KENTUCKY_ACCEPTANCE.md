@@ -524,3 +524,33 @@ local until interaction, accessibility and Kentucky acceptance checks pass.
 No engine or SDK patch was made. Debuggers are detached and the candidate app
 is running. Mailbox was unchanged; publisher 36716247461 was in progress at the
 single deployment check and has not been declared successful.
+
+## Native slider and wheel verification — September 30, 10:10 ET
+
+The running candidate retained PID 74640 from the previous session. After
+activating the window, Month selection and a thumb drag changed September 30
+to September 15 and refreshed results. Repositioning the window allowed an
+actual 2560x1800 physical (1280x900 logical) resize. In Kentucky, a month-slider
+drag changed September 15 to September 28, restoring published-record rankings
+including Powerball in Fayette and Scratch records in Boone, Hardin and Graves.
+The app then resized to 1600x1264 physical (800x632 logical). A compact thumb
+drag returned to September 15 and displayed the scoped empty explanation.
+All of these actions retained the same PID with no observed crash. This verifies
+the slider interaction and both resize dimensions missing from the prior session;
+it does not complete the remaining Kentucky integrated checklist.
+
+At compact size, native wheel input over the timeline scrolled the page down to
+the complete county-ranking disclaimer and scoped empty message, addressing
+the previously inaccessible below-map content. The HomeScreen/timeline wheel
+changes and macOS CupertinoSlider mitigation are now retained as tested fixes.
+The rejected startup ensureSemantics version remains private for diagnosis.
+No engine or SDK patch is required by this mitigation. National and state draw
+game acceptance, remaining county/filter/source/offline flows and final integrated
+verification still govern Kentucky release; South Carolina is not activated.
+
+Publisher 36716247461 succeeded. Seven live files (activity, Kentucky draw tiers,
+retailer directory, Scratch catalog, combined directories/catalogs, refresh status)
+matched local c4f3475-era files byte for byte. Fourteen Kentucky data/table tests
+passed against that refresh. Existing home/modal regressions and candidate build
+were already validated in the preceding session and were not repeated unchanged.
+No new agency messages were found.

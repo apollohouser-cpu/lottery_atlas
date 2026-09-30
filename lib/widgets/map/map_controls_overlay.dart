@@ -1,6 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart' show CupertinoSlider;
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../../models/state_model.dart';
@@ -1465,7 +1468,19 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
         '${months[range.start.month - 1]} ${range.start.day}';
   }
 
-  Widget _timelineDock() => Container(
+  Widget _timelineDock() => MouseRegion(
+    onEnter: (_) => const MethodChannel(
+      'lottery_atlas/magic_mouse',
+    ).invokeMethod<void>('setMapActive', false),
+    onExit: (_) =>
+        const MethodChannel('lottery_atlas/magic_mouse').invokeMethod<void>(
+          'setMapActive',
+          ModalRoute.of(context)?.isCurrent ?? false,
+        ),
+    child: _timelineContents(),
+  );
+
+  Widget _timelineContents() => Container(
     key: _timelineKey,
     padding: const EdgeInsets.fromLTRB(14, 10, 14, 12),
     decoration: BoxDecoration(
@@ -1679,19 +1694,46 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
             overlayColor: const Color(0x331478FF),
             trackHeight: 3,
           ),
-          child: Slider(
-            value: _initialTimelineValue(),
-            min: 0,
-            max: _maximumTimelineValue(),
-            // Each slider step is a week, calendar day, weekday, or hour,
-            // depending on the selected timeline scale.
-            divisions: _maximumTimelineValue().round().clamp(1, 10000).toInt(),
-            label: _timelineLabel(),
-            onChanged: (value) {
-              _stopTimelinePlayback();
-              _setTimelineValue(value);
-            },
-          ),
+          child: !kIsWeb && defaultTargetPlatform == TargetPlatform.macOS
+              // Avoid the Material value-indicator portal whose detached
+              // semantics node is rejected by the current macOS engine.
+              ? Semantics(
+                  label: 'Timeline',
+                  value: _timelineLabel(),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: CupertinoSlider(
+                      value: _initialTimelineValue(),
+                      min: 0,
+                      max: _maximumTimelineValue(),
+                      divisions: _maximumTimelineValue()
+                          .round()
+                          .clamp(1, 10000)
+                          .toInt(),
+                      activeColor: const Color(0xFF1478FF),
+                      onChanged: (value) {
+                        _stopTimelinePlayback();
+                        _setTimelineValue(value);
+                      },
+                    ),
+                  ),
+                )
+              : Slider(
+                  value: _initialTimelineValue(),
+                  min: 0,
+                  max: _maximumTimelineValue(),
+                  // Each slider step is a week, calendar day, weekday, or hour,
+                  // depending on the selected timeline scale.
+                  divisions: _maximumTimelineValue()
+                      .round()
+                      .clamp(1, 10000)
+                      .toInt(),
+                  label: _timelineLabel(),
+                  onChanged: (value) {
+                    _stopTimelinePlayback();
+                    _setTimelineValue(value);
+                  },
+                ),
         ),
         _timelineAxis(),
       ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../widgets/cards/most_winning_state_card.dart';
 import '../../widgets/map/lottery_map.dart';
@@ -62,7 +63,22 @@ class _HomeScreenState extends State<HomeScreen> {
                     controller: _scrollController,
                     padding: const EdgeInsets.only(bottom: 18),
                     children: [
-                      SizedBox(height: mapHeight, child: const LotteryMap()),
+                      MouseRegion(
+                        onEnter: (_) =>
+                            const MethodChannel(
+                              'lottery_atlas/magic_mouse',
+                            ).invokeMethod<void>(
+                              'setMapActive',
+                              ModalRoute.of(context)?.isCurrent ?? false,
+                            ),
+                        onExit: (_) => const MethodChannel(
+                          'lottery_atlas/magic_mouse',
+                        ).invokeMethod<void>('setMapActive', false),
+                        child: SizedBox(
+                          height: mapHeight,
+                          child: const LotteryMap(),
+                        ),
+                      ),
                       const SizedBox(height: 14),
                       const MostWinningStateCard(),
                     ],
