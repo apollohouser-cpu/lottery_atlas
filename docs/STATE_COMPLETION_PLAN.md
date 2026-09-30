@@ -50,30 +50,20 @@ Notify release decisions, deadline misses/extensions, material failures and user
 actions; remain quiet for unchanged status. This planning edit does not itself
 constitute Texas's final acceptance session.
 
-## Active work: Kentucky
+## Active work: South Carolina
 
-Texas's full supported release decision was completed September 25, 2026 at
-06:58 AM ET, before its deadline. Development is closed for the verified available
-coverage, including Powerball and Mega Millions activity. Complete statewide
-claims remain unavailable and are tracked separately. See the release decision
-at the end of this document; earlier Texas-active statements are historical.
+Kentucky supported available coverage was accepted September 30 at 17:03 ET;
+Texas remains accepted September 25. Earlier dated entries below are historical.
+South Carolina is the sole active state, with its October 3 at 17:03 ET release
+decision deadline unchanged. The September 30 scope audit is recorded in
+[SOUTH_CAROLINA_ACCEPTANCE.md](SOUTH_CAROLINA_ACCEPTANCE.md), including Powerball,
+Mega Millions, Powerball Xs & Os, all state draw games and Scratch. It identifies
+available statewide draw reports, missing Xs and Os classification/filter, and
+claim-date/partial-coverage wording for correction. Virginia stays queued.
 
-Kentucky remains active. Its original September 28, 6:00 PM ET deadline was
-missed; its single 24-hour extension expired September 29, 6:00 PM ET. No further
-extension is permitted; native-check intervention is required. Scope and
-per-game gaps were reconciled September 25, before the September 26 deadline.
-Use the existing Kentucky checklist and source screen. Explicitly inventory
-Powerball, Mega Millions and all supported Kentucky draw games as well as Scratch
-before defining acceptance; do not repeat the earlier Scratch-only scope error.
-South Carolina is next after Kentucky acceptance, per the user's September 28
-request to prioritize their home state. Virginia follows South Carolina. Its
-former October 1 deadline is superseded by this explicit queue change; record
-South Carolina's deadline and the revised Virginia forecast when South Carolina
-activates. Kentucky's single extension and downstream impact are recorded below.
-
-Two separate outcomes remain mandatory: **accepted for available coverage** and
-**complete statewide data**. Missing records do not establish zero wins. Accepted
-scope must include all supported flows with evidenced unavailable features.
+Accepted available coverage and complete statewide data are separate outcomes.
+Missing agency records do not delay supported-coverage acceptance or imply zero
+wins. No fees are authorized.
 
 ## Session rules
 

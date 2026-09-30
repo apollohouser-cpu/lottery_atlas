@@ -96,3 +96,14 @@ public-source app coverage continues independently.
 ### September 25 correspondence follow-through
 
 Sent September 25 narrowed request 1a0da387f9504df7 to David Ross and the original FOIA mailbox. Requested separate existing retailer reports, August 2026 game/prize summaries and existing definitions in their maintained formats; asked for available report names if necessary. Removed any need for custom consolidation, ticket identifiers or new retailer joins. No fees or paid work authorized.
+
+
+## September 30 supported-scope reconciliation
+
+See [SOUTH_CAROLINA_ACCEPTANCE.md](SOUTH_CAROLINA_ACCEPTANCE.md) for the current
+per-game inventory and release checklist. Official pages expose statewide draw
+reports for national and state games, including Powerball Xs & Os; these are
+separate from retailer-linked $500-plus claims. The current importer wrongly
+classifies two `Xs and Os` groups as Scratch. Correction and draw-report
+integration are active work, with the October 3 at 17:03 ET deadline unchanged.
+The narrowed records request remains pending and does not block app completion.
