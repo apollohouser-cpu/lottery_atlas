@@ -89,6 +89,22 @@ the earlier semantics startup candidate remains local and unaccepted separately.
 The startup mailbox search found only already-handled messages; latest publisher
 36651309931 succeeded at 6f04150. No agency reply or data-layer change was needed.
 
+## Native report footer and larger layout — September 29, 23:03 ET
+
+The compact report's outer body scroll reaches the complete cadence/limitations
+paragraph and the unobstructed official-source link below the independently
+scrollable table. The window was then resized through native pointer actions to
+a 2560×1800 screenshot (1280×900 logical). The report selector and close button,
+Mega Millions footer/source link and Cash Ball 225 report were visually reachable.
+Cash Ball's separate EZ disclosure was legible. The selector visibly includes
+Powerball, Mega Millions, state draw sessions, Keno and Cash Pop. These are actual
+native observations on the existing rebuilt candidate, not a full acceptance pass.
+No additional crash report appeared. The local semantics candidate remains
+unaccepted; date/detail, county, game/prize/reset and offline checks remain open.
+The one mailbox check returned only previously handled Illinois/Wyoming messages.
+Publisher 36651309931 remains successful; current live Kentucky draw tiers and
+refresh status were checked separately against the checkout after a2b785a.
+
 ## Native review candidate — September 26, 04:07 ET session
 
 Rebuilt the macOS debug app successfully from 60b6134, including scheduled data
