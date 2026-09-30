@@ -365,3 +365,26 @@ insufficient; the earlier crash-free observations do not establish resolution.
 Preserve both local candidates and the new regression file for investigation.
 Kentucky remains unaccepted, with no replacement deadline or queued-state start.
 No new agency email was found and publisher 36651309931 remains successful.
+
+## Resize trigger isolation and refreshed data — September 30, 03:02 ET
+
+On the existing local rebuilt candidate, launching succeeded at 800×632. A
+single bottom-right resize drag followed by state capture reproduced the same
+EXC_BAD_ACCESS before any wheel event was sent. Private report
+lottery_atlas-2026-09-30-030152.ips again identifies
+AccessibilityBridge::CreateRemoveReparentedNodesUpdate. Resizing is now an
+observed reproduction sequence; the underlying semantics-tree cause remains
+unproven. Keep the startup and home-scroll candidates unaccepted and preserve
+them. The app's default South Carolina startup view was used only to isolate
+this shared crash, not to activate or accept queued South Carolina work.
+
+The related upstream [null-parent guard proposal](https://github.com/flutter/flutter/pull/190903)
+is still open, not an available verified fix. No SDK or accessibility-disable
+change was made. Native county/compact/offline checks remain open.
+
+Publisher 36679096623 succeeded with publication 9bedd78. Fourteen Kentucky
+generated-data/report-loader/widget tests pass and nine public files independently
+byte-match (the eight Kentucky/shared files plus Texas tiers). Texas reports
+updated for its full transaction: close the September 30, 15:00 ET importer
+recovery checkpoint. This does not resolve the separate native crash or advance
+Kentucky acceptance. The mailbox check returned no new agency message.

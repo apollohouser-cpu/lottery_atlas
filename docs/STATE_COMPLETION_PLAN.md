@@ -1539,3 +1539,11 @@ is delayed until Kentucky acceptance; Virginia remains after South Carolina and
 its former October 1 target remains superseded. Neither queued state is activated.
 Their calendar deadlines/forecast will be recorded at South Carolina activation.
 Texas's separate September 30, 15:00 ET recovery checkpoint remains unchanged.
+
+## September 30, 03:02 ET maintenance update
+
+Texas importer recovery is verified at 9bedd78 / publisher 36679096623; close
+the September 30, 15:00 ET follow-up. Nine live files match and fourteen Kentucky
+tests pass. Kentucky remains unaccepted: a native resize alone reproduced the
+accessibility-engine crash at 03:01:52 ET. See KENTUCKY_ACCEPTANCE.md for evidence.
+No extension or queued-state activation.
