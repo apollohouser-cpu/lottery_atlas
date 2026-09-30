@@ -24,9 +24,9 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Flow | Evidence already obtained | Remaining native check |
 | --- | --- | --- |
 | Scratch selection/reset | Native 800×632 catalog pass; remaining prizes versus stock explained | Repeat only if latest layout affects access |
-| Directory/Favorites | Native Adairville retailer/address/save/open/remove pass | Confirm compact shortcuts after latest layout |
+| Directory/Favorites | Native Adairville save/open/remove pass retained; compact shortcut/address/disclaimer/actions and return verified September 30 14:03 | Complete; existing Favorites preserved |
 | Statewide reports | Native ten-table and aggregate-game passes; compact scrolling/footer and larger selector/source passes September 29 | Existing evidence retained; include national and state games in final reconciliation |
-| Date/detail/source | Integrated real-app offline selection of Aug 31, Warren County notice; NOTICE DATE and source link reachable | Visually inspect date label and source in actual app |
+| Date/detail/source | Native larger Graves notice September 30 00:04 and compact Boone notice 12:04: NOTICE DATE, retailer and source/date link visually reachable | Complete for online notice display; offline remains separate |
 | County scope/reset | Native compact Boone/detail/back and Clay empty/back passed September 30; integrated both-size checks retained | Larger native empty/back observation remains to reconcile |
 | Game/prize/reset | Native category/reset and prize exclusion/reset observed at both sizes; compact September 30 11:08 entry | Complete; repeat only after relevant changes |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
@@ -614,3 +614,23 @@ compact directory shortcut confirmation and remaining larger county/source
 reconciliation still prevent acceptance. Publisher 36716247461 remains successful;
 mail search found only the answered Texas clarification. No new tests or builds
 were needed for this observation-only session. No queued state was activated.
+
+## Compact directory shortcuts — September 30, 14:03 ET
+
+At 800x632 logical, the visible 3384 official KY retailers shortcut opened
+the directory list. Selecting ADAIRVILLE MARKET displayed the full address
+(135 S Main St, Adairville, KY 42202), the explicit retailer-listing-does-not-
+create-a-win disclaimer, Save retailer to Favorites, official Kentucky directory
+link and Get directions button. All were visually readable and unobstructed
+without resizing. The retailer sheet Back control dismissed it to the selected
+retailer's map scope with the correctly scoped empty ranking. Existing Favorites
+were not changed; earlier native save/open/remove evidence remains applicable.
+External link destinations were not opened in this layout check.
+
+PID 74640 remained unchanged, with no observed crash. This closes compact
+directory shortcut confirmation. Reconciled date/detail/source against the
+already recorded larger Graves and compact Boone observations. Native offline/
+reconnect and larger empty-county/back verification remain outstanding. Keep
+the full national/state draw-game inventory in final acceptance. Publisher
+36716247461 and mailbox were unchanged; no repeated tests or build were needed.
+Kentucky remains unaccepted and South Carolina remains queued.
