@@ -12,9 +12,9 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
 | Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
-| Kentucky | Final extension expired September 29, 2026, 6:00 PM ET; no further extension | Active, not accepted; targeted native crash mitigation verified, remaining integrated acceptance checks pending. |
-| South Carolina | Set at activation after Kentucky acceptance: 72 or 120 hours under the rules below | Next, per user home-state priority confirmed September 28. |
-| Virginia | Former October 1 target superseded by the user queue change; revised calendar date to be recorded when South Carolina activates | Queued after South Carolina acceptance. |
+| Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
+| South Carolina | October 3, 2026, 5:03 PM ET (72 hours from activation) | Active September 30, 5:03 PM ET; full per-game scope due October 1, 5:03 PM ET. |
+| Virginia | Forecast activation October 3, 2026, 5:03 PM ET; provisional completion October 8, 5:03 PM ET using 120-hour allowance | Queued until actual South Carolina acceptance; activation fixes its 72/120-hour deadline. Former October 1 target superseded. |
 
 Texas's release includes the supported draw-game experience, specifically verified
 Powerball and Mega Millions activity. Scratch-only acceptance never satisfies it.
@@ -1547,3 +1547,24 @@ the September 30, 15:00 ET follow-up. Nine live files match and fourteen Kentuck
 tests pass. Kentucky remains unaccepted: a native resize alone reproduced the
 accessibility-engine crash at 03:01:52 ET. See KENTUCKY_ACCEPTANCE.md for evidence.
 No extension or queued-state activation.
+
+## Kentucky closure and South Carolina activation — September 30, 17:03 ET
+
+Kentucky is accepted for supported available coverage, including national and
+state draw games; see KENTUCKY_ACCEPTANCE.md for final recovery evidence and
+retained limitations. Historical Kentucky-active text above is superseded by
+this decision. No complete statewide claims outcome is claimed. No further
+extension was granted after the September 29 final deadline.
+
+South Carolina activates now, September 30 at 17:03 ET. Its existing working
+Winners Report import qualifies for the 72-hour window: release decision due
+October 3 at 17:03 ET. Full per-game scope/gap reconciliation is due October 1
+at 17:03 ET, including Powerball, Mega Millions and every supported state draw
+game alongside Scratch. Use verified available coverage and existing evidence;
+do not make the pending agency records request a release prerequisite.
+
+Virginia remains inactive until South Carolina acceptance. Revised forecast:
+activation October 3 at 17:03 ET and completion October 8 at 17:03 ET, using a
+provisional 120-hour implementation allowance. This is a forecast, not an early
+activation or fixed Virginia deadline; choose its applicable 72/120-hour window
+at actual activation. Its former October 1 target remains explicitly superseded.

@@ -1,6 +1,6 @@
 # Kentucky release evidence
 
-Status: **final extension expired; targeted native crash mitigation verified; integrated acceptance pending; not accepted as complete**.
+Status: **accepted for supported available coverage September 30, 2026 at 17:03 ET; complete statewide claims remain unavailable**. Earlier missed deadlines remain recorded below.
 Original September 28, 2026, 18:00 deadline missed. The single extension expired
 September 29, 2026, 18:00 America/New_York. No further extension is permitted.
 Implementation includes native mitigation a9de73f. Latest verified scheduled data: 18b76e4.
@@ -29,8 +29,8 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Date/detail/source | Native larger Graves notice September 30 00:04 and compact Boone notice 12:04: NOTICE DATE, retailer and source/date link visually reachable | Complete for online notice display; offline remains separate |
 | County scope/reset | Native compact Boone/detail/back and Clay empty/back passed September 30; integrated both-size checks retained | Complete at both documented sizes; larger Logan empty/back observed September 30 15:04 |
 | Game/prize/reset | Native category/reset and prize exclusion/reset observed at both sizes; compact September 30 11:08 entry | Complete; repeat only after relevant changes |
-| Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
-| Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
+| Offline/reconnect | Native injected network failure retained saved data; normal-build relaunch recovered September 29 report on September 30 17:03 | Complete for tested failure/relaunch recovery; offline street tiles not promised |
+| Source/cadence/limitations | Native notice date/source and report/footer disclosures reached at both sizes; launch-window and partial-coverage disclaimers observed | Complete |
 | Live deployment | Eight public JSON files byte-match bd8f181; publisher 36613049951 succeeded | Recheck only after relevant publication changes |
 
 The two integrated widget sizes are 800×632 and 1280×900. They verify behavior and
@@ -680,3 +680,33 @@ was verified, and a private crash report/logs were preserved in the ignored prob
 directory. No security settings or SDK patches were made. The proxy test process
 was intentionally quit and the ordinary lib/main.dart build restored afterward.
 Publisher/mail checks were unchanged. No queued state was activated.
+
+## Supported release accepted — September 30, 17:03 ET
+
+The restored ordinary lib/main.dart build successfully reloaded Kentucky's
+Mega Millions report after the private network-failure probe. Native display
+advanced from saved September 25 (2,362 winners/$47,127) to September 29
+(2,482 winners/$46,987), exactly matching the independently verified 18b76e4
+live report. The draw date and unavailable-publication-date label were visually
+readable. This closes tested network-failure/relaunch recovery; it is not a
+claim of physical disconnection or same-process network toggling. Normal build
+is restored; the private probe is not part of the released source.
+
+Accept supported available Kentucky coverage using the accumulated native
+800x632 and 1280x900 evidence, prior full suite/build, focused crash/scroll
+regressions, fourteen latest-refresh tests and independent live comparisons.
+Scope explicitly includes selected Powerball/Mega Millions notices where
+verified, Scratch catalog and winner notices, directory/Favorites, ten statewide
+reports (including Powerball variants, Mega Millions, Millionaire For Life,
+Cash Ball 225 and Pick 3/4 sessions), and separate Keno/Cash Pop snapshots.
+Missing games, tiers, historical claims, location joins and complete statewide
+counts remain evidenced limitations in KENTUCKY_SOURCE_SCREEN, not zero wins.
+Cash Ball EZ remains separate. No unsupported data layer is implied.
+
+The macOS timeline mitigation passed bounded native resizing/navigation and
+relaunch checks without recurrence of the original accessibility crash. This
+is release acceptance of observed supported behavior, not unlimited stability
+proof. Sandbox harness failures remain separately documented. No new release
+prerequisite or deadline extension was added. Kentucky's original and extended
+deadlines were missed; this is actual late acceptance. Development now closes
+for this scope. South Carolina may activate; Virginia stays behind it.
