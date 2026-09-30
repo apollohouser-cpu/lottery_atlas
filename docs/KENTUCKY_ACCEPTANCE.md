@@ -554,3 +554,24 @@ matched local c4f3475-era files byte for byte. Fourteen Kentucky data/table test
 passed against that refresh. Existing home/modal regressions and candidate build
 were already validated in the preceding session and were not repeated unchanged.
 No new agency messages were found.
+
+## Compact filter acceptance — September 30, 11:08 ET
+
+At 800x632 logical, the native app retained PID 74640 from the earlier slider
+verification. With Kentucky Month view at September 28, selecting Mega Millions
+and applying the filter displayed the scoped no-activity and empty-ranking
+explanations. Resetting to All Games restored the published Boone, Fayette
+(Powerball), and Hardin records. The compact modal scrolled to its Apply button.
+
+The prize-range check then raised the minimum to $11.0M with a $60M maximum.
+Applying it cleared the map activity and rankings with the appropriate wider-range
+suggestion. Restoring the $1–$60M range returned the same published records.
+An initial drag changed the upper bound instead; that attempt was corrected and
+was not counted as the exclusion check. No crash was observed during these flows.
+
+These observations close the compact game-filter/reset and prize-filter/reset
+checks. They do not establish full Kentucky acceptance: remaining integrated
+county, source, offline/reconnect and national/state draw-game observations must
+still be reconciled with the existing checklist. No unchanged tests or builds
+were repeated. Publisher 36716247461 remained successful at the single check.
+South Carolina and Virginia remain queued.

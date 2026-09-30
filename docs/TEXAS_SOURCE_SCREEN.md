@@ -245,3 +245,19 @@ or paid work. Bounded follow-up: inspect those documents when accessible, then
 compare against existing directory evidence before proposing any data change.
 Texas's accepted supported release stays closed. The separate September 25
 definitions inquiry remains distinct; no new retailer points or claims published.
+
+### September 30 clarification answered — definitions request
+
+TLC message 1a0f2cb3e7577cfe, received 14:50 UTC, asks what
+“publication/correction cadence” means in request R030290-092526. It supplies
+no new data or fee estimate and says written clarification is required within
+61 calendar days after its clarification request.
+
+Reply 1a0f2d6a2e2602bb was sent in the same thread to texaslottery@govqa.us.
+It narrows that phrase to existing schedules, procedures, dictionaries or notes
+describing when draw-specific Where Sold tables are posted/refreshed and how
+errors or omitted entries are corrected. It requests existing records only,
+asks processing of the other portions to continue if no such documentation
+exists, and explicitly prohibits fees or paid work. No user action is required
+for this clarification. Monitor the response; Texas's accepted supported app
+release remains closed and no additional claims or locations were published.

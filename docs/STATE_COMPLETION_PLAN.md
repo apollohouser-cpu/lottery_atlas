@@ -12,7 +12,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
 | Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
-| Kentucky | Final extension expired September 29, 2026, 6:00 PM ET; no further extension | Active, not accepted; desktop access restored, native Flutter accessibility crash under investigation. |
+| Kentucky | Final extension expired September 29, 2026, 6:00 PM ET; no further extension | Active, not accepted; targeted native crash mitigation verified, remaining integrated acceptance checks pending. |
 | South Carolina | Set at activation after Kentucky acceptance: 72 or 120 hours under the rules below | Next, per user home-state priority confirmed September 28. |
 | Virginia | Former October 1 target superseded by the user queue change; revised calendar date to be recorded when South Carolina activates | Queued after South Carolina acceptance. |
 
