@@ -388,3 +388,19 @@ byte-match (the eight Kentucky/shared files plus Texas tiers). Texas reports
 updated for its full transaction: close the September 30, 15:00 ET importer
 recovery checkpoint. This does not resolve the separate native crash or advance
 Kentucky acceptance. The mailbox check returned no new agency message.
+
+## Scroll regression baseline — September 30, 04:00 ET session
+
+Ran the new home-scroll regression against the unmodified HEAD HomeScreen,
+restoring the local candidate in a finally block. It fails at the expected
+map-exit assertion (expected false, actual true), establishing that the test
+detects the original wheel-capture defect; the candidate's prior passing result
+remains applicable. No implementation was replaced or accepted.
+
+A fresh compact native launch and wheel action over the timeline did not expose
+the ranking; the map changed instead. This is not native confirmation of the
+HomeScreen candidate and must not be counted as a county empty-state pass.
+The timeline sits within the map region at this size, so this observation needs
+a separate input-boundary check. No further resize crash was deliberately induced.
+The known resize/accessibility blocker remains open; preserve both candidates.
+Mailbox and publisher checks were unchanged. No queued-state work or release claim.
