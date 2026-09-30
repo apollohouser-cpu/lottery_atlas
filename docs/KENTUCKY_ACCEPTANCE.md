@@ -404,3 +404,22 @@ The timeline sits within the map region at this size, so this observation needs
 a separate input-boundary check. No further resize crash was deliberately induced.
 The known resize/accessibility blocker remains open; preserve both candidates.
 Mailbox and publisher checks were unchanged. No queued-state work or release claim.
+
+## Timeline input boundary candidate — September 30, 05:03 ET
+
+Added a local MouseRegion candidate around the timeline dock, which is inside
+the map boundary and therefore not covered by HomeScreen's map-exit handling.
+The home regression now checks entry to the timeline releases native wheel input
+and return to the map restores it. Both home and report-modal regressions pass;
+the debug build passes. Analysis reports only the four existing Radio API
+deprecation infos in map_controls_overlay.dart. This candidate remains unaccepted.
+
+Native launch at compact size, timeline wheel input, then a click and another
+wheel attempt did not yield an accepted ranking-scroll observation. A new private
+report at 05:03:18 ET again has AccessibilityBridge::CreateRemoveReparentedNodesUpdate
+as its top frame. No resize was attempted in this session, so resizing is one
+reproduction path, not the only possible trigger. Stop treating routine pointer
+flows as sufficient stability evidence; engine/semantics investigation must
+precede another acceptance attempt. Preserve all three local source candidates
+and the expanded home regression. No SDK change or release was made.
+Mailbox and publisher checks were unchanged.
