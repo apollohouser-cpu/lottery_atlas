@@ -3,7 +3,7 @@
 Status: **final extension expired; targeted native crash mitigation verified; integrated acceptance pending; not accepted as complete**.
 Original September 28, 2026, 18:00 deadline missed. The single extension expired
 September 29, 2026, 18:00 America/New_York. No further extension is permitted.
-Implementation includes native mitigation a9de73f. Latest verified scheduled data: c4f3475.
+Implementation includes native mitigation a9de73f. Latest verified scheduled data: 18b76e4.
 The scope/per-game inventory was completed September 25, before its deadline.
 
 ## Supported scope
@@ -27,7 +27,7 @@ Fast Play/online gaps and source limitations are recorded in KENTUCKY_SOURCE_SCR
 | Directory/Favorites | Native Adairville save/open/remove pass retained; compact shortcut/address/disclaimer/actions and return verified September 30 14:03 | Complete; existing Favorites preserved |
 | Statewide reports | Native ten-table and aggregate-game passes; compact scrolling/footer and larger selector/source passes September 29 | Existing evidence retained; include national and state games in final reconciliation |
 | Date/detail/source | Native larger Graves notice September 30 00:04 and compact Boone notice 12:04: NOTICE DATE, retailer and source/date link visually reachable | Complete for online notice display; offline remains separate |
-| County scope/reset | Native compact Boone/detail/back and Clay empty/back passed September 30; integrated both-size checks retained | Larger native empty/back observation remains to reconcile |
+| County scope/reset | Native compact Boone/detail/back and Clay empty/back passed September 30; integrated both-size checks retained | Complete at both documented sizes; larger Logan empty/back observed September 30 15:04 |
 | Game/prize/reset | Native category/reset and prize exclusion/reset observed at both sizes; compact September 30 11:08 entry | Complete; repeat only after relevant changes |
 | Offline/reconnect | Bundled real-app flows; cached failure and unchanged-date reconnect tests | Native offline display; street tiles are not promised offline |
 | Source/cadence/limitations | Source-screen reachability at both sizes; updated launch-window disclosure | Native navigation and visual legibility |
@@ -634,3 +634,26 @@ reconnect and larger empty-county/back verification remain outstanding. Keep
 the full national/state draw-game inventory in final acceptance. Publisher
 36716247461 and mailbox were unchanged; no repeated tests or build were needed.
 Kentucky remains unaccepted and South Carolina remains queued.
+
+## Larger county return and afternoon refresh — September 30, 15:04 ET
+
+Native resizing reached exactly 2560x1800 physical (1280x900 logical). From
+Adairville, Back selected Logan County. Wheel scrolling exposed the entire
+TOP CITIES BY PUBLISHED RECORDS · Logan card, September 28 date, partial-
+coverage disclaimer and scoped no-verified-activity explanation. The visible
+Back control restored Kentucky and its five records, including Fayette Powerball.
+PID 74640 remained unchanged without an observed crash. This closes larger
+empty-county/back verification; native offline/reconnect is still outstanding.
+
+Scheduled commit 18b76e4 was fast-forwarded into the clean checkout. Publisher
+36759391265 succeeded. Five changed public files (activity, Kentucky draw tiers,
+Kentucky Scratch catalog, combined Scratch catalogs and refresh status) independently
+matched local bytes. Fourteen Kentucky data/table tests passed against this
+refresh; log /tmp/ky-18b-tests.log. The running app's retained September 28
+selection is not claimed as a freshly reloaded afternoon source.
+
+Texas failed again in this refresh, while all five previous validated generated
+files were byte-identical to b92b63b. New Hampshire's retained catalog was also
+byte-identical. Public refresh status discloses both failures. See Texas source
+screen for the bounded follow-up; Kentucky acceptance remains separate.
+No new agency reply was found. No next-state activation or deadline reset.

@@ -261,3 +261,13 @@ asks processing of the other portions to continue if no such documentation
 exists, and explicitly prohibits fees or paid work. No user action is required
 for this clarification. Monitor the response; Texas's accepted supported app
 release remains closed and no additional claims or locations were published.
+
+### September 30 afternoon importer failure — bounded follow-up
+
+Publisher 36759391265 / commit 18b76e4 completed, but the Texas transaction
+reported retained_after_failure. All five Texas generated files were compared
+with pre-run b92b63b and remain byte-identical, including source dates.
+This is a new failed refresh after the morning recovery, not reopening accepted
+app development. Check the next scheduled transaction; if failure persists,
+investigate its source/validation error by October 1, 2026 at 3:00 PM ET.
+No weaker validation, replacement source dates or public-data loss is authorized.
