@@ -257,3 +257,24 @@ widget tests pass; changed-file analysis is clean. Nineteen parser tests remain
 passing. Live publication and actual native interactions still require verification;
 widget layout tests do not constitute native acceptance. State remains unaccepted.
 Publisher 36828045793 succeeded at opening; no new agency reply or deadline change.
+
+## October 1 live publication and first native reports (05:00 ET session)
+
+Publisher 36833941360 succeeded for db8e949. Independently downloaded public
+south_carolina_draw_reports.json and confirmed byte equality with the committed
+35-report file. No new agency response was found in the opening mail check.
+
+Relaunched the ordinary debug app and opened SC LOTTERY → Statewide draw reports
+at the retained 800×632 logical window (1600×1264 screenshot). Native Mega Millions
+September 29 exposed all nine tiers and total 10,193 in accessibility, with the
+prize-range and no-retailer-allocation disclaimer visible. Opened the actual
+report dropdown and selected CASH POP September 30 Evening: the native table
+showed 2,705 winners and $105,640.00, with session-only/no-tier-breakdown wording.
+The official-source button opened sceducationlottery.com/Games/CashPOP in Chrome;
+its displayed official evening total matched both values. Returning to the app
+retained that report selection. No crash was observed during this bounded flow.
+
+This verifies first compact report selection and source navigation, not all-game
+native acceptance. Remaining native report choices, table scrolling, larger-size
+checks, Scratch/map/filter/offline flows and retained retailer provenance remain
+on the existing checklist. SC is not accepted; October 3 at 17:03 ET is unchanged.
