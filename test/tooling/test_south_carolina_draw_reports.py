@@ -44,3 +44,27 @@ class DrawReportsTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class AdditionalDrawReportsTest(unittest.TestCase):
+    def table(self, headers, labels, counts, total):
+        rows = ''.join('<tr>' + ''.join('<td>' + str(v) + '</td>' for v in [label, '$500', *values]) + '</tr>' for label, values in zip(labels, counts))
+        return '<table class="small-table"><tr>' + ''.join('<th>' + h + '</th>' for h in headers) + '</tr>' + rows + '<tr>' + ''.join('<td>' + str(v) + '</td>' for v in ['Total Winning Tickets', '', *total]) + '</tr></table>'
+
+    def test_xo_preserves_historical_tier_amounts(self):
+        table = self.table(['Match', 'Powerball Xs & 0s™ Prizes', 'Total Winners'], ['Jackpot (Match 8)', 'Match 7', 'Match 6', 'Match 5', 'Match 4'], [[0], [1], [2], [3], [4]], [10])
+        raw = '<div class="drawResultsaccordion"><span class="">9/27/2026</span>' + table + 'This table represents September 27, 2026, South Carolina winners ONLY'
+        report = module.parse_powerball_xo(raw)[0]
+        self.assertEqual(report['reportedWinners'], 10)
+        self.assertEqual(report['tiers'][1][1], '$500')
+        self.assertIsNone(report['reportedPayout'])
+        with self.assertRaises(ValueError):
+            module.parse_powerball_xo(raw.replace('<td>10</td>', '<td>11</td>'))
+
+    def test_palmetto_columns_are_not_added(self):
+        table = self.table(['Match', 'Prizes', 'Winners', 'Total'], ['Match 5', 'Match 4', 'Match 3', 'Match 2'], [[0, 0], [1, 1], [2, 2], [3, 3]], [6, 6])
+        raw = '<div class="text-center lightblue-bg">September 30, 2026</div>' + table
+        report = module.parse_palmetto(raw)[0]
+        self.assertEqual(report['reportedWinners'], 6)
+        self.assertIsNone(report['reportedPayout'])
+        with self.assertRaises(ValueError):
+            module.parse_palmetto(raw.replace('<td>6</td>', '<td>7</td>'))

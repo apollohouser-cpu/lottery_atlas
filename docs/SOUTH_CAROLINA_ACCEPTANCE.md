@@ -176,3 +176,21 @@ This is staged data, not an app report release: remaining national/state games,
 the report view, transactional refresh and public report publication still need
 integration. The existing retailer feed remains separate and unchanged. No new
 agency response, state acceptance or deadline change.
+
+## October 1 additional draw parsers (00:00 ET session)
+
+Extended staged reports to Powerball Xs & Os and Palmetto Cash 5: 12 reports
+across three games. Latest counts reconcile to 1,773 for Xs & Os September 27
+and 6,911 for Palmetto September 30. Exact tier names, columns, totals, date order
+and per-game non-regression are checked. Xs & Os requires a matching SC scope
+date; its historical tier values are preserved. Palmetto's Winners and Total
+columns must agree and are never added together; payout remains unknown.
+Eight parser regressions pass. An initial strict span matcher rejected the Xs &
+Os page's class attribute without overwriting prior data; it now accepts span
+attributes while retaining date/scope validation.
+
+Regular Powerball variants, Pick 3/4 FIREBALL sessions and CASH POP remain to be
+implemented, followed by app/report publication integration and native checks.
+Publisher 36808635720 succeeded at the opening check, with no new agency reply.
+The staged reports are not yet exposed as a completed app feature. Deadline
+remains October 3 at 17:03 ET.

@@ -22,7 +22,7 @@ def parse_mega_millions(raw):
     if not sections:
         raise ValueError('Missing draw results')
     for section in sections:
-        date = re.search(r'<span>(\d+/\d+/\d+)</span>', section)
+        date = re.search(r'<span\b[^>]*>(\d+/\d+/\d+)</span>', section)
         table = re.search(r'<table[^>]*>(.*?)</table>', section, re.S)
         scope = re.search(r'This table represents (.*?), South Carolina winners ONLY', section)
         if not date or not table or not scope:
@@ -53,3 +53,68 @@ def parse_mega_millions(raw):
     if len(set(dates)) != len(dates) or dates != sorted(dates, reverse=True):
         raise ValueError('Duplicate or unordered draws')
     return reports
+
+XO_SOURCE = 'https://www.sceducationlottery.com/Games/PowerballXO'
+PALMETTO_SOURCE = 'https://www.sceducationlottery.com/Games/PalmettoCash5'
+
+
+def _count_table(table, headers, tier_names, count_columns):
+    actual = [clean(x) for x in re.findall(r'<th[^>]*>(.*?)</th>', table, re.S)]
+    if actual != headers:
+        raise ValueError('Unexpected report columns')
+    rows = [[clean(c) for c in re.findall(r'<td\b[^>]*>(.*?)</td>', row, re.S)] for row in re.findall(r'<tr[^>]*>(.*?)</tr>', table, re.S)]
+    rows = [r for r in rows if r]
+    if len(rows) != len(tier_names) + 1 or any(len(r) != len(headers) for r in rows):
+        raise ValueError('Incomplete report rows')
+    if [r[0] for r in rows[:-1]] != tier_names or rows[-1][0] != 'Total Winning Tickets':
+        raise ValueError('Unexpected tiers')
+    for column in count_columns:
+        if sum(count(r[column]) for r in rows[:-1]) != count(rows[-1][column]):
+            raise ValueError('Tier counts do not reconcile')
+    if len(count_columns) == 2 and any(count(r[count_columns[0]]) != count(r[count_columns[1]]) for r in rows):
+        raise ValueError('Winner and total columns differ')
+    return rows
+
+
+def _finish_reports(reports):
+    dates = [r['drawDate'] for r in reports]
+    if not dates or dates != sorted(set(dates), reverse=True):
+        raise ValueError('Missing, duplicate or unordered draws')
+    return reports
+
+
+def _report(game, day, source, headers, rows, note):
+    return {'gameName': game, 'drawDate': day.isoformat(), 'drawingSession': None,
+            'sourceUrl': source, 'sourcePublicationDate': None, 'headers': headers,
+            'tiers': rows[:-1], 'reportedTotals': rows[-1],
+            'reportedWinners': count(rows[-1][-1]), 'reportedPayout': None,
+            'tableNote': note + ' Statewide only; no retailer or county allocation. Do not add to claim counts.'}
+
+
+def parse_powerball_xo(raw):
+    reports = []
+    for section in raw.split('<div class="drawResultsaccordion">')[1:]:
+        date = re.search(r'<span\b[^>]*>(\d+/\d+/\d+)</span>', section)
+        table = re.search(r'<table[^>]*>(.*?)</table>', section, re.S)
+        scope = re.search(r'This table represents (.*?), South Carolina winners ONLY', section)
+        if not date or not table or not scope:
+            raise ValueError('Missing Xs and Os provenance')
+        day = datetime.strptime(date[1], '%m/%d/%Y').date()
+        if datetime.strptime(clean(scope[1]), '%B %d, %Y').date() != day:
+            raise ValueError('Xs and Os date mismatch')
+        headers = ['Match', 'Powerball Xs & 0s™ Prizes', 'Total Winners']
+        rows = _count_table(table[1], headers, ['Jackpot (Match 8)', 'Match 7', 'Match 6', 'Match 5', 'Match 4'], [2])
+        reports.append(_report('Powerball Xs & Os', day, XO_SOURCE, headers, rows,
+            'Prize amounts are preserved as published for each drawing, including historical variations. Exact payout is not established.'))
+    return _finish_reports(reports)
+
+
+def parse_palmetto(raw):
+    reports = []
+    for date, table in re.findall(r'<div class="text-center lightblue-bg">\s*([A-Za-z]+ \d+, \d{4})\s*</div>.*?<table class="small-table">(.*?)</table>', raw, re.S):
+        day = datetime.strptime(date, '%B %d, %Y').date()
+        headers = ['Match', 'Prizes', 'Winners', 'Total']
+        rows = _count_table(table, headers, ['Match 5', 'Match 4', 'Match 3', 'Match 2'], [2, 3])
+        reports.append(_report('Palmetto Cash 5', day, PALMETTO_SOURCE, headers, rows,
+            'Source-listed tier amounts retained. Multiplier distribution and exact payout are not supplied; winner and total columns are not added together.'))
+    return _finish_reports(reports)
