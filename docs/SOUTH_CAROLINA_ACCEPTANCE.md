@@ -240,3 +240,20 @@ Publisher 36825827761 was successful at opening, with no new agency reply.
 All game parsers now exist, but report UI, cached/bundled loading, transactional
 refresh/public publication and native acceptance still remain. This is not yet
 release or testing-readiness acceptance. October 3 at 17:03 ET remains the deadline.
+
+## October 1 report UI and publication integration (04:00 ET session)
+
+Added South Carolina statewide draw reports from the state screen, with game,
+draw date/session, official source link, source-specific columns/limitations and
+retrieval metadata. Report data is separate from retailer claims. CASH POP shows
+session totals, Pick reports retain the 50-cent wager limitation, and Powerball
+variant columns stay separate. The loader requires SC provenance and all seven
+games, uses valid cache on network failure, and has a bundled baseline.
+
+The SC refresh transaction now includes draw reports alongside daily Scratch
+and rolling claims. The publisher stages south_carolina_draw_reports.json and
+preserves previous state outputs on importer failure. Loader and compact/larger
+widget tests pass; changed-file analysis is clean. Nineteen parser tests remain
+passing. Live publication and actual native interactions still require verification;
+widget layout tests do not constitute native acceptance. State remains unaccepted.
+Publisher 36828045793 succeeded at opening; no new agency reply or deadline change.

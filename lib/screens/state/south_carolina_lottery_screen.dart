@@ -1,3 +1,4 @@
+import '../../widgets/map/south_carolina_prize_tables_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -157,6 +158,16 @@ class SouthCarolinaLotteryScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
+          FilledButton.icon(
+            icon: const Icon(Icons.table_chart_outlined),
+            label: const Text('Statewide draw reports'),
+            onPressed: () => showModalBottomSheet<void>(
+              context: context,
+              isScrollControlled: true,
+              builder: (_) => const SouthCarolinaPrizeTablesSheet(),
+            ),
+          ),
+          const SizedBox(height: 12),
           const Text(
             'DRAW GAMES — MAP FILTERS & SCHEDULE',
             style: TextStyle(
