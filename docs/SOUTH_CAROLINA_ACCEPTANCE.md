@@ -461,3 +461,22 @@ already-recorded Ohio/Washington messages. Scratch fallback/retailer limitations
 and offline/reconnect summary boxes now reflect accumulated native evidence.
 Remaining integrated map/filter/detail checks and release decision are pending;
 SC is not accepted, and the October 3 17:03 ET deadline is unchanged.
+
+## October 1 native date/county/claim-source flow (16:00 ET session)
+
+At compact 800×632 logical size, used Show all SC activity on map and observed
+October 1 scoped empty state. Changed the calendar to September 30: the map
+showed 91 matching records and source-date-only/time-unavailable labeling.
+Selected Horry from county ranking (11 reported winning tickets), then MYRTLE
+BEACH (7), then Circle K Stores #2708114 (ranked aggregate 2). The opened
+individual Pick 4 claim detail showed one winning ticket, September 30 CLAIM
+DATE, $3K, retailer address 6501 N Kings Hwy, and the explicit statement that
+draw date/time are not supplied and only mapped claims of at least $500 appear.
+The source button opened the official SC WinnersReport page in Chrome. Returning
+to the app retained the claim detail. No crash was observed.
+
+This advances date navigation, county/city/retailer drilldown and claim-source
+checks; it does not close remaining game/prize reset and integrated navigation
+checks. Opening repository was clean, publisher 36908045746 remained successful,
+and mail contained no new agency reply beyond previously recorded messages.
+South Carolina remains unaccepted; deadline unchanged.
