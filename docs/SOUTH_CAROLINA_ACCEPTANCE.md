@@ -495,3 +495,21 @@ remain pending; no state acceptance or deadline change.
 Opening repository was clean and publisher 36908045746 remained successful.
 Michigan's new fee-conditioned response is recorded separately and does not
 block South Carolina work.
+
+## October 1 native prize exclusion/reset (18:00 ET session)
+
+At 800×632 logical size, opened the map Game filter sheet and scrolled to Prize
+Amount. Dragged the lower bound from $1 to displayed $11.1M, preserving the $60M
+upper bound, and applied. September 30 then showed zero mapped SC records and
+an explicit scoped-empty message. Reopened the sheet, dragged the lower bound
+back to $1, and applied: 91 mapped records returned with September 30 unchanged.
+The retained retailer ranking again displayed two Pick 4 records. No crash was
+observed. The sheet's accessibility tree did not refresh during this flow;
+visible screenshots and coordinate interactions established the result, and the
+map accessibility tree updated on apply. No claim of full sheet accessibility
+verification is made.
+
+Opening publisher 36908045746 remained successful; mail was unchanged after the
+already-notified Michigan fee response. Prize exclusion/reset is now observed.
+Remaining integrated navigation/layout evidence must be reconciled before the
+release decision; SC remains active and unaccepted, deadline unchanged.
