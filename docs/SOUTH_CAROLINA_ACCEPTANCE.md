@@ -56,15 +56,15 @@ present starter records as a complete current retailer directory.
 
 - [x] National/state draw games and Scratch inventoried with official sources.
 - [x] Public available data separated from complete agency-records outcome.
-- [ ] Correct Xs and Os classification/filter, coverage wording and date semantics.
-- [ ] Integrate available statewide draw reports with source, date/session, tiers,
+- [x] Correct Xs and Os classification/filter, coverage wording and date semantics.
+- [x] Integrate available statewide draw reports with source, date/session, tiers,
       cadence and limitations; validate totals and preserve prior data on failure.
 - [ ] Verify Scratch catalog/fallback and retailer route limitations.
 - [ ] Test state/county/game/prize/date filtering, reset, empty states and sources.
 - [ ] Observe native layouts/interactions at 800×632 and 1280×900 logical sizes,
       including national and state draws, Scratch and directory/detail routes.
 - [ ] Verify offline/cache recovery and reconnection without fabricated freshness.
-- [ ] Appropriate automated checks, build and independent live-file verification.
+- [x] Appropriate automated checks, build and independent live-file verification.
 - [ ] Record supported-coverage release decision by the deadline.
 
 September 30 opening check: clean repository, latest publisher 36759391265
@@ -424,3 +424,21 @@ no claims of precise retailer availability are made.
 Publisher 36863104549 remains successful. Washington delivered an early retailer
 workbook; receipt is recorded separately, contents not yet audited or published.
 Remaining SC offline and integrated map checks continue without a deadline change.
+
+## October 1 native request-failure probe (14:00 ET session)
+
+Built the preserved private work/native_offline_check/main.dart harness, which
+routes Dart HttpClient requests through unavailable localhost proxy port 9, and
+relaunched the native app. SC draw reports retained Mega Millions September 29,
+10,193 winners and the original October 1 07:01 UTC retrieval metadata. Scratch
+finder explicitly showed SAVED SOUTH CAROLINA SNAPSHOT with publication September
+30, claims September 29, 31 games and 121,051 daily claims, separate from 5,336
+retained rolling map records. No fabricated fresh source date or crash observed.
+This is a Dart request-failure/cache check, not a claim that OS networking was off.
+
+Reconciled already-completed implementation and automated/live checks in the
+summary checklist. Reconnection and remaining integrated map flows are still
+required before acceptance. Opening publisher unchanged/successful; no new agency
+reply beyond previously recorded Ohio/Washington messages. Deadline unchanged.
+Ordinary lib/main.dart debug build passed and was relaunched after ending the
+probe. Native reconnection data verification remains for the next unchecked flow.
