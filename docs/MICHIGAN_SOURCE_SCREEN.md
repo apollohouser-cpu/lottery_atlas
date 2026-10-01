@@ -105,3 +105,20 @@ count and the visible unavailable-inventory note. Live activity and retailer
 feeds also match the new successful snapshot. Michigan is ready to test the
 missing-inventory behavior; no complete winning-ticket or retailer coverage is
 implied. The same run also published Idaho's expanded 34-game catalog.
+
+## October 1 fee-conditioned response
+
+Agency message 1a0f921b6718124e supplied Fee Letter - Houser 10-1-26.pdf
+(185,220 bytes) and Fee Calculation Houser.pdf (85,136 bytes). The letter quotes
+an estimated $3,471.30 total and requires a $1,735.65 deposit before processing.
+The itemization lists $2,970.06 search/examination labor and $501.24 review/
+separation labor. These are estimates, not guaranteed final costs or delivery.
+The letter offers discussion of narrowing/modifying the request and points to
+existing public game, unclaimed-prize, big-winner and retailer-search pages.
+
+No fees are authorized; paid processing remains on hold. No payment, acceptance
+of fees or paid-work authorization was sent. User notified. This is a fee
+response, not a records delivery or Michigan activation. A bounded no-fee scope
+clarification remains possible; existing public sources remain usable. Full
+attachment archival/audit remains pending; receipt and quoted fee terms were
+read from the connector extraction.

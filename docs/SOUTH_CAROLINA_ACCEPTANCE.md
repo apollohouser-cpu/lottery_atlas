@@ -480,3 +480,18 @@ checks; it does not close remaining game/prize reset and integrated navigation
 checks. Opening repository was clean, publisher 36908045746 remained successful,
 and mail contained no new agency reply beyond previously recorded messages.
 South Carolina remains unaccepted; deadline unchanged.
+
+## October 1 native national-game filter/reset (17:00 ET session)
+
+Dismissed the retained Circle K claim detail and opened Change South Carolina
+game. All seven draw choices, including Xs and Os, were present. Selecting
+Powerball on September 30 produced the explicit scoped-empty map and ranking
+state (zero mapped records, not a claim of zero statewide winners). Selecting
+All South Carolina activity restored 91 mapped records without changing the
+date. The retained retailer ranking again showed its two Pick 4 records. No
+crash observed. Prize reset and remaining integrated navigation verification
+remain pending; no state acceptance or deadline change.
+
+Opening repository was clean and publisher 36908045746 remained successful.
+Michigan's new fee-conditioned response is recorded separately and does not
+block South Carolina work.
