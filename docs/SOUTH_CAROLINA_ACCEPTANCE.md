@@ -296,3 +296,21 @@ payout. This is selection/semantics evidence; remaining game selections and larg
 window checks are not implied. No crash was observed. No source changes or repeat
 build/tests were needed. Integrated state acceptance remains pending, deadline
 October 3 at 17:03 ET unchanged.
+
+## October 1 remaining compact draw selections (07:00 ET session)
+
+Repository clean, publisher 36833941360 successful, no new agency reply at opening.
+Continued the retained 800×632 native report sheet. Actual dropdown selection of
+Pick 4 September 30 Evening exposed all 13 play types and base/FIREBALL/combined
+counts 102 / 108 / 210, with the 50-cent-wager limitation. Scrolling the dropdown
+up reached Powerball Xs & Os September 27; selection exposed its five tiers and
+1,773 total, with historical amounts preserved and payout explicitly unknown.
+Selected Palmetto Cash 5 September 30: four tiers and 6,911 total, with duplicate
+winner/total columns explicitly not summed and multiplier/payout limitations.
+No crash was observed. Together with prior sessions, one native report selection
+for every supported draw game has now been observed in the compact window.
+This does not imply every date/session or larger-window/offline acceptance.
+
+Next unchecked work remains larger-window reports, Scratch/filter/map and offline
+flows, and retained retailer provenance. No source edits or unchanged test reruns.
+South Carolina remains unaccepted; October 3 at 17:03 ET deadline unchanged.
