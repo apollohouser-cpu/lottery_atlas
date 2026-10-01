@@ -457,7 +457,8 @@
   {
     "state": "South Carolina",
     "outputs": [
-      "data/south_carolina_current_winner_activity.generated.json"
+      "data/south_carolina_current_winner_activity.generated.json",
+      "data/south_carolina_daily_scratch.generated.json"
     ],
     "commands": [
       [
@@ -466,6 +467,11 @@
         "tooling/import_south_carolina_winners_report.dart",
         "--output",
         "data/south_carolina_current_winner_activity.generated.json"
+      ],
+      [
+        "python3",
+        "tooling/import_south_carolina_daily_scratch.py",
+        "data/south_carolina_daily_scratch.generated.json"
       ]
     ]
   },

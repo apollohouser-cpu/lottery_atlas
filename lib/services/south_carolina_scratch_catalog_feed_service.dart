@@ -16,7 +16,7 @@ class SouthCarolinaScratchCatalogFeedService {
   static const String _feedUrl = String.fromEnvironment(
     'SOUTH_CAROLINA_SCRATCH_FEED_URL',
     defaultValue:
-        'https://lottery-atlas-activity-feed.apollohouser.chatgpt.site/south-carolina-scratch-offs.json',
+        'https://apollohouser-cpu.github.io/lottery_atlas/south_carolina_daily_scratch.json',
   );
   static const String _cacheKey = 'lottery_atlas.sc_scratch_catalog.v1';
   static final SharedPreferencesAsync _store = SharedPreferencesAsync();
@@ -58,7 +58,8 @@ class SouthCarolinaScratchCatalogFeedService {
     }
   }
 
-  static Future<SouthCarolinaScratchCatalogSnapshot?> _restoreCachedSnapshot() async {
+  static Future<SouthCarolinaScratchCatalogSnapshot?>
+  _restoreCachedSnapshot() async {
     try {
       final rawCache = await _store.getString(_cacheKey);
       if (rawCache == null || rawCache.isEmpty) return null;
@@ -117,6 +118,7 @@ class SouthCarolinaScratchCatalogFeedService {
     }
 
     return SouthCarolinaScratchCatalogSnapshot(
+      claimDate: DateTime.tryParse(root['claimDate']?.toString() ?? ''),
       games: List.unmodifiable(games),
       updatedAt: updatedAt,
       sourceUrl: sourceUrl,
@@ -130,6 +132,7 @@ class SouthCarolinaScratchCatalogFeedService {
 
 class SouthCarolinaScratchCatalogSnapshot {
   const SouthCarolinaScratchCatalogSnapshot({
+    this.claimDate,
     required this.games,
     required this.updatedAt,
     required this.sourceUrl,
@@ -141,6 +144,7 @@ class SouthCarolinaScratchCatalogSnapshot {
 
   final List<SouthCarolinaScratchGame> games;
   final DateTime updatedAt;
+  final DateTime? claimDate;
   final String sourceUrl;
   final bool isPublished;
   final bool isCached;

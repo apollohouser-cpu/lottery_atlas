@@ -137,3 +137,22 @@ Two regressions cover exclusion of approximate starter records and mixed-feed
 retention of address rows. Publisher 36797307567 was successful at the opening
 check; no new agency reply. Scratch refresh and statewide draw integration remain
 open. No change to the October 3 release-decision deadline.
+
+## September 30 daily Scratch refresh implementation (22:00 ET session)
+
+Added a maintained official DailyInstantWinners importer and a baseline for
+September 29 claims, published by SCEL September 30 at 10:00:03 EDT: 31 grouped
+titles. Payout arithmetic, table boundaries, integer values, source dates and
+regressing claim days are validated. Duplicate source titles retain summed tier
+counts and the number of grouped source entries. Output is written only after
+validation. This snapshot is statewide daily claims, not remaining inventory,
+retailer totals or a current sales catalog.
+
+The existing South Carolina transaction now includes this output, preserving its
+previous file alongside the rolling claims file if either importer fails. The
+publisher stages south_carolina_daily_scratch.json; the app uses that GitHub Pages
+URL instead of the HTTP403 endpoint and exposes claim day separately from source
+publication date. Cached failures retain both dates. Five parser regressions and
+a Flutter network-failure/cache regression pass. Analysis reports two existing
+string-interpolation infos in the Scratch screen. Live publication and native
+checks remain pending; statewide draw reports remain the next implementation gap.

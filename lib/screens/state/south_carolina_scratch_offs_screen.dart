@@ -414,7 +414,7 @@ class _SourceCard extends StatelessWidget {
             ),
             const SizedBox(width: 7),
             Text(
-              'Snapshot: ${_formatSnapshotDate(snapshot.updatedAt)}',
+              'Published: ${_formatSnapshotDate(snapshot.updatedAt)}',
               style: const TextStyle(
                 color: Color(0xFFBFDBFE),
                 fontSize: 12,
@@ -424,6 +424,13 @@ class _SourceCard extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 9),
+        if (snapshot.claimDate != null) ...[
+          Text(
+            'Claims for: ${_formatSnapshotDate(snapshot.claimDate!)}',
+            style: const TextStyle(color: Color(0xFFBFDBFE)),
+          ),
+          const SizedBox(height: 9),
+        ],
         if (snapshot.duplicateGames > 0 || snapshot.rejectedGames > 0) ...[
           Text(
             '${snapshot.games.length} valid games loaded'
