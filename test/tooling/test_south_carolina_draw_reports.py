@@ -91,3 +91,34 @@ class CashPopTest(unittest.TestCase):
     def test_invalid_payout_rejected(self):
         with self.assertRaises(ValueError):
             module.parse_cash_pop(self.fixture(payout='$-50.25'))
+
+class PowerballTest(unittest.TestCase):
+    def fixture(self):
+        import json
+        root = Path(__file__).parents[2]
+        report = next(r for r in json.loads((root / 'data/south_carolina_draw_reports.generated.json').read_text())['reports'] if r['gameName'] == 'Powerball')
+        from datetime import date
+        day = date.fromisoformat(report['drawDate'])
+        heading = f'<div class="drawResultsaccordion"><span>{day.month}/{day.day}/{day.year}</span>'
+        table = '<table><tr>' + ''.join('<th>' + h + '</th>' for h in report['headers']) + '</tr>'
+        for row in [*report['tiers'], report['reportedTotals']]:
+            table += '<tr>' + ''.join('<td>' + c + '</td>' for c in row) + '</tr>'
+        return heading + table + '</table>This table represents ' + day.strftime('%B %d, %Y') + ', South Carolina winners ONLY', report
+
+    def test_variant_counts_reconcile_without_inferred_payout(self):
+        raw, source = self.fixture()
+        report = module.parse_powerball(raw)[0]
+        self.assertEqual(report['variantWinners'], source['variantWinners'])
+        self.assertEqual(sum(report['variantWinners'].values()), report['reportedWinners'])
+        self.assertIsNone(report['reportedPayout'])
+        self.assertEqual(report['tiers'][0][2], '--')
+
+    def test_dash_outside_jackpot_rejected(self):
+        raw, _ = self.fixture()
+        with self.assertRaises(ValueError):
+            module.parse_powerball(raw.replace('<td>0</td>', '<td>--</td>', 1))
+
+    def test_row_mismatch_rejected(self):
+        raw, _ = self.fixture()
+        with self.assertRaises(ValueError):
+            module.parse_powerball(raw.replace('<td>0</td>', '<td>1</td>', 1))

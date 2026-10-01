@@ -210,3 +210,18 @@ session and malformed payout rejection.
 Publisher 36813266540 succeeded at opening; no new agency response. Powerball
 variants, Pick 3/4 FIREBALL, app integration and native verification remain open.
 Staged reports are not public app coverage yet. No deadline change.
+
+## October 1 Powerball variant parser (02:00 ET session)
+
+Added five official Powerball reports, bringing staged coverage to 23 reports
+across five games. September 30 reports base 5,627, Power Play 4,054 and Double
+Play 2,796, matching the source combined 12,477. These columns remain separate;
+the combined total is explicitly not a base-only Powerball count. Only the
+jackpot Power Play `--` is treated as inapplicable for reconciliation; missing
+counts elsewhere are rejected. Every tier row, column total, tier label, header,
+multiplier and scope date is validated. Payout remains null.
+
+Fifteen parser tests pass, including row mismatch and misplaced-dash rejection.
+Publisher 36817870135 succeeded at opening; no new agency reply. Pick 3/4 FIREBALL
+sessions, app/report publication integration and native checks remain pending.
+Deadline is unchanged; this staged work is not release acceptance.

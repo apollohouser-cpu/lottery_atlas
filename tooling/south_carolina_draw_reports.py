@@ -157,3 +157,40 @@ def parse_cash_pop(raw):
     if not keys or keys != sorted(set(keys), reverse=True):
         raise ValueError('Missing, duplicate or unordered CASH POP sessions')
     return reports
+
+POWERBALL_SOURCE = 'https://www.sceducationlottery.com/Games/Powerball'
+
+
+def parse_powerball(raw):
+    reports = []
+    labels = ['Jackpot(Match 5 + Powerball®)', 'Match 5', 'Match 4 + Powerball®', 'Match 4', 'Match 3 + Powerball®', 'Match 3', 'Match 2 + Powerball®', 'Match 1 + Powerball®', 'Match Powerball® Only']
+    for section in raw.split('<div class="drawResultsaccordion">')[1:]:
+        date = re.search(r'<span\b[^>]*>(\d+/\d+/\d+)</span>', section)
+        table = re.search(r'<table[^>]*>(.*?)</table>', section, re.S)
+        scope = re.search(r'This table represents (.*?), South Carolina winners ONLY', section)
+        if not date or not table or not scope:
+            raise ValueError('Missing Powerball provenance')
+        day = datetime.strptime(date[1], '%m/%d/%Y').date()
+        if datetime.strptime(clean(scope[1]), '%B %d, %Y').date() != day:
+            raise ValueError('Powerball date mismatch')
+        headers = [clean(x) for x in re.findall(r'<th[^>]*>(.*?)</th>', table[1], re.S)]
+        if len(headers) != 5 or headers[:2] != ['Match', 'Powerball® Winners Without PowerPlay®'] or headers[3:] != ['Double Play® Winners', 'Total Winners'] or not re.fullmatch(r'Powerball® Winners with PowerPlay® \(x(?:2|3|4|5|10)\)', headers[2]):
+            raise ValueError('Unexpected Powerball columns')
+        rows = [[clean(c) for c in re.findall(r'<td\b[^>]*>(.*?)</td>', row, re.S)] for row in re.findall(r'<tr[^>]*>(.*?)</tr>', table[1], re.S)]
+        rows = [r for r in rows if r]
+        if len(rows) != 10 or any(len(r) != 5 for r in rows) or [r[0] for r in rows[:-1]] != labels or rows[-1][0] != 'Total Winning Tickets':
+            raise ValueError('Unexpected Powerball tiers')
+        values = []
+        for i, row in enumerate(rows):
+            # Jackpot Power Play is explicitly inapplicable, not missing data.
+            nums = [0 if i == 0 and col == 2 and value == '--' else count(value) for col, value in enumerate(row[1:], start=1)]
+            if sum(nums[:3]) != nums[3]:
+                raise ValueError('Powerball row variants do not reconcile')
+            values.append(nums)
+        if any(sum(row[col] for row in values[:-1]) != values[-1][col] for col in range(4)):
+            raise ValueError('Powerball column totals do not reconcile')
+        report = _report('Powerball', day, POWERBALL_SOURCE, headers, rows,
+            'Base play, Power Play and Double Play are separate source columns. The published combined total includes Double Play; it is not a base Powerball-only count. Jackpot Power Play dash means not applicable. Exact payout is not supplied.')
+        report['variantWinners'] = dict(zip(['base', 'powerPlay', 'doublePlay'], values[-1][:3]))
+        reports.append(report)
+    return _finish_reports(reports)
