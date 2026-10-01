@@ -314,3 +314,22 @@ This does not imply every date/session or larger-window/offline acceptance.
 Next unchecked work remains larger-window reports, Scratch/filter/map and offline
 flows, and retained retailer provenance. No source edits or unchanged test reruns.
 South Carolina remains unaccepted; October 3 at 17:03 ET deadline unchanged.
+
+## October 1 larger-window report and Scratch freshness (08:00 ET session)
+
+Opening repository clean, publisher 36833941360 successful, no new agency reply.
+Resized the running native app to 1280×900 logical (2560×1800 screenshot).
+Palmetto report retained its selection and displayed all four tiers, total 6,911,
+limitations, retrieval footer and source button without a crash or overflow.
+Closed the sheet and opened Scratch-Off prize tiers. Native header correctly
+showed publication September 30 and claims September 29, 31 grouped games and
+121,051 daily claims, separately from 5,281 matching published map records.
+
+Found an actual stale-date defect: each game card still called those claims
+"yesterday" on October 1. Changed the card text to "for this daily snapshot",
+which uses the dated header's scope and remains true for retained/cache data.
+Changed-file analysis has only the two existing interpolation infos. Native
+verification of the rebuilt wording remains pending; this is not SC acceptance.
+Remaining Scratch/filter/map/offline and retailer-provenance work is unchanged.
+MacOS debug build passed for the wording correction. October 3 at 17:03 ET remains
+the release-decision deadline; no new acceptance prerequisites were added.

@@ -756,7 +756,7 @@ class _ScratchGameCard extends StatelessWidget {
           ),
           const SizedBox(height: 11),
           Text(
-            '$claims prize claims in the selected range yesterday',
+            '$claims prize claims in the selected range for this daily snapshot',
             style: const TextStyle(color: Colors.white70, fontSize: 12),
           ),
           const SizedBox(height: 9),
