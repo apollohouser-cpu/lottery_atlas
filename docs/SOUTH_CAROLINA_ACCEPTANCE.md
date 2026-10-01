@@ -120,3 +120,20 @@ locations or an explicit non-map address list. No invented replacement locations
 
 No new agency response was found. Statewide draw-report integration remains
 open, with the original October 3 at 17:03 ET release decision unchanged.
+
+
+## September 30 retailer-position correction (21:00 ET session)
+
+The retained retailer subset is mixed: some entries have cityLevelPlacement=true,
+while its later address-level entries are marked false. This clarifies the prior
+fallback audit; not every starter row is approximate. Added a shared mappable
+subset that excludes city-level positions from map pins and nearby-distance
+results. The address list remains intact, and map-action counts use only eligible
+positions. Saved approximate-retailer navigation opens details without a store
+zoom. Native verification and provenance review of retained address-level entries
+remain pending; this change does not certify every existing coordinate.
+
+Two regressions cover exclusion of approximate starter records and mixed-feed
+retention of address rows. Publisher 36797307567 was successful at the opening
+check; no new agency reply. Scratch refresh and statewide draw integration remain
+open. No change to the October 3 release-decision deadline.

@@ -167,7 +167,9 @@ class _SouthCarolinaRetailersScreenState
           ),
           IconButton(
             tooltip: 'Show on map',
-            onPressed: _showOnMap,
+            onPressed: SouthCarolinaRetailerRepository.mappableRetailers.isEmpty
+                ? null
+                : _showOnMap,
             icon: const Icon(Icons.map_outlined),
           ),
         ],
@@ -203,7 +205,7 @@ class _SouthCarolinaRetailersScreenState
                 ),
                 const SizedBox(height: 8),
                 const Text(
-                  'Map pins are city-level until each retailer address has been verified and geocoded.',
+                  'City-level starter positions are excluded from store pins and nearby distances. Addresses remain available below.',
                   style: TextStyle(
                     color: Color(0xFF93C5FD),
                     fontSize: 12,
@@ -275,10 +277,13 @@ class _SouthCarolinaRetailersScreenState
           SizedBox(
             width: double.infinity,
             child: FilledButton.icon(
-              onPressed: _showOnMap,
+              onPressed:
+                  SouthCarolinaRetailerRepository.mappableRetailers.isEmpty
+                  ? null
+                  : _showOnMap,
               icon: const Icon(Icons.storefront_rounded),
               label: Text(
-                'Show ${SouthCarolinaRetailerRepository.retailers.length} locations on map',
+                'Show ${SouthCarolinaRetailerRepository.mappableRetailers.length} verified positions on map',
               ),
               style: FilledButton.styleFrom(
                 backgroundColor: const Color(0xFF1478FF),

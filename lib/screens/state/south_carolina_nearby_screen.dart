@@ -80,7 +80,7 @@ class _SouthCarolinaNearbyScreenState extends State<SouthCarolinaNearbyScreen> {
     final normalizedQuery = _normalize(query);
     final candidates = <_NearbySearchOrigin>[];
 
-    for (final retailer in SouthCarolinaRetailerRepository.retailers) {
+    for (final retailer in SouthCarolinaRetailerRepository.mappableRetailers) {
       candidates.add(
         _NearbySearchOrigin(
           label: '${retailer.city}, SC',
@@ -147,7 +147,7 @@ class _SouthCarolinaNearbyScreenState extends State<SouthCarolinaNearbyScreen> {
     if (origin == null) return const <_NearbyRetailer>[];
 
     final results =
-        SouthCarolinaRetailerRepository.retailers
+        SouthCarolinaRetailerRepository.mappableRetailers
             .map(
               (retailer) => _NearbyRetailer(
                 retailer: retailer,
@@ -291,7 +291,9 @@ class _SouthCarolinaNearbyScreenState extends State<SouthCarolinaNearbyScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              '${retailers.length} closest reported claim locations',
+              retailers.isEmpty
+                  ? 'No address-level retailer positions are available in this subset. City-level starter records are excluded from distance results.'
+                  : '${retailers.length} closest reported claim locations',
               style: const TextStyle(color: Colors.white70),
             ),
             const SizedBox(height: 10),

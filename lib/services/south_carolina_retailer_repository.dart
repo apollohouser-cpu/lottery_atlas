@@ -21,6 +21,12 @@ class SouthCarolinaRetailerRepository {
 
   static List<SouthCarolinaRetailer> get retailers =>
       List<SouthCarolinaRetailer>.unmodifiable(_retailers);
+
+  /// Only address-level positions may become store pins or distance results.
+  static List<SouthCarolinaRetailer> get mappableRetailers => retailers
+      .where((retailer) => !retailer.cityLevelPlacement)
+      .toList(growable: false);
+
   static String get sourceLabel => _sourceLabel;
   static DateTime? get updatedAt => _updatedAt;
   static bool get isCached => _isCached;

@@ -1316,7 +1316,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     final scratchFilter = SouthCarolinaScratchMapFilterService.selection.value;
     final drawFilter = SouthCarolinaLotteryMapFilterService.selection.value;
 
-    return SouthCarolinaRetailerRepository.retailers
+    return SouthCarolinaRetailerRepository.mappableRetailers
         .where((retailer) {
           final matchesTimeline =
               !retailer.claimDate.isBefore(_filterState.dateRange.start) &&
@@ -1703,7 +1703,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   }
 
   Future<void> _showRetailerDetails(SouthCarolinaRetailer retailer) async {
-    _focusRetailer(retailer);
+    if (!retailer.cityLevelPlacement) _focusRetailer(retailer);
     final retailerFavorite = FavoritePlace(
       key: 'retailer:${retailer.id}',
       title: retailer.name,
@@ -1929,6 +1929,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   }
 
   void _focusRetailer(SouthCarolinaRetailer retailer) {
+    if (retailer.cityLevelPlacement) {
+      _showRetailerDetails(retailer);
+      return;
+    }
     if (!SouthCarolinaRetailerMapService.isVisible.value) {
       SouthCarolinaRetailerMapService.show();
     }
