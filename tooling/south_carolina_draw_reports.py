@@ -194,3 +194,46 @@ def parse_powerball(raw):
         report['variantWinners'] = dict(zip(['base', 'powerPlay', 'doublePlay'], values[-1][:3]))
         reports.append(report)
     return _finish_reports(reports)
+
+PICK_SOURCES = {n: f'https://www.sceducationlottery.com/Games/Pick{n}' for n in (3, 4)}
+
+
+def parse_pick(raw, digits):
+    if digits not in PICK_SOURCES:
+        raise ValueError('Unsupported Pick game')
+    ways = [3, 6] if digits == 3 else [4, 6, 12, 24]
+    labels = ['Straight'] + [f'{w}-Way Box' for w in ways] + [f'Straight/Box {w}-Way' for w in ways] + [f'{w}-Way Combo' for w in ways]
+    if digits == 3:
+        labels += ['Front Pair', 'Back Pair']
+    headers = ['Play Type', 'Base Game Winners', 'Base Game Odds', 'Fireball Winners', 'Fireball Odds', 'Total']
+    reports, keys = [], []
+    for section in raw.split('<div class="drawResultsaccordion">')[1:]:
+        table = re.search(r'<table\b[^>]*>(.*?)</table>', section, re.S)
+        if not table:
+            raise ValueError('Missing Pick table')
+        heading = clean(section[:table.start()])
+        date = re.search(r'([A-Za-z]+ \d+, \d{4})', heading)
+        sessions = re.findall(r'\b(Midday|Evening)\b', heading)
+        if not date or len(sessions) != 1 or 'Number of winners based on 50¢ wagers.' not in clean(section):
+            raise ValueError('Missing Pick date, session or wager basis')
+        day = datetime.strptime(date[1], '%B %d, %Y').date()
+        actual = [clean(x) for x in re.findall(r'<th[^>]*>(.*?)</th>', table[1], re.S)]
+        rows = [[clean(c) for c in re.findall(r'<td\b[^>]*>(.*?)</td>', row, re.S)] for row in re.findall(r'<tr[^>]*>(.*?)</tr>', table[1], re.S)]
+        rows = [r for r in rows if r]
+        if actual != headers or len(rows) != len(labels) + 1 or any(len(r) != 6 for r in rows) or [r[0] for r in rows] != labels + ['Total']:
+            raise ValueError('Unexpected Pick tiers or columns')
+        for row in rows:
+            if count(row[1]) + count(row[3]) != count(row[5]):
+                raise ValueError('Pick row count mismatch')
+        for col in (1, 3, 5):
+            if sum(count(r[col]) for r in rows[:-1]) != count(rows[-1][col]):
+                raise ValueError('Pick column count mismatch')
+        report = _report(f'Pick {digits} Plus FIREBALL', day, PICK_SOURCES[digits], headers, rows,
+            'Source winner counts are based on 50-cent wagers, not verified distinct tickets. Base and FIREBALL counts are separate; odds are not prize amounts. Payout is not supplied.')
+        report['drawingSession'] = sessions[0]
+        report['variantWinners'] = {'base': count(rows[-1][1]), 'fireball': count(rows[-1][3])}
+        reports.append(report)
+        keys.append((day.isoformat(), 1 if sessions[0] == 'Evening' else 0))
+    if not keys or keys != sorted(set(keys), reverse=True):
+        raise ValueError('Missing, duplicate or unordered Pick sessions')
+    return reports

@@ -4,13 +4,13 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import urlopen
-from south_carolina_draw_reports import MEGA_SOURCE, XO_SOURCE, PALMETTO_SOURCE, CASH_POP_SOURCE, POWERBALL_SOURCE, parse_powerball, parse_mega_millions, parse_powerball_xo, parse_palmetto, parse_cash_pop
+from south_carolina_draw_reports import PICK_SOURCES, parse_pick, MEGA_SOURCE, XO_SOURCE, PALMETTO_SOURCE, CASH_POP_SOURCE, POWERBALL_SOURCE, parse_powerball, parse_mega_millions, parse_powerball_xo, parse_palmetto, parse_cash_pop
 
 
 def main():
     output = Path(sys.argv[1])
     reports = []
-    for source, parser in [(MEGA_SOURCE, parse_mega_millions), (XO_SOURCE, parse_powerball_xo), (PALMETTO_SOURCE, parse_palmetto), (CASH_POP_SOURCE, parse_cash_pop), (POWERBALL_SOURCE, parse_powerball)]:
+    for source, parser in [(MEGA_SOURCE, parse_mega_millions), (XO_SOURCE, parse_powerball_xo), (PALMETTO_SOURCE, parse_palmetto), (CASH_POP_SOURCE, parse_cash_pop), (POWERBALL_SOURCE, parse_powerball), (PICK_SOURCES[3], lambda raw: parse_pick(raw, 3)), (PICK_SOURCES[4], lambda raw: parse_pick(raw, 4))]:
         with urlopen(source, timeout=45) as response:
             reports.extend(parser(response.read().decode('utf-8')))
     if output.exists():
@@ -21,7 +21,7 @@ def main():
             if after < before:
                 raise ValueError('Draw date regressed: ' + game)
     data = {'state': 'SC', 'retrievedAt': datetime.now(timezone.utc).isoformat(),
-            'coverage': 'Mega Millions, Powerball Xs & Os, Palmetto Cash 5 CASH POP and Powerball variant statewide reports; other SC games pending integration.', 'reports': reports}
+            'coverage': 'Recent official SC statewide reports for all seven supported draw games, with variants and sessions preserved. Not retailer claims.', 'reports': reports}
     temporary = output.with_suffix('.tmp')
     temporary.write_text(json.dumps(data, indent=2) + '\n')
     temporary.replace(output)

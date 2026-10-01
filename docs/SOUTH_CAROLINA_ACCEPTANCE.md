@@ -225,3 +225,18 @@ Fifteen parser tests pass, including row mismatch and misplaced-dash rejection.
 Publisher 36817870135 succeeded at opening; no new agency reply. Pick 3/4 FIREBALL
 sessions, app/report publication integration and native checks remain pending.
 Deadline is unchanged; this staged work is not release acceptance.
+
+## October 1 Pick 3/4 FIREBALL parsers (03:00 ET session)
+
+Added six sessions each for Pick 3 and Pick 4, bringing staged reports to 35
+across all seven supported draw games. Base/FIREBALL rows and totals reconcile
+independently, with exact play-type/column checks and date/session identity.
+The source explicitly bases these counts on 50-cent wagers; reports preserve
+that limitation and do not call them distinct tickets or infer payout from odds.
+Missing wager-basis text, duplicate sessions and count mismatches are rejected.
+Nineteen draw-parser tests pass.
+
+Publisher 36825827761 was successful at opening, with no new agency reply.
+All game parsers now exist, but report UI, cached/bundled loading, transactional
+refresh/public publication and native acceptance still remain. This is not yet
+release or testing-readiness acceptance. October 3 at 17:03 ET remains the deadline.

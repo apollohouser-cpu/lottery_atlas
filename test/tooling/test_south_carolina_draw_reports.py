@@ -122,3 +122,40 @@ class PowerballTest(unittest.TestCase):
         raw, _ = self.fixture()
         with self.assertRaises(ValueError):
             module.parse_powerball(raw.replace('<td>0</td>', '<td>1</td>', 1))
+
+class PickTest(unittest.TestCase):
+    def fixture(self, digits):
+        import json
+        from datetime import date
+        root = Path(__file__).parents[2]
+        report = next(r for r in json.loads((root / 'data/south_carolina_draw_reports.generated.json').read_text())['reports'] if r['gameName'] == f'Pick {digits} Plus FIREBALL')
+        day = date.fromisoformat(report['drawDate'])
+        raw = '<div class="drawResultsaccordion"><span>' + day.strftime('%B %d, %Y') + '</span><div>' + report['drawingSession'] + '</div><table><tr>' + ''.join('<th>' + h + '</th>' for h in report['headers']) + '</tr>'
+        for row in [*report['tiers'], report['reportedTotals']]:
+            raw += '<tr>' + ''.join('<td>' + c + '</td>' for c in row) + '</tr>'
+        return raw + '</table>Number of winners based on 50&cent; wagers.', report
+
+    def test_both_games_preserve_wager_basis_and_variants(self):
+        for digits in (3, 4):
+            raw, source = self.fixture(digits)
+            report = module.parse_pick(raw, digits)[0]
+            self.assertEqual(report['variantWinners'], source['variantWinners'])
+            self.assertIn('50-cent', report['tableNote'])
+            self.assertIsNone(report['reportedPayout'])
+
+    def test_missing_wager_basis_rejected(self):
+        raw, _ = self.fixture(3)
+        with self.assertRaises(ValueError):
+            module.parse_pick(raw.replace('50&cent;', 'unknown'), 3)
+
+    def test_duplicate_session_rejected(self):
+        raw, _ = self.fixture(4)
+        with self.assertRaises(ValueError):
+            module.parse_pick(raw * 2, 4)
+
+    def test_count_mismatch_rejected(self):
+        raw, _ = self.fixture(3)
+        import re
+        raw = re.sub(r'<td>\d[\d,]*</td>', '<td>999999</td>', raw, count=1)
+        with self.assertRaises(ValueError):
+            module.parse_pick(raw, 3)
