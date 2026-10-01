@@ -109,3 +109,14 @@ September 24: Tiffany Pringle says the vendor expects to respond to the agency D
 ### September 25 correspondence follow-through
 
 Sent September 25 follow-up 1a0da38852ec11aa acknowledging the January 18, 2027 estimated response date and asking whether separate agency-held records can be provided earlier without charge. Explicitly withheld all fees and paid work, superseding the original $25 wording. No earlier installment or date has been promised.
+
+## October 1 early retailer installment
+
+At 12:26 ET Tiffany Pringle supplied an attachment named
+Active Retailer Report September 2026.xlsx (227,297 bytes) in the existing records
+thread, describing it as an active-retailer directory. She retained January 18,
+2027 as the estimated remaining response date. No fee was requested. Attachment
+receipt is confirmed, but workbook contents, field semantics, row counts and
+location quality have not yet been audited; no retailer data or coordinates from
+it are published. Inspect privately in a bounded data-preparation follow-up.
+This does not activate Washington development or change South Carolina priority.

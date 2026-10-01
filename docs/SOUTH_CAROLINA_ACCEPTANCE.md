@@ -408,3 +408,19 @@ new agency records. SC is not accepted; deadline unchanged.
 Opening publisher 36863104549 remains successful; no new agency response beyond
 the already-notified Ohio requester action. No accepted state was reopened.
 MacOS debug build passed for the coordinate-classification correction.
+
+## October 1 native retained-retailer verification (13:00 ET session)
+
+Relaunched the corrected 0837c47 ordinary debug build and opened SC LOTTERY →
+Browse retailer claim locations. Native directory retained 51 address records,
+explicit retained-subset/not-current-or-complete wording, and a zero-verified-
+positions map control. The displayed source was built-in with no configured
+public retailer feed. Opened Find nearby and searched Orangeburg: the result
+explicitly reported no address-level positions available, with city-level starter
+records excluded from distance results. No invented store distances appeared and
+no crash was observed. This closes the built-in approximate-position native check;
+no claims of precise retailer availability are made.
+
+Publisher 36863104549 remains successful. Washington delivered an early retailer
+workbook; receipt is recorded separately, contents not yet audited or published.
+Remaining SC offline and integrated map checks continue without a deadline change.
