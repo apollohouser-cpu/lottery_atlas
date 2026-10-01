@@ -1,7 +1,7 @@
 {
   "source": "Texas Lottery official draw-specific Where Sold tables",
-  "updatedAt": "2026-09-30T06:48:02.860Z",
-  "sourceLastUpdated": "2026-09-29T12:00:00.000Z",
+  "updatedAt": "2026-10-01T06:52:26.473Z",
+  "sourceLastUpdated": "2026-09-30T12:00:00.000Z",
   "coverage": "2026 draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.",
   "activities": [
     {
@@ -2649,6 +2649,24 @@
       "prizeAmount": 650000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/Winning_Numbers/details.html_1158379764.html",
       "sourceLabel": "Official Texas Lottery Where Sold · 4 of 4 w/Bonus · draw 2026-09-28"
+    },
+    {
+      "id": "tx-draw-5f685a4416c4f63ffd7c8454",
+      "latitude": 29.687575986463,
+      "longitude": -95.55997701155,
+      "city": "HOUSTON",
+      "county": "Harris",
+      "state": "TX",
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "retailerName": "VIET HOA INTERNATIONAL FOODS",
+      "retailerAddress": "8300 W SAM HOUSTON SOUTH #100, HOUSTON, TX 77072",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-09-30T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 25000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379787.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-09-30"
     }
   ],
   "excluded": [
@@ -2686,6 +2704,18 @@
       "date": "2026-09-05",
       "game": "powerball",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158379699.html",
+      "reason": "0 exact geocoded address matches"
+    },
+    {
+      "tier": "5 of 5",
+      "name": "ONCAR INVESTMENT INC",
+      "address": "9004 N. FREEEWAY",
+      "city": "HOUSTON",
+      "zip": "77037",
+      "prizeAmount": 1000000,
+      "date": "2026-09-30",
+      "game": "powerball",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158379787.html",
       "reason": "0 exact geocoded address matches"
     },
     {
@@ -3751,6 +3781,14 @@
       "date": "2026-09-28",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158379764.html",
       "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "date": "2026-09-30",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158379787.html",
+      "sourceRows": 1,
       "mappedRows": 0
     },
     {
@@ -5302,6 +5340,14 @@
       "gameName": "Lotto Texas",
       "date": "2026-09-28",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Lotto_Texas/Winning_Numbers/details.html_1158379764.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Lotto Texas",
+      "date": "2026-09-30",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Lotto_Texas/Winning_Numbers/details.html_1158379787.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -7792,6 +7838,14 @@
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379765.html",
       "sourceRows": 0,
       "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "date": "2026-09-30",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379787.html",
+      "sourceRows": 1,
+      "mappedRows": 1
     },
     {
       "game": "state-draw",
@@ -15246,6 +15300,38 @@
       "gameName": "All or Nothing",
       "date": "2026-09-29",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_770575769.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-30",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1149638195.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-30",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1701108679.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-30",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_22805251.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-09-30",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_769920367.html",
       "sourceRows": 0,
       "mappedRows": 0
     }
