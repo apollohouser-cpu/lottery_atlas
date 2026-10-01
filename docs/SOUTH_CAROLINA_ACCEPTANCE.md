@@ -353,3 +353,21 @@ still lists 200X as 3,080 claims, matching the old built-in baseline, while the
 finder shows the published 3,387. Audit that menu's source/date labeling next;
 do not present its retained counts as current. Remaining offline and retailer
 provenance checks continue. SC not accepted; deadline unchanged.
+
+## October 1 shortcut freshness correction (10:00 ET session)
+
+Confirmed home Scratch shortcuts read the static August 17 catalog. Removed
+undated claim counts from those shortcut rows and explicitly labeled their
+retained catalog date, directing users to Prize Finder for dated daily counts.
+Catalog top-prize values are labeled as catalog values. This resolves the
+observed 200X 3,080 versus 3,387 presentation mismatch without pretending the
+retained shortcut inventory is a current daily report. Changed-file analysis is
+clean; native rebuilt-menu verification remains pending.
+
+Publisher 36863104549 succeeded; independent downloads of activity.json,
+south_carolina_draw_reports.json and south_carolina_daily_scratch.json all match
+committed public bytes after b6d3c4a. SC transaction updated successfully.
+Texas transaction also reports updated; its per-feed recovery verification is
+still pending before closing the October 1 15:00 ET checkpoint. NH remains
+retained after failure. No new agency reply. SC release deadline unchanged.
+MacOS debug build passed. No unchanged test suites were repeated for this text fix.

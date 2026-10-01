@@ -5787,7 +5787,7 @@ class _SouthCarolinaScratchOffsPanel extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(12, 12, 12, 18),
                     children: [
                       const Text(
-                        'Select a ticket to focus the heat map. Prize Finder lets you choose a custom winnings range.',
+                        'Retained ticket shortcuts from the August 17, 2026 catalog. Open Prize Finder for dated daily claim counts and a custom prize range.',
                         style: TextStyle(
                           color: Colors.white70,
                           fontSize: 11,
@@ -5825,7 +5825,7 @@ class _SouthCarolinaScratchOffsPanel extends StatelessWidget {
                           icon: Icons.confirmation_number_outlined,
                           title: game.displayName,
                           subtitle:
-                              'Top prize ${_formatPrize(game.topPrize)} · ${game.claimedYesterday} claims',
+                              'Catalog top prize ${_formatPrize(game.topPrize)}',
                           isSelected: selectedGameId == game.id,
                           onTap: () => onGameSelected(game.id),
                           favoriteGame: FavoriteLotteryGame(
