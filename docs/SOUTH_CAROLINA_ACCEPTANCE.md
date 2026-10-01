@@ -2,8 +2,10 @@
 
 Activated September 30, 2026 at 17:03 ET. Release decision due October 3 at
 17:03 ET (72 hours). Scope reconciled September 30, before October 1 at 17:03 ET.
-Not yet ready for integrated native testing or accepted. Agency records are a
-separate outcome; no fees or complete-records prerequisite.
+Accepted October 1, 2026 at 19:02 ET for supported available coverage and ready
+for user testing. Agency records remain a separate outcome; no fees or
+complete-records prerequisite. The opening scope audit below is historical;
+implementation and final evidence later in this document supersede its gaps.
 
 ## Per-game scope and gaps
 
@@ -60,12 +62,12 @@ present starter records as a complete current retailer directory.
 - [x] Integrate available statewide draw reports with source, date/session, tiers,
       cadence and limitations; validate totals and preserve prior data on failure.
 - [x] Verify Scratch catalog/fallback and retailer route limitations.
-- [ ] Test state/county/game/prize/date filtering, reset, empty states and sources.
-- [ ] Observe native layouts/interactions at 800×632 and 1280×900 logical sizes,
+- [x] Test state/county/game/prize/date filtering, reset, empty states and sources.
+- [x] Observe native layouts/interactions at 800×632 and 1280×900 logical sizes,
       including national and state draws, Scratch and directory/detail routes.
 - [x] Verify offline/cache recovery and reconnection without fabricated freshness.
 - [x] Appropriate automated checks, build and independent live-file verification.
-- [ ] Record supported-coverage release decision by the deadline.
+- [x] Record supported-coverage release decision by the deadline.
 
 September 30 opening check: clean repository, latest publisher 36759391265
 successful, no new agency reply beyond the already-handled Texas clarification.
@@ -513,3 +515,38 @@ Opening publisher 36908045746 remained successful; mail was unchanged after the
 already-notified Michigan fee response. Prize exclusion/reset is now observed.
 Remaining integrated navigation/layout evidence must be reconciled before the
 release decision; SC remains active and unaccepted, deadline unchanged.
+
+## Supported-coverage acceptance — October 1, 19:02 ET
+
+Final integrated navigation returned from the retained retailer drilldown to
+South Carolina county rankings with September 30 and 91 mapped records intact.
+Resized the native window to 1280×900 logical: state controls, county heat map,
+date-only timeline and scrollable ranking remained usable without observed
+crash. This complements the earlier compact filter, detail, source, directory,
+Scratch and all-seven-game report interactions and the larger report/Scratch
+checks. No completed failure or filter test was repeated.
+
+Publisher 36908045746 is successful. Independent activity.json comparison now
+matches committed bytes (SHA256
+984e4145ead15932c4e9e946b04af4e7b328bcef4679118a5bc8c7d98b1b0be6).
+Both SC daily Scratch and draw-report files were independently matched in the
+15:00 session. Existing parser/loader/layout/position regressions, changed-file
+analysis and ordinary macOS build evidence remain valid; no app code changed
+in these final native sessions.
+
+Accept supported available South Carolina coverage and announce ready for user
+testing. Scope includes Powerball with separate Power Play/Double Play, Mega
+Millions, Xs and Os, Palmetto Cash 5, Pick 3/4 FIREBALL sessions, CASH POP sessions,
+daily Scratch claimed tiers, partial rolling $500-plus mapped claims and the
+retained address directory. These are not complete statewide claims, verified
+distinct ticket identities, or precise store positions for the starter directory.
+Claim dates remain separate from draw dates; unknown payouts/publication times
+remain unknown. No offline map-tile guarantee is made. The native Game filter
+sheet's stale accessibility tree is a documented limitation; visual mouse
+interaction passed. No full accessibility certification or unlimited stability
+claim is made.
+
+All existing release checklist items are reconciled to evidence above. No agency
+record, new geocoding or enhancement prerequisite was added. South Carolina closes
+before its October 3 deadline. Routine polish is backlog work; reopen only for an
+actual defect or meaningful verified data. Virginia activates after this decision.

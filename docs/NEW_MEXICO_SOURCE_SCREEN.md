@@ -102,3 +102,19 @@ The original letter is preserved privately at
 `work/new_mexico_records/2026-09-21-acknowledgment.pdf`; its full page was rendered
 and visually reviewed. Gmail message: `1a0c6a60df62c11d`. The letter and requester
 contact information are not included in published data.
+
+## October 1 agency response
+
+Message 1a0f98004eb94107 delivered 2026-10-01_Apollo-Houser-Draw-Records.pdf
+(271,067 bytes), satisfying the promised October 1 response date. Connector
+extraction says the agency points to public records for draw counts, Scratch
+information and a current retailer list; it explicitly says it has no record
+including prize-tier details and no documents fitting the requested definitions,
+cadence/correction/feed information. It also says future records requests are
+not allowed. This records the agency response, not independent legal advice.
+
+The PDF links appear as “here” in extraction; link-target inspection and private
+archival remain pending. No structured workbook or new claim layer has been
+verified or published. Do not treat this response as complete all-tier delivery
+or continued waiting for the promised response. No fee is stated in the extracted
+response. Public-source work remains viable without activating New Mexico.

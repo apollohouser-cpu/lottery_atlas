@@ -13,8 +13,8 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | --- | --- | --- |
 | Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
 | Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
-| South Carolina | October 3, 2026, 5:03 PM ET (72 hours from activation) | Active September 30, 5:03 PM ET; full per-game scope due October 1, 5:03 PM ET. |
-| Virginia | Forecast activation October 3, 2026, 5:03 PM ET; provisional completion October 8, 5:03 PM ET using 120-hour allowance | Queued until actual South Carolina acceptance; activation fixes its 72/120-hour deadline. Former October 1 target superseded. |
+| South Carolina | Accepted October 1, 2026, 7:02 PM ET (due October 3, 5:03 PM) | Supported available coverage accepted; broader claims remain separate. |
+| Virginia | October 4, 2026, 7:02 PM ET | Active October 1, 7:02 PM ET; 72 hours for existing working imports. Scope due October 2, 7:02 PM ET. |
 
 Texas's release includes the supported draw-game experience, specifically verified
 Powerball and Mega Millions activity. Scratch-only acceptance never satisfies it.
@@ -50,20 +50,18 @@ Notify release decisions, deadline misses/extensions, material failures and user
 actions; remain quiet for unchanged status. This planning edit does not itself
 constitute Texas's final acceptance session.
 
-## Active work: South Carolina
+## Active work: Virginia
 
-Kentucky supported available coverage was accepted September 30 at 17:03 ET;
-Texas remains accepted September 25. Earlier dated entries below are historical.
-South Carolina is the sole active state, with its October 3 at 17:03 ET release
-decision deadline unchanged. The September 30 scope audit is recorded in
-[SOUTH_CAROLINA_ACCEPTANCE.md](SOUTH_CAROLINA_ACCEPTANCE.md), including Powerball,
-Mega Millions, Powerball Xs & Os, all state draw games and Scratch. It identifies
-available statewide draw reports, missing Xs and Os classification/filter, and
-claim-date/partial-coverage wording for correction. Virginia stays queued.
+South Carolina supported available coverage was accepted October 1 at 19:02 ET;
+see SOUTH_CAROLINA_ACCEPTANCE.md. Texas and Kentucky remain accepted. Virginia
+is now the sole active state. Existing working Scratch, retailer and winner-news
+imports qualify for 72 hours: release decision due October 4 at 19:02 ET, with
+full national/state draw and Scratch scope reconciliation due October 2 at
+19:02 ET. The provisional October 8 forecast is superseded by actual activation.
+Its September 23 agency decline remains separate from public-source completion.
 
-Accepted available coverage and complete statewide data are separate outcomes.
-Missing agency records do not delay supported-coverage acceptance or imply zero
-wins. No fees are authorized.
+Accepted available coverage and complete statewide data remain separate outcomes.
+No fees are authorized. Earlier dated active-state entries below are historical.
 
 ## Session rules
 
