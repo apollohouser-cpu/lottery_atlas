@@ -194,3 +194,19 @@ implemented, followed by app/report publication integration and native checks.
 Publisher 36808635720 succeeded at the opening check, with no new agency reply.
 The staged reports are not yet exposed as a completed app feature. Deadline
 remains October 3 at 17:03 ET.
+
+## October 1 CASH POP session importer (01:00 ET session)
+
+Added six official CASH POP session reports; the staged file now has 18 reports
+across four games. Latest September 30 evening reports 2,705 winners / $105,640;
+midday reports 2,242 / $102,490. These are reported session totals, not tier
+counts inferred from odds. Empty tiers are deliberate and explicitly explained.
+The parser requires date/session, exact totals labels, valid nonnegative counts
+and monetary format, consistent zero totals, unique sessions and newest-first
+ordering. Import regression checks now preserve the latest date for each game
+and session separately. Twelve parser tests pass, including missing/duplicate
+session and malformed payout rejection.
+
+Publisher 36813266540 succeeded at opening; no new agency response. Powerball
+variants, Pick 3/4 FIREBALL, app integration and native verification remain open.
+Staged reports are not public app coverage yet. No deadline change.

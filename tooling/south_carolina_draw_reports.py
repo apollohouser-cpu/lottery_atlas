@@ -118,3 +118,42 @@ def parse_palmetto(raw):
         reports.append(_report('Palmetto Cash 5', day, PALMETTO_SOURCE, headers, rows,
             'Source-listed tier amounts retained. Multiplier distribution and exact payout are not supplied; winner and total columns are not added together.'))
     return _finish_reports(reports)
+
+CASH_POP_SOURCE = 'https://www.sceducationlottery.com/Games/CashPOP'
+
+
+def parse_cash_pop(raw):
+    from decimal import Decimal
+    reports = []
+    keys = []
+    for section in raw.split('<div class="table-heading">')[1:]:
+        table = re.search(r'<table class="table-bordered"[^>]*>(.*?)</table>', section, re.S)
+        if not table:
+            raise ValueError('Missing CASH POP session totals')
+        heading = clean(section[:table.start()])
+        date = re.search(r'([A-Za-z]+ \d+, \d{4})', heading)
+        sessions = re.findall(r'\b(Midday|Evening)\b', heading)
+        if not date or len(sessions) != 1:
+            raise ValueError('Missing CASH POP date/session')
+        day = datetime.strptime(date[1], '%B %d, %Y').date()
+        session = sessions[0]
+        rows = [[clean(c) for c in re.findall(r'<td\b[^>]*>(.*?)</td>', row, re.S)] for row in re.findall(r'<tr[^>]*>(.*?)</tr>', table[1], re.S)]
+        if len(rows) != 2 or any(len(row) != 2 for row in rows) or [r[0] for r in rows] != ['Total Winners:', 'Total Payout:']:
+            raise ValueError('Unexpected CASH POP totals')
+        winners = count(rows[0][1])
+        payout = rows[1][1]
+        if not re.fullmatch(r'\$(?:\d+|\d{1,3}(?:,\d{3})+)\.\d{2}', payout):
+            raise ValueError('Invalid CASH POP payout')
+        amount = Decimal(payout.replace('$', '').replace(',', ''))
+        if (winners == 0) != (amount == 0):
+            raise ValueError('Inconsistent CASH POP zero totals')
+        reports.append({'gameName': 'CASH POP', 'drawDate': day.isoformat(), 'drawingSession': session,
+                        'sourceUrl': CASH_POP_SOURCE, 'sourcePublicationDate': None,
+                        'headers': ['Scope', 'Reported winners', 'Reported payout'], 'tiers': [],
+                        'reportedTotals': ['Session total', rows[0][1], payout],
+                        'reportedWinners': winners, 'reportedPayout': float(amount),
+                        'tableNote': 'Official statewide session totals only; no actual prize-tier breakdown or retailer allocation. Odds tables are not winner counts. Do not add to claim records.'})
+        keys.append((day.isoformat(), 1 if session == 'Evening' else 0))
+    if not keys or keys != sorted(set(keys), reverse=True):
+        raise ValueError('Missing, duplicate or unordered CASH POP sessions')
+    return reports

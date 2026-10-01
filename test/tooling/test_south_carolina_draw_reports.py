@@ -68,3 +68,26 @@ class AdditionalDrawReportsTest(unittest.TestCase):
         self.assertIsNone(report['reportedPayout'])
         with self.assertRaises(ValueError):
             module.parse_palmetto(raw.replace('<td>6</td>', '<td>7</td>'))
+
+class CashPopTest(unittest.TestCase):
+    def fixture(self, session='Evening', payout='$50.25'):
+        return '<div class="table-heading"><div>September 30, 2026</div><div>' + session + '</div><table class="table-bordered"><tr><td>Total Winners:</td><td>2</td></tr><tr><td>Total Payout:</td><td>' + payout + '</td></tr></table>'
+
+    def test_session_totals_not_fabricated_tiers(self):
+        reports = module.parse_cash_pop(self.fixture() + self.fixture('Midday'))
+        self.assertEqual([r['drawingSession'] for r in reports], ['Evening', 'Midday'])
+        self.assertEqual(reports[0]['reportedPayout'], 50.25)
+        self.assertEqual(reports[0]['tiers'], [])
+        self.assertIsNone(reports[0]['sourcePublicationDate'])
+
+    def test_duplicate_session_rejected(self):
+        with self.assertRaises(ValueError):
+            module.parse_cash_pop(self.fixture() * 2)
+
+    def test_missing_session_rejected(self):
+        with self.assertRaises(ValueError):
+            module.parse_cash_pop(self.fixture(''))
+
+    def test_invalid_payout_rejected(self):
+        with self.assertRaises(ValueError):
+            module.parse_cash_pop(self.fixture(payout='$-50.25'))
