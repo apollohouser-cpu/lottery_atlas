@@ -20,7 +20,8 @@ stores or counties, or add them to claims as distinct tickets.
 | [Pick 3 Plus FIREBALL](https://www.sceducationlottery.com/Games/Pick3) | Midday/evening play-type counts, base and FIREBALL columns | Existing Pick 3 claim filter; preserve session and variant in statewide report. Counts are source-reported winners, not deduplicated tickets. |
 | [Pick 4 Plus FIREBALL](https://www.sceducationlottery.com/Games/Pick4) | Midday/evening play-type counts, base and FIREBALL columns | Existing Pick 4 claim filter; same separation and limitations as Pick 3. |
 | [CASH POP](https://www.sceducationlottery.com/Games/CashPOP) | Session winner totals and payouts; September 30 midday 2,242 / $102,490 | Existing claim filter; add statewide session report. Published odds tables are not actual tier winner counts. |
-| [Scratch](https://www.sceducationlottery.com/Games/PrizesRemaining) | Catalog and estimated remaining prizes; qualifying claims in Winners Report | Verify catalog feed/fallback currency and title joins. Remaining inventory is not store inventory, claims or probability of a store win. |
+| [Scratch daily claims](https://www.sceducationlottery.com/Games/DailyInstantWinners) | Daily statewide claimed-prize tiers, distinct from the rolling $500-plus retailer report | Existing Scratch screen uses this source, not remaining inventory. Restore reliable refresh; preserve source day and grouped duplicate-title semantics. |
+| [Scratch remaining inventory](https://www.sceducationlottery.com/Games/PrizesRemaining) | Estimated remaining prizes | Separate official source, not the existing daily-claims feed; do not label daily claims as remaining prizes. |
 
 The app's current “all six” draw-game wording is stale. Public availability is
 not the same as imported coverage: no SC statewide draw-report importer was found
@@ -87,3 +88,35 @@ Five focused classification/calendar tests pass; changed classification/screens
 analyze cleanly. Native verification and independently published data verification
 remain pending. Statewide draw-report integration remains the next implementation
 gap. No release decision or deadline change.
+
+
+## September 30 publication and fallback audit (20:00 ET session)
+
+Publisher 36789068922 succeeded for 67b9213. Independently fetched the public
+GitHub Pages activity.json: all 10,019 local SC activity objects match by ID and
+full object value, including both Xs and Os entries as state-draw. This closes
+that publication check; native interaction verification is still pending.
+
+Correction to the initial scope description: the SC-specific Scratch screen
+loads **DailyInstantWinners**, not PrizesRemaining. Its built-in snapshot is dated
+August 17, 2026; the screen labels built-in/saved/published status and snapshot
+date, and explicitly describes daily claimed tiers. The configured external
+south-carolina-scratch-offs.json endpoint returned HTTP 403 in this session.
+There is no matching daily-Scratch publisher in the repository. This is a named
+refresh gap: wire the existing daily-claims schema into the maintained publishing
+pipeline, preserving the actual source day and prior valid data on failure.
+Do not call the old snapshot current or infer inventory from claimed counts.
+The official daily source is available; the web-reader copy inspected was dated
+September 27 (updated September 28), so do not treat its crawl as today's data.
+
+Retailer fallback audit: no default remote retailer feed is configured. Built-in
+records carry cityLevelPlacement=true and are explicitly a starter subset; the
+list says it is not every retailer. The repository has no source update date,
+and its phrase “recently reported” is misleading for retained starter records.
+Map markers use these city coordinates, although details disclose city-level
+placement. Before acceptance, prevent these from being represented as precise
+store positions or used as precise nearby distances; use verified shared-feed
+locations or an explicit non-map address list. No invented replacement locations.
+
+No new agency response was found. Statewide draw-report integration remains
+open, with the original October 3 at 17:03 ET release decision unchanged.

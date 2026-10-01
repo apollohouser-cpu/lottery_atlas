@@ -198,7 +198,7 @@ class _SouthCarolinaRetailersScreenState
                 Text(
                   SouthCarolinaRetailerFeedService.isConfigured
                       ? 'Published retailer claim locations are refreshed from your configured South Carolina feed. These are reported prize locations, not every lottery retailer in the state.'
-                      : 'This verified starter set is based on the official South Carolina Winners Report. It shows retailers connected to recently reported claimed prizes, not every lottery retailer in the state.',
+                      : 'This verified starter set is based on the official South Carolina Winners Report. It shows a retained subset of retailer claim records, not a current or complete retailer directory.',
                   style: const TextStyle(color: Colors.white70, height: 1.35),
                 ),
                 const SizedBox(height: 8),
