@@ -156,3 +156,23 @@ publication date. Cached failures retain both dates. Five parser regressions and
 a Flutter network-failure/cache regression pass. Analysis reports two existing
 string-interpolation infos in the Scratch screen. Live publication and native
 checks remain pending; statewide draw reports remain the next implementation gap.
+
+## September 30 daily feed verification and draw parser (23:00 ET session)
+
+Publisher 36804028771 succeeded for 1477dc6. Independently fetched the public
+south_carolina_daily_scratch.json and confirmed a byte-for-byte match to the
+committed snapshot. Native Scratch screen verification remains pending.
+
+Staged a validated Mega Millions draw-report importer and five official recent
+draw tables in data/south_carolina_draw_reports.generated.json. September 29
+reconciles to 10,193 statewide winners. Each report requires nine distinct tiers,
+exact columns, integer nonnegative counts, a matching SC scope date and a
+reconciled total; duplicate/unordered dates and date regression are rejected.
+Prize ranges are retained verbatim and reportedPayout/sourcePublicationDate are
+null, rather than inventing totals or treating retrieval as source publication.
+Six regressions pass, including count/date mismatch and duplicate rejection.
+
+This is staged data, not an app report release: remaining national/state games,
+the report view, transactional refresh and public report publication still need
+integration. The existing retailer feed remains separate and unchanged. No new
+agency response, state acceptance or deadline change.
