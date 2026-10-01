@@ -278,3 +278,21 @@ This verifies first compact report selection and source navigation, not all-game
 native acceptance. Remaining native report choices, table scrolling, larger-size
 checks, Scratch/map/filter/offline flows and retained retailer provenance remain
 on the existing checklist. SC is not accepted; October 3 at 17:03 ET is unchanged.
+
+## October 1 compact Powerball and Pick 3 native checks (06:00 ET session)
+
+Opening repository was clean; publisher 36833941360 remains successful and mail
+contained no new agency response. Continued the existing 800×632 native window.
+Selected September 30 Powerball from the actual dropdown. Its separate base,
+Power Play (x4), and Double Play columns exposed 5,627 / 4,054 / 2,796, total
+12,477. Scrolled vertically to the final row and dragged the horizontal scrollbar
+right: screenshots visibly exposed the variant totals and combined total. The
+combined-count, unknown-payout and no-retailer-allocation disclaimer stayed visible.
+
+Selected Pick 3 Plus FIREBALL September 30 Evening from the native dropdown.
+Accessibility exposed nine play types and totals 2,329 base / 152 FIREBALL / 2,481,
+with the explicit 50-cent-wager basis, no distinct-ticket claim, and no inferred
+payout. This is selection/semantics evidence; remaining game selections and larger
+window checks are not implied. No crash was observed. No source changes or repeat
+build/tests were needed. Integrated state acceptance remains pending, deadline
+October 3 at 17:03 ET unchanged.
