@@ -371,3 +371,19 @@ Texas transaction also reports updated; its per-feed recovery verification is
 still pending before closing the October 1 15:00 ET checkpoint. NH remains
 retained after failure. No new agency reply. SC release deadline unchanged.
 MacOS debug build passed. No unchanged test suites were repeated for this text fix.
+
+## October 1 shortcut fix native verification (11:00 ET session)
+
+Relaunched the d2834eb debug build and expanded native Scratch shortcuts. The
+August 17 retained-catalog notice and Prize Finder direction are exposed; 200X
+now shows only "Catalog top prize $2M", with no stale 3,080 claim count. Other
+visible shortcuts likewise omit claims. No crash observed. This closes native
+confirmation of the menu text fix; offline/provenance and remaining integrated
+map checks remain. SC is not accepted; deadline unchanged.
+
+Publisher 36863104549 succeeded. Independent downloads of Texas draw tiers,
+shared Scratch catalogs, shared retailer directories, activity and refresh status
+all byte-match committed public files after b6d3c4a. Texas transaction reports
+updated for all five state outputs. October 1 15:00 ET importer-recovery checkpoint
+is closed; this does not reopen Texas acceptance. New Ohio agency response needs
+a personal requester confirmation, recorded in OHIO_SOURCE_SCREEN.md.

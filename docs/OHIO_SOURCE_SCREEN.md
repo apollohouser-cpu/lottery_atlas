@@ -26,3 +26,16 @@ reports, the active retailer master directory, existing winner-to-retailer
 fields, data definitions, cadence and corrections. Gmail confirmed “Message
 sent.” No response or complete dataset has been received, so Ohio is not ready
 for full-state testing.
+
+## October 1 agency asks for requester confirmation
+
+Ohio Lottery Assistant Counsel replied at 10:21 ET that it will not fulfill a
+request initiated by artificial intelligence and asks the requester to confirm
+that they are a person. No records or delivery date were supplied. This is an
+agency-stated processing condition, not an independent legal conclusion here.
+User action: personally reply in the existing Ohio August 2026 records thread
+confirming this is their request. Suggested text: "I am Apollo Houser, a person,
+and this is my public-records request. I authorized assistance preparing it.
+Please continue processing the existing request. No fees are authorized."
+No automated human attestation has been sent. This separate records issue does
+not block active South Carolina development.

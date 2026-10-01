@@ -1558,3 +1558,12 @@ activation October 3 at 17:03 ET and completion October 8 at 17:03 ET, using a
 provisional 120-hour implementation allowance. This is a forecast, not an early
 activation or fixed Virginia deadline; choose its applicable 72/120-hour window
 at actual activation. Its former October 1 target remains explicitly superseded.
+
+### October 1 11:00 ET bounded follow-ups
+
+Texas importer recovered in b6d3c4a / publisher 36863104549; all five state outputs
+reported updated. Live activity, Texas draw tiers, shared Scratch catalogs,
+retailer directories and refresh status matched committed bytes. Close the
+October 1 15:00 ET importer checkpoint; Texas acceptance remains closed.
+Ohio agency records are pending personal requester confirmation (see its source
+screen); no automated human attestation sent. South Carolina remains sole active.
