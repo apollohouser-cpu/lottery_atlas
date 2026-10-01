@@ -333,3 +333,23 @@ verification of the rebuilt wording remains pending; this is not SC acceptance.
 Remaining Scratch/filter/map/offline and retailer-provenance work is unchanged.
 MacOS debug build passed for the wording correction. October 3 at 17:03 ET remains
 the release-decision deadline; no new acceptance prerequisites were added.
+
+## October 1 rebuilt Scratch and prize-filter handoff (09:00 ET session)
+
+Opening repository clean; publisher 36863104549 was in progress during the single
+check, so its publication is not independently verified here. No new agency reply.
+Relaunched the ordinary debug build. Scratch finder initially showed its labeled
+August 17 built-in baseline, then completed loading the published September 30 /
+September 29 claim snapshot. Corrected cards now say "for this daily snapshot".
+
+Selected 200X: 3,387 daily claims and 272 separate rolling map records. Raised
+minimum prize to $500: 41 daily claims (38 at $500, two at $1,000, one at $5,000),
+272 rolling map records, and zero-valued higher tiers remained explicitly scoped
+to the day. Map handoff returned with the 200X / $500–$2.5M filter, retained October
+1 timeline and correctly scoped zero matches for that date. No crash observed.
+
+A further freshness discrepancy is now observed: the home Scratch shortcut menu
+still lists 200X as 3,080 claims, matching the old built-in baseline, while the
+finder shows the published 3,387. Audit that menu's source/date labeling next;
+do not present its retained counts as current. Remaining offline and retailer
+provenance checks continue. SC not accepted; deadline unchanged.
