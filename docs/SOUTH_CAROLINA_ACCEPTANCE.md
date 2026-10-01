@@ -59,11 +59,11 @@ present starter records as a complete current retailer directory.
 - [x] Correct Xs and Os classification/filter, coverage wording and date semantics.
 - [x] Integrate available statewide draw reports with source, date/session, tiers,
       cadence and limitations; validate totals and preserve prior data on failure.
-- [ ] Verify Scratch catalog/fallback and retailer route limitations.
+- [x] Verify Scratch catalog/fallback and retailer route limitations.
 - [ ] Test state/county/game/prize/date filtering, reset, empty states and sources.
 - [ ] Observe native layouts/interactions at 800×632 and 1280×900 logical sizes,
       including national and state draws, Scratch and directory/detail routes.
-- [ ] Verify offline/cache recovery and reconnection without fabricated freshness.
+- [x] Verify offline/cache recovery and reconnection without fabricated freshness.
 - [x] Appropriate automated checks, build and independent live-file verification.
 - [ ] Record supported-coverage release decision by the deadline.
 
@@ -442,3 +442,22 @@ required before acceptance. Opening publisher unchanged/successful; no new agenc
 reply beyond previously recorded Ohio/Washington messages. Deadline unchanged.
 Ordinary lib/main.dart debug build passed and was relaunched after ending the
 probe. Native reconnection data verification remains for the next unchecked flow.
+
+## October 1 native reconnection verification (15:00 ET session)
+
+With the ordinary lib/main.dart build restored, opened statewide reports and
+observed Mega Millions September 29 total 10,193 with updated retrieval metadata
+2026-10-01T18:50:38.557982+00:00, matching the independently fetched public report.
+Opened Scratch finder and observed its asynchronous transition from explicitly
+labeled built-in data to PUBLISHED SOUTH CAROLINA SNAPSHOT: October 1 publication,
+September 30 claims, 30 games and 132,557 daily claims. These exactly match the
+new public daily JSON. The 5,336 rolling map records remain separately labeled.
+No crash observed. This completes the prior request-failure/reconnection flow;
+the failure probe was not repeated.
+
+Publisher 36908045746 succeeded, and both SC report and daily Scratch public JSON
+byte-match 0d74deb, integrated by fast-forward. No new agency response beyond the
+already-recorded Ohio/Washington messages. Scratch fallback/retailer limitations
+and offline/reconnect summary boxes now reflect accumulated native evidence.
+Remaining integrated map/filter/detail checks and release decision are pending;
+SC is not accepted, and the October 3 17:03 ET deadline is unchanged.
