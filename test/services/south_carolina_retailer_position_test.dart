@@ -11,6 +11,12 @@ void main() {
         .map((r) => r.id)
         .toSet();
     expect(approximate, isNotEmpty);
+    final countyCoverage = SouthCarolinaRetailerRepository.retailers.where(
+      (r) => r.id.startsWith('sc-county-coverage-'),
+    );
+    expect(countyCoverage, isNotEmpty);
+    expect(countyCoverage.every((r) => r.cityLevelPlacement), isTrue);
+    expect(SouthCarolinaRetailerRepository.mappableRetailers, isEmpty);
     expect(
       SouthCarolinaRetailerRepository.mappableRetailers.any(
         (r) => approximate.contains(r.id),

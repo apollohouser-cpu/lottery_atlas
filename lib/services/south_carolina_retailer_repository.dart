@@ -181,10 +181,9 @@ class SouthCarolinaRetailerRepository {
     ..._countyHeatCoverageRetailers,
   ];
 
-  /// One recent, official Winners Report retailer for every county that is
-  /// currently represented by a South Carolina heat-map point. These records
-  /// provide county-level retailer context; the pin sits on the heat point
-  /// until exact street-address geocoding is introduced.
+  /// Retained Winners Report addresses providing county-level context.
+  /// Their coverage coordinates are not store locations and must not become
+  /// retailer pins or distance results.
   static final List<SouthCarolinaRetailer> _countyHeatCoverageRetailers = [
     _heatPointRetailer(
       'spartanburg',
@@ -641,6 +640,8 @@ class SouthCarolinaRetailerRepository {
     gameName: gameName,
     claimDate: claimDate ?? DateTime(2026, 8, 20),
     reportedPrizeAmount: prizeAmount,
-    cityLevelPlacement: false,
+    // These retained coverage points are shared city/county positions, not
+    // independently geocoded store addresses.
+    cityLevelPlacement: true,
   );
 }

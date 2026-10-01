@@ -387,3 +387,24 @@ all byte-match committed public files after b6d3c4a. Texas transaction reports
 updated for all five state outputs. October 1 15:00 ET importer-recovery checkpoint
 is closed; this does not reopen Texas acceptance. New Ohio agency response needs
 a personal requester confirmation, recorded in OHIO_SOURCE_SCREEN.md.
+
+## October 1 retained retailer provenance correction (12:00 ET session)
+
+Audited the supposedly address-level starter entries. The repository explicitly
+identifies _countyHeatCoverageRetailers as county heat-point context, and multiple
+unrelated York County addresses share 34.99242, -81.1794. The helper nevertheless
+set cityLevelPlacement=false. These are not evidenced store geocodes.
+
+Corrected that helper to mark coverage coordinates approximate. All built-in
+retailer addresses remain listed, but none now qualify for store pins or nearby
+distances. Existing verified address-level published-feed behavior remains intact.
+Strengthened the position regression to assert county-coverage entries are all
+approximate and no starter entry is mappable. Both position tests pass; changed
+files analyze cleanly. Native verification of the rebuilt address-list/map
+behavior remains pending. This closes the provenance audit through an explicit
+unavailable-precise-location outcome, without inventing geocodes or requiring
+new agency records. SC is not accepted; deadline unchanged.
+
+Opening publisher 36863104549 remains successful; no new agency response beyond
+the already-notified Ohio requester action. No accepted state was reopened.
+MacOS debug build passed for the coordinate-classification correction.
