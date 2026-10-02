@@ -143,3 +143,19 @@ is unchanged. The excluded release predates the public feed's 2026 window, so th
 regressions and all six Virginia data/offline tests passed. This closes the named
 unmatched-to-Scratch accuracy defect; native publication-date checks and draw
 report integration remain pending. Single opening mail/deployment check unchanged.
+
+## October 2 staged state-game reports (00:00 ET)
+
+Implemented a strict table parser/importer for Millionaire for Life and Bank a
+Million. Nine actual reports are staged across these games, with latest published
+prize tables September 30: 2,254 and 8,423 source-reported prize winners respectively.
+Annual-payment and after-tax wording remains literal; total payout is unknown.
+October 1 Millionaire for Life has an empty prize array and is unavailable, not a
+zero-winner report. Per-game dates cannot regress and failed parsing leaves the
+prior output untouched. Four parser regressions pass, including unavailable data,
+malformed counts, missing jurisdiction, duplicate dates and date regression.
+
+This is staged source data, not yet an app report or published feed. Remaining
+national jurisdiction/Power Play reconciliation, other state report formats and UI,
+cache/transaction/publication integration remain required. No deadline change.
+Previous publisher 36958421776 succeeded; no new agency message at opening check.
