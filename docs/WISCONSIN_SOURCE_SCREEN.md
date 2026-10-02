@@ -243,3 +243,7 @@ dictionary or public location for the supplied workbook fields, units, dates and
 cadence, with no custom report or paid locating work. Gmail confirmed sent. No
 fees approved or paid; no user action needed. This follow-up is separate from the
 remaining-prize denial and does not promise further delivery.
+
+October 2 follow-up: the agency replied that no report or data dictionary meets
+the no-fee clarification criteria. That follow-up is answered, not pending. No
+new file was supplied; previous workbook audit limitations and the fee hold remain.

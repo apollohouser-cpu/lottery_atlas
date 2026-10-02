@@ -107,3 +107,19 @@ separate from retailer-linked $500-plus claims. The current importer wrongly
 classifies two `Xs and Os` groups as Scratch. Correction and draw-report
 integration are active work, with the October 3 at 17:03 ET deadline unchanged.
 The narrowed records request remains pending and does not block app completion.
+
+## October 2 no-fee records delivery — private audit pending
+
+Agency supplied a 248,957-byte retailer workbook and a 20,973,781-byte daily
+sales/validation CSV at no charge. The email describes daily retailer/game sales
+and validation amounts and counts, warns that Pick 3/Pick 4 counts are affected
+by 50-cent wagers, and identifies claims-center cashes as “Pseudo Outlet.”
+Receipt and agency description are verified; attachment contents, date coverage,
+row counts and semantics are not yet audited. Do not treat validations as selling
+retailer claims, infer distinct tickets, or publish new map positions from receipt.
+
+Sent receipt acknowledgment and a bounded no-fee clarification asking whether
+validation rows identify cashing/validation or original selling locations, plus
+existing date/count/correction/prize-tier definitions. Did not confirm that the
+request is fully satisfied. No fees or custom compilation authorized. Supported
+app acceptance remains closed; any new layer requires a separate private audit.

@@ -68,7 +68,7 @@ unmatched-game fallback to Scratch. These are accuracy gaps, not enhancements.
 - [x] Correct publication-date presentation and audit unmatched classification (native detail verified October 2, 12:00 ET).
 - [ ] Verify catalog, retailer/source limitations and available draw routes.
 - [ ] Native state/county/game/prize/date filters, reset, scoped empty/detail/source.
-- [ ] Compact and larger integrated layouts, offline/cache and reconnect behavior.
+- [x] Compact and larger integrated layouts, offline/cache and reconnect behavior (Dart request-failure probe; no offline tile guarantee).
 - [ ] Relevant automated/build checks and independent live validation.
 - [ ] Record supported-coverage decision before deadline.
 
@@ -454,3 +454,24 @@ tab is the cross-state activity list, not the full Scratch catalog. Private
 route, not a new complete statewide claims dataset or exhaustive browser audit.
 Native request failure/reconnection and final integrated acceptance remain open;
 release deadline unchanged. No ordinary app code/build changed in this session.
+
+### October 2, 17:00 ET — native request failure and reconnection
+
+Private `work/virginia_native/offline_probe.dart` routes Dart HttpClient requests
+through an unavailable localhost proxy while its private flag exists. Native app
+relaunched, Find a State → Virginia → VA Lottery → reports remained navigable;
+Mega Millions retained September 29, 214,458 source-reported winners, non-Virginia
+scope, unknown payout and the prior retrieval timestamp 07:02:56.082Z. The map
+retained the directory count and the October 2 scoped-empty publication-date view.
+
+Removed the private proxy flag, closed/reopened the report sheet, and verified
+retrieval advanced to 18:40:55.851Z, exactly matching an independent public HTTPS
+fetch. Counts, date and jurisdiction limitations stayed intact. Private offline
+and reconnect AX/screenshots retained. This proves Dart request-failure fallback
+and reconnection, not OS-wide offline map-tile availability. No crash observed.
+The probe is closed; ordinary lib/main.dart build restoration follows before
+ending the session. Final consolidated automated/live review and supported-coverage
+release decision remain; deadline unchanged.
+
+Ordinary lib/main.dart macOS debug build passed and was relaunched after the
+probe. Private harness and evidence are preserved; no probe files are committed.
