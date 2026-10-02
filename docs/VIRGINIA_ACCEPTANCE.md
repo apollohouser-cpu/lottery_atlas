@@ -65,7 +65,7 @@ unmatched-game fallback to Scratch. These are accuracy gaps, not enhancements.
 ## Release checklist
 
 - [x] Finish national/state/seasonal game scope and available-report reconciliation (October 2, 03:00 ET; implementation/acceptance still pending).
-- [ ] Correct publication-date presentation and audit unmatched classification.
+- [x] Correct publication-date presentation and audit unmatched classification (native detail verified October 2, 12:00 ET).
 - [ ] Verify catalog, retailer/source limitations and available draw routes.
 - [ ] Native state/county/game/prize/date filters, reset, scoped empty/detail/source.
 - [ ] Compact and larger integrated layouts, offline/cache and reconnect behavior.
@@ -373,3 +373,19 @@ No crash or new agency mail; publisher37007748065 remains successful. Continue
 catalog and map game/prize/date/detail checks plus native request-failure/recovery.
 This closes the shortcut correction and observed directory search/detail route,
 not integrated state acceptance. Deadline unchanged.
+
+## October 2 native date and winner detail (12:00 ET)
+
+Changed the compact map calendar from October 2 to September 23. Published-date
+whole-day timeline retained the selected date. Backing out of the selected
+directory retailer to Norfolk exposed the reported Platinum 7s release: one
+reported winning ticket, $2M, LOVE FOOD MART 12. Opening the ranked retailer row
+exposed PUBLICATION DATE September 23 and the full disclaimer distinguishing
+publication from draw/claim date and selected releases from complete statewide
+counts. Address and official release source action are present. This closes the
+publication-date/classification checklist item; private screenshot/AX retained
+as work/virginia_native/winner-publication-detail.*. Directory-only retailer focus
+had an empty ranking before returning to the city view; no claim was fabricated.
+
+No crash/new mail/publisher change. Continue source action/return, game/prize reset,
+catalog and native failure/reconnection. No state acceptance or deadline change.
