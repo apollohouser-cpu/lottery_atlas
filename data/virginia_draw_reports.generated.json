@@ -1,15 +1,1871 @@
 {
   "schemaVersion": 1,
   "state": "Virginia",
-  "retrievedAt": "2026-10-02T06:23:53.933Z",
+  "retrievedAt": "2026-10-02T07:02:56.082Z",
   "sourcePublicationDate": null,
   "cadence": "Official per-draw reports; app refresh is scheduled, not live.",
+  "additionalSources": [
+    {
+      "game": "raffle",
+      "gameName": "New Year's Millionaire Raffle",
+      "period": "2026-01-01",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/raffle",
+      "limitations": "Seasonal official winning-number report linked at source. Ticket-number rows are not imported as claim or retailer activity."
+    },
+    {
+      "game": "cash4life",
+      "gameName": "Cash4Life",
+      "period": "Historical winner releases only",
+      "sourceUrl": "https://www.valottery.com/winnersnews/latestwinners",
+      "limitations": "Historical identity retained in selected winner releases; not a current recurring game or complete historical claims report."
+    }
+  ],
   "reports": [
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-29",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$300,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 8,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 148,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 380,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 9579,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 7924,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 58458,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 137961,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 214458,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-25",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$277,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 5,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 132,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 322,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 7666,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 6527,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 52192,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 135257,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 202101,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-22",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winner in Colorado(1).                                                                                                                                                                                                                            ",
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$261,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 1,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 8,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 128,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 368,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 9024,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 8187,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 60671,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 140317,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 218704,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-18",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$244,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 2,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 137,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 369,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 8854,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 7630,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 56839,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 133380,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 207211,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-15",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$227,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 2,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 115,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 281,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 7055,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 6527,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 52143,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 132048,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 198171,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-30",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winner in Texas(1).                                                                                                                                                                                                                               ",
+      "multiplier": "4X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$409,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 1,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 19,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 483,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1260,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 28426,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 24243,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 166234,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 368579,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 589245,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-28",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winners in Illinois(1), New York(1), \r\nNorth Carolina(1) and Puerto Rico(1-PowerPlay).                                                                                                                                                            ",
+      "multiplier": "3X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$389,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 4,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 20,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 293,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1018,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 20278,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 20120,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 148154,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 336930,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 526817,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-26",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": null,
+      "multiplier": "3X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$360,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 12,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 426,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1024,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 26605,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 21989,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 177754,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 449932,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 677742,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-23",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winners in Georgia(1) and \r\nPennsylvania(1).                                                                                                                                                                                                      ",
+      "multiplier": "5X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$332,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 2,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 20,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 542,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1008,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 28429,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 18662,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 137045,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 323445,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 509153,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-21",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winner in United Kingdom(1).                                                                                                                                                                                                                      ",
+      "multiplier": "2X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$313,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 1,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 14,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 533,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1017,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 29716,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 17460,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 117108,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 261582,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 427431,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
     {
       "game": "keno",
       "gameName": "Keno",
       "drawDate": "2026-10-02",
-      "drawTime": "02:18",
+      "drawTime": "02:50",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
+      "sourceNote": null,
+      "countUnit": "prize-winning shares",
+      "totalWinners": null,
+      "totalShares": 1,
+      "tiers": [
+        {
+          "spot": 10,
+          "match": "10/10",
+          "shareCount": 0,
+          "prizeDescription": "$100,000"
+        },
+        {
+          "spot": 10,
+          "match": "9/10",
+          "shareCount": 0,
+          "prizeDescription": "$5,000"
+        },
+        {
+          "spot": 10,
+          "match": "8/10",
+          "shareCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "spot": 10,
+          "match": "7/10",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 10,
+          "match": "6/10",
+          "shareCount": 0,
+          "prizeDescription": "$10"
+        },
+        {
+          "spot": 10,
+          "match": "5/10",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 10,
+          "match": "4/10",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 10,
+          "match": "0/10",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "9/9",
+          "shareCount": 0,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "spot": 9,
+          "match": "8/9",
+          "shareCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "spot": 9,
+          "match": "7/9",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 9,
+          "match": "6/9",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 9,
+          "match": "5/9",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 9,
+          "match": "4/9",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "0/9",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 8,
+          "match": "8/8",
+          "shareCount": 0,
+          "prizeDescription": "$10,000"
+        },
+        {
+          "spot": 8,
+          "match": "7/8",
+          "shareCount": 0,
+          "prizeDescription": "$250"
+        },
+        {
+          "spot": 8,
+          "match": "6/8",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 8,
+          "match": "5/8",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 8,
+          "match": "4/8",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 8,
+          "match": "0/8",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "7/7",
+          "shareCount": 0,
+          "prizeDescription": "$2,500"
+        },
+        {
+          "spot": 7,
+          "match": "6/7",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 7,
+          "match": "5/7",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 7,
+          "match": "4/7",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 7,
+          "match": "3/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "0/7",
+          "shareCount": 1,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "6/6",
+          "shareCount": 0,
+          "prizeDescription": "$1,000"
+        },
+        {
+          "spot": 6,
+          "match": "5/6",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 6,
+          "match": "4/6",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 6,
+          "match": "3/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "0/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 5,
+          "match": "5/5",
+          "shareCount": 0,
+          "prizeDescription": "$450"
+        },
+        {
+          "spot": 5,
+          "match": "4/5",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 5,
+          "match": "3/5",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 4,
+          "match": "4/4",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 4,
+          "match": "3/4",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 4,
+          "match": "2/4",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 3,
+          "match": "3/3",
+          "shareCount": 0,
+          "prizeDescription": "$30"
+        },
+        {
+          "spot": 3,
+          "match": "2/3",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 2,
+          "match": "2/2",
+          "shareCount": 0,
+          "prizeDescription": "$12"
+        },
+        {
+          "spot": 1,
+          "match": "1/1",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        }
+      ],
+      "components": [
+        {
+          "name": "10 Spot",
+          "payout": 0
+        },
+        {
+          "name": "9 Spot",
+          "payout": 0
+        },
+        {
+          "name": "8 Spot",
+          "payout": 0
+        },
+        {
+          "name": "7 Spot",
+          "payout": 1
+        },
+        {
+          "name": "6 Spot",
+          "payout": 0
+        },
+        {
+          "name": "5 Spot",
+          "payout": 0
+        },
+        {
+          "name": "4 Spot",
+          "payout": 0
+        },
+        {
+          "name": "3 Spot",
+          "payout": 0
+        },
+        {
+          "name": "2 Spot",
+          "payout": 0
+        },
+        {
+          "name": "1 Spot",
+          "payout": 0
+        }
+      ],
+      "totalPayout": 1,
+      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
+    },
+    {
+      "game": "keno",
+      "gameName": "Keno",
+      "drawDate": "2026-10-02",
+      "drawTime": "02:46",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
+      "sourceNote": null,
+      "countUnit": "prize-winning shares",
+      "totalWinners": null,
+      "totalShares": 0,
+      "tiers": [
+        {
+          "spot": 10,
+          "match": "10/10",
+          "shareCount": 0,
+          "prizeDescription": "$100,000"
+        },
+        {
+          "spot": 10,
+          "match": "9/10",
+          "shareCount": 0,
+          "prizeDescription": "$5,000"
+        },
+        {
+          "spot": 10,
+          "match": "8/10",
+          "shareCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "spot": 10,
+          "match": "7/10",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 10,
+          "match": "6/10",
+          "shareCount": 0,
+          "prizeDescription": "$10"
+        },
+        {
+          "spot": 10,
+          "match": "5/10",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 10,
+          "match": "4/10",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 10,
+          "match": "0/10",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "9/9",
+          "shareCount": 0,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "spot": 9,
+          "match": "8/9",
+          "shareCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "spot": 9,
+          "match": "7/9",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 9,
+          "match": "6/9",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 9,
+          "match": "5/9",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 9,
+          "match": "4/9",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "0/9",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 8,
+          "match": "8/8",
+          "shareCount": 0,
+          "prizeDescription": "$10,000"
+        },
+        {
+          "spot": 8,
+          "match": "7/8",
+          "shareCount": 0,
+          "prizeDescription": "$250"
+        },
+        {
+          "spot": 8,
+          "match": "6/8",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 8,
+          "match": "5/8",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 8,
+          "match": "4/8",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 8,
+          "match": "0/8",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "7/7",
+          "shareCount": 0,
+          "prizeDescription": "$2,500"
+        },
+        {
+          "spot": 7,
+          "match": "6/7",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 7,
+          "match": "5/7",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 7,
+          "match": "4/7",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 7,
+          "match": "3/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "0/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "6/6",
+          "shareCount": 0,
+          "prizeDescription": "$1,000"
+        },
+        {
+          "spot": 6,
+          "match": "5/6",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 6,
+          "match": "4/6",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 6,
+          "match": "3/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "0/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 5,
+          "match": "5/5",
+          "shareCount": 0,
+          "prizeDescription": "$450"
+        },
+        {
+          "spot": 5,
+          "match": "4/5",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 5,
+          "match": "3/5",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 4,
+          "match": "4/4",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 4,
+          "match": "3/4",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 4,
+          "match": "2/4",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 3,
+          "match": "3/3",
+          "shareCount": 0,
+          "prizeDescription": "$30"
+        },
+        {
+          "spot": 3,
+          "match": "2/3",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 2,
+          "match": "2/2",
+          "shareCount": 0,
+          "prizeDescription": "$12"
+        },
+        {
+          "spot": 1,
+          "match": "1/1",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        }
+      ],
+      "components": [
+        {
+          "name": "10 Spot",
+          "payout": 0
+        },
+        {
+          "name": "9 Spot",
+          "payout": 0
+        },
+        {
+          "name": "8 Spot",
+          "payout": 0
+        },
+        {
+          "name": "7 Spot",
+          "payout": 0
+        },
+        {
+          "name": "6 Spot",
+          "payout": 0
+        },
+        {
+          "name": "5 Spot",
+          "payout": 0
+        },
+        {
+          "name": "4 Spot",
+          "payout": 0
+        },
+        {
+          "name": "3 Spot",
+          "payout": 0
+        },
+        {
+          "name": "2 Spot",
+          "payout": 0
+        },
+        {
+          "name": "1 Spot",
+          "payout": 0
+        }
+      ],
+      "totalPayout": 0,
+      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
+    },
+    {
+      "game": "keno",
+      "gameName": "Keno",
+      "drawDate": "2026-10-02",
+      "drawTime": "02:42",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
+      "sourceNote": null,
+      "countUnit": "prize-winning shares",
+      "totalWinners": null,
+      "totalShares": 0,
+      "tiers": [
+        {
+          "spot": 10,
+          "match": "10/10",
+          "shareCount": 0,
+          "prizeDescription": "$100,000"
+        },
+        {
+          "spot": 10,
+          "match": "9/10",
+          "shareCount": 0,
+          "prizeDescription": "$5,000"
+        },
+        {
+          "spot": 10,
+          "match": "8/10",
+          "shareCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "spot": 10,
+          "match": "7/10",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 10,
+          "match": "6/10",
+          "shareCount": 0,
+          "prizeDescription": "$10"
+        },
+        {
+          "spot": 10,
+          "match": "5/10",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 10,
+          "match": "4/10",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 10,
+          "match": "0/10",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "9/9",
+          "shareCount": 0,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "spot": 9,
+          "match": "8/9",
+          "shareCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "spot": 9,
+          "match": "7/9",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 9,
+          "match": "6/9",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 9,
+          "match": "5/9",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 9,
+          "match": "4/9",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "0/9",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 8,
+          "match": "8/8",
+          "shareCount": 0,
+          "prizeDescription": "$10,000"
+        },
+        {
+          "spot": 8,
+          "match": "7/8",
+          "shareCount": 0,
+          "prizeDescription": "$250"
+        },
+        {
+          "spot": 8,
+          "match": "6/8",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 8,
+          "match": "5/8",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 8,
+          "match": "4/8",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 8,
+          "match": "0/8",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "7/7",
+          "shareCount": 0,
+          "prizeDescription": "$2,500"
+        },
+        {
+          "spot": 7,
+          "match": "6/7",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 7,
+          "match": "5/7",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 7,
+          "match": "4/7",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 7,
+          "match": "3/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "0/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "6/6",
+          "shareCount": 0,
+          "prizeDescription": "$1,000"
+        },
+        {
+          "spot": 6,
+          "match": "5/6",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 6,
+          "match": "4/6",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 6,
+          "match": "3/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "0/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 5,
+          "match": "5/5",
+          "shareCount": 0,
+          "prizeDescription": "$450"
+        },
+        {
+          "spot": 5,
+          "match": "4/5",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 5,
+          "match": "3/5",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 4,
+          "match": "4/4",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 4,
+          "match": "3/4",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 4,
+          "match": "2/4",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 3,
+          "match": "3/3",
+          "shareCount": 0,
+          "prizeDescription": "$30"
+        },
+        {
+          "spot": 3,
+          "match": "2/3",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 2,
+          "match": "2/2",
+          "shareCount": 0,
+          "prizeDescription": "$12"
+        },
+        {
+          "spot": 1,
+          "match": "1/1",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        }
+      ],
+      "components": [
+        {
+          "name": "10 Spot",
+          "payout": 0
+        },
+        {
+          "name": "9 Spot",
+          "payout": 0
+        },
+        {
+          "name": "8 Spot",
+          "payout": 0
+        },
+        {
+          "name": "7 Spot",
+          "payout": 0
+        },
+        {
+          "name": "6 Spot",
+          "payout": 0
+        },
+        {
+          "name": "5 Spot",
+          "payout": 0
+        },
+        {
+          "name": "4 Spot",
+          "payout": 0
+        },
+        {
+          "name": "3 Spot",
+          "payout": 0
+        },
+        {
+          "name": "2 Spot",
+          "payout": 0
+        },
+        {
+          "name": "1 Spot",
+          "payout": 0
+        }
+      ],
+      "totalPayout": 0,
+      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
+    },
+    {
+      "game": "keno",
+      "gameName": "Keno",
+      "drawDate": "2026-10-02",
+      "drawTime": "02:38",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
+      "sourceNote": null,
+      "countUnit": "prize-winning shares",
+      "totalWinners": null,
+      "totalShares": 1,
+      "tiers": [
+        {
+          "spot": 10,
+          "match": "10/10",
+          "shareCount": 0,
+          "prizeDescription": "$100,000"
+        },
+        {
+          "spot": 10,
+          "match": "9/10",
+          "shareCount": 0,
+          "prizeDescription": "$5,000"
+        },
+        {
+          "spot": 10,
+          "match": "8/10",
+          "shareCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "spot": 10,
+          "match": "7/10",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 10,
+          "match": "6/10",
+          "shareCount": 0,
+          "prizeDescription": "$10"
+        },
+        {
+          "spot": 10,
+          "match": "5/10",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 10,
+          "match": "4/10",
+          "shareCount": 1,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 10,
+          "match": "0/10",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "9/9",
+          "shareCount": 0,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "spot": 9,
+          "match": "8/9",
+          "shareCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "spot": 9,
+          "match": "7/9",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 9,
+          "match": "6/9",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 9,
+          "match": "5/9",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 9,
+          "match": "4/9",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "0/9",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 8,
+          "match": "8/8",
+          "shareCount": 0,
+          "prizeDescription": "$10,000"
+        },
+        {
+          "spot": 8,
+          "match": "7/8",
+          "shareCount": 0,
+          "prizeDescription": "$250"
+        },
+        {
+          "spot": 8,
+          "match": "6/8",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 8,
+          "match": "5/8",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 8,
+          "match": "4/8",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 8,
+          "match": "0/8",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "7/7",
+          "shareCount": 0,
+          "prizeDescription": "$2,500"
+        },
+        {
+          "spot": 7,
+          "match": "6/7",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 7,
+          "match": "5/7",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 7,
+          "match": "4/7",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 7,
+          "match": "3/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "0/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "6/6",
+          "shareCount": 0,
+          "prizeDescription": "$1,000"
+        },
+        {
+          "spot": 6,
+          "match": "5/6",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 6,
+          "match": "4/6",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 6,
+          "match": "3/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "0/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 5,
+          "match": "5/5",
+          "shareCount": 0,
+          "prizeDescription": "$450"
+        },
+        {
+          "spot": 5,
+          "match": "4/5",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 5,
+          "match": "3/5",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 4,
+          "match": "4/4",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 4,
+          "match": "3/4",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 4,
+          "match": "2/4",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 3,
+          "match": "3/3",
+          "shareCount": 0,
+          "prizeDescription": "$30"
+        },
+        {
+          "spot": 3,
+          "match": "2/3",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 2,
+          "match": "2/2",
+          "shareCount": 0,
+          "prizeDescription": "$12"
+        },
+        {
+          "spot": 1,
+          "match": "1/1",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        }
+      ],
+      "components": [
+        {
+          "name": "10 Spot",
+          "payout": 1
+        },
+        {
+          "name": "9 Spot",
+          "payout": 0
+        },
+        {
+          "name": "8 Spot",
+          "payout": 0
+        },
+        {
+          "name": "7 Spot",
+          "payout": 0
+        },
+        {
+          "name": "6 Spot",
+          "payout": 0
+        },
+        {
+          "name": "5 Spot",
+          "payout": 0
+        },
+        {
+          "name": "4 Spot",
+          "payout": 0
+        },
+        {
+          "name": "3 Spot",
+          "payout": 0
+        },
+        {
+          "name": "2 Spot",
+          "payout": 0
+        },
+        {
+          "name": "1 Spot",
+          "payout": 0
+        }
+      ],
+      "totalPayout": 1,
+      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
+    },
+    {
+      "game": "keno",
+      "gameName": "Keno",
+      "drawDate": "2026-10-02",
+      "drawTime": "02:34",
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
       "sourceNote": null,
@@ -170,317 +2026,7 @@
         {
           "spot": 7,
           "match": "3/7",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 7,
-          "match": "0/7",
           "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 6,
-          "match": "6/6",
-          "shareCount": 0,
-          "prizeDescription": "$1,000"
-        },
-        {
-          "spot": 6,
-          "match": "5/6",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 6,
-          "match": "4/6",
-          "shareCount": 0,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 6,
-          "match": "3/6",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 6,
-          "match": "0/6",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 5,
-          "match": "5/5",
-          "shareCount": 0,
-          "prizeDescription": "$450"
-        },
-        {
-          "spot": 5,
-          "match": "4/5",
-          "shareCount": 0,
-          "prizeDescription": "$20"
-        },
-        {
-          "spot": 5,
-          "match": "3/5",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 4,
-          "match": "4/4",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 4,
-          "match": "3/4",
-          "shareCount": 0,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 4,
-          "match": "2/4",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 3,
-          "match": "3/3",
-          "shareCount": 0,
-          "prizeDescription": "$30"
-        },
-        {
-          "spot": 3,
-          "match": "2/3",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 2,
-          "match": "2/2",
-          "shareCount": 0,
-          "prizeDescription": "$12"
-        },
-        {
-          "spot": 1,
-          "match": "1/1",
-          "shareCount": 0,
-          "prizeDescription": "$3"
-        }
-      ],
-      "components": [
-        {
-          "name": "10 Spot",
-          "payout": 0
-        },
-        {
-          "name": "9 Spot",
-          "payout": 0
-        },
-        {
-          "name": "8 Spot",
-          "payout": 0
-        },
-        {
-          "name": "7 Spot",
-          "payout": 1
-        },
-        {
-          "name": "6 Spot",
-          "payout": 0
-        },
-        {
-          "name": "5 Spot",
-          "payout": 0
-        },
-        {
-          "name": "4 Spot",
-          "payout": 1
-        },
-        {
-          "name": "3 Spot",
-          "payout": 0
-        },
-        {
-          "name": "2 Spot",
-          "payout": 0
-        },
-        {
-          "name": "1 Spot",
-          "payout": 0
-        }
-      ],
-      "totalPayout": 2,
-      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
-    },
-    {
-      "game": "keno",
-      "gameName": "Keno",
-      "drawDate": "2026-10-02",
-      "drawTime": "02:14",
-      "jurisdiction": "Virginia",
-      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
-      "sourceNote": null,
-      "countUnit": "prize-winning shares",
-      "totalWinners": null,
-      "totalShares": 5,
-      "tiers": [
-        {
-          "spot": 10,
-          "match": "10/10",
-          "shareCount": 0,
-          "prizeDescription": "$100,000"
-        },
-        {
-          "spot": 10,
-          "match": "9/10",
-          "shareCount": 0,
-          "prizeDescription": "$5,000"
-        },
-        {
-          "spot": 10,
-          "match": "8/10",
-          "shareCount": 0,
-          "prizeDescription": "$500"
-        },
-        {
-          "spot": 10,
-          "match": "7/10",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 10,
-          "match": "6/10",
-          "shareCount": 0,
-          "prizeDescription": "$10"
-        },
-        {
-          "spot": 10,
-          "match": "5/10",
-          "shareCount": 0,
-          "prizeDescription": "$3"
-        },
-        {
-          "spot": 10,
-          "match": "4/10",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 10,
-          "match": "0/10",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 9,
-          "match": "9/9",
-          "shareCount": 0,
-          "prizeDescription": "$50,000"
-        },
-        {
-          "spot": 9,
-          "match": "8/9",
-          "shareCount": 0,
-          "prizeDescription": "$2,000"
-        },
-        {
-          "spot": 9,
-          "match": "7/9",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 9,
-          "match": "6/9",
-          "shareCount": 0,
-          "prizeDescription": "$20"
-        },
-        {
-          "spot": 9,
-          "match": "5/9",
-          "shareCount": 0,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 9,
-          "match": "4/9",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 9,
-          "match": "0/9",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 8,
-          "match": "8/8",
-          "shareCount": 0,
-          "prizeDescription": "$10,000"
-        },
-        {
-          "spot": 8,
-          "match": "7/8",
-          "shareCount": 0,
-          "prizeDescription": "$250"
-        },
-        {
-          "spot": 8,
-          "match": "6/8",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 8,
-          "match": "5/8",
-          "shareCount": 0,
-          "prizeDescription": "$15"
-        },
-        {
-          "spot": 8,
-          "match": "4/8",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 8,
-          "match": "0/8",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 7,
-          "match": "7/7",
-          "shareCount": 0,
-          "prizeDescription": "$2,500"
-        },
-        {
-          "spot": 7,
-          "match": "6/7",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 7,
-          "match": "5/7",
-          "shareCount": 0,
-          "prizeDescription": "$15"
-        },
-        {
-          "spot": 7,
-          "match": "4/7",
-          "shareCount": 1,
-          "prizeDescription": "$3"
-        },
-        {
-          "spot": 7,
-          "match": "3/7",
-          "shareCount": 0,
           "prizeDescription": "$1"
         },
         {
@@ -552,936 +2098,6 @@
         {
           "spot": 4,
           "match": "2/4",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 3,
-          "match": "3/3",
-          "shareCount": 0,
-          "prizeDescription": "$30"
-        },
-        {
-          "spot": 3,
-          "match": "2/3",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 2,
-          "match": "2/2",
-          "shareCount": 0,
-          "prizeDescription": "$12"
-        },
-        {
-          "spot": 1,
-          "match": "1/1",
-          "shareCount": 0,
-          "prizeDescription": "$3"
-        }
-      ],
-      "components": [
-        {
-          "name": "10 Spot",
-          "payout": 1
-        },
-        {
-          "name": "9 Spot",
-          "payout": 1
-        },
-        {
-          "name": "8 Spot",
-          "payout": 0
-        },
-        {
-          "name": "7 Spot",
-          "payout": 3
-        },
-        {
-          "name": "6 Spot",
-          "payout": 0
-        },
-        {
-          "name": "5 Spot",
-          "payout": 2
-        },
-        {
-          "name": "4 Spot",
-          "payout": 1
-        },
-        {
-          "name": "3 Spot",
-          "payout": 0
-        },
-        {
-          "name": "2 Spot",
-          "payout": 0
-        },
-        {
-          "name": "1 Spot",
-          "payout": 0
-        }
-      ],
-      "totalPayout": 8,
-      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
-    },
-    {
-      "game": "keno",
-      "gameName": "Keno",
-      "drawDate": "2026-10-02",
-      "drawTime": "02:10",
-      "jurisdiction": "Virginia",
-      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
-      "sourceNote": null,
-      "countUnit": "prize-winning shares",
-      "totalWinners": null,
-      "totalShares": 8,
-      "tiers": [
-        {
-          "spot": 10,
-          "match": "10/10",
-          "shareCount": 0,
-          "prizeDescription": "$100,000"
-        },
-        {
-          "spot": 10,
-          "match": "9/10",
-          "shareCount": 0,
-          "prizeDescription": "$5,000"
-        },
-        {
-          "spot": 10,
-          "match": "8/10",
-          "shareCount": 0,
-          "prizeDescription": "$500"
-        },
-        {
-          "spot": 10,
-          "match": "7/10",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 10,
-          "match": "6/10",
-          "shareCount": 0,
-          "prizeDescription": "$10"
-        },
-        {
-          "spot": 10,
-          "match": "5/10",
-          "shareCount": 1,
-          "prizeDescription": "$3"
-        },
-        {
-          "spot": 10,
-          "match": "4/10",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 10,
-          "match": "0/10",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 9,
-          "match": "9/9",
-          "shareCount": 0,
-          "prizeDescription": "$50,000"
-        },
-        {
-          "spot": 9,
-          "match": "8/9",
-          "shareCount": 0,
-          "prizeDescription": "$2,000"
-        },
-        {
-          "spot": 9,
-          "match": "7/9",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 9,
-          "match": "6/9",
-          "shareCount": 0,
-          "prizeDescription": "$20"
-        },
-        {
-          "spot": 9,
-          "match": "5/9",
-          "shareCount": 0,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 9,
-          "match": "4/9",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 9,
-          "match": "0/9",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 8,
-          "match": "8/8",
-          "shareCount": 0,
-          "prizeDescription": "$10,000"
-        },
-        {
-          "spot": 8,
-          "match": "7/8",
-          "shareCount": 0,
-          "prizeDescription": "$250"
-        },
-        {
-          "spot": 8,
-          "match": "6/8",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 8,
-          "match": "5/8",
-          "shareCount": 0,
-          "prizeDescription": "$15"
-        },
-        {
-          "spot": 8,
-          "match": "4/8",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 8,
-          "match": "0/8",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 7,
-          "match": "7/7",
-          "shareCount": 0,
-          "prizeDescription": "$2,500"
-        },
-        {
-          "spot": 7,
-          "match": "6/7",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 7,
-          "match": "5/7",
-          "shareCount": 0,
-          "prizeDescription": "$15"
-        },
-        {
-          "spot": 7,
-          "match": "4/7",
-          "shareCount": 0,
-          "prizeDescription": "$3"
-        },
-        {
-          "spot": 7,
-          "match": "3/7",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 7,
-          "match": "0/7",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 6,
-          "match": "6/6",
-          "shareCount": 0,
-          "prizeDescription": "$1,000"
-        },
-        {
-          "spot": 6,
-          "match": "5/6",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 6,
-          "match": "4/6",
-          "shareCount": 0,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 6,
-          "match": "3/6",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 6,
-          "match": "0/6",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 5,
-          "match": "5/5",
-          "shareCount": 0,
-          "prizeDescription": "$450"
-        },
-        {
-          "spot": 5,
-          "match": "4/5",
-          "shareCount": 0,
-          "prizeDescription": "$20"
-        },
-        {
-          "spot": 5,
-          "match": "3/5",
-          "shareCount": 1,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 4,
-          "match": "4/4",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 4,
-          "match": "3/4",
-          "shareCount": 0,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 4,
-          "match": "2/4",
-          "shareCount": 5,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 3,
-          "match": "3/3",
-          "shareCount": 0,
-          "prizeDescription": "$30"
-        },
-        {
-          "spot": 3,
-          "match": "2/3",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 2,
-          "match": "2/2",
-          "shareCount": 0,
-          "prizeDescription": "$12"
-        },
-        {
-          "spot": 1,
-          "match": "1/1",
-          "shareCount": 0,
-          "prizeDescription": "$3"
-        }
-      ],
-      "components": [
-        {
-          "name": "10 Spot",
-          "payout": 3
-        },
-        {
-          "name": "9 Spot",
-          "payout": 1
-        },
-        {
-          "name": "8 Spot",
-          "payout": 0
-        },
-        {
-          "name": "7 Spot",
-          "payout": 0
-        },
-        {
-          "name": "6 Spot",
-          "payout": 0
-        },
-        {
-          "name": "5 Spot",
-          "payout": 2
-        },
-        {
-          "name": "4 Spot",
-          "payout": 5
-        },
-        {
-          "name": "3 Spot",
-          "payout": 0
-        },
-        {
-          "name": "2 Spot",
-          "payout": 0
-        },
-        {
-          "name": "1 Spot",
-          "payout": 0
-        }
-      ],
-      "totalPayout": 11,
-      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
-    },
-    {
-      "game": "keno",
-      "gameName": "Keno",
-      "drawDate": "2026-10-02",
-      "drawTime": "02:06",
-      "jurisdiction": "Virginia",
-      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
-      "sourceNote": null,
-      "countUnit": "prize-winning shares",
-      "totalWinners": null,
-      "totalShares": 15,
-      "tiers": [
-        {
-          "spot": 10,
-          "match": "10/10",
-          "shareCount": 0,
-          "prizeDescription": "$100,000"
-        },
-        {
-          "spot": 10,
-          "match": "9/10",
-          "shareCount": 0,
-          "prizeDescription": "$5,000"
-        },
-        {
-          "spot": 10,
-          "match": "8/10",
-          "shareCount": 0,
-          "prizeDescription": "$500"
-        },
-        {
-          "spot": 10,
-          "match": "7/10",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 10,
-          "match": "6/10",
-          "shareCount": 0,
-          "prizeDescription": "$10"
-        },
-        {
-          "spot": 10,
-          "match": "5/10",
-          "shareCount": 0,
-          "prizeDescription": "$3"
-        },
-        {
-          "spot": 10,
-          "match": "4/10",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 10,
-          "match": "0/10",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 9,
-          "match": "9/9",
-          "shareCount": 0,
-          "prizeDescription": "$50,000"
-        },
-        {
-          "spot": 9,
-          "match": "8/9",
-          "shareCount": 0,
-          "prizeDescription": "$2,000"
-        },
-        {
-          "spot": 9,
-          "match": "7/9",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 9,
-          "match": "6/9",
-          "shareCount": 0,
-          "prizeDescription": "$20"
-        },
-        {
-          "spot": 9,
-          "match": "5/9",
-          "shareCount": 0,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 9,
-          "match": "4/9",
-          "shareCount": 1,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 9,
-          "match": "0/9",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 8,
-          "match": "8/8",
-          "shareCount": 0,
-          "prizeDescription": "$10,000"
-        },
-        {
-          "spot": 8,
-          "match": "7/8",
-          "shareCount": 0,
-          "prizeDescription": "$250"
-        },
-        {
-          "spot": 8,
-          "match": "6/8",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 8,
-          "match": "5/8",
-          "shareCount": 0,
-          "prizeDescription": "$15"
-        },
-        {
-          "spot": 8,
-          "match": "4/8",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 8,
-          "match": "0/8",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 7,
-          "match": "7/7",
-          "shareCount": 0,
-          "prizeDescription": "$2,500"
-        },
-        {
-          "spot": 7,
-          "match": "6/7",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 7,
-          "match": "5/7",
-          "shareCount": 0,
-          "prizeDescription": "$15"
-        },
-        {
-          "spot": 7,
-          "match": "4/7",
-          "shareCount": 0,
-          "prizeDescription": "$3"
-        },
-        {
-          "spot": 7,
-          "match": "3/7",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 7,
-          "match": "0/7",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 6,
-          "match": "6/6",
-          "shareCount": 0,
-          "prizeDescription": "$1,000"
-        },
-        {
-          "spot": 6,
-          "match": "5/6",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 6,
-          "match": "4/6",
-          "shareCount": 0,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 6,
-          "match": "3/6",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 6,
-          "match": "0/6",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 5,
-          "match": "5/5",
-          "shareCount": 0,
-          "prizeDescription": "$450"
-        },
-        {
-          "spot": 5,
-          "match": "4/5",
-          "shareCount": 0,
-          "prizeDescription": "$20"
-        },
-        {
-          "spot": 5,
-          "match": "3/5",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 4,
-          "match": "4/4",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 4,
-          "match": "3/4",
-          "shareCount": 4,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 4,
-          "match": "2/4",
-          "shareCount": 8,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 3,
-          "match": "3/3",
-          "shareCount": 0,
-          "prizeDescription": "$30"
-        },
-        {
-          "spot": 3,
-          "match": "2/3",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 2,
-          "match": "2/2",
-          "shareCount": 0,
-          "prizeDescription": "$12"
-        },
-        {
-          "spot": 1,
-          "match": "1/1",
-          "shareCount": 0,
-          "prizeDescription": "$3"
-        }
-      ],
-      "components": [
-        {
-          "name": "10 Spot",
-          "payout": 1
-        },
-        {
-          "name": "9 Spot",
-          "payout": 2
-        },
-        {
-          "name": "8 Spot",
-          "payout": 0
-        },
-        {
-          "name": "7 Spot",
-          "payout": 1
-        },
-        {
-          "name": "6 Spot",
-          "payout": 0
-        },
-        {
-          "name": "5 Spot",
-          "payout": 0
-        },
-        {
-          "name": "4 Spot",
-          "payout": 28
-        },
-        {
-          "name": "3 Spot",
-          "payout": 0
-        },
-        {
-          "name": "2 Spot",
-          "payout": 0
-        },
-        {
-          "name": "1 Spot",
-          "payout": 0
-        }
-      ],
-      "totalPayout": 32,
-      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
-    },
-    {
-      "game": "keno",
-      "gameName": "Keno",
-      "drawDate": "2026-10-02",
-      "drawTime": "02:02",
-      "jurisdiction": "Virginia",
-      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
-      "sourceNote": null,
-      "countUnit": "prize-winning shares",
-      "totalWinners": null,
-      "totalShares": 10,
-      "tiers": [
-        {
-          "spot": 10,
-          "match": "10/10",
-          "shareCount": 0,
-          "prizeDescription": "$100,000"
-        },
-        {
-          "spot": 10,
-          "match": "9/10",
-          "shareCount": 0,
-          "prizeDescription": "$5,000"
-        },
-        {
-          "spot": 10,
-          "match": "8/10",
-          "shareCount": 0,
-          "prizeDescription": "$500"
-        },
-        {
-          "spot": 10,
-          "match": "7/10",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 10,
-          "match": "6/10",
-          "shareCount": 0,
-          "prizeDescription": "$10"
-        },
-        {
-          "spot": 10,
-          "match": "5/10",
-          "shareCount": 1,
-          "prizeDescription": "$3"
-        },
-        {
-          "spot": 10,
-          "match": "4/10",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 10,
-          "match": "0/10",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 9,
-          "match": "9/9",
-          "shareCount": 0,
-          "prizeDescription": "$50,000"
-        },
-        {
-          "spot": 9,
-          "match": "8/9",
-          "shareCount": 0,
-          "prizeDescription": "$2,000"
-        },
-        {
-          "spot": 9,
-          "match": "7/9",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 9,
-          "match": "6/9",
-          "shareCount": 0,
-          "prizeDescription": "$20"
-        },
-        {
-          "spot": 9,
-          "match": "5/9",
-          "shareCount": 1,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 9,
-          "match": "4/9",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 9,
-          "match": "0/9",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 8,
-          "match": "8/8",
-          "shareCount": 0,
-          "prizeDescription": "$10,000"
-        },
-        {
-          "spot": 8,
-          "match": "7/8",
-          "shareCount": 0,
-          "prizeDescription": "$250"
-        },
-        {
-          "spot": 8,
-          "match": "6/8",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 8,
-          "match": "5/8",
-          "shareCount": 0,
-          "prizeDescription": "$15"
-        },
-        {
-          "spot": 8,
-          "match": "4/8",
-          "shareCount": 0,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 8,
-          "match": "0/8",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 7,
-          "match": "7/7",
-          "shareCount": 0,
-          "prizeDescription": "$2,500"
-        },
-        {
-          "spot": 7,
-          "match": "6/7",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 7,
-          "match": "5/7",
-          "shareCount": 0,
-          "prizeDescription": "$15"
-        },
-        {
-          "spot": 7,
-          "match": "4/7",
-          "shareCount": 0,
-          "prizeDescription": "$3"
-        },
-        {
-          "spot": 7,
-          "match": "3/7",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 7,
-          "match": "0/7",
-          "shareCount": 1,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 6,
-          "match": "6/6",
-          "shareCount": 0,
-          "prizeDescription": "$1,000"
-        },
-        {
-          "spot": 6,
-          "match": "5/6",
-          "shareCount": 0,
-          "prizeDescription": "$50"
-        },
-        {
-          "spot": 6,
-          "match": "4/6",
-          "shareCount": 0,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 6,
-          "match": "3/6",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 6,
-          "match": "0/6",
-          "shareCount": 0,
-          "prizeDescription": "$1"
-        },
-        {
-          "spot": 5,
-          "match": "5/5",
-          "shareCount": 0,
-          "prizeDescription": "$450"
-        },
-        {
-          "spot": 5,
-          "match": "4/5",
-          "shareCount": 0,
-          "prizeDescription": "$20"
-        },
-        {
-          "spot": 5,
-          "match": "3/5",
-          "shareCount": 1,
-          "prizeDescription": "$2"
-        },
-        {
-          "spot": 4,
-          "match": "4/4",
-          "shareCount": 0,
-          "prizeDescription": "$100"
-        },
-        {
-          "spot": 4,
-          "match": "3/4",
-          "shareCount": 4,
-          "prizeDescription": "$5"
-        },
-        {
-          "spot": 4,
-          "match": "2/4",
           "shareCount": 0,
           "prizeDescription": "$1"
         },
@@ -1513,11 +2129,11 @@
       "components": [
         {
           "name": "10 Spot",
-          "payout": 4
+          "payout": 0
         },
         {
           "name": "9 Spot",
-          "payout": 5
+          "payout": 0
         },
         {
           "name": "8 Spot",
@@ -1525,7 +2141,7 @@
         },
         {
           "name": "7 Spot",
-          "payout": 2
+          "payout": 1
         },
         {
           "name": "6 Spot",
@@ -1537,7 +2153,7 @@
         },
         {
           "name": "4 Spot",
-          "payout": 20
+          "payout": 0
         },
         {
           "name": "3 Spot",
@@ -1552,7 +2168,7 @@
           "payout": 0
         }
       ],
-      "totalPayout": 33,
+      "totalPayout": 3,
       "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
     },
     {
@@ -3022,6 +3638,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
       "sourceNote": null,
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {
@@ -3076,6 +3693,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
       "sourceNote": null,
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {
@@ -3130,6 +3748,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
       "sourceNote": null,
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {
@@ -3184,6 +3803,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
       "sourceNote": null,
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {
@@ -3238,6 +3858,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
       "sourceNote": null,
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {
@@ -3292,6 +3913,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
       "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {
@@ -3351,6 +3973,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
       "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {
@@ -3410,6 +4033,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
       "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {
@@ -3469,6 +4093,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
       "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {
@@ -3528,6 +4153,7 @@
       "jurisdiction": "Virginia",
       "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
       "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
       "countUnit": "source-reported prize winners",
       "tiers": [
         {

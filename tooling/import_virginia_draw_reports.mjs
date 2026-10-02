@@ -18,5 +18,13 @@ for (const gameId of Object.keys({...tableGames, ...pickGames, 1030: {}, 40: {},
 assertNoReportRegression(previous, reports);
 await writeFile(output, JSON.stringify({schemaVersion: 1, state: 'Virginia',
   retrievedAt: new Date().toISOString(), sourcePublicationDate: null,
-  cadence: 'Official per-draw reports; app refresh is scheduled, not live.', reports}, null, 2) + '\n');
+  cadence: 'Official per-draw reports; app refresh is scheduled, not live.',
+  additionalSources: [
+    {game: 'raffle', gameName: "New Year's Millionaire Raffle", period: '2026-01-01',
+      sourceUrl: 'https://www.valottery.com/data/draw-games/raffle',
+      limitations: 'Seasonal official winning-number report linked at source. Ticket-number rows are not imported as claim or retailer activity.'},
+    {game: 'cash4life', gameName: 'Cash4Life', period: 'Historical winner releases only',
+      sourceUrl: 'https://www.valottery.com/winnersnews/latestwinners',
+      limitations: 'Historical identity retained in selected winner releases; not a current recurring game or complete historical claims report.'},
+  ], reports}, null, 2) + '\n');
 console.log(`Validated ${reports.length} Virginia draw reports`);

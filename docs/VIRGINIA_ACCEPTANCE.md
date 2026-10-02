@@ -64,7 +64,7 @@ unmatched-game fallback to Scratch. These are accuracy gaps, not enhancements.
 
 ## Release checklist
 
-- [ ] Finish national/state/seasonal game scope and available-report reconciliation.
+- [x] Finish national/state/seasonal game scope and available-report reconciliation (October 2, 03:00 ET; implementation/acceptance still pending).
 - [ ] Correct publication-date presentation and audit unmatched classification.
 - [ ] Verify catalog, retailer/source limitations and available draw routes.
 - [ ] Native state/county/game/prize/date filters, reset, scoped empty/detail/source.
@@ -201,3 +201,34 @@ time regression is guarded. Thirteen parser tests pass and live import stages
 75 reports across eight state games. Keno is a recent snapshot, not a complete
 four-minute history. National/seasonal reconciliation and app integration remain
 pending; no release acceptance is implied.
+
+## October 2 full scope reconciliation (03:00 ET)
+
+Full per-game scope/gap reconciliation is complete before the October 2 19:02 ET
+checkpoint. Supported scope includes Powerball/Power Play, Mega Millions, all
+eight recurring state games, seasonal Raffle, historical Cash4Life releases,
+Scratch inventory, selected retailer winner releases and the current directory.
+
+Powerball's official dated table includes an outside-Virginia winner; label it
+multi-jurisdiction with Virginia share unavailable. Mega Millions' table does
+not establish a Virginia share; label source jurisdiction unverified and never
+present it as a Virginia total. Both tables are now staged with literal prize
+strings. Powerball multiplier is retained separately, without invented Power
+Play counts or multiplied payouts. The inspected drawnumbers/prizesandodds routes
+supply no separate Power Play winner table. The official game page remains the
+source route for rules/odds and any subsequently available detail. No third-party
+winner counts are substituted. These explicit gaps do not delay public-source
+completion or trigger a new agency request.
+
+The seasonal Raffle route links official dated winning-number reports; provide
+that route without publishing ticket rows or implying claimed prizes. Cash4Life
+remains historical release coverage. Scratch remains remaining-prize inventory,
+not daily claims. Print 'n Play and online-only releases are excluded from the
+retail Scratcher map, with the observed misclassification corrected earlier.
+State report online/retail combined totals remain explicitly labeled.
+
+The staged set now contains 85 reports across ten recurring national/state games.
+Fourteen parser regressions pass. Next deliverables are report UI and bundled/
+cached loading, state refresh transaction/publication, then integrated native and
+independent live acceptance. This checkbox closes scope definition, not release.
+Opening publisher 36974377147 succeeded; no new agency mail. No deadline change.

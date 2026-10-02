@@ -21,7 +21,7 @@ test('reject changed jurisdiction, malformed counts, tiers and duplicate dates',
     assert.throws(() => parseTableReports(p, 1075));
   }
 });
-test('reject unsupported national data and per-game date regression', () => {
+test('reject mismatched game data and per-game date regression', () => {
   assert.throws(() => parseTableReports(fixture('millionaireforlife'), 20));
   const reports = parseTableReports(fixture('millionaireforlife'), 1075);
   assert.throws(() => assertNoReportRegression(reports, reports.slice(1)));
@@ -124,4 +124,15 @@ test('Keno rejects changed units, incomplete spot tables, payout mismatch', () =
     const p = fixture('keno'); mutate(p);
     assert.throws(() => parseKenoReports(p));
   }
+});
+test('national-game tables cannot become Virginia counts or multiplier-derived payouts', () => {
+  const pb = parseTableReports(fixture('powerball'), 20)[0];
+  assert.equal(pb.jurisdiction, 'Multi-jurisdiction; Virginia share unavailable');
+  assert.equal(pb.multiplier, '4X');
+  assert.equal(pb.totalPayout, null);
+  assert.match(pb.sourceNote, /Texas/);
+  const mm = parseTableReports(fixture('megamillions'), 15)[0];
+  assert.equal(mm.jurisdiction, 'Source jurisdiction unverified; not a Virginia total');
+  assert.match(mm.tiers[2].prizeDescription, / - /);
+  assert.equal(mm.totalPayout, null);
 });

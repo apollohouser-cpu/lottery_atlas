@@ -1,5 +1,7 @@
 // Dated official reports; kept separate from retailer winner releases.
 export const tableGames = {
+  20: {code: 'powerball', name: 'Powerball', path: 'powerball', matches: ['5 + 1', '5', '4 + 1', '4', '3 + 1', '3', '2 + 1', '1 + 1', 'Powerball'], scope: 'Multi-jurisdiction; Virginia share unavailable'},
+  15: {code: 'mega-millions', name: 'Mega Millions', path: 'megamillions', matches: ['5 + 1', '5', '4 + 1', '4', '3 + 1', '3', '2 + 1', '1 + 1', 'Mega Ball'], scope: 'Source jurisdiction unverified; not a Virginia total'},
   1075: {code: 'millionaire-for-life', name: 'Millionaire for Life', path: 'millionaireforlife', matches: ['5 + 1', '5', '4 + 1', '4', '3 + 1', '3', '2 + 1', '2', '1 + 1']},
   1070: {code: 'bank-a-million', name: 'Bank a Million', path: 'bankamillion', matches: ['6', '5 + 1', '5', '4 + 1', '4', '3 + 1', '3', '2 + 1']},
 };
@@ -29,11 +31,13 @@ export function parseTableReports(payload, gameId) {
     });
     const totalWinners = tiers.reduce((n, tier) => n + tier.winnerCount, 0);
     if (!Number.isSafeInteger(totalWinners)) fail('Unsafe total');
-    return {game: game.code, gameName: game.name, drawDate: date, jurisdiction: 'Virginia',
+    return {game: game.code, gameName: game.name, drawDate: date, jurisdiction: game.scope ?? 'Virginia',
       sourceUrl: `https://www.valottery.com/data/draw-games/${game.path}`,
-      sourceNote: data.WinnerLocation || null, countUnit: 'source-reported prize winners',
+      sourceNote: data.WinnerLocation || null,
+      multiplier: Number(gameId) === 20 ? draw.DailyDraws?.[0]?.Multiplier?.Value || null : null,
+      countUnit: 'source-reported prize winners',
       tiers, totalWinners, totalPayout: null,
-      limitations: 'Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred.'};
+      limitations: (game.scope ? 'These source counts are not Virginia totals. No Virginia share is inferred. ' : '') + (Number(gameId) === 20 ? 'Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. ' : '') + 'Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred.'};
   }).filter(Boolean);
   if (!reports.length) fail('No published tier reports');
   return reports;
