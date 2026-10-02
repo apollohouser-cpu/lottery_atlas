@@ -232,3 +232,19 @@ Fourteen parser regressions pass. Next deliverables are report UI and bundled/
 cached loading, state refresh transaction/publication, then integrated native and
 independent live acceptance. This checkbox closes scope definition, not release.
 Opening publisher 36974377147 succeeded; no new agency mail. No deadline change.
+
+## October 2 bundled/cache loading (04:00 ET)
+
+Added Virginia report asset registration and a validated remote/cache/bundle loader.
+It requires all ten recurring games, official source URLs, provenance and valid
+units, rejects a Virginia allocation of national report counts, and preserves
+unknown winner counts for payout-only reports and Keno shares. Valid responses
+remain usable when cache writes fail; unavailable/invalid remote data falls back
+to saved or bundled reports without rewriting source dates. Four focused loader
+regressions pass; changed-file analysis is clean. UI/transaction/publication and
+native verification remain pending; the loader is not yet a navigable feature.
+
+Opening publisher 36976620873 succeeded. Bot66ddfb2 status independently matches
+the live status bytes: Texas updated, Nebraska retained after failure. The October
+2 maintenance checkpoint still needs per-feed TX verification and NE investigation;
+prior accepted-state UI stays closed. No new agency mail. Deadlines unchanged.
