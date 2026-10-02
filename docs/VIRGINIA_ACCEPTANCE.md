@@ -420,3 +420,15 @@ No new agency mail or publisher change. Game selection/reset is closed; prize
 range/reset, catalog and native failure/reconnection remain. Next session must
 also handle the existing 15:00 ET Nebraska investigation/Texas live-feed recovery
 checkpoint. Virginia remains unaccepted; release deadline unchanged.
+
+### October 2, 15:00 ET — refreshed live report verification
+
+Publisher 37048391602 succeeded and bot commit 39aa857 was fast-forwarded.
+Independent HTTPS downloads match committed report and refresh-status bytes.
+The refreshed report window now contains 79 reports across all ten recurring
+games (previously 85): Cash Pop has 22 published sessions and each Pick game
+nine, with latest October 2 publication; unavailable sessions are not zero
+payout reports. The other seven game groups retain five reports each. This is
+live-feed evidence, not native acceptance of the refreshed window. Native prize
+reset, catalog and request-failure/reconnection checks remain open. No new agency
+mail. Release deadline remains October 4, 19:02 ET.

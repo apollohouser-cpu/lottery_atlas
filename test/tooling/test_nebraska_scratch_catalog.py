@@ -12,7 +12,8 @@ class NebraskaTest(unittest.TestCase):
     def test_navigation_promotions_do_not_become_catalog_rows(self):
         card='<div class="row"><div class="scratch_ball"><div>$1</div></div><div><div class="card"><div class="card-body"><a href="/scratch-detail?gameid=1035"></a><strong>Pocket Change 5X</strong></div></div></div></div>'
         nav='<div class="sbm_contain_all"><a href="/scratch-detail?gameid=1035"><h3>Promotional duplicate</h3></a></div>'
-        games=m.parse_listing('<html>'+nav+card+'</html>')
+        new_nav='<div class="maxidrop-main"><div class="sbm_game_card"><a href="/scratch-detail?gameid=1035"><h3>Promotional duplicate</h3></a></div></div>'
+        games=m.parse_listing('<html>'+nav+new_nav+card+'</html>')
         self.assertEqual(len(games),1);self.assertEqual(games[0]['cost'],1)
         with self.assertRaises(ValueError):m.parse_listing('<html>'+card+card+'</html>')
         with self.assertRaises(ValueError):m.parse_listing(card.replace('$1','unknown'))

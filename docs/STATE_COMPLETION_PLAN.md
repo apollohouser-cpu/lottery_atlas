@@ -1576,3 +1576,24 @@ persistent Nebraska/Texas retrieval or validation failures by October2 15:00 ET.
 This is a bounded feed-maintenance follow-up, not reopened state acceptance.
 The previous Texas October1 recovery checkpoint remains closed. Virginia stays
 sole active with its original October4 deadline.
+
+### October 2, 15:00 ET — Nebraska parser repair and Texas retained-data check
+
+The scheduled publisher 37048391602 succeeded (bot 39aa857), with Nebraska and
+Texas retained after failure. Independent public downloads of activity, catalog,
+retailer, Texas tier, statewide totals and refresh-status feeds all match the
+committed bytes. All five Texas source files are byte-identical to 4dff301;
+this verifies safe retention, not a newly successful Texas refresh.
+
+Nebraska's source moved promotional cards into `maxidrop-main` navigation. The
+parser wrongly treated those price-less links as catalog entries. Excluding
+that explicit navigation container restores the live import: 24 games, 23 dated
+counts, one excluded identity, and identical catalog content/source date
+(September 13). Nine focused tests pass, including the new navigation variant
+and existing malformed/duplicate/identity rejection. No inventory or dates were
+advanced; next scheduled transaction must confirm deployed recovery.
+
+Texas's private diagnostic catalog import succeeds with 74 games. Retailer-source
+retrieval is being investigated with the retained baseline; no generated probe
+output is promoted. The October 1 recovery checkpoint stays closed; this newer
+failure episode remains open. Virginia continues with the existing deadline.
