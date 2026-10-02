@@ -84,8 +84,9 @@ class VirginiaPrizeTablesLoader {
           throw const FormatException('Invalid tier');
         }
         final count = tier[game == 'keno' ? 'shareCount' : 'winnerCount'];
-        if (count is! int || count < 0)
+        if (count is! int || count < 0) {
           throw const FormatException('Invalid tier count');
+        }
       }
       for (final component in (r['components'] as List? ?? [])) {
         if (component['name'] is! String ||
