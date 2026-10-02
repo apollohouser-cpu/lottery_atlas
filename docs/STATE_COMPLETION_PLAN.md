@@ -1565,3 +1565,14 @@ retailer directories and refresh status matched committed bytes. Close the
 October 1 15:00 ET importer checkpoint; Texas acceptance remains closed.
 Ohio agency records are pending personal requester confirmation (see its source
 screen); no automated human attestation sent. South Carolina remains sole active.
+
+### October 1 21:00 ET importer follow-up
+
+Publisher36946945721/73a9d76 succeeded with Nebraska newly retained after importer
+failure; Texas remains retained after failure (also present in the preceding
+status), as do NH/Colorado. All retained files byte-match957f972 and live status
+matches. User notified. Check the next scheduled transaction and investigate
+persistent Nebraska/Texas retrieval or validation failures by October2 15:00 ET.
+This is a bounded feed-maintenance follow-up, not reopened state acceptance.
+The previous Texas October1 recovery checkpoint remains closed. Virginia stays
+sole active with its original October4 deadline.

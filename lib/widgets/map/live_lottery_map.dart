@@ -2646,6 +2646,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                   (activity.state == 'TX' &&
                                       activity.game == LotteryGame.scratchOff)
                               ? 'CLAIM DATE'
+                              : activity.state == 'VA' &&
+                                    activity.id.startsWith('va-')
+                              ? 'PUBLICATION DATE'
                               : activity.state == 'KY' &&
                                     (activity.id.startsWith('ky-current-') ||
                                         activity.id.startsWith('ky-retained-'))
@@ -2791,6 +2794,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         activity.state == 'SC' &&
                             activity.id.startsWith('sc-winners-')
                         ? 'Claim date shown above; draw date and time of day are not supplied by this report. Only mapped claims of at least \$500 are included.'
+                        : activity.state == 'VA' &&
+                              activity.id.startsWith('va-')
+                        ? 'Publication date of the official winner release, not a verified draw or claim date. Publication time does not establish when the ticket won. Selected retailer-matched releases are not complete statewide winning-ticket counts.'
                         : activity.state == 'TX'
                         ? (activity.game == LotteryGame.scratchOff
                               ? 'Claim date shown above; time of day unavailable. Combined refresh time is not a claim verification date.'
@@ -4878,8 +4884,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   'Texas',
                   'Kentucky',
                   'South Carolina',
+                  'Virginia',
                 }.contains(selectedState?.name),
-                dayOnlyDateLabel: selectedState?.name == 'Kentucky'
+                dayOnlyDateLabel:
+                    const {'Kentucky', 'Virginia'}.contains(selectedState?.name)
                     ? 'Published dates'
                     : 'Source dates',
                 onDetailModeChanged: (mode) {

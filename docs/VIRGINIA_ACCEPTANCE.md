@@ -74,3 +74,20 @@ unmatched-game fallback to Scratch. These are accuracy gaps, not enhancements.
 
 Opening repository clean; publisher 36908045746 successful; no new agency reply
 beyond already-recorded New Mexico/Michigan messages. No accepted state reopened.
+
+## October 1 publication-date correction (21:00 ET)
+
+VA winner-release details now say PUBLICATION DATE and explicitly distinguish
+that timestamp from unknown draw/claim dates. Virginia timeline uses the existing
+whole-day mode with Published dates labeling; publication hour is not represented
+as the time a ticket won. Stored source timestamps and all activity counts remain
+unchanged. Ten existing Virginia data/offline and calendar tests passed, changed
+map file analysis is clean, and macOS debug build passed. Native verification of
+the rebuilt correction remains pending. Unmatched-game audit and full per-game
+report reconciliation remain open; deadline unchanged.
+
+Opening publisher36946945721 succeeded; bot73a9d76 integrated. Virginia outputs
+unchanged. Live refresh-status bytes match. Nebraska newly retained after failure;
+TX remains retained after failure, NH/Colorado likewise. All their listed prior
+state files byte-match the preceding local957f972 baseline. No lost validated
+data or changed retained source dates. No new agency reply.
