@@ -286,3 +286,21 @@ These completed initial compact/national/source/return flows need not be repeate
 Continue state-game report selection, larger native layout and integrated
 catalog/retailer/filter/detail/offline checks. Publication and first report routes
 are verified; Virginia remains unaccepted. No new agency mail; deadline unchanged.
+
+## October 2 compact state-game report checks (07:00 ET)
+
+Native ordinary build at 800×632 selected Keno October 2 02:50, showing source
+local time, unavailable winner count, one prize-winning share and $1 reported
+prize dollars (7 Spot), with table columns explicitly labeled Shares. Cash Pop
+October 1 After Hours selected successfully and exposed $9,899, unavailable
+winner count and the no-tier/no-retailer-allocation limitation. Cash 5 October 1
+showed 6,717 base-only winning plays, $11,960 base plus $14,836 EZ Match = $26,796;
+online/retail scope and EZ Match's unknown count remain explicit. Dropdown
+scrolling reached these choices. Private screenshots/AX retained under
+work/virginia_native. No crash observed. Initial AX was empty until mouse
+interaction restored the tree; this is not full accessibility certification.
+
+Publisher36987644575 still successful; no new agency mail. No implementation
+change or redundant build/test run. Continue Pick3/4/5, Bank and Millionaire for
+Life native choices, larger layout and integrated catalog/retailer/filter/detail/
+offline checks. Virginia remains unaccepted; release deadline unchanged.
