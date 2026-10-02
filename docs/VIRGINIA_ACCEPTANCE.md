@@ -266,3 +266,23 @@ debug build passed. Four refresh isolation/rollback regressions passed. Native
 and independent new-endpoint verification remain pending. The report feature is
 ready for native testing, but Virginia is not accepted. Deadline unchanged.
 Opening publisher36976620873 remained successful; no new mail.
+
+## October 2 first native reports and independent publication (06:00 ET)
+
+Publisher36987644575 succeeded; fetched public virginia_draw_reports.json bytes
+exactly match the committed 85-report file. Relaunched the ordinary debug app at
+800×632 logical size. Find a State → Virginia → VA Lottery → Draw reports opened
+successfully. Map timeline visibly uses Published dates, with October 2 scoped
+empty (not a statewide zero). Mega Millions September 29 displayed 214,458 source
+winners, unverified jurisdiction/not a Virginia total, literal ranges and unknown
+payout. Vertical scrolling exposed limitations and retrieval07:02:56.082UTC.
+Official-source button opened Chrome at the matching Virginia Mega Millions URL;
+return retained the selected report. Switching to Powerball September 30 showed
+589,245 source winners, outside-VA scope, Texas match-five note and 4X multiplier
+without invented Power Play counts/payout. No crash observed. Private screenshot
+and AX evidence retained in work/virginia_native.
+
+These completed initial compact/national/source/return flows need not be repeated.
+Continue state-game report selection, larger native layout and integrated
+catalog/retailer/filter/detail/offline checks. Publication and first report routes
+are verified; Virginia remains unaccepted. No new agency mail; deadline unchanged.
