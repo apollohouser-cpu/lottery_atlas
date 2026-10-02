@@ -339,3 +339,20 @@ Texas per-feed verification checkpoint remain open. No new agency mail. Continue
 integrated catalog/retailer/filter/detail and failure/reconnection checks; no
 repeat of completed report-choice/large-layout checks. State not accepted and
 release deadline unchanged.
+
+## October 2 native Scratch shortcut wording correction (10:00 ET)
+
+Returning to compact size and opening Virginia Scratch-Offs exposed a scope defect:
+the shared shortcut described selected winner releases as "every published
+Scratch-Off claim" and "published claim activity." Virginia's shortcut now says
+selected winner releases, explicitly distinguishes complete statewide claims,
+and identifies publication dates. Other states' wording is unchanged. Remaining
+prize counts still explicitly do not represent store stock. This is an observed
+scope correction, not a new release prerequisite.
+
+Changed-file analysis is clean and ordinary macOS debug build passed. The running
+app still shows the prior build; relaunch and native verification of this correction
+are next, followed by catalog/retailer/filter/detail/offline checks. No state
+acceptance. Publisher37007748065 remains successful, no new agency mail, and the
+release deadline is unchanged. Private before evidence retained under
+work/virginia_native/scratch-shortcut-before.*.
