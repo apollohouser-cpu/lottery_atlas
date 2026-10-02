@@ -428,7 +428,15 @@ Independent HTTPS downloads match committed report and refresh-status bytes.
 The refreshed report window now contains 79 reports across all ten recurring
 games (previously 85): Cash Pop has 22 published sessions and each Pick game
 nine, with latest October 2 publication; unavailable sessions are not zero
-payout reports. The other seven game groups retain five reports each. This is
+payout reports. The other six game groups retain five reports each. This is
 live-feed evidence, not native acceptance of the refreshed window. Native prize
 reset, catalog and request-failure/reconnection checks remain open. No new agency
 mail. Release deadline remains October 4, 19:02 ET.
+
+Native prize-range verification also passed: setting the displayed range to
+$11.0M–$30.0M on September 23 yielded the scoped no-matching-activity message.
+Restoring the full range restored Platinum 7s, one published record/$2M at
+LOVE FOOD MART 12, with the publication date retained. Private `prize-range`,
+`prize-empty` and `prize-reset` evidence is retained. Sheet AX remains stale;
+mouse/screenshots verify controls and the map AX verifies the result. Catalog
+and native failure/reconnection remain next; no release acceptance is asserted.

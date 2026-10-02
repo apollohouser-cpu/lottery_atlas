@@ -1597,3 +1597,19 @@ Texas's private diagnostic catalog import succeeds with 74 games. Retailer-sourc
 retrieval is being investigated with the retained baseline; no generated probe
 output is promoted. The October 1 recovery checkpoint stays closed; this newer
 failure episode remains open. Virginia continues with the existing deadline.
+
+Texas diagnostic follow-up: the official grouped retailer API returned HTTP 200
+with 4,245,187 bytes after 41 seconds. The full importer exceeded a bounded
+90-second private probe even with its retained baseline; this does not establish
+the scheduled failure cause or prove the source unavailable. Remaining importer
+probes and the next scheduled transaction will distinguish retrieval from validation.
+
+The later bounded probes identified a concrete Texas validation failure:
+`import_texas_draw_tiers.mjs` rejects All or Nothing when the newest date has
+only two published session links (October 2); October 1 and September 30 each
+have four. Scratch winners and draw-location imports succeeded privately.
+The retailer timeout is therefore not the sole demonstrated issue. Keep the
+five-output transaction intact and fix session-aware latest-report selection
+with date-regression/duplicate/session validation before publishing any probe.
+No missing sessions may become zero counts. This is a bounded importer defect,
+not a reopening of accepted Texas UI or the closed October 1 checkpoint.
