@@ -91,3 +91,38 @@ unchanged. Live refresh-status bytes match. Nebraska newly retained after failur
 TX remains retained after failure, NH/Colorado likewise. All their listed prior
 state files byte-match the preceding local957f972 baseline. No lost validated
 data or changed retained source dates. No new agency reply.
+
+## October 1 official report API audit (22:00 ET)
+
+The official game pages' own `app.bundle.js` uses form POST
+`https://www.valottery.com/api/v1/drawnumbers` (`gameId`, `page`, `pageSize`)
+and `/api/v1/prizesandodds` (`gameId`, `drawingDate`). Read-only requests returned
+actual dated results and report detail. Private raw responses and source HTML/JS
+are retained in `work/virginia_scope`; no ticket identifiers or new activity were
+published. This supersedes any assumption that only winning numbers/odds exist.
+
+| Game / API ID | Observed available report | Required interpretation / implementation |
+| --- | --- | --- |
+| Powerball / 20 | September 30 match tiers, winner counts and prize strings | The report explicitly identifies a Match 5 winner in Texas. These counts cannot be labeled Virginia totals. Preserve jurisdiction uncertainty and prize wording; audit any separate Power Play availability. |
+| Mega Millions / 15 | September 29 match tiers, counts and prize ranges | VA-specific jurisdiction is not established; do not allocate the website's counts to VA. Preserve ranges rather than inferred payout. |
+| Millionaire for Life / 1075 | September 30 nine match tiers | Source explicitly says the table shows Virginia wins and excludes outside-VA jackpots. Preserve annual-payment descriptions. |
+| Bank a Million / 1070 | September 30 eight match tiers/counts/prizes | Preserve after-tax jackpot wording and source wager basis. |
+| Cash 5 / 1030 | September 30 plays matching each tier plus separate base and EZ Match prize totals | Base total $8,519 equals 8×$200 + 374×$5 + 5,049×$1. EZ Match is $8,070. Totals are dollars, not counts; official template says online and retail wins are included. |
+| Pick 3 / 1050, Pick 4 / 1040, Pick 5 / 1035 | Day/night dated results, separate base and FIREBALL totals | Official rendering explicitly prefixes totals with dollars and includes online and retail wins. No tier-count breakdown in sampled responses; do not manufacture one. |
+| Cash Pop / 40 | Five session results and prize totals | Template labels totals as dollars. Publication flags distinguish available sessions from not-yet-published sessions: October 1 After Hours zero with false flag is not an observed zero payout. |
+| Keno / 30 | Dated four-minute results, spot-game match tables and payouts | Count heading is `#OfShares`, not distinct tickets. Keep spot games separate; a scheduled snapshot is not a live four-minute feed or complete historical coverage. |
+| New Year's Millionaire Raffle | Seasonal page announces 1,012 winners and links January 1, 2026 complete winning-number PDF, plus earlier years | No recurring draw API ID on this page. Preserve seasonal date and link to official report; do not publish ticket-number rows as map activity. |
+
+Sources are the official game routes under
+[Virginia draw games](https://www.valottery.com/alldrawgames), the pages linked
+above, and [Raffle](https://www.valottery.com/data/draw-games/raffle). The official
+JS template resolved dollar-versus-count ambiguity for Pick, Cash 5 and Cash Pop;
+API field names alone would have produced false winner counts.
+
+These are source-availability findings, not yet an app report or acceptance.
+Next: finish bounded Power Play/jurisdiction and unmatched Print 'n Play/online
+classification reconciliation, then implement validated reports with source dates,
+sessions, units and limitations. Keep historical Cash4Life distinct and retain
+Scratch catalog/inventory semantics. Full reconciliation deadline remains October
+2 at 19:02 ET; release deadline remains October 4 at 19:02 ET. No native flows
+repeated. Publisher and agency inbox unchanged at the single opening check.
