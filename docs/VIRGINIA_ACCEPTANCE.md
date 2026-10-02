@@ -356,3 +356,20 @@ are next, followed by catalog/retailer/filter/detail/offline checks. No state
 acceptance. Publisher37007748065 remains successful, no new agency mail, and the
 release deadline is unchanged. Private before evidence retained under
 work/virginia_native/scratch-shortcut-before.*.
+
+## October 2 rebuilt shortcut and retailer navigation (11:00 ET)
+
+Relaunched the ordinary build and returned to Virginia. The Scratch shortcut now
+visibly exposes selected winner releases, publication dates and incomplete
+statewide claims; the observed wording correction in 93ca193 is verified natively.
+Opened the 5,360-location Virginia retailer list and searched LOVE FOOD MART 12:
+one result at 298 W Bay Ave, Norfolk. Selecting it opened the retailer detail with
+full address and the explicit warning that a directory listing alone does not
+create a heat-map win. Official-directory and directions actions are present;
+no directions or external location transmission was requested. Private corrected
+shortcut and retailer-detail evidence retained in work/virginia_native.
+
+No crash or new agency mail; publisher37007748065 remains successful. Continue
+catalog and map game/prize/date/detail checks plus native request-failure/recovery.
+This closes the shortcut correction and observed directory search/detail route,
+not integrated state acceptance. Deadline unchanged.
