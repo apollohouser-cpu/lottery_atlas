@@ -35,3 +35,34 @@ test('unpublished tier arrays are unavailable, not zero winner reports', () => {
   p.data[1].DailyDrawDetails[0].DrawData.Values = [];
   assert.throws(() => parseTableReports(p, 1075));
 });
+
+import {parsePickReports} from '../../tooling/virginia_draw_reports.mjs';
+test('Pick sessions preserve dollar totals and never invent counts', () => {
+  for (const [name, id] of [['pick3', 1050], ['pick4', 1040], ['pick5', 1035]]) {
+    const reports = parsePickReports(fixture(name), id);
+    assert.equal(reports.length, 3);
+    assert.equal(reports[0].totalWinners, null);
+    assert.equal(reports[0].tiers.length, 0);
+    assert.equal(reports[2].session, 'Night');
+  }
+  const p = parsePickReports(fixture('pick3'), 1050)[0];
+  assert.deepEqual(p.components, [{name: 'Base', payout: 72675}, {name: 'FIREBALL', payout: 13260}]);
+  assert.equal(p.totalPayout, 85935);
+});
+test('Pick rejects malformed or partial dollars, duplicate sessions and wrong game', () => {
+  for (const mutate of [p => p.data[0].DailyDrawDetails[0].DrawData.TotalPrizes = '1,2',
+    p => p.data[0].DailyDrawDetails[0].DrawData.TotalFireballPrizes = null,
+    p => p.data[0].DailyDrawDetails.push(p.data[0].DailyDrawDetails[0]),
+    p => p.data[0].DrawGameId = 1040]) {
+    const p = fixture('pick3'); mutate(p);
+    assert.throws(() => parsePickReports(p, 1050));
+  }
+});
+test('Pick date preservation is per session and null totals remain unavailable', () => {
+  const p = fixture('pick3');
+  const all = parsePickReports(p, 1050);
+  assert.throws(() => assertNoReportRegression(all, all.filter(r => r.session === 'Day')));
+  p.data[0].DailyDrawDetails[0].DrawData.TotalPrizes = null;
+  p.data[0].DailyDrawDetails[0].DrawData.TotalFireballPrizes = null;
+  assert.equal(parsePickReports(p, 1050).length, 2);
+});

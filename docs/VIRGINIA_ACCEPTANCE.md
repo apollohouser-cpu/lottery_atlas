@@ -159,3 +159,17 @@ This is staged source data, not yet an app report or published feed. Remaining
 national jurisdiction/Power Play reconciliation, other state report formats and UI,
 cache/transaction/publication integration remain required. No deadline change.
 Previous publisher 36958421776 succeeded; no new agency message at opening check.
+
+## October 2 Pick session report implementation (01:00 ET)
+
+Added Pick 3/4/5 parsers and imports, preserving Day and Night separately and
+reporting base/FIREBALL prize dollars rather than invented winner counts. Null
+unpublished totals are omitted; partial or malformed amounts fail the import.
+Date non-regression now applies per game and session, so a newer Day report
+cannot hide disappearance or regression of Night data. Seven parser tests pass.
+
+The staged set now contains 40 reports across five state games. No retail map
+records, coordinates, or accepted-state UI changed. These reports still need
+remaining game formats, app loading/display and transactional publication before
+native acceptance. Publisher 36962831994 succeeded; opening mail check empty.
+Full scope reconciliation and release deadlines are unchanged.

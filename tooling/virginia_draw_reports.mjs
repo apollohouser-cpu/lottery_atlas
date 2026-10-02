@@ -39,8 +39,53 @@ export function parseTableReports(payload, gameId) {
   return reports;
 }
 export function assertNoReportRegression(previous, reports) {
-  for (const game of new Set(previous.map((r) => r.game))) {
-    const latest = (items) => items.filter((r) => r.game === game).map((r) => r.drawDate).sort().at(-1);
+  for (const game of new Set(previous.map((r) => `${r.game}/${r.session ?? ""}`))) {
+    const latest = (items) => items.filter((r) => `${r.game}/${r.session ?? ""}` === game).map((r) => r.drawDate).sort().at(-1);
     if (!latest(reports) || latest(reports) < latest(previous)) fail(`Draw date regression: ${game}`);
   }
+}
+
+export const pickGames = {
+  1050: {code: 'pick-3', name: 'Pick 3', flag: 'bIsFireBallPick3'},
+  1040: {code: 'pick-4', name: 'Pick 4', flag: 'bIsFireBallPick4'},
+  1035: {code: 'pick-5', name: 'Pick 5', flag: 'bIsFireBallPick5'},
+};
+export function parsePickReports(payload, gameId) {
+  const game = pickGames[gameId];
+  if (!game || !Array.isArray(payload.data) || !payload.data.length) fail('Missing supported Pick data');
+  const seen = new Set();
+  const reports = [];
+  const dollars = (value) => {
+    if (typeof value !== 'string' || !/^(?:0|[1-9]\d*|[1-9]\d{0,2}(?:,\d{3})+)$/.test(value)) fail('Invalid prize dollars');
+    const result = Number(value.replaceAll(',', ''));
+    if (!Number.isSafeInteger(result)) fail('Unsafe prize dollars');
+    return result;
+  };
+  for (const draw of payload.data) {
+    const date = draw.DrawDate?.match(/^(\d{4}-\d{2}-\d{2})T00:00:00$/)?.[1];
+    if (draw.DrawGameId !== Number(gameId) || !date ||
+        new Date(`${date}T00:00:00Z`).toISOString().slice(0, 10) !== date ||
+        !Array.isArray(draw.DailyDrawDetails) || !draw.DailyDrawDetails.length) fail('Invalid Pick identity');
+    for (const detail of draw.DailyDrawDetails) {
+      const session = {'Day Drawing Details': 'Day', 'Night Drawing Details': 'Night'}[detail.Title];
+      const key = `${date}/${session}`;
+      if (!session || seen.has(key) || detail[game.flag] !== true) fail('Invalid Pick session');
+      seen.add(key);
+      const data = detail.DrawData;
+      // Null amounts are unpublished, not zero; partially populated reports fail.
+      if (data?.TotalPrizes == null && data?.TotalFireballPrizes == null) continue;
+      const base = dollars(data?.TotalPrizes);
+      const fireball = dollars(data?.TotalFireballPrizes);
+      if (!Number.isSafeInteger(base + fireball)) fail('Unsafe combined payout');
+      reports.push({game: game.code, gameName: game.name, drawDate: date, session,
+        jurisdiction: 'Virginia', sourceUrl: `https://www.valottery.com/data/draw-games/${game.code.replace('-', '')}`,
+        sourceNote: 'Official totals include online and retail wins.',
+        countUnit: null, totalWinners: null, tiers: [],
+        components: [{name: 'Base', payout: base}, {name: 'FIREBALL', payout: fireball}],
+        totalPayout: base + fireball,
+        limitations: 'Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins.'});
+    }
+  }
+  if (!reports.length) fail('No published Pick reports');
+  return reports;
 }
