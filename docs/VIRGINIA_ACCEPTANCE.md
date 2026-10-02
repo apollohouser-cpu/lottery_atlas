@@ -321,3 +321,21 @@ Publisher36987644575 remains successful; no new agency mail. No code changes or
 redundant tests/build. Continue larger layout and integrated catalog, retailer,
 map filter/detail and request-failure/reconnection checks. Virginia remains
 unaccepted with the same October 4 19:02 ET deadline.
+
+## October 2 enlarged native report and refresh verification (09:00 ET)
+
+Zoomed the ordinary native window to the desktop's enlarged size (5120×2820
+physical screenshot). Millionaire for Life retained its selection and displayed
+all nine table rows, complete annual prize wording, limitations, retrieval,
+cadence, source action and both seasonal/historical routes without clipping.
+Closing the sheet and returning to the Virginia map succeeded; the published-date
+October 2 scoped-empty view remained intact. Private wide screenshot/AX saved in
+work/virginia_native/mfl-wide.*. No crash observed.
+
+Publisher37007748065 succeeded. Fast-forwarded bot4dff301; independently fetched
+Virginia reports and refresh-status public bytes both match that commit. Nebraska
+remains retained after failure; its existing October 2 15:00 ET investigation and
+Texas per-feed verification checkpoint remain open. No new agency mail. Continue
+integrated catalog/retailer/filter/detail and failure/reconnection checks; no
+repeat of completed report-choice/large-layout checks. State not accepted and
+release deadline unchanged.
