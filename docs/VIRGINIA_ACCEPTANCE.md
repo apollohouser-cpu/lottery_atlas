@@ -304,3 +304,20 @@ Publisher36987644575 still successful; no new agency mail. No implementation
 change or redundant build/test run. Continue Pick3/4/5, Bank and Millionaire for
 Life native choices, larger layout and integrated catalog/retailer/filter/detail/
 offline checks. Virginia remains unaccepted; release deadline unchanged.
+
+## October 2 remaining compact report selections (08:00 ET)
+
+Native 800×632 ordinary build selected October 1 Night reports for Pick 5
+($12,400 base + $3,000 FIREBALL = $15,400), Pick 4 ($361,400 + $16,930 =
+$378,330), and Pick 3 ($195,005 + $11,591 = $206,596). Each exposes unavailable
+winner count, online/retail scope and payout-only/no-retailer-allocation limits.
+Bank a Million September 30 displayed 8,423 source winners, unknown total payout
+and literal "$1,000,000 after taxes" wording. Millionaire for Life October 1
+showed 2,377, explicit Virginia scope, unknown payout and annual-for-life prize
+wording. Private screenshots/AX retained in work/virginia_native. All ten recurring
+games now have a compact native selection observed; no crash observed.
+
+Publisher36987644575 remains successful; no new agency mail. No code changes or
+redundant tests/build. Continue larger layout and integrated catalog, retailer,
+map filter/detail and request-failure/reconnection checks. Virginia remains
+unaccepted with the same October 4 19:02 ET deadline.
