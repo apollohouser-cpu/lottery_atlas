@@ -225,3 +225,21 @@ null/zero semantics, daily/session grouping, tier reconciliation, duplicates,
 coordinate validation and directory exceptions remain unverified. No new counts,
 retailer pins or claims layer was published. Preserve this distinction from a
 fully inspectable delivery; retrieve originals when attachment access is restored.
+
+## October 2 determination and no-fee follow-up
+
+The agency declined remaining-prize counts and related information for current
+Scratch games, citing security/public-interest grounds. This is a denial, not a
+pending delivery. Retailer-linked winner records have no existing matching report;
+the contractor estimates 42 hours at $175/hour ($7,350). Restricting compilation
+to prizes $1–$599 would save only a few hours. The agency reiterated that the
+public winners page covers claimed prizes of $600 and higher and identifies the
+selling retailer. Retailer IDs remain withheld. Previously supplied workbooks
+still require full private audit; this response adds no new delivered dataset.
+
+Sent a reply in the existing thread on October 2 explicitly declining paid
+compilation and prohibiting fees. Requested only an existing no-fee report/data
+dictionary or public location for the supplied workbook fields, units, dates and
+cadence, with no custom report or paid locating work. Gmail confirmed sent. No
+fees approved or paid; no user action needed. This follow-up is separate from the
+remaining-prize denial and does not promise further delivery.

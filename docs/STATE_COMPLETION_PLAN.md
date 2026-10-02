@@ -1613,3 +1613,22 @@ five-output transaction intact and fix session-aware latest-report selection
 with date-regression/duplicate/session validation before publishing any probe.
 No missing sessions may become zero counts. This is a bounded importer defect,
 not a reopening of accepted Texas UI or the closed October 1 checkpoint.
+
+### October 2, 16:00 ET — Texas complete-day selection fix
+
+Replaced the All or Nothing latest-date/four-link assumption with latest complete
+four-session-day selection. A partial newer day does not become zero activity;
+the feed describes this policy and displays the retained actual draw date.
+Parsed Morning/Day/Evening/Night identities must be distinct, share one date and
+never regress relative to retained reports. Conflicting link dates, extra sessions,
+missing retained game/session groups and malformed tier tables still fail closed.
+Seven selection/parser tests pass. Live private import and publisher validation
+produce nine reports, including October 1's four All or Nothing sessions. The
+five-output refresh transaction remains unchanged. Private probes were not
+promoted; next scheduled refresh must verify full Texas and Nebraska recovery.
+
+Wisconsin's October 2 response denies current Scratch remaining-prize information
+and estimates $7,350 for custom retailer-linked winners compilation. Sent an
+explicit no-fee reply declining paid work and requesting only existing no-fee
+workbook definitions/public sources. See Wisconsin source screen. No fee or
+user action authorized/required. Virginia remains the sole active state.
