@@ -126,3 +126,20 @@ sessions, units and limitations. Keep historical Cash4Life distinct and retain
 Scratch catalog/inventory semantics. Full reconciliation deadline remains October
 2 at 19:02 ET; release deadline remains October 4 at 19:02 ET. No native flows
 repeated. Publisher and agency inbox unchanged at the single opening check.
+
+## October 1 winner classification correction (23:00 ET)
+
+Audited all three official winner archives (94 releases in 2024, 34 in 2025,
+158 in 2026). One retained August 15, 2024 release explicitly describes Print
+'n Play Bingo Multiplier, but the importer matched the same-named Scratcher.
+The classifier now excludes this unsupported product instead of silently assigning
+it to Scratch, and rejects unknown releases without explicit supported-game
+evidence. Historical explicitly described Scratchers remain supported.
+
+Re-import produced 109 retained releases. Every remaining row is byte-equivalent
+at the parsed-record level, including dates, counts and coordinates; source date
+is unchanged. The excluded release predates the public feed's 2026 window, so the
+67 current-year records and published map scope are unchanged. Four classifier
+regressions and all six Virginia data/offline tests passed. This closes the named
+unmatched-to-Scratch accuracy defect; native publication-date checks and draw
+report integration remain pending. Single opening mail/deployment check unchanged.

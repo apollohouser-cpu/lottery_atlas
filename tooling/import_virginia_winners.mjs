@@ -7,6 +7,7 @@
  * and ambiguous shared-address directory entries are excluded.
  */
 import {readFile, writeFile} from 'node:fs/promises';
+import {gameFrom} from './virginia_winner_classification.mjs';
 
 const winnersApiUrl = 'https://www.valottery.com/api/v1/latestwinners';
 const sourceUrl = 'https://www.valottery.com/winnersnews/latestwinners';
@@ -62,43 +63,6 @@ if (!outputPath || !retailerDirectoryPath) {
       /\bonline game\b/i.test(opening) ||
       /\bon (?:his|her|their) personal device\b/i.test(opening)
     );
-  };
-  const gameFrom = (entry, body, scratchGames) => {
-    const content = `${entry.Title} ${body}`;
-    if (/mega\s+millions/i.test(content)) {
-      return {game: 'mega-millions', gameName: 'Mega Millions'};
-    }
-    if (/powerball/i.test(content)) {
-      return {game: 'powerball', gameName: 'Powerball'};
-    }
-    const drawPatterns = [
-      ['Millionaire for Life', /millionaire\s+for\s+life/i],
-      ['Cash4Life', /cash\s*4\s*life/i],
-      ['Bank a Million', /bank\s+a\s+million/i],
-      ['Cash 5 with EZ Match', /cash\s*5(?:\s+with\s+ez\s+match)?/i],
-      ['Cash Pop', /cash\s+pop/i],
-      ['Pick 5', /pick\s*5/i],
-      ['Pick 4', /pick\s*4/i],
-      ['Pick 3', /pick\s*3/i],
-      ["Virginia's New Year's Millionaire Raffle", /new year'?s millionaire raffle/i],
-      ['Keno', /\bkeno\b/i],
-    ];
-    for (const [gameName, pattern] of drawPatterns) {
-      if (pattern.test(content)) return {game: 'state-draw', gameName};
-    }
-    const normalizedContent = content.toLowerCase().replace(/[^a-z0-9]/g, '');
-    const scratch = scratchGames.find((game) => {
-      const name = game.name.toLowerCase().replace(/[^a-z0-9]/g, '');
-      return name.length >= 5 && normalizedContent.includes(name);
-    });
-    if (scratch) return {game: 'scratch-off', gameName: scratch.name};
-    const titleMatch = entry.Title.match(
-      /(?:top prize in|playing|in)\s+(.+?)(?:\s+scratcher(?:\s+game)?|\s+game|[.!]|$)/i,
-    );
-    return {
-      game: 'scratch-off',
-      gameName: compact(titleMatch?.[1] ?? 'Virginia Scratcher'),
-    };
   };
   const fetchYearOnce = async (year) => {
     const response = await fetch(winnersApiUrl, {
@@ -175,6 +139,7 @@ if (!outputPath || !retailerDirectoryPath) {
     const entries = (await Promise.all(years.map(fetchYear))).flat();
     const activities = [];
     let onlineExcluded = 0;
+    let unsupportedGameExcluded = 0;
     let unmatchedExcluded = 0;
     let ambiguousExcluded = 0;
     for (const entry of entries) {
@@ -220,6 +185,10 @@ if (!outputPath || !retailerDirectoryPath) {
       );
       const winningTickets = Number(winningTicketsMatch?.[1] ?? 1);
       const game = gameFrom(entry, body, scratchGames);
+      if (!game) {
+        unsupportedGameExcluded++;
+        continue;
+      }
       const articleUrl = `${sourceUrl}?itemId=${encodeURIComponent(entry.Id)}`;
       activities.push({
         id: `va-${publicationDate.toISOString().slice(0, 10)}-${slug(entry.Id)}`,
@@ -262,6 +231,7 @@ if (!outputPath || !retailerDirectoryPath) {
         `${activities.length} physical retailer-level winner releases from 2024 ` +
         `through ${currentYear}, each matched to exactly one official Virginia Lottery ` +
         'retailer address with a previously verified precise coordinate. ' +
+        `${unsupportedGameExcluded} unsupported/unverified game releases, ` +
         `${onlineExcluded} online-only releases, ${unmatchedExcluded} releases without ` +
         'an exact current-directory address match, and ' +
         `${ambiguousExcluded} shared-address matches were excluded rather than inferred. ` +
