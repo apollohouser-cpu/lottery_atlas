@@ -405,3 +405,18 @@ release was checked, not inferred from the requested URL.
 No crash/new mail/publisher change. Source/return is closed; continue game/prize
 reset, catalog and native failure/reconnection. Virginia remains unaccepted;
 deadline unchanged. The Nebraska/Texas maintenance checkpoint remains 15:00 ET.
+
+## October 2 native game filter reset (14:00 ET)
+
+At September 23's Norfolk/LOVE FOOD MART 12 view, selected Powerball in the compact
+Game filter and applied it. The map reported scoped-empty activity without
+changing the publication date. Reopened the filter, selected All Games and applied:
+Platinum 7s, one published record/$2M returned, with September 23 retained. Sheet
+AX stayed stale, so selection and apply were verified by screenshots and mouse
+coordinates; map AX updated after applying. Private reset evidence retained in
+work/virginia_native/game-reset.*. No crash observed.
+
+No new agency mail or publisher change. Game selection/reset is closed; prize
+range/reset, catalog and native failure/reconnection remain. Next session must
+also handle the existing 15:00 ET Nebraska investigation/Texas live-feed recovery
+checkpoint. Virginia remains unaccepted; release deadline unchanged.
