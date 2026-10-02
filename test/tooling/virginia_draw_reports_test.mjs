@@ -66,3 +66,41 @@ test('Pick date preservation is per session and null totals remain unavailable',
   p.data[0].DailyDrawDetails[0].DrawData.TotalFireballPrizes = null;
   assert.equal(parsePickReports(p, 1050).length, 2);
 });
+
+import {parseCash5Reports} from '../../tooling/virginia_draw_reports.mjs';
+test('Cash 5 reconciles base plays and payout, keeping EZ Match count unknown', () => {
+  const r = parseCash5Reports(fixture('cash5'))[0];
+  assert.equal(r.totalWinners, 5431);
+  assert.equal(r.countUnit, 'base-game winning plays only');
+  assert.deepEqual(r.components, [{name: 'Cash 5 base', payout: 8519}, {name: 'EZ Match', payout: 8070}]);
+  assert.equal(r.totalPayout, 16589);
+  assert.equal(r.tiers[0].prizeDescription, '$419,000');
+});
+test('Cash 5 rejects inconsistent totals, malformed tiers and missing EZ Match', () => {
+  for (const mutate of [p => p.data[0].DailyDrawDetails[0].DrawData.TotalPrizes = '8,520',
+    p => p.data[0].DailyDrawDetails[0].Prize2 = '8 Plays matched 3 of 5 / paying $200',
+    p => p.data[0].DailyDrawDetails[0].DrawData.TotalEZMatchPrizes = null]) {
+    const p = fixture('cash5'); mutate(p);
+    assert.throws(() => parseCash5Reports(p));
+  }
+});
+
+import {parseCashPopReports} from '../../tooling/virginia_draw_reports.mjs';
+test('Cash Pop publication flags distinguish unavailable sessions from zero', () => {
+  const p = fixture('cashpop');
+  const reports = parseCashPopReports(p);
+  assert.equal(reports.length, 9);
+  assert.equal(reports[0].totalPayout, 35895);
+  assert.equal(reports[0].totalWinners, null);
+  assert.equal(reports.filter(r => r.drawDate === '2026-10-01').length, 4);
+  p.data[0].DailyDrawDetails[0].bIsPrizesAfter = true;
+  assert.equal(parseCashPopReports(p).find(r => r.drawDate === '2026-10-01' && r.session === 'After Hours').totalPayout, 0);
+});
+test('Cash Pop rejects unknown availability and malformed published dollars', () => {
+  for (const mutate of [p => p.data[0].DailyDrawDetails[0].bIsPrizesAfter = null,
+    p => p.data[0].DailyDrawDetails[0].DrawData.TotalPrizesCoffee = '$35,895',
+    p => p.data.push(p.data[0])]) {
+    const p = fixture('cashpop'); mutate(p);
+    assert.throws(() => parseCashPopReports(p));
+  }
+});

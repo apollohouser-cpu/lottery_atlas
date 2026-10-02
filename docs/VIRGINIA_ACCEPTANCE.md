@@ -173,3 +173,21 @@ records, coordinates, or accepted-state UI changed. These reports still need
 remaining game formats, app loading/display and transactional publication before
 native acceptance. Publisher 36962831994 succeeded; opening mail check empty.
 Full scope reconciliation and release deadlines are unchanged.
+
+## October 2 Cash 5 and Cash Pop implementation (02:00 ET)
+
+Added Cash 5 base-tier winning plays with exact reconciliation against official
+base prize dollars, plus separate EZ Match prize dollars with unknown winner
+count. September 30 fixture reconciles 5,431 base winning plays and $8,519 base
+payout, separately $8,070 EZ Match. The count explicitly excludes EZ Match.
+
+Added all five Cash Pop session totals with source publication flags: false means
+unavailable even when the raw field is zero. Published zero remains zero. Counts
+and tier breakdowns stay unknown; no retailer allocation is inferred. Eleven
+parser regressions pass, including payout mismatch, partial amounts, malformed
+availability and duplicate sessions. Live import now stages 70 reports across
+seven games; report UI/publication remains pending. No source date or count is
+fabricated. Keno and national/seasonal reconciliation are the next bounded gaps.
+
+Opening publisher 36967119195 succeeded, with no new agency mail. Deadlines
+unchanged; accepted-state UI and private record deliveries remain untouched.
