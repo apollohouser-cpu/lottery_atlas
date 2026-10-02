@@ -440,3 +440,17 @@ LOVE FOOD MART 12, with the publication date retained. Private `prize-range`,
 `prize-empty` and `prize-reset` evidence is retained. Sheet AX remains stale;
 mouse/screenshots verify controls and the map AX verifies the result. Catalog
 and native failure/reconnection remain next; no release acceptance is asserted.
+
+### October 2, 16:00 ET — native official catalog route
+
+Virginia Scratch shortcut → Open full official catalog opens the loaded official
+`valottery.com/scratcher-search?view=0` page. Native browser evidence exposes
+priced game cards, remaining-prize counts and closing-soon zero inventory,
+including $173,000,000 Extravaganza #2143 ($30, $5M*, two remaining), matching the
+in-app snapshot's literal prize notation and inventory. Return to the app retains
+the expanded Scratch shortcut and publication-date map context. The Games bottom
+tab is the cross-state activity list, not the full Scratch catalog. Private
+`catalog-source` and `catalog-return` evidence retained. This validates the catalog
+route, not a new complete statewide claims dataset or exhaustive browser audit.
+Native request failure/reconnection and final integrated acceptance remain open;
+release deadline unchanged. No ordinary app code/build changed in this session.
