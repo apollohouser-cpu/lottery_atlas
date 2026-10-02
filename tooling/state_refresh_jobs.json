@@ -310,7 +310,8 @@
     "outputs": [
       "data/virginia_scratch_catalog.generated.json",
       "data/virginia_retailer_directory.generated.json",
-      "data/virginia_winner_activity.generated.json"
+      "data/virginia_winner_activity.generated.json",
+      "data/virginia_draw_reports.generated.json"
     ],
     "commands": [
       [
@@ -328,6 +329,11 @@
         "tooling/import_virginia_winners.mjs",
         "data/virginia_winner_activity.generated.json",
         "data/virginia_retailer_directory.generated.json"
+      ],
+      [
+        "node",
+        "tooling/import_virginia_draw_reports.mjs",
+        "data/virginia_draw_reports.generated.json"
       ]
     ]
   },

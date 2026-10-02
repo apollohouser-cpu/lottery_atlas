@@ -248,3 +248,21 @@ Opening publisher 36976620873 succeeded. Bot66ddfb2 status independently matches
 the live status bytes: Texas updated, Nebraska retained after failure. The October
 2 maintenance checkpoint still needs per-feed TX verification and NE investigation;
 prior accepted-state UI stays closed. No new agency mail. Deadlines unchanged.
+
+## October 2 report UI and publication integration (05:00 ET)
+
+Virginia's official-source screen now opens a report sheet covering all ten
+recurring national/state games and seasonal/historical source routes. Jurisdiction,
+draw date/session/local Keno time, unknown publication date, retrieved time,
+cadence and limitations remain visible. Shares, base-only plays, source winner
+counts and payout-only reports retain separate labels. National counts are never
+presented as Virginia totals. Tables scroll horizontally; report content scrolls
+vertically, with official-source links and a retained report selection.
+
+Added the report output/importer to Virginia's existing refresh transaction and
+public Pages staging. Four loader tests plus compact/wide layout checks for all
+85 reports passed (six Flutter tests); changed UI analysis clean; ordinary macOS
+debug build passed. Four refresh isolation/rollback regressions passed. Native
+and independent new-endpoint verification remain pending. The report feature is
+ready for native testing, but Virginia is not accepted. Deadline unchanged.
+Opening publisher36976620873 remained successful; no new mail.

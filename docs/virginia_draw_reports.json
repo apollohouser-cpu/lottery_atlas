@@ -1,0 +1,4210 @@
+{
+  "schemaVersion": 1,
+  "state": "Virginia",
+  "retrievedAt": "2026-10-02T07:02:56.082Z",
+  "sourcePublicationDate": null,
+  "cadence": "Official per-draw reports; app refresh is scheduled, not live.",
+  "additionalSources": [
+    {
+      "game": "raffle",
+      "gameName": "New Year's Millionaire Raffle",
+      "period": "2026-01-01",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/raffle",
+      "limitations": "Seasonal official winning-number report linked at source. Ticket-number rows are not imported as claim or retailer activity."
+    },
+    {
+      "game": "cash4life",
+      "gameName": "Cash4Life",
+      "period": "Historical winner releases only",
+      "sourceUrl": "https://www.valottery.com/winnersnews/latestwinners",
+      "limitations": "Historical identity retained in selected winner releases; not a current recurring game or complete historical claims report."
+    }
+  ],
+  "reports": [
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-29",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$300,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 8,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 148,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 380,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 9579,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 7924,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 58458,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 137961,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 214458,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-25",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$277,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 5,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 132,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 322,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 7666,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 6527,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 52192,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 135257,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 202101,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-22",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winner in Colorado(1).                                                                                                                                                                                                                            ",
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$261,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 1,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 8,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 128,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 368,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 9024,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 8187,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 60671,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 140317,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 218704,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-18",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$244,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 2,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 137,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 369,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 8854,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 7630,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 56839,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 133380,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 207211,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "drawDate": "2026-09-15",
+      "jurisdiction": "Source jurisdiction unverified; not a Virginia total",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/megamillions",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$227,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$2,000,000 - $10,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 2,
+          "prizeDescription": "$20,000 - $100,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 115,
+          "prizeDescription": "$1,000 - $5,000"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 281,
+          "prizeDescription": "$400 - $2,000"
+        },
+        {
+          "match": "3",
+          "winnerCount": 7055,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 6527,
+          "prizeDescription": "$20 - $100"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 52143,
+          "prizeDescription": "$14 - $70"
+        },
+        {
+          "match": "Mega Ball",
+          "winnerCount": 132048,
+          "prizeDescription": "$10 - $50"
+        }
+      ],
+      "totalWinners": 198171,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-30",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winner in Texas(1).                                                                                                                                                                                                                               ",
+      "multiplier": "4X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$409,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 1,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 19,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 483,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1260,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 28426,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 24243,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 166234,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 368579,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 589245,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-28",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winners in Illinois(1), New York(1), \r\nNorth Carolina(1) and Puerto Rico(1-PowerPlay).                                                                                                                                                            ",
+      "multiplier": "3X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$389,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 4,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 20,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 293,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1018,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 20278,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 20120,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 148154,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 336930,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 526817,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-26",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": null,
+      "multiplier": "3X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$360,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 12,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 426,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1024,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 26605,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 21989,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 177754,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 449932,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 677742,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-23",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winners in Georgia(1) and \r\nPennsylvania(1).                                                                                                                                                                                                      ",
+      "multiplier": "5X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$332,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 2,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 20,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 542,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1008,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 28429,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 18662,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 137045,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 323445,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 509153,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "drawDate": "2026-09-21",
+      "jurisdiction": "Multi-jurisdiction; Virginia share unavailable",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/powerball",
+      "sourceNote": "Winning Tickets Sold: Match 5 + 0: Winner in United Kingdom(1).                                                                                                                                                                                                                      ",
+      "multiplier": "2X",
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$313,000,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 1,
+          "prizeDescription": "$1,000,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 14,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "match": "4",
+          "winnerCount": 533,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 1017,
+          "prizeDescription": "$100"
+        },
+        {
+          "match": "3",
+          "winnerCount": 29716,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 17460,
+          "prizeDescription": "$7"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 117108,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "Powerball",
+          "winnerCount": 261582,
+          "prizeDescription": "$4"
+        }
+      ],
+      "totalWinners": 427431,
+      "totalPayout": null,
+      "limitations": "These source counts are not Virginia totals. No Virginia share is inferred. Power Play winner counts are not supplied separately in this report; the draw multiplier is not a payout calculation. Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "keno",
+      "gameName": "Keno",
+      "drawDate": "2026-10-02",
+      "drawTime": "02:50",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
+      "sourceNote": null,
+      "countUnit": "prize-winning shares",
+      "totalWinners": null,
+      "totalShares": 1,
+      "tiers": [
+        {
+          "spot": 10,
+          "match": "10/10",
+          "shareCount": 0,
+          "prizeDescription": "$100,000"
+        },
+        {
+          "spot": 10,
+          "match": "9/10",
+          "shareCount": 0,
+          "prizeDescription": "$5,000"
+        },
+        {
+          "spot": 10,
+          "match": "8/10",
+          "shareCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "spot": 10,
+          "match": "7/10",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 10,
+          "match": "6/10",
+          "shareCount": 0,
+          "prizeDescription": "$10"
+        },
+        {
+          "spot": 10,
+          "match": "5/10",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 10,
+          "match": "4/10",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 10,
+          "match": "0/10",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "9/9",
+          "shareCount": 0,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "spot": 9,
+          "match": "8/9",
+          "shareCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "spot": 9,
+          "match": "7/9",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 9,
+          "match": "6/9",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 9,
+          "match": "5/9",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 9,
+          "match": "4/9",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "0/9",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 8,
+          "match": "8/8",
+          "shareCount": 0,
+          "prizeDescription": "$10,000"
+        },
+        {
+          "spot": 8,
+          "match": "7/8",
+          "shareCount": 0,
+          "prizeDescription": "$250"
+        },
+        {
+          "spot": 8,
+          "match": "6/8",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 8,
+          "match": "5/8",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 8,
+          "match": "4/8",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 8,
+          "match": "0/8",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "7/7",
+          "shareCount": 0,
+          "prizeDescription": "$2,500"
+        },
+        {
+          "spot": 7,
+          "match": "6/7",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 7,
+          "match": "5/7",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 7,
+          "match": "4/7",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 7,
+          "match": "3/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "0/7",
+          "shareCount": 1,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "6/6",
+          "shareCount": 0,
+          "prizeDescription": "$1,000"
+        },
+        {
+          "spot": 6,
+          "match": "5/6",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 6,
+          "match": "4/6",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 6,
+          "match": "3/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "0/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 5,
+          "match": "5/5",
+          "shareCount": 0,
+          "prizeDescription": "$450"
+        },
+        {
+          "spot": 5,
+          "match": "4/5",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 5,
+          "match": "3/5",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 4,
+          "match": "4/4",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 4,
+          "match": "3/4",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 4,
+          "match": "2/4",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 3,
+          "match": "3/3",
+          "shareCount": 0,
+          "prizeDescription": "$30"
+        },
+        {
+          "spot": 3,
+          "match": "2/3",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 2,
+          "match": "2/2",
+          "shareCount": 0,
+          "prizeDescription": "$12"
+        },
+        {
+          "spot": 1,
+          "match": "1/1",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        }
+      ],
+      "components": [
+        {
+          "name": "10 Spot",
+          "payout": 0
+        },
+        {
+          "name": "9 Spot",
+          "payout": 0
+        },
+        {
+          "name": "8 Spot",
+          "payout": 0
+        },
+        {
+          "name": "7 Spot",
+          "payout": 1
+        },
+        {
+          "name": "6 Spot",
+          "payout": 0
+        },
+        {
+          "name": "5 Spot",
+          "payout": 0
+        },
+        {
+          "name": "4 Spot",
+          "payout": 0
+        },
+        {
+          "name": "3 Spot",
+          "payout": 0
+        },
+        {
+          "name": "2 Spot",
+          "payout": 0
+        },
+        {
+          "name": "1 Spot",
+          "payout": 0
+        }
+      ],
+      "totalPayout": 1,
+      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
+    },
+    {
+      "game": "keno",
+      "gameName": "Keno",
+      "drawDate": "2026-10-02",
+      "drawTime": "02:46",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
+      "sourceNote": null,
+      "countUnit": "prize-winning shares",
+      "totalWinners": null,
+      "totalShares": 0,
+      "tiers": [
+        {
+          "spot": 10,
+          "match": "10/10",
+          "shareCount": 0,
+          "prizeDescription": "$100,000"
+        },
+        {
+          "spot": 10,
+          "match": "9/10",
+          "shareCount": 0,
+          "prizeDescription": "$5,000"
+        },
+        {
+          "spot": 10,
+          "match": "8/10",
+          "shareCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "spot": 10,
+          "match": "7/10",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 10,
+          "match": "6/10",
+          "shareCount": 0,
+          "prizeDescription": "$10"
+        },
+        {
+          "spot": 10,
+          "match": "5/10",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 10,
+          "match": "4/10",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 10,
+          "match": "0/10",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "9/9",
+          "shareCount": 0,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "spot": 9,
+          "match": "8/9",
+          "shareCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "spot": 9,
+          "match": "7/9",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 9,
+          "match": "6/9",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 9,
+          "match": "5/9",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 9,
+          "match": "4/9",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "0/9",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 8,
+          "match": "8/8",
+          "shareCount": 0,
+          "prizeDescription": "$10,000"
+        },
+        {
+          "spot": 8,
+          "match": "7/8",
+          "shareCount": 0,
+          "prizeDescription": "$250"
+        },
+        {
+          "spot": 8,
+          "match": "6/8",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 8,
+          "match": "5/8",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 8,
+          "match": "4/8",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 8,
+          "match": "0/8",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "7/7",
+          "shareCount": 0,
+          "prizeDescription": "$2,500"
+        },
+        {
+          "spot": 7,
+          "match": "6/7",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 7,
+          "match": "5/7",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 7,
+          "match": "4/7",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 7,
+          "match": "3/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "0/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "6/6",
+          "shareCount": 0,
+          "prizeDescription": "$1,000"
+        },
+        {
+          "spot": 6,
+          "match": "5/6",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 6,
+          "match": "4/6",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 6,
+          "match": "3/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "0/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 5,
+          "match": "5/5",
+          "shareCount": 0,
+          "prizeDescription": "$450"
+        },
+        {
+          "spot": 5,
+          "match": "4/5",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 5,
+          "match": "3/5",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 4,
+          "match": "4/4",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 4,
+          "match": "3/4",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 4,
+          "match": "2/4",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 3,
+          "match": "3/3",
+          "shareCount": 0,
+          "prizeDescription": "$30"
+        },
+        {
+          "spot": 3,
+          "match": "2/3",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 2,
+          "match": "2/2",
+          "shareCount": 0,
+          "prizeDescription": "$12"
+        },
+        {
+          "spot": 1,
+          "match": "1/1",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        }
+      ],
+      "components": [
+        {
+          "name": "10 Spot",
+          "payout": 0
+        },
+        {
+          "name": "9 Spot",
+          "payout": 0
+        },
+        {
+          "name": "8 Spot",
+          "payout": 0
+        },
+        {
+          "name": "7 Spot",
+          "payout": 0
+        },
+        {
+          "name": "6 Spot",
+          "payout": 0
+        },
+        {
+          "name": "5 Spot",
+          "payout": 0
+        },
+        {
+          "name": "4 Spot",
+          "payout": 0
+        },
+        {
+          "name": "3 Spot",
+          "payout": 0
+        },
+        {
+          "name": "2 Spot",
+          "payout": 0
+        },
+        {
+          "name": "1 Spot",
+          "payout": 0
+        }
+      ],
+      "totalPayout": 0,
+      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
+    },
+    {
+      "game": "keno",
+      "gameName": "Keno",
+      "drawDate": "2026-10-02",
+      "drawTime": "02:42",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
+      "sourceNote": null,
+      "countUnit": "prize-winning shares",
+      "totalWinners": null,
+      "totalShares": 0,
+      "tiers": [
+        {
+          "spot": 10,
+          "match": "10/10",
+          "shareCount": 0,
+          "prizeDescription": "$100,000"
+        },
+        {
+          "spot": 10,
+          "match": "9/10",
+          "shareCount": 0,
+          "prizeDescription": "$5,000"
+        },
+        {
+          "spot": 10,
+          "match": "8/10",
+          "shareCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "spot": 10,
+          "match": "7/10",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 10,
+          "match": "6/10",
+          "shareCount": 0,
+          "prizeDescription": "$10"
+        },
+        {
+          "spot": 10,
+          "match": "5/10",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 10,
+          "match": "4/10",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 10,
+          "match": "0/10",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "9/9",
+          "shareCount": 0,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "spot": 9,
+          "match": "8/9",
+          "shareCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "spot": 9,
+          "match": "7/9",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 9,
+          "match": "6/9",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 9,
+          "match": "5/9",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 9,
+          "match": "4/9",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "0/9",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 8,
+          "match": "8/8",
+          "shareCount": 0,
+          "prizeDescription": "$10,000"
+        },
+        {
+          "spot": 8,
+          "match": "7/8",
+          "shareCount": 0,
+          "prizeDescription": "$250"
+        },
+        {
+          "spot": 8,
+          "match": "6/8",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 8,
+          "match": "5/8",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 8,
+          "match": "4/8",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 8,
+          "match": "0/8",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "7/7",
+          "shareCount": 0,
+          "prizeDescription": "$2,500"
+        },
+        {
+          "spot": 7,
+          "match": "6/7",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 7,
+          "match": "5/7",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 7,
+          "match": "4/7",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 7,
+          "match": "3/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "0/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "6/6",
+          "shareCount": 0,
+          "prizeDescription": "$1,000"
+        },
+        {
+          "spot": 6,
+          "match": "5/6",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 6,
+          "match": "4/6",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 6,
+          "match": "3/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "0/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 5,
+          "match": "5/5",
+          "shareCount": 0,
+          "prizeDescription": "$450"
+        },
+        {
+          "spot": 5,
+          "match": "4/5",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 5,
+          "match": "3/5",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 4,
+          "match": "4/4",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 4,
+          "match": "3/4",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 4,
+          "match": "2/4",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 3,
+          "match": "3/3",
+          "shareCount": 0,
+          "prizeDescription": "$30"
+        },
+        {
+          "spot": 3,
+          "match": "2/3",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 2,
+          "match": "2/2",
+          "shareCount": 0,
+          "prizeDescription": "$12"
+        },
+        {
+          "spot": 1,
+          "match": "1/1",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        }
+      ],
+      "components": [
+        {
+          "name": "10 Spot",
+          "payout": 0
+        },
+        {
+          "name": "9 Spot",
+          "payout": 0
+        },
+        {
+          "name": "8 Spot",
+          "payout": 0
+        },
+        {
+          "name": "7 Spot",
+          "payout": 0
+        },
+        {
+          "name": "6 Spot",
+          "payout": 0
+        },
+        {
+          "name": "5 Spot",
+          "payout": 0
+        },
+        {
+          "name": "4 Spot",
+          "payout": 0
+        },
+        {
+          "name": "3 Spot",
+          "payout": 0
+        },
+        {
+          "name": "2 Spot",
+          "payout": 0
+        },
+        {
+          "name": "1 Spot",
+          "payout": 0
+        }
+      ],
+      "totalPayout": 0,
+      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
+    },
+    {
+      "game": "keno",
+      "gameName": "Keno",
+      "drawDate": "2026-10-02",
+      "drawTime": "02:38",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
+      "sourceNote": null,
+      "countUnit": "prize-winning shares",
+      "totalWinners": null,
+      "totalShares": 1,
+      "tiers": [
+        {
+          "spot": 10,
+          "match": "10/10",
+          "shareCount": 0,
+          "prizeDescription": "$100,000"
+        },
+        {
+          "spot": 10,
+          "match": "9/10",
+          "shareCount": 0,
+          "prizeDescription": "$5,000"
+        },
+        {
+          "spot": 10,
+          "match": "8/10",
+          "shareCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "spot": 10,
+          "match": "7/10",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 10,
+          "match": "6/10",
+          "shareCount": 0,
+          "prizeDescription": "$10"
+        },
+        {
+          "spot": 10,
+          "match": "5/10",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 10,
+          "match": "4/10",
+          "shareCount": 1,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 10,
+          "match": "0/10",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "9/9",
+          "shareCount": 0,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "spot": 9,
+          "match": "8/9",
+          "shareCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "spot": 9,
+          "match": "7/9",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 9,
+          "match": "6/9",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 9,
+          "match": "5/9",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 9,
+          "match": "4/9",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "0/9",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 8,
+          "match": "8/8",
+          "shareCount": 0,
+          "prizeDescription": "$10,000"
+        },
+        {
+          "spot": 8,
+          "match": "7/8",
+          "shareCount": 0,
+          "prizeDescription": "$250"
+        },
+        {
+          "spot": 8,
+          "match": "6/8",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 8,
+          "match": "5/8",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 8,
+          "match": "4/8",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 8,
+          "match": "0/8",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "7/7",
+          "shareCount": 0,
+          "prizeDescription": "$2,500"
+        },
+        {
+          "spot": 7,
+          "match": "6/7",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 7,
+          "match": "5/7",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 7,
+          "match": "4/7",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 7,
+          "match": "3/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "0/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "6/6",
+          "shareCount": 0,
+          "prizeDescription": "$1,000"
+        },
+        {
+          "spot": 6,
+          "match": "5/6",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 6,
+          "match": "4/6",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 6,
+          "match": "3/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "0/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 5,
+          "match": "5/5",
+          "shareCount": 0,
+          "prizeDescription": "$450"
+        },
+        {
+          "spot": 5,
+          "match": "4/5",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 5,
+          "match": "3/5",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 4,
+          "match": "4/4",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 4,
+          "match": "3/4",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 4,
+          "match": "2/4",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 3,
+          "match": "3/3",
+          "shareCount": 0,
+          "prizeDescription": "$30"
+        },
+        {
+          "spot": 3,
+          "match": "2/3",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 2,
+          "match": "2/2",
+          "shareCount": 0,
+          "prizeDescription": "$12"
+        },
+        {
+          "spot": 1,
+          "match": "1/1",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        }
+      ],
+      "components": [
+        {
+          "name": "10 Spot",
+          "payout": 1
+        },
+        {
+          "name": "9 Spot",
+          "payout": 0
+        },
+        {
+          "name": "8 Spot",
+          "payout": 0
+        },
+        {
+          "name": "7 Spot",
+          "payout": 0
+        },
+        {
+          "name": "6 Spot",
+          "payout": 0
+        },
+        {
+          "name": "5 Spot",
+          "payout": 0
+        },
+        {
+          "name": "4 Spot",
+          "payout": 0
+        },
+        {
+          "name": "3 Spot",
+          "payout": 0
+        },
+        {
+          "name": "2 Spot",
+          "payout": 0
+        },
+        {
+          "name": "1 Spot",
+          "payout": 0
+        }
+      ],
+      "totalPayout": 1,
+      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
+    },
+    {
+      "game": "keno",
+      "gameName": "Keno",
+      "drawDate": "2026-10-02",
+      "drawTime": "02:34",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/keno",
+      "sourceNote": null,
+      "countUnit": "prize-winning shares",
+      "totalWinners": null,
+      "totalShares": 2,
+      "tiers": [
+        {
+          "spot": 10,
+          "match": "10/10",
+          "shareCount": 0,
+          "prizeDescription": "$100,000"
+        },
+        {
+          "spot": 10,
+          "match": "9/10",
+          "shareCount": 0,
+          "prizeDescription": "$5,000"
+        },
+        {
+          "spot": 10,
+          "match": "8/10",
+          "shareCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "spot": 10,
+          "match": "7/10",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 10,
+          "match": "6/10",
+          "shareCount": 0,
+          "prizeDescription": "$10"
+        },
+        {
+          "spot": 10,
+          "match": "5/10",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 10,
+          "match": "4/10",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 10,
+          "match": "0/10",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "9/9",
+          "shareCount": 0,
+          "prizeDescription": "$50,000"
+        },
+        {
+          "spot": 9,
+          "match": "8/9",
+          "shareCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "spot": 9,
+          "match": "7/9",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 9,
+          "match": "6/9",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 9,
+          "match": "5/9",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 9,
+          "match": "4/9",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 9,
+          "match": "0/9",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 8,
+          "match": "8/8",
+          "shareCount": 0,
+          "prizeDescription": "$10,000"
+        },
+        {
+          "spot": 8,
+          "match": "7/8",
+          "shareCount": 0,
+          "prizeDescription": "$250"
+        },
+        {
+          "spot": 8,
+          "match": "6/8",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 8,
+          "match": "5/8",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 8,
+          "match": "4/8",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 8,
+          "match": "0/8",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "7/7",
+          "shareCount": 0,
+          "prizeDescription": "$2,500"
+        },
+        {
+          "spot": 7,
+          "match": "6/7",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 7,
+          "match": "5/7",
+          "shareCount": 0,
+          "prizeDescription": "$15"
+        },
+        {
+          "spot": 7,
+          "match": "4/7",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        },
+        {
+          "spot": 7,
+          "match": "3/7",
+          "shareCount": 1,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 7,
+          "match": "0/7",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "6/6",
+          "shareCount": 0,
+          "prizeDescription": "$1,000"
+        },
+        {
+          "spot": 6,
+          "match": "5/6",
+          "shareCount": 0,
+          "prizeDescription": "$50"
+        },
+        {
+          "spot": 6,
+          "match": "4/6",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 6,
+          "match": "3/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 6,
+          "match": "0/6",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 5,
+          "match": "5/5",
+          "shareCount": 0,
+          "prizeDescription": "$450"
+        },
+        {
+          "spot": 5,
+          "match": "4/5",
+          "shareCount": 0,
+          "prizeDescription": "$20"
+        },
+        {
+          "spot": 5,
+          "match": "3/5",
+          "shareCount": 1,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 4,
+          "match": "4/4",
+          "shareCount": 0,
+          "prizeDescription": "$100"
+        },
+        {
+          "spot": 4,
+          "match": "3/4",
+          "shareCount": 0,
+          "prizeDescription": "$5"
+        },
+        {
+          "spot": 4,
+          "match": "2/4",
+          "shareCount": 0,
+          "prizeDescription": "$1"
+        },
+        {
+          "spot": 3,
+          "match": "3/3",
+          "shareCount": 0,
+          "prizeDescription": "$30"
+        },
+        {
+          "spot": 3,
+          "match": "2/3",
+          "shareCount": 0,
+          "prizeDescription": "$2"
+        },
+        {
+          "spot": 2,
+          "match": "2/2",
+          "shareCount": 0,
+          "prizeDescription": "$12"
+        },
+        {
+          "spot": 1,
+          "match": "1/1",
+          "shareCount": 0,
+          "prizeDescription": "$3"
+        }
+      ],
+      "components": [
+        {
+          "name": "10 Spot",
+          "payout": 0
+        },
+        {
+          "name": "9 Spot",
+          "payout": 0
+        },
+        {
+          "name": "8 Spot",
+          "payout": 0
+        },
+        {
+          "name": "7 Spot",
+          "payout": 1
+        },
+        {
+          "name": "6 Spot",
+          "payout": 0
+        },
+        {
+          "name": "5 Spot",
+          "payout": 2
+        },
+        {
+          "name": "4 Spot",
+          "payout": 0
+        },
+        {
+          "name": "3 Spot",
+          "payout": 0
+        },
+        {
+          "name": "2 Spot",
+          "payout": 0
+        },
+        {
+          "name": "1 Spot",
+          "payout": 0
+        }
+      ],
+      "totalPayout": 3,
+      "limitations": "Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-10-01",
+      "session": "Coffee Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 35895,
+      "components": [
+        {
+          "name": "Coffee Break",
+          "payout": 35895
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-10-01",
+      "session": "Lunch Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 32559,
+      "components": [
+        {
+          "name": "Lunch Break",
+          "payout": 32559
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-10-01",
+      "session": "Rush Hour",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 61077,
+      "components": [
+        {
+          "name": "Rush Hour",
+          "payout": 61077
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-10-01",
+      "session": "Prime Time",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 33407,
+      "components": [
+        {
+          "name": "Prime Time",
+          "payout": 33407
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-10-01",
+      "session": "After Hours",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 9899,
+      "components": [
+        {
+          "name": "After Hours",
+          "payout": 9899
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-30",
+      "session": "Coffee Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 11190,
+      "components": [
+        {
+          "name": "Coffee Break",
+          "payout": 11190
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-30",
+      "session": "Lunch Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 34675,
+      "components": [
+        {
+          "name": "Lunch Break",
+          "payout": 34675
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-30",
+      "session": "Rush Hour",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 21990,
+      "components": [
+        {
+          "name": "Rush Hour",
+          "payout": 21990
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-30",
+      "session": "Prime Time",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 30530,
+      "components": [
+        {
+          "name": "Prime Time",
+          "payout": 30530
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-30",
+      "session": "After Hours",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 38069,
+      "components": [
+        {
+          "name": "After Hours",
+          "payout": 38069
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-29",
+      "session": "Coffee Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 18245,
+      "components": [
+        {
+          "name": "Coffee Break",
+          "payout": 18245
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-29",
+      "session": "Lunch Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 19394,
+      "components": [
+        {
+          "name": "Lunch Break",
+          "payout": 19394
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-29",
+      "session": "Rush Hour",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 27296,
+      "components": [
+        {
+          "name": "Rush Hour",
+          "payout": 27296
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-29",
+      "session": "Prime Time",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 18694,
+      "components": [
+        {
+          "name": "Prime Time",
+          "payout": 18694
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-29",
+      "session": "After Hours",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 28403,
+      "components": [
+        {
+          "name": "After Hours",
+          "payout": 28403
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-28",
+      "session": "Coffee Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 21334,
+      "components": [
+        {
+          "name": "Coffee Break",
+          "payout": 21334
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-28",
+      "session": "Lunch Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 12328,
+      "components": [
+        {
+          "name": "Lunch Break",
+          "payout": 12328
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-28",
+      "session": "Rush Hour",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 25777,
+      "components": [
+        {
+          "name": "Rush Hour",
+          "payout": 25777
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-28",
+      "session": "Prime Time",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 27839,
+      "components": [
+        {
+          "name": "Prime Time",
+          "payout": 27839
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-28",
+      "session": "After Hours",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 5541,
+      "components": [
+        {
+          "name": "After Hours",
+          "payout": 5541
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-27",
+      "session": "Coffee Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 34117,
+      "components": [
+        {
+          "name": "Coffee Break",
+          "payout": 34117
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-27",
+      "session": "Lunch Break",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 25011,
+      "components": [
+        {
+          "name": "Lunch Break",
+          "payout": 25011
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-27",
+      "session": "Rush Hour",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 19873,
+      "components": [
+        {
+          "name": "Rush Hour",
+          "payout": 19873
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-27",
+      "session": "Prime Time",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 14480,
+      "components": [
+        {
+          "name": "Prime Time",
+          "payout": 14480
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-pop",
+      "gameName": "Cash Pop",
+      "drawDate": "2026-09-27",
+      "session": "After Hours",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cashpop",
+      "sourceNote": null,
+      "countUnit": null,
+      "tiers": [],
+      "totalWinners": null,
+      "totalPayout": 5178,
+      "components": [
+        {
+          "name": "After Hours",
+          "payout": 5178
+        }
+      ],
+      "limitations": "Official session prize dollars only; no tier breakdown, winner count, distinct-ticket count or retailer allocation is supplied. Unpublished sessions are omitted, not zero."
+    },
+    {
+      "game": "cash-5",
+      "gameName": "Cash 5 with EZ Match",
+      "drawDate": "2026-10-01",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cash5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": "base-game winning plays only",
+      "tiers": [
+        {
+          "match": "5 of 5",
+          "winnerCount": 0,
+          "prizeDescription": "$449,000",
+          "prizeAmount": 449000
+        },
+        {
+          "match": "4 of 5",
+          "winnerCount": 17,
+          "prizeDescription": "$200",
+          "prizeAmount": 200
+        },
+        {
+          "match": "3 of 5",
+          "winnerCount": 465,
+          "prizeDescription": "$5",
+          "prizeAmount": 5
+        },
+        {
+          "match": "2 of 5",
+          "winnerCount": 6235,
+          "prizeDescription": "$1",
+          "prizeAmount": 1
+        }
+      ],
+      "totalWinners": 6717,
+      "components": [
+        {
+          "name": "Cash 5 base",
+          "payout": 11960
+        },
+        {
+          "name": "EZ Match",
+          "payout": 14836
+        }
+      ],
+      "totalPayout": 26796,
+      "limitations": "Winning-play count covers Cash 5 base only; EZ Match supplies prize dollars without a winner count. Includes online and retail wins. Not claims or distinct tickets; no retailer allocation."
+    },
+    {
+      "game": "cash-5",
+      "gameName": "Cash 5 with EZ Match",
+      "drawDate": "2026-09-30",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cash5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": "base-game winning plays only",
+      "tiers": [
+        {
+          "match": "5 of 5",
+          "winnerCount": 0,
+          "prizeDescription": "$419,000",
+          "prizeAmount": 419000
+        },
+        {
+          "match": "4 of 5",
+          "winnerCount": 8,
+          "prizeDescription": "$200",
+          "prizeAmount": 200
+        },
+        {
+          "match": "3 of 5",
+          "winnerCount": 374,
+          "prizeDescription": "$5",
+          "prizeAmount": 5
+        },
+        {
+          "match": "2 of 5",
+          "winnerCount": 5049,
+          "prizeDescription": "$1",
+          "prizeAmount": 1
+        }
+      ],
+      "totalWinners": 5431,
+      "components": [
+        {
+          "name": "Cash 5 base",
+          "payout": 8519
+        },
+        {
+          "name": "EZ Match",
+          "payout": 8070
+        }
+      ],
+      "totalPayout": 16589,
+      "limitations": "Winning-play count covers Cash 5 base only; EZ Match supplies prize dollars without a winner count. Includes online and retail wins. Not claims or distinct tickets; no retailer allocation."
+    },
+    {
+      "game": "cash-5",
+      "gameName": "Cash 5 with EZ Match",
+      "drawDate": "2026-09-29",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cash5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": "base-game winning plays only",
+      "tiers": [
+        {
+          "match": "5 of 5",
+          "winnerCount": 0,
+          "prizeDescription": "$396,000",
+          "prizeAmount": 396000
+        },
+        {
+          "match": "4 of 5",
+          "winnerCount": 10,
+          "prizeDescription": "$200",
+          "prizeAmount": 200
+        },
+        {
+          "match": "3 of 5",
+          "winnerCount": 313,
+          "prizeDescription": "$5",
+          "prizeAmount": 5
+        },
+        {
+          "match": "2 of 5",
+          "winnerCount": 4591,
+          "prizeDescription": "$1",
+          "prizeAmount": 1
+        }
+      ],
+      "totalWinners": 4914,
+      "components": [
+        {
+          "name": "Cash 5 base",
+          "payout": 8156
+        },
+        {
+          "name": "EZ Match",
+          "payout": 11820
+        }
+      ],
+      "totalPayout": 19976,
+      "limitations": "Winning-play count covers Cash 5 base only; EZ Match supplies prize dollars without a winner count. Includes online and retail wins. Not claims or distinct tickets; no retailer allocation."
+    },
+    {
+      "game": "cash-5",
+      "gameName": "Cash 5 with EZ Match",
+      "drawDate": "2026-09-28",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cash5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": "base-game winning plays only",
+      "tiers": [
+        {
+          "match": "5 of 5",
+          "winnerCount": 0,
+          "prizeDescription": "$373,000",
+          "prizeAmount": 373000
+        },
+        {
+          "match": "4 of 5",
+          "winnerCount": 22,
+          "prizeDescription": "$200",
+          "prizeAmount": 200
+        },
+        {
+          "match": "3 of 5",
+          "winnerCount": 643,
+          "prizeDescription": "$5",
+          "prizeAmount": 5
+        },
+        {
+          "match": "2 of 5",
+          "winnerCount": 5932,
+          "prizeDescription": "$1",
+          "prizeAmount": 1
+        }
+      ],
+      "totalWinners": 6597,
+      "components": [
+        {
+          "name": "Cash 5 base",
+          "payout": 13547
+        },
+        {
+          "name": "EZ Match",
+          "payout": 11226
+        }
+      ],
+      "totalPayout": 24773,
+      "limitations": "Winning-play count covers Cash 5 base only; EZ Match supplies prize dollars without a winner count. Includes online and retail wins. Not claims or distinct tickets; no retailer allocation."
+    },
+    {
+      "game": "cash-5",
+      "gameName": "Cash 5 with EZ Match",
+      "drawDate": "2026-09-27",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/cash5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": "base-game winning plays only",
+      "tiers": [
+        {
+          "match": "5 of 5",
+          "winnerCount": 0,
+          "prizeDescription": "$352,000",
+          "prizeAmount": 352000
+        },
+        {
+          "match": "4 of 5",
+          "winnerCount": 8,
+          "prizeDescription": "$200",
+          "prizeAmount": 200
+        },
+        {
+          "match": "3 of 5",
+          "winnerCount": 311,
+          "prizeDescription": "$5",
+          "prizeAmount": 5
+        },
+        {
+          "match": "2 of 5",
+          "winnerCount": 4175,
+          "prizeDescription": "$1",
+          "prizeAmount": 1
+        }
+      ],
+      "totalWinners": 4494,
+      "components": [
+        {
+          "name": "Cash 5 base",
+          "payout": 7330
+        },
+        {
+          "name": "EZ Match",
+          "payout": 9739
+        }
+      ],
+      "totalPayout": 17069,
+      "limitations": "Winning-play count covers Cash 5 base only; EZ Match supplies prize dollars without a winner count. Includes online and retail wins. Not claims or distinct tickets; no retailer allocation."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-10-01",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 10400
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 6700
+        }
+      ],
+      "totalPayout": 17100,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-10-01",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 12400
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 3000
+        }
+      ],
+      "totalPayout": 15400,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-09-30",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 30000
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 15600
+        }
+      ],
+      "totalPayout": 45600,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-09-30",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 12375
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 8200
+        }
+      ],
+      "totalPayout": 20575,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-09-29",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 36250
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 3000
+        }
+      ],
+      "totalPayout": 39250,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-09-29",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 12400
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 16150
+        }
+      ],
+      "totalPayout": 28550,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-09-28",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 62500
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 4800
+        }
+      ],
+      "totalPayout": 67300,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-09-28",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 22800
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 63900
+        }
+      ],
+      "totalPayout": 86700,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-09-27",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 7500
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 3000
+        }
+      ],
+      "totalPayout": 10500,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-5",
+      "gameName": "Pick 5",
+      "drawDate": "2026-09-27",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick5",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 6400
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 3550
+        }
+      ],
+      "totalPayout": 9950,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-10-01",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 144800
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 13964
+        }
+      ],
+      "totalPayout": 158764,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-10-01",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 361400
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 16930
+        }
+      ],
+      "totalPayout": 378330,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-09-30",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 51000
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 19770
+        }
+      ],
+      "totalPayout": 70770,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-09-30",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 167800
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 30738
+        }
+      ],
+      "totalPayout": 198538,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-09-29",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 787700
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 94706
+        }
+      ],
+      "totalPayout": 882406,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-09-29",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 58300
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 3680
+        }
+      ],
+      "totalPayout": 61980,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-09-28",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 66200
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 10114
+        }
+      ],
+      "totalPayout": 76314,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-09-28",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 1291200
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 76758
+        }
+      ],
+      "totalPayout": 1367958,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-09-27",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 96100
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 5102
+        }
+      ],
+      "totalPayout": 101202,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-4",
+      "gameName": "Pick 4",
+      "drawDate": "2026-09-27",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick4",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 51000
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 13990
+        }
+      ],
+      "totalPayout": 64990,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-10-01",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 72675
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 13260
+        }
+      ],
+      "totalPayout": 85935,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-10-01",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 195005
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 11591
+        }
+      ],
+      "totalPayout": 206596,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-09-30",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 79310
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 7837
+        }
+      ],
+      "totalPayout": 87147,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-09-30",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 114700
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 16685
+        }
+      ],
+      "totalPayout": 131385,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-09-29",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 414820
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 14119
+        }
+      ],
+      "totalPayout": 428939,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-09-29",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 206800
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 8366
+        }
+      ],
+      "totalPayout": 215166,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-09-28",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 45930
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 49214
+        }
+      ],
+      "totalPayout": 95144,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-09-28",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 1138975
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 22722
+        }
+      ],
+      "totalPayout": 1161697,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-09-27",
+      "session": "Day",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 305335
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 26168
+        }
+      ],
+      "totalPayout": 331503,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "pick-3",
+      "gameName": "Pick 3",
+      "drawDate": "2026-09-27",
+      "session": "Night",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/pick3",
+      "sourceNote": "Official totals include online and retail wins.",
+      "countUnit": null,
+      "totalWinners": null,
+      "tiers": [],
+      "components": [
+        {
+          "name": "Base",
+          "payout": 49285
+        },
+        {
+          "name": "FIREBALL",
+          "payout": 4183
+        }
+      ],
+      "totalPayout": 53468,
+      "limitations": "Session prize dollars, not winner counts or claims. No tier-count breakdown or retailer allocation is supplied. Base and FIREBALL totals include online and retail wins."
+    },
+    {
+      "game": "bank-a-million",
+      "gameName": "Bank a Million",
+      "drawDate": "2026-09-30",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "6",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 after taxes"
+        },
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$20,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 20,
+          "prizeDescription": "$400"
+        },
+        {
+          "match": "4",
+          "winnerCount": 286,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 480,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3",
+          "winnerCount": 4308,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 3329,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 8423,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "bank-a-million",
+      "gameName": "Bank a Million",
+      "drawDate": "2026-09-26",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "6",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 after taxes"
+        },
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$20,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 6,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 18,
+          "prizeDescription": "$400"
+        },
+        {
+          "match": "4",
+          "winnerCount": 369,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 481,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3",
+          "winnerCount": 4612,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 3343,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 8829,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "bank-a-million",
+      "gameName": "Bank a Million",
+      "drawDate": "2026-09-23",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "6",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 after taxes"
+        },
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$20,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 4,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 19,
+          "prizeDescription": "$400"
+        },
+        {
+          "match": "4",
+          "winnerCount": 253,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 488,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3",
+          "winnerCount": 4018,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 3322,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 8104,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "bank-a-million",
+      "gameName": "Bank a Million",
+      "drawDate": "2026-09-19",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "6",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 after taxes"
+        },
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$20,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 1,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 11,
+          "prizeDescription": "$400"
+        },
+        {
+          "match": "4",
+          "winnerCount": 260,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 386,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3",
+          "winnerCount": 4218,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 2871,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 7747,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "bank-a-million",
+      "gameName": "Bank a Million",
+      "drawDate": "2026-09-16",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/bankamillion",
+      "sourceNote": null,
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "6",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 after taxes"
+        },
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$20,000"
+        },
+        {
+          "match": "5",
+          "winnerCount": 3,
+          "prizeDescription": "$2,000"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 36,
+          "prizeDescription": "$400"
+        },
+        {
+          "match": "4",
+          "winnerCount": 343,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 493,
+          "prizeDescription": "$40"
+        },
+        {
+          "match": "3",
+          "winnerCount": 4822,
+          "prizeDescription": "$4"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 3937,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 9634,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "millionaire-for-life",
+      "gameName": "Millionaire for Life",
+      "drawDate": "2026-10-01",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
+      "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 a year for life"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$100,000 a year for life"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$7,500"
+        },
+        {
+          "match": "4",
+          "winnerCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 13,
+          "prizeDescription": "$250"
+        },
+        {
+          "match": "3",
+          "winnerCount": 41,
+          "prizeDescription": "$50"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 203,
+          "prizeDescription": "$25"
+        },
+        {
+          "match": "2",
+          "winnerCount": 867,
+          "prizeDescription": "$8"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 1253,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 2377,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "millionaire-for-life",
+      "gameName": "Millionaire for Life",
+      "drawDate": "2026-09-30",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
+      "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 a year for life"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$100,000 a year for life"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$7,500"
+        },
+        {
+          "match": "4",
+          "winnerCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 15,
+          "prizeDescription": "$250"
+        },
+        {
+          "match": "3",
+          "winnerCount": 65,
+          "prizeDescription": "$50"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 200,
+          "prizeDescription": "$25"
+        },
+        {
+          "match": "2",
+          "winnerCount": 834,
+          "prizeDescription": "$8"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 1140,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 2254,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "millionaire-for-life",
+      "gameName": "Millionaire for Life",
+      "drawDate": "2026-09-29",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
+      "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 a year for life"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$100,000 a year for life"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 1,
+          "prizeDescription": "$7,500"
+        },
+        {
+          "match": "4",
+          "winnerCount": 2,
+          "prizeDescription": "$500"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 17,
+          "prizeDescription": "$250"
+        },
+        {
+          "match": "3",
+          "winnerCount": 51,
+          "prizeDescription": "$50"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 198,
+          "prizeDescription": "$25"
+        },
+        {
+          "match": "2",
+          "winnerCount": 752,
+          "prizeDescription": "$8"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 1237,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 2258,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "millionaire-for-life",
+      "gameName": "Millionaire for Life",
+      "drawDate": "2026-09-28",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
+      "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 a year for life"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$100,000 a year for life"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$7,500"
+        },
+        {
+          "match": "4",
+          "winnerCount": 0,
+          "prizeDescription": "$500"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 12,
+          "prizeDescription": "$250"
+        },
+        {
+          "match": "3",
+          "winnerCount": 68,
+          "prizeDescription": "$50"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 204,
+          "prizeDescription": "$25"
+        },
+        {
+          "match": "2",
+          "winnerCount": 803,
+          "prizeDescription": "$8"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 1198,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 2285,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    },
+    {
+      "game": "millionaire-for-life",
+      "gameName": "Millionaire for Life",
+      "drawDate": "2026-09-27",
+      "jurisdiction": "Virginia",
+      "sourceUrl": "https://www.valottery.com/data/draw-games/millionaireforlife",
+      "sourceNote": "This table shows Virginia wins. Millionaire For Life jackpots won outside the state of Virginia are not shown.",
+      "multiplier": null,
+      "countUnit": "source-reported prize winners",
+      "tiers": [
+        {
+          "match": "5 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$1,000,000 a year for life"
+        },
+        {
+          "match": "5",
+          "winnerCount": 0,
+          "prizeDescription": "$100,000 a year for life"
+        },
+        {
+          "match": "4 + 1",
+          "winnerCount": 0,
+          "prizeDescription": "$7,500"
+        },
+        {
+          "match": "4",
+          "winnerCount": 1,
+          "prizeDescription": "$500"
+        },
+        {
+          "match": "3 + 1",
+          "winnerCount": 8,
+          "prizeDescription": "$250"
+        },
+        {
+          "match": "3",
+          "winnerCount": 31,
+          "prizeDescription": "$50"
+        },
+        {
+          "match": "2 + 1",
+          "winnerCount": 194,
+          "prizeDescription": "$25"
+        },
+        {
+          "match": "2",
+          "winnerCount": 646,
+          "prizeDescription": "$8"
+        },
+        {
+          "match": "1 + 1",
+          "winnerCount": 1169,
+          "prizeDescription": "$8"
+        }
+      ],
+      "totalWinners": 2049,
+      "totalPayout": null,
+      "limitations": "Dated draw report, not claims or retailer locations. Counts are not verified distinct tickets. Prize descriptions retain source payment and tax terms; no total payout is inferred."
+    }
+  ]
+}

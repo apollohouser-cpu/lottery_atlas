@@ -1,3 +1,4 @@
+import '../../widgets/map/virginia_prize_tables_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -41,6 +42,21 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Virginia')
+            Card(
+              child: ListTile(
+                title: const Text('Draw reports and prize tables'),
+                subtitle: const Text(
+                  'National and state games • Source scope and limits shown per report',
+                ),
+                trailing: const Icon(Icons.table_chart_outlined),
+                onTap: () => showModalBottomSheet<void>(
+                  context: context,
+                  isScrollControlled: true,
+                  builder: (_) => const VirginiaPrizeTablesSheet(),
+                ),
+              ),
+            ),
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
