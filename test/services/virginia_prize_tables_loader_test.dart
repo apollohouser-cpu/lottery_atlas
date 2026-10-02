@@ -14,7 +14,10 @@ void main() {
       writeCache: (_) async => throw StateError('disk full'),
       readBundle: () async => throw StateError('must not fall back'),
     ).load();
-    expect((data['reports'] as List).length, 85);
+    expect(
+      data,
+      equals(jsonDecode(raw)),
+    ); // Preserve every supplied report and date.
   });
   test(
     'network failure retains cached source dates and unit distinctions',

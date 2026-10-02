@@ -14,7 +14,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
 | Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
 | South Carolina | Accepted October 1, 2026, 7:02 PM ET (due October 3, 5:03 PM) | Supported available coverage accepted; broader claims remain separate. |
-| Virginia | October 4, 2026, 7:02 PM ET | Active October 1, 7:02 PM ET; 72 hours for existing working imports. Scope due October 2, 7:02 PM ET. |
+| Virginia | Accepted October 2, 2026, 6:02 PM ET (due October 4, 7:02 PM) | Supported available coverage closed; complete statewide claims remain separate. |
 
 Texas's release includes the supported draw-game experience, specifically verified
 Powerball and Mega Millions activity. Scratch-only acceptance never satisfies it.
@@ -50,18 +50,20 @@ Notify release decisions, deadline misses/extensions, material failures and user
 actions; remain quiet for unchanged status. This planning edit does not itself
 constitute Texas's final acceptance session.
 
-## Active work: Virginia
+## Completed priority queue and remaining work
 
-South Carolina supported available coverage was accepted October 1 at 19:02 ET;
-see SOUTH_CAROLINA_ACCEPTANCE.md. Texas and Kentucky remain accepted. Virginia
-is now the sole active state. Existing working Scratch, retailer and winner-news
-imports qualify for 72 hours: release decision due October 4 at 19:02 ET, with
-full national/state draw and Scratch scope reconciliation due October 2 at
-19:02 ET. The provisional October 8 forecast is superseded by actual activation.
-Its September 23 agency decline remains separate from public-source completion.
+Texas, Kentucky, South Carolina and Virginia are accepted for their supported
+available coverage. Virginia closed October 2 at 18:02 ET; see
+VIRGINIA_ACCEPTANCE.md for the consolidated release evidence and limitations.
+There is no currently activated successor state. Select the next implementation
+priority from the current source-screen inventory at actual activation, then
+assign its 72/120-hour release deadline and 24-hour scope checkpoint; do not
+inherit Virginia's dates or silently activate several states.
 
-Accepted available coverage and complete statewide data remain separate outcomes.
-No fees are authorized. Earlier dated active-state entries below are historical.
+Continue the already-authorized private records audits/no-fee correspondence and
+confirm the next scheduled Nebraska/Texas refresh after the bounded importer
+repairs. South Carolina's new delivery is unaudited and separate from accepted
+app coverage. No accepted-state routine UI rechecks or fees are authorized.
 
 ## Session rules
 
@@ -136,7 +138,8 @@ Use the latest state source-screen documents, not stale automation snapshots.
 New York, Illinois, Rhode Island and West Virginia deliveries remain limited by
 their documented definitions/joins. Keep private originals private and do not
 deduplicate unidentified claims. Rhode Island paid assembly remains on hold.
-Monitor New Mexico's October 1 promised response and Pennsylvania's extensions.
+New Mexico responded October 1 with public-source referrals; private PDF archival
+remains. Monitor Pennsylvania's separate interim extensions.
 Arizona user attestation remains a separate optional records task. On September
 26 the user confirmed the Mississippi request was mailed; its mailing action is
 complete, with agency receipt/response unconfirmed. Do not ask again for supplied

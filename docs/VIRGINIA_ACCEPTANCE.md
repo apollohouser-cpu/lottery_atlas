@@ -1,7 +1,8 @@
 # Virginia supported-coverage acceptance
 
 Activated October 1, 2026 at 19:02 ET. Release decision due October 4 at 19:02 ET;
-full per-game reconciliation due October 2 at 19:02 ET. Not accepted. Agency
+full per-game reconciliation completed October 2 at 03:00 ET. Supported available
+coverage accepted October 2 at 18:02 ET, ahead of the deadline. Agency
 request declined September 23; no new request, eligibility assertion or fee is
 required for public-source completion.
 
@@ -41,7 +42,7 @@ and [Raffle](https://www.valottery.com/data/draw-games/raffle) were inspected.
 Search/cache dates differed between requests; do not infer retrieval or source
 freshness from a stale page excerpt.
 
-## Current committed baseline
+## October 1 opening baseline (superseded by release inventory below)
 
 October 1 generated catalog contains 96 retail Scratchers. Directory coverage
 reports 5,425 unique official retailers, 5,360 verified coordinates and 65
@@ -66,11 +67,11 @@ unmatched-game fallback to Scratch. These are accuracy gaps, not enhancements.
 
 - [x] Finish national/state/seasonal game scope and available-report reconciliation (October 2, 03:00 ET; implementation/acceptance still pending).
 - [x] Correct publication-date presentation and audit unmatched classification (native detail verified October 2, 12:00 ET).
-- [ ] Verify catalog, retailer/source limitations and available draw routes.
-- [ ] Native state/county/game/prize/date filters, reset, scoped empty/detail/source.
+- [x] Verify catalog, retailer/source limitations and available draw routes.
+- [x] Native state/county/game/prize/date filters, reset, scoped empty/detail/source.
 - [x] Compact and larger integrated layouts, offline/cache and reconnect behavior (Dart request-failure probe; no offline tile guarantee).
-- [ ] Relevant automated/build checks and independent live validation.
-- [ ] Record supported-coverage decision before deadline.
+- [x] Relevant automated/build checks and independent live validation.
+- [x] Record supported-coverage decision before deadline.
 
 Opening repository clean; publisher 36908045746 successful; no new agency reply
 beyond already-recorded New Mexico/Michigan messages. No accepted state reopened.
@@ -475,3 +476,52 @@ release decision remain; deadline unchanged.
 
 Ordinary lib/main.dart macOS debug build passed and was relaunched after the
 probe. Private harness and evidence are preserved; no probe files are committed.
+
+
+## Release decision — October 2, 2026, 18:02 ET
+
+**Supported available coverage accepted and ready for user testing.** The complete
+national/state/Scratch scope was reconciled before its October 2 checkpoint, and
+release is two days ahead of the October 4 deadline. No extension was required.
+
+The release includes ten recurring draw-game report groups (Powerball, Mega
+Millions, Millionaire for Life, Bank a Million, Cash 5/EZ Match, Pick 3/4/5 with
+FIREBALL, Cash Pop and Keno), plus official seasonal Raffle and historical
+Cash4Life routes. The live rolling window contains 79 published reports; its
+size varies with published sessions. It also includes 96 retail Scratchers,
+5,425 directory entries with 5,360 verified map positions and 65 unresolved
+addresses excluded from pins, and 109 selected winner releases across 2024–2026
+(67 in the 2026 launch window through September 23).
+
+Acceptance combines the native evidence recorded above: all ten report choices,
+compact/wide layouts, state/local navigation, retailer search/detail, game/prize/
+publication-date filters and resets, scoped empty results, winner source/return,
+catalog source/return, and retained data during failed Dart requests followed by
+successful reconnection. Ordinary lib/main.dart debug build passed and was
+restored/relaunched; private diagnostic probes remain excluded from publication.
+
+Final validation: 18 JavaScript parser/classification tests and four refresh
+transaction tests pass. Of 16 focused Flutter tests, 15 passed initially; one
+stale fixed-length assertion expected 85 reports instead of the refreshed 79.
+It now verifies exact preservation of the supplied report object despite cache
+write failure, and all four loader tests pass on rerun. Other already-passing
+calendar/data/layout tests were not unnecessarily repeated. Analysis of the four
+changed production Dart files is clean. Independent HTTPS downloads of reports,
+activity, catalogs, directories and refresh status match committed bytes;
+publisher 37058132001 succeeded. Hash evidence is private in final-live.json.
+
+Limitations remain explicit: Powerball counts are multi-jurisdiction and Mega
+Millions jurisdiction is unverified, so neither is labeled a Virginia total.
+No Virginia share or separate Power Play count is inferred. Pick/FIREBALL and
+Cash Pop dollars do not become ticket counts; Keno uses prize-winning shares.
+Annual and after-tax prize wording is preserved without invented payout totals.
+Scratch inventory is not claims or store stock. Winner dates are publication
+dates, selected releases are incomplete, and unsupported Print 'n Play/online
+products do not default to Scratch. Complete statewide claims remain unavailable
+following the agency's September 23 decline. No further request is required.
+
+Game-filter AX trees were intermittently stale; native screenshots/mouse and
+updated map AX verified the interactions. This is not full accessibility
+certification. Request-failure testing is not an offline map-tile guarantee.
+Accepted Virginia is closed to routine polish and unchanged rechecks; only a
+named actual defect or meaningful verified new data may reopen bounded work.
