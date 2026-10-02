@@ -33,9 +33,17 @@ Ohio Lottery Assistant Counsel replied at 10:21 ET that it will not fulfill a
 request initiated by artificial intelligence and asks the requester to confirm
 that they are a person. No records or delivery date were supplied. This is an
 agency-stated processing condition, not an independent legal conclusion here.
-User action: personally reply in the existing Ohio August 2026 records thread
-confirming this is their request. Suggested text: "I am Apollo Houser, a person,
+The user was asked to personally reply in the existing Ohio August 2026 records
+thread confirming this is their request. Suggested text: "I am Apollo Houser, a person,
 and this is my public-records request. I authorized assistance preparing it.
 Please continue processing the existing request. No fees are authorized."
 No automated human attestation has been sent. This separate records issue does
-not block active South Carolina development.
+not block active-state development.
+
+## October 2 requester confirmation sent
+
+The user confirmed that they personally sent the prepared reply in the existing
+Ohio thread. The personal-confirmation action is complete; do not request it
+again unless the agency identifies a specific defect. Await the agency response;
+processing acceptance, delivery date and records remain unconfirmed. No fees
+are authorized. The assistant prepared an unsent draft; the user sent the reply.
