@@ -389,3 +389,19 @@ had an empty ranking before returning to the city view; no claim was fabricated.
 
 No crash/new mail/publisher change. Continue source action/return, game/prize reset,
 catalog and native failure/reconnection. No state acceptance or deadline change.
+
+## October 2 winner source and return (13:00 ET)
+
+Scrolled the compact winner sheet to its source and opened the official release
+in Chrome. The destination is Virginia's latestwinners item
+e25c7995-2119-4950-916f-8a1507518ab0. Its September 23 Platinum 7s article identifies
+the $2M advertised prize and Love Food Mart at 298 W. Bay Avenue in Norfolk,
+matching the app's reported retailer. Returning to the app retained the scrolled
+winner-detail source/disclaimer panel. Private browser AX and return screenshot
+are retained in work/virginia_native/winner-source-*. Initial browser state was
+still the previous catalog tab while navigation loaded; the subsequent loaded
+release was checked, not inferred from the requested URL.
+
+No crash/new mail/publisher change. Source/return is closed; continue game/prize
+reset, catalog and native failure/reconnection. Virginia remains unaccepted;
+deadline unchanged. The Nebraska/Texas maintenance checkpoint remains 15:00 ET.
