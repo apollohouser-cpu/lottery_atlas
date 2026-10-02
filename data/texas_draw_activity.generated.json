@@ -1,7 +1,7 @@
 {
   "source": "Texas Lottery official draw-specific Where Sold tables",
-  "updatedAt": "2026-10-01T06:52:26.473Z",
-  "sourceLastUpdated": "2026-09-30T12:00:00.000Z",
+  "updatedAt": "2026-10-02T06:50:52.883Z",
+  "sourceLastUpdated": "2026-10-01T12:00:00.000Z",
   "coverage": "2026 draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.",
   "activities": [
     {
@@ -2667,6 +2667,42 @@
       "prizeAmount": 25000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379787.html",
       "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-09-30"
+    },
+    {
+      "id": "tx-draw-2e133fd2080a816577a54997",
+      "latitude": 30.08544737069,
+      "longitude": -95.416960659624,
+      "city": "SPRING",
+      "county": "Harris",
+      "state": "TX",
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "retailerName": "EXPRESS MART 3",
+      "retailerAddress": "208 RILEY FUZZELL RD, SPRING, TX 77373",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-10-01T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 25000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158400837.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-10-01"
+    },
+    {
+      "id": "tx-draw-5d5f792f1b713fad5bb6f1c0",
+      "latitude": 30.08544737069,
+      "longitude": -95.416960659624,
+      "city": "SPRING",
+      "county": "Harris",
+      "state": "TX",
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "retailerName": "EXPRESS MART 3",
+      "retailerAddress": "208 RILEY FUZZELL RD, SPRING, TX 77373",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-10-01T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 25000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158400837.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-10-01"
     }
   ],
   "excluded": [
@@ -5977,6 +6013,14 @@
     },
     {
       "game": "state-draw",
+      "gameName": "Texas Two Step",
+      "date": "2026-10-01",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/Winning_Numbers/details.html_1158400837.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
       "gameName": "Cash Five",
       "date": "2026-01-01",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158372007.html",
@@ -7846,6 +7890,14 @@
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158379787.html",
       "sourceRows": 1,
       "mappedRows": 1
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "date": "2026-10-01",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158400837.html",
+      "sourceRows": 2,
+      "mappedRows": 2
     },
     {
       "game": "state-draw",
@@ -15332,6 +15384,38 @@
       "gameName": "All or Nothing",
       "date": "2026-09-30",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_769920367.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-10-01",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1140767935.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-10-01",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_142819817.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-10-01",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1475895933.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-10-01",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_198568915.html",
       "sourceRows": 0,
       "mappedRows": 0
     }
