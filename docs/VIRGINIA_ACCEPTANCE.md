@@ -191,3 +191,13 @@ fabricated. Keno and national/seasonal reconciliation are the next bounded gaps.
 
 Opening publisher 36967119195 succeeded, with no new agency mail. Deadlines
 unchanged; accepted-state UI and private record deliveries remain untouched.
+
+## October 2 Keno staged implementation
+
+Keno parser now preserves local draw time and ten separate spot tables, with
+share counts and reconciled payouts. The API repeats its one-spot table in
+DrawData; it is checked for consistency but never counted twice. Same-day draw
+time regression is guarded. Thirteen parser tests pass and live import stages
+75 reports across eight state games. Keno is a recent snapshot, not a complete
+four-minute history. National/seasonal reconciliation and app integration remain
+pending; no release acceptance is implied.

@@ -104,3 +104,24 @@ test('Cash Pop rejects unknown availability and malformed published dollars', ()
     assert.throws(() => parseCashPopReports(p));
   }
 });
+
+import {parseKenoReports} from '../../tooling/virginia_draw_reports.mjs';
+test('Keno preserves shares, local draw time and ten reconciled spot tables', () => {
+  const reports = parseKenoReports(fixture('keno'));
+  const r = reports[0];
+  assert.equal(r.drawTime, '21:54');
+  assert.equal(r.totalWinners, null);
+  assert.equal(r.components.length, 10);
+  assert.deepEqual(r.components.find(c => c.name === '1 Spot'), {name: '1 Spot', payout: 15});
+  assert.equal(r.tiers.find(t => t.spot === 1).shareCount, 5);
+  assert.throws(() => assertNoReportRegression(reports, reports.slice(1)));
+});
+test('Keno rejects changed units, incomplete spot tables, payout mismatch', () => {
+  for (const mutate of [p => p.data[0].DailyDrawDetails[0].DrawData.Headings[1] = 'Tickets',
+    p => p.data[0].DailyDrawDetails[0].KenoSpotData.Spots.pop(),
+    p => p.data[0].DailyDrawDetails[0].DrawData.TotalPrizes = '$16',
+    p => p.data.push(p.data[0])]) {
+    const p = fixture('keno'); mutate(p);
+    assert.throws(() => parseKenoReports(p));
+  }
+});

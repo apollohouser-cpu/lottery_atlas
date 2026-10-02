@@ -40,7 +40,7 @@ export function parseTableReports(payload, gameId) {
 }
 export function assertNoReportRegression(previous, reports) {
   for (const game of new Set(previous.map((r) => `${r.game}/${r.session ?? ""}`))) {
-    const latest = (items) => items.filter((r) => `${r.game}/${r.session ?? ""}` === game).map((r) => r.drawDate).sort().at(-1);
+    const latest = (items) => items.filter((r) => `${r.game}/${r.session ?? ""}` === game).map((r) => `${r.drawDate}T${r.drawTime ?? "00:00"}`).sort().at(-1);
     if (!latest(reports) || latest(reports) < latest(previous)) fail(`Draw date regression: ${game}`);
   }
 }
@@ -165,4 +165,62 @@ export function parseCashPopReports(payload) {
   }
   if (!reports.length) fail('No published Cash Pop reports');
   return reports;
+}
+
+export function parseKenoReports(payload) {
+  if (!Array.isArray(payload.data) || !payload.data.length) fail('Missing Keno data');
+  const seen = new Set();
+  const parseNumber = (text, money = false) => {
+    if (typeof text !== 'string' || (money && !text.startsWith('$'))) fail('Invalid Keno number');
+    const value = money ? text.slice(1) : text;
+    if (!/^(?:0|[1-9]\d*|[1-9]\d{0,2}(?:,\d{3})+)$/.test(value)) fail('Invalid Keno number');
+    const n = Number(value.replaceAll(',', ''));
+    if (!Number.isSafeInteger(n)) fail('Unsafe Keno number');
+    return n;
+  };
+  return payload.data.map(draw => {
+    const timestamp = draw.DrawDate;
+    if (draw.DrawGameId !== 30 || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:00$/.test(timestamp) ||
+        new Date(`${timestamp}Z`).toISOString().slice(0, 19) !== timestamp || seen.has(timestamp) ||
+        draw.DailyDrawDetails?.length !== 1) fail('Invalid Keno draw identity');
+    seen.add(timestamp);
+    const detail = draw.DailyDrawDetails[0];
+    const tables = detail.KenoSpotData?.Spots ?? [];
+    // DrawData repeats the one-spot table; counting both would duplicate shares.
+    const oneSpot = tables.find(t => /^1\s+Spot Game$/.test(t.WinnerLocation?.trim()));
+    if (JSON.stringify(oneSpot) !== JSON.stringify(detail.DrawData)) fail('Keno repeated table mismatch');
+    if (tables.length !== 10) fail('Incomplete Keno spot tables');
+    const spots = new Set();
+    const tiers = [];
+    const components = tables.map(table => {
+      const spot = Number(table?.WinnerLocation?.trim().match(/^(\d+)\s+Spot Game$/)?.[1]);
+      if (!(spot >= 1 && spot <= 10) || spots.has(spot) ||
+          JSON.stringify(table.Headings) !== JSON.stringify(['Match', '# Of Shares', 'Prize Amount']) ||
+          !Array.isArray(table.Values) || !table.Values.length) fail('Invalid Keno spot table');
+      spots.add(spot);
+      const matches = new Set();
+      let calculated = 0;
+      for (const tier of table.Values) {
+        const m = tier.Matches?.match(/^(\d+)\/(\d+)$/);
+        if (!m || Number(m[2]) !== spot || Number(m[1]) > spot || matches.has(tier.Matches)) fail('Invalid Keno match');
+        matches.add(tier.Matches);
+        const shares = parseNumber(tier.Winners);
+        const prize = parseNumber(tier.PrizeAmounts, true);
+        calculated += shares * prize;
+        tiers.push({spot, match: tier.Matches, shareCount: shares, prizeDescription: tier.PrizeAmounts});
+      }
+      const payout = parseNumber(table.TotalPrizes, true);
+      if (!Number.isSafeInteger(calculated) || calculated !== payout) fail('Keno payout mismatch');
+      return {name: `${spot} Spot`, payout};
+    });
+    const totalPayout = components.reduce((sum, c) => sum + c.payout, 0);
+    const totalShares = tiers.reduce((sum, t) => sum + t.shareCount, 0);
+    if (!Number.isSafeInteger(totalPayout) || !Number.isSafeInteger(totalShares)) fail('Unsafe Keno totals');
+    return {game: 'keno', gameName: 'Keno', drawDate: timestamp.slice(0, 10),
+      drawTime: timestamp.slice(11, 16), jurisdiction: 'Virginia',
+      sourceUrl: 'https://www.valottery.com/data/draw-games/keno', sourceNote: null,
+      countUnit: 'prize-winning shares', totalWinners: null, totalShares,
+      tiers, components, totalPayout,
+      limitations: 'Recent draw snapshot, not a complete four-minute history or live feed. Counts are shares, not tickets or people. Spot tables remain separate; no retailer allocation or claims are supplied. Time is the source local draw time.'};
+  });
 }
