@@ -190,12 +190,10 @@ if (!outputPath || !retailerDirectoryPath || !scratchCatalogPath) {
         .filter((game) => game.canonicalName.length >= 5 &&
           normalized.includes(game.canonicalName))
         .sort((left, right) => right.canonicalName.length - left.canonicalName.length)[0];
-      const named = full.match(
-        /(?:lottery[’']?s\s+|on\s+(?:the\s+)?)(.+?)\s+scratch(?:er|-?off)(?:\s+game|\s+ticket)?/i,
-      );
       return {
         game: 'scratch-off',
-        gameName: exact?.name ?? compact(named?.[1] ?? 'New York Scratch-Off'),
+        // Unmatched story prose can contain personal names or whole sentences.
+        gameName: exact?.name ?? 'New York Scratch-Off (game name unverified)',
       };
     }
     for (const [gameName, pattern] of drawPatterns) {

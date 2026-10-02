@@ -14,6 +14,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
 | Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
 | South Carolina | Accepted October 1, 2026, 7:02 PM ET (due October 3, 5:03 PM) | Supported available coverage accepted; broader claims remain separate. |
+| New York | October 5, 2026, 7:00 PM ET | Active October 2, 7:00 PM ET; scope due October 3, 7:00 PM ET. |
 | Virginia | Accepted October 2, 2026, 6:02 PM ET (due October 4, 7:02 PM) | Supported available coverage closed; complete statewide claims remain separate. |
 
 Texas's release includes the supported draw-game experience, specifically verified
@@ -55,10 +56,11 @@ constitute Texas's final acceptance session.
 Texas, Kentucky, South Carolina and Virginia are accepted for their supported
 available coverage. Virginia closed October 2 at 18:02 ET; see
 VIRGINIA_ACCEPTANCE.md for the consolidated release evidence and limitations.
-There is no currently activated successor state. Select the next implementation
-priority from the current source-screen inventory at actual activation, then
-assign its 72/120-hour release deadline and 24-hour scope checkpoint; do not
-inherit Virginia's dates or silently activate several states.
+New York is the sole active state, activated October 2, 2026 at 19:00 ET.
+Its working catalog, retailer and winner imports qualify for 72 hours: release
+decision due October 5 at 19:00 ET, full game-scope reconciliation due October 3
+at 19:00 ET. See NEW_YORK_ACCEPTANCE.md. National/state draws and Scratch are
+all in scope; private FOIL records remain separate from supported public coverage.
 
 Continue the already-authorized private records audits/no-fee correspondence and
 confirm the next scheduled Nebraska/Texas refresh after the bounded importer
