@@ -465,3 +465,19 @@ Private evidence is retained in work/new_york_native.
 Next native request failure/reconnection and final consolidated acceptance/live
 review. No new mail or publisher change; New York remains unaccepted with the
 October 5 19:00 ET release-decision deadline unchanged.
+
+## October 3, 17:00 ET — native request failure and reconnect
+
+A private Dart HttpOverrides probe routed requests to an unavailable local proxy
+while its flag existed. Native New York reports retained Mega Millions October 2
+draw 2545, NY-only counts, literal prizes and the earlier retrieval timestamp
+08:03:17.322 UTC. Removing the flag and reopening reports advanced the native
+retrieval timestamp to 15:20:47.396 UTC, matching independently fetched live JSON
+with 45 reports. Source limitations remained intact. This verifies Dart request
+failure/reconnection, not OS-wide offline behavior or map-tile availability.
+The private probe and live response are preserved under work/new_york_native.
+
+Next final consolidated automated/live acceptance review and release decision.
+No new mail or publisher change; October 5 19:00 ET deadline unchanged.
+New York is not accepted yet.
+Ordinary lib/main.dart macOS debug build passed and was relaunched; probe closed.
