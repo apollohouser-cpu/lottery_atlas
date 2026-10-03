@@ -60,3 +60,27 @@ export function parseNewYorkMegaMillions(row) {
       ...multipliers.map(multiplier => ({variant: 'Built-in ' + multiplier,
         tiers: nonJackpot.filter(t => t.multiplier === multiplier)}))]};
 }
+
+const stateTierGames = {
+  LOTTO: {id: 26, levels: ['Jackpot', 'Second', 'Third', 'Fourth', 'Fifth']},
+  'Take 5': {id: 36, levels: ['First', 'Second', 'Third', 'Fourth']},
+  'Millionaire For Life': {id: 374901, levels: ['First', ...levels.slice(1)]},
+};
+export function parseNewYorkStateTiers(row) {
+  const game = stateTierGames[row?.game];
+  if (!game || !/^\d{4}-\d{2}-\d{2}$/.test(row.date ?? '') ||
+      new Date(row.date + 'T00:00:00Z').toISOString().slice(0, 10) !== row.date ||
+      !/^\d+$/.test(row.draw_number ?? '')) throw Error('Invalid NY state report provenance');
+  if (row.game === 'Take 5' && !['Midday', 'Evening'].includes(row.draw_time)) throw Error('Unknown Take 5 session');
+  const parsed = tiers(row.local_winners, game.levels);
+  if (row.game === 'Take 5' && parsed[3].prizeLabel !== 'FREE PLAY') throw Error('Missing Take 5 free-play tier');
+  if (row.game === 'Millionaire For Life' &&
+      (parsed[0].prizeLabel !== '$1 Million a Year for Life' || parsed[1].prizeLabel !== '$100,000 a Year for Life')) throw Error('Changed MFL annual prize wording');
+  return {gameName: row.game, drawDate: row.date, drawNumber: row.draw_number,
+    drawingSession: row.game === 'Take 5' ? row.draw_time : null,
+    sourceUrl: 'https://nylottery.ny.gov/all-winning-numbers/?nid=' + game.id,
+    sourcePublicationDate: null, jurisdiction: 'New York',
+    countUnit: 'Source-reported NY winners; distinct tickets not established',
+    limitation: 'Statewide report, not retailer claims. Literal source prize labels retain free plays and annual payments. Zero jackpot label is not jackpot value; no aggregate payout inferred. National summary fields excluded.',
+    tables: [{variant: 'Base', tiers: parsed}]};
+}

@@ -45,3 +45,21 @@ test('Mega Millions missing, duplicated, unknown or null multiplier data fails',
     const raw=structuredClone(mega);mutate(raw);assert.throws(()=>parseNewYorkMegaMillions(raw));
   }
 });
+
+import {parseNewYorkStateTiers} from '../../tooling/new_york_draw_reports.mjs';
+const stateFixtures=['lotto','take5','mfl'].map(name=>JSON.parse(readFileSync(new URL('./fixtures/new_york_'+name+'.json',import.meta.url))));
+test('state tiers preserve free plays, annual wording and session',()=>{
+  const [lotto,take5,mfl]=stateFixtures.map(parseNewYorkStateTiers);
+  assert.equal(lotto.tables[0].tiers.reduce((s,t)=>s+t.reportedWinners,0),10812);
+  assert.equal(take5.drawingSession,'Midday');
+  assert.equal(take5.tables[0].tiers[3].prizeLabel,'FREE PLAY');
+  assert.equal(take5.tables[0].tiers.reduce((s,t)=>s+t.reportedWinners,0),29103);
+  assert.equal(mfl.tables[0].tiers[0].prizeLabel,'$1 Million a Year for Life');
+  assert.equal(mfl.tables[0].tiers.reduce((s,t)=>s+t.reportedWinners,0),8004);
+});
+test('state formats reject unknown sessions, lost tiers and altered annual/free-play labels',()=>{
+  for(const [index,mutate] of [[0,r=>r.local_winners.pop()], [1,r=>r.draw_time='Night'],
+    [1,r=>r.local_winners[3].prize_amount='0'],[2,r=>r.local_winners[0].prize_amount='1000000']]) {
+    const r=structuredClone(stateFixtures[index]);mutate(r);assert.throws(()=>parseNewYorkStateTiers(r));
+  }
+});

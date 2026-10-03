@@ -174,3 +174,22 @@ No app/public report integration yet. Remaining state-game/seasonal scope and
 press-date audit continue toward the unchanged October 3, 19:00 ET checkpoint.
 Opening publisher 37088445239 succeeded (push, not scheduled SC recovery); no
 new agency replies. No accepted-state maintenance checkpoint was repeated.
+
+## October 3, 00:00 ET — LOTTO, Take 5 and MFL tier formats
+
+Validated state-tier parsing now covers LOTTO, Take 5 and Millionaire for Life.
+It requires exact unique tiers, nonnegative integer source counts, valid draw
+identity/date, and recognized Take 5 Midday/Evening sessions. Free-play and annual
+prize wording is preserved and guarded against silently becoming cash values.
+National summary arrays and retailer details are excluded; no payout is inferred
+from a zero jackpot placeholder or annual award.
+
+Seven focused parser tests pass. Fifteen captured official state reports stage
+privately, bringing the total to 25 across five games. Latest captured totals:
+LOTTO September 30 10,812; Take 5 October 2 Midday 29,103 including 26,554 free
+plays; MFL October 1 8,004. These remain source-reported NY winners, not verified
+distinct-ticket counts or a retailer claim layer. No app/public report integration.
+Next: NUMBERS/Win4 share units, Pick 10, Quick Draw/EXTRA/Money Dots, seasonal
+Raffle and press-date provenance to close full scope by October 3 at 19:00 ET.
+Publisher 37091883693 was successful push publication; no scheduled SC recovery
+or new agency mail. Release deadline remains October 5 at 19:00 ET.
