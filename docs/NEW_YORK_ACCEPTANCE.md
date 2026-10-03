@@ -56,3 +56,30 @@ No private claims layer or candidate retailer join is published by this change.
 Opening mailbox check found no new agency replies. Latest successful publisher
 37058132001 was a push, not proof of scheduled Nebraska/Texas recovery; that
 bounded maintenance checkpoint remains open. Accepted states are not reopened.
+
+## October 2, 20:00 ET — publication verification and date gap
+
+Publisher 37075962240 succeeded; independent public activity JSON bytes match the
+committed corrected feed. No new agency mail or scheduled recovery transaction
+was found in the opening check. Nebraska/Texas scheduled recovery stays pending.
+
+The importer audit confirms all `ny-winner-` Scratch rows use the archive
+publication date, although the detail card previously called it DRAW DATE.
+The card now says PUBLICATION DATE and explains that selected retailer-matched
+releases do not establish draw/claim dates or complete statewide ticket counts.
+Changed-file analysis passed. Native verification remains pending.
+
+Draw press releases have different semantics: `officialDate` extracts a drawing
+date when matched but silently falls back to publication date otherwise. This
+needs a separate explicit date-kind audit before acceptance; the Scratch label
+fix does not resolve press-row ambiguity or whole-day timeline behavior.
+
+The [official Money Dots page](https://nylottery.ny.gov/money-dots) establishes a
+separate wager/draw every four minutes, excluding 03:30–04:00, and separates it
+from Quick Draw EXTRA. Add Money Dots and EXTRA explicitly to reconciliation.
+The [official draw index](https://nylottery.ny.gov/draw-games/) links current game
+information and the winning-number route. Direct HTML retrieval returned HTTP403;
+the extracted winning-number page was a JavaScript shell. Neither proves actual
+tier reports unavailable. Next bounded source inspection should use the working
+official API/browser route to establish reports, jurisdiction and units for each
+game, rather than treating odds tables or a cached zero as actual winner counts.

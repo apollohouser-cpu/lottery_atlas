@@ -2646,8 +2646,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                   (activity.state == 'TX' &&
                                       activity.game == LotteryGame.scratchOff)
                               ? 'CLAIM DATE'
-                              : activity.state == 'VA' &&
-                                    activity.id.startsWith('va-')
+                              : (activity.state == 'VA' &&
+                                        activity.id.startsWith('va-')) ||
+                                    (activity.state == 'NY' &&
+                                        activity.id.startsWith('ny-winner-'))
                               ? 'PUBLICATION DATE'
                               : activity.state == 'KY' &&
                                     (activity.id.startsWith('ky-current-') ||
@@ -2794,8 +2796,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         activity.state == 'SC' &&
                             activity.id.startsWith('sc-winners-')
                         ? 'Claim date shown above; draw date and time of day are not supplied by this report. Only mapped claims of at least \$500 are included.'
-                        : activity.state == 'VA' &&
-                              activity.id.startsWith('va-')
+                        : (activity.state == 'VA' &&
+                                  activity.id.startsWith('va-')) ||
+                              (activity.state == 'NY' &&
+                                  activity.id.startsWith('ny-winner-'))
                         ? 'Publication date of the official winner release, not a verified draw or claim date. Publication time does not establish when the ticket won. Selected retailer-matched releases are not complete statewide winning-ticket counts.'
                         : activity.state == 'TX'
                         ? (activity.game == LotteryGame.scratchOff
