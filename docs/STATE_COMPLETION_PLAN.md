@@ -1637,3 +1637,13 @@ and estimates $7,350 for custom retailer-linked winners compilation. Sent an
 explicit no-fee reply declining paid work and requesting only existing no-fee
 workbook definitions/public sources. See Wisconsin source screen. No fee or
 user action authorized/required. Virginia remains the sole active state.
+
+### October 2, 21:00 ET maintenance checkpoint
+
+Scheduled publisher 37082771578/bb3b223 proves Nebraska/Texas recovery after
+ eb05e0f/f36b11c: Nebraska completed unchanged, Texas updated its five-output
+transaction, and all five relevant combined/report/status public feeds match.
+This checkpoint is closed. The same transaction newly failed South Carolina;
+all three source files are byte-preserved against 24390d7. Next session diagnose
+that bounded importer failure; do not reopen accepted-state UI or weaken validation.
+New York remains the sole active acceptance state with unchanged deadlines.

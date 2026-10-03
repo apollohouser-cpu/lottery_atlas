@@ -83,3 +83,46 @@ the extracted winning-number page was a JavaScript shell. Neither proves actual
 tier reports unavailable. Next bounded source inspection should use the working
 official API/browser route to establish reports, jurisdiction and units for each
 game, rather than treating odds tables or a cached zero as actual winner counts.
+
+## October 2, 21:00 ET — official report API unlocked
+
+Official HTML/JavaScript retrieval works with the existing importer user agent.
+The site's app bundle calls `/nyl-api/games/all/draws`; this returns draw status,
+results and upcoming entries, which must not be treated as published payouts.
+The winning-number page instead calls
+`/drupal-api/api/v2/winning_numbers?_format=json&nid=ID&page=0`.
+Private responses and the actual rendering JavaScript are saved under
+work/new_york_acceptance. Each inspected report endpoint returned 25 rows:
+
+| Product | Official page ID | Latest report date observed |
+| --- | --- | --- |
+| Powerball / Power Play | 21 | September 30 |
+| Mega Millions | 16 | September 29 |
+| LOTTO | 26 | September 30 |
+| Take 5 | 36 | October 2 |
+| NUMBERS | 41 | October 2 |
+| Win4 | 46 | October 2 |
+| Pick 10 | 56 | October 1 |
+| Quick Draw / Money Dots | 400 (Money Dots UI maps 401 to 400) | October 2 |
+| Millionaire for Life | 374901 | October 1 |
+| Historical Cash4Life | 31 | February 21 |
+
+Responses separate local and national winners and multiplier fields. The official
+renderer explicitly labels NY Winners, but also uses national counts and state
+names in particular national-game summaries. For example, Powerball has a Texas
+second-prize winner in national metadata while its local second-prize count is
+zero. Do not treat the whole response as NY-only or add overlapping fields.
+Power Play has a separate local_multiplier_winners array. Mega Millions exposes
+additional per-tier multiplier arrays; reconcile their units and overlap next.
+Quick Draw includes Money Dots secondary result/prize fields; no count inferred
+from a drawn prize value. Seasonal Raffle appears in the live draw index but its
+report route/period still needs reconciliation. API discovery alone does not
+close scope or constitute app integration. Date-kind audit remains open.
+
+Opening mail check was empty. Scheduled publisher 37082771578 (bot bb3b223)
+succeeded. Nebraska completed unchanged and Texas updated its full five-file
+transaction after the repairs. Independent public activity, catalog, directory,
+Texas report and refresh-status bytes all match; that recovery checkpoint closes.
+The same run newly retained South Carolina after failure: its three source files
+are byte-identical to 24390d7. Investigate the named importer failure next session;
+accepted UI coverage and stored data remain intact. No deadline changes.
