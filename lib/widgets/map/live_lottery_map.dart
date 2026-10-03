@@ -6138,7 +6138,7 @@ class _VerifiedStateScratchOffsPanel extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(12, 12, 12, 18),
                     children: [
                       Text(
-                        stateName == 'Virginia'
+                        (stateName == 'Virginia' || stateName == 'New York')
                             ? 'Verified ticket snapshot. Remaining top prizes are not store stock. Select a ticket to focus selected winner releases, not complete statewide claims. Dates are publication dates.'
                             : 'Verified ticket snapshot. Remaining top prizes are not store stock. Select a ticket to focus published claim activity. Retailer locations appear only when an official winner feed provides them.',
                         style: const TextStyle(
@@ -6151,7 +6151,8 @@ class _VerifiedStateScratchOffsPanel extends StatelessWidget {
                       _ScratchOffMenuTile(
                         icon: Icons.layers_rounded,
                         title: 'All $stateName Scratch-Off activity',
-                        subtitle: stateName == 'Virginia'
+                        subtitle:
+                            (stateName == 'Virginia' || stateName == 'New York')
                             ? 'Show selected Scratch-Off winner releases'
                             : 'Show every published Scratch-Off claim',
                         isSelected: selectedGameName == null,

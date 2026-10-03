@@ -388,3 +388,20 @@ life labels and nine tiers. Evidence is private under work/new_york_native.
 Next wide layout and integrated map/catalog/detail/failure-reconnection; do not
 repeat completed game choices. No new mail or publisher change. Not accepted;
 October 5 19:00 ET deadline unchanged.
+
+## October 3, 12:00 ET — wide layout and Scratch wording defect
+
+Native enlarged MFL report (5120×2820 physical window) shows all nine rows,
+complete footer and historical routes without clipping. Close/back returns to the
+NY map; compact size restored. Scratch shortcut then exposed misleading “every
+published Scratch-Off claim” wording for selected winner releases. Extended the
+existing selected-release/publication-date disclaimer to New York. Native
+verification of the corrected text remains after rebuilding/relaunching.
+
+Scheduled publisher 37132443370/bot 3bc5c0b completed NY's four-output transaction;
+independent report and status bytes match. This closes the scheduled integration
+verification. No new agency mail; deadline unchanged and state not accepted.
+Next verify the corrected shortcut, then catalog/retailer/detail/filter and native
+failure-reconnection. Do not repeat completed wide report or game choices.
+Changed map analysis and ordinary macOS debug build passed. Running app has not
+been relaunched, so it still shows the before-fix shortcut.
