@@ -18,7 +18,7 @@ at 19:00 ET. Not yet accepted.
 
 ## Acceptance checklist
 
-- [ ] Complete national/state draw and Scratch scope reconciliation, including
+- [x] Complete national/state draw and Scratch scope reconciliation, including
   available actual winner/tier reports, source cadence and explicit unavailable data.
 - [ ] Audit winner category and date semantics, distinguishing publication,
   processing and draw dates; do not infer ticket counts from ambiguous records.
@@ -231,3 +231,40 @@ could not open /raffles, so use the official site navigation/API rather than
 claiming absence. Scope due October 3 at 19:00 ET and release October 5 unchanged.
 Opening publisher 37098535193 is successful push publication; no new agency mail
 or scheduled SC recovery evidence. No accepted-state checks repeated.
+
+
+## October 3, 03:00 ET — supported scope reconciled
+
+Full per-game scope/gaps are now reconciled ahead of the October 3, 19:00 ET
+checkpoint. This is scope closure, not implementation or release acceptance.
+
+| Scope | Available source / implementation decision | Explicit gap or unit |
+| --- | --- | --- |
+| Powerball, Power Play, Double Play | Official tier report; parser staged | Separate NY variants; national summaries excluded; no inferred payout |
+| Mega Millions | Official jackpot + five built-in multiplier tables; parser staged | NY counts separate from national counts; prizes already multiplied |
+| LOTTO | Official five-tier report; parser staged | Source prize labels, no inferred jackpot valuation |
+| Take 5 Midday/Evening | Official four-tier report; parser staged | Free-play tier preserved; sessions separate |
+| NUMBERS / Win4 Midday/Evening | Official wager/tier shares and total dollars; parser staged | $1/$0.50 winning shares, not distinct tickets; tier payouts unavailable |
+| Pick 10 | Official six-tier counts + total dollars; parser staged | Per-tier prize fields unavailable |
+| Millionaire for Life | Official nine-tier report; parser staged | Annual-for-life wording retained, national summary excluded |
+| Quick Draw / EXTRA / Money Dots | Official per-draw payout totals and multiplier; parser staged | No winner counts or separate EXTRA payout/count; Money Dots separate dollars |
+| Historical Cash4Life | Official nid=31 historical report route | Latest captured February 21, 2026; not a current recurring schedule |
+| Erie Canal Million Dollar Raffle | Official seasonal page route below | Historical 2025 event, no invented 2026 recurring schedule or mapped winners |
+| Scratch-Off | Existing 106-game catalog and selected published winner releases | Inventory is not sales stock; publication dates are not draw/claim dates; incomplete claims |
+| Private FOIL claim workbook | No public layer planned in supported release | Distinct tickets/historical retailer joins not established; audit held separately |
+
+The actual site Raffles navigation resolves to
+[Erie Canal Million Dollar Raffle](https://nylottery.ny.gov/erie-canal-million-dollar-raffle/).
+Its JavaScript uses `/drupal-api/api/raffle_games?_format=json`. That source
+explicitly says the drawing occurred October 26, 2025, correcting an October 25
+misprint on tickets produced August 4–5. The live draw index's October 25 drawTime
+must therefore not be blindly labeled the actual event date. Retain a historical
+source route with this limitation instead of manufacturing a current report.
+Private HTML/page-data/JavaScript/API evidence is saved in work/new_york_acceptance.
+
+Next implementation gates: explicit press-row date provenance (parsed drawing vs
+publication fallback), importer aggregation with duplicate/date regression guards,
+report asset/cache/UI/refresh transaction, native and independent live acceptance.
+No further broad scope research is needed. Existing parser tests are unchanged.
+No new agency replies; publisher 37101743603 succeeded and scheduled37104043949
+was still running at the single opening check. SC recovery remains unverified.
