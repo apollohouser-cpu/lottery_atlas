@@ -419,3 +419,18 @@ Next retailer search/detail, winner publication detail/source, filter resets and
 native request failure/reconnection. Completed report and catalog routes need no
 repeat. No new mail or publisher change; October 5 19:00 ET release deadline
 unchanged. New York is not accepted yet.
+
+## October 3, 14:00 ET — native retailer search and detail
+
+New York's directory opens with 13,151 official locations. Native search for
+ACCORD FOOD MART returns one matching location; selecting it opens ACCORD FOOD
+MART INC at 4990 Us Highway 209, Accord, NY 12404, Ulster County. The detail
+explicitly says a directory listing alone does not create a heat-map win.
+Official-directory, directions and favorite controls are present; no claim
+activity was inferred from the listing. Private evidence is retained under
+work/new_york_native.
+
+Next winner publication detail/source, game/prize/date reset and native request
+failure/reconnection, followed by final integrated acceptance. No new agency
+mail or publisher change. New York remains unaccepted; release decision remains
+October 5 at 19:00 ET.
