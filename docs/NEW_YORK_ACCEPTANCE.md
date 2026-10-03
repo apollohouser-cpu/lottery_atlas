@@ -361,3 +361,16 @@ historical routes. Private evidence is in work/new_york_native. Source-open/retu
 remaining game selections, wide layout and integrated map/catalog/failure checks
 remain; do not repeat the completed opening route. Publisher 37121785820 succeeded
 and public activity bytes match. No new agency mail or deadline change.
+
+## October 3, 10:00 ET — source return and two more native games
+
+Mega Millions source opens the official NY winning-numbers page with that game
+selected and October 2 results visible. Returning retains the app selection and
+footer scroll. Powerball September 30 draw 2006 was selected natively; scrolling
+shows separate base, Power Play and Double Play tiers with NY counts and source
+multiplier 04. LOTTO September 30 draw 4096 shows all five tier counts and literal
+prizes plus statewide/not-retailer-claims limits. Private evidence saved in
+work/new_york_native. Initial empty AX required mouse interaction; no general
+accessibility certification claimed. Remaining six current report groups, wide
+layout, map/catalog details and failure/reconnection remain. No new mail or
+publisher change; deadline unchanged, state not accepted.
