@@ -348,3 +348,16 @@ now uses whole calendar days and Source dates. Changed map analysis is clean;
 combined publication validation passes for 23,900 records across 19 states.
 Native verification and a rebuilt ordinary app remain next, along with integrated
 report/source/filter/failure acceptance. No new agency mail; deadline unchanged.
+
+## October 3, 09:00 ET — native initial report route
+
+Ordinary macOS debug build passed and was relaunched. Find a State → New York →
+NY LOTTERY → reports works natively. Map shows whole-day Source dates and the
+October 3 scoped-empty state. Mega Millions October 2 draw 2545 opens with NY
+scope, unavailable publication date, distinct-ticket caveat, separate built-in
+multiplier tables and literal source prizes. Scrolling exposes the no-inferred-
+payout/zero-jackpot limitation, original retrieval timestamp, cadence and both
+historical routes. Private evidence is in work/new_york_native. Source-open/return,
+remaining game selections, wide layout and integrated map/catalog/failure checks
+remain; do not repeat the completed opening route. Publisher 37121785820 succeeded
+and public activity bytes match. No new agency mail or deadline change.
