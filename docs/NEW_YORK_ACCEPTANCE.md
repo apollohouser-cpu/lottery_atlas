@@ -315,3 +315,17 @@ integrated native/live acceptance. Opening publisher 37112036089 succeeded; no
 new agency mail. New York is not accepted; deadline unchanged.
 Ordinary lib/main.dart macOS debug build also passed; running app has not been
 relaunched for this change.
+
+## October 3, 07:00 ET — report publication and refresh wiring
+
+Added the report feed to New York's scheduled four-output transaction and staged
+its public endpoint. Any failure in catalog, directory, selected releases or draw
+reports restores all four previous files byte-for-byte. Five transaction tests
+pass, including failure injection at each actual NY importer with real baseline
+files. The publisher now copies and commits the validated report snapshot as
+new_york_draw_reports.json. The initial endpoint contains the same 45 reports as
+the bundled asset; deployment/live byte verification is the next opening check.
+This wiring does not establish a successful scheduled refresh or native acceptance.
+Opening publisher 37112036089 remained successful, and no new agency replies were
+found. Next resolve selected-release date provenance and complete native/live
+acceptance. Release deadline remains October 5 at 19:00 ET.

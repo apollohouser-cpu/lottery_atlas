@@ -342,7 +342,8 @@
     "outputs": [
       "data/new_york_scratch_catalog.generated.json",
       "data/new_york_retailer_directory.generated.json",
-      "data/new_york_winner_activity.generated.json"
+      "data/new_york_winner_activity.generated.json",
+      "data/new_york_draw_reports.generated.json"
     ],
     "commands": [
       [
@@ -362,6 +363,11 @@
         "data/new_york_winner_activity.generated.json",
         "data/new_york_retailer_directory.generated.json",
         "data/new_york_scratch_catalog.generated.json"
+      ],
+      [
+        "node",
+        "tooling/import_new_york_draw_reports.mjs",
+        "data/new_york_draw_reports.generated.json"
       ]
     ]
   },
