@@ -374,3 +374,17 @@ work/new_york_native. Initial empty AX required mouse interaction; no general
 accessibility certification claimed. Remaining six current report groups, wide
 layout, map/catalog details and failure/reconnection remain. No new mail or
 publisher change; deadline unchanged, state not accepted.
+
+## October 3, 11:00 ET — remaining native report choices
+
+All nine current report groups have now been selected natively. Take 5 October 2
+Evening retains 45,089 free plays. NUMBERS and Win4 Evening show winning shares,
+unavailable winner/ticket counts and tier prizes, with separate published dollar
+totals ($366,635 and $821,850). Pick 10 October 2 shows its six reported counts,
+$48,556 total and unavailable tier prizes. Quick Draw/Money Dots October 3 03:24
+shows separate $366/$0 reported dollars, multiplier 01 and unavailable counts
+without EXTRA inference. Millionaire For Life October 2 retains both annual-for-
+life labels and nine tiers. Evidence is private under work/new_york_native.
+Next wide layout and integrated map/catalog/detail/failure-reconnection; do not
+repeat completed game choices. No new mail or publisher change. Not accepted;
+October 5 19:00 ET deadline unchanged.
