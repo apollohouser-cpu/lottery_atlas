@@ -123,3 +123,12 @@ validation rows identify cashing/validation or original selling locations, plus
 existing date/count/correction/prize-tier definitions. Did not confirm that the
 request is fully satisfied. No fees or custom compilation authorized. Supported
 app acceptance remains closed; any new layer requires a separate private audit.
+
+### October 2, 22:00 ET bounded refresh diagnosis
+
+All three importers succeeded privately against copies of retained baselines:
+10,215 mapped claim groups, 30 daily titles for October 1 and 35 draw reports.
+Evidence is ignored under work/sc_refresh_oct2. Nothing was promoted, and this
+successful reproduction attempt does not establish the scheduled failure's cause.
+Verify the next scheduled transaction; if it fails again, obtain the failing command
+before making parser changes. Prior public data and accepted UI coverage remain.

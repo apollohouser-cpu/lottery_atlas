@@ -126,3 +126,32 @@ Texas report and refresh-status bytes all match; that recovery checkpoint closes
 The same run newly retained South Carolina after failure: its three source files
 are byte-identical to 24390d7. Investigate the named importer failure next session;
 accepted UI coverage and stored data remain intact. No deadline changes.
+
+## October 2, 22:00 ET — Powerball variants validated privately
+
+The official rendering code selects base `local_winners`, Power Play
+`power_play_local_winners`, and Double Play `dp_local_winners` separately.
+The legacy `local_multiplier_winners` duplicates Power Play and must not be added.
+A bounded parser now validates exact tier identities/counts (9/8/9), valid dates,
+draw identity and multiplier, rejects missing/duplicate/conflicting tables, and
+excludes national summary metadata and location fields. It preserves prize labels,
+including the source's zero jackpot placeholder; no aggregate payout is inferred.
+
+Three focused parser tests pass. Five captured official reports parse successfully;
+September 30 totals are 37,530 base, 7,603 Power Play, and 4,432 Double Play
+source-reported NY winners. These are separate variant totals, not a claim map or
+verified distinct-ticket aggregate. Staged output stays private under
+work/new_york_acceptance/powerball-reports.json; no report app integration yet.
+
+Remaining semantics now explicitly include NUMBERS/Win4 winning-share wording:
+the official renderer states shares use a combination of $1 and $0.50 wagers.
+Do not label those source counts distinct tickets. Take 5 free plays and MFL annual
+prizes require literal labels. MM multiplier arrays, Quick Draw/EXTRA/Money Dots,
+seasonal Raffle and press-date provenance remain bounded reconciliation tasks.
+
+SC maintenance diagnosis ran all three importers against copies of the retained
+baseline: 10,215 mapped claim groups, 30 daily grouped titles for October 1 and
+35 draw reports validated. No failure reproduced and no private output promoted;
+this does not identify the scheduled failure's cause or prove deployed recovery.
+Await the next scheduled transaction; if it fails again, inspect that run's failing
+command before changing validation. Opening publisher/mail status was unchanged.
