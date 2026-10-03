@@ -434,3 +434,19 @@ Next winner publication detail/source, game/prize/date reset and native request
 failure/reconnection, followed by final integrated acceptance. No new agency
 mail or publisher change. New York remains unaccepted; release decision remains
 October 5 at 19:00 ET.
+
+## October 3, 15:00 ET — publication detail and official source return
+
+Native date selection October 3 → October 2 restores two selected Take 5 release
+records. Ulster → New Paltz → CITGO MART opens one reported ticket at 490 Main
+St, with PUBLICATION DATE October 2 and the full selected-release/no verified
+draw-or-claim-date disclaimer. The official source opens loaded press/381881,
+matching the retailer and $15,888. That article describes the October 1 evening
+drawing; the app correctly retains the October 2 publication date rather than
+presenting it as the draw date. The importer has not extracted that draw date.
+Return retains the same winner detail and disclaimer. Private evidence retained
+in work/new_york_native.
+
+Next game/prize reset and native request failure/reconnection, then consolidated
+acceptance. No new mail or publisher change; deadline remains October 5 19:00 ET.
+New York is not accepted yet.
