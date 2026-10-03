@@ -405,3 +405,17 @@ Next verify the corrected shortcut, then catalog/retailer/detail/filter and nati
 failure-reconnection. Do not repeat completed wide report or game choices.
 Changed map analysis and ordinary macOS debug build passed. Running app has not
 been relaunched, so it still shows the before-fix shortcut.
+
+## October 3, 13:00 ET — corrected Scratch and catalog return
+
+Relaunched the ordinary macOS build and verified New York's native Scratch
+shortcut now says selected winner releases, incomplete statewide claims and
+publication dates. The full official catalog opens the loaded NY Scratch-Off
+Games page with price filters, game numbers, remaining top prizes and claim
+deadlines. Returning preserves the Scratch panel and October 3 source-date
+context. Private native evidence is recorded under work/new_york_native.
+
+Next retailer search/detail, winner publication detail/source, filter resets and
+native request failure/reconnection. Completed report and catalog routes need no
+repeat. No new mail or publisher change; October 5 19:00 ET release deadline
+unchanged. New York is not accepted yet.
