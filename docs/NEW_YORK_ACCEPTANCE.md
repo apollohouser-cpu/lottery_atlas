@@ -3,7 +3,8 @@
 Activated October 2, 2026 at 19:00 ET as the sole active state after Virginia's
 acceptance. Existing working imports qualify for 72 hours. Full game-scope
 reconciliation is due October 3 at 19:00 ET; release decision is due October 5
-at 19:00 ET. Not yet accepted.
+at 19:00 ET. Supported available coverage accepted October 3 at 18:12 ET,
+ahead of the deadline. Complete statewide claims remain separate.
 
 ## Opening inventory and bounded gaps
 
@@ -20,13 +21,13 @@ at 19:00 ET. Not yet accepted.
 
 - [x] Complete national/state draw and Scratch scope reconciliation, including
   available actual winner/tier reports, source cadence and explicit unavailable data.
-- [ ] Audit winner category and date semantics, distinguishing publication,
+- [x] Audit winner category and date semantics, distinguishing publication,
   processing and draw dates; do not infer ticket counts from ambiguous records.
-- [ ] Integrate supported reports and source routes with cache/bundle fallback.
-- [ ] Native compact/wide catalog, retailer, map, filters/reset, details/source/return.
-- [ ] Request failure/reconnection and preserved data semantics.
-- [ ] Focused automated validation, ordinary build and independent live evidence.
-- [ ] Consolidated release decision within deadline.
+- [x] Integrate supported reports and source routes with cache/bundle fallback.
+- [x] Native compact/wide catalog, retailer, map, filters/reset, details/source/return.
+- [x] Request failure/reconnection and preserved data semantics.
+- [x] Focused automated validation, ordinary build and independent live evidence.
+- [x] Consolidated release decision within deadline.
 
 ## October 2 opening defect correction
 
@@ -481,3 +482,40 @@ Next final consolidated automated/live acceptance review and release decision.
 No new mail or publisher change; October 5 19:00 ET deadline unchanged.
 New York is not accepted yet.
 Ordinary lib/main.dart macOS debug build passed and was relaunched; probe closed.
+
+## October 3, 18:12 ET — supported coverage accepted
+
+New York is ready for user testing for its supported available coverage. All
+acceptance items above are closed by the dated evidence in this document.
+Scope reconciliation closed October 3 at 03:00 ET; release is ahead of the
+October 5 19:00 ET deadline, with no extension.
+
+Current inventory: 106 Scratch-Off games, 13,151 mapped official retailers with
+zero unresolved entries, 1,600 selected releases (111 Scratch and 1,489 draw),
+and 45 rolling reports across nine groups. Powerball/Power Play/Double Play,
+Mega Millions, LOTTO, Take 5, NUMBERS, Win4, Pick 10, Millionaire For Life and
+Quick Draw/Money Dots are reconciled. EXTRA limitations and historical Cash4Life
+and Erie Canal Raffle routes remain explicit. No private FOIL claims are public.
+
+Final integrated verification: 39 JavaScript tests, five refresh-transaction tests
+and 12 focused Flutter data/loader/compact-wide report tests pass. Ordinary
+macOS build and restoration passed in the preceding session. Independent live
+activity, NY report, shared catalog, shared directory and refresh-status files
+all match committed bytes. Scheduled publication 37132443370 was previously
+confirmed successful, including the four-output NY transaction. GitHub API status
+retrieval returned transient 503/502 errors during this final pass; public feed
+verification succeeded and no new publication failure is established.
+
+Native evidence covers all nine report choices, compact/wide layouts, source and
+return, Scratch catalog and corrected disclosure, retailer search/detail, winner
+publication-date detail, date/game/prize filters and resets, scoped empty views,
+and Dart request failure/reconnection. Native filter AX staleness is documented;
+this is not full accessibility certification. Request-failure evidence does not
+promise OS-wide offline behavior or offline map tiles.
+
+Selected releases are partial, their publication dates are not inferred claim
+or draw dates, source counts retain their units, and directory positions alone
+create no wins. NUMBERS/Win4 shares, Quick Draw/Money Dots dollars, free plays and
+annual-for-life prizes remain distinct. Full statewide claims and further private
+records audits remain separate data work. No new agency replies or user action.
+No successor state is activated by this decision.
