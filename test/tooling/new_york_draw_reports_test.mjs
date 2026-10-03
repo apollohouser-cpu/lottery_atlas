@@ -63,3 +63,22 @@ test('state formats reject unknown sessions, lost tiers and altered annual/free-
     const r=structuredClone(stateFixtures[index]);mutate(r);assert.throws(()=>parseNewYorkStateTiers(r));
   }
 });
+
+import {parseNewYorkSharesOrPick10} from '../../tooling/new_york_draw_reports.mjs';
+const shareFixtures=['numbers','win4','pick10'].map(n=>JSON.parse(readFileSync(new URL('./fixtures/new_york_'+n+'.json',import.meta.url))));
+test('share counts and published dollars remain separate from tickets and tier payouts',()=>{
+  const [numbers,win4,pick10]=shareFixtures.map(parseNewYorkSharesOrPick10);
+  assert.equal(numbers.tables[0].tiers.reduce((s,t)=>s+t.reportedShares,0),10918);
+  assert.equal(numbers.tables[0].tiers[0].reportedWinners,null);
+  assert.equal(numbers.reportedTotalPrizes,699600);
+  assert.equal(win4.reportedTotalPrizes,197900);
+  assert.equal(win4.tables[0].tiers[0].prizeLabel,null);
+  assert.equal(pick10.tables[0].tiers.reduce((s,t)=>s+t.reportedWinners,0),5116);
+  assert.equal(pick10.reportedTotalPrizes,33100);
+});
+test('share tables reject lost pair rows, duplicate wagers, null dollars and missing counts',()=>{
+  for(const mutate of [r=>r.local_winners.pop(),r=>r.local_winners[3]=r.local_winners[2],
+    r=>r.total_prizes=null,r=>r.local_winners[0].prize_winners=null]) {
+    const r=structuredClone(shareFixtures[0]);mutate(r);assert.throws(()=>parseNewYorkSharesOrPick10(r));
+  }
+});

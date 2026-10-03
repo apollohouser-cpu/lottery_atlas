@@ -84,3 +84,39 @@ export function parseNewYorkStateTiers(row) {
     limitation: 'Statewide report, not retailer claims. Literal source prize labels retain free plays and annual payments. Zero jackpot label is not jackpot value; no aggregate payout inferred. National summary fields excluded.',
     tables: [{variant: 'Base', tiers: parsed}]};
 }
+
+const shareKeys = ['Straight Play|N/A', 'Box Play|N/A', 'Pair Play|Front Pair', 'Pair Play|Back Pair'];
+export function parseNewYorkSharesOrPick10(row) {
+  const configs = {
+    NUMBERS: {id: 41, keys: [...shareKeys, 'Straight/Box|N/A', 'Combination|N/A']},
+    Win4: {id: 46, keys: [...shareKeys, 'Combination|N/A']},
+    'Pick 10': {id: 56, keys: ['First', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth'].map(x=>'|'+x)},
+  };
+  const config=configs[row?.game];
+  if (!config || !/^\d{4}-\d{2}-\d{2}$/.test(row.date ?? '') ||
+      new Date(row.date+'T00:00:00Z').toISOString().slice(0,10)!==row.date ||
+      !/^\d+$/.test(row.draw_number ?? '')) throw Error('Invalid NY report provenance');
+  const shares=row.game!=='Pick 10';
+  if (shares && !['Midday','Evening'].includes(row.draw_time)) throw Error('Invalid NY share session');
+  if (!Array.isArray(row.local_winners) || row.local_winners.length!==config.keys.length) throw Error('Incomplete NY share/prize table');
+  const found=new Map();
+  for (const entry of row.local_winners) {
+    const key=entry.wager_type+'|'+entry.prize_levels;
+    if (!config.keys.includes(key) || found.has(key)) throw Error('Duplicate or unknown NY wager/tier');
+    if (!Number.isSafeInteger(entry.prize_winners) || entry.prize_winners<0) throw Error('Invalid NY count');
+    if (!['','0'].includes(entry.prize_amount)) throw Error('Changed NY unavailable tier prize format');
+    found.set(key,{tier: shares ? key.replace('|N/A','').replace('|',' — ') : entry.prize_levels,
+      reportedWinners: shares ? null : entry.prize_winners,
+      reportedShares: shares ? entry.prize_winners : null,
+      prizeLabel: null, sourcePrizeLabel: entry.prize_amount});
+  }
+  if (typeof row.total_prizes!=='string' || !/^\d+$/.test(row.total_prizes) ||
+      !Number.isSafeInteger(Number(row.total_prizes))) throw Error('Missing/invalid reported total prizes');
+  return {gameName:row.game,drawDate:row.date,drawNumber:row.draw_number,
+    drawingSession:shares?row.draw_time:null, jurisdiction:'New York',
+    sourcePublicationDate:null, sourceUrl:'https://nylottery.ny.gov/all-winning-numbers/?nid='+config.id,
+    countUnit:shares?'NY winning shares based on $1 and $0.50 wagers; not distinct tickets':'Source-reported NY winners; distinct tickets not established',
+    reportedTotalPrizes:Number(row.total_prizes),
+    limitation:'Published dollars shared across prize levels; not derived from counts. Blank/zero tier prize placeholders are unavailable, not zero payouts. No retailer allocation or inferred per-tier payout.',
+    tables:[{variant:'Base',tiers:config.keys.map(k=>found.get(k))}]};
+}

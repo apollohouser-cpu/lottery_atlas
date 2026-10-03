@@ -193,3 +193,21 @@ Next: NUMBERS/Win4 share units, Pick 10, Quick Draw/EXTRA/Money Dots, seasonal
 Raffle and press-date provenance to close full scope by October 3 at 19:00 ET.
 Publisher 37091883693 was successful push publication; no scheduled SC recovery
 or new agency mail. Release deadline remains October 5 at 19:00 ET.
+
+## October 3, 01:00 ET — winning shares and Pick 10
+
+NUMBERS/Win4 parsers retain source winning shares separately from unavailable
+winning-ticket counts. Identity combines wager type and tier (including both pair
+rows), so repeated N/A labels cannot collapse distinct wagers. Pick 10 retains
+its six reported winner tiers. The official renderer displays total_prizes as
+dollars shared across prize levels; these totals are preserved, not calculated
+from counts. Blank/zero tier-prize placeholders remain unavailable.
+
+Nine focused tests pass. Fifteen additional captured reports stage privately:
+40 reports across eight games in total, still outside the public/app report feed.
+October 2 NUMBERS Midday has 10,918 shares and $699,600 reported total prizes;
+Win4 Midday reports $197,900. Pick 10 October 1 has 5,116 reported winners and
+$33,100. No inferred per-tier payouts, ticket counts or retailer allocation.
+Next close Quick Draw/EXTRA/Money Dots and seasonal scope plus press-date audit,
+then report integration. Publisher 37095198039 succeeded (push); no new mail or
+scheduled SC recovery. Scope and release deadlines remain unchanged.
