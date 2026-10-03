@@ -118,3 +118,8 @@ archival remain pending. No structured workbook or new claim layer has been
 verified or published. Do not treat this response as complete all-tier delivery
 or continued waiting for the promised response. No fee is stated in the extracted
 response. Public-source work remains viable without activating New Mexico.
+
+
+## October 3 correspondence follow-through
+
+Acknowledged October 1 PDF receipt, public-source referrals and unavailable portions. No further work requested pending inspection of the linked sources. Attachment archival/link audit remains unfinished; no complete delivery asserted or fees authorized. Gmail confirmed sent in the existing thread: 1a1008e3e10da3c9.

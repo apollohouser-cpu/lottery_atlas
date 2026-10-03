@@ -122,3 +122,8 @@ response, not a records delivery or Michigan activation. A bounded no-fee scope
 clarification remains possible; existing public sources remain usable. Full
 attachment archival/audit remains pending; receipt and quoted fee terms were
 read from the connector extraction.
+
+
+## October 3 correspondence follow-through
+
+Replied to the October 1 fee letter, explicitly declining the estimate/deposit and all paid work. Asked whether an already-existing standard report, retailer directory, definitions or public links can be supplied at no charge; no custom compilation or paid search authorized. Await this bounded clarification. Attachment archival remains separate. Gmail confirmed sent in the existing thread: 1a1008e335f04f0f.

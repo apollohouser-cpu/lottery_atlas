@@ -120,3 +120,8 @@ receipt is confirmed, but workbook contents, field semantics, row counts and
 location quality have not yet been audited; no retailer data or coordinates from
 it are published. Inspect privately in a bounded data-preparation follow-up.
 This does not activate Washington development or change South Carolina priority.
+
+
+## October 3 correspondence follow-through
+
+Acknowledged receipt of the September retailer workbook without claiming content review or complete fulfillment. January 18, 2027 remains the estimated remaining response date. Workbook audit remains pending; no fees authorized. Gmail confirmed sent in the existing thread: 1a1008e389cfc3d3.

@@ -182,3 +182,8 @@ existing active retailer ID/name/address export, with any already-maintained,
 releasable selling-retailer linkage optional. Existing standard reports and partial
 fields are acceptable; no new report or paid work is authorized. Sent reply
 1a0da2bafebffbf0. Await a response; no additional data or map coverage established.
+
+
+## October 3 correspondence follow-through
+
+October 2 agency message 1a0fe3f9f58ad1e1 delivered Active_Retailers.xlsx (65,036 bytes), explaining that the retailer search is affected by the website backend transition and that remaining requested information requires customized reporting. Acknowledged receipt and explicitly declined custom reporting or fee-bearing work. Contents remain unaudited; no new public data or positions. Remaining requested report is not a promised delivery. Gmail confirmed sent in the existing thread: 1a1008e44fd0b5a4.
