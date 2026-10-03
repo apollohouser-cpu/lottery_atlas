@@ -82,3 +82,22 @@ test('share tables reject lost pair rows, duplicate wagers, null dollars and mis
     const r=structuredClone(shareFixtures[0]);mutate(r);assert.throws(()=>parseNewYorkSharesOrPick10(r));
   }
 });
+
+import {parseNewYorkQuickDraw} from '../../tooling/new_york_draw_reports.mjs';
+const quick=JSON.parse(readFileSync(new URL('./fixtures/new_york_quickdraw.json',import.meta.url)));
+test('Quick Draw and Money Dots payouts never become counts',()=>{
+  const report=parseNewYorkQuickDraw(quick);
+  assert.equal(report.drawingSession,'21:00:00');
+  assert.deepEqual(report.tables.map(t=>t.reportedTotalPrizes),[1305,45]);
+  assert.deepEqual(report.tables.map(t=>t.reportedWinners),[null,null]);
+  assert.equal(report.tables[1].drawnPrizeLabel,'5');
+  const zero=structuredClone(quick);zero.secondary_prize_value.money_dots_prizes='0';
+  zero.secondary_prize_value.money_dots_amount='0';
+  assert.equal(parseNewYorkQuickDraw(zero).tables[1].reportedTotalPrizes,0);
+});
+test('Quick Draw missing payouts, impossible times and changed count fields fail',()=>{
+  for(const mutate of [r=>r.jackpot=null,r=>r.secondary_prize_value.money_dots_prizes='',
+    r=>r.draw_time='25:00:00',r=>r.local_winners=[{prize_winners:1}]]){
+    const r=structuredClone(quick);mutate(r);assert.throws(()=>parseNewYorkQuickDraw(r));
+  }
+});

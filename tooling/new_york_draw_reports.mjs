@@ -120,3 +120,31 @@ export function parseNewYorkSharesOrPick10(row) {
     limitation:'Published dollars shared across prize levels; not derived from counts. Blank/zero tier prize placeholders are unavailable, not zero payouts. No retailer allocation or inferred per-tier payout.',
     tables:[{variant:'Base',tiers:config.keys.map(k=>found.get(k))}]};
 }
+
+function wholeDollars(value) {
+  if (!['string','number'].includes(typeof value) || !/^\d+$/.test(String(value)) ||
+      !Number.isSafeInteger(Number(value))) throw Error('Unavailable or invalid NY payout');
+  return Number(value);
+}
+export function parseNewYorkQuickDraw(row) {
+  if (row?.game !== 'Quick Draw' || !/^\d{4}-\d{2}-\d{2}$/.test(row.date ?? '') ||
+      new Date(row.date+'T00:00:00Z').toISOString().slice(0,10)!==row.date ||
+      !/^\d+$/.test(String(row.draw_number ?? '')) ||
+      !/^(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d$/.test(row.draw_time ?? '')) throw Error('Invalid Quick Draw provenance');
+  if (!/^0?[1-5]$|^10$/.test(row.multiplier ?? '')) throw Error('Invalid Quick Draw multiplier');
+  if (!Array.isArray(row.local_winners) || row.local_winners.length ||
+      !Array.isArray(row.local_multiplier_winners) || row.local_multiplier_winners.length) throw Error('Changed Quick Draw count format');
+  const dots=row.secondary_prize_value;
+  if (!dots || !['0','5','10','20','50'].includes(String(dots.money_dots_amount)) ||
+      !/^\d{1,2}$/.test(dots.money_dots_number ?? '') ||
+      Number(dots.money_dots_number)<1 || Number(dots.money_dots_number)>80) throw Error('Invalid Money Dots result');
+  return {gameName:'Quick Draw / Money Dots',drawDate:row.date,
+    drawNumber:String(row.draw_number),drawingSession:row.draw_time,
+    sourcePublicationDate:null,jurisdiction:'New York',multiplier:row.multiplier,
+    sourceUrl:'https://nylottery.ny.gov/all-winning-numbers/?nid=400',
+    countUnit:'Winner and ticket counts unavailable',
+    limitation:'Local draw time as published. Reported dollars shared across prize levels, not winner counts. Money Dots is separate; no count inferred by dividing payout by prize value. Multiplier is preserved without inferred EXTRA payout or separate EXTRA count.',
+    tables:[{variant:'Quick Draw',reportedTotalPrizes:wholeDollars(row.jackpot),tiers:[],reportedWinners:null},
+      {variant:'Money Dots',reportedTotalPrizes:wholeDollars(dots.money_dots_prizes),tiers:[],reportedWinners:null,
+        drawnNumber:dots.money_dots_number,drawnPrizeLabel:String(dots.money_dots_amount)}]};
+}

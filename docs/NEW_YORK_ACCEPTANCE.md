@@ -211,3 +211,23 @@ $33,100. No inferred per-tier payouts, ticket counts or retailer allocation.
 Next close Quick Draw/EXTRA/Money Dots and seasonal scope plus press-date audit,
 then report integration. Publisher 37095198039 succeeded (push); no new mail or
 scheduled SC recovery. Scope and release deadlines remain unchanged.
+
+## October 3, 02:00 ET — Quick Draw / Money Dots dollars
+
+The official winning-page Qn renderer displays the misleadingly named `jackpot`
+field as Quick Draw dollars shared across prize levels, and `money_dots_prizes`
+as separate Money Dots dollars. The parser now preserves these two payout totals
+with unavailable winner counts, local draw time/number and the published multiplier.
+It never divides Money Dots dollars by the drawn prize to invent counts or infers
+separate EXTRA payout/counts. Empty arrays do not become zero winners. Explicit
+zero-dollar results remain distinguishable from missing payout fields.
+
+Eleven focused tests pass. Five captured Quick Draw reports stage privately,
+bringing the total to 45 reports across nine report groups (including Money Dots
+within Quick Draw). October 2 at 21:00 reports $1,305 Quick Draw and $45 Money
+Dots, with winner counts unavailable. No public/app report integration yet.
+Seasonal Raffle route/history and press-date audit remain; the web extractor
+could not open /raffles, so use the official site navigation/API rather than
+claiming absence. Scope due October 3 at 19:00 ET and release October 5 unchanged.
+Opening publisher 37098535193 is successful push publication; no new agency mail
+or scheduled SC recovery evidence. No accepted-state checks repeated.
