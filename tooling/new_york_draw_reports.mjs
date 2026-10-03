@@ -148,3 +148,21 @@ export function parseNewYorkQuickDraw(row) {
       {variant:'Money Dots',reportedTotalPrizes:wholeDollars(dots.money_dots_prizes),tiers:[],reportedWinners:null,
         drawnNumber:dots.money_dots_number,drawnPrizeLabel:String(dots.money_dots_amount)}]};
 }
+
+export function assertNewYorkReportContinuity(previous, reports) {
+  const latest = new Map(), identities=new Set();
+  for (const report of reports) {
+    const group=report.gameName+'|'+(report.gameName==='Quick Draw / Money Dots'?'':report.drawingSession??'');
+    const key=group+'|'+report.drawNumber;
+    if (identities.has(key)) throw Error('Duplicate NY report identity');
+    identities.add(key);
+    const date=report.drawDate+'T'+(report.gameName==='Quick Draw / Money Dots'?report.drawingSession:'00:00:00');
+    if (!latest.has(group)||date>latest.get(group)) latest.set(group,date);
+  }
+  if (!reports.length) throw Error('Empty NY reports');
+  for (const report of previous) {
+    const group=report.gameName+'|'+(report.gameName==='Quick Draw / Money Dots'?'':report.drawingSession??'');
+    const date=report.drawDate+'T'+(report.gameName==='Quick Draw / Money Dots'?report.drawingSession:'00:00:00');
+    if (!latest.has(group)||latest.get(group)<date) throw Error('NY report date/session regression: '+group);
+  }
+}

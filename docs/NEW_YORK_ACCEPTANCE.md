@@ -268,3 +268,20 @@ report asset/cache/UI/refresh transaction, native and independent live acceptanc
 No further broad scope research is needed. Existing parser tests are unchanged.
 No new agency replies; publisher 37101743603 succeeded and scheduled37104043949
 was still running at the single opening check. SC recovery remains unverified.
+
+## October 3, 04:00 ET — complete report fetch transaction staged
+
+The new importer fetches all nine current report groups, validates five recent
+reports each, requires both Midday/Evening sessions for Take 5/NUMBERS/Win4,
+rejects duplicate identities and per-game/session date regressions (including
+Quick Draw intraday regression), then atomically replaces its output only after
+all parsing succeeds. Historical Cash4Life and corrected seasonal Raffle source
+routes are included. Twelve parser/continuity tests pass. A fresh official live
+import validated 45 reports in private integrated-reports.json. No app/public
+report asset or scheduled integration yet; next connect the loader/UI/refresh
+transaction while preserving units and resolve press-date provenance.
+
+Scheduled publisher 37104043949/ac2b8ac completed SC's full three-file transaction.
+Independent activity, SC draw/daily and status public bytes match. The SC refresh
+checkpoint is closed; no parser change or weakened validation was needed. No new
+agency mail. New York remains active with unchanged release deadline.

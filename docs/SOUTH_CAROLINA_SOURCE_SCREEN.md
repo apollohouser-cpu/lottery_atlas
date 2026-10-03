@@ -132,3 +132,10 @@ Evidence is ignored under work/sc_refresh_oct2. Nothing was promoted, and this
 successful reproduction attempt does not establish the scheduled failure's cause.
 Verify the next scheduled transaction; if it fails again, obtain the failing command
 before making parser changes. Prior public data and accepted UI coverage remain.
+
+### October 3, 04:00 ET scheduled recovery verified
+
+Publisher 37104043949/ac2b8ac completed the three-file SC transaction successfully.
+Independent public activity, SC draw reports, daily Scratch and refresh-status
+bytes match. The October 2 retention checkpoint is closed. No validation changes
+or private-probe promotion were needed; the original transient cause was not proven.

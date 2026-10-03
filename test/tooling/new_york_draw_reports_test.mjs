@@ -101,3 +101,14 @@ test('Quick Draw missing payouts, impossible times and changed count fields fail
     const r=structuredClone(quick);mutate(r);assert.throws(()=>parseNewYorkQuickDraw(r));
   }
 });
+
+import {assertNewYorkReportContinuity} from '../../tooling/new_york_draw_reports.mjs';
+test('report transaction rejects lost sessions, duplicate draws and intraday regression',()=>{
+ const day={gameName:'NUMBERS',drawingSession:'Midday',drawDate:'2026-10-02',drawNumber:'1'};
+ const night={...day,drawingSession:'Evening',drawNumber:'2'};
+ assert.throws(()=>assertNewYorkReportContinuity([day,night],[day]));
+ assert.throws(()=>assertNewYorkReportContinuity([],[day,day]));
+ const q={gameName:'Quick Draw / Money Dots',drawingSession:'21:00:00',drawDate:'2026-10-02',drawNumber:'3'};
+ assert.throws(()=>assertNewYorkReportContinuity([q],[{...q,drawingSession:'20:56:00',drawNumber:'2'}]));
+ assert.doesNotThrow(()=>assertNewYorkReportContinuity([day,night],[day,night]));
+});

@@ -1647,3 +1647,11 @@ This checkpoint is closed. The same transaction newly failed South Carolina;
 all three source files are byte-preserved against 24390d7. Next session diagnose
 that bounded importer failure; do not reopen accepted-state UI or weaken validation.
 New York remains the sole active acceptance state with unchanged deadlines.
+
+### October 3, 04:00 ET SC refresh checkpoint closed
+
+Scheduled 37104043949/ac2b8ac completed SC's three-file transaction; independent
+activity/draw/daily/status public bytes match. Do not repeat the closed checkpoint.
+New York scope was reconciled October 3 at 03:00 ET; release remains due October 5
+at 19:00 ET. Forty-five reports now validate through a private atomic importer;
+app/public integration and date-provenance/native acceptance remain unfinished.
