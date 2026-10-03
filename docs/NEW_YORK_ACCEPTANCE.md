@@ -285,3 +285,17 @@ Scheduled publisher 37104043949/ac2b8ac completed SC's full three-file transacti
 Independent activity, SC draw/daily and status public bytes match. The SC refresh
 checkpoint is closed; no parser change or weakened validation was needed. No new
 agency mail. New York remains active with unchanged release deadline.
+
+## October 3, 05:00 ET — bundled report loading
+
+Added the validated 45-report snapshot as a Flutter asset and a New York
+remote/cache/bundle loader. It validates all nine game groups, variant/table
+shapes, official provenance, unique report/tier identities and calendar dates.
+Share counts remain separate from winners; Quick Draw/Money Dots payout dollars
+retain unavailable winner counts. Literal prizes, source dates and historical
+routes are preserved. Invalid responses cannot overwrite valid cache, and cache
+write failure does not discard a valid response. Four focused loader tests pass;
+changed-file analysis is clean. The reports are not yet navigable or published as
+a standalone endpoint. Next implement the report sheet and refresh/publication
+transaction, then resolve press-date provenance and complete native acceptance.
+Opening publisher 37108450193 succeeded; no new agency mail. Deadline unchanged.
