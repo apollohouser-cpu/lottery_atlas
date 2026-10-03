@@ -1,9 +1,9 @@
 {
   "source": "Ohio Lottery official press release API and active retailer directory",
   "sourceUrl": "https://www.ohiolottery.com/about/media-center/press-releases",
-  "updatedAt": "2026-10-02T00:45:10.998Z",
-  "sourceLastUpdated": "2026-10-01T13:12:58.000Z",
-  "coverage": "135 physical retailer-level Ohio Lottery winner releases from January 1, 2026 through the current official publication date, each matched to exactly one active official retailer address. Publication time is used when the article does not publish a separate structured claim date.",
+  "updatedAt": "2026-10-03T00:43:57.149Z",
+  "sourceLastUpdated": "2026-10-02T16:15:13.000Z",
+  "coverage": "136 physical retailer-level Ohio Lottery winner releases from January 1, 2026 through the current official publication date, each matched to exactly one active official retailer address. Publication time is used when the article does not publish a separate structured claim date.",
   "activities": [
     {
       "id": "oh-2026-01-05-14477-oh-028109",
@@ -2434,6 +2434,24 @@
       "prizeAmount": 25417,
       "sourceUrl": "https://www.ohiolottery.com/about/media-center/press-releases/Lucky-Anthony-Wins-Again!",
       "sourceLabel": "Official Ohio Lottery winner release · Lucky Anthony Wins Again! · Oct 01, 2026"
+    },
+    {
+      "id": "oh-2026-10-02-14796-oh-057419",
+      "latitude": 40.0591,
+      "longitude": -82.37742,
+      "city": "Newark",
+      "county": "Licking",
+      "state": "OH",
+      "game": "scratch-off",
+      "gameName": "Ultimate $5,000,000",
+      "retailerName": "SAK'S CASCADE MARKET",
+      "retailerAddress": "599 E Main St, Newark, OH 43055",
+      "coordinateSource": "Ohio Lottery published retailer coordinate",
+      "drawDate": "2026-10-02T16:15:13.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 50000,
+      "sourceUrl": "https://www.ohiolottery.com/about/media-center/press-releases/Newark-Lottery-Player-Wins-$50,000",
+      "sourceLabel": "Official Ohio Lottery winner release · Newark Lottery Player Wins $50,000 · Oct 02, 2026"
     }
   ],
   "excluded": [
@@ -2691,6 +2709,11 @@
       "articleID": 14773,
       "title": "$20 Million MILLIONAIRE FOR LIFE™ Prize Claimed by Trust",
       "reason": "No exact official retailer address matched"
+    },
+    {
+      "articleID": 14797,
+      "title": "Grandfather of 15 Wins Powerball",
+      "reason": "Not a mappable winner release"
     }
   ]
 }
