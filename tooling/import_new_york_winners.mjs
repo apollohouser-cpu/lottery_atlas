@@ -6,6 +6,7 @@
  * directory; online, unmatched, and ambiguous records are excluded.
  */
 import {readFile, writeFile} from 'node:fs/promises';
+import {newYorkReleaseDate} from './new_york_release_date.mjs';
 
 const winnersApiUrl =
   'https://nylottery.ny.gov/drupal-api/api/winners?_format=json';
@@ -201,24 +202,6 @@ if (!outputPath || !retailerDirectoryPath || !scratchCatalogPath) {
     }
     return null;
   };
-  const officialDate = (entry, content) => {
-    const publication = new Date(`${entry.date}T12:00:00Z`);
-    if (Number.isNaN(publication.valueOf())) return null;
-    const match = compact(content).match(
-      /(?:for|in|from)\s+the\s+([A-Z][a-z]{2,8})\s+(\d{1,2})(?:,\s*(\d{4}))?\s+drawing/i,
-    );
-    if (!match) return publication.toISOString();
-    const explicitYear = Number(match[3]);
-    let year = Number.isInteger(explicitYear) && explicitYear >= 2024
-      ? explicitYear
-      : publication.getUTCFullYear();
-    let candidate = new Date(`${match[1]} ${match[2]}, ${year} 12:00:00 UTC`);
-    if (!match[3] && candidate.valueOf() > publication.valueOf() + 31 * 86400000) {
-      year--;
-      candidate = new Date(`${match[1]} ${match[2]}, ${year} 12:00:00 UTC`);
-    }
-    return Number.isNaN(candidate.valueOf()) ? publication.toISOString() : candidate.toISOString();
-  };
   const sellingLocationFrom = (line) => {
     const match = compact(line).match(
       /(?:ticket\s+was\s+|tickets\s+were\s+)?(?:purchased|sold)\s+at:?\s*(.+?)\s+located\s+at\s+(.+?)\s+(?:in|on)\s+(?:the\s+)?(.+?)(?=,\s*(?:which|where|that)|\s+(?:which|where|that)\b|[.]?$)/i,
@@ -343,7 +326,7 @@ if (!outputPath || !retailerDirectoryPath || !scratchCatalogPath) {
           `https://nylottery.ny.gov/winner/?alias=${encodeURIComponent(
             compact(entry.alias).split('/').filter(Boolean).at(-1),
           )}`,
-        sourceLabel: `Official New York Lottery winner claim · ${entry.date}`,
+        sourceLabel: `Official New York Lottery selected winner release · publication date ${entry.date}`,
       });
     }
 
@@ -373,7 +356,8 @@ if (!outputPath || !retailerDirectoryPath || !scratchCatalogPath) {
           continue;
         }
         const retailer = match.retailer;
-        const drawDate = officialDate(entry, content);
+        const dateEvidence = newYorkReleaseDate(entry, content);
+        const drawDate = dateEvidence?.date;
         if (!drawDate || drawDate < '2024-01-01') continue;
         const winningTicketsMatch = line.match(
           /(?:sold|with)\s+(one|two|three|four|five|six|\d+)\s+(?:prize-)?winning\s+(?:tickets|plays)/i,
@@ -395,7 +379,7 @@ if (!outputPath || !retailerDirectoryPath || !scratchCatalogPath) {
           winningTickets: numberFromWord(winningTicketsMatch?.[1]),
           prizeAmount,
           sourceUrl: `https://nylottery.ny.gov/press/${entry.nid}`,
-          sourceLabel: `Official New York Lottery winning-ticket release · ${entry.date}`,
+          sourceLabel: `Official New York Lottery winning-ticket release · ${dateEvidence.kind === 'draw' ? 'Draw date verified in release' : 'Publication date; draw date unverified'} · published ${entry.date}`,
         });
       }
     }

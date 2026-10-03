@@ -2649,12 +2649,23 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                               : (activity.state == 'VA' &&
                                         activity.id.startsWith('va-')) ||
                                     (activity.state == 'NY' &&
-                                        activity.id.startsWith('ny-winner-'))
+                                        (activity.id.startsWith('ny-winner-') ||
+                                            (activity.sourceLabel?.contains(
+                                                  'Publication date; draw date unverified',
+                                                ) ??
+                                                false)))
                               ? 'PUBLICATION DATE'
                               : activity.state == 'KY' &&
                                     (activity.id.startsWith('ky-current-') ||
                                         activity.id.startsWith('ky-retained-'))
                               ? 'NOTICE DATE'
+                              : activity.state == 'NY' &&
+                                    activity.id.startsWith('ny-press-') &&
+                                    !(activity.sourceLabel?.contains(
+                                          'Draw date verified in release',
+                                        ) ??
+                                        false)
+                              ? 'SOURCE DATE'
                               : 'DRAW DATE',
                           value: formattedDate,
                           color: const Color(0xFF1478FF),
@@ -2799,8 +2810,15 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         : (activity.state == 'VA' &&
                                   activity.id.startsWith('va-')) ||
                               (activity.state == 'NY' &&
-                                  activity.id.startsWith('ny-winner-'))
+                                  (activity.id.startsWith('ny-winner-') ||
+                                      (activity.sourceLabel?.contains(
+                                            'Publication date; draw date unverified',
+                                          ) ??
+                                          false)))
                         ? 'Publication date of the official winner release, not a verified draw or claim date. Publication time does not establish when the ticket won. Selected retailer-matched releases are not complete statewide winning-ticket counts.'
+                        : activity.state == 'NY' &&
+                              activity.id.startsWith('ny-press-')
+                        ? 'Selected winning-ticket release. Source label identifies verified draw dates or publication-date fallback; time of day and claim date are unavailable. These releases are not complete statewide winning-ticket counts.'
                         : activity.state == 'TX'
                         ? (activity.game == LotteryGame.scratchOff
                               ? 'Claim date shown above; time of day unavailable. Combined refresh time is not a claim verification date.'
@@ -4889,6 +4907,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   'Kentucky',
                   'South Carolina',
                   'Virginia',
+                  'New York',
                 }.contains(selectedState?.name),
                 dayOnlyDateLabel:
                     const {'Kentucky', 'Virginia'}.contains(selectedState?.name)

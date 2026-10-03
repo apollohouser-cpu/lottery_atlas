@@ -329,3 +329,22 @@ This wiring does not establish a successful scheduled refresh or native acceptan
 Opening publisher 37112036089 remained successful, and no new agency replies were
 found. Next resolve selected-release date provenance and complete native/live
 acceptance. Release deadline remains October 5 at 19:00 ET.
+
+## October 3, 08:00 ET — release date provenance corrected
+
+Publisher 37118515890 succeeded; the independent public NY report endpoint matches
+all committed bytes. A fresh private winner import reproduces the current 1,600
+rows exactly except source labels. All 1,489 press rows use publication fallback
+under the existing explicit-drawing pattern; none establishes a draw date through
+that parser. The 111 Scratch rows also use publication dates. Updated labels now
+say so explicitly. Only source labels were promoted; original dates, positions,
+counts, prizes and top-level metadata were preserved. No private claims promoted.
+
+Extracted date parsing now returns explicit provenance, validates calendar dates,
+and rejects future explicit draw dates. Three tests cover fallback, year rollover,
+invalid dates and future dates. NY detail labels use publication date for these
+rows; legacy press rows without explicit provenance use SOURCE DATE. NY timeline
+now uses whole calendar days and Source dates. Changed map analysis is clean;
+combined publication validation passes for 23,900 records across 19 states.
+Native verification and a rebuilt ordinary app remain next, along with integrated
+report/source/filter/failure acceptance. No new agency mail; deadline unchanged.
