@@ -155,3 +155,22 @@ baseline: 10,215 mapped claim groups, 30 daily grouped titles for October 1 and
 this does not identify the scheduled failure's cause or prove deployed recovery.
 Await the next scheduled transaction; if it fails again, inspect that run's failing
 command before changing validation. Opening publisher/mail status was unchanged.
+
+## October 2, 23:00 ET — Mega Millions multiplier tables
+
+Official `da`/`gr` rendering code explicitly displays `prize_winners` as NY
+Winners for each built-in multiplier; `mm_national_winners` is a separate national
+summary. The parser preserves the local jackpot once and eight non-jackpot tiers
+for each 2X/3X/4X/5X/10X group. It rejects missing, duplicated or unknown
+multipliers and unavailable counts rather than filling zeros. Source prizes
+already include their multiplier and are not multiplied again. National counts,
+location metadata and inferred aggregate payout are excluded.
+
+Five parser tests pass, including invalid-table cases. Five captured official
+Mega Millions reports now stage privately alongside five Powerball reports.
+September 29 non-jackpot NY counts reconcile independently across tier sums
+0/0/11/38/803/620/4775/10928 to 17,175; the local jackpot count is zero.
+No app/public report integration yet. Remaining state-game/seasonal scope and
+press-date audit continue toward the unchanged October 3, 19:00 ET checkpoint.
+Opening publisher 37088445239 succeeded (push, not scheduled SC recovery); no
+new agency replies. No accepted-state maintenance checkpoint was repeated.

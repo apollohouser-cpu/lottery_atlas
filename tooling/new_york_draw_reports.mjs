@@ -31,3 +31,32 @@ export function parseNewYorkPowerball(row) {
     limitation: 'Statewide report, not retailer claims. National winner counts and locations are excluded. Prize labels are preserved; no aggregate payout inferred. Zero jackpot prize label does not establish jackpot value.',
     tables: [{variant: 'Base', tiers: base}, {variant: 'Power Play', tiers: powerPlay}, {variant: 'Double Play', tiers: doublePlay}]};
 }
+
+export function parseNewYorkMegaMillions(row) {
+  if (row?.game !== 'Mega Millions' || !/^\d{4}-\d{2}-\d{2}$/.test(row.date ?? '') ||
+      new Date(row.date + 'T00:00:00Z').toISOString().slice(0, 10) !== row.date ||
+      !/^\d+$/.test(row.draw_number ?? '')) throw Error('Invalid NY Mega Millions provenance');
+  const jackpot = tiers(row.local_winners, ['Jackpot']);
+  const multipliers = ['2X', '3X', '4X', '5X', '10X'];
+  const nonJackpot = [];
+  for (const level of levels.slice(1)) {
+    const rows = row[level.toLowerCase() + '_prz_multiplier_winners'];
+    if (!Array.isArray(rows) || rows.length !== 5) throw Error('Incomplete Mega Millions multipliers');
+    const seen = new Set();
+    for (const entry of rows) {
+      if (!multipliers.includes(entry.mm_multiplier_level) || seen.has(entry.mm_multiplier_level)) throw Error('Invalid or duplicate Mega Millions multiplier');
+      seen.add(entry.mm_multiplier_level);
+      // National summary counts, locations and empty prize_levels are not identities.
+      const parsed = tiers([{...entry, prize_levels: level}], [level])[0];
+      nonJackpot.push({...parsed, multiplier: entry.mm_multiplier_level});
+    }
+  }
+  return {gameName: 'Mega Millions', drawDate: row.date, drawNumber: row.draw_number,
+    sourceUrl: 'https://nylottery.ny.gov/all-winning-numbers/?nid=16',
+    sourcePublicationDate: null, jurisdiction: 'New York',
+    countUnit: 'Source-reported NY winners; distinct tickets not established',
+    limitation: 'Built-in multipliers are already included in source prize labels. National summary counts and locations excluded. No aggregate payout inferred; zero jackpot prize label is not a jackpot valuation.',
+    tables: [{variant: 'Jackpot', tiers: jackpot},
+      ...multipliers.map(multiplier => ({variant: 'Built-in ' + multiplier,
+        tiers: nonJackpot.filter(t => t.multiplier === multiplier)}))]};
+}
