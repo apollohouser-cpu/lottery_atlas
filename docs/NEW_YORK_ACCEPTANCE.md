@@ -450,3 +450,18 @@ in work/new_york_native.
 Next game/prize reset and native request failure/reconnection, then consolidated
 acceptance. No new mail or publisher change; deadline remains October 5 19:00 ET.
 New York is not accepted yet.
+
+## October 3, 16:00 ET — native game and prize resets
+
+On the October 2 CITGO MART view, applying Powerball produces the scoped-empty
+message. Applying All Games restores Take 5, one published record and $16K.
+Setting the prize range to $17.5M–$60M likewise yields scoped-empty; restoring
+the full range restores the same release while retaining October 2. The filter
+sheet AX tree remained stale, so its choices, slider and Apply button were
+verified through screenshots and mouse actions; the resulting map AX updates
+confirmed both empty and restored states. This is not accessibility certification.
+Private evidence is retained in work/new_york_native.
+
+Next native request failure/reconnection and final consolidated acceptance/live
+review. No new mail or publisher change; New York remains unaccepted with the
+October 5 19:00 ET release-decision deadline unchanged.
