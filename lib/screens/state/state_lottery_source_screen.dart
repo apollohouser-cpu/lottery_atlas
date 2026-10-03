@@ -1,3 +1,4 @@
+import '../../widgets/map/new_york_prize_tables_sheet.dart';
 import '../../widgets/map/virginia_prize_tables_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -42,7 +43,7 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
-          if (source.stateName == 'Virginia')
+          if (source.stateName == 'Virginia' || source.stateName == 'New York')
             Card(
               child: ListTile(
                 title: const Text('Draw reports and prize tables'),
@@ -53,7 +54,9 @@ class StateLotterySourceScreen extends StatelessWidget {
                 onTap: () => showModalBottomSheet<void>(
                   context: context,
                   isScrollControlled: true,
-                  builder: (_) => const VirginiaPrizeTablesSheet(),
+                  builder: (_) => source.stateName == 'New York'
+                      ? const NewYorkPrizeTablesSheet()
+                      : const VirginiaPrizeTablesSheet(),
                 ),
               ),
             ),

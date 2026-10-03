@@ -299,3 +299,19 @@ changed-file analysis is clean. The reports are not yet navigable or published a
 a standalone endpoint. Next implement the report sheet and refresh/publication
 transaction, then resolve press-date provenance and complete native acceptance.
 Opening publisher 37108450193 succeeded; no new agency mail. Deadline unchanged.
+
+## October 3, 06:00 ET — report sheet integrated
+
+The New York source screen now opens its report sheet with all 45 bundled
+reports across nine groups. The selector preserves draw/session identity; each
+variant has its own table. NUMBERS/Win4 display winning shares, unavailable tier
+prizes remain unavailable, and Quick Draw/Money Dots display separate published
+prize dollars with unavailable winner counts. Source labels, multipliers,
+limitations, retrieval time, cadence and historical source routes remain visible.
+All 45 selections pass compact (400×640) and wide (1280×900) widget checks;
+changed-file analysis is clean. Native interaction remains unverified. Next
+connect scheduled refresh/publication, resolve press-date provenance and perform
+integrated native/live acceptance. Opening publisher 37112036089 succeeded; no
+new agency mail. New York is not accepted; deadline unchanged.
+Ordinary lib/main.dart macOS debug build also passed; running app has not been
+relaunched for this change.
