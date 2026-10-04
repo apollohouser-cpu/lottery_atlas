@@ -219,3 +219,22 @@ JS tests pass; ten captured reports across five groups validate privately.
 No report data published yet. Next implement bounded live import/continuity,
 cache/UI/source routes and native acceptance; no further broad scope research.
 No new relevant mail; release deadline remains October 6 19:12 ET.
+
+## October 4, 03:00 ET — live payout importer and retained-data guards
+
+Implemented import_ohio_draw_reports.mjs using the official public-site
+authentication configuration and five observed GetLatestDraws routes. A live
+run validated ten payout-dollar reports privately in
+work/ohio_acceptance/live-payout-reports.json. No raw tier counts, internal
+operator fields or authentication material are included in its output.
+
+The importer requires at least two reports per game and both Pick sessions,
+rejects duplicate identifiers/date-session slots, and prevents per-game/session
+date or draw-number regression against the existing file. It writes a temporary
+file and replaces the output only after every source validates. Five tests pass,
+including failure at each of the five sources preserving baseline bytes, missing
+session rejection, and date/draw-number regression rejection.
+
+Next bundle/cache/report sheet and official source-route integration, then
+four-output refresh transaction and native/live acceptance. Reports remain
+private and Ohio is not accepted. No new relevant mail; deadlines unchanged.
