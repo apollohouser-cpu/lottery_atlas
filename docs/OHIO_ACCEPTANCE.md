@@ -306,3 +306,28 @@ Next remaining report selections/source-open-return, compact/wide checks and
 integrated catalog/retailer/detail/filter/failure-reconnect acceptance. Do not
 repeat this completed opening route. No new relevant mail; no deadline change
 or acceptance decision.
+
+## October 4, 08:00 ET — native group selection, source return and wide layout
+
+All five payout groups have now been selected in the ordinary native build.
+Additional October 3 selections verified Pick 3 Midday draw 23903/$132494.00,
+Pick 4 Evening 23561/$160900.00, Pick 5 Evening 10332/$121500.00,
+Classic Lotto 3084/$23562.00 and Rolling Cash 5 10623/$178178.00.
+Counts remain unavailable; source publication date and event-time limitations,
+no retailer allocation, retrieval 2026-10-04T07:13:35.742Z and scheduled cadence
+remain visible. Both Pick 3 sessions were distinguished. The dropdown offers all
+ten reports; existing widget tests cover every selection.
+
+Rolling Cash 5's source button opens the loaded official game/results page,
+showing October 3 numbers 2, 4, 14, 17, 25. This page also contains static odds
+and prizes; that is not independent proof of the imported actual payout dollar
+amount. Returning to the app retains Rolling Cash 5 and its report details.
+Zooming the native window to 5120x2820 retains a centered readable report with
+all nine product/historical routes and their limitations visible without
+clipping. Initial AX was empty until interaction, consistent with prior native
+observations; this is not accessibility certification.
+
+Next integrated catalog, retailer, publication-detail, category/date/prize
+filters and failure/reconnect acceptance, then consolidated live review.
+Scheduled Ohio four-output evidence remains outstanding. No new relevant mail,
+deadline change or acceptance decision.
