@@ -286,3 +286,23 @@ verification and scheduled Ohio transaction evidence remain pending; a push
 publisher alone does not prove scheduled import success. Next verify endpoint
 bytes and proceed with ordinary-build native integrated acceptance. No new
 relevant mail, deadline change or acceptance decision.
+
+## October 4, 07:00 ET — deployment and native opening verified
+
+Publisher37194646320 completed successfully. An independent download of the
+public ohio_draw_reports.json exactly matches the staged ten-report file.
+Scheduled four-output refresh is still unverified.
+
+Quit the previous process and relaunched the ordinary debug build. Native
+Find a State → Ohio → OH LOTTERY → Ohio draw payouts opens Pick 3 October 3
+Evening, draw 23904, published payout $362706.00, unavailable winner/ticket
+counts, publication-date-unavailable and no-retailer-allocation disclosures.
+Retrieval shown is 2026-10-04T07:13:35.742Z. Scrolling exposes national/monitor
+sources, distinct EZPLAY terminal-instant and Cash Explosion show descriptions,
+and historical Lucky for Life ending February 21. Ohio map showed source-only
+whole-day dates and the scoped-empty October 4 state. No native failure found.
+
+Next remaining report selections/source-open-return, compact/wide checks and
+integrated catalog/retailer/detail/filter/failure-reconnect acceptance. Do not
+repeat this completed opening route. No new relevant mail; no deadline change
+or acceptance decision.
