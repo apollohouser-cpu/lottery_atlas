@@ -376,3 +376,20 @@ independently fetched public payout-report and refresh-status bytes match.
 The scheduled integration checkpoint is closed. The bot commit was incorporated
 by a clean rebase before pushing these notes. Deadlines and not-accepted status
 are unchanged.
+
+## October 4, 11:00 ET — native category and prize reset
+
+On October 2 in Licking, selected Terminal Instant Games in the native filter
+and applied it: the Scratch release disappeared and the scoped-empty message
+appeared. The distinct Game Show Prizes choice is also visible. Resetting to
+All Games restores the Newark Ultimate $5,000,000 selected release, one reported
+ticket and $50K. Raising the minimum prize to the displayed $19.1M (maximum
+$60M) again produces the scoped-empty state; dragging the minimum back to the
+full-range endpoint and applying restores the same release. October 2 and
+whole-day source-date wording remain intact throughout.
+
+Filter-sheet AX stays stale while visual controls update; mouse interaction
+and resulting map AX verify behavior. This does not certify accessibility.
+No code changes, relevant new mail or deadline change. App left on the restored
+Licking October 2 map. Next native request-failure/reconnect and consolidated
+automated/live review; Ohio is not accepted yet.
