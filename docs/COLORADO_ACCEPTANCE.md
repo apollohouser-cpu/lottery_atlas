@@ -107,3 +107,19 @@ Next implement strict HTML report parsing and reconcile the remaining
 historical/free-play routes to close the full scope matrix. No broad search
 needed for the six verified current families. No new relevant mail, deadline
 change or acceptance decision; native date correction remains pending.
+
+## October 4, 17:00 ET — first strict draw parsers
+
+Added `tooling/colorado_draw_reports.mjs` for Cash 5 and Lotto+/Plus. Captured
+October 3 official pages parse privately into four Cash 5 tiers and 26 Lotto+
+base/Plus tiers. EZ Match remains a separate 1,105-player / $3,295 observation
+with the source's 04:30–23:59 reporting period. Literal tier prizes are preserved,
+not multiplied again. No distinct-ticket total or retailer allocation is inferred.
+
+Validation binds official host/path, game heading and calendar date; enforces
+exact table headers, ordered unique tiers, nonnegative integer counts and dollar
+prize labels; and requires the dated EZ Match period. Three tests pass, including
+malformed count, tier loss/duplication, wrong date/jurisdiction/header and altered
+period rejection. Outputs remain private and are not yet imported or navigable.
+Next add the remaining four families and close historical/free-play scope routes.
+No relevant new mail or deadline change; Colorado remains unaccepted.
