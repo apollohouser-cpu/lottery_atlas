@@ -238,3 +238,20 @@ session rejection, and date/draw-number regression rejection.
 Next bundle/cache/report sheet and official source-route integration, then
 four-output refresh transaction and native/live acceptance. Reports remain
 private and Ohio is not accepted. No new relevant mail; deadlines unchanged.
+
+## October 4, 04:00 ET — bundled reports and validated cache loader
+
+Added the ten validated live payout-dollar reports as an explicit Flutter asset
+and an Ohio-specific remote/cache/bundle loader. It requires all five groups,
+at least two reports each, both Pick sessions, valid calendar dates and official
+source links, unique report identities/date-session slots, finite nonnegative
+dollars and explicitly null ticket counts. Cached game/session dates and draw
+numbers cannot regress on a remote refresh. Invalid remote responses never
+overwrite the cache; a persistence failure does not discard valid remote data.
+
+Four focused loader tests pass, covering exact data preservation, offline cache,
+bundle fallback and malformed/incomplete/inferred-count/regressing responses.
+Changed-file analysis is clean. Reports are bundled but not yet navigable; the
+remote endpoint and refresh transaction remain to be published. Next report
+sheet and official source routes, followed by transaction and native acceptance.
+No new relevant mail; Ohio remains unaccepted with unchanged release deadline.
