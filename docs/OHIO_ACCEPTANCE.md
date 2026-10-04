@@ -331,3 +331,24 @@ Next integrated catalog, retailer, publication-detail, category/date/prize
 filters and failure/reconnect acceptance, then consolidated live review.
 Scheduled Ohio four-output evidence remains outstanding. No new relevant mail,
 deadline change or acceptance decision.
+
+## October 4, 09:00 ET — native catalog and retailer integration
+
+Returned from the payout sheet to the source screen and opened Scratch-Off
+games and prizes. The official /games/scratch-offs/ page loaded its price-group
+catalog and remaining-prizes route. Returning to the app and back to the Ohio
+map retained the October 4 whole-day source-date view. The Scratch shortcut
+shows the selected-release/publication-date/incomplete-claims disclosure and
+remaining-top-prizes-not-store-stock limitation.
+
+The native directory opens with 10642 locations. Searching ABERDEEN 1ST STOP
+returns one match; its detail shows ABERDEEN 1ST STOP #54, 767 Us Highway 52,
+Aberdeen, OH 45101, Brown County, and explicitly says a directory listing alone
+does not create a heat-map win. App left on this detail for continuation.
+
+GitHub's latest returned runs still end at successful push publisher37194646320;
+no post-integration scheduled Ohio run is available in that response. Scheduled
+four-output evidence remains unverified, not presumed failed. No relevant new
+mail. Next publication detail/source, category/date/prize filters and native
+failure/reconnect, then consolidated live acceptance. No deadline or release
+decision change.
