@@ -94,3 +94,30 @@ resolved using the existing Node/user-agent route; no source-unavailable claim.
 Next inspect the per-game report renderer and current product IDs, then complete
 the scope matrix. No reports published in this session.
 Publisher37167293021 successful; no new mail or deadline changes.
+
+## October 3, 23:00 ET — per-game API inventory and session evidence
+
+Captured GetLatestDraws for the ten game identifiers used by the official
+archive renderer: MegaMillions, PowerBall, MillionaireForLife, ClassicLotto,
+RollingCashFive, LuckyForLife, Pick3, Pick4, Pick5 and Kicker. Private response
+files remain under work/ohio_acceptance. Add KICKER explicitly to scope as the
+Classic Lotto add-on; the official [game rule](https://www.ohiolottery.com/getattachment/56f1ee36-1789-46eb-9abf-d83744b6b8fe/827_GameRule.pdf)
+describes its separate six-digit matching game.
+
+The official past-results renderer explicitly labels modifier 1 as Mid Day and
+2 as Evening for Pick games. It displays prizePayout separately as dollars;
+these values must not become ticket counts. Latest captures contain 12/13/25
+prize rows for Pick 3/4/5, four each for Classic Lotto/Rolling Cash 5, five for
+KICKER, nine for Millionaire for Life and ten for historical Lucky for Life
+(last February 21). The current Powerball and Mega Millions latest responses
+have empty prizes arrays: this is a specific endpoint gap, not proof that
+reports are unavailable.
+
+Tier winnersNumber units and jurisdiction still need direct reconciliation.
+In particular, Pick 3 Straight payout 250 does not itself prove distinct-ticket
+units; Millionaire for Life top numeric payouts 20,000,000 and 2,000,000 must
+not be presented as verified cash awards or replace annual-for-life wording.
+The app bundle does not directly render winnersNumber. Next inspect the actual
+per-game payout view/alternate report route, then close the complete scope
+matrix including monitor games, EZPLAY and Cash Explosion. No candidate
+reports promoted. No new agency mail; deadlines and acceptance status unchanged.
