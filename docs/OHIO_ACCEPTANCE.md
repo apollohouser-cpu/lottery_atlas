@@ -60,3 +60,18 @@ Combined publisher validation passed with 24,112 records across 19 states.
 Next full product/report scope and winner category/date audit. This closes only
 the malformed-title defect, not Ohio acceptance. Publication verification pending.
 No new agency emails; opening publisher37159640506 successful. Deadlines unchanged.
+
+## October 3, 21:00 ET — publication-date semantics
+
+Importer inspection confirms every current Ohio row uses article.date as the
+release publication timestamp; no separate structured claim date is read.
+Corrected the inaccurate coverage wording accordingly without changing any row
+or timestamp. Ohio details now label PUBLICATION DATE and disclose selected
+releases, unverified draw/claim dates and incomplete statewide counts. Ohio uses
+whole-day source dates instead of implying event times. Scratch shortcuts now
+use selected-release/publication wording as well. Changed map analysis is clean;
+native verification remains pending.
+
+Publisher37164249192 succeeded and the prior title-corrected public activity
+bytes match. Next full game/report scope and product classification, then
+validated integration and native acceptance. No new mail; deadlines unchanged.

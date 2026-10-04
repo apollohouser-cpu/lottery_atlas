@@ -259,8 +259,8 @@ if (!outputPath || !retailerDirectoryPath || !scratchCatalogPath) {
       coverage:
         `${activities.length} physical retailer-level Ohio Lottery winner releases ` +
         'from January 1, 2026 through the current official publication date, each ' +
-        'matched to exactly one active official retailer address. Publication time is ' +
-        'used when the article does not publish a separate structured claim date.',
+        'matched to exactly one active official retailer address. Dates are release ' +
+        'publication dates, not verified draw or claim dates; publication times do not establish when tickets won.',
       activities,
       excluded,
     }, null, 2)}\n`);
