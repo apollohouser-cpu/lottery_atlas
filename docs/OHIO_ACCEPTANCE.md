@@ -121,3 +121,36 @@ The app bundle does not directly render winnersNumber. Next inspect the actual
 per-game payout view/alternate report route, then close the complete scope
 matrix including monitor games, EZPLAY and Cash Explosion. No candidate
 reports promoted. No new agency mail; deadlines and acceptance status unchanged.
+
+## October 4, 00:00 ET — official game tabs and product classification
+
+Captured the official draw-detail component's GetGameInformation responses for
+Pick 3, Powerball, Mega Millions and Millionaire for Life privately. These
+provide the rendered rule/odds tabs, not observed tier winner reports. Pick 3's
+[official game page](https://www.ohiolottery.com/Games/Draw-Games/Pick-3)
+tab explicitly separates $0.50 and $1 payouts: the API's Straight 250,
+3-way box 83.50 and 6-way box 41.50 match its $0.50 column. This establishes
+prize denomination, not the meaning of winnersNumber; distinct tickets remain
+unverified. Both wager sizes are permitted, and a back-up combines straight
+and box bets on one ticket.
+
+Millionaire for Life's official tab specifies $1,000,000/year for life and
+$100,000/year for life, with a 20-year guarantee. Its FAQ gives cash options
+of $18,000,000 and $2,200,000, so the latest-report numeric top-tier values
+20,000,000/2,000,000 must not be labeled cash. Preserve annual-for-life labels
+and disclose the raw numeric-field limitation if reports are integrated.
+The FAQ explicitly dates replacement of Lucky for Life to February 22, 2026.
+
+The [official EZPLAY page](https://www.ohiolottery.com/Games/EzPlay-Games)
+identifies terminal-generated instant tickets with no drawing. Current importer
+classifies its seven selected releases as state-draw: a concrete classification
+defect to fix before acceptance, without recasting EZPLAY as Scratch. Review
+the shared game-category schema and preserve all other row fields when fixing.
+The [games overview](https://www.ohiolottery.com/games) separates Cash Explosion
+as a television game show; three selected releases are named Cash Explosion
+and also require a product-category audit rather than assuming recurring draws.
+
+Next fix this product-category defect, finish the scope matrix, and bound the
+remaining tier-count-unit/source gap before integration. Latest/candidate API
+responses remain private. Gmail checked once with no new relevant message.
+No acceptance or deadline change.
