@@ -70,3 +70,40 @@ existing timeline tests pass. Native verification is pending with the ordinary
 build. Next reconcile official report-date/count semantics and full national/
 state/Scratch game scope by October 5 at 14:15 ET. No new relevant mail, deadline
 change or acceptance decision.
+
+## October 4, 16:00 ET — actual draw reports and units reconciled
+
+Official dated HTML reports were captured privately in
+`work/colorado_acceptance/`. Six current report families expose actual prize
+results; these are separate from the selected retailer-matched winner rows.
+No reports or counts have yet been promoted into app data.
+
+| Official dated report | Verified structure / integration constraint |
+| --- | --- |
+| [Powerball](https://www.coloradolottery.com/en/games/powerball/drawings/2026-10-03/) | Nine Colorado base tiers, eight Power Play tiers, nine Double Play tiers. Preserve variants separately and omit the out-of-state jackpot table. |
+| [Mega Millions](https://www.coloradolottery.com/en/games/megamillions/drawings/2026-10-02/) | Colorado jackpot plus eight tiers across five built-in multipliers. Published prizes already incorporate the multiplier. Exclude out-of-state winners. |
+| [Millionaire for Life](https://www.coloradolottery.com/en/games/millionaireforlife/drawings/2026-10-03/) | Nine Colorado tiers; preserve $1 million / $100,000 annual-for-life wording and prize-sharing footnotes, not invented cash equivalents. |
+| [Lotto+](https://www.coloradolottery.com/en/games/lotto/drawings/2026-10-03/) | Thirteen base and thirteen Plus rows, including multiplier-specific tiers. Keep Plus distinct; published jackpot and cash value are separate fields. |
+| [Cash 5](https://www.coloradolottery.com/en/games/cash5/drawings/2026-10-03/) | Four tiers. EZ Match separately reports 1,105 players and $3,295 for the 04:30–23:59 period on the draw date; neither is a Cash 5 tier count. |
+| [Pick 3 Midday](https://www.coloradolottery.com/en/games/pick3/drawings/2026-10-03:MD/) / [Evening](https://www.coloradolottery.com/en/games/pick3/drawings/2026-10-03:EV/) | Six bet types and four wager columns with prize/count pairs; unavailable half-dollar combination cells are bullets, not zero. Any-order prizes vary with the drawn number pattern. Preserve session, bet type and wager identity. |
+
+Use the source's reported-winner unit, without asserting distinct tickets or
+summing overlapping wager/variant categories. These dated drawing pages verify
+draw dates for these reports only. The [Who's Winning report](https://www.coloradolottery.com/en/player-tools/whos-winning/)
+labels its column Date Won and its filter drawing date range; that does not
+resolve draw/claim/publication semantics for every imported winner row. Retain
+the conservative SOURCE DATE treatment and synthetic-time limitation.
+
+[Bonus Draws](https://www.coloradolottery.com/en/games/bonus-draws/) covers Scratch
+and jackpot promotions, and links to a separately filtered winner report; it
+says posting can lag 5–12 days. The [monthly second-chance promotion](https://www.coloradolottery.com/en/news/monthly-second-chance/)
+is current, with a monthly $100,000 prize and restricted ticket eligibility.
+Keep promotional results separate from ordinary Scratch/draw results; no
+entries, account creation or eligibility attestation were performed. The old
+`/en/games/luckyforlife/` route redirects to the games index, so it is not a
+verified historical result route.
+
+Next implement strict HTML report parsing and reconcile the remaining
+historical/free-play routes to close the full scope matrix. No broad search
+needed for the six verified current families. No new relevant mail, deadline
+change or acceptance decision; native date correction remains pending.

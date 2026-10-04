@@ -65,3 +65,16 @@ Deployment verified September 21: workflow 35648049856 succeeded, and the live
 activity feed exactly matched the repository output, including the preserved
 historical Scratch labels. New Hampshire's catalog also published successfully
 in that run.
+
+### October 4, 16:00 ET acceptance research
+
+Dated official drawing pages provide Colorado tier results for Powerball
+(including separate Power Play/Double Play), Mega Millions, Millionaire for
+Life, Lotto+/Plus, Cash 5 and both Pick 3 sessions. Acceptance document now
+records their exact unit/variant/prize constraints and source links. Captures
+remain private; no new reports promoted. Cash 5 EZ Match has separate players
+and dollar totals with its own reporting period. Selected winner-row Date Won
+semantics remain unresolved; no distinct-ticket inference. Bonus Draws and
+monthly second chance are current separate promotions. Historical Lucky for
+Life product URL redirects, requiring a real historical route before claiming
+one. Full scope checkpoint and release deadline are unchanged.
