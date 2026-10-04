@@ -3,7 +3,8 @@
 Activated October 3, 2026 at 19:12 ET as the sole active state following New
 York acceptance. Existing working catalog, directory and winner imports qualify
 for 72 hours: release decision October 6 at 19:12 ET; full game-scope and gap
-reconciliation October 4 at 19:12 ET. Not accepted.
+reconciliation October 4 at 19:12 ET. Supported coverage accepted October 4,
+2026 at 13:14 ET, ahead of the release deadline. Ready for user testing.
 
 ## Selection and opening evidence
 
@@ -36,12 +37,12 @@ jurisdiction, units, dates and cadence; numbers-only pages are not tier counts.
 ## Acceptance checklist
 
 - [x] Full per-game scope/gap matrix closed October 4 02:00 ET, before October 4 19:12 ET.
-- [ ] Winner category/title/date provenance and retained-data audit.
-- [ ] Supported reports/source routes and cache/bundle integration.
-- [ ] Native compact/wide catalog, retailer, map, filters/reset, detail/source.
-- [ ] Native request failure/reconnection with accurate limitations.
-- [ ] Focused automated checks, ordinary build and independent live evidence.
-- [ ] Consolidated release decision by October 6 19:12 ET.
+- [x] Winner category/title/date provenance and retained-data audit.
+- [x] Supported reports/source routes and cache/bundle integration.
+- [x] Native compact/wide catalog, retailer, map, filters/reset, detail/source.
+- [x] Native request failure/reconnection with accurate limitations.
+- [x] Focused automated checks, ordinary build and independent live evidence.
+- [x] Consolidated release decision by October 6 19:12 ET.
 
 Opening repository fast-forwarded to bot922ed58; publisher37159640506 succeeded.
 No new agency emails. Accepted states and closed maintenance are not reopened.
@@ -411,3 +412,40 @@ automated/live review and release decision remain; Ohio is not accepted yet.
 
 The ordinary lib/main.dart macOS debug build passed and was relaunched after
 closing the probe. No probe is left active.
+
+## October 4, 13:14 ET — supported-coverage release decision
+
+**ACCEPTED: Ohio supported available coverage is ready for user testing.**
+Full scope closed October 4 at 02:00 ET; release is ahead of October 6 at
+19:12 ET. No extension or agency-records dependency was needed.
+
+The release includes 74 Scratch games, 10642 mapped official retailers with
+10 unresolved entries excluded from precise location treatment, 136 selected
+retailer releases, and ten payout-dollar reports across Pick 3/4/5, Classic Lotto
+and Rolling Cash 5. Current excluded-release inventory is 53 after the scheduled
+refresh; the earlier targeted corrections preserved the then-baseline 52.
+National, monitor, terminal-instant, show and historical products retain explicit
+official routes and scope gaps. Unverified winner/ticket counts are null, not
+zero; payout dollars are not counts or retailer allocations. Publication dates
+remain distinct from ticket purchase, draw and claim dates.
+
+Final validation: five JavaScript parser/importer checks, six transaction checks
+and thirteen Flutter data/loader/compact-wide sheet checks pass. Focused report
+loader, sheet and source-screen analysis is clean. The ordinary macOS debug
+build passed and was restored/relaunched after the private failure probe.
+Native group selection, source return, compact/wide layouts, Scratch catalog,
+retailer search/detail, publication detail, date/category/prize reset and Dart
+request-failure/reconnect evidence are recorded above. AX limitations remain
+disclosed; no OS-offline or map-tile guarantee is asserted.
+
+Independent downloads of activity.json, state_scratch_catalogs.json,
+state_retailer_directories.json, ohio_draw_reports.json and
+state_refresh_status.json all match their checked-in public bytes exactly.
+Scheduled publisher37206460485/bot881d054 already proved Ohio's four-output
+transaction; this closed checkpoint is not reopened. No new relevant agency
+mail. The user's October 2 personal confirmation remains complete. Broader
+records and unverified tier-count units remain separate data gaps.
+
+Do not repeat acceptance without a named actual defect or meaningful new data.
+No successor state is activated by this release; select the next state on
+readiness/current user priority and give it an explicit fresh deadline.

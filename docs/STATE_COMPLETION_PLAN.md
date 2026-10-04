@@ -15,7 +15,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
 | South Carolina | Accepted October 1, 2026, 7:02 PM ET (due October 3, 5:03 PM) | Supported available coverage accepted; broader claims remain separate. |
 | New York | Accepted October 3, 2026, 6:12 PM ET (due October 5, 7:00 PM ET) | Supported available coverage closed; complete statewide claims remain separate. |
-| Ohio | October 6, 2026, 7:12 PM ET | Active October 3, 7:12 PM ET; scope due October 4, 7:12 PM ET. |
+| Ohio | Accepted October 4, 2026, 1:14 PM ET (due October 6, 7:12 PM ET) | Supported available coverage closed; broader records remain separate. |
 | Virginia | Accepted October 2, 2026, 6:02 PM ET (due October 4, 7:02 PM) | Supported available coverage closed; complete statewide claims remain separate. |
 
 Texas's release includes the supported draw-game experience, specifically verified
@@ -58,9 +58,10 @@ Texas, Kentucky, South Carolina and Virginia are accepted for their supported
 available coverage. Virginia closed October 2 at 18:02 ET; see
 VIRGINIA_ACCEPTANCE.md for the consolidated release evidence and limitations.
 New York closed October 3, 2026 at 18:12 ET; see NEW_YORK_ACCEPTANCE.md.
-All five accepted states are ready for supported-coverage user testing. Ohio is
-the sole active state from October 3 at 19:12 ET: 72-hour release deadline
-October 6 at 19:12 ET, scope due October 4 at 19:12 ET. See OHIO_ACCEPTANCE.md.
+Ohio closed October 4, 2026 at 13:14 ET; see OHIO_ACCEPTANCE.md.
+All six accepted states are ready for supported-coverage user testing. No
+successor is active. Select the next state by readiness/current user priority
+and assign a fresh 72-hour or 120-hour deadline with scope due within 24 hours.
 Continue authorized private records audits and no-fee correspondence separately.
 The NE/TX and SC scheduled recovery checkpoints are closed. No routine accepted-
 state UI rechecks or fees are authorized.
