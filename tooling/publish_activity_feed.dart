@@ -84,6 +84,8 @@ void _validateRecord(Map<String, dynamic> record, String context) {
     'mega-millions',
     'scratch-off',
     'state-draw',
+    'terminal-instant',
+    'game-show',
   }.contains(game)) {
     _fail('$context has an unknown game code: $game.');
   }

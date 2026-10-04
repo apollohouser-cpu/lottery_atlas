@@ -100,7 +100,11 @@ if (!outputPath || !retailerDirectoryPath || !scratchCatalogPath) {
       ['EZPLAY', /\bezplay\b/i], ['Cash Explosion', /cash\s+explosion/i],
     ];
     for (const [gameName, expression] of draws) {
-      if (expression.test(text)) return {game: 'state-draw', gameName};
+      if (expression.test(text)) {
+        const game = gameName === 'EZPLAY' ? 'terminal-instant'
+          : gameName === 'Cash Explosion' ? 'game-show' : 'state-draw';
+        return {game, gameName};
+      }
     }
     return null;
   };

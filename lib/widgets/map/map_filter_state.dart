@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
-enum LotteryGame { allGames, powerball, megaMillions, scratchOff, stateDraw }
+enum LotteryGame {
+  allGames,
+  powerball,
+  megaMillions,
+  scratchOff,
+  stateDraw,
+  terminalInstant,
+  gameShow,
+}
 
 /// Controls which records are allowed onto the national map. State views keep
 /// their local lottery activity available regardless of this setting.
@@ -21,7 +29,7 @@ extension MapActivityScopeDetails on MapActivityScope {
       case MapActivityScope.nationalOnly:
         return 'Powerball and Mega Millions only on the U.S. map.';
       case MapActivityScope.allLotteries:
-        return 'Include state draw games and Scratch-Off activity.';
+        return 'Include all supported lottery product activity.';
     }
   }
 }
@@ -39,6 +47,10 @@ extension LotteryGameDetails on LotteryGame {
         return 'Scratch-Offs';
       case LotteryGame.stateDraw:
         return 'State Draw Games';
+      case LotteryGame.terminalInstant:
+        return 'Terminal Instant Games';
+      case LotteryGame.gameShow:
+        return 'Game Show Prizes';
     }
   }
 
@@ -54,6 +66,10 @@ extension LotteryGameDetails on LotteryGame {
         return Icons.confirmation_number_outlined;
       case LotteryGame.stateDraw:
         return Icons.casino_outlined;
+      case LotteryGame.terminalInstant:
+        return Icons.receipt_long_outlined;
+      case LotteryGame.gameShow:
+        return Icons.tv_outlined;
     }
   }
 }

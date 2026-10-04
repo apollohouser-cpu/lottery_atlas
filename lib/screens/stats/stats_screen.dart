@@ -254,6 +254,8 @@ class StatsScreen extends StatelessWidget {
         return const Color(0xFFFFC107);
       case LotteryGame.scratchOff:
         return const Color(0xFF2CC36B);
+      case LotteryGame.terminalInstant:
+      case LotteryGame.gameShow:
       case LotteryGame.stateDraw:
         return const Color(0xFF7C5CFC);
       case LotteryGame.allGames:

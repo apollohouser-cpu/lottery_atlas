@@ -5,6 +5,8 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:lottery_atlas/services/lottery_activity_feed_service.dart';
+import 'package:lottery_atlas/models/lottery_activity.dart';
+import 'package:lottery_atlas/widgets/map/map_filter_state.dart';
 import 'package:lottery_atlas/services/lottery_activity_repository.dart';
 import 'package:lottery_atlas/services/lottery_schedule_service.dart';
 import 'package:shared_preferences_platform_interface/in_memory_shared_preferences_async.dart';
@@ -102,7 +104,9 @@ void main() {
     expect(records.length, greaterThanOrEqualTo(100));
     expect(
       months,
-      containsAll(<int>[for (var month = 1; month <= latest.month; month++) month]),
+      containsAll(<int>[
+        for (var month = 1; month <= latest.month; month++) month,
+      ]),
     );
     expect(
       records.where((record) => record['game'] == 'scratch-off').length,
@@ -113,13 +117,42 @@ void main() {
       expect(record['state'], 'OH');
       expect(record['retailerName'].toString().trim(), isNotEmpty);
       expect(record['retailerAddress'].toString().trim(), isNotEmpty);
-      expect(record['sourceUrl'].toString(), startsWith('https://www.ohiolottery.com/'));
+      expect(
+        record['sourceUrl'].toString(),
+        startsWith('https://www.ohiolottery.com/'),
+      );
       expect(record['coordinateSource'].toString().trim(), isNotEmpty);
       expect(record['latitude'] as num, inInclusiveRange(38.3, 42.1));
       expect(record['longitude'] as num, inInclusiveRange(-85.0, -80.4));
       expect(record['prizeAmount'] as num, greaterThan(0));
     }
   });
+
+  test(
+    'Ohio instant terminal and TV releases preserve their product categories',
+    () {
+      final rows =
+          (_readObject('data/ohio_winner_activity.generated.json')['activities']
+                  as List)
+              .map((row) => Map<String, dynamic>.from(row as Map));
+      for (final name in ['EZPLAY', 'Cash Explosion']) {
+        final selected = rows.where((row) => row['gameName'] == name).toList();
+        expect(selected, isNotEmpty);
+        for (final row in selected) {
+          final parsed = LotteryActivity.fromJson(row);
+          expect(
+            parsed.game,
+            name == 'EZPLAY'
+                ? LotteryGame.terminalInstant
+                : LotteryGame.gameShow,
+          );
+          expect(parsed.toJson()['game'], row['game']);
+          expect(parsed.game, isNot(LotteryGame.scratchOff));
+          expect(parsed.game, isNot(LotteryGame.stateDraw));
+        }
+      }
+    },
+  );
 
   test('combined public state feeds include Ohio', () {
     final catalogStates =
@@ -138,7 +171,9 @@ void main() {
   test('Ohio heat activity is available from bundled data offline', () async {
     SharedPreferencesAsyncPlatform.instance =
         InMemorySharedPreferencesAsync.empty();
-    final offlineClient = MockClient((_) async => http.Response('offline', 503));
+    final offlineClient = MockClient(
+      (_) async => http.Response('offline', 503),
+    );
 
     await LotteryActivityFeedService.loadConfiguredFeed(client: offlineClient);
 
@@ -147,6 +182,9 @@ void main() {
         .toList(growable: false);
     expect(ohio.length, greaterThanOrEqualTo(100));
     expect(ohio.every((activity) => activity.drawDate.year == 2026), isTrue);
-    expect(ohio.map((activity) => activity.drawDate.month).toSet(), contains(9));
+    expect(
+      ohio.map((activity) => activity.drawDate.month).toSet(),
+      contains(9),
+    );
   });
 }

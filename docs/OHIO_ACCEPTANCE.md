@@ -154,3 +154,26 @@ Next fix this product-category defect, finish the scope matrix, and bound the
 remaining tier-count-unit/source gap before integration. Latest/candidate API
 responses remain private. Gmail checked once with no new relevant message.
 No acceptance or deadline change.
+
+## October 4, 01:00 ET — instant terminal and game-show categories fixed
+
+Added explicit terminal-instant and game-show activity categories throughout
+model serialization, labels/icons, game/stats rendering and publisher validation.
+Ohio's seven EZPLAY and three Cash Explosion releases now use those categories;
+neither is counted under State Draw Games or Scratch-Offs. Existing filters
+enumerate the shared categories and All Games continues to include them.
+Importer emits these categories for future matching releases.
+
+Exactly ten category fields changed in retained Ohio data; all other row fields
+and all top metadata/exclusions remain identical. A fresh private import's 136
+rows exactly match the corrected retained rows. Its 53 exclusions were not
+promoted over the retained 52. Combined publisher validation passed with 23,773
+records across 19 states. Seven focused Ohio tests pass including category
+round-trip and offline bundled loading; changed production analysis is clean.
+Ordinary macOS debug build passed; it has not yet been relaunched or natively
+accepted. Older binaries do not recognize the new category codes and need the
+updated build; native acceptance must use this build.
+
+Next complete the scope matrix and bound report-unit gaps, then native
+integration and publication verification. No new agency mail, deadline change
+or acceptance decision.

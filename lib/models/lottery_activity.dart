@@ -162,6 +162,10 @@ class LotteryActivity {
       case 'scratch-off':
       case 'scratchoff':
         return LotteryGame.scratchOff;
+      case 'terminal-instant':
+        return LotteryGame.terminalInstant;
+      case 'game-show':
+        return LotteryGame.gameShow;
       case 'state-draw':
       case 'statedraw':
         return LotteryGame.stateDraw;
@@ -182,6 +186,10 @@ class LotteryActivity {
         return 'scratch-off';
       case LotteryGame.stateDraw:
         return 'state-draw';
+      case LotteryGame.terminalInstant:
+        return 'terminal-instant';
+      case LotteryGame.gameShow:
+        return 'game-show';
     }
   }
 
