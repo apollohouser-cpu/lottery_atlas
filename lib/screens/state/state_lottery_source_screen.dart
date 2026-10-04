@@ -1,3 +1,4 @@
+import '../../widgets/map/ohio_payout_reports_sheet.dart';
 import '../../widgets/map/new_york_prize_tables_sheet.dart';
 import '../../widgets/map/virginia_prize_tables_sheet.dart';
 import 'package:flutter/material.dart';
@@ -43,6 +44,14 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Ohio')
+            Card(child: ListTile(
+              title: const Text('Ohio draw payouts and game sources'),
+              subtitle: const Text('Published payout dollars • Winner counts unavailable'),
+              trailing: const Icon(Icons.table_chart_outlined),
+              onTap: () => showModalBottomSheet<void>(context: context,
+                isScrollControlled: true, builder: (_) => const OhioPayoutReportsSheet()),
+            )),
           if (source.stateName == 'Virginia' || source.stateName == 'New York')
             Card(
               child: ListTile(

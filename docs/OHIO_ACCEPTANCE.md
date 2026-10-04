@@ -255,3 +255,20 @@ Changed-file analysis is clean. Reports are bundled but not yet navigable; the
 remote endpoint and refresh transaction remain to be published. Next report
 sheet and official source routes, followed by transaction and native acceptance.
 No new relevant mail; Ohio remains unaccepted with unchanged release deadline.
+
+## October 4, 05:00 ET — navigable payout sheet and product source routes
+
+Ohio's state source screen now opens the payout sheet with ten report choices
+across five groups, explicit dollar values, draw date/session/number, unavailable
+counts, retrieval/cadence and scope limitations. Official source routes include
+Powerball/Power Play, Mega Millions, Millionaire for Life, Classic Lotto/KICKER,
+KENO/Booster, The Lucky One, EZPLAY, Cash Explosion and historical Lucky for Life.
+Routes follow official site navigation; current monitor, terminal instant,
+game-show and historical limitations stay distinct.
+
+Compact and wide widget tests traverse all ten selections and the source footer.
+An initial fixed-distance scroll test stopped short on compact layout; replaced
+with scrolling until the historical route is visible. Both tests pass, changed
+analysis is clean and the ordinary macOS debug build passes. Not relaunched or
+natively verified yet. Next four-output refresh/publication transaction, then
+native integrated acceptance. No new relevant mail or deadline changes.
