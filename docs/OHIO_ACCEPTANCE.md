@@ -35,7 +35,7 @@ jurisdiction, units, dates and cadence; numbers-only pages are not tier counts.
 
 ## Acceptance checklist
 
-- [ ] Full per-game scope/gap matrix by October 4 19:12 ET.
+- [x] Full per-game scope/gap matrix closed October 4 02:00 ET, before October 4 19:12 ET.
 - [ ] Winner category/title/date provenance and retained-data audit.
 - [ ] Supported reports/source routes and cache/bundle integration.
 - [ ] Native compact/wide catalog, retailer, map, filters/reset, detail/source.
@@ -177,3 +177,45 @@ updated build; native acceptance must use this build.
 Next complete the scope matrix and bound report-unit gaps, then native
 integration and publication verification. No new agency mail, deadline change
 or acceptance decision.
+
+## October 4, 02:00 ET — full scope and bounded report support
+
+Scope/gap reconciliation is closed; this is not release acceptance. The official
+app's current archive and game-detail routes, saved API responses and product
+pages establish the following implementation scope. No broad roster research
+remains. An unverified count stays unavailable and does not delay supported
+coverage indefinitely.
+
+| Product | Supported release scope | Explicit gap/constraint |
+| --- | --- | --- |
+| Powerball / Power Play | Selected publication-dated retailer releases and official game/results route | Latest API prize arrays empty; no Ohio tier counts or inferred national allocation. |
+| Mega Millions / built-in multiplier | Selected retailer releases and current official game/results route | Latest prize arrays empty; no invented tier/multiplier winner totals. |
+| Millionaire for Life | Selected releases and official game/rules route | Top prizes retain annual-for-life wording; raw 20M/2M fields are not verified cash. Tier jurisdiction/count units unresolved. |
+| Pick 3 / Pick 4 / Pick 5 | Selected releases, separate Midday/Evening dates and published payout-dollar reports | No distinct-ticket counts; Pick 3 prize denomination is $0.50 but winnersNumber semantics remain unresolved. |
+| Rolling Cash 5 / Classic Lotto | Selected releases, official results and published payout-dollar reports | Dollar totals remain separate from jackpot advertisements and all count fields. |
+| KICKER | Separate Classic Lotto add-on official source route and schedule | No unsupported aggregation into Classic Lotto payout or retailer counts. |
+| KENO / Booster | Selected KENO releases and official monitor/results route | No fabricated complete monitor history or prize-tier counts; multiplier is not a count. |
+| The Lucky One | Separate official monitor-game/results source route | No inferred observed counts from fixed wager odds/prizes. |
+| Scratch-Offs | 74-game official catalog and selected publication-dated retailer releases | Remaining inventory is not period wins/claims; unmatched game titles explicitly unverified. |
+| EZPLAY | Selected terminal-instant releases and official product route | No draws; no Scratch classification or complete validation counts. |
+| Cash Explosion | Selected game-show releases and official show route | Show prizes are not recurring draw results or a complete claims layer. |
+| Historical Lucky for Life | Historical official source route, ending February 21, 2026 | No current recurring schedule; replaced February 22 by Millionaire for Life. |
+
+Official entry points: [games](https://www.ohiolottery.com/games),
+[draw games](https://www.ohiolottery.com/Games/Draw-Games),
+[KENO results](https://www.ohiolottery.com/winning-numbers/keno-drawings),
+[The Lucky One](https://www.ohiolottery.com/games/the-lucky-one),
+[EZPLAY](https://www.ohiolottery.com/Games/EzPlay-Games).
+Source-route availability is a required UI integration item even for games
+without verified count reports. Retailer directory and publication-date
+limitations continue to apply to every selected release.
+
+Added a strict payout parser for the five groups whose official past-results
+renderer displays prizePayout as dollars: Pick 3/4/5, Classic Lotto and Rolling
+Cash 5. It requires approved reports, exact game identity, real calendar dates,
+valid sessions and finite nonnegative payouts. It deliberately omits raw tier
+counts, preserves zero dollars and emits null ticket counts. Three focused
+JS tests pass; ten captured reports across five groups validate privately.
+No report data published yet. Next implement bounded live import/continuity,
+cache/UI/source routes and native acceptance; no further broad scope research.
+No new relevant mail; release deadline remains October 6 19:12 ET.
