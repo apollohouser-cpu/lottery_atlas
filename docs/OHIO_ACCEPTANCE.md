@@ -352,3 +352,27 @@ four-output evidence remains unverified, not presumed failed. No relevant new
 mail. Next publication detail/source, category/date/prize filters and native
 failure/reconnect, then consolidated live acceptance. No deadline or release
 decision change.
+
+## October 4, 10:00 ET — native publication detail and source return
+
+Changed the native timeline from October 4 to October 2, retaining whole-day
+source-date wording. Returned from the directory retailer through city/county
+to Ohio; the October 2 Licking heat point exposes one selected release. Its
+Ultimate $5,000,000 detail shows PUBLICATION DATE October 2, $50,000 and
+SAK'S CASCADE MARKET, 599 E Main St, Newark, OH 43055, with the explicit
+publication-not-draw-or-claim-date and incomplete-statewide-count disclaimer.
+
+The source link opens the loaded official Newark Lottery Player Wins $50,000
+release dated October 2, 2026. It matches the retailer/address and gross prize;
+the article separately states purchase on September 28 and $36,625 after tax.
+The app correctly retains the publication date and gross $50,000 without
+substituting the purchase date or after-tax amount. Returning to the app retains
+the detail. No new relevant mail or native defect found.
+
+Next category/date/prize filter reset and native failure/reconnect, then
+consolidated automated/live acceptance. Scheduled run 37206460485 completed successfully, producing bot commit
+881d054. Its status records Ohio updated across all four transaction outputs;
+independently fetched public payout-report and refresh-status bytes match.
+The scheduled integration checkpoint is closed. The bot commit was incorporated
+by a clean rebase before pushing these notes. Deadlines and not-accepted status
+are unchanged.
