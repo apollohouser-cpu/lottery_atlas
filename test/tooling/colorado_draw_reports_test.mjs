@@ -30,3 +30,20 @@ test('Millionaire for Life preserves annual prizes and requires sharing limitati
  assert.equal(r.tiers.length,9);assert.equal(r.tiers[0].prizeLabel,'$1,000,000 a year for life*');assert.equal(r.prizeNotes.length,2);
  for(const altered of [html.replace('$1,000,000 a year for life*','$20,000,000'),html.replace('21+','22+'),html.replaceAll('Colorado Winners','National Winners')]) assert.throws(()=>parseColoradoDrawReport('millionaireforlife',altered,url('millionaireforlife')));
 });
+
+const pick = session => {
+ const names=['Exact Order','Any Order','Combined Exact Order','Combined Any Order','Front Pair','Back Pair'];
+ const columns=['Bet Type',...['0.50','1.00','2.00','5.00'].map(w=>`$${w} Bet (Winners)`)];
+ return `<h1>Pick 3 Drawing for Oct. 3, 2026: ${session}</h1><table><tr>${columns.map(c=>`<th>${c}`).join('')}</tr>`+names.map((n,i)=>`<tr><td data-label="Bet Type">${n}`+columns.slice(1).map((c,j)=>`<td data-label="${c}">${(i===2||i===3)&&j===0?'&bull;':'<span>$40</span> <span>0</span>'}</td>`).join('')+'</tr>').join('')+'</table>';
+};
+test('Pick 3 sessions and wager cells preserve unavailable versus zero',()=>{
+ for(const [code,session] of [['MD','Midday'],['EV','Evening']]){
+  const r=parseColoradoDrawReport('pick3',pick(session),url('pick3').replace('/2026-10-03/','/2026-10-03:'+code+'/'));
+  assert.equal(r.drawingSession,session);assert.equal(r.tiers.length,24);
+  assert.equal(r.tiers[0].reportedWinners,0);assert.equal(r.tiers[8].reportedWinners,null);assert.equal(r.tiers[8].available,false);assert.equal(r.tiers[9].wagerDollars,1);
+ }
+});
+test('Pick 3 rejects session, wager, pair and missing-cell corruption',()=>{
+ const u=url('pick3').replace('/2026-10-03/','/2026-10-03:MD/');
+ for(const h of [pick('Evening'),pick('Midday').replaceAll('$0.50','$0.25'),pick('Midday').replace('&bull;','0'),pick('Midday').replace('<span>0</span>','<span>-1</span>'),pick('Midday').replace('Back Pair','Front Pair'),pick('Midday').replace('<span>$40</span>','')]) assert.throws(()=>parseColoradoDrawReport('pick3',h,u));
+});

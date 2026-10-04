@@ -156,3 +156,18 @@ Cash 5/Lotto+/MFL now have private parsed reports; Powerball, Mega Millions and
 Pick 3 parsers remain next, followed by atomic import/cache/UI/source integration,
 native checks and consolidated release evidence. No reports promoted this turn.
 No relevant new mail or deadline change; Colorado remains the sole active state.
+
+## October 4, 19:00 ET — Pick 3 wager/session parser
+
+Both captured October 3 sessions now parse privately. Each preserves 24 wager
+cells across six bet types: 22 published prize/count pairs and two unavailable
+half-dollar combination cells. Unavailable cells keep null count/prize and an
+explicit availability flag; published zero counts remain zero. Wager amount,
+bet identity, session and literal prize are retained without aggregating winners.
+
+Six parser tests pass, including session/column mismatch, missing pair content,
+negative counts, duplicate bet types and unavailable-to-zero corruption. These
+join private Cash 5, Lotto+/Plus and MFL reports. Powerball and Mega Millions are
+next, then all-source continuity/import, cache/UI integration and native checks.
+Scope remains closed, release deadline unchanged, and no reports promoted.
+No relevant new mail; Colorado is not accepted.
