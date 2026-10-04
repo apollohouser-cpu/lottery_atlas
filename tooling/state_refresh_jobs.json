@@ -376,7 +376,8 @@
     "outputs": [
       "data/ohio_scratch_catalog.generated.json",
       "data/ohio_retailer_directory.generated.json",
-      "data/ohio_winner_activity.generated.json"
+      "data/ohio_winner_activity.generated.json",
+      "data/ohio_draw_reports.generated.json"
     ],
     "commands": [
       [
@@ -396,6 +397,11 @@
         "data/ohio_winner_activity.generated.json",
         "data/ohio_retailer_directory.generated.json",
         "data/ohio_scratch_catalog.generated.json"
+      ],
+      [
+        "node",
+        "tooling/import_ohio_draw_reports.mjs",
+        "data/ohio_draw_reports.generated.json"
       ]
     ]
   },

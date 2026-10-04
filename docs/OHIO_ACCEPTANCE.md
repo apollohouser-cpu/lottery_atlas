@@ -272,3 +272,17 @@ with scrolling until the historical route is visible. Both tests pass, changed
 analysis is clean and the ordinary macOS debug build passes. Not relaunched or
 natively verified yet. Next four-output refresh/publication transaction, then
 native integrated acceptance. No new relevant mail or deadline changes.
+
+## October 4, 06:00 ET — four-output refresh and publication integration
+
+Ohio payout reports now join catalog, directory and selected releases in the
+state refresh transaction. The publisher stages ohio_draw_reports.json and
+tracks both the generated asset and public output. Six transaction tests pass,
+including failure at each actual Ohio importer restoring all four baseline
+files byte-for-byte. Dates are retained on failed refreshes.
+
+The ten bundled report records are staged for publication. Deployment/endpoint
+verification and scheduled Ohio transaction evidence remain pending; a push
+publisher alone does not prove scheduled import success. Next verify endpoint
+bytes and proceed with ordinary-build native integrated acceptance. No new
+relevant mail, deadline change or acceptance decision.
