@@ -22,3 +22,11 @@ test('Rejects malformed counts, missing/duplicate tiers, wrong date, jurisdictio
  assert.throws(()=>parseColoradoDrawReport('cash5',cash(),url('cash5').replace('www.coloradolottery.com','example.com')));
  assert.throws(()=>parseColoradoDrawReport('cash5',cash(),url('cash5').replace('2026-10-03','2026-02-30')));
 });
+
+test('Millionaire for Life preserves annual prizes and requires sharing limitations',()=>{
+ const names=['5 + MB','5','4 + MB','4','3 + MB','3','2 + MB','2','1 + MB'];
+ const html='<h1>Millionaire for Life Drawing for Saturday, 10/3/26</h1>'+table(names.map((n,i)=>row(n,'0',i<2?['$1,000,000 a year for life*','$100,000 a year for life**'][i]:'$8')).join('')).replaceAll('Winners','Colorado Winners').replaceAll('Prize','Amount')+'<small>*Divided by the number of winners</small><small>**If 21+ total winners, divided by the number of winners</small>';
+ const r=parseColoradoDrawReport('millionaireforlife',html,url('millionaireforlife'));
+ assert.equal(r.tiers.length,9);assert.equal(r.tiers[0].prizeLabel,'$1,000,000 a year for life*');assert.equal(r.prizeNotes.length,2);
+ for(const altered of [html.replace('$1,000,000 a year for life*','$20,000,000'),html.replace('21+','22+'),html.replaceAll('Colorado Winners','National Winners')]) assert.throws(()=>parseColoradoDrawReport('millionaireforlife',altered,url('millionaireforlife')));
+});

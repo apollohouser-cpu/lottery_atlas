@@ -45,7 +45,7 @@ without definitions and exact source joins.
 
 ## Acceptance gates
 
-- [ ] Full game scope and source/gap matrix within 24 hours.
+- [x] Full game scope and source/gap matrix within 24 hours (October 4, 18:00 ET).
 - [ ] Date/category/count/title semantics and retained-data preservation.
 - [ ] Supported report/source integration and atomic refresh/cache behavior.
 - [ ] Native compact/wide catalog, directory, detail/source and filters/reset.
@@ -123,3 +123,36 @@ malformed count, tier loss/duplication, wrong date/jurisdiction/header and alter
 period rejection. Outputs remain private and are not yet imported or navigable.
 Next add the remaining four families and close historical/free-play scope routes.
 No relevant new mail or deadline change; Colorado remains unaccepted.
+
+## October 4, 18:00 ET — full scope closed; implementation continues
+
+Full national/state/Scratch scope and gaps are now fixed ahead of the October 5
+14:15 checkpoint. This is scope closure, not release acceptance.
+
+| Product | Required supported experience | Explicit gap / boundary |
+| --- | --- | --- |
+| Powerball, Power Play, Double Play | Separate Colorado tier tables and official dated source | No out-of-state totals or retailer allocation |
+| Mega Millions | Colorado jackpot and multiplier-specific tiers | No second multiplication or distinct-ticket aggregate |
+| Millionaire for Life | Nine Colorado tiers with annual prize/sharing text | No inferred cash equivalent |
+| Lotto+ and Plus | Separate base/Plus multiplier tiers | No merged variant totals |
+| Cash 5 and EZ Match | Four draw tiers; separate EZ Match players/dollars/period | Instant add-on observation is not a draw tier or ticket count |
+| Pick 3 Midday/Evening | Session, bet and wager-specific prize/count cells | Unavailable wager cells stay unavailable; no deduplication inference |
+| Scratch | Existing 90-game catalog, official catalog route and selected mapped winner rows | Not store stock or complete claims; 254 historical rows retain provenance |
+| Bonus Draws / monthly second chance / contests | Official promotional and winner-report routes | Separate promotions; no fabricated recurring tier feed or eligibility attestation |
+| Historical Lucky for Life | Existing selected historical rows and official history route | Not a current recurring import or proof of zero historical winners |
+| Free Play Zone | Official route with digital-game context | Not Scratch inventory or a monetary-winner data feed |
+
+The [Lucky for Life history index](https://www.coloradolottery.com/en/games/luckyforlife/drawings/)
+responds successfully without redirect, unlike its old product page. Preserve
+this history navigation even when its current month has no results. No claim is
+made that a historical tier archive has been fully imported. The [Free Play Zone](https://www.coloradolottery.com/en/games/play-free-digital-games/)
+describes free digital games; legacy Lucky for Life promotional wording there
+must not override the current game roster. Both pages are captured privately.
+
+Millionaire for Life parsing now preserves nine literal tier prizes and both
+sharing notes, rejecting missing notes, cash substitutions and wrong jurisdiction
+headers. Four parser tests pass; the captured October 3 report parses privately.
+Cash 5/Lotto+/MFL now have private parsed reports; Powerball, Mega Millions and
+Pick 3 parsers remain next, followed by atomic import/cache/UI/source integration,
+native checks and consolidated release evidence. No reports promoted this turn.
+No relevant new mail or deadline change; Colorado remains the sole active state.
