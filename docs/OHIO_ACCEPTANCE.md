@@ -393,3 +393,21 @@ and resulting map AX verify behavior. This does not certify accessibility.
 No code changes, relevant new mail or deadline change. App left on the restored
 Licking October 2 map. Next native request-failure/reconnect and consolidated
 automated/live review; Ohio is not accepted yet.
+
+## October 4, 12:00 ET — native request failure and reconnect
+
+A private Dart HttpOverrides probe directs HTTP requests to an unavailable
+loopback proxy while a local flag exists. With the flag present, the native
+Ohio payout sheet retains Pick 3 October 3 Evening draw 23904, $362706.00,
+unavailable counts and retrieval 2026-10-04T07:13:35.742Z. Limitations remain
+visible. Removing the flag and reopening the sheet advances retrieval to
+2026-10-04T13:48:54.384Z, matching an independently downloaded ten-report
+public feed; the draw, dollars and unavailable-count semantics remain intact.
+
+This verifies Dart request failure and recovery, not OS-wide offline behavior
+or map-tile availability. Probe source and live evidence are private under
+work/ohio_native. No relevant new mail or deadline change. Final consolidated
+automated/live review and release decision remain; Ohio is not accepted yet.
+
+The ordinary lib/main.dart macOS debug build passed and was relaunched after
+closing the probe. No probe is left active.
