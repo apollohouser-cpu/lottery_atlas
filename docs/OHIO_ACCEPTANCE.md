@@ -45,3 +45,18 @@ jurisdiction, units, dates and cadence; numbers-only pages are not tier counts.
 
 Opening repository fast-forwarded to bot922ed58; publisher37159640506 succeeded.
 No new agency emails. Accepted states and closed maintenance are not reopened.
+
+## October 3, 20:00 ET — unverified Scratch title correction
+
+Removed the loose prose fallback for catalog-unmatched Scratch game titles.
+Those rows now explicitly say Ohio Scratch-Off (game name unverified). Two fresh
+private imports before/after contain 136 rows and exactly 13 title differences;
+all other row fields match and top metadata differs only by retrieval timestamp.
+Only those 13 names were promoted into the retained baseline, preserving every
+other field, excluded row and top-level date/metadata exactly. The private fresh
+imports had 53 excluded entries; the retained baseline's 52 were not altered.
+Combined publisher validation passed with 24,112 records across 19 states.
+
+Next full product/report scope and winner category/date audit. This closes only
+the malformed-title defect, not Ohio acceptance. Publication verification pending.
+No new agency emails; opening publisher37159640506 successful. Deadlines unchanged.

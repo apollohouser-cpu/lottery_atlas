@@ -85,12 +85,9 @@ if (!outputPath || !retailerDirectoryPath || !scratchCatalogPath) {
         .map((entry) => ({...entry, key: canonical(entry.name)}))
         .filter((entry) => entry.key.length >= 5 && normalized.includes(entry.key))
         .sort((left, right) => right.key.length - left.key.length)[0];
-      const named = text.match(
-        /(?:purchased|bought|playing|won\s+on|thanks\s+to|ticket\s+was)\s+(?:a|an|the)?\s*(?:\$[\d,.]+\s+)?(.{3,60}?)\s+scratch(?:er|-?off)/i,
-      );
       return {
         game: 'scratch-off',
-        gameName: exact?.name ?? compact(named?.[1] ?? 'Ohio Scratch-Off'),
+        gameName: exact?.name ?? 'Ohio Scratch-Off (game name unverified)',
       };
     }
     const draws = [
