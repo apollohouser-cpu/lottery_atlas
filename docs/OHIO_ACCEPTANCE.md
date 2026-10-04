@@ -75,3 +75,22 @@ native verification remains pending.
 Publisher37164249192 succeeded and the prior title-corrected public activity
 bytes match. Next full game/report scope and product classification, then
 validated integration and native acceptance. No new mail; deadlines unchanged.
+
+## October 3, 22:00 ET — live draw API and omitted product found
+
+Official [The Lucky One](https://www.ohiolottery.com/games/the-lucky-one) is a
+separate monitor draw game; add it to scope alongside KENO. Published fixed
+odds/prizes are not observed winner counts. The general drawings page retains
+legacy Lucky for Life/Megaplier wording, so it cannot alone settle current scope.
+
+The official app bundle, retrieved with the existing importer user agent, exposes
+DrawGames/{game}/GetLatestDraws. Private authenticated public-site API captures
+for Pick3, Keno and TheLuckyOne are saved under work/ohio_acceptance. Pick3 returns
+actual prizes arrays with winnersNumber, description, payout and prizeTier,
+plus draw identifiers and dates. These are candidate report data, not yet
+validated ticket counts: wager units, session, jurisdiction and renderer labels
+need reconciliation before integration. Initial ordinary Python fetch 403 was
+resolved using the existing Node/user-agent route; no source-unavailable claim.
+Next inspect the per-game report renderer and current product IDs, then complete
+the scope matrix. No reports published in this session.
+Publisher37167293021 successful; no new mail or deadline changes.
