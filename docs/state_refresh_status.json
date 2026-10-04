@@ -1,5 +1,5 @@
 {
-  "attemptedAt": "2026-10-03T23:01:25.124961+00:00",
+  "attemptedAt": "2026-10-04T04:06:34.758749+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
@@ -205,8 +205,8 @@
     },
     {
       "state": "Ohio",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/ohio_scratch_catalog.generated.json",
         "data/ohio_retailer_directory.generated.json",
@@ -215,8 +215,8 @@
     },
     {
       "state": "Colorado",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/colorado_scratch_catalog.generated.json",
         "data/colorado_retailer_directory.generated.json",
@@ -247,8 +247,8 @@
     },
     {
       "state": "Missouri",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/state_winning_ticket_totals.json"
       ]
