@@ -2661,6 +2661,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                     (activity.id.startsWith('ky-current-') ||
                                         activity.id.startsWith('ky-retained-'))
                               ? 'NOTICE DATE'
+                              : activity.state == 'CO' &&
+                                    activity.id.startsWith('co-')
+                              ? 'SOURCE DATE'
                               : activity.state == 'NY' &&
                                     activity.id.startsWith('ny-press-') &&
                                     !(activity.sourceLabel?.contains(
@@ -2820,6 +2823,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                           ) ??
                                           false)))
                         ? 'Publication date of the official winner release, not a verified draw or claim date. Publication time does not establish when the ticket won. Selected retailer-matched releases are not complete statewide winning-ticket counts.'
+                        : activity.state == 'CO' &&
+                              activity.id.startsWith('co-')
+                        ? 'Date listed in the official winner report; draw, claim and publication date semantics are not verified. Time of day is unavailable. Selected retailer-matched winner rows and retained historical snapshots are not complete statewide winning-ticket counts.'
                         : activity.state == 'NY' &&
                               activity.id.startsWith('ny-press-')
                         ? 'Selected winning-ticket release. Source label identifies verified draw dates or publication-date fallback; time of day and claim date are unavailable. These releases are not complete statewide winning-ticket counts.'
@@ -4913,6 +4919,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   'Virginia',
                   'New York',
                   'Ohio',
+                  'Colorado',
                 }.contains(selectedState?.name),
                 dayOnlyDateLabel:
                     const {'Kentucky', 'Virginia'}.contains(selectedState?.name)

@@ -55,3 +55,18 @@ without definitions and exact source joins.
 
 No new relevant mail at activation. Existing source-screen history remains the
 authority for separate agency/data outcomes. No fee or attestation requested.
+
+## October 4, 15:00 ET — conservative date precision correction
+
+Colorado now opts into whole-day timeline selection and Source dates wording.
+Its winner detail labels SOURCE DATE and explains that draw/claim/publication
+semantics and event time are unverified. Selected rows and retained historical
+snapshots are explicitly not complete statewide ticket counts. This removes
+the implied draw date and event-hour interpretation of synthetic noon UTC.
+
+Only UI code changed: all generated rows, IDs, dates, counts, coordinates and
+historical timestamps remain untouched. Changed-file analysis is clean; four
+existing timeline tests pass. Native verification is pending with the ordinary
+build. Next reconcile official report-date/count semantics and full national/
+state/Scratch game scope by October 5 at 14:15 ET. No new relevant mail, deadline
+change or acceptance decision.
