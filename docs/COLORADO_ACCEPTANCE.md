@@ -452,3 +452,26 @@ accessibility certification. App is left on the restored selection.
 Next native request-failure/reconnect and consolidated live/automated review.
 Scheduled Colorado recovery remains open. No new agency mail, deadline change
 or acceptance decision.
+
+## October 5, 11:00 ET — native request failure and reconnect
+
+Private Dart HttpOverrides probe routes requests to a closed local proxy while
+an ignored flag exists. Native Colorado reports still render October 3 Powerball,
+separate Base/Power Play/Double Play, multiplier 2, literal prizes and the retained
+retrieval timestamp 2026-10-05T01:18:46.563Z. Removing the flag and reopening the
+sheet preserves correct rendering and that timestamp. Independent public download
+exactly matches the retained repository report feed. Because the public snapshot
+has not advanced, this does not demonstrate adoption of newer remote data; loader
+refresh tests and final live review remain relevant. This is request-failure
+fallback/reopen evidence, not an OS-offline or map-tile guarantee. Evidence and
+probe remain private under work/colorado_native/.
+
+A bounded live importer retry still rejects missing Colorado EZ Match period;
+its private baseline is byte-identical after failure. The 12:51 UTC scheduled
+status also retains Colorado after failure. No partial outputs promoted and
+no validation weakened. Recovery remains open. No new agency email, deadline
+change or acceptance decision.
+
+Ordinary lib/main.dart macOS debug build passed and was relaunched after the
+probe. No test proxy remains active. Next consolidate automated/live evidence
+and resolve the bounded publication gap before the release decision.
