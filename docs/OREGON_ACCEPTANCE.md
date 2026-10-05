@@ -43,3 +43,13 @@ coordinates are absent. Sales has 3,980 named dated rows and unresolved Total
 semantics; no winner/count conversion or public promotion. Private archive and
 unit/join definitions remain open, so the delivery-audit gate is not fully closed.
 Next full product scope and public directory reconciliation. Deadlines unchanged.
+
+### October 5, 18:36 ET source discovery
+
+National/state/monitor/Scratch/Second Chance/Raffle/Video/Sports/historical product
+roster and source routes recorded in the source screen. Six live draw families
+return dated records through the public site's own endpoint. Current Mega Millions
+and Cash Pop renderer semantics are aggregate winners/payout despite jackpot-named
+fields; Win for Life top prize is weekly, and Pick 4 groups equal prizes. Nothing
+promoted. Remaining renderer/unit/time/Keno audit precedes scope closure and
+strict parsers; directory reconciliation remains open. No deadline change.

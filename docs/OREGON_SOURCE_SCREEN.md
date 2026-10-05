@@ -136,3 +136,48 @@ an allowlisted directory with explicit traditional/video coverage and strict
 coordinate/identity validation. The old importer uses a minimum-row heuristic
 and calls its output complete; that assertion needs replacement with evidenced
 source coverage before app integration.
+
+## October 5, 18:36 ET — product roster and live report discovery
+
+The official [games index](https://www.oregonlottery.org/games/) and
+[jackpot index](https://www.oregonlottery.org/jackpot/) establish the following
+scope. Source routes are required even where report ingestion remains unverified.
+
+| Product | Official route | Integration/gap |
+| --- | --- | --- |
+| Powerball / Power Play | [Results](https://www.oregonlottery.org/powerball/winning-numbers/) | Live Oregon share counts/prizes found; multiplier overlap requires reconciliation, no separate Double Play support established. |
+| Mega Millions | [Results](https://www.oregonlottery.org/mega-millions/winning-numbers/) | Current renderer exposes aggregate Oregon winners/payout; old tier-shaped API fields must not be treated as current tier evidence. Pre-April 8, 2025 archive is separately linked by the page. |
+| Megabucks | [Results](https://www.oregonlottery.org/megabucks/winning-numbers/) | Live shared-prize tiers found; preserve cents and match/kicker labels. |
+| Win for Life | [Results](https://www.oregonlottery.org/win-for-life/winning-numbers/) | Live tiers found; top API 52000 is rendered as $1,000 a week, not a cash award. |
+| Pick 4 | [Results](https://www.oregonlottery.org/pick-4/winning-numbers/) | Live timed draws found; renderer groups equal prize amounts and sums their counts. Do not label these unique people or invent wager/tier matches. |
+| Cash Pop | [Results](https://www.oregonlottery.org/cash-pop/winning-numbers/) | Live aggregate winners/payout found; renderer uses rounded scheduled time. No per-tier split established. |
+| Keno | [Product/live board](https://www.oregonlottery.org/jackpot/keno/) | Include Special Keno, Bulls-Eye, Multiplier, 8-spot bonus and Keno To Go options. Static prize odds are not actual draw counts; results/schema still to audit. |
+| Scratch-its | [Catalog](https://www.oregonlottery.org/scratch-its/list/) | Existing 51-game catalog; remaining unclaimed prizes are not stock or recent wins. |
+| Second Chance | [Information/results links](https://www.oregonlottery.org/second-chance/) | Separate Scratch-related drawings; source route, no automatic entry or count inference. |
+| Raffle | [2026 product](https://www.oregonlottery.org/jackpot/raffle/), [ticket checker](https://www.oregonlottery.org/raffle/winning-numbers/check/) | Separate seasonal draw; advertised prize allocation is not claims received. |
+| Video Lottery | [Product](https://www.oregonlottery.org/video-lottery/) | Separate product/source route and directory coverage; no invented draw/retailer-winning feed. |
+| Sports | [Official provider information](https://www.oregonlottery.org/sports/) | Source route only; no sportsbook wagering integration or inferred counts. |
+| Historical Lucky Lines | [Legacy product](https://www.oregonlottery.org/jackpot/lucky-lines/) | Official [Cash Pop launch notice](https://www.oregonlottery.org/press-releases/cash-pop-launches/) identifies January 12, 2025 as final draw. A zero sales column does not establish current availability. |
+
+Captured the public site's API wrapper and results renderer privately, then made
+bounded October 1–4 requests to its observed `drawresults/ByDrawDate` endpoint.
+Selectors pb/mm/mb/cp/wf/p4 return HTTP 200 with dated records; wf is the renderer's
+Win for Life selector. An initial wfl probe returned 400 and was corrected from
+source code, not interpreted as product unavailability. No report promoted.
+
+The common schema includes misleadingly reusable field names. For current Mega
+Millions and Cash Pop, `buildJackpotTable` selects OregonJackpotWinners and
+JackpotShareAmount as aggregate Winners/Payout; it does not render the remaining
+arrays as tiers. The October 2 Mega Millions example is 2,696 winners/$51,967,
+not 2,696 jackpot winners. Cash Pop October 4 22:00 example is 14/$380.
+Powerball, Megabucks, Win for Life and Pick 4 instead use concatenated Oregon
+counts/prize arrays, excluding outside-state fields. Pick 4 combines equal prizes;
+Win for Life changes the 52000 label to a weekly lifetime prize. The Powerball
+page explicitly warns that some million-dollar winners also won a multiplier
+award, so do not independently sum overlapping buckets into unique tickets.
+
+These observations establish parser candidates, not accepted report units or
+full scope closure. Next reconcile renderer tier labels, count units and date/time
+provenance, inspect Keno and historical routes, then close the supported scope
+matrix before its existing October 6 deadline. Gmail check found no new messages;
+no reply, private attachment promotion or deadline change.
