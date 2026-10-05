@@ -520,3 +520,21 @@ output is promoted. Next verify the scheduled four-output transaction and public
 cadence/report bytes, then make the supported-coverage release decision. This
 fix does not establish the inaccessible earlier scheduled log's exact cause.
 No new agency mail, deadline change or acceptance decision.
+
+## October 5, 14:00 ET — private four-output recovery rehearsal
+
+The actual configured Colorado four-command job ran through refresh_states.refresh
+against isolated baseline copies. It completed with status updated/fatal false:
+90 Scratch games, 3,047 mapped retailers, 1,164 selected winner rows with 6,931
+excluded source rows, and twelve complete reports. All output remains private
+under work/colorado_transaction; no baseline or public files were replaced.
+Four Flutter loader checks also pass against the fresh report payload, covering
+exact remote preservation, cached failure fallback and corruption rejection.
+
+Push publisher 37349281016 succeeded for 2823f7b; it publishes reviewed retained
+data and does not run the state import transaction. The latest listed scheduled
+run remains 37311030974 from before the repair, so scheduled/public recovery is
+still unverified. Do not treat this private rehearsal or push success as that
+checkpoint. Next verify the scheduled four-output result and public report/cadence,
+then close the release decision if evidence passes. Scope was already closed
+October 4; today's scope deadline needs no extension. No relevant new agency mail.
