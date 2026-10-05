@@ -46,11 +46,11 @@ without definitions and exact source joins.
 ## Acceptance gates
 
 - [x] Full game scope and source/gap matrix within 24 hours (October 4, 18:00 ET).
-- [ ] Date/category/count/title semantics and retained-data preservation.
+- [x] Date/category/count/title semantics and retained-data preservation.
 - [ ] Supported report/source integration and atomic refresh/cache behavior.
-- [ ] Native compact/wide catalog, directory, detail/source and filters/reset.
-- [ ] Native request-failure/reconnect with accurate limitations.
-- [ ] Focused tests, ordinary build and independent live-feed validation.
+- [x] Native compact/wide catalog, directory, detail/source and filters/reset.
+- [x] Native request-failure/reconnect with accurate limitations.
+- [x] Focused tests, ordinary build and independent live-feed validation.
 - [ ] Consolidated release decision by October 7 at 14:15 ET.
 
 No new relevant mail at activation. Existing source-screen history remains the
@@ -475,3 +475,27 @@ change or acceptance decision.
 Ordinary lib/main.dart macOS debug build passed and was relaunched after the
 probe. No test proxy remains active. Next consolidate automated/live evidence
 and resolve the bounded publication gap before the release decision.
+
+
+## October 5, 12:00 ET — consolidated automated and live evidence
+
+Eighteen Colorado Node checks pass (parsers, atomic importer, pagination and
+historical retention); seven refresh-transaction tests pass, including failure
+at every configured Colorado command preserving all four baseline files and
+dates. Eleven Colorado Flutter checks pass for generated data, loader fallback
+and validation, and compact/wide report selection. Focused analysis of five
+changed production files is clean. The ordinary build was restored and
+relaunched in the preceding native checkpoint.
+
+Independent downloads of activity, Scratch catalogs, retailer directories,
+Colorado reports and refresh status all exactly match their repository public
+outputs. Hash evidence is private in work/colorado_native/final-live.json.
+Native scope, semantics and failure-fallback gates are now checked against their
+recorded evidence; newer-remote-adoption is not claimed from an unchanged feed.
+
+Release remains pending the named refresh integration issue: Cash 5's newest
+page lacks the separate EZ Match reporting period. Next evaluate a bounded
+latest-complete report selection policy, with explicit retained-date disclosure
+and regression guards, rather than repeatedly polling or accepting missing
+values. Existing strict tier/period validation must stay intact and no partial
+state transaction may publish. No acceptance, deadline change or new agency mail.
