@@ -1,3 +1,4 @@
+import '../../widgets/map/colorado_draw_reports_sheet.dart';
 import '../../widgets/map/ohio_payout_reports_sheet.dart';
 import '../../widgets/map/new_york_prize_tables_sheet.dart';
 import '../../widgets/map/virginia_prize_tables_sheet.dart';
@@ -44,6 +45,14 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Colorado')
+            Card(child: ListTile(
+              title: const Text('Colorado draw reports and game sources'),
+              subtitle: const Text('Reported winners • Separate variants and wager units'),
+              trailing: const Icon(Icons.table_chart_outlined),
+              onTap: () => showModalBottomSheet<void>(context: context,
+                isScrollControlled: true, builder: (_) => const ColoradoDrawReportsSheet()),
+            )),
           if (source.stateName == 'Ohio')
             Card(child: ListTile(
               title: const Text('Ohio draw payouts and game sources'),

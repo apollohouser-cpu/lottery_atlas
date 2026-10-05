@@ -225,3 +225,20 @@ analysis is clean after correcting one brace-style notice. No report navigation
 or public endpoint yet. Next report sheet and official scope routes, then refresh/
 publication transaction and native acceptance. No new relevant mail or deadline
 change; Colorado is not accepted.
+
+## October 4, 23:00 ET — navigable report sheet
+
+The Colorado state source screen now opens its 12-report selector. Cards keep
+variant, bet/wager, literal prize and reported-winner count together; unavailable
+Pick 3 wagers remain explicit. Annual sharing notes, the Power Play multiplier,
+separate EZ Match players/dollars/period, retrieval timestamp and limitations
+are displayed. Each report opens its dated official source. Footer routes cover
+Scratch, Bonus Draws, monthly second chance, historical Lucky for Life and Free
+Play Zone without merging those products into draw counts.
+
+Compact (400×640) and wide (1280×900) widget tests exercise all 12 report selections
+and scrolling to the final source route without exceptions. Changed-file analysis
+is clean. The ordinary macOS debug build passes; it has not yet been relaunched
+for native verification. Next four-output refresh/publication integration and
+endpoint verification, then integrated native acceptance. No new relevant mail,
+deadline change or acceptance decision.
