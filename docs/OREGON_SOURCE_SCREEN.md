@@ -75,3 +75,18 @@ winning-ticket counts or authorize Oregon retailer heat points. The existing
 public-records request and the retailer/winner-location coverage requirements
 remain pending. Catalog testing is a separate milestone from full-state
 completion; deployment verification is reported in the task.
+
+## October 5 agency delivery
+
+Oregon supplied two attachments, Draw Game Sales 10.5.26.xlsx (357,288 bytes)
+and Active Retailer List Statewide 10.5.26.xlsx (496,125 bytes), plus a private
+access link described as sales and commission reports from 2015 to present.
+The agency warns that historical reports come from different systems with
+varying fields and time periods and offers to check for missing material.
+No fee is stated. The private access token and requester details are not public.
+
+Attachments and linked reports require private schema/privacy/period audits.
+Sales and commissions are not winning-ticket or claim counts. Neither attachment
+name nor this response establishes delivery of all requested prize-tier counts,
+Scratch claims, winner joins, definitions or an update commitment. No new layer
+is approved by receipt alone. No acknowledgment or follow-up sent this session.

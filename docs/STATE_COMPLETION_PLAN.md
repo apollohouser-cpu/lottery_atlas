@@ -15,6 +15,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
 | South Carolina | Accepted October 1, 2026, 7:02 PM ET (due October 3, 5:03 PM) | Supported available coverage accepted; broader claims remain separate. |
 | New York | Accepted October 3, 2026, 6:12 PM ET (due October 5, 7:00 PM ET) | Supported available coverage closed; complete statewide claims remain separate. |
+| Oregon | October 10, 2026, 4:35 PM ET | Active October 5, 4:35 PM ET; scope due October 6, 4:35 PM ET. |
 | Colorado | Accepted October 5, 2026, 3:33 PM ET (due October 7, 2:15 PM ET) | Supported coverage closed; broader records remain separate. |
 | Ohio | Accepted October 4, 2026, 1:14 PM ET (due October 6, 7:12 PM ET) | Supported available coverage closed; broader records remain separate. |
 | Virginia | Accepted October 2, 2026, 6:02 PM ET (due October 4, 7:02 PM) | Supported available coverage closed; complete statewide claims remain separate. |
@@ -61,9 +62,10 @@ VIRGINIA_ACCEPTANCE.md for the consolidated release evidence and limitations.
 New York closed October 3, 2026 at 18:12 ET; see NEW_YORK_ACCEPTANCE.md.
 Ohio closed October 4, 2026 at 13:14 ET; see OHIO_ACCEPTANCE.md.
 All seven accepted states are ready for supported-coverage user testing. Colorado
-closed October 5 at 15:33 ET; see COLORADO_ACCEPTANCE.md. No successor is active.
-Select the next state by readiness/current user priority with a fresh explicit
-72-hour or 120-hour deadline and scope checkpoint within 24 hours.
+closed October 5 at 15:33 ET; see COLORADO_ACCEPTANCE.md. Oregon is the sole
+active state from October 5 at 16:35 ET, selected on new agency delivery and
+existing catalog readiness. Substantial integration uses a fresh 120-hour window:
+release October 10 at 16:35 ET; scope October 6 at 16:35 ET. See OREGON_ACCEPTANCE.md.
 Continue authorized private records audits and no-fee correspondence separately.
 The NE/TX and SC scheduled recovery checkpoints are closed. No routine accepted-
 state UI rechecks or fees are authorized.
