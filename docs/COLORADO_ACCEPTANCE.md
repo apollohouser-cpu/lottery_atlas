@@ -188,3 +188,23 @@ and seven captured reports (both Pick 3 sessions). No public or app report feed
 has been added. Next live all-source import with continuity/atomic replacement,
 then bundle/cache/UI/refresh integration and native acceptance. No new mail,
 deadline change or acceptance decision.
+
+## October 4, 21:00 ET — live atomic report importer
+
+`import_colorado_draw_reports.mjs` now discovers dated official history links,
+validates every selected page and stages 12 live reports privately: two per
+family, with the newest Midday and Evening for Pick 3. Previous-draw navigation
+and bounded previous-month fallback handle short current-month indexes. Failed
+or malformed pages fail the refresh rather than becoming zero results.
+
+All six families and both Pick 3 sessions are required; duplicate identities,
+duplicate game/session/date slots and per-session date regression are rejected.
+Only a completely validated result replaces the prior file atomically. Twelve
+parser/import tests pass, including failure of each of the six sources, malformed
+late-source content and regression preserving exact prior bytes. Public drawing
+markup fixtures contain tier data, not private winner records.
+
+Live private import succeeded with 12 reports. Next bundle/cache/report UI,
+official scope routes and four-output refresh/publication integration, then native
+acceptance. No public reports promoted, new relevant mail, deadline change or
+acceptance decision.
