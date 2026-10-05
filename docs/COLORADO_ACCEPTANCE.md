@@ -3,7 +3,8 @@
 Activated October 4, 2026 at 14:15 ET as the sole active state after Ohio
 acceptance. Three working imports qualify for 72 hours: release decision due
 **October 7, 2026 at 14:15 ET**; full national/state draw and Scratch scope/gap
-reconciliation due **October 5 at 14:15 ET**. Not accepted.
+reconciliation due **October 5 at 14:15 ET**. Supported coverage accepted
+**October 5, 2026 at 15:33 ET**, ahead of the release deadline.
 
 ## Selection and opening evidence
 
@@ -47,11 +48,11 @@ without definitions and exact source joins.
 
 - [x] Full game scope and source/gap matrix within 24 hours (October 4, 18:00 ET).
 - [x] Date/category/count/title semantics and retained-data preservation.
-- [ ] Supported report/source integration and atomic refresh/cache behavior.
+- [x] Supported report/source integration and atomic refresh/cache behavior.
 - [x] Native compact/wide catalog, directory, detail/source and filters/reset.
 - [x] Native request-failure/reconnect with accurate limitations.
 - [x] Focused tests, ordinary build and independent live-feed validation.
-- [ ] Consolidated release decision by October 7 at 14:15 ET.
+- [x] Consolidated release decision October 5 at 15:33 ET.
 
 No new relevant mail at activation. Existing source-screen history remains the
 authority for separate agency/data outcomes. No fee or attestation requested.
@@ -538,3 +539,34 @@ still unverified. Do not treat this private rehearsal or push success as that
 checkpoint. Next verify the scheduled four-output result and public report/cadence,
 then close the release decision if evidence passes. Scope was already closed
 October 4; today's scope deadline needs no extension. No relevant new agency mail.
+
+
+## October 5, 15:33 ET — supported coverage ACCEPTED
+
+Scheduled publisher 37357345813 succeeded on the repaired implementation; bot
+63af40d records Colorado updated across its four-output transaction. The directory
+remained unchanged, while catalog, selected records and reports refreshed. All
+five independent public feed downloads exactly match repository outputs. Native
+ordinary-build report reopening adopts retrieval 2026-10-05T18:47:43.070Z and the
+complete-report selection cadence, closing the newer-remote-adoption evidence gap.
+The Colorado scheduled recovery checkpoint is CLOSED.
+
+Release includes 90 Scratch games, 3,047 mapped retailers/two unresolved,
+1,164 selected winner records/6,931 exclusions, and twelve complete reports across
+six families with both Pick 3 sessions and separate variants/add-ons. Cash 5 uses
+actual October 3/2 complete reports while newer EZ Match publication is absent;
+this is disclosed, not zero activity. Historical Scratch provenance is retained.
+
+Evidence: nineteen Node parser/import/pagination checks across the consolidated
+pass and subsequent repair; seven transaction checks; eleven Flutter checks,
+repeated successfully against the scheduled data; focused production analysis
+clean; ordinary build restored and running. Native compact/wide, all report
+families, catalog, retailer/detail/source return, source dates, record labels,
+game/prize resets, request failure fallback and subsequent remote adoption passed.
+No OS-offline, tile-availability or full accessibility certification is claimed.
+
+Colorado is ready for supported-coverage user testing. Selected winner records
+are not complete statewide claims or verified distinct tickets. Their date
+semantics remain explicitly unverified; draw-report dates and units stay separate.
+No successor activated in this release session. Do not repeat acceptance absent a
+named defect or meaningful new data. No fees, agency email or deadline extension.
