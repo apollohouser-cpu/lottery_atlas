@@ -171,3 +171,20 @@ join private Cash 5, Lotto+/Plus and MFL reports. Powerball and Mega Millions ar
 next, then all-source continuity/import, cache/UI integration and native checks.
 Scope remains closed, release deadline unchanged, and no reports promoted.
 No relevant new mail; Colorado is not accepted.
+
+## October 4, 20:00 ET — national report parsers complete
+
+Powerball now validates nine base, eight Power Play and nine Double Play tiers,
+including separate variant headings and the published Power Play multiplier.
+Mega Millions validates its Colorado jackpot plus eight tiers at each of five
+multipliers. Both exclude the explicitly headed out-of-state table; unknown
+additional tables fail validation. Literal prizes are never multiplied again.
+
+Ten parser tests pass, including wrong jurisdiction/variant headings, duplicate
+or missing tiers, invalid/missing Power Play multiplier and malformed counts.
+Captured Powerball October 3 and Mega Millions October 2 parse privately into
+26 and 41 tiers respectively. All six current report families now have parsers
+and seven captured reports (both Pick 3 sessions). No public or app report feed
+has been added. Next live all-source import with continuity/atomic replacement,
+then bundle/cache/UI/refresh integration and native acceptance. No new mail,
+deadline change or acceptance decision.

@@ -47,3 +47,25 @@ test('Pick 3 rejects session, wager, pair and missing-cell corruption',()=>{
  const u=url('pick3').replace('/2026-10-03/','/2026-10-03:MD/');
  for(const h of [pick('Evening'),pick('Midday').replaceAll('$0.50','$0.25'),pick('Midday').replace('&bull;','0'),pick('Midday').replace('<span>0</span>','<span>-1</span>'),pick('Midday').replace('Back Pair','Front Pair'),pick('Midday').replace('<span>$40</span>','')]) assert.throws(()=>parseColoradoDrawReport('pick3',h,u));
 });
+
+const pb = () => {
+ const names=['5 + PB','5','4 + PB','4','3 + PB','3','2 + PB','1 + PB','PB'];
+ const labels=['Colorado Winners','Power Play Colorado Winners','Colorado Double Play Winners'];
+ return '<h1>Powerball Drawing for Saturday, 10/3/26</h1>'+labels.map((label,j)=>`<h2>${label}</h2>`+table((j===1?names.slice(1):names).map((n,i)=>row(n,'1',j===0&&i===0?'Jackpot':'$100')).join('')).replaceAll('Winners','Colorado Winners').replaceAll('Prize','Amount')).join('')+'Power Play Number: 2<h2>Out-of-State Jackpot Winners</h2><table><tr><td>999999</tr></table>';
+};
+test('Powerball variants stay separate and out-of-state counts are excluded',()=>{
+ const r=parseColoradoDrawReport('powerball',pb(),url('powerball'));
+ assert.equal(r.tiers.length,26);assert.equal(r.tiers.filter(t=>t.variant==='Power Play').length,8);assert.equal(r.tiers[17].variant,'Double Play');assert.equal(r.tiers.every(t=>t.reportedWinners===1),true);assert.equal(r.powerPlayMultiplier,2);assert.equal(r.tiers[9].prizeLabel,'$100');
+});
+test('Powerball rejects jurisdiction, variant, multiplier and tier corruption',()=>{
+ for(const h of [pb().replace('<h2>Colorado Winners','<h2>National Winners'),pb().replace('Power Play Colorado Winners','Colorado Double Play Winners'),pb().replace('Power Play Number: 2','Power Play Number: 6'),pb().replace('Power Play Number: 2',''),pb().replace('>4 + PB<','>5 + PB<'),pb().replace('>1<','>-1<')]) assert.throws(()=>parseColoradoDrawReport('powerball',h,url('powerball')));
+});
+
+const mm = () => '<h1>Mega Millions Drawing for Friday, 10/2/26</h1>'+table(['Match 5 + Megaball CO Winners',...[2,3,4,5,10].flatMap(m=>['5','4 + Megaball','4','3 + Megaball','3','2 + Megaball','1 + Megaball','0 + Megaball'].map(n=>`${m}x Match ${n} CO Winners`))].map(n=>row(n,'1','$2000000')).join(''))+'<h2>Out-of-State Jackpot Winners</h2><table><tr><td>999999</tr></table>';
+test('Mega Millions preserves all 41 Colorado multiplier tiers without multiplying prizes',()=>{
+ const r=parseColoradoDrawReport('megamillions',mm(),url('megamillions').replace('10-03','10-02'));
+ assert.equal(r.tiers.length,41);assert.equal(r.tiers[1].variant,'2x multiplier');assert.equal(r.tiers[40].variant,'10x multiplier');assert.equal(r.tiers[1].prizeLabel,'$2000000');assert.equal(r.tiers.every(t=>t.reportedWinners===1),true);
+});
+test('Mega Millions rejects changed jurisdiction, duplicate multiplier and extra unknown table',()=>{
+ for(const h of [mm().replace('2x Match 5','3x Match 5'),mm().replace('CO Winners','National Winners'),mm().replace('Out-of-State Jackpot Winners','Colorado Winners')]) assert.throws(()=>parseColoradoDrawReport('megamillions',h,url('megamillions').replace('10-03','10-02')));
+});
