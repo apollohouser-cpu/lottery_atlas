@@ -57,6 +57,13 @@ export function parseColoradoDrawReport(game, html, sourceUrl) {
   if (game === 'cash5') {
     const text = clean(html);
     const ez = text.match(/(\d{1,2}\/\d{1,2}\/\d{4}) EZ MATCH ([\d,]+) players won a total of (\$[\d,]+)!/);
+    // Only a wholly unpublished add-on section can select an older complete date.
+    // Tier, date and jurisdiction validation above still runs first.
+    if (!/EZ\s*MATCH/i.test(text)) {
+      const error = Error('Unpublished Colorado EZ Match section');
+      error.code = 'CO_EZ_MATCH_UNPUBLISHED';
+      throw error;
+    }
     if (!ez || ez[1] !== `${m}/${d}/${y}` || !text.includes('EZ Match winnings calculated between 4:30AM and 11:59PM during specified Cash5 draw date.')) throw Error('Missing Colorado EZ Match period');
     ezMatch = {date, reportedPlayers: integer(ez[2]), publishedPayoutDollars: integer(ez[3].slice(1)), periodLabel: '4:30 AM–11:59 PM on draw date'};
   }

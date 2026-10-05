@@ -499,3 +499,24 @@ latest-complete report selection policy, with explicit retained-date disclosure
 and regression guards, rather than repeatedly polling or accepting missing
 values. Existing strict tier/period validation must stay intact and no partial
 state transaction may publish. No acceptance, deadline change or new agency mail.
+
+## October 5, 13:00 ET — complete Cash 5 report selection repair
+
+Cash 5 selection now follows up to eight official linked drawing dates to obtain
+two complete reports when a newer date has a wholly unpublished EZ Match section.
+The parser first validates date, jurisdiction, headers and all four draw tiers;
+only the explicit unpublished-section error permits continuing to an older date.
+Partial/malformed EZ Match text, wrong periods, malformed tiers and retrieval
+failures still fail closed. Both selected Cash 5 reports require complete actual
+EZ Match values. Existing family/session/duplicate/date-regression guards and
+four-output transaction remain intact. Feed cadence explicitly describes the
+selection policy and displayed actual dates; missing values never become zero.
+
+Thirteen parser/import checks pass, including bounded selection, malformed-page
+rejection and byte preservation when selection would regress. Live private import
+validates twelve reports: Cash 5 October 3 and 2, MFL October 4 and 3, both Pick 3
+October 4 sessions, and the other families' current published dates. No private
+output is promoted. Next verify the scheduled four-output transaction and public
+cadence/report bytes, then make the supported-coverage release decision. This
+fix does not establish the inaccessible earlier scheduled log's exact cause.
+No new agency mail, deadline change or acceptance decision.

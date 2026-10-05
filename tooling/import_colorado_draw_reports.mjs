@@ -19,12 +19,16 @@ export async function fetchColoradoGame(game, request) {
   const reports=[];const seen=new Set();
   while(reports.length<2) {
     const path=links.shift();if(!path || seen.has(path)) throw Error('Insufficient Colorado history: '+game);
+    if(seen.size>=8) throw Error('Colorado complete-report search limit exceeded');
     seen.add(path);const body=await request(origin+path);
-    const report=parseColoradoDrawReport(game,body,origin+path);
-    if(game!=='pick3'||!reports.some(r=>r.drawingSession===report.drawingSession)) reports.push(report);
+    let report;
+    try { report=parseColoradoDrawReport(game,body,origin+path); }
+    catch(error) {
+      if(game!=='cash5'||error.code!=='CO_EZ_MATCH_UNPUBLISHED') throw error;
+    }
+    if(report && (game!=='pick3'||!reports.some(r=>r.drawingSession===report.drawingSession))) reports.push(report);
     const older=coloradoDrawLinks(game,body).filter(p=>p<path&&!seen.has(p));
     links=[...new Set([...links,...older])].sort().reverse();
-    if(seen.size>8) throw Error('Missing Colorado drawing session');
   }
   return reports;
 }
@@ -51,7 +55,7 @@ export async function refreshColoradoReports(output,request) {
   const reports=[];
   for(const game of coloradoReportGames) reports.push(...await fetchColoradoGame(game,request));
   validateColoradoContinuity(previous,reports);
-  const data={schemaVersion:1,state:'Colorado',retrievedAt:new Date().toISOString(),cadence:'Two recent published reports per family; Pick 3 keeps the newest Midday and Evening reports. Scheduled refresh, not a live feed.',coverage:'Colorado source-reported tier winners across six current draw families, separate variants and wager units. EZ Match players and dollars remain separate. No distinct-ticket aggregate or retailer allocation.',reports};
+  const data={schemaVersion:1,state:'Colorado',retrievedAt:new Date().toISOString(),cadence:'Two recent complete published reports per family; Cash 5 skips dates with wholly unpublished EZ Match sections within eight official linked dates. Displayed draw dates remain the actual selected dates. Pick 3 keeps the newest Midday and Evening reports. Scheduled refresh, not a live feed.',coverage:'Colorado source-reported tier winners across six current draw families, separate variants and wager units. EZ Match players and dollars remain separate. No distinct-ticket aggregate or retailer allocation.',reports};
   const temporary=output+'.tmp';
   try{await writeFile(temporary,JSON.stringify(data,null,2)+'\n');await rename(temporary,output);}finally{await rm(temporary,{force:true});}
   return data;

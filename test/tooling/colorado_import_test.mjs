@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {readFile,mkdtemp,writeFile,rm} from 'node:fs/promises';import {tmpdir} from 'node:os';import {join} from 'node:path';
-import {refreshColoradoReports,validateColoradoContinuity,coloradoReportGames,coloradoDrawLinks} from '../../tooling/import_colorado_draw_reports.mjs';
+import {refreshColoradoReports,validateColoradoContinuity,coloradoReportGames,coloradoDrawLinks,fetchColoradoGame} from '../../tooling/import_colorado_draw_reports.mjs';
 const origin='https://www.coloradolottery.com';
 async function pages(){
  const map=new Map();
@@ -35,4 +35,34 @@ test('Continuity rejects missing families, sessions and duplicate identities',as
  const sessions=structuredClone(reports);sessions.at(-1).drawingSession='Midday';assert.throws(()=>validateColoradoContinuity([],sessions),/session/);
  assert.deepEqual(coloradoDrawLinks('cash5','<a href="https://evil.test/en/games/cash5/drawings/2026-10-03/">bad</a>'),[]);
  }finally{await rm(dir,{recursive:true,force:true});}
+});
+
+test('Cash 5 skips only unpublished add-on dates, bounded and without date regression',async()=>{
+ const map=await pages();const index=`${origin}/en/games/cash5/drawings/`;
+ const latest=index+'2026-10-04/';const old=map.get(index+'2026-10-03/');
+ const absent=old.replace('Saturday, 10/3/26','Sunday, 10/4/26').split('\n').filter(l=>!/EZ Match|EZ MATCH|players won/.test(l)).join('\n');
+ map.set(index,`<a href="/en/games/cash5/drawings/2026-10-04/">new</a>`+map.get(index));map.set(latest,absent);
+ const rows=await fetchColoradoGame('cash5',async u=>map.get(u));
+ assert.deepEqual(rows.map(r=>r.drawDate),['2026-10-03','2026-10-02']);
+ assert.equal(rows[0].ezMatch.reportedPlayers,1105);
+ for(const bad of [absent.replace('>5 of 5','>invalid'),absent+'EZ MATCH broken',absent.replace('Sunday, 10/4/26','Monday, 10/5/26')]){
+  map.set(latest,bad);await assert.rejects(fetchColoradoGame('cash5',async u=>map.get(u)));
+ }
+ map.set(latest,absent);
+ const dir=await mkdtemp(join(tmpdir(),'co-complete-'));const output=join(dir,'r.json');
+ try {
+  const data=await refreshColoradoReports(output,async u=>map.get(u));
+  data.reports.find(r=>r.game==='Cash 5').drawDate='2026-10-04';
+  const baseline=JSON.stringify(data);await writeFile(output,baseline);
+  await assert.rejects(refreshColoradoReports(output,async u=>map.get(u)),/regression/);
+  assert.equal(await readFile(output,'utf8'),baseline);
+ }finally{await rm(dir,{recursive:true,force:true});}
+ let calls=0;
+ const history=Array.from({length:10},(_,i)=>`<a href="/en/games/cash5/drawings/2026-10-${String(14-i).padStart(2,'0')}/">d</a>`).join('');
+ await assert.rejects(fetchColoradoGame('cash5',async u=>{
+  if(u===index)return history;
+  calls++;const day=Number(u.match(/10-(\d+)\//)[1]);const date=new Date(`2026-10-${String(day).padStart(2,'0')}`);
+  return absent.replace('Sunday, 10/4/26',`${date.toLocaleDateString('en-US',{weekday:'long',timeZone:'UTC'})}, 10/${day}/26`);
+ }),/search limit/);
+ assert.equal(calls,8);
 });
