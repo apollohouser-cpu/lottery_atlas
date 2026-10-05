@@ -280,3 +280,18 @@ checks, catalog/directory/winner detail/filter/reset and request-failure/reconne
 Do not repeat the completed opening route. No relevant new mail, deadline change
 or acceptance decision. Initial AX content was empty until mouse interaction;
 this is not an accessibility certification.
+
+## October 5, 02:00 ET — native national selections/source return
+
+Mega Millions October 2 selected natively with Colorado jackpot zero, separate
+2x tier labels, literal prizes and reported-winner counts (including 2, 48, 40,
+390 and 1,025 on the visible lower 2x tiers). Millionaire for Life October 3
+selected with both annual-for-life top prizes, nine tiers and both sharing notes.
+Its official source opens the loaded dated Colorado page with matching tiers;
+returning to the app preserves the MFL selection, scroll position and footer.
+Private AX evidence is retained in `work/colorado_native/`.
+
+Next Lotto+/Plus, Cash 5/EZ Match and both Pick 3 sessions, then remaining wide/
+map/catalog/directory/detail/filter and request-failure checks. Completed Powerball
+opening and MFL source-return flows do not need repetition. No relevant new mail,
+deadline change or acceptance decision; scheduled refresh remains unverified.
