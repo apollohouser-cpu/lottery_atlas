@@ -260,3 +260,23 @@ Next verify deployment/endpoint bytes, then relaunch the ordinary build for nati
 integrated acceptance. A successful push publication does not prove Colorado's
 scheduled four-output refresh; that checkpoint remains unverified until a scheduled
 run completes. No relevant new mail, deadline change or acceptance decision.
+
+## October 5, 01:00 ET — public endpoint and native opening flow
+
+Push publisher 37263078978 for 1dccd42 succeeded. Independent HTTP retrieval of
+`colorado_draw_reports.json` exactly matches staged bytes and contains 12 reports.
+This verifies publication, not the still-unverified scheduled four-output refresh.
+
+Relaunched the ordinary macOS build and navigated Find a State → Colorado →
+CO LOTTERY → draw reports. Colorado map shows whole-day Source dates and a
+scoped October 5 empty view. Powerball October 3 displays the verified Colorado
+base rows, Power Play multiplier 2 and separate Power Play/Double Play sections.
+Scrolling reaches the no-aggregate/no-retailer-allocation limitations, original
+retrieval 2026-10-05T01:18:46.563Z, refresh cadence and all five additional product
+routes. Private native evidence is in `work/colorado_native/`.
+
+Next remaining report selections, source open/return, compact/wide integrated
+checks, catalog/directory/winner detail/filter/reset and request-failure/reconnect.
+Do not repeat the completed opening route. No relevant new mail, deadline change
+or acceptance decision. Initial AX content was empty until mouse interaction;
+this is not an accessibility certification.
