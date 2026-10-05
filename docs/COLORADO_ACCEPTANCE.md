@@ -437,3 +437,18 @@ resolve Date Won semantics or explain the separate missing Cash 5 EZ Match data.
 Next date/game/prize filter resets and native request-failure/reconnect, then
 consolidated acceptance/live review. Scheduled recovery remains open. No new
 agency mail, deadline change or acceptance decision.
+
+## October 5, 10:00 ET — native game and prize resets
+
+On the October 2 Castle Rock selection, applying Powerball produces the scoped
+Colorado empty-state notice. Resetting to All Games restores the same Mega
+Millions record and $3,000 prize. Restricting the prize range to $19.1M–$60M
+also produces the scoped empty state; restoring $1–$60M restores that record.
+The October 2 source date remains selected throughout. Private AX evidence is
+saved under work/colorado_native/oct5-10-*.txt. Filter-sheet AX remained stale;
+visual mouse interaction and resulting map AX confirmed behavior, not a full
+accessibility certification. App is left on the restored selection.
+
+Next native request-failure/reconnect and consolidated live/automated review.
+Scheduled Colorado recovery remains open. No new agency mail, deadline change
+or acceptance decision.
