@@ -402,3 +402,20 @@ counts not being verified. Next correct Colorado count labels to reported record
 through detail/rankings, preserving all raw values, and verify natively before
 acceptance. Source open/return and filter/reset/failure checks remain pending.
 App is left on this detail. No agency mail, deadline change or acceptance.
+
+## October 5, 08:00 ET — Colorado record-count labels
+
+Corrected Colorado map activity and county-summary count labels to REPORTED
+RECORDS. The map ranking card uses the same Colorado-specific label and explains
+selected retailer-matched rows, retained history, unverified distinct-ticket
+counts and source-date meanings. Activity detail now explicitly explains that
+counts represent records, not verified distinct tickets. Raw imported counts,
+IDs, prizes, dates, coordinates, ranking arithmetic and generated files are
+unchanged. Other states' count labels are unchanged.
+
+Changed-file analysis is clean and all three existing ranking-service tests pass.
+Native verification of the new labels remains pending; source open/return,
+filter/reset and request failure/reconnect still remain before acceptance.
+No relevant new mail or deadline change. Scheduled refresh recovery remains open.
+Ordinary macOS debug build also passed; relaunch is pending for native correction
+verification.

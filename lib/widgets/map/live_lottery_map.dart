@@ -2632,7 +2632,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                     children: [
                       Expanded(
                         child: _activityInfoCard(
-                          label: 'WINNING TICKETS',
+                          label: activity.state == 'CO'
+                              ? 'REPORTED RECORDS'
+                              : 'WINNING TICKETS',
                           value: '${activity.winningTickets}',
                           color: activityColor,
                         ),
@@ -2825,7 +2827,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         ? 'Publication date of the official winner release, not a verified draw or claim date. Publication time does not establish when the ticket won. Selected retailer-matched releases are not complete statewide winning-ticket counts.'
                         : activity.state == 'CO' &&
                               activity.id.startsWith('co-')
-                        ? 'Date listed in the official winner report; draw, claim and publication date semantics are not verified. Time of day is unavailable. Selected retailer-matched winner rows and retained historical snapshots are not complete statewide winning-ticket counts.'
+                        ? 'Date listed in the official winner report; draw, claim and publication date semantics are not verified. Time of day is unavailable. Counts represent selected retailer-matched winner records, not verified distinct tickets. Retained historical snapshots and current rows are not complete statewide claims.'
                         : activity.state == 'NY' &&
                               activity.id.startsWith('ny-press-')
                         ? 'Selected winning-ticket release. Source label identifies verified draw dates or publication-date fallback; time of day and claim date are unavailable. These releases are not complete statewide winning-ticket counts.'
@@ -3042,7 +3044,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                     const SizedBox(width: 12),
                     Expanded(
                       child: _activityInfoCard(
-                        label: 'WINNING TICKETS',
+                        label: countyActivity.state == 'CO'
+                            ? 'REPORTED RECORDS'
+                            : 'WINNING TICKETS',
                         value: '${countyActivity.totalWinningTickets}',
                         color: const Color(0xFF1478FF),
                       ),

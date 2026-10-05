@@ -74,8 +74,10 @@ class MostWinningStateCard extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      (snapshot.stateName == 'Texas' ||
-                              snapshot.stateName == 'Kentucky')
+                      snapshot.stateName == 'Colorado'
+                          ? 'REPORTED RECORDS'
+                          : (snapshot.stateName == 'Texas' ||
+                                snapshot.stateName == 'Kentucky')
                           ? 'PUBLISHED RECORDS'
                           : 'WINNING TICKETS',
                       style: const TextStyle(
@@ -94,6 +96,16 @@ class MostWinningStateCard extends StatelessWidget {
                     child: Text(
                       'Selected Scratch top-prize claims and selected draw-game Where Sold records with verified retailer matches only. '
                       'Rankings reflect the current filters, not all Texas wins or all prize tiers.',
+                      style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
+                    ),
+                  ),
+                if (snapshot.stateName == 'Colorado')
+                  const Padding(
+                    padding: EdgeInsets.only(bottom: 10),
+                    child: Text(
+                      'Counts are selected retailer-matched winner records, not verified distinct tickets. '
+                      'Includes retained historical records; not complete statewide claims. '
+                      'Dates are source dates with unverified draw, claim or publication meanings.',
                       style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
                     ),
                   ),
