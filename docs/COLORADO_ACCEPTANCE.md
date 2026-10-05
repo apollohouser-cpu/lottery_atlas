@@ -419,3 +419,21 @@ filter/reset and request failure/reconnect still remain before acceptance.
 No relevant new mail or deadline change. Scheduled refresh recovery remains open.
 Ordinary macOS debug build also passed; relaunch is pending for native correction
 verification.
+
+## October 5, 09:00 ET — corrected counts and winner source return native pass
+
+Relaunched the ordinary updated build. Colorado county, city and retailer rankings
+now show REPORTED RECORDS with the distinct-ticket/history/source-date limitations.
+October 2 Douglas → Castle Rock detail preserves one reported record, $3,000,
+the retailer address and SOURCE DATE. The corrected count explanation is visible.
+The official source button loads Who's Winning with Mega Millions selected and
+Since game start. Its first page shows historical rows, so this verifies the
+working source route, not a new independent match of the selected October 2 row.
+Returning preserves the corrected detail and selection. Private AX evidence saved.
+
+The official page also displays its winner-publication delay notice (normally
+5–12 days, with an upgrade delay for September 13–October 19). This does not
+resolve Date Won semantics or explain the separate missing Cash 5 EZ Match data.
+Next date/game/prize filter resets and native request-failure/reconnect, then
+consolidated acceptance/live review. Scheduled recovery remains open. No new
+agency mail, deadline change or acceptance decision.
