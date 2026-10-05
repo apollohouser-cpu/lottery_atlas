@@ -295,3 +295,19 @@ Next Lotto+/Plus, Cash 5/EZ Match and both Pick 3 sessions, then remaining wide/
 map/catalog/directory/detail/filter and request-failure checks. Completed Powerball
 opening and MFL source-return flows do not need repetition. No relevant new mail,
 deadline change or acceptance decision; scheduled refresh remains unverified.
+
+## October 5, 03:00 ET — native remaining report families
+
+Lotto+ October 3 selected natively with separate base and Plus rows, literal
+multiplier-tier prizes and reported winners. Cash 5 October 3 displays its four
+tiers and the separate EZ Match 1,105 players / $3,295 payout for the stated
+4:30 AM–11:59 PM period. Pick 3 October 4 Midday and October 3 Evening each
+retain their own dates, wager amounts, prizes and counts. Midday combination
+half-dollar cells explicitly show unavailable wagers/counts rather than zero.
+Private AX captures are retained in `work/colorado_native/`.
+
+All six report families have now been selected natively; completed selections
+and source-return flows do not need repetition. Next native wide view and map
+catalog/directory/winner detail/date-game-prize resets, request failure/reconnect,
+then consolidated acceptance. App remains on Pick 3 Evening. No relevant new
+mail, deadline change or acceptance decision; scheduled refresh remains unverified.
