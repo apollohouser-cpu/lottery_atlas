@@ -410,7 +410,8 @@
     "outputs": [
       "data/colorado_scratch_catalog.generated.json",
       "data/colorado_retailer_directory.generated.json",
-      "data/colorado_winner_activity.generated.json"
+      "data/colorado_winner_activity.generated.json",
+      "data/colorado_draw_reports.generated.json"
     ],
     "commands": [
       [
@@ -429,6 +430,11 @@
         "tooling/import_colorado_winners.mjs",
         "data/colorado_winner_activity.generated.json",
         "data/colorado_retailer_directory.generated.json"
+      ],
+      [
+        "node",
+        "tooling/import_colorado_draw_reports.mjs",
+        "data/colorado_draw_reports.generated.json"
       ]
     ]
   },

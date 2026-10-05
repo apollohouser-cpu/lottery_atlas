@@ -242,3 +242,21 @@ is clean. The ordinary macOS debug build passes; it has not yet been relaunched
 for native verification. Next four-output refresh/publication integration and
 endpoint verification, then integrated native acceptance. No new relevant mail,
 deadline change or acceptance decision.
+
+## October 5, 00:00 ET — four-output refresh/publication integration
+
+Colorado's scheduled state transaction now owns catalog, directory, selected
+winner rows and draw reports together. Publication copies the validated report
+asset to `docs/colorado_draw_reports.json` and includes both report files in the
+workflow's change detection and commit list. The staged endpoint contains the
+12-report bundled snapshot with its original retrieval/source dates.
+
+Seven transaction tests pass. The Colorado-specific case injects failure at each
+of the four configured import commands and verifies exact restoration of every
+baseline output, including dates. These simulated failures are validation
+evidence, not production source failures. No existing state transaction changed.
+
+Next verify deployment/endpoint bytes, then relaunch the ordinary build for native
+integrated acceptance. A successful push publication does not prove Colorado's
+scheduled four-output refresh; that checkpoint remains unverified until a scheduled
+run completes. No relevant new mail, deadline change or acceptance decision.
