@@ -370,3 +370,19 @@ request failure/reconnect. No generated data changed.
 One bounded October 4 Cash 5 source check still lacks EZ Match period data and
 fails the existing validator. Retained data stays unchanged; scheduled recovery
 remains open. No relevant new mail, deadline change or acceptance decision.
+
+## October 5, 06:00 ET — corrected Scratch disclosure and catalog native pass
+
+Relaunched the ordinary macOS build. The Colorado Scratch panel now visibly says
+selected retailer-matched records, including retained history, with unverified
+source-date meanings and remaining prizes not store stock. Its all-activity
+shortcut says selected records, not every claim. The official catalog action
+opens the loaded Colorado Scratch page with price filters, remaining top prizes,
+claim deadlines and game details. Returning preserves the expanded Scratch panel
+and October 5 source-date map view. Private AX evidence is retained under
+`work/colorado_native/`.
+
+Next native wide report view, winner source-date detail/source navigation,
+date/game/prize resets and request failure/reconnect. Catalog and directory
+checks are complete and need no repetition absent a defect. Scheduled Colorado
+refresh recovery remains open; no new agency mail, deadline change or acceptance.
