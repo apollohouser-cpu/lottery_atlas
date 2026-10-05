@@ -349,3 +349,24 @@ Next check the missing Cash 5 section in a bounded follow-up and verify the next
 scheduled complete transaction; preserve prior data until a complete validated
 replacement. Continue pending native wide/map/detail/filter/failure checks.
 No new relevant mail, deadline change or acceptance decision.
+
+## October 5, 05:00 ET — native directory and Scratch disclosure correction
+
+Native Colorado directory shows 3,047 locations. Searching AGUILAR MERCANTILE
+returns one location; detail shows 137 E Main St, Aguilar, CO 81020, Las Animas
+County and the directory-alone-does-not-create-a-heat-map-win disclaimer. Private
+AX evidence is retained. Returning preserves the selected retailer and source-date
+view. The app had been on the national map at session opening; navigation resumed
+from that actual state rather than assuming the previous report modal remained.
+
+Opening the Colorado Scratch shortcut exposed generic “every published claim”
+wording. Corrected it to selected retailer-matched winner records, including
+retained historical records, with source-date meanings explicitly unverified and
+remaining prizes not store stock. Changed-file analysis and ordinary macOS debug
+build pass. The updated build has not yet been relaunched; next verify this
+correction natively, then full catalog, wide view, winner detail/filters and
+request failure/reconnect. No generated data changed.
+
+One bounded October 4 Cash 5 source check still lacks EZ Match period data and
+fails the existing validator. Retained data stays unchanged; scheduled recovery
+remains open. No relevant new mail, deadline change or acceptance decision.

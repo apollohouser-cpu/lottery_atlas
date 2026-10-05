@@ -6150,9 +6150,11 @@ class _VerifiedStateScratchOffsPanel extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(12, 12, 12, 18),
                     children: [
                       Text(
-                        (stateName == 'Virginia' ||
-                                stateName == 'New York' ||
-                                stateName == 'Ohio')
+                        stateName == 'Colorado'
+                            ? 'Verified ticket snapshot. Remaining top prizes are not store stock. Select a ticket to focus selected retailer-matched winner records, including retained historical records, not complete statewide claims. Dates are source dates; draw, claim and publication date meanings are unverified.'
+                            : (stateName == 'Virginia' ||
+                                  stateName == 'New York' ||
+                                  stateName == 'Ohio')
                             ? 'Verified ticket snapshot. Remaining top prizes are not store stock. Select a ticket to focus selected winner releases, not complete statewide claims. Dates are publication dates.'
                             : 'Verified ticket snapshot. Remaining top prizes are not store stock. Select a ticket to focus published claim activity. Retailer locations appear only when an official winner feed provides them.',
                         style: const TextStyle(
@@ -6165,10 +6167,11 @@ class _VerifiedStateScratchOffsPanel extends StatelessWidget {
                       _ScratchOffMenuTile(
                         icon: Icons.layers_rounded,
                         title: 'All $stateName Scratch-Off activity',
-                        subtitle:
-                            (stateName == 'Virginia' ||
-                                stateName == 'New York' ||
-                                stateName == 'Ohio')
+                        subtitle: stateName == 'Colorado'
+                            ? 'Show selected Scratch-Off winner records'
+                            : (stateName == 'Virginia' ||
+                                  stateName == 'New York' ||
+                                  stateName == 'Ohio')
                             ? 'Show selected Scratch-Off winner releases'
                             : 'Show every published Scratch-Off claim',
                         isSelected: selectedGameName == null,
