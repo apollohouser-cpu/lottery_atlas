@@ -33,3 +33,13 @@ No claimant identifiers, guessed locations, paid processing or attestations.
 Next inspect attachment schemas and existing importer readiness, then reconcile
 full product scope. Seven accepted states remain closed. Receipt alone does not
 approve Oregon heat points or complete statewide counts. No agency reply sent.
+
+### October 5, 17:35 ET audit checkpoint
+
+The two original agency attachments are downloaded and privately audited for
+schema, footer rows, dates, privacy and candidate joins. See source screen.
+The filtered directory contains 3,690 business rows, including 494 video-only;
+coordinates are absent. Sales has 3,980 named dated rows and unresolved Total
+semantics; no winner/count conversion or public promotion. Private archive and
+unit/join definitions remain open, so the delivery-audit gate is not fully closed.
+Next full product scope and public directory reconciliation. Deadlines unchanged.

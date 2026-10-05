@@ -90,3 +90,49 @@ Sales and commissions are not winning-ticket or claim counts. Neither attachment
 name nor this response establishes delivery of all requested prize-tier counts,
 Scratch claims, winner joins, definitions or an update commitment. No new layer
 is approved by receipt alone. No acknowledgment or follow-up sent this session.
+
+## October 5, 17:35 ET — private attachment audit
+
+Both original XLSX attachments were downloaded into ignored private storage;
+byte sizes match the agency delivery. Read-only workbook audits leave originals
+unchanged. Neither workbook is promoted to a public feed.
+
+The retailer Export sheet has 3,690 business rows with unique account IDs,
+plus a total, blank row and applied-filter footer. The footer limits the export
+to active regular retailers and excludes an administrative account. This is a
+filtered roster, not proof of every possible account class. Of the business rows,
+1,521 have both traditional and video flags, 1,675 traditional only, and 494 video
+only: 3,196 traditional-enabled accounts and 2,015 video-enabled accounts.
+These are source flags, not observed inventory or winning activity. The workbook
+has no coordinates. Names and business location fields may support reconciliation
+with the official public locator, but positions must come from verified sources.
+
+The attachment also includes primary contact names/phones, shipping addresses,
+and parent-account fields. Keep those fields private and exclude them from public
+artifacts. Account IDs remain private join evidence unless independently verified
+as public locator identifiers. Do not copy full workbook rows into public tests.
+
+The sales Export sheet has 3,980 named dated rows, two additional dated rows
+without business identity, a blank row and a filter footer. The named rows span
+December 28, 2025 through September 26, 2026; the identity-less rows extend through
+October 2. The footer specifies business calendar year 2026, which must not be
+silently relabeled calendar-year-to-date. Per-row periods vary and none reverse.
+Eight game-sales columns and Total use dollar formatting, including fractional
+Pick 4 values and 11 negative numeric cells across named rows. These are monetary
+sales measures, never ticket/claim counts. The source's Total differs from the
+arithmetic sum of the eight displayed game columns on 3,205 named rows. Preserve
+source values privately; aggregation and adjustment semantics remain unresolved.
+
+Sales lacks retailer ID and street address. Exact normalized name/city/county
+matches find a unique active roster candidate for 3,650 sales rows, ambiguous
+candidates for 18, and no candidate for 312. The roster itself has 18 duplicate
+name/city/county keys. A unique text candidate is not an approved historical
+retailer join; no sales heat layer or winner layer is authorized by these matches.
+The private 2015-present archive remains unaudited. No email sent; broader claims,
+counts and repeatable delivery definitions remain separate open gaps.
+
+Next reconcile the full product scope and public locator schema, then implement
+an allowlisted directory with explicit traditional/video coverage and strict
+coordinate/identity validation. The old importer uses a minimum-row heuristic
+and calls its output complete; that assertion needs replacement with evidenced
+source coverage before app integration.
