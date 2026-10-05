@@ -386,3 +386,19 @@ Next native wide report view, winner source-date detail/source navigation,
 date/game/prize resets and request failure/reconnect. Catalog and directory
 checks are complete and need no repetition absent a defect. Scheduled Colorado
 refresh recovery remains open; no new agency mail, deadline change or acceptance.
+
+## October 5, 07:00 ET — native wide and source-date detail evidence
+
+Native report window expanded to 5120×2820. Powerball variant cards, limitations,
+retrieval/cadence and all five footer routes remain readable and reachable;
+standard window size was restored. Private wide AX evidence is retained.
+
+On the map, October 2 → Douglas → Castle Rock → 7-ELEVEN #39160A BCP TWIN STAR
+opens the Mega Millions $3,000 record at 1540 Lake Gulch Road. Detail correctly
+shows SOURCE DATE, October 2 and the explicit unverified draw/claim/publication
+semantics disclaimer. Native detail also exposes a remaining semantic defect:
+the single imported row is labelled WINNING TICKETS, despite distinct-ticket
+counts not being verified. Next correct Colorado count labels to reported records
+through detail/rankings, preserving all raw values, and verify natively before
+acceptance. Source open/return and filter/reset/failure checks remain pending.
+App is left on this detail. No agency mail, deadline change or acceptance.
