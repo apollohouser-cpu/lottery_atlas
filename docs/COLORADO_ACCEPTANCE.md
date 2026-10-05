@@ -311,3 +311,15 @@ and source-return flows do not need repetition. Next native wide view and map
 catalog/directory/winner detail/date-game-prize resets, request failure/reconnect,
 then consolidated acceptance. App remains on Pick 3 Evening. No relevant new
 mail, deadline change or acceptance decision; scheduled refresh remains unverified.
+
+### Scheduled refresh failure discovered at this checkpoint
+
+Scheduled run 37273805668 completed globally successfully, but bot commit a8c1079
+records Colorado `retained_after_failure` for the four-output transaction. All
+four Colorado source files are byte-identical to the preceding commit; no source
+or retrieval dates advanced. This is a Colorado refresh failure, not successful
+scheduled integration. Public Actions logs retrieval returned HTTP 403, so the
+failing importer and cause are not yet established. Next inspect authenticated
+logs if available or reproduce the configured commands against private baseline
+copies; keep validation intact and do not promote partial probes. Native work
+can continue independently. Deadline remains October 7, 14:15 ET.
