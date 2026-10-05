@@ -208,3 +208,20 @@ Live private import succeeded with 12 reports. Next bundle/cache/report UI,
 official scope routes and four-output refresh/publication integration, then native
 acceptance. No public reports promoted, new relevant mail, deadline change or
 acceptance decision.
+
+## October 4, 22:00 ET — bundled reports and validated loader
+
+Added the 12-report validated snapshot as a Flutter asset and a Colorado
+remote/cache/bundle loader. It preserves literal prizes, variants, annual sharing
+notes, Pick 3 unavailable cells and separate EZ Match units. The loader requires
+all six families, both Pick 3 sessions, exact dated official routes, unique
+report/tier identities, expected tier counts and valid dates/counts. Regressing
+remote session dates or malformed content cannot replace a valid cache.
+
+Four focused loader tests pass: exact remote data survives cache-write failure,
+request failure preserves cached data, corrupt cache uses the bundle, and invalid
+scope/units/tables/dates/annual notes cannot overwrite retained data. Changed-file
+analysis is clean after correcting one brace-style notice. No report navigation
+or public endpoint yet. Next report sheet and official scope routes, then refresh/
+publication transaction and native acceptance. No new relevant mail or deadline
+change; Colorado is not accepted.
