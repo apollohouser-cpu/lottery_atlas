@@ -31,9 +31,9 @@ export function parseColoradoDrawReport(game, html, sourceUrl) {
   if (headings.length !== 1 || headings[0] !== `${def.name} Drawing for ${new Date(date).toLocaleDateString('en-US', {weekday: 'long', timeZone: 'UTC'})}, ${m}/${d}/${String(y).slice(2)}`) throw Error('Mismatched Colorado heading/date');
   const tables = [...html.matchAll(/<table\b[^>]*>([\s\S]*?)<\/table>/gi)];
   if (game === 'powerball') return parsePowerballTables(html, tables, date, sourceUrl);
-  if (game === 'megamillions' && tables.length === 2) {
+  if (['megamillions', 'millionaireforlife'].includes(game) && tables.length === 2) {
     const preceding = [...html.slice(0,tables[1].index).matchAll(/<h2\b[^>]*>([\s\S]*?)<\/h2>/gi)];
-    if (!preceding.length || clean(preceding.at(-1)[1]) !== 'Out-of-State Jackpot Winners') throw Error('Unexpected Mega Millions extra table');
+    if (!preceding.length || clean(preceding.at(-1)[1]) !== 'Out-of-State Jackpot Winners') throw Error('Unexpected Colorado extra table');
     tables.pop();
   }
   if (tables.length !== 1) throw Error('Unexpected Colorado table count');

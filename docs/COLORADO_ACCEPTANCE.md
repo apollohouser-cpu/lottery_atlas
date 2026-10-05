@@ -323,3 +323,29 @@ failing importer and cause are not yet established. Next inspect authenticated
 logs if available or reproduce the configured commands against private baseline
 copies; keep validation intact and do not promote partial probes. Native work
 can continue independently. Deadline remains October 7, 14:15 ET.
+
+## October 5, 04:00 ET — bounded refresh reproduction and parser repair
+
+All four configured importers were run against private copies of their retained
+baselines. Catalog (90 games), directory (3,047 mapped retailers) and selected
+winners (1,164 rows, 6,899 exclusions) succeeded. Draw reports failed with
+`Unexpected Colorado table count`. Per-family capture isolates the live October 4
+Millionaire for Life page: its second table is explicitly Out-of-State Jackpot
+Winners (one Wyoming second-prize winner). The parser now excludes that explicitly
+labelled optional table, as already done for Mega Millions. The nine Colorado
+tiers and annual sharing notes remain strictly validated. Twelve parser/import
+tests pass, including rejection of an unknown second table or third table; the
+captured live MFL page parses nine Colorado rows without the Wyoming winner.
+
+The same bounded probe found a separate incomplete October 4 Cash 5 source:
+its four draw tiers are present, but EZ Match players, payout and period are
+absent. Existing validation continues to reject it. This is not evidence of zero
+EZ Match activity. No private outputs were promoted; the retained draw-report
+file is byte-identical after the failed import. The scheduled run's exact failing
+command remains unavailable from its logs; these are reproduced live causes,
+not a claim that both occurred in that run.
+
+Next check the missing Cash 5 section in a bounded follow-up and verify the next
+scheduled complete transaction; preserve prior data until a complete validated
+replacement. Continue pending native wide/map/detail/filter/failure checks.
+No new relevant mail, deadline change or acceptance decision.

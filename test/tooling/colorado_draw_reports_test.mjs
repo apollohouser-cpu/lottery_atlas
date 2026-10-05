@@ -28,6 +28,10 @@ test('Millionaire for Life preserves annual prizes and requires sharing limitati
  const html='<h1>Millionaire for Life Drawing for Saturday, 10/3/26</h1>'+table(names.map((n,i)=>row(n,'0',i<2?['$1,000,000 a year for life*','$100,000 a year for life**'][i]:'$8')).join('')).replaceAll('Winners','Colorado Winners').replaceAll('Prize','Amount')+'<small>*Divided by the number of winners</small><small>**If 21+ total winners, divided by the number of winners</small>';
  const r=parseColoradoDrawReport('millionaireforlife',html,url('millionaireforlife'));
  assert.equal(r.tiers.length,9);assert.equal(r.tiers[0].prizeLabel,'$1,000,000 a year for life*');assert.equal(r.prizeNotes.length,2);
+ const extra=html+'<h2>Out-of-State Jackpot Winners</h2><table><tr><td>999999</tr></table>';
+ assert.deepEqual(parseColoradoDrawReport('millionaireforlife',extra,url('millionaireforlife')),r);
+ assert.throws(()=>parseColoradoDrawReport('millionaireforlife',extra.replace('Out-of-State Jackpot Winners','National Winners'),url('millionaireforlife')));
+ assert.throws(()=>parseColoradoDrawReport('millionaireforlife',extra+table(row('extra')),url('millionaireforlife')));
  for(const altered of [html.replace('$1,000,000 a year for life*','$20,000,000'),html.replace('21+','22+'),html.replaceAll('Colorado Winners','National Winners')]) assert.throws(()=>parseColoradoDrawReport('millionaireforlife',altered,url('millionaireforlife')));
 });
 
