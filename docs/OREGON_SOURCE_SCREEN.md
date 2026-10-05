@@ -181,3 +181,49 @@ full scope closure. Next reconcile renderer tier labels, count units and date/ti
 provenance, inspect Keno and historical routes, then close the supported scope
 matrix before its existing October 6 deadline. Gmail check found no new messages;
 no reply, private attachment promotion or deadline change.
+
+## October 5, 19:38 ET — supported scope closed
+
+The product matrix above is the full supported scope for this release, closed
+before the October 6 checkpoint. Scope closure defines work and explicit gaps;
+it is not release acceptance. No further broad product research is required.
+
+Implement dated reports for six families: Powerball, current Mega Millions,
+Megabucks, Win for Life, Pick 4 and Cash Pop. Counts must be labeled source-reported
+Oregon winners, with distinct tickets/people unverified; no cross-tier total or
+retailer heat placement. Powerball's nine source prize rows may retain the
+published multiplier as context, but must not generate separate Power Play
+counts/awards. Megabucks preserves the seven renderer rows and shared prize
+amounts. Win for Life preserves the weekly top-prize wording. Pick 4 groups
+identical prize amounts as the renderer does without inventing wager labels.
+Current Mega Millions/Cash Pop are single aggregate winners/payout reports,
+not tier tables. All reports require finalized source records, draw identity,
+actual displayed date, retrieval provenance and continuity validation.
+
+Original API wall-clock strings are retained; they have no offset. Cash Pop's
+wrapper explicitly substitutes RoundedDrawDateTime for display. Other families
+use DrawDateTime, with time retained for Pick 4 sessions. Do not convert these
+values to synthetic UTC activity timestamps or claim a retrieval time is a draw.
+
+A bounded [Keno history](https://www.oregonlottery.org/keno/winning-numbers/)
+API request returned 344 October 4 records. The observed schema contains draw
+number/time, winning numbers, Bulls-Eye, multiplier and 8-spot bonus; it contains
+no winner-count or paid-prize fields. The bonus is not a paid total. This result
+is a bounded schema observation, not proof that no other records exist. Keno and
+its options remain official-source routes for this release, as do Raffle, Second
+Chance, Video Lottery, Sports and historical Lucky Lines. The verified
+[previous Mega Millions page](https://www.oregonlottery.org/mega-millions/mega-millions-winning-numbers-previous/)
+provides a separate historical route; do not mix that version with current reports.
+
+The catalog and a validated public-coordinate retailer directory remain release
+requirements. Agency sales/private archive audit is separate; no complete claims,
+sales-derived winning counts or fabricated winner locations will be included.
+Unsupported activity must be explicit in the app rather than represented as zero.
+
+Added strict current Mega Millions/Cash Pop aggregate parsers. They allowlist
+output fields, reject missing/invalid counts and money, reject nonfinal/version
+changes and historical MM, validate calendar/scheduled times, retain explicit
+zero, and leave winningTickets null. Three synthetic regression tests pass;
+private captured data yields one MM and 32 Cash Pop reports. No generated/public
+feed changed. Next implement the remaining four report parsers and continuity,
+then directory reconciliation and integration. Gmail found no new mail; no reply.

@@ -23,7 +23,7 @@ No claimant identifiers, guessed locations, paid processing or attestations.
 ## Acceptance gates
 
 - [ ] Private delivery audit: schemas, periods, privacy, units and retailer joins.
-- [ ] Full national/state draw, Scratch and other-product scope/gap matrix.
+- [x] Full national/state draw, Scratch and other-product scope/gap matrix (October 5, 19:38 ET).
 - [ ] Source date/count/remaining-prize semantics and preservation rules.
 - [ ] Supported report/catalog/directory/source integration and atomic refresh.
 - [ ] Native compact/wide, detail/source, filters/reset and failure/reconnect.
@@ -53,3 +53,14 @@ and Cash Pop renderer semantics are aggregate winners/payout despite jackpot-nam
 fields; Win for Life top prize is weekly, and Pick 4 groups equal prizes. Nothing
 promoted. Remaining renderer/unit/time/Keno audit precedes scope closure and
 strict parsers; directory reconciliation remains open. No deadline change.
+
+### October 5, 19:38 ET scope closure / first strict parsers
+
+Full supported scope is closed: six dated Oregon report families, Scratch catalog,
+validated directory and official routes for Keno/options, Raffle, Second Chance,
+Video, Sports and historical games. Source counts retain reported-winner units;
+unique tickets/people and complete claims remain unverified. Keno history schema
+has numbers/bonus but no count/payout fields. MM/CP strict parsers pass three tests
+and private captured-data validation. No public reports promoted; remaining four
+parsers, continuity, directory and app/native gates are unfinished. Release remains
+October 10 at 16:35 ET; scope checkpoint met early, no extension.
