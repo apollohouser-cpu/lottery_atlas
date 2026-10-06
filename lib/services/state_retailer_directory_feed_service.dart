@@ -27,6 +27,7 @@ class StateRetailerDirectoryFeedService {
     'data/new_york_retailer_directory.generated.json',
     'data/ohio_retailer_directory.generated.json',
     'data/colorado_retailer_directory.generated.json',
+    'data/oregon_retailer_directory.generated.json',
     'data/texas_retailer_directory.generated.json',
   ];
 

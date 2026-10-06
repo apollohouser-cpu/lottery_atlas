@@ -344,3 +344,18 @@ without layout exceptions; focused analysis is clean. This is widget integration
 not native acceptance. Directory flags/UI and publication transaction remain next.
 No new mail, email, deadline change or acceptance claim.
 Ordinary macOS debug build passes; it has not been relaunched for this sheet.
+
+### October 6, 01:41 ET — directory product integration
+
+Bundled the previously validated public-locator snapshot: 3,764 mapped entries,
+zero unresolved. Only the importer allowlist is promoted; agency workbook contact,
+shipping and private reconciliation data remain excluded. The shared retailer model
+now preserves all four explicit product flags through serialization; Oregon rows
+with missing or nonboolean flags reject instead of inferring offered products.
+The directory list and detail show source-listed draw/Keno/Scratch/Video products,
+including video-only and all-false entries, with stock and completeness warnings.
+Five model/snapshot tests pass, including every bundled row and invalid flag cases;
+four-file analysis is clean. This is bundled integration, not native acceptance
+or proof of the public combined feed. Publication transaction/report endpoint and
+native checks remain next. No new mail, email, deadline change or acceptance claim.
+Ordinary macOS debug build passes; not relaunched for directory acceptance.

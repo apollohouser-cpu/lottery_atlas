@@ -2178,6 +2178,14 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 address,
                 style: const TextStyle(color: Colors.white70, height: 1.35),
               ),
+              if (retailer.productSummary != null) ...[
+                const SizedBox(height: 12),
+                Text(
+                  '${retailer.productSummary}\n'
+                  'Source flags do not confirm current game or ticket stock.',
+                  style: const TextStyle(color: Colors.white70, height: 1.35),
+                ),
+              ],
               const SizedBox(height: 14),
               Container(
                 width: double.infinity,
@@ -3886,7 +3894,8 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                           const SizedBox(height: 4),
                           Text(
                             '${retailers.length} verified locations from the '
-                            'official state lottery directory.',
+                            'official state lottery directory.'
+                            '${stateName == 'Oregon' ? ' Product offerings vary by location; this is not a certified complete statewide list.' : ''}',
                             style: const TextStyle(color: Colors.white60),
                           ),
                           const SizedBox(height: 14),
@@ -3970,7 +3979,8 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                   ),
                                   subtitle: Text(
                                     '${retailer.address}\n${retailer.city}'
-                                    '${county == null ? '' : ' · $county'}',
+                                    '${county == null ? '' : ' · $county'}'
+                                    '${retailer.productSummary == null ? '' : '\n${retailer.productSummary}'}',
                                     style: const TextStyle(
                                       color: Colors.white60,
                                     ),

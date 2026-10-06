@@ -16,6 +16,10 @@ class StateRetailer {
     required this.postalCode,
     required this.location,
     this.county,
+    this.sellsVideo,
+    this.sellsDrawGames,
+    this.sellsKeno,
+    this.sellsInstant,
   });
 
   final String id;
@@ -26,6 +30,31 @@ class StateRetailer {
   final String postalCode;
   final LatLng location;
   final String? county;
+  final bool? sellsVideo;
+  final bool? sellsDrawGames;
+  final bool? sellsKeno;
+  final bool? sellsInstant;
+
+  /// Source flags describe offered products, never current ticket inventory.
+  String? get productSummary {
+    if ([
+      sellsVideo,
+      sellsDrawGames,
+      sellsKeno,
+      sellsInstant,
+    ].every((value) => value == null)) {
+      return null;
+    }
+    final products = <String>[
+      if (sellsDrawGames == true) 'Draw games',
+      if (sellsKeno == true) 'Keno',
+      if (sellsInstant == true) 'Scratch',
+      if (sellsVideo == true) 'Video Lottery',
+    ];
+    return products.isEmpty
+        ? 'No products flagged in the source'
+        : 'Source-listed products: ${products.join(' · ')}';
+  }
 
   String get stateAbbreviation =>
       allStates.firstWhere((state) => state.name == stateName).abbreviation;
@@ -40,6 +69,20 @@ class StateRetailer {
     final county = json['county']?.toString().trim();
     final latitude = _number(json['latitude']);
     final longitude = _number(json['longitude']);
+    final productFlags = <String, bool?>{};
+    for (final key in [
+      'sellsVideo',
+      'sellsDrawGames',
+      'sellsKeno',
+      'sellsInstant',
+    ]) {
+      final value = json[key];
+      if ((value != null && value is! bool) ||
+          (stateName == 'Oregon' && value is! bool)) {
+        throw const FormatException('Invalid retailer product flag.');
+      }
+      productFlags[key] = value as bool?;
+    }
     final knownState = allStates.any((state) => state.name == stateName);
 
     if (id.isEmpty ||
@@ -68,6 +111,10 @@ class StateRetailer {
       postalCode: postalCode,
       county: county == null || county.isEmpty ? null : county,
       location: LatLng(latitude, longitude),
+      sellsVideo: productFlags['sellsVideo'],
+      sellsDrawGames: productFlags['sellsDrawGames'],
+      sellsKeno: productFlags['sellsKeno'],
+      sellsInstant: productFlags['sellsInstant'],
     );
   }
 
@@ -79,6 +126,10 @@ class StateRetailer {
     'city': city,
     'postalCode': postalCode,
     if (county != null) 'county': county,
+    if (sellsVideo != null) 'sellsVideo': sellsVideo,
+    if (sellsDrawGames != null) 'sellsDrawGames': sellsDrawGames,
+    if (sellsKeno != null) 'sellsKeno': sellsKeno,
+    if (sellsInstant != null) 'sellsInstant': sellsInstant,
     'latitude': location.latitude,
     'longitude': location.longitude,
   };
