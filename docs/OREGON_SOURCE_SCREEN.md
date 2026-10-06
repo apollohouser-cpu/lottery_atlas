@@ -426,3 +426,16 @@ Next remaining session selection, compact/wide, catalog/directory product flags,
 and request failure/reconnect. App is left on Cash Pop 07:00. Scheduled Oregon
 three-output checkpoint and mobile preparation remain open. No Gmail, email,
 deadline change or Oregon acceptance.
+
+## October 6, 08:00 ET — correspondence follow-through
+
+The overlapping agency-mail search found only the already-recorded October 5
+delivery. Current thread history contained that delivery and no reply; the search
+included Sent mail. Sent-confirmed acknowledgment now thanks the agency for both
+workbooks and the archive link, explicitly stating that archive review is pending.
+A bounded clarification requests existing documentation for Total, business-calendar
+periods and negative adjustments, and identifies the original draw-tier/Scratch
+claim records still sought or asks for their location in the archive. No new
+analysis, custom reports, fees or paid search are authorized. Await the response;
+no new delivery, promised date, source definition or coverage approval is implied.
+Private check/Sent evidence is retained under work/agency_email_checks.
