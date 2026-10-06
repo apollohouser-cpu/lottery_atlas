@@ -202,3 +202,24 @@ Next remaining session selection, compact/wide, catalog/directory product flags,
 and request failure/reconnect. App is left on Cash Pop 07:00. Scheduled Oregon
 three-output checkpoint and mobile preparation remain open. No Gmail, email,
 deadline change or Oregon acceptance.
+
+### October 6, 08:49 ET — Pick 4 sessions and wide report layout
+
+Native selection verified the remaining Pick 4 sessions: October 5 16:00 draw
+36668, October 4 19:00 draw 36665 and October 4 22:00 draw 36666. Together with
+prior 13:00 evidence, all four session types have been exercised. The evening
+reports keep their actual older source dates instead of borrowing the October 5
+afternoon date. Grouped source-row prizes and unverified distinct-ticket/person
+warnings remain present. No claim of all 48 native selections is made.
+
+Expanded the native window to 5120×2820 and inspected the centered report layout,
+all eleven grouped prize rows, source-unit limitations and retrieval/cadence.
+Scrolling reaches all eight product/history routes. Restored the original window
+size afterward; selection remains Pick 4 October 4 22:00. Private screenshots
+and text are retained in work/oregon_native. Existing automated compact/wide
+coverage remains separate from mobile device acceptance.
+
+Next catalog/directory product-flag interactions, request failure/reconnect,
+and scheduled three-output verification. Oregon is not yet accepted, and its
+October 10 deadline is unchanged. No Gmail check or email in this development run;
+the separate 08:00 correspondence check acknowledged Oregon and awaits clarification.
