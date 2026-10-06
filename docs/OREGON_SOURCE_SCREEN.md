@@ -382,3 +382,23 @@ run 37423476045 used ae9bab6, before three-output wiring, so it does not establi
 scheduled Oregon transaction success. Next native opening/navigation/selection,
 product flags and source/coverage acceptance; scheduled checkpoint remains open.
 No Gmail check or deadline change; Oregon is not yet accepted.
+
+### October 6, 06:47 ET — native opening and initial reports
+
+Restarted the ordinary macOS debug app and navigated Find a State → Oregon →
+OR Lottery → Oregon draw reports. The map shows 3,764 directory entries and the
+explicit no-published-claim-locations explanation. Powerball October 3 draw 4249
+shows nine prize rows, multiplier 2 as context, unknown distinct ticket/person
+counts and unavailable publication date. Footer retrieval is October 6,
+01:41:25.829 UTC, with bounded-query cadence and separate product/source routes.
+Mega Millions October 2 draw 1724 displays 2,696 reported winners and $51,967.00
+aggregate payout, explicitly not jackpot winners or tier detail. Win for Life
+October 3 draw 4011 shows seven source rows and $1,000 a week for life, with no
+invented cash equivalent or unverified match labels. Visual opening layout and
+AX content agree; private screenshot/text evidence is in work/oregon_native.
+
+Next remaining Megabucks/Pick 4/Cash Pop selections, official-source open/return,
+compact/wide review, catalog/directory flags and failure/reconnect. The app is left
+on Win for Life. Do not repeat the completed opening route. Scheduled three-output
+checkpoint remains open; no complete Oregon/native/mobile acceptance is claimed.
+No Gmail, email, deadline change or new user action.
