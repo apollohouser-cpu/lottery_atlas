@@ -19,7 +19,7 @@ coverage. Track each state's acceptance and unavailable features explicitly.
 
 Proceed with mobile beta preparation while continuing the national rollout one
 active state at a time. Oregon retains its October 10, 16:35 ET deadline. Beta
-preparation is shared platform work, not activation of a second state. Next platform
+preparation is shared platform work, not activation of a second state. See MOBILE_BETA_READINESS.md for the platform audit and checklist. Next platform
 step: audit iOS/Android release builds, device testing, app identifiers, signing,
 distribution-account readiness, privacy/support materials and tester onboarding.
 Fix launch-blocking issues and prepare signed beta artifacts where existing
