@@ -90,3 +90,18 @@ four agency-only, so no completeness claim. Strict allowlisted atomic importer
 and three tests pass; source product flags remain distinct, private contacts and
 shipping excluded. Validated output remains private pending model/UI integration.
 Next report bundle/cache and directory integration; no deadline change.
+
+### October 5, 23:39 ET — report bundle/cache loader
+
+Added the validated 48-report public-source snapshot as a Flutter asset and an
+Oregon-specific remote/cache/bundle loader. Validation requires all six families,
+two reports per each of 24 game/session groups, source date/time consistency,
+unique draw identities, increasing draw numbers and verified source routes.
+Aggregate dollars/counts remain separate from tier prizes; lifetime top prize
+keeps its weekly label/null cash equivalent, and winningTickets remains null.
+Invalid payloads or regressions cannot overwrite retained cache; remote/persistence
+failure falls back without inventing dates. Four loader tests pass and focused
+analysis is clean. No report UI navigation or public endpoint is wired yet.
+Directory product-flag model/UI integration is still pending. Next report sheet
+and directory integration, then publication transaction/native acceptance. No
+new mail, email, deadline change or acceptance claim.
