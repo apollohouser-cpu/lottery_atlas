@@ -1,0 +1,45 @@
+# Missouri supported-coverage acceptance
+
+Activated **October 6, 2026 at 16:00 ET** as the sole active state after Oregon.
+Supported scope/gap matrix due **October 7 at 16:00 ET**; release decision due
+**October 11 at 16:00 ET** (120 hours). Not accepted. Although a single-game
+import works, broader report, catalog and directory integration is substantial;
+this is a fresh window, not Oregon's deadline.
+
+## Selection and opening evidence
+
+The October 6 scheduled refresh validated Show Me Cash through October 5:
+2,117,553 source winning tickets across its four reported tiers since January 1.
+This excludes every other draw game and Scratchers and verifies no selling
+retailer. Four importer regression checks pass at activation. Existing source
+screens retain a detailed September Scratcher audit and an agency retailer
+workbook delivery whose private contents remain unaudited; neither is a fresh
+approved catalog/directory. No counts or positions are promoted on activation.
+
+The live official home page and Scratch list were reopened October 6. Initial
+roster includes Powerball/Power Play/Double Play, Powerball Xs & Os, Mega Millions,
+MO Millions/Bulls-Eye/Double Play, Show Me Cash, Pick 3/4 with Wild Ball, Cash Pop,
+Club Keno/options, Scratchers, Pull-Tabs and promotions. Historical/replaced games
+also require a bounded source check. This is an opening roster, not scope closure.
+Current listing includes September 28 additions, so the prior 71-game September
+catalog audit is not a current count. Advertised annuity/cash and estimated
+unclaimed units must stay literal until verified; no synthetic claim dates.
+
+## Acceptance gates
+
+- [ ] Full national/state/Scratch/other-product scope and explicit gaps.
+- [ ] Source dates, tier units, composite counts, overlap and literal prizes.
+- [ ] Strict current catalog/report imports and continuity/preservation checks.
+- [ ] Directory private audit or validated public locator; no guessed positions.
+- [ ] Bundle/cache/UI/source routes with honest unsupported-feature labels.
+- [ ] Transactional refresh, live publication and native adoption.
+- [ ] Native compact/wide, source return, filters and request-failure recovery.
+- [ ] Automated checks, ordinary build and supported release decision.
+
+Next refresh the full product/source matrix and implement the catalog from
+revalidated public pages, then integrate supported draw reports and directory.
+Read MISSOURI_SOURCE_SCREEN.md for unresolved source/agency questions. Missing
+agency definitions do not block usable supported app coverage; unknown totals
+remain unknown and private records stay excluded until audited. No Gmail, email,
+fee authorization or human attestation in this activation. No mobile beta release
+is claimed; shared platform preparation continues independently.

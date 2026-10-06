@@ -214,3 +214,18 @@ Missouri catalog or claim activity was published.
 ## September 23 agency response — reviewed September 24
 
 Jay Boresi emailed an active retailer workbook September 23 (All Active Retailers (19).xlsx). Attachment presence is verified, but its contents have not yet been downloaded or audited in this pass; do not count it as an inspected delivery or publish coordinates. He says the previously linked draw spreadsheets update at least daily; remaining questions are still being researched. Queue private workbook audit independently of Texas acceptance.
+
+## October 6, 16:00 ET — supported-state activation
+
+Missouri is now the sole active state. Release decision October 11 at 16:00 ET;
+full supported scope October 7 at 16:00 ET. See MISSOURI_ACCEPTANCE.md. Four
+Show Me Cash importer checks pass; scheduled source period is through October 5
+with 2,117,553 game-only winning tickets. This does not expand coverage.
+
+Reopened the [official home page](https://www.molottery.com/) and
+[Scratchers list](https://www.molottery.com/scratchers-list.do). Current navigation
+adds Powerball Xs & Os and includes MO Millions, Cash Pop, Keno/options and
+Pull-Tabs alongside national games, Pick 3/4, Show Me Cash, Scratchers and
+promotions. The live Scratch listing has September 28 additions; do not reuse
+September's 71 as a current count. Source scope/semantics and a fresh strict
+catalog remain next. No new agency mail, private-data promotion or acceptance.
