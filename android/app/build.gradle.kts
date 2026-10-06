@@ -1,7 +1,31 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+}
+
+
+// Upload credentials are local-only; never fall back to a debug-signed release.
+val uploadProperties = Properties()
+val uploadPropertiesFile = rootProject.file("key.properties")
+if (uploadPropertiesFile.isFile) {
+    uploadPropertiesFile.inputStream().use { uploadProperties.load(it) }
+}
+val uploadFields = listOf("storeFile", "storePassword", "keyAlias", "keyPassword")
+val uploadConfigured = uploadFields.all {
+    !uploadProperties.getProperty(it).isNullOrBlank()
+}
+if (gradle.startParameter.taskNames.any { it.contains("release", ignoreCase = true) }) {
+    check(uploadConfigured) {
+        "Release signing requires private android/key.properties. " +
+            "Copy key.properties.example and configure an existing upload key; " +
+            "debug builds remain available."
+    }
+    check(file(uploadProperties.getProperty("storeFile")).isFile) {
+        "The configured upload keystore does not exist."
+    }
 }
 
 android {
@@ -25,11 +49,20 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (uploadConfigured) {
+            create("release") {
+                storeFile = file(uploadProperties.getProperty("storeFile"))
+                storePassword = uploadProperties.getProperty("storePassword")
+                keyAlias = uploadProperties.getProperty("keyAlias")
+                keyPassword = uploadProperties.getProperty("keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = if (uploadConfigured) signingConfigs.getByName("release") else null
         }
     }
 }

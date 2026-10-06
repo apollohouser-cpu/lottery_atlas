@@ -148,3 +148,13 @@ Scheduled three-output success and deployed endpoint bytes remain unverified;
 push is not deployment proof. Next verify publication and then native integrated
 acceptance. Mobile beta signing/device work remains separate in
 MOBILE_BETA_READINESS.md. No Gmail check, email, deadline change or acceptance.
+
+### October 6, 05:46 ET — deployed reports and directory verified
+
+Push publisher 37438482092 succeeded. Independent downloads of Oregon's report
+endpoint and combined retailer feed exactly match the committed bytes: 48 reports
+and the 3,764-entry public directory are deployed. The latest listed scheduled
+run 37423476045 used ae9bab6, before three-output wiring, so it does not establish
+scheduled Oregon transaction success. Next native opening/navigation/selection,
+product flags and source/coverage acceptance; scheduled checkpoint remains open.
+No Gmail check or deadline change; Oregon is not yet accepted.

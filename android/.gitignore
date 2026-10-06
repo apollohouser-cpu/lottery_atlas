@@ -12,3 +12,7 @@ GeneratedPluginRegistrant.java
 key.properties
 **/*.keystore
 **/*.jks
+
+# Local Gradle/Kotlin intermediates (including failed signing configuration).
+/.kotlin/
+/build/

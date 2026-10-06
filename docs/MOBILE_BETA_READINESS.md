@@ -66,3 +66,16 @@ SDK license. No new license consent was submitted. Logs remain private in work/.
 Both platform compilation gates now pass; signing and phone interaction gates
 remain open. Next: replace the Android debug-release signing configuration and
 prepare simulator/device smoke testing, while advancing Oregon publication.
+
+## Android signing configuration — October 6, 05:46 ET
+
+Removed the template debug-key fallback for release. Gradle reads the ignored
+android/key.properties only when populated; key.properties.example contains blank
+fields and documents private storage. Explicit release tasks require all four
+fields and an existing keystore. No identity, key or password was generated.
+The missing-credentials release check fails with the intended actionable message,
+without leaking values. This is the expected guard, not a source compilation
+regression. The earlier successful AAB is debug-signed and must not be distributed
+as a beta release. Signed-path verification awaits actual existing credentials;
+independent mobile preparation continues before requesting account intervention.
+Android debug APK build passes with credentials absent, confirming local testing remains available.
