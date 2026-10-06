@@ -402,3 +402,27 @@ compact/wide review, catalog/directory flags and failure/reconnect. The app is l
 on Win for Life. Do not repeat the completed opening route. Scheduled three-output
 checkpoint remains open; no complete Oregon/native/mobile acceptance is claimed.
 No Gmail, email, deadline change or new user action.
+
+### October 6, 07:48 ET — remaining native report families and source return
+
+Native Megabucks October 3 draw 5509 displays seven source prize rows, including
+$3.9 million with zero reported winners and the published shared lower prizes.
+Pick 4 October 5 13:00 draw 36667 displays equal-prize groups with source-row
+references, preserving session time without invented wager labels. Cash Pop
+October 5 07:00 draw 10081 displays 25 reported winners and $2,439.00 aggregate
+payout, explicitly not jackpot winners or a tier breakdown. All six families have
+now been selected natively; this is not a claim that all 48 selections or every
+session has been exercised natively.
+
+The Cash Pop source link opened the loaded official winning-numbers page. Its
+October 5 07:00 draw 10081 row expanded to 25 winners and $2,439, matching the app.
+Returning to the ordinary app retained the selected draw, aggregate disclaimer
+and retrieval 2026-10-06T01:41:25.829Z. The source page is a history page, not an
+automatic deep link to the selected draw. Native link activation required a visual
+mouse click after AX reported the link offscreen; no accessibility certification
+is implied. Private evidence is in work/oregon_native.
+
+Next remaining session selection, compact/wide, catalog/directory product flags,
+and request failure/reconnect. App is left on Cash Pop 07:00. Scheduled Oregon
+three-output checkpoint and mobile preparation remain open. No Gmail, email,
+deadline change or Oregon acceptance.
