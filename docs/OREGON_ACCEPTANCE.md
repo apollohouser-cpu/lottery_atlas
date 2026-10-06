@@ -295,3 +295,13 @@ new changes. No Gmail/email, deadline change or Oregon acceptance.
 
 Ordinary macOS debug build passed, the private probe process was closed and the
 ordinary app was relaunched. No probe flag or tracked probe code remains.
+
+### October 6, 13:55 ET — publication checkpoint and parallel beta preparation
+
+One bounded check still lists scheduled run 37423476045 on ae9bab6; no scheduled
+three-output success is yet established. Native and automated gates already
+recorded were not repeated. Used the independent platform interval to build the
+iOS simulator app successfully and prepare the mobile acceptance sequence in
+MOBILE_BETA_READINESS.md. Oregon remains the sole active state with the same
+release deadline. Next scheduled publication/newer remote adoption and release
+decision; no Gmail, email, new data promotion or acceptance.

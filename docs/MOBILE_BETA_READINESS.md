@@ -79,3 +79,36 @@ regression. The earlier successful AAB is debug-signed and must not be distribut
 as a beta release. Signed-path verification awaits actual existing credentials;
 independent mobile preparation continues before requesting account intervention.
 Android debug APK build passes with credentials absent, confirming local testing remains available.
+
+## Mobile acceptance preparation — October 6, 13:55 ET
+
+The iOS debug simulator build passed (Xcode phase 30.6 seconds), producing
+build/ios/iphonesimulator/Runner.app independently of store signing. Available
+local test targets include iPhone 17e, iPhone 17 Pro Max and iPad mini on iOS 26.5;
+all were shut down at inventory. No physical-device or simulator interaction pass
+is inferred from availability. Android debug APK remains available for emulator
+or physical-device installation; a release key is not needed for local smoke work.
+
+Use the following bounded mobile acceptance sequence on a smaller phone and a
+larger phone/tablet, recording OS, app commit, orientation and actual screenshots:
+
+1. Cold launch; inspect safe areas, bottom navigation and map controls. Select an
+   accepted state through Find a State with the keyboard open, then dismiss it.
+2. Open a state report, switch game/session, scroll to source limitations and
+   retrieval dates, open an official source and return. Verify data remains legible
+   at the device's default text size and an enlarged accessibility text setting.
+3. Search a retailer, inspect address and product/coverage limitations, save it to
+   Favorites, relaunch and verify persistence, then remove the test favorite.
+4. Apply game/date/prize filters and reset them. Verify a supported populated case
+   and an explicitly scoped empty case without implying zero statewide winners.
+5. Exercise retained feeds during controlled request failure, restore requests and
+   reopen. Record newer-snapshot adoption only when a genuinely newer feed appears.
+   Do not equate this with offline map tiles or OS-wide offline support.
+6. Inspect portrait/landscape behavior, long names, report selectors and external
+   source return; record crashes, overflow, inaccessible controls and launch delays.
+
+Preliminary code inventory: favorite games and report caches use shared_preferences;
+report downloads use the project's GitHub Pages host and map tiles use ArcGIS.
+This is evidence for a later complete privacy audit, not a “no data collected”
+claim or finished store declaration. Network-provider handling, all outbound
+routes, support contact, privacy page, icons and tester instructions remain open.
