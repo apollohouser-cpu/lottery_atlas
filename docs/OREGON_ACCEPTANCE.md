@@ -241,3 +241,21 @@ notes. Full external catalog loading has not been verified in this run and remai
 next, followed by request failure/reconnect and scheduled three-output verification.
 No new source data, email, deadline change or acceptance. Mobile beta work remains
 separate; no device acceptance is inferred from these desktop interactions.
+
+### October 6, 10:52 ET — catalog route defect fixed
+
+Native catalog verification identified a concrete routing defect: the Scratch
+shortcut opened Oregon's home page because the state source registry contained
+only the general lottery resource. Added the already-audited official Scratch-it
+list resource. Focused analysis is clean and the ordinary macOS debug build passes.
+Relaunched that build and used the map Scratch shortcut to open the correct
+/scratch-its/list/ page. The loaded official table shows games, prices, top prizes,
+unclaimed counts, status selection and pagination, plus the daily-update and
+unclaimed-not-redeemed definition. Private loaded-page evidence is retained under
+work/oregon_native. This closes the catalog destination defect; no generated data
+or validation was changed.
+
+One bounded scheduled-run check still lists 37423476045 on ae9bab6 as latest,
+which predates Oregon three-output wiring. Scheduled verification remains open;
+no success inferred from push. Next request failure/reconnect and consolidated
+release checks. Oregon is not accepted; its deadline is unchanged. No Gmail/email.

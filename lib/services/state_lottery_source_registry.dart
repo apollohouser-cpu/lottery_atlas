@@ -625,6 +625,12 @@ class StateLotterySourceRegistry {
           subtitle: 'Official Oregon Lottery results, games, and player tools.',
           url: 'https://www.oregonlottery.org/',
         ),
+        StateLotteryResource(
+          title: 'Oregon Scratch-its catalog',
+          subtitle:
+              'Official Scratch-it games and unclaimed prizes, not store stock.',
+          url: 'https://www.oregonlottery.org/scratch-its/list/',
+        ),
       ],
     ),
     'Washington': StateLotterySource(
