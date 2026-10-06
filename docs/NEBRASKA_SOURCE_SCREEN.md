@@ -187,3 +187,14 @@ fields are acceptable; no new report or paid work is authorized. Sent reply
 ## October 3 correspondence follow-through
 
 October 2 agency message 1a0fe3f9f58ad1e1 delivered Active_Retailers.xlsx (65,036 bytes), explaining that the retailer search is affected by the website backend transition and that remaining requested information requires customized reporting. Acknowledged receipt and explicitly declined custom reporting or fee-bearing work. Contents remain unaudited; no new public data or positions. Remaining requested report is not a promised delivery. Gmail confirmed sent in the existing thread: 1a1008e44fd0b5a4.
+
+## October 6, 15:03 ET — receipt acknowledgment
+
+The agency thanked the requester for confirming receipt, identified the employee
+responsible for the response and cited Neb. Rev. Stat. §84-712.03 regarding review
+rights. This records the agency's notice, not an independent legal interpretation
+or an instruction to seek review. Current thread history confirms the October 3
+acknowledgment was sent. No new records, question, fee, deadline or promised
+follow-up was supplied, so no duplicate reply was sent. The retailer workbook
+remains pending private audit; custom reporting remains declined and is not an
+expected delivery. Private check evidence is retained in work/agency_email_checks.
