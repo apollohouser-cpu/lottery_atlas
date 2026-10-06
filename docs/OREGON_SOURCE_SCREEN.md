@@ -254,3 +254,31 @@ to 11 distinct prize amounts; this is a report grouping, not a claim count.
 No source/public generated feeds changed. Next bounded live selection, duplicate
 and per-session date/draw continuity checks, and atomic report import. Directory
 reconciliation and app integration follow. No new Gmail, email or deadline change.
+
+## October 5, 21:39 ET — bounded live report import
+
+Added the six-source atomic report importer. It requests a bounded 14-day window
+through the already observed official endpoint, rejects responses reaching the
+1,000-row cap, validates every returned row, and selects the latest two finalized
+reports per game/session. This yields 48 reports: two each for PB/MM/Megabucks/Win
+for Life, two for each of four Pick 4 times and two for each of 16 Cash Pop times.
+A partial newer day may coexist with the actual prior date for other sessions;
+missing sessions are never zero-filled or silently removed.
+
+Duplicate draw IDs/date-session slots, non-increasing draw numbers, regressed
+per-session dates/numbers and changed retained draw identities fail closed.
+All six source fetches and validation finish before the temporary file is renamed;
+source failures leave prior bytes and retrieval date untouched. Corrupt retained
+JSON also stops rather than being silently discarded. Private live import passes
+with all 48 reports; no report file was promoted or wired to publication yet.
+
+The wider live window exposed one legitimate shared-prize case in Megabucks:
+September 28 has a published zero prize with zero winners for one expected row.
+The captured official renderer explicitly displays only positive prize amounts.
+The parser now omits that exact zero/zero row while preserving source ordinal
+positions; missing/non-numeric values, nonzero counts against zero prize, and
+populated unknown padding still reject. This is a verified source variant, not
+an exemption for missing data. Eight focused tests pass, including failure at
+each source with byte retention, duplicate/session/regression/identity failures,
+and this zero shared-prize case. Next public directory reconciliation/validation,
+then report bundle/cache and UI integration. No new mail or email sent.

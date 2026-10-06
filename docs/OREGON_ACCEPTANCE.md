@@ -72,3 +72,12 @@ Six focused tests pass. PB9/Megabucks7/WinForLife7 source rows and Pick4 equal-p
 groups preserve reported units; lifetime top prize has no invented cash value.
 Unverified match/wager labels remain null. No public promotion. Next live bounded
 selection/continuity/atomic importer, then directory/cache/UI/native acceptance.
+
+### October 5, 21:39 ET live importer checkpoint
+
+Bounded six-source atomic importer privately validates 48 reports, two per each
+supported game/session. Eight tests pass including source failure byte retention
+and date/draw/session/identity continuity. Wider Megabucks history verified an
+explicit zero-prize/zero-count row omitted by the official renderer; parser now
+matches it while rejecting missing/inconsistent data. No publication integration
+or public promotion yet. Next directory reconciliation and report bundle/cache/UI.

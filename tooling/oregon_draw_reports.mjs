@@ -84,7 +84,7 @@ export function parseOregonTiers(selector, row) {
   const expected = {pb: 9, mb: 7, wf: 7, p4: 17}[selector];
   for (let i = 0; i < 17; i++) {
     // Padding is verified, not silently dropped. A new populated tier needs audit.
-    if (i < expected ? amounts[i] <= 0 : amounts[i] !== 0 || counts[i] !== 0) {
+    if (i < expected ? amounts[i] === 0 && counts[i] !== 0 : amounts[i] !== 0 || counts[i] !== 0) {
       throw Error('Unexpected Oregon prize tier or padding');
     }
   }
@@ -95,6 +95,7 @@ export function parseOregonTiers(selector, row) {
   if (selector === 'p4') {
     const grouped = new Map();
     amounts.forEach((amount, i) => {
+      if (amount === 0) return; // Official renderer omits zero-prize/zero-count rows.
       const cents = Math.round(amount * 100);
       const group = grouped.get(cents) ?? {prizeDollars: amount, reportedWinners: 0, sourceRows: []};
       group.reportedWinners = count(group.reportedWinners + counts[i]);
@@ -109,8 +110,9 @@ export function parseOregonTiers(selector, row) {
       prizeDollars: selector === 'wf' && i === 0 ? null : amount,
       prizeText: selector === 'wf' && i === 0 ? '$1,000 a week for life' : `$${amount.toLocaleString('en-US')}`,
       match: selector === 'pb' ? powerballMatches[i] : null,
-    }));
+    })).filter((tier, i) => amounts[i] > 0);
   }
+  if (!tiers.length) throw Error('Missing Oregon published prize rows');
   return {...report, tiers, multiplier: selector === 'pb' ? row.Multiplier : null,
     limitations: 'Source-reported Oregon prize rows, not distinct tickets or people. No cross-tier total, retailer allocation or complete claims coverage. Power Play overlap is not separately allocated; shared prizes and lifetime prizes retain source meaning. Unverified match/wager labels are omitted.'};
 }

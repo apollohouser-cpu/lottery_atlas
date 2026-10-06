@@ -92,3 +92,54 @@ test('unfinalized, historical, invalid dates and mismatched schedules fail close
   }
   assert.throws(() => parseOregonAggregate('pb', row));
 });
+
+import {mkdtemp, readFile, writeFile, rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {refreshOregonReports, oregonReportGames} from '../../tooling/import_oregon_draw_reports.mjs';
+function history(game) {
+  const times = game === 'cp' ? Array.from({length: 16}, (_, i) => i + 7) : game === 'p4' ? [13, 16, 19, 22] : [19];
+  return [3, 4].flatMap(day => times.map((hour, i) => ({...(['mm', 'cp'].includes(game) ? row : tierRow(game)),
+    DrawNumber: day * 100 + i, DrawDateTime: `2026-10-0${day}T${String(hour).padStart(2, '0')}:00:00`,
+    RoundedDrawDateTime: `2026-10-0${day}T${String(hour).padStart(2, '0')}:00:00`})));
+}
+test('atomic six-source refresh preserves every session and baseline bytes on each failure', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'oregon-reports-')); const file = join(dir, 'reports.json');
+  try {
+    const data = await refreshOregonReports(file, async game => history(game));
+    assert.equal(data.reports.length, 48);
+    const baseline = await readFile(file, 'utf8');
+    for (const failed of oregonReportGames) {
+      await assert.rejects(refreshOregonReports(file, async game => {
+        if (game === failed) throw Error('Source failed');
+        return history(game);
+      }));
+      assert.equal(await readFile(file, 'utf8'), baseline);
+    }
+    for (const change of ['missing-session', 'duplicate', 'date-regression', 'draw-regression', 'changed-identity']) {
+      await assert.rejects(refreshOregonReports(file, async game => {
+        const rows = history(game);
+        if (game !== 'p4') return rows;
+        if (change === 'missing-session') return rows.filter(r => !r.DrawDateTime.includes('13:00'));
+        if (change === 'duplicate') rows.push({...rows[0]});
+        if (change === 'date-regression') for (const r of rows) {r.DrawDateTime = r.DrawDateTime.replace('10-04', '10-02');}
+        if (change === 'draw-regression') for (const r of rows) r.DrawNumber -= 100;
+        if (change === 'changed-identity') for (const r of rows) r.DrawNumber += 1;
+        return rows;
+      }));
+      assert.equal(await readFile(file, 'utf8'), baseline);
+    }
+    await writeFile(file, '{broken');
+    await assert.rejects(refreshOregonReports(file, async game => history(game)));
+    assert.equal(await readFile(file, 'utf8'), '{broken');
+  } finally { await rm(dir, {recursive: true, force: true}); }
+});
+
+test('zero shared-prize/zero-count source row is omitted as renderer does; inconsistent rows fail', () => {
+  const mb = tierRow('mb'); mb.ShareAmounts[1] = 0; mb.OregonShareCounts[1] = 0;
+  const r = parseOregonTiers('mb', mb);
+  assert.equal(r.tiers.length, 6);
+  assert.deepEqual(r.tiers.map(t => t.sourceRows[0]), [1, 2, 4, 5, 6, 7]);
+  mb.OregonShareCounts[1] = 1;
+  assert.throws(() => parseOregonTiers('mb', mb));
+});
