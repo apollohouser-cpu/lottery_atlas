@@ -43,3 +43,16 @@ agency definitions do not block usable supported app coverage; unknown totals
 remain unknown and private records stay excluded until audited. No Gmail, email,
 fee authorization or human attestation in this activation. No mobile beta release
 is claimed; shared platform preparation continues independently.
+
+### October 6, 17:00 ET — current inventory parser preparation
+
+Strict inventory parser added with two passing focused tests. Fresh private
+captures validate 73 games / 868 tiers and identity/price/date/top-tier agreement;
+25 listed end dates retained. Advertised prizes remain literal and sourceDate
+null; no inferred cash value, claim totals or retailer stock. No public integration
+yet. Draw source pages identify base/add-on/session units, but direct dated report
+HTML ends prematurely despite HTTP success; cached zero reports are not trusted
+as finalized data. Preserve existing feeds and resolve retrieval before promotion.
+Next finish product/history/options scope and dated-report validation, then atomic
+catalog import and integration. Scope deadline October 7 and release October 11
+at 16:00 ET unchanged. No Gmail/email and Missouri not accepted.

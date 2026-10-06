@@ -229,3 +229,41 @@ Pull-Tabs alongside national games, Pick 3/4, Show Me Cash, Scratchers and
 promotions. The live Scratch listing has September 28 additions; do not reuse
 September's 71 as a current count. Source scope/semantics and a fresh strict
 catalog remain next. No new agency mail, private-data promotion or acceptance.
+
+## October 6, 17:00 ET — fresh catalog validation and draw-report audit
+
+Fresh public Scratch listing/detail captures in private work/missouri_scope
+validate 73 main-grid games and 868 prize tiers, with 25 announced end dates.
+Featured cards are excluded from enumeration. Identity, ticket price, start/end
+dates, listed top tiers and full detail inventory agree. All 73 detail pages
+state daily updates; a distinct inventory verification date remains unavailable.
+The new strict parser retains literal advertised prizes and null source dates.
+It does not derive immediate cash options, claim dates, stock or claimed totals.
+Two focused tests pass, including malformed/missing counts, impossible inventory,
+identity/date mismatch, changed columns, missing cadence and duplicate main-grid
+games. All 73 captured details validate privately. No app feed promoted yet.
+
+The [Powerball dated report](https://www.molottery.com/powerball/prizes-paid.do?date=2026-10-03)
+labels separate Missouri base and Power Play columns and separate totals, plus a
+Double Play table. This supplies a stronger interpretation route than splitting
+workbook composite strings without labels. Keep Double Play separate and do not
+assert distinct people or cross-draw ticket identity.
+
+The [Mega Millions report](https://www.molottery.com/mega-millions/prizes-paid.do?date=2026-10-02)
+uses prize ranges and literal Jackpot; cached extraction showed zeros that are
+not accepted as finalized data. Direct curl retrieval of dated draw detail pages
+returned incomplete HTML ending at the specific-draw block, despite HTTP success.
+Python urllib received 403, while curl loaded index/catalog pages. These are
+retrieval observations, not proof of absent reports or zero winners. Raw bytes
+and URLs are private; no existing feed was overwritten. Next resolve dated
+report retrieval/encoding and validate source completion before any promotion.
+
+The [MO Millions source](https://www.molottery.com/mo-millions/winning-numbers.do)
+includes Bulls-Eye, Double Play and EZ Match; [Show Me Cash rules](https://www.molottery.com/show-me-cash/show-me-cash-rules.jsp)
+also include EZ Match. The [Cash Pop source](https://www.molottery.com/cash-pop/winning-numbers.do)
+separates five sessions. Pick 3/4 preserve Midday/Evening and Wild Ball.
+[Club Keno](https://www.molottery.com/check-my-tickets/clubkeno.jsp) and
+[Pull-Tabs](https://www.molottery.com/pull-tabs/pull-tabs.jsp) need separate source
+routes and unit checks; neither can be silently folded into Scratch counts.
+Historical Lotto/Cash4Life and promotion routes remain in the scope audit.
+Scope is not yet closed. No Gmail, email, fee, deadline change or acceptance.
