@@ -276,3 +276,22 @@ that checkpoint remains unverified. Do not repeat consolidated suites absent a
 new code change or failure. Next perform the bounded native request-failure and
 reconnect exercise, restore the ordinary build, then finish scheduled/live release
 verification. No data promotion, Gmail, email, deadline change or acceptance.
+
+### October 6, 12:55 ET — native request failure and reconnect
+
+A private Dart HttpOverrides probe routed requests to an unavailable localhost
+proxy while a private flag existed. Under this request-failure condition the
+ordinary app flow still showed the 3,764-entry Oregon directory and opened the
+retained Powerball October 3 draw 4249 report, nine prize rows, multiplier 2 and
+retrieval 2026-10-06T01:41:25.829Z. Source-unit limitations remained intact. Removing
+the flag and reopening the sheet again loaded that same current snapshot. Private
+AX/screenshot evidence is in work/oregon_native. This verifies fallback/reopening,
+not adoption of a newer remote snapshot, OS-wide offline use or offline map tiles.
+
+The private flag was removed; ordinary-build restoration is recorded below after
+completion. Scheduled three-output publication remains the outstanding integration
+checkpoint; consolidated suites already passed and need not be repeated without
+new changes. No Gmail/email, deadline change or Oregon acceptance.
+
+Ordinary macOS debug build passed, the private probe process was closed and the
+ordinary app was relaunched. No probe flag or tracked probe code remains.
