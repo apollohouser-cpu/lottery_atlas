@@ -532,3 +532,14 @@ new changes. No Gmail/email, deadline change or Oregon acceptance.
 
 Ordinary macOS debug build passed, the private probe process was closed and the
 ordinary app was relaunched. No probe flag or tracked probe code remains.
+
+### October 6, 15:01 ET — scheduled publication and supported acceptance
+
+Scheduled run 37510964387 / bot 52d6eb6 updated all three Oregon outputs. Public
+report, combined catalog, combined directory and refresh-status bytes match.
+Current supported snapshot: 51 Scratch games, 3,763 mapped public retailers, zero
+unresolved, 48 reports. Native ordinary build adopted report retrieval
+2026-10-06T18:28:50.167Z and October 5 Powerball draw 4250; ordinary restart adopted
+the new directory count. See OREGON_ACCEPTANCE.md for acceptance and limitations.
+No agency sales/archive/contacts or unapproved joins were promoted. Outstanding
+agency clarification remains future enrichment; no new correspondence this run.

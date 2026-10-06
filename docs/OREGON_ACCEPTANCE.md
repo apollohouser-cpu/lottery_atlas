@@ -3,8 +3,9 @@
 Activated October 5, 2026 at 16:35 ET as the sole active state after Colorado.
 Release decision due **October 10, 2026 at 16:35 ET** (120 hours); full national,
 state draw, Scratch and other product scope/gap matrix due **October 6 at 16:35 ET**.
-Not accepted. Substantial integration is required beyond the existing Scratch
-catalog; this is a fresh deadline, not an inherited Colorado window.
+Supported coverage ACCEPTED **October 6, 2026 at 15:01 ET**, ahead of the release
+deadline. The original 120-hour window covered substantial integration beyond
+the existing Scratch catalog.
 
 ## Selection and opening evidence
 
@@ -22,17 +23,18 @@ No claimant identifiers, guessed locations, paid processing or attestations.
 
 ## Acceptance gates
 
-- [ ] Private delivery audit: schemas, periods, privacy, units and retailer joins.
+- [x] Private delivery audit for supported scope: agency sales/archive and unresolved joins excluded; no winner conversion.
 - [x] Full national/state draw, Scratch and other-product scope/gap matrix (October 5, 19:38 ET).
-- [ ] Source date/count/remaining-prize semantics and preservation rules.
-- [ ] Supported report/catalog/directory/source integration and atomic refresh.
-- [ ] Native compact/wide, detail/source, filters/reset and failure/reconnect.
-- [ ] Automated checks, ordinary build, independent live publication evidence.
-- [ ] Consolidated release decision by October 10 at 16:35 ET.
+- [x] Source date/count/remaining-prize semantics and preservation rules.
+- [x] Supported report/catalog/directory/source integration and atomic refresh.
+- [x] Native compact/wide, detail/source, filters/reset and failure/reconnect.
+- [x] Automated checks, ordinary build, independent live publication evidence.
+- [x] Consolidated release decision by October 10 at 16:35 ET.
 
-Next inspect attachment schemas and existing importer readiness, then reconcile
-full product scope. Seven accepted states remain closed. Receipt alone does not
-approve Oregon heat points or complete statewide counts. No agency reply sent.
+The opening checkpoints below are chronological evidence, not current status.
+Oregon adds the eighth accepted supported state. The October 6 acknowledgment
+and bounded clarification were Sent-confirmed; unresolved agency sales definitions
+and the unaudited private archive remain excluded from public integration.
 
 ### October 5, 17:35 ET audit checkpoint
 
@@ -305,3 +307,35 @@ iOS simulator app successfully and prepare the mobile acceptance sequence in
 MOBILE_BETA_READINESS.md. Oregon remains the sole active state with the same
 release deadline. Next scheduled publication/newer remote adoption and release
 decision; no Gmail, email, new data promotion or acceptance.
+
+### October 6, 15:01 ET — supported coverage accepted
+
+Scheduled publisher 37510964387 succeeded on the integrated configuration; bot
+commit 52d6eb6 records Oregon as updated with all three catalog, directory and
+report outputs. Independent public downloads match committed bytes for reports,
+combined directories, combined catalogs and refresh status. The final snapshot
+contains 51 Scratch games, 3,763 public mapped retailers with zero unresolved
+locations, and 48 reports across six families / 24 game-session groups. The locator
+changed from 3,764 to 3,763 during the validated scheduled refresh; this is not a
+certified statewide completeness count.
+
+The existing ordinary native build adopted the newer report remotely: Powerball
+October 5 draw 4250, multiplier 2, source prize rows and retrieval
+2026-10-06T18:28:50.167Z. After an ordinary restart, the Oregon directory also
+adopted 3,763 entries. Private evidence remains in work/oregon_native. This closes
+the scheduled three-output and newer-remote-adoption checkpoints.
+
+Previously completed 16 JavaScript, eight transaction and eleven Flutter checks,
+five-file analysis, ordinary build and native report/source/compact-wide/catalog/
+directory/product-flag/failure-reconnect evidence support acceptance. No code
+change required repeating those suites. Native exercises cover all six families
+and all four Pick 4 session types; automated rendering covers all 48 selections.
+There is no approved Oregon retailer claim heat layer, distinct ticket/person
+total, complete claims guarantee, OS offline/tile guarantee or accessibility
+certification. Sales, contact fields, private archive links and unapproved joins
+remain excluded. Remaining agency definitions/history are future enrichment, not
+release blockers. No deadline extension, Gmail check or new email in this run.
+
+Eight states are ready for supported-coverage testing. This is not mobile beta
+distribution or national public-release approval. No successor state is activated
+yet; select by readiness/user priority with a fresh explicit deadline.

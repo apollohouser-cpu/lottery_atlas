@@ -7,7 +7,7 @@ state source-screen documents retain the detailed evidence and request history.
 
 The user authorizes proceeding toward iOS and Android beta testing with currently
 validated coverage. Full public release requires a usable, accepted supported
-experience in every U.S. state that operates a state lottery. Seven accepted
+experience in every U.S. state that operates a state lottery. Eight accepted
 states are sufficient to start beta preparation, not to declare national readiness.
 A ten-year timeline and deeper historical data remain future updates.
 
@@ -18,7 +18,7 @@ counts. An unimplemented state or placeholder source link alone is not accepted
 coverage. Track each state's acceptance and unavailable features explicitly.
 
 Proceed with mobile beta preparation while continuing the national rollout one
-active state at a time. Oregon retains its October 10, 16:35 ET deadline. Beta
+active state at a time. Oregon was accepted October 6 at 15:01 ET, ahead of its October 10 deadline. Beta
 preparation is shared platform work, not activation of a second state. See MOBILE_BETA_READINESS.md for the platform audit and checklist. Next platform
 step: audit iOS/Android release builds, device testing, app identifiers, signing,
 distribution-account readiness, privacy/support materials and tester onboarding.
@@ -48,7 +48,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
 | South Carolina | Accepted October 1, 2026, 7:02 PM ET (due October 3, 5:03 PM) | Supported available coverage accepted; broader claims remain separate. |
 | New York | Accepted October 3, 2026, 6:12 PM ET (due October 5, 7:00 PM ET) | Supported available coverage closed; complete statewide claims remain separate. |
-| Oregon | October 10, 2026, 4:35 PM ET | Active October 5, 4:35 PM ET; scope due October 6, 4:35 PM ET. |
+| Oregon | October 10, 2026, 4:35 PM ET | Accepted October 6, 3:01 PM ET; scope closed October 5. |
 | Colorado | Accepted October 5, 2026, 3:33 PM ET (due October 7, 2:15 PM ET) | Supported coverage closed; broader records remain separate. |
 | Ohio | Accepted October 4, 2026, 1:14 PM ET (due October 6, 7:12 PM ET) | Supported available coverage closed; broader records remain separate. |
 | Virginia | Accepted October 2, 2026, 6:02 PM ET (due October 4, 7:02 PM) | Supported available coverage closed; complete statewide claims remain separate. |
@@ -94,11 +94,13 @@ available coverage. Virginia closed October 2 at 18:02 ET; see
 VIRGINIA_ACCEPTANCE.md for the consolidated release evidence and limitations.
 New York closed October 3, 2026 at 18:12 ET; see NEW_YORK_ACCEPTANCE.md.
 Ohio closed October 4, 2026 at 13:14 ET; see OHIO_ACCEPTANCE.md.
-All seven accepted states are ready for supported-coverage user testing. Colorado
-closed October 5 at 15:33 ET; see COLORADO_ACCEPTANCE.md. Oregon is the sole
-active state from October 5 at 16:35 ET, selected on new agency delivery and
-existing catalog readiness. Substantial integration uses a fresh 120-hour window:
-release October 10 at 16:35 ET; scope October 6 at 16:35 ET. See OREGON_ACCEPTANCE.md.
+All eight accepted states are ready for supported-coverage user testing. Colorado
+closed October 5 at 15:33 ET; see COLORADO_ACCEPTANCE.md. Oregon closed October 6
+at 15:01 ET, ahead of October 10 at 16:35 ET; see OREGON_ACCEPTANCE.md. Its scheduled
+three-output refresh and newer native remote adoption are verified. No successor
+is active. Select next by readiness/current user priority and activate with a fresh
+72-hour working-import or 120-hour substantial-integration deadline, scope within
+24 hours. Mobile beta preparation and the national forecast remain open.
 Continue authorized private records audits and no-fee correspondence separately.
 The NE/TX and SC scheduled recovery checkpoints are closed. No routine accepted-
 state UI rechecks or fees are authorized.
