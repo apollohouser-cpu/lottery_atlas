@@ -105,3 +105,18 @@ analysis is clean. No report UI navigation or public endpoint is wired yet.
 Directory product-flag model/UI integration is still pending. Next report sheet
 and directory integration, then publication transaction/native acceptance. No
 new mail, email, deadline change or acceptance claim.
+
+### October 6, 00:40 ET — report sheet integration
+
+Oregon's state-source screen now opens the 48-report sheet. Each selection shows
+its actual source draw date/time and number, source-reported winner units, distinct
+ticket/person uncertainty, retrieval time and cadence. MM/Cash Pop show aggregate
+payout dollars; other games show literal prize rows, weekly lifetime wording,
+source-row grouping and multiplier context without synthesized allocations.
+Eight separate official product/historical routes cover Keno/options, Scratch,
+Second Chance, Raffle, Video, Sports, Lucky Lines and previous Mega Millions.
+Both compact and wide widget tests render all 48 reports and reach the footer
+without layout exceptions; focused analysis is clean. This is widget integration,
+not native acceptance. Directory flags/UI and publication transaction remain next.
+No new mail, email, deadline change or acceptance claim.
+Ordinary macOS debug build passes; it has not been relaunched for this sheet.
