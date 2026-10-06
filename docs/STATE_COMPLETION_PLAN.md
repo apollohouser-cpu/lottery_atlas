@@ -3,6 +3,39 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
+## Beta and national public release — approved October 6, 2026
+
+The user authorizes proceeding toward iOS and Android beta testing with currently
+validated coverage. Full public release requires a usable, accepted supported
+experience in every U.S. state that operates a state lottery. Seven accepted
+states are sufficient to start beta preparation, not to declare national readiness.
+A ten-year timeline and deeper historical data remain future updates.
+
+National coverage means usable supported features for each lottery state, with
+verified sources and explicit local limitations under the existing completion
+standard. It does not mean invented complete claims, retailer joins or winner
+counts. An unimplemented state or placeholder source link alone is not accepted
+coverage. Track each state's acceptance and unavailable features explicitly.
+
+Proceed with mobile beta preparation while continuing the national rollout one
+active state at a time. Oregon retains its October 10, 16:35 ET deadline. Beta
+preparation is shared platform work, not activation of a second state. Next platform
+step: audit iOS/Android release builds, device testing, app identifiers, signing,
+distribution-account readiness, privacy/support materials and tester onboarding.
+Fix launch-blocking issues and prepare signed beta artifacts where existing
+credentials allow. No fees or enrollment purchases are authorized; surface actual
+account/signing blockers after completing independent preparation.
+
+The previously discussed October 20–27 window is a provisional beta planning
+estimate only, subject to the mobile audit. It is not a national public-release
+commitment. Establish a national forecast after a remaining-state readiness audit;
+continue publishing supported state updates during beta. Public release requires
+national acceptance plus mobile stability, release packaging and applicable store
+submission readiness. Store approval is separate from engineering completion.
+
+Routine correspondence checks run separately at 8 AM, 3 PM and 10 PM Eastern.
+Hourly development should not duplicate them absent a concrete urgent dependency.
+
 ## Completion deadlines — approved September 25
 
 These rules supersede open-ended development and repeated acceptance passes.

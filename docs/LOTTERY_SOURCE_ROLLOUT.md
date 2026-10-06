@@ -1,5 +1,14 @@
 # Lottery Atlas source rollout
 
+## Public release scope — October 6, 2026
+
+The user requires supported national coverage across every U.S. lottery state
+before full public release. iOS and Android beta testing may proceed with the
+validated states while the remaining states are completed. Historical expansion,
+including a ten-year timeline, can follow in updates. Supported app completion
+and complete claims data remain distinct under the standard below. See
+STATE_COMPLETION_PLAN.md for beta preparation and deadline rules.
+
 ## Acceptance rule
 
 The current collection and launch target is January 1, 2026 through each
