@@ -460,3 +460,21 @@ Next catalog/directory product-flag interactions, request failure/reconnect,
 and scheduled three-output verification. Oregon is not yet accepted, and its
 October 10 deadline is unchanged. No Gmail check or email in this development run;
 the separate 08:00 correspondence check acknowledged Oregon and awaits clarification.
+
+### October 6, 09:51 ET — native retailer product flags
+
+The Oregon directory displays 3,764 locations with its explicit uncertified-
+completeness warning. Search for Omar's returns one result; its list and detail
+show Video Lottery only at the published Ashland business address, with no invented
+Draw, Keno or Scratch offering. Search for Pilot Travel Center #390 returns one
+result; list and detail preserve all four false source flags as “No products flagged
+in the source.” Both details retain the current-stock limitation and explain that
+a directory listing alone does not create a heat-map win. Private screenshots are
+in work/oregon_native. Closing detail returns to the map with the no-published-
+Oregon-claim-locations explanation and no verified activity in the selected scope.
+
+The Scratch shortcut exposes the dated bundled inventory and unclaimed/not-stock
+notes. Full external catalog loading has not been verified in this run and remains
+next, followed by request failure/reconnect and scheduled three-output verification.
+No new source data, email, deadline change or acceptance. Mobile beta work remains
+separate; no device acceptance is inferred from these desktop interactions.
