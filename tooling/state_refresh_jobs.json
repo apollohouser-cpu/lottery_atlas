@@ -210,13 +210,25 @@
   {
     "state": "Oregon",
     "outputs": [
-      "data/oregon_scratch_catalog.generated.json"
+      "data/oregon_scratch_catalog.generated.json",
+      "data/oregon_retailer_directory.generated.json",
+      "data/oregon_draw_reports.generated.json"
     ],
     "commands": [
       [
         "node",
         "tooling/import_oregon_scratch_catalog.mjs",
         "data/oregon_scratch_catalog.generated.json"
+      ],
+      [
+        "node",
+        "tooling/import_oregon_retailer_directory.mjs",
+        "data/oregon_retailer_directory.generated.json"
+      ],
+      [
+        "node",
+        "tooling/import_oregon_draw_reports.mjs",
+        "data/oregon_draw_reports.generated.json"
       ]
     ]
   },

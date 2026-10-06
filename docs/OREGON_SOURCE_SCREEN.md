@@ -359,3 +359,16 @@ four-file analysis is clean. This is bundled integration, not native acceptance
 or proof of the public combined feed. Publication transaction/report endpoint and
 native checks remain next. No new mail, email, deadline change or acceptance claim.
 Ordinary macOS debug build passes; not relaunched for directory acceptance.
+
+### October 6, 04:46 ET — three-output publication integration
+
+Oregon refresh now owns catalog, public retailer directory and draw reports in one
+state transaction. Any importer failure restores all three prior files and dates;
+eight transaction tests pass, including simulated failure at each configured Oregon
+command. Publisher stages the 48-report endpoint and includes the 3,764-entry
+public directory in the combined feed. All existing state directory content is
+unchanged in a separate comparison. Only allowlisted public-source data is staged.
+Scheduled three-output success and deployed endpoint bytes remain unverified;
+push is not deployment proof. Next verify publication and then native integrated
+acceptance. Mobile beta signing/device work remains separate in
+MOBILE_BETA_READINESS.md. No Gmail check, email, deadline change or acceptance.
