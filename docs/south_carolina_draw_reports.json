@@ -1,6 +1,6 @@
 {
   "state": "SC",
-  "retrievedAt": "2026-10-05T18:54:06.681391+00:00",
+  "retrievedAt": "2026-10-06T06:44:09.243578+00:00",
   "coverage": "Recent official SC statewide reports for all seven supported draw games, with variants and sessions preserved. Not retailer claims.",
   "reports": [
     {
@@ -583,6 +583,54 @@
     },
     {
       "gameName": "Palmetto Cash 5",
+      "drawDate": "2026-10-05",
+      "drawingSession": null,
+      "sourceUrl": "https://www.sceducationlottery.com/Games/PalmettoCash5",
+      "sourcePublicationDate": null,
+      "headers": [
+        "Match",
+        "Prizes",
+        "Winners",
+        "Total"
+      ],
+      "tiers": [
+        [
+          "Match 5",
+          "Jackpot",
+          "0",
+          "0"
+        ],
+        [
+          "Match 4",
+          "$300",
+          "10",
+          "10"
+        ],
+        [
+          "Match 3",
+          "$5",
+          "506",
+          "506"
+        ],
+        [
+          "Match 2",
+          "$1",
+          "6,407",
+          "6,407"
+        ]
+      ],
+      "reportedTotals": [
+        "Total Winning Tickets",
+        "",
+        "6,923",
+        "6,923"
+      ],
+      "reportedWinners": 6923,
+      "reportedPayout": null,
+      "tableNote": "Source-listed tier amounts retained. Multiplier distribution and exact payout are not supplied; winner and total columns are not added together. Statewide only; no retailer or county allocation. Do not add to claim counts."
+    },
+    {
+      "gameName": "Palmetto Cash 5",
       "drawDate": "2026-10-04",
       "drawingSession": null,
       "sourceUrl": "https://www.sceducationlottery.com/Games/PalmettoCash5",
@@ -726,52 +774,25 @@
       "tableNote": "Source-listed tier amounts retained. Multiplier distribution and exact payout are not supplied; winner and total columns are not added together. Statewide only; no retailer or county allocation. Do not add to claim counts."
     },
     {
-      "gameName": "Palmetto Cash 5",
-      "drawDate": "2026-10-01",
-      "drawingSession": null,
-      "sourceUrl": "https://www.sceducationlottery.com/Games/PalmettoCash5",
+      "gameName": "CASH POP",
+      "drawDate": "2026-10-05",
+      "drawingSession": "Evening",
+      "sourceUrl": "https://www.sceducationlottery.com/Games/CashPOP",
       "sourcePublicationDate": null,
       "headers": [
-        "Match",
-        "Prizes",
-        "Winners",
-        "Total"
+        "Scope",
+        "Reported winners",
+        "Reported payout"
       ],
-      "tiers": [
-        [
-          "Match 5",
-          "Jackpot",
-          "0",
-          "0"
-        ],
-        [
-          "Match 4",
-          "$300",
-          "15",
-          "15"
-        ],
-        [
-          "Match 3",
-          "$5",
-          "517",
-          "517"
-        ],
-        [
-          "Match 2",
-          "$1",
-          "6,319",
-          "6,319"
-        ]
-      ],
+      "tiers": [],
       "reportedTotals": [
-        "Total Winning Tickets",
-        "",
-        "6,851",
-        "6,851"
+        "Session total",
+        "2,351",
+        "$87,701.00"
       ],
-      "reportedWinners": 6851,
-      "reportedPayout": null,
-      "tableNote": "Source-listed tier amounts retained. Multiplier distribution and exact payout are not supplied; winner and total columns are not added together. Statewide only; no retailer or county allocation. Do not add to claim counts."
+      "reportedWinners": 2351,
+      "reportedPayout": 87701.0,
+      "tableNote": "Official statewide session totals only; no actual prize-tier breakdown or retailer allocation. Odds tables are not winner counts. Do not add to claim records."
     },
     {
       "gameName": "CASH POP",
@@ -879,25 +900,98 @@
       "tableNote": "Official statewide session totals only; no actual prize-tier breakdown or retailer allocation. Odds tables are not winner counts. Do not add to claim records."
     },
     {
-      "gameName": "CASH POP",
-      "drawDate": "2026-10-02",
-      "drawingSession": "Midday",
-      "sourceUrl": "https://www.sceducationlottery.com/Games/CashPOP",
+      "gameName": "Powerball",
+      "drawDate": "2026-10-05",
+      "drawingSession": null,
+      "sourceUrl": "https://www.sceducationlottery.com/Games/Powerball",
       "sourcePublicationDate": null,
       "headers": [
-        "Scope",
-        "Reported winners",
-        "Reported payout"
+        "Match",
+        "Powerball\u00ae Winners Without PowerPlay\u00ae",
+        "Powerball\u00ae Winners with PowerPlay\u00ae (x2)",
+        "Double Play\u00ae Winners",
+        "Total Winners"
       ],
-      "tiers": [],
+      "tiers": [
+        [
+          "Jackpot(Match 5 + Powerball\u00ae)",
+          "0",
+          "--",
+          "0",
+          "0"
+        ],
+        [
+          "Match 5",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Match 4 + Powerball\u00ae",
+          "1",
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "Match 4",
+          "4",
+          "3",
+          "1",
+          "8"
+        ],
+        [
+          "Match 3 + Powerball\u00ae",
+          "5",
+          "10",
+          "1",
+          "16"
+        ],
+        [
+          "Match 3",
+          "225",
+          "169",
+          "107",
+          "501"
+        ],
+        [
+          "Match 2 + Powerball\u00ae",
+          "192",
+          "143",
+          "67",
+          "402"
+        ],
+        [
+          "Match 1 + Powerball\u00ae",
+          "1,400",
+          "957",
+          "579",
+          "2,936"
+        ],
+        [
+          "Match Powerball\u00ae Only",
+          "3,328",
+          "2,373",
+          "1,356",
+          "7,057"
+        ]
+      ],
       "reportedTotals": [
-        "Session total",
-        "4,855",
-        "$198,981.00"
+        "Total Winning Tickets",
+        "5,155",
+        "3,655",
+        "2,111",
+        "10,921"
       ],
-      "reportedWinners": 4855,
-      "reportedPayout": 198981.0,
-      "tableNote": "Official statewide session totals only; no actual prize-tier breakdown or retailer allocation. Odds tables are not winner counts. Do not add to claim records."
+      "reportedWinners": 10921,
+      "reportedPayout": null,
+      "tableNote": "Base play, Power Play and Double Play are separate source columns. The published combined total includes Double Play; it is not a base Powerball-only count. Jackpot Power Play dash means not applicable. Exact payout is not supplied. Statewide only; no retailer or county allocation. Do not add to claim counts.",
+      "variantWinners": {
+        "base": 5155,
+        "powerPlay": 3655,
+        "doublePlay": 2111
+      }
     },
     {
       "gameName": "Powerball",
@@ -1276,97 +1370,107 @@
       }
     },
     {
-      "gameName": "Powerball",
-      "drawDate": "2026-09-23",
-      "drawingSession": null,
-      "sourceUrl": "https://www.sceducationlottery.com/Games/Powerball",
+      "gameName": "Pick 3 Plus FIREBALL",
+      "drawDate": "2026-10-05",
+      "drawingSession": "Evening",
+      "sourceUrl": "https://www.sceducationlottery.com/Games/Pick3",
       "sourcePublicationDate": null,
       "headers": [
-        "Match",
-        "Powerball\u00ae Winners Without PowerPlay\u00ae",
-        "Powerball\u00ae Winners with PowerPlay\u00ae (x5)",
-        "Double Play\u00ae Winners",
-        "Total Winners"
+        "Play Type",
+        "Base Game Winners",
+        "Base Game Odds",
+        "Fireball Winners",
+        "Fireball Odds",
+        "Total"
       ],
       "tiers": [
         [
-          "Jackpot(Match 5 + Powerball\u00ae)",
-          "0",
-          "--",
-          "0",
-          "0"
-        ],
-        [
-          "Match 5",
-          "0",
-          "0",
-          "0",
-          "0"
-        ],
-        [
-          "Match 4 + Powerball\u00ae",
-          "0",
-          "0",
-          "0",
-          "0"
-        ],
-        [
-          "Match 4",
-          "2",
-          "5",
-          "3",
-          "10"
-        ],
-        [
-          "Match 3 + Powerball\u00ae",
-          "12",
-          "5",
+          "Straight",
+          "192",
+          "1 in 1,000",
           "4",
-          "21"
+          "1 in 333",
+          "196"
         ],
         [
-          "Match 3",
-          "290",
-          "202",
-          "156",
-          "648"
+          "3-Way Box",
+          "0",
+          "1 in 333",
+          "111",
+          "1 in 122",
+          "111"
         ],
         [
-          "Match 2 + Powerball\u00ae",
-          "194",
-          "140",
-          "97",
-          "431"
+          "6-Way Box",
+          "880",
+          "1 in 167",
+          "63",
+          "1 in 62",
+          "943"
         ],
         [
-          "Match 1 + Powerball\u00ae",
-          "1,428",
-          "992",
-          "630",
-          "3,050"
+          "Straight/Box 3-Way",
+          "0",
+          "1 in 333",
+          "44",
+          "1 in 122",
+          "44"
         ],
         [
-          "Match Powerball\u00ae Only",
-          "3,431",
-          "2,403",
-          "1,379",
-          "7,213"
+          "Straight/Box 6-Way",
+          "168",
+          "1 in 167",
+          "9",
+          "1 in 62",
+          "177"
+        ],
+        [
+          "3-Way Combo",
+          "0",
+          "1 in 333",
+          "24",
+          "1 in 122",
+          "24"
+        ],
+        [
+          "6-Way Combo",
+          "74",
+          "1 in 167",
+          "2",
+          "1 in 62",
+          "76"
+        ],
+        [
+          "Front Pair",
+          "10",
+          "1 in 100",
+          "12",
+          "1 in 36",
+          "22"
+        ],
+        [
+          "Back Pair",
+          "5",
+          "1 in 100",
+          "0",
+          "1 in 36",
+          "5"
         ]
       ],
       "reportedTotals": [
-        "Total Winning Tickets",
-        "5,357",
-        "3,747",
-        "2,269",
-        "11,373"
+        "Total",
+        "1,329",
+        "",
+        "269",
+        "",
+        "1,598"
       ],
-      "reportedWinners": 11373,
+      "reportedWinners": 1598,
       "reportedPayout": null,
-      "tableNote": "Base play, Power Play and Double Play are separate source columns. The published combined total includes Double Play; it is not a base Powerball-only count. Jackpot Power Play dash means not applicable. Exact payout is not supplied. Statewide only; no retailer or county allocation. Do not add to claim counts.",
+      "tableNote": "Source winner counts are based on 50-cent wagers, not verified distinct tickets. Base and FIREBALL counts are separate; odds are not prize amounts. Payout is not supplied. Statewide only; no retailer or county allocation. Do not add to claim counts.",
       "variantWinners": {
-        "base": 5357,
-        "powerPlay": 3747,
-        "doublePlay": 2269
+        "base": 1329,
+        "fireball": 269
       }
     },
     {
@@ -1890,10 +1994,10 @@
       }
     },
     {
-      "gameName": "Pick 3 Plus FIREBALL",
-      "drawDate": "2026-10-02",
-      "drawingSession": "Midday",
-      "sourceUrl": "https://www.sceducationlottery.com/Games/Pick3",
+      "gameName": "Pick 4 Plus FIREBALL",
+      "drawDate": "2026-10-05",
+      "drawingSession": "Evening",
+      "sourceUrl": "https://www.sceducationlottery.com/Games/Pick4",
       "sourcePublicationDate": null,
       "headers": [
         "Play Type",
@@ -1906,91 +2010,123 @@
       "tiers": [
         [
           "Straight",
-          "116",
-          "1 in 1,000",
-          "5",
-          "1 in 333",
-          "121"
+          "0",
+          "1 in 10,000",
+          "0",
+          "1 in 2,500",
+          "0"
         ],
         [
-          "3-Way Box",
+          "4-Way Box",
           "0",
-          "1 in 333",
+          "1 in 2,500",
           "0",
-          "1 in 122",
+          "1 in 699",
           "0"
         ],
         [
           "6-Way Box",
-          "905",
-          "1 in 167",
-          "257",
-          "1 in 62",
-          "1,162"
+          "0",
+          "1 in 1,667",
+          "0",
+          "1 in 472",
+          "0"
         ],
         [
-          "Straight/Box 3-Way",
+          "12-Way Box",
           "0",
-          "1 in 333",
+          "1 in 833",
           "0",
-          "1 in 122",
+          "1 in 240",
+          "0"
+        ],
+        [
+          "24-Way Box",
+          "161",
+          "1 in 417",
+          "112",
+          "1 in 123",
+          "273"
+        ],
+        [
+          "Straight/Box 4-Way",
+          "0",
+          "1 in 2,500",
+          "0",
+          "1 in 699",
           "0"
         ],
         [
           "Straight/Box 6-Way",
-          "87",
-          "1 in 167",
-          "28",
-          "1 in 62",
-          "115"
+          "0",
+          "1 in 1,667",
+          "0",
+          "1 in 472",
+          "0"
         ],
         [
-          "3-Way Combo",
+          "Straight/Box 12-Way",
           "0",
-          "1 in 333",
+          "1 in 833",
           "0",
-          "1 in 122",
+          "1 in 240",
+          "0"
+        ],
+        [
+          "Straight/Box 24-Way",
+          "1",
+          "1 in 417",
+          "3",
+          "1 in 123",
+          "4"
+        ],
+        [
+          "4-Way Combo",
+          "0",
+          "1 in 2,500",
+          "0",
+          "1 in 699",
           "0"
         ],
         [
           "6-Way Combo",
-          "86",
-          "1 in 167",
-          "14",
-          "1 in 62",
-          "100"
+          "0",
+          "1 in 1,667",
+          "0",
+          "1 in 472",
+          "0"
         ],
         [
-          "Front Pair",
-          "2",
-          "1 in 100",
-          "2",
-          "1 in 36",
-          "4"
+          "12-Way Combo",
+          "0",
+          "1 in 833",
+          "0",
+          "1 in 240",
+          "0"
         ],
         [
-          "Back Pair",
-          "7",
-          "1 in 100",
+          "24-Way Combo",
+          "0",
+          "1 in 417",
           "2",
-          "1 in 36",
-          "9"
+          "1 in 123",
+          "2"
         ]
       ],
       "reportedTotals": [
         "Total",
-        "1,203",
+        "162",
         "",
-        "308",
+        "117",
         "",
-        "1,511"
+        "279"
       ],
-      "reportedWinners": 1511,
+      "reportedWinners": 279,
       "reportedPayout": null,
       "tableNote": "Source winner counts are based on 50-cent wagers, not verified distinct tickets. Base and FIREBALL counts are separate; odds are not prize amounts. Payout is not supplied. Statewide only; no retailer or county allocation. Do not add to claim counts.",
       "variantWinners": {
-        "base": 1203,
-        "fireball": 308
+        "base": 162,
+        "fireball": 117
       }
     },
     {
@@ -2671,142 +2807,6 @@
       "variantWinners": {
         "base": 825,
         "fireball": 145
-      }
-    },
-    {
-      "gameName": "Pick 4 Plus FIREBALL",
-      "drawDate": "2026-10-02",
-      "drawingSession": "Midday",
-      "sourceUrl": "https://www.sceducationlottery.com/Games/Pick4",
-      "sourcePublicationDate": null,
-      "headers": [
-        "Play Type",
-        "Base Game Winners",
-        "Base Game Odds",
-        "Fireball Winners",
-        "Fireball Odds",
-        "Total"
-      ],
-      "tiers": [
-        [
-          "Straight",
-          "2",
-          "1 in 10,000",
-          "0",
-          "1 in 2,500",
-          "2"
-        ],
-        [
-          "4-Way Box",
-          "0",
-          "1 in 2,500",
-          "0",
-          "1 in 699",
-          "0"
-        ],
-        [
-          "6-Way Box",
-          "0",
-          "1 in 1,667",
-          "0",
-          "1 in 472",
-          "0"
-        ],
-        [
-          "12-Way Box",
-          "161",
-          "1 in 833",
-          "59",
-          "1 in 240",
-          "220"
-        ],
-        [
-          "24-Way Box",
-          "0",
-          "1 in 417",
-          "63",
-          "1 in 123",
-          "63"
-        ],
-        [
-          "Straight/Box 4-Way",
-          "0",
-          "1 in 2,500",
-          "0",
-          "1 in 699",
-          "0"
-        ],
-        [
-          "Straight/Box 6-Way",
-          "0",
-          "1 in 1,667",
-          "0",
-          "1 in 472",
-          "0"
-        ],
-        [
-          "Straight/Box 12-Way",
-          "3",
-          "1 in 833",
-          "0",
-          "1 in 240",
-          "3"
-        ],
-        [
-          "Straight/Box 24-Way",
-          "0",
-          "1 in 417",
-          "3",
-          "1 in 123",
-          "3"
-        ],
-        [
-          "4-Way Combo",
-          "0",
-          "1 in 2,500",
-          "0",
-          "1 in 699",
-          "0"
-        ],
-        [
-          "6-Way Combo",
-          "0",
-          "1 in 1,667",
-          "0",
-          "1 in 472",
-          "0"
-        ],
-        [
-          "12-Way Combo",
-          "0",
-          "1 in 833",
-          "0",
-          "1 in 240",
-          "0"
-        ],
-        [
-          "24-Way Combo",
-          "0",
-          "1 in 417",
-          "0",
-          "1 in 123",
-          "0"
-        ]
-      ],
-      "reportedTotals": [
-        "Total",
-        "166",
-        "",
-        "125",
-        "",
-        "291"
-      ],
-      "reportedWinners": 291,
-      "reportedPayout": null,
-      "tableNote": "Source winner counts are based on 50-cent wagers, not verified distinct tickets. Base and FIREBALL counts are separate; odds are not prize amounts. Payout is not supplied. Statewide only; no retailer or county allocation. Do not add to claim counts.",
-      "variantWinners": {
-        "base": 166,
-        "fireball": 125
       }
     }
   ]
