@@ -320,3 +320,23 @@ reject missing/changed structure and enforce date/session continuity before
 atomic publication. No new email, private record promotion, deadline change or
 acceptance. Next implement remaining seven report families and catalog import,
 then directory audit, app/cache/UI, transactional refresh and native acceptance.
+
+## October 6, 19:00 ET — Xs & Os and Show Me Cash strict report parsing
+
+Implemented two further strict public HTML parsers using the privately captured
+[October 4 Xs & Os report](https://www.molottery.com/powerballxo/prizes-paid.do?date=2026-10-04)
+and [October 5 Show Me Cash report](https://www.molottery.com/show-me-cash/prizes-paid.do?date=2026-10-05).
+Five team-match tiers reconcile to 844 source prizes/$13,057; four number-match
+tiers reconcile to 5,599/$14,983. Separate source dates and game identities are
+retained. Printed amounts are not converted into cash-option claims. In particular,
+Show Me Cash's zero-dollar top label with no winners is retained literally, with
+an explicit limitation rather than a zero-jackpot assertion.
+
+Parsers reject truncated documents, wrong date/weekday, missing or changed
+columns, extra/missing tiers, invalid counts, inconsistent totals and a zero prize
+with a positive count. Unknown distinct-ticket counts and cash options remain
+null, finality unverified. Jackpot-location free text is not exported. Two new
+regression tests pass, eleven Missouri checks total; both captured source reports
+validate privately. Three report families now have parsers. No new public feed,
+retailer association, claim date, sales conversion or agency integration. Next
+remaining five report families and live continuity; existing feed bytes preserved.

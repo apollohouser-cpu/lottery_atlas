@@ -73,3 +73,17 @@ Nine Missouri tests pass (three new report, two catalog, four existing importer)
 No new public feed promoted. Next remaining report parsers/continuity and atomic
 catalog, then directory/cache/UI/refresh/native. Release October 11 at 16:00 ET
 unchanged; no Gmail/email or fees.
+
+### October 6, 19:00 ET — two more dated report families validated
+
+Powerball Xs & Os and Show Me Cash strict dated parsers now retain five and four
+source tiers, respectively. Complete-document/date/weekday/column/tier guards
+and exact source count/payout reconciliation pass. Source amounts remain literal;
+Show Me Cash's printed $0 top tier with zero prizes is not a zero-jackpot claim.
+Cash prize and distinct-ticket fields remain null; no source finality assertion.
+Private captured October 4 Xs & Os validates 844 prizes/$13,057; October 5 Show Me
+Cash validates 5,599/$14,983. Eleven Missouri tests pass (five report, two catalog,
+four existing importer). Existing year-to-date feed unchanged; no new publication.
+Three of eight report families now parsed. Next Powerball/base/Power Play/Double
+Play and remaining MO Millions/Pick 3/Pick 4/Cash Pop families, then bounded live
+continuity and atomic integration. No deadline change, Gmail/email or acceptance.

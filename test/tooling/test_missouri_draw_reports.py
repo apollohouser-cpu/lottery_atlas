@@ -33,4 +33,40 @@ class ReportTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 parse_mega_millions(raw, '2026-10-02')
 
+
+from missouri_draw_reports import parse_powerball_xo, parse_show_me_cash
+
+
+def fixed_fixture(xo=False):
+    if xo:
+        block, heading, column = 'block-powerball-prizes-paid', 'Sunday, Oct 04, 2026', 'Teams Matched'
+        cells = [(f'{n} Teams', c, a) for n, c, a in zip(range(8, 3, -1), [0, 0, 6, 127, 711], ['$1,200,000', '$20,000', '$500', '$40', '$7'])]
+        tail = '<tr><td>Total:</td><td>844</td><td>$13,057</td></tr><tr><td>Location(s) of Jackpot Winner(s): N/A</td></tr>'
+    else:
+        block, heading, column = 'block-show-me-cash-prizes-paid', 'Monday, Oct 05, 2026', 'Numbers Matched'
+        cells = [(f'Match {n} of 5', c, a) for n, c, a in zip(range(5, 1, -1), [0, 22, 434, 5143], ['$0', '$250', '$10', '$1'])]
+        tail = '<tr><td>Total Winners: 5,599 Total Won: $14,983</td></tr>'
+    rows = ''.join('<tr>'+''.join('<td>'+str(v)+'</td>' for v in row)+'</tr>' for row in cells)
+    return f'<html><div class="{block}"><div class="content"><div class="h1 text-center">{heading}</div><table><thead><tr><th>{column}</th><th>Number of MO Prizes</th><th>Prize amount</th></tr></thead><tbody>{rows}{tail}</tbody></table></div></div></html>'
+
+
+class FixedReportTests(unittest.TestCase):
+    def test_both_families_reconcile_without_cash_or_ticket_inference(self):
+        for xo, parser, day, count, payout in [(True, parse_powerball_xo, '2026-10-04', 844, 13057), (False, parse_show_me_cash, '2026-10-05', 5599, 14983)]:
+            r = parser(fixed_fixture(xo), day)
+            self.assertEqual((r['sourceWinnerCount'], r['sourcePayoutDollars']), (count, payout))
+            self.assertTrue(all(t['cashPrize'] is None for t in r['tiers']))
+            self.assertIsNone(r['distinctTicketCount'])
+        self.assertEqual(parse_show_me_cash(fixed_fixture(), '2026-10-05')['tiers'][0]['prizeLabel'], '$0')
+
+    def test_reject_identity_truncation_and_both_total_mismatches(self):
+        for xo, parser, day in [(True, parse_powerball_xo, '2026-10-04'), (False, parse_show_me_cash, '2026-10-05')]:
+            raw = fixed_fixture(xo)
+            for broken in [raw.replace('</html>', ''), raw.replace('2026', '2025'), raw.replace('Number of MO Prizes', 'Number of National Prizes'), raw.replace('844', '845').replace('5,599', '5,598'), raw.replace('$13,057', '$13,058').replace('$14,983', '$14,984'), raw.replace('<td>0</td>', '<td></td>', 1)]:
+                with self.assertRaises(ValueError): parser(broken, day)
+        with self.assertRaises(ValueError):
+            parse_show_me_cash(fixed_fixture().replace('<td>0</td>', '<td>1</td>', 1), '2026-10-05')
+        with self.assertRaises(ValueError):
+            parse_powerball_xo(fixed_fixture(True).replace('8 Teams', '5 White balls'), '2026-10-04')
+
 if __name__ == '__main__': unittest.main()
