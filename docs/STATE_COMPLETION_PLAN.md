@@ -49,7 +49,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
 | South Carolina | Accepted October 1, 2026, 7:02 PM ET (due October 3, 5:03 PM) | Supported available coverage accepted; broader claims remain separate. |
 | New York | Accepted October 3, 2026, 6:12 PM ET (due October 5, 7:00 PM ET) | Supported available coverage closed; complete statewide claims remain separate. |
-| Missouri | October 11, 2026, 4:00 PM ET | Active October 6, 4:00 PM ET; scope due October 7, 4:00 PM ET. |
+| Missouri | October 11, 2026, 4:00 PM ET | Active October 6, 4:00 PM ET; scope closed October 6, 6:00 PM ET (due October 7). |
 | Oregon | October 10, 2026, 4:35 PM ET | Accepted October 6, 3:01 PM ET; scope closed October 5. |
 | Colorado | Accepted October 5, 2026, 3:33 PM ET (due October 7, 2:15 PM ET) | Supported coverage closed; broader records remain separate. |
 | Ohio | Accepted October 4, 2026, 1:14 PM ET (due October 6, 7:12 PM ET) | Supported available coverage closed; broader records remain separate. |

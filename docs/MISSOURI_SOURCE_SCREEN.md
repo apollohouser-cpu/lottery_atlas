@@ -267,3 +267,56 @@ separates five sessions. Pick 3/4 preserve Midday/Evening and Wild Ball.
 routes and unit checks; neither can be silently folded into Scratch counts.
 Historical Lotto/Cash4Life and promotion routes remain in the scope audit.
 Scope is not yet closed. No Gmail, email, fee, deadline change or acceptance.
+
+## October 6, 18:00 ET — dated-report recovery and supported scope closure
+
+Public dated report retrieval now succeeds using the ordinary request header
+`Accept-Language: en-US,en;q=0.9`. A cookie/session retry did not resolve the
+truncation. The header is an observed working retrieval configuration, not a
+proven diagnosis of the server behavior. Fresh raw pages and extracted tables
+are retained privately in work/missouri_scope. HTTP 200 alone remains insufficient:
+parsers must require complete documents, dated identity, expected columns/tiers
+and reconciled totals. No failed or partially parsed output is promoted.
+
+Fresh [Mega Millions October 2](https://www.molottery.com/mega-millions/prizes-paid.do?date=2026-10-02)
+reports 3,609 Missouri prizes and $73,798, superseding the earlier cached-zero
+observation. A strict parser validates all nine tier identities, count sum,
+jackpot/range labels, payout bounds when no jackpot winner, date/weekday and
+report trailer. Literal ranges remain literal; cashPrize and distinctTicketCount
+are null, and finalityVerified is false. Three new regression tests and four
+existing Show Me Cash plus two catalog tests pass (nine total). Fresh dated
+HTML validates privately; this is not a new public feed or claim of finality.
+
+### Supported scope/gap matrix — closed October 6 at 18:00 ET
+
+Scope closure defines implementation and explicit gaps; it is not acceptance.
+All current draw families found in the official navigation are included below.
+No unavailable layer is interpreted as zero or as proof records do not exist.
+
+| Product/source | Supported integration target and bounded limitation |
+| --- | --- |
+| [Powerball](https://www.molottery.com/powerball/winning-numbers.do) | Dated Missouri base/Power Play columns, nine base tiers, eight numeric Power Play tiers with top dash retained unavailable, separate Double Play nine tiers. Source subtotals and combined total retained with overlap explanation; no person/ticket identity inference. |
+| [Mega Millions](https://www.molottery.com/mega-millions/winning-numbers.do) | Nine Missouri prize-count rows and published count/payout totals. Jackpot and ranges retained; no invented multiplier distribution. First strict parser now implemented. |
+| [Powerball Xs & Os](https://www.molottery.com/powerballxo/winning-numbers.do) | Five reported tiers, eight through four teams matched; separate game. Random draw results are not NFL game outcomes. |
+| [MO Millions](https://www.molottery.com/mo-millions/winning-numbers.do) | Eight base tiers including labeled Bulls-Eye matches and separate eight-tier Double Play. Preserve source zero/variable jackpot labels without asserting zero jackpot value. EZ Match product route; no realized EZ Match count feed verified. |
+| [Show Me Cash](https://www.molottery.com/show-me-cash/winning-numbers.do) | Four dated tiers; retain existing year-to-date game-only importer while adding dated reports. [EZ Match rules](https://www.molottery.com/show-me-cash/show-me-cash-rules.jsp) verified, but separate realized add-on counts not verified. |
+| [Pick 3](https://www.molottery.com/pick3/winning-numbers.do) / [Pick 4](https://www.molottery.com/pick4/winning-numbers.do) | Midday and Evening, separate base/Wild Ball columns and source $.50-play basis. Five and ten rows respectively; retain match labels and fractional dollar prizes. No inferred unique tickets across columns. |
+| [Cash Pop](https://www.molottery.com/cash-pop/winning-numbers.do) | Five source sessions with dated prize-amount counts and reported totals; do not substitute another state's session schedule or wager labels. |
+| [Scratchers](https://www.molottery.com/scratchers-list.do) | Fresh 73-game estimated inventory, 868 tiers, 25 listed end dates; literal advertised prizes, daily cadence, no explicit verification date/retailer stock/claims. Atomic app integration pending. |
+| [Club Keno](https://www.molottery.com/club-keno/club-keno.jsp) | Official game/results routes and explicit coverage gap. Multiplier, Bulls-Eye, Double Bulls-Eye and six/seven/eight-spot progressive options are included in scope. Prize charts are scheduled prizes, not observed winners; statewide realized counts/payouts not verified. |
+| [Pull-Tabs](https://www.molottery.com/pull-tabs/pull-tabs.jsp) | Separate official product route for preprinted dispenser tickets at eligible clubs. No verified inventory/claim feed; do not merge with Scratchers or invent counts. |
+| [Promotions/second chance](https://playersclub.molottery.com/promotions) | Official public route; account/entry functions are not automated. No complete promotion-winner/count feed verified. |
+| [Historical Lotto](https://www.molottery.com/lotto/winning-numbers.do) | Official notice says ended October 18, 2025; history/Excel routes retained as historical, not current game. No ten-year completeness claim. |
+| [Historical Cash4Life](https://www.molottery.com/cash4life/winning-numbers.do) | Official notice says ended February 21, 2026; historical routes retained. Empty current-month results do not prove historical absence. Do not infer current Millionaire for Life participation. |
+| Retailer directory / selected winner publications | Audit delivered directory privately or validate public locator before mapping; no guessed coordinates or private fields. Selected monthly winner stories cannot establish a complete retailer claim layer. |
+
+Fresh report unit checks distinguish source prize counts, published payout totals,
+scheduled prize labels, estimated inventory and sales. On October 5 Powerball,
+base 7,319 plus Power Play 1,142 equals published 8,461; Double Play 849 remains
+separate. These checks are source evidence, not an approved cross-game total.
+Date-only reports must remain date-only; Pick sessions keep the source label.
+No claim timestamp is inferred. Remaining strict parsers and live selection must
+reject missing/changed structure and enforce date/session continuity before
+atomic publication. No new email, private record promotion, deadline change or
+acceptance. Next implement remaining seven report families and catalog import,
+then directory audit, app/cache/UI, transactional refresh and native acceptance.

@@ -27,7 +27,7 @@ unclaimed units must stay literal until verified; no synthetic claim dates.
 
 ## Acceptance gates
 
-- [ ] Full national/state/Scratch/other-product scope and explicit gaps.
+- [x] Full national/state/Scratch/other-product scope and explicit gaps (October 6, 18:00 ET).
 - [ ] Source dates, tier units, composite counts, overlap and literal prizes.
 - [ ] Strict current catalog/report imports and continuity/preservation checks.
 - [ ] Directory private audit or validated public locator; no guessed positions.
@@ -56,3 +56,20 @@ as finalized data. Preserve existing feeds and resolve retrieval before promotio
 Next finish product/history/options scope and dated-report validation, then atomic
 catalog import and integration. Scope deadline October 7 and release October 11
 at 16:00 ET unchanged. No Gmail/email and Missouri not accepted.
+
+### October 6, 18:00 ET — supported scope closed; first dated parser
+
+Full supported scope/gap matrix closed ahead of October 7 checkpoint: eight
+current draw families, Scratchers, directory, Keno/options, Pull-Tabs,
+promotions/second chance and historical Lotto/Cash4Life routes. See source screen
+for explicit unavailable layers. This is scope closure only, not acceptance.
+
+An ordinary English Accept-Language header resolves observed dated-page
+truncation; complete fresh reports now captured privately. Mega Millions strict
+parser retains Jackpot/ranges and source units, reconciles nine tiers/counts and
+payout bounds, and rejects partial documents/date/identity changes. Fresh October
+2 source validates 3,609 prizes/$73,798; no finality or distinct-ticket assertion.
+Nine Missouri tests pass (three new report, two catalog, four existing importer).
+No new public feed promoted. Next remaining report parsers/continuity and atomic
+catalog, then directory/cache/UI/refresh/native. Release October 11 at 16:00 ET
+unchanged; no Gmail/email or fees.
