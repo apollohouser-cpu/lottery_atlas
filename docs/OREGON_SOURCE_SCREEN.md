@@ -282,3 +282,35 @@ an exemption for missing data. Eight focused tests pass, including failure at
 each source with byte retention, duplicate/session/regression/identity failures,
 and this zero shared-prize case. Next public directory reconciliation/validation,
 then report bundle/cache and UI integration. No new mail or email sent.
+
+## October 5, 22:39 ET — public locator reconciliation and validation
+
+A fresh request to the established official locator endpoint returned 3,764
+unique ACTIVE entries. All have finite published coordinates within the Oregon
+bounding sanity range; no missing coordinates were observed. This is the count
+of returned public entries, not independent certification of statewide coverage.
+Product flags differ: 514 entries are video-only, 43 video/Keno without draw or
+Scratch, and 41 have all four product flags false. Preserve explicit flags; do
+not label every entry a Scratch or draw retailer or infer store inventory.
+
+Private comparison to the filtered agency workbook matches 3,686 public IDs
+(after private leading-zero normalization), with 78 public-only and four agency-
+only entries. All matched names/cities/counties agree after whitespace/case
+normalization; street strings agree on 3,600 of those matches. This establishes
+material source differences, not which source is wrong. Do not backfill public
+coordinates/addresses from contact or shipping fields, or guess missing joins.
+The approved directory candidate uses only the public locator fields; agency
+records and the detailed reconciliation remain private.
+
+Reworked the existing importer to export a strict allowlist, retain draw/Keno/
+instant/video flags, validate active status/identity/ZIP/unique IDs/coordinates,
+reject capped or anomalously small responses and use atomic replacement. The
+3,500-row floor is explicitly an anomaly guard, not a completeness assertion.
+Missing coordinates stay unresolved; invalid numeric/out-of-bounds coordinates
+fail rather than becoming map points. Phone/contact/game inventory/other raw
+fields are excluded. Unchanged rows retain the existing retrieval date; source
+or validation failure preserves baseline bytes. Three focused tests pass, and
+the captured live payload validates privately to 3,764 mapped/zero unresolved.
+No generated public directory promoted yet. Next report bundle/cache and directory
+model/UI integration, then shared publication transaction/native acceptance.
+Gmail has no new mail; no email or deadline change.

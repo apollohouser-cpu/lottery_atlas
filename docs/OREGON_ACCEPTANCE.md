@@ -81,3 +81,12 @@ and date/draw/session/identity continuity. Wider Megabucks history verified an
 explicit zero-prize/zero-count row omitted by the official renderer; parser now
 matches it while rejecting missing/inconsistent data. No publication integration
 or public promotion yet. Next directory reconciliation and report bundle/cache/UI.
+
+### October 5, 22:39 ET directory checkpoint
+
+Fresh public locator: 3,764 unique active entries with published coordinates,
+zero unresolved. Private agency comparison shows 3,686 common IDs/78 public-only/
+four agency-only, so no completeness claim. Strict allowlisted atomic importer
+and three tests pass; source product flags remain distinct, private contacts and
+shipping excluded. Validated output remains private pending model/UI integration.
+Next report bundle/cache and directory integration; no deadline change.
