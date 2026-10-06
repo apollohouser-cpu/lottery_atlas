@@ -496,3 +496,20 @@ One bounded scheduled-run check still lists 37423476045 on ae9bab6 as latest,
 which predates Oregon three-output wiring. Scheduled verification remains open;
 no success inferred from push. Next request failure/reconnect and consolidated
 release checks. Oregon is not accepted; its deadline is unchanged. No Gmail/email.
+
+### October 6, 11:53 ET — consolidated automated and public-feed review
+
+After the catalog route repair, the consolidated Oregon suites pass: 16 JavaScript
+checks (catalog, directory, reports), eight state-transaction checks and eleven
+Flutter loader/report-sheet/retailer-model checks. Focused analysis of five
+integration files is clean. Logs remain private in work/oregon_native. These checks
+include all 48 report selections at compact and wide widget sizes; they do not
+substitute for the outstanding native request-failure/reconnect exercise.
+
+Independent downloads match the committed bytes for the Oregon report endpoint,
+combined retailer directory and combined Scratch catalog. The latest listed
+scheduled publisher is still 37423476045, preceding three-output integration;
+that checkpoint remains unverified. Do not repeat consolidated suites absent a
+new code change or failure. Next perform the bounded native request-failure and
+reconnect exercise, restore the ordinary build, then finish scheduled/live release
+verification. No data promotion, Gmail, email, deadline change or acceptance.
