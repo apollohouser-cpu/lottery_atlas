@@ -64,3 +64,11 @@ has numbers/bonus but no count/payout fields. MM/CP strict parsers pass three te
 and private captured-data validation. No public reports promoted; remaining four
 parsers, continuity, directory and app/native gates are unfinished. Release remains
 October 10 at 16:35 ET; scope checkpoint met early, no extension.
+
+### October 5, 20:39 ET six-family parser checkpoint
+
+All six report-family parsers now validate captured public source data privately.
+Six focused tests pass. PB9/Megabucks7/WinForLife7 source rows and Pick4 equal-prize
+groups preserve reported units; lifetime top prize has no invented cash value.
+Unverified match/wager labels remain null. No public promotion. Next live bounded
+selection/continuity/atomic importer, then directory/cache/UI/native acceptance.

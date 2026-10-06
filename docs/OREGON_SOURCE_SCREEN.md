@@ -227,3 +227,30 @@ zero, and leave winningTickets null. Three synthetic regression tests pass;
 private captured data yields one MM and 32 Cash Pop reports. No generated/public
 feed changed. Next implement the remaining four report parsers and continuity,
 then directory reconciliation and integration. Gmail found no new mail; no reply.
+
+## October 5, 20:39 ET — remaining strict report parsers
+
+Added Powerball, Megabucks, Win for Life and Pick 4 parsing to the same allowlisted
+report module. Source arrays must contain exactly 16 entries; expected populated
+rows and unused zero padding are both checked. A newly populated unknown row,
+missing value, negative/fractional count or malformed money fails closed. Output
+excludes outside-state fields and never computes a distinct-ticket total.
+
+Powerball retains nine published rows and multiplier context without multiplying
+prizes or inventing Power Play allocations. Megabucks retains seven rows and
+fractional dollar values. Win for Life retains seven rows with the top value
+represented as $1,000 a week for life and no cash-dollar equivalent. Pick 4 groups
+all 17 source entries by exact prize cents, preserving contributing row numbers
+and reported counts, and validates its four observed source times (13/16/19/22).
+Match labels are verified for Powerball; unverified Megabucks/Win for Life match
+labels and Pick 4 wager labels are deliberately null, while prize rows remain.
+This narrows presentation honestly rather than guessing from decorative icons.
+
+Six parser tests pass, including array/padding rejection, explicit zero versus
+missing, aggregate exclusion, weekly/shared prize semantics and Pick 4 grouping.
+All captured six-family data validates privately: PB 1, MM 1, Megabucks 1, Win for
+Life 1, Pick 4 8 and Cash Pop 32 reports. The first captured Pick 4 report reduces
+to 11 distinct prize amounts; this is a report grouping, not a claim count.
+No source/public generated feeds changed. Next bounded live selection, duplicate
+and per-session date/draw continuity checks, and atomic report import. Directory
+reconciliation and app integration follow. No new Gmail, email or deadline change.
