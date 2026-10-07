@@ -385,3 +385,27 @@ directory interactions, larger layout and request-failure recovery, followed by
 consolidated release checks. App left on Night Owl October 6 near the footer.
 No code/feed change, repeated automated suite, Gmail/email, deadline change or
 acceptance.
+
+### October 7, 14:16 ET — source return and local directory native flows
+
+Opened Night Owl October 6 from the native report footer. The external official
+page loaded the exact type=5/date=2026-10-06 route, visibly identified Night Owl
+and showed 74 winners/$2,593 with matching prize rows. Closed that task-created
+tab and returned to the retained native Night Owl selection, footer limitations
+and unchanged 13:39:10.802496 UTC retrieval. This verifies source navigation and
+return, not an accessibility certification.
+
+Opened the local directory from the state source screen. Jefferson City shows
+66 local query records and its original retrieval. Searching American Legion
+returns the supplied address and Draw Games/Club Keno labels; selecting Scratchers
+produces a scoped zero-match view, resetting All products restores the record,
+and clearing search restores 66. Switching to Columbia shows 85 records and its
+separate 13:12:00.454311 UTC retrieval. The two-city-only notice, official other-
+locations route, unknown coordinates/source date and stock/winner/ordinary-store
+limitations remain prominent. No statewide count, map pins or private agency
+rows are inferred. Private source and native captures are in work/missouri_native.
+
+Next native Scratch flow and external statewide-locator route, larger layout,
+request-failure recovery and consolidated release checks. App left at Columbia
+with search cleared and All products selected. No Gmail/email, code/feed change,
+deadline change or acceptance.
