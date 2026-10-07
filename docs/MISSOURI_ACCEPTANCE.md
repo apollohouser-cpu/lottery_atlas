@@ -186,3 +186,19 @@ response. Four loader tests pass and focused two-file analysis is clean.
 No report sheet, deployed endpoint or native acceptance yet; next UI/source routes
 and catalog/directory integration, then transactional publication. No private
 agency material included. No Gmail/email or deadline change; not accepted.
+
+### October 7, 04:08 ET — navigable Missouri report sheet
+
+Missouri's state source screen now opens the 28-report sheet. All eight families,
+14 session groups, separate base/add-on variants, literal prize labels, source
+counts, fractional payouts and $.50 play basis are presented without inferred
+cash options or distinct-ticket totals. Draw dates and retrieval time remain
+separate; publication date/finality limitations and eight official product/history
+routes are visible. Powerball main totals explicitly exclude Double Play.
+
+Two widget tests traverse every report through its tiers and retrieval footer at
+390×844 and 1400×1000; both pass. The four loader tests also pass and focused
+three-file analysis is clean. Ordinary macOS release build passes (not relaunched;
+no native UI claim). Endpoint publication, catalog/directory integration,
+state transaction and native acceptance remain pending. No private agency data,
+Gmail/email, deadline change or acceptance.

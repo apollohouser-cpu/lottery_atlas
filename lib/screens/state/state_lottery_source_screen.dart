@@ -1,3 +1,4 @@
+import '../../widgets/map/missouri_draw_reports_sheet.dart';
 import '../../widgets/map/oregon_draw_reports_sheet.dart';
 import '../../widgets/map/colorado_draw_reports_sheet.dart';
 import '../../widgets/map/ohio_payout_reports_sheet.dart';
@@ -46,6 +47,14 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Missouri')
+            Card(child: ListTile(
+              title: const Text('Missouri draw reports and game sources'),
+              subtitle: const Text('Source prizes • Separate variants and sessions'),
+              trailing: const Icon(Icons.table_chart_outlined),
+              onTap: () => showModalBottomSheet<void>(context: context,
+                isScrollControlled: true, builder: (_) => const MissouriDrawReportsSheet()),
+            )),
           if (source.stateName == 'Oregon')
             Card(child: ListTile(
               title: const Text('Oregon draw reports and game sources'),

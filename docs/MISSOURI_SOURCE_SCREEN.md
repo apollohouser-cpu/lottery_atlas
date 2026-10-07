@@ -503,3 +503,19 @@ persistence failure, missing sessions and changed fractional amounts; focused
 analysis is clean. This is app data preparation, not an endpoint deployment or
 native UI pass. Catalog/directory and report sheet remain pending. No private
 agency records, retailer joins, fees, email or deadline change.
+
+### October 7, 04:08 ET — navigable Missouri report sheet
+
+Missouri's state source screen now opens the 28-report sheet. All eight families,
+14 session groups, separate base/add-on variants, literal prize labels, source
+counts, fractional payouts and $.50 play basis are presented without inferred
+cash options or distinct-ticket totals. Draw dates and retrieval time remain
+separate; publication date/finality limitations and eight official product/history
+routes are visible. Powerball main totals explicitly exclude Double Play.
+
+Two widget tests traverse every report through its tiers and retrieval footer at
+390×844 and 1400×1000; both pass. The four loader tests also pass and focused
+three-file analysis is clean. Ordinary macOS release build passes (not relaunched;
+no native UI claim). Endpoint publication, catalog/directory integration,
+state transaction and native acceptance remain pending. No private agency data,
+Gmail/email, deadline change or acceptance.
