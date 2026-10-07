@@ -634,3 +634,27 @@ Next ordinary native verification, source-return,
 failure recovery and scheduled three-output adoption. The bounded directory
 limitation remains part of release review. No Gmail/email or deadline change;
 Missouri not accepted.
+
+### October 7, 11:11 ET — scheduled refresh and ordinary native opening
+
+Scheduled run 37628614038 (head eacc2e5, bot 60aa90a) completed successfully
+and Missouri reports updated all three owned outputs. Independently downloaded
+public reports, literal Scratch catalog, published Show Me Cash totals and refresh
+status exactly match the checked-in public bytes. This closes the scheduled
+three-output integration checkpoint; it does not complete native acceptance.
+
+Restarted the ordinary macOS Release app and navigated Find State → Missouri →
+source screen → draw reports. The app adopted Show Me Cash 2,122,702 through
+October 6 and report retrieval 2026-10-07T13:39:10.802496+00:00. Powerball October 5
+renders multiplier 2, main 8,461/$43,839, base 7,319/$33,617, Power Play
+1,142/$10,222 and separate Double Play 849/$9,046; unavailable Power Play jackpot
+cells remain unavailable. Mega Millions October 6 renders all nine literal
+Jackpot/range tiers, 3,480 source prizes and $65,753 payout, with publication-date,
+finality, identity and retailer-map limits retained. Private native evidence and
+public-byte hashes are saved under work/missouri_native.
+
+Next continue the remaining six report families/session types, source open/return,
+local directory and Scratch native flows, compact/wide and request-failure recovery,
+then consolidated release verification. No accessibility certification, OS-offline,
+map-tile or statewide-directory completeness claim. No Gmail/email or deadline
+change; Missouri is not accepted.
