@@ -466,3 +466,23 @@ timestamp, listing/detail request failures and truncated HTML. Twenty-three
 Missouri tests pass. Live payload is private in work/missouri_scope/live_catalog.json.
 Next approved app model integration and directory audit; no agency data, public
 feed promotion, email or deadline change.
+
+## October 7, 02:06 ET — bounded public locator audit
+
+Reopened the [official locator](https://www.molottery.com/where-to-play/where-to-play.do)
+and submitted its ordinary Jefferson City/local-only/all-products search. The
+response has 66 business rows, four product labels (Draw Games, Scratchers,
+Keno 2 Go, Club Keno), names, street/city and ZIP in directions links. It includes
+mobile/subscription/agency-named entries; these are not assumed ordinary stores.
+This is one query, not a statewide directory count or completeness result.
+
+Strict local-result parser verifies columns, required address/name fields,
+product labels, ZIP/address consistency and duplicate identities. Source hrefs
+contain unescaped ampersands/hash characters in names; their literal address
+suffix is inspected without navigating or inventing coordinates. No retailer
+identifier or latitude/longitude is supplied by this response; those fields
+remain null. Two parser tests pass, 25 Missouri tests total; all 66 captured rows
+validate privately. Nothing promoted or joined to wins. Next privately audit the
+already-delivered agency workbook and reconcile directory scope/position evidence,
+while report/catalog app integration remains pending. No Gmail or new email in
+this run; no deadline change or acceptance.

@@ -165,3 +165,12 @@ prizes and null sourceDate retained; this separate payload is not yet mapped int
 the generic app cash-prize catalog. Next directory audit and report/catalog
 bundle/cache/UI integration, then state transaction and native acceptance.
 No public promotion, Gmail/email or deadline change; Missouri not accepted.
+
+### October 7, 02:06 ET — public directory evidence bounded
+
+Official Jefferson City/local-only locator query and strict parser validate 66
+rows privately with product/address/ZIP labels. No supplied coordinates or retailer
+IDs; null retained. Mobile/subscription/agency entries are not presumed normal
+stores, and this is not statewide coverage. Twenty-five Missouri tests pass.
+Next agency workbook private audit/reconciliation and report/catalog app
+integration. No new public feed, Gmail/email, deadline change or acceptance.
