@@ -219,3 +219,20 @@ not discard valid remote data. Four focused loader tests pass and two-file
 analysis is clean. Catalog UI, directory audit/integration, transactional refresh,
 endpoint publication and native acceptance remain pending. No new live endpoint,
 Gmail/email, private agency promotion, deadline change or acceptance.
+
+### October 7, 06:08 ET — searchable literal Scratchers inventory UI
+
+The Missouri source screen now opens an in-app inventory sheet with game/name
+search, ticket-price filter and selection across all 73 bundled games. Detail
+shows literal advertised prize labels, original/unclaimed prize counts, start and
+listed end dates (including TBD), retrieval time and daily cadence. Prominent
+text keeps source verification date unavailable and distinguishes estimated
+inventory from store stock, dated claims and immediate cash values. Official
+listing/detail routes remain available; no cash-prize conversion or winner map.
+
+Three widget tests pass: every game's tiers/footer at compact and wide sizes,
+and search/price-filter recovery from empty results. Focused three-file analysis
+is clean. Ordinary macOS release build passes (not relaunched; no native
+interaction claim). Directory audit/integration, state transaction, live endpoints
+and native acceptance remain pending. No Gmail/email, private agency promotion,
+deadline change or acceptance.

@@ -1,3 +1,4 @@
+import '../../widgets/map/missouri_scratch_catalog_sheet.dart';
 import '../../widgets/map/missouri_draw_reports_sheet.dart';
 import '../../widgets/map/oregon_draw_reports_sheet.dart';
 import '../../widgets/map/colorado_draw_reports_sheet.dart';
@@ -47,6 +48,14 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Missouri')
+            Card(child: ListTile(
+              title: const Text('Missouri Scratchers inventory'),
+              subtitle: const Text('Advertised prizes and estimated unclaimed inventory'),
+              trailing: const Icon(Icons.confirmation_number_outlined),
+              onTap: () => showModalBottomSheet<void>(context: context,
+                isScrollControlled: true, builder: (_) => const MissouriScratchCatalogSheet()),
+            )),
           if (source.stateName == 'Missouri')
             Card(child: ListTile(
               title: const Text('Missouri draw reports and game sources'),
