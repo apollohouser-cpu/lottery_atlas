@@ -597,3 +597,20 @@ Next implement a supported directory experience with explicit address/position
 limits, using verified public locator evidence; do not geocode names/cities into
 invented store positions. Then finish scheduled refresh/native acceptance.
 Release deadline unchanged; Missouri not accepted.
+
+### October 7, 09:10 ET — bounded public directory importer
+
+Added an atomic public locator importer for explicit local-only city queries,
+using all three official product-group selections. Request identity is retained
+with the snapshot and returned city labels must match the requested city. It
+rejects empty/partial/malformed responses, mismatched city baselines and large
+result drops; unchanged content preserves retrieval time. Coordinates and
+retailer IDs remain null. Three focused locator tests pass, including failed
+request/parse/query preservation of prior bytes and dates.
+
+Fresh private live queries validate 66 Jefferson City and 85 Columbia rows.
+These are separate local result sets, not a statewide count or completeness
+claim; no private workbook row or coordinate join is promoted. Next integrate
+an explicitly bounded address-directory experience and official statewide search
+route, then native acceptance and scheduled refresh verification. No Gmail/email,
+public directory promotion, deadline change or acceptance.
