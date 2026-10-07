@@ -658,3 +658,27 @@ local directory and Scratch native flows, compact/wide and request-failure recov
 then consolidated release verification. No accessibility certification, OS-offline,
 map-tile or statewide-directory completeness claim. No Gmail/email or deadline
 change; Missouri is not accepted.
+
+### October 7, 12:13 ET — remaining report families in the ordinary app
+
+Continued the running ordinary app without repeating state opening. Selected
+and inspected the remaining six families, including scrolling longer tables:
+Xs & Os October 4 (five tiers, 844/$13,057); MO Millions October 3 (eight main
+and eight Double Play tiers, 5,963/$26,532 and 870/$4,968); Show Me Cash October 6
+(four tiers, 5,149/$11,662); Pick 3 October 6 Midday (five base and five Wild Ball
+rows, combined 544/$77,380); Pick 4 October 5 Evening (ten base and ten Wild Ball
+rows, 72/$19,260.5, including literal $7.5 prizes); Cash Pop October 7 Early Bird
+(22 prize amounts, 214/$9,421). Values agree with the validated feed. The literal
+Pick 4 source formatting preserves the half-dollar amount rather than rounding.
+
+Source units, $.50 play basis, Bulls-Eye and variant separation, null identity,
+printed-zero jackpot caveat and unverified finality remain present. Footer
+retrieval remains 2026-10-07T13:39:10.802496+00:00. Private native captures are
+under work/missouri_native. All eight families now have a native selected-report
+check; this does not mean every report/session or responsive layout is checked.
+
+Next remaining Pick 3/4 and Cash Pop session types, source-open/return, native
+Scratch and two-city directory interactions, larger layout and request-failure
+recovery, then consolidated release checks. App left at Cash Pop Early Bird.
+No code/feed change, repeated automated suite, Gmail/email or deadline change;
+Missouri remains unaccepted.
