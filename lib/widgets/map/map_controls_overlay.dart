@@ -1543,7 +1543,9 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
           },
         ),
         const SizedBox(height: 10),
-        Row(
+        Wrap(
+          crossAxisAlignment: WrapCrossAlignment.center,
+          runSpacing: 6,
           children: [
             const Text(
               'TIMELINE',
@@ -1644,7 +1646,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
                 ),
               ),
             ),
-            const Spacer(),
+            const SizedBox(width: 8),
             for (final mode in TimelineGranularity.values.where(
               (mode) =>
                   !widget.dayOnlyActivity || mode != TimelineGranularity.day,

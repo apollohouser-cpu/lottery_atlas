@@ -23,8 +23,8 @@ No mobile distribution is implied by desktop state acceptance.
   device was available; no Android virtual device was listed. Mobile interaction
   acceptance remains unperformed. Desktop acceptance is not phone acceptance.
 - No valid local codesigning identities were found. The iOS project has no
-  development team configured. Android key.properties is absent and release
-  currently uses the template debug signing configuration. Account enrollment
+  development team configured. Android key.properties is absent; release now rejects missing signing
+  credentials (see October 6 signing update below). Account enrollment
   and store listings are unverified, not assumed absent. No keys were created,
   private identity values published, fees authorized or store submissions made.
 
@@ -49,9 +49,10 @@ No mobile distribution is implied by desktop state acceptance.
 - [ ] Configure tester distribution and feedback/crash triage; observe beta results
   and fix blocking defects before wider distribution.
 
-Next: finish Android build evidence, then mobile layout/interaction preparation
-and signing configuration. Resume Oregon publication alongside this bounded
-platform work. National forecast still requires a remaining-state readiness audit.
+Next: install the current simulator build and exercise mobile interaction, then
+complete privacy, icons and tester preparation. Existing signing credentials and
+store registrations remain unverified. The national readiness forecast is in
+NATIONAL_RELEASE_FORECAST.md; accepted state publication checkpoints are closed.
 
 Implementation references checked October 6:
 [Flutter Android release guide](https://docs.flutter.dev/deployment/android) and
@@ -122,3 +123,34 @@ testing set to nine states: TX, KY, SC, VA, NY, OH, CO, OR and MO. Missouri's
 directory is a dated Jefferson City/Columbia bundle with official search for
 other locations, not statewide mapping. Mobile simulator interaction, privacy,
 icons/tester preparation and signing/distribution remain open as documented above.
+
+
+## October 7, 19:20 ET — first iPhone simulator smoke and layout repair
+
+Built the current app for iOS simulator (32.0-second Xcode phase), installed and
+cold-launched on iPhone 17e / iOS 26.5. The national map loaded, but the heat
+legend and timeline mode row visibly overflowed the phone width. This was a
+mobile platform defect, not a reopened state-data acceptance.
+
+Changed the heat legend to use two rows at narrow widths and a flexible scale;
+timeline controls now wrap rather than forcing four mode chips into one row.
+Seven timeline tests pass, including new 320/390/900 logical-pixel checks that
+all four mode chips remain within bounds, respond to taps and produce no layout
+exceptions. An intermediate corrected simulator build passed (8.1-second Xcode
+phase). Final equivalent legend cleanup also passes the tests; full final-device
+interaction/rebuild remains pending after the memory/storage intervention.
+Earlier analysis found only four existing Radio API deprecation infos in the
+controls file; no errors. Do not claim complete mobile acceptance or distribution.
+
+During testing the internal disk ran out of space. Removed only regenerable,
+ignored Android build intermediates; preserved APK/AAB outputs and project data.
+The user subsequently reported macOS application-memory exhaustion and began
+moving PNY files to My Passport. At this checkpoint internal free space is about
+12 GiB and no simulator is booted. Keep builds sequential and one simulator at
+most; close test apps and research tabs after use. Do not start another large
+build while the storage migration is underway. A separate user-authorized 8 PM
+Eastern automation handles PNY verification/formatting; this development task
+must not format it or interfere with copying. Uncommitted layout edits from the
+interrupted run were recovered and preserved. No next state activated in this
+platform repair; select next state with a fresh deadline after resuming national
+implementation. No Gmail, fees, signing keys or store upload.

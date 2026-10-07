@@ -6,6 +6,34 @@ import 'package:lottery_atlas/widgets/map/map_controls_overlay.dart';
 import 'package:lottery_atlas/widgets/map/map_filter_state.dart';
 
 void main() {
+  for (final width in [320.0, 390.0, 900.0]) {
+    testWidgets('timeline controls fit width $width and remain usable', (
+      tester,
+    ) async {
+      await tester.binding.setSurfaceSize(Size(width, 844));
+      addTearDown(() => tester.binding.setSurfaceSize(null));
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(body: MapControlsOverlay(showHeaderControls: false)),
+        ),
+      );
+      await tester.pump();
+      expect(tester.takeException(), isNull);
+      for (final label in ['Year', 'Month', 'Week', 'Day']) {
+        final chip = find.widgetWithText(ChoiceChip, label);
+        final rect = tester.getRect(chip);
+        expect(rect.left, greaterThanOrEqualTo(0));
+        expect(rect.right, lessThanOrEqualTo(width));
+        await tester.tap(chip);
+        await tester.pump();
+        expect(tester.widget<ChoiceChip>(chip).selected, isTrue);
+        expect(tester.takeException(), isNull);
+      }
+      expect(find.text('HEAT INDEX'), findsOneWidget);
+      expect(find.text('Low'), findsOneWidget);
+      expect(find.text('High'), findsOneWidget);
+    });
+  }
   testWidgets('timeline exposes calendar-correct scales', (tester) async {
     MapFilterState? selectedFilter;
     final now = DateTime.now();
