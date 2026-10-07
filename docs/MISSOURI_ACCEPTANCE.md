@@ -111,3 +111,15 @@ October 6 Matinee Cash Pop reconciles 281/$11,549. Seventeen Missouri tests pass
 Six of eight report families parsed; Pick 3/Pick 4 remain, then bounded live
 selection/continuity and atomic catalog/report integration. No feed promotion,
 Gmail/email, deadline change or acceptance; ordinary app unaffected.
+
+### October 6, 22:00 ET — all eight report families parsed
+
+Pick 3/4 strict dated/session parsers added, with separate base/Wild ball columns,
+five/ten match tiers, literal Straight asterisk and required $.50-play basis.
+Fractional prizes use integer cents for exact reconciliation. Four private
+reports validate: October 6 Midday Pick 3 544/$77,380, Pick 4 399/$149,443;
+fresh October 5 Evening Pick 3 414/$27,974, Pick 4 72/$19,260.50. Nineteen Missouri
+tests pass. All eight families now have parsers; no atomic live importer or
+new public feed yet. Next bounded all-source selection, per-session continuity,
+regression/atomic preservation, then catalog/directory/cache/UI integration.
+No Gmail/email in this development run, deadline change or acceptance.

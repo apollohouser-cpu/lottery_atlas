@@ -297,3 +297,59 @@ def parse_cash_pop(raw, expected_date, session):
     report.update(sessionId=session, sessionLabel=CASH_POP_SESSIONS[session],
                   coverage='Missouri source prizes by prize amount for the named drawing session. No wager grouping, exact draw timestamp, unique ticket/person or claim-date inference.')
     return report
+
+
+PICK_MATCHES = {
+    3: ['Straight*', 'Box 3-way', 'Box 6-way', 'Front 2', 'Back 2'],
+    4: ['Straight*', 'Box 4-way', 'Box 6-way', 'Box 12-way', 'Box 24-way',
+        'Front 3', 'Back 3', 'Front 2', 'Mid 2', 'Back 2'],
+}
+
+
+def _money_cents(value):
+    import re
+    from decimal import Decimal
+    if not re.fullmatch(r'\$(?:0|[1-9]\d*|[1-9]\d{0,2}(?:,\d{3})+)(?:\.\d{1,2})?', value):
+        raise ValueError('Invalid dollar amount')
+    return int(Decimal(value[1:].replace(',', '')) * 100)
+
+
+def parse_pick(raw, expected_date, game, session):
+    import re
+    if type(game) is not int or game not in PICK_MATCHES or session not in ('Midday', 'Evening'):
+        raise ValueError('Unknown Pick game/session')
+    expected = date.fromisoformat(expected_date)
+    block = _report_block(raw, f'block-pick{game}-prizes-paid')
+    heading = plain(one(block.xpath('./div[@class="content"]/div[@class="h1 text-center"]'), 'Pick date/session'))
+    if heading != expected.strftime('%A, %b %d, %Y')+' - '+session:
+        raise ValueError('Pick date/session mismatch')
+    table = one(block.xpath('.//table'), 'Pick prize table')
+    heads = table.xpath('./thead/tr')
+    amount_header = 'Prize amount' if game == 3 else 'Prize Amount'
+    if len(heads) != 2 or [plain(n) for n in heads[0].xpath('./th')] != [f'Pick {game}', f'Pick {game} + Wild ball'] or [n.get('colspan') for n in heads[0].xpath('./th')] != ['3', '2'] or [plain(n) for n in heads[1].xpath('./th')] != ['Numbers Matched', 'Number of MO Prizes', amount_header, 'Number of MO Prizes', amount_header]:
+        raise ValueError('Changed Pick variant columns')
+    rows = [[plain(n) for n in r.xpath('./td')] for r in table.xpath('./tbody/tr')]
+    matches = PICK_MATCHES[game]
+    if len(rows) != len(matches)+2 or rows[-2] != ['(Based on $.50 Plays)']:
+        raise ValueError('Changed Pick tiers or play basis')
+    variants = [dict(variant=f'Pick {game}', tiers=[]), dict(variant=f'Pick {game} + Wild ball', tiers=[])]
+    for row, match in zip(rows[:-2], matches):
+        if len(row) != 5 or row[0] != match:
+            raise ValueError('Changed Pick match identity')
+        for v, offset in zip(variants, [1, 3]):
+            count, amount = integer(row[offset]), _money_cents(row[offset+1])
+            if amount <= 0:
+                raise ValueError('Invalid Pick prize')
+            v['tiers'].append(dict(matchLabel=match, sourcePrizeCount=count,
+                                   prizeLabel=row[offset+1], sourceAmountCents=amount, cashPrize=None))
+    total = re.fullmatch(r'Total Winners: ([\d,]+) Total Won: (\$[\d,.]+)', rows[-1][0]) if len(rows[-1]) == 1 else None
+    if not total:
+        raise ValueError('Changed Pick source total')
+    count, cents = integer(total[1]), _money_cents(total[2])
+    if sum(t['sourcePrizeCount'] for v in variants for t in v['tiers']) != count or sum(t['sourcePrizeCount']*t['sourceAmountCents'] for v in variants for t in v['tiers']) != cents:
+        raise ValueError('Pick source totals mismatch')
+    return dict(game=f'Pick {game}', drawDate=expected_date, sessionLabel=session,
+                variants=variants, sourceWinnerCount=count, sourcePayoutCents=cents,
+                sourcePayoutLabel=total[2], playBasisCents=50, distinctTicketCount=None,
+                finalityVerified=False,
+                coverage='Missouri published prizes based on $.50 plays. Base and Wild ball columns remain separate; combined source total is not verified distinct tickets or people. Straight asterisk retained literally. No exact draw timestamp, claim-date or retailer inference.')

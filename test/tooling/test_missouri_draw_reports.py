@@ -150,4 +150,45 @@ class MoreReportTests(unittest.TestCase):
         for raw in [cash_fixture().replace('</html>',''),cash_fixture().replace('Oct 06','Oct 05'),cash_fixture().replace('$2,500','$2,501'),cash_fixture().replace('<td>0</td>','<td></td>',1),cash_fixture().replace('281','282'),cash_fixture().replace('$11,549','$11,550')]:
             with self.assertRaises(ValueError): parse_cash_pop(raw,'2026-10-06',3)
 
+
+from missouri_draw_reports import parse_pick, PICK_MATCHES
+
+
+def pick_fixture(game):
+    if game == 3:
+        base, wild = [125,245,0,7,3], [144,20,0,0,0]
+        prizes, wildprizes = ['$300','$100','$50','$30','$30'], ['$100','$34','$17','$10','$10']
+        total = 'Total Winners: 544 Total Won: $77,380'
+    else:
+        base, wild = [25,0,0,244,0,0,0,14,0,5], [12,0,0,31,60,0,0,0,0,8]
+        prizes = ['$3,000','$750','$500','$250','$125','$300','$300','$30','$30','$30']
+        wildprizes = ['$750','$190','$125','$63','$31','$75','$75','$7.5','$7.5','$7.5']
+        total = 'Total Winners: 399 Total Won: $149,443'
+    rows = list(zip(PICK_MATCHES[game],base,prizes,wild,wildprizes)) + [('(Based on $.50 Plays)',),(total,)]
+    amt = 'Prize amount' if game == 3 else 'Prize Amount'
+    table = simple_table(['Numbers Matched','Number of MO Prizes',amt,'Number of MO Prizes',amt],rows)
+    table = table.replace('<thead>',f'<thead><tr><th colspan="3">Pick {game}</th><th colspan="2">Pick {game} + Wild ball</th></tr>')
+    return f'<html><div class="block-pick{game}-prizes-paid"><div class="content"><div class="h1 text-center">Tuesday, Oct 06, 2026 - Midday</div>{table}</div></div></html>'
+
+
+class PickReportTests(unittest.TestCase):
+    def test_base_wildball_basis_and_fractional_prizes(self):
+        for game, count, cents in [(3,544,7738000),(4,399,14944300)]:
+            r = parse_pick(pick_fixture(game),'2026-10-06',game,'Midday')
+            self.assertEqual((r['sourceWinnerCount'],r['sourcePayoutCents']),(count,cents))
+            self.assertEqual(r['playBasisCents'],50)
+            self.assertIsNone(r['distinctTicketCount'])
+            self.assertEqual(len(r['variants']),2)
+        r = parse_pick(pick_fixture(4),'2026-10-06',4,'Midday')
+        self.assertEqual(r['variants'][1]['tiers'][-1]['sourceAmountCents'],750)
+        self.assertEqual(r['variants'][1]['tiers'][-1]['prizeLabel'],'$7.5')
+
+    def test_reject_session_identity_basis_and_corrupted_totals(self):
+        for game in [3,4]:
+            raw = pick_fixture(game)
+            for broken in [raw.replace('</html>',''), raw.replace('Oct 06','Oct 05'),raw.replace('Midday','Evening'),raw.replace('$.50','$1.00'),raw.replace('Straight*','Straight'),raw.replace('544','545').replace('399','400'),raw.replace('$77,380','$77,381').replace('$149,443','$149,444'),raw.replace('colspan="2"','colspan="3"')]:
+                with self.assertRaises(ValueError): parse_pick(broken,'2026-10-06',game,'Midday')
+        for value in ['$7.555','$-1','$07.5','7.5']:
+            with self.assertRaises(ValueError): parse_pick(pick_fixture(4).replace('$7.5',value),'2026-10-06',4,'Midday')
+
 if __name__ == '__main__': unittest.main()

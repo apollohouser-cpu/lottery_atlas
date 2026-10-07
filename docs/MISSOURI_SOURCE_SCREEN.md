@@ -384,3 +384,23 @@ Missouri tests pass, and both captured HTML reports validate privately. Cash
 options and distinct tickets remain unknown; no source finality assertion.
 Six of eight report families parsed; Pick 3/4 and live continuity are next. No
 new public feed, private agency integration, mail or deadline change.
+
+## October 6, 22:00 ET — Pick 3/4 sessions and fractional prize units
+
+Strict parsers now cover [Pick 3](https://www.molottery.com/pick3/winning-numbers.do)
+and [Pick 4](https://www.molottery.com/pick4/winning-numbers.do), both Midday and
+Evening. Exact variant headers/column spans, date/weekday/session, match labels,
+$.50-play basis, counts and payout arithmetic are required. Five and ten match
+rows retain base and Wild ball columns separately. Straight's asterisk remains
+literal; prize amounts such as $7.5 use exact integer cents. Combined published
+winner counts are not verified distinct tickets or people across columns.
+
+October 6 Midday private captures validate Pick 3 544/$77,380 and Pick 4
+399/$149,443. Fresh official linked October 5 Evening reports validate Pick 3
+414/$27,974 and Pick 4 72/$19,260.50, including a fractional total. Raw pages and
+parsed outputs remain private. Two new regression tests cover wrong sessions,
+dates, play basis, columns, tier identities, malformed money and total mismatches;
+nineteen Missouri tests pass overall. All eight report families now parsed.
+No finality, cash-option, claim-date or retailer association is inferred. Next
+bounded live selection/continuity and atomic publication preservation; no new
+public feed or agency integration, email or deadline change.
