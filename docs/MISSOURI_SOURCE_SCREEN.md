@@ -486,3 +486,20 @@ validate privately. Nothing promoted or joined to wins. Next privately audit the
 already-delivered agency workbook and reconcile directory scope/position evidence,
 while report/catalog app integration remains pending. No Gmail or new email in
 this run; no deadline change or acceptance.
+
+## October 7, 03:07 ET — Flutter report asset and fallback loader
+
+The validated public-source 28-report snapshot is bundled with a Missouri-specific
+loader. Dates/session keys and official report URLs are checked together; all
+14 groups require two unique source dates. Base/add-on variants, count/payout
+units, literal jackpot/range/zero labels, $.50 play basis and fractional cents
+remain separate. Unknown distinct-ticket/cash values and unverified finality are
+preserved. Mega Millions payouts are bounded by ranges when no jackpot wins.
+
+Remote validation or continuity failure falls back to validated cache, then the
+bundle. Cache-write failure does not discard a valid remote result. Four Flutter
+tests cover bundle loading, malformed remote retention, timestamp regression,
+persistence failure, missing sessions and changed fractional amounts; focused
+analysis is clean. This is app data preparation, not an endpoint deployment or
+native UI pass. Catalog/directory and report sheet remain pending. No private
+agency records, retailer joins, fees, email or deadline change.

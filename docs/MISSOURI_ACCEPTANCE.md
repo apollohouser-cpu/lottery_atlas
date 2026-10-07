@@ -174,3 +174,15 @@ IDs; null retained. Mobile/subscription/agency entries are not presumed normal
 stores, and this is not statewide coverage. Twenty-five Missouri tests pass.
 Next agency workbook private audit/reconciliation and report/catalog app
 integration. No new public feed, Gmail/email, deadline change or acceptance.
+
+### October 7, 03:07 ET — report asset and resilient Flutter loader
+
+Added the validated 28-report public-source snapshot as a Flutter asset and a
+Missouri remote/cache/bundle loader. It checks game/session/date/source-route
+identity, complete two-report groups, variant/tier shapes, counts, literal prizes,
+exact fractional payouts, null identity/cash fields and per-session regression.
+Invalid remote data retains valid cache; persistence failure retains a valid
+response. Four loader tests pass and focused two-file analysis is clean.
+No report sheet, deployed endpoint or native acceptance yet; next UI/source routes
+and catalog/directory integration, then transactional publication. No private
+agency material included. No Gmail/email or deadline change; not accepted.
