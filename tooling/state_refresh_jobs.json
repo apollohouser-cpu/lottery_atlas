@@ -520,13 +520,27 @@
   {
     "state": "Missouri",
     "outputs": [
-      "data/state_winning_ticket_totals.json"
+      "data/state_winning_ticket_totals.json",
+      "data/missouri_scratch_catalog.generated.json",
+      "data/missouri_draw_reports.generated.json"
     ],
     "commands": [
       [
         "python3",
         "tooling/import_missouri_show_me_cash_totals.py",
         "data/state_winning_ticket_totals.json"
+      ],
+      [
+        "python3",
+        "tooling/import_missouri_scratch_catalog.py",
+        "--output",
+        "data/missouri_scratch_catalog.generated.json"
+      ],
+      [
+        "python3",
+        "tooling/import_missouri_draw_reports.py",
+        "--output",
+        "data/missouri_draw_reports.generated.json"
       ]
     ]
   }

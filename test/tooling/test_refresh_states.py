@@ -159,6 +159,32 @@ class RefreshStatesTest(unittest.TestCase):
                 for name, original in before.items():
                     self.assertEqual((root/name).read_bytes(), original)
 
+    def test_missouri_failure_at_each_importer_preserves_all_three_feeds(self):
+        jobs = json.loads((ROOT/'tooling/state_refresh_jobs.json').read_text())
+        job = next(j for j in jobs if j['state'] == 'Missouri')
+        self.assertEqual(len(job['outputs']), 3)
+        for fail_at in range(len(job['commands'])):
+            with self.subTest(fail_at=fail_at), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                before = {}
+                for name in job['outputs']:
+                    path = root/name
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    before[name] = (ROOT/name).read_bytes()
+                    path.write_bytes(before[name])
+                seen = []
+                def run(command, **kwargs):
+                    index = len(seen)
+                    seen.append(command)
+                    (root/command[-1]).write_text('partial' if index == fail_at else '{}')
+                    return subprocess.CompletedProcess(command, 1 if index == fail_at else 0)
+                rows, fatal = m.refresh([job], root, run)
+                self.assertFalse(fatal)
+                self.assertEqual(rows[0]['status'], 'retained_after_failure')
+                self.assertEqual(len(seen), fail_at + 1)
+                for name, original in before.items():
+                    self.assertEqual((root/name).read_bytes(), original)
+
     def test_manifest_owns_each_output_once_and_commands_reference_owned_data(self):
         jobs=json.loads((ROOT/'tooling/state_refresh_jobs.json').read_text())
         self.assertEqual(len(jobs),29)

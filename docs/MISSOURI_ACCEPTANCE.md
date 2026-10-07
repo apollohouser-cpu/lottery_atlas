@@ -236,3 +236,18 @@ is clean. Ordinary macOS release build passes (not relaunched; no native
 interaction claim). Directory audit/integration, state transaction, live endpoints
 and native acceptance remain pending. No Gmail/email, private agency promotion,
 deadline change or acceptance.
+
+### October 7, 07:08 ET — transactional refresh and endpoint staging
+
+Missouri's scheduled job now owns the existing Show Me Cash totals plus the
+literal Scratchers catalog and 28-report snapshot as one three-output transaction.
+Failure at any of the three importers restores all prior output bytes and dates;
+nine transaction tests pass, including each Missouri failure position. The
+publication workflow stages separate catalog/report endpoints consumed by the
+Flutter loaders; the literal catalog is not coerced into the generic cash schema.
+Reviewed public-source baseline files are staged. This is wiring and staging,
+not proof of successful deployment, scheduled refresh or native adoption.
+
+Directory private audit/integration and native acceptance remain open. Next
+verify deployment/public bytes and the scheduled three-output job while completing
+the directory audit. No Gmail/email, deadline change or acceptance.
