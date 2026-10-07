@@ -7,7 +7,7 @@ state source-screen documents retain the detailed evidence and request history.
 
 The user authorizes proceeding toward iOS and Android beta testing with currently
 validated coverage. Full public release requires a usable, accepted supported
-experience in every U.S. state that operates a state lottery. Eight accepted
+experience in every U.S. state that operates a state lottery. Nine accepted
 states are sufficient to start beta preparation, not to declare national readiness.
 A ten-year timeline and deeper historical data remain future updates.
 
@@ -49,7 +49,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 | Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
 | South Carolina | Accepted October 1, 2026, 7:02 PM ET (due October 3, 5:03 PM) | Supported available coverage accepted; broader claims remain separate. |
 | New York | Accepted October 3, 2026, 6:12 PM ET (due October 5, 7:00 PM ET) | Supported available coverage closed; complete statewide claims remain separate. |
-| Missouri | October 11, 2026, 4:00 PM ET | Active October 6, 4:00 PM ET; scope closed October 6, 6:00 PM ET (due October 7). |
+| Missouri | Accepted October 7, 2026, 5:22 PM ET (due October 11, 4:00 PM) | Supported reports/catalog and explicitly bounded two-city directory accepted; broader claims/positions separate. |
 | Oregon | October 10, 2026, 4:35 PM ET | Accepted October 6, 3:01 PM ET; scope closed October 5. |
 | Colorado | Accepted October 5, 2026, 3:33 PM ET (due October 7, 2:15 PM ET) | Supported coverage closed; broader records remain separate. |
 | Ohio | Accepted October 4, 2026, 1:14 PM ET (due October 6, 7:12 PM ET) | Supported available coverage closed; broader records remain separate. |
@@ -96,14 +96,16 @@ available coverage. Virginia closed October 2 at 18:02 ET; see
 VIRGINIA_ACCEPTANCE.md for the consolidated release evidence and limitations.
 New York closed October 3, 2026 at 18:12 ET; see NEW_YORK_ACCEPTANCE.md.
 Ohio closed October 4, 2026 at 13:14 ET; see OHIO_ACCEPTANCE.md.
-All eight accepted states are ready for supported-coverage user testing. Colorado
+All nine accepted states are ready for supported-coverage user testing. Colorado
 closed October 5 at 15:33 ET; see COLORADO_ACCEPTANCE.md. Oregon closed October 6
 at 15:01 ET, ahead of October 10 at 16:35 ET; see OREGON_ACCEPTANCE.md. Its scheduled
-three-output refresh and newer native remote adoption are verified. Missouri is the sole active state from October 6 at 16:00 ET, selected for its
-working single-game import, prior catalog audit and recorded directory delivery.
-Substantial integration uses 120 hours: scope October 7 at 16:00 ET, release
-October 11 at 16:00 ET. See MISSOURI_ACCEPTANCE.md. Mobile beta preparation remains
-open; NATIONAL_RELEASE_FORECAST.md records remaining-state readiness.
+three-output refresh and newer native remote adoption are verified. Missouri closed October 7 at 17:22 ET on release 337848b, ahead of October 11.
+See MISSOURI_ACCEPTANCE.md for its 28 reports, 73 listed Scratch games and dated
+two-city directory limits. Nine states are ready for supported testing; 36 remain.
+No successor is activated yet. Select by remaining-state readiness and assign a
+fresh calendar deadline at activation. Mobile beta preparation remains open.
+NATIONAL_RELEASE_FORECAST.md retains the October 6 forecast baseline; one of the
+five acceptances before its next routine reforecast is complete.
 Continue authorized private records audits and no-fee correspondence separately.
 The NE/TX and SC scheduled recovery checkpoints are closed. No routine accepted-
 state UI rechecks or fees are authorized.

@@ -1,4 +1,9 @@
-# Missouri source screen — September 12, 2026
+# Missouri source screen — updated October 7, 2026
+
+**Supported coverage accepted October 7 at 17:22 ET, release 337848b.**
+See MISSOURI_ACCEPTANCE.md for the report/catalog/two-city directory scope,
+verified publication and native evidence. Earlier notes below retain their
+historical dates; the final acceptance supersedes their partial-only status.
 
 Missouri's **Show Me Cash-only state total is ready for partial-coverage
 testing**, while its current-data retailer heat map is deferred. Preserve the
@@ -770,3 +775,55 @@ selected. Private screenshots are under work/missouri_native with the
 2026-10-07_16 prefix. Next bounded request-failure/reconnect verification and
 consolidated release checks; Missouri is not yet accepted. No Gmail/email,
 code/feed changes or deadline change.
+
+
+### October 7, 17:22 ET — recovery verified; supported coverage accepted
+
+Accepted supported Missouri coverage on release 337848b, ahead of October 11
+at 16:00 ET, with no extension. Scope closed October 6 at 18:00 ET. This accepts
+usable supported features and explicitly bounded gaps, not complete statewide
+claims or a statewide retailer map.
+
+A private Dart HttpOverrides probe routed requests to an unavailable localhost
+proxy while a private flag existed. Under that condition, native Powerball
+October 5 retained its base/Power Play/Double Play tables and retrieval
+2026-10-07T13:39:10.802496+00:00. Scratch retained 73 listed games, #359's literal
+prize/count table and retrieval 2026-10-07T13:39:07.151863+00:00. Removing the flag
+and reopening both sheets retained the same valid data and original dates.
+This verifies request-failure fallback and reopening, not newer remote adoption,
+OS-wide offline operation or offline map tiles. The earlier scheduled refresh
+already demonstrated newer native remote adoption. The probe was closed, the
+flag removed, the ordinary lib/main.dart macOS debug build passed and that
+ordinary app was relaunched. Private evidence/logs remain in work/missouri_native.
+
+Consolidated checks: 26 Missouri Python tests, nine state transaction tests and
+16 Flutter tests pass; analysis of six Missouri loader/sheet files is clean.
+The first Python invocation used the system runtime without lxml; rerunning with
+the established dependency runtime passed. No application defect or validation
+relaxation resulted. Automated sheets traverse all 28 report selections and all
+73 catalog games in compact/wide layouts. Native checks cover all eight families
+and 14 game/session groups, source return, catalog search/price/reset, two-city
+directory search/product/reset, compact/wide layouts and request recovery.
+
+Scheduled run 37628614038 / bot 60aa90a and the previously verified matching
+public report/catalog/Show Me Cash/status bytes close publication. Supported
+reports are the bounded two latest linked reports per group (28 across 14),
+not a complete history. Show Me Cash's separate total is 2,122,702 through October
+6 across its reported tiers only. Scratch inventory contains 73 listed games,
+including ended games, with advertised prizes and estimated unclaimed counts.
+The dated directory bundle covers Jefferson City (66 local query rows) and
+Columbia (85), with an official search route for other locations. It has no
+verified coordinates, retailer IDs, statewide count or scheduled directory
+refresh. It must not be represented as statewide directory coverage or map pins.
+
+Private agency name/city rows and ambiguous joins remain excluded. Keno/options,
+Pull-Tabs, promotions, EZ Match and historical Lotto/Cash4Life retain explicit
+source routes/gaps. No distinct-ticket/person aggregation across variants,
+complete claims, retailer-win heat, cash-option conversion, store stock,
+accessibility certification or mobile distribution is claimed. Agency enrichment
+and ten-year history remain separate. No Gmail/email or fees in this run.
+
+Nine states are ready for supported-coverage testing; 36 lottery states remain.
+No successor is activated in this acceptance. Select the next state from the
+readiness ledger with a fresh explicit deadline; continue independent mobile
+beta preparation. This does not approve national public release.

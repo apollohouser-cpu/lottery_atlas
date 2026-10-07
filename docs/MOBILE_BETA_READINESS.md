@@ -3,7 +3,8 @@
 October 6, 2026 audit. Beta is authorized for iOS and Android with validated
 coverage; national supported coverage is required before full public release.
 October 20–27 remains a provisional beta estimate, not a promised launch date.
-Oregon remains the sole active state with its October 10, 16:35 ET deadline.
+As of October 7, nine states have accepted supported coverage, including Missouri.
+No mobile distribution is implied by desktop state acceptance.
 
 ## Verified local readiness
 
@@ -112,3 +113,12 @@ report downloads use the project's GitHub Pages host and map tiles use ArcGIS.
 This is evidence for a later complete privacy audit, not a “no data collected”
 claim or finished store declaration. Network-provider handling, all outbound
 routes, support contact, privacy page, icons and tester instructions remain open.
+
+
+## October 7 supported-state update
+
+Missouri was accepted at 17:22 ET on release 337848b, bringing the supported
+testing set to nine states: TX, KY, SC, VA, NY, OH, CO, OR and MO. Missouri's
+directory is a dated Jefferson City/Columbia bundle with official search for
+other locations, not statewide mapping. Mobile simulator interaction, privacy,
+icons/tester preparation and signing/distribution remain open as documented above.

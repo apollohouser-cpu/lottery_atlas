@@ -2,7 +2,8 @@
 
 Activated **October 6, 2026 at 16:00 ET** as the sole active state after Oregon.
 Supported scope/gap matrix due **October 7 at 16:00 ET**; release decision due
-**October 11 at 16:00 ET** (120 hours). Not accepted. Although a single-game
+**October 11 at 16:00 ET** (120 hours). **Accepted October 7 at 17:22 ET**
+on release 337848b, ahead of deadline. Although a single-game
 import works, broader report, catalog and directory integration is substantial;
 this is a fresh window, not Oregon's deadline.
 
@@ -28,21 +29,18 @@ unclaimed units must stay literal until verified; no synthetic claim dates.
 ## Acceptance gates
 
 - [x] Full national/state/Scratch/other-product scope and explicit gaps (October 6, 18:00 ET).
-- [ ] Source dates, tier units, composite counts, overlap and literal prizes.
-- [ ] Strict current catalog/report imports and continuity/preservation checks.
-- [ ] Directory private audit or validated public locator; no guessed positions.
-- [ ] Bundle/cache/UI/source routes with honest unsupported-feature labels.
-- [ ] Transactional refresh, live publication and native adoption.
-- [ ] Native compact/wide, source return, filters and request-failure recovery.
-- [ ] Automated checks, ordinary build and supported release decision.
+- [x] Source dates, tier units, composite counts, overlap and literal prizes.
+- [x] Strict current catalog/report imports and continuity/preservation checks.
+- [x] Directory private audit or validated public locator; no guessed positions.
+- [x] Bundle/cache/UI/source routes with honest unsupported-feature labels.
+- [x] Transactional refresh, live publication and native adoption.
+- [x] Native compact/wide, source return, filters and request-failure recovery.
+- [x] Automated checks, ordinary build and supported release decision.
 
-Next refresh the full product/source matrix and implement the catalog from
-revalidated public pages, then integrate supported draw reports and directory.
-Read MISSOURI_SOURCE_SCREEN.md for unresolved source/agency questions. Missing
-agency definitions do not block usable supported app coverage; unknown totals
-remain unknown and private records stay excluded until audited. No Gmail, email,
-fee authorization or human attestation in this activation. No mobile beta release
-is claimed; shared platform preparation continues independently.
+Supported release is closed with the boundaries in the final acceptance below.
+Read MISSOURI_SOURCE_SCREEN.md for unresolved agency questions. Missing complete
+claims, statewide directory coordinates and ten-year history remain separate.
+No mobile beta distribution is claimed.
 
 ### October 6, 17:00 ET — current inventory parser preparation
 
@@ -453,3 +451,55 @@ selected. Private screenshots are under work/missouri_native with the
 2026-10-07_16 prefix. Next bounded request-failure/reconnect verification and
 consolidated release checks; Missouri is not yet accepted. No Gmail/email,
 code/feed changes or deadline change.
+
+
+### October 7, 17:22 ET — recovery verified; supported coverage accepted
+
+Accepted supported Missouri coverage on release 337848b, ahead of October 11
+at 16:00 ET, with no extension. Scope closed October 6 at 18:00 ET. This accepts
+usable supported features and explicitly bounded gaps, not complete statewide
+claims or a statewide retailer map.
+
+A private Dart HttpOverrides probe routed requests to an unavailable localhost
+proxy while a private flag existed. Under that condition, native Powerball
+October 5 retained its base/Power Play/Double Play tables and retrieval
+2026-10-07T13:39:10.802496+00:00. Scratch retained 73 listed games, #359's literal
+prize/count table and retrieval 2026-10-07T13:39:07.151863+00:00. Removing the flag
+and reopening both sheets retained the same valid data and original dates.
+This verifies request-failure fallback and reopening, not newer remote adoption,
+OS-wide offline operation or offline map tiles. The earlier scheduled refresh
+already demonstrated newer native remote adoption. The probe was closed, the
+flag removed, the ordinary lib/main.dart macOS debug build passed and that
+ordinary app was relaunched. Private evidence/logs remain in work/missouri_native.
+
+Consolidated checks: 26 Missouri Python tests, nine state transaction tests and
+16 Flutter tests pass; analysis of six Missouri loader/sheet files is clean.
+The first Python invocation used the system runtime without lxml; rerunning with
+the established dependency runtime passed. No application defect or validation
+relaxation resulted. Automated sheets traverse all 28 report selections and all
+73 catalog games in compact/wide layouts. Native checks cover all eight families
+and 14 game/session groups, source return, catalog search/price/reset, two-city
+directory search/product/reset, compact/wide layouts and request recovery.
+
+Scheduled run 37628614038 / bot 60aa90a and the previously verified matching
+public report/catalog/Show Me Cash/status bytes close publication. Supported
+reports are the bounded two latest linked reports per group (28 across 14),
+not a complete history. Show Me Cash's separate total is 2,122,702 through October
+6 across its reported tiers only. Scratch inventory contains 73 listed games,
+including ended games, with advertised prizes and estimated unclaimed counts.
+The dated directory bundle covers Jefferson City (66 local query rows) and
+Columbia (85), with an official search route for other locations. It has no
+verified coordinates, retailer IDs, statewide count or scheduled directory
+refresh. It must not be represented as statewide directory coverage or map pins.
+
+Private agency name/city rows and ambiguous joins remain excluded. Keno/options,
+Pull-Tabs, promotions, EZ Match and historical Lotto/Cash4Life retain explicit
+source routes/gaps. No distinct-ticket/person aggregation across variants,
+complete claims, retailer-win heat, cash-option conversion, store stock,
+accessibility certification or mobile distribution is claimed. Agency enrichment
+and ten-year history remain separate. No Gmail/email or fees in this run.
+
+Nine states are ready for supported-coverage testing; 36 lottery states remain.
+No successor is activated in this acceptance. Select the next state from the
+readiness ledger with a fresh explicit deadline; continue independent mobile
+beta preparation. This does not approve national public release.

@@ -1,10 +1,15 @@
-# National coverage readiness and forecast — October 6, 2026
+# National coverage readiness and forecast — October 6 baseline, October 7 status
 
 Full public release requires usable accepted coverage in every lottery state;
 limited-state iOS/Android beta can proceed earlier. NASPL currently identifies
 [45 U.S. lottery states](https://www.naspl.org/faq). The repository has a source
-screen for each of those 45. Eight are accepted, leaving 37. This state-based
+screen for each of those 45. Nine are accepted, leaving 36 (Missouri accepted October 7). This state-based
 ledger does not silently count DC or territories as states or as accepted coverage.
+
+Missouri closed on release 337848b at October 7, 17:22 ET. The forecast below
+remains the October 6 baseline, with one of five additional acceptances completed.
+The current remaining split is 19 scheduled catalog states, one narrow winner
+import (North Carolina), and 16 states without scheduled state jobs.
 
 ## Evidence and forecast limits
 
@@ -41,7 +46,7 @@ complete statewide claims do not block honest supported-coverage acceptance.
 
 Counts describe current committed listings, not stock, claims or certified
 statewide completeness. Duration bands describe planning complexity, not active
-deadlines. Only Missouri is activated by this audit.
+deadlines. Missouri was activated by the original audit and is now accepted. No state is currently active.
 
 | State | Existing foundation | Remaining acceptance work | Planning band |
 | --- | --- | --- | --- |
@@ -64,7 +69,6 @@ deadlines. Only Missouri is activated by this audit.
 | [Michigan](MICHIGAN_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 107 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Minnesota](MINNESOTA_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 38 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Mississippi](MISSISSIPPI_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
-| [Missouri](MISSOURI_SOURCE_SCREEN.md) | Scheduled Show Me Cash count; catalog audit and agency directory delivery recorded | Broader games, Scratch integration, private directory audit and native acceptance | 5 days activated |
 | [Montana](MONTANA_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [Nebraska](NEBRASKA_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 24 listed games; unchanged | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [New Hampshire](NEW_HAMPSHIRE_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 58 listed games; retained_after_failure | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
@@ -85,10 +89,7 @@ deadlines. Only Missouri is activated by this audit.
 
 ## Next state
 
-Missouri is selected for its validated Show Me Cash import, prior detailed
-Scratcher audit and recorded agency directory delivery. These offer more specific
-integration evidence than catalog-only readiness, while still requiring substantial
-work. It activates October 6 at 16:00 ET: supported scope due October 7 at 16:00 ET;
-release decision due October 11 at 16:00 ET (120 hours). See MISSOURI_ACCEPTANCE.md.
-No second state is activated by this ledger. Broader historic/private records
-remain separate and no fees, attestations or speculative winner joins are allowed.
+Missouri is accepted; select the next state by readiness or user priority and
+record a fresh scope/release deadline at activation. No successor is activated
+by this update. Mobile beta preparation continues independently. Broader historic
+and private records remain separate; no fees, attestations or speculative joins.
