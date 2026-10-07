@@ -409,3 +409,24 @@ Next native Scratch flow and external statewide-locator route, larger layout,
 request-failure recovery and consolidated release checks. App left at Columbia
 with search cleared and All products selected. No Gmail/email, code/feed change,
 deadline change or acceptance.
+
+### October 7, 15:16 ET — native Scratch filters and official locator route
+
+The directory's other-locations button opened the official Where To Play page,
+with city/ZIP, radius and game selections available. Closed that task-created tab
+and returned to the app. This verifies the route, not statewide directory contents.
+
+Opened the native Scratch inventory: 73 listed games, including ended games.
+Searching 777 selected #505 777 JACKPOT with its literal $777,777 top prize and
+April 17 listed end date. Intersecting that search with $1 tickets produced a
+scoped empty view; clearing the search restored six $1 games. Selected #566 HOT
+7S, verified its TBD end date, literal $7,777 top prize and total/unclaimed rows,
+then scrolled to source limits and retrieval 2026-10-07T13:39:07.151863+00:00.
+Resetting All ticket prices restored all 73 games and the default #359 24K GOLD.
+Estimated inventory, source-date unavailability, cash-option and stock/claim
+limitations remain visible. Private footer evidence is in work/missouri_native.
+
+Next larger native layouts and request-failure recovery, then consolidated
+release checks. Native Scratch external detail route remains to verify alongside
+those checks. App left on the full catalog/default game. No Gmail/email,
+code/feed change, deadline change or acceptance.
