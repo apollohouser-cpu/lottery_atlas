@@ -614,3 +614,23 @@ claim; no private workbook row or coordinate join is promoted. Next integrate
 an explicitly bounded address-directory experience and official statewide search
 route, then native acceptance and scheduled refresh verification. No Gmail/email,
 public directory promotion, deadline change or acceptance.
+
+### October 7, 10:11 ET — explicitly local address directory UI
+
+Bundled the validated public Jefferson City (66) and Columbia (85) query snapshots
+and added a navigable directory sheet. City selection, name/address/ZIP search
+and source-product filtering retain source addresses without creating map pins.
+The UI prominently limits bundled coverage to these two cities and offers the
+official locator for other Missouri locations. Source retrieval dates remain
+visible; stock, ordinary-store status, winner links, coordinates and completeness
+are not inferred. This is a dated bundle, not a live statewide directory or an
+automatically refreshed directory endpoint. No private agency rows are included.
+
+A strict bundle validator rejects query/city mismatch, duplicate identities,
+unknown product labels, malformed ZIPs and supplied coordinates/IDs. Three tests
+pass, covering validation and compact/wide city/search/product interactions;
+four-file analysis is clean. Ordinary macOS release build passes (not relaunched).
+Next ordinary native verification, source-return,
+failure recovery and scheduled three-output adoption. The bounded directory
+limitation remains part of release review. No Gmail/email or deadline change;
+Missouri not accepted.
