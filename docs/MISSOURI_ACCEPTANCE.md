@@ -251,3 +251,32 @@ not proof of successful deployment, scheduled refresh or native adoption.
 Directory private audit/integration and native acceptance remain open. Next
 verify deployment/public bytes and the scheduled three-output job while completing
 the directory audit. No Gmail/email, deadline change or acceptance.
+
+### October 7, 08:09 ET — endpoint verification and private directory audit
+
+Publisher 37612210271 completed successfully. Independently downloaded Missouri
+report and literal Scratchers endpoints match reviewed asset bytes exactly
+(112,831 and 170,114 bytes). Scheduled three-output execution and native adoption
+are still unverified; deployment is not state acceptance.
+
+Retrieved the already-delivered September 23 agency workbook using a narrowly
+targeted attachment lookup because the active directory integration depends on
+its schema. This was not a routine inbox check and no email was sent. The original
+115,177-byte workbook is retained privately. Read-only XML inspection of Sheet2,
+A3:B4795 finds 4,793 business rows under only Business Name and City. No street,
+ZIP, coordinates, retailer IDs, product flags or source verification date columns
+are supplied. No formula cells were found. This is a structural/data audit, not
+a visual workbook certification or current statewide completeness claim.
+
+Whitespace/case normalization yields 4,742 distinct name/city pairs, 41 repeated
+pair groups (51 excess rows) and 639 city labels, not verified distinct cities.
+All 66 previously captured local locator rows have name/city candidates in this
+file; two match nonunique agency pairs. These are candidate comparisons, not
+approved identity/position joins. Agency/mobile/subscription entries remain
+included as source records, not presumed ordinary stores. Raw rows and duplicate
+keys remain private; no agency layer or guessed position is published.
+
+Next implement a supported directory experience with explicit address/position
+limits, using verified public locator evidence; do not geocode names/cities into
+invented store positions. Then finish scheduled refresh/native acceptance.
+Release deadline unchanged; Missouri not accepted.
