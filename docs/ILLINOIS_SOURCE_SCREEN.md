@@ -120,3 +120,19 @@ claim-office entries. No answers, new analysis, compilation or paid work were
 requested. Electronic copies/links and any available no-fee portion suffice.
 This is a new records request, not an appeal or a duplicate request for the data.
 Monitor its response separately from the denied clarification questions.
+
+## October 6, 22:02 ET — administrative grant notice
+
+The evening correspondence check found a one-page October 6 grant letter
+referring to the original September 13 narrowed request. It states that the file
+was shared September 19. This is the agency's retrospective delivery statement;
+it does not replace the earlier recorded receipt/audit dates or supply new data.
+The original 150,116-byte PDF was archived privately and text extracted from its
+single page; no visual layout audit is claimed.
+
+No new records, definitions, fee, question, deadline or promised follow-up were
+provided. The separate September 29 request for existing documentation remains
+Sent-confirmed with no response in its thread. This grant notice does not identify
+that newer request or resolve retailer-role, completeness or correction questions.
+No duplicate acknowledgment, paid authorization or new request was sent. Private
+check evidence remains in work/agency_email_checks; no public data layer changed.
