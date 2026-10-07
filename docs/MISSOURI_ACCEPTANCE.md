@@ -153,3 +153,15 @@ Millions. Twenty-two Missouri tests pass; an injected failure preserves the live
 private baseline bytes and retrieval timestamp. No public feed promotion.
 Next catalog/directory integration, report bundle/cache/UI and state transaction,
 then publication/native acceptance. No Gmail/email or deadline change; not accepted.
+
+### October 7, 01:06 ET — atomic literal inventory importer
+
+Current listing plus all 73 official linked game details validate in a fresh
+private atomic catalog snapshot. Identity/list-detail inventory guards, complete
+HTML, daily cadence and small/drop anomaly guards precede replacement. Unchanged
+snapshots preserve retrieval time; listing/detail request failures and malformed
+HTML preserve prior bytes. Twenty-three Missouri tests pass. Literal advertised
+prizes and null sourceDate retained; this separate payload is not yet mapped into
+the generic app cash-prize catalog. Next directory audit and report/catalog
+bundle/cache/UI integration, then state transaction and native acceptance.
+No public promotion, Gmail/email or deadline change; Missouri not accepted.

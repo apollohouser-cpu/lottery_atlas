@@ -448,3 +448,21 @@ Cash Pop query/session mapping. Injecting a fetch failure against the actual
 private live payload preserves its bytes and updatedAt. No public feed was
 promoted or changed. Next report bundle/cache/UI, catalog/directory and state
 transaction integration; no Gmail/email, fees, deadline change or acceptance.
+
+## October 7, 01:06 ET — fresh atomic Scratch inventory snapshot
+
+Added an importer that follows official listing detail links and validates every
+listed game before replacing its output. Fresh live listing and all 73 details
+pass privately. Complete HTML, official route, game identity, price/start date,
+listing/detail tier agreement and daily cadence are required. A minimum-scale
+and prior-count-drop guard flag anomalies for review; neither asserts statewide
+completeness. Changed identity rejects; estimated remaining inventory may update
+without inventing claim dates or converting differences into claims.
+
+The snapshot preserves advertised prize labels, total/unclaimed source units,
+listed end dates and null sourceDate. It is deliberately not yet a generic app
+cash-prize feed. A new importer test checks a complete snapshot, unchanged bytes/
+timestamp, listing/detail request failures and truncated HTML. Twenty-three
+Missouri tests pass. Live payload is private in work/missouri_scope/live_catalog.json.
+Next approved app model integration and directory audit; no agency data, public
+feed promotion, email or deadline change.
