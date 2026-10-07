@@ -225,3 +225,75 @@ def parse_powerball(raw, expected_date):
                 variants=variants, mainSourceWinnerCount=totals[2][0], mainSourcePayoutDollars=totals[2][1],
                 distinctTicketCount=None, finalityVerified=False,
                 coverage='Missouri source prizes. Main total combines without/with Power Play columns; Double Play is separate. No unique tickets or people across variants; unavailable jackpot Power Play cells remain null. Literal prizes do not establish cash options or claim dates.')
+
+
+MO_MILLIONS_MATCHES = ['6 White Balls', '5 White Balls & Bulls-Eye', '5 White Balls',
+                       '4 White Balls & Bulls-Eye', '4 White Balls',
+                       '3 White Balls & Bulls-Eye', '3 White Balls', '2 White Balls & Bulls-Eye']
+CASH_POP_SESSIONS = {1: 'Early Bird', 2: 'Late Morning', 3: 'Matinee', 4: 'Prime Time', 5: 'Night Owl'}
+CASH_POP_AMOUNTS = [2500, 1250, 1000, 500, 250, 200, 150, 125, 100, 75, 70, 50,
+                    40, 35, 30, 25, 20, 15, 14, 10, 7, 5]
+
+
+def _report_block(raw, block_class):
+    closing = b'</html>' if isinstance(raw, bytes) else '</html>'
+    if closing not in raw.lower():
+        raise ValueError('Incomplete report document')
+    tree = html.fromstring(raw)
+    return one(tree.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," '+block_class+' ")]'), 'report block')
+
+
+def parse_mo_millions(raw, expected_date):
+    expected = date.fromisoformat(expected_date)
+    block = _report_block(raw, 'block-powerball-prizes-paid')
+    headings = [plain(n) for n in block.xpath('./div[@class="content"]/div[@class="h1 text-center"]')]
+    if headings != [expected.strftime('%A, %b %d, %Y')+' - '+s for s in ['Main Drawing', 'Double Play Drawing']]:
+        raise ValueError('MO Millions variant date identity mismatch')
+    tables = block.xpath('.//table')
+    if len(tables) != 2:
+        raise ValueError('Expected both MO Millions variants')
+    variants = []
+    for name, table in zip(['Main', 'Double Play'], tables):
+        if [plain(n) for n in table.xpath('./thead/tr/th')] != ['Numbers Matched', 'Number of MO Prizes', 'Prize amount', '']:
+            raise ValueError('Changed MO Millions columns')
+        rows = [[plain(n) for n in r.xpath('./td')] for r in table.xpath('./tbody/tr')]
+        if len(rows) != 9 or any(len(r) != 4 or r[3] for r in rows[:8]):
+            raise ValueError('Incomplete or extra MO Millions tiers')
+        tiers = _fixed_tiers([r[:3] for r in rows[:8]], MO_MILLIONS_MATCHES)
+        total = rows[8]
+        if len(total) != 4 or total[0] != 'Grand Total Winners:' or total[2] != 'Grand Total Won:':
+            raise ValueError('Changed MO Millions total')
+        report = _fixed_report('MO Millions', expected_date, tiers, integer(total[1]), integer(total[3], True))
+        variants.append(dict(variant=name, tiers=tiers, sourceWinnerCount=report['sourceWinnerCount'], sourcePayoutDollars=report['sourcePayoutDollars']))
+    return dict(game='MO Millions', drawDate=expected_date, variants=variants,
+                distinctTicketCount=None, finalityVerified=False,
+                coverage='Missouri source prizes. Bulls-Eye matches retain their own rows; Double Play totals remain separate. Printed zero top prize with no winners is not a zero jackpot assertion. No unique tickets/people across variants, cash-option or claim-date inference. EZ Match is not included.')
+
+
+def parse_cash_pop(raw, expected_date, session):
+    import re
+    if type(session) is not int or session not in CASH_POP_SESSIONS:
+        raise ValueError('Unknown Cash Pop session')
+    expected = date.fromisoformat(expected_date)
+    block = _report_block(raw, 'block-cashpop-prizes-paid')
+    heading = plain(one(block.xpath('./div[@class="content"]/div[@class="h1 text-center"]'), 'Cash Pop date/session'))
+    if heading != expected.strftime('%A, %b %d, %Y')+', '+CASH_POP_SESSIONS[session]:
+        raise ValueError('Cash Pop date/session mismatch')
+    table = one(block.xpath('.//table'), 'Cash Pop prize table')
+    if [plain(n) for n in table.xpath('./thead/tr/th')] != ['Number of Prizes', 'Prize Amount']:
+        raise ValueError('Changed Cash Pop columns')
+    rows = [[plain(n) for n in r.xpath('./td')] for r in table.xpath('./tbody/tr')]
+    if len(rows) != len(CASH_POP_AMOUNTS)+1:
+        raise ValueError('Incomplete or extra Cash Pop tiers')
+    tiers = []
+    for row, amount in zip(rows[:-1], CASH_POP_AMOUNTS):
+        if len(row) != 2 or integer(row[1], True) != amount:
+            raise ValueError('Changed Cash Pop prize tiers')
+        tiers.append(dict(matchLabel=None, sourcePrizeCount=integer(row[0]), prizeLabel=row[1], sourceAmount=amount, cashPrize=None))
+    total = re.fullmatch(r'Total Winners: ([\d,]+) Total Won: (\$[\d,]+)', rows[-1][0]) if len(rows[-1]) == 1 else None
+    if not total:
+        raise ValueError('Changed Cash Pop total')
+    report = _fixed_report('Cash Pop', expected_date, tiers, integer(total[1]), integer(total[2], True))
+    report.update(sessionId=session, sessionLabel=CASH_POP_SESSIONS[session],
+                  coverage='Missouri source prizes by prize amount for the named drawing session. No wager grouping, exact draw timestamp, unique ticket/person or claim-date inference.')
+    return report

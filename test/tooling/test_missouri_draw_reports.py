@@ -98,4 +98,56 @@ class PowerballTests(unittest.TestCase):
         for broken in [raw.replace('</html>',''), raw.replace('PP: 2X','PP: 3X'), raw.replace('2026 - Double','2025 - Double'), raw.replace('<td>8461</td>','<td>8462</td>'), raw.replace('$9,046','$9,047'), raw.replace('$10,222','$10,223'),raw.replace('<td>-</td>','<td>0</td>',1),raw.replace('Number of MO Power Play Prizes','Power Play')]:
             with self.assertRaises(ValueError): parse_powerball(broken, '2026-10-05')
 
+
+from missouri_draw_reports import parse_mo_millions, parse_cash_pop, MO_MILLIONS_MATCHES, CASH_POP_AMOUNTS
+
+
+def simple_table(headers, rows):
+    return '<table><thead><tr>'+''.join('<th>'+escape(h)+'</th>' for h in headers)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+escape(str(c))+'</td>' for c in r)+'</tr>' for r in rows)+'</tbody></table>'
+
+
+def mo_fixture():
+    body = ''
+    for name, counts, amounts, count, payout in [
+        ('Main',[0,3,0,97,32,951,916,3964],[0,1500,750,50,25,6,3,2],5963,26532),
+        ('Double Play',[0,0,0,14,8,130,127,591],[50000,2000,1000,70,35,10,5,3],870,4968)]:
+        rows = [(m,c,f'${a:,}','') for m,c,a in zip(MO_MILLIONS_MATCHES,counts,amounts)]
+        rows += [('Grand Total Winners:',count,'Grand Total Won:',f'${payout:,}')]
+        body += f'<div class="h1 text-center">Saturday, Oct 03, 2026 - {name} Drawing</div>'+simple_table(['Numbers Matched','Number of MO Prizes','Prize amount',''],rows)
+    return '<html><div class="block-powerball-prizes-paid"><div class="content">'+body+'</div></div></html>'
+
+
+def cash_fixture():
+    counts = [0,0,0,3,2,6,3,4,14,7,6,37,2,12,5,56,11,8,5,42,17,41]
+    rows = [(c,f'${a:,}') for c,a in zip(counts,CASH_POP_AMOUNTS)]
+    rows += [('Total Winners: 281 Total Won: $11,549',)]
+    return '<html><div class="block-cashpop-prizes-paid"><div class="content"><div class="h1 text-center">Tuesday, Oct 06, 2026, Matinee</div>'+simple_table(['Number of Prizes','Prize Amount'],rows)+'</div></div></html>'
+
+
+class MoreReportTests(unittest.TestCase):
+    def test_mo_variants_bullseye_zero_label_and_totals(self):
+        r = parse_mo_millions(mo_fixture(), '2026-10-03')
+        self.assertEqual([v['sourceWinnerCount'] for v in r['variants']], [5963,870])
+        self.assertEqual([v['sourcePayoutDollars'] for v in r['variants']], [26532,4968])
+        self.assertEqual(r['variants'][0]['tiers'][0]['prizeLabel'], '$0')
+        self.assertIn('Bulls-Eye', r['variants'][0]['tiers'][1]['matchLabel'])
+        self.assertIsNone(r['distinctTicketCount'])
+
+    def test_mo_rejects_missing_variant_date_identity_padding_and_totals(self):
+        for raw in [mo_fixture().replace('</html>',''),mo_fixture().replace('2026 - Double','2025 - Double'),mo_fixture().replace('Bulls-Eye','Bonus'),mo_fixture().replace('$26,532','$26,533'),mo_fixture().replace('<td>870</td>','<td>871</td>'),mo_fixture().replace('<td></td>','<td>extra</td>',1)]:
+            with self.assertRaises(ValueError): parse_mo_millions(raw,'2026-10-03')
+
+    def test_cash_pop_session_and_prize_amount_units(self):
+        r = parse_cash_pop(cash_fixture(),'2026-10-06',3)
+        self.assertEqual((r['sourceWinnerCount'],r['sourcePayoutDollars']),(281,11549))
+        self.assertEqual(r['sessionLabel'],'Matinee')
+        self.assertEqual(len(r['tiers']),22)
+        self.assertTrue(all(t['matchLabel'] is None for t in r['tiers']))
+        for session in [0,1,4,6,True,'3']:
+            with self.assertRaises(ValueError): parse_cash_pop(cash_fixture(),'2026-10-06',session)
+
+    def test_cash_rejects_wrong_dates_prizes_missing_counts_and_totals(self):
+        for raw in [cash_fixture().replace('</html>',''),cash_fixture().replace('Oct 06','Oct 05'),cash_fixture().replace('$2,500','$2,501'),cash_fixture().replace('<td>0</td>','<td></td>',1),cash_fixture().replace('281','282'),cash_fixture().replace('$11,549','$11,550')]:
+            with self.assertRaises(ValueError): parse_cash_pop(raw,'2026-10-06',3)
+
 if __name__ == '__main__': unittest.main()

@@ -99,3 +99,15 @@ and unavailable Power Play jackpot cells remain null; no cross-variant unique
 person/ticket assertion. Thirteen Missouri tests pass. Four of eight families
 parsed; next MO Millions/Pick 3/Pick 4/Cash Pop, then live continuity/atomic
 integration. No feed promotion, Gmail/email, deadline change or acceptance.
+
+### October 6, 21:00 ET — MO Millions and Cash Pop parsers
+
+MO Millions main and Double Play eight-tier tables now validate separately,
+including Bulls-Eye identities, blank padding, both date headings and exact
+count/payout totals. Cash Pop validates all 22 prize-amount rows and explicit
+five-session identity without inferring wagers or timestamps. Private October 3
+MO Millions capture reconciles main 5,963/$26,532 and Double Play 870/$4,968;
+October 6 Matinee Cash Pop reconciles 281/$11,549. Seventeen Missouri tests pass.
+Six of eight report families parsed; Pick 3/Pick 4 remain, then bounded live
+selection/continuity and atomic catalog/report integration. No feed promotion,
+Gmail/email, deadline change or acceptance; ordinary app unaffected.

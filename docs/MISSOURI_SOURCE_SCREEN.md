@@ -361,3 +361,26 @@ source validates privately. No retailer-location free text is exported and no
 claim of source finality, unique people or distinct tickets across variants is
 made. Four of eight report families parsed; remaining four and live continuity
 are next. Existing public feeds unchanged; no Gmail/email or deadline change.
+
+## October 6, 21:00 ET — MO Millions and Cash Pop strict validation
+
+[October 3 MO Millions](https://www.molottery.com/mo-millions/prizes-paid.do?date=2026-10-03)
+contains separate main/Double Play eight-tier tables with explicit Bulls-Eye
+matches. Private parsed totals are 5,963/$26,532 and 870/$4,968. Both dated
+headings, columns, exact tier identities, blank padding, counts and payout
+arithmetic are required. Main printed $0 with zero top winners remains a source
+label, not a zero jackpot or cash-option assertion. EZ Match is not included.
+
+[October 6 Matinee Cash Pop](https://www.molottery.com/cash-pop/prizes-paid.do?date=2026-10-06&type=3)
+validates 22 prize-amount rows totaling 281 prizes/$11,549. The captured official
+[winning-number index](https://www.molottery.com/cash-pop/winning-numbers.do)
+maps source types 1–5 to Early Bird, Late Morning, Matinee, Prime Time and Night
+Owl. Parser input must match the date and session printed in the report. Amount
+rows do not establish wager categories or an exact draw timestamp.
+
+Four new tests cover variant/session identity, dates, malformed or missing cells,
+changed prize tiers, unexpected padding and inconsistent totals. All seventeen
+Missouri tests pass, and both captured HTML reports validate privately. Cash
+options and distinct tickets remain unknown; no source finality assertion.
+Six of eight report families parsed; Pick 3/4 and live continuity are next. No
+new public feed, private agency integration, mail or deadline change.
