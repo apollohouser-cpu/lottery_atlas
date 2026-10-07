@@ -519,3 +519,20 @@ three-file analysis is clean. Ordinary macOS release build passes (not relaunche
 no native UI claim). Endpoint publication, catalog/directory integration,
 state transaction and native acceptance remain pending. No private agency data,
 Gmail/email, deadline change or acceptance.
+
+### October 7, 05:08 ET — literal Scratchers catalog bundle and cache loader
+
+The privately validated public-page inventory is now bundled as a separate
+73-game catalog asset. Its Missouri-specific remote/cache/bundle loader checks
+unique game and tier identities, official detail URLs, calendar dates, ticket
+prices, literal advertised amount/top-tier agreement and unclaimed counts bounded
+by original prize counts. Listed end dates and null source verification dates
+remain intact. These fields do not become cash-option amounts, retailer stock,
+winning-ticket totals or claim dates in the generic catalog.
+
+Malformed responses, retrieval-time regression, changed existing game identity
+and large catalog drops retain valid cached bytes/data. Cache-write failure does
+not discard valid remote data. Four focused loader tests pass and two-file
+analysis is clean. Catalog UI, directory audit/integration, transactional refresh,
+endpoint publication and native acceptance remain pending. No new live endpoint,
+Gmail/email, private agency promotion, deadline change or acceptance.
