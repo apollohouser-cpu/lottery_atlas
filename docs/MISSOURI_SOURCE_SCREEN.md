@@ -682,3 +682,23 @@ Scratch and two-city directory interactions, larger layout and request-failure
 recovery, then consolidated release checks. App left at Cash Pop Early Bird.
 No code/feed change, repeated automated suite, Gmail/email or deadline change;
 Missouri remains unaccepted.
+
+### October 7, 13:15 ET — remaining native session types
+
+Continued the existing report sheet and checked Pick 3 October 6 Evening
+(430 source prizes/$45,685) and Pick 4 October 6 Midday (399/$149,443), retaining
+separate base/Wild Ball rows and $.50 basis. Checked the four remaining Cash Pop
+session types for October 6: Late Morning 164/$5,887; Matinee 281/$11,549;
+Prime Time 186/$7,648; Night Owl 74/$2,593. Scrolled each Cash Pop report through
+all 22 prize amounts and the source-unit/finality/identity limitations. Observed
+totals match the validated feed, and retrieval remains October 7 at
+13:39:10.802496 UTC. Private Night Owl captures are under work/missouri_native.
+
+Native coverage now includes all eight families and all 14 game/session groups
+at least once, including both Pick 3/4 types and all five Cash Pop types; it is
+not a claim that all 28 dated selections have been manually checked. The existing
+widget suite covers all 28. Next source-open/return, native Scratch/two-city
+directory interactions, larger layout and request-failure recovery, followed by
+consolidated release checks. App left on Night Owl October 6 near the footer.
+No code/feed change, repeated automated suite, Gmail/email, deadline change or
+acceptance.
