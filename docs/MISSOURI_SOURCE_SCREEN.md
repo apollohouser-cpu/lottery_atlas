@@ -747,3 +747,26 @@ Next larger native layouts and request-failure recovery, then consolidated
 release checks. Native Scratch external detail route remains to verify alongside
 those checks. App left on the full catalog/default game. No Gmail/email,
 code/feed change, deadline change or acceptance.
+
+
+### October 7, 16:17 ET — wide native layouts and Scratch detail route
+
+Expanded the ordinary native window from a 1600×1264 screenshot to 5120×2820.
+Scratch inventory, local directory and Powerball reports retained readable,
+centered sheets. Visually checked the full #359 24K GOLD prize table and footer,
+directory scope/filter/address presentation, and Powerball variants plus source
+limits and retrieval footer. These are native layout checks, not mobile or
+accessibility certification.
+
+The Scratch detail button opened the official game=359 page, identifying 24K
+GOLD, its $20 ticket, $2 million advertised top prize, matching prize counts and
+listed dates. The official page explains daily inventory updates and that
+unclaimed prizes can already have been purchased but not redeemed. Closed the
+task-created tab and returned to the native app. No cash-option, stock or claim
+conversion was made.
+
+Restored the original 1600×1264 native window and left the Powerball report
+selected. Private screenshots are under work/missouri_native with the
+2026-10-07_16 prefix. Next bounded request-failure/reconnect verification and
+consolidated release checks; Missouri is not yet accepted. No Gmail/email,
+code/feed changes or deadline change.
