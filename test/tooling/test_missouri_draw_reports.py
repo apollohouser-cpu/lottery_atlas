@@ -69,4 +69,33 @@ class FixedReportTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             parse_powerball_xo(fixed_fixture(True).replace('8 Teams', '5 White balls'), '2026-10-04')
 
+
+from missouri_draw_reports import parse_powerball, PB_MATCHES
+
+
+def powerball_fixture():
+    def table(headers, rows):
+        return '<table><thead><tr>'+''.join('<th>'+h+'</th>' for h in headers)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+escape(str(c))+'</td>' for c in r)+'</tr>' for r in rows)+'</tbody></table>'
+    main = list(zip(PB_MATCHES, [0,0,0,6,19,365,282,1961,4686], ['Jackpot','$1,000,000','$50,000','$100','$100','$7','$7','$4','$4'], ['-',0,0,2,0,74,43,314,709], ['-','$2,000,000','$100,000','$200','$200','$14','$14','$8','$8']))
+    main += [('Total MO Winners (without Power Play):',7319,'Total Won:','$33,617',''), ('Total MO Winners (with Power Play):',1142,'Total Won:','$10,222',''), ('Grand Total MO Winners:',8461,'Grand Total Won:','$43,839',''), ('Location(s) of Jackpot Winner(s): N/A',)]
+    double = list(zip(PB_MATCHES,[0,0,0,1,2,41,29,238,538],['$10,000,000','$500,000','$50,000','$500','$500','$20','$20','$10','$7']))
+    double += [('Total MO Winners:',849,''),('Total WON:','','$9,046')]
+    return '<html><div class="block-powerball-prizes-paid"><div class="content"><div class="h1 text-center">Monday, Oct 05, 2026 - Main Drawing</div><div class="num-list__pp">PP: 2X</div>'+table(['Numbers Matched','Number of MO Prizes','Prize amount','Number of MO Power Play Prizes','Power Play Prize Amount'],main)+'<h2 class="h1 text-center">Monday, Oct 05, 2026 - Double Play Drawing</h2>'+table(['Numbers Matched','Number of MO Prizes','Prize Amount'],double)+'</div></div></html>'
+
+
+class PowerballTests(unittest.TestCase):
+    def test_variants_and_unavailable_jackpot_preserved(self):
+        r = parse_powerball(powerball_fixture(), '2026-10-05')
+        self.assertEqual(r['powerPlayMultiplier'], 2)
+        self.assertEqual(r['mainSourceWinnerCount'], 8461)
+        self.assertEqual([v['sourceWinnerCount'] for v in r['variants']], [7319,1142,849])
+        self.assertEqual(r['variants'][2]['sourcePayoutDollars'], 9046)
+        self.assertIsNone(r['variants'][1]['tiers'][0]['sourcePrizeCount'])
+        self.assertIsNone(r['distinctTicketCount'])
+
+    def test_reject_variant_date_counts_payout_and_multiplier_corruption(self):
+        raw = powerball_fixture()
+        for broken in [raw.replace('</html>',''), raw.replace('PP: 2X','PP: 3X'), raw.replace('2026 - Double','2025 - Double'), raw.replace('<td>8461</td>','<td>8462</td>'), raw.replace('$9,046','$9,047'), raw.replace('$10,222','$10,223'),raw.replace('<td>-</td>','<td>0</td>',1),raw.replace('Number of MO Power Play Prizes','Power Play')]:
+            with self.assertRaises(ValueError): parse_powerball(broken, '2026-10-05')
+
 if __name__ == '__main__': unittest.main()

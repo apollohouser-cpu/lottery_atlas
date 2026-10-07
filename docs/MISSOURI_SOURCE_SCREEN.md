@@ -340,3 +340,24 @@ regression tests pass, eleven Missouri checks total; both captured source report
 validate privately. Three report families now have parsers. No new public feed,
 retailer association, claim date, sales conversion or agency integration. Next
 remaining five report families and live continuity; existing feed bytes preserved.
+
+## October 6, 20:00 ET — strict Powerball/Power Play/Double Play
+
+The [October 5 report](https://www.molottery.com/powerball/prizes-paid.do?date=2026-10-05)
+now validates through the strict parser: main total 8,461/$43,839 comprises
+without-Power-Play 7,319/$33,617 and with-Power-Play 1,142/$10,222. Separate Double
+Play is 849/$9,046 and is not added to that source main total. Power Play multiplier
+2 is retained, including the fixed $2 million second prize. Its jackpot dashes
+remain unavailable/null, not zero prizes. Literal Jackpot stays without an
+inferred cash option. If a jackpot count is positive, lower-tier payout is a
+minimum rather than an invented jackpot payout.
+
+Both main and Double Play headings must match the requested date. Full document,
+exact tier/column identities, variant count/payout reconciliation, main combined
+totals and multiplier-derived amounts are required. Two additional regression
+tests exercise truncation, mismatched variant dates, altered multiplier, totals,
+columns and unavailable jackpot cells. Thirteen Missouri checks pass; captured
+source validates privately. No retailer-location free text is exported and no
+claim of source finality, unique people or distinct tickets across variants is
+made. Four of eight report families parsed; remaining four and live continuity
+are next. Existing public feeds unchanged; no Gmail/email or deadline change.

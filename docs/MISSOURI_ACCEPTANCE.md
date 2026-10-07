@@ -87,3 +87,15 @@ four existing importer). Existing year-to-date feed unchanged; no new publicatio
 Three of eight report families now parsed. Next Powerball/base/Power Play/Double
 Play and remaining MO Millions/Pick 3/Pick 4/Cash Pop families, then bounded live
 continuity and atomic integration. No deadline change, Gmail/email or acceptance.
+
+### October 6, 20:00 ET — Powerball variant parser
+
+Strict Powerball parser validates nine base, eight numeric Power Play plus one
+unavailable jackpot row, and nine separate Double Play tiers. Both drawing date
+headings, multiplier, column identities, counts, payout totals and main combined
+total checked. October 5 private capture validates base 7,319/$33,617, Power Play
+1,142/$10,222 and separate Double Play 849/$9,046. Unknown jackpot cash option
+and unavailable Power Play jackpot cells remain null; no cross-variant unique
+person/ticket assertion. Thirteen Missouri tests pass. Four of eight families
+parsed; next MO Millions/Pick 3/Pick 4/Cash Pop, then live continuity/atomic
+integration. No feed promotion, Gmail/email, deadline change or acceptance.

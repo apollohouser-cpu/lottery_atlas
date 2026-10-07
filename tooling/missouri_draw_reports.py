@@ -151,3 +151,77 @@ def parse_show_me_cash(raw, expected_date):
         raise ValueError('Changed source total')
     return _fixed_report('Show Me Cash', expected_date, tiers,
                          integer(total[1]), integer(total[2], money=True))
+
+
+PB_MATCHES = [m.replace('Mega Ball', 'Powerball') for m in MM_MATCHES]
+
+
+def parse_powerball(raw, expected_date):
+    import re
+    expected = date.fromisoformat(expected_date)
+    closing = b'</html>' if isinstance(raw, bytes) else '</html>'
+    if closing not in raw.lower():
+        raise ValueError('Incomplete report document')
+    tree = html.fromstring(raw)
+    block = one(tree.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," block-powerball-prizes-paid ")]'), 'Powerball report')
+    for tag, suffix in [('div', 'Main Drawing'), ('h2', 'Double Play Drawing')]:
+        heading = plain(one(block.xpath('./div[@class="content"]/'+tag+'[@class="h1 text-center"]'), suffix))
+        if heading != expected.strftime('%A, %b %d, %Y') + ' - ' + suffix:
+            raise ValueError('Draw date identity mismatch')
+    pp = plain(one(block.xpath('.//div[@class="num-list__pp"]'), 'Power Play multiplier'))
+    multiplier = re.fullmatch(r'PP: (2|3|4|5|10)X', pp)
+    if not multiplier:
+        raise ValueError('Invalid Power Play multiplier')
+    multiplier = int(multiplier[1])
+    tables = block.xpath('.//table')
+    if len(tables) != 2:
+        raise ValueError('Expected main and Double Play tables')
+    headers = [[plain(n) for n in t.xpath('./thead/tr/th')] for t in tables]
+    if headers != [['Numbers Matched', 'Number of MO Prizes', 'Prize amount', 'Number of MO Power Play Prizes', 'Power Play Prize Amount'], ['Numbers Matched', 'Number of MO Prizes', 'Prize Amount']]:
+        raise ValueError('Changed Powerball columns')
+    main, double = [[[plain(n) for n in r.xpath('./td')] for r in t.xpath('./tbody/tr')] for t in tables]
+    if len(main) != 13 or len(double) != 11:
+        raise ValueError('Incomplete or extra Powerball rows')
+    base, power = [], []
+    for i, (row, match) in enumerate(zip(main[:9], PB_MATCHES)):
+        if len(row) != 5 or row[0] != match:
+            raise ValueError('Changed main tier identity')
+        count = integer(row[1])
+        if i == 0:
+            if row[2:] != ['Jackpot', '-', '-']:
+                raise ValueError('Changed jackpot/unavailable Power Play cells')
+            amount, pcount, pamount = None, None, None
+        else:
+            amount, pcount, pamount = integer(row[2], True), integer(row[3]), integer(row[4], True)
+            if amount <= 0 or pamount != (2000000 if i == 1 else amount * multiplier):
+                raise ValueError('Inconsistent Power Play amount')
+        base.append(dict(matchLabel=match, sourcePrizeCount=count, prizeLabel=row[2], sourceAmount=amount, cashPrize=None))
+        power.append(dict(matchLabel=match, sourcePrizeCount=pcount, prizeLabel=row[4], sourceAmount=pamount, cashPrize=None))
+    totals = []
+    for row, label, won in zip(main[9:12], ['Total MO Winners (without Power Play):', 'Total MO Winners (with Power Play):', 'Grand Total MO Winners:'], ['Total Won:', 'Total Won:', 'Grand Total Won:']):
+        if len(row) != 5 or row[0] != label or row[2] != won or row[4]:
+            raise ValueError('Changed Powerball totals')
+        totals.append((integer(row[1]), integer(row[3], True)))
+    if sum(t['sourcePrizeCount'] for t in base) != totals[0][0] or sum(t['sourcePrizeCount'] or 0 for t in power) != totals[1][0]:
+        raise ValueError('Powerball count mismatch')
+    if tuple(a+b for a,b in zip(totals[0],totals[1])) != totals[2]:
+        raise ValueError('Powerball combined total mismatch')
+    base_payout = sum(t['sourcePrizeCount'] * t['sourceAmount'] for t in base[1:])
+    if (base[0]['sourcePrizeCount'] == 0 and base_payout != totals[0][1]) or base_payout > totals[0][1]:
+        raise ValueError('Powerball base payout mismatch')
+    if sum(t['sourcePrizeCount'] * t['sourceAmount'] for t in power[1:]) != totals[1][1]:
+        raise ValueError('Power Play payout mismatch')
+    if len(main[12]) != 1 or not main[12][0].startswith('Location(s) of Jackpot Winner(s):'):
+        raise ValueError('Missing main report trailer')
+    dt = _fixed_tiers(double[:9], PB_MATCHES)
+    if len(double[9]) != 3 or double[9][0] != 'Total MO Winners:' or double[9][2] or len(double[10]) != 3 or double[10][:2] != ['Total WON:', '']:
+        raise ValueError('Changed Double Play totals')
+    d = _fixed_report('Powerball Double Play', expected_date, dt, integer(double[9][1]), integer(double[10][2], True))
+    variants = []
+    for name, tiers, total in zip(['Base without Power Play', 'With Power Play'], [base, power], totals[:2]):
+        variants.append(dict(variant=name, tiers=tiers, sourceWinnerCount=total[0], sourcePayoutDollars=total[1]))
+    variants.append(dict(variant='Double Play', tiers=d['tiers'], sourceWinnerCount=d['sourceWinnerCount'], sourcePayoutDollars=d['sourcePayoutDollars']))
+    return dict(game='Powerball', drawDate=expected_date, powerPlayMultiplier=multiplier,
+                variants=variants, mainSourceWinnerCount=totals[2][0], mainSourcePayoutDollars=totals[2][1],
+                distinctTicketCount=None, finalityVerified=False,
+                coverage='Missouri source prizes. Main total combines without/with Power Play columns; Double Play is separate. No unique tickets or people across variants; unavailable jackpot Power Play cells remain null. Literal prizes do not establish cash options or claim dates.')
