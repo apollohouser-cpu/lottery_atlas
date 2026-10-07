@@ -140,3 +140,16 @@ establish all-session retrieval. Do not relabel or accept the wrong session.
 Next resolve Cash Pop dated/session request behavior or explicitly bound supported
 report selection, preserving strict identity and atomicity. Importer integration
 not accepted; deadline unchanged; no Gmail/email or existing public feed failure.
+
+### October 7, 00:06 ET — live 28-report import validated privately
+
+Cash Pop type-first query ordering returns the requested printed session/date;
+POSTing the same parameters also matched in a bounded probe. Date-first had
+returned an unrelated session. Root cause is not established. The importer now
+uses the verified type-first request and keeps all strict identity checks.
+All 28 live reports across eight families/14 session groups validate privately,
+including both reports in every Cash Pop session and prior-month Xs & Os/MO
+Millions. Twenty-two Missouri tests pass; an injected failure preserves the live
+private baseline bytes and retrieval timestamp. No public feed promotion.
+Next catalog/directory integration, report bundle/cache/UI and state transaction,
+then publication/native acceptance. No Gmail/email or deadline change; not accepted.

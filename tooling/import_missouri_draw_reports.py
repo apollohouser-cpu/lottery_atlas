@@ -48,7 +48,11 @@ def links(raw, family, today):
             raise ValueError('Future report date')
         if day < today-timedelta(days=40):
             continue
-        canonical = ROOT+family+'/prizes-paid.do?'+urlencode({'date':day.isoformat(), **({key:session} if key else {})})
+        # Cash Pop date-first URLs have returned the wrong session; type-first
+        # was verified against printed date/session. Keep strict parser checks.
+        query = ({key:session, 'date':day.isoformat()} if family == 'cash-pop'
+                 else {'date':day.isoformat(), **({key:session} if key else {})})
+        canonical = ROOT+family+'/prizes-paid.do?'+urlencode(query)
         identity = (session,day.isoformat())
         result[identity] = canonical  # repeated same source link is harmless
     return result

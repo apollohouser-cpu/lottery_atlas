@@ -424,3 +424,27 @@ Do not infer no Early Bird prizes, substitute Prime Time, or weaken session
 validation. Next investigate bounded official request behavior/alternate route
 and complete live continuity. This affects new integration only; existing public
 feeds remain untouched. No email or deadline change.
+
+## October 7, 00:06 ET — Cash Pop retrieval workaround and live continuity
+
+Bounded probes of the same public Cash Pop report parameters found that putting
+`type` before `date` in the query returns the requested Early Bird report; POSTing
+the same parameters also matched. The prior date-first URL returned Prime Time.
+This documents observed request behavior, not a proven cache/server diagnosis.
+The importer now uses type-first Cash Pop URLs and still rejects every printed
+date/session mismatch. No report is relabeled to make a request pass.
+
+All 28 selected live reports validate privately: eight game families and 14
+session groups, two dates each. Cash Pop's five sessions and both Pick sessions
+cover October 6/5; Mega Millions October 6/2, MO Millions October 3/September 30,
+Powerball October 5/3, Xs & Os October 4/September 27, Show Me Cash October 6/5.
+The preceding-month fallback supplies older linked draws without inventing dates.
+Published source snapshots remain explicitly unverified as final; zero counts are
+not a completeness assertion. The private report payload retains literal units,
+unknown identity/cash fields, variants and source URLs.
+
+Twenty-two Missouri tests pass, including all-family failure preservation and
+Cash Pop query/session mapping. Injecting a fetch failure against the actual
+private live payload preserves its bytes and updatedAt. No public feed was
+promoted or changed. Next report bundle/cache/UI, catalog/directory and state
+transaction integration; no Gmail/email, fees, deadline change or acceptance.

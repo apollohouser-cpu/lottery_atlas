@@ -41,6 +41,12 @@ class ImportTests(unittest.TestCase):
                 with self.assertRaises(ValueError):refresh(p,fail,date(2026,10,6),fake_parse)
                 self.assertEqual(before,p.read_bytes())
 
+    def test_cash_pop_type_first_query_keeps_session_identity(self):
+        result=links(fake_fetch('https://www.molottery.com/cash-pop/winning-numbers.do'),'cash-pop',date(2026,10,6))
+        self.assertEqual(len(result),10)
+        self.assertTrue(result[('1','2026-10-05')].endswith('?type=1&date=2026-10-05'))
+        self.assertTrue(result[('5','2026-10-04')].endswith('?type=5&date=2026-10-04'))
+
     def test_reject_regressions_duplicates_unknown_sessions_and_future_dates(self):
         with tempfile.TemporaryDirectory() as t:
             r=refresh(Path(t)/'out.json',fake_fetch,date(2026,10,6),fake_parse)
