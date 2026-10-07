@@ -404,3 +404,23 @@ nineteen Missouri tests pass overall. All eight report families now parsed.
 No finality, cash-option, claim-date or retailer association is inferred. Next
 bounded live selection/continuity and atomic publication preservation; no new
 public feed or agency integration, email or deadline change.
+
+## October 6, 23:00 ET — bounded selection and live Cash Pop identity failure
+
+Prepared atomic eight-family importer for 28 reports: two per game/session, with
+both Pick sessions and five Cash Pop sessions. It follows only official dated
+links, uses at most one preceding calendar month when needed, and bounds history
+to 40 days. Future dates, incomplete session groups, duplicate report identities
+and regressions reject before replacement. Local calendar uses America/Chicago.
+Unchanged parsed reports preserve the prior timestamp. Twenty-one Missouri tests
+pass, including every source failing and parser failure retaining baseline bytes.
+
+Live trial and private recapture found the official Cash Pop October 6 type=1
+(Early Bird) report URL returning a Prime Time heading instead. The strict parser
+correctly rejected it; no output or partial public state was promoted. The prior
+Matinee capture had matched its requested session, not proven all sessions work.
+Captured response and index are private under work/missouri_scope/live_capture.
+Do not infer no Early Bird prizes, substitute Prime Time, or weaken session
+validation. Next investigate bounded official request behavior/alternate route
+and complete live continuity. This affects new integration only; existing public
+feeds remain untouched. No email or deadline change.

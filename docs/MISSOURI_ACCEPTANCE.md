@@ -123,3 +123,20 @@ tests pass. All eight families now have parsers; no atomic live importer or
 new public feed yet. Next bounded all-source selection, per-session continuity,
 regression/atomic preservation, then catalog/directory/cache/UI integration.
 No Gmail/email in this development run, deadline change or acceptance.
+
+### October 6, 23:00 ET — atomic importer prepared; live session mismatch retained
+
+Bounded importer selects two linked reports for each of 14 game/session groups
+(28 total), current plus at most one previous month, 40-day window. Exact source
+routes, session completeness, duplicate identity and per-session date regression
+checks precede atomic replacement; unchanged data preserves retrieval time.
+Twenty-one Missouri tests pass, including failure of each family and parser
+rejection preserving baseline bytes. No public feed promotion.
+
+Live run validated preceding families but rejected Cash Pop: official October 6
+Early Bird link (type=1) returned a Prime Time heading. A private recapture
+reproduced the mismatch. Earlier Matinee-only capture had matched, so it did not
+establish all-session retrieval. Do not relabel or accept the wrong session.
+Next resolve Cash Pop dated/session request behavior or explicitly bound supported
+report selection, preserving strict identity and atomicity. Importer integration
+not accepted; deadline unchanged; no Gmail/email or existing public feed failure.
