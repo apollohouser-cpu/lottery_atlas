@@ -153,3 +153,23 @@ has only the existing live-map line 288 informational brace notice. No full
 build, simulator navigation, native/source-return acceptance or remote endpoint
 publication was claimed. Scheduled catalog integration and draw reports remain
 pending; October 13 release deadline unchanged. User simulator review untouched.
+
+## October 8 Cash Pop report parser (17:45 ET)
+
+Implemented strict Cash Pop aggregate-session parsing with all five official
+session names and printed times. Fresh official history validates two latest
+reports per session (ten reports, October 6–8). Morning Buzz October 8 prints
+633 winners / $21,908; October 7 prints 741 / $30,259. These remain private
+source observations, not promoted app totals. Each report preserves the Pop,
+source winner count, payout label and exact payout cents; no tier counts,
+distinct-person totals, retailer joins or map locations are fabricated.
+
+Four Python tests pass: bounded latest selection from unsorted rows, malformed
+fields/dates/counts/columns/session times, duplicates/missing sessions, zero and
+fractional payout handling. Every supplied history row is validated before
+selecting the recent window. Unrelated odds/promotion tables are excluded by the
+specific history structure. Private capture/results are under
+work/north_carolina_scope/cash-pop-fresh.html and cash-pop-reports.json.
+Remaining seven draw families, combined atomic refresh and app report UI are
+still pending. No public report output, native verification, Gmail or deadline
+change; North Carolina remains unaccepted.
