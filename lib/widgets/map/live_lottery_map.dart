@@ -3448,6 +3448,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   }
 
   EdgeInsets _stateCameraPadding(String? stateName) {
+    if (MediaQuery.sizeOf(context).width < 600) {
+      // The desktop detail panel's 360px right inset exceeds a phone's
+      // available map width and can push a state fit out to the world view.
+      return const EdgeInsets.symmetric(horizontal: 24, vertical: 48);
+    }
     if (stateName == 'South Carolina' || stateName == 'North Carolina') {
       // These state views use the compact top toolbar instead of the wide
       // right-side panel, so their maps can remain centered and closer.

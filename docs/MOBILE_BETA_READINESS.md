@@ -344,3 +344,16 @@ three-file analysis has only two existing Settings Radio API infos. iOS simulato
 build passes (33.0s). Installed and clicked the actual map Home control: the
 chooser visibly opens with the explanation and state list, without overflow.
 Left it open for the user to choose; no home state was selected on their behalf.
+
+### October 8, 02:23 ET — phone camera padding diagnosis
+
+While leaving the live Home chooser untouched for user review, code inspection
+found that most states used desktop camera-fit padding of 48px left plus 360px
+right even on a 390px phone. That exceeds the map width and is a concrete defect
+consistent with the previously observed over-wide Missouri view; it is not proof
+of the complete rotation issue's cause. Phone widths below 600 now use 24px
+horizontal/48px vertical camera-fit padding. Single-file analysis passes. No build,
+reinstall or simulator navigation was performed in this checkpoint. Native state
+selection/rotation and saved-Home camera verification remain pending; do not mark
+camera acceptance complete. Current installed app remains f876014 with the Home
+chooser available for user review.
