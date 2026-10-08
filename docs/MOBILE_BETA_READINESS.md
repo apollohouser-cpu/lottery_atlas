@@ -403,3 +403,20 @@ review; no repeated compile, native navigation or accepted-state recheck was
 performed. Remaining mobile work includes broader supported-screen navigation,
 saved-data native persistence, connection recovery, enlarged text, Android
 runtime checks and signing/distribution gates. No full mobile acceptance.
+
+### October 8, 06:35 ET — enlarged-text overflow repair
+
+An isolated 390px widget check at 2x text scaling reproduced two concrete layout
+failures: the collapsed timeline's fixed height overflowed vertically by 11px,
+and the expanded year-axis labels overflowed horizontally by 11px. The dock now
+sizes to its text with a 72px minimum and at least a 48px button; axis labels can
+wrap within their available width. The expanded heat legend switches to its
+stacked layout based on scaled text width. Ten timeline/menu tests pass,
+including doubled-text menu reachability and Year selection. Two-file analysis
+has only the four existing Radio API infos.
+
+No simulator restart, installation or preference changes: the user's installed
+8198d32 review remains untouched. Native enlarged-text verification and broader
+accessibility work remain pending; these widget checks are not certification.
+No full build was needed for this isolated layout check. Private logs are
+work/mobile_beta/enlarged_text_{test,analysis}.log.

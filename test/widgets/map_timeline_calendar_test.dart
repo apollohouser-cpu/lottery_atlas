@@ -40,6 +40,44 @@ void main() {
     expect(tester.takeException(), isNull);
   });
 
+  testWidgets('phone menu and timeline remain reachable at doubled text size', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(390, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await tester.pumpWidget(
+      MaterialApp(
+        builder: (context, child) => MediaQuery(
+          data: MediaQuery.of(
+            context,
+          ).copyWith(textScaler: TextScaler.linear(2)),
+          child: child!,
+        ),
+        home: Scaffold(
+          body: MapControlsOverlay(selectedStateName: 'South Carolina'),
+        ),
+      ),
+    );
+    await tester.pump();
+    expect(tester.takeException(), isNull);
+    await tester.tap(find.byTooltip('Map menu'));
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.text('Sources and coverage'));
+    expect(tester.takeException(), isNull);
+    await tester.ensureVisible(find.byTooltip('Close menu'));
+    await tester.tap(find.byTooltip('Close menu'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byType(FilledButton));
+    await tester.pumpAndSettle();
+    final year = find.widgetWithText(ChoiceChip, 'Year');
+    await tester.ensureVisible(year);
+    await tester.tap(year);
+    await tester.pumpAndSettle();
+    expect(tester.widget<ChoiceChip>(year).selected, isTrue);
+  });
+
   testWidgets('short landscape opens a scrollable working timeline', (
     tester,
   ) async {

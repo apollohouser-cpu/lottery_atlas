@@ -34,15 +34,9 @@ class HorizontalHeatLegend extends StatelessWidget {
           const scale = <Widget>[
             Flexible(child: _HeatScale()),
             SizedBox(width: 10),
-            Text(
-              'Low',
-              style: TextStyle(color: Colors.white70, fontSize: 11),
-            ),
+            Text('Low', style: TextStyle(color: Colors.white70, fontSize: 11)),
             SizedBox(width: 6),
-            Text(
-              'High',
-              style: TextStyle(color: Colors.white70, fontSize: 11),
-            ),
+            Text('High', style: TextStyle(color: Colors.white70, fontSize: 11)),
           ];
           final source = <Widget>[
             if (onSourceTap != null) ...[
@@ -73,7 +67,8 @@ class HorizontalHeatLegend extends StatelessWidget {
               ),
             ],
           ];
-          if (constraints.maxWidth < 320) {
+          if (constraints.maxWidth <
+              320 * MediaQuery.textScalerOf(context).scale(11) / 11) {
             return Column(
               mainAxisSize: MainAxisSize.min,
               children: [

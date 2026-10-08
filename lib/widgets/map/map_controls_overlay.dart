@@ -1107,10 +1107,11 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
           right: 20,
           bottom: 16,
           child: phone
-              ? SizedBox(
+              ? ConstrainedBox(
                   key: _timelineKey,
-                  height: 72,
+                  constraints: const BoxConstraints(minHeight: 72),
                   child: Column(
+                    mainAxisSize: MainAxisSize.min,
                     children: [
                       Row(
                         children: [
@@ -1151,9 +1152,13 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
                       const SizedBox(height: 6),
                       SizedBox(
                         width: double.infinity,
-                        height: 48,
                         child: FilledButton.icon(
                           style: FilledButton.styleFrom(
+                            minimumSize: const Size(0, 48),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 16,
+                              vertical: 12,
+                            ),
                             backgroundColor: const Color(0xEE0A1824),
                             foregroundColor: Colors.white,
                             side: const BorderSide(color: Color(0xFF355066)),
@@ -2022,12 +2027,15 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: labels
           .map(
-            (label) => Text(
-              label,
-              style: TextStyle(
-                color: Colors.white70,
-                fontSize: labels.length > 5 ? 9 : 11,
-                fontWeight: FontWeight.w500,
+            (label) => Flexible(
+              child: Text(
+                label,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white70,
+                  fontSize: labels.length > 5 ? 9 : 11,
+                  fontWeight: FontWeight.w500,
+                ),
               ),
             ),
           )
