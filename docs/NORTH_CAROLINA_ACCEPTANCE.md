@@ -159,3 +159,21 @@ NC Scratch UI; remote endpoint staging and scheduled transaction remain pending.
 No refreshed public catalog endpoint or user-visible replacement is claimed.
 Next connect the literal UI and validate compact/wide behavior, then implement
 strict draw reports and refresh publication. NC deadline remains unchanged.
+
+## October 8 literal Scratch inventory UI (16:45 ET)
+
+The NC Scratch menu now opens the dated 83-game catalog with name/number search,
+ticket-price filter, game selection and all literal prize/printed-odds/total/
+remaining rows. Source date, retrieval time, reorder definitions, coverage limits
+and official game/list routes remain visible. Existing favorite-game keys are
+preserved, and map-context selection explicitly filters retained high-prize
+claims; inventory counts do not create map positions. Removed the old static
+remaining-prize list from the desktop NC panel. Both the compact map Scratch
+action and state source screen reach the new inventory sheet.
+
+Three widget tests pass: all 83 selections render and reach the footer at
+390×844 and 1400×1000, plus search/price empty-result recovery. Four-file analysis
+has only the existing live-map line 288 informational brace notice. No full
+build, simulator navigation, native/source-return acceptance or remote endpoint
+publication was claimed. Scheduled catalog integration and draw reports remain
+pending; October 13 release deadline unchanged. User simulator review untouched.

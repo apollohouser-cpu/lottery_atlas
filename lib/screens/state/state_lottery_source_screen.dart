@@ -1,3 +1,4 @@
+import '../../widgets/map/north_carolina_scratch_catalog_sheet.dart';
 import '../../widgets/map/missouri_local_directories_sheet.dart';
 import '../../widgets/map/missouri_scratch_catalog_sheet.dart';
 import '../../widgets/map/missouri_draw_reports_sheet.dart';
@@ -49,6 +50,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'North Carolina')
+            Card(child: ListTile(
+              title: const Text('North Carolina Scratch-Off inventory'),
+              subtitle: const Text('Literal prize tiers • Dated not-yet-claimed inventory'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NorthCarolinaScratchCatalogSheet()),
+            )),
           if (source.stateName == 'Missouri')
             Card(child: ListTile(
               title: const Text('Missouri local retailer directories'),

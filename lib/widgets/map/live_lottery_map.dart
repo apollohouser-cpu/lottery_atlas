@@ -26,7 +26,7 @@ import '../../services/lottery_activity_feed_service.dart';
 import '../../services/lottery_activity_repository.dart';
 import '../../services/map_focus_service.dart';
 import '../../services/map_ranking_service.dart';
-import '../../services/north_carolina_scratch_catalog.dart';
+import 'north_carolina_scratch_catalog_sheet.dart';
 import '../../services/south_carolina_lottery_map_filter_service.dart';
 import '../../services/south_carolina_scratch_catalog.dart';
 import '../../services/south_carolina_scratch_map_filter_service.dart';
@@ -5048,6 +5048,8 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   final state = _selectedStateName;
                   if (state == 'South Carolina') {
                     _openSouthCarolinaScratchOffPicker();
+                  } else if (state == 'North Carolina') {
+                    showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (sheetContext) => NorthCarolinaScratchCatalogSheet(onGameSelected: (name) { Navigator.pop(sheetContext); _showNorthCarolinaScratchGameOnMap(name); }));
                   } else if (state == 'Missouri') {
                     showModalBottomSheet<void>(
                       context: context,
@@ -6257,7 +6259,7 @@ class _NorthCarolinaScratchOffsPanel extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(12, 12, 12, 18),
                     children: [
                       Text(
-                        'Select a ticket to focus the map on its published claim activity. The catalog shows official current prize inventory.',
+                        'The map shows a bounded high-prize archive subset. Open the separate inventory to inspect dated remaining prizes.',
                         style: const TextStyle(
                           color: Colors.white70,
                           fontSize: 11,
@@ -6268,38 +6270,15 @@ class _NorthCarolinaScratchOffsPanel extends StatelessWidget {
                       _ScratchOffMenuTile(
                         icon: Icons.layers_rounded,
                         title: 'All North Carolina Scratch-Off activity',
-                        subtitle: 'Show every published Scratch-Off claim',
+                        subtitle: 'Show retained qualifying Scratch-Off claims',
                         isSelected: selectedGameName == null,
                         onTap: onAllSelected,
                       ),
-                      const Padding(
-                        padding: EdgeInsets.fromLTRB(4, 14, 4, 6),
-                        child: Text(
-                          'VERIFIED TICKET SNAPSHOT',
-                          style: TextStyle(
-                            color: Color(0xFF93C5FD),
-                            fontSize: 10,
-                            letterSpacing: 0.9,
-                            fontWeight: FontWeight.w800,
-                          ),
-                        ),
-                      ),
-                      ...NorthCarolinaScratchCatalog.games.map(
-                        (game) => _ScratchOffMenuTile(
-                          icon: Icons.confirmation_number_outlined,
-                          title: game.name,
-                          subtitle:
-                              'Top prize ${_formatNcPrize(game.topPrize)} · ${game.topPrizesRemaining} remaining',
-                          isSelected: selectedGameName == game.name,
-                          onTap: () => onGameSelected(game.name),
-                          favoriteGame: FavoriteLotteryGame(
-                            key: 'nc-scratch:${game.id}',
-                            gameId: game.id,
-                            name: game.name,
-                            subtitle: 'North Carolina Scratch-Off',
-                            kind: FavoriteLotteryGameKind.scratchOff,
-                          ),
-                        ),
+                      ListTile(
+                        leading: const Icon(Icons.table_chart_outlined),
+                        title: const Text('Open dated Scratch-Off inventory'),
+                        subtitle: const Text('Listed games, literal prize tiers and not-yet-claimed counts. Separate from mapped claims.'),
+                        onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NorthCarolinaScratchCatalogSheet()),
                       ),
                     ],
                   ),
@@ -6310,12 +6289,6 @@ class _NorthCarolinaScratchOffsPanel extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  static String _formatNcPrize(int amount) {
-    if (amount >= 1000000) return '\$${amount ~/ 1000000}M';
-    if (amount >= 1000) return '\$${amount ~/ 1000}K';
-    return '\$$amount';
   }
 }
 
