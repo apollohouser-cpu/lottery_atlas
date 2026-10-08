@@ -266,3 +266,24 @@ about 20 GiB. Builds ran sequentially; no Gmail, fees, signing or state activati
 Android `:app:processDebugResources --no-daemon` also passes using the installed
 Android Studio JBR explicitly (the shell default had no Java runtime). This
 links the new API-qualified resources but is not a full APK/device smoke pass.
+
+## October 8, 00:49 ET — user-requested simulator smoke: defects found
+
+Installed current 5298281 simulator build on iPhone 17e / iOS 26.5 and launched.
+Stopped the other booted iPhone 17 to keep one simulator active. National portrait
+map loads; the corrected heat legend/timeline fit, and Day/Week/Month/Year each
+respond and update their selection/labels. Find a State search with keyboard
+selects Missouri; source navigation and Powerball report open, with legible
+wrapped limits and prize rows. Closing the report returns to sources and map.
+
+Mobile acceptance remains OPEN. Two observed layout defects:
+- In state-map landscape, the empty-results banner covers timeline controls and
+  upper map controls crowd the source/game buttons.
+- Returning to upright portrait shows state draw/Scratch buttons overflowing
+  horizontally (visible 8.5/10-pixel debug overflow indicators). The national
+  portrait legend fix does not address this separate state header layout.
+Rotation also left the viewport showing a much wider geographic area; inspect
+camera preservation with the layout repair. No crash was observed in this bounded
+session. No claim of complete source-return, offline, favorites, physical-device,
+launcher/splash or accessibility acceptance. Simulator left upright on Missouri
+for continued diagnosis. Prior state-data acceptance is not reopened.
