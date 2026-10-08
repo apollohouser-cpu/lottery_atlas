@@ -222,3 +222,24 @@ started while storage migration remains unresolved. These checks do not prove
 installed launcher masks or store acceptance. Launch-screen backgrounds/assets,
 Android system splash and final native icon/layout verification remain pending.
 No external-drive, signing, Gmail or state-scope changes.
+
+## October 8 — external project storage
+
+After the user confirmed the PNY-to-My Passport transfer had finished and
+explicitly authorized formatting/migration, re-identified the physical PNY SSD
+and formatted it as APFS, retaining its PNY SSD volume name. The active desktop
+test app was stopped before moving build outputs. Project build and private
+work directories are now on PNY through links preserving their existing paths;
+content checksum comparisons passed before removing the internal originals.
+Source checkout and Git history remain on the internal disk. Git ignore rules
+cover both directories and symlinks to prevent private-work publication.
+
+Keep PNY mounted at its existing name during development. Heavy builds should
+remain sequential, with at most one simulator; external storage frees internal
+disk space but does not increase RAM. Mobile native verification is still
+pending; storage migration does not itself close any mobile acceptance gate.
+
+The inactive Gradle user cache was also copied to PNY and content-checksummed
+before replacing its original location with a link. No Gradle/Java build was
+running during migration. Build/work/Gradle linked read/write checks passed.
+Private migration evidence is stored on PNY in LotteryAtlas/migration_record.json.
