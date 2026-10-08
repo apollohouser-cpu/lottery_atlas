@@ -367,3 +367,19 @@ Added explicit Home setup/cancel/save/return, timeline alignment/retention and
 state-camera rotation cases to the draft tester guide. Next native work remains
 state selection/rotation/saved-Home framing, followed by the remaining mobile
 acceptance checklist. No new state activation, signing, upload or distribution.
+
+### October 8, 04:23 ET — synthetic saved-number lifecycle
+
+Added and passed an isolated service test using mock preference storage: save
+synthetic Powerball numbers, verify normalized persisted values, reload, rename,
+replace the same number set, retain an identical set under Mega Millions, delete
+each independently, and reject renaming a missing entry without changing storage.
+The test inspects persisted JSON as well as service reads. It does not touch the
+simulator's preferences, real tickets, user Home selection or private data.
+
+This is automated service coverage only: physical storage/process restart and
+native saved-number UI acceptance remain pending. No app-code change, build,
+installation, simulator navigation, state activation or distribution occurred.
+The already-built camera fix still awaits native verification; leave the user's
+Home review undisturbed. The preceding documentation commit rebased to 8587604
+while preserving the scheduled feed update f68e5c4.
