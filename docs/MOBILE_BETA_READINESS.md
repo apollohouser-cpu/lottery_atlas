@@ -391,3 +391,15 @@ The phone and short-landscape map now use a compact selected-state header with s
 Phone state framing reserves space for the visible controls, and viewport changes refit the selected state without clearing its filters. The national phone view fits the contiguous U.S.; Alaska and Hawaii remain reachable through state selection. The minimum zoom now permits the national fit on narrow/short viewports.
 
 Validation: nine timeline/menu widget tests passed, including 320/390/900 widths, aligned period controls, collapsed/expanded retention and menu callbacks. Two-file analysis reports only the four existing Radio API deprecation infos. iOS simulator debug build passed (10.1s), installed and launched on the existing iPhone 17e. Native checks confirmed the complete South Carolina outline in portrait and landscape, Month selection and collapse, Drawings menu sheet, contiguous U.S. framing and saved Home return to South Carolina. Simulator restored upright and left on the state map for review. This is layout verification, not full mobile/store acceptance. Private logs: work/mobile_beta/map_first_{tests,analysis,build}.log.
+
+### October 8, 05:35 ET — redesign handoff synchronized
+
+The direct-user redesign in 8198d32 supersedes the old pending-camera-build and
+Home-chooser checkpoints: that build is installed, with native South Carolina
+portrait/landscape, saved Home return, national fit and timeline sheet evidence
+recorded above. Updated tester instructions to the actual compact header/menu
+and collapsed timeline flow. Leave the running state map available for user
+review; no repeated compile, native navigation or accepted-state recheck was
+performed. Remaining mobile work includes broader supported-screen navigation,
+saved-data native persistence, connection recovery, enlarged text, Android
+runtime checks and signing/distribution gates. No full mobile acceptance.
