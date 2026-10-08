@@ -198,7 +198,7 @@ Remaining seven draw families, combined atomic refresh and app report UI are
 still pending. No public report output, native verification, Gmail or deadline
 change; North Carolina remains unaccepted.
 
-### October 8, 18:49 ET — Pick 3/4 combined summaries parsed privately
+### October 8, 18:46 ET — Pick 3/4 combined summaries parsed privately
 
 The strict draw parser now reads Pick 3 and Pick 4 dated combined summaries,
 with official Daytime/Evening identities, ordered digits (including leading
