@@ -208,3 +208,17 @@ Storage migration confirmation remains pending; this audit did not access either
 external drive, start builds or change accepted state coverage. The separate
 South Carolina correspondence check has recorded cashing-retailer semantics and
 retained its Pick 3/Pick 4 caveat; no agency delivery was promoted here.
+
+## October 7, 23:20 ET — existing compass exported to mobile icons
+
+Replaced Flutter template launcher PNGs with the in-app white compass/blue
+branding. Added reproducible Pillow/Flutter-font exporter and upstream Material
+icon attribution/license in tool/branding. Android now has adaptive foregrounds
+and a blue background resource in addition to the five legacy density icons.
+The iOS master was visually inspected; all 19 declared slots match dimensions
+and are opaque RGB. Five Android legacy/adaptive sizes and foreground margins
+pass checks; both new resource XML files parse. No full build or simulator was
+started while storage migration remains unresolved. These checks do not prove
+installed launcher masks or store acceptance. Launch-screen backgrounds/assets,
+Android system splash and final native icon/layout verification remain pending.
+No external-drive, signing, Gmail or state-scope changes.
