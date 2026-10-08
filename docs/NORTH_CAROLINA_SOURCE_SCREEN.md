@@ -97,3 +97,21 @@ validated corrected file exactly (private checksum evidence recorded). Known
 ambiguous archive records and unverified news records are absent from the public
 feed. This closes the correction publication checkpoint, not NC acceptance or a
 native remote-adoption check. No simulator/user-review state was changed.
+
+## October 8 strict Scratch importer (14:42 ET)
+
+Implemented a separate literal catalog parser and atomic importer. A fresh
+private fetch validated 83 listed games / 896 prize tiers across $1, $2, $3, $5,
+$10, $20, $30 and $50 price groups, with source date October 7. Source labels,
+printed odds, total/remaining counts, game status and official detail links are
+retained. No subtraction into claims, cash-option inference or retailer stock.
+
+Four focused Python tests pass, including malformed columns/counts/dates/URLs,
+duplicate identity, request-failure byte preservation, unchanged-date reuse,
+source-date regression, identity/tier changes, future dates and literal reorder
+increases. The importer rejects unexpectedly small catalogs and material drops.
+Private snapshot: work/north_carolina_scope/scratch-catalog.json. This is parser
+validation only: no public catalog promotion, scheduled refresh wiring, app
+loader/UI replacement or NC acceptance yet. Next integrate the catalog schema
+and strict draw reports; existing static NC UI is still the older snapshot.
+Release deadline remains October 13 at 10:38 ET. No simulator or Gmail changes.
