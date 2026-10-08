@@ -139,3 +139,23 @@ validation only: no public catalog promotion, scheduled refresh wiring, app
 loader/UI replacement or NC acceptance yet. Next integrate the catalog schema
 and strict draw reports; existing static NC UI is still the older snapshot.
 Release deadline remains October 13 at 10:38 ET. No simulator or Gmail changes.
+
+## October 8 bundled literal catalog and Flutter loader (15:45 ET)
+
+Added the validated 83-game / 896-tier October 7 source-date catalog as an app
+asset, plus a dedicated strict cache/remote/bundle loader. Validation retains
+literal prize/odds/status/definition fields and rejects malformed counts, dates,
+URLs, duplicate games/tiers, identity/tier changes and material catalog drops.
+Cold-cache remote responses are checked against the reviewed bundle. Failed
+requests or invalid remote responses retain the prior validated snapshot and
+its dates; valid remote data survives a cache-write failure. Reorder increases
+remain literal inventory changes, never calculated claims.
+
+Four Flutter tests pass, including eleven remote-defect variants, offline
+fallback, cold-cache continuity, reorder changes and persistence failure.
+Two-file analysis is clean. No full build, simulator interruption or native
+acceptance was performed. The new loader is not yet connected to the existing
+NC Scratch UI; remote endpoint staging and scheduled transaction remain pending.
+No refreshed public catalog endpoint or user-visible replacement is claimed.
+Next connect the literal UI and validate compact/wide behavior, then implement
+strict draw reports and refresh publication. NC deadline remains unchanged.
