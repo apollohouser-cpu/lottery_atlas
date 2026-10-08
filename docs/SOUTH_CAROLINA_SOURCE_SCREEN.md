@@ -139,3 +139,23 @@ Publisher 37104043949/ac2b8ac completed the three-file SC transaction successful
 Independent public activity, SC draw reports, daily Scratch and refresh-status
 bytes match. The October 2 retention checkpoint is closed. No validation changes
 or private-probe promotion were needed; the original transient cause was not proven.
+
+## October 7, 22:02 ET — validation-record definitions
+
+The agency's October 7 reply states that validation data identifies only the
+retailer that validated/cashed the ticket, excludes cancelled tickets, cannot
+include prize tiers, and uses tickets as its units. The earlier warning that
+50-cent Pick 3/Pick 4 wagers affect reported counts remains in force; the latest
+unit description does not establish an exact distinct-ticket conversion.
+Cashing activity must not be relabeled as original selling-retailer wins.
+Cancellation exclusion does not resolve every reversal/correction rule or the
+report's date semantics.
+
+Checked the full conversation and confirmed the October 2 acknowledgment in
+Sent before replying. A new bounded acknowledgment of these definitions was
+Sent-confirmed, retaining private-audit and completeness reservations. No extra
+compilation, report, fee or paid work was requested. No new attachment or
+promised follow-up date was supplied. Review the existing delivered files before
+raising any specific remaining existing-document question; do not resend either
+acknowledgment. Private check evidence is retained in work/agency_email_checks.
+No public data layer or accepted supported-app scope changed.
