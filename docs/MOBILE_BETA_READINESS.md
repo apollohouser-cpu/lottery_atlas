@@ -154,3 +154,18 @@ must not format it or interfere with copying. Uncommitted layout edits from the
 interrupted run were recovered and preserved. No next state activated in this
 platform repair; select next state with a fresh deadline after resuming national
 implementation. No Gmail, fees, signing keys or store upload.
+
+## October 7, 20:20 ET — low-resource privacy preparation
+
+Added `MOBILE_PRIVACY_INVENTORY.md` with code-backed local ticket/favorite/cache
+storage, feed/tile/MUSL requests, external directions and source navigation,
+source-manifest permissions and remaining runtime/store-declaration checks.
+This is internal release preparation, not a published policy or completed
+privacy acceptance. No code changed and no build/simulator was started.
+
+The separate 8 PM PNY preparation check could not verify that retained files had
+been completely backed up to My Passport. PNY was left untouched and that
+one-time automation was deleted after requesting the missing confirmation.
+Continue only lightweight work while transfer completion remains unverified;
+do not format the drive from the development automation. Final simulator layout
+verification, mobile acceptance, icons, tester materials and signing remain open.
