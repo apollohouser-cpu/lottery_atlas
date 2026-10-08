@@ -1,11 +1,11 @@
 {
-  "attemptedAt": "2026-10-07T23:21:26.534430+00:00",
+  "attemptedAt": "2026-10-08T06:25:22.471203+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
       "state": "Iowa",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/iowa_scratch_catalog.generated.json"
       ]
@@ -20,8 +20,8 @@
     },
     {
       "state": "Kansas",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/kansas_scratch_catalog.generated.json"
       ]
@@ -116,16 +116,16 @@
     },
     {
       "state": "Idaho",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/idaho_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Michigan",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/michigan_scratch_catalog.generated.json"
       ]
@@ -142,8 +142,8 @@
     },
     {
       "state": "Wisconsin",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/wisconsin_scratch_catalog.generated.json"
       ]
@@ -158,8 +158,8 @@
     },
     {
       "state": "North Carolina",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/north_carolina_current_winner_activity.generated.json"
       ]
@@ -251,8 +251,8 @@
     },
     {
       "state": "Missouri",
-      "status": "retained_after_failure",
-      "message": "Importer failed validation or could not retrieve its source.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/state_winning_ticket_totals.json",
         "data/missouri_scratch_catalog.generated.json",
