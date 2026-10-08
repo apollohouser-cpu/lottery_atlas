@@ -420,3 +420,22 @@ No simulator restart, installation or preference changes: the user's installed
 accessibility work remain pending; these widget checks are not certification.
 No full build was needed for this isolated layout check. Private logs are
 work/mobile_beta/enlarged_text_{test,analysis}.log.
+
+### October 8, 07:36 ET — current Android debug packaging
+
+Built the current mobile redesign and enlarged-text fix (9617c82) as an Android
+debug APK using the Android Studio JBR and migrated PNY build/Gradle paths.
+Gradle assembleDebug passed in 29.3s. The 142,641,656-byte universal debug APK
+contains arm64-v8a, armeabi-v7a and x86_64 native libraries, adaptive launcher XML,
+all five legacy/foreground icon densities, and the compiled launch background.
+Compiled manifest inspection confirms Lottery Atlas, package
+com.apollohouser.my_flutter_app, version 1.0.0 (1), minimum SDK 24, target SDK 36,
+and INTERNET. Signature verification identifies Android Debug, as expected for
+this local artifact; this is not a signed distribution release.
+
+No Android device or AVD is available in the current tooling inventory, so this
+checkpoint does not establish installation, launch, splash/mask rendering or
+Android interaction. The iOS simulator remains untouched for user review.
+Internal storage was 16 GiB free and PNY 437 GiB free before this sequential build.
+Private build log: work/mobile_beta/android_current_debug_build.log. No account,
+credential, enrollment, upload or accepted-state changes.
