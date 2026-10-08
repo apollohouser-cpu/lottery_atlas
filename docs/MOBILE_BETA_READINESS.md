@@ -357,3 +357,13 @@ reinstall or simulator navigation was performed in this checkpoint. Native state
 selection/rotation and saved-Home camera verification remain pending; do not mark
 camera acceptance complete. Current installed app remains f876014 with the Home
 chooser available for user review.
+
+### October 8, 03:23 ET — camera build and tester handoff
+
+The pending phone camera-padding change (1e03a7b) compiles successfully in a
+sequential debug iOS simulator build. Kept the installed f876014 app and its Home
+chooser untouched for user review; this build is not native camera verification.
+Added explicit Home setup/cancel/save/return, timeline alignment/retention and
+state-camera rotation cases to the draft tester guide. Next native work remains
+state selection/rotation/saved-Home framing, followed by the remaining mobile
+acceptance checklist. No new state activation, signing, upload or distribution.

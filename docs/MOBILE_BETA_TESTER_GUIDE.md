@@ -39,6 +39,9 @@ unsigned iOS build and debug-signed Android release archive are not beta release
 | --- | --- | --- |
 | Launch | Open from a cold start; inspect portrait and landscape | Navigation, map legend and timeline controls fit and remain usable; record any clipping or crash |
 | Select a state | Use Find a State for an accepted state with the keyboard open, then dismiss it | Search and selection work without controls hiding behind keyboard or safe areas |
+| Home setup | With no saved home state, tap Home, cancel, then reopen and choose a test state; navigate elsewhere and tap Home again | First tap opens setup, cancel saves nothing, saved Home returns to the chosen state; Settings can change it |
+| Timeline modes | Select Day, Week, Month and Year in portrait; in landscape open Timeline, change mode, close and reopen | Choices remain aligned and selected mode persists; date-only sources retain their documented mode limits |
+| State camera | Select an accepted state, rotate both directions, and return Home | State stays usefully framed; record unexpected world-level zoom, off-screen bounds or covered controls |
 | Read a report | Change game, date and session where supported; scroll through tiers and footer | Selected identity, source date, retrieval date, units and limits remain legible |
 | Follow a source | Open the official source, then return to the app | The source matches the selected report; record whether selection and scroll position persist |
 | Browse Scratch | Search, apply ticket-price filters, select a game, clear filters | Results and empty states match filters; advertised prizes and unknown dates remain explicit |
