@@ -95,3 +95,22 @@ correction through the validated refresh pipeline. News fuzzy matching and the
 global date-based archive/news overlap heuristic still require separate repair
 or exclusion before NC acceptance. NC remains unaccepted and the October 13
 10:38 ET release deadline is unchanged.
+
+## October 8 mapped-activity correction (13:45 ET)
+
+Excluded 107 archive records with ambiguous name/city branches and both existing
+news records from the retained NC snapshot, leaving 17,874 records. These are
+retained source records, not a new distinct-ticket total or full fresh import.
+All surviving records and source dates are unchanged. The public activity
+publisher validated 23,937 records; 35 excluded records were within its 2026
+window. All non-NC activity remains unchanged.
+
+Removed news supplementation from the importer: fuzzy branch scoring and a
+publication-date cutoff do not establish identity or prevent archive overlap.
+News remains an official source route, with no mapped-record promotion. Four
+Node tests now run under the existing CI test glob, including an importer fixture
+that excludes ambiguous branches, rejects any news request and preserves the
+output bytes on request failure. Private before/removed evidence is retained in
+work/north_carolina_scope. This fixes the known joins without claiming the
+remaining pagination, date/unit, directory or full NC acceptance audits are done.
+Publication verification follows the correction commit; push alone is not proof.

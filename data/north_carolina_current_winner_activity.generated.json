@@ -1,43 +1,9 @@
 {
-  "source": "North Carolina Education Lottery official winner archive, news releases, and retailer directory",
+  "source": "North Carolina Education Lottery official winner archive and retailer directory",
   "updatedAt": "2026-10-07T12:00:00.000Z",
   "sourceLastUpdated": "2026-10-07T12:00:00.000Z",
-  "coverage": "Current qualifying NC Lottery prize claims from 2024 onward for the official archive's available game categories, supplemented by newer official NC Education Lottery news releases when the archive has not yet published the claim. 17983 claims were matched to the official retailer directory with its published address and coordinates. 0 distinct published archive retailer names could not be matched exactly and were excluded.",
+  "coverage": "Retained qualifying NC Lottery archive prize claims from 2024 onward for its available game categories. 17874 retained records; not a complete statewide or distinct-ticket count. October 8 location audit excluded 107 records with ambiguous directory name/city matches and two news records without established branch identity and archive overlap. Remaining records and source dates are retained from the prior snapshot; this exclusion-only correction is not a fresh source retrieval. News remains excluded from mapped activity.",
   "activities": [
-    {
-      "id": "nc-news-2026-10-6-randolph-county-mans-167777-cash-5-jackpot-comes-at-the-perfect-time",
-      "latitude": 35.4749,
-      "longitude": -79.5188,
-      "city": "Highfalls",
-      "county": "Moore County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "NC Lottery drawing",
-      "retailerName": "Quick N Easy #1",
-      "retailerAddress": "1632 NC Hwy. 22, Highfalls, NC 27259",
-      "drawDate": "2026-10-06T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 167777,
-      "sourceUrl": "https://nclottery.com/News/2026/10/6/Randolph-County-mans-167777-Cash-5-jackpot-comes-at-the-perfect-time",
-      "sourceLabel": "Official NC Education Lottery news release · Oct 6, 2026"
-    },
-    {
-      "id": "nc-news-2026-10-7-gaston-county-woman-will-bless-her-family-after-150000-top-prize-win",
-      "latitude": 35.267,
-      "longitude": -81.1935,
-      "city": "Gastonia",
-      "county": "Gaston County",
-      "state": "NC",
-      "game": "scratch-off",
-      "gameName": "Scratch-Off",
-      "retailerName": "Highland Mini Mart",
-      "retailerAddress": "226 N Highland St., Gastonia, NC 28052",
-      "drawDate": "2026-10-07T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 150000,
-      "sourceUrl": "https://nclottery.com/News/2026/10/7/Gaston-County-woman-will-bless-her-family-after-150000-top-prize-win",
-      "sourceLabel": "Official NC Education Lottery news release · Oct 7, 2026"
-    },
     {
       "id": "nc-winner-308734",
       "latitude": 35.6536,
@@ -1093,23 +1059,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-308829",
-      "latitude": 35.2366,
-      "longitude": -80.8856,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Compare Foods Supermarket",
-      "retailerAddress": "2701 Freedom Dr Suite A, Charlotte, NC 28208",
-      "drawDate": "2024-01-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=308829",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-308830",
       "latitude": 36.1286,
       "longitude": -80.2392,
@@ -1175,23 +1124,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=308833",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-308834",
-      "latitude": 35.2366,
-      "longitude": -80.8856,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Compare Foods Supermarket",
-      "retailerAddress": "2701 Freedom Dr Suite A, Charlotte, NC 28208",
-      "drawDate": "2024-01-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=308834",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -6346,23 +6278,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-309258",
-      "latitude": 35.3053,
-      "longitude": -81.5236,
-      "city": "Shelby",
-      "county": "Cleveland County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Mikes Food Store",
-      "retailerAddress": "810 E Grover St., Shelby, NC 28150",
-      "drawDate": "2024-02-01T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=309258",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-309259",
       "latitude": 35.3135,
       "longitude": -78.6392,
@@ -9950,23 +9865,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-309578",
-      "latitude": 35.9172,
-      "longitude": -80.029,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Bizzy Bee",
-      "retailerAddress": "1611 Prospect St, High Point, NC 27260",
-      "drawDate": "2024-02-19T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=309578",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-309579",
       "latitude": 35.8113,
       "longitude": -81.4311,
@@ -10117,23 +10015,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=309589",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-309591",
-      "latitude": 36.1451,
-      "longitude": -80.2555,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Hop In",
-      "retailerAddress": "4116 Indiana Avenue, Winston Salem, NC 27105",
-      "drawDate": "2024-02-19T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=309591",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -29908,23 +29789,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-311188",
-      "latitude": 36.0772,
-      "longitude": -79.2251,
-      "city": "Mebane",
-      "county": "Orange County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Petro Stopping Centers",
-      "retailerAddress": "501 Buckhorn Rd, Mebane, NC 27302",
-      "drawDate": "2024-05-13T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=311188",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-311189",
       "latitude": 36.0773,
       "longitude": -80.1758,
@@ -29939,23 +29803,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=311189",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-311190",
-      "latitude": 36.0772,
-      "longitude": -79.2251,
-      "city": "Mebane",
-      "county": "Orange County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Petro Stopping Centers",
-      "retailerAddress": "501 Buckhorn Rd, Mebane, NC 27302",
-      "drawDate": "2024-05-13T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=311190",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -30979,23 +30826,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-311259",
-      "latitude": 35.6073,
-      "longitude": -77.4133,
-      "city": "Greenville",
-      "county": "Pitt County",
-      "state": "NC",
-      "game": "scratch-off",
-      "gameName": "Instant Scratchers",
-      "retailerName": "Angus Grill",
-      "retailerAddress": "2422 Stantonsburg Rd, Greenville, NC 27834",
-      "drawDate": "2024-05-20T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 9000,
-      "sourceUrl": "https://nclottery.com/Winner?id=311259",
-      "sourceLabel": "Official NC Education Lottery Instant Scratchers winner claim"
-    },
-    {
       "id": "nc-winner-311260",
       "latitude": 35.1352,
       "longitude": -80.8915,
@@ -31418,23 +31248,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=311294",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-311295",
-      "latitude": 35.9172,
-      "longitude": -80.029,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Bizzy Bee",
-      "retailerAddress": "1611 Prospect St, High Point, NC 27260",
-      "drawDate": "2024-05-31T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=311295",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -36300,23 +36113,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-311651",
-      "latitude": 35.3066,
-      "longitude": -80.8408,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Compare Foods",
-      "retailerAddress": "5300 Sunset Road, Charlotte, NC 28269",
-      "drawDate": "2024-06-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=311651",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-311652",
       "latitude": 34.7487,
       "longitude": -77.4201,
@@ -36791,23 +36587,6 @@
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=311688",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-311690",
-      "latitude": 34.1913,
-      "longitude": -77.9291,
-      "city": "Wilmington",
-      "county": "New Hanover County",
-      "state": "NC",
-      "game": "scratch-off",
-      "gameName": "Instant Scratchers",
-      "retailerName": "Tinyz Tavern",
-      "retailerAddress": "800 Shipyard Blvd. Suite 1, Wilmington, NC 28412",
-      "drawDate": "2024-06-19T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 12600,
-      "sourceUrl": "https://nclottery.com/Winner?id=311690",
-      "sourceLabel": "Official NC Education Lottery Instant Scratchers winner claim"
     },
     {
       "id": "nc-winner-311692",
@@ -38459,23 +38238,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-311804",
-      "latitude": 36.0246,
-      "longitude": -78.8454,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Billy's Mart",
-      "retailerAddress": "2142 E Geer street, Durham, NC 27704",
-      "drawDate": "2024-06-26T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=311804",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-311806",
       "latitude": 35.2526,
       "longitude": -81.1478,
@@ -38609,23 +38371,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=311816",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-311817",
-      "latitude": 36.0246,
-      "longitude": -78.8454,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Billy's Mart",
-      "retailerAddress": "2142 E Geer street, Durham, NC 27704",
-      "drawDate": "2024-06-26T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=311817",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -38779,23 +38524,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=311832",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-311833",
-      "latitude": 36.0246,
-      "longitude": -78.8454,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Billy's Mart",
-      "retailerAddress": "2142 E Geer street, Durham, NC 27704",
-      "drawDate": "2024-06-26T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=311833",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -41278,23 +41006,6 @@
       "winningTickets": 1,
       "prizeAmount": 10000,
       "sourceUrl": "https://nclottery.com/Winner?id=312035",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-312036",
-      "latitude": 36.1017,
-      "longitude": -80.2304,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Compare Foods",
-      "retailerAddress": "550 N MLK Jr. Dr., Winston Salem, NC 27101",
-      "drawDate": "2024-07-19T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 200000,
-      "sourceUrl": "https://nclottery.com/Winner?id=312036",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -47518,23 +47229,6 @@
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=312501",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-312503",
-      "latitude": 35.3531,
-      "longitude": -82.4277,
-      "city": "Hendersonville",
-      "county": "Henderson County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Cheap Chips Inc",
-      "retailerAddress": "2650 Chimney Rock Road, Hendersonville, NC 28792",
-      "drawDate": "2024-08-12T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 50000,
-      "sourceUrl": "https://nclottery.com/Winner?id=312503",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
       "id": "nc-winner-312505",
@@ -57771,23 +57465,6 @@
       "sourceLabel": "Official NC Education Lottery Instant Scratchers winner claim"
     },
     {
-      "id": "nc-winner-313274",
-      "latitude": 35.1459,
-      "longitude": -80.9298,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "scratch-off",
-      "gameName": "Instant Scratchers",
-      "retailerName": "Carmella's Pizza Grill",
-      "retailerAddress": "8124 South Tryon St Suite A1, Charlotte, NC 28273",
-      "drawDate": "2024-10-03T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 8500,
-      "sourceUrl": "https://nclottery.com/Winner?id=313274",
-      "sourceLabel": "Official NC Education Lottery Instant Scratchers winner claim"
-    },
-    {
       "id": "nc-winner-313275",
       "latitude": 35.5724,
       "longitude": -80.6257,
@@ -57839,23 +57516,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-313278",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Tommy's Mini-Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2024-10-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=313278",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-313279",
       "latitude": 35.7794,
       "longitude": -78.6219,
@@ -57870,23 +57530,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=313279",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-313280",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Tommy's Mini-Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2024-10-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=313280",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -57938,23 +57581,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=313286",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-313287",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Tommy's Mini-Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2024-10-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=313287",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -58074,23 +57700,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=313296",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-313299",
-      "latitude": 35.9172,
-      "longitude": -80.029,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Bizzy Bee",
-      "retailerAddress": "1611 Prospect St, High Point, NC 27260",
-      "drawDate": "2024-09-30T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=313299",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -64146,23 +63755,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-313741",
-      "latitude": 34.4574,
-      "longitude": -78.0963,
-      "city": "Currie",
-      "county": "Pender County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Yaya's Mini Mart",
-      "retailerAddress": "5307 Blueberry Road, Currie, NC 28435",
-      "drawDate": "2024-10-31T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 4000000,
-      "sourceUrl": "https://nclottery.com/Winner?id=313741",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-313742",
       "latitude": 35.9644,
       "longitude": -79.9598,
@@ -66455,23 +66047,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=313898",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-313900",
-      "latitude": 35.2833,
-      "longitude": -80.8356,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Xpress Mart",
-      "retailerAddress": "4601 Statesville Road, Charlotte, NC 28269",
-      "drawDate": "2024-11-05T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=313900",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -72932,23 +72507,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=314325",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-314326",
-      "latitude": 35.9309,
-      "longitude": -80.0439,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Pantry Shop",
-      "retailerAddress": "3000 W. English Rd, High Point, NC 27262",
-      "drawDate": "2024-11-19T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=314326",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -80109,23 +79667,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-314849",
-      "latitude": 35.9309,
-      "longitude": -80.0439,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Pantry Shop",
-      "retailerAddress": "3000 W. English Rd, High Point, NC 27262",
-      "drawDate": "2024-12-23T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=314849",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-314851",
       "latitude": 35.6579,
       "longitude": -78.4794,
@@ -81296,23 +80837,6 @@
       "winningTickets": 1,
       "prizeAmount": 10000,
       "sourceUrl": "https://nclottery.com/Winner?id=314925",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-314926",
-      "latitude": 36.1451,
-      "longitude": -80.2555,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Hop In",
-      "retailerAddress": "4116 Indiana Avenue, Winston Salem, NC 27105",
-      "drawDate": "2025-01-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 10000,
-      "sourceUrl": "https://nclottery.com/Winner?id=314926",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -84036,23 +83560,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-315182",
-      "latitude": 34.1913,
-      "longitude": -77.9291,
-      "city": "Wilmington",
-      "county": "New Hanover County",
-      "state": "NC",
-      "game": "scratch-off",
-      "gameName": "Instant Scratchers",
-      "retailerName": "Tinyz Tavern",
-      "retailerAddress": "800 Shipyard Blvd. Suite 1, Wilmington, NC 28412",
-      "drawDate": "2025-01-06T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 9000,
-      "sourceUrl": "https://nclottery.com/Winner?id=315182",
-      "sourceLabel": "Official NC Education Lottery Instant Scratchers winner claim"
-    },
-    {
       "id": "nc-winner-315183",
       "latitude": 34.6326,
       "longitude": -79.0925,
@@ -84764,23 +84271,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=315239",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-315240",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2025-01-14T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 8000000,
-      "sourceUrl": "https://nclottery.com/Winner?id=315240",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -90666,23 +90156,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-315630",
-      "latitude": 35.8758,
-      "longitude": -81.5164,
-      "city": "Lenoir",
-      "county": "Caldwell County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Shop & Save",
-      "retailerAddress": "2108 Norwood Street SW, Lenoir, NC 28645",
-      "drawDate": "2025-01-13T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=315630",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-315631",
       "latitude": 35.9509,
       "longitude": -78.1043,
@@ -91717,23 +91190,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=315695",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-315696",
-      "latitude": 35.9172,
-      "longitude": -80.029,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Bizzy Bee",
-      "retailerAddress": "1611 Prospect St, High Point, NC 27260",
-      "drawDate": "2025-01-13T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=315696",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -94454,23 +93910,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=315872",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-315873",
-      "latitude": 35.8758,
-      "longitude": -81.5164,
-      "city": "Lenoir",
-      "county": "Caldwell County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Shop & Save",
-      "retailerAddress": "2108 Norwood Street SW, Lenoir, NC 28645",
-      "drawDate": "2025-01-13T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=315873",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -100829,23 +100268,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=316288",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-316289",
-      "latitude": 35.8758,
-      "longitude": -81.5164,
-      "city": "Lenoir",
-      "county": "Caldwell County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Shop & Save",
-      "retailerAddress": "2108 Norwood Street SW, Lenoir, NC 28645",
-      "drawDate": "2025-01-13T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=316289",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -107751,23 +107173,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-316778",
-      "latitude": 36.0246,
-      "longitude": -78.8454,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Billy's Mart",
-      "retailerAddress": "2142 E Geer street, Durham, NC 27704",
-      "drawDate": "2025-01-27T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://nclottery.com/Winner?id=316778",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-316779",
       "latitude": 36.1491,
       "longitude": -81.2321,
@@ -109111,23 +108516,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-316874",
-      "latitude": 36.1451,
-      "longitude": -80.2555,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Hop In",
-      "retailerAddress": "4116 Indiana Avenue, Winston Salem, NC 27105",
-      "drawDate": "2025-01-30T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=316874",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-316875",
       "latitude": 35.3708,
       "longitude": -80.6651,
@@ -109720,23 +109108,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=316914",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-316915",
-      "latitude": 35.9309,
-      "longitude": -80.0439,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Pantry Shop",
-      "retailerAddress": "3000 W. English Rd, High Point, NC 27262",
-      "drawDate": "2025-01-27T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=316915",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -114109,23 +113480,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-317226",
-      "latitude": 36.1451,
-      "longitude": -80.2555,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Hop In",
-      "retailerAddress": "4116 Indiana Avenue, Winston Salem, NC 27105",
-      "drawDate": "2025-02-10T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=317226",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-317227",
       "latitude": 35.6052,
       "longitude": -78.295,
@@ -114837,23 +114191,6 @@
       "winningTickets": 1,
       "prizeAmount": 10000,
       "sourceUrl": "https://nclottery.com/Winner?id=317284",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-317285",
-      "latitude": 36.0185,
-      "longitude": -78.8865,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Compare Foods",
-      "retailerAddress": "2000 Avondale Drive Suite A, Durham, NC 27704",
-      "drawDate": "2025-02-21T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=317285",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -118920,23 +118257,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-317551",
-      "latitude": 35.7425,
-      "longitude": -81.3598,
-      "city": "Hickory",
-      "county": "Catawba County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "D&D Express #24",
-      "retailerAddress": "1120 Old Lenoir Rd. NW, Hickory, NC 28601",
-      "drawDate": "2025-03-03T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 10000,
-      "sourceUrl": "https://nclottery.com/Winner?id=317551",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-317553",
       "latitude": 34.7823,
       "longitude": -76.6261,
@@ -119787,23 +119107,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-317607",
-      "latitude": 35.2833,
-      "longitude": -80.8356,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Xpress Mart",
-      "retailerAddress": "4601 Statesville Road, Charlotte, NC 28269",
-      "drawDate": "2025-03-06T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=317607",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-317608",
       "latitude": 34.7364,
       "longitude": -79.3481,
@@ -120107,40 +119410,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=317627",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-317628",
-      "latitude": 35.2833,
-      "longitude": -80.8356,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Xpress Mart",
-      "retailerAddress": "4601 Statesville Road, Charlotte, NC 28269",
-      "drawDate": "2025-03-06T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=317628",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-317629",
-      "latitude": 35.2833,
-      "longitude": -80.8356,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Xpress Mart",
-      "retailerAddress": "4601 Statesville Road, Charlotte, NC 28269",
-      "drawDate": "2025-03-07T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=317629",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -122878,23 +122147,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=317808",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-317809",
-      "latitude": 35.2366,
-      "longitude": -80.8856,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Compare Foods Supermarket",
-      "retailerAddress": "2701 Freedom Dr Suite A, Charlotte, NC 28208",
-      "drawDate": "2025-03-05T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=317809",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -129460,23 +128712,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-318236",
-      "latitude": 35.2833,
-      "longitude": -80.8356,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Xpress Mart",
-      "retailerAddress": "4601 Statesville Road, Charlotte, NC 28269",
-      "drawDate": "2025-03-24T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=318236",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-318237",
       "latitude": 35.7625,
       "longitude": -78.0008,
@@ -130749,23 +129984,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=318328",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-318330",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2025-04-01T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=318330",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -134611,23 +133829,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-318600",
-      "latitude": 36.0246,
-      "longitude": -78.8454,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Billy's Mart",
-      "retailerAddress": "2142 E Geer street, Durham, NC 27704",
-      "drawDate": "2025-04-22T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=318600",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-318601",
       "latitude": 35.3947,
       "longitude": -82.5053,
@@ -137093,23 +136294,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-318775",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini-Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2025-05-05T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 250000,
-      "sourceUrl": "https://nclottery.com/Winner?id=318775",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-318776",
       "latitude": 35.5993,
       "longitude": -82.4041,
@@ -137379,23 +136563,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=318791",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-318792",
-      "latitude": 34.4574,
-      "longitude": -78.0963,
-      "city": "Currie",
-      "county": "Pender County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Yaya's Mini Mart",
-      "retailerAddress": "5307 Blueberry Road, Currie, NC 28435",
-      "drawDate": "2025-05-09T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=318792",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -148500,23 +147667,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-319550",
-      "latitude": 35.6781,
-      "longitude": -78.658,
-      "city": "Raleigh",
-      "county": "Wake County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "EZ Way",
-      "retailerAddress": "7200 Old Stage Road, Raleigh, NC 27603",
-      "drawDate": "2025-06-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=319550",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-319551",
       "latitude": 35.6395,
       "longitude": -78.8392,
@@ -151864,23 +151014,6 @@
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=319763",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-319764",
-      "latitude": 34.1913,
-      "longitude": -77.9291,
-      "city": "Wilmington",
-      "county": "New Hanover County",
-      "state": "NC",
-      "game": "scratch-off",
-      "gameName": "Instant Scratchers",
-      "retailerName": "Tinyz Tavern",
-      "retailerAddress": "800 Shipyard Blvd. Suite 1, Wilmington, NC 28412",
-      "drawDate": "2025-06-16T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 8400,
-      "sourceUrl": "https://nclottery.com/Winner?id=319764",
-      "sourceLabel": "Official NC Education Lottery Instant Scratchers winner claim"
     },
     {
       "id": "nc-winner-319765",
@@ -155776,23 +154909,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-320027",
-      "latitude": 35.2521,
-      "longitude": -81.1453,
-      "city": "Gastonia",
-      "county": "Gaston County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Save Mart",
-      "retailerAddress": "1010 S New Hope Road, Gastonia, NC 28054",
-      "drawDate": "2025-07-08T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=320027",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-320028",
       "latitude": 35.6926,
       "longitude": -77.9437,
@@ -156592,40 +155708,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-320086",
-      "latitude": 36.1451,
-      "longitude": -80.2555,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Hop In",
-      "retailerAddress": "4116 Indiana Avenue, Winston Salem, NC 27105",
-      "drawDate": "2025-07-07T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=320086",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-320087",
-      "latitude": 36.1451,
-      "longitude": -80.2555,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Hop In",
-      "retailerAddress": "4116 Indiana Avenue, Winston Salem, NC 27105",
-      "drawDate": "2025-07-07T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=320087",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-320088",
       "latitude": 36.4479,
       "longitude": -77.6605,
@@ -156640,23 +155722,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=320088",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-320089",
-      "latitude": 36.1451,
-      "longitude": -80.2555,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Hop In",
-      "retailerAddress": "4116 Indiana Avenue, Winston Salem, NC 27105",
-      "drawDate": "2025-07-07T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=320089",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -162471,23 +161536,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=320480",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-320481",
-      "latitude": 36.0246,
-      "longitude": -78.8454,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Billy's Mart",
-      "retailerAddress": "2142 E Geer street, Durham, NC 27704",
-      "drawDate": "2025-08-12T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=320481",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -171263,23 +170311,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-321067",
-      "latitude": 35.9172,
-      "longitude": -80.029,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Bizzy Bee",
-      "retailerAddress": "1611 Prospect St, High Point, NC 27260",
-      "drawDate": "2025-09-18T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=321067",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-321068",
       "latitude": 35.2798,
       "longitude": -82.4218,
@@ -179559,23 +178590,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-321609",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2025-10-08T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=321609",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-321610",
       "latitude": 35.7802,
       "longitude": -78.4363,
@@ -179811,23 +178825,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=321624",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-321625",
-      "latitude": 35.2833,
-      "longitude": -80.8356,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Xpress Mart",
-      "retailerAddress": "4601 Statesville Road, Charlotte, NC 28269",
-      "drawDate": "2025-10-07T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=321625",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -181514,23 +180511,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-321734",
-      "latitude": 34.1913,
-      "longitude": -77.9291,
-      "city": "Wilmington",
-      "county": "New Hanover County",
-      "state": "NC",
-      "game": "scratch-off",
-      "gameName": "Instant Scratchers",
-      "retailerName": "Tinyz Tavern",
-      "retailerAddress": "800 Shipyard Blvd. Suite 1, Wilmington, NC 28412",
-      "drawDate": "2025-10-14T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 21000,
-      "sourceUrl": "https://nclottery.com/Winner?id=321734",
-      "sourceLabel": "Official NC Education Lottery Instant Scratchers winner claim"
-    },
-    {
       "id": "nc-winner-321735",
       "latitude": 35.5201,
       "longitude": -78.2916,
@@ -181545,23 +180525,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=321735",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-321736",
-      "latitude": 35.9309,
-      "longitude": -80.0439,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Pantry Shop",
-      "retailerAddress": "3000 W. English Rd, High Point, NC 27262",
-      "drawDate": "2025-10-13T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=321736",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -183979,23 +182942,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-321897",
-      "latitude": 35.2833,
-      "longitude": -80.8356,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Xpress Mart",
-      "retailerAddress": "4601 Statesville Road, Charlotte, NC 28269",
-      "drawDate": "2025-10-15T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=321897",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-321898",
       "latitude": 35.2714,
       "longitude": -80.7682,
@@ -184197,23 +183143,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=321914",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-321915",
-      "latitude": 35.2366,
-      "longitude": -80.8856,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Compare Foods Supermarket",
-      "retailerAddress": "2701 Freedom Dr Suite A, Charlotte, NC 28208",
-      "drawDate": "2025-10-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=321915",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -188875,23 +187804,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-322211",
-      "latitude": 35.7425,
-      "longitude": -81.3598,
-      "city": "Hickory",
-      "county": "Catawba County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "D&D Express 24",
-      "retailerAddress": "1120 Old Lenoir Rd. NW, Hickory, NC 28601",
-      "drawDate": "2025-10-20T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=322211",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-322212",
       "latitude": 35.7633,
       "longitude": -80.8861,
@@ -190283,23 +189195,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=322308",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-322309",
-      "latitude": 36.2362,
-      "longitude": -81.1781,
-      "city": "North Wilkesboro",
-      "county": "Wilkes County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Village Market",
-      "retailerAddress": "3148 Sparta Road, North Wilkesboro, NC 28659",
-      "drawDate": "2025-10-20T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=322309",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -193445,23 +192340,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=322509",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-322510",
-      "latitude": 35.0344,
-      "longitude": -78.9606,
-      "city": "Fayetteville",
-      "county": "Cumberland County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Express Mart",
-      "retailerAddress": "817 Hope Mills Road, Fayetteville, NC 28304",
-      "drawDate": "2025-10-29T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=322510",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -198069,23 +196947,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=322807",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-322808",
-      "latitude": 35.2521,
-      "longitude": -81.1453,
-      "city": "Gastonia",
-      "county": "Gaston County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Save Mart",
-      "retailerAddress": "1010 S New Hope Road, Gastonia, NC 28054",
-      "drawDate": "2025-11-03T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=322808",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -204515,23 +203376,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-323208",
-      "latitude": 35.7425,
-      "longitude": -81.3598,
-      "city": "Hickory",
-      "county": "Catawba County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "D&D Express 24",
-      "retailerAddress": "1120 Old Lenoir Rd. NW, Hickory, NC 28601",
-      "drawDate": "2025-11-20T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=323208",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-323209",
       "latitude": 33.8899,
       "longitude": -78.5784,
@@ -204597,23 +203441,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=323213",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-323214",
-      "latitude": 35.6781,
-      "longitude": -78.658,
-      "city": "Raleigh",
-      "county": "Wake County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "EZ Way",
-      "retailerAddress": "7200 Old Stage Road, Raleigh, NC 27603",
-      "drawDate": "2025-11-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=323214",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -206076,23 +204903,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=323304",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-323305",
-      "latitude": 35.9172,
-      "longitude": -80.029,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Bizzy Bee",
-      "retailerAddress": "1611 Prospect St, High Point, NC 27260",
-      "drawDate": "2025-11-19T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=323305",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -209581,23 +208391,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-323539",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2025-12-05T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=323539",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-323540",
       "latitude": 36.077,
       "longitude": -80.11,
@@ -212165,23 +210958,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-323701",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2025-12-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=323701",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-323702",
       "latitude": 35.0228,
       "longitude": -83.6947,
@@ -212570,23 +211346,6 @@
       "winningTickets": 1,
       "prizeAmount": 100000,
       "sourceUrl": "https://nclottery.com/Winner?id=323729",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-323730",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2025-12-11T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 10000,
-      "sourceUrl": "https://nclottery.com/Winner?id=323730",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -214287,23 +213046,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=323847",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-323848",
-      "latitude": 35.6781,
-      "longitude": -78.658,
-      "city": "Raleigh",
-      "county": "Wake County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "EZ Way",
-      "retailerAddress": "7200 Old Stage Road, Raleigh, NC 27603",
-      "drawDate": "2025-12-12T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=323848",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -219526,23 +218268,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-324188",
-      "latitude": 35.6781,
-      "longitude": -78.658,
-      "city": "Raleigh",
-      "county": "Wake County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "EZ Way",
-      "retailerAddress": "7200 Old Stage Road, Raleigh, NC 27603",
-      "drawDate": "2025-12-22T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=324188",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-324189",
       "latitude": 35.3062,
       "longitude": -80.8531,
@@ -224303,23 +223028,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-324494",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2026-01-02T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=324494",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-324495",
       "latitude": 35.7028,
       "longitude": -81.2087,
@@ -224368,23 +223076,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=324497",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-324498",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2025-12-29T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=324498",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -228655,23 +227346,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-324773",
-      "latitude": 36.1017,
-      "longitude": -80.2304,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Compare Foods",
-      "retailerAddress": "550 N MLK Jr. Dr., Winston Salem, NC 27101",
-      "drawDate": "2026-01-05T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=324773",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-324774",
       "latitude": 36.2004,
       "longitude": -81.6524,
@@ -230267,23 +228941,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=324872",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-324873",
-      "latitude": 35.7425,
-      "longitude": -81.3598,
-      "city": "Hickory",
-      "county": "Catawba County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "D&D Express #24",
-      "retailerAddress": "1120 Old Lenoir Rd. NW, Hickory, NC 28601",
-      "drawDate": "2026-01-14T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 10000,
-      "sourceUrl": "https://nclottery.com/Winner?id=324873",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -232120,23 +230777,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=324994",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-324995",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2026-01-14T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=324995",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -237410,23 +236050,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-325339",
-      "latitude": 36.0246,
-      "longitude": -78.8454,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Billy's Mart",
-      "retailerAddress": "2142 E Geer street, Durham, NC 27704",
-      "drawDate": "2026-01-29T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=325339",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-325340",
       "latitude": 35.8258,
       "longitude": -78.7073,
@@ -237628,23 +236251,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=325351",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-325352",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2026-01-27T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=325352",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -238549,23 +237155,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-325409",
-      "latitude": 35.6781,
-      "longitude": -78.658,
-      "city": "Raleigh",
-      "county": "Wake County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "EZ Way",
-      "retailerAddress": "7200 Old Stage Road, Raleigh, NC 27603",
-      "drawDate": "2026-01-30T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=325409",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-325410",
       "latitude": 35.9168,
       "longitude": -78.892,
@@ -239226,23 +237815,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=325449",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-325450",
-      "latitude": 35.2833,
-      "longitude": -80.8356,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Xpress Mart",
-      "retailerAddress": "4601 Statesville Road, Charlotte, NC 28269",
-      "drawDate": "2026-01-30T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=325450",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -241048,23 +239620,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-325566",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2026-02-06T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=325566",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-325568",
       "latitude": 35,
       "longitude": -80.7,
@@ -241844,23 +240399,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=325617",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-325618",
-      "latitude": 35.7425,
-      "longitude": -81.3598,
-      "city": "Hickory",
-      "county": "Catawba County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "D&D Express 24",
-      "retailerAddress": "1120 Old Lenoir Rd. NW, Hickory, NC 28601",
-      "drawDate": "2026-02-05T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=325618",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -243564,23 +242102,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-325722",
-      "latitude": 36.1451,
-      "longitude": -80.2555,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Hop In",
-      "retailerAddress": "4116 Indiana Avenue, Winston Salem, NC 27105",
-      "drawDate": "2026-02-16T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=325722",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-325723",
       "latitude": 36.0564,
       "longitude": -80.2094,
@@ -244346,23 +242867,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-325772",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2026-02-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=325772",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-325773",
       "latitude": 35.5207,
       "longitude": -78.2921,
@@ -244581,23 +243085,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=325785",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-325786",
-      "latitude": 35.7425,
-      "longitude": -81.3598,
-      "city": "Hickory",
-      "county": "Catawba County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "D&D Express 24",
-      "retailerAddress": "1120 Old Lenoir Rd. NW, Hickory, NC 28601",
-      "drawDate": "2026-02-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=325786",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -252418,23 +250905,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=326276",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-326277",
-      "latitude": 36.1451,
-      "longitude": -80.2555,
-      "city": "Winston Salem",
-      "county": "Forsyth County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Hop In",
-      "retailerAddress": "4116 Indiana Avenue, Winston Salem, NC 27105",
-      "drawDate": "2026-02-26T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=326277",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -264338,23 +262808,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-327014",
-      "latitude": 36.4261,
-      "longitude": -77.6331,
-      "city": "Roanoke Rapids",
-      "county": "Halifax County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Cloud Nine",
-      "retailerAddress": "287 Premier Blvd, Roanoke Rapids, NC 27870",
-      "drawDate": "2026-03-20T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327014",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-327015",
       "latitude": 35.2578,
       "longitude": -80.7371,
@@ -265698,23 +264151,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-327102",
-      "latitude": 36.4261,
-      "longitude": -77.6331,
-      "city": "Roanoke Rapids",
-      "county": "Halifax County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Cloud Nine",
-      "retailerAddress": "287 Premier Blvd, Roanoke Rapids, NC 27870",
-      "drawDate": "2026-03-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 100000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327102",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-327103",
       "latitude": 35.4142,
       "longitude": -77.9386,
@@ -266905,23 +265341,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-327176",
-      "latitude": 35.2366,
-      "longitude": -80.8856,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Compare Foods Supermarket",
-      "retailerAddress": "2701 Freedom Dr Suite A, Charlotte, NC 28208",
-      "drawDate": "2026-03-16T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327176",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-327177",
       "latitude": 35.5135,
       "longitude": -82.5238,
@@ -267755,74 +266174,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-327228",
-      "latitude": 35.0344,
-      "longitude": -78.9606,
-      "city": "Fayetteville",
-      "county": "Cumberland County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Express Mart",
-      "retailerAddress": "817 Hope Mills Road, Fayetteville, NC 28304",
-      "drawDate": "2026-03-25T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327228",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-327229",
-      "latitude": 35.0344,
-      "longitude": -78.9606,
-      "city": "Fayetteville",
-      "county": "Cumberland County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Express Mart",
-      "retailerAddress": "817 Hope Mills Road, Fayetteville, NC 28304",
-      "drawDate": "2026-03-25T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327229",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-327230",
-      "latitude": 35.0344,
-      "longitude": -78.9606,
-      "city": "Fayetteville",
-      "county": "Cumberland County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Express Mart",
-      "retailerAddress": "817 Hope Mills Road, Fayetteville, NC 28304",
-      "drawDate": "2026-03-25T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327230",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-327231",
-      "latitude": 35.0344,
-      "longitude": -78.9606,
-      "city": "Fayetteville",
-      "county": "Cumberland County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Express Mart",
-      "retailerAddress": "817 Hope Mills Road, Fayetteville, NC 28304",
-      "drawDate": "2026-03-25T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327231",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-327232",
       "latitude": 35.6327,
       "longitude": -77.4458,
@@ -268602,23 +266953,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=327278",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-327279",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2026-03-27T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327279",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -275116,23 +273450,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-327688",
-      "latitude": 35.9172,
-      "longitude": -80.029,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Bizzy Bee",
-      "retailerAddress": "1611 Prospect St, High Point, NC 27260",
-      "drawDate": "2026-04-30T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327688",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-327689",
       "latitude": 36.0437,
       "longitude": -79.8012,
@@ -276524,23 +274841,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=327777",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-327778",
-      "latitude": 35.2833,
-      "longitude": -80.8356,
-      "city": "Charlotte",
-      "county": "Mecklenburg County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Xpress Mart",
-      "retailerAddress": "4601 Statesville Road, Charlotte, NC 28269",
-      "drawDate": "2026-05-06T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327778",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -279655,23 +277955,6 @@
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
-      "id": "nc-winner-327975",
-      "latitude": 35.9172,
-      "longitude": -80.029,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Bizzy Bee",
-      "retailerAddress": "1611 Prospect St, High Point, NC 27260",
-      "drawDate": "2026-05-29T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327975",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-327976",
       "latitude": 36.4321,
       "longitude": -77.6327,
@@ -279720,23 +278003,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=327978",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-327979",
-      "latitude": 35.9172,
-      "longitude": -80.029,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Bizzy Bee",
-      "retailerAddress": "1611 Prospect St, High Point, NC 27260",
-      "drawDate": "2026-05-29T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=327979",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -280400,23 +278666,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=328021",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
-      "id": "nc-winner-328023",
-      "latitude": 36.0439,
-      "longitude": -78.9633,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Tommy's Mini Mart",
-      "retailerAddress": "1832 Cole Mill Rd., Durham, NC 27712",
-      "drawDate": "2026-05-26T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=328023",
       "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
@@ -282474,23 +280723,6 @@
       "winningTickets": 1,
       "prizeAmount": 10000,
       "sourceUrl": "https://nclottery.com/Winner?id=328156",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-328157",
-      "latitude": 36.2362,
-      "longitude": -81.1781,
-      "city": "North Wilkesboro",
-      "county": "Wilkes County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Village Market",
-      "retailerAddress": "3148 Sparta Road, North Wilkesboro, NC 28659",
-      "drawDate": "2026-06-19T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=328157",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -287067,23 +285299,6 @@
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
-      "id": "nc-winner-328445",
-      "latitude": 36.0185,
-      "longitude": -78.8865,
-      "city": "Durham",
-      "county": "Durham County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Compare Foods",
-      "retailerAddress": "2000 Avondale Drive Suite A, Durham, NC 27704",
-      "drawDate": "2026-07-01T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=328445",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
       "id": "nc-winner-328446",
       "latitude": 35.3929,
       "longitude": -83.1884,
@@ -290229,23 +288444,6 @@
       "sourceLabel": "Official NC Education Lottery Mega Millions winner claim"
     },
     {
-      "id": "nc-winner-328641",
-      "latitude": 35.9309,
-      "longitude": -80.0439,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Pantry Shop",
-      "retailerAddress": "3000 W. English Rd, High Point, NC 27262",
-      "drawDate": "2026-07-13T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=328641",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
-    },
-    {
       "id": "nc-winner-328642",
       "latitude": 35.9641,
       "longitude": -77.8197,
@@ -290515,23 +288713,6 @@
       "winningTickets": 1,
       "prizeAmount": 5000,
       "sourceUrl": "https://nclottery.com/Winner?id=328658",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-328659",
-      "latitude": 35.3531,
-      "longitude": -82.4277,
-      "city": "Hendersonville",
-      "county": "Henderson County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Cheap Chips Inc",
-      "retailerAddress": "2650 Chimney Rock Road, Hendersonville, NC 28792",
-      "drawDate": "2026-07-16T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=328659",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -291484,23 +289665,6 @@
       "winningTickets": 1,
       "prizeAmount": 20000,
       "sourceUrl": "https://nclottery.com/Winner?id=328718",
-      "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
-    },
-    {
-      "id": "nc-winner-328719",
-      "latitude": 35.9309,
-      "longitude": -80.0439,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Pick 4",
-      "retailerName": "Pantry Shop",
-      "retailerAddress": "3000 W. English Rd, High Point, NC 27262",
-      "drawDate": "2026-07-21T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 20000,
-      "sourceUrl": "https://nclottery.com/Winner?id=328719",
       "sourceLabel": "Official NC Education Lottery Pick 4 winner claim"
     },
     {
@@ -303368,23 +301532,6 @@
       "prizeAmount": 18000,
       "sourceUrl": "https://nclottery.com/Winner?id=329454",
       "sourceLabel": "Official NC Education Lottery Instant Scratchers winner claim"
-    },
-    {
-      "id": "nc-winner-329455",
-      "latitude": 35.9309,
-      "longitude": -80.0439,
-      "city": "High Point",
-      "county": "Guilford County",
-      "state": "NC",
-      "game": "state-draw",
-      "gameName": "Cash 5",
-      "retailerName": "Pantry Shop",
-      "retailerAddress": "3000 W. English Rd, High Point, NC 27262",
-      "drawDate": "2026-09-17T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 5000,
-      "sourceUrl": "https://nclottery.com/Winner?id=329455",
-      "sourceLabel": "Official NC Education Lottery Cash 5 winner claim"
     },
     {
       "id": "nc-winner-329456",
