@@ -70,6 +70,11 @@ extension on TimelinePlaybackSpeed {
 class MapControlsOverlay extends StatefulWidget {
   const MapControlsOverlay({
     super.key,
+    this.selectedStateName,
+    this.onDrawings,
+    this.onScratch,
+    this.onSources,
+    this.onNationalMap,
     this.detailMode = MapDetailMode.standard,
     this.onDetailModeChanged,
     this.filterState,
@@ -86,6 +91,8 @@ class MapControlsOverlay extends StatefulWidget {
     this.dayOnlyDateLabel = 'Claim dates',
   });
 
+  final String? selectedStateName;
+  final VoidCallback? onDrawings, onScratch, onSources, onNationalMap;
   final MapDetailMode detailMode;
   final ValueChanged<MapDetailMode>? onDetailModeChanged;
   final MapFilterState? filterState;
@@ -1061,9 +1068,12 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
       }
     });
     final shortScreen = MediaQuery.sizeOf(context).height < 500;
+    final phone = MediaQuery.sizeOf(context).width < 600 || shortScreen;
     return Stack(
       children: [
-        if (widget.showHeaderControls)
+        if (phone)
+          Positioned(top: 8, left: 12, right: 12, child: _phoneHeader()),
+        if (!phone && widget.showHeaderControls)
           Positioned(
             top: 16,
             left: 16,
@@ -1096,28 +1106,170 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
           left: 20,
           right: 20,
           bottom: 16,
-          child: shortScreen
+          child: phone
               ? SizedBox(
                   key: _timelineKey,
-                  height: 48,
-                  child: FilledButton.icon(
-                    style: FilledButton.styleFrom(
-                      backgroundColor: const Color(0xEE0A1824),
-                      foregroundColor: Colors.white,
-                      side: const BorderSide(color: Color(0xFF355066)),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(14),
+                  height: 72,
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          const Text(
+                            'Low',
+                            style: TextStyle(
+                              color: Colors.white70,
+                              fontSize: 10,
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Expanded(
+                            child: Container(
+                              height: 4,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(4),
+                                gradient: const LinearGradient(
+                                  colors: [
+                                    Color(0xFF1478FF),
+                                    Color(0xFF00C9A7),
+                                    Color(0xFFFFD54F),
+                                    Color(0xFFFF5449),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          const Text(
+                            'High',
+                            style: TextStyle(
+                              color: Colors.white70,
+                              fontSize: 10,
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
-                    icon: const Icon(Icons.tune_rounded),
-                    label: Text('Timeline · ${_timelineAnchorLabel()}'),
-                    onPressed: _openCompactTimeline,
+                      const SizedBox(height: 6),
+                      SizedBox(
+                        width: double.infinity,
+                        height: 48,
+                        child: FilledButton.icon(
+                          style: FilledButton.styleFrom(
+                            backgroundColor: const Color(0xEE0A1824),
+                            foregroundColor: Colors.white,
+                            side: const BorderSide(color: Color(0xFF355066)),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(14),
+                            ),
+                          ),
+                          icon: const Icon(Icons.tune_rounded),
+                          label: Text(
+                            '${_timelineAnchorLabel()} · ${_timelineGranularity.label}',
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          onPressed: _openCompactTimeline,
+                        ),
+                      ),
+                    ],
                   ),
                 )
               : _timelineDock(),
         ),
       ],
     );
+  }
+
+  Widget _phoneHeader() => Material(
+    color: const Color(0xF0091826),
+    borderRadius: BorderRadius.circular(14),
+    child: Row(
+      children: [
+        if (widget.selectedStateName != null)
+          IconButton(
+            tooltip: 'U.S. map',
+            onPressed: widget.onNationalMap,
+            icon: const Icon(Icons.public, color: Color(0xFF60A5FA)),
+          ),
+        Expanded(
+          child: TextButton.icon(
+            onPressed: _openStatePicker,
+            icon: const Icon(Icons.expand_more, size: 18),
+            label: Text(
+              widget.selectedStateName ?? 'Lottery Atlas',
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ),
+        ),
+        IconButton(
+          tooltip: 'Search',
+          onPressed: _openSearch,
+          icon: const Icon(Icons.search, color: Colors.white),
+        ),
+        IconButton(
+          tooltip: 'Map menu',
+          onPressed: _openPhoneMenu,
+          icon: const Icon(Icons.menu, color: Colors.white),
+        ),
+      ],
+    ),
+  );
+
+  Future<void> _openPhoneMenu() async {
+    final action = await showModalBottomSheet<String>(
+      context: context,
+      useSafeArea: true,
+      isScrollControlled: true,
+      builder: (context) => SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ListTile(
+                title: Text(widget.selectedStateName ?? 'Lottery Atlas'),
+                trailing: IconButton(
+                  tooltip: 'Close menu',
+                  icon: const Icon(Icons.close),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ),
+              for (final item in const {
+                'state': 'Choose state',
+                'draw': 'Drawings',
+                'scratch': 'Scratch games',
+                'filter': 'Filters',
+                'game': 'Game filter',
+                'source': 'Sources and coverage',
+              }.entries)
+                ListTile(
+                  title: Text(item.value),
+                  trailing: const Icon(Icons.chevron_right),
+                  onTap: () => Navigator.pop(context, item.key),
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+    if (!mounted) return;
+    switch (action) {
+      case 'state':
+        _openStatePicker();
+      case 'draw':
+        widget.onDrawings?.call();
+      case 'scratch':
+        widget.selectedStateName == null
+            ? _openStatePicker()
+            : widget.onScratch?.call();
+      case 'filter':
+        _openFilters();
+      case 'game':
+        _selectGame();
+      case 'source':
+        widget.selectedStateName == null
+            ? _openStatePicker()
+            : widget.onSources?.call();
+    }
   }
 
   Widget _brandHeader() => Row(

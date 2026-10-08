@@ -6,6 +6,40 @@ import 'package:lottery_atlas/widgets/map/map_controls_overlay.dart';
 import 'package:lottery_atlas/widgets/map/map_filter_state.dart';
 
 void main() {
+  testWidgets('phone keeps state visible and opens menu actions on demand', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(390, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    var drawingsOpened = false;
+    var nationalOpened = false;
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: MapControlsOverlay(
+            selectedStateName: 'Missouri',
+            onDrawings: () => drawingsOpened = true,
+            onNationalMap: () => nationalOpened = true,
+          ),
+        ),
+      ),
+    );
+    await tester.pump();
+    expect(find.text('Missouri'), findsOneWidget);
+    expect(find.byType(ChoiceChip), findsNothing);
+    await tester.tap(find.byTooltip('Map menu'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Drawings'));
+    await tester.pumpAndSettle();
+    expect(drawingsOpened, isTrue);
+    expect(find.text('Close menu'), findsNothing);
+    await tester.tap(find.byTooltip('U.S. map'));
+    expect(nationalOpened, isTrue);
+    expect(tester.takeException(), isNull);
+  });
+
   testWidgets('short landscape opens a scrollable working timeline', (
     tester,
   ) async {
@@ -43,6 +77,10 @@ void main() {
     testWidgets('timeline controls fit width $width and remain usable', (
       tester,
     ) async {
+      tester.view.physicalSize = Size(width, 844);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
       await tester.binding.setSurfaceSize(Size(width, 844));
       addTearDown(() => tester.binding.setSurfaceSize(null));
       await tester.pumpWidget(
@@ -52,6 +90,11 @@ void main() {
       );
       await tester.pump();
       expect(tester.takeException(), isNull);
+      if (width < 600) {
+        expect(find.byType(ChoiceChip), findsNothing);
+        await tester.tap(find.byType(FilledButton));
+        await tester.pumpAndSettle();
+      }
       for (final label in ['Year', 'Month', 'Week', 'Day']) {
         final chip = find.widgetWithText(ChoiceChip, label);
         final rect = tester.getRect(chip);
@@ -72,8 +115,8 @@ void main() {
         expect(rect.width, closeTo(modeRects.first.width, 0.01));
       }
       expect(find.text('HEAT INDEX'), findsOneWidget);
-      expect(find.text('Low'), findsOneWidget);
-      expect(find.text('High'), findsOneWidget);
+      expect(find.text('Low'), findsWidgets);
+      expect(find.text('High'), findsWidgets);
     });
   }
   testWidgets('timeline exposes calendar-correct scales', (tester) async {

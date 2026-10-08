@@ -383,3 +383,11 @@ installation, simulator navigation, state activation or distribution occurred.
 The already-built camera fix still awaits native verification; leave the user's
 Home review undisturbed. The preceding documentation commit rebased to 8587604
 while preserving the scheduled feed update f68e5c4.
+
+### October 8: user-requested map-first phone redesign
+
+The phone and short-landscape map now use a compact selected-state header with state picker, Search, menu and a separate U.S. action. The timeline defaults to a 72px dock with a thin heat legend and date/period button; full controls open in a scrollable sheet, retaining selection when closed. Drawings, Scratch, filters and source navigation are available from the menu. Desktop panels are retained on larger screens. Missouri Scratch opens its literal catalog sheet; other supported catalogs retain their existing selection/source routes.
+
+Phone state framing reserves space for the visible controls, and viewport changes refit the selected state without clearing its filters. The national phone view fits the contiguous U.S.; Alaska and Hawaii remain reachable through state selection. The minimum zoom now permits the national fit on narrow/short viewports.
+
+Validation: nine timeline/menu widget tests passed, including 320/390/900 widths, aligned period controls, collapsed/expanded retention and menu callbacks. Two-file analysis reports only the four existing Radio API deprecation infos. iOS simulator debug build passed (10.1s), installed and launched on the existing iPhone 17e. Native checks confirmed the complete South Carolina outline in portrait and landscape, Month selection and collapse, Drawings menu sheet, contiguous U.S. framing and saved Home return to South Carolina. Simulator restored upright and left on the state map for review. This is layout verification, not full mobile/store acceptance. Private logs: work/mobile_beta/map_first_{tests,analysis,build}.log.

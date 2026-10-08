@@ -57,6 +57,7 @@ import 'map_filter_state.dart';
 import 'map_search_result.dart';
 import 'map_visual_overlays.dart';
 import 'next_drawings_panel.dart';
+import 'missouri_scratch_catalog_sheet.dart';
 import 'map_time_zone_overlays.dart';
 
 class LiveLotteryMap extends StatefulWidget {
@@ -77,7 +78,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   static final LatLng _southCarolinaCenter = LatLng(33.84, -80.9);
 
   static const double _initialZoom = 4.1;
-  static const double _minZoom = 3.0;
+  static const double _minZoom = 1.5;
   static const double _maxZoom = 18.0;
   static const String _favoriteActivityStorageKey =
       'lottery_atlas.favorite_activity_keys';
@@ -265,9 +266,34 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     });
   }
 
+  Size? _lastViewportSize;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    final viewport = MediaQuery.sizeOf(context);
+    final previous = _lastViewportSize;
+    _lastViewportSize = viewport;
+    if (previous != null && previous != viewport) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        if (_selectedStateName == null) {
+          _fitNationalMap();
+        } else if (_selectedStateName != 'Alaska') {
+          final points = _stateShapes
+              .where((shape) => shape.name == _selectedStateName)
+              .expand((shape) => shape.points)
+              .toList();
+          if (points.isNotEmpty)
+            _animateCameraFit(
+              CameraFit.bounds(
+                bounds: LatLngBounds.fromPoints(points),
+                padding: _stateCameraPadding(_selectedStateName),
+              ),
+            );
+        }
+      });
+    }
     final route = ModalRoute.of(context);
     if (route == null || identical(route, _hostingRoute)) return;
 
@@ -3448,10 +3474,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   }
 
   EdgeInsets _stateCameraPadding(String? stateName) {
-    if (MediaQuery.sizeOf(context).width < 600) {
+    final size = MediaQuery.sizeOf(context);
+    if (size.width < 600 || size.height < 500) {
       // The desktop detail panel's 360px right inset exceeds a phone's
       // available map width and can push a state fit out to the world view.
-      return const EdgeInsets.symmetric(horizontal: 24, vertical: 48);
+      return EdgeInsets.fromLTRB(24, size.height < 500 ? 64 : 104, 24, 160);
     }
     if (stateName == 'South Carolina' || stateName == 'North Carolina') {
       // These state views use the compact top toolbar instead of the wide
@@ -4354,7 +4381,24 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _showStateGames = false;
     });
 
-    _animateMapTo(_usCenter, _initialZoom);
+    _fitNationalMap();
+  }
+
+  void _fitNationalMap() {
+    final size = MediaQuery.sizeOf(context);
+    if (size.width < 600 || size.height < 500) {
+      _animateCameraFit(
+        CameraFit.bounds(
+          bounds: LatLngBounds(
+            const LatLng(24.4, -125),
+            const LatLng(49.4, -66.8),
+          ),
+          padding: _stateCameraPadding(null),
+        ),
+      );
+    } else {
+      _animateMapTo(_usCenter, _initialZoom);
+    }
   }
 
   void _returnToNationalMap() {
@@ -4378,7 +4422,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedStateActivityGameName = null;
     });
 
-    _animateMapTo(_usCenter, _initialZoom);
+    _fitNationalMap();
   }
 
   bool _homePickerOpen = false;
@@ -4542,6 +4586,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
   @override
   Widget build(BuildContext context) {
+    final phoneLayout =
+        MediaQuery.sizeOf(context).width < 600 ||
+        MediaQuery.sizeOf(context).height < 500;
     final selectedState = _selectedStateName == null
         ? null
         : StateNavigationService.getStateByName(_selectedStateName!);
@@ -4637,6 +4684,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
               options: MapOptions(
                 initialCenter: _usCenter,
                 initialZoom: _initialZoom,
+                onMapReady: () {
+                  if (_selectedStateName == null) _fitNationalMap();
+                },
                 minZoom: _minZoom,
                 maxZoom: _maxZoom,
                 // FlutterMap paints its own canvas above the Stack. Setting
@@ -4945,6 +4995,106 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 key: ValueKey(
                   '$_selectedStateName:$_selectedStateActivityGameName',
                 ),
+                selectedStateName: _selectedStateName,
+                onNationalMap: _returnToNationalMap,
+                onSources: () {
+                  if (selectedStateSource == null) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                        content: Text(
+                          'Choose a state to view its sources and coverage.',
+                        ),
+                      ),
+                    );
+                    return;
+                  }
+                  Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (_) =>
+                          StateLotterySourceScreen(source: selectedStateSource),
+                    ),
+                  );
+                },
+                onDrawings: () => showModalBottomSheet<void>(
+                  context: context,
+                  isScrollControlled: true,
+                  useSafeArea: true,
+                  builder: (sheetContext) => SafeArea(
+                    child: Padding(
+                      padding: const EdgeInsets.all(12),
+                      child: NextDrawingsPanel(
+                        width: double.infinity,
+                        stateName: _selectedStateName,
+                        isExpanded: true,
+                        onExpandedChanged: (_) => Navigator.pop(sheetContext),
+                        onViewNationalResults: () {
+                          Navigator.pop(sheetContext);
+                          Navigator.of(context).push(
+                            MaterialPageRoute<void>(
+                              builder: (_) => const NationalDrawResultsScreen(),
+                            ),
+                          );
+                        },
+                        onStateDrawSelected: (game) {
+                          Navigator.pop(sheetContext);
+                          _showStateDrawGameOnMap(game);
+                        },
+                        showStateLabel: true,
+                      ),
+                    ),
+                  ),
+                ),
+                onScratch: () {
+                  final state = _selectedStateName;
+                  if (state == 'South Carolina') {
+                    _openSouthCarolinaScratchOffPicker();
+                  } else if (state == 'Missouri') {
+                    showModalBottomSheet<void>(
+                      context: context,
+                      isScrollControlled: true,
+                      useSafeArea: true,
+                      builder: (_) => const MissouriScratchCatalogSheet(),
+                    );
+                  } else if (state != null &&
+                      StateScratchCatalogRegistry.hasCatalog(state)) {
+                    showModalBottomSheet<void>(
+                      context: context,
+                      isScrollControlled: true,
+                      useSafeArea: true,
+                      builder: (sheetContext) => SafeArea(
+                        child: Padding(
+                          padding: const EdgeInsets.all(12),
+                          child: _VerifiedStateScratchOffsPanel(
+                            stateName: state,
+                            selectedGameName: _selectedStateActivityGameName,
+                            isExpanded: true,
+                            onExpandedChanged: (_) =>
+                                Navigator.pop(sheetContext),
+                            onAllSelected: () {
+                              Navigator.pop(sheetContext);
+                              _showStateScratchGameOnMap(null);
+                            },
+                            onGameSelected: (game) {
+                              Navigator.pop(sheetContext);
+                              _showStateScratchGameOnMap(game);
+                            },
+                            onOpenCatalog: () => _openOfficialScratchCatalog(
+                              selectedStateSource,
+                            ),
+                          ),
+                        ),
+                      ),
+                    );
+                  } else if (selectedStateSource != null) {
+                    Navigator.of(context).push(
+                      MaterialPageRoute<void>(
+                        builder: (_) => StateLotterySourceScreen(
+                          source: selectedStateSource,
+                        ),
+                      ),
+                    );
+                  }
+                },
                 detailMode: _mapDetailMode,
                 filterState: _filterState,
                 showHeaderControls: selectedState == null,
@@ -4992,7 +5142,40 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
               ),
             ),
 
-            if (shouldShowEmptyStateNotice)
+            if (shouldShowEmptyStateNotice &&
+                phoneLayout &&
+                MediaQuery.sizeOf(context).height >= 500)
+              Positioned(
+                top: 62,
+                left: 16,
+                right: 16,
+                child: Center(
+                  child: ActionChip(
+                    avatar: const Icon(Icons.info_outline, size: 16),
+                    label: const Text(
+                      'No mapped activity for these filters',
+                      style: TextStyle(fontSize: 11),
+                    ),
+                    onPressed: () => showDialog<void>(
+                      context: context,
+                      builder: (context) => AlertDialog(
+                        title: const Text('Map coverage'),
+                        content: const Text(
+                          'No verified location activity matches the selected filters. This does not mean there were no statewide wins. Open Sources and coverage from the menu for available reports and limitations.',
+                        ),
+                        actions: [
+                          TextButton(
+                            onPressed: () => Navigator.pop(context),
+                            child: const Text('Close'),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+            if (shouldShowEmptyStateNotice && !phoneLayout)
               Positioned(
                 top: usesCompactStateToolbar
                     ? (MediaQuery.sizeOf(context).width < 600 ? 154 : 90)
@@ -5018,7 +5201,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 ),
               ),
 
-            if (!usesCompactStateToolbar)
+            if (!usesCompactStateToolbar && !phoneLayout)
               Positioned(
                 left: 16,
                 right: 16,
@@ -5062,7 +5245,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 ),
               ),
 
-            if (selectedState != null && !usesCompactStateToolbar)
+            if (selectedState != null &&
+                !usesCompactStateToolbar &&
+                !phoneLayout)
               Positioned(
                 top: 24,
                 right: 24,
@@ -5165,7 +5350,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
               ),
             ),
             // Expanded state menus must receive taps before map shortcuts.
-            if (usesCompactStateToolbar)
+            if (usesCompactStateToolbar && !phoneLayout)
               Positioned(
                 left: 24,
                 top: 24,
