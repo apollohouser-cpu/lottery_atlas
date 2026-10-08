@@ -46,7 +46,7 @@ complete statewide claims do not block honest supported-coverage acceptance.
 
 Counts describe current committed listings, not stock, claims or certified
 statewide completeness. Duration bands describe planning complexity, not active
-deadlines. Missouri was activated by the original audit and is now accepted. No state is currently active.
+deadlines. Missouri was activated by the original audit and is now accepted. North Carolina is active from October 8 at 10:38 ET; scope due October 9 and release due October 13 at 10:38 ET.
 
 | State | Existing foundation | Remaining acceptance work | Planning band |
 | --- | --- | --- | --- |
@@ -89,7 +89,9 @@ deadlines. Missouri was activated by the original audit and is now accepted. No 
 
 ## Next state
 
-Missouri is accepted; select the next state by readiness or user priority and
-record a fresh scope/release deadline at activation. No successor is activated
-by this update. Mobile beta preparation continues independently. Broader historic
+North Carolina was selected October 8 at 10:38 ET for its scheduled winner
+import and existing Scratch UI. Substantial integration receives a fresh 120-hour
+window: scope due October 9 at 10:38 ET, release due October 13 at 10:38 ET.
+See NORTH_CAROLINA_ACCEPTANCE.md. Remaining-state counts and the baseline forecast
+are unchanged; activation is not acceptance. Mobile beta preparation continues independently. Broader historic
 and private records remain separate; no fees, attestations or speculative joins.

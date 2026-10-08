@@ -1,4 +1,10 @@
-# North Carolina source screen — September 14, 2026
+# North Carolina source screen — October 8, 2026
+
+North Carolina is now the sole active state. See NORTH_CAROLINA_ACCEPTANCE.md
+for fresh October 8 source evidence and the October 9 scope / October 13 release
+deadlines (10:38 ET). Earlier correspondence notes below remain historical; no
+new agency response or complete dataset is implied by this activation.
+
 
 The [NC Education Lottery Scratch-Off Prizes Remaining](https://nclottery.com/scratch-off-prizes-remaining)
 page publishes prize tiers, totals established at printing, and prizes
