@@ -197,3 +197,23 @@ work/north_carolina_scope/cash-pop-fresh.html and cash-pop-reports.json.
 Remaining seven draw families, combined atomic refresh and app report UI are
 still pending. No public report output, native verification, Gmail or deadline
 change; North Carolina remains unaccepted.
+
+### October 8, 18:49 ET — Pick 3/4 combined summaries parsed privately
+
+The strict draw parser now reads Pick 3 and Pick 4 dated combined summaries,
+with official Daytime/Evening identities, ordered digits (including leading
+zero), Fireball digit, literal summary text and exact payout cents. It validates
+source route/game, complete document, unique fields, weekday/date, session,
+digit count/range and winner/payout consistency before selecting two reports
+per session. Duplicate identities and missing session coverage fail closed.
+
+Eight fresh private detail captures yielded eight reports: Daytime October 8/7
+and Evening October 7/6 for both games. October 8 Daytime prints Pick 3
+408 winners / $65,425 and Pick 4 148 winners / $51,444. These remain combined
+source summaries, with no inferred base/Fireball split or tier winner counts.
+All eight draw-parser tests passed (four Cash Pop plus four Pick summary tests).
+
+This is parser evidence only: literal base/Fireball payout schedule extraction,
+five other draw families, atomic publication, report UI and native acceptance
+remain pending. No public report feed was published. Release deadline remains
+October 13 at 10:38 ET; North Carolina is not accepted.

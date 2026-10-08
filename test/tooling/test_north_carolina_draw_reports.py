@@ -49,3 +49,62 @@ class NCReportTests(unittest.TestCase):
         with self.assertRaises(ValueError):parse_cash_pop(raw.replace(b'$0',b'$1'),today=date(2026,10,8))
         rows=parse_cash_pop(fixture().replace(b'$21,908',b'$21,908.50'),today=date(2026,10,8))
         self.assertEqual(rows[0]['reportedPayoutCents'],2190850)
+
+
+from north_carolina_draw_reports import parse_pick_summary, parse_pick_reports
+
+
+def pick_fixture(size=3, day=7, session='Evening'):
+    prefix=f'ctl00_MainContent_PayoutPick{size}_PayoutRepeater_ctl00_'
+    values={
+        'lblDrawDate':f'<svg aria-label="{session} Draw"></svg>'+date(2026,10,day).strftime('%A %b %d, %Y'),
+        'lblFireball':'0', 'lblWinningsLabel':'Total Combined Winnings',
+        'lblWinnings':'1,527 winners won a total of $227,915',
+        **{f'lblBall{i}':str(i-1) for i in range(1,size+1)},
+    }
+    return ('<html><main>'+''.join(f'<span id="{prefix}{k}">{v}</span>' for k,v in values.items())+
+        '<table><tr><td>Payout schedule $500 — no winner count</td></tr></table></main></html>').encode()
+
+
+class NCPickReportTests(unittest.TestCase):
+    def test_summary_preserves_leading_zero_and_source_units(self):
+        for size in [3,4]:
+            r=parse_pick_summary(pick_fixture(size),f'Pick {size}',f'https://nclottery.com/Pick{size}-Draw?dn=123',today=date(2026,10,8))
+            self.assertEqual(r['winningDigits'],list('0123')[:size])
+            self.assertEqual(r['fireball'],'0')
+            self.assertEqual(r['reportedWinners'],1527)
+            self.assertEqual(r['reportedPayoutCents'],22791500)
+            self.assertEqual(r['reportType'],'combined-summary')
+            self.assertNotIn('tiers',r)
+            self.assertNotIn('latitude',r)
+
+    def test_invalid_identity_date_session_counts_and_structure_rejected(self):
+        for before,after in [(b'Wednesday',b'Tuesday'),(b'2026',b'2027'),
+            (b'Evening Draw',b'Morning Draw'),(b'1,527',b'1,52'),
+            (b'$227,915',b'$-1'),(b'$227,915',b'$0'),
+            (b'lblBall1',b'lblBall4'),(b'>0</span>',b'>10</span>'),
+            (b'Total Combined Winnings',b'Total Sales'),(b'</html>',b''),
+            (b'lblWinnings"',b'unknown"'),(b'won a total of',b'claimed')]:
+            with self.subTest(before=before),self.assertRaises(ValueError):
+                parse_pick_summary(pick_fixture().replace(before,after,1),'Pick 3','https://nclottery.com/Pick3-Draw?dn=123',today=date(2026,10,8))
+        for url in ['https://nclottery.com/Pick4-Draw?dn=123','https://other.example/Pick3-Draw?dn=123','https://nclottery.com/Pick3-Draw?dn=123&extra=1']:
+            with self.assertRaises(ValueError):parse_pick_summary(pick_fixture(),'Pick 3',url)
+        with self.assertRaises(ValueError):parse_pick_summary(pick_fixture(4),'Pick 3','https://nclottery.com/Pick3-Draw?dn=123')
+
+    def test_complete_groups_validate_old_rows_and_reject_duplicates(self):
+        documents=[(f'https://nclottery.com/Pick3-Draw?dn={day*2+index}',pick_fixture(day=day,session=session))
+                   for day in [6,8,7] for index,session in enumerate(['Daytime','Evening'])]
+        rows=parse_pick_reports(documents,'Pick 3',today=date(2026,10,8))
+        self.assertEqual([(r['session'],r['drawDate']) for r in rows],[(s,d) for s in ['Daytime','Evening'] for d in ['2026-10-08','2026-10-07']])
+        with self.assertRaises(ValueError):parse_pick_reports(documents+documents[:1],'Pick 3',today=date(2026,10,8))
+        with self.assertRaises(ValueError):parse_pick_reports(documents[::2],'Pick 3',today=date(2026,10,8))
+        documents[0]=(documents[0][0],documents[0][1].replace(b'1,527',b'-1'))
+        with self.assertRaises(ValueError):parse_pick_reports(documents,'Pick 3',today=date(2026,10,8))
+
+    def test_zero_fractional_and_duplicate_fields(self):
+        raw=pick_fixture().replace(b'1,527',b'0').replace(b'$227,915',b'$0')
+        self.assertEqual(parse_pick_summary(raw,'Pick 3','https://nclottery.com/Pick3-Draw?dn=123')['reportedWinners'],0)
+        raw=pick_fixture().replace(b'$227,915',b'$227,915.50')
+        self.assertEqual(parse_pick_summary(raw,'Pick 3','https://nclottery.com/Pick3-Draw?dn=123')['reportedPayoutCents'],22791550)
+        extra=b'<span id="ctl00_MainContent_PayoutPick3_PayoutRepeater_ctl00_lblWinnings">1 winners won a total of $1</span>'
+        with self.assertRaises(ValueError):parse_pick_summary(raw.replace(b'</main>',extra+b'</main>'),'Pick 3','https://nclottery.com/Pick3-Draw?dn=123')

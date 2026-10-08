@@ -173,3 +173,16 @@ work/north_carolina_scope/cash-pop-fresh.html and cash-pop-reports.json.
 Remaining seven draw families, combined atomic refresh and app report UI are
 still pending. No public report output, native verification, Gmail or deadline
 change; North Carolina remains unaccepted.
+
+### October 8 — Pick 3/4 bounded combined-summary validation
+
+Captured the four latest detail links from each official Pick 3/Pick 4 history
+page privately. Strict parsing confirmed two Daytime and two Evening reports
+per game (Daytime October 8/7, Evening October 7/6). The accessibility label on
+the official date identifies **Daytime Draw** or **Evening Draw**; no session is
+inferred from sequential draw identifiers. The source labels its totals
+**Total Combined Winnings**. The parser preserves those totals and ordered
+winning digits, without converting printed payout schedules into tier winner
+counts. Literal schedule extraction remains pending. Private captures and
+`pick-summary-reports.json` are under `work/north_carolina_scope`; no public
+report publication or native adoption is claimed.
