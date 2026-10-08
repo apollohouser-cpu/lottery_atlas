@@ -186,3 +186,15 @@ winning digits, without converting printed payout schedules into tier winner
 counts. Literal schedule extraction remains pending. Private captures and
 `pick-summary-reports.json` are under `work/north_carolina_scope`; no public
 report publication or native adoption is claimed.
+
+### October 8, 19:46 ET — Pick schedule structure validated
+
+The eight captured Pick details now retain both literal base and Fireball
+schedules (16 tables / 128 rows). Wager headings remain 50¢ Base Play and $1 Base
+Play; combo cells retain their separate play-cost labels. Explicit rowspans are
+expanded for display without creating new observations. Match combinations are
+separated as printed digits rather than concatenated into a number. Fireball's
+qualification about the chosen numbers and play type is retained. N/A remains
+N/A, not a zero-dollar payout. No schedule row has a fabricated winner count.
+The strict combined-report parser requires these schedules; private validation
+and eleven passing parser tests do not establish publication or native adoption.

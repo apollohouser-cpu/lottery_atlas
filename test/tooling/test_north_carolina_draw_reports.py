@@ -62,8 +62,8 @@ def pick_fixture(size=3, day=7, session='Evening'):
         'lblWinnings':'1,527 winners won a total of $227,915',
         **{f'lblBall{i}':str(i-1) for i in range(1,size+1)},
     }
-    return ('<html><main>'+''.join(f'<span id="{prefix}{k}">{v}</span>' for k,v in values.items())+
-        '<table><tr><td>Payout schedule $500 — no winner count</td></tr></table></main></html>').encode()
+    return ('<html><head><meta charset="utf-8"></head><main>'+''.join(f'<span id="{prefix}{k}">{v}</span>' for k,v in values.items())+
+        pick_schedule_fixture(size)+'</main></html>').encode()
 
 
 class NCPickReportTests(unittest.TestCase):
@@ -108,3 +108,54 @@ class NCPickReportTests(unittest.TestCase):
         self.assertEqual(parse_pick_summary(raw,'Pick 3','https://nclottery.com/Pick3-Draw?dn=123')['reportedPayoutCents'],22791550)
         extra=b'<span id="ctl00_MainContent_PayoutPick3_PayoutRepeater_ctl00_lblWinnings">1 winners won a total of $1</span>'
         with self.assertRaises(ValueError):parse_pick_summary(raw.replace(b'</main>',extra+b'</main>'),'Pick 3','https://nclottery.com/Pick3-Draw?dn=123')
+
+
+from north_carolina_draw_reports import parse_pick_report, parse_pick_schedules
+
+def pick_schedule_fixture(size=3):
+    header=lambda label: '<thead><tr><th>Play Type</th><th>Match</th><th colspan="2">'+label+'</th></tr><tr><td></td><td></td><td>50¢ Base Play</td><td>$1 Base Play</td></tr></thead>'
+    base='<tbody><tr><td>EXACT</td><td>0‑1‑2</td><td>$250</td><td>$500</td></tr></tbody>'
+    base+='<tbody><tr><td>ANY</td><td rowspan="3">6-Way<br><span>0‑1‑2</span><span>0‑2‑1</span></td><td>$40</td><td>$80</td></tr>'
+    base+='<tr><td>50/50</td><td>N/A</td><td>Exact+Any $290<br>Any $40</td></tr>'
+    base+='<tr><td>COMBO</td><td>$3 Play<br>$250</td><td>$6 Play<br>$500</td></tr></tbody>'
+    base+='<tbody><tr><td>PAIR</td><td>0‑1 Front | 1‑2 Back</td><td>$25</td><td>$50</td></tr></tbody>'
+    ways=['3-Way','6-Way'] if size==3 else ['4-Way','6-Way','12-Way','24-Way']
+    fire='<tbody><tr><td>EXACT</td><td></td><td>$90</td><td>$180</td></tr>'
+    for play in ['ANY','50/50','COMBO']:
+        for i,way in enumerate(ways):
+            fire+='<tr>'+(f'<td rowspan="{len(ways)}">{play}</td>' if i==0 else '')+f'<td>{way}</td><td>$15</td><td>$30</td></tr>'
+    fire+='<tr><td>PAIR</td><td>Front | Back</td><td>$9</td><td>$18</td></tr></tbody>'
+    fire+='<tfoot><tr><td colspan="4">Fireball wins are dependent on your numbers chosen and play type.</td></tr></tfoot>'
+    return f'<table class="datatable payout_results"><caption>Pick {size} Prizes</caption>'+header('Payout')+base+'</table><table class="datatable payout_results"><caption>Fireball Prizes</caption>'+header('Payout / Win')+fire+'</table>'
+
+
+class NCPickScheduleTests(unittest.TestCase):
+    def test_literal_cells_keep_match_and_wager_alignment(self):
+        for size in [3,4]:
+            r=parse_pick_report(pick_fixture(size),f'Pick {size}',f'https://nclottery.com/Pick{size}-Draw?dn=123')
+            base,fire=r['payoutSchedules']
+            self.assertEqual(len(fire['rows']),8 if size==3 else 14)
+            self.assertEqual(base['rows'][1]['matchLabel'],'6-Way 0‑1‑2 0‑2‑1')
+            self.assertEqual(base['rows'][2]['matchLabel'],base['rows'][1]['matchLabel'])
+            self.assertEqual(base['rows'][3]['payoutLabels'],['$3 Play $250','$6 Play $500'])
+            self.assertEqual(base['rows'][2]['payoutLabels'],['N/A','Exact+Any $290 Any $40'])
+            self.assertEqual(fire['rows'][2]['playType'],'ANY')
+            self.assertNotIn('winners',base['rows'][0])
+            self.assertIn('dependent',fire['notes'][0])
+
+    def test_schedule_changes_and_incomplete_rows_fail_closed(self):
+        for before,after in [(b'rowspan="3"',b'rowspan="4"'),(b'rowspan="3"',b'rowspan="0"'),
+            (b'<td>$40</td>',b''),(b'<td>$40</td>',b'<td colspan="2">$40</td>'),
+            (b'$3 Play',b'$3 Sales'),(b'$250',b'$2,50'),(b'Pick 3 Prizes',b'Other Prizes'),
+            (b'Fireball Prizes',b'Pick 3 Prizes'),(b'Payout / Win',b'Winners'),
+            (b'50/50',b'Unknown'),(b'3-Way',b'9-Way'),
+            (b'Fireball wins are dependent on your numbers chosen and play type.',b''),
+            (b'</html>',b'')]:
+            with self.subTest(before=before),self.assertRaises(ValueError):
+                parse_pick_schedules(pick_fixture().replace(before,after,1),'Pick 3')
+
+    def test_batch_rejects_malformed_schedule_before_recent_selection(self):
+        docs=[(f'https://nclottery.com/Pick3-Draw?dn={day*2+i}',pick_fixture(day=day,session=session))
+              for day in [6,7,8] for i,session in enumerate(['Daytime','Evening'])]
+        docs[0]=(docs[0][0],docs[0][1].replace(b'Payout / Win',b'Winners'))
+        with self.assertRaises(ValueError):parse_pick_reports(docs,'Pick 3',today=date(2026,10,8))

@@ -217,3 +217,25 @@ This is parser evidence only: literal base/Fireball payout schedule extraction,
 five other draw families, atomic publication, report UI and native acceptance
 remain pending. No public report feed was published. Release deadline remains
 October 13 at 10:38 ET; North Carolina is not accepted.
+
+### October 8, 19:46 ET — Pick payout schedules retained literally
+
+The Pick report path now requires both the base and Fireball payout schedules
+in addition to the combined summary. Explicit rowspans are expanded within each
+source table body, preserving match labels, both wager columns, combo play-cost
+labels, N/A cells and Fireball qualifications. The parser rejects missing rows,
+changed captions/headers/play groups, invalid spans and malformed payout labels;
+it does not turn schedule rows into observed winner counts or paid totals.
+
+All eight previously captured dated reports validate with 16 schedules and 128
+schedule rows. Results remain private in
+`work/north_carolina_scope/pick-reports-with-schedules.json`; the validation time
+is distinct from source retrieval time. Eleven draw-parser tests pass, including
+rowspan alignment, separated combination digits, malformed old/unselected
+schedules and source qualification retention. Changed source layouts fail
+closed pending review rather than being guessed.
+
+Five other draw families, combined atomic refresh/publication, report UI and
+native acceptance remain pending. No public report feed or acceptance claim;
+October 13 at 10:38 ET release deadline unchanged. The user's current simulator
+review was not interrupted.
