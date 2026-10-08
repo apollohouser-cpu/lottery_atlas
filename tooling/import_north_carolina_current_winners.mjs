@@ -10,6 +10,7 @@
  * is published by the NC Lottery.
  */
 import {readFile, writeFile} from 'node:fs/promises';
+import {uniqueRetailerIndex} from './north_carolina_directory.mjs';
 
 const winnersUrl = 'https://nclottery.com/WinnersAll';
 const directoryUrl = 'https://nclottery.com/Data/WhereToPlay.js.aspx';
@@ -52,7 +53,6 @@ if (!outputPath) {
     const source = script.match(/locationsAll\s*=\s*(\[.*\])\s*;?\s*$/s)?.[1];
     if (!source) throw new Error('Official NC retailer directory was not found.');
     const directory = JSON.parse(source);
-    const map = new Map();
     const locations = [];
     for (const entry of directory) {
       const [name, latitude, longitude, , zip, county, address, city] = entry;
@@ -66,10 +66,10 @@ if (!outputPath) {
         county: `${county} County`,
         zip: String(zip ?? ''),
       };
-      map.set(`${normalize(name)}|${normalize(city)}`, location);
       locations.push(location);
     }
-    return {map, locations};
+    const {map, ambiguousKeys} = uniqueRetailerIndex(locations);
+    return {map, locations, ambiguousKeys};
   };
   const parseRows = (html, game) => {
     const rows = [];
@@ -272,7 +272,7 @@ if (!outputPath) {
       source: 'North Carolina Education Lottery official winner archive, news releases, and retailer directory',
       updatedAt: latest ?? null,
       sourceLastUpdated: latest ?? null,
-      coverage: `Current qualifying NC Lottery prize claims from ${startYear} onward for the official archive's available game categories, supplemented by newer official NC Education Lottery news releases when the archive has not yet published the claim. ${activities.length} claims were matched to the official retailer directory with its published address and coordinates. ${unmatched.size} distinct published archive retailer names could not be matched exactly and were excluded.`,
+      coverage: `Current qualifying NC Lottery prize claims from ${startYear} onward for the official archive's available game categories, supplemented by newer official NC Education Lottery news releases when the archive has not yet published the claim. ${activities.length} claims were matched to the official retailer directory with its published address and coordinates. ${unmatched.size} distinct published archive retailer names could not be matched uniquely and exactly and were excluded. ${directory.ambiguousKeys.size} directory name/city keys were ambiguous and unavailable for archive matching.`,
       activities,
     };
     await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`);

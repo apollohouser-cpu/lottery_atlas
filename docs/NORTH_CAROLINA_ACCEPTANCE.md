@@ -76,3 +76,22 @@ Pop summaries are deliberately different from tier-count reports. The October 7
 Evening detail examples print Pick 3 combined 1,527 winners / $227,915 and Pick 4
 893 / $261,622; these are private source observations, not promoted app totals.
 No new public feed, native acceptance, correspondence or deadline change.
+
+## October 8 directory collision audit (12:40 ET)
+
+Fresh official directory capture contains 7,528 rows and 7,494 normalized
+name/city keys. Twenty-eight keys contain 62 rows. The existing archive matcher
+silently kept the last branch for repeated keys; 107 activities in the retained
+snapshot have one of those ambiguous keys. Those positions are not validated
+joins. Counts describe this audit, not a newly accepted statewide directory.
+
+The importer now excludes every repeated normalized name/city key from archive
+matching, including third occurrences and identical duplicates. Three focused
+Node tests cover uniqueness, order independence and normalization collisions.
+The raw directory and collision details remain private in
+work/north_carolina_scope/directory-audit.json. No public snapshot was regenerated
+or promoted during this audit; previously published positions remain pending
+correction through the validated refresh pipeline. News fuzzy matching and the
+global date-based archive/news overlap heuristic still require separate repair
+or exclusion before NC acceptance. NC remains unaccepted and the October 13
+10:38 ET release deadline is unchanged.
