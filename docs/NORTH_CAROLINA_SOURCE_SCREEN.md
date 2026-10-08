@@ -90,3 +90,10 @@ output bytes on request failure. Private before/removed evidence is retained in
 work/north_carolina_scope. This fixes the known joins without claiming the
 remaining pagination, date/unit, directory or full NC acceptance audits are done.
 Publication verification follows the correction commit; push alone is not proof.
+
+Correction deployment verified: release `d892565`, publisher run `37818483881`
+completed successfully. The public activity.json bytes match the locally
+validated corrected file exactly (private checksum evidence recorded). Known
+ambiguous archive records and unverified news records are absent from the public
+feed. This closes the correction publication checkpoint, not NC acceptance or a
+native remote-adoption check. No simulator/user-review state was changed.
