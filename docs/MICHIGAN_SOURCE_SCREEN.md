@@ -127,3 +127,20 @@ read from the connector extraction.
 ## October 3 correspondence follow-through
 
 Replied to the October 1 fee letter, explicitly declining the estimate/deposit and all paid work. Asked whether an already-existing standard report, retailer directory, definitions or public links can be supplied at no charge; no custom compilation or paid search authorized. Await this bounded clarification. Attachment archival remains separate. Gmail confirmed sent in the existing thread: 1a1008e335f04f0f.
+
+## October 8 no-fee retailer offer and bounded draw clarification
+
+The Bureau offered an existing Michigan Lottery retailer name/address record
+without a fee and asked which draw-game record was sought. No attachment or
+delivery date accompanied the offer. Verified the prior October 3 reply in Sent
+and the current conversation before responding. Requested the offered electronic
+retailer record separately at no charge. Clarified that the draw portion means
+an already-existing August 2026 drawing prize/payout report, with game, draw
+date, prize tier/amount and Michigan winning-wager/prize counts only where
+already present; an individual game/drawing or public download is acceptable.
+No official report title or existence was assumed. If none is readily available
+free, the reply asks to limit delivery to the offered retailer record.
+
+Reply is Sent-confirmed; await delivery, never resend. No fees, deposit, paid
+search, programming, compilation, new joins or calculations were authorized.
+This is an offer, not a received/audited directory or Michigan activation.

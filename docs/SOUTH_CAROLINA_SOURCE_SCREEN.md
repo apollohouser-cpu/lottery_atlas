@@ -159,3 +159,16 @@ promised follow-up date was supplied. Review the existing delivered files before
 raising any specific remaining existing-document question; do not resend either
 acknowledgment. Private check evidence is retained in work/agency_email_checks.
 No public data layer or accepted supported-app scope changed.
+
+## October 8 existing-record limitation clarified
+
+The agency states that documents containing all requested details do not exist
+and that it created the previously delivered partial report to help. This is
+the agency's description of its records and response, not an independent legal
+conclusion. No new attachment, fee or follow-up date was supplied. Verified the
+conversation and October 7 Sent acknowledgment; no redundant reply was sent.
+The clarification exchange is complete for now. Privately audit the delivered
+records using the known cashing-retailer, cancelled-ticket and Pick 3/4 unit
+limitations; do not infer missing tiers, dates, correction rules or selling
+locations. No further compilation was requested, and accepted supported-app
+coverage and public data remain unchanged.
