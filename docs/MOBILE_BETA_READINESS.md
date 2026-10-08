@@ -169,3 +169,13 @@ one-time automation was deleted after requesting the missing confirmation.
 Continue only lightweight work while transfer completion remains unverified;
 do not format the drive from the development automation. Final simulator layout
 verification, mobile acceptance, icons, tester materials and signing remain open.
+
+## October 7, 21:20 ET — tester preparation
+
+Prepared `MOBILE_BETA_TESTER_GUIDE.md`: supported-state and Missouri directory
+limits, a bounded mobile interaction/recovery checklist, synthetic saved-data
+cases, a reproducible feedback template and release-owner handoff requirements.
+It is a draft, with no installation link or feedback destination invented and no
+invitation sent. Signing, device acceptance, icon/launch verification and privacy
+publication still gate distribution. This lightweight documentation work did not
+start a build/simulator, inspect external drives or reopen state acceptance.
