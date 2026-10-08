@@ -455,3 +455,24 @@ Gmail check, state activation or distribution was performed. Android runtime
 preparation also confirmed that no SDK system image is installed; an emulator
 binary alone is insufficient to launch an AVD. Keep to one running simulator.
 Private log: work/mobile_beta/favorites_persistence_test.log.
+
+### October 8, 09:37 ET — Android virtual device prepared on PNY
+
+Installed the official SDK `system-images;android-36;default;arm64-v8a` package
+(revision 2, approximately 1.9 GB). SDK Manager completed with stdin closed;
+no license acceptance or account attestation was submitted. The previously absent
+SDK system-images directory now links to
+`/Volumes/PNY SSD/LotteryAtlas/tooling/android-system-images`.
+
+Created `LotteryAtlas_API36`, a Pixel 7 profile backed by that Android 16 ARM64
+image, with its writable data under PNY `LotteryAtlas/tooling/avd`. Configured
+2 CPU cores, 2 GB RAM and a 4 GB data partition for bounded resource use.
+`avdmanager list avd` and `emulator -list-avds` recognize it; acceleration check
+returns Hypervisor.Framework success. Creation logged an unavailable optional
+image devices.xml, but the selected Pixel 7 definition and AVD were registered.
+First boot is still required to establish runtime readiness.
+
+The AVD has not been booted or installed with the APK. Keep the running iOS
+simulator available for user review; shut it down before starting Android so
+only one simulator is running. No existing device data was removed. Private logs:
+work/mobile_beta/android_{sdk_packages,system_image_install,avd_create}.log.
