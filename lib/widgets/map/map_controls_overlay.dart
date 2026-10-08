@@ -110,6 +110,51 @@ class MapControlsOverlay extends StatefulWidget {
 
 class _MapControlsOverlayState extends State<MapControlsOverlay> {
   final _timelineKey = GlobalKey();
+  StateSetter? _updateTimelineSheet;
+
+  @override
+  void setState(VoidCallback fn) {
+    super.setState(fn);
+    _updateTimelineSheet?.call(() {});
+  }
+
+  Future<void> _openCompactTimeline() async {
+    try {
+      await showModalBottomSheet<void>(
+        context: context,
+        isScrollControlled: true,
+        useSafeArea: true,
+        builder: (_) => StatefulBuilder(
+          builder: (context, updateSheet) {
+            _updateTimelineSheet = updateSheet;
+            return SizedBox(
+              height: MediaQuery.sizeOf(context).height * .85,
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: IconButton(
+                        tooltip: 'Close timeline',
+                        onPressed: () => Navigator.of(context).pop(),
+                        icon: const Icon(Icons.close),
+                      ),
+                    ),
+                    _timelineContents(measure: false),
+                  ],
+                ),
+              ),
+            );
+          },
+        ),
+      );
+    } finally {
+      _updateTimelineSheet = null;
+    }
+  }
+
   double? _reportedTimelineHeight;
   late MapFilterState _filterState;
   // The map opens in a practical "right now" view. Historical scales remain
@@ -1015,6 +1060,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
         widget.onTimelineHeightChanged?.call(height);
       }
     });
+    final shortScreen = MediaQuery.sizeOf(context).height < 500;
     return Stack(
       children: [
         if (widget.showHeaderControls)
@@ -1024,8 +1070,8 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
             right: 16,
             child: Column(
               children: [
-                _brandHeader(),
-                const SizedBox(height: 14),
+                if (!shortScreen) _brandHeader(),
+                if (!shortScreen) const SizedBox(height: 14),
                 Row(
                   children: [
                     Expanded(child: _gameButton()),
@@ -1046,7 +1092,30 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
               ],
             ),
           ),
-        Positioned(left: 20, right: 20, bottom: 16, child: _timelineDock()),
+        Positioned(
+          left: 20,
+          right: 20,
+          bottom: 16,
+          child: shortScreen
+              ? SizedBox(
+                  key: _timelineKey,
+                  height: 48,
+                  child: FilledButton.icon(
+                    style: FilledButton.styleFrom(
+                      backgroundColor: const Color(0xEE0A1824),
+                      foregroundColor: Colors.white,
+                      side: const BorderSide(color: Color(0xFF355066)),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                    ),
+                    icon: const Icon(Icons.tune_rounded),
+                    label: Text('Timeline · ${_timelineAnchorLabel()}'),
+                    onPressed: _openCompactTimeline,
+                  ),
+                )
+              : _timelineDock(),
+        ),
       ],
     );
   }
@@ -1480,8 +1549,8 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
     child: _timelineContents(),
   );
 
-  Widget _timelineContents() => Container(
-    key: _timelineKey,
+  Widget _timelineContents({bool measure = true}) => Container(
+    key: measure ? _timelineKey : null,
     padding: const EdgeInsets.fromLTRB(14, 10, 14, 12),
     decoration: BoxDecoration(
       color: const Color(0xF0091826),

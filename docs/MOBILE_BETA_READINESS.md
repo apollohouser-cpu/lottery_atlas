@@ -287,3 +287,30 @@ camera preservation with the layout repair. No crash was observed in this bounde
 session. No claim of complete source-return, offline, favorites, physical-device,
 launcher/splash or accessibility acceptance. Simulator left upright on Missouri
 for continued diagnosis. Prior state-data acceptance is not reopened.
+
+## October 8 — responsive map layout correction
+
+User-requested follow-up to the simulator layout defects: state source/draw/Scratch
+controls now wrap into two rows on narrow phones, expanded menus use the available
+width, and source-button text cannot overflow its row. Phone map actions run
+horizontally above the timeline instead of covering headers or empty-state text.
+The national draw control now measures the map's actual safe-area width, preventing
+landscape overlap with Find a State.
+
+Short landscape screens show a branded Timeline button that opens the complete,
+scrollable timeline sheet with an explicit close button; portrait retains the
+original full timeline. Timeline selections persist when closing/reopening the
+sheet and returning to portrait. The landscape header omits the large brand row.
+
+Validation: eight timeline widget tests pass (320/390/900 portrait widths and
+780x360 landscape, including selecting Year, closing and reopening). Two-file
+analysis has only the four existing Radio API deprecation infos. Final debug iOS
+simulator build passes (10.3s). Installed on iPhone 17e / iOS 26.5: national map
+portrait/landscape, Missouri state toolbar/empty notice/actions in both orientations,
+landscape timeline Year selection/close, and return to upright portrait checked.
+No visible overflow stripes or overlapping controls in these checked views.
+Simulator accessibility text temporarily disappeared in landscape; pointer actions
+and screenshots verified the timeline and its close button, and the accessibility
+tree returned in portrait. This is layout smoke coverage, not complete mobile or
+accessibility acceptance. Only one simulator remained running, upright with the
+updated build; no signing, upload, state-feed changes or new state activation.

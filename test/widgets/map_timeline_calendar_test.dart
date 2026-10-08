@@ -6,6 +6,39 @@ import 'package:lottery_atlas/widgets/map/map_controls_overlay.dart';
 import 'package:lottery_atlas/widgets/map/map_filter_state.dart';
 
 void main() {
+  testWidgets('short landscape opens a scrollable working timeline', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(780, 360);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await tester.binding.setSurfaceSize(const Size(780, 360));
+    addTearDown(() => tester.binding.setSurfaceSize(null));
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(body: MapControlsOverlay(showHeaderControls: false)),
+      ),
+    );
+    await tester.pump();
+    expect(find.text('HEAT INDEX'), findsNothing);
+    await tester.tap(find.byType(FilledButton));
+    await tester.pumpAndSettle();
+    final year = find.widgetWithText(ChoiceChip, 'Year');
+    await tester.ensureVisible(year);
+    await tester.tap(year);
+    await tester.pumpAndSettle();
+    expect(tester.widget<ChoiceChip>(year).selected, isTrue);
+    await tester.ensureVisible(find.byTooltip('Close timeline'));
+    await tester.tap(find.byTooltip('Close timeline'));
+    await tester.pumpAndSettle();
+    expect(find.text('HEAT INDEX'), findsNothing);
+    await tester.tap(find.byType(FilledButton));
+    await tester.pumpAndSettle();
+    expect(tester.widget<ChoiceChip>(year).selected, isTrue);
+    expect(tester.takeException(), isNull);
+  });
+
   for (final width in [320.0, 390.0, 900.0]) {
     testWidgets('timeline controls fit width $width and remain usable', (
       tester,

@@ -4582,7 +4582,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     // Auxiliary map menus must sit above the full control stack. A selected
     // state adds the back button, which otherwise overlaps this banner.
     final actionControlCount = _selectedStateName == null ? 3 : 4;
-    final horizontalActions = MediaQuery.sizeOf(context).height < 750;
+    final horizontalActions =
+        MediaQuery.sizeOf(context).height < 750 ||
+        MediaQuery.sizeOf(context).width < 600;
     final actionControlsBottom = _timelineDockHeight + 28;
     final mapMenuBottom =
         actionControlsBottom +
@@ -4593,7 +4595,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     // In the U.S. view, the national-draw menu occupies the lower-left cell
     // of the same two-by-two toolbar grid as Game Filter, Filters, and Find a
     // State. Keeping one shared width prevents the menu from looking offset.
-    final headerControlWidth = (MediaQuery.sizeOf(context).width - 44) / 2;
 
     return FutureBuilder<_MapGeometry>(
       future: _mapGeometryFuture,
@@ -4967,7 +4968,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
             if (shouldShowEmptyStateNotice)
               Positioned(
-                top: usesCompactStateToolbar ? 114 : 220,
+                top: usesCompactStateToolbar
+                    ? (MediaQuery.sizeOf(context).width < 600 ? 154 : 90)
+                    : 220,
                 left: 34,
                 right: 34,
                 child: IgnorePointer(
@@ -4992,33 +4995,43 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
             if (!usesCompactStateToolbar)
               Positioned(
                 left: 16,
-                top: selectedState == null ? 148 : 160,
-                child: MouseRegion(
-                  onEnter: (_) => _magicMouseChannel.invokeMethod<void>(
-                    'setMapActive',
-                    false,
-                  ),
-                  onExit: (_) => _magicMouseChannel.invokeMethod<void>(
-                    'setMapActive',
-                    _hostingRoute?.isCurrent ?? true,
-                  ),
-                  child: NextDrawingsPanel(
-                    width: selectedState == null ? headerControlWidth : null,
-                    stateName: _selectedStateName,
-                    isExpanded: _showNextDrawings,
-                    onExpandedChanged: (isExpanded) {
-                      setState(() {
-                        _showNextDrawings = isExpanded;
-                      });
-                    },
-                    onViewNationalResults: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute<void>(
-                          builder: (_) => const NationalDrawResultsScreen(),
-                        ),
-                      );
-                    },
-                    onStateDrawSelected: _showSouthCarolinaDrawGameOnMap,
+                right: 16,
+                top: selectedState == null
+                    ? (MediaQuery.sizeOf(context).height < 500 ? 84 : 148)
+                    : 160,
+                child: LayoutBuilder(
+                  builder: (context, constraints) => Align(
+                    alignment: Alignment.topLeft,
+                    child: MouseRegion(
+                      onEnter: (_) => _magicMouseChannel.invokeMethod<void>(
+                        'setMapActive',
+                        false,
+                      ),
+                      onExit: (_) => _magicMouseChannel.invokeMethod<void>(
+                        'setMapActive',
+                        _hostingRoute?.isCurrent ?? true,
+                      ),
+                      child: NextDrawingsPanel(
+                        width: selectedState == null
+                            ? (constraints.maxWidth - 12) / 2
+                            : null,
+                        stateName: _selectedStateName,
+                        isExpanded: _showNextDrawings,
+                        onExpandedChanged: (isExpanded) {
+                          setState(() {
+                            _showNextDrawings = isExpanded;
+                          });
+                        },
+                        onViewNationalResults: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute<void>(
+                              builder: (_) => const NationalDrawResultsScreen(),
+                            ),
+                          );
+                        },
+                        onStateDrawSelected: _showSouthCarolinaDrawGameOnMap,
+                      ),
+                    ),
                   ),
                 ),
               ),
@@ -5131,163 +5144,186 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 left: 24,
                 top: 24,
                 right: 24,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    _StateLotteryPageButton(
-                      abbreviation: selectedState!.abbreviation,
-                      onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute<void>(
-                            builder: (_) => isSouthCarolinaSelected
-                                ? const SouthCarolinaLotteryScreen()
-                                : StateLotterySourceScreen(
-                                    source: selectedStateSource,
-                                  ),
-                          ),
-                        );
-                      },
-                    ),
-                    const SizedBox(width: 10),
-                    if (!(isSouthCarolinaSelected
-                        ? _showScratchOffs
-                        : _showStateGames))
-                      Expanded(
-                        child: MouseRegion(
-                          onEnter: (_) => _magicMouseChannel.invokeMethod<void>(
-                            'setMapActive',
-                            false,
-                          ),
-                          onExit: (_) => _magicMouseChannel.invokeMethod<void>(
-                            'setMapActive',
-                            _hostingRoute?.isCurrent ?? true,
-                          ),
-                          child: NextDrawingsPanel(
-                            width: double.infinity,
-                            stateName: _selectedStateName,
-                            isExpanded: _showNextDrawings,
-                            onExpandedChanged: (isExpanded) {
-                              setState(() {
-                                _showNextDrawings = isExpanded;
-                                if (isExpanded) {
-                                  _showScratchOffs = false;
-                                  _showStateGames = false;
-                                }
-                              });
-                            },
-                            onViewNationalResults: () {
+                child: LayoutBuilder(
+                  builder: (context, constraints) {
+                    final narrow = constraints.maxWidth < 552;
+                    final controlWidth = narrow
+                        ? (constraints.maxWidth - 10) / 2
+                        : (constraints.maxWidth - 210) / 2;
+                    return Wrap(
+                      spacing: 10,
+                      runSpacing: 10,
+                      children: [
+                        SizedBox(
+                          width: narrow ? constraints.maxWidth : 190,
+                          child: _StateLotteryPageButton(
+                            abbreviation: selectedState!.abbreviation,
+                            onTap: () {
                               Navigator.of(context).push(
                                 MaterialPageRoute<void>(
-                                  builder: (_) =>
-                                      const NationalDrawResultsScreen(),
+                                  builder: (_) => isSouthCarolinaSelected
+                                      ? const SouthCarolinaLotteryScreen()
+                                      : StateLotterySourceScreen(
+                                          source: selectedStateSource,
+                                        ),
                                 ),
                               );
                             },
-                            onStateDrawSelected: _showStateDrawGameOnMap,
-                            showStateLabel: true,
                           ),
                         ),
-                      ),
-                    if (!(isSouthCarolinaSelected
+
+                        if (!(isSouthCarolinaSelected
                             ? _showScratchOffs
-                            : _showStateGames) &&
-                        !_showNextDrawings)
-                      const SizedBox(width: 10),
-                    if (!_showNextDrawings)
-                      Expanded(
-                        child: MouseRegion(
-                          onEnter: (_) => _magicMouseChannel.invokeMethod<void>(
-                            'setMapActive',
-                            false,
+                            : _showStateGames))
+                          SizedBox(
+                            width:
+                                (_showNextDrawings ||
+                                    _showScratchOffs ||
+                                    _showStateGames)
+                                ? constraints.maxWidth
+                                : controlWidth,
+                            child: MouseRegion(
+                              onEnter: (_) => _magicMouseChannel
+                                  .invokeMethod<void>('setMapActive', false),
+                              onExit: (_) =>
+                                  _magicMouseChannel.invokeMethod<void>(
+                                    'setMapActive',
+                                    _hostingRoute?.isCurrent ?? true,
+                                  ),
+                              child: NextDrawingsPanel(
+                                width: double.infinity,
+                                stateName: _selectedStateName,
+                                isExpanded: _showNextDrawings,
+                                onExpandedChanged: (isExpanded) {
+                                  setState(() {
+                                    _showNextDrawings = isExpanded;
+                                    if (isExpanded) {
+                                      _showScratchOffs = false;
+                                      _showStateGames = false;
+                                    }
+                                  });
+                                },
+                                onViewNationalResults: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute<void>(
+                                      builder: (_) =>
+                                          const NationalDrawResultsScreen(),
+                                    ),
+                                  );
+                                },
+                                onStateDrawSelected: _showStateDrawGameOnMap,
+                                showStateLabel: true,
+                              ),
+                            ),
                           ),
-                          onExit: (_) => _magicMouseChannel.invokeMethod<void>(
-                            'setMapActive',
-                            _hostingRoute?.isCurrent ?? true,
+                        if (!_showNextDrawings)
+                          SizedBox(
+                            width:
+                                (_showNextDrawings ||
+                                    _showScratchOffs ||
+                                    _showStateGames)
+                                ? constraints.maxWidth
+                                : controlWidth,
+                            child: MouseRegion(
+                              onEnter: (_) => _magicMouseChannel
+                                  .invokeMethod<void>('setMapActive', false),
+                              onExit: (_) =>
+                                  _magicMouseChannel.invokeMethod<void>(
+                                    'setMapActive',
+                                    _hostingRoute?.isCurrent ?? true,
+                                  ),
+                              child: isSouthCarolinaSelected
+                                  ? _SouthCarolinaScratchOffsPanel(
+                                      width: double.infinity,
+                                      isExpanded: _showScratchOffs,
+                                      selectedGameId:
+                                          activeScratchFilter?.gameId,
+                                      onExpandedChanged: (isExpanded) {
+                                        setState(() {
+                                          _showScratchOffs = isExpanded;
+                                          if (isExpanded) {
+                                            _showNextDrawings = false;
+                                          }
+                                        });
+                                      },
+                                      onAllSelected: () =>
+                                          _showSouthCarolinaScratchGameOnMap(
+                                            'all',
+                                          ),
+                                      onGameSelected:
+                                          _showSouthCarolinaScratchGameOnMap,
+                                      onOpenPrizeFinder:
+                                          _openSouthCarolinaScratchOffPicker,
+                                    )
+                                  : selectedState.name == 'North Carolina'
+                                  ? _NorthCarolinaScratchOffsPanel(
+                                      width: double.infinity,
+                                      selectedGameName:
+                                          _selectedStateActivityGameName,
+                                      isExpanded: _showStateGames,
+                                      onExpandedChanged: (isExpanded) {
+                                        setState(() {
+                                          _showStateGames = isExpanded;
+                                          if (isExpanded) {
+                                            _showNextDrawings = false;
+                                          }
+                                        });
+                                      },
+                                      onAllSelected: () =>
+                                          _showNorthCarolinaScratchGameOnMap(
+                                            null,
+                                          ),
+                                      onGameSelected: (gameName) =>
+                                          _showNorthCarolinaScratchGameOnMap(
+                                            gameName,
+                                          ),
+                                    )
+                                  : StateScratchCatalogRegistry.hasCatalog(
+                                      selectedState.name,
+                                    )
+                                  ? _VerifiedStateScratchOffsPanel(
+                                      stateName: selectedState.name,
+                                      selectedGameName:
+                                          _selectedStateActivityGameName,
+                                      isExpanded: _showStateGames,
+                                      onExpandedChanged: (isExpanded) {
+                                        setState(() {
+                                          _showStateGames = isExpanded;
+                                          if (isExpanded) {
+                                            _showNextDrawings = false;
+                                          }
+                                        });
+                                      },
+                                      onAllSelected: () =>
+                                          _showStateScratchGameOnMap(null),
+                                      onGameSelected:
+                                          _showStateScratchGameOnMap,
+                                      onOpenCatalog: () =>
+                                          _openOfficialScratchCatalog(
+                                            selectedStateSource,
+                                          ),
+                                    )
+                                  : _StateScratchOffsSourcePanel(
+                                      stateName: selectedState.name,
+                                      isExpanded: _showStateGames,
+                                      onExpandedChanged: (isExpanded) {
+                                        setState(() {
+                                          _showStateGames = isExpanded;
+                                          if (isExpanded) {
+                                            _showNextDrawings = false;
+                                          }
+                                        });
+                                      },
+                                      onOpenCatalog: () =>
+                                          _openOfficialScratchCatalog(
+                                            selectedStateSource,
+                                          ),
+                                    ),
+                            ),
                           ),
-                          child: isSouthCarolinaSelected
-                              ? _SouthCarolinaScratchOffsPanel(
-                                  width: double.infinity,
-                                  isExpanded: _showScratchOffs,
-                                  selectedGameId: activeScratchFilter?.gameId,
-                                  onExpandedChanged: (isExpanded) {
-                                    setState(() {
-                                      _showScratchOffs = isExpanded;
-                                      if (isExpanded) {
-                                        _showNextDrawings = false;
-                                      }
-                                    });
-                                  },
-                                  onAllSelected: () =>
-                                      _showSouthCarolinaScratchGameOnMap('all'),
-                                  onGameSelected:
-                                      _showSouthCarolinaScratchGameOnMap,
-                                  onOpenPrizeFinder:
-                                      _openSouthCarolinaScratchOffPicker,
-                                )
-                              : selectedState.name == 'North Carolina'
-                              ? _NorthCarolinaScratchOffsPanel(
-                                  width: double.infinity,
-                                  selectedGameName:
-                                      _selectedStateActivityGameName,
-                                  isExpanded: _showStateGames,
-                                  onExpandedChanged: (isExpanded) {
-                                    setState(() {
-                                      _showStateGames = isExpanded;
-                                      if (isExpanded) {
-                                        _showNextDrawings = false;
-                                      }
-                                    });
-                                  },
-                                  onAllSelected: () =>
-                                      _showNorthCarolinaScratchGameOnMap(null),
-                                  onGameSelected: (gameName) =>
-                                      _showNorthCarolinaScratchGameOnMap(
-                                        gameName,
-                                      ),
-                                )
-                              : StateScratchCatalogRegistry.hasCatalog(
-                                  selectedState.name,
-                                )
-                              ? _VerifiedStateScratchOffsPanel(
-                                  stateName: selectedState.name,
-                                  selectedGameName:
-                                      _selectedStateActivityGameName,
-                                  isExpanded: _showStateGames,
-                                  onExpandedChanged: (isExpanded) {
-                                    setState(() {
-                                      _showStateGames = isExpanded;
-                                      if (isExpanded) {
-                                        _showNextDrawings = false;
-                                      }
-                                    });
-                                  },
-                                  onAllSelected: () =>
-                                      _showStateScratchGameOnMap(null),
-                                  onGameSelected: _showStateScratchGameOnMap,
-                                  onOpenCatalog: () =>
-                                      _openOfficialScratchCatalog(
-                                        selectedStateSource,
-                                      ),
-                                )
-                              : _StateScratchOffsSourcePanel(
-                                  stateName: selectedState.name,
-                                  isExpanded: _showStateGames,
-                                  onExpandedChanged: (isExpanded) {
-                                    setState(() {
-                                      _showStateGames = isExpanded;
-                                      if (isExpanded) {
-                                        _showNextDrawings = false;
-                                      }
-                                    });
-                                  },
-                                  onOpenCatalog: () =>
-                                      _openOfficialScratchCatalog(
-                                        selectedStateSource,
-                                      ),
-                                ),
-                        ),
-                      ),
-                  ],
+                      ],
+                    );
+                  },
                 ),
               ),
           ],
@@ -5730,13 +5766,17 @@ class _StateLotteryPageButton extends StatelessWidget {
               color: Color(0xFF60A5FA),
             ),
             const SizedBox(width: 8),
-            Text(
-              '$abbreviation LOTTERY',
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 12,
-                fontWeight: FontWeight.w800,
-                letterSpacing: 0.8,
+            Flexible(
+              child: Text(
+                '$abbreviation LOTTERY',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 12,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 0.8,
+                ),
               ),
             ),
             const SizedBox(width: 4),
