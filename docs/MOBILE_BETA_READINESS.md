@@ -439,3 +439,19 @@ Android interaction. The iOS simulator remains untouched for user review.
 Internal storage was 16 GiB free and PNY 437 GiB free before this sequential build.
 Private build log: work/mobile_beta/android_current_debug_build.log. No account,
 credential, enrollment, upload or accepted-state changes.
+
+### October 8, 08:37 ET — isolated Favorites persistence checks
+
+Added two tests using the preferences package's in-memory asynchronous backend.
+Both game and place favorites load valid entries despite malformed neighboring
+records, deduplicate repeated keys, preserve game-kind/county/state destinations,
+and persist additions and independent removals. Tests decode stored values via a
+separate preferences reader rather than relying only on the visible notifier.
+Both pass. Synthetic keys/labels only; no real preference storage was touched.
+
+These checks do not prove native Favorites navigation or persistence across a
+real process restart. The running iOS review is unchanged; no build, installation,
+Gmail check, state activation or distribution was performed. Android runtime
+preparation also confirmed that no SDK system image is installed; an emulator
+binary alone is insufficient to launch an AVD. Keep to one running simulator.
+Private log: work/mobile_beta/favorites_persistence_test.log.
