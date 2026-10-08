@@ -44,7 +44,11 @@ def export(sdk):
         # Centered foreground within the adaptive icon safe area (108dp canvas).
         foreground = compass(font, 432, .50, background=False)
         foreground.resize((round(108*scale),)*2, Image.Resampling.LANCZOS).save(folder/'ic_launcher_foreground.png')
-    print('Exported 19 iOS slots, five legacy icons and five adaptive foregrounds.')
+    launch = ROOT / 'ios/Runner/Assets.xcassets/LaunchImage.imageset'
+    for scale in (1, 2, 3):
+        suffix = '' if scale == 1 else f'@{scale}x'
+        compass(font, 360, .68, background=False).resize((120*scale,)*2, Image.Resampling.LANCZOS).save(launch/f'LaunchImage{suffix}.png')
+    print('Exported launcher icons and three iOS launch images.')
 
 
 if __name__ == '__main__':

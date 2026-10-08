@@ -18,3 +18,9 @@ MaterialIcons-Regular.otf; accompanying upstream license is retained in
 MaterialIcons_LICENSE.txt (Creative Commons Attribution 4.0). Modifications:
 white glyph rendered at platform-specific sizes, centered and composited over
 Lottery Atlas colors. No font file is copied into this directory.
+
+The exporter also creates transparent 120-point iOS launch compass images at
+1x/2x/3x. The launch storyboard and Android launch themes use #070F1B.
+Android API 31+ selects an explicit system splash icon/background; older versions
+use the centered foreground bitmap. Reference:
+https://developer.android.com/develop/ui/views/launch/splash-screen

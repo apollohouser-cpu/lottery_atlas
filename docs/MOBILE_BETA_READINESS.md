@@ -243,3 +243,26 @@ The inactive Gradle user cache was also copied to PNY and content-checksummed
 before replacing its original location with a link. No Gradle/Java build was
 running during migration. Build/work/Gradle linked read/write checks passed.
 Private migration evidence is stored on PNY in LotteryAtlas/migration_record.json.
+
+## October 8, 00:23 ET — launch assets and post-migration iOS build
+
+Replaced transparent iOS launch placeholders with reproducible 120-point white
+compass assets at 1x/2x/3x over a dark navy storyboard background. Android legacy
+launch backgrounds now center the existing compass foreground; light/dark API
+31+ themes explicitly select the system splash background and icon following
+[Android's splash-screen guidance](https://developer.android.com/develop/ui/views/launch/splash-screen).
+XML parsing and launch-image dimensions/nonempty-alpha checks pass.
+
+First post-migration iOS build failed with undefined Flutter framework symbols.
+Preserved the prior iOS build directory separately on PNY and regenerated only
+iOS outputs; simulator debug build then passed (10.2-second Xcode phase).
+This establishes a working build path on external storage, not the failure's
+precise root cause. No source checkout or private evidence was removed. The
+old outputs remain at LotteryAtlas/project/ios-build-before-regeneration on PNY.
+No simulator was booted; installed launcher/splash appearance and final phone
+layout/interaction verification remain pending. Internal free space remains
+about 20 GiB. Builds ran sequentially; no Gmail, fees, signing or state activation.
+
+Android `:app:processDebugResources --no-daemon` also passes using the installed
+Android Studio JBR explicitly (the shell default had no Java runtime). This
+links the new API-qualified resources but is not a full APK/device smoke pass.
