@@ -42,3 +42,13 @@ provided in Player Service's reply. It asks the custodian to accept and assign
 a tracking number or provide a working alternative route, discloses potential
 commercial use, and asks for a fee estimate before paid processing. Gmail
 confirmed “Message sent.” Acceptance and responsive data remain pending.
+
+## October 8 supported-scope review
+
+Full product scope is closed in NORTH_CAROLINA_ACCEPTANCE.md; release remains due
+October 13 at 10:38 ET. Fresh official report pages distinguish per-tier NC wins
+from combined Pick 3/4 winners and Cash Pop session summaries. The dated Pick
+3/4 detail payout schedules do not provide per-tier winner counts. Preserve these
+source distinctions in the forthcoming integration; no report totals were
+promoted by this review. Scratch Reordered status increases printed prize counts,
+so inventory differences must not become claimed-ticket totals.

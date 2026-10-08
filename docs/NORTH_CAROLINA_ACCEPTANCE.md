@@ -33,7 +33,7 @@ Private captures: work/north_carolina_scope/{home,scratch}.html.
 
 ## Acceptance gates
 
-- [ ] Full current product/game/option/history scope and explicit gaps.
+- [x] Full current product/game/option/history scope and explicit gaps (October 8, 11:39 ET).
 - [ ] Winner-source date/unit/overlap and retailer-join audit.
 - [ ] Strict current Scratch catalog and available draw-report imports.
 - [ ] Validated directory coverage and coordinates, or explicit supported limits.
@@ -45,3 +45,34 @@ Private captures: work/north_carolina_scope/{home,scratch}.html.
 Missing broader agency records do not block honest supported-app completion.
 No new correspondence, fees, human attestations or private attachment promotion
 occurred at activation. Existing request history remains in NORTH_CAROLINA_SOURCE_SCREEN.md.
+
+## Supported scope closed October 8, 11:39 ET
+
+Fourteen official product/directory pages plus Pick 3 and Pick 4 dated detail
+pages were captured privately. Scope is closed ahead of October 9; implementation
+and validation gates remain open. Source content embedded in cross-game footer
+cards must never be parsed as the selected game's main report.
+
+| Product | Supported implementation target | Limits / separate gaps |
+| --- | --- | --- |
+| Powerball | Dated NC tier reports, separate base/Power Play and Double Play | Preserve literal jackpot labels; no complete claims or retail positions from tiers |
+| Mega Millions | Dated NC tier report with each printed multiplier column | Do not flatten concatenated HTML values or silently relabel the source's Megaplier heading |
+| Cash 5 | Separate base and Double Play dated prize/win tables | Rollover is an advertised estimate, not a payout to a winner |
+| Millionaire for Life | Dated NC nine-tier report | Preserve annual-for-life labels, no inferred cash conversion |
+| Powerball Xs & Os | Dated NC five-tier payout report | Shared jackpot and potential pari-mutuel limits stay visible |
+| Pick 3 / Pick 4 | Daytime and Evening identities, dated combined winner/payout summary and literal base/Fireball payout schedule | Sample detail pages provide combined winners, not winner counts per payout row. Never synthesize those missing counts or distinct-ticket totals |
+| Cash Pop | Five named daily sessions with date, Pop, source winners and payout | Aggregate session rows only unless a verified tier source is found; animated drawing link is not a claim record |
+| Scratch-Offs | Refreshable literal listed-game/tier catalog with source date and Reordered status | Original printing vs remaining; no subtraction into claims or stock, no invented end dates |
+| Retailers / mapped activity | Strict directory audit and bounded high-prize archive/news activity | Audit duplicate retailer candidates and news/archive overlap; unmatched/ambiguous locations stay excluded, no inferred coordinates |
+| Keno | Official game/results route and explicit available coverage | Four-minute draw results are not a complete winner-count history; options require source-labeled treatment |
+| Fast Play | Official current product/catalog/jackpot routes and explicit gap | Progressive advertisement is not an actual per-ticket payout or claim total |
+| Digital Instants | Official product route and clear unsupported claim coverage | No account access, gameplay or gambling transactions; no inventory-to-claims inference |
+| Promotions / rewards / second chance | Official routes and separate coverage limits | No participation, personal-account data or synthetic winning-ticket totals |
+| Historical/replaced games | Explicit historical gap and official historical routes where available | Ten-year history remains later; current navigation is not proof of historic completeness |
+
+Report target is two bounded recent reports per eight current draw families and
+14 game/session groups where the official history supports it. Pick 3/4 and Cash
+Pop summaries are deliberately different from tier-count reports. The October 7
+Evening detail examples print Pick 3 combined 1,527 winners / $227,915 and Pick 4
+893 / $261,622; these are private source observations, not promoted app totals.
+No new public feed, native acceptance, correspondence or deadline change.
