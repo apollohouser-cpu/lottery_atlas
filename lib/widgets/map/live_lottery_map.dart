@@ -4364,6 +4364,24 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     ),
   );
 
+  void _recenterMap() {
+    final name = _selectedStateName;
+    if (name == null) {
+      _fitNationalMap();
+      return;
+    }
+    if (name == 'Alaska') {
+      _animateMapTo(_alaskaCenter, 4.4);
+      return;
+    }
+    final points = _stateShapes.where((shape) => shape.name == name)
+        .expand((shape) => shape.points).toList();
+    if (points.isNotEmpty) {
+      _animateCameraFit(CameraFit.bounds(bounds: LatLngBounds.fromPoints(points),
+        padding: _stateCameraPadding(name)));
+    }
+  }
+
   void _resetMap() {
     SouthCarolinaScratchMapFilterService.clear();
     SouthCarolinaLotteryMapFilterService.clear();
@@ -4654,7 +4672,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         .length;
     // Auxiliary map menus must sit above the full control stack. A selected
     // state adds the back button, which otherwise overlaps this banner.
-    final actionControlCount = _selectedStateName == null ? 3 : 4;
+    const actionControlCount = 5;
     final horizontalActions =
         MediaQuery.sizeOf(context).height < 750 ||
         MediaQuery.sizeOf(context).width < 600;
@@ -5326,10 +5344,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
             Positioned(
               right: 20,
+              left: horizontalActions ? 20 : null,
               bottom: actionControlsBottom,
               child: MapActionControls(
                 horizontal: horizontalActions,
-                onReset: _resetMap,
+                onReset: _recenterMap,
                 onHome: _handleHomeTap,
                 onBack: _focusedRetailerId != null
                     ? _returnToCityFromRetailer
@@ -5337,8 +5356,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                     ? _returnToCountyFromCity
                     : _selectedCountyId != null
                     ? _returnToSelectedState
-                    : _selectedStateName == null
-                    ? null
                     : _returnToNationalMap,
                 backTooltip: _focusedRetailerId != null
                     ? 'Back to city or town'

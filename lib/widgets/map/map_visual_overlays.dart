@@ -23,35 +23,49 @@ class MapActionControls extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flex(
-      direction: horizontal ? Axis.horizontal : Axis.vertical,
+    final buttons = <Widget>[
+      if (onBack != null)
+        _MapActionButton(
+          icon: Icons.arrow_back_rounded,
+          tooltip: backTooltip,
+          onTap: onBack!,
+        ),
+      if (onHome != null)
+        _MapActionButton(
+          icon: Icons.home_rounded,
+          tooltip: 'Home',
+          onTap: onHome!,
+        ),
+      _MapActionButton(
+        icon: Icons.center_focus_strong_rounded,
+        tooltip: 'Recenter map',
+        onTap: onReset,
+      ),
+      _MapActionButton(
+        icon: Icons.add_rounded,
+        tooltip: 'Zoom in',
+        onTap: onZoomIn,
+      ),
+      _MapActionButton(
+        icon: Icons.remove_rounded,
+        tooltip: 'Zoom out',
+        onTap: onZoomOut,
+      ),
+    ];
+    if (horizontal) {
+      return Row(
+        children: [
+          for (final button in buttons) Expanded(child: Center(child: button)),
+        ],
+      );
+    }
+    return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        if (onBack != null) ...[
-          _MapActionButton(
-            icon: Icons.arrow_back_rounded,
-            tooltip: backTooltip,
-            onTap: onBack!,
-          ),
-          SizedBox(width: horizontal ? 10 : 0, height: horizontal ? 0 : 10),
+        for (var i = 0; i < buttons.length; i++) ...[
+          if (i > 0) const SizedBox(height: 10),
+          buttons[i],
         ],
-        _MapActionButton(
-          icon: onHome == null ? Icons.my_location_rounded : Icons.home_rounded,
-          tooltip: onHome == null ? 'Recenter map' : 'Home',
-          onTap: onHome ?? onReset,
-        ),
-        SizedBox(width: horizontal ? 10 : 0, height: horizontal ? 0 : 10),
-        _MapActionButton(
-          icon: Icons.add_rounded,
-          tooltip: 'Zoom in',
-          onTap: onZoomIn,
-        ),
-        SizedBox(width: horizontal ? 10 : 0, height: horizontal ? 0 : 10),
-        _MapActionButton(
-          icon: Icons.remove_rounded,
-          tooltip: 'Zoom out',
-          onTap: onZoomOut,
-        ),
       ],
     );
   }

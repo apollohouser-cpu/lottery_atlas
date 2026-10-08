@@ -476,3 +476,16 @@ The AVD has not been booted or installed with the APK. Keep the running iOS
 simulator available for user review; shut it down before starting Android so
 only one simulator is running. No existing device data was removed. Private logs:
 work/mobile_beta/android_{sdk_packages,system_image_install,avd_create}.log.
+
+### October 8 user-requested five map buttons
+
+Added a separate re-center action between Home and zoom controls. The horizontal
+row gives Back, Home, Re-center, Zoom in and Zoom out five equal-width cells.
+Re-center fits the selected state (or national view) without resetting selections
+or filters. Desktop vertical spacing accounts for all five buttons. iOS simulator
+debug build passed (Xcode 11.5 seconds), installed and launched on the existing
+single iPhone 17e. Portrait screenshot confirms five evenly aligned buttons and
+visible SC outline. No tap/rotation or broader state acceptance claim from this
+visual check. Analysis retains one pre-existing live-map brace info. Current
+simulator now includes these changes and intervening NC catalog UI code; the
+prior installed-build references are superseded. Left open for user review.
