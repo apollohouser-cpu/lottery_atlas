@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 
 import '../../services/app_preferences.dart';
 import '../../services/lottery_data_status_service.dart';
-import '../../models/state_model.dart';
+import '../../widgets/map/home_state_picker.dart';
 import 'national_draw_results_screen.dart';
 import '../../widgets/map/map_detail_mode.dart';
 
@@ -93,156 +93,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Future<void> _pickHomeState() async {
-    final searchController = TextEditingController();
-    String searchTerm = '';
-
-    try {
-      final stateName = await showDialog<String>(
-        context: context,
-        builder: (dialogContext) => StatefulBuilder(
-          builder: (context, setDialogState) {
-            final matchingStates = allStates
-                .where((state) {
-                  final searchable = '${state.name} ${state.abbreviation}'
-                      .toLowerCase();
-                  return searchable.contains(searchTerm.toLowerCase());
-                })
-                .toList(growable: false);
-
-            return Dialog(
-              backgroundColor: const Color(0xFF102638),
-              insetPadding: const EdgeInsets.all(24),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20),
-                side: const BorderSide(color: Color(0xFF355066)),
-              ),
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(
-                  maxWidth: 460,
-                  maxHeight: 560,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(18),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          const Icon(
-                            Icons.home_work_outlined,
-                            color: Color(0xFF1478FF),
-                          ),
-                          const SizedBox(width: 10),
-                          const Expanded(
-                            child: Text(
-                              'Choose your home state',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 18,
-                                fontWeight: FontWeight.w800,
-                              ),
-                            ),
-                          ),
-                          IconButton(
-                            onPressed: () => Navigator.of(dialogContext).pop(),
-                            icon: const Icon(Icons.close_rounded),
-                            color: Colors.white70,
-                            tooltip: 'Close',
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 14),
-                      TextField(
-                        controller: searchController,
-                        autofocus: true,
-                        onChanged: (value) {
-                          setDialogState(() => searchTerm = value.trim());
-                        },
-                        style: const TextStyle(color: Colors.white),
-                        decoration: const InputDecoration(
-                          prefixIcon: Icon(Icons.search_rounded),
-                          hintText: 'Search states',
-                          hintStyle: TextStyle(color: Colors.white54),
-                          enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Color(0xFF355066)),
-                          ),
-                          focusedBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Color(0xFF1478FF)),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 10),
-                      Expanded(
-                        child: matchingStates.isEmpty
-                            ? const Center(
-                                child: Text(
-                                  'No states match that search.',
-                                  style: TextStyle(color: Colors.white60),
-                                ),
-                              )
-                            : Scrollbar(
-                                thumbVisibility: true,
-                                child: ListView.separated(
-                                  itemCount: matchingStates.length,
-                                  separatorBuilder: (_, _) => const Divider(
-                                    height: 1,
-                                    color: Color(0xFF234154),
-                                  ),
-                                  itemBuilder: (context, index) {
-                                    final state = matchingStates[index];
-                                    final isSelected = state.name == _homeState;
-                                    return ListTile(
-                                      contentPadding:
-                                          const EdgeInsets.symmetric(
-                                            horizontal: 8,
-                                          ),
-                                      leading: CircleAvatar(
-                                        backgroundColor: isSelected
-                                            ? const Color(0xFF1478FF)
-                                            : const Color(0xFF19384E),
-                                        child: Text(
-                                          state.abbreviation,
-                                          style: const TextStyle(
-                                            color: Colors.white,
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.w800,
-                                          ),
-                                        ),
-                                      ),
-                                      title: Text(
-                                        state.name,
-                                        style: const TextStyle(
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                      trailing: isSelected
-                                          ? const Icon(
-                                              Icons.check_circle_rounded,
-                                              color: Color(0xFF1478FF),
-                                            )
-                                          : null,
-                                      onTap: () => Navigator.of(
-                                        dialogContext,
-                                      ).pop(state.name),
-                                    );
-                                  },
-                                ),
-                              ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            );
-          },
-        ),
-      );
-
-      if (stateName != null) {
-        await _setHomeState(stateName);
-      }
-    } finally {
-      searchController.dispose();
-    }
+    final stateName = await showHomeStatePicker(context, selected: _homeState);
+    if (stateName != null && mounted) await _setHomeState(stateName);
   }
 
   Future<void> _resetMapSettings() async {

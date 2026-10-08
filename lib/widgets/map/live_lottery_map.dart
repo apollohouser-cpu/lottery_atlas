@@ -51,6 +51,7 @@ import '../../services/state_source_cadence_registry.dart';
 import '../../services/state_data_limitation_registry.dart';
 import '../../services/state_winning_ticket_total_service.dart';
 import 'map_controls_overlay.dart';
+import 'home_state_picker.dart';
 import 'map_detail_mode.dart';
 import 'map_filter_state.dart';
 import 'map_search_result.dart';
@@ -4375,6 +4376,26 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     _animateMapTo(_usCenter, _initialZoom);
   }
 
+  bool _homePickerOpen = false;
+
+  Future<void> _handleHomeTap() async {
+    if (_homeStateName != null) {
+      _goToHomeState();
+      return;
+    }
+    if (_homePickerOpen) return;
+    _homePickerOpen = true;
+    try {
+      final state = await showHomeStatePicker(context);
+      if (state != null && mounted) {
+        // The preferences listener loads and opens the chosen home state.
+        await AppPreferences.setHomeState(state);
+      }
+    } finally {
+      _homePickerOpen = false;
+    }
+  }
+
   void _goToHomeState() {
     final stateName = _homeStateName;
     if (stateName == null) {
@@ -5117,7 +5138,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
               child: MapActionControls(
                 horizontal: horizontalActions,
                 onReset: _resetMap,
-                onHome: _goToHomeState,
+                onHome: _handleHomeTap,
                 onBack: _focusedRetailerId != null
                     ? _returnToCityFromRetailer
                     : _selectedCityName != null

@@ -329,3 +329,18 @@ iOS simulator debug build passes (9.8s); installed native portrait inspection
 confirms the house icon and all four aligned choices. Month selection and Home tap
 were exercised; the app remains open for user review. This does not add platform
 acceptance, signing or distribution claims.
+
+### October 8 — Home setup instead of an apparent no-op
+
+User reported that Home did nothing. With no saved home state, the previous
+fallback merely recentered the already-national map. Home now opens a searchable
+home-state chooser when unset; selecting a state saves the existing preference
+and the map preference listener opens it. Subsequent Home taps retain the saved
+state navigation behavior. Settings uses the same chooser. Cancel does not save
+anything, and repeated taps cannot open duplicate pickers.
+
+The picker test passes search/no-match/selection/cancellation at phone size;
+three-file analysis has only two existing Settings Radio API infos. iOS simulator
+build passes (33.0s). Installed and clicked the actual map Home control: the
+chooser visibly opens with the explanation and state list, without overflow.
+Left it open for the user to choose; no home state was selected on their behalf.
