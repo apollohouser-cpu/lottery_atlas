@@ -179,3 +179,32 @@ It is a draft, with no installation link or feedback destination invented and no
 invitation sent. Signing, device acceptance, icon/launch verification and privacy
 publication still gate distribution. This lightweight documentation work did not
 start a build/simulator, inspect external drives or reopen state acceptance.
+
+## October 7, 22:20 ET — icon and launch asset audit
+
+Inspected source assets without building or starting a simulator. Both the iOS
+1024-pixel marketing icon and Android xxxhdpi launcher visibly contain the
+Flutter template mark, not the in-app Lottery Atlas compass. All 19 declared
+iOS icon slots exist and match their declared pixel dimensions; the marketing
+image is RGB, 1024×1024. Android has five legacy raster density assets
+(48/72/96/144/192 pixels), with transparency, and no adaptive-icon resource in
+the current main resource tree. Dimensions alone do not close icon readiness.
+
+All three iOS LaunchImage assets are fully transparent 1×1 images; its storyboard
+centers that image over white. Android's launch drawable uses a white background
+with its example image commented out. Native launch appearance still needs
+verification after replacement, including Android's system splash behavior.
+Private dimension/hash evidence: work/mobile_beta/icon_audit_2026-10-07.json.
+
+Use the existing compass branding in map_controls_overlay.dart as the design
+reference: white explore_rounded glyph and blue gradient (#1478FF to #073A8A).
+Next implementation should provide a reproducible master/export path, replace
+mobile template icons, add Android adaptive resources and coordinate launch
+backgrounds. Verify small-size legibility, masks, light/dark launch and the final
+built resources before closing this gate. No new identity or arbitrary brand
+redesign is needed. No assets changed in this audit, no store acceptance implied.
+
+Storage migration confirmation remains pending; this audit did not access either
+external drive, start builds or change accepted state coverage. The separate
+South Carolina correspondence check has recorded cashing-retailer semantics and
+retained its Pick 3/Pick 4 caveat; no agency delivery was promoted here.
