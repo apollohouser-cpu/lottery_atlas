@@ -1715,31 +1715,39 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
                 ),
               ),
             ),
-            const SizedBox(width: 8),
+          ],
+        ),
+        const SizedBox(height: 6),
+        Row(
+          children: [
             for (final mode in TimelineGranularity.values.where(
               (mode) =>
                   !widget.dayOnlyActivity || mode != TimelineGranularity.day,
             ))
-              Padding(
-                padding: const EdgeInsets.only(left: 4),
-                child: ChoiceChip(
-                  label: Text(mode.label),
-                  selected: mode == _timelineGranularity,
-                  selectedColor: const Color(0xFF1478FF),
-                  backgroundColor: const Color(0xFF122333),
-                  side: BorderSide(
-                    color: mode == _timelineGranularity
-                        ? const Color(0xFF60A5FA)
-                        : const Color(0xFF355066),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 2),
+                  child: ChoiceChip(
+                    showCheckmark: false,
+                    labelPadding: EdgeInsets.zero,
+                    label: Center(child: Text(mode.label)),
+                    selected: mode == _timelineGranularity,
+                    selectedColor: const Color(0xFF1478FF),
+                    backgroundColor: const Color(0xFF122333),
+                    side: BorderSide(
+                      color: mode == _timelineGranularity
+                          ? const Color(0xFF60A5FA)
+                          : const Color(0xFF355066),
+                    ),
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                      fontSize: 11,
+                      fontWeight: mode == _timelineGranularity
+                          ? FontWeight.w700
+                          : FontWeight.w500,
+                    ),
+                    onSelected: (_) => _setGranularity(mode),
                   ),
-                  labelStyle: TextStyle(
-                    color: Colors.white,
-                    fontSize: 11,
-                    fontWeight: mode == _timelineGranularity
-                        ? FontWeight.w700
-                        : FontWeight.w500,
-                  ),
-                  onSelected: (_) => _setGranularity(mode),
                 ),
               ),
           ],

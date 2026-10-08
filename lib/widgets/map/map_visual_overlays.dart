@@ -37,7 +37,7 @@ class MapActionControls extends StatelessWidget {
         ],
         _MapActionButton(
           icon: onHome == null ? Icons.my_location_rounded : Icons.home_rounded,
-          tooltip: onHome == null ? 'Recenter map' : 'Go to home state',
+          tooltip: onHome == null ? 'Recenter map' : 'Home',
           onTap: onHome ?? onReset,
         ),
         SizedBox(width: horizontal ? 10 : 0, height: horizontal ? 0 : 10),

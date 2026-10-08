@@ -5117,7 +5117,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
               child: MapActionControls(
                 horizontal: horizontalActions,
                 onReset: _resetMap,
-                onHome: _homeStateName == null ? null : _goToHomeState,
+                onHome: _goToHomeState,
                 onBack: _focusedRetailerId != null
                     ? _returnToCityFromRetailer
                     : _selectedCityName != null

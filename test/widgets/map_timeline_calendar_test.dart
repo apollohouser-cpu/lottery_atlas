@@ -62,6 +62,15 @@ void main() {
         expect(tester.widget<ChoiceChip>(chip).selected, isTrue);
         expect(tester.takeException(), isNull);
       }
+      final modeRects = ['Day', 'Week', 'Month', 'Year']
+          .map(
+            (label) => tester.getRect(find.widgetWithText(ChoiceChip, label)),
+          )
+          .toList();
+      for (final rect in modeRects) {
+        expect(rect.top, modeRects.first.top);
+        expect(rect.width, closeTo(modeRects.first.width, 0.01));
+      }
       expect(find.text('HEAT INDEX'), findsOneWidget);
       expect(find.text('Low'), findsOneWidget);
       expect(find.text('High'), findsOneWidget);

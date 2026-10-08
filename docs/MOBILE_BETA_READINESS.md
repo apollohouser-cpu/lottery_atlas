@@ -314,3 +314,18 @@ and screenshots verified the timeline and its close button, and the accessibilit
 tree returned in portrait. This is layout smoke coverage, not complete mobile or
 accessibility acceptance. Only one simulator remained running, upright with the
 updated build; no signing, upload, state-feed changes or new state activation.
+
+### October 8 — user review: Home and timeline alignment
+
+Corrected the follow-up review findings: Day/Week/Month/Year now occupy their own
+single equal-width row beneath playback controls, with stable widths on selection.
+The map Home icon is always present; its existing handler opens a saved home state
+or resets to the national map when no home state is configured. Previously the
+control displayed a recenter icon whenever a home state was unset.
+
+Eight timeline tests pass, now asserting equal widths and a common row at
+320/390/900 widths. Three-file analysis retains only four existing Radio API infos.
+iOS simulator debug build passes (9.8s); installed native portrait inspection
+confirms the house icon and all four aligned choices. Month selection and Home tap
+were exercised; the app remains open for user review. This does not add platform
+acceptance, signing or distribution claims.
