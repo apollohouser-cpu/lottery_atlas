@@ -409,3 +409,78 @@ def parse_xo_reports(documents,today=None):
     if len(reports) < 2 or len({r['id'] for r in reports}) != len(reports):
         raise ValueError('Two unique Xs and Os reports required')
     return sorted(reports,key=lambda r:r['drawDate'],reverse=True)[:2]
+
+
+PB_MATCHES = ['5+PB','5','4+PB','4','3+PB','3','2+PB','1+PB','PB']
+PB_POWER_FIELDS = ['5','4p','4','3p','3','2p','1p','p']
+
+
+def parse_powerball_report(raw, source_url, today=None):
+    match = re.fullmatch(r'https://nclottery\.com/powerball\?dd=(\d{2}/\d{2}/\d{4})',source_url)
+    if not match or b'</html>' not in raw.lower(): raise ValueError('Invalid Powerball source/document')
+    requested = datetime.strptime(match[1],'%m/%d/%Y').date()
+    mains = html.fromstring(raw).xpath('//main')
+    if len(mains) != 1: raise ValueError('Missing/duplicate Powerball main')
+    main = mains[0]
+    def node(suffix):
+        found = main.xpath('.//span[@id=$id]',id='ctl00_MainContent_'+suffix)
+        if len(found) != 1: raise ValueError('Missing/duplicate Powerball field: '+suffix)
+        return found[0]
+    for suffix in ['lblDrawdate','lblDrawDateDP']:
+        label = text(node(suffix));date = datetime.strptime(label,'%A, %b %d, %Y').date()
+        if date != requested or label.split(',')[0] != date.strftime('%A') or date > (today or datetime.now(timezone.utc).date()):
+            raise ValueError('Powerball date mismatch/future')
+    tables = main.xpath('.//table[contains(concat(" ",normalize-space(@class)," ")," payout_results ")]')
+    if len(tables) != 2: raise ValueError('Both Powerball tables required')
+    power_label = text(node('lblPowerplay'))
+    if not re.fullmatch(r'POWER PLAY (2|3|4|5|10)x',power_label): raise ValueError('Invalid Power Play label')
+    variants=[];warnings=[]
+    for index,table in enumerate(tables):
+        dp='DP' if index else ''
+        numbers=[integer(text(node('lblBall'+str(i)+dp))) for i in range(1,6)]
+        bonus=integer(text(node('lblPowerball'+dp)))
+        if len(set(numbers)) != 5 or any(n<1 or n>69 for n in numbers) or not 1<=bonus<=26:
+            raise ValueError('Invalid Powerball numbers')
+        if [text(c) for c in table.xpath('./caption')] != ['Winnings'] or [text(c) for c in table.xpath('./thead/tr/th')] != ['Match','Prize','Wins']:
+            raise ValueError('Changed Powerball columns')
+        expected_note='This table shows North Carolina wins.'+('' if index else ' Powerball jackpots won outside the state of North Carolina are not shown.')
+        if [schedule_text(c) for c in table.xpath('./tfoot/tr/td')] != [expected_note]: raise ValueError('Changed Powerball scope')
+        rows=table.xpath('./tbody/tr')
+        if len(rows)!=9: raise ValueError('Incomplete Powerball tiers')
+        tiers=[];power=[]
+        for i,(row,identity) in enumerate(zip(rows,PB_MATCHES)):
+            cells=row.xpath('./td')
+            if len(cells)!=3: raise ValueError('Changed Powerball tier width')
+            # Verify the displayed symbols independently of the accessibility label.
+            symbols=cells[0].xpath('./span[contains(concat(" ",normalize-space(@class)," ")," ball-mini ")]')
+            white=sum(text(s).count('◯') for s in symbols)
+            red=sum(text(s).count('⬤') for s in symbols)
+            visual=(str(white) if white else '')+('+' if white and red else '')+('PB' if red else '')
+            if red>1 or visual!=identity: raise ValueError('Changed Powerball match symbols')
+            source_identity=cells[0].get('aria-label')
+            if source_identity!=identity:
+                if not (index==1 and i==3 and source_identity=='4+PB'):
+                    raise ValueError('Powerball match label disagreement')
+                warnings.append('Double Play four-white-ball row displays four white balls without a Powerball, but its source accessibility label says 4+PB. Both source labels are retained; no counts are reassigned.')
+            def values(prize_key,wins_key):
+                p,w=node(prize_key),node(wins_key)
+                if p.getparent()!=cells[1] or w.getparent()!=cells[2]: raise ValueError('Powerball variant/column misalignment')
+                prize=text(p);money_cents(prize)
+                return dict(matchLabel=identity,sourceMatchLabel=source_identity,prizeLabel=prize,reportedWins=integer(text(w)))
+            tiers.append(values('lblPay'+str(i)+'DP' if index else 'lblJackpot' if i==0 else 'lblPay'+str(i),
+                                'lblt'+str(i)+'DP' if index else 'lbljp' if i==0 else 'lblt'+str(i)))
+            if not index and i:
+                if [text(s) for s in cells[0].xpath('./span[@class="label-powerplay"]')]!=['POWER PLAY']:
+                    raise ValueError('Missing Power Play row identity')
+                power.append(values('lblppo'+PB_POWER_FIELDS[i-1],'lblp'+str(i)))
+        variants.append(dict(name='Double Play' if index else 'Powerball',winningNumbers=numbers,powerball=bonus,tiers=tiers,notes=[expected_note]))
+        if not index: variants.append(dict(name='Power Play',multiplierLabel=power_label,tiers=power,notes=['The jackpot row is shared with the base table; no separate Power Play jackpot count is printed.']))
+    return dict(id='powerball-'+requested.isoformat(),game='Powerball',session='Drawing',drawDate=requested.isoformat(),reportType='tier-report',
+        variants=variants,sourceWarnings=warnings,sourceUrl=source_url,
+        coverage='North Carolina Wins only. Base, Power Play and Double Play counts remain separate; no distinct-person, total-payout, cash-option or retailer-location inference.')
+
+
+def parse_powerball_reports(documents,today=None):
+    reports=[parse_powerball_report(raw,url,today=today) for url,raw in documents]
+    if len(reports)<2 or len({r['id'] for r in reports})!=len(reports): raise ValueError('Two unique Powerball reports required')
+    return sorted(reports,key=lambda r:r['drawDate'],reverse=True)[:2]

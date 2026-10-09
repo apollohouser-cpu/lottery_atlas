@@ -299,3 +299,24 @@ before recent selection. Powerball and Mega Millions are the remaining report
 families; combined atomic refresh/publication, report UI and native acceptance
 still follow. No public report feed, mobile interruption or acceptance claim.
 Release deadline remains October 13 at 10:38 ET.
+
+### October 8, 23:47 ET — Powerball variants parsed privately
+
+Two fresh dated Powerball details (October 7/5) validate separate base, Power
+Play and Double Play data: 9 / 8 / 9 tier entries per report. No separate Power
+Play jackpot winner count is manufactured. Requested/base/Double Play dates,
+weekday, numbers, explicit fields, displayed match symbols, columns, scope and
+nonnegative Wins are checked. Prize labels remain literal without paid-total or
+cash-option conversion. Twenty-four draw-parser tests pass.
+
+Both source pages have a specific Double Play labeling inconsistency: the row
+showing four white balls without a Powerball has accessibility label `4+PB`.
+The parser verifies the displayed symbols and the exact row fields, preserves
+both labels, and emits a source warning. Other disagreements fail closed. This
+warning must remain visible in the report UI; counts are not moved between rows.
+The fixture captures only public draw fields/tables, not private correspondence.
+
+Private results are `work/north_carolina_scope/powerball-reports.json`. Mega
+Millions is the remaining parser family. Combined refresh/publication, report
+UI, archive/directory audit and native acceptance remain pending. No public
+report promotion or simulator interruption; release deadline unchanged.

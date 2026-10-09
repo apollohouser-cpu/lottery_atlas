@@ -303,3 +303,51 @@ class NCXsOsTests(unittest.TestCase):
         with self.assertRaises(ValueError):parse_xo_reports(docs+docs[:1])
         docs[0]=(docs[0][0],docs[0][1].replace(b'1,810',b'1.5'))
         with self.assertRaises(ValueError):parse_xo_reports(docs)
+
+
+from north_carolina_draw_reports import parse_powerball_report, parse_powerball_reports
+
+
+def powerball_fixture():
+    return (Path(__file__).resolve().parents[1]/'fixtures/north_carolina/powerball-2026-10-07.html').read_bytes()
+
+
+class NCPowerballTests(unittest.TestCase):
+    def test_variants_and_source_disagreement_preserved(self):
+        r=parse_powerball_report(powerball_fixture(),'https://nclottery.com/powerball?dd=10/07/2026')
+        base,power,dp=r['variants']
+        self.assertEqual([len(v['tiers']) for v in r['variants']],[9,8,9])
+        self.assertEqual(base['tiers'][2]['reportedWins'],1)
+        self.assertEqual(power['tiers'][1]['reportedWins'],0)
+        self.assertEqual(power['multiplierLabel'],'POWER PLAY 2x')
+        self.assertEqual(dp['tiers'][3]['matchLabel'],'4')
+        self.assertEqual(dp['tiers'][3]['sourceMatchLabel'],'4+PB')
+        self.assertEqual(dp['tiers'][3]['reportedWins'],1)
+        self.assertEqual(len(r['sourceWarnings']),1)
+        self.assertNotIn('totalPayout',r)
+
+    def test_malformed_date_identity_and_values_rejected(self):
+        raw=powerball_fixture()
+        for before,after in [(b'Wednesday',b'Tuesday'),(b'lblDrawDateDP',b'missingDate'),
+            (b'>11</span>',b'>70</span>'),(b'>11</span>',b'>13</span>'),(b'>19</span>',b'>27</span>'),
+            (b'2x',b'6x'),(b'lblPay3DP',b'lblPay2DP'),
+            (b'$484,800,000',b'$484,80,000'),(b'>7228</span>',b'>-1</span>'),
+            (b'North Carolina wins.',b'National wins.'),(b'aria-label="5+PB"',b'aria-label="4+PB"'),(b'</html>',b'')]:
+            with self.subTest(before=before),self.assertRaises(ValueError):
+                parse_powerball_report(raw.replace(before,after,1),'https://nclottery.com/powerball?dd=10/07/2026')
+        with self.assertRaises(ValueError):parse_powerball_report(raw,'https://nclottery.com/powerball?dd=10/05/2026')
+        with self.assertRaises(ValueError):parse_powerball_report(raw,'https://nclottery.com/powerball?dd=10/07/2026',today=date(2026,10,6))
+
+    def test_bounded_unique_reports_and_source_label_repair(self):
+        raw=powerball_fixture();old=raw.replace(b'Wednesday, Oct 7',b'Monday, Oct 5')
+        docs=[('https://nclottery.com/powerball?dd=10/05/2026',old),('https://nclottery.com/powerball?dd=10/07/2026',raw)]
+        self.assertEqual([r['drawDate'] for r in parse_powerball_reports(docs)],['2026-10-07','2026-10-05'])
+        with self.assertRaises(ValueError):parse_powerball_reports(docs[:1])
+        with self.assertRaises(ValueError):parse_powerball_reports(docs+docs[:1])
+        from lxml import html,etree
+        root=html.fromstring(raw)
+        row=root.xpath('//span[@id="ctl00_MainContent_lblPay3DP"]/../..')[0]
+        row.xpath('./td')[0].set('aria-label','4')
+        self.assertEqual(parse_powerball_report(etree.tostring(root),'https://nclottery.com/powerball?dd=10/07/2026')['sourceWarnings'],[])
+        row.xpath('./td')[0].set('aria-label','3')
+        with self.assertRaises(ValueError):parse_powerball_report(etree.tostring(root),'https://nclottery.com/powerball?dd=10/07/2026')

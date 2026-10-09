@@ -232,3 +232,15 @@ The parser retains the source qualification that jackpots are shared, lower
 prizes may become pari-mutuel, and the table covers North Carolina only.
 No prize-by-count total, nationwide win count or map location is inferred.
 Two reports / ten tiers are privately validated; publication remains pending.
+
+### October 8, 23:47 ET — Powerball source-label discrepancy retained
+
+Fresh October 7/5 dated reports each contain nine base tiers, eight separately
+printed Power Play tiers and nine Double Play tiers, all scoped to North
+Carolina. The Double Play four-white-ball row displays no red Powerball but
+carries the source accessibility label `4+PB`. The parser preserves that label
+alongside the independently checked visual match identity `4` and a warning;
+no silent correction or reassignment of Wins occurs. The future app report must
+show the warning. Other label/symbol disagreements fail validation. No separate
+Power Play jackpot count, paid total or national count is inferred. Private
+validation and 24 passing tests do not establish live or native acceptance.
