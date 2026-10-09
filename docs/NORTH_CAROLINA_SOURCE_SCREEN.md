@@ -281,3 +281,9 @@ map activity or invent retailer positions. Live publication verification remains
 pending at this checkpoint, as do the first scheduled three-output refresh,
 Flutter report loader/UI, archive/directory audit and native acceptance.
 North Carolina is not accepted; October 13 at 10:38 ET remains the deadline.
+
+Publication verification: publisher 37895408995 succeeded for d36879a. Both
+public NC draw-report and Scratch-catalog endpoints independently match the
+validated baseline bytes exactly. This closes initial endpoint publication only;
+it does not establish a successful scheduled refresh or native remote adoption.
+The app report loader/UI and remaining acceptance gates are still pending.
