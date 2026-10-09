@@ -198,3 +198,15 @@ qualification about the chosen numbers and play type is retained. N/A remains
 N/A, not a zero-dollar payout. No schedule row has a fabricated winner count.
 The strict combined-report parser requires these schedules; private validation
 and eleven passing parser tests do not establish publication or native adoption.
+
+### October 8, 20:47 ET — Cash 5 dated tier evidence
+
+The official Cash 5 history links dated `cash5?dd=10/07/2026` and
+`cash5?dd=10/06/2026`; both detail pages were captured privately and validated.
+Each contains four base and four Double Play tiers under Match / Prize / Wins.
+The base and Double Play logos identify their separate numbers and tables;
+Double Play shares the page's dated draw context. The parser requires that date
+to match the requested dated URL. Official how-to-play text specifies five
+numbers from 1 to 43 for both variants. Advertised rollover estimates remain
+literal prize labels plus source footnotes, never computed payout totals.
+This adds private parser evidence only, not public feed or native adoption.

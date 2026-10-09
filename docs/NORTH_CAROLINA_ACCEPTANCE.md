@@ -239,3 +239,25 @@ Five other draw families, combined atomic refresh/publication, report UI and
 native acceptance remain pending. No public report feed or acceptance claim;
 October 13 at 10:38 ET release deadline unchanged. The user's current simulator
 review was not interrupted.
+
+### October 8, 20:47 ET — Cash 5 base and Double Play parser
+
+Implemented strict dated Cash 5 reports containing separate base and Double
+Play numbers and prize-distribution tables. Fresh detail URLs selected from the
+official history validate October 7 and October 6: two reports, four variant
+tables and sixteen tier rows. Source route/date/weekday, logo identity, table
+headers, ordered tier labels, unique 1–43 numbers and nonnegative printed Wins
+are checked. Missing or mismatched fields fail closed before recent selection.
+The official how-to-play page confirms the 1–43 range for both variants.
+
+October 7 base five-of-five is labeled $171,000* with zero Wins and a rollover /
+advertised-jackpot-estimate footnote; October 6 is $142,000*, also zero. Both
+Double Play tables print $50,000 with zero top-tier Wins. Literal labels and
+footnotes are retained without deriving amounts paid or distinct people.
+Private captures/results are under `work/north_carolina_scope/cash5-*`.
+
+Fifteen draw-parser tests pass, including four Cash 5 tests for variant identity,
+malformed dates/tiers/units/rollover, duplicate and insufficient reports, table
+swaps and validation of old rows before bounding. Four other draw families,
+atomic refresh/publication, report UI and native verification remain pending.
+No public report feed, simulator changes or acceptance claim; deadline unchanged.

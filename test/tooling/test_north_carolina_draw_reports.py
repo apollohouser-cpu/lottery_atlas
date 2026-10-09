@@ -159,3 +159,62 @@ class NCPickScheduleTests(unittest.TestCase):
               for day in [6,7,8] for i,session in enumerate(['Daytime','Evening'])]
         docs[0]=(docs[0][0],docs[0][1].replace(b'Payout / Win',b'Winners'))
         with self.assertRaises(ValueError):parse_pick_reports(docs,'Pick 3',today=date(2026,10,8))
+
+
+from north_carolina_draw_reports import parse_cash5_report, parse_cash5_reports
+
+
+def cash5_fixture(day=7):
+    parts=[]
+    for i,logo in enumerate(['Cash 5 Logo','Double Play Logo']):
+        def span(suffix,value):return f'<span id="ctl00_MainContent_rptCash5_ctl0{i}_{suffix}">{value}</span>'
+        date_field=span('lblDateValue',date(2026,10,day).strftime('%A, %b %d, %Y')) if i==0 else ''
+        balls=''.join(span('lblBall'+str(b),str(b)) for b in range(1,6))
+        parts.append(f'<div class="box parts details Cash5"><img alt="{logo}">{date_field}{balls}</div>')
+        rows=''
+        for n in [5,4,3,2]:
+            prize='$171,000*' if i==0 and n==5 else '$50,000' if n==5 else '$5'
+            rows+=f'<tr><td>{n} of 5</td><td>'+span('lblPrize'+str(n),prize)+'</td><td>'+span('lblWin'+str(n),'0' if n==5 else '20')+'</td></tr>'
+        note='*Rollover <br>Advertised Jackpot estimate at time of draw: $171,000.' if i==0 else ''
+        parts.append('<table class="datatable payout_results"><caption>Prize Distribution</caption><thead><tr><th>Match</th><th>Prize</th><th>Wins</th></tr></thead><tbody>'+rows+'</tbody><tfoot><tr><td colspan="3">'+span('lblTopPrizeFootnote',note)+'</td></tr></tfoot></table>')
+    return ('<html><main>'+''.join(parts)+'</main></html>').encode()
+
+
+class NCCash5Tests(unittest.TestCase):
+    def test_variants_separate_literal_rollover_and_wins(self):
+        r=parse_cash5_report(cash5_fixture(),'https://nclottery.com/cash5?dd=10/07/2026',today=date(2026,10,8))
+        self.assertEqual([v['name'] for v in r['variants']],['Cash 5','Double Play'])
+        base,dp=r['variants']
+        self.assertEqual(base['tiers'][0],dict(matchLabel='5 of 5',prizeLabel='$171,000*',reportedWins=0))
+        self.assertIn('Advertised Jackpot estimate',base['notes'][0])
+        self.assertEqual(dp['tiers'][0]['prizeLabel'],'$50,000')
+        self.assertEqual(dp['notes'],[])
+        self.assertNotIn('totalPayout',r)
+        self.assertNotIn('prizeCents',base['tiers'][0])
+
+    def test_structure_identity_dates_and_tier_values_fail_closed(self):
+        raw=cash5_fixture()
+        for before,after in [(b'Wednesday',b'Tuesday'),(b'2026',b'2027'),(b'lblDateValue',b'missingDate'),
+            (b'Double Play Logo',b'Cash 5 Logo'),(b'>1</span>',b'>44</span>'),(b'>1</span>',b'>2</span>'),
+            (b'lblBall5',b'missingBall'),(b'<th>Wins</th>',b'<th>Sales</th>'),(b'5 of 5',b'4 of 5'),
+            (b'$171,000*',b'$171,00*'),(b'>20</span>',b'>-20</span>'),(b'>0</span>',b'>1</span>'),
+            (b'*Rollover',b''),(b'lblPrize4',b'lblPrize3'),(b'</html>',b'')]:
+            with self.subTest(before=before),self.assertRaises(ValueError):
+                parse_cash5_report(raw.replace(before,after,1),'https://nclottery.com/cash5?dd=10/07/2026',today=date(2026,10,8))
+        for url in ['https://nclottery.com/cash5?dd=10/06/2026','https://other.example/cash5?dd=10/07/2026','https://nclottery.com/cash5?dd=10/07/2026&extra=1']:
+            with self.assertRaises(ValueError):parse_cash5_report(raw,url)
+        with self.assertRaises(ValueError):parse_cash5_report(raw,'https://nclottery.com/cash5?dd=10/07/2026',today=date(2026,10,6))
+
+    def test_batch_bounds_after_validation_and_requires_two_unique_draws(self):
+        docs=[(f'https://nclottery.com/cash5?dd=10/0{day}/2026',cash5_fixture(day)) for day in [5,7,6]]
+        self.assertEqual([r['drawDate'] for r in parse_cash5_reports(docs,today=date(2026,10,8))],['2026-10-07','2026-10-06'])
+        with self.assertRaises(ValueError):parse_cash5_reports(docs[:1])
+        with self.assertRaises(ValueError):parse_cash5_reports(docs+docs[:1])
+        docs[0]=(docs[0][0],docs[0][1].replace(b'<th>Wins</th>',b'<th>Sales</th>'))
+        with self.assertRaises(ValueError):parse_cash5_reports(docs)
+
+    def test_swapped_variant_tables_rejected(self):
+        from lxml import html,etree
+        root=html.fromstring(cash5_fixture());tables=root.xpath('//table');parent=tables[0].getparent()
+        parent.remove(tables[1]);parent.insert(1,tables[1])
+        with self.assertRaises(ValueError):parse_cash5_report(etree.tostring(root),'https://nclottery.com/cash5?dd=10/07/2026')

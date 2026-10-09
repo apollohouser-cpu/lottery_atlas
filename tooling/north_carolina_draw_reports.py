@@ -226,3 +226,74 @@ def parse_pick_report(raw, game, source_url, today=None):
     report = parse_pick_summary(raw, game, source_url, today=today)
     report['payoutSchedules'] = parse_pick_schedules(raw, game)
     return report
+
+
+def parse_cash5_report(raw, source_url, today=None):
+    """Dated base/Double Play tier tables; advertised prizes are never payouts."""
+    match = re.fullmatch(r'https://nclottery\.com/cash5\?dd=(\d{2}/\d{2}/\d{4})', source_url)
+    if not match or b'</html>' not in raw.lower():
+        raise ValueError('Invalid Cash 5 source/document')
+    requested_date = datetime.strptime(match[1], '%m/%d/%Y').date()
+    root = html.fromstring(raw)
+    mains = root.xpath('//main')
+    if len(mains) != 1: raise ValueError('Missing/duplicate Cash 5 main')
+    main = mains[0]
+    def node(index, suffix):
+        found = main.xpath('.//span[@id=$id]', id=f'ctl00_MainContent_rptCash5_ctl0{index}_'+suffix)
+        if len(found) != 1: raise ValueError('Missing/duplicate Cash 5 field: '+suffix)
+        return found[0]
+    label = text(node(0, 'lblDateValue'))
+    date = datetime.strptime(label, '%A, %b %d, %Y').date()
+    if label.split(',')[0] != date.strftime('%A') or date != requested_date:
+        raise ValueError('Cash 5 source date mismatch')
+    if date > (today or datetime.now(timezone.utc).date()):
+        raise ValueError('Future Cash 5 draw')
+    tables = main.xpath('.//table[contains(concat(" ",normalize-space(@class)," ")," payout_results ")]')
+    if len(tables) != 2: raise ValueError('Both Cash 5 prize tables required')
+    variants = []
+    for index, (table, name, logo) in enumerate(zip(tables, ['Cash 5','Double Play'], ['Cash 5 Logo','Double Play Logo'])):
+        if [text(c) for c in table.xpath('./caption')] != ['Prize Distribution'] or [text(c) for c in table.xpath('./thead/tr/th')] != ['Match','Prize','Wins']:
+            raise ValueError('Changed Cash 5 prize columns')
+        first_ball = node(index, 'lblBall1')
+        containers = first_ball.xpath('./ancestor::div[contains(concat(" ",normalize-space(@class)," ")," details ")]')
+        if len(containers) != 1 or containers[0].xpath('.//img/@alt') != [logo]:
+            raise ValueError('Missing/mismatched Cash 5 variant identity')
+        prefix = f'ctl00_MainContent_rptCash5_ctl0{index}_lblBall'
+        if len(main.xpath('.//span[starts-with(@id,$prefix)]', prefix=prefix)) != 5:
+            raise ValueError('Wrong Cash 5 ball count')
+        numbers = [integer(text(node(index, 'lblBall'+str(i)))) for i in range(1,6)]
+        if len(set(numbers)) != 5 or any(n < 1 or n > 43 for n in numbers):
+            raise ValueError('Invalid Cash 5 numbers')
+        rows = table.xpath('./tbody/tr')
+        if len(rows) != 4: raise ValueError('Incomplete Cash 5 tier set')
+        tiers = []
+        for row, tier in zip(rows, [5,4,3,2]):
+            cells = row.xpath('./td')
+            if len(cells) != 3 or text(cells[0]) != f'{tier} of 5':
+                raise ValueError('Changed Cash 5 match tier')
+            prize_node, wins_node = node(index, 'lblPrize'+str(tier)), node(index, 'lblWin'+str(tier))
+            if prize_node.getparent() != cells[1] or wins_node.getparent() != cells[2]:
+                raise ValueError('Cash 5 tier column/variant mismatch')
+            prize = text(prize_node)
+            money_cents(prize.removesuffix('*'))  # Validate format, retain literal label only.
+            if '*' in prize and (index != 0 or tier != 5):
+                raise ValueError('Unexpected Cash 5 prize footnote marker')
+            tiers.append(dict(matchLabel=f'{tier} of 5', prizeLabel=prize, reportedWins=integer(text(wins_node))))
+        footnote = node(index, 'lblTopPrizeFootnote')
+        if table not in footnote.iterancestors(): raise ValueError('Cash 5 footnote outside variant table')
+        note = schedule_text(footnote)
+        if tiers[0]['prizeLabel'].endswith('*'):
+            if not note.startswith('*Rollover ') or 'Advertised Jackpot estimate at time of draw:' not in note or tiers[0]['reportedWins'] != 0:
+                raise ValueError('Unqualified/inconsistent Cash 5 rollover')
+        variants.append(dict(name=name, winningNumbers=numbers, tiers=tiers, notes=[note] if note else []))
+    return dict(id='cash-5-'+date.isoformat(), game='Cash 5', session='Daily', drawDate=date.isoformat(),
+        reportType='tier-report', sourceUrl=source_url, variants=variants,
+        coverage='Official dated Cash 5 and Double Play prize-distribution tables. Wins are the source units, not distinct people. Advertised jackpot estimates and prize labels are not total amounts paid. No retailer joins or map positions.')
+
+
+def parse_cash5_reports(documents, today=None):
+    reports = [parse_cash5_report(raw, url, today=today) for url, raw in documents]
+    if len({r['id'] for r in reports}) != len(reports):
+        raise ValueError('Duplicate Cash 5 draw')
+    if len(reports) < 2: raise ValueError('Two Cash 5 reports required')
+    return sorted(reports, key=lambda r:r['drawDate'], reverse=True)[:2]
