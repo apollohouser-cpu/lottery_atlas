@@ -422,3 +422,23 @@ tests pass across the targeted runs. No product code changed. The prepared
 older bundle; no rebuild or simulator interruption occurred. Native flows,
 source-return, retained-data behavior and supported-release acceptance remain
 open; the October 13 at 10:38 ET deadline is unchanged.
+
+### October 9, 10:55 ET — App coverage disclosures and remaining product routes
+
+The NC source page now receives an explicit coverage notice from the shared
+limitation registry: claim-date semantics, published-record units, unverified
+net payments, excluded news/shared prizes/ambiguous or unmatched retailers,
+and official-directory positions without independent geocoding or statewide
+completeness claims. A separate cadence notice distinguishes weekly archive,
+daily dated Scratch inventory, reorders and per-report dates/retention.
+
+Added official retailer search, Keno, Fast Play, Digital Instants, promotions
+and Lucke-Rewards routes from the retained official home capture. Each resource
+states its supported limit; no account access or participation is integrated.
+Archive resource descriptions now say published prize-claim records instead
+of implying certified ticket counts. Three changed registry files pass analysis
+and diff checks. Native rendering/source-return remains unverified; no build,
+install or interaction interrupted the user's simulator review. The prepared
+08:52 artifact predates these disclosure edits, so final native acceptance must
+use a new build after remaining code changes. NC is not accepted and the
+October 13 at 10:38 ET release deadline is unchanged.

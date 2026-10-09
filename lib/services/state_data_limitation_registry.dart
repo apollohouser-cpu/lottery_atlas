@@ -5,6 +5,18 @@ class StateDataLimitationRegistry {
 
   static String? noticeFor(String stateName) {
     final reason = switch (stateName) {
+      'North Carolina' =>
+        'Mapped activity uses selected published prize-claim records of \$5,000 '
+            'or more in the displayed period, dated by claim date, not draw or sale time. '
+            'Records are not certified distinct tickets or people, and listed prizes '
+            'are not verified net payments. News articles, shared-prize entries, '
+            'unmatched retailers and every repeated retailer name/city key are excluded. '
+            'Retained positions come from the official directory; they are not '
+            'independently geocoded or a complete statewide retailer layer. '
+            'Recent draw reports have separate source-defined units and do not '
+            'supply map positions. Keno, Fast Play, Digital Instants, promotions, '
+            'rewards and older history have official source routes only; their '
+            'claims and winner counts are not integrated.',
       'Texas' =>
         'Mapped 2026 activity includes selected Scratch top-prize claims with '
             'verified selling-retailer matches, plus selected Powerball and Mega Millions '

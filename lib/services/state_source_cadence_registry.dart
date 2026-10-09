@@ -6,6 +6,12 @@ class StateSourceCadenceRegistry {
 
   static String? noticeFor(String stateName) {
     switch (stateName) {
+      case 'North Carolina':
+        return 'The official high-prize winner archive is updated weekly. '
+            'Scratch-Off remaining prizes are updated daily through the stated '
+            'source date; Reordered status can increase inventory counts. '
+            'Draw reports retain their individual draw dates and retrieval time. '
+            'Failed refreshes retain the previous verified data and dates.';
       case 'Texas':
         return 'Lottery Atlas attempts Texas imports every six hours. '
             'This is our refresh schedule, not a guaranteed Texas Lottery '

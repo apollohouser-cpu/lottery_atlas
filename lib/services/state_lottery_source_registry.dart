@@ -55,25 +55,25 @@ class StateLotterySourceRegistry {
         StateLotteryResource(
           title: 'Powerball winner claims',
           subtitle:
-              'Official claimed-winning-ticket list, updated weekly for prizes of \$5,000 and above.',
+              'Published prize-claim records, updated weekly for prizes of \$5,000 and above.',
           url: 'https://nclottery.com/WinnersAll?g=PB&p=1',
         ),
         StateLotteryResource(
           title: 'Mega Millions winner claims',
           subtitle:
-              'Official claimed-winning-ticket list, updated weekly for prizes of \$5,000 and above.',
+              'Published prize-claim records, updated weekly for prizes of \$5,000 and above.',
           url: 'https://nclottery.com/WinnersAll?g=MM',
         ),
         StateLotteryResource(
           title: 'Cash 5 winner claims',
           subtitle:
-              'Official claimed-winning-ticket list, including qualifying Cash 5 prizes.',
+              'Published prize-claim records, including qualifying Cash 5 prizes.',
           url: 'https://nclottery.com/WinnersAll?g=C5&p=1',
         ),
         StateLotteryResource(
           title: 'Pick 4 winner claims',
           subtitle:
-              'Official claimed-winning-ticket list, including qualifying Pick 4 prizes.',
+              'Published prize-claim records, including qualifying Pick 4 prizes.',
           url: 'https://nclottery.com/WinnersAll?g=P4&p=1',
         ),
         StateLotteryResource(
@@ -85,6 +85,42 @@ class StateLotterySourceRegistry {
           title: 'Remaining Scratch-Off prizes',
           subtitle: 'Official prize counts, updated daily by the NC Lottery.',
           url: 'https://nclottery.com/scratch-off-prizes-remaining',
+        ),
+        StateLotteryResource(
+          title: 'Find an official retailer',
+          subtitle:
+              'Official directory search; a retailer listing does not establish wins.',
+          url: 'https://nclottery.com/retailers',
+        ),
+        StateLotteryResource(
+          title: 'Keno',
+          subtitle:
+              'Official game and results; winner-count history is not integrated.',
+          url: 'https://nclottery.com/keno',
+        ),
+        StateLotteryResource(
+          title: 'Fast Play',
+          subtitle:
+              'Official products and advertised jackpots; claims are not integrated.',
+          url: 'https://nclottery.com/fast-play',
+        ),
+        StateLotteryResource(
+          title: 'Digital Instants',
+          subtitle:
+              'Official product information; claims and account activity are not integrated.',
+          url: 'https://nclottery.com/digital-instants',
+        ),
+        StateLotteryResource(
+          title: 'Promotions and second chance',
+          subtitle:
+              'Official promotion rules and routes; participation and winner totals are not integrated.',
+          url: 'https://nclottery.com/promotions',
+        ),
+        StateLotteryResource(
+          title: 'Lucke-Rewards',
+          subtitle:
+              'Official rewards information; personal account data is not integrated.',
+          url: 'https://nclottery.com/lucke-rewards',
         ),
       ],
     ),
