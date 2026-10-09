@@ -138,3 +138,19 @@ Idaho games were present in the live combined catalog, which exactly matched
 the publisher's repository snapshot. The live activity and retailer feeds also
 matched their repository snapshots. Idaho is ready for current-catalog testing;
 its broader winning-ticket and retailer-map limitations remain unchanged.
+
+## October 8 official-form requirement and nonresident clarification
+
+The agency acknowledged the September request and requires the official request
+form before processing it; the form may be emailed directly to the responding
+records contact. No responsive records, fee estimate or delivery date arrived.
+The current [official forms page](https://www.idaholottery.com/pages/forms)
+links a September 2025 form that includes verification of Idaho residency under
+penalty of perjury. The requester cannot automatically make that declaration.
+
+Verified the new thread had no prior reply, then sent a bounded clarification
+asking whether a nonresident may leave that declaration blank or should use a
+separate form/process. Sent status is confirmed. Electronic delivery and no
+fee authorization were reiterated. No residency declaration, signature or form
+submission was made. Await guidance; do not resend. Existing technical source
+coverage remains unchanged, and Idaho is not activated by this correspondence.
