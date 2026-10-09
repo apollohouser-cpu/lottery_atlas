@@ -261,3 +261,23 @@ malformed dates/tiers/units/rollover, duplicate and insufficient reports, table
 swaps and validation of old rows before bounding. Four other draw families,
 atomic refresh/publication, report UI and native verification remain pending.
 No public report feed, simulator changes or acceptance claim; deadline unchanged.
+
+### October 8, 21:46 ET — Millionaire for Life dated reports
+
+Added strict Millionaire for Life parsing for the nine North Carolina tiers.
+Two fresh dated details (October 7/6) validate against the requested source date,
+weekday, five unique 1–58 numbers and Millionaire Ball 1–5. Official how-to-play
+text confirms those ranges. Match identities use the source's explicit
+accessibility labels rather than counting decorative ball glyphs. Column and
+field alignment, tier completeness and nonnegative Wins are validated.
+
+Both annual-for-life prize labels and the North Carolina-only qualification are
+retained literally, without cash conversion or paid-total calculation. Both
+captures report zero Wins in the top two tiers. Private captures/results are
+`work/north_carolina_scope/mfl-*` and `millionaire-reports.json`. Eighteen parser
+tests pass, including three new tests covering annuity/scope retention, malformed
+source rejection and complete validation before latest-two selection.
+
+Powerball, Mega Millions and Xs and Os remain, followed by atomic refresh,
+publication, report UI and native acceptance. No public report output or mobile
+restart; North Carolina remains unaccepted with its existing release deadline.

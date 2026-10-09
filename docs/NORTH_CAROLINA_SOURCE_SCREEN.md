@@ -210,3 +210,15 @@ to match the requested dated URL. Official how-to-play text specifies five
 numbers from 1 to 43 for both variants. Advertised rollover estimates remain
 literal prize labels plus source footnotes, never computed payout totals.
 This adds private parser evidence only, not public feed or native adoption.
+
+### October 8, 21:46 ET — Millionaire for Life tier validation
+
+Official history links for October 7 and October 6 were normalized only by
+removing spaces in their date query, then fetched privately. The response's
+printed date must exactly match the requested date. Each detail contains nine
+Match / Prize / Wins rows and explicitly limits the table to North Carolina;
+out-of-state jackpots are excluded. The first two prize labels remain
+$1 Million/year for life and $100,000/year for life. No annuity cash values or
+statewide distinct-person counts are inferred. The how-to-play source confirms
+five numbers from 1–58 and Millionaire Ball 1–5. Private parser validation and
+passing tests do not establish public publication or native adoption.

@@ -297,3 +297,63 @@ def parse_cash5_reports(documents, today=None):
         raise ValueError('Duplicate Cash 5 draw')
     if len(reports) < 2: raise ValueError('Two Cash 5 reports required')
     return sorted(reports, key=lambda r:r['drawDate'], reverse=True)[:2]
+
+
+MFL_MATCHES = ['5+MB','5','4+MB','4','3+MB','3','2+MB','2','1+MB']
+MFL_SCOPE = 'This table shows North Carolina wins. Millionaire For Life jackpots won outside the state of North Carolina are not shown.'
+
+
+def parse_millionaire_report(raw, source_url, today=None):
+    match = re.fullmatch(r'https://nclottery\.com/millionaire-for-life\?dd=(\d{2}/\d{2}/\d{4})', source_url)
+    if not match or b'</html>' not in raw.lower():
+        raise ValueError('Invalid Millionaire source/document')
+    requested = datetime.strptime(match[1], '%m/%d/%Y').date()
+    mains = html.fromstring(raw).xpath('//main')
+    if len(mains) != 1: raise ValueError('Missing/duplicate Millionaire main')
+    main = mains[0]
+    def node(suffix):
+        found = main.xpath('.//span[@id=$id]', id='ctl00_MainContent_'+suffix)
+        if len(found) != 1: raise ValueError('Missing/duplicate Millionaire field: '+suffix)
+        return found[0]
+    label = text(node('lblDrawdate'))
+    date = datetime.strptime(label, '%A, %b %d, %Y').date()
+    if date != requested or label.split(',')[0] != date.strftime('%A') or date > (today or datetime.now(timezone.utc).date()):
+        raise ValueError('Millionaire draw date mismatch/future')
+    numbers = [integer(text(node('lblBall'+str(i)))) for i in range(1,6)]
+    bonus = integer(text(node('lblBallM')))
+    if len(main.xpath('.//span[starts-with(@id,"ctl00_MainContent_lblBall")]')) != 6 or len(set(numbers)) != 5 or any(n < 1 or n > 58 for n in numbers) or not 1 <= bonus <= 5:
+        raise ValueError('Invalid Millionaire numbers')
+    tables = main.xpath('.//table[contains(concat(" ",normalize-space(@class)," ")," payout_results ")]')
+    if len(tables) != 1: raise ValueError('Missing/duplicate Millionaire table')
+    table = tables[0]
+    if [text(c) for c in table.xpath('./caption')] != ['Winnings'] or [text(c) for c in table.xpath('./thead/tr/th')] != ['Match','Prize','Wins']:
+        raise ValueError('Changed Millionaire columns')
+    notes = [schedule_text(c) for c in table.xpath('./tfoot/tr/td')]
+    if notes != [MFL_SCOPE]: raise ValueError('Missing/changed NC scope qualification')
+    rows = table.xpath('./tbody/tr')
+    if len(rows) != 9: raise ValueError('Incomplete Millionaire tiers')
+    tiers = []
+    for i, (row, identity) in enumerate(zip(rows, MFL_MATCHES),1):
+        cells = row.xpath('./td')
+        if len(cells) != 3 or cells[0].get('aria-label') != identity:
+            raise ValueError('Changed Millionaire match identity')
+        prize_node, wins_node = node('lblPay'+str(i)), node('lblt'+str(i))
+        if prize_node.getparent() != cells[1] or wins_node.getparent() != cells[2]:
+            raise ValueError('Millionaire tier field misalignment')
+        prize = text(prize_node)
+        if i <= 2:
+            if prize != ['$1 Million/year for life','$100,000/year for life'][i-1]:
+                raise ValueError('Changed Millionaire annuity label')
+        else: money_cents(prize)
+        tiers.append(dict(matchLabel=identity, prizeLabel=prize, reportedWins=integer(text(wins_node))))
+    return dict(id='millionaire-for-life-'+date.isoformat(),game='Millionaire for Life',session='Daily',
+        drawDate=date.isoformat(),reportType='tier-report',winningNumbers=numbers,millionaireBall=bonus,
+        tiers=tiers,notes=notes,sourceUrl=source_url,
+        coverage='North Carolina Wins only, not distinct people or nationwide jackpot counts. Annual-for-life prizes remain literal; no cash-option conversion, total-payout calculation or retailer joins.')
+
+
+def parse_millionaire_reports(documents, today=None):
+    reports = [parse_millionaire_report(raw,url,today=today) for url,raw in documents]
+    if len(reports) < 2 or len({r['id'] for r in reports}) != len(reports):
+        raise ValueError('Two unique Millionaire reports required')
+    return sorted(reports,key=lambda r:r['drawDate'],reverse=True)[:2]

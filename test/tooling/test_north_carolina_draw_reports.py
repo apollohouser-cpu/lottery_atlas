@@ -218,3 +218,49 @@ class NCCash5Tests(unittest.TestCase):
         root=html.fromstring(cash5_fixture());tables=root.xpath('//table');parent=tables[0].getparent()
         parent.remove(tables[1]);parent.insert(1,tables[1])
         with self.assertRaises(ValueError):parse_cash5_report(etree.tostring(root),'https://nclottery.com/cash5?dd=10/07/2026')
+
+
+from north_carolina_draw_reports import parse_millionaire_report, parse_millionaire_reports, MFL_SCOPE
+
+
+def millionaire_fixture(day=7):
+    def span(key,value):return f'<span id="ctl00_MainContent_{key}">{value}</span>'
+    fields=span('lblDrawdate',date(2026,10,day).strftime('%A, %b %d, %Y'))
+    fields+=''.join(span('lblBall'+str(i),str(i)) for i in range(1,6))+span('lblBallM','5')
+    rows=''
+    for i,match in enumerate(['5+MB','5','4+MB','4','3+MB','3','2+MB','2','1+MB'],1):
+        prize=['$1 Million/year for life','$100,000/year for life'][i-1] if i<3 else '$8'
+        rows+=f'<tr><td aria-label="{match}">graphic</td><td>'+span('lblPay'+str(i),prize)+'</td><td>'+span('lblt'+str(i),'0' if i<3 else '1,178')+'</td></tr>'
+    return ('<html><main>'+fields+'<table class="datatable payout_results"><caption>Winnings</caption><thead><tr><th>Match</th><th>Prize</th><th>Wins</th></tr></thead><tbody>'+rows+'</tbody><tfoot><tr><td>'+MFL_SCOPE+'</td></tr></tfoot></table></main></html>').encode()
+
+
+class NCMillionaireTests(unittest.TestCase):
+    def test_annuity_labels_nc_scope_and_source_units_retained(self):
+        r=parse_millionaire_report(millionaire_fixture(),'https://nclottery.com/millionaire-for-life?dd=10/07/2026')
+        self.assertEqual(r['tiers'][0]['prizeLabel'],'$1 Million/year for life')
+        self.assertEqual(r['tiers'][1]['prizeLabel'],'$100,000/year for life')
+        self.assertEqual(r['tiers'][8]['matchLabel'],'1+MB')
+        self.assertEqual(r['tiers'][8]['reportedWins'],1178)
+        self.assertEqual(r['notes'],[MFL_SCOPE])
+        self.assertNotIn('totalPayout',r)
+        self.assertNotIn('cashValue',r['tiers'][0])
+
+    def test_changed_dates_numbers_tiers_and_annuity_fail_closed(self):
+        for before,after in [(b'Wednesday',b'Tuesday'),(b'lblDrawdate',b'noDate'),(b'>1</span>',b'>59</span>'),
+            (b'>1</span>',b'>2</span>'),(b'lblBallM">5',b'lblBallM">6'),(b'lblBall5',b'noBall'),
+            (b'5+MB',b'5+PB'),(b'$1 Million/year for life',b'$1 Million'),(b'$8',b'$-8'),
+            (b'1,178',b'1,17'),(b'lblPay9',b'lblPay8'),(b'<th>Wins</th>',b'<th>Sales</th>'),
+            (MFL_SCOPE.encode(),b'Nationwide wins'),(b'</html>',b'')]:
+            with self.subTest(before=before),self.assertRaises(ValueError):
+                parse_millionaire_report(millionaire_fixture().replace(before,after,1),'https://nclottery.com/millionaire-for-life?dd=10/07/2026')
+        with self.assertRaises(ValueError):parse_millionaire_report(millionaire_fixture(),'https://nclottery.com/millionaire-for-life?dd=10/06/2026')
+        with self.assertRaises(ValueError):parse_millionaire_report(millionaire_fixture(),'https://nclottery.com/millionaire-for-life?dd=10/07/2026',today=date(2026,10,6))
+        with self.assertRaises(ValueError):parse_millionaire_report(millionaire_fixture(),'https://other.example/millionaire-for-life?dd=10/07/2026')
+
+    def test_unique_bounded_reports_validate_old_source_rows(self):
+        docs=[(f'https://nclottery.com/millionaire-for-life?dd=10/0{d}/2026',millionaire_fixture(d)) for d in [5,7,6]]
+        self.assertEqual([r['drawDate'] for r in parse_millionaire_reports(docs)],['2026-10-07','2026-10-06'])
+        with self.assertRaises(ValueError):parse_millionaire_reports(docs[:1])
+        with self.assertRaises(ValueError):parse_millionaire_reports(docs+docs[:1])
+        docs[0]=(docs[0][0],docs[0][1].replace(b'1,178',b'-1'))
+        with self.assertRaises(ValueError):parse_millionaire_reports(docs)
