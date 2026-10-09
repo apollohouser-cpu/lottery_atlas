@@ -322,3 +322,24 @@ The new sheet and source page analyze cleanly. This is automated UI evidence,
 not a full build, native source-return check or native remote adoption. Remaining
 archive/directory audit, scheduled-refresh evidence and integrated acceptance
 remain open. Deadline unchanged; user simulator review remains untouched.
+
+### October 9, 05:51 ET — Archive pagination and claim-date audit
+
+The official archive labels the date Claimed, covers prizes of $5,000 and up,
+and says it updates weekly; listed prize values can differ from net claim
+payments. A date-only noon-UTC transport value is not a draw or claim time.
+
+Fixed pagination to inspect unfiltered source dates and explicit next-page
+links rather than ending on an empty retailer-filtered page. Every page must
+identify the requested page, have distinct winner links and matching valid
+claim dates; dates must descend across pages. Repeated IDs, invalid calendar
+dates, unexpected next routes, empty/error pages and exhaustion of the 160-page
+safety bound now fail closed. The year boundary is applied only after checking
+all page dates. Unmatched locations cannot silently truncate later pages.
+
+Six Node tests pass, including traversal past an unmatched first page and saved
+output preservation on failure. A fresh private full import succeeds with
+17,874 records and 26 unmatched retailer names. Its activity rows and both
+source date fields exactly match the retained public baseline; no new mapped
+records or date changes are promoted. Full archive row-format/shared-prize unit
+audit and integrated native acceptance remain open; deadline unchanged.

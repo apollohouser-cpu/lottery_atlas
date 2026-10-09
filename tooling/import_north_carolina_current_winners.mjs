@@ -9,6 +9,7 @@
  * current, verifiable activity feed—not a claim that every lower-value winner
  * is published by the NC Lottery.
  */
+import {archivePage, claimDate} from './north_carolina_archive.mjs';
 import {writeFile} from 'node:fs/promises';
 import {uniqueRetailerIndex} from './north_carolina_directory.mjs';
 
@@ -76,8 +77,7 @@ if (!outputPath) {
       if (parts.length < 2 || /n\/a or other/i.test(rawLocation)) continue;
       const city = parts.at(-1);
       const retailerName = parts.slice(0, -1).join(', ');
-      const year = Number(date.slice(-4));
-      if (!city || !retailerName || year < startYear) continue;
+      if (!city || !retailerName) continue;
       rows.push({
         id,
         date,
@@ -89,21 +89,30 @@ if (!outputPath) {
     }
     return rows;
   };
-  const dateValue = (date) => {
-    const [month, day, year] = date.split('/').map(Number);
-    return new Date(Date.UTC(year, month - 1, day, 12));
-  };
   const buildRows = async (game) => {
-    const rows = [];
+    const rows = [], seen = new Set();
+    let previousDate = Infinity;
     for (let page = 1; page <= maxPagesPerGame; page += 1) {
       const html = await responseText(`${winnersUrl}?g=${game.code}&p=${page}`);
+      const evidence = archivePage(html, game, page);
+      for (const id of evidence.ids) {
+        if (seen.has(id)) throw Error('NC archive repeated a winner across pages');
+        seen.add(id);
+      }
+      // Inspect unfiltered source dates. An unmatched retailer does not end pagination.
+      const dates = [...html.matchAll(/<td[^>]*>(\d{2}\/\d{2}\/\d{4})<\/td>/g)].map(m => claimDate(m[1]));
+      if (dates.length !== evidence.ids.length) throw Error('NC archive date/row mismatch');
+      for (const date of dates) {
+        if (date.getTime() > previousDate) throw Error('NC archive claim dates are not descending');
+        previousDate = date.getTime();
+      }
       const pageRows = parseRows(html, game);
-      if (!pageRows.length) break;
-      rows.push(...pageRows);
-      const oldest = Math.min(...pageRows.map((row) => Number(row.date.slice(-4))));
-      if (oldest < startYear) break;
+      rows.push(...pageRows.filter(row => claimDate(row.date).getUTCFullYear() >= startYear));
+      if (!evidence.hasNext) return rows;
+      // Stop only once every row is older, never because a filtered page is empty.
+      if (dates.every(date => date.getUTCFullYear() < startYear)) return rows;
     }
-    return rows;
+    throw Error('NC archive pagination limit reached before boundary');
   };
 
   // News remains an official source route, but is excluded from mapped claims.
@@ -121,7 +130,7 @@ if (!outputPath) {
         unmatched.add(`${row.retailerName} — ${row.city}`);
         continue;
       }
-      const date = dateValue(row.date);
+      const date = claimDate(row.date);
       activities.push({
         id: `nc-winner-${row.id}`,
         latitude: retailer.latitude,

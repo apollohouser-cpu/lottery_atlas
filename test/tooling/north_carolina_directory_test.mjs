@@ -41,11 +41,12 @@ test('import excludes ambiguous archive branches and never requests news', async
       ['Unique Market',35.2,-80.2,null,'28000','Example','3 Main','Example City'],
     ]), ';'].join('');
     const row = (id, name) => `<td>$5,000</td><td>10/07/2026</td><td><a href="/Winner?id=${id}">Example</a></td><td>${name}, Example City</td>`;
+    const page = (rows,n=1,next=false) => `<span id="ctl00_MainContent_WinnersListDataPager"><a disabled="disabled">Previous</a>&nbsp;<span>${n}</span>&nbsp;${next ? '<a href="/WinnersAll?g=PB&amp;p=2">Next</a>' : '<a disabled="disabled">Next</a>'}&nbsp;</span><th>Claimed</th>${rows}`;
     await writeFile(preload, `globalThis.fetch = async (url) => {
       const u = new URL(url);
       if (u.pathname.includes('News')) throw Error('News must not be requested');
       return {ok:true,text:async()=>u.pathname.includes('WhereToPlay') ? ${JSON.stringify(directory)} :
-        (u.searchParams.get('g') === 'PB' && u.searchParams.get('p') === '1' ? ${JSON.stringify(row(1,'Sample Market')+row(2,'Unique Market'))} : '')};
+        (u.searchParams.get('g') === 'PB' && u.searchParams.get('p') === '1' ? ${JSON.stringify(page(row(1,'Sample Market'),1,true))} : u.searchParams.get('g') === 'PB' ? ${JSON.stringify(page(row(2,'Unique Market'),2))} : ${JSON.stringify(page(row(3,'Unmapped Market')))} )};
     };`);
     const result = spawnSync(process.execPath, ['--import',preload,importer.pathname,output], {encoding:'utf8'});
     assert.equal(result.status,0,result.stderr);
