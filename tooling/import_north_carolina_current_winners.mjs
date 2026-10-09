@@ -11,7 +11,7 @@
  */
 import {archivePage, archiveRows, claimDate} from './north_carolina_archive.mjs';
 import {writeFile} from 'node:fs/promises';
-import {uniqueRetailerIndex} from './north_carolina_directory.mjs';
+import {parseOfficialDirectory} from './north_carolina_directory.mjs';
 
 const winnersUrl = 'https://nclottery.com/WinnersAll';
 const directoryUrl = 'https://nclottery.com/Data/WhereToPlay.js.aspx';
@@ -45,28 +45,6 @@ if (!outputPath) {
     const response = await fetch(url, {headers: {'user-agent': 'LotteryAtlasOfficialDataBot/1.0'}});
     if (!response.ok) throw new Error(`${url} returned HTTP ${response.status}`);
     return response.text();
-  };
-  const parseDirectory = (script) => {
-    const source = script.match(/locationsAll\s*=\s*(\[.*\])\s*;?\s*$/s)?.[1];
-    if (!source) throw new Error('Official NC retailer directory was not found.');
-    const directory = JSON.parse(source);
-    const locations = [];
-    for (const entry of directory) {
-      const [name, latitude, longitude, , zip, county, address, city] = entry;
-      if (!name || !address || !city || !county || !Number.isFinite(latitude) || !Number.isFinite(longitude)) continue;
-      const location = {
-        retailerName: name,
-        latitude,
-        longitude,
-        address,
-        city,
-        county: `${county} County`,
-        zip: String(zip ?? ''),
-      };
-      locations.push(location);
-    }
-    const {map, ambiguousKeys} = uniqueRetailerIndex(locations);
-    return {map, locations, ambiguousKeys};
   };
   const parseRows = (html, game) => {
     const rows = [];
@@ -120,7 +98,7 @@ if (!outputPath) {
   // a branch match or prove that an article is absent from the archive.
 
   try {
-    const directory = parseDirectory(await responseText(directoryUrl));
+    const directory = parseOfficialDirectory(await responseText(directoryUrl));
     const rows = (await Promise.all(games.map(buildRows))).flat();
     const activities = [];
     const unmatched = new Set();

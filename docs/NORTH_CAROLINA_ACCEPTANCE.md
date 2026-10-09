@@ -461,3 +461,25 @@ public rows or dates are promoted. Each retained row represents a published
 archive claim record, not certified unique tickets or people; listed amounts
 are not verified net payments. Native acceptance and final directory-coordinate
 validation remain pending. Deadline unchanged; simulator review untouched.
+
+### October 9, 07:51 ET — Official directory structure and position guards
+
+The official directory parser now validates every eight-field row, required
+name/address/city/county text, ZIP format and finite coordinates inside a broad
+North Carolina envelope. Coordinates remain verbatim from the official source;
+this is a malformed/swapped-position guard, not independent street-address or
+boundary certification. Invalid rows stop the import instead of being discarded
+before collision detection, which could otherwise make another branch appear
+to match uniquely. All repeated name/city keys remain unavailable.
+
+The retained official capture has 7,528 eight-field rows, no missing required
+text and no points outside the broad envelope. Eight Node tests pass, including
+six malformed branch variants, duplicated branches and exact coordinate
+preservation. A fresh private full import succeeds with 17,874 mapped archive
+records and 26 unmatched names; every activity and both source dates match the
+retained baseline exactly. No records, positions or dates are changed publicly.
+
+This closes the structural directory guard work. Remaining integrated gates
+include scheduled three-output evidence, native report/catalog interaction,
+source-return and retained-data behavior. No native acceptance or simulator
+interruption; October 13 at 10:38 ET remains the release deadline.

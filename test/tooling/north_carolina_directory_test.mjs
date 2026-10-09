@@ -60,3 +60,16 @@ test('import excludes ambiguous archive branches and never requests news', async
     assert.deepEqual(await readFile(output),before);
   } finally { await rm(dir,{recursive:true,force:true}); }
 });
+
+import {parseOfficialDirectory} from '../../tooling/north_carolina_directory.mjs';
+test('directory preserves official coordinates and rejects malformed branches before joining',()=>{
+ const good=['Sample Market',35.2,-80.2,null,'28000','Example','3 Main','Example City'];
+ const source=rows=>`locationsAll=${JSON.stringify(rows)};`;
+ assert.equal(parseOfficialDirectory(source([good])).locations[0].latitude,35.2);
+ for(const mutate of [r=>r[1]=null,r=>r[1]=-80,r=>r[2]=35,r=>r[6]='',r=>r[4]='bad',r=>r.push('unknown')]) {
+   const bad=[...good]; mutate(bad);
+   assert.throws(()=>parseOfficialDirectory(source([good,bad])));
+ }
+ assert.equal(parseOfficialDirectory(source([good,[...good]])).map.size,0);
+ assert.throws(()=>parseOfficialDirectory(source([])));
+});
