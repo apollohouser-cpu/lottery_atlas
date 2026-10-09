@@ -351,3 +351,44 @@ class NCPowerballTests(unittest.TestCase):
         self.assertEqual(parse_powerball_report(etree.tostring(root),'https://nclottery.com/powerball?dd=10/07/2026')['sourceWarnings'],[])
         row.xpath('./td')[0].set('aria-label','3')
         with self.assertRaises(ValueError):parse_powerball_report(etree.tostring(root),'https://nclottery.com/powerball?dd=10/07/2026')
+
+
+from north_carolina_draw_reports import parse_mega_report, parse_mega_reports
+
+
+def mega_fixture():
+    return (Path(__file__).resolve().parents[1]/'fixtures/north_carolina/mega-2026-10-06.html').read_bytes()
+
+
+class NCMegaTests(unittest.TestCase):
+    def test_multiplier_alignment_and_source_warning(self):
+        r=parse_mega_report(mega_fixture(),'https://nclottery.com/mega-millions?dd=10/06/2026')
+        self.assertEqual(len(r['tiers']),41)
+        self.assertIsNone(r['tiers'][0]['multiplierLabel'])
+        tier=next(t for t in r['tiers'] if t['matchLabel']=='4' and t['multiplierLabel']=='X3')
+        self.assertEqual((tier['prizeLabel'],tier['reportedWins']),('$1,500',1))
+        tier=next(t for t in r['tiers'] if t['matchLabel']=='1+MB' and t['multiplierLabel']=='X2')
+        self.assertEqual((tier['sourceMatchLabel'],tier['reportedWins']),('2',683))
+        self.assertEqual(len(r['sourceWarnings']),1)
+        self.assertEqual(r['multiplierHeading'],'Megaplier')
+
+    def test_malformed_multiplier_rows_fail_without_shifting(self):
+        for before,after in [(b'Tuesday',b'Monday'),(b'>26</span>',b'>71</span>'),(b'>26</span>',b'>32</span>'),
+            (b'>22</span>',b'>25</span>'),(b'X10<br>X5',b'X10<br>'),(b'X10<br>X5',b'X5<br>X10'),
+            (b'0<br>0<br>0<br>0<br>0',b'0<br>0<br>0<br>0'),(b'$345,000,000',b'$345,00,000'),
+            (b'1,652',b'-1'),(b'lblWin8',b'lblWin7'),(b'Megaplier',b'Other'),
+            (b'North Carolina winners only.',b'Nationwide winners.'),(b'aria-label="5+MB"',b'aria-label="5"'),(b'</html>',b'')]:
+            with self.subTest(before=before),self.assertRaises(ValueError):
+                parse_mega_report(mega_fixture().replace(before,after,1),'https://nclottery.com/mega-millions?dd=10/06/2026')
+        with self.assertRaises(ValueError):parse_mega_report(mega_fixture(),'https://nclottery.com/mega-millions?dd=10/02/2026')
+        with self.assertRaises(ValueError):parse_mega_report(mega_fixture(),'https://nclottery.com/mega-millions?dd=10/06/2026',today=date(2026,10,5))
+
+    def test_bounded_unique_reports_and_corrected_source_label(self):
+        raw=mega_fixture();old=raw.replace(b'Tuesday, Oct 6',b'Friday, Oct 2')
+        docs=[('https://nclottery.com/mega-millions?dd=10/02/2026',old),('https://nclottery.com/mega-millions?dd=10/06/2026',raw)]
+        self.assertEqual([r['drawDate'] for r in parse_mega_reports(docs)],['2026-10-06','2026-10-02'])
+        with self.assertRaises(ValueError):parse_mega_reports(docs[:1])
+        with self.assertRaises(ValueError):parse_mega_reports(docs+docs[:1])
+        repaired=raw.replace(b'aria-label="2"',b'aria-label="1+MB"')
+        self.assertEqual(parse_mega_report(repaired,docs[1][0])['sourceWarnings'],[])
+        with self.assertRaises(ValueError):parse_mega_report(raw.replace(b'aria-label="2"',b'aria-label="3"'),docs[1][0])

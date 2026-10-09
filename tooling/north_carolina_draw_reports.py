@@ -484,3 +484,68 @@ def parse_powerball_reports(documents,today=None):
     reports=[parse_powerball_report(raw,url,today=today) for url,raw in documents]
     if len(reports)<2 or len({r['id'] for r in reports})!=len(reports): raise ValueError('Two unique Powerball reports required')
     return sorted(reports,key=lambda r:r['drawDate'],reverse=True)[:2]
+
+
+def parse_mega_report(raw, source_url, today=None):
+    match=re.fullmatch(r'https://nclottery\.com/mega-millions\?dd=(\d{2}/\d{2}/\d{4})',source_url)
+    if not match or b'</html>' not in raw.lower(): raise ValueError('Invalid Mega Millions source/document')
+    requested=datetime.strptime(match[1],'%m/%d/%Y').date()
+    mains=html.fromstring(raw).xpath('//main')
+    if len(mains)!=1: raise ValueError('Missing/duplicate Mega Millions main')
+    main=mains[0]
+    def node(suffix):
+        found=main.xpath('.//span[@id=$id]',id='ctl00_MainContent_'+suffix)
+        if len(found)!=1: raise ValueError('Missing/duplicate Mega Millions field: '+suffix)
+        return found[0]
+    label=text(node('lblDrawdate'));date=datetime.strptime(label,'%A, %b %d, %Y').date()
+    if date!=requested or label.split(',')[0]!=date.strftime('%A') or date>(today or datetime.now(timezone.utc).date()):
+        raise ValueError('Mega Millions date mismatch/future')
+    numbers=[integer(text(node('lblNum'+str(i)))) for i in range(1,6)]
+    bonus=integer(text(node('lblMegaball')))
+    if len(set(numbers))!=5 or any(n<1 or n>70 for n in numbers) or not 1<=bonus<=24:
+        raise ValueError('Invalid Mega Millions numbers')
+    tables=main.xpath('.//table[contains(concat(" ",normalize-space(@class)," ")," payout_results ")]')
+    if len(tables)!=1: raise ValueError('Missing/duplicate Mega Millions table')
+    table=tables[0]
+    if [text(c) for c in table.xpath('./caption')]!=['Prize Payout'] or [text(c) for c in table.xpath('./thead/tr/th')]!=['Match','Megaplier','Prize','Wins']:
+        raise ValueError('Changed Mega Millions columns')
+    notes=[schedule_text(c) for c in table.xpath('./tfoot/tr/td')]
+    if notes!=['This table represents North Carolina winners only.']: raise ValueError('Changed Mega Millions scope')
+    rows=table.xpath('./tbody/tr')
+    if len(rows)!=9: raise ValueError('Incomplete Mega Millions tiers')
+    identities=['5+MB','5','4+MB','4','3+MB','3','2+MB','1+MB','MB']
+    tiers=[];warnings=[]
+    def lines(n):
+        # A trailing <br> is allowed, but a missing middle entry must not shift columns.
+        if any(c.tag!='br' for c in n): raise ValueError('Changed multiplier cell structure')
+        values=[(n.text or '').strip()]+[(c.tail or '').strip() for c in n]
+        if len(values)>1 and values[-1]=='': values.pop()
+        return values
+    for i,(row,identity) in enumerate(zip(rows,identities)):
+        cells=row.xpath('./td');suffix='Jackpot' if i==0 else str(i)
+        if len(cells)!=4: raise ValueError('Changed Mega Millions tier width')
+        ns=[node(prefix+suffix) for prefix in ['lblTier','lblMP','lblPay','lblWin']]
+        if any(n.getparent()!=c for n,c in zip(ns,cells)): raise ValueError('Mega Millions field alignment')
+        symbols=ns[0].xpath('./span[contains(concat(" ",normalize-space(@class)," ")," ball-mini ")]')
+        white=sum(text(s).count('◯') for s in symbols);red=sum(text(s).count('⬤') for s in symbols)
+        visual=(str(white) if white else '')+('+' if white and red else '')+('MB' if red else '')
+        if red>1 or visual!=identity: raise ValueError('Changed Mega Millions match symbols')
+        source_identity=cells[0].get('aria-label')
+        if source_identity!=identity:
+            if not (i==7 and source_identity=='2'): raise ValueError('Mega Millions match disagreement')
+            warnings.append('The one-white-ball plus Mega Ball row displays 1+MB, but its source accessibility label says 2. Both labels are retained; no counts are reassigned.')
+        multipliers,prizes,wins=[lines(n) for n in ns[1:]]
+        if multipliers!=([''] if i==0 else ['X10','X5','X4','X3','X2']) or len(prizes)!=len(multipliers) or len(wins)!=len(multipliers):
+            raise ValueError('Incomplete/misaligned Mega Millions multipliers')
+        for multiplier,prize,win in zip(multipliers,prizes,wins):
+            money_cents(prize)
+            tiers.append(dict(matchLabel=identity,sourceMatchLabel=source_identity,multiplierLabel=multiplier or None,prizeLabel=prize,reportedWins=integer(win)))
+    return dict(id='mega-millions-'+date.isoformat(),game='Mega Millions',session='Drawing',drawDate=date.isoformat(),reportType='tier-report',winningNumbers=numbers,megaBall=bonus,
+        multiplierHeading='Megaplier',tiers=tiers,notes=notes,sourceWarnings=warnings,sourceUrl=source_url,
+        coverage='North Carolina source Wins by printed multiplier only. Jackpot has no multiplier. No distinct-person total, paid-total calculation, cash-option conversion or retailer joins.')
+
+
+def parse_mega_reports(documents,today=None):
+    reports=[parse_mega_report(raw,url,today=today) for url,raw in documents]
+    if len(reports)<2 or len({r['id'] for r in reports})!=len(reports): raise ValueError('Two unique Mega Millions reports required')
+    return sorted(reports,key=lambda r:r['drawDate'],reverse=True)[:2]

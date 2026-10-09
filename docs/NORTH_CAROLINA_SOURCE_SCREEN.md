@@ -244,3 +244,13 @@ no silent correction or reassignment of Wins occurs. The future app report must
 show the warning. Other label/symbol disagreements fail validation. No separate
 Power Play jackpot count, paid total or national count is inferred. Private
 validation and 24 passing tests do not establish live or native acceptance.
+
+### October 9, 00:46 ET — Mega Millions multiplier evidence
+
+Two fresh dated reports (October 6/2) retain all printed X10/X5/X4/X3/X2 prize
+and Wins entries, plus the jackpot without a multiplier. Source heading
+Megaplier remains literal. The source explicitly limits these to North Carolina.
+The displayed one-white-ball plus Mega Ball row conflicts with its accessibility
+label `2`; both are retained with a required UI warning. No count is reassigned
+or summed into a distinct-ticket/person claim. Strict structural/multiplier tests
+pass; private report validation does not establish publication or native adoption.

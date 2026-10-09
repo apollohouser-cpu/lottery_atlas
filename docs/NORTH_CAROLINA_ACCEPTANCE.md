@@ -320,3 +320,24 @@ Private results are `work/north_carolina_scope/powerball-reports.json`. Mega
 Millions is the remaining parser family. Combined refresh/publication, report
 UI, archive/directory audit and native acceptance remain pending. No public
 report promotion or simulator interruption; release deadline unchanged.
+
+### October 9, 00:46 ET — Mega Millions parser; eight families covered privately
+
+Fresh October 6/2 details validate 41 entries each: one jackpot plus five
+printed multiplier entries for each of eight lower tiers. The parser preserves
+the source heading Megaplier and X10/X5/X4/X3/X2 labels, checking line-by-line
+prize/Wins alignment. Empty or missing middle values cannot shift a multiplier's
+counts into another column. Jackpot multiplier stays absent, not invented.
+
+Both pages display one white ball plus Mega Ball on the row whose accessibility
+label says `2`. As with the Powerball discrepancy, visual identity and exact
+fields are validated independently; both identities and an explicit warning
+are retained. The report UI must display this warning. Unknown disagreements
+fail closed. No amounts paid, cash options or distinct-person totals are derived.
+
+All eight scoped families now have private parser evidence, totaling 28 bounded
+reports across 14 game/session groups. Twenty-seven draw-parser tests pass.
+Private results are `work/north_carolina_scope/mega-reports.json`; this is not
+an integrated feed or acceptance. Next: combined atomic refresh/schema,
+publication, app report loader/UI, remaining archive/directory audit and native
+acceptance. Deadline remains October 13 at 10:38 ET; simulator review untouched.
