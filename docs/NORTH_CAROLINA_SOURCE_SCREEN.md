@@ -222,3 +222,13 @@ $1 Million/year for life and $100,000/year for life. No annuity cash values or
 statewide distinct-person counts are inferred. The how-to-play source confirms
 five numbers from 1–58 and Millionaire Ball 1–5. Private parser validation and
 passing tests do not establish public publication or native adoption.
+
+### October 8, 22:46 ET — Xs and Os bounded report evidence
+
+Fresh official history links yielded dated October 4 and September 27 details.
+Date-query spaces were removed; response dates were checked against the URL.
+Both expose Match 8 through Match 4, Cash Prize* and Wins, plus eight team labels.
+The parser retains the source qualification that jackpots are shared, lower
+prizes may become pari-mutuel, and the table covers North Carolina only.
+No prize-by-count total, nationwide win count or map location is inferred.
+Two reports / ten tiers are privately validated; publication remains pending.

@@ -264,3 +264,42 @@ class NCMillionaireTests(unittest.TestCase):
         with self.assertRaises(ValueError):parse_millionaire_reports(docs+docs[:1])
         docs[0]=(docs[0][0],docs[0][1].replace(b'1,178',b'-1'))
         with self.assertRaises(ValueError):parse_millionaire_reports(docs)
+
+
+from north_carolina_draw_reports import parse_xo_report, parse_xo_reports, XO_SCOPE
+
+
+def xo_fixture(day=4):
+    def span(key,value):return f'<span id="ctl00_MainContent_{key}">{value}</span>'
+    fields=span('lblDrawdate',date(2026,10,day).strftime('%A, %b %d, %Y'))
+    fields+=''.join(span('lblTeam'+str(i),t) for i,t in enumerate(['ATL','BAL','CAR','DEN','DET','JAX','LAC','WAS'],1))
+    rows=''.join(f'<tr><td aria-label="Match {9-i}">Match {9-i}</td><td>'+span('lblPay'+str(i),'$1,220,000' if i==1 else '$7')+'</td><td>'+span('lblTier'+str(i),'0' if i==1 else '1,810')+'</td></tr>' for i in range(1,6))
+    return ('<html><main>'+fields+'<table class="datatable payout_results"><caption>Prize Payout</caption><thead><tr><th>Match</th><th>Cash Prize*</th><th>Wins</th></tr></thead><tbody>'+rows+'</tbody><tfoot><tr><td>'+XO_SCOPE+'</td></tr></tfoot></table></main></html>').encode()
+
+
+class NCXsOsTests(unittest.TestCase):
+    def test_labels_and_shared_prize_qualification_preserved(self):
+        r=parse_xo_report(xo_fixture(),'https://nclottery.com/Powerball-Xs-and-Os?dd=10/04/2026')
+        self.assertEqual(r['tiers'][0],dict(matchLabel='Match 8',prizeLabel='$1,220,000',reportedWins=0))
+        self.assertEqual(r['tiers'][-1]['reportedWins'],1810)
+        self.assertEqual(r['teamLabels'],['ATL','BAL','CAR','DEN','DET','JAX','LAC','WAS'])
+        self.assertEqual(r['notes'],[XO_SCOPE]);self.assertNotIn('totalPayout',r)
+
+    def test_invalid_identity_structure_dates_and_units(self):
+        for before,after in [(b'Sunday',b'Monday'),(b'lblDrawdate',b'missing'),(b'ATL',b'BAL'),(b'ATL',b'12'),
+            (b'lblTeam8',b'missingTeam'),(b'Match 8',b'Match 7'),(b'lblPay5',b'lblPay4'),
+            (b'$1,220,000',b'$1,22,000'),(b'1,810',b'-1'),(b'Cash Prize*',b'Cash Prize'),
+            (XO_SCOPE.encode(),b'Nationwide wins'),(b'</html>',b'')]:
+            with self.subTest(before=before),self.assertRaises(ValueError):
+                parse_xo_report(xo_fixture().replace(before,after,1),'https://nclottery.com/Powerball-Xs-and-Os?dd=10/04/2026')
+        for url in ['https://nclottery.com/Powerball-Xs-and-Os?dd=10/05/2026','https://other.example/Powerball-Xs-and-Os?dd=10/04/2026']:
+            with self.assertRaises(ValueError):parse_xo_report(xo_fixture(),url)
+        with self.assertRaises(ValueError):parse_xo_report(xo_fixture(),'https://nclottery.com/Powerball-Xs-and-Os?dd=10/04/2026',today=date(2026,10,3))
+
+    def test_bounded_reports_reject_old_bad_rows_and_duplicates(self):
+        docs=[(f'https://nclottery.com/Powerball-Xs-and-Os?dd=10/0{d}/2026',xo_fixture(d)) for d in [1,3,2]]
+        self.assertEqual([r['drawDate'] for r in parse_xo_reports(docs)],['2026-10-03','2026-10-02'])
+        with self.assertRaises(ValueError):parse_xo_reports(docs[:1])
+        with self.assertRaises(ValueError):parse_xo_reports(docs+docs[:1])
+        docs[0]=(docs[0][0],docs[0][1].replace(b'1,810',b'1.5'))
+        with self.assertRaises(ValueError):parse_xo_reports(docs)

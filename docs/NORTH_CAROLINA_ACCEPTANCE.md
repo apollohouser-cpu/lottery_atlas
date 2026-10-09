@@ -281,3 +281,21 @@ source rejection and complete validation before latest-two selection.
 Powerball, Mega Millions and Xs and Os remain, followed by atomic refresh,
 publication, report UI and native acceptance. No public report output or mobile
 restart; North Carolina remains unaccepted with its existing release deadline.
+
+### October 8, 22:46 ET — Powerball Xs and Os report parser
+
+Two fresh official dated details, October 4 and September 27, validate five
+tiers each. The parser checks requested and printed dates, weekday, eight
+unique team labels, explicit match identities, table/field alignment and
+nonnegative integer Wins. Literal prizes and the complete North Carolina-only,
+shared-jackpot and possible pari-mutuel qualification are retained. Top Match 8
+prints $1,220,000 and $1,000,000 respectively, both with zero Wins; neither
+label is treated as an amount paid. Private output is
+`work/north_carolina_scope/xo-reports.json`.
+
+Twenty-one draw-parser tests pass, including three Xs and Os cases covering
+source qualifications, malformed source rejection and complete validation
+before recent selection. Powerball and Mega Millions are the remaining report
+families; combined atomic refresh/publication, report UI and native acceptance
+still follow. No public report feed, mobile interruption or acceptance claim.
+Release deadline remains October 13 at 10:38 ET.

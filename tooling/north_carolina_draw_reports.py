@@ -357,3 +357,55 @@ def parse_millionaire_reports(documents, today=None):
     if len(reports) < 2 or len({r['id'] for r in reports}) != len(reports):
         raise ValueError('Two unique Millionaire reports required')
     return sorted(reports,key=lambda r:r['drawDate'],reverse=True)[:2]
+
+
+XO_SCOPE = '*The Jackpot Prize will be divided equally among multiple winning tickets and lower-tier prizes may become pari-mutuel in some circumstances. This table shows North Carolina prizes and wins only.'
+
+
+def parse_xo_report(raw, source_url, today=None):
+    match = re.fullmatch(r'https://nclottery\.com/Powerball-Xs-and-Os\?dd=(\d{2}/\d{2}/\d{4})', source_url)
+    if not match or b'</html>' not in raw.lower(): raise ValueError('Invalid Xs and Os source/document')
+    requested = datetime.strptime(match[1],'%m/%d/%Y').date()
+    mains = html.fromstring(raw).xpath('//main')
+    if len(mains) != 1: raise ValueError('Missing/duplicate Xs and Os main')
+    main = mains[0]
+    def node(suffix):
+        found = main.xpath('.//span[@id=$id]',id='ctl00_MainContent_'+suffix)
+        if len(found) != 1: raise ValueError('Missing/duplicate Xs and Os field: '+suffix)
+        return found[0]
+    label = text(node('lblDrawdate'))
+    date = datetime.strptime(label,'%A, %b %d, %Y').date()
+    if date != requested or label.split(',')[0] != date.strftime('%A') or date > (today or datetime.now(timezone.utc).date()):
+        raise ValueError('Xs and Os date mismatch/future')
+    teams = [text(node('lblTeam'+str(i))) for i in range(1,9)]
+    if len(main.xpath('.//span[starts-with(@id,"ctl00_MainContent_lblTeam")]')) != 8 or len(set(teams)) != 8 or any(not re.fullmatch('[A-Z]{2,3}',team) for team in teams):
+        raise ValueError('Invalid Xs and Os team labels')
+    tables = main.xpath('.//table[contains(concat(" ",normalize-space(@class)," ")," payout_results ")]')
+    if len(tables) != 1: raise ValueError('Missing/duplicate Xs and Os table')
+    table = tables[0]
+    if [text(c) for c in table.xpath('./caption')] != ['Prize Payout'] or [text(c) for c in table.xpath('./thead/tr/th')] != ['Match','Cash Prize*','Wins']:
+        raise ValueError('Changed Xs and Os columns')
+    notes = [schedule_text(c) for c in table.xpath('./tfoot/tr/td')]
+    if notes != [XO_SCOPE]: raise ValueError('Missing/changed Xs and Os qualifications')
+    rows = table.xpath('./tbody/tr')
+    if len(rows) != 5: raise ValueError('Incomplete Xs and Os tiers')
+    tiers = []
+    for i,row in enumerate(rows,1):
+        cells = row.xpath('./td'); identity = 'Match '+str(9-i)
+        if len(cells) != 3 or cells[0].get('aria-label') != identity or text(cells[0]) != identity:
+            raise ValueError('Changed Xs and Os match identity')
+        prize_node,wins_node = node('lblPay'+str(i)),node('lblTier'+str(i))
+        if prize_node.getparent() != cells[1] or wins_node.getparent() != cells[2]:
+            raise ValueError('Xs and Os tier misalignment')
+        prize = text(prize_node);money_cents(prize)
+        tiers.append(dict(matchLabel=identity,prizeLabel=prize,reportedWins=integer(text(wins_node))))
+    return dict(id='powerball-xs-and-os-'+date.isoformat(),game='Powerball Xs and Os',session='Weekly',drawDate=date.isoformat(),
+        reportType='tier-report',teamLabels=teams,tiers=tiers,notes=notes,sourceUrl=source_url,
+        coverage='North Carolina prizes and Wins only. Jackpot sharing and possible pari-mutuel lower prizes apply. Labels are not calculated total payouts or distinct-person counts; no retailer joins or map positions.')
+
+
+def parse_xo_reports(documents,today=None):
+    reports = [parse_xo_report(raw,url,today=today) for url,raw in documents]
+    if len(reports) < 2 or len({r['id'] for r in reports}) != len(reports):
+        raise ValueError('Two unique Xs and Os reports required')
+    return sorted(reports,key=lambda r:r['drawDate'],reverse=True)[:2]
