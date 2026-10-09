@@ -9,7 +9,7 @@
  * current, verifiable activity feed—not a claim that every lower-value winner
  * is published by the NC Lottery.
  */
-import {archivePage, claimDate} from './north_carolina_archive.mjs';
+import {archivePage, archiveRows, claimDate} from './north_carolina_archive.mjs';
 import {writeFile} from 'node:fs/promises';
 import {uniqueRetailerIndex} from './north_carolina_directory.mjs';
 
@@ -70,9 +70,9 @@ if (!outputPath) {
   };
   const parseRows = (html, game) => {
     const rows = [];
-    const pattern = /<td>\$([\d,]+)<\/td><td[^>]*>(\d{2}\/\d{2}\/\d{4})<\/td><td><a href="\/Winner\?id=(\d+)">.*?<\/a><\/td><td>(.*?)<\/td>/gs;
-    for (const match of html.matchAll(pattern)) {
-      const [, rawPrize, date, id, rawLocation] = match;
+    for (const sourceRow of archiveRows(html)) {
+      const {id, date, rawLocation, prizeAmount, sharedPrize} = sourceRow;
+      if (sharedPrize) continue;
       const parts = winnerLocation(rawLocation);
       if (parts.length < 2 || /n\/a or other/i.test(rawLocation)) continue;
       const city = parts.at(-1);
@@ -83,7 +83,7 @@ if (!outputPath) {
         date,
         city,
         retailerName,
-        prizeAmount: Number(rawPrize.replaceAll(',', '')),
+        prizeAmount,
         ...game,
       });
     }

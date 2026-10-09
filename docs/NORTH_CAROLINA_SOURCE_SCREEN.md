@@ -343,3 +343,21 @@ output preservation on failure. A fresh private full import succeeds with
 source date fields exactly match the retained public baseline; no new mapped
 records or date changes are promoted. Full archive row-format/shared-prize unit
 audit and integrated native acceptance remain open; deadline unchanged.
+
+### October 9, 06:51 ET — Archive row accounting and shared-prize exclusions
+
+The importer now accounts for every linked winner row before location filtering.
+Unknown row markup, malformed prize notation, unsafe numeric amounts or prizes
+below the archive's stated $5,000 threshold fail validation rather than silently
+dropping a row. Literal shared-prize asterisks (plain or superscript) are parsed
+explicitly and excluded from mapped records; a shared amount is not converted
+into one independently won prize. Winner names are not exported.
+
+Seven Node tests pass, including malformed-row rejection and explicit exclusion
+of a shared-prize row even when its retailer matches. A fresh private full run
+again produces 17,874 records/26 unmatched retailer names, with every activity
+and both source-date fields identical to the retained baseline. No changed
+public rows or dates are promoted. Each retained row represents a published
+archive claim record, not certified unique tickets or people; listed amounts
+are not verified net payments. Native acceptance and final directory-coordinate
+validation remain pending. Deadline unchanged; simulator review untouched.

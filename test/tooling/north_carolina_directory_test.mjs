@@ -46,7 +46,7 @@ test('import excludes ambiguous archive branches and never requests news', async
       const u = new URL(url);
       if (u.pathname.includes('News')) throw Error('News must not be requested');
       return {ok:true,text:async()=>u.pathname.includes('WhereToPlay') ? ${JSON.stringify(directory)} :
-        (u.searchParams.get('g') === 'PB' && u.searchParams.get('p') === '1' ? ${JSON.stringify(page(row(1,'Sample Market'),1,true))} : u.searchParams.get('g') === 'PB' ? ${JSON.stringify(page(row(2,'Unique Market'),2))} : ${JSON.stringify(page(row(3,'Unmapped Market')))} )};
+        (u.searchParams.get('g') === 'PB' && u.searchParams.get('p') === '1' ? ${JSON.stringify(page(row(1,'Sample Market'),1,true))} : u.searchParams.get('g') === 'PB' ? ${JSON.stringify(page(row(2,'Unique Market')+row(4,'Unique Market').replace('$5,000','$50,000*'),2))} : ${JSON.stringify(page(row(3,'Unmapped Market')))} )};
     };`);
     const result = spawnSync(process.execPath, ['--import',preload,importer.pathname,output], {encoding:'utf8'});
     assert.equal(result.status,0,result.stderr);

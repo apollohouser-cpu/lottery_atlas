@@ -20,3 +20,22 @@ export function archivePage(html, game, page) {
   if (!ids.length || new Set(ids).size !== ids.length) throw Error('Empty or repeated NC archive rows');
   return {ids, hasNext: Boolean(next)};
 }
+
+// Account for every linked row before optional location exclusions. Known
+// shared-prize rows remain excluded; they are not one independently won prize.
+export function archiveRows(html) {
+  const rows = [];
+  const pattern = /<td>([^<]*(?:<sup>[^<]*<\/sup>)?)<\/td><td[^>]*>(\d{2}\/\d{2}\/\d{4})<\/td><td><a href="\/Winner\?id=(\d+)">.*?<\/a><\/td><td>(.*?)<\/td>/gs;
+  for (const m of html.matchAll(pattern)) {
+    const [, prize, date, id, location] = m;
+    claimDate(date);
+    const literal = prize.replace(/<\/?sup>/g, '').trim();
+    if (!/^\$(?:[1-9]\d*|[1-9]\d{0,2}(?:,\d{3})+)(?:\*)?$/.test(literal)) throw Error('Unrecognized NC archive prize');
+    const amount = Number(literal.replace(/[$,*]/g, ''));
+    if (!Number.isSafeInteger(amount) || amount < 5000) throw Error('Invalid qualifying NC archive prize');
+    rows.push({id, date, rawLocation: location, prizeAmount: amount, sharedPrize: literal.endsWith('*')});
+  }
+  const count = [...html.matchAll(/href="\/Winner\?id=\d+"/g)].length;
+  if (!count || rows.length !== count) throw Error('NC archive row structure mismatch');
+  return rows;
+}
