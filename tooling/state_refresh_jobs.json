@@ -261,13 +261,27 @@
   {
     "state": "North Carolina",
     "outputs": [
-      "data/north_carolina_current_winner_activity.generated.json"
+      "data/north_carolina_current_winner_activity.generated.json",
+      "data/north_carolina_scratch_catalog.generated.json",
+      "data/north_carolina_draw_reports.generated.json"
     ],
     "commands": [
       [
         "node",
         "tooling/import_north_carolina_current_winners.mjs",
         "data/north_carolina_current_winner_activity.generated.json"
+      ],
+      [
+        "python3",
+        "tooling/import_north_carolina_scratch_catalog.py",
+        "--output",
+        "data/north_carolina_scratch_catalog.generated.json"
+      ],
+      [
+        "python3",
+        "tooling/import_north_carolina_draw_reports.py",
+        "--output",
+        "data/north_carolina_draw_reports.generated.json"
       ]
     ]
   },

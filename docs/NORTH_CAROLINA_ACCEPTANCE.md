@@ -365,3 +365,19 @@ asset or public endpoint. Next: shared scheduled staging with the catalog,
 Flutter report validation/loader/UI, publication and native verification, plus
 remaining archive/directory audit. Deadline unchanged; North Carolina is not
 accepted. User simulator review was not interrupted.
+
+### October 9, 02:48 ET — Three-output scheduled transaction wired
+
+The North Carolina refresh job now owns the retained winner-activity snapshot,
+literal Scratch catalog and bounded draw reports together. Failure at any of
+its three importers restores all three prior files and dates. A new test injects
+failure at each step and verifies exact restoration; all ten transaction tests
+and all 34 NC Python tests pass. The validated 28-report private collection is
+now a tracked baseline, retaining all four Powerball/Mega Millions source warnings.
+
+Publication wiring stages separate NC catalog/report endpoints and includes both
+generated and public files in the bot commit. This does not merge reports into
+map activity or invent retailer positions. Live publication verification remains
+pending at this checkpoint, as do the first scheduled three-output refresh,
+Flutter report loader/UI, archive/directory audit and native acceptance.
+North Carolina is not accepted; October 13 at 10:38 ET remains the deadline.

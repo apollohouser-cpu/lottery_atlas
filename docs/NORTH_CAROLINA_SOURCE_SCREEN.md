@@ -265,3 +265,19 @@ Powerball and Mega Millions source-label warnings remain present. Private
 atomic refresh, missing-group/regression checks and failure preservation now
 have automated coverage. Scheduled publication and app/native adoption remain
 unverified; no public report feed was promoted by this checkpoint.
+
+### October 9, 02:48 ET — Three-output scheduled transaction wired
+
+The North Carolina refresh job now owns the retained winner-activity snapshot,
+literal Scratch catalog and bounded draw reports together. Failure at any of
+its three importers restores all three prior files and dates. A new test injects
+failure at each step and verifies exact restoration; all ten transaction tests
+and all 34 NC Python tests pass. The validated 28-report private collection is
+now a tracked baseline, retaining all four Powerball/Mega Millions source warnings.
+
+Publication wiring stages separate NC catalog/report endpoints and includes both
+generated and public files in the bot commit. This does not merge reports into
+map activity or invent retailer positions. Live publication verification remains
+pending at this checkpoint, as do the first scheduled three-output refresh,
+Flutter report loader/UI, archive/directory audit and native acceptance.
+North Carolina is not accepted; October 13 at 10:38 ET remains the deadline.
