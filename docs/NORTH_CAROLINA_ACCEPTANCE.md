@@ -37,7 +37,7 @@ Private captures: work/north_carolina_scope/{home,scratch}.html.
 - [x] Winner-source date/unit/overlap and retailer-join audit (October 9; bounded archive rows only, news/shared prizes/ambiguous joins excluded).
 - [x] Strict current Scratch catalog and available draw-report imports (83 listed games; 28 bounded reports, eight families/14 groups).
 - [x] Validated directory coverage and coordinates, or explicit supported limits (official positions retained; structural guards, all repeated name/city keys excluded; no independent geocode certification).
-- [ ] Atomic refresh, regression/failure preservation and public byte verification.
+- [x] Atomic refresh, regression/failure preservation and public byte verification (first scheduled three-output publication verified October 9).
 - [ ] App source routes, catalog/reports/directory with honest coverage labels.
 - [ ] Compact/wide native use, source-return and request-failure recovery.
 - [ ] Consolidated checks and supported release decision.
@@ -498,3 +498,27 @@ claimed. Do not repeat this compile without code/data changes; use this artifact
 for the pending native checks when the review allows. Latest observed scheduled
 run 37892273793 predates three-output wiring; its success does not close that
 checkpoint. NC remains unaccepted with the same October 13 deadline.
+
+### October 9, 09:54 ET — First scheduled three-output publication verified
+
+Scheduled publisher 37936115049 (13:20:15 UTC, code b406a61) completed
+successfully and produced bot commit f5bf544. The NC status is `updated` and
+lists all three transaction outputs. Archive activity and its dates remain
+unchanged at 17,874 records; the Scratch catalog still has 83 games/896 tiers,
+now through October 8, retrieved 13:27:25.588809 UTC. The 28 reports span
+September 27–October 9, retrieved 13:27:25.720389 UTC, retaining all four
+Powerball/Mega Millions source warnings.
+
+Public report, catalog, refresh-status and combined activity bytes each match
+the committed output exactly. Private hashes and downloaded bytes are under
+`work/north_carolina_scope/scheduled-37936115049`. This closes the scheduled
+transaction/publication checkpoint, not native remote adoption.
+
+The new data exposed two tests tied to the old catalog date. They now verify
+that the displayed date follows the supplied catalog and that offline loading
+retains the entire supplied bundle. All 15 report/catalog loader and widget
+tests pass across the targeted runs. No product code changed. The prepared
+08:52 build remains useful for verifying newer remote adoption against its
+older bundle; no rebuild or simulator interruption occurred. Native flows,
+source-return, retained-data behavior and supported-release acceptance remain
+open; the October 13 at 10:38 ET deadline is unchanged.

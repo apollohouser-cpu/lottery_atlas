@@ -13,7 +13,7 @@ void main() {
       fetchRemote: () async => throw Exception('offline'),
       readBundle: () async => raw,
     ).load();
-    expect(d['sourceDate'], '2026-10-07');
+    expect(d, jsonDecode(raw));
     expect((d['games'] as List).length, 83);
     expect(
       (d['games'] as List).fold<int>(

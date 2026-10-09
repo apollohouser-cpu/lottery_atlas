@@ -33,7 +33,7 @@ void main() {
         await tester.pumpAndSettle();
         expect(tester.takeException(), isNull);
         expect(
-          find.text('Prizes not yet claimed through: 2026-10-07'),
+          find.text('Prizes not yet claimed through: ${data['sourceDate']}'),
           findsOneWidget,
         );
         await tester.scrollUntilVisible(
