@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "state": "Colorado",
-  "retrievedAt": "2026-10-08T23:29:55.411Z",
+  "retrievedAt": "2026-10-09T06:19:16.551Z",
   "cadence": "Two recent complete published reports per family; Cash 5 skips dates with wholly unpublished EZ Match sections within eight official linked dates. Displayed draw dates remain the actual selected dates. Pick 3 keeps the newest Midday and Evening reports. Scheduled refresh, not a live feed.",
   "coverage": "Colorado source-reported tier winners across six current draw families, separate variants and wager units. EZ Match players and dollars remain separate. No distinct-ticket aggregate or retailer allocation.",
   "reports": [
@@ -856,6 +856,74 @@
       "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
     },
     {
+      "id": "co-millionaireforlife-2026-10-08",
+      "game": "Millionaire for Life",
+      "drawDate": "2026-10-08",
+      "sourceUrl": "https://www.coloradolottery.com/en/games/millionaireforlife/drawings/2026-10-08/",
+      "tiers": [
+        {
+          "match": "5 + MB",
+          "variant": "Base",
+          "reportedWinners": 0,
+          "prizeLabel": "$1,000,000 a year for life*"
+        },
+        {
+          "match": "5",
+          "variant": "Base",
+          "reportedWinners": 0,
+          "prizeLabel": "$100,000 a year for life**"
+        },
+        {
+          "match": "4 + MB",
+          "variant": "Base",
+          "reportedWinners": 0,
+          "prizeLabel": "$7,500"
+        },
+        {
+          "match": "4",
+          "variant": "Base",
+          "reportedWinners": 0,
+          "prizeLabel": "$500"
+        },
+        {
+          "match": "3 + MB",
+          "variant": "Base",
+          "reportedWinners": 15,
+          "prizeLabel": "$250"
+        },
+        {
+          "match": "3",
+          "variant": "Base",
+          "reportedWinners": 33,
+          "prizeLabel": "$50"
+        },
+        {
+          "match": "2 + MB",
+          "variant": "Base",
+          "reportedWinners": 139,
+          "prizeLabel": "$25"
+        },
+        {
+          "match": "2",
+          "variant": "Base",
+          "reportedWinners": 589,
+          "prizeLabel": "$8"
+        },
+        {
+          "match": "1 + MB",
+          "variant": "Base",
+          "reportedWinners": 1005,
+          "prizeLabel": "$8"
+        }
+      ],
+      "ezMatch": null,
+      "prizeNotes": [
+        "*Divided by the number of winners",
+        "**If 21+ total winners, divided by the number of winners"
+      ],
+      "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
+    },
+    {
       "id": "co-millionaireforlife-2026-10-07",
       "game": "Millionaire for Life",
       "drawDate": "2026-10-07",
@@ -913,74 +981,6 @@
           "match": "1 + MB",
           "variant": "Base",
           "reportedWinners": 857,
-          "prizeLabel": "$8"
-        }
-      ],
-      "ezMatch": null,
-      "prizeNotes": [
-        "*Divided by the number of winners",
-        "**If 21+ total winners, divided by the number of winners"
-      ],
-      "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
-    },
-    {
-      "id": "co-millionaireforlife-2026-10-06",
-      "game": "Millionaire for Life",
-      "drawDate": "2026-10-06",
-      "sourceUrl": "https://www.coloradolottery.com/en/games/millionaireforlife/drawings/2026-10-06/",
-      "tiers": [
-        {
-          "match": "5 + MB",
-          "variant": "Base",
-          "reportedWinners": 0,
-          "prizeLabel": "$1,000,000 a year for life*"
-        },
-        {
-          "match": "5",
-          "variant": "Base",
-          "reportedWinners": 0,
-          "prizeLabel": "$100,000 a year for life**"
-        },
-        {
-          "match": "4 + MB",
-          "variant": "Base",
-          "reportedWinners": 0,
-          "prizeLabel": "$7,500"
-        },
-        {
-          "match": "4",
-          "variant": "Base",
-          "reportedWinners": 0,
-          "prizeLabel": "$500"
-        },
-        {
-          "match": "3 + MB",
-          "variant": "Base",
-          "reportedWinners": 4,
-          "prizeLabel": "$250"
-        },
-        {
-          "match": "3",
-          "variant": "Base",
-          "reportedWinners": 33,
-          "prizeLabel": "$50"
-        },
-        {
-          "match": "2 + MB",
-          "variant": "Base",
-          "reportedWinners": 144,
-          "prizeLabel": "$25"
-        },
-        {
-          "match": "2",
-          "variant": "Base",
-          "reportedWinners": 453,
-          "prizeLabel": "$8"
-        },
-        {
-          "match": "1 + MB",
-          "variant": "Base",
-          "reportedWinners": 895,
           "prizeLabel": "$8"
         }
       ],
@@ -1610,11 +1610,11 @@
       "limitations": "Source-reported winners by bet type and wager, not verified distinct tickets. No combined total or retailer allocation. Unavailable wagers are not zero wins. Draw date has no verified event time."
     },
     {
-      "id": "co-pick3-2026-10-07-EV",
+      "id": "co-pick3-2026-10-08-EV",
       "game": "Pick 3",
-      "drawDate": "2026-10-07",
+      "drawDate": "2026-10-08",
       "drawingSession": "Evening",
-      "sourceUrl": "https://www.coloradolottery.com/en/games/pick3/drawings/2026-10-07:EV/",
+      "sourceUrl": "https://www.coloradolottery.com/en/games/pick3/drawings/2026-10-08:EV/",
       "tiers": [
         {
           "match": "Exact Order",
@@ -1628,7 +1628,7 @@
           "match": "Exact Order",
           "variant": "Base",
           "wagerDollars": 1,
-          "reportedWinners": 2,
+          "reportedWinners": 7,
           "prizeLabel": "$500",
           "available": true
         },
@@ -1652,32 +1652,32 @@
           "match": "Any Order",
           "variant": "Base",
           "wagerDollars": 0.5,
-          "reportedWinners": 6,
-          "prizeLabel": "$40",
-          "available": true
-        },
-        {
-          "match": "Any Order",
-          "variant": "Base",
-          "wagerDollars": 1,
-          "reportedWinners": 5,
+          "reportedWinners": 9,
           "prizeLabel": "$80",
           "available": true
         },
         {
           "match": "Any Order",
           "variant": "Base",
-          "wagerDollars": 2,
-          "reportedWinners": 4,
+          "wagerDollars": 1,
+          "reportedWinners": 1,
           "prizeLabel": "$160",
           "available": true
         },
         {
           "match": "Any Order",
           "variant": "Base",
+          "wagerDollars": 2,
+          "reportedWinners": 0,
+          "prizeLabel": "$320",
+          "available": true
+        },
+        {
+          "match": "Any Order",
+          "variant": "Base",
           "wagerDollars": 5,
           "reportedWinners": 0,
-          "prizeLabel": "$400",
+          "prizeLabel": "$800",
           "available": true
         },
         {
@@ -1692,8 +1692,8 @@
           "match": "Combined Exact Order",
           "variant": "Base",
           "wagerDollars": 1,
-          "reportedWinners": 1,
-          "prizeLabel": "$290",
+          "reportedWinners": 10,
+          "prizeLabel": "$330",
           "available": true
         },
         {
@@ -1701,7 +1701,7 @@
           "variant": "Base",
           "wagerDollars": 2,
           "reportedWinners": 0,
-          "prizeLabel": "$580",
+          "prizeLabel": "$660",
           "available": true
         },
         {
@@ -1709,7 +1709,7 @@
           "variant": "Base",
           "wagerDollars": 5,
           "reportedWinners": 0,
-          "prizeLabel": "$1,450",
+          "prizeLabel": "$1,650",
           "available": true
         },
         {
@@ -1724,24 +1724,24 @@
           "match": "Combined Any Order",
           "variant": "Base",
           "wagerDollars": 1,
-          "reportedWinners": 15,
-          "prizeLabel": "$40",
-          "available": true
-        },
-        {
-          "match": "Combined Any Order",
-          "variant": "Base",
-          "wagerDollars": 2,
-          "reportedWinners": 3,
+          "reportedWinners": 13,
           "prizeLabel": "$80",
           "available": true
         },
         {
           "match": "Combined Any Order",
           "variant": "Base",
+          "wagerDollars": 2,
+          "reportedWinners": 2,
+          "prizeLabel": "$160",
+          "available": true
+        },
+        {
+          "match": "Combined Any Order",
+          "variant": "Base",
           "wagerDollars": 5,
-          "reportedWinners": 0,
-          "prizeLabel": "$200",
+          "reportedWinners": 1,
+          "prizeLabel": "$400",
           "available": true
         },
         {
@@ -1756,7 +1756,7 @@
           "match": "Front Pair",
           "variant": "Base",
           "wagerDollars": 1,
-          "reportedWinners": 0,
+          "reportedWinners": 2,
           "prizeLabel": "$60",
           "available": true
         },
@@ -1772,7 +1772,7 @@
           "match": "Front Pair",
           "variant": "Base",
           "wagerDollars": 5,
-          "reportedWinners": 5,
+          "reportedWinners": 1,
           "prizeLabel": "$300",
           "available": true
         },
@@ -1780,7 +1780,7 @@
           "match": "Back Pair",
           "variant": "Base",
           "wagerDollars": 0.5,
-          "reportedWinners": 0,
+          "reportedWinners": 1,
           "prizeLabel": "$30",
           "available": true
         },
@@ -1788,7 +1788,7 @@
           "match": "Back Pair",
           "variant": "Base",
           "wagerDollars": 1,
-          "reportedWinners": 0,
+          "reportedWinners": 1,
           "prizeLabel": "$60",
           "available": true
         },
