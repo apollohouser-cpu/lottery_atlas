@@ -254,3 +254,14 @@ The displayed one-white-ball plus Mega Ball row conflicts with its accessibility
 label `2`; both are retained with a required UI warning. No count is reassigned
 or summed into a distinct-ticket/person claim. Strict structural/multiplier tests
 pass; private report validation does not establish publication or native adoption.
+
+### October 9, 01:47 ET — Unified private report retrieval
+
+A fresh bounded collection run validated all eight supported families and all
+14 session groups, two reports each. The collection's September 27–October 8
+range reflects weekly and daily draw schedules, not a continuous all-game
+claims history. All details came through the family-specific strict parsers;
+Powerball and Mega Millions source-label warnings remain present. Private
+atomic refresh, missing-group/regression checks and failure preservation now
+have automated coverage. Scheduled publication and app/native adoption remain
+unverified; no public report feed was promoted by this checkpoint.

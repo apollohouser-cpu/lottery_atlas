@@ -341,3 +341,27 @@ Private results are `work/north_carolina_scope/mega-reports.json`; this is not
 an integrated feed or acceptance. Next: combined atomic refresh/schema,
 publication, app report loader/UI, remaining archive/directory audit and native
 acceptance. Deadline remains October 13 at 10:38 ET; simulator review untouched.
+
+### October 9, 01:47 ET — Atomic report collection refresh
+
+Added an executable report importer that fetches official histories and bounded
+details for all eight families, then validates exactly two reports in each of
+14 game/session groups before replacing its output. A fresh private network run
+produced 28 reports, dated September 27–October 8. History date spaces and
+duplicate links are normalized; invalid detail routes and incomplete histories
+fail closed. Pick histories use a bounded eight-detail window to find both
+sessions. Every fetched detail passes its strict family parser.
+
+The collection rejects duplicate identities, missing groups and regression of
+either date in a previously saved group. Unchanged content retains its prior
+bytes/timestamp. Late fetch or validation failure leaves the saved output
+untouched; replacement uses a temporary file. Three new refresh tests plus all
+existing NC Python tests pass (34 total, including four Scratch tests).
+Source warnings remain attached to Powerball/Mega Millions reports.
+
+Private result: `work/north_carolina_scope/draw-reports.json`. Schema version 1
+is now defined for the report collection; this does not yet register an app
+asset or public endpoint. Next: shared scheduled staging with the catalog,
+Flutter report validation/loader/UI, publication and native verification, plus
+remaining archive/directory audit. Deadline unchanged; North Carolina is not
+accepted. User simulator review was not interrupted.
