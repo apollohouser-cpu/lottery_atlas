@@ -144,3 +144,13 @@ free, the reply asks to limit delivery to the offered retailer record.
 Reply is Sent-confirmed; await delivery, never resend. No fees, deposit, paid
 search, programming, compilation, new joins or calculations were authorized.
 This is an offer, not a received/audited directory or Michigan activation.
+
+## October 9 response extension
+
+The agency supplied a one-page extension notice, privately downloaded and
+text-extracted. It treats the October 8 clarification as received October 9
+and sets October 30, 2026 as its response date, citing staff availability and
+coordination with other divisions. This is an agency response date, not a
+guaranteed retailer-file delivery. No dataset or new fee arrived. The October 8
+Sent reply remains confirmed; no duplicate acknowledgment was sent. Await the
+no-fee response under the existing limits. No public data or state activation.

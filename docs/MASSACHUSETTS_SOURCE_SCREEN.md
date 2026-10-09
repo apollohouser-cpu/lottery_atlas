@@ -89,3 +89,17 @@ email thread, requesting receipt acknowledgment and existing documentation for
 the specific prize-value fields, date conflicts, inventory timestamp and update
 cadence. Gmail returned sent message `1a0c665ccadea454`. It reiterates that no
 custom compilation, fees or paid processing are authorized. Agency reply pending.
+
+## October 9 extension requests and bounded clarification
+
+Two agency messages acknowledge requests identified in their subjects as
+September 14 and September 22 and ask whether an extension is acceptable,
+without specifying a proposed date or reason. Each new thread was checked;
+neither contained a prior reply. One combined reply in the September 22 thread
+explicitly covers both messages, requests proposed response dates and reasons,
+and asks for any already-available existing no-fee records or public links
+separately. Sent status is confirmed; do not resend in either thread.
+
+No unspecified extension was agreed to, and no fees, paid processing or custom
+compilation were authorized. No records or promised response date arrived.
+Await clarification; no app deadline, public dataset or state status changed.
