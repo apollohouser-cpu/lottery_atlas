@@ -34,9 +34,9 @@ Private captures: work/north_carolina_scope/{home,scratch}.html.
 ## Acceptance gates
 
 - [x] Full current product/game/option/history scope and explicit gaps (October 8, 11:39 ET).
-- [ ] Winner-source date/unit/overlap and retailer-join audit.
-- [ ] Strict current Scratch catalog and available draw-report imports.
-- [ ] Validated directory coverage and coordinates, or explicit supported limits.
+- [x] Winner-source date/unit/overlap and retailer-join audit (October 9; bounded archive rows only, news/shared prizes/ambiguous joins excluded).
+- [x] Strict current Scratch catalog and available draw-report imports (83 listed games; 28 bounded reports, eight families/14 groups).
+- [x] Validated directory coverage and coordinates, or explicit supported limits (official positions retained; structural guards, all repeated name/city keys excluded; no independent geocode certification).
 - [ ] Atomic refresh, regression/failure preservation and public byte verification.
 - [ ] App source routes, catalog/reports/directory with honest coverage labels.
 - [ ] Compact/wide native use, source-return and request-failure recovery.
@@ -483,3 +483,18 @@ This closes the structural directory guard work. Remaining integrated gates
 include scheduled three-output evidence, native report/catalog interaction,
 source-return and retained-data behavior. No native acceptance or simulator
 interruption; October 13 at 10:38 ET remains the release deadline.
+
+### October 9, 08:52 ET — Current iOS simulator build prepared
+
+The ordinary iOS simulator debug build at 5b2de04 succeeds (Xcode phase 11.3s),
+including the NC catalog, report bundle/loader/UI and source warnings. Output is
+`build/ios/iphonesimulator/Runner.app`; the build log remains private under
+`work/north_carolina_scope/ios-build-current.log`. PNY is mounted and build output
+uses the existing external path; internal free space was 16 GiB before the build.
+
+The build was not installed or launched: the user's running 1b201c5 review is
+unchanged. No native report/catalog/source-return or remote-adoption pass is
+claimed. Do not repeat this compile without code/data changes; use this artifact
+for the pending native checks when the review allows. Latest observed scheduled
+run 37892273793 predates three-output wiring; its success does not close that
+checkpoint. NC remains unaccepted with the same October 13 deadline.
