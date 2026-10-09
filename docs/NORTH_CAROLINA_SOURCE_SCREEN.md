@@ -442,3 +442,21 @@ install or interaction interrupted the user's simulator review. The prepared
 08:52 artifact predates these disclosure edits, so final native acceptance must
 use a new build after remaining code changes. NC is not accepted and the
 October 13 at 10:38 ET release deadline is unchanged.
+
+### October 9, 11:55 ET — Current disclosure build and packaged data verified
+
+Ordinary iOS simulator debug build at ce3a93e succeeds (Xcode phase 32.5s),
+including the new NC coverage/cadence notices and six remaining official routes.
+The packaged NC Scratch catalog, draw reports and current winner activity each
+byte-match the current committed datasets. Private log and asset hashes are
+`work/north_carolina_scope/ios-build-disclosures.log` and
+`ios-build-disclosures-assets.json`. PNY remains mounted; 16 GiB internal and
+433 GiB external space were available before this sequential build.
+
+`build/ios/iphonesimulator/Runner.app` now supersedes the 08:52 artifact. It was
+not installed or launched, leaving the user's 1b201c5 simulator review intact.
+Its bundle already includes the October 9 scheduled data, so opening those same
+dates alone cannot prove newer remote adoption. Do not rebuild absent further
+code/data changes. Native report/catalog interaction, official source-return,
+retention after request failure and newer remote adoption remain open; no
+acceptance or deadline change is claimed.
