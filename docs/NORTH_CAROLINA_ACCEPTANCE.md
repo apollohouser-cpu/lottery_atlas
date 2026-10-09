@@ -387,3 +387,20 @@ public NC draw-report and Scratch-catalog endpoints independently match the
 validated baseline bytes exactly. This closes initial endpoint publication only;
 it does not establish a successful scheduled refresh or native remote adoption.
 The app report loader/UI and remaining acceptance gates are still pending.
+
+### October 9, 03:49 ET — App report loader and validation
+
+Registered the 28-report bundle and added a cache/remote/bundle loader. App-side
+validation checks all 14 groups, dates and official routes, variant and tier
+identities, numeric ranges, multiplier order, literal payouts versus exact cents,
+Pick digits/schedule structure and retained source qualifications. Known PB/MM
+label disagreements require nonempty source warnings; unknown label mismatches
+fail. Both dates in each group and the retrieval timestamp cannot regress.
+Invalid responses retain the cached/bundled data without rewriting its dates.
+A storage-write failure does not discard an otherwise valid response.
+
+Five focused Flutter tests pass, including eleven malformed payload variants,
+group-date regression, cold-bundle continuity and cache failure preservation.
+Both new service files analyze cleanly. Report UI wiring and warning display are
+still pending; no full build, native adoption or acceptance is claimed. The
+simulator review remains untouched and the release deadline is unchanged.
