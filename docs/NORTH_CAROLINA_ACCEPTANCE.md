@@ -404,3 +404,21 @@ group-date regression, cold-bundle continuity and cache failure preservation.
 Both new service files analyze cleanly. Report UI wiring and warning display are
 still pending; no full build, native adoption or acceptance is claimed. The
 simulator review remains untouched and the release deadline is unchanged.
+
+### October 9, 04:49 ET — Bounded report UI connected
+
+The North Carolina source page now opens all 28 reports across eight families
+and 14 groups. Each selectable report retains its draw date/session, retrieval
+time, source coverage and official report link. Base/Power Play/Double Play
+remain separate; Mega Millions retains printed multipliers; Pick 3/4 retain
+combined summaries and both literal payout schedules, including wager labels,
+N/A, combo costs and Fireball qualifications. Cash Pop remains a session summary.
+PB/MM source warnings appear before prize rows and both conflicting labels are
+visible in affected rows. Annual-for-life and advertised prizes stay literal.
+
+Three widget tests pass: all 28 selections at 390×844 and 1400×1000, footer
+reachability, and warning retention plus scroll reset when selection changes.
+The new sheet and source page analyze cleanly. This is automated UI evidence,
+not a full build, native source-return check or native remote adoption. Remaining
+archive/directory audit, scheduled-refresh evidence and integrated acceptance
+remain open. Deadline unchanged; user simulator review remains untouched.
