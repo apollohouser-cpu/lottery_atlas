@@ -271,3 +271,12 @@ This is a new failed refresh after the morning recovery, not reopening accepted
 app development. Check the next scheduled transaction; if failure persists,
 investigate its source/validation error by October 1, 2026 at 3:00 PM ET.
 No weaker validation, replacement source dates or public-data loss is authorized.
+
+## October 9 conditional response date
+
+The agency says it needs additional time to locate responsive information for
+the September 25 definitions and missing retailer-report inquiry. It promises
+any responsive documents, if they exist, no later than October 16, 2026. No
+documents, definitions, fee or new question accompanied this notice. Recorded
+the conditional date; no redundant acknowledgment was sent. Existing source
+limitations and accepted Texas coverage remain unchanged.

@@ -103,3 +103,13 @@ separately. Sent status is confirmed; do not resend in either thread.
 No unspecified extension was agreed to, and no fees, paid processing or custom
 compilation were authorized. No records or promised response date arrived.
 Await clarification; no app deadline, public dataset or state status changed.
+
+## October 9 evening extension-duration clarification
+
+The agency replied to the combined clarification requesting an additional ten
+business days. It did not specify a calendar response date, the starting point,
+a reason, or separate dates for both requests. The earlier combined message
+is verified in Sent and already asks for dates and reasons; no duplicate
+clarification was sent. No extension consent was given. Record the requested
+duration literally without inventing a promised calendar date. No records or
+fees arrived, and no public data or app deadline changed.
