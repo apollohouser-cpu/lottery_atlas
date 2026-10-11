@@ -1072,7 +1072,13 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
     return Stack(
       children: [
         if (phone)
-          Positioned(top: 8, left: 12, right: 12, child: _phoneHeader()),
+          Positioned(
+            top: 8,
+            left: shortScreen ? null : 12,
+            right: shortScreen ? 20 : 12,
+            width: shortScreen ? 300 : null,
+            child: _phoneHeader(),
+          ),
         if (!phone && widget.showHeaderControls)
           Positioned(
             top: 16,
@@ -1103,8 +1109,9 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
             ),
           ),
         Positioned(
-          left: 20,
+          left: shortScreen ? null : 20,
           right: 20,
+          width: shortScreen ? 300 : null,
           bottom: 16,
           child: phone
               ? ConstrainedBox(

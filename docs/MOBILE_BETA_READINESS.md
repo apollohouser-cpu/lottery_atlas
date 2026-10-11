@@ -489,3 +489,30 @@ visible SC outline. No tap/rotation or broader state acceptance claim from this
 visual check. Analysis retains one pre-existing live-map brace info. Current
 simulator now includes these changes and intervening NC catalog UI code; the
 prior installed-build references are superseded. Left open for user review.
+
+### October 10 — user-reported landscape distortion
+
+The running simulator initially stretched the entire old app frame, including
+text and icons, when rotated. Restarting that installed app restored normal
+proportions; the cause of the stale frame is not established. Inspection then
+found a separate map-framing problem: full-width controls consumed most of the
+short landscape map height.
+
+Landscape now places the header, five map actions and collapsed timeline in a
+300 logical-pixel right-hand column. Camera fitting reserves that column and
+uses the remaining map height. Portrait layout is preserved. Eleven targeted
+widget tests pass, including portrait/landscape/portrait control sizing. Analysis
+has only five existing informational findings (four Radio API deprecations and
+one brace suggestion). iOS simulator debug build passed (Xcode 10.4 seconds).
+
+Installed and launched this build on the existing iPhone 17e simulator. Native
+checks confirmed normal text/icon proportions, the contiguous U.S. fitting left
+of the controls, portrait return, saved Home returning to South Carolina, and
+South Carolina fitting after another landscape rotation. No visible control
+obstruction in those views. Left the simulator in landscape on South Carolina
+for user review. This supersedes the installed 1b201c5 and uninstalled ce3a93e
+artifact references. Do not interrupt that review with automated navigation.
+
+This does not establish North Carolina native acceptance, newer remote adoption,
+source-return or failure retention, Android runtime readiness, or full mobile
+acceptance. Private logs: work/mobile_beta/landscape-{tests,analysis,build}.log.

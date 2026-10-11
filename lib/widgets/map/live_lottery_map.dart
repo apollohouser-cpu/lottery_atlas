@@ -3475,10 +3475,15 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
   EdgeInsets _stateCameraPadding(String? stateName) {
     final size = MediaQuery.sizeOf(context);
-    if (size.width < 600 || size.height < 500) {
+    if (size.height < 500) {
+      // Landscape controls occupy a right-hand column, leaving the full
+      // map height available instead of squeezing the fit between two rows.
+      return const EdgeInsets.fromLTRB(16, 16, 336, 16);
+    }
+    if (size.width < 600) {
       // The desktop detail panel's 360px right inset exceeds a phone's
       // available map width and can push a state fit out to the world view.
-      return EdgeInsets.fromLTRB(24, size.height < 500 ? 64 : 104, 24, 160);
+      return const EdgeInsets.fromLTRB(24, 104, 24, 160);
     }
     if (stateName == 'South Carolina' || stateName == 'North Carolina') {
       // These state views use the compact top toolbar instead of the wide
@@ -4374,11 +4379,17 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _animateMapTo(_alaskaCenter, 4.4);
       return;
     }
-    final points = _stateShapes.where((shape) => shape.name == name)
-        .expand((shape) => shape.points).toList();
+    final points = _stateShapes
+        .where((shape) => shape.name == name)
+        .expand((shape) => shape.points)
+        .toList();
     if (points.isNotEmpty) {
-      _animateCameraFit(CameraFit.bounds(bounds: LatLngBounds.fromPoints(points),
-        padding: _stateCameraPadding(name)));
+      _animateCameraFit(
+        CameraFit.bounds(
+          bounds: LatLngBounds.fromPoints(points),
+          padding: _stateCameraPadding(name),
+        ),
+      );
     }
   }
 
@@ -5067,7 +5078,18 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   if (state == 'South Carolina') {
                     _openSouthCarolinaScratchOffPicker();
                   } else if (state == 'North Carolina') {
-                    showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (sheetContext) => NorthCarolinaScratchCatalogSheet(onGameSelected: (name) { Navigator.pop(sheetContext); _showNorthCarolinaScratchGameOnMap(name); }));
+                    showModalBottomSheet<void>(
+                      context: context,
+                      isScrollControlled: true,
+                      useSafeArea: true,
+                      builder: (sheetContext) =>
+                          NorthCarolinaScratchCatalogSheet(
+                            onGameSelected: (name) {
+                              Navigator.pop(sheetContext);
+                              _showNorthCarolinaScratchGameOnMap(name);
+                            },
+                          ),
+                    );
                   } else if (state == 'Missouri') {
                     showModalBottomSheet<void>(
                       context: context,
@@ -5344,7 +5366,12 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
             Positioned(
               right: 20,
-              left: horizontalActions ? 20 : null,
+              left: MediaQuery.sizeOf(context).height < 500
+                  ? null
+                  : horizontalActions
+                  ? 20
+                  : null,
+              width: MediaQuery.sizeOf(context).height < 500 ? 300 : null,
               bottom: actionControlsBottom,
               child: MapActionControls(
                 horizontal: horizontalActions,
@@ -6294,8 +6321,16 @@ class _NorthCarolinaScratchOffsPanel extends StatelessWidget {
                       ListTile(
                         leading: const Icon(Icons.table_chart_outlined),
                         title: const Text('Open dated Scratch-Off inventory'),
-                        subtitle: const Text('Listed games, literal prize tiers and not-yet-claimed counts. Separate from mapped claims.'),
-                        onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NorthCarolinaScratchCatalogSheet()),
+                        subtitle: const Text(
+                          'Listed games, literal prize tiers and not-yet-claimed counts. Separate from mapped claims.',
+                        ),
+                        onTap: () => showModalBottomSheet<void>(
+                          context: context,
+                          isScrollControlled: true,
+                          useSafeArea: true,
+                          builder: (_) =>
+                              const NorthCarolinaScratchCatalogSheet(),
+                        ),
                       ),
                     ],
                   ),

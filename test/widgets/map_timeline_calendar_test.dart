@@ -6,6 +6,37 @@ import 'package:lottery_atlas/widgets/map/map_controls_overlay.dart';
 import 'package:lottery_atlas/widgets/map/map_filter_state.dart';
 
 void main() {
+  testWidgets('rotation moves phone controls into a bounded landscape column', (
+    tester,
+  ) async {
+    tester.view.devicePixelRatio = 1;
+    tester.view.physicalSize = const Size(390, 844);
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(
+          body: MapControlsOverlay(selectedStateName: 'South Carolina'),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    final portraitSearch = tester.getSize(find.byTooltip('Search'));
+    tester.view.physicalSize = const Size(844, 390);
+    await tester.pumpAndSettle();
+    final header = tester.getRect(find.byTooltip('Search'));
+    final timeline = tester.getRect(find.byType(FilledButton).first);
+    expect(header.left, greaterThan(500));
+    expect(timeline.left, greaterThan(500));
+    expect(timeline.width, lessThanOrEqualTo(300));
+    expect(tester.getSize(find.byTooltip('Search')), portraitSearch);
+    expect(tester.takeException(), isNull);
+    tester.view.physicalSize = const Size(390, 844);
+    await tester.pumpAndSettle();
+    expect(tester.getSize(find.byTooltip('Search')), portraitSearch);
+    expect(tester.takeException(), isNull);
+  });
+
   testWidgets('phone keeps state visible and opens menu actions on demand', (
     tester,
   ) async {
