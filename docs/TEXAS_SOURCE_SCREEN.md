@@ -280,3 +280,29 @@ any responsive documents, if they exist, no later than October 16, 2026. No
 documents, definitions, fee or new question accompanied this notice. Recorded
 the conditional date; no redundant acknowledgment was sent. Existing source
 limitations and accepted Texas coverage remain unchanged.
+
+## October 12 response — public Pick 3/Daily 4 summary reports
+
+The agency answered the September 25 definitions/missing-report inquiry ahead
+of its conditional October 16 date and says its file review found no additional
+responsive documents. The September 30 clarification was verified in Sent;
+the new response contains no fee, question or attachment, so no reply was sent.
+This closes the awaited response for this inquiry only, not the separate
+September 28 request for an email copy of retailer documents.
+
+The email refers to September 21 Pick 3 and Daily 4 reports. Joining the line
+break in the Pick 3 reference retrieves a 15,905-byte winner-summary text file.
+The literal Daily 4 URL returns 404; appending `.txt` retrieves a 26,721-byte
+Daily 4 winner-summary file. That suffix correction is an independently tested
+candidate, not the literal URL supplied in the email. Both files were captured
+and hashed privately under `work/agency_email_checks/texas_20261012/`.
+
+Initial text inspection finds four sessions per game, base and FIREBALL rows,
+and literal WINNING TKTS, PAYOFF/UNIT, TOTAL LIABILITY and SALES LESS CANCELS
+columns. No retailer/address fields were found. These are newly identified
+statewide summary sources requiring a separate bounded parser/units audit;
+they do not resolve Where Sold row semantics, shared jackpots, selling versus
+validating locations, or correction cadence. No counts, joins or public feeds
+were promoted. Texas acceptance remains closed and North Carolina remains the
+sole active state. Preserve this source-review backlog without claiming that
+Pick 3/Daily 4 summary reports are unavailable.
