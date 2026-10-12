@@ -560,3 +560,35 @@ dates alone cannot prove newer remote adoption. Do not rebuild absent further
 code/data changes. Native report/catalog interaction, official source-return,
 retention after request failure and newer remote adoption remain open; no
 acceptance or deadline change is claimed.
+
+### October 12, 19:20 ET — Review hold cleared; native NC checkpoint
+
+The user explicitly confirmed that the simulator review was complete and the
+current layout checked out. This supersedes all prior instructions to preserve
+an ongoing simulator review. Continued on the already installed October 10
+build; no rebuild, install or restart was needed for this checkpoint.
+
+Native iPhone 17e observations:
+- NC source coverage and cadence notices display the claim-date/record-unit,
+  exclusion, coordinate-provenance and refresh limits.
+- Draw reports show retrieval `2026-10-11T22:05:54.653782+00:00`, with October 11
+  Pick/Cash Pop selections newer than the installed October 10 build. Newer
+  native report adoption is demonstrated.
+- Xs and Os October 4 report, its five tiers and shared/parimutuel notes render.
+  Its official report link opens the NC site in Safari; returning to Lottery
+  Atlas preserves the selected report and retrieval date.
+- Powerball October 10 selection renders the mandatory Double Play visual/
+  accessibility-label disagreement warning before the table.
+- Scratch inventory displays 83 games, source date October 10 and retrieval
+  `2026-10-11T12:59:56.294520+00:00`, demonstrating newer native catalog adoption.
+  An unmatched search displays zero results; clearing it recovers the catalog.
+  The $50 filter displays four of 83 games; resetting restores all 83. Literal
+  prize/odds/count fields and the reorders/not-stock/cash-value limits render.
+
+This is a partial native checkpoint, not NC acceptance. Remaining: all native
+report families/session groups, remaining official-source returns, complete
+compact/wide interaction, and request-failure retention/recovery. Automated UI
+scroll/drag attempts did not visibly move the long tables; the cause is not yet
+established and is not classified as an application defect. Existing widget
+coverage is not substituted for these remaining native checks. No deadline
+extension: October 13 at 10:38 ET remains the supported-release deadline.

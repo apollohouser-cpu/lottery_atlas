@@ -516,3 +516,11 @@ artifact references. Do not interrupt that review with automated navigation.
 This does not establish North Carolina native acceptance, newer remote adoption,
 source-return or failure retention, Android runtime readiness, or full mobile
 acceptance. Private logs: work/mobile_beta/landscape-{tests,analysis,build}.log.
+
+### October 12 — User simulator review complete
+
+The user confirmed that the current simulator layout checks out and review is
+finished. The prior do-not-interrupt review hold is cleared. NC native checking
+has resumed on the existing installed build; see NORTH_CAROLINA_ACCEPTANCE.md
+for the partial adoption, source-return and catalog interaction checkpoint.
+Full NC/mobile acceptance and Android runtime checks remain open.
