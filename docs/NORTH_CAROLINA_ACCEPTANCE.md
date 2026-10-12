@@ -592,3 +592,37 @@ scroll/drag attempts did not visibly move the long tables; the cause is not yet
 established and is not classified as an application defect. Existing widget
 coverage is not substituted for these remaining native checks. No deadline
 extension: October 13 at 10:38 ET remains the supported-release deadline.
+
+### October 12, 19:56 ET — Native report group selection checkpoint
+
+Continued on the existing iPhone 17e build. Together with the preceding XO and
+Powerball checks, all 14 supported game/session groups have now been selected
+natively. This closes group-selection coverage only, not the remaining complete
+long-table, source-return, layout or failure-recovery gates.
+
+New native observations:
+- Pick 4 Evening October 10 and Daytime October 11 show distinct digits,
+  Fireball, combined summaries and literal base schedules. Pick 3 Evening
+  October 10 and Daytime October 11 also show the Fireball schedule heading and
+  initial rows. Full lower schedule traversal remains open.
+- Millionaire for Life October 10 shows all nine rows and literal annual-for-life
+  labels. Mega Millions October 9 shows its mandatory source-label warning and
+  separately labeled multiplier rows; lower rows still need native traversal.
+- Cash Pop's five sessions were individually selected: Primetime Pop and
+  Midnight Money October 10; Morning Buzz, Lunch Rush and Clock Out Cash October
+  11. Each displays the corresponding time, Pop, source winners/payout and scope.
+- Cash 5 October 10 shows separate base and Double Play numbers/four tiers each,
+  including the advertised rollover qualification. Its official dated report
+  opens in Safari; returning retains the selected date and retrieval timestamp.
+- Cash Pop official history opens in Safari, visibly includes the selected
+  October 11 Morning Buzz row, and returns with that selection and data intact.
+
+A visual screenshot shows the Cash 5 list at its lower rows/footer after source
+navigation and a scroll attempt despite an unchanged accessibility-tree diff.
+An unchanged AX diff therefore is not sufficient evidence of failed scrolling.
+Separate Mega Millions drag attempts still did not visibly advance the table;
+no application defect is established. Simulator display was resized to Physical
+Size for input investigation. No source/code changes, rebuild or restart.
+NC remains unaccepted; release deadline is unchanged. Next: resolve reliable
+long-list traversal, remaining source/catalog returns and wide native checks,
+then controlled app-request failure retention and ordinary-build restoration.
