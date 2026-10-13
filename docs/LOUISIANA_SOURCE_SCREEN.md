@@ -107,7 +107,7 @@ Scope due October 13 at 23:55 ET; release decision due October 17 at 23:55 ET.
 No extension used. Historical complete-count gaps above remain separate from
 honest supported-app completion. No new correspondence or public dataset change.
 
-## October 13, 00:59 ET — Supported scope closed
+## October 13, 00:58 ET — Supported scope closed
 
 Captured eleven additional linked official pages privately: Mega Millions,
 Lotto, Easy 5, Pick 4, Pick 5, Fast Play, promotions, Club Lotteaux, unclaimed

@@ -32,7 +32,7 @@ new report import. Inspect the other six families and any extra options next.
 
 ## Acceptance gates
 
-- [x] Current product/options/history scope and explicit gaps (October 13, 00:59 ET).
+- [x] Current product/options/history scope and explicit gaps (October 13, 00:58 ET).
 - [ ] Strict bounded draw reports with source dates, units and qualifications.
 - [ ] Current Scratch integration audited against the existing validated importer.
 - [ ] Retailer and winner coverage audited or honest supported limits established.
@@ -46,7 +46,7 @@ complete directory or new agency response is inferred. Missing broader agency
 records do not block honest supported completion. No Gmail, fees, attestations,
 simulator actions or mobile signing occurred. Mobile beta work remains independent.
 
-## October 13, 00:59 ET — Supported scope closed
+## October 13, 00:58 ET — Supported scope closed
 
 Captured eleven additional linked official pages privately: Mega Millions,
 Lotto, Easy 5, Pick 4, Pick 5, Fast Play, promotions, Club Lotteaux, unclaimed
