@@ -550,3 +550,37 @@ text. No app defect, code change, build, acceptance or extension is claimed.
 
 Next remaining native work: Powerball Double Play, lower Pick schedules,
 Scratch source return, wide layouts and controlled request-failure retention.
+
+### October 12, 21:59 ET — Native request-failure retention and restoration
+
+Scratch #1 native footer/source route completed: all eleven tiers were exposed,
+its official game-detail page opened in Safari, and returning preserved game,
+scroll position and retrieval timestamp. Native catalog had adopted source date
+October 11, retrieval `2026-10-13T00:50:22.122161+00:00`. Landscape inventory
+rendered its controls and three-column rows without visible overflow in the
+checked view; returned to portrait. This is not exhaustive wide-flow acceptance.
+
+A private temporary iOS entry point exercised the production NC loaders against
+real existing SharedPreferences caches with HttpClient creation forced to throw
+SocketException. Both actual request attempts failed; both returned decoded
+objects exactly matched pre-probe cache objects, and both stored JSON strings
+remained byte-for-byte unchanged. Native unified log records:
+`NC_NATIVE_RETENTION_PASS attempts=2`, reports retrieval
+`2026-10-11T22:05:54.653782+00:00` (28), Scratch retrieval
+`2026-10-13T00:50:22.122161+00:00`, source October 11 (83),
+`cacheBytesUnchanged=true`. This is native loader/request-failure evidence, not
+OS-offline behavior, tile retention or a UI outage simulation. No saved user
+preferences were changed by the probe.
+
+Probe build succeeded (Xcode 16.9s). Removed the override by rebuilding the
+ordinary `lib/main.dart` target (9.3s), installed and launched that ordinary app.
+Generated target confirms lib/main.dart; no tracked probe code. Recovery native
+checks show reports now adopting retrieval `2026-10-13T00:50:22.190514+00:00`
+with XO October 11, and Scratch still displaying 83 games/source October 11.
+Private evidence: work/north_carolina_native/retention-evidence.log,
+retention_probe.dart, retention-build.log and ordinary-build.log.
+
+This closes the bounded native loader failure-retention/restoration checkpoint.
+NC acceptance remains open for remaining Powerball Double Play/lower Pick
+native traversal and outstanding wide/source-return checks. No extension;
+October 13 at 10:38 ET remains the deadline. Ordinary app is running portrait.
