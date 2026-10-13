@@ -6,6 +6,13 @@ class StateSourceCadenceRegistry {
 
   static String? noticeFor(String stateName) {
     switch (stateName) {
+      case 'Louisiana':
+        return 'Lottery Atlas attempts Louisiana catalog and report imports every '
+            'six hours. Agency publication cadence is unconfirmed. Scratch '
+            'inventory uses each game detail timestamp; the top-prize report '
+            'timestamp governs candidate discovery only. Draw dates and printed '
+            'source update timestamps remain separate, with warnings where they '
+            'conflict. Failed refreshes retain previous verified data and dates.';
       case 'North Carolina':
         return 'The official high-prize winner archive is updated weekly. '
             'Scratch-Off remaining prizes are updated daily through the stated '

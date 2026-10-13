@@ -307,3 +307,26 @@ The scheduled publication checkpoint is closed; this does not prove native
 adoption. Next audit the existing Louisiana Scratch app experience and remaining
 source disclosures, then integrated native coverage. Deadline October 17 at
 23:55 ET unchanged; no Gmail or state acceptance.
+
+
+## October 13, 13:07 ET — Coverage disclosures and Scratch UI audit
+
+Added Louisiana-specific source/cadence notices and eight verified official routes
+from the closed scope: Scratch inventory, retailer search, Where Winners Are,
+Fast Play, unclaimed prizes, bundles, promotions and Club Lotteaux. Notices retain
+the mixed sale/claim basis and $500+/60-day official-map scope, no approved app
+positions/joins, separate Pick dollar/count units and bounded report/history
+limits. Six-hour app polling is distinct from unconfirmed agency publication
+cadence. Three edited registry files analyze cleanly; diff check passes.
+
+Code audit found the existing generic Scratch path does not yet satisfy the
+all-tier acceptance scope: StateScratchGame retains top-prize summary fields and
+inventoryNote but drops prizeTiers, published odds, sourceUrl and detailed source
+metadata when parsing/serializing. The map panel only renders the top-prize
+summary. The scheduled 43-game/418-tier source data is available, but its richer
+fields need a strict Louisiana loader/cache/bundle and literal tier UI before
+native acceptance. This is an unfinished integration gate, not a failure of the
+accepted states or evidence of a bad scheduled source. Next implement that path,
+including TICKET labels, per-game timestamps, search/price/reset and official
+game-detail returns; then build and run integrated native acceptance. No build,
+UI session, Gmail, acceptance or deadline change.

@@ -908,6 +908,46 @@ class StateLotterySourceRegistry {
               'Official Louisiana Lotto winning numbers and game details.',
           url: 'https://louisianalottery.com/draw-games/lotto/',
         ),
+        StateLotteryResource(
+          title: 'Scratch prize inventory',
+          subtitle: 'Official game details and remaining prize information; store stock unverified.',
+          url: 'https://louisianalottery.com/top-prizes-remaining/',
+        ),
+        StateLotteryResource(
+          title: 'Find a retailer',
+          subtitle: 'Official search only; no app directory or retailer positions inferred.',
+          url: 'https://louisianalottery.com/where-to-play/',
+        ),
+        StateLotteryResource(
+          title: 'Where Winners Are',
+          subtitle: 'Official \$500+ / 60-day map; mixed sale and claim dates, not an audited app feed.',
+          url: 'https://louisianalottery.com/where-winners-are/',
+        ),
+        StateLotteryResource(
+          title: 'Fast Play',
+          subtitle: 'Official games and rules; dated winner reports and all-tier inventory not integrated.',
+          url: 'https://louisianalottery.com/fast-play/',
+        ),
+        StateLotteryResource(
+          title: 'Unclaimed prizes',
+          subtitle: 'Selected outstanding prizes and deadlines, not paid claims.',
+          url: 'https://louisianalottery.com/unclaimed-prizes/',
+        ),
+        StateLotteryResource(
+          title: 'Ticket bundles and advance play',
+          subtitle: 'Purchase-option explanations, not independent winner series.',
+          url: 'https://louisianalottery.com/draw-games/ticket-bundles/',
+        ),
+        StateLotteryResource(
+          title: 'Promotions',
+          subtitle: 'Official promotion information; promotional winnings not integrated.',
+          url: 'https://louisianalottery.com/promotions/',
+        ),
+        StateLotteryResource(
+          title: 'Club Lotteaux',
+          subtitle: 'Official rewards route; no account data or reward counts integrated.',
+          url: 'https://louisianalottery.com/club-lotteaux/',
+        ),
       ],
     ),
     'Mississippi': StateLotterySource(

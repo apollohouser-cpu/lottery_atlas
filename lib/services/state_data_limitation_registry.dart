@@ -5,6 +5,20 @@ class StateDataLimitationRegistry {
 
   static String? noticeFor(String stateName) {
     final reason = switch (stateName) {
+      'Louisiana' =>
+        'Recent reports cover two drawings per family across seven families. '
+            'Pick 3 and Pick 4 report dollar totals, not winner counts; Pick 5 '
+            'winner counts remain separate from dollar totals and payout schedules. '
+            'Powerball and Mega Millions columns are not aggregated into distinct '
+            'tickets or people. Scratch inventory is cumulative game inventory, '
+            'including literal TICKET prizes, not dated claims or retailer stock. '
+            'No Louisiana retailer directory, verified map pins or retailer-win '
+            'heat layer is integrated. The official Where Winners Are map covers '
+            'prizes of \$500 or more over 60 days and mixes sold draw/Fast Play '
+            'tickets with claimed Scratch tickets; it is not an audited app feed. '
+            'Fast Play, promotions, Club Lotteaux, bundles and older history have '
+            'official routes only. Unclaimed-prize listings show selected '
+            'outstanding prizes and deadlines, not paid claims.',
       'North Carolina' =>
         'Mapped activity uses selected published prize-claim records of \$5,000 '
             'or more in the displayed period, dated by claim date, not draw or sale time. '
