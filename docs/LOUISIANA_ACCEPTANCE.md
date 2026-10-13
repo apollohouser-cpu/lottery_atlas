@@ -330,3 +330,24 @@ accepted states or evidence of a bad scheduled source. Next implement that path,
 including TICKET labels, per-game timestamps, search/price/reset and official
 game-detail returns; then build and run integrated native acceptance. No build,
 UI session, Gmail, acceptance or deadline change.
+
+
+## October 13, 14:08 ET — Literal Scratch app loader and bundle
+
+Added a dedicated Louisiana Scratch loader and the current generated bundle.
+The combined public endpoint is filtered to exactly one Louisiana catalog;
+only that complete catalog is cached, retaining all 43 games / 418 tiers and
+source metadata. Validation rejects duplicate games/tiers, incorrect game URLs,
+malformed dates/odds/counts, inconsistent total/claimed/remaining arithmetic,
+inconsistent top-prize fields and cash conversion of literal TICKET prizes.
+Retrieval, discovery-report and same-game timestamps cannot regress; game
+identity changes and large catalog shrinkage are rejected. Scale guards are not
+claims of completeness. Counts may change with validated source updates.
+
+Five Flutter tests pass, covering fourteen malformed variants, five continuity
+failures, request/parse failures with cache and cold bundle, Louisiana-only cache
+serialization and storage-write failure. Two-file analysis is clean. Tier UI is
+still pending, so this does not close Scratch app or native acceptance. Next add
+search/price/reset, literal all-tier inventory with per-game dates and official
+detail links, wire source/map entry points, then integrated native checks. No
+full build/UI/Gmail, acceptance or deadline change.
