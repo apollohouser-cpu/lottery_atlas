@@ -251,3 +251,22 @@ refreshed or published feed. Remaining qualifications and attaching Pick schedul
 atomic collection/refresh, app validation/UI and native acceptance remain open.
 No public feed/build/UI/Gmail or deadline changes. Private output:
 work/louisiana_scope/mega-millions-reports.json; two-report fixture tracked.
+
+
+## October 13, 07:01 ET — Complete private report collection
+
+Added a strict seven-page collection assembler requiring exactly fourteen reports,
+two per family, with matching official routes. Pick schedules and wager/liability
+qualifications are now attached to each dated Pick report. Lotto pari-mutuel and
+fixed-tier explanation, Easy 5 cash/rollover explanation, PB/MM annuity/cash
+qualifications, and MM per-play multiplier explanation are required and retained.
+Missing groups, schedules or qualifications fail the collection before output.
+
+All seven retained full captures assemble successfully into the private
+work/louisiana_scope/draw-collection.json. Twenty-one Louisiana tests pass,
+including missing-group/qualification/schedule failures and all previous parser
+checks. Bounded fixtures now include required public qualifications and schedules.
+This is an in-memory collection assembler, not a fresh network import or atomic
+publisher. Next implement atomic fetching/regression protection, scheduled
+transaction integration and app/native coverage. No public feed/build/UI/Gmail,
+acceptance or deadline change.

@@ -468,3 +468,55 @@ def parse_mega_millions_reports(raw, *, today=None):
                         'coverage': 'Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.'})
     reports.sort(key=lambda r: r['drawDate'], reverse=True)
     return reports[:2]
+
+
+REPORT_GAMES = {'Lotto': 'lotto', 'Easy 5': 'easy-5', 'Powerball': 'powerball',
+                'Mega Millions': 'mega-millions', 'Pick 3': 'pick-3',
+                'Pick 4': 'pick-4', 'Pick 5': 'pick-5'}
+
+
+def parse_draw_collection(pages, *, today=None):
+    """Require all seven pages and their qualifications before returning any feed."""
+    if set(pages) != set(REPORT_GAMES):
+        raise ValueError('Incomplete or unexpected Louisiana families')
+    reports = []
+    for game, slug in REPORT_GAMES.items():
+        raw = pages[game]
+        if game.startswith('Pick '):
+            parsed = parse_pick_reports(raw, game, today=today)
+            schedule = parse_pick_schedule(raw, game)
+            for report in parsed:
+                report['payoutSchedule'] = schedule['tables']
+                report['qualifications'] = schedule['qualifications']
+        else:
+            if game in GAMES:
+                parsed = parse_local_reports(raw, game, today=today)
+            elif game == 'Powerball':
+                parsed = parse_powerball_reports(raw, today=today)
+            else:
+                parsed = parse_mega_millions_reports(raw, today=today)
+            root = html.fromstring(raw)
+            paragraphs = [text(p) for p in one(root.xpath('//main')).xpath('.//p')]
+            prefix = ('The '+game+' jackpot starts at a guaranteed' if game in GAMES
+                      else 'The advertised jackpot represents')
+            qualifying = [p for p in paragraphs if p.startswith(prefix)]
+            if len(qualifying) != 1:
+                raise ValueError('Missing or duplicate jackpot qualification')
+            required = {'Lotto': ['pari-mutuel', 'divided equally', 'fixed amount'],
+                        'Easy 5': ['cash', 'carried over', 'prize pool'],
+                        'Powerball': ['annuity', '30 graduated installments', 'cash'],
+                        'Mega Millions': ['annuity', '30 graduated installments', 'does not apply to the jackpot']}[game]
+            if any(term not in qualifying[0] for term in required):
+                raise ValueError('Changed jackpot qualification')
+            if game == 'Mega Millions':
+                multiplier = [p for p in paragraphs if p.startswith('A multiplier feature automatically comes with your ticket')]
+                if len(multiplier) != 1 or 'randomly assigned at the time of purchase' not in multiplier[0]:
+                    raise ValueError('Missing multiplier qualification')
+                qualifying += multiplier
+            for report in parsed:
+                report['qualifications'] = qualifying
+        if len(parsed) != 2 or any(r['game'] != game or r['sourceUrl'] != f'https://louisianalottery.com/draw-games/{slug}/#{r["drawDate"]}' for r in parsed):
+            raise ValueError('Incomplete or mismatched report group')
+        reports.extend(parsed)
+    return {'schemaVersion': 1, 'state': 'LA', 'reports': reports,
+            'coverage': 'Two recent source reports per family; seven families. Published winner or dollar units remain separate by source column. No statewide claims completeness, distinct-person aggregation, retailer joins or paid-jackpot conversion.'}

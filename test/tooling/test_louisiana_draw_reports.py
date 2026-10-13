@@ -251,4 +251,37 @@ class MegaMillionsReportsTests(unittest.TestCase):
         with self.assertRaises(ValueError): self.parse(html.tostring(root))
 
 
+
+class CollectionTests(unittest.TestCase):
+    def pages(self):
+        from louisiana_draw_reports import REPORT_GAMES
+        return {g: (FIXTURES / (('pick3' if g == 'Pick 3' else s)+'.html')).read_bytes() for g, s in REPORT_GAMES.items()}
+
+    def parse(self, pages):
+        from louisiana_draw_reports import parse_draw_collection
+        return parse_draw_collection(pages, today=date(2026, 10, 13))
+
+    def test_complete_collection_keeps_schedules_and_qualifications(self):
+        result = self.parse(self.pages())
+        self.assertEqual(len(result['reports']), 14)
+        for r in result['reports']:
+            self.assertTrue(r['qualifications'])
+            if r['game'].startswith('Pick '): self.assertEqual(len(r['payoutSchedule']), 4)
+        mm = next(r for r in result['reports'] if r['game'] == 'Mega Millions')
+        self.assertEqual(len(mm['qualifications']), 2)
+        self.assertIn('does not apply to the jackpot', mm['qualifications'][0])
+
+    def test_missing_group_schedule_or_qualification_rejected(self):
+        pages = self.pages(); del pages['Lotto']
+        with self.assertRaises(ValueError): self.parse(pages)
+        for game, old, new in [('Lotto', b'pari-mutuel', b'unknown'),
+                               ('Easy 5', b'carried over', b'unknown'),
+                               ('Powerball', b'30 graduated installments', b'unknown'),
+                               ('Mega Millions', b'randomly assigned at the time of purchase', b'unknown'),
+                               ('Pick 3', b'class="prize-chart__table"', b'class="missing"')]:
+            with self.subTest(game=game):
+                pages = self.pages(); self.assertIn(old, pages[game]); pages[game] = pages[game].replace(old, new, 1)
+                with self.assertRaises(ValueError): self.parse(pages)
+
+
 if __name__ == '__main__': unittest.main()
