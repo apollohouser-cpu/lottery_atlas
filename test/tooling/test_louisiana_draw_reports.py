@@ -162,4 +162,49 @@ class PickScheduleTests(unittest.TestCase):
             with self.assertRaises(ValueError): self.parse(html.tostring(root))
 
 
+
+class PowerballReportsTests(unittest.TestCase):
+    def fixture(self):
+        return (FIXTURES / 'powerball.html').read_bytes()
+
+    def parse(self, raw):
+        from louisiana_draw_reports import parse_powerball_reports
+        return parse_powerball_reports(raw, today=date(2026, 10, 13))
+
+    def test_separate_variants_and_unavailable_jackpot(self):
+        reports = self.parse(self.fixture())
+        self.assertEqual([r['drawDate'] for r in reports], ['2026-10-10', '2026-10-07'])
+        r = reports[0]
+        self.assertEqual(r['numbers'], ['01', '04', '19', '33', '51'])
+        self.assertEqual((r['powerball'], r['powerPlay']), ('15', '2x'))
+        self.assertEqual(len(r['tiers']), 9)
+        self.assertIsNone(r['tiers'][0]['powerPlayWinners'])
+        self.assertEqual(r['tiers'][0]['powerPlayWinnersLabel'], 'N/A')
+        self.assertEqual(r['tiers'][0]['baseWinners'], 0)
+        self.assertEqual((r['tiers'][-1]['baseWinners'], r['tiers'][-1]['powerPlayWinners']), (3738, 2196))
+
+    def test_rejects_changed_numbers_columns_labels_and_counts(self):
+        raw = self.fixture()
+        changes = [(b'<h1>Powerball', b'<h1>Lotto'), (b'>01</li>', b'>70</li>'),
+                   (b'>04</li>', b'>01</li>'), (b'<strong>2x</strong>', b'<strong>6x</strong>'),
+                   (b'Non Power Play Winners', b'Winners'), (b'>N/A</td>', b'>0</td>'),
+                   (b'>JACKPOT</td>', b'>$0</td>'), (b'>3,738</td>', b'>3.738</td>'),
+                   (b'Power Ball numbers: 1 through 5 plus Powerball', b'Power Ball numbers: 1 through 4 plus Powerball'),
+                   (b'controls="section-pb1"', b'controls="wrong"'), (b'AM CDT', b'AM CST')]
+        for old, new in changes:
+            with self.subTest(old=old):
+                self.assertIn(old, raw)
+                with self.assertRaises(ValueError): self.parse(raw.replace(old, new, 1))
+
+    def test_missing_tier_or_duplicate_older_report_rejected(self):
+        root = html.fromstring(self.fixture())
+        node = root.xpath('//table[@class="table"]/tbody/tr[last()]')[0]
+        node.getparent().remove(node)
+        with self.assertRaises(ValueError): self.parse(html.tostring(root))
+        from copy import deepcopy
+        root = html.fromstring(self.fixture()); table = root.xpath('//table[@class="winning-numbers__table"]')[0]
+        for row in list(table.xpath('./tr'))[:2]: table.append(deepcopy(row))
+        with self.assertRaises(ValueError): self.parse(html.tostring(root))
+
+
 if __name__ == '__main__': unittest.main()

@@ -213,3 +213,22 @@ under work/louisiana_scope and public schedule fixtures are tracked. Schedules
 remain separate from dated summaries until collection integration. PB/MM parsers,
 remaining family qualifications, atomic refresh/publication and app/native work
 remain open. No feed/build/UI/Gmail changes or acceptance; deadline unchanged.
+
+
+## October 13, 05:00 ET — Powerball dated reports
+
+Strict Powerball parsing validates every embedded source history pair before
+selecting October 10/7: two private reports with nine match rows each. Separate
+Non Power Play and Power Play winner/prize columns remain distinct. The jackpot
+Power Play cells retain N/A with a null count, never zero or an invented count.
+White/red number ranges, white-number uniqueness, multiplier, date/weekday,
+Louisiana caption, exact column/match labels and symbols, associated report IDs,
+counts, literal prizes and Central source timestamps are validated.
+
+Sixteen Louisiana parser tests pass, including eleven malformed PB variants,
+missing tiers and duplicated older history. The complete retained source capture
+parsed successfully; work/louisiana_scope/powerball-reports.json stays private,
+with a bounded two-report public fixture tracked. Mega Millions remains the last
+family parser; remaining source qualifications, collection/transaction integration,
+publication and app/native work remain pending. No public feed/build/UI/Gmail or
+deadline changes; this is not acceptance.

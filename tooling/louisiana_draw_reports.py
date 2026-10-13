@@ -264,3 +264,105 @@ def parse_pick_schedule(raw, game):
         raise ValueError('Missing Pick wager or liability qualification')
     return {'game': game, 'tables': result, 'qualifications': notes + limits,
             'coverage': 'Published payout schedule and examples, not actual draw winner counts or dollar totals.'}
+
+
+def parse_powerball_reports(raw, *, today=None):
+    """Validate every paired history row before selecting two recent reports."""
+    today = today or datetime.now(CENTRAL).date()
+    game = 'Powerball'
+    if b'</html>' not in raw.lower():
+        raise ValueError('Unsupported game or incomplete HTML')
+    slug, size, maximum = 'powerball', 5, 69
+    root = html.fromstring(raw)
+    if text(one(root.xpath('//h1'))) != game:
+        raise ValueError('Wrong game page')
+    main = one(root.xpath('//main'))
+    table = one(main.xpath('.//table[@class="winning-numbers__table"]'))
+    if [text(e) for e in table.xpath('./thead/tr/th')] != ['Draw Date', 'Winning Numbers', 'Jackpot']:
+        raise ValueError('Changed history columns')
+    rows = table.xpath('./tr | ./tbody/tr')
+    for row in list(rows):
+        if row.get('class') == 'winning-numbers__more':
+            if text(row) != 'Load More' or len(row.xpath('./td/button[@data-winning-numbers-more]')) != 1:
+                raise ValueError('Changed continuation control')
+            rows.remove(row)
+    if len(rows) < 4 or len(rows) % 2:
+        raise ValueError('Incomplete date/report pairs')
+    reports = []
+    seen = set()
+    for i in range(0, len(rows), 2):
+        head, detail = rows[i:i+2]
+        if len(head.xpath('./th')) != 1 or len(head.xpath('./td')) != 2:
+            raise ValueError('Changed date row')
+        stamp = one(head.xpath('./th/span[@id]'))
+        draw = date.fromisoformat(stamp.get('id'))
+        label = datetime.strptime(text(stamp), '%A, %B %d, %Y').date()
+        if draw != label or text(stamp).split(',')[0] != draw.strftime('%A') or draw > today or draw in seen:
+            raise ValueError('Invalid or duplicate draw date')
+        if draw.weekday() not in (0, 2, 5):
+            raise ValueError('Unexpected drawing day')
+        seen.add(draw)
+        sequence = one(head.xpath('./td//ul[@aria-label="winning numbers"]'))
+        balls = sequence.xpath('./li')
+        if len(balls) != 7 or any(n.get('class') != 'jackpot-sequence__number' for n in balls[:5]):
+            raise ValueError('Changed Powerball sequence')
+        numbers = [text(n) for n in balls[:5]]
+        if any(not re.fullmatch(r'\d{2}', n) or not 1 <= int(n) <= 69 for n in numbers) or len(set(numbers)) != 5:
+            raise ValueError('Invalid Powerball white numbers')
+        powerball = text(balls[5])
+        if balls[5].get('class') != 'jackpot-sequence__number jackpot-sequence__number--powerball' or not re.fullmatch(r'\d{2}', powerball) or not 1 <= int(powerball) <= 26:
+            raise ValueError('Invalid Powerball red number')
+        multiplier = text(one(balls[6].xpath('./strong')))
+        if balls[6].get('class') != 'jackpot-sequence__multiplier' or text(one(balls[6].xpath('./span'))) != 'Power Play' or multiplier not in ('2x', '3x', '4x', '5x', '10x'):
+            raise ValueError('Invalid Power Play multiplier')
+        jackpot = text(one(head.xpath(".//span[contains(concat(' ',normalize-space(@class),' '),' winning-numbers__jackpot__total ')]")))
+        money(jackpot.removesuffix('(ticket purchased)').strip())
+        toggle = one(head.xpath('.//disclosure-toggle'))
+        region = one(detail.xpath('./td/div[@class="winning-numbers__detail"]'))
+        if toggle.get('controls') != region.get('id') or toggle.get('key') != region.get('aria-labelledby'):
+            raise ValueError('Mismatched report association')
+        tiers_table = one(region.xpath('./table'))
+        if text(one(tiers_table.xpath('./caption'))) != 'Winners in Louisiana':
+            raise ValueError('Changed geographic unit')
+        columns = ['Winning Combinations', 'Non Power Play Winners', 'Non Power Play Prize', 'Power Play Winners', 'Power Play Prize']
+        if [text(e) for e in tiers_table.xpath('./thead/tr/th')] != columns:
+            raise ValueError('Changed Powerball tier columns')
+        tier_rows = tiers_table.xpath('./tbody/tr')
+        identities = [(5, True), (5, False), (4, True), (4, False), (3, True), (3, False), (2, True), (1, True), (0, True)]
+        if len(tier_rows) != len(identities):
+            raise ValueError('Missing or extra Powerball tiers')
+        tiers = []
+        for row, (white, red) in zip(tier_rows, identities):
+            cells = row.xpath('./td')
+            if len(cells) != 5:
+                raise ValueError('Changed Powerball tier cells')
+            prefix = f'1 through {white}' if white >= 3 else ('1 and 2' if white == 2 else ('1' if white else ''))
+            expected = 'Power Ball numbers: ' + prefix + (' plus Powerball' if red and white else ('Powerball' if red else ''))
+            symbols = cells[0].xpath('.//li')
+            expected_classes = ['jackpot-sequence__number'] * white + (['jackpot-sequence__separator'] if red and white else []) + (['jackpot-sequence__number jackpot-sequence__number--powerball'] if red else [])
+            if text(one(cells[0].xpath('.//span[@class="hide-text"]'))) != expected or [n.get('class') for n in symbols] != expected_classes:
+                raise ValueError('Changed Powerball match label or symbols')
+            prize, pp_count, pp_prize = text(cells[2]), text(cells[3]), text(cells[4])
+            jackpot_row = white == 5 and red
+            if jackpot_row:
+                if (prize, pp_count, pp_prize) != ('JACKPOT', 'N/A', 'N/A'):
+                    raise ValueError('Changed Powerball jackpot availability')
+            else:
+                money(prize); money(pp_prize); count(pp_count)
+            tiers.append({'match': str(white) + ('+PB' if red else ''), 'sourceMatchLabel': expected,
+                          'baseWinners': count(text(cells[1])), 'basePrizeLabel': prize,
+                          'powerPlayWinners': None if jackpot_row else count(pp_count),
+                          'powerPlayWinnersLabel': pp_count, 'powerPlayPrizeLabel': pp_prize})
+        updated = text(one(tiers_table.xpath('./tfoot/tr/td/p')))
+        timestamp = source_time(updated, today)
+        warnings = []
+        if timestamp.date() < draw:
+            warnings.append('The printed source update date precedes the draw date. Both dates are retained without correction.')
+        reports.append({'game': game, 'session': 'Drawing', 'drawDate': draw.isoformat(),
+                        'numbers': numbers, 'powerball': powerball, 'powerPlay': multiplier, 'advertisedJackpot': jackpot, 'tiers': tiers,
+                        'sourceUpdatedText': updated, 'sourceUpdatedAt': timestamp.isoformat(),
+                        'sourceWarnings': warnings,
+                        'sourceUrl': f'https://louisianalottery.com/draw-games/{slug}/#{draw.isoformat()}',
+                        'coverage': 'Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.'})
+    reports.sort(key=lambda r: r['drawDate'], reverse=True)
+    return reports[:2]
