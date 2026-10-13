@@ -1,3 +1,4 @@
+import '../../widgets/map/louisiana_scratch_catalog_sheet.dart';
 import '../../widgets/map/louisiana_draw_reports_sheet.dart';
 import '../../widgets/map/north_carolina_draw_reports_sheet.dart';
 import '../../widgets/map/north_carolina_scratch_catalog_sheet.dart';
@@ -52,6 +53,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Louisiana')
+            Card(child: ListTile(
+              title: const Text('Louisiana Scratch inventory'),
+              subtitle: const Text('Literal tiers, odds and per-game source timestamps'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const LouisianaScratchCatalogSheet()),
+            )),
           if (source.stateName == 'Louisiana')
             Card(child: ListTile(
               title: const Text('Louisiana draw reports'),

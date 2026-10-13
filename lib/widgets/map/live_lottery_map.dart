@@ -58,6 +58,7 @@ import 'map_search_result.dart';
 import 'map_visual_overlays.dart';
 import 'next_drawings_panel.dart';
 import 'missouri_scratch_catalog_sheet.dart';
+import 'louisiana_scratch_catalog_sheet.dart';
 import 'map_time_zone_overlays.dart';
 
 class LiveLotteryMap extends StatefulWidget {
@@ -5090,6 +5091,13 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                             },
                           ),
                     );
+                  } else if (state == 'Louisiana') {
+                    showModalBottomSheet<void>(
+                      context: context,
+                      isScrollControlled: true,
+                      useSafeArea: true,
+                      builder: (_) => const LouisianaScratchCatalogSheet(),
+                    );
                   } else if (state == 'Missouri') {
                     showModalBottomSheet<void>(
                       context: context,
@@ -5555,8 +5563,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                           _showStateScratchGameOnMap(null),
                                       onGameSelected:
                                           _showStateScratchGameOnMap,
-                                      onOpenCatalog: () =>
-                                          _openOfficialScratchCatalog(
+                                      onOpenCatalog: () => selectedState.name == 'Louisiana'
+                                          ? showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const LouisianaScratchCatalogSheet())
+                                          : _openOfficialScratchCatalog(
                                             selectedStateSource,
                                           ),
                                     )

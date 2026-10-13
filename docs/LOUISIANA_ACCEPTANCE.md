@@ -351,3 +351,23 @@ still pending, so this does not close Scratch app or native acceptance. Next add
 search/price/reset, literal all-tier inventory with per-game dates and official
 detail links, wire source/map entry points, then integrated native checks. No
 full build/UI/Gmail, acceptance or deadline change.
+
+
+## October 13, 15:08 ET — Literal Scratch UI connected
+
+Louisiana Scratch now has an all-tier inventory sheet reachable from the source
+page, compact map Scratch action and desktop catalog action. Search by game/name,
+ticket-price filter and explicit Reset filters restore usable selections. Each
+game shows its start date, detail inventory timestamp, literal prize labels
+(including TICKET), total/claimed/remaining counts and published odds. Discovery
+report timestamp, retrieval, source scope/cadence and official game-detail/list
+links are separate. No map positions or dated winner counts are generated.
+
+Three widget tests pass: all 43 games traversed through the source footer at
+390×844 and 1400×1000, plus empty search/price recovery and reset. Four-file
+analysis reports only the existing unrelated live-map line 289 brace info; the
+new sheet/test and source-screen integration are clean. No full build or native
+interaction/source-return/adoption/retention acceptance yet. Next prepare the
+ordinary iOS simulator build and perform integrated Louisiana report/Scratch
+native checks with at most one simulator active. Deadline October 17 at 23:55 ET
+unchanged; no Gmail or state acceptance.
