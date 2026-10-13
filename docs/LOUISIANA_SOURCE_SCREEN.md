@@ -270,3 +270,21 @@ This is an in-memory collection assembler, not a fresh network import or atomic
 publisher. Next implement atomic fetching/regression protection, scheduled
 transaction integration and app/native coverage. No public feed/build/UI/Gmail,
 acceptance or deadline change.
+
+
+## October 13, 08:01 ET — Fresh atomic report importer
+
+Implemented the seven-page network importer with complete parsing before atomic
+replacement, exact family/date-window validation, per-family window regression
+rejection and same-report source timestamp regression protection. Unchanged
+content retains prior retrieval time and exact file bytes. Fetch/parse/replace
+failures preserve the previous file; temporary files are cleaned on failure.
+Retrieval time is timezone-aware and source future-date checks use Central time.
+
+Twenty-five Louisiana tests pass, including request/parse failures, unchanged
+reuse, date/source regressions and simulated replacement failure. A fresh official
+network import succeeded with fourteen reports, written privately to
+work/louisiana_scope/fresh-draw-reports.json. This is not public publication or
+scheduled integration. Next wire catalog/report rollback transaction and staging,
+then strict app loader/UI and native acceptance. No public feed/build/UI/Gmail,
+acceptance or deadline change.
