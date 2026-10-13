@@ -45,6 +45,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
+| Louisiana | October 17, 2026, 11:55 PM ET | Sole active from October 12, 11:55 PM; scope due October 13, 11:55 PM; substantial report integration. |
 | North Carolina | Accepted October 12, 2026, 11:00 PM ET (due October 13, 10:38 AM) | Bounded reports, literal Scratch and audited mapped archive accepted; explicit gaps retained. |
 | Texas | Completed September 25, 2026, 06:58 AM ET (due 6:00 PM) | Full supported coverage accepted; broader records remain separate. |
 | Kentucky | Accepted September 30, 2026, 5:03 PM ET, after the expired final extension | Supported available coverage closed; full statewide claims remain separate. |
@@ -104,8 +105,9 @@ three-output refresh and newer native remote adoption are verified. Missouri clo
 See MISSOURI_ACCEPTANCE.md for its 28 reports, 73 listed Scratch games and dated
 two-city directory limits. North Carolina closed October 12 at 23:00 ET on release 7de7bb8; see
 NORTH_CAROLINA_ACCEPTANCE.md. Ten states are ready for supported testing; 35 remain.
-No successor is activated yet. Select by remaining-state readiness and assign a
-fresh calendar deadline at activation. Mobile beta preparation remains open.
+Louisiana is the sole active successor from October 12 at 23:55 ET. Its fresh
+120-hour release window ends October 17 at 23:55 ET; scope is due October 13 at
+23:55 ET. See LOUISIANA_ACCEPTANCE.md. Mobile beta preparation remains open.
 NATIONAL_RELEASE_FORECAST.md retains the October 6 forecast baseline; two of the
 five acceptances before its next routine reforecast is complete.
 Continue authorized private records audits and no-fee correspondence separately.

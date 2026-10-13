@@ -95,3 +95,14 @@ arithmetic and identity/price/timestamp errors; an offline app test covers
 expired-game exclusion and visible timestamps. The six-hour publisher and
 bundled catalog now include Louisiana. This is inventory coverage, not
 January-to-current dated claims or verified retailer heat-map completeness.
+
+
+## October 12, 23:55 ET — Supported scope activation
+
+Louisiana is the sole active state after NC acceptance. Fresh home, Powerball,
+Pick 3 and retailer-search HTML captures succeeded; see LOUISIANA_ACCEPTANCE.md
+for evidence and gates. Existing scheduled Scratch coverage reduces startup
+work, while substantial draw/report integration receives a fresh 120-hour window.
+Scope due October 13 at 23:55 ET; release decision due October 17 at 23:55 ET.
+No extension used. Historical complete-count gaps above remain separate from
+honest supported-app completion. No new correspondence or public dataset change.

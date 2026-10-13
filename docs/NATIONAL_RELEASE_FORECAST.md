@@ -47,7 +47,7 @@ complete statewide claims do not block honest supported-coverage acceptance.
 
 Counts describe current committed listings, not stock, claims or certified
 statewide completeness. Duration bands describe planning complexity, not active
-deadlines. Missouri was activated by the original audit and is now accepted. North Carolina is active from October 8 at 10:38 ET; scope due October 9 and release due October 13 at 10:38 ET.
+deadlines. Missouri was activated by the original audit and is now accepted. North Carolina was accepted October 12. Louisiana is active from October 12 at 23:55 ET, with scope due October 13 and release due October 17 at 23:55 ET.
 
 | State | Existing foundation | Remaining acceptance work | Planning band |
 | --- | --- | --- | --- |
@@ -75,7 +75,6 @@ deadlines. Missouri was activated by the original audit and is now accepted. Nor
 | [New Hampshire](NEW_HAMPSHIRE_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 58 listed games; retained_after_failure | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [New Jersey](NEW_JERSEY_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [New Mexico](NEW_MEXICO_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 58 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
-| [North Carolina](NORTH_CAROLINA_SOURCE_SCREEN.md) | Scheduled selected winner activity | Full product/catalog/report scope, location and date semantics, native acceptance | 3–5 days |
 | [North Dakota](NORTH_DAKOTA_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [Oklahoma](OKLAHOMA_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 50 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Pennsylvania](PENNSYLVANIA_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
@@ -88,11 +87,11 @@ deadlines. Missouri was activated by the original audit and is now accepted. Nor
 | [Wisconsin](WISCONSIN_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 96 listed games; unchanged | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Wyoming](WYOMING_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 
-## Next state
+## Current state
 
-North Carolina was selected October 8 at 10:38 ET for its scheduled winner
-import and existing Scratch UI. Substantial integration receives a fresh 120-hour
-window: scope due October 9 at 10:38 ET, release due October 13 at 10:38 ET.
-See NORTH_CAROLINA_ACCEPTANCE.md. Remaining-state counts and the baseline forecast
-are unchanged; activation is not acceptance. Mobile beta preparation continues independently. Broader historic
-and private records remain separate; no fees, attestations or speculative joins.
+Louisiana was selected October 12 at 23:55 ET for its existing scheduled,
+detail-validated Scratch catalog and publicly accessible draw winner tables.
+Substantial report integration receives a fresh 120-hour window: scope due
+October 13 at 23:55 ET, release due October 17 at 23:55 ET. See
+LOUISIANA_ACCEPTANCE.md. Activation does not change the 35 remaining states or
+the baseline forecast. Mobile beta preparation continues independently.
