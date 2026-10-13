@@ -626,3 +626,27 @@ Size for input investigation. No source/code changes, rebuild or restart.
 NC remains unaccepted; release deadline is unchanged. Next: resolve reliable
 long-list traversal, remaining source/catalog returns and wide native checks,
 then controlled app-request failure retention and ordinary-build restoration.
+
+### October 12, 20:55 ET — Long-report native traversal advances
+
+On the unchanged iPhone build, targeting the next exposed tier text through
+native accessibility clicks brought successive Mega Millions rows into view.
+The October 9 report was traversed through all multiplier groups to the final
+MB/X2 row and footer. The 1+MB rows visibly retain `Source accessibility label:
+2`; counts remain under the visual match labels. The official dated Mega
+Millions page opened in Safari and returning preserved the report date, lower
+scroll position and October 11 retrieval timestamp. This resolves Mega Millions
+long-table/source-return evidence; it does not prove mouse-wheel/touch-drag
+behavior or accessibility certification.
+
+Powerball traversal additionally exposed all eight Power Play rows and the
+explicit absence of a separate printed Power Play jackpot count. Double Play
+lower traversal remains pending. A subsequent automated text-target sequence
+left the report, reached a public winner-claims route and opened Safari's input
+context menu; it was dismissed without entering data or selecting autofill.
+Returned to the NC map. Do not use an unguarded text-target loop: stop if the
+report title disappears and target actual tier rows, not offscreen qualification
+text. No app defect, code change, build, acceptance or extension is claimed.
+
+Next remaining native work: Powerball Double Play, lower Pick schedules,
+Scratch source return, wide layouts and controlled request-failure retention.
