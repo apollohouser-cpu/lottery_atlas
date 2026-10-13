@@ -171,3 +171,22 @@ with a bounded two-report public fixture tracked. Mega Millions remains the last
 family parser; remaining source qualifications, collection/transaction integration,
 publication and app/native work remain pending. No public feed/build/UI/Gmail or
 deadline changes; this is not acceptance.
+
+
+## October 13, 06:00 ET — Mega Millions dated reports
+
+The final family parser validates all embedded current-rule Mega Millions reports
+before selecting October 9/6: two private reports, nine match rows with five
+separate multiplier winner/prize pairs each. Literal $2M–$10M labels remain intact.
+Repeated jackpot entries remain separate source cells, with a required warning
+against summing them. Source match descriptions say Megaplier while the symbol
+class denotes Mega Ball; both are retained with an explicit warning for the UI.
+Pre-April 8, 2025 rules fail closed into the separate historical gap.
+
+Nineteen Louisiana tests pass, including nine malformed MM variants, old-rule
+dates and missing multiplier cells. All seven family parsers now produce fourteen
+private bounded reports from the retained captures; this is not a collected,
+refreshed or published feed. Remaining qualifications and attaching Pick schedules,
+atomic collection/refresh, app validation/UI and native acceptance remain open.
+No public feed/build/UI/Gmail or deadline changes. Private output:
+work/louisiana_scope/mega-millions-reports.json; two-report fixture tracked.

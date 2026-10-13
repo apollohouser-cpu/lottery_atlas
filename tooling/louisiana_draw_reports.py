@@ -366,3 +366,105 @@ def parse_powerball_reports(raw, *, today=None):
                         'coverage': 'Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.'})
     reports.sort(key=lambda r: r['drawDate'], reverse=True)
     return reports[:2]
+
+
+def parse_mega_millions_reports(raw, *, today=None):
+    """Validate every paired history row before selecting two recent reports."""
+    today = today or datetime.now(CENTRAL).date()
+    game = 'Mega Millions'
+    if b'</html>' not in raw.lower():
+        raise ValueError('Unsupported game or incomplete HTML')
+    slug, size, maximum = 'mega-millions', 5, 70
+    root = html.fromstring(raw)
+    if text(one(root.xpath('//h1'))) != game:
+        raise ValueError('Wrong game page')
+    main = one(root.xpath('//main'))
+    table = one(main.xpath('.//table[@class="winning-numbers__table"]'))
+    if [text(e) for e in table.xpath('./thead/tr/th')] != ['Draw Date', 'Winning Numbers', 'Jackpot']:
+        raise ValueError('Changed history columns')
+    rows = table.xpath('./tr | ./tbody/tr')
+    for row in list(rows):
+        if row.get('class') == 'winning-numbers__more':
+            if text(row) != 'Load More' or len(row.xpath('./td/button[@data-winning-numbers-more]')) != 1:
+                raise ValueError('Changed continuation control')
+            rows.remove(row)
+    if len(rows) < 4 or len(rows) % 2:
+        raise ValueError('Incomplete date/report pairs')
+    reports = []
+    seen = set()
+    for i in range(0, len(rows), 2):
+        head, detail = rows[i:i+2]
+        if len(head.xpath('./th')) != 1 or len(head.xpath('./td')) != 2:
+            raise ValueError('Changed date row')
+        stamp = one(head.xpath('./th/span[@id]'))
+        draw = date.fromisoformat(stamp.get('id'))
+        label = datetime.strptime(text(stamp), '%A, %B %d, %Y').date()
+        if draw != label or text(stamp).split(',')[0] != draw.strftime('%A') or draw > today or draw in seen:
+            raise ValueError('Invalid or duplicate draw date')
+        if draw.weekday() not in (1, 4):
+            raise ValueError('Unexpected drawing day')
+        if draw < date(2025, 4, 8):
+            raise ValueError('Old Mega Millions rules require a separate parser')
+        seen.add(draw)
+        sequence = one(head.xpath('./td//ul[@aria-label="winning numbers"]'))
+        balls = sequence.xpath('./li')
+        if len(balls) != 6 or any(n.get('class') != 'jackpot-sequence__number' for n in balls[:5]):
+            raise ValueError('Changed Mega Millions sequence')
+        numbers = [text(n) for n in balls[:5]]
+        if any(not re.fullmatch(r'\d{2}', n) or not 1 <= int(n) <= 70 for n in numbers) or len(set(numbers)) != 5:
+            raise ValueError('Invalid Mega Millions white numbers')
+        powerball = text(balls[5])
+        if balls[5].get('class') != 'jackpot-sequence__number jackpot-sequence__number--mega-ball' or not re.fullmatch(r'\d{2}', powerball) or not 1 <= int(powerball) <= 24:
+            raise ValueError('Invalid Mega Millions red number')
+        jackpot = text(one(head.xpath(".//span[contains(concat(' ',normalize-space(@class),' '),' winning-numbers__jackpot__total ')]")))
+        money(jackpot.removesuffix('(ticket purchased)').strip())
+        toggle = one(head.xpath('.//disclosure-toggle'))
+        region = one(detail.xpath('./td/div[@class="winning-numbers__detail"]'))
+        if toggle.get('controls') != region.get('id') or toggle.get('key') != region.get('aria-labelledby'):
+            raise ValueError('Mismatched report association')
+        tiers_table = one(region.xpath('./table'))
+        if text(one(tiers_table.xpath('./caption'))) != 'Winners in Louisiana':
+            raise ValueError('Changed geographic unit')
+        multipliers = [2, 3, 4, 5, 10]
+        columns = ['Winning Combinations'] + [f'x{n} {field}' for n in multipliers for field in ('Winners', 'Prize')]
+        if [text(e) for e in tiers_table.xpath('./thead/tr/th')] != columns:
+            raise ValueError('Changed Mega Millions columns')
+        tier_rows = tiers_table.xpath('./tbody/tr')
+        identities = [(5, True), (5, False), (4, True), (4, False), (3, True), (3, False), (2, True), (1, True), (0, True)]
+        if len(tier_rows) != 9:
+            raise ValueError('Missing or extra Mega Millions tiers')
+        tiers = []
+        for row, (white, red) in zip(tier_rows, identities):
+            cells = row.xpath('./td')
+            if len(cells) != 11:
+                raise ValueError('Changed Mega Millions cells')
+            prefix = f'1 through {white}' if white >= 3 else (str(white) if white else '')
+            expected = 'Mega Millions numbers: ' + prefix + (' plus Megaplier' if red and white else ('Megaplier' if red else ''))
+            classes = ['jackpot-sequence__number'] * white + (['jackpot-sequence__separator'] if red and white else []) + (['jackpot-sequence__number jackpot-sequence__number--mega-ball'] if red else [])
+            if text(one(cells[0].xpath('.//span[@class="hide-text"]'))) != expected or [n.get('class') for n in cells[0].xpath('.//li')] != classes:
+                raise ValueError('Changed Mega Millions match label or symbols')
+            variants = []
+            for offset, multiplier in enumerate(multipliers):
+                prize = text(cells[2 + offset * 2])
+                if white == 5 and red:
+                    if prize != 'JACKPOT': raise ValueError('Changed Mega Millions jackpot label')
+                elif white == 5:
+                    if prize != f'${multiplier}M': raise ValueError('Changed million prize notation')
+                else:
+                    money(prize)
+                variants.append({'multiplier': multiplier, 'winners': count(text(cells[1 + offset * 2])), 'prizeLabel': prize})
+            tiers.append({'match': str(white) + ('+MB' if red else ''), 'sourceMatchLabel': expected, 'multipliers': variants})
+        updated = text(one(tiers_table.xpath('./tfoot/tr/td/p')))
+        timestamp = source_time(updated, today)
+        warnings = ['The source match descriptions call the Mega Ball "Megaplier". Literal labels and Mega Ball symbols are retained.',
+                    'The source repeats the jackpot row across multiplier columns. These entries are not summed into a jackpot winner total.']
+        if timestamp.date() < draw:
+            warnings.append('The printed source update date precedes the draw date. Both dates are retained without correction.')
+        reports.append({'game': game, 'session': 'Drawing', 'drawDate': draw.isoformat(),
+                        'numbers': numbers, 'megaBall': powerball, 'advertisedJackpot': jackpot, 'tiers': tiers,
+                        'sourceUpdatedText': updated, 'sourceUpdatedAt': timestamp.isoformat(),
+                        'sourceWarnings': warnings,
+                        'sourceUrl': f'https://louisianalottery.com/draw-games/{slug}/#{draw.isoformat()}',
+                        'coverage': 'Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.'})
+    reports.sort(key=lambda r: r['drawDate'], reverse=True)
+    return reports[:2]

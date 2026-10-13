@@ -207,4 +207,48 @@ class PowerballReportsTests(unittest.TestCase):
         with self.assertRaises(ValueError): self.parse(html.tostring(root))
 
 
+
+class MegaMillionsReportsTests(unittest.TestCase):
+    def fixture(self):
+        return (FIXTURES / 'mega-millions.html').read_bytes()
+
+    def parse(self, raw):
+        from louisiana_draw_reports import parse_mega_millions_reports
+        return parse_mega_millions_reports(raw, today=date(2026, 10, 13))
+
+    def test_literal_multiplier_pairs_and_warnings(self):
+        reports = self.parse(self.fixture())
+        self.assertEqual([r['drawDate'] for r in reports], ['2026-10-09', '2026-10-06'])
+        r = reports[0]
+        self.assertEqual(r['megaBall'], '08')
+        self.assertEqual(r['numbers'], ['02', '07', '16', '63', '70'])
+        self.assertEqual(len(r['tiers']), 9)
+        self.assertEqual([v['multiplier'] for v in r['tiers'][0]['multipliers']], [2, 3, 4, 5, 10])
+        self.assertTrue(all(v['prizeLabel'] == 'JACKPOT' for v in r['tiers'][0]['multipliers']))
+        self.assertEqual(r['tiers'][1]['multipliers'][-1]['prizeLabel'], '$10M')
+        self.assertEqual(r['tiers'][3]['multipliers'][2]['winners'], 2)
+        self.assertIn('Megaplier', r['tiers'][0]['sourceMatchLabel'])
+        self.assertEqual(len(r['sourceWarnings']), 2)
+        self.assertNotIn('totalWinners', r)
+
+    def test_rejects_changed_multiplier_cells_and_identity(self):
+        raw = self.fixture()
+        for old, new in [(b'x10 Winners', b'x8 Winners'), (b'>$10M</td>', b'>$10</td>'),
+                         (b'>JACKPOT</td>', b'>$0</td>'), (b'>350</td>', b'>-1</td>'),
+                         (b'plus Megaplier', b'plus Unknown'), (b'>70</li>', b'>71</li>'),
+                         (b'>07</li>', b'>02</li>'), (b'Friday, October 9', b'Thursday, October 9'),
+                         (b'controls="section-mm1"', b'controls="wrong"')]:
+            with self.subTest(old=old):
+                self.assertIn(old, raw)
+                with self.assertRaises(ValueError): self.parse(raw.replace(old, new, 1))
+
+    def test_old_rules_and_missing_pairs_rejected(self):
+        raw = self.fixture().replace(b'2026-10-09', b'2025-04-04').replace(b'Friday, October 9, 2026', b'Friday, April 4, 2025')
+        with self.assertRaises(ValueError): self.parse(raw)
+        root = html.fromstring(self.fixture())
+        node = root.xpath('//table[@class="table"]/tbody/tr[1]/td[last()]')[0]
+        node.getparent().remove(node)
+        with self.assertRaises(ValueError): self.parse(html.tostring(root))
+
+
 if __name__ == '__main__': unittest.main()
