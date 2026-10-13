@@ -258,3 +258,25 @@ transaction success therefore remains open. Push publication does not execute
 source refreshes. Strict Flutter validation/cache/remote/bundle loading, report UI
 and native acceptance remain next. No new acceptance, build, UI, Gmail or deadline
 change; Louisiana remains the sole active state with October 17 at 23:55 ET due.
+
+
+## October 13, 11:09 ET — Strict app report loader and bundle
+
+Added the Louisiana report asset, strict Dart validator and cache/remote/bundle
+loader. Validation requires fourteen reports across seven families, exact routes,
+source dates and printed timestamps, required qualifications and source warnings,
+number ranges, tier identities and literal currency units. Pick 3/4 dollar totals
+cannot acquire invented winner counts; Pick 5 counts remain separate. Powerball
+jackpot Power Play stays N/A/null. Mega Millions multiplier columns and repeated
+jackpot entries remain separate with mandatory warnings. Pick schedule rows,
+columns, spans, labels, payout syntax and combo costs are validated.
+
+Retrieval/family-window/same-report source-time regressions are rejected. Failed
+requests or invalid remote data retain validated cache or bundled data without
+writing; a valid response survives cache-write failure. Six Flutter tests pass,
+including twenty-two malformed variants and continuity/failure/storage checks.
+Three-file analysis is clean. This is loader/bundle groundwork; report UI is not
+yet wired and no native adoption, full build or acceptance is claimed. Next wire
+all seven families with source warnings and literal Pick schedules, then validate
+compact/wide and native flows. Scheduled two-output checkpoint remains open.
+No Gmail, deadline or state-acceptance change.
