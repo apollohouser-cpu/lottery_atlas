@@ -124,3 +124,76 @@ def parse_local_reports(raw, game, *, today=None):
                         'coverage': 'Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.'})
     reports.sort(key=lambda r: r['drawDate'], reverse=True)
     return reports[:2]
+
+
+def parse_pick_reports(raw, game, *, today=None):
+    """Dated play-type summaries only; payout schedules are a separate source."""
+    today = today or datetime.now(CENTRAL).date()
+    if game not in ('Pick 3', 'Pick 4', 'Pick 5') or b'</html>' not in raw.lower():
+        raise ValueError('Unsupported Pick page or incomplete HTML')
+    size = int(game[-1])
+    root = html.fromstring(raw)
+    if text(one(root.xpath('//h1'))) != game:
+        raise ValueError('Wrong Pick page')
+    main = one(root.xpath('//main'))
+    table = one(main.xpath('.//table[@class="winning-numbers__table"]'))
+    if [text(e) for e in table.xpath('./thead/tr/th')] != ['Draw Date', 'Winning Numbers']:
+        raise ValueError('Changed Pick history columns')
+    rows = table.xpath('./tr | ./tbody/tr')
+    for row in list(rows):
+        if row.get('class') == 'winning-numbers__more':
+            if text(row) != 'Load More' or len(row.xpath('./td/button[@data-winning-numbers-more]')) != 1:
+                raise ValueError('Changed continuation control')
+            rows.remove(row)
+    if len(rows) < 4 or len(rows) % 2:
+        raise ValueError('Incomplete Pick pairs')
+    reports, seen = [], set()
+    expected_columns = ['Play Type', 'Statewide Total'] if size < 5 else ['Play Type', 'Statewide Winners', 'Statewide Total']
+    labels = ['Straight', 'Box', 'Straight/Box', 'Combo'] if size < 5 else ['Straight', 'Box', 'Front 4', 'Back 4', 'Front 3', 'Back 3', 'Front 2', 'Back 2']
+    for i in range(0, len(rows), 2):
+        head, detail = rows[i:i+2]
+        if len(head.xpath('./th')) != 1 or len(head.xpath('./td')) != 2:
+            raise ValueError('Changed Pick date row')
+        stamp = one(head.xpath('./th/span[@id]'))
+        draw = date.fromisoformat(stamp.get('id'))
+        label = datetime.strptime(text(stamp), '%A, %B %d, %Y').date()
+        if draw != label or text(stamp).split(',')[0] != draw.strftime('%A') or draw > today or draw in seen:
+            raise ValueError('Invalid or duplicate Pick date')
+        seen.add(draw)
+        digits = [text(n) for n in head.xpath('./td//ul[@aria-label="winning numbers"]/li')]
+        if len(digits) != size or any(not re.fullmatch(r'[0-9]', n) for n in digits):
+            raise ValueError('Invalid Pick digits')
+        toggle = one(head.xpath('.//disclosure-toggle'))
+        region = one(detail.xpath('./td/div[@class="winning-numbers__detail"]'))
+        if toggle.get('controls') != region.get('id') or toggle.get('key') != region.get('aria-labelledby'):
+            raise ValueError('Wrong Pick report association')
+        summary = one(region.xpath('./table'))
+        if [text(e) for e in summary.xpath('./thead/tr/th')] != expected_columns:
+            raise ValueError('Changed Pick summary columns')
+        data = summary.xpath('./tbody/tr')
+        if len(data) != len(labels):
+            raise ValueError('Missing or extra Pick play types')
+        entries = []
+        for row, expected in zip(data, labels):
+            cells = row.xpath('./td')
+            if len(cells) != len(expected_columns) or text(cells[0]) != expected:
+                raise ValueError('Changed Pick play type or cells')
+            amount = text(cells[-1])
+            entry = {'playType': expected, 'statewideTotalLabel': amount, 'statewideTotalCents': money(amount)}
+            if size == 5:
+                entry['statewideWinners'] = count(text(cells[1]))
+            entries.append(entry)
+        updated = text(one(summary.xpath('./tfoot/tr/td/p')))
+        timestamp = source_time(updated, today)
+        warnings = []
+        if timestamp.date() < draw:
+            warnings.append('The printed source update date precedes the draw date. Both dates are retained without correction.')
+        reports.append({'game': game, 'session': 'Daily', 'drawDate': draw.isoformat(),
+                        'digits': digits, 'summaryColumns': expected_columns, 'playTypes': entries,
+                        'sourceUpdatedText': updated, 'sourceUpdatedAt': timestamp.isoformat(),
+                        'sourceWarnings': warnings,
+                        'sourceUrl': f'https://louisianalottery.com/draw-games/pick-{size}/#{draw.isoformat()}',
+                        'coverage': ('Play-type dollar totals only; no source winner counts. ' if size < 5 else 'Source statewide winners and dollar totals by play type. ')
+                        + 'Not certified distinct tickets or people, net payments, complete claims or retailer activity. Payout schedules are separate from observed totals.'})
+    reports.sort(key=lambda r: r['drawDate'], reverse=True)
+    return reports[:2]

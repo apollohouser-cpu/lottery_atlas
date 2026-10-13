@@ -113,3 +113,24 @@ This is parser groundwork, not a complete report collection or acceptance.
 Remaining families, literal Pick schedules and full qualifications, atomic
 refresh/publication and app/native integration are still pending. No public
 feed change, simulator/build, Gmail or deadline change.
+
+
+## October 13, 03:01 ET — Pick dated summaries parsed
+
+Strict Pick 3, Pick 4 and Pick 5 summary parsers now validate every embedded
+history pair before selecting two recent reports per family. Six private reports
+contain 32 play-type rows: Pick 3 October 11/10, Pick 4 and Pick 5 October 12/11.
+Pick 3/4 retain literal statewide dollar totals and exact cents, with no inferred
+winner counts. Pick 5 retains the eight source play-type winner counts and dollar
+totals, including explicit zero rows. Ordered digits preserve zeros and repeats.
+Date/weekday, row association, exact columns/play types, numeric formats and
+Central source timestamps are checked. The Pick 4/5 October 12 versus October 11
+source-update mismatch is preserved with an explicit warning for later UI display.
+
+Eleven Louisiana parser tests pass, including eleven new malformed Pick variants,
+missing rows, duplicate history, zero/repeated digits and absent Pick 3/4 counts.
+Bounded public-source fixtures are tracked; full captures and parsed outputs stay
+private under work/louisiana_scope. Literal payout schedules and source
+qualifications remain pending, as do PB/MM parsers, atomic collection, publication
+and app/native integration. This is not state acceptance. No public feed, build,
+simulator or Gmail changes; October 17 at 23:55 ET deadline remains unchanged.
