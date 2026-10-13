@@ -341,3 +341,30 @@ yet wired and no native adoption, full build or acceptance is claimed. Next wire
 all seven families with source warnings and literal Pick schedules, then validate
 compact/wide and native flows. Scheduled two-output checkpoint remains open.
 No Gmail, deadline or state-acceptance change.
+
+
+## October 13, 12:07 ET — Report UI and scheduled publication checkpoint
+
+Connected the Louisiana source screen to all fourteen reports across seven
+families. The sheet shows printed source timestamps and mandatory warnings before
+report rows, separate base/Power Play and MM multiplier entries, literal jackpot
+advertisements, Pick dollar totals and Pick 5 winners. Published Pick schedules
+show their examples, odds, wager costs and inherited Straight/Box continuation
+labels separately from actual reports. Qualifications, retrieval time, scope
+limits and dated official report links remain visible. Selecting a report resets
+the list; a widget-test failure exposed retained list layout after a selection,
+resolved by rebuilding the list for the selected report and resetting its offset.
+
+Three widget tests pass, traversing all fourteen reports and footers at 390×844
+and 1400×1000 and checking warning/selection reset behavior. Three-file analysis
+is clean. No full build or native/source-return/adoption acceptance yet.
+
+First scheduled two-output run 38411673931 completed successfully, publishing bot
+commit c30a8d7. Louisiana status lists both outputs as updated. The report content
+was unchanged and correctly retained retrieval 12:01:51.986729 UTC. Scratch now
+has 43 games / 418 tiers, retrieval 09:16:04.096943 CDT on October 13. Public
+report, combined catalog and refresh-status bytes exactly match committed files.
+The scheduled publication checkpoint is closed; this does not prove native
+adoption. Next audit the existing Louisiana Scratch app experience and remaining
+source disclosures, then integrated native coverage. Deadline October 17 at
+23:55 ET unchanged; no Gmail or state acceptance.

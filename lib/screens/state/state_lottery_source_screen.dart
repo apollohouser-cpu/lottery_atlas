@@ -1,3 +1,4 @@
+import '../../widgets/map/louisiana_draw_reports_sheet.dart';
 import '../../widgets/map/north_carolina_draw_reports_sheet.dart';
 import '../../widgets/map/north_carolina_scratch_catalog_sheet.dart';
 import '../../widgets/map/missouri_local_directories_sheet.dart';
@@ -51,6 +52,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Louisiana')
+            Card(child: ListTile(
+              title: const Text('Louisiana draw reports'),
+              subtitle: const Text('Seven families • Separate winners, dollar totals and schedules'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const LouisianaDrawReportsSheet()),
+            )),
           if (source.stateName == 'North Carolina')
             Card(child: ListTile(
               title: const Text('North Carolina draw reports'),
