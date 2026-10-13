@@ -195,3 +195,21 @@ private under work/louisiana_scope. Literal payout schedules and source
 qualifications remain pending, as do PB/MM parsers, atomic collection, publication
 and app/native integration. This is not state acceptance. No public feed, build,
 simulator or Gmail changes; October 17 at 23:55 ET deadline remains unchanged.
+
+
+## October 13, 03:59 ET — Literal Pick payout schedules
+
+Added separate strict schedule parsing for all three Pick families: twelve tables,
+51 physical rows (Pick 3: 9; Pick 4: 17; Pick 5: 25). Literal example wagers,
+winning combinations, odds descriptions, payout labels, combo play costs and
+row/column spans are retained. Pick 5 front/back examples preserve line-break
+separation. Each family's Straight/Box wager note and liability-limit explanation
+are required and retained. These are published schedules, never observed winners.
+
+Thirteen Louisiana tests pass, including changed spans, missing tables/rows,
+malformed payouts, missing combo costs/qualifications and changed labels/columns.
+Full captured pages parsed successfully; private outputs are pick*-schedule.json
+under work/louisiana_scope and public schedule fixtures are tracked. Schedules
+remain separate from dated summaries until collection integration. PB/MM parsers,
+remaining family qualifications, atomic refresh/publication and app/native work
+remain open. No feed/build/UI/Gmail changes or acceptance; deadline unchanged.

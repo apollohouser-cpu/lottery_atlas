@@ -197,3 +197,70 @@ def parse_pick_reports(raw, game, *, today=None):
                         + 'Not certified distinct tickets or people, net payments, complete claims or retailer activity. Payout schedules are separate from observed totals.'})
     reports.sort(key=lambda r: r['drawDate'], reverse=True)
     return reports[:2]
+
+
+def parse_pick_schedule(raw, game):
+    """Keep published schedule cells/spans and qualifications, never winner counts."""
+    if game not in ('Pick 3', 'Pick 4', 'Pick 5') or b'</html>' not in raw.lower():
+        raise ValueError('Unsupported Pick schedule')
+    root = html.fromstring(raw)
+    if text(one(root.xpath('//h1'))) != game:
+        raise ValueError('Wrong schedule game')
+    main = one(root.xpath('//main'))
+    tables = main.xpath('.//table[@class="prize-chart__table"]')
+    if len(tables) != 4:
+        raise ValueError('Missing or extra schedule tables')
+    size = int(game[-1])
+    ways = {3: [3, 6], 4: [4, 6, 12, 24], 5: [5, 10, 20, 30, 60, 120]}[size]
+    labels = [['Straight (Exact Order)'], [f'{n}-Way Box' for n in ways],
+              [f'{n}-Way Straight/Box' for n in ways],
+              [f'{n}-Way Combo' for n in ways] if size < 5 else
+              ['Front 4', 'Back 4', 'Front 3', 'Back 3', 'Front Pair', 'Back Pair']]
+    result = []
+    for index, table in enumerate(tables):
+        headers = table.xpath('./thead/tr/th')
+        expected = ['Play Type', 'Example Wager', 'Winning Combos'] + (
+            ['Payout'] if index == 2 or (index == 3 and size < 5) else ['Payout (50¢)', 'Payout ($1)'])
+        if [text(e) for e in headers] != expected:
+            raise ValueError('Changed schedule columns')
+        spans = [int(e.get('colspan', '1')) for e in headers]
+        if spans != ([1, 1, 1, 2] if index == 3 and size < 5 else [1] * len(headers)):
+            raise ValueError('Changed schedule header spans')
+        rows = table.xpath('./tbody/tr')
+        expected_rows = len(labels[index]) * (2 if index == 2 else 1)
+        if len(rows) != expected_rows:
+            raise ValueError('Missing schedule rows')
+        output = []
+        for i, row in enumerate(rows):
+            cells = row.xpath('./td')
+            continuation = index == 2 and i % 2 == 1
+            if len(cells) != (2 if continuation else sum(spans)):
+                raise ValueError('Changed schedule cell count')
+            expected_spans = [2, 2, 1, 1] if index == 2 and not continuation else [1] * len(cells)
+            if [int(e.get('rowspan', '1')) for e in cells] != expected_spans or any(e.get('colspan', '1') != '1' for e in cells):
+                raise ValueError('Changed schedule cell spans')
+            if not continuation:
+                label = text(one(cells[0].xpath('.//span[@class="prize-chart__label"]')))
+                description = text(one(cells[0].xpath('.//span[@class="prize-chart__description-meta"]')))
+                if label != labels[index][i // 2 if index == 2 else i] or 'Odds -' not in description:
+                    raise ValueError('Changed schedule label or missing odds')
+            # Separate br-delimited wager examples and combo costs without joining words.
+            values = [' '.join(' '.join(e.itertext()).split()) for e in cells]
+            if any(not value for value in values):
+                raise ValueError('Empty schedule cell')
+            for value in values[-(1 if index == 2 else 2):]:
+                match = re.fullmatch(r'(\$[\d,]+(?:\.\d{2})?)(?: \((\$[\d,]+\.\d{2}) play\))?', value)
+                if not match:
+                    raise ValueError('Invalid schedule payout')
+                money(match[1])
+                if match[2]: money(match[2])
+                if bool(match[2]) != (index == 3 and size < 5):
+                    raise ValueError('Missing or unexpected combo play cost')
+            output.append({'cells': values, 'rowSpans': expected_spans})
+        result.append({'columns': expected, 'columnSpans': spans, 'rows': output})
+    notes = [text(p) for p in main.xpath('.//p') if text(p).startswith('Note:') and 'Straight/Box' in text(p)]
+    limits = [text(p) for p in main.xpath('.//p') if text(p).startswith('On occasion, certain popular ' + game + ' numbers')]
+    if len(notes) != 1 or len(limits) != 1 or 'liability' not in limits[0] or '$1' not in notes[0]:
+        raise ValueError('Missing Pick wager or liability qualification')
+    return {'game': game, 'tables': result, 'qualifications': notes + limits,
+            'coverage': 'Published payout schedule and examples, not actual draw winner counts or dollar totals.'}

@@ -130,4 +130,36 @@ class PickReportsTests(unittest.TestCase):
         with self.assertRaises(ValueError): self.parse(html.tostring(root))
 
 
+
+class PickScheduleTests(unittest.TestCase):
+    def parse(self, raw, game='Pick 4'):
+        from louisiana_draw_reports import parse_pick_schedule
+        return parse_pick_schedule(raw, game)
+
+    def test_all_literal_schedules_and_qualifications(self):
+        for slug, game, rows in [('pick3', 'Pick 3', 9), ('pick-4', 'Pick 4', 17), ('pick-5', 'Pick 5', 25)]:
+            result = self.parse((FIXTURES / (slug+'-schedule.html')).read_bytes(), game)
+            self.assertEqual(sum(len(t['rows']) for t in result['tables']), rows)
+            self.assertEqual(result['tables'][2]['rows'][0]['rowSpans'], [2, 2, 1, 1])
+            self.assertEqual(len(result['qualifications']), 2)
+            self.assertIn('liability', result['qualifications'][1])
+            if game != 'Pick 5':
+                self.assertIn('play)', result['tables'][3]['rows'][0]['cells'][-1])
+            else:
+                self.assertIn('Wager 1234* Draw 12349', result['tables'][3]['rows'][0]['cells'])
+
+    def test_rejects_changed_structure_and_payouts(self):
+        raw = (FIXTURES / 'pick-4-schedule.html').read_bytes()
+        for old, new in [(b'rowspan="2"', b'rowspan="3"'), (b'colspan="2"', b'colspan="1"'),
+                         (b'4-Way Box', b'5-Way Box'), (b'$2,500', b'$2,50'),
+                         (b'($2.00 play)', b''), (b'Payout ($1)', b'Winners'),
+                         (b'Note:', b'Missing:'), (b'Odds -', b'Missing -')]:
+            with self.subTest(old=old):
+                self.assertIn(old, raw)
+                with self.assertRaises(ValueError): self.parse(raw.replace(old, new, 1))
+        for xpath in ['//table[last()]', '//table[3]/tbody/tr[2]']:
+            root = html.fromstring(raw); node = root.xpath(xpath)[0]; node.getparent().remove(node)
+            with self.assertRaises(ValueError): self.parse(html.tostring(root))
+
+
 if __name__ == '__main__': unittest.main()
