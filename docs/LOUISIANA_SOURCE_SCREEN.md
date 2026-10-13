@@ -302,3 +302,20 @@ This wires publication and future refreshes; a successful deployed endpoint and
 first scheduled two-output run are not yet verified. App loader/UI/native work
 remain open and no state acceptance is claimed. No build/UI/Gmail or deadline
 change. Report baseline retrieval: October 13 at 12:01:51.986729 UTC.
+
+
+## October 13, 10:06 ET — Initial report publication verified
+
+Publisher run 38401891117 completed successfully for commit 0e2c120. The deployed
+Louisiana report endpoint matches both the tracked fourteen-report baseline and
+staged endpoint byte for byte (SHA-256
+`e70b6f87dadc66fb32703ac94620959c5eb0d4c0710b50c2f046fbca8c9332c6`).
+Retrieval remains October 13 at 12:01:51.986729 UTC. Public endpoint:
+https://apollohouser-cpu.github.io/lottery_atlas/louisiana_draw_reports.json
+
+Initial publication is verified. The latest scheduled run returned by the API,
+38328596468, predates the two-output wiring; first scheduled catalog/report
+transaction success therefore remains open. Push publication does not execute
+source refreshes. Strict Flutter validation/cache/remote/bundle loading, report UI
+and native acceptance remain next. No new acceptance, build, UI, Gmail or deadline
+change; Louisiana remains the sole active state with October 17 at 23:55 ET due.
