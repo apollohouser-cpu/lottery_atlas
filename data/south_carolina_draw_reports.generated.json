@@ -1,6 +1,6 @@
 {
   "state": "SC",
-  "retrievedAt": "2026-10-13T01:00:03.792210+00:00",
+  "retrievedAt": "2026-10-13T14:27:57.278170+00:00",
   "coverage": "Recent official SC statewide reports for all seven supported draw games, with variants and sessions preserved. Not retailer claims.",
   "reports": [
     {
@@ -948,6 +948,100 @@
     },
     {
       "gameName": "Powerball",
+      "drawDate": "2026-10-12",
+      "drawingSession": null,
+      "sourceUrl": "https://www.sceducationlottery.com/Games/Powerball",
+      "sourcePublicationDate": null,
+      "headers": [
+        "Match",
+        "Powerball\u00ae Winners Without PowerPlay\u00ae",
+        "Powerball\u00ae Winners with PowerPlay\u00ae (x3)",
+        "Double Play\u00ae Winners",
+        "Total Winners"
+      ],
+      "tiers": [
+        [
+          "Jackpot(Match 5 + Powerball\u00ae)",
+          "0",
+          "--",
+          "0",
+          "0"
+        ],
+        [
+          "Match 5",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Match 4 + Powerball\u00ae",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "Match 4",
+          "2",
+          "1",
+          "1",
+          "4"
+        ],
+        [
+          "Match 3 + Powerball\u00ae",
+          "8",
+          "8",
+          "4",
+          "20"
+        ],
+        [
+          "Match 3",
+          "174",
+          "134",
+          "96",
+          "404"
+        ],
+        [
+          "Match 2 + Powerball\u00ae",
+          "205",
+          "120",
+          "86",
+          "411"
+        ],
+        [
+          "Match 1 + Powerball\u00ae",
+          "1,563",
+          "1,029",
+          "581",
+          "3,173"
+        ],
+        [
+          "Match Powerball\u00ae Only",
+          "3,681",
+          "2,341",
+          "1,354",
+          "7,376"
+        ]
+      ],
+      "reportedTotals": [
+        "Total Winning Tickets",
+        "5,633",
+        "3,633",
+        "2,122",
+        "11,388"
+      ],
+      "reportedWinners": 11388,
+      "reportedPayout": null,
+      "tableNote": "Base play, Power Play and Double Play are separate source columns. The published combined total includes Double Play; it is not a base Powerball-only count. Jackpot Power Play dash means not applicable. Exact payout is not supplied. Statewide only; no retailer or county allocation. Do not add to claim counts.",
+      "variantWinners": {
+        "base": 5633,
+        "powerPlay": 3633,
+        "doublePlay": 2122
+      }
+    },
+    {
+      "gameName": "Powerball",
       "drawDate": "2026-10-10",
       "drawingSession": null,
       "sourceUrl": "https://www.sceducationlottery.com/Games/Powerball",
@@ -1320,100 +1414,6 @@
         "base": 8058,
         "powerPlay": 5398,
         "doublePlay": 3022
-      }
-    },
-    {
-      "gameName": "Powerball",
-      "drawDate": "2026-09-30",
-      "drawingSession": null,
-      "sourceUrl": "https://www.sceducationlottery.com/Games/Powerball",
-      "sourcePublicationDate": null,
-      "headers": [
-        "Match",
-        "Powerball\u00ae Winners Without PowerPlay\u00ae",
-        "Powerball\u00ae Winners with PowerPlay\u00ae (x4)",
-        "Double Play\u00ae Winners",
-        "Total Winners"
-      ],
-      "tiers": [
-        [
-          "Jackpot(Match 5 + Powerball\u00ae)",
-          "0",
-          "--",
-          "0",
-          "0"
-        ],
-        [
-          "Match 5",
-          "0",
-          "0",
-          "0",
-          "0"
-        ],
-        [
-          "Match 4 + Powerball\u00ae",
-          "0",
-          "0",
-          "0",
-          "0"
-        ],
-        [
-          "Match 4",
-          "0",
-          "2",
-          "1",
-          "3"
-        ],
-        [
-          "Match 3 + Powerball\u00ae",
-          "6",
-          "8",
-          "2",
-          "16"
-        ],
-        [
-          "Match 3",
-          "247",
-          "174",
-          "96",
-          "517"
-        ],
-        [
-          "Match 2 + Powerball\u00ae",
-          "250",
-          "168",
-          "121",
-          "539"
-        ],
-        [
-          "Match 1 + Powerball\u00ae",
-          "1,583",
-          "1,150",
-          "794",
-          "3,527"
-        ],
-        [
-          "Match Powerball\u00ae Only",
-          "3,541",
-          "2,552",
-          "1,782",
-          "7,875"
-        ]
-      ],
-      "reportedTotals": [
-        "Total Winning Tickets",
-        "5,627",
-        "4,054",
-        "2,796",
-        "12,477"
-      ],
-      "reportedWinners": 12477,
-      "reportedPayout": null,
-      "tableNote": "Base play, Power Play and Double Play are separate source columns. The published combined total includes Double Play; it is not a base Powerball-only count. Jackpot Power Play dash means not applicable. Exact payout is not supplied. Statewide only; no retailer or county allocation. Do not add to claim counts.",
-      "variantWinners": {
-        "base": 5627,
-        "powerPlay": 4054,
-        "doublePlay": 2796
       }
     },
     {

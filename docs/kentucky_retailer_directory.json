@@ -1,7 +1,7 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-10-10T12:42:49.407Z",
-  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3484 unique retailers; 3393 received exact Census or verified ArcGIS point-address coordinates. 91 unresolved addresses were excluded rather than estimated.",
+  "retrievedAt": "2026-10-13T14:21:32.936Z",
+  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3485 unique retailers; 3394 received exact Census or verified ArcGIS point-address coordinates. 91 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
       "state": "Kentucky",
@@ -6861,6 +6861,17 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
+          "id": "ky-310172a79165e98b",
+          "name": "NORTH SOUTH TRUCK STOP",
+          "address": "14260 Us Hwy 41 South",
+          "city": "Robards",
+          "postalCode": "42452",
+          "county": "Henderson County",
+          "latitude": 37.672540893626,
+          "longitude": -87.523684514465,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
           "id": "ky-3108db8176e8290e",
           "name": "RED RIVER SPIRITS",
           "address": "5860 Main St Suite A",
@@ -8784,17 +8795,6 @@
           "latitude": 39.03693467429,
           "longitude": -84.45403505541,
           "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "ky-3e4b854471864b7e",
-          "name": "FILL-UPS GAS & MARKET",
-          "address": "12700 Hwy 421 North",
-          "city": "Mckee",
-          "postalCode": "40447",
-          "county": "Jackson County",
-          "latitude": 37.503472919345,
-          "longitude": -84.170678492715,
-          "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
           "id": "ky-3e4db7e9ad8dc970",
@@ -33655,6 +33655,17 @@
           "latitude": 37.994772016787,
           "longitude": -83.889618698183,
           "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "ky-e820f7d1881c5577",
+          "name": "MCKEE QUICK STOP",
+          "address": "12700 Hwy 421 North",
+          "city": "Mckee",
+          "postalCode": "40447",
+          "county": "Jackson County",
+          "latitude": 37.503472919345,
+          "longitude": -84.170678492715,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
           "id": "ky-e82804b6c806f8db",
