@@ -1,15 +1,16 @@
-# National coverage readiness and forecast — October 6 baseline, October 7 status
+# National coverage readiness and forecast — October 6 baseline, October 12 status
 
 Full public release requires usable accepted coverage in every lottery state;
 limited-state iOS/Android beta can proceed earlier. NASPL currently identifies
 [45 U.S. lottery states](https://www.naspl.org/faq). The repository has a source
-screen for each of those 45. Nine are accepted, leaving 36 (Missouri accepted October 7). This state-based
+screen for each of those 45. Ten are accepted, leaving 35 (North Carolina accepted October 12). This state-based
 ledger does not silently count DC or territories as states or as accepted coverage.
 
 Missouri closed on release 337848b at October 7, 17:22 ET. The forecast below
-remains the October 6 baseline, with one of five additional acceptances completed.
-The current remaining split is 19 scheduled catalog states, one narrow winner
-import (North Carolina), and 16 states without scheduled state jobs.
+remains the October 6 baseline, with two of five additional acceptances completed.
+North Carolina closed October 12 at 23:00 ET on release 7de7bb8.
+The current remaining split is 19 scheduled catalog states and 16 states without
+scheduled state jobs. This count update is not a new calendar forecast.
 
 ## Evidence and forecast limits
 

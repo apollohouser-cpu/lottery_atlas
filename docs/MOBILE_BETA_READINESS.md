@@ -3,7 +3,7 @@
 October 6, 2026 audit. Beta is authorized for iOS and Android with validated
 coverage; national supported coverage is required before full public release.
 October 20–27 remains a provisional beta estimate, not a promised launch date.
-As of October 7, nine states have accepted supported coverage, including Missouri.
+As of October 12, ten states have accepted supported coverage, including North Carolina.
 No mobile distribution is implied by desktop state acceptance.
 
 ## Verified local readiness
@@ -524,3 +524,14 @@ finished. The prior do-not-interrupt review hold is cleared. NC native checking
 has resumed on the existing installed build; see NORTH_CAROLINA_ACCEPTANCE.md
 for the partial adoption, source-return and catalog interaction checkpoint.
 Full NC/mobile acceptance and Android runtime checks remain open.
+
+
+### October 12, 23:00 ET — NC supported acceptance
+
+NC bounded supported coverage accepted on release 7de7bb8; see its acceptance
+document for the final native reports/source-return/landscape and loader-failure
+evidence. User simulator review remains cleared. Ordinary app remains installed
+and portrait; no new build. This is state acceptance, not full mobile acceptance.
+Next independent mobile work remains saved-data process persistence, enlarged-text
+native checks and Android runtime (one emulator/simulator at a time), followed by
+actual signing/account/distribution gates. No store upload or attestation occurred.

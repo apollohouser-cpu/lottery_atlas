@@ -1,9 +1,10 @@
-# North Carolina supported-coverage acceptance — active
+# North Carolina supported-coverage acceptance — accepted
 
 Activated **October 8, 2026 at 10:38 ET** as the sole active state after Missouri.
 Scope/gap matrix due **October 9 at 10:38 ET**; supported release decision due
-**October 13 at 10:38 ET** (120 hours). No extension used. North Carolina is not
-accepted. Mobile beta platform work continues independently.
+**October 13 at 10:38 ET** (120 hours). Supported coverage accepted **October 12,
+2026 at 23:00 ET**, ahead of the deadline, on release `7de7bb8`. No extension
+used. Mobile beta platform work continues independently.
 
 ## Selection and opening evidence
 
@@ -38,9 +39,9 @@ Private captures: work/north_carolina_scope/{home,scratch}.html.
 - [x] Strict current Scratch catalog and available draw-report imports (83 listed games; 28 bounded reports, eight families/14 groups).
 - [x] Validated directory coverage and coordinates, or explicit supported limits (official positions retained; structural guards, all repeated name/city keys excluded; no independent geocode certification).
 - [x] Atomic refresh, regression/failure preservation and public byte verification (first scheduled three-output publication verified October 9).
-- [ ] App source routes, catalog/reports/directory with honest coverage labels.
-- [ ] Compact/wide native use, source-return and request-failure recovery.
-- [ ] Consolidated checks and supported release decision.
+- [x] App source routes, catalog/reports/directory with honest coverage labels (bounded mapped archive and official retailer route; no complete directory claim).
+- [x] Compact/wide native use, source-return and request-failure recovery (October 12; bounded native checks plus exhaustive compact/wide widget coverage).
+- [x] Consolidated checks and supported release decision (October 12, 23:00 ET; evidence below).
 
 Missing broader agency records do not block honest supported-app completion.
 No new correspondence, fees, human attestations or private attachment promotion
@@ -684,3 +685,53 @@ This closes the bounded native loader failure-retention/restoration checkpoint.
 NC acceptance remains open for remaining Powerball Double Play/lower Pick
 native traversal and outstanding wide/source-return checks. No extension;
 October 13 at 10:38 ET remains the deadline. Ordinary app is running portrait.
+
+
+## October 12, 23:00 ET — Supported coverage accepted
+
+Release `7de7bb8` is accepted for the bounded scope above. Final native checks
+completed Powerball's nine Double Play rows, including the conflicting visual
+4 / accessibility 4+PB source labels, and its official dated Safari source
+return. Pick 3 and Pick 4 October 10 Evening reports were traversed through
+all base and Fireball schedules, combo costs, N/A cells, final pair rows and
+Fireball qualification. Both official dated pages opened and returned to the
+same selected report, lower position and retrieval timestamp. Millionaire for
+Life's official October 10 page and retained selection also passed. Together
+with prior checkpoints, all eight families / fourteen groups have native
+selection coverage and each family has an official-source return.
+
+Landscape checks show Pick 4 lower schedules and Mega Millions warning text,
+report selection/reset and three-column rows without visible clipping or
+control overlap in the inspected views. Portrait was restored. These native
+samples supplement the exhaustive 28-report / 83-game compact and wide widget
+checks; they do not claim every native viewport/permutation or accessibility
+certification. Safari followed the simulator's current orientation; app source
+returns remained usable. No new app defect was established.
+
+Final consolidated validation: 34 NC Python tests, 10 refresh-transaction tests,
+8 NC Node tests and 15 Flutter tests passed. The shell had no plain `node` on
+PATH; the established bundled Node runtime ran all eight tests successfully.
+Four NC loader/sheet files passed analysis with no issues. Private final logs remain
+under work/north_carolina_native. No implementation change or rebuild was needed
+for this final pass; the prior ordinary lib/main.dart restoration remains current.
+
+Accepted coverage is 28 bounded recent reports (eight families / fourteen
+sessions), a refreshable 83-game literal Scratch catalog and the audited bounded
+high-prize archive mapped only through unambiguous official directory matches.
+The earlier 17,874-record audit is a retained snapshot count, not a complete
+current statewide count. Native remote adoption and controlled loader request
+failure/cache-byte preservation are closed as documented above. Public deployment
+and the first scheduled three-output transaction were previously verified.
+
+Limits remain mandatory: Pick summaries are not tier counts; source Wins are not
+certified distinct tickets/people or net payments; annual prizes stay literal;
+Scratch remaining is not stock; ambiguous/unmatched/shared-prize/news rows stay
+excluded; official coordinates are not independently certified. Keno, Fast Play,
+Digital Instants, promotions/rewards and deeper history retain explicit source
+routes and gaps. No complete claims, OS-offline map/tile support, cash conversion,
+store distribution or full mobile acceptance is implied.
+
+Ten states are now accepted; 35 lottery states remain. North Carolina is closed
+without an extension. Select one successor with a fresh deadline in a later
+activation; do not reopen this acceptance for routine checks. Mobile beta and
+agency correspondence remain separate workstreams.
