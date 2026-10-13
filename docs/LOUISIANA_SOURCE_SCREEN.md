@@ -288,3 +288,17 @@ work/louisiana_scope/fresh-draw-reports.json. This is not public publication or
 scheduled integration. Next wire catalog/report rollback transaction and staging,
 then strict app loader/UI and native acceptance. No public feed/build/UI/Gmail,
 acceptance or deadline change.
+
+
+## October 13, 09:02 ET — Catalog/report transaction and publication staging
+
+Louisiana's scheduled job now owns both catalog and draw-report outputs. Failure
+at either importer restores both prior files and dates. Eleven transaction tests
+pass, including failure at each Louisiana command with byte-for-byte restoration.
+The fourteen-report fresh baseline is tracked and staged for the public report
+endpoint; the publisher copies and commits both baseline and endpoint files.
+
+This wires publication and future refreshes; a successful deployed endpoint and
+first scheduled two-output run are not yet verified. App loader/UI/native work
+remain open and no state acceptance is claimed. No build/UI/Gmail or deadline
+change. Report baseline retrieval: October 13 at 12:01:51.986729 UTC.

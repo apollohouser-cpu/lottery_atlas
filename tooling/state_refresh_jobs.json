@@ -93,13 +93,20 @@
   {
     "state": "Louisiana",
     "outputs": [
-      "data/louisiana_scratch_catalog.generated.json"
+      "data/louisiana_scratch_catalog.generated.json",
+      "data/louisiana_draw_reports.generated.json"
     ],
     "commands": [
       [
         "python3",
         "tooling/import_louisiana_scratch_catalog.py",
         "data/louisiana_scratch_catalog.generated.json"
+      ],
+      [
+        "python3",
+        "tooling/import_louisiana_draw_reports.py",
+        "--output",
+        "data/louisiana_draw_reports.generated.json"
       ]
     ]
   },
