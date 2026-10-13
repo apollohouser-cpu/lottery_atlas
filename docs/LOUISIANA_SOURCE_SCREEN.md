@@ -149,3 +149,28 @@ response is claimed. Scope closed ahead of October 13 at 23:55 ET; supported
 release deadline remains October 17 at 23:55 ET, no extension. Next implement
 strict parsers starting with simple Lotto/Easy 5 and explicit Pick summaries,
 then PB/MM, refresh transaction and app integration.
+
+
+## October 13, 01:58 ET — Lotto and Easy 5 bounded parsers
+
+Implemented strict local draw-report parsing for Lotto and Easy 5. Both retained
+full source pages validate before selecting two recent reports each (October 10
+and 7): four reports / sixteen tier rows privately written under
+work/louisiana_scope/{lotto,easy-5}-reports.json. Draw numbers, date/weekday,
+unique dates, associated disclosure IDs, Louisiana unit caption, exact columns,
+four match identities/symbol counts, nonnegative winners and literal prizes are
+validated. Jackpot advertisements remain distinct from the literal Jackpot tier.
+The historical purchased-ticket annotation remains literal, not a map location.
+
+Source update text and Central timezone offsets are retained. An update date
+preceding the draw date creates an explicit warning rather than a repaired date.
+Six tests pass, including twelve malformed variants, missing pairs/tiers,
+duplicate history before selection, future dates and mismatch preservation.
+Observed Load More control is validated separately from dated row pairs; source
+DOM extraction includes every embedded history row, not an unverified complete
+history claim. Fixtures contain two bounded public reports per family.
+
+This is parser groundwork, not a complete report collection or acceptance.
+Remaining families, literal Pick schedules and full qualifications, atomic
+refresh/publication and app/native integration are still pending. No public
+feed change, simulator/build, Gmail or deadline change.
