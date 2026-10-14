@@ -80,3 +80,20 @@ Six regression tests cover eligibility, missing type/date fields, duplicate
 identities, zero counts, free-ticket semantics, conflicting source identity or
 amounts, expiration disagreements, and duplicate rendering. A malformed source
 cannot overwrite the previous file; the full import validates before replacement.
+
+
+## October 14, 19:40 ET — Sole active state
+
+Kansas activated after Louisiana acceptance. Fresh scope is due October 15 at
+19:40 ET; supported release decision is due October 19 at 19:40 ET, with a fresh
+120-hour integration window and no extension. See KANSAS_ACCEPTANCE.md.
+
+The current scheduled baseline has 46 games, retrieval October 14 at
+12:13:36.236975-05:00, and no source inventory verification date. Fresh public
+home/draw-directory/Super Kansas Cash HTML was captured privately. The embedded
+draw directory lists twelve entries, including both Lucky for Life and Millionaire
+for Life; metadata alone does not establish current game status. Pick 3 describes
+two daily drawings. Literal prize legends do not prove actual Kansas winner counts.
+Resolve product history, dated reports and options before closing scope. Digital
+instants, Pull Tabs, Keno/Racetrax, raffle and loyalty need explicit scope decisions.
+No account access, purchases, public feed changes or new correspondence occurred.

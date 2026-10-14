@@ -89,7 +89,9 @@ deadlines. Missouri was activated by the original audit and is now accepted. Nor
 ## Current state
 
 Louisiana was accepted October 14 at 18:44 ET on release d68a843, ahead of
-October 17 at 23:55 ET. See LOUISIANA_ACCEPTANCE.md. No successor is active yet.
+October 17 at 23:55 ET. See LOUISIANA_ACCEPTANCE.md. Kansas activated October 14 at 19:40 ET, with
+scope due October 15 and supported release due October 19 at 19:40 ET.
+See KANSAS_ACCEPTANCE.md.
 The remaining count is 34; the October 6 calendar forecast remains unchanged
 pending five additional acceptances or a material blocker. Mobile beta work
 continues independently.
