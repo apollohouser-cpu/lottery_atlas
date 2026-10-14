@@ -1,6 +1,6 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-10-13T14:21:32.936Z",
+  "retrievedAt": "2026-10-14T12:03:43.037Z",
   "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3485 unique retailers; 3394 received exact Census or verified ArcGIS point-address coordinates. 91 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
@@ -4680,6 +4680,17 @@
           "county": "Clark County",
           "latitude": 37.99427057522,
           "longitude": -84.214933670165,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
+          "id": "ky-203496f9a6b452cc",
+          "name": "LEXINGTON ROAD SHELL",
+          "address": "3795 Lexington Rd",
+          "city": "Louisville",
+          "postalCode": "40207",
+          "county": "Jefferson County",
+          "latitude": 38.252757756679,
+          "longitude": -85.658010130043,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -33137,17 +33148,6 @@
           "county": "Kenton County",
           "latitude": 38.976260981977,
           "longitude": -84.594012296104,
-          "coordinateSource": "ArcGIS World Geocoder verified point address"
-        },
-        {
-          "id": "ky-e4491600a0e9c948",
-          "name": "FOOD GIANT #518",
-          "address": "410 Legion Drive",
-          "city": "Princeton",
-          "postalCode": "42445",
-          "county": "Caldwell County",
-          "latitude": 37.101204389288,
-          "longitude": -87.883943406811,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
