@@ -629,3 +629,21 @@ click was repeated and no data defect or complete schedule traversal is claimed.
 Remaining: Pick 5 lower schedules and official-source return, report landscape
 checks, and consolidated acceptance. One portrait simulator remains on Pick 5
 October 12 schedules. No Gmail, acceptance or deadline change.
+
+## October 14, 16:42 ET — Native report landscape checks
+
+On the existing ordinary iOS build, landscape screenshots verified readable
+Pick 5 schedule labels/examples/odds/payouts through the previously reached
+rows. Switching to Mega Millions October 13 reset the list to the dated header
+and warnings; its separate multiplier/prize lines were readable at landscape
+width. Switching to Pick 5 October 13 reset to the date, printed update and
+conflict warning; winner and dollar labels remained separate and readable.
+Upright portrait was restored with Pick 5 October 13 and its summary retained.
+The rotate toolbar cycles through upside-down orientation before returning
+upright; the final upright screenshot was checked explicitly.
+
+The remaining lower Pick 5 schedules and official-source return are still open.
+Coordinate drag and keyboard page navigation did not advance the long-row
+position; no full traversal or new app defect is inferred. Avoid repeating those
+unchanged input attempts. Consolidated acceptance remains pending this bounded
+native gap. No code, build, feed, Gmail, acceptance or deadline change.
