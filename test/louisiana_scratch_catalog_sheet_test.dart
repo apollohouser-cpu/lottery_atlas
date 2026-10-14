@@ -43,6 +43,37 @@ void main() {
       }
     });
   }
+  testWidgets('short landscape leaves readable inventory viewport', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(844, 390);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: Center(
+            child: SizedBox(
+              width: 640,
+              child: LouisianaScratchCatalogSheet(catalogOverride: data),
+            ),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(tester.takeException(), isNull);
+    expect(tester.getSize(find.byType(ListView)).height, greaterThan(110));
+    await tester.scrollUntilVisible(
+      find.text('Open official Scratch list'),
+      180,
+      scrollable: find.byType(Scrollable).last,
+      maxScrolls: 50,
+    );
+    await tester.pumpAndSettle();
+    expect(tester.takeException(), isNull);
+  });
   testWidgets('search and price filter recover from empty selection', (
     tester,
   ) async {
@@ -71,7 +102,10 @@ void main() {
     await tester.tap(find.text('Reset filters'));
     await tester.pumpAndSettle();
     expect(find.textContaining('43 of 43'), findsOneWidget);
-    expect(tester.widget<TextField>(find.byType(TextField)).controller!.text, isEmpty);
+    expect(
+      tester.widget<TextField>(find.byType(TextField)).controller!.text,
+      isEmpty,
+    );
     expect(tester.takeException(), isNull);
   });
 }

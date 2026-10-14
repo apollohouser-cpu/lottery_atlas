@@ -120,45 +120,68 @@ class _LouisianaScratchCatalogSheetState
                     ),
                   ],
                 ),
-                TextField(
-                  controller: _search,
-                  decoration: const InputDecoration(
-                    labelText: 'Search game name or number',
-                  ),
-                  onChanged: (v) => setState(() {
-                    _query = v.trim().toLowerCase();
-                    _reset();
-                  }),
-                ),
-                DropdownButton<int>(
-                  isExpanded: true,
-                  value: _price,
-                  hint: const Text('All ticket prices'),
-                  items: [
-                    const DropdownMenuItem<int>(
-                      value: null,
-                      child: Text('All ticket prices'),
-                    ),
-                    for (final p in prices)
-                      DropdownMenuItem(
-                        value: p,
-                        child: Text('Ticket price: \$$p'),
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    final search = TextField(
+                      controller: _search,
+                      decoration: const InputDecoration(
+                        labelText: 'Search game name or number',
                       ),
-                  ],
-                  onChanged: (v) => setState(() {
-                    _price = v;
-                    _reset();
-                  }),
+                      onChanged: (v) => setState(() {
+                        _query = v.trim().toLowerCase();
+                        _reset();
+                      }),
+                    );
+                    final price = DropdownButton<int>(
+                      isExpanded: true,
+                      value: _price,
+                      hint: const Text('All ticket prices'),
+                      items: [
+                        const DropdownMenuItem<int>(
+                          value: null,
+                          child: Text('All ticket prices'),
+                        ),
+                        for (final p in prices)
+                          DropdownMenuItem(
+                            value: p,
+                            child: Text('Ticket price: \$$p'),
+                          ),
+                      ],
+                      onChanged: (v) => setState(() {
+                        _price = v;
+                        _reset();
+                      }),
+                    );
+                    if (constraints.maxWidth >= 560 &&
+                        MediaQuery.textScalerOf(context).scale(14) <= 21) {
+                      return Row(
+                        children: [
+                          Expanded(flex: 3, child: search),
+                          const SizedBox(width: 16),
+                          Expanded(flex: 2, child: price),
+                        ],
+                      );
+                    }
+                    return Column(children: [search, price]);
+                  },
                 ),
-                Text('${games.length} of ${all.length} listed games'),
-                TextButton(
-                  onPressed: () => setState(() {
-                    _search.clear();
-                    _query = '';
-                    _price = null;
-                    _reset();
-                  }),
-                  child: const Text('Reset filters'),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        '${games.length} of ${all.length} listed games',
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => setState(() {
+                        _search.clear();
+                        _query = '';
+                        _price = null;
+                        _reset();
+                      }),
+                      child: const Text('Reset filters'),
+                    ),
+                  ],
                 ),
                 if (selected != null)
                   DropdownButton<String>(

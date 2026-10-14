@@ -532,3 +532,26 @@ Next: finish Pick 5 using fresh screenshots for long rows, remaining dated
 selections, wide layouts, request-failure retention and consolidated acceptance.
 One portrait simulator remains active. No rebuild, Gmail, acceptance or deadline
 change; October 17 at 23:55 ET remains the release deadline.
+
+
+## October 14, 12:40 ET — Short landscape Scratch layout correction
+
+Native landscape inspection exposed a usability issue: stacked fixed Scratch
+search, price, count, reset and game controls left only a small inventory viewport
+on the 844-by-390 phone layout. Search and price now share a row when available
+width is at least 560 and text scaling permits; count and reset share a row.
+Narrow layouts retain stacked search and price controls. No inventory data changed.
+
+Four Scratch widget tests pass, including all 43 games at compact/wide sizes and
+a new 640-wide sheet on an 844-by-390 screen requiring more than 110 logical
+pixels for the inventory viewport and successful footer traversal. Two-file
+analysis is clean. Ordinary iOS simulator debug build passed (Xcode 14.5s), was
+installed on the existing iPhone 17e and launched successfully to the saved South
+Carolina map. This supersedes installed e1eb950. The corrected landscape sheet
+still needs native verification; no state or full mobile acceptance is claimed.
+
+Pick 5 long-row AX targeting again dismissed the sheet in landscape; ordinary
+CUA scrolling/dragging did not advance it. This remains an automation traversal
+limitation, not a proven data defect. Remaining Pick 5 schedules/source return,
+second dated selections, corrected wide layouts, request-failure retention and
+consolidated acceptance remain open. No Gmail or deadline change.
