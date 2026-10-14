@@ -422,3 +422,26 @@ present natively. Remaining: Mega Millions and Pick 3/4/5 native traversal and
 source returns, remaining dated selections, wide layouts, request-failure
 retention and consolidated acceptance. No rebuild, Gmail, state acceptance or
 deadline change; October 17 at 23:55 ET remains the release deadline.
+
+
+## October 14, 10:37 ET — Mega Millions and Pick 3 native traversal
+
+Existing e1eb950 iPhone 17e build: Mega Millions October 13 traversed all nine
+match rows, each with five separate multiplier count/prize pairs. Literal
+$2M–$10M prizes and repeated jackpot cells remain separate. All three warnings
+were visible before the rows: Megaplier source label, repeated jackpot columns,
+and the October 10 printed update preceding the October 13 drawing. Annuity,
+nonjackpot multiplier and per-play assignment qualifications reached the footer.
+
+Pick 3 October 13 displayed four play-type dollar totals without winner counts,
+ordered digits, the printed-date conflict warning, and all nine physical payout
+schedule rows. Straight/Box continuation labels, literal odds/examples, Combo
+play costs, wager restrictions and liability qualification were traversed.
+Both families opened their correct dated-fragment official URLs, rendered the
+official page and returned retaining selection and scroll position. As previously
+noted, external pages landed around general schedules, not proven automatic
+focus on the dated report. Retrieval stayed October 14 at 04:58:38.376027 UTC.
+
+Partial acceptance only. Next Pick 4/Pick 5 full traversal and source returns,
+remaining dated selections, wide layouts, request-failure retention and final
+consolidation. No rebuild, Gmail, fees, state acceptance or deadline change.
