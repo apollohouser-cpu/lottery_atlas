@@ -605,3 +605,27 @@ Next: remaining Pick 5 schedule/source-return traversal, remaining dated
 selections, report wide checks and consolidated acceptance. Subsequent normal
 Louisiana UI use remains to be observed on this restored build. No Gmail, state
 acceptance or deadline change; release remains due October 17 at 23:55 ET.
+
+## October 14, 15:39 ET — Restored reports and second-date selections
+
+The ordinary restored iOS build opened Louisiana from the saved South Carolina
+map, displayed the source coverage/cadence cards, and loaded the normal report
+sheet at retrieval 2026-10-14T04:58:38.376027+00:00. No rebuild or probe was used.
+
+Selected the second report in each of the seven families natively: Lotto and
+Easy 5 October 7, Powerball October 10, Mega Millions October 9, and Pick 3/4/5
+October 12. Each selection reset to the corresponding dated heading, source
+timestamp and report content. Lotto/Easy 5 exposed all four tiers; Powerball
+retained separate base/Power Play and jackpot N/A; Mega Millions retained its
+two applicable source warnings and multiplier pairs. Pick 3/4 displayed four
+dollar-only totals; Pick 5 displayed all eight winner/dollar rows including
+zeros. This closes second-date selection coverage, not full traversal of every
+second-date table or additional external-source returns.
+
+Pick 5 October 12 schedule traversal reached the complete 30-Way Box row and
+its payouts in a fresh screenshot. The 60-Way row is exposed only as truncated
+AX text below the viewport; a container scroll did not advance. No long-row
+click was repeated and no data defect or complete schedule traversal is claimed.
+Remaining: Pick 5 lower schedules and official-source return, report landscape
+checks, and consolidated acceptance. One portrait simulator remains on Pick 5
+October 12 schedules. No Gmail, acceptance or deadline change.
