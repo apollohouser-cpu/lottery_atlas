@@ -20,7 +20,7 @@ void main() {
       addTearDown(tester.view.resetPhysicalSize);
       addTearDown(tester.view.resetDevicePixelRatio);
       final reports = data['reports'] as List;
-      final index = reports.indexWhere((r) => r['game'] == 'Powerball');
+      final index = reports.indexWhere((r) => r['game'] == 'Mega Millions');
       await tester.pumpWidget(
         MaterialApp(
           home: Scaffold(
@@ -42,9 +42,7 @@ void main() {
       final selector = tester.widget<DropdownButton<int>>(
         find.byType(DropdownButton<int>),
       );
-      selector.onChanged!(
-        reports.indexWhere((r) => r['game'] == 'Mega Millions'),
-      );
+      selector.onChanged!(index + 1);
       await tester.pumpAndSettle();
       expect(find.textContaining('Source warning:'), findsWidgets);
       expect(
@@ -54,6 +52,35 @@ void main() {
       expect(tester.takeException(), isNull);
     },
   );
+  testWidgets('long Pick 5 combinations do not merge payout semantics', (
+    tester,
+  ) async {
+    final semantics = tester.ensureSemantics();
+
+    final reports = data['reports'] as List;
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: LouisianaDrawReportsSheet(
+            reportsOverride: data,
+            initialIndex: reports.indexWhere((r) => r['game'] == 'Pick 5'),
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    final payout = find.text(r'Payout (50¢): $400');
+    await tester.scrollUntilVisible(
+      payout,
+      250,
+      scrollable: find.byType(Scrollable).last,
+      maxScrolls: 160,
+    );
+    await tester.pumpAndSettle();
+    expect(tester.getSemantics(payout).label, r'Payout (50¢): $400');
+    semantics.dispose();
+    expect(tester.takeException(), isNull);
+  });
   for (final size in [const Size(390, 844), const Size(1400, 1000)]) {
     testWidgets('all reports and footer at $size', (tester) async {
       tester.view.physicalSize = size;

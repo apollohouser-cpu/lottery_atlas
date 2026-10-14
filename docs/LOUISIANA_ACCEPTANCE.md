@@ -586,3 +586,25 @@ Coordinate drag and keyboard page navigation did not advance the long-row
 position; no full traversal or new app defect is inferred. Avoid repeating those
 unchanged input attempts. Consolidated acceptance remains pending this bounded
 native gap. No code, build, feed, Gmail, acceptance or deadline change.
+
+## October 14, 17:42 ET — Separate report field semantics
+
+Changed report entries so each title and value has its own semantic container.
+Previously the native accessibility tree merged an entire Pick 5 schedule entry
+into one long label, truncating the 60-Way combinations before its payout fields.
+The change preserves visible text and source values while making payouts
+independently addressable; it does not claim to fix the unexplained coordinate
+scroll behavior or provide accessibility certification.
+
+Four report widget tests pass, including a new long Pick 5 row check requiring
+the payout semantic label to remain separate from combinations. Updated the
+warning test to use Mega Millions, whose explicit source warnings persist,
+instead of assuming Powerball always has a date-conflict warning. Two-file
+analysis is clean. Ordinary lib/main.dart iOS simulator debug build passed
+(Xcode 10.1s), installed and launched to the saved South Carolina map. The
+post-install terminate command found no prior process; normal launch succeeded.
+
+Native traversal with the new semantic boundaries is the next check, followed
+by Pick 5 official-source return and consolidated acceptance. The installed
+report code now supersedes the earlier dbcc349 report semantics. No data, Gmail,
+state acceptance or deadline change; one upright iPhone 17e remains active.

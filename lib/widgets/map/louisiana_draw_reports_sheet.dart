@@ -50,8 +50,15 @@ class _LouisianaDrawReportsSheetState extends State<LouisianaDrawReportsSheet> {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title, style: const TextStyle(fontWeight: FontWeight.bold)),
-        for (final line in lines) Text(line),
+        // Keep each field reachable independently of long source combinations.
+        Semantics(
+          container: true,
+          child: Text(
+            title,
+            style: const TextStyle(fontWeight: FontWeight.bold),
+          ),
+        ),
+        for (final line in lines) Semantics(container: true, child: Text(line)),
       ],
     ),
   );
