@@ -432,3 +432,30 @@ interaction/source-return/adoption/retention acceptance yet. Next prepare the
 ordinary iOS simulator build and perform integrated Louisiana report/Scratch
 native checks with at most one simulator active. Deadline October 17 at 23:55 ET
 unchanged; no Gmail or state acceptance.
+
+
+## October 14, 09:32 ET — Restart recovery and native Scratch checkpoint
+
+The ordinary iOS simulator debug build at e1eb950 completed October 13
+(Xcode 33.0 seconds), was installed and launched on iPhone 17e / iOS 26.5.
+The session was interrupted by the user-reported Mac shutdown during source-link
+inspection; no shutdown cause is established. After restart, the checkout was
+clean, PNY mounted with build/work links intact, and internal free space about
+15 GiB. The unrelated booted iPhone 17 was shut down before reopening the original
+17e, preserving its app data and keeping one simulator active. No rebuild needed.
+
+Native Scratch now demonstrates newer remote adoption: 43 games, discovery
+report October 14 at 03:21:05 -05:00, displayed retrieval
+2026-10-14T12:05:21.285Z, and game #1625 detail timestamp October 14 at
+06:58:17 -05:00. The packaged catalog remains October 13. Traversed all ten
+#1625 tiers including literal TICKET and the coverage/retrieval footer. Its
+correct official URL opened in Safari, rendered Color Me Happy / game 1625,
+and returned with the same selection and inventory retained. Empty search
+produced 0/43; Reset restored 43/43. The $20 filter produced 3/43 and Reset
+restored all prices and 43/43. No invented cash value or store-stock claim.
+
+This is a partial native checkpoint, not state acceptance. Report-family native
+interaction/source returns, wide layouts and production-loader request-failure
+retention remain open. Scratch newer-native-adoption and the checked compact
+filter/detail-return flows are evidenced; no need to repeat them absent a defect.
+Deadline October 17 at 23:55 ET unchanged. No Gmail, fees or store submission.
