@@ -154,3 +154,22 @@ separate form/process. Sent status is confirmed. Electronic delivery and no
 fee authorization were reiterated. No residency declaration, signature or form
 submission was made. Await guidance; do not resend. Existing technical source
 coverage remains unchanged, and Idaho is not activated by this correspondence.
+
+## October 14 nonresident guidance and form submission
+
+The agency confirmed that a nonresident may submit the official form and said
+residency affects response timing. It supplied no records, fee estimate or
+calendar delivery commitment. The full thread and October 8 Sent clarification
+were verified before replying.
+
+Submitted the official editable form with the original request scope attached,
+explicitly identifying a nonresident requester. The residency declaration,
+signature and signature date remain blank; no human attestation was made.
+Electronic delivery and the prohibition on fees or paid work without approval
+were retained. Both pages were rendered and inspected; field values and blank
+attestation fields were checked after reopening the PDF. Sent status and the
+attached PDF size were confirmed in the same thread.
+
+Await processing or records; do not resend. The form and contact details remain
+private. This correspondence does not activate Idaho or change public data
+coverage, and no delivery deadline is inferred from the general form text.
