@@ -518,3 +518,29 @@ second dated selections and report wide checks, request-failure retention,
 ordinary-build restoration if a probe is used, and consolidated acceptance.
 Simulator is portrait with Scratch open. No Gmail, new state acceptance or
 release-deadline change; October 17 at 23:55 ET remains.
+
+
+## October 14, 14:39 ET — Native request-failure retention verified
+
+A private iOS entrypoint invoked both unmodified production Louisiana loaders
+against their existing SharedPreferences caches while HttpOverrides forced two
+SocketExceptions. The returned report and Scratch objects equaled their prior
+cached JSON objects, and both stored JSON strings remained byte-for-byte unchanged.
+Native unified-log evidence reports LA_NATIVE_RETENTION_PASS, attempts=2,
+14 reports at retrieval 2026-10-14T04:58:38.376027+00:00, and 43 Scratch games
+at retrieval 2026-10-14T17:21:06.575Z/source date 2026-10-14.
+Private evidence: work/louisiana_native/retention-evidence.log and probe source.
+This verifies production-loader request-failure retention in the simulator;
+it is not an OS-offline, map-tile or visible outage-screen claim.
+
+Probe build passed (Xcode 16.4s). The override was cleared before the probe
+entered the ordinary application. A separate ordinary lib/main.dart build then
+passed (9.4s), was installed and launched, and the saved South Carolina map was
+observed natively. Generated build configuration confirms lib/main.dart; no
+tracked probe code or public feed change. One original iPhone 17e remains active.
+The failure-retention and ordinary-build restoration checkpoint is closed.
+
+Next: remaining Pick 5 schedule/source-return traversal, remaining dated
+selections, report wide checks and consolidated acceptance. Subsequent normal
+Louisiana UI use remains to be observed on this restored build. No Gmail, state
+acceptance or deadline change; release remains due October 17 at 23:55 ET.
