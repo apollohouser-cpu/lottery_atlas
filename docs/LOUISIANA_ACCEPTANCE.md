@@ -445,3 +445,29 @@ focus on the dated report. Retrieval stayed October 14 at 04:58:38.376027 UTC.
 Partial acceptance only. Next Pick 4/Pick 5 full traversal and source returns,
 remaining dated selections, wide layouts, request-failure retention and final
 consolidation. No rebuild, Gmail, fees, state acceptance or deadline change.
+
+
+## October 14, 11:41 ET — Pick 4 native traversal and source return
+
+Existing e1eb950 iPhone 17e build: Pick 4 October 13 displayed its four
+play-type dollar totals without winner counts, ordered digits and the printed
+October 12 update-date warning. All 17 physical schedule rows were traversed,
+including Straight/Box continuations, literal examples/odds and all four Combo
+cost pairs. Wager defaults, liability qualification and coverage footer remained
+visible. Retrieval stayed October 14 at 04:58:38.376027 UTC.
+The official link opened the correct pick-4/#2026-10-13 URL in Safari and
+rendered the official schedule; return retained selection and footer position.
+The existing caveat remains: automatic focus on the dated report is unproven.
+
+Pick 5 October 13 displayed all eight separate winner/dollar summary rows,
+including zeros, ordered repeated digits and its printed-date warning. Schedule
+traversal reached Straight and the 5/10/20/30-Way Box rows. The exposed 60-Way
+Box accessibility text was truncated; clicking that long row dismissed the
+sheet. No data or layout defect is established by this automation action. The
+sheet was reopened and Pick 5 October 13 restored at its summary. Remaining
+Pick 5 rows and source return are not claimed complete.
+
+Next: finish Pick 5 using fresh screenshots for long rows, remaining dated
+selections, wide layouts, request-failure retention and consolidated acceptance.
+One portrait simulator remains active. No rebuild, Gmail, acceptance or deadline
+change; October 17 at 23:55 ET remains the release deadline.
