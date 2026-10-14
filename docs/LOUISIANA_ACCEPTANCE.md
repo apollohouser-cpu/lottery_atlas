@@ -494,3 +494,27 @@ CUA scrolling/dragging did not advance it. This remains an automation traversal
 limitation, not a proven data defect. Remaining Pick 5 schedules/source return,
 second dated selections, corrected wide layouts, request-failure retention and
 consolidated acceptance remain open. No Gmail or deadline change.
+
+
+## October 14, 13:38 ET — Corrected Scratch landscape verified
+
+Installed dbcc349 on the existing iPhone 17e: Louisiana compact-map Scratch
+entry opened successfully. Landscape now shows search and price side by side,
+count and reset on one row, and a usable inventory viewport below the game
+selector. Native screenshots confirmed readable complete prize/count/odds rows,
+including literal TICKET, and the discovery/retrieval/cadence/coverage footer.
+The $20 filter selected three of 43 games and reset restored all 43 and game
+1625. Portrait return retained the reset selection and stacked search/price
+layout without visible overflow. The named cramped-landscape correction is
+verified; no additional rebuild or repeat test run was needed.
+
+This session also displayed newer remote Scratch retrieval
+2026-10-14T17:21:06.575Z and game 1625 inventory timestamp
+2026-10-14T12:13:15-05:00, separately from discovery report timestamp
+2026-10-14T03:21:05-05:00. These are inventory timestamps, not draw/claim dates.
+
+Remaining: Pick 5 long schedule traversal and official-source return, remaining
+second dated selections and report wide checks, request-failure retention,
+ordinary-build restoration if a probe is used, and consolidated acceptance.
+Simulator is portrait with Scratch open. No Gmail, new state acceptance or
+release-deadline change; October 17 at 23:55 ET remains.
