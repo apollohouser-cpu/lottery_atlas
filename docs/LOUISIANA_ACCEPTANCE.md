@@ -1,9 +1,9 @@
-# Louisiana supported-coverage acceptance — active
+# Louisiana supported-coverage acceptance — accepted October 14, 2026
 
 Activated October 12, 2026 at **23:55 ET** as the sole active state, after
 North Carolina acceptance. Scope/gap matrix due **October 13 at 23:55 ET**;
 supported release decision due **October 17 at 23:55 ET** (fresh 120 hours for
-substantial draw/report integration). No extension used. Louisiana is not accepted.
+substantial draw/report integration). No extension used. Supported coverage accepted October 14 at 18:44 ET on release d68a843, ahead of the deadline. Historical entries below retain their original checkpoint status.
 
 ## Selection and opening evidence
 
@@ -33,13 +33,13 @@ new report import. Inspect the other six families and any extra options next.
 ## Acceptance gates
 
 - [x] Current product/options/history scope and explicit gaps (October 13, 00:58 ET).
-- [ ] Strict bounded draw reports with source dates, units and qualifications.
-- [ ] Current Scratch integration audited against the existing validated importer.
-- [ ] Retailer and winner coverage audited or honest supported limits established.
-- [ ] Atomic refresh, regression/failure retention and public publication verified.
-- [ ] App report/catalog/source flows with clear coverage limits.
-- [ ] Compact/wide native use, source returns, newer adoption and request recovery.
-- [ ] Consolidated checks and supported release decision.
+- [x] Strict bounded draw reports with source dates, units and qualifications.
+- [x] Current Scratch integration audited against the existing validated importer.
+- [x] Retailer and winner coverage audited or honest supported limits established.
+- [x] Atomic refresh, regression/failure retention and public publication verified.
+- [x] App report/catalog/source flows with clear coverage limits.
+- [x] Compact/wide native use, source returns, newer adoption and request recovery.
+- [x] Consolidated checks and supported release decision.
 
 No public feed was changed at activation. No coordinates, statewide claim counts,
 complete directory or new agency response is inferred. Missing broader agency
@@ -608,3 +608,40 @@ Native traversal with the new semantic boundaries is the next check, followed
 by Pick 5 official-source return and consolidated acceptance. The installed
 report code now supersedes the earlier dbcc349 report semantics. No data, Gmail,
 state acceptance or deadline change; one upright iPhone 17e remains active.
+
+
+## October 14, 18:44 ET — Supported coverage accepted
+
+Release **d68a843** is accepted for the bounded supported scope, ahead of October
+17 at 23:55 ET without an extension. Fourteen recent reports cover all seven
+families; the native adopted catalog contains 43 games and 418 literal tiers.
+Pick 3/4 totals remain dollars only; Pick 5 winners and dollars stay separate.
+Power Play N/A, Mega Millions repeated jackpot cells, literal source labels,
+printed timestamp conflicts and all required warnings remain visible.
+
+The separate semantic fields now permit native Pick 5 traversal through all
+25 physical schedule rows. Fresh screenshots verified complete 60/120-Way Box
+and 120-Way Straight/Box combinations and payouts; front/back 4, 3 and pairs,
+continuations, wager notes and liability qualification were reached. The
+correct pick-5/#2026-10-13 URL opened in Safari and rendered the official page;
+return retained the selected report and footer scroll position. As with other
+families, Safari landed on general schedules, not a verified dated-report focus.
+This closes the last family source return and lower-schedule traversal gap.
+
+Consolidated validation: 41 Python tests (30 Louisiana parser/import/catalog
+and 11 refresh transaction tests) and 19 Flutter loader/widget tests passed.
+Five production Dart files analyze cleanly. Native evidence above covers all
+seven families, both date selections per family, each family source return,
+compact/wide layouts, newer remote adoption, Scratch detail/filter/reset and
+production-loader request-failure byte retention followed by ordinary restoration.
+The ordinary main.dart build remains installed on one upright iPhone 17e;
+no probe or new build was needed this session.
+
+Supported limits remain: no complete statewide claims, distinct-person/ticket
+aggregation, retailer joins/pins/directory export, cash-option conversion, stock,
+OS-offline map guarantee or accessibility certification. Retailer/winner maps,
+Fast Play, promotions/Club, bundles and older history retain explicit official
+routes and gaps. Agency records are separate and do not block this release.
+This is state supported-coverage acceptance, not mobile/store or national release.
+Eleven states are now accepted; 34 remain. No successor is active yet. Reopen
+only for a named defect or meaningful new evidence, not routine acceptance repeats.

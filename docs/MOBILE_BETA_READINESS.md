@@ -3,7 +3,7 @@
 October 6, 2026 audit. Beta is authorized for iOS and Android with validated
 coverage; national supported coverage is required before full public release.
 October 20–27 remains a provisional beta estimate, not a promised launch date.
-As of October 12, ten states have accepted supported coverage, including North Carolina.
+As of October 14, eleven states have accepted supported coverage, including Louisiana.
 No mobile distribution is implied by desktop state acceptance.
 
 ## Verified local readiness

@@ -669,3 +669,40 @@ Native traversal with the new semantic boundaries is the next check, followed
 by Pick 5 official-source return and consolidated acceptance. The installed
 report code now supersedes the earlier dbcc349 report semantics. No data, Gmail,
 state acceptance or deadline change; one upright iPhone 17e remains active.
+
+
+## October 14, 18:44 ET — Supported coverage accepted
+
+Release **d68a843** is accepted for the bounded supported scope, ahead of October
+17 at 23:55 ET without an extension. Fourteen recent reports cover all seven
+families; the native adopted catalog contains 43 games and 418 literal tiers.
+Pick 3/4 totals remain dollars only; Pick 5 winners and dollars stay separate.
+Power Play N/A, Mega Millions repeated jackpot cells, literal source labels,
+printed timestamp conflicts and all required warnings remain visible.
+
+The separate semantic fields now permit native Pick 5 traversal through all
+25 physical schedule rows. Fresh screenshots verified complete 60/120-Way Box
+and 120-Way Straight/Box combinations and payouts; front/back 4, 3 and pairs,
+continuations, wager notes and liability qualification were reached. The
+correct pick-5/#2026-10-13 URL opened in Safari and rendered the official page;
+return retained the selected report and footer scroll position. As with other
+families, Safari landed on general schedules, not a verified dated-report focus.
+This closes the last family source return and lower-schedule traversal gap.
+
+Consolidated validation: 41 Python tests (30 Louisiana parser/import/catalog
+and 11 refresh transaction tests) and 19 Flutter loader/widget tests passed.
+Five production Dart files analyze cleanly. Native evidence above covers all
+seven families, both date selections per family, each family source return,
+compact/wide layouts, newer remote adoption, Scratch detail/filter/reset and
+production-loader request-failure byte retention followed by ordinary restoration.
+The ordinary main.dart build remains installed on one upright iPhone 17e;
+no probe or new build was needed this session.
+
+Supported limits remain: no complete statewide claims, distinct-person/ticket
+aggregation, retailer joins/pins/directory export, cash-option conversion, stock,
+OS-offline map guarantee or accessibility certification. Retailer/winner maps,
+Fast Play, promotions/Club, bundles and older history retain explicit official
+routes and gaps. Agency records are separate and do not block this release.
+This is state supported-coverage acceptance, not mobile/store or national release.
+Eleven states are now accepted; 34 remain. No successor is active yet. Reopen
+only for a named defect or meaningful new evidence, not routine acceptance repeats.

@@ -10,7 +10,7 @@ been sent. October 20–27 is a provisional planning window, not a launch promis
 Lottery Atlas helps explore available lottery reports, catalogs and retailer
 information with source dates and coverage limits. Supported state coverage has
 been accepted for Texas, Kentucky, South Carolina, Virginia, New York, Ohio,
-Colorado, Oregon and Missouri. Phone testing remains a separate requirement.
+Colorado, Oregon, Missouri, North Carolina and Louisiana. Phone testing remains a separate requirement.
 Other states are unfinished; their presence on the map is not evidence that
 national coverage is complete. Ten-year history is outside this beta scope.
 
