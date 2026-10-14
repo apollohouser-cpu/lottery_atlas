@@ -398,3 +398,27 @@ interaction/source returns, wide layouts and production-loader request-failure
 retention remain open. Scratch newer-native-adoption and the checked compact
 filter/detail-return flows are evidenced; no need to repeat them absent a defect.
 Deadline October 17 at 23:55 ET unchanged. No Gmail, fees or store submission.
+
+
+## October 14, 09:37 ET — Native report adoption and three family returns
+
+On the existing e1eb950 iPhone 17e build, reports loaded retrieval
+2026-10-14T04:58:38.376027+00:00, newer than the installed October 13
+bundle. The selector exposes fourteen reports, including October 13 Mega
+Millions and Pick drawings. This closes newer native report adoption only.
+
+Lotto October 10 and Easy 5 October 10 each displayed all four tiers, literal
+advertised jackpot, printed update time, qualifications and retrieval footer.
+Powerball October 12 displayed all nine match rows with base and Power Play
+columns separate, jackpot Power Play N/A, numbers/multiplier and annuity/cash
+qualification. Each official link opened its correct game URL with the selected
+date fragment in Safari and returned with the same in-app selection retained.
+The official pages rendered, but the viewport landed near general prize schedules
+or qualifications; this proves correct route/return, not automatic focus on the
+dated report inside the external page. No app data defect established.
+
+Source-page coverage/cadence notices and both dedicated app entry cards are
+present natively. Remaining: Mega Millions and Pick 3/4/5 native traversal and
+source returns, remaining dated selections, wide layouts, request-failure
+retention and consolidated acceptance. No rebuild, Gmail, state acceptance or
+deadline change; October 17 at 23:55 ET remains the release deadline.
