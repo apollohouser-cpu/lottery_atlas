@@ -51,3 +51,22 @@ No records, fee authorization or coverage confirmation accompanies this notice.
 The narrowed August scope and all-tier clarification remain as recorded above;
 no fees or paid programming are authorized. Monitor October 12 separately from
 app completion deadlines. No duplicate acknowledgment/request is necessary.
+
+
+## October 13 response — Records identified; October 23 availability estimate
+
+Reviewed October 14 after the interrupted computer session. The agency states
+that it possesses certain identifiable records within the request and estimates
+that records will be available on or before October 23, 2026. No records,
+attachments, fee estimate or new question accompanied the message. This is an
+agency availability estimate, not a received delivery or confirmation that every
+requested category/field exists. The earlier October 12 response commitment is
+superseded for tracking by this received response and new availability estimate.
+
+The complete thread confirms the original request and both September 16 scope
+clarifications in Sent. The new notice describes the request as September 28,
+while earlier correspondence identifies September 13; retain that discrepancy
+without inferring a new request or changed August scope. All-tier aggregate
+counts, labeled partial retailer coverage and no-paid-work restrictions remain.
+No redundant acknowledgment or request sent. Await delivery for private audit;
+no California activation, public data promotion or legal deadline conclusion.
