@@ -96,6 +96,61 @@ SCHEMAS = {'2-by-2': {'gameId': 5,
                                     '1 number and the Cash Ball'])]}}
 
 
+SCHEMAS.update({'keno': {'gameId': 19,
+          'jackpotGameNumber': '19',
+          'tables': [(['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"],
+                      ['10', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0']),
+                     (['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"],
+                      ['9', '8', '7', '6', '5', '4', '3', '2', '1']),
+                     (['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"],
+                      ['8', '7', '6', '5', '4', '3', '2', '1']),
+                     (['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"],
+                      ['7', '6', '5', '4', '3', '2', '1']),
+                     (['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"],
+                      ['6', '5', '4', '3', '2', '1']),
+                     (['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"],
+                      ['5', '4', '3', '2', '1']),
+                     (['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"],
+                      ['4', '3', '2', '1']),
+                     (['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"],
+                      ['3', '2', '1']),
+                     (['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"], ['2', '1']),
+                     (['match', 'Keno Prize', 'match ', "Total with Bull's-eye Prize"], ['1'])],
+          'titles': ['10-Spot Game',
+                     '9-Spot Game',
+                     '8-Spot Game*',
+                     '7-Spot Game*',
+                     '6-Spot Game*',
+                     '5-Spot Game',
+                     '4-Spot Game',
+                     '3-Spot Game',
+                     '2-Spot Game',
+                     '1-Spot Game']},
+ 'racetrax': {'gameId': 11,
+              'jackpotGameNumber': '11',
+              'tables': [(['Horse Number',
+                           'Win Odds for $1 bet (1 in x)',
+                           'Win',
+                           'Show Odds for $1 bet (1 in x)*',
+                           'Show*'],
+                          ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']),
+                         (['Bonus Multiplier Value', 'Probability'],
+                          ['No Bonus', '3X', '4X', '5X', '10X'])],
+              'titles': ['', 'Estimated probability of receiving a Racetrax® Bonus Multiplier']}})
+
+RACETRAX_CARDS = [('1',
+  'Quinella Prize Structure',
+  'https://images.ctfassets.net/9rr74jcm47fc/1HObcXGmrMmN6fwXzXke9r/8768b2092d22c596fb8658905ff09267/QuinellaPayouts.pdf'),
+ ('2',
+  'Trifecta Prize Structure',
+  'https://images.ctfassets.net/9rr74jcm47fc/2Li0d57sEgemxVDxoRM2lj/5b2fc41d9b0b79f53f087a2ce8bba71a/TrifectaPayouts.pdf'),
+ ('3',
+  'Exacta Prize Structure',
+  'https://images.ctfassets.net/9rr74jcm47fc/76pcAlIIMd2IaH6ptFVsI9/0e7fdcdbed0f63b29ae79854cc07ca8e/Exacta-Payout-Chart.pdf'),
+ ('4',
+  'Superfecta Prize Structure',
+  'https://images.ctfassets.net/9rr74jcm47fc/1lb5y6hVCAxtIoJWIG1nCf/37d2d3dd6194fc8097a3b156967b4550/Superfecta_Payout_Chart.pdf')]
+
 def cms_from_html(raw):
     chunks = []
     for script in html.fromstring(raw).xpath('//script[not(@src)]/text()'):
@@ -166,7 +221,13 @@ def parse_schedule(cms, slug):
     if not isinstance(tables, list) or len(tables) != len(schema['tables']):
         raise ValueError('Missing schedule tables')
     output = []
-    for table, (columns, identities) in zip(tables, schema['tables']):
+    for index, (table, (columns, identities)) in enumerate(zip(tables, schema['tables'])):
+        if 'titles' in schema and table.get('title', '') != schema['titles'][index]:
+            raise ValueError('Wrong schedule table title')
+        if slug == 'keno' and (not isinstance(table.get('description'), str) or 'Overall Odds' not in table['description'] or 'With Bullseye' not in table['description']):
+            raise ValueError('Missing Keno odds qualification')
+        if slug == 'racetrax' and index == 1 and (not isinstance(table.get('footer'), str) or 'Overall Odds of Winning Any Multiplier' not in table['footer']):
+            raise ValueError('Missing Racetrax multiplier qualification')
         if table.get('columnOrder') != columns:
             raise ValueError('Changed schedule columns')
         rows = table.get('matches')
@@ -179,14 +240,34 @@ def parse_schedule(cms, slug):
             cells = []
             for column in columns:
                 cell = row[column]
-                if not isinstance(cell, str) or not cell.strip():
+                if not isinstance(cell, str) or (not cell.strip() and not (slug == 'keno' and index == 4 and identity == '1' and column == 'Keno Prize' and cell == '')):
                     raise ValueError('Empty schedule cell')
                 if '$' in cell and not re.search(r'\$\$?\d[\d,]*(?:\.\d{2})?', cell):
                     raise ValueError('Invalid source money label')
                 cells.append(cell)
             values.append(cells)
-        output.append({'columns': columns, 'rows': values,
+        output.append({'title': table.get('title', ''), 'columns': columns, 'rows': values,
                        'description': table.get('description', ''), 'footer': table.get('footer', '')})
+    cards = tables[0].get('prizeInformationCards', [])
+    if slug == 'racetrax':
+        if not isinstance(cards, list) or len(cards) != len(RACETRAX_CARDS):
+            raise ValueError('Missing Racetrax prize cards')
+        for card, (identity, title, url) in zip(cards, RACETRAX_CARDS):
+            fields = {'id', 'title', 'pdfHref', 'pdfLink', 'maxReturn', 'minReturn', 'description'}
+            if not isinstance(card, dict) or set(card) != fields or any(not isinstance(card[k], str) or not card[k].strip() for k in fields):
+                raise ValueError('Invalid Racetrax prize card')
+            if (card['id'], card['title'], card['pdfHref']) != (identity, title, url):
+                raise ValueError('Changed Racetrax card identity/source route')
+            if any(not re.fullmatch(r'\$\$?\d[\d,]*', card[k]) for k in ['minReturn', 'maxReturn']):
+                raise ValueError('Invalid Racetrax literal return')
+        footer = tables[0].get('prizeInformationFooter')
+        if not isinstance(footer, str) or any(x not in footer for x in ['probability', 'Multiply', 'Divide', '$.10', '$.50']):
+            raise ValueError('Missing Racetrax wager qualifications')
+        output[0]['prizeInformationCards'] = cards
+        output[0]['prizeInformationFooter'] = footer
+    primary = rich_text(cms.get('prizeLegendPrimaryDescription'))
+    if slug in {'keno', 'racetrax'} and not primary:
+        raise ValueError('Missing primary schedule description')
     qualifications = rich_text(cms.get('prizeLegendDescription'))
     rules = rich_text(cms.get('howToPlay'))
     disclaimer = rich_text(cms.get('disclaimer'))
@@ -200,6 +281,8 @@ def parse_schedule(cms, slug):
         'super-kansas-cash': ['pari-mutual', 'divided between multiple winners'],
         '2-by-2': ['pari-mutuel', '7 consecutive days'],
         'powerball-xs-and-os': ['not based on', 'NFL games', 'liability limits'],
+        'keno': ['Progressive jackpots', '$300,000', '$1,500,000', 'pari-mutuel'],
+        'racetrax': ['$1,575,000', '$1,950,744', 'pari-mutuel', '$0.10', '$0.50', 'limited to a specific amount wagered'],
         'pick-3': ['$1 wager', 'MID', 'EVE', 'limited to the cost'],
     }[slug]
     qualification_text = ' '.join(rules if slug == 'pick-3' else qualifications)
@@ -209,10 +292,14 @@ def parse_schedule(cms, slug):
         if not isinstance(table['description'], str) or not isinstance(table['footer'], str):
             raise ValueError('Invalid schedule notes')
     warnings = ['Source CMS currency strings can contain a doubled dollar marker; literal source values are retained.']
+    if slug == 'keno':
+        warnings.append('Source 6-spot, match-one basic Keno prize cell is blank; it is retained as blank, not zero. Progressive bonus amounts are not supplied by these schedules.')
+    if slug == 'racetrax':
+        warnings.append('Prize cards summarize ranges and link to official PDF matrices; full PDF payout matrices are not embedded.')
     if slug == 'pick-3':
         warnings.append('Source prose and table differ in their Any Order box descriptions; both are retained without resolving the source inconsistency.')
     return {'sourceUrl': f'https://playonkansas.com/games/draw-games/{slug}',
-            'tables': output, 'qualifications': qualifications, 'rules': rules,
+            'tables': output, 'primaryDescription': primary, 'qualifications': qualifications, 'rules': rules,
             'disclaimer': disclaimer,
             'coverage': 'Literal published prize schedule, not actual winners or paid prizes. Source currency markers and qualifications are retained; no cash conversion.',
             'sourceWarnings': warnings}

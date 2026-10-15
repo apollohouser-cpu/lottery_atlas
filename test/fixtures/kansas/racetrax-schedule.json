@@ -1,0 +1,2005 @@
+{
+  "slug": "racetrax",
+  "gameId": 11,
+  "jackpotGameNumber": "11",
+  "title": "Racetrax",
+  "prizeLegend": [
+    {
+      "footer": "Racetrax\u00ae Payout",
+      "matches": [
+        {
+          "Win": "$$3.00",
+          "Show*": "$$1.20",
+          "Horse Number": "1",
+          "Win Odds for $1 bet (1 in x)": "4.50",
+          "Show Odds for $1 bet (1 in x)*": "1.70"
+        },
+        {
+          "Win": "$$4.00",
+          "Show*": "$$1.40",
+          "Horse Number": "2",
+          "Win Odds for $1 bet (1 in x)": "6.01",
+          "Show Odds for $1 bet (1 in x)*": "2.10"
+        },
+        {
+          "Win": "$$5.00",
+          "Show*": "$$1.60",
+          "Horse Number": "3",
+          "Win Odds for $1 bet (1 in x)": "7.51",
+          "Show Odds for $1 bet (1 in x)*": "2.50"
+        },
+        {
+          "Win": "$$7.00",
+          "Show*": "$$2.20",
+          "Horse Number": "4",
+          "Win Odds for $1 bet (1 in x)": "10.51",
+          "Show Odds for $1 bet (1 in x)*": "3.40"
+        },
+        {
+          "Win": "$$9.00",
+          "Show*": "$$2.80",
+          "Horse Number": "5",
+          "Win Odds for $1 bet (1 in x)": "13.51",
+          "Show Odds for $1 bet (1 in x)*": "4.20"
+        },
+        {
+          "Win": "$$10.00",
+          "Show*": "$$3.00",
+          "Horse Number": "6",
+          "Win Odds for $1 bet (1 in x)": "15.02",
+          "Show Odds for $1 bet (1 in x)*": "4.60"
+        },
+        {
+          "Win": "$$11.00",
+          "Show*": "$$3.40",
+          "Horse Number": "7",
+          "Win Odds for $1 bet (1 in x)": "16.52",
+          "Show Odds for $1 bet (1 in x)*": "5.10"
+        },
+        {
+          "Win": "$$12.00",
+          "Show*": "$$3.60",
+          "Horse Number": "8",
+          "Win Odds for $1 bet (1 in x)": "18.02",
+          "Show Odds for $1 bet (1 in x)*": "5.50"
+        },
+        {
+          "Win": "$$15.00",
+          "Show*": "$$4.60",
+          "Horse Number": "9",
+          "Win Odds for $1 bet (1 in x)": "22.52",
+          "Show Odds for $1 bet (1 in x)*": "6.80"
+        },
+        {
+          "Win": "$$20.00",
+          "Show*": "$$6.00",
+          "Horse Number": "10",
+          "Win Odds for $1 bet (1 in x)": "30.03",
+          "Show Odds for $1 bet (1 in x)*": "8.90"
+        },
+        {
+          "Win": "$$25.00",
+          "Show*": "$$7.40",
+          "Horse Number": "11",
+          "Win Odds for $1 bet (1 in x)": "37.54",
+          "Show Odds for $1 bet (1 in x)*": "11.10"
+        },
+        {
+          "Win": "$$30.00",
+          "Show*": "$$8.80",
+          "Horse Number": "12",
+          "Win Odds for $1 bet (1 in x)": "45.05",
+          "Show Odds for $1 bet (1 in x)*": "13.20"
+        }
+      ],
+      "columnOrder": [
+        "Horse Number",
+        "Win Odds for $1 bet (1 in x)",
+        "Win",
+        "Show Odds for $1 bet (1 in x)*",
+        "Show*"
+      ],
+      "prizeInformationCards": [
+        {
+          "id": "1",
+          "title": "Quinella Prize Structure",
+          "pdfHref": "https://images.ctfassets.net/9rr74jcm47fc/1HObcXGmrMmN6fwXzXke9r/8768b2092d22c596fb8658905ff09267/QuinellaPayouts.pdf",
+          "pdfLink": "Quinella Payout Chart (PDF)",
+          "maxReturn": "$$549",
+          "minReturn": "$$7",
+          "description": "Quinella*\nWinning Return for $1**\nSelect the 2 horses that will finish\nin 1st & 2nd place (any order)"
+        },
+        {
+          "id": "2",
+          "title": "Trifecta Prize Structure",
+          "pdfHref": "https://images.ctfassets.net/9rr74jcm47fc/2Li0d57sEgemxVDxoRM2lj/5b2fc41d9b0b79f53f087a2ce8bba71a/TrifectaPayouts.pdf",
+          "pdfLink": "Trifecta Payout Chart (PDF)",
+          "maxReturn": "$$31,454",
+          "minReturn": "$$64",
+          "description": "Trifecta*\nWinning Return for $1**\nSelect the 3 horses that will finish\nin 1st, 2nd, & 3rd place (exact order)"
+        },
+        {
+          "id": "3",
+          "title": "Exacta Prize Structure",
+          "pdfHref": "https://images.ctfassets.net/9rr74jcm47fc/76pcAlIIMd2IaH6ptFVsI9/0e7fdcdbed0f63b29ae79854cc07ca8e/Exacta-Payout-Chart.pdf",
+          "pdfLink": "Exacta Payout Chart (PDF)",
+          "maxReturn": "$$1,101",
+          "minReturn": "$$14",
+          "description": "Exacta*\nWinning Return for $1**\nSelect the horses that will finish\nin 1st & 2nd in exact order"
+        },
+        {
+          "id": "4",
+          "title": "Superfecta Prize Structure",
+          "pdfHref": "https://images.ctfassets.net/9rr74jcm47fc/1lb5y6hVCAxtIoJWIG1nCf/37d2d3dd6194fc8097a3b156967b4550/Superfecta_Payout_Chart.pdf",
+          "pdfLink": "Superfecta Payout Chart (PDF)",
+          "maxReturn": "$$650,248",
+          "minReturn": "$$324",
+          "description": "Superfecta*\nWinning Return for $1**\nSelect the horses that will finish\nin 1st, 2nd, 3rd & 4th in exact order"
+        }
+      ],
+      "prizeInformationFooter": "\n*The probability and prize payouts are derived from each horse\u2019s probability of finishing 1st.\n**Multiply $1 prize payout times dollars bet to determine payouts for other dollar amounts played per race.\n***Divide $1 prize payout by either 10 or 2 to determine payouts when betting $.10 and $.50 per race, respectively."
+    },
+    {
+      "title": "Estimated probability of receiving a Racetrax\u00ae Bonus Multiplier",
+      "footer": "Overall Odds of Winning Any Multiplier: 1 in 2.3",
+      "matches": [
+        {
+          "Probability": "1 in 2",
+          "Bonus Multiplier Value": "No Bonus"
+        },
+        {
+          "Probability": "1 in 3",
+          "Bonus Multiplier Value": "3X"
+        },
+        {
+          "Probability": "1 in 15",
+          "Bonus Multiplier Value": "4X"
+        },
+        {
+          "Probability": "1 in 40",
+          "Bonus Multiplier Value": "5X"
+        },
+        {
+          "Probability": "1 in 240",
+          "Bonus Multiplier Value": "10X"
+        }
+      ],
+      "columnOrder": [
+        "Bonus Multiplier Value",
+        "Probability"
+      ]
+    }
+  ],
+  "prizeLegendDescription": {
+    "json": {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Probability of Winning Racetrax\u00ae Bonus",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n\n*For the Show, Win/Show, Quinella, Trifecta (includes Trifecta, Trifecta Box and Trifecta Wheel), Exacta (includes Exacta, Exacta Box and Exacta Wheel), and Superfecta (includes Superfecta, Superfecta Box and Superfecta Wheel) Bet Types, the probability and prize payout are derived from each horse\u2019s probability of placing 1st.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Show Probability: Minimum 1.7, Maximum 13.2",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Quinella Probability: Minimum 10.9, Maximum 825.1",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Exacta Probability: Minimum 21.0, Maximum 1,653.4",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Trifecta Probability: Minimum 96.6, Maximum 47,619",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Superfecta Probability: Minimum 485.9, Maximum 976,371.8",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            }
+          ],
+          "nodeType": "unordered-list"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "**Multiply $1 prize payout times dollars bet to determine payouts for other dollar amounts played per race.\n\n***Divide $1 prize payout by either 10 or 2 to determine payouts when betting $0.10 and $0.50 per race respectively.\n\nThe Racetrax\u00ae/Racetrax\u00ae Bonus win levels are: a) Win (includes Win and Win/Show), b) Show (includes Show and Win/Show), c) Quinella, d) Trifecta (includes Trifecta, Trifecta Box and Trifecta Wheel), e) Exacta (includes Exacta, Exacta Box and Exacta Wheel), and f) Superfecta (includes Superfecta, Superfecta Box and Superfecta Wheel).\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Win, show, Quinella, Exacta and Trifecta Bet Types",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Maximum prize liability is $1,000,000 per race. The maximum prize liability when there are bonus winners is $1,575,000. There is a $315,000 maximum prize per race on any one Racetrax\u00ae ticket when Racetrax\u00ae Bonus is not selected, or when Racetrax\u00ae Bonus is selected and \"No Bonus\" occurs on the Bonus Wheel. The maximum prize per race on any one Racetrax\u00ae ticket when Racetrax\u00ae Bonus is selected and a bonus is won is $1,575,000. When maximum liability per race per bet type exceeds these stated levels, the prizes shall be calculated on a pari-mutuel basis.\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Superfecta Bet Type",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "The maximum prize liability is $650,248 per race. The maximum prize liability when there are bonus winners is $1,950,744.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "\nThe maximum prize per race on any one ticket without Bonus is $650,248 and $1,950,744 with Bonus. When maximum liability per race per bet type exceeds these stated levels, the prizes shall be calculated on a pari-mutuel basis.\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "value": "Racetrax\u00ae is the registered trademark of Tabcorp International Pty Ltd (\"Tabcorp\") and is used by the Lottery under license from Tabcorp and Scientific Games International, Inc. Tabcorp owns all copyright rights in and to the simulated horse racing betting game known as Racetrax\u00ae.\n\nMaximum Lottery liability in all cases is limited to a specific amount wagered",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        }
+      ],
+      "nodeType": "document"
+    }
+  },
+  "prizeLegendPrimaryDescription": {
+    "json": {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "*Racetrax\u00ae games are available for purchase and can be played at ANY Kansas Lottery retailer! ",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        }
+      ],
+      "nodeType": "document"
+    }
+  },
+  "howToPlay": {
+    "json": {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "How to Play",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "*Racetrax\u00ae games are available for purchase and can be played at ANY Kansas Lottery retailer!\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Racetrax\u00ae features:",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "12 horses per race, with each race lasting up to one minute.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Races beginning every 4 \u00bd minutes.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "A Bonus Wheel that spins before each race giving players a chance to multiply their winnings.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Each of the horses that participates in the game has a fixed probability of winning the race.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Winning numbers that are randomly generated and displayed on TV monitors.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Available at all retailer locations across the state.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Many ways to play and win!",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            }
+          ],
+          "nodeType": "unordered-list"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "\nPlaying Racetrax\u00ae\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\nCompleting a Racetrax\u00ae play slip is easy. Just use a pencil or blue or black ink, and make heavy marks in the boxes for the options you want to play.\n\nPlay every 4 \u00bd minutes from 4:00 AM to 2:50 AM every day.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "\nStep 1 \u2013 Select a Bet Type:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n\nUse Section 1 of your play slip to mark which bet type you wish to play. There are 12 horses in every race. Select only one bet type and the horse(s) of your choice, or mark the \"Quick Pick\" [QP] box.\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "value": "Quick Pick is not available for Wheel bets.",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "WIN:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select at least one horse to finish in 1st place (Minimum bet per ticket = $1)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "SHOW:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select at least one horse to finish in 1st, 2nd or 3rd place. (Minimum bet per ticket = $1)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "WIN/SHOW:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " A WIN/SHOW is a combined WIN and SHOW bet on one ticket. One horse equals two bets. (Minimum bet per ticket = $2)",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "If your horse finishes 1st, you win the WIN and the SHOW prizes.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "If your horse finishes 2nd or 3rd, you win the SHOW prize only.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            }
+          ],
+          "nodeType": "unordered-list"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "EXACTA:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select two horses that will finish in 1st & 2nd place in EXACT order. (Minimum bet amount = $1)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "EXACTA BOX:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select at least two horses to finish in 1st & 2nd place in ANY order. The number of wagers in an Exacta Box for one race is equal to the number of all possible combinations based on the total number of horses selected. Two horses equal two bets. (Base bet amount = $1, Minimum bet amount = $2)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "EXACTA WHEEL:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select three or more horses (at least one in each box) to finish 1st & 2nd in EXACT order. ",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Quick Pick (QP) is not available for the Exacta Wheel bet type. ",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "If more than three horses are selected, the cost for one race will be determined by the total number of all possible combinations. (Base bet amount = $1, Minimum bet per ticket = $2)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "QUINELLA:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select two or more horses to finish in 1st and 2nd place in ANY order. (Minimum bet per ticket =$1)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "TRIFECTA:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select three horses that will finish in 1st, 2nd and 3rd place in EXACT order. (Minimum bet per ticket = $1)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "TRIFECTA BOX:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select at least three horses that will finish in 1st, 2nd and 3rd place in ANY order. The number of wagers in a Trifecta Box for one race is equal to the number of all possible combinations based on the total number of horses selected. Three horses equal six (6) bets. (Base bet amount = $.50, Minimum bet per ticket = $3)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "TRIFECTA WHEEL:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select four or more horses (at least one in each box) to finish in 1st, 2nd and 3rd place in EXACT order. ",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Quick Pick (QP) is not available for Trifecta Wheel bet type.",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " If more than four horses are selected, the total number of all possible combinations will determine the cost for one race. (Minimum bet per ticket = $2)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "SUPERFECTA:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select four horses that will place 1st, 2nd, 3rd & 4th in EXACT order. (Minimum bet per ticket = $1)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "SUPERFECTA BOX:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select at least four horses to place 1st, 2nd, 3rd & 4th in ANY order. The number of wagers in a Superfecta Box for one race is equal to the number of all possible combinations based on the total number of horses selected. Four horses equals 24 bets. (Base bet amount =$.10, Minimum bet per ticket = $2.40)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "SUPERFECTA WHEEL:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Select at least five horses to finish 1st, 2nd, 3rd & 4th in EXACT order. ",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Quick Pick (QP) is not available for the Superfecta Wheel bet type.",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " If more than five horses are selected, the cost for one race will be determined by the total number of all possible combinations. (Base bet amount = $.10, Minimum bet per ticket = $1)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "WIN, SHOW, QUINELLA, EXACTA & TRIFECTA bet types:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " Maximum prize liability is $1,000,000 per race. The maximum prize liability when there are bonus winners is $1,575,000.\nThere is a $315,000 maximum prize per race on any one Racetrax\u00ae ticket when Racetrax\u00ae Bonus is not selected, or when Racetrax\u00ae Bonus is selected and \"No Bonus\" occurs on the Bonus Wheel. The maximum prize per race on any one Racetrax\u00ae ticket when Racetrax\u00ae Bonus is selected and a bonus is won is $1,575,000. When maximum liability per race per bet type exceeds these stated levels, the prizes shall be calculated on a pari-mutuel basis.\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "SUPERFECTA bet type:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " The maximum prize liability is $650,248 per race. The maximum prize liability when there are bonus winners is $1,950,744.\nThe maximum prize per race on any one ticket without Racetrax\u00ae Bonus is $650,248 and $1,950,744 with Racetrax\u00ae Bonus. When maximum liability per race per bet type exceeds these stated levels, the prizes shall be calculated on a pari-mutuel basis.\n",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Step 2 \u2013 Select your Horse(s):",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n\nUse Section 2 of your play slip to select your horses OR mark the Quick Pick (QP) box if you want your horses selected for you. ",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Quick Pick is NOT available for the Trifecta and Superfecta Wheel bets.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "WIN, SHOW, WIN/SHOW:",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": " Select at least one horse in the 1st box.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "EXACTA:",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": " Select two individual horses, one in each of the 1st and 2nd boxes.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "EXACTA BOX:",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": " Select at least two horses in the 1st box.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "EXACTA WHEEL:",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": " Select three or more horses, at least one in each of the 1st and 2nd boxes.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "QUINELLA:",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": " Select at least two horses, at least one in each of the 1st and 2nd boxes.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "TRIFECTA:",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": " Select three different individual horses, one in each of the 1st, 2nd and 3rd boxes.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "TRIFECTA BOX",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": ": Select at least three horses in the 1st box.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "TRIFECTA WHEEL: ",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Select four or more horses, at least one in each of the 1st, 2nd and 3rd boxes.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "SUPERFECTA: ",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Select four different individual horses, one in each of the 1st, 2nd, 3rd and 4th boxes.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "SUPERFECTA BOX: ",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Select at least four horses in the 1st box.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "value": "SUPERFECTA WHEEL: ",
+                      "nodeType": "text"
+                    },
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Select five or more horses, at least one in each of the 1st, 2nd, 3rd and 4th boxes.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            }
+          ],
+          "nodeType": "unordered-list"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Step 3 \u2013 Select your Bet Amount:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n\nUse Section 3 of your play slip to select the amount you wish to bet per Race ($.10, $.50, $1, $2, $3, $4, $5, $10 or $20). Examples are based on the minimum ticket cost for one race. The total cost of your ticket will equal:\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "WIN or SHOW",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races] X [Number of Horses Selected]\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "WIN/SHOW",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races] X [Number of Horses Selected] X [2]\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "EXACTA",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races] X [Number of Horses Selected]\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "EXACTA BOX",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races] X [Number of Possible Bet Combinations]\n(Two is the number of bets in an Exacta Box if only two horses are selected. If more than two horses are selected, the cost will increase by $1 for each additional possible combination. For example, if three horses are selected, there are six possible combinations for a cost of $6.)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "EXACTA WHEEL",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races] X [Number of Possible Bet Combinations]\n(For example, if the number one horse is selected in Box 1, and the two and four horses in Box 2, there are two possible combinations, 1-2 and 1-4. The cost based on a $1 bet, would be $2.)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "QUINELLA",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races]\n(If more than two horses are selected, each additional horse will increase the cost by $1 for each set of possible Quinella finishes. For example, if the 1 and 2 horses are selected, the set would be 1-2, 2-1, and the minimum cost would be $1. If horses 1, 2 and 3 are selected, the set would be 1-2, 2-1; 1-3, 3-1; 2-3, 3-2, so the minimum cost would be $3, $1 for each for the three sets.)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "TRIFECTA",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races]\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "TRIFECTA BOX",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races] X [Number of Possible Bet Combinations]\n(Six is the number of bets in a Trifecta Box if only three horses are selected. If more than three horses are selected, the cost will increase by $.50 for each additional possible combination. For example, if four horses are selected, there are 24 possible combinations for a cost of $12.)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "TRIFECTA WHEEL",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races] X [Number of Possible Bet Combinations]\n(For example, if the number one and number two horses are selected in Box 1, the number three horse in Box 2 and the number four horse in Box 3, there are two possible combinations, 1-3-4 and 2-3-4. The cost, based on a $.50 bet, would be $1.)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "SUPERFECTA",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races]\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "SUPERFECTA BOX",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races] X [Number of Possible Bet Combinations]\n(Base bet amount is $.10. There are 24 bets in a Superfecta Box if only four horses are selected. If more than four horses are selected, the cost will increase by $.10 for each additional possible combination. For example, if five horses are selected, there are 120 possible combinations for a cost of $12.)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "SUPERFECTA WHEEL",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " = [Bet Amount] X [Number of Races] x [Number of Possible Bet Combinations].\n(For example, if the number one horse is selected in Box 1, the number two horse is selected in Box 2, the number three horse is selected in Box 3 and the number four and five horses are selected in Box 4, there are two possible combinations 1-2-3-4 and 1-2-3-5. The cost on a $0.50 bet would be $1. The base bet for this bet type is $0.10 \u2013 the minimum required wager is $1.)\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "value": "\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Step 4 \u2013 Select Number of Races:",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n\nIn Section 4, select the number of consecutive races you wish to play (1, 2, 3, 4, 5, 10 or 20.)\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Step 5 \u2013 Do you want to play Racetrax\u00ae Bonus?",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n\nIf you would like to play Racetrax\u00ae Bonus, select \"Yes\" on your play slip for the Racetrax\u00ae Bonus option and have the chance to multiply your winnings on every race. You must play Racetrax\u00ae if you want to play Racetrax\u00ae Bonus. ",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "Selecting \"Yes\" will double the cost of your ticket.",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " If you do not wish to play Racetrax\u00ae Bonus, then select \"No.\"\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "* The maximum wager per ticket for Racetrax\u00ae when Racetrax\u00ae Bonus is not played is $120 per ticket.",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "* The maximum wager per ticket for Racetrax\u00ae when Racetrax\u00ae Bonus is played is $240 per ticket.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "\nHow to play Racetrax\u00ae Bonus\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "Racetrax\u00ae Bonus is a feature of Racetrax\u00ae that gives you a chance to increase your Racetrax\u00ae winnings by up to 10 times the original amount. Simply mark the \"Yes\" box for Racetrax\u00ae Bonus on your Racetrax\u00ae play slip.\n\nDetermining your Racetrax\u00ae Bonus wager is easy. It is the same amount that you wagered on Racetrax\u00ae. For instance, if you wager $2 on Racetrax\u00ae, then your Racetrax\u00ae Bonus wager is an additional $2, for a total ticket cost of $4.\n\nRacetrax\u00ae Bonus draws first, with a wheel that spins and stops to reveal which multiplier, if any, applies to the next Racetrax\u00ae race. Possible multipliers are as follows: ",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "No Bonus, 3X, 4X, 5X, and 10X.",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": " It is also possible there will be no multiplier for the race. Then the race takes place. If your ticket is a winner for the Racetrax\u00ae race, and you also played Racetrax\u00ae Bonus, then multiply the amount you won by the Racetrax\u00ae Bonus multiplier, if any. The result is how much money you will actually collect. For example, if you win $7 on Racetrax\u00ae, and the multiplier for that race is 3, then you collect $21. If the multiplier is 4, you collect $28, and so on.\n\nYou can watch the race at select retailer locations. You can also use the Ticket Checker machine at any Kansas Lottery retailer to see if you won.   Click on 'THE ODDS' tab to see all the ways to win playing Racetrax\u00ae!\n\nWith Racetrax\u00ae Bonus, you can win up to $1,575,000 for WIN, WIN/SHOW, SHOW, QUINELLA, EXACTA, and TRIFECTA bets, or $1,950,744 for a SUPERFECTA bet on Racetrax\u00ae when the Racetrax\u00ae Bonus option is selected and a specific multiplier occurs!\n\n*For the Show, Win/Show, Quinella, Trifecta (includes Trifecta, Trifecta Box and Trifecta Wheel), Exacta (includes Exacta, Exacta Box and Exacta Wheel), and Superfecta (includes Superfecta, Superfecta Box and Superfecta Wheel), the probability and prize payout are derived from each horse\u2019s probability of placing 1st.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Show Probability: Minimum 1.7, Maximum 13.2",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Quinella Probability: Minimum 10.9, Maximum 825.1",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Exacta Probability: Minimum 21.0, Maximum 1,653.4",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Trifecta Probability: Minimum 96.6, Maximum 47,619",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Superfecta Probability: Minimum 485.9, Maximum 976,371.8",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            }
+          ],
+          "nodeType": "unordered-list"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n**Multiply $1 prize payout times dollars bet to determine payouts for other dollar amounts played per race.\n\n*** Divide $1 prize payout by either 10 or 2 to determine payouts when betting $0.10 and $0.50 per race respectively.\n\nThe Racetrax\u00ae/Racetrax\u00ae Bonus win levels are:",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Win (includes Win and Win/Show)",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Show (includes Show and Win/Show)",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Quinella",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Trifecta (includes Trifecta, Trifecta Box and Trifecta Wheel)",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Exacta (includes Exacta, Exacta Box and Exacta Wheel)",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Superfecta (includes Superfecta, Superfecta Box and Superfecta Wheel.)",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            }
+          ],
+          "nodeType": "ordered-list"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "\nRacetrax\u00ae is the registered trademark of Tabcorp International Pty Ltd (\"Tabcorp\") and is used by the Lottery under license from Tabcorp and Scientific Games International, Inc. Tabcorp owns all copyright rights in and to the simulated horse racing betting game known as Racetrax\u00ae.\n\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "value": "Maximum Lottery liability in all cases is limited to a specific amount wagered",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "value": "\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "\n",
+              "nodeType": "text"
+            },
+            {
+              "data": {
+                "uri": "https://images.ctfassets.net/9rr74jcm47fc/6zlFtOx5NaOgKzHG39vorp/2cdacf46752e67bd4be4ad0e627666a7/Racetrax_Howto.pdf"
+              },
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "Download Game Brochure (PDF)",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "hyperlink"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        }
+      ],
+      "nodeType": "document"
+    },
+    "links": {
+      "assets": {
+        "hyperlink": []
+      }
+    }
+  },
+  "disclaimer": {
+    "json": {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Play Racetrax\u00ae every 4 \u00bd minutes from 4:00 AM to 2:50 AM every day! Players have until 2:49 AM to purchase Racetrax\u00ae tickets.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        }
+      ],
+      "nodeType": "document"
+    }
+  }
+}

@@ -10,7 +10,7 @@ class KansasScheduleTests(unittest.TestCase):
     def source(self, slug):
         return json.loads((FIXTURES / f'{slug}-schedule.json').read_text())
 
-    def test_literal_schedules_all_eight_families(self):
+    def test_literal_schedules_all_ten_families(self):
         total = 0
         for slug in SCHEMAS:
             source = self.source(slug)
@@ -19,10 +19,35 @@ class KansasScheduleTests(unittest.TestCase):
                 self.assertEqual(actual['rows'], [[row[c] for c in expected['columnOrder']] for row in expected['matches']])
                 total += len(actual['rows'])
             self.assertTrue(result['rules'])
-        self.assertEqual(66, total)
+        self.assertEqual(139, total)
         self.assertEqual(2,len(parse_schedule(self.source('pick-3'),'pick-3')['sourceWarnings']))
         self.assertIn('free ticket',str(parse_schedule(self.source('2-by-2'),'2-by-2')))
         self.assertIn('/yr for Life',str(parse_schedule(self.source('millionaire-for-life'),'millionaire-for-life')))
+
+    def test_keno_and_racetrax_source_limits(self):
+        k = parse_schedule(self.source('keno'), 'keno')
+        self.assertEqual('match ', k['tables'][0]['columns'][2])
+        self.assertEqual('', k['tables'][4]['rows'][5][1])
+        self.assertIn('not zero', str(k['sourceWarnings']))
+        r = parse_schedule(self.source('racetrax'), 'racetrax')
+        self.assertEqual(self.source('racetrax')['prizeLegend'][0]['prizeInformationCards'], r['tables'][0]['prizeInformationCards'])
+        cases = [
+            ('keno', lambda x: x['prizeLegend'][0].update(description='')),
+            ('racetrax', lambda x: x['prizeLegend'][1].update(footer='')),
+            ('keno', lambda x: x['prizeLegend'][0].update(title='9-Spot Game')),
+            ('keno', lambda x: x['prizeLegend'][0]['matches'][0].update({'Keno Prize': ''})),
+            ('keno', lambda x: x.update(prizeLegendPrimaryDescription=None)),
+            ('keno', lambda x: x['prizeLegendDescription']['json']['content'].clear()),
+            ('racetrax', lambda x: x['prizeLegend'][0]['prizeInformationCards'].pop()),
+            ('racetrax', lambda x: x['prizeLegend'][0]['prizeInformationCards'][0].update(pdfHref='https://example.com/a.pdf')),
+            ('racetrax', lambda x: x['prizeLegend'][0]['prizeInformationCards'][0].update(minReturn='unknown')),
+            ('racetrax', lambda x: x['prizeLegend'][0].update(prizeInformationFooter='')),
+        ]
+        for slug, change in cases:
+            source = self.source(slug)
+            change(source)
+            with self.subTest(slug=slug), self.assertRaises(ValueError):
+                parse_schedule(source, slug)
 
     def test_structure_identity_and_values_reject(self):
         changes = [lambda x:x.update(slug='other'),lambda x:x.update(gameId=True),

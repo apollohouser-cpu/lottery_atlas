@@ -248,3 +248,29 @@ under work/kansas_scope/keno-resolved-qualifications.json. Keno's ten schedule
 tables and Racetrax's two tables/cards still need strict integration; no public
 feed, app acceptance, build or simulator change. Release remains due October 19
 at 19:40 ET, without extension.
+
+
+## October 15, 02:48 ET — Remaining literal schedules extracted
+
+Keno and Racetrax now have strict schedule extraction from the retained official
+CMS captures. Keno preserves ten tables / 56 rows, distinct basic and Bull's-eye
+columns (including their distinct source keys), spot-game titles, overall odds,
+progressive and liability qualifications. Its 6-spot match-one basic prize cell
+is literally blank: retained with an explicit warning, never converted to zero.
+Progressive bonus amounts are not supplied by these tables.
+
+Racetrax preserves two tables / 17 rows, horse Win/Show odds and returns, bonus
+probabilities, four named prize-range cards and their exact official PDF routes,
+wager instructions and liability/pari-mutuel notes. Full PDF payout matrices are
+not embedded; the output discloses that boundary. No award arithmetic or winner
+counts were introduced. Table titles and primary schedule descriptions are now
+retained separately from rules and qualifications.
+
+All ten current families parse from retained HTML: 21 tables / 139 literal rows.
+Nineteen combined Kansas Python tests pass, including ten new malformed
+Keno/Racetrax cases covering titles, blank cells, missing qualifications/cards,
+invalid prize ranges and changed PDF routes. Private normalized evidence updated
+at work/kansas_scope/validated-schedules.json. Separately labeled advertised
+prizes and collection assembly remain next, then atomic fresh import/publication,
+app loaders/UI and native acceptance. No new public feed/build/UI/Gmail or state
+acceptance; October 19 at 19:40 ET deadline remains unchanged, no extension.
