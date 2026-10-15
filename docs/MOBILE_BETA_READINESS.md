@@ -535,3 +535,23 @@ and portrait; no new build. This is state acceptance, not full mobile acceptance
 Next independent mobile work remains saved-data process persistence, enlarged-text
 native checks and Android runtime (one emulator/simulator at a time), followed by
 actual signing/account/distribution gates. No store upload or attestation occurred.
+
+
+### October 15 — First Android emulator build/install/launch
+
+At the user's request, built the current Android debug APK (15.8 seconds) and
+booted the prepared LotteryAtlas_API36 emulator on PNY. No iOS simulator was
+booted. Installation succeeded and a cold launch reached the national map with
+visible controls, tiles and bottom navigation. Initial log inspection found an
+unhandled MissingPluginException for the shared desktop setMapActive channel.
+Added an Android no-op handler for that desktop-only setting; unknown methods
+still return notImplemented. Rebuild passed (10.7 seconds), reinstall succeeded,
+and cold launch returned Status ok. The new process log contained no matching
+MissingPluginException, unhandled exception, fatal exception or RenderFlex
+overflow marker at the checkpoint.
+
+Private screenshots/build/runtime logs are in work/mobile_beta/android-*. The
+emulator remains open for user testing. This establishes first Android launch,
+not complete navigation/rotation/persistence/network recovery or beta acceptance.
+Debug signing only; no store upload, account action or fee. Kansas remains the
+sole active state; mobile work does not change its acceptance deadline.
