@@ -243,3 +243,33 @@ Next literal schedule/qualification extraction and separately labeled advertised
 prizes, then atomic collection/regression guards, app loader/UI and native
 acceptance. Kansas release remains due October 19 at 19:40 ET; no extension,
 Gmail, build, simulator or state acceptance change.
+
+
+## October 15, 00:45 ET — Eight families' literal schedules extracted
+
+Added strict Next.js detail CMS extraction and schedule parsing for Powerball,
+Mega Millions, Lotto America, Millionaire for Life, Pick 3, Super Kansas Cash,
+2by2 and Xs & Os: nine tables / 66 literal rows from retained official captures.
+Exact game/session IDs, table/column order and row identities are required;
+missing cells/rows/qualifications fail closed. Rules, source disclaimers,
+table descriptions/footers and prize qualifications remain distinct. Lifetime
+awards, free tickets, base/Double Play columns and Mega Millions' multiplier-odds
+table are preserved without calculated payouts or winner totals.
+
+CMS values containing doubled dollar markers are retained verbatim with an
+explicit warning. Pick 3 source prose and table disagree on Any Order box
+descriptions; both are retained with a separate source warning, not silently
+repaired. Required qualification phrases guard pari-mutuel/shared jackpot,
+Power Play/Double Play exclusion, lifetime cash-option source text and Tuesday
+eligibility. Quoted source cash options are not computed conversions.
+
+Seventeen combined Kansas Python tests pass, including schedule identity/schema,
+missing/partial qualification and ambiguous Next.js payload rejection. All eight
+retained HTML pages parse; private normalized schedules are saved under
+work/kansas_scope/validated-schedules.json. System Python lacked lxml during an
+inspection; the established dependency runtime completed extraction/tests.
+
+Keno/Racetrax schedules, separately labeled advertised prizes and collection
+assembly remain next, followed by atomic fresh import/publication and app/native
+acceptance. This is not a new public feed or accepted state. No build/UI/Gmail;
+October 19 at 19:40 ET release deadline remains unchanged, no extension.

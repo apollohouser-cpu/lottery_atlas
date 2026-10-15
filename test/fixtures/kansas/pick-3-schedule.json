@@ -1,0 +1,340 @@
+{
+  "slug": "pick-3",
+  "gameId": 10,
+  "jackpotGameNumber": "9,10",
+  "title": "Pick 3",
+  "prizeLegend": [
+    {
+      "matches": [
+        {
+          "odds": "1:1,000",
+          "1$ Wager": "$$500",
+          "type of play": "Exact order (Straight)",
+          "example: You Play": "123",
+          "you win if we draw": "123"
+        },
+        {
+          "odds": "1:166.67",
+          "1$ Wager": "$$80",
+          "type of play": "Any order (6-way box)",
+          "example: You Play": "123",
+          "you win if we draw": "123, 132, 231, 213, 321, 312"
+        },
+        {
+          "odds": "1:333.33",
+          "1$ Wager": "$$160",
+          "type of play": "Any order (3-way box) (Where two digits are the same)",
+          "example: You Play": "112",
+          "you win if we draw": "112, 121, 211"
+        }
+      ],
+      "columnOrder": [
+        "type of play",
+        "example: You Play",
+        "you win if we draw",
+        "odds",
+        "1$ Wager"
+      ]
+    }
+  ],
+  "prizeLegendDescription": null,
+  "howToPlay": {
+    "json": {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "How to Play",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "Pick 3 is a Kansas-only game with a top prize of $500. Play TWO times daily for a chance to win cash seven days a week for a total of 14 Pick 3 drawings each week.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "You can purchase Pick 3 tickets online any time by selecting the Buy Now button and adding tickets to your shopping cart. When making your purchase online, you can select Quick Pick to have numbers automatically selected for you, choose Create My Own Ticket to select your own lucky numbers, play Same As Last Time to recreate your last ticket, or select Subscribe so you never miss a draw.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "To purchase tickets at retail, ask the store clerk for a Quick Pick (QP) ticket or fill out a play slip. Each play slip has five boards.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Ask the store clerk for a Quick Pick (QP) ticket or fill out a play slip. Each play slip has five boards. Each board contains three columns of numbers 0 through 9. Select one number from each column. You can pick the same number once, twice or three times, or you can choose three different numbers. If you want the computer to randomly select your numbers, mark \"Quick Pick\" at the bottom of the board",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Select your play type \"Exact Order\" or \"Any Order\"",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                },
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "Exact Order (straight): For $1 wager, if the three numbers drawn match your numbers in the exact order, you win $500",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "list-item"
+                    },
+                    {
+                      "data": {},
+                      "content": [
+                        {
+                          "data": {},
+                          "content": [
+                            {
+                              "data": {},
+                              "marks": [],
+                              "value": "Any Order (3-way box): For a $1 wager, if the three numbers drawn match you numbers in any order, you win $80. Win $160 for matching your three numbers in any order when two or three of the three numbers selected are IDENTICAL",
+                              "nodeType": "text"
+                            }
+                          ],
+                          "nodeType": "paragraph"
+                        }
+                      ],
+                      "nodeType": "list-item"
+                    }
+                  ],
+                  "nodeType": "ordered-list"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Select \"MID\" (Midday), \"EVE\" (Evening) or \"BOTH\" (Both) depending on the draw(s) for which you want your play to be eligible.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Each draw is a $1 wager. For example, if you select \"MID\" or \"EVE\" only, your wager will cost $1 per board played. If you select \"BOTH\" your wager will cost $2 per board played.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "DO NOT USE RED INK; use only blue or black ink, or pencil. If a square is marked in error choose \"VOID\" for that board and move to the next board. DO NOT ERASE. Check the play slip carefully before presenting it to the retailer",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "If you wish, you may purchase the same boards, play types and wager for either 2, 3, 4, 5, 6, 7, 14, 21, or 28 consecutive draws by marking the appropriate number of draws in the \"MULTI-DRAW\" area at the left side of the play slip. \"MULTI-DRAW\" option applies to all boards played",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            },
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "content": [
+                    {
+                      "data": {},
+                      "marks": [],
+                      "value": "Before submitting the play slip, make sure the numbers, play type, wager and time of draw(s) and any multi-draw options are the ones you want. RESPONSIBILITY FOR YOUR NUMBERS AND WAGERS RESTS WITH YOU, NOT THE RETAILER OR THE LOTTERY. Any liability of the Kansas Lottery is limited to the cost of ticket purchased.",
+                      "nodeType": "text"
+                    }
+                  ],
+                  "nodeType": "paragraph"
+                }
+              ],
+              "nodeType": "list-item"
+            }
+          ],
+          "nodeType": "unordered-list"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            },
+            {
+              "data": {
+                "uri": "https://assets.ctfassets.net/9rr74jcm47fc/2K0l6v0MYD3yR3wvKImYBX/21e45c00ffca1efd2b1e60b8fda82c1e/Pick3_Howto.pdf"
+              },
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "Download Game Brochure (PDF)",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "hyperlink"
+            },
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        },
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        }
+      ],
+      "nodeType": "document"
+    },
+    "links": {
+      "assets": {
+        "hyperlink": []
+      }
+    }
+  },
+  "disclaimer": {
+    "json": {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "marks": [],
+              "value": "You have until 12:59 pm to purchase tickets for the Midday drawing. You have until 8:59 pm to purchase tickets for the Evening drawing.",
+              "nodeType": "text"
+            }
+          ],
+          "nodeType": "paragraph"
+        }
+      ],
+      "nodeType": "document"
+    }
+  }
+}
