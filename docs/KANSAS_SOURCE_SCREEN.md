@@ -422,3 +422,25 @@ Replacement publisher 38729732959 was queued on 47f86f9 at last check. Next veri
 its result and deployed bytes before closing initial publication; scheduled
 transaction success and app/native integration remain open. No acceptance or
 deadline change; no build/UI/Gmail.
+
+
+## October 15, 08:47 ET — Publication recovered and public bytes verified
+
+Replacement publisher 38729732959 completed successfully on repair 47f86f9.
+The deployed Kansas collection endpoint exactly matches both the committed data
+baseline and docs copy (SHA-256
+cbe8c3644e02aee8c3106debb3a9669133d94c31b608698e1a0d9292a7a9ddd9).
+It contains 24 results, ten schedule families and four separately dated advertised
+prize records; retrieval remains 2026-10-15T09:47:02.440545+00:00.
+Public endpoint: https://apollohouser-cpu.github.io/lottery_atlas/kansas_draw_collection.json
+
+Initial publication/recovery checkpoint is CLOSED. CI now passes after removal
+of the cross-test namespace dependency; the earlier inaccessible traceback still
+does not independently establish its precise failure mechanism. Latest scheduled
+run 38728061316 used pre-repair 049d1be and failed before refresh/deployment, so
+first successful scheduled two-output transaction remains OPEN. Do not equate
+successful push publication with a successful scheduled source refresh.
+
+Next strict Flutter collection validator/cache-remote-bundle loader, then UI and
+native acceptance; native adoption is not yet claimed. No build/UI/Gmail or state
+acceptance change. October 19 at 19:40 ET deadline remains unchanged.
