@@ -459,3 +459,24 @@ report/schedule/advertised-prize UI with mandatory source limits, followed by
 Scratch all-tier audit and integrated native acceptance. Android user review
 remains undisturbed. October 19 at 19:40 ET deadline unchanged; no Gmail or state
 acceptance change.
+
+
+## October 15, 12:51 ET — Collection UI connected
+
+Kansas source page now opens the bounded collection sheet with all 24 selections,
+separate sessions/variants, source timestamps/local dates, number order and team
+labels. Advertised amounts appear in a separately dated section and passed draw
+times are evaluated at display time. Literal schedules retain distinct column
+labels, the explicit Keno blank, source currency strings, Racetrax PDF-card
+routes, rules/qualifications and mandatory warnings. Fields have independent
+semantic text nodes for long schedule traversal. Selection changes reset scroll.
+
+Three widget tests pass: all 24 selections at compact and wide widths plus Keno
+warning/retrieval/footer traversal. Three-file analysis is clean. The footer test
+initially skipped a short text node with overly large scroll steps; smaller steps
+verified it without changing app code. No full build/install/native/source-return
+claim; Android user review remains undisturbed.
+
+Next audit Kansas Scratch all-tier app coverage and remaining source disclosures,
+then integrated native checks and scheduled transaction evidence. October 19 at
+19:40 ET deadline remains unchanged. No Gmail or state acceptance change.
