@@ -37,7 +37,7 @@ public-source research; private account data and ticket identifiers are excluded
 
 ## Acceptance gates
 
-- [x] Close current products/options/sessions/history scope and explicit gaps (October 14, 20:43 ET).
+- [x] Close current products/options/sessions/history scope and explicit gaps (October 14, 20:41 ET).
 - [ ] Verify actual dated draw reports and source winner units where available;
       otherwise implement honest usable supported results and explicit gaps.
 - [ ] Audit current literal Scratch tiers, source dates, exclusions and app UI.
@@ -55,7 +55,7 @@ Louisiana and the other accepted states remain closed. Mobile beta preparation
 continues independently; October 20–27 remains a provisional beta estimate only.
 
 
-## October 14, 20:43 ET — Supported scope closed; public result API audited
+## October 14, 20:41 ET — Supported scope closed; public result API audited
 
 Scope closed ahead of October 15 at 19:40 ET. Captured all twelve linked draw
 detail pages, their public scripts and read-only public result API responses

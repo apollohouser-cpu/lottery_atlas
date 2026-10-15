@@ -99,7 +99,7 @@ instants, Pull Tabs, Keno/Racetrax, raffle and loyalty need explicit scope decis
 No account access, purchases, public feed changes or new correspondence occurred.
 
 
-## October 14, 20:43 ET — Supported scope closed; public result API audited
+## October 14, 20:41 ET — Supported scope closed; public result API audited
 
 Scope closed ahead of October 15 at 19:40 ET. Captured all twelve linked draw
 detail pages, their public scripts and read-only public result API responses
