@@ -620,3 +620,24 @@ This is partial native evidence only: full tier traversal, filters, source retur
 report interactions/adoption, wide layout and request-failure retention remain.
 The app remains portrait at the Scratch footer. No state/mobile acceptance,
 Gmail, fee or deadline change; Kansas remains due October 19 at 19:40 ET.
+
+
+## October 15, 18:52 ET — Android Scratch interaction checkpoint
+
+On the existing 2c4b6ed Android build, the official game-detail action opened the
+correct Fire & Ice Tripler URL in the emulator's external WebView Browser Tester;
+the official page rendered the game title, $75,000 top prize and $10 price.
+Android Back restored game 257 and the exact footer scroll position. This is an
+external browser return, not a Chrome/Safari-specific claim.
+
+Native search for an absent name produced 0 of 46 and the empty-state message;
+reset cleared the query. The $50 filter produced 2 of 46 games and selected game
+417; reset returned 46 of 46 and game 257. Smaller scroll steps exposed all eleven
+game-257 prize labels and remaining values, including $25 and FREE TICKET, without
+converting categorical prizes or adding claimed counts. Source-date conflict and
+scope notices remain visible. Private evidence: work/kansas_native/*.xml.
+
+No build or reinstall was needed. The emulator remains portrait in the game-257
+tier list. Remaining acceptance includes report groups/source returns/adoption,
+wide layouts and native request-failure retention. No acceptance, deadline change,
+Gmail or fees; Kansas remains sole active, due October 19 at 19:40 ET.
