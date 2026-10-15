@@ -7,6 +7,10 @@ CENTRAL = ZoneInfo('America/Chicago')
 GROUPS = {
     'pick3-midday': (9, 'Pick 3', 'Midday', 'pick-3', 3, 9, None),
     'pick3-evening': (10, 'Pick 3', 'Evening', 'pick-3', 3, 9, None),
+    '2by2': (5, '2by2', 'Drawing', '2-by-2', 2, 26, 26),
+    'xs-os': (15, 'Powerball Xs & Os', 'Drawing', 'powerball-xs-and-os', 8, 32, None),
+    'keno': (19, 'Keno', 'Frequent', 'keno', 20, 80, None),
+    'racetrax': (11, 'Racetrax', 'Frequent', 'racetrax', 4, 12, None),
     'powerball': (1, 'Powerball', 'Base', 'powerball', 5, 69, 26),
     'powerball-double-play': (1, 'Powerball', 'Double Play', 'powerball', 5, 69, 26),
     'mega-millions': (12, 'Mega Millions', 'Drawing', 'megamillions', 5, 70, 24),
@@ -22,9 +26,25 @@ def integer(value, minimum=0):
     return value
 
 
-def parse_results(payload, group, retrieved_at):
+def validate_team_mapping(rows):
+    if not isinstance(rows, list) or len(rows) != 32:
+        raise ValueError('Expected complete official team mapping')
+    mapping = {}
+    for row in rows:
+        if not isinstance(row, dict) or type(row.get('gameId')) is not int or row['gameId'] != 15:
+            raise ValueError('Wrong team mapping game')
+        key = integer(row.get('mappingId'), 1)
+        title = row.get('title')
+        if key > 32 or key in mapping or not isinstance(title, str) or not re.fullmatch(r'[A-Z]{2,4}', title) or title in mapping.values():
+            raise ValueError('Invalid or ambiguous team mapping')
+        mapping[key] = title
+    return mapping
+
+
+def parse_results(payload, group, retrieved_at, team_mapping=None):
     """Validate every supplied row before bounding the newest two results."""
     game_id, family, session, slug, normal_count, maximum, special_max = GROUPS[group]
+    teams = validate_team_mapping(team_mapping) if group == 'xs-os' else None
     retrieval = datetime.fromisoformat(retrieved_at.replace('Z', '+00:00'))
     if retrieval.tzinfo is None:
         raise ValueError('Retrieval must have timezone')
@@ -46,7 +66,7 @@ def parse_results(payload, group, retrieved_at):
             raise ValueError('Wrong completion/variant')
         rid = integer(row.get('id'), 1)
         draw_number = row.get('externalId')
-        numeric_id = family in {'Pick 3', 'Super Kansas Cash'}
+        numeric_id = family in {'Pick 3', 'Super Kansas Cash', 'Keno', 'Racetrax'}
         identity_pattern = r'[1-9]\d*' if numeric_id else r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}'
         if not isinstance(draw_number, str) or not re.fullmatch(identity_pattern, draw_number):
             raise ValueError('Invalid draw number')
@@ -61,32 +81,41 @@ def parse_results(payload, group, retrieved_at):
         local_date = local.date().isoformat()
         if row.get('drawingDate') != timestamp.date().isoformat():
             raise ValueError('Unexpected raw date convention')
-        if (session == 'Midday' and not 11 <= local.hour <= 15) or (session != 'Midday' and not 20 <= local.hour <= 23):
+        if (session == 'Midday' and not 11 <= local.hour <= 15) or (session not in {'Midday', 'Frequent'} and not 20 <= local.hour <= 23):
             raise ValueError('Draw timestamp does not match session')
-        if rid in ids or draw_number in draws or local_date in dates:
+        if rid in ids or draw_number in draws or (session != 'Frequent' and local_date in dates):
             raise ValueError('Duplicate result identity/date')
         ids.add(rid); draws.add(draw_number); dates.add(local_date)
         numbers = row.get('resultData')
-        expected = normal_count + (special_max is not None)
+        expected = 4 if group == '2by2' else normal_count + (special_max is not None)
         if not isinstance(numbers, list) or len(numbers) != expected:
             raise ValueError('Invalid number count')
         normal, special = [], []
         for i, cell in enumerate(numbers):
             if not isinstance(cell, dict) or type(cell.get('order')) is not int or cell['order'] != i or type(cell.get('resultId')) is not int or cell['resultId'] != rid:
                 raise ValueError('Broken result association/order')
-            is_special = i >= normal_count
-            if cell.get('type') != ('SPECIAL' if is_special else 'NORMAL'):
+            is_special = cell.get('type') == 'SPECIAL' if group == 'keno' else i >= normal_count
+            expected_type = ('FIRST', 'SECOND', 'THIRD', 'FOURTH')[i] if group == 'racetrax' else ('SPECIAL' if is_special else 'NORMAL')
+            if cell.get('type') != expected_type:
                 raise ValueError('Wrong number group')
             value = integer(cell.get('data'), 0 if family == 'Pick 3' else 1)
-            if value > (special_max if is_special else maximum):
+            if value > (special_max if is_special and special_max is not None else maximum):
                 raise ValueError('Number out of range')
             (special if is_special else normal).append(str(value))
-        if family != 'Pick 3' and len(set(normal)) != normal_count:
+        if group == 'keno' and (len(special) != 1 or len(set(normal + special)) != 20):
+            raise ValueError('Invalid Keno unique balls or special marker')
+        if group == '2by2' and len(set(special)) != 2:
+            raise ValueError('Duplicate second number group')
+        if family != 'Pick 3' and len(set(normal)) != (19 if group == 'keno' else normal_count):
             raise ValueError('Duplicate normal balls')
         multiplier = row.get('multiplier')
         allowed_multipliers = ({2, 3, 4, 5, 10} if group == 'powerball' else
-                               {2, 3, 4, 5} if group == 'lotto-america' else None)
-        if allowed_multipliers is None:
+                               {2, 3, 4, 5} if group == 'lotto-america' else
+                               {1, 3, 4, 5, 10} if group == 'racetrax' else None)
+        if group == '2by2':
+            if (local.weekday() == 1 and (type(multiplier) is not int or multiplier != 2)) or (local.weekday() != 1 and multiplier is not None):
+                raise ValueError('Unexpected 2by2 Tuesday multiplier')
+        elif allowed_multipliers is None:
             if multiplier is not None:
                 raise ValueError('Unsupported multiplier')
         elif type(multiplier) is not int or multiplier not in allowed_multipliers:
@@ -96,6 +125,8 @@ def parse_results(payload, group, retrieved_at):
         warnings = []
         if local_date != row['drawingDate']:
             warnings.append('Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp.')
+        if group == '2by2':
+            warnings.append('Tuesday doubling applies only to qualifying consecutive-day plays; the result multiplier is not a universal payout.')
         result.append({
             'id': f'{group}:{draw_number}', 'family': family, 'group': group,
             'session': session, 'drawNumber': draw_number if numeric_id else None,
@@ -103,6 +134,8 @@ def parse_results(payload, group, retrieved_at):
             'sourceDrawTimestamp': raw_time, 'sourceDrawingDate': row['drawingDate'],
             'drawDate': local_date, 'drawTimeZone': 'America/Chicago',
             'numbers': normal, 'specialNumbers': special, 'sourceWarnings': warnings,
+            'sourceNumberOrder': [{'value': str(c['data']), 'type': c['type']} for c in numbers],
+            'teams': [teams[int(n)] for n in normal] if teams else [],
             'sourceUrl': f'https://playonkansas.com/games/draw-games/{slug}',
             'coverage': 'Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.',
         })

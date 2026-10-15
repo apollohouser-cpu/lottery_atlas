@@ -211,3 +211,35 @@ must request each variant explicitly and preserve two per group.
 Next 2by2, Xs & Os exact team mapping, Keno and Racetrax, then schedules and
 atomic collector/app integration. This is retained-source parser evidence,
 not fresh feed publication or acceptance. No build/UI/Gmail/deadline change.
+
+
+## October 14, 23:43 ET — All twelve result groups validate
+
+Extended strict result parsing to 2by2, Powerball Xs & Os, Keno and Racetrax.
+The retained official rules establish 2by2's two 1–26 groups, Keno's 1–80 range
+and Racetrax's twelve horses/ordered finishing positions/allowed bonus values.
+2by2 permits overlap across groups but rejects duplicates within each; Tuesday
+multiplier 2 is validated against the derived local weekday and accompanied by
+its qualifying consecutive-day-play limitation. No universal doubled payout is
+inferred. Racetrax retains FIRST/SECOND/THIRD/FOURTH order and source bonus 1
+without manufacturing a prize amount.
+
+Keno retains all twenty source numbers in original order with the one SPECIAL
+marker explicitly preserved; frequent results may share a local date but must
+have unique identities and strictly descending timestamps. No live-stream or
+all-day-history claim is made. Fetched the site's public game-number/15 mapping
+without authentication; all 32 unique mapping IDs and labels must validate before
+the eight Xs & Os values receive official team abbreviations. Team images and
+unneeded mapping fields are excluded from the small tracked mapping fixture.
+
+Thirteen Python tests pass, including missing/duplicate/wrong-game team mappings,
+number ranges/types, special-marker multiplicity, finishing-order types and
+bonus/day mismatches. All retained fixtures now produce **24 results across
+12 groups / 10 families**, privately saved in
+work/kansas_scope/validated-all-results.json. This remains parser evidence, not
+an atomic fresh importer or public feed. No share counts or payouts are promoted.
+
+Next literal schedule/qualification extraction and separately labeled advertised
+prizes, then atomic collection/regression guards, app loader/UI and native
+acceptance. Kansas release remains due October 19 at 19:40 ET; no extension,
+Gmail, build, simulator or state acceptance change.

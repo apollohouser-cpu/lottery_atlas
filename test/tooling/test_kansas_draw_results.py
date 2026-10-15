@@ -113,6 +113,48 @@ class KansasResultsTests(unittest.TestCase):
             row['drawingDate'] = f'2025-04-{day}'
         with self.assertRaises(ValueError): parse_results(p, 'mega-millions', RETRIEVED)
 
+    def test_remaining_groups_preserve_source_order(self):
+        mapping = self.payload('team-mapping')
+        for slug, group in [('2-by-2','2by2'),('powerball-xs-and-os','xs-os'),('keno','keno'),('racetrax','racetrax')]:
+            reports = parse_results(self.payload(slug), group, RETRIEVED, mapping)
+            self.assertEqual(2, len(reports))
+            if group in {'keno','racetrax'}:
+                self.assertEqual(reports[0]['drawDate'],reports[1]['drawDate'])
+                self.assertNotEqual(reports[0]['sourceDrawTimestamp'],reports[1]['sourceDrawTimestamp'])
+            if group == 'xs-os':
+                self.assertEqual(8,len(reports[0]['teams']))
+                self.assertEqual('ARI',reports[0]['teams'][0])
+            if group == 'keno':
+                self.assertEqual(20,len(reports[0]['sourceNumberOrder']))
+                self.assertEqual(['48'],reports[0]['specialNumbers'])
+            if group == '2by2':
+                self.assertEqual(['15','17'],reports[0]['numbers'])
+                self.assertEqual(['15','19'],reports[0]['specialNumbers'])
+                self.assertEqual(2,reports[0]['multiplier'])
+
+    def test_mapping_failures(self):
+        original = self.payload('team-mapping')
+        for mapping in [None, original[:-1], original + [original[0]]]:
+            with self.assertRaises(ValueError):parse_results(self.payload('powerball-xs-and-os'),'xs-os',RETRIEVED,mapping)
+        for key,value in [('gameId',1),('mappingId',2),('title','unknown'),('title',original[1]['title'])]:
+            mapping=copy.deepcopy(original);mapping[0][key]=value
+            with self.assertRaises(ValueError):parse_results(self.payload('powerball-xs-and-os'),'xs-os',RETRIEVED,mapping)
+
+    def test_frequent_result_structure_and_bonus_rejected(self):
+        for slug,group in [('keno','keno'),('racetrax','racetrax')]:
+            p=self.payload(slug);p['content'][0]['resultData'][0]['data']=99
+            with self.assertRaises(ValueError):parse_results(p,group,RETRIEVED)
+            p=self.payload(slug);p['content'][0]['resultData'][0]['type']='OTHER'
+            with self.assertRaises(ValueError):parse_results(p,group,RETRIEVED)
+        p=self.payload('keno');p['content'][0]['resultData'][0]['type']='SPECIAL'
+        with self.assertRaises(ValueError):parse_results(p,'keno',RETRIEVED)
+        p=self.payload('racetrax');p['content'][0]['multiplier']=2
+        with self.assertRaises(ValueError):parse_results(p,'racetrax',RETRIEVED)
+        p=self.payload('2-by-2');p['content'][0]['multiplier']=None
+        with self.assertRaises(ValueError):parse_results(p,'2by2',RETRIEVED)
+        p=self.payload('2-by-2');p['content'][1]['multiplier']=2
+        with self.assertRaises(ValueError):parse_results(p,'2by2',RETRIEVED)
+
     def test_cash_ball_range_and_duplicates(self):
         for index,value in [(0,33),(5,26),(1,7)]:
             p=self.payload('super-kansas-cash');p['content'][0]['resultData'][index]['data']=value
