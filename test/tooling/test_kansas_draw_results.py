@@ -75,6 +75,44 @@ class KansasResultsTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             parse_results(p, 'pick3-evening', RETRIEVED)
 
+    def test_multistate_groups_and_variants(self):
+        for slug, group in [('powerball','powerball'),('powerball-double-play','powerball-double-play'),
+                            ('megamillions','mega-millions'),('lotto-america','lotto-america'),
+                            ('millionaire-for-life','millionaire-for-life')]:
+            reports = parse_results(self.payload(slug), group, RETRIEVED)
+            self.assertEqual(2, len(reports))
+            self.assertIsNone(reports[0]['drawNumber'])
+            self.assertTrue(reports[0]['sourceExternalId'])
+            self.assertEqual(5, len(reports[0]['numbers']))
+            self.assertEqual(1, len(reports[0]['specialNumbers']))
+            self.assertTrue(reports[0]['sourceWarnings'])
+        with self.assertRaises(ValueError):
+            parse_results(self.payload('powerball-double-play'), 'powerball', RETRIEVED)
+        with self.assertRaises(ValueError):
+            parse_results(self.payload('powerball'), 'powerball-double-play', RETRIEVED)
+
+    def test_multistate_ranges_and_multipliers(self):
+        for slug, group, maximum in [('powerball','powerball',26),('megamillions','mega-millions',24),
+                                     ('lotto-america','lotto-america',10),('millionaire-for-life','millionaire-for-life',5)]:
+            p = self.payload(slug)
+            p['content'][0]['resultData'][5]['data'] = maximum + 1
+            with self.assertRaises(ValueError): parse_results(p, group, RETRIEVED)
+        for slug, group, value in [('powerball','powerball',None),('powerball','powerball',True),
+                                   ('lotto-america','lotto-america',10),('megamillions','mega-millions',2),
+                                   ('powerball-double-play','powerball-double-play',2)]:
+            p = self.payload(slug);p['content'][0]['multiplier'] = value
+            with self.assertRaises(ValueError): parse_results(p, group, RETRIEVED)
+
+    def test_old_mega_millions_and_wrong_id_rejected(self):
+        p = self.payload('megamillions')
+        p['content'][0]['gameId'] = 2
+        with self.assertRaises(ValueError): parse_results(p, 'mega-millions', RETRIEVED)
+        p = self.payload('megamillions')
+        for row, day in zip(p['content'], ['05','04']):
+            row['drawDate'] = f'2025-04-{day}T03:00:00Z'
+            row['drawingDate'] = f'2025-04-{day}'
+        with self.assertRaises(ValueError): parse_results(p, 'mega-millions', RETRIEVED)
+
     def test_cash_ball_range_and_duplicates(self):
         for index,value in [(0,33),(5,26),(1,7)]:
             p=self.payload('super-kansas-cash');p['content'][0]['resultData'][index]['data']=value

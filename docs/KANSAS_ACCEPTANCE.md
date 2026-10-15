@@ -140,3 +140,30 @@ is retained-capture parsing, not a fresh network importer or public feed.
 Next extend to the other families with exact variants/types/team mapping, then
 literal schedules, atomic refresh and app/native integration. Kansas remains
 unaccepted; October 19 at 19:40 ET deadline unchanged. No build/UI/Gmail.
+
+
+## October 14, 22:42 ET — Five multistate result groups validated
+
+Extended the strict parser to Powerball base and Double Play, current Mega
+Millions, Lotto America and Millionaire for Life. Ten retained results validate
+across these five groups, in addition to the prior six local results. Public
+CMS rules establish each normal/special ball range. Exact variant flags,
+current game IDs, unique normal balls and required Power Play/All Star Bonus
+multipliers validate; Double Play and current per-play Mega Millions reject a
+fabricated draw-wide multiplier. Historical MM ID2/pre-April8 rules are excluded.
+
+Opaque public result IDs remain sourceExternalId, not displayed draw numbers;
+numeric local-game draw numbers remain separate. Date provenance and warnings
+are unchanged. No raw share counts, actual payouts or advertised jackpots are
+promoted. Literal schedule and advertised-prize integration remains pending.
+
+Ten Python tests pass, including variant mismatch, all four special-ball limits,
+missing/boolean/invalid multipliers and historical MM rejection. Five bounded
+public fixtures are tracked; private normalized output is
+work/kansas_scope/validated-multistate-results.json. Powerball fixtures separate
+the two actual variants from the retained mixed response; the future collector
+must request each variant explicitly and preserve two per group.
+
+Next 2by2, Xs & Os exact team mapping, Keno and Racetrax, then schedules and
+atomic collector/app integration. This is retained-source parser evidence,
+not fresh feed publication or acceptance. No build/UI/Gmail/deadline change.
