@@ -436,3 +436,26 @@ cleanly. Full collection validation still needs advertised metadata and continui
 then cache/remote/bundle loading before UI integration. No build/install/native
 acceptance or Android review interruption. Kansas deadline remains October 19 at
 19:40 ET; no Gmail or acceptance change.
+
+
+## October 15, 11:50 ET — Complete collection validation and loading
+
+Added full Flutter collection validation combining the prior result/schedule
+checks with four separately dated advertised-prize records, literal cash/annuity
+units, Chicago date provenance, passed-draw flag consistency and coverage limits.
+Continuity rejects retrieval, per-group result-window and advertised-date
+regressions, plus timestamp changes on existing result identities.
+
+Added the cache/remote/bundle loader and registered the validated collection as
+an app asset. Remote validation or request failure retains validated cache/bundle;
+cache-write failure does not discard a valid response. Nine combined Kansas
+Flutter tests pass, including malformed advertised metadata, continuity failures,
+request/parse fallback, cold bundle and storage failure. Three new files analyze
+cleanly. An initial test assumed the first advertised drawing had passed; changed
+that test to invert the actual source flag, preserving the validation rule.
+
+UI is not wired and no full build/native adoption is claimed. Next bounded
+report/schedule/advertised-prize UI with mandatory source limits, followed by
+Scratch all-tier audit and integrated native acceptance. Android user review
+remains undisturbed. October 19 at 19:40 ET deadline unchanged; no Gmail or state
+acceptance change.
