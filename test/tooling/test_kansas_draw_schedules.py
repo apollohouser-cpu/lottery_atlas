@@ -43,6 +43,22 @@ class KansasScheduleTests(unittest.TestCase):
         x['prizeLegendDescription']['json']['content'].pop(2)
         with self.assertRaises(ValueError):parse_schedule(x,'powerball')
 
+    def test_flight_long_text_uses_utf8_byte_length(self):
+        text = 'Bull’s-eye prizes; pari-mutuel limits.\nSecond paragraph.'
+        source = {'text': {'nodeType': 'text', 'value': '$14'}, 'literal': '$14'}
+        record = '14:T' + format(len(text.encode('utf-8')), 'x') + ',' + text
+        def wrap(payload):
+            return '<script>self.__next_f.push(' + json.dumps([1, payload]) + ')</script>'
+        cms_record = '5:["cms":' + json.dumps(source)
+        result = cms_from_html(wrap(record + cms_record))
+        self.assertEqual(text, result['text']['value'])
+        self.assertEqual('$14', result['literal'])
+        for payload in [cms_record, record + '\n' + record + cms_record,
+                        cms_record + '\n14:Tffff,short',
+                        cms_record + '\n14:T1,®']:
+            with self.subTest(payload=payload), self.assertRaises(ValueError):
+                cms_from_html(wrap(payload))
+
     def test_next_flight_decoding_and_ambiguity(self):
         source=self.source('pick-3')
         flight='prefix"cms":'+json.dumps(source)

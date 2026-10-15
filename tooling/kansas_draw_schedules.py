@@ -107,7 +107,33 @@ def cms_from_html(raw):
     payload = ''.join(chunks)
     if payload.count('"cms":') != 1:
         raise ValueError('Missing or ambiguous detail CMS')
-    return json.JSONDecoder().raw_decode(payload.split('"cms":', 1)[1])[0]
+    cms = json.JSONDecoder().raw_decode(payload.split('"cms":', 1)[1])[0]
+    # Flight long-text records use hexadecimal UTF-8 byte lengths, not character
+    # lengths. Resolve only rich-text leaf references, never arbitrary CMS strings.
+    def resolve(node):
+        if isinstance(node, dict):
+            value = node.get('value')
+            if node.get('nodeType') == 'text' and isinstance(value, str) and re.fullmatch(r'\$[0-9a-f]+', value):
+                records = list(re.finditer(r'(?:^|\n)' + re.escape(value[1:]) + r':T([0-9a-f]+),', payload))
+                if len(records) != 1:
+                    raise ValueError('Missing or ambiguous Flight text reference')
+                record = records[0]
+                length = int(record[1], 16)
+                raw_text = payload[record.end():].encode('utf-8')[:length]
+                try:
+                    text = raw_text.decode('utf-8')
+                except UnicodeDecodeError as exc:
+                    raise ValueError('Invalid Flight text byte boundary') from exc
+                if len(raw_text) != length:
+                    raise ValueError('Truncated Flight text')
+                node['value'] = text
+            for child in node.values():
+                resolve(child)
+        elif isinstance(node, list):
+            for child in node:
+                resolve(child)
+    resolve(cms)
+    return cms
 
 
 def rich_text(value):

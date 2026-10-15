@@ -273,3 +273,22 @@ Keno/Racetrax schedules, separately labeled advertised prizes and collection
 assembly remain next, followed by atomic fresh import/publication and app/native
 acceptance. This is not a new public feed or accepted state. No build/UI/Gmail;
 October 19 at 19:40 ET release deadline remains unchanged, no extension.
+
+
+## October 15, 01:46 ET — Keno long-text source decoding
+
+Inspection of the remaining Keno schedule found its qualification text stored as
+an inline Flight long-text reference (`$14`), rather than direct CMS prose. The
+CMS extractor now resolves rich-text leaf references from exactly one text record
+using the advertised hexadecimal UTF-8 byte length. Missing/ambiguous references,
+truncated text and invalid byte boundaries fail closed. Other CMS strings remain
+untouched. The retained Keno capture now yields all three qualification paragraphs,
+including progressive 6/7/8-spot awards, ticket limits and the $1,500,000
+pari-mutuel threshold; no values were inferred from the reference token.
+
+Eighteen combined Kansas Python tests pass, including Unicode byte lengths and
+four malformed reference cases. The resolved qualification evidence is private
+under work/kansas_scope/keno-resolved-qualifications.json. Keno's ten schedule
+tables and Racetrax's two tables/cards still need strict integration; no public
+feed, app acceptance, build or simulator change. Release remains due October 19
+at 19:40 ET, without extension.
