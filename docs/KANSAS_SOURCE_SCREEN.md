@@ -524,3 +524,25 @@ claim; Android user review remains undisturbed.
 Next audit Kansas Scratch all-tier app coverage and remaining source disclosures,
 then integrated native checks and scheduled transaction evidence. October 19 at
 19:40 ET deadline remains unchanged. No Gmail or state acceptance change.
+
+
+## October 15, 13:50 ET — Scratch app audit and coverage disclosures
+
+Code inspection confirms the generic StateScratchGame projection retains only
+name/cost/top prize/top-prize remaining and inventory note; it drops Kansas's
+literal prizeTiers, source URL and both conflicting launch fields. The retained
+Kansas catalog has 46 games / 425 tiers, including categorical FREE TICKET rows,
+and null sourceDate. This is not yet all-tier app coverage. A dedicated strict
+Kansas Scratch loader and literal tier UI are required before acceptance.
+
+Added Kansas source-screen notices separating bounded results, literal schedules,
+advertised values, excluded unverified winner counts, Scratch scope and missing
+retailer joins. Cadence distinguishes six-hour app attempts from source-stated
+hourly Scratch updates and unpublished verification time; UTC/local and launch
+conflicts remain explicit. Added five official directory/retailer/promotion/
+historical routes from retained source evidence. Three-file analysis is clean.
+No runtime/source-return validation is claimed by these registry edits.
+
+Next dedicated Scratch validation/cache/bundle and all-tier UI, then integrated
+native acceptance and scheduled transaction evidence. No build/UI/Gmail or Android
+review interruption. Kansas release deadline remains October 19 at 19:40 ET.

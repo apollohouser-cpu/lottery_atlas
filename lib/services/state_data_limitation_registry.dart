@@ -5,6 +5,20 @@ class StateDataLimitationRegistry {
 
   static String? noticeFor(String stateName) {
     final reason = switch (stateName) {
+      'Kansas' =>
+        'Results cover two recent drawings per group across ten current families. '
+            'Powerball base/Double Play and Pick 3 Midday/Evening remain separate. '
+            'Keno and Racetrax are bounded snapshots, not live feeds. Source prize-tier '
+            'counts have no established Kansas geographic unit and include placeholders; '
+            'they are excluded, not presented as zero winners. Literal schedules and '
+            'separately dated advertised prizes are not paid prizes or distinct people. '
+            'Scratch data covers games without announced end/claim deadlines in listing '
+            'metadata, excluding Pull Tabs and historical/closing listings. Remaining '
+            'prizes and FREE TICKET categories are not retailer stock or dated claims. '
+            'No Kansas retailer joins, verified map pins or retailer-win heat layer '
+            'are integrated. Lucky for Life history, raffle history, digital products, '
+            'Pull Tabs, promotions and loyalty have source routes or explicit gaps; '
+            'they are not complete app datasets.',
       'Louisiana' =>
         'Recent reports cover two drawings per family across seven families. '
             'Pick 3 and Pick 4 report dollar totals, not winner counts; Pick 5 '

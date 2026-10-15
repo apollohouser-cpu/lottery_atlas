@@ -616,6 +616,31 @@ class StateLotterySourceRegistry {
               'Official current Kansas scratch and pull-tab game catalog.',
           url: 'https://playonkansas.com/games/scratch-and-pull-tabs',
         ),
+        StateLotteryResource(
+          title: 'Official draw game directory',
+          subtitle: 'Current games and official result/rules pages.',
+          url: 'https://playonkansas.com/games/draw-games',
+        ),
+        StateLotteryResource(
+          title: 'Find Kansas retailers',
+          subtitle: 'Official search only; no audited app retailer directory or map joins.',
+          url: 'https://playonkansas.com/find-retailers',
+        ),
+        StateLotteryResource(
+          title: 'PlayOn promotions',
+          subtitle: 'Official eligibility and promotion details; not an app results dataset.',
+          url: 'https://playonkansas.com/playon/promotions',
+        ),
+        StateLotteryResource(
+          title: 'Lucky for Life historical route',
+          subtitle: 'Historical game page; not a current drawing family.',
+          url: 'https://playonkansas.com/games/draw-games/lucky-for-life',
+        ),
+        StateLotteryResource(
+          title: 'Holiday Millionaire Raffle',
+          subtitle: 'Current promotion rules and historical results must be distinguished.',
+          url: 'https://playonkansas.com/games/draw-games/holiday-millionaire-raffle',
+        ),
       ],
     ),
     'Nebraska': StateLotterySource(
