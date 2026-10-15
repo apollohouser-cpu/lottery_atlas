@@ -345,3 +345,19 @@ for Xs & Os; this is a bounded source window, not complete historical coverage.
 Next scheduled Scratch/report transaction, staged publication and app loader/UI,
 then native acceptance. No public feed promoted, build/UI/Gmail or acceptance
 change. October 19 at 19:40 ET deadline remains unchanged, no extension.
+
+
+## October 15, 06:48 ET — Scheduled collection transaction and publication staging
+
+Kansas now declares Scratch plus the draw collection as a two-output scheduled
+transaction. The collection command runs as a Python module from the repository
+root. Failure at either importer restores both prior files and dates. The targeted
+transaction suite passes with the Kansas failure-at-each-command case added.
+
+The validated 24-result / ten-schedule / four-advertised-prize baseline retrieved
+2026-10-15T09:47:02.440545+00:00 is staged in data and the public docs endpoint.
+The publisher copies and commits this endpoint alongside existing state feeds.
+Publication success and deployed-byte verification are still pending; the first
+scheduled two-output success is a separate open checkpoint. App loader/UI and
+native adoption remain pending. No build/UI/Gmail or state acceptance change;
+October 19 at 19:40 ET deadline remains unchanged, no extension.
