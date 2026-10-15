@@ -418,3 +418,21 @@ continuity and cache/remote/bundle loader remain next before UI integration.
 No full build/install or native claim. The user's Android emulator review remains
 undisturbed following the separately recorded first-launch checkpoint. Kansas
 release deadline remains October 19 at 19:40 ET; no Gmail or acceptance change.
+
+
+## October 15, 10:49 ET — Flutter schedule validation
+
+Added Dart validation for all ten schedule families / 21 tables / 139 rows.
+Audited column order, row identities, spot-game titles, official PDF-card routes,
+notes, qualifications, source warnings and coverage text are required. The one
+known blank Keno basic-prize cell is permitted only at its exact source position;
+other blank cells reject. Literal prize-cell updates can pass without arithmetic
+or conversion. Changes to audited qualification/eligibility wording and card
+metadata fail closed pending source review, rather than silently replacing limits.
+
+Five combined result/schedule Flutter tests pass, including fourteen malformed
+schedule variants and a valid changed literal prize value. Both new files analyze
+cleanly. Full collection validation still needs advertised metadata and continuity,
+then cache/remote/bundle loading before UI integration. No build/install/native
+acceptance or Android review interruption. Kansas deadline remains October 19 at
+19:40 ET; no Gmail or acceptance change.
