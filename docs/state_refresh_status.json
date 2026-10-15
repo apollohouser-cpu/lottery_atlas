@@ -1,35 +1,36 @@
 {
-  "attemptedAt": "2026-10-15T05:00:07.784960+00:00",
+  "attemptedAt": "2026-10-15T17:20:39.964122+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
       "state": "Iowa",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/iowa_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Indiana",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/indiana_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Kansas",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
-        "data/kansas_scratch_catalog.generated.json"
+        "data/kansas_scratch_catalog.generated.json",
+        "data/kansas_draw_collection.generated.json"
       ]
     },
     {
       "state": "Nebraska",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/nebraska_scratch_catalog.generated.json"
       ]
@@ -52,8 +53,8 @@
     },
     {
       "state": "Oklahoma",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/oklahoma_scratch_catalog.generated.json"
       ]
@@ -69,32 +70,32 @@
     },
     {
       "state": "Maryland",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/maryland_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Connecticut",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/connecticut_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Maine",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/maine_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Vermont",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/vermont_scratch_catalog.generated.json"
       ]
@@ -151,8 +152,8 @@
     },
     {
       "state": "Washington",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/washington_scratch_catalog.generated.json"
       ]
@@ -169,8 +170,8 @@
     },
     {
       "state": "Kentucky",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "retained_after_failure",
+      "message": "Importer failed validation or could not retrieve its source.",
       "files": [
         "data/kentucky_scratch_catalog.generated.json",
         "data/kentucky_retailer_directory.generated.json",
