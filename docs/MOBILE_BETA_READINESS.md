@@ -555,3 +555,15 @@ emulator remains open for user testing. This establishes first Android launch,
 not complete navigation/rotation/persistence/network recovery or beta acceptance.
 Debug signing only; no store upload, account action or fee. Kansas remains the
 sole active state; mobile work does not change its acceptance deadline.
+
+
+### October 15, 16:50 ET — Current Android artifact prepared
+
+Ordinary main.dart Android debug APK at 2c4b6ed builds successfully (Gradle14.3s;
+167,669,700 bytes). Packaged Kansas collection and Scratch assets byte-match their
+committed baselines. Build log is private work/mobile_beta/android-kansas-build.log.
+Not installed or launched: the user's existing emulator review remains untouched.
+This artifact includes the newly connected Kansas UI, but establishes compilation
+only. Native Kansas interactions/source returns/adoption and full mobile acceptance
+remain open; debug signing is not distribution signing. No additional emulator,
+Gmail, account action or fees. No repeat build needed absent code changes.

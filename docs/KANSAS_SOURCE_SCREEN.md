@@ -585,3 +585,15 @@ information at line 290. No full build/install/native or source-return claim;
 Android user review remains undisturbed. Next integrated native checks and first
 scheduled two-output transaction evidence. Kansas is not accepted; October 19 at
 19:40 ET deadline unchanged. No Gmail or additional state activation.
+
+
+## October 15, 16:50 ET — Scheduled two-output publication verified
+
+Scheduled workflow 38774077176 succeeded from 92ef390 and produced bot commit
+440e491. Kansas status explicitly reports updated for both Scratch and draw
+collection outputs. Independent public downloads of collection, combined Scratch
+catalog and refresh status exactly match committed bytes. Collection retrieval
+is 2026-10-15T17:03:48.811238+00:00; Scratch retrieval is
+2026-10-15T12:03:43.041103-05:00 with 46 games. Private downloaded evidence remains
+in work/kansas_scope. The first scheduled two-output checkpoint is closed; native
+adoption and integrated interactions remain open. Deadline unchanged.
