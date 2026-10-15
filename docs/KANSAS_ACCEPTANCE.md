@@ -361,3 +361,20 @@ Publication success and deployed-byte verification are still pending; the first
 scheduled two-output success is a separate open checkpoint. App loader/UI and
 native adoption remain pending. No build/UI/Gmail or state acceptance change;
 October 19 at 19:40 ET deadline remains unchanged, no extension.
+
+
+## October 15, 07:49 ET — Initial publication failed; repair retry queued
+
+Publisher 38722671385 (049d1be) failed in the Python record/catalog test step;
+deployment was skipped. This is not a verified public endpoint. The exact remote
+traceback was unavailable through the accessible log endpoint. The full same
+Python discovery command passes locally: 282 tests. Inspection identified a
+cross-test import through the generic `test` namespace in the new importer tests,
+which can collide with Python's installed standard-library test package. Removed
+that dependency in 47f86f9 and reran all 282 tests successfully. This is a plausible
+portability repair, not a proven remote root cause until CI confirms it.
+
+Replacement publisher 38729732959 was queued on 47f86f9 at last check. Next verify
+its result and deployed bytes before closing initial publication; scheduled
+transaction success and app/native integration remain open. No acceptance or
+deadline change; no build/UI/Gmail.
