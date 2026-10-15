@@ -546,3 +546,23 @@ No runtime/source-return validation is claimed by these registry edits.
 Next dedicated Scratch validation/cache/bundle and all-tier UI, then integrated
 native acceptance and scheduled transaction evidence. No build/UI/Gmail or Android
 review interruption. Kansas release deadline remains October 19 at 19:40 ET.
+
+
+## October 15, 14:51 ET — Dedicated Scratch validation and loading
+
+Added a Kansas-only Scratch cache/remote/bundle loader and registered its baseline
+asset. Validation preserves every literal tier and both launch fields, requires
+null source verification date, categorical FREE TICKET without cash conversion,
+exact cash-label/value agreement and top-tier/count consistency. Source URLs,
+unique game/tier identities, nonnegative remaining counts, scope limits and
+launch-conflict disclosures are checked. Normalized start/source timestamps and
+invented claimed/total fields reject. Continuity rejects retrieval/identity
+regressions and anomalous large catalog loss; remaining counts may change without
+being interpreted as sales or claims.
+
+Five Flutter tests pass, including nine malformed variants, cold-bundle/cache
+request failure retention, combined-feed Kansas-only caching, cache-write failure
+and launch identity continuity. Two-file analysis is clean. The literal-tier UI
+is still pending; no full build/install/native acceptance or Android review
+interruption. Next search/price/reset/all-tier UI and official detail links, then
+integrated native checks. October 19 at 19:40 ET remains unchanged; no Gmail.
