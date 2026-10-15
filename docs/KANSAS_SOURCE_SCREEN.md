@@ -159,3 +159,28 @@ family/variant/session validation, then literal schedule/catalog UI and atomic
 publication/native acceptance. No generated public data, app build, simulator,
 Gmail or acceptance changed. Release deadline remains October 19 at 19:40 ET;
 no extension. Private captures are research evidence, not validated app output.
+
+
+## October 14, 21:42 ET — Strict Pick 3 and Super Kansas Cash results
+
+Implemented tooling/kansas_draw_results.py for Pick 3 Midday/Evening and Super
+Kansas Cash. Six bounded results from retained public captures validate; all
+supplied rows are checked before selecting two per group. Number identity,
+order, ranges, repeats/leading zeros, result association, completion/variant,
+page counts, unique draw IDs/dates, descending timestamps and session-local
+hours are guarded. UTC source timestamps/dates remain separate from derived
+America/Chicago draw dates, with explicit warnings on evening date differences.
+
+Seven focused Python tests pass, including thirteen malformed row variants,
+page/date/duplicate/future failures, cash-ball limits and rejection of a bad
+older row beyond the selected window. Unverified raw share counts, share amounts
+and advertised jackpot fields are deliberately absent from this result output;
+changing those fields cannot create Kansas winner counts or paid payouts.
+Advertised jackpots and literal schedules still require separate integration.
+
+Private normalized evidence is work/kansas_scope/validated-local-results.json;
+three bounded public-response fixtures are tracked for reproducibility. This
+is retained-capture parsing, not a fresh network importer or public feed.
+Next extend to the other families with exact variants/types/team mapping, then
+literal schedules, atomic refresh and app/native integration. Kansas remains
+unaccepted; October 19 at 19:40 ET deadline unchanged. No build/UI/Gmail.
