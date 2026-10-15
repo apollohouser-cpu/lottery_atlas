@@ -1,3 +1,4 @@
+import 'kansas_scratch_catalog_sheet.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'dart:math' as math;
@@ -5091,6 +5092,8 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                             },
                           ),
                     );
+                  } else if (state == 'Kansas') {
+                    showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const KansasScratchCatalogSheet());
                   } else if (state == 'Louisiana') {
                     showModalBottomSheet<void>(
                       context: context,
@@ -5563,7 +5566,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                           _showStateScratchGameOnMap(null),
                                       onGameSelected:
                                           _showStateScratchGameOnMap,
-                                      onOpenCatalog: () => selectedState.name == 'Louisiana'
+                                      onOpenCatalog: () => selectedState.name == 'Kansas'
+                                          ? showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const KansasScratchCatalogSheet())
+                                          : selectedState.name == 'Louisiana'
                                           ? showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const LouisianaScratchCatalogSheet())
                                           : _openOfficialScratchCatalog(
                                             selectedStateSource,

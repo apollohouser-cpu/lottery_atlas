@@ -522,3 +522,22 @@ and launch identity continuity. Two-file analysis is clean. The literal-tier UI
 is still pending; no full build/install/native acceptance or Android review
 interruption. Next search/price/reset/all-tier UI and official detail links, then
 integrated native checks. October 19 at 19:40 ET remains unchanged; no Gmail.
+
+
+## October 15, 15:51 ET — Literal Scratch UI connected
+
+Kansas Scratch inventory now opens from the source page, compact Scratch action
+and desktop catalog action. Search, ticket-price filtering and reset retain all
+46 listed games and 425 literal tiers, including categorical FREE TICKET. Each
+tier shows remaining prizes only; no claimed/total counts or cash conversion are
+invented. Both conflicting launch fields, the inventory limitation, unpublished
+source verification timestamp, retrieval time, cadence and coverage remain
+visible, with official game-detail and catalog links.
+
+Four widget tests pass: every game's literal tiers and footer at compact/wide
+sizes, readable short-landscape viewport, and search/price empty-result recovery
+and reset. Four-file analysis reports only the existing live-map brace-style
+information at line 290. No full build/install/native or source-return claim;
+Android user review remains undisturbed. Next integrated native checks and first
+scheduled two-output transaction evidence. Kansas is not accepted; October 19 at
+19:40 ET deadline unchanged. No Gmail or additional state activation.

@@ -1,3 +1,4 @@
+import '../../widgets/map/kansas_scratch_catalog_sheet.dart';
 import '../../widgets/map/kansas_draw_collection_sheet.dart';
 import '../../widgets/map/louisiana_scratch_catalog_sheet.dart';
 import '../../widgets/map/louisiana_draw_reports_sheet.dart';
@@ -54,6 +55,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Kansas')
+            Card(child: ListTile(
+              title: const Text('Kansas Scratch inventory'),
+              subtitle: const Text('All literal tiers • Remaining prizes • Source date limits'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const KansasScratchCatalogSheet()),
+            )),
           if (source.stateName == 'Kansas')
             Card(child: ListTile(
               title: const Text('Kansas results and schedules'),
