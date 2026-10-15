@@ -321,3 +321,27 @@ metadata cases. This uses retained source fixtures, not a new network capture.
 Next atomic fresh importer/regression guards and scheduled publication, then app
 loaders/UI and native acceptance. No public feed/build/UI/Gmail or acceptance
 change; October 19 at 19:40 ET remains the supported release deadline.
+
+
+## October 15, 05:47 ET — Atomic fresh collection importer
+
+Added the Kansas importer with explicit Powerball base/Double Play request
+filters, twelve result-page requests, ten schedule pages, official team mapping
+and advertised metadata. All inputs validate before atomic replacement. Per-group
+window regression, changed timestamps on existing result identities, advertised
+draw-date regression and retrieval-time regression reject the refresh. Unchanged
+content retains prior bytes and retrieval time; failed requests/parses/replacement
+preserve the prior file and temporary files are cleaned up.
+
+Thirty-one combined Kansas Python tests pass, including request/parse/storage
+failure preservation, unchanged timestamp/bytes, five regression variants and
+explicit variant URLs. A fresh official network run succeeded with 24 results,
+ten schedules and four advertised-prize records at
+2026-10-15T09:47:02.440545+00:00. Private output is
+work/kansas_scope/fresh-collection.json. Latest local dates include October 14
+for Pick 3 and Powerball, October 15 for frequent-game snapshots and October 11
+for Xs & Os; this is a bounded source window, not complete historical coverage.
+
+Next scheduled Scratch/report transaction, staged publication and app loader/UI,
+then native acceptance. No public feed promoted, build/UI/Gmail or acceptance
+change. October 19 at 19:40 ET deadline remains unchanged, no extension.
