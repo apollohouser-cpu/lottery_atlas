@@ -274,3 +274,27 @@ at work/kansas_scope/validated-schedules.json. Separately labeled advertised
 prizes and collection assembly remain next, then atomic fresh import/publication,
 app loaders/UI and native acceptance. No new public feed/build/UI/Gmail or state
 acceptance; October 19 at 19:40 ET deadline remains unchanged, no extension.
+
+
+## October 15, 03:47 ET — Bounded collection assembly
+
+Added a pure collection assembler requiring exactly all twelve current result
+groups and ten schedule families. Every raw result page, official team mapping
+and literal schedule validates before any collection is returned. The output
+contains 24 results and ten separately keyed schedules, with explicit associations
+for both Pick 3 sessions and Powerball base/Double Play. Keno/Racetrax retain
+bounded-snapshot labeling. UTC/local date provenance and all source qualifications
+remain intact; raw share counts, actual payout claims, retailer joins and historical
+Lucky for Life/raffle results remain excluded.
+
+Twenty-three combined Kansas Python tests pass. New collection checks cover
+complete associations, missing/extra groups or schedules, invalid individual
+result/schedule/mapping inputs, and missing/too-early retrieval timestamps.
+Private fixture assembly is saved as assembled-fixture-collection.json under
+work/kansas_scope; it is not a fresh network capture or published dataset.
+
+Separately labeled advertised-prize handling remains pending; the collection
+explicitly states it does not yet provide an advertised jackpot feed. Next complete
+that source handling and atomic fresh import/regression protection, then scheduled
+publication, app loaders/UI and native acceptance. No build/UI/Gmail, public feed
+or state acceptance change. October 19 at 19:40 ET deadline remains unchanged.
