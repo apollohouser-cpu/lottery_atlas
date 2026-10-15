@@ -7,14 +7,23 @@ import unittest
 from unittest.mock import patch
 
 from tooling.import_kansas_draw_collection import API, refresh, result_url, validate_window
-from test.tooling import test_kansas_draw_collection as fixtures
+from tooling.kansas_draw_results import GROUPS
+from tooling.kansas_draw_schedules import SCHEMAS
 
-NOW = datetime.fromisoformat(fixtures.RETRIEVED.replace('Z', '+00:00'))
+NOW = datetime.fromisoformat('2026-10-15T01:00:00+00:00')
+FIXTURES = Path(__file__).parents[1] / 'fixtures/kansas'
+
+def fixture(name):
+    return json.loads((FIXTURES / f'{name}.json').read_text())
 
 
 class KansasImportTests(unittest.TestCase):
     def fetcher(self):
-        pages, schedules, teams, prizes = fixtures.KansasCollectionTests().inputs()
+        names = {'pick3-midday': 'pick-3-midday', 'pick3-evening': 'pick-3',
+                 'powerball-double-play': 'powerball-double-play'}
+        pages = {g: fixture(names.get(g, data[3])) for g, data in GROUPS.items()}
+        schedules = {slug: fixture(f'{slug}-schedule') for slug in SCHEMAS}
+        teams, prizes = fixture('team-mapping'), fixture('advertised-games')
         urls = {result_url(g): json.dumps(p) for g, p in pages.items()}
         for slug, cms in schedules.items():
             flight = 'prefix"cms":' + json.dumps(cms)
