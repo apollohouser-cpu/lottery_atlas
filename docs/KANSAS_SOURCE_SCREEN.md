@@ -597,3 +597,26 @@ is 2026-10-15T17:03:48.811238+00:00; Scratch retrieval is
 2026-10-15T12:03:43.041103-05:00 with 46 games. Private downloaded evidence remains
 in work/kansas_scope. The first scheduled two-output checkpoint is closed; native
 adoption and integrated interactions remain open. Deadline unchanged.
+
+
+## October 15, 17:51 ET — Android Kansas native checks started
+
+Installed the prepared 2c4b6ed ordinary debug APK successfully on the existing
+Android emulator; cold launch returned Status ok. No iOS simulator was booted,
+no new build was needed and no additional emulator was started. Continued under
+the user's authorization to control Android and the explicit cleared-review
+instruction; earlier notes preserving the initial review are superseded.
+
+Native search selected Kansas, displayed its no-mapped-activity notice, and the
+compact menu opened the dedicated Scratch inventory. All 46 games are listed.
+Game 257 shows separate conflicting launch fields and inventory limitations;
+scrolling reaches FREE TICKET, unpublished verification time, cadence/coverage
+and official source buttons. Footer screenshot confirms readable portrait layout.
+Native retrieval 2026-10-15T21:33:00.108Z is newer than the packaged Scratch
+baseline, establishing newer remote adoption for Scratch. Private screenshot and
+UI evidence are in work/mobile_beta/android-kansas-*.
+
+This is partial native evidence only: full tier traversal, filters, source return,
+report interactions/adoption, wide layout and request-failure retention remain.
+The app remains portrait at the Scratch footer. No state/mobile acceptance,
+Gmail, fee or deadline change; Kansas remains due October 19 at 19:40 ET.
