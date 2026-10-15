@@ -20,7 +20,7 @@ class KansasCollectionTests(unittest.TestCase):
                  'powerball-double-play': 'powerball-double-play'}
         return ({group: fixture(names.get(group, data[3])) for group, data in GROUPS.items()},
                 {slug: fixture(f'{slug}-schedule') for slug in SCHEMAS},
-                fixture('team-mapping'))
+                fixture('team-mapping'), fixture('advertised-games'))
 
     def test_complete_collection_and_schedule_associations(self):
         result = assemble_collection(*self.inputs(), RETRIEVED)
@@ -48,7 +48,7 @@ class KansasCollectionTests(unittest.TestCase):
 
     def test_one_bad_group_or_schedule_rejects_entire_collection(self):
         for kind in ['result', 'schedule', 'mapping']:
-            pages, schedules, teams = self.inputs()
+            pages, schedules, teams, advertised = self.inputs()
             if kind == 'result':
                 pages['racetrax']['content'][-1]['jackpotStatus'] = 'PENDING'
             elif kind == 'schedule':
@@ -56,7 +56,7 @@ class KansasCollectionTests(unittest.TestCase):
             else:
                 teams.pop()
             with self.subTest(kind=kind), self.assertRaises(ValueError):
-                assemble_collection(pages, schedules, teams, RETRIEVED)
+                assemble_collection(pages, schedules, teams, advertised, RETRIEVED)
 
     def test_retrieval_requires_timezone_and_cannot_precede_results(self):
         for timestamp in [None, '2026-10-15T01:00:00', '2020-01-01T00:00:00Z']:

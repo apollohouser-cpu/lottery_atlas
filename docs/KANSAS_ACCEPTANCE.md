@@ -298,3 +298,26 @@ explicitly states it does not yet provide an advertised jackpot feed. Next compl
 that source handling and atomic fresh import/regression protection, then scheduled
 publication, app loaders/UI and native acceptance. No build/UI/Gmail, public feed
 or state acceptance change. October 19 at 19:40 ET deadline remains unchanged.
+
+
+## October 15, 04:48 ET — Separate advertised jackpot metadata
+
+The collection now validates four separately dated advertised prize records for
+Powerball, Lotto America, Super Kansas Cash and current-rules Mega Millions.
+Direct source cash values and annuity values remain distinct; cash-only Super
+Kansas Cash's zero annuity placeholder becomes no annuity value, never a zero
+prize claim. Lifetime, fixed-prize and historical products are excluded from this
+jackpot layer and retain their literal schedule treatment.
+
+Raw UTC draw timestamps/source dates and derived America/Chicago dates are
+preserved. A source draw time already passed at retrieval is explicitly marked
+and must not be presented as upcoming. Advertised values are not actual winnings
+or computed cash conversions. Required families, unique game identities, dates
+and positive integer amounts validate before collection output.
+
+Twenty-seven combined Kansas Python tests pass, including direct amount/date
+provenance, historical/lifetime exclusion, passed-time labeling and ten invalid
+metadata cases. This uses retained source fixtures, not a new network capture.
+Next atomic fresh importer/regression guards and scheduled publication, then app
+loaders/UI and native acceptance. No public feed/build/UI/Gmail or acceptance
+change; October 19 at 19:40 ET remains the supported release deadline.
