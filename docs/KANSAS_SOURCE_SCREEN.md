@@ -641,3 +641,23 @@ No build or reinstall was needed. The emulator remains portrait in the game-257
 tier list. Remaining acceptance includes report groups/source returns/adoption,
 wide layouts and native request-failure retention. No acceptance, deadline change,
 Gmail or fees; Kansas remains sole active, due October 19 at 19:40 ET.
+
+
+## October 15, 19:52 ET — Android collection adoption and 2by2
+
+The source/coverage page opens the native collection on installed 2c4b6ed.
+Retrieval 2026-10-15T21:25:47.612140+00:00 is newer than the packaged collection,
+closing newer native collection adoption. Native 2by2 October 14 shows red/white
+number groups and separate local date/raw UTC provenance. All eight literal
+schedule rows, doubled-dollar source warning, free-ticket categories, Tuesday
+eligibility and pari-mutuel qualifications, rules and footer were traversed.
+The official 2by2 URL opened and rendered in the external WebView Browser Tester;
+Android Back retained selection and footer scroll position.
+
+Selecting October 13 reset scrolling and showed its different red/white groups,
+source multiplier 2x and the qualifying-consecutive-day warning. Both 2by2 dates
+are now checked. Private XML evidence is in work/kansas_native/2by2-*.xml.
+No build/reinstall or second emulator. Remaining nine families/other groups,
+wide layouts and native request-failure retention remain open. App left portrait
+on October 13 2by2 summary. Kansas is not accepted; deadline October 19 at 19:40 ET
+unchanged, scope already closed October 14. No Gmail, fees or user action.
