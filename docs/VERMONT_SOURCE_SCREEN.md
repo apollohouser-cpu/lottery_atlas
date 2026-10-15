@@ -143,3 +143,9 @@ September 24: Hannah Chauvin estimated $1,368.00 to provide the requested record
 ### September 25 correspondence follow-through
 
 Sent September 25 follow-up 1a0da3875155aeac explicitly declining the $1,368 charge and all paid work, superseding the original $25 wording. Asked for any separate existing reports, directory, definitions or public downloads available without charge; fee-bearing work remains on hold.
+
+### October 15 no-fee clarification response
+
+The agency supplied the [public retailer directory with addresses](https://vtlottery.com/where-to-play) and confirmed that all other requested elements have an associated charge. The September 25 refusal of all paid work was verified in Sent history; fee-bearing work remains on hold. No records attachment, new estimate or promised delivery date was supplied. No further reply was needed or sent.
+
+This identifies a public source route only. The directory has not been audited for export, completeness, coordinates or retailer joins; it does not establish a new app layer or Vermont acceptance. The no-fee clarification exchange is complete for now.
