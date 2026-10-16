@@ -668,3 +668,20 @@ The user-visible emulator was not navigated or restarted. Installed 2c4b6ed does
 not yet contain this fix; a new ordinary build and native enlarged-text check
 remain necessary. No full mobile/accessibility acceptance is claimed. Kansas
 remaining native groups and retention checks remain open, deadline unchanged.
+
+
+## October 15, 23:55 ET — Enlarged-text Android artifact ready
+
+Ordinary main.dart debug APK at eeae509 builds successfully (Gradle 15.9s),
+including the Kansas enlarged-text fix. Build log is private
+work/mobile_beta/android-kansas-large-text-build.log. Not installed or launched;
+existing emulator session remains untouched. No repeat build is needed absent
+code changes. Prepared a private Kansas production-loader request-failure probe
+for the remaining native cache-retention gate, adapted to the real Kansas cache
+keys and retrievedAt field; it has not been built or executed and establishes
+no retention result. No tracked probe code.
+
+Next install ordinary artifact and verify enlarged text, then continue remaining
+native report families and controlled retention/restoration. State and mobile
+acceptance remain open, deadline October 19 at 19:40 ET unchanged. No Gmail,
+fees, account action or additional emulator.
