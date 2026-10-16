@@ -57,6 +57,34 @@ map. Only report newer-data adoption when the displayed source/retrieval evidenc
 actually changes to a newer validated snapshot. A successful reconnect alone is
 not proof of a refresh.
 
+## Current local Android review — October 15
+
+The prepared API 36 emulator now runs ordinary debug build 2c4b6ed. This local
+review is separate from a signed beta invitation. The app version remains 1.0.0
+(build 1), so include the source revision when reporting this particular build.
+No installation link or store availability is implied.
+
+From a report, use Close reports to return to Sources and coverage, then Android
+Back to return to the map. Open the map header menu for Scratch games or Sources
+and coverage. Source links open the configured external browser; on this emulator
+that is WebView Browser Tester. Use Android Back to return and check whether the
+selected game and scroll position remain unchanged.
+
+Kansas is still undergoing acceptance. For its reports, compare local draw date
+with the separately labeled UTC timestamp; select both available dates and check
+that scroll returns to the top. Powerball Base/Double Play and Pick 3 Midday/
+Evening must stay distinct. Keno/Racetrax are retained snapshots, not live results.
+Advertised cash/annuity amounts belong to their separately labeled drawing;
+schedules are not actual winner counts. For Scratch, try an absent name, reset,
+then a ticket-price filter and reset again. FREE TICKET must remain categorical,
+and conflicting launch dates must remain disclosed.
+
+Native checks recorded so far cover Kansas Scratch filtering/detail return and
+2by2/Lotto America dates, schedules and source returns. Other Kansas groups,
+landscape, persistence, enlarged text and network recovery still need evidence;
+this list is a test handoff, not a claim they passed. Use the first-session
+checklist above for accepted-state mobile testing as well.
+
 ## Feedback template
 
 Copy this template into the verified feedback route once it is supplied:

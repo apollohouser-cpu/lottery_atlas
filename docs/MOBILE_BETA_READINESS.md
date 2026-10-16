@@ -590,3 +590,15 @@ This is partial native evidence only: full tier traversal, filters, source retur
 report interactions/adoption, wide layout and request-failure retention remain.
 The app remains portrait at the Scratch footer. No state/mobile acceptance,
 Gmail, fee or deadline change; Kansas remains due October 19 at 19:40 ET.
+
+
+### October 15, 21:53 ET — User Android review handoff
+
+The user asked to see the app running; the existing emulator was brought forward
+with Lottery Atlas, without restarting or reinstalling. During the subsequent
+heartbeat, independent tester preparation updated MOBILE_BETA_TESTER_GUIDE.md
+with the exact debug revision, source-return navigation, Kansas limitations and
+remaining checks. No emulator navigation, build or repeat test was performed in
+this heartbeat, allowing the live user review to continue. This does not create
+a new permission gate or require the user to reconfirm earlier authorization.
+Kansas native acceptance remains open with its existing October 19 deadline.
