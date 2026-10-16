@@ -760,3 +760,22 @@ is work/kansas_native/mm-*.xml. Left portrait on October 9 summary. Seven remain
 families/other groups and report-wide checks remain; no build, repeat retention
 probe, Gmail, fees or deadline change. Kansas remains unaccepted, due October 19
 at 19:40 ET.
+
+
+## October 16, 04:57 ET — Native Millionaire for Life checkpoint
+
+On the ordinary Android build, selected October 15 and October 14 results;
+distinct numbers and preserved UTC timestamps/local dates are visible, and
+changing selection resets scroll. Traversed all nine literal schedule rows,
+annual-for-life prizes, pari-mutuel qualification, overall odds and explicitly
+published cash-option amounts ($18,000,000/$2,200,000). These are source schedule
+values, not calculated conversions or actual paid awards. Doubled-dollar source
+warning, rules, purchase cutoff and full result/schedule limits remain visible.
+
+The official millionaire-for-life URL opened and rendered the correct game page
+in WebView Browser Tester. Android Back retained October 15 and footer position.
+Private evidence is work/kansas_native/mfl-*.xml. Left portrait on October 14
+summary. Six report families (including Pick 3 sessions and Powerball variants)
+and report-wide checks remain open. No build, repeat cache-retention probe,
+Gmail, fees or deadline change. Kansas is not accepted; October 19 at 19:40 ET
+remains the supported-release deadline.
