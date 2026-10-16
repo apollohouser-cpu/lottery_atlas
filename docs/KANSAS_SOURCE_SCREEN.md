@@ -661,3 +661,26 @@ No build/reinstall or second emulator. Remaining nine families/other groups,
 wide layouts and native request-failure retention remain open. App left portrait
 on October 13 2by2 summary. Kansas is not accepted; deadline October 19 at 19:40 ET
 unchanged, scope already closed October 14. No Gmail, fees or user action.
+
+
+## October 15, 20:53 ET — Android Lotto America checkpoint
+
+On installed 2c4b6ed, Lotto America October 14 and October 12 selections show
+distinct drawn numbers/Star Ball, multiplier and local/UTC dates; changing the
+selection resets scroll. The advertised October 17 drawing remains separately
+dated with source-supplied $2,250,000 annuity and $920,000 cash, not a calculated
+award for either selected result. All nine literal schedule rows, doubled-dollar
+warning, pari-mutuel/shared-jackpot qualifications, All Star Bonus jackpot
+exclusion, rules and footer were traversed.
+
+The official Lotto America page opened at its correct URL in the external
+WebView Browser Tester and rendered the game title and October 17 next draw.
+Android Back preserved October 14 selection/footer scroll. The external page's
+compact headline reads $2.2 Million; no claim of exact headline formatting parity
+with the retained API amount is made. Private XML evidence is in
+work/kansas_native/lotto-america-*.xml. Same collection retrieval as previous
+checkpoint; no repeat adoption claim or build. App left on October 12 summary.
+
+Eight families plus remaining groups, wide layouts and request-failure retention
+remain open. Kansas not accepted; October 19 at 19:40 ET deadline unchanged.
+No Gmail, fees, second emulator or user action.
