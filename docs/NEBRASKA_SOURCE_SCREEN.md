@@ -198,3 +198,13 @@ acknowledgment was sent. No new records, question, fee, deadline or promised
 follow-up was supplied, so no duplicate reply was sent. The retailer workbook
 remains pending private audit; custom reporting remains declined and is not an
 expected delivery. Private check evidence is retained in work/agency_email_checks.
+
+
+## October 16, 11:58 ET — Sole active supported integration
+
+Nebraska activated after Kansas acceptance, with scope due October 17 at 11:58 ET
+and supported release due October 21 at 11:58 ET (fresh 120 hours). See
+NEBRASKA_ACCEPTANCE.md. Existing broad heat-map requirements above do not override
+the current supported-coverage standard. Fresh public home and Pick 5 captures
+are private; full product/session/source scope remains open. No agency workbook
+rows, inferred counts or joins have been promoted. Custom reporting stays declined.

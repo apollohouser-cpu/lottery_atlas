@@ -45,6 +45,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
+| Nebraska | October 21, 2026, 11:58 AM ET | Sole active from October 16, 11:58 AM; scope due October 17, 11:58 AM; substantial draw/app integration. |
 | Kansas | Accepted October 16, 2026, 11:00 AM ET (due October 19, 7:40 PM) | Bounded results, literal schedules/Scratch and native retention accepted; explicit gaps retained. |
 | Louisiana | Accepted October 14, 2026, 6:44 PM ET (due October 17, 11:55 PM) | Fourteen reports, literal Scratch, native flows and retention accepted; explicit gaps retained. |
 | North Carolina | Accepted October 12, 2026, 11:00 PM ET (due October 13, 10:38 AM) | Bounded reports, literal Scratch and audited mapped archive accepted; explicit gaps retained. |
@@ -109,7 +110,9 @@ NORTH_CAROLINA_ACCEPTANCE.md. Louisiana closed October 14 at 18:44 ET on release
 d68a843; see LOUISIANA_ACCEPTANCE.md. Twelve states are ready for supported
 testing; 33 remain. Kansas accepted October 16 at 11:00 ET on release 5d22fca,
 ahead of October 19 at 19:40 ET with no extension. See KANSAS_ACCEPTANCE.md.
-No active successor is selected yet. Mobile beta preparation remains open.
+Nebraska is sole active from October 16 at 11:58 ET, with scope due October 17
+at 11:58 ET and supported release due October 21 at 11:58 ET. See
+NEBRASKA_ACCEPTANCE.md. Mobile beta preparation remains open.
 NATIONAL_RELEASE_FORECAST.md retains the October 6 forecast baseline; four of
 five additional acceptances before its next routine reforecast are complete.
 Continue authorized private records audits and no-fee correspondence separately.
