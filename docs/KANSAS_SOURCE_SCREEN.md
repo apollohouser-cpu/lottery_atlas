@@ -865,3 +865,22 @@ work/kansas_native/racetrax-*.xml. Left portrait on the second retained snapshot
 Keno native traversal, report-wide checks and final consolidation remain open.
 No build, repeat retention/adoption checks, Gmail or fees. Kansas remains
 unaccepted; October 19 at 19:40 ET deadline unchanged.
+
+
+## October 16, 10:00 ET — Native Keno checkpoint
+
+Ordinary Android build 5d22fca: both retained Keno snapshots selected, with distinct
+numbers, Bull's-eye, preserved source order and UTC/local timestamps. Two-snapshot,
+not-live notice is visible. Traversed every 10- through 1-spot schedule and its
+base/Bull's-eye fields, including the 6-spot match-one blank rendered explicitly
+as blank in source rather than zero. Progressive amounts unavailable warning,
+progressive qualifications, prize caps, pari-mutuel limits, play rules, cutoff
+and full footer were reached. Selection change resets scroll.
+
+Correct official keno URL rendered the game page in WebView Browser Tester;
+Back retained the first snapshot and footer position. Private evidence is
+work/kansas_native/keno-*.xml. Left portrait on the second snapshot. All ten
+families/twelve groups now have native selection coverage and each family has
+an official-page return; report-wide verification and final consolidation remain.
+No build, repeated retention/adoption checks, Gmail or fees. Kansas is not yet
+accepted; October 19 at 19:40 ET deadline unchanged.
