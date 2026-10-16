@@ -66,7 +66,9 @@ class _KansasDrawCollectionSheetState extends State<KansasDrawCollectionSheet> {
   List<Widget> details(Map d, Map r) {
     final schedule = d['schedules'][r['scheduleKey']] as Map;
     final prizes = (d['advertisedPrizes'] as List).where(
-      (p) => p['scheduleKey'] == r['scheduleKey'],
+      // The Powerball advertisement is for the base draw, not Double Play.
+      (p) =>
+          p['scheduleKey'] == r['scheduleKey'] && r['session'] != 'Double Play',
     );
     final frequent = r['session'] == 'Frequent';
     return [

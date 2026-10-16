@@ -37,6 +37,33 @@ void main() {
       }
     });
   }
+  testWidgets('Powerball advertisement belongs only to base results', (
+    tester,
+  ) async {
+    for (final session in ['Base', 'Double Play']) {
+      final index = (data['reports'] as List).indexWhere(
+        (r) => r['scheduleKey'] == 'powerball' && r['session'] == session,
+      );
+      expect(index, greaterThanOrEqualTo(0));
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: KansasDrawCollectionSheet(
+              key: ValueKey(session),
+              reportsOverride: data,
+              initialIndex: index,
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(
+        find.text('Separately advertised prize'),
+        session == 'Base' ? findsOneWidget : findsNothing,
+      );
+      expect(tester.takeException(), isNull);
+    }
+  });
   testWidgets('Keno schedule warning and source footer reachable', (
     tester,
   ) async {

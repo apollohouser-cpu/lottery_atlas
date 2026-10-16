@@ -798,3 +798,31 @@ position. Private evidence: work/kansas_native/p3-*.xml. Left portrait on Midday
 October 14 summary. Five families (including Powerball base/Double Play) and
 report-wide checks remain open. No build, repeated retention test, Gmail, fees
 or deadline change. Kansas remains unaccepted, due October 19 at 19:40 ET.
+
+
+## October 16, 07:01 ET — Powerball native checks and advertisement correction
+
+Selected base October 14/12 and Double Play October 14/12 on Android, with
+separate numbers, raw timestamps and local dates. Traversed all nine shared
+schedule rows with separately labeled base/Double Play amounts, pari-mutuel and
+shared-jackpot qualifications, Power Play exclusions/10X threshold, option costs,
+rules, cutoffs and limits. Official powerball page rendered in WebView Browser
+Tester; Back retained base October 14 and footer position. Evidence is private
+work/kansas_native/pb-*.xml.
+
+Native review exposed a real scope defect: matching advertisements by shared
+scheduleKey displayed the base Powerball $600M annuity/$246M cash advertisement
+on Double Play selections. Restricted advertisements to exclude Double Play;
+its literal $10M schedule remains. A regression test verifies base advertisement
+presence and Double Play absence. Four widget tests pass (including all 24
+selections compact/wide), two-file analysis clean. Ordinary Android debug build
+passed 14.1s, installed and launched. Fresh native dumps confirm both Double Play
+dates now proceed directly from numbers to schedules, while base October 14
+retains its separately dated October 17 advertisement. This named defect is
+closed; no feed values or validation weakened.
+
+Installed ordinary build supersedes eeae509 for the report widget. Left portrait
+on base October 14 summary. Four remaining families (Super Kansas Cash, Xs & Os,
+Keno and Racetrax), report-wide and final consolidation remain. Kansas not yet
+accepted; October 19 at 19:40 ET deadline unchanged. No Gmail, fees or additional
+emulator.
