@@ -543,3 +543,21 @@ unresolved, 48 reports. Native ordinary build adopted report retrieval
 the new directory count. See OREGON_ACCEPTANCE.md for acceptance and limitations.
 No agency sales/archive/contacts or unapproved joins were promoted. Outstanding
 agency clarification remains future enrichment; no new correspondence this run.
+
+
+### October 16, 15:00 ET check — field clarification requested and sent
+
+The agency says no additional ready-made reports are available and asks for a
+spreadsheet clarifying the requested data points, suggesting it may be able to
+generate a report. Full thread review confirmed the October 6 reply in Sent.
+Sent a definitions-only workbook covering the original draw/Scratch counts,
+existing retailer fields and definitions, with no invented examples or personal
+claimant data. Original year-to-date scope and optional August sample retained.
+
+The reply explicitly authorizes no fees, custom report creation or paid search.
+It asks whether an existing standard no-fee export is available without custom
+programming/compilation, and directs the agency not to undertake work otherwise.
+Sent confirmed with attachment. Await clarification; no dataset, fee estimate or
+promised delivery date was supplied. Prior sales/archive audit limitations and
+accepted app coverage remain unchanged. Private evidence in
+work/agency_email_checks/oregon_20261016; never resend this reply.
