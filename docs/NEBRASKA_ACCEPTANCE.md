@@ -31,7 +31,7 @@ joins are authorized by possession of that workbook. Audit before any public use
 
 ## Gates
 
-- [ ] Close products/options/sessions/history and supported/gap matrix.
+- [x] Close products/options/sessions/history and supported/gap matrix (October 16, 14:00 ET).
 - [ ] Validate usable bounded draw data and explicit units/limitations.
 - [ ] Audit current Scratch tiers, report dates and identity exclusions.
 - [ ] Audit retailer routes/private delivery; approve only supported public fields.
@@ -79,3 +79,48 @@ Next: finish historical/non-draw/retailer route inventory and current Scratch
 schema audit, close the supported/gap matrix, then implement strict per-family
 parsing with dated report association. No public data, app build, emulator change,
 agency correspondence or acceptance in this checkpoint. Deadlines unchanged.
+
+
+## October 16, 14:00 ET — Scope closed before deadline
+
+Scope is closed for the supported release; implementation and acceptance remain
+open. The official ten-family menu and number-search form agree on current
+products. No additional current family is evidenced in those inventories. This
+does not assert that Nebraska has never offered other games.
+
+| Product / feature | Supported release scope | Explicit boundary |
+| --- | --- | --- |
+| Powerball | Two recent base and two Double Play results; latest dated base/Power Play/Double Play source tables and literal schedules | Separate option units, no summing tables; base jackpot advertisement never applied to Double Play |
+| Mega Millions | Two recent results, latest dated multiplier-specific source table, current prize ranges and per-play multiplier explanation | No invented multiplication of winner counts or cash conversion |
+| Pick 5 | Two recent results and latest four-tier dated report | Free quick-pick play categorical; jackpot and pari-mutuel qualifications retained |
+| Lotto America | Two recent results, latest base/All Star Factor tables and All Star Bonus explanation | Preserve source naming and literal multiplier expressions |
+| Millionaire for Life | Two recent results, latest nine-tier report and literal annuity/cash schedule | No computed cash equivalents; sharing/pari-mutuel qualifications retained |
+| Pick 3 / Pick 4 | Two nightly results each, latest nine/sixteen-row reports and complete bet schedules | One daily session each; overlapping bets are not unique-person totals |
+| 2by2 | Two recent red/white results, latest source tables and complete regular/Tuesday schedule | Tuesday eligibility explained; off-Tuesday option zeros are not actual Tuesday winner observations |
+| MyDaY | Two recent month/day/year results and latest seven-tier report | Validate calendar including source leap-year rule; preserve two-digit year |
+| Powerball Xs & Os | Two weekly team results, latest five-tier report, cash/pari-mutuel qualifications | Team outcomes are random draws, not NFL scores; promotions separate |
+| Scratch | All validated current catalog prize-structure rows, literal odds/structure winners, retained reviewed top-prize inventory and identity exclusions | Structure winners are not remaining counts or dated claims; report-only games excluded, stock unknown |
+| Historical numbers | Official date-range search route | No ten-year import or historical winner-report claim; older number selections never borrow latest report counts |
+| Closing games / unclaimed prizes | Official closing and unclaimed source routes | Source-only: no complete claims layer, automatic retailer joins or win heat |
+| MVP / ticket promotions | Official MVP/contest and Xs & Os promotional routes | No account access, entry, promotion inventory or purchase flow |
+| Retailers | Explicit unavailable in-app directory/map coverage pending private workbook audit | Legacy search route returned HTTP 404 today; do not advertise it as a usable finder or publish agency rows/coordinates |
+| Other/historical products | Disclose outside the bounded current menu and offer official home/search routes | No invented current Keno, raffle, Pull-Tabs or Lucky for Life coverage |
+
+Target number window is **22 results across 10 families / 11 groups** (Powerball
+base and Double Play separate), two per group. Latest report tables are separately
+dated; no second historical report is promised. Non-applicable option cells need
+explicit handling. Unsupported source claims must fail validation, not be filled.
+
+Fresh existing Scratch importer run succeeded privately: **24 games / 594 physical
+prize-structure rows**, 22 matched dated top-prize counts, one conflicting-identity
+exclusion. Inventory remains the manually reviewed **September 13** report;
+current retrieval does not make that inventory newer. Repeated prize amounts are
+separate physical rows. No public feed was changed. Official closing page is dated
+October 11; current unclaimed page is a selected outstanding-prize list, not a
+claims history. Private captures: search.html, closing.html, unclaimed.html,
+scratch.html and current-scratch.json under work/nebraska_scope.
+
+Next implement strict result/report parsing and schedule extraction, then atomic
+publication and app integration. Private retailer workbook audit can establish a
+separate bounded directory only after schema/identity review; it does not block
+this supported scope. Release remains October 21 at 11:58 ET; no extension.
