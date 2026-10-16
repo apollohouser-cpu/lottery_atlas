@@ -884,3 +884,42 @@ families/twelve groups now have native selection coverage and each family has
 an official-page return; report-wide verification and final consolidation remain.
 No build, repeated retention/adoption checks, Gmail or fees. Kansas is not yet
 accepted; October 19 at 19:40 ET deadline unchanged.
+
+
+## October 16, 11:00 ET — Supported coverage ACCEPTED
+
+Kansas supported coverage is accepted on ordinary release **5d22fca**, ahead of
+October 19 at 19:40 ET, with no extension. Scope closed October 14 at 20:41 ET.
+The supported experience contains 24 bounded results across ten families/twelve
+groups, literal schedules and separately dated advertisements, plus 46 Scratch
+games with 425 literal remaining-prize tiers. Official retailer and unsupported
+product/history routes remain explicit; no retailer map layer, Kansas winner
+counts, paid-prize aggregation, live Keno/Racetrax service or complete history is
+claimed. Scratch verification date remains unpublished, FREE TICKET categorical,
+and conflicting launch metadata remains disclosed.
+
+Native checks cover all families/groups and both retained selections, each
+family's official page return, Scratch search/price/reset/detail return, newer
+remote adoption and production-loader request-failure cache retention with
+ordinary restoration. Prior evidence is retained above; no closed checkpoint
+was repeated without a named defect. The Powerball/Double Play advertisement
+scope defect was fixed and natively verified on the accepted release.
+
+Final landscape report verification passed on the sole Android emulator:
+selection/header/close controls remain usable, Keno long number order and warnings
+wrap, base/Bull's-eye schedule fields remain readable, and switching to Mega
+Millions resets scroll. Screenshots reports-wide.png and reports-wide-tiers.png
+are private under work/kansas_native. Restored original rotation settings (auto
+1/user 0); portrait retains Mega Millions October 13. Earlier Scratch landscape
+and enlarged-text correction gates remain closed. This is not accessibility
+certification or OS-offline/tile acceptance.
+
+Consolidated checks pass: **49 Python tests** (33 Kansas parser/catalog/schedule
+plus 4 atomic importer and 12 refresh transaction tests), **24 Flutter tests**,
+and analysis of seven Kansas production Dart files is clean. Existing ordinary
+Android build/install evidence stands; no new build was needed. Scheduled
+publication and public byte verification are closed as documented above.
+
+This is state supported-coverage acceptance, not full mobile beta, signed store
+submission or national release. Twelve states are accepted; 33 remain. No active
+successor selected in this checkpoint. No Gmail, fees or user action.
