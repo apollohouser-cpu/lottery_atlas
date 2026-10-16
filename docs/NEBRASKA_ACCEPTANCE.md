@@ -181,3 +181,21 @@ used system Python without lxml; rerun with established bundled runtime succeede
 No dependency or validation change. Remaining report families: Powerball/options,
 Mega Millions and Lotto America, then full qualifications/atomic/app/native.
 No public feed, build, Gmail, acceptance or deadline change.
+
+
+## October 16 — Lotto America base and All Star Factor reports
+
+Added strict latest Lotto America base (nine tiers) and All Star Factor (eight
+tiers) parsing. Preserves literal multiplier expressions and source naming versus
+All Star Bonus description. Validates report dates against the latest number
+selection and every option expression against that draw's multiplier, including
+all allowed factors 2–5. Jackpot exclusion, add-on and advertised-annuity versus
+cash qualification text is required; no computed payout conversion or combined
+winner totals. Private parsed report: work/nebraska_scope/lotto-america-report.json.
+
+Twenty-one combined Nebraska Python tests pass, including four new tests for the
+retained official report, all valid multiplier cases, seven malformed-source
+variants and missing/extra tiers or invalid counts. Remaining report families are
+Powerball/options and Mega Millions, followed by full qualification/schedule
+assembly, atomic/app/native integration. No public feed/build/UI, Gmail,
+acceptance or deadline change.
