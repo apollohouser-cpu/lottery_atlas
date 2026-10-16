@@ -702,3 +702,24 @@ checkpoint is closed. Eight remaining report families/other groups, wide layouts
 and native request-failure retention remain open. App left on Scratch with normal
 text. No Gmail, fees, additional emulator or deadline change; Kansas remains due
 October 19 at 19:40 ET.
+
+
+## October 16, 01:57 ET — Native request-failure retention verified
+
+The private Android probe ran both production Kansas loaders against real
+preexisting SharedPreferences caches while HttpOverrides forced exactly two
+SocketExceptions. Returned objects equaled the decoded caches and both stored
+JSON strings stayed byte-identical. Logcat recorded KS_NATIVE_RETENTION_PASS:
+24 reports at retrieval 2026-10-15T21:25:47.612140+00:00 and 46 Scratch games at
+2026-10-16T04:41:40.465046+00:00, sourceDate null. Evidence is private
+work/kansas_native/retention-logcat.txt. This closes the production-loader
+request-failure retention gate, not OS-offline, tiles or UI-outage acceptance.
+
+Probe build passed (8.9s); ordinary lib/main.dart rebuild passed (6.2s), was
+reinstalled and cold-launched successfully. Native Kansas Scratch reopened with
+46 games and source limits. No tracked probe code remains, no second emulator
+was started and normal text settings were retained. Ordinary source is eeae509
+plus later documentation/feed commits; no probe entry point is installed.
+Remaining report-family interactions and wide layouts are still open; no new
+remote-adoption claim from restoration. Kansas deadline unchanged. No Gmail,
+fees or user action.
