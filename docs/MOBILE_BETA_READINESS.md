@@ -635,3 +635,21 @@ Next install ordinary artifact and verify enlarged text, then continue remaining
 native report families and controlled retention/restoration. State and mobile
 acceptance remain open, deadline October 19 at 19:40 ET unchanged. No Gmail,
 fees, account action or additional emulator.
+
+
+## October 16, 00:55 ET — Native enlarged-text correction verified
+
+Installed the existing eeae509 ordinary debug APK; cold launch succeeded without
+another build. Only the existing Android emulator was active. At system font
+scale 2.0, Kansas Scratch count/reset controls remain separately readable, with
+a usable tier viewport. Native scrolling traversed game 257's tiers, FREE TICKET,
+source limits and both official-source buttons. Screenshot and XML evidence in
+work/kansas_native confirm the corrected portrait layout. Search hint ellipsis
+is visible at this scale; no broad accessibility certification is claimed.
+
+Restored the exact prior system font setting and confirmed normal-size controls.
+New installed build supersedes 2c4b6ed; the named enlarged-text Scratch overflow
+checkpoint is closed. Eight remaining report families/other groups, wide layouts
+and native request-failure retention remain open. App left on Scratch with normal
+text. No Gmail, fees, additional emulator or deadline change; Kansas remains due
+October 19 at 19:40 ET.
