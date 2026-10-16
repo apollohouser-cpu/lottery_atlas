@@ -847,3 +847,21 @@ and xo-*.xml. Left portrait on Xs & Os October 4 summary.
 Keno and Racetrax native traversal, report-wide checks and final consolidation
 remain open. No rebuild, repeat retention/adoption checks, Gmail or fees. Kansas
 remains unaccepted; October 19 at 19:40 ET deadline unchanged.
+
+
+## October 16, 09:00 ET — Native Racetrax checkpoint
+
+Ordinary Android build 5d22fca: both retained Racetrax snapshots selected with
+distinct ordered horses, timestamps and multipliers (1x/3x); selection resets
+scroll. Explicit two-snapshot/not-live notice remains visible. Traversed all
+12 horse Win/Show schedule rows, four prize-range cards and PDF link controls,
+five bonus-probability rows, qualifications, liability limits, complete play
+rules and source-limit footer. Full PDF matrices remain expressly unembedded;
+no PDF opening or complete-matrix acceptance is claimed by this checkpoint.
+
+Correct official racetrax URL rendered its game page in WebView Browser Tester;
+Back retained the first snapshot and footer position. Private evidence is
+work/kansas_native/racetrax-*.xml. Left portrait on the second retained snapshot.
+Keno native traversal, report-wide checks and final consolidation remain open.
+No build, repeat retention/adoption checks, Gmail or fees. Kansas remains
+unaccepted; October 19 at 19:40 ET deadline unchanged.
