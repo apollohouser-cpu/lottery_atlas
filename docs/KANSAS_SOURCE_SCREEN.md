@@ -739,3 +739,23 @@ Restored both original Android rotation settings. Scratch wide-layout gate is
 closed; report-wide and eight remaining report-family interactions remain open.
 No build, repeated retention/adoption check, Gmail, fees or second emulator.
 Kansas remains unaccepted with October 19 at 19:40 ET deadline unchanged.
+
+
+## October 16, 03:58 ET — Native Mega Millions checkpoint
+
+Ordinary Android collection reopened successfully after the earlier probe
+restoration, now showing retrieval 2026-10-16T04:35:25.509106+00:00. Mega Millions
+October 13 and October 9 selections show distinct numbers/Mega Ball and separate
+local/UTC dates; selection change resets scroll. October 16 advertised annuity
+$403,000,000 and cash $162,100,000 remain separately dated source values.
+Traversed nine literal prize rows, five multiplier rows plus the average row,
+doubled-dollar warning, jackpot installment/shared-prize qualification, rules,
+per-play multiplier assignment and source-limit footer. No actual Kansas winner
+counts or paid-prize inference.
+
+Correct official megamillions URL rendered the game page in the external WebView
+Browser Tester; Android Back retained selection and footer position. Private XML
+is work/kansas_native/mm-*.xml. Left portrait on October 9 summary. Seven remaining
+families/other groups and report-wide checks remain; no build, repeat retention
+probe, Gmail, fees or deadline change. Kansas remains unaccepted, due October 19
+at 19:40 ET.
