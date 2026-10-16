@@ -778,3 +778,22 @@ summary. Six report families (including Pick 3 sessions and Powerball variants)
 and report-wide checks remain open. No build, repeat cache-retention probe,
 Gmail, fees or deadline change. Kansas is not accepted; October 19 at 19:40 ET
 remains the supported-release deadline.
+
+
+## October 16, 05:57 ET — Native Pick 3 checkpoint
+
+Ordinary Android build: both Evening and Midday October 15/14 selections passed,
+including leading zero 0-6-4 and repeated digits 2-7-7. Local dates and raw UTC
+timestamps remain separate; Evening date rollover warning appears and selection
+changes reset scroll. Traversed all three literal schedule rows with examples,
+permutations, odds and $1-wager amounts, then rules, draw-session costs, liability,
+purchase cutoffs and complete source-limit footer. The Any Order table/prose
+inconsistency is explicitly warned and both source versions remain visible;
+no inferred winner counts or actual payouts.
+
+Correct official pick-3 URL rendered the game page and daily session information
+in WebView Browser Tester. Android Back retained Evening October 15 and footer
+position. Private evidence: work/kansas_native/p3-*.xml. Left portrait on Midday
+October 14 summary. Five families (including Powerball base/Double Play) and
+report-wide checks remain open. No build, repeated retention test, Gmail, fees
+or deadline change. Kansas remains unaccepted, due October 19 at 19:40 ET.
