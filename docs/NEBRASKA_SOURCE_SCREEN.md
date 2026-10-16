@@ -208,3 +208,41 @@ NEBRASKA_ACCEPTANCE.md. Existing broad heat-map requirements above do not overri
 the current supported-coverage standard. Fresh public home and Pick 5 captures
 are private; full product/session/source scope remains open. No agency workbook
 rows, inferred counts or joins have been promoted. Custom reporting stays declined.
+
+
+## October 16 — Ten official draw detail pages captured
+
+Fresh public HTML for all ten current draw families and a structured table
+inventory are retained privately under work/nebraska_scope (detail-0 through
+ detail-9 and detail-inventory.json). These are server-rendered public pages;
+no authenticated endpoint or agency records are needed for the observed tables.
+This is source discovery, not a published feed or accepted parser.
+
+The pages show seven recent number selections per family except Xs & Os, which
+currently shows two. Powerball has separate base and Double Play number tables.
+Pick 3 and Pick 4 describe one nightly drawing, not Kansas's two sessions.
+MyDaY uses month/day/two-digit-year fields and calendar validity rules; Xs & Os
+uses eight team abbreviations, not numeric balls. Preserve those distinct types.
+
+Each page includes a latest-draw prize table explicitly headed “in Nebraska.”
+This is stronger geographic evidence than the Kansas source, but “Winners” is
+still the source unit: do not relabel it unique people, claims, or selling-retailer
+wins, and do not aggregate overlapping option tables. Only the latest draw has
+an observed prize report; older number rows must not inherit its winner counts.
+A historical report request has not been established.
+
+Options requiring separate handling: Power Play and Double Play, Lotto America's
+All Star Bonus (report heading says All Star Factor), Mega Millions per-play
+multiplier, and 2by2 Tuesday eligibility. The 2by2 page prints a Tuesday option
+table even for Thursday October 15, with zero cells; treat applicability explicitly
+rather than claiming an eligible Tuesday drawing occurred on Thursday. Mega
+Millions embeds base-prize labels and multiplier-specific winner rows alongside
+its current prize-range schedule; keep these literal and validate their relation.
+The Power Play table also needs a literal-prize/multiplier audit before publication.
+Free quick-pick prizes stay categorical. Advertised future jackpots, cash options,
+annuity terms and prize-liability qualifications must remain separate from results.
+
+Next: finish historical/non-draw/retailer route inventory and current Scratch
+schema audit, close the supported/gap matrix, then implement strict per-family
+parsing with dated report association. No public data, app build, emulator change,
+agency correspondence or acceptance in this checkpoint. Deadlines unchanged.
