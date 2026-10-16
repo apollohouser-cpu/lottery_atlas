@@ -124,3 +124,22 @@ Next implement strict result/report parsing and schedule extraction, then atomic
 publication and app integration. Private retailer workbook audit can establish a
 separate bounded directory only after schema/identity review; it does not block
 this supported scope. Release remains October 21 at 11:58 ET; no extension.
+
+
+## October 16 — Strict bounded number parser
+
+Implemented tooling/nebraska_draw_results.py for all ten families / eleven
+result groups. All ten retained official HTML pages parse to the intended 22
+bounded results; private output is work/nebraska_scope/parsed-results.json.
+Validates exact family/group columns, full displayed window before truncating,
+local date order/future/weekday restrictions, numeric cardinality/ranges,
+distinct ball sets, ordered repeated Pick digits, Power Play allowed multipliers,
+MyDaY calendar rules and eight distinct named Xs & Os teams. Date-only values
+retain America/Chicago semantics without invented UTC draw times.
+
+Eight focused Python tests pass, including malformed numbers/dates/groups,
+multiplier and team rejection, repeated-digit preservation, year00 leap-day and
+older-row validation. This parser intentionally does not attach latest report
+winners to older number results. Prize reports, schedules, atomic collection,
+app/native and private retailer audit remain pending. No public feed/build/UI,
+Gmail or acceptance change; release deadline unchanged.
