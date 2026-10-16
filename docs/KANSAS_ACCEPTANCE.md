@@ -826,3 +826,25 @@ on base October 14 summary. Four remaining families (Super Kansas Cash, Xs & Os,
 Keno and Racetrax), report-wide and final consolidation remain. Kansas not yet
 accepted; October 19 at 19:40 ET deadline unchanged. No Gmail, fees or additional
 emulator.
+
+
+## October 16, 07:58 ET — Native Super Kansas Cash and Xs & Os
+
+On installed ordinary Android build 5d22fca, Super Kansas Cash October 14/12
+selections show distinct numbers/Cash Ball, preserved UTC timestamps and derived
+local dates. Traversed all eight literal tiers, overall odds, shared-jackpot and
+pari-mutuel qualifications, rules, cutoff and source-limit footer. October 17
+advertised cash $1,405,000 is separately dated; official page formats its headline
+as $1.4 Million. No conversion or actual paid-prize claim.
+
+Powerball Xs & Os October 11/4 selections show distinct eight-team results and
+UTC/local dates. Traversed all five literal tiers, odds, random-draw-not-NFL-outcome
+qualification, shared-jackpot/lower-tier liability limits, rules and footer.
+Both families opened the correct official game URL and rendered their game pages
+in WebView Browser Tester; Back retained each selected report and footer position.
+Selection changes reset scroll. Evidence is private work/kansas_native/skc-*.xml
+and xo-*.xml. Left portrait on Xs & Os October 4 summary.
+
+Keno and Racetrax native traversal, report-wide checks and final consolidation
+remain open. No rebuild, repeat retention/adoption checks, Gmail or fees. Kansas
+remains unaccepted; October 19 at 19:40 ET deadline unchanged.
