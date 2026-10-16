@@ -723,3 +723,19 @@ plus later documentation/feed commits; no probe entry point is installed.
 Remaining report-family interactions and wide layouts are still open; no new
 remote-adoption claim from restoration. Kansas deadline unchanged. No Gmail,
 fees or user action.
+
+
+## October 16, 02:57 ET — Native Scratch landscape completed
+
+On the restored ordinary Android build, rotated the existing emulator to
+landscape and verified side-by-side search/price controls, count/reset and game
+selection. The readable tier viewport scrolls through all game-257 tiers,
+FREE TICKET, unpublished source time, retrieval, coverage and both official-source
+buttons. Screenshot work/kansas_native/scratch-landscape.png and bounded scroll
+captures scratch-wide-*.txt retain evidence. No overflow observed in these
+checked views; this does not certify all text scales or devices.
+
+Restored both original Android rotation settings. Scratch wide-layout gate is
+closed; report-wide and eight remaining report-family interactions remain open.
+No build, repeated retention/adoption check, Gmail, fees or second emulator.
+Kansas remains unaccepted with October 19 at 19:40 ET deadline unchanged.
