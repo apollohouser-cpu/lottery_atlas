@@ -328,3 +328,23 @@ output is work/nebraska_scope/regular-reports.json. Remaining Powerball/options,
 Mega Millions, Lotto America and 2by2 report handling, full schedule/qualification
 extraction, atomic publisher and app/native gates are still open. No public feed,
 build/UI, Gmail or acceptance change. Deadline remains October 21 at 11:58 ET.
+
+
+## October 16 — 2by2 reports and Tuesday applicability
+
+Added strict 2by2 base/Tuesday report and complete eight-row schedule parser.
+Latest October 15 base report preserves four literal tiers and source Winners;
+Thursday's Tuesday-option zero placeholders are validated but omitted from
+winner counts, with applicable=false and an explicit explanation. Nonzero
+Tuesday counts on a non-Tuesday fail closed. A synthetic Tuesday test verifies
+eligible-day counts are preserved; it is not claimed as a captured Tuesday report.
+Multi-draw eligibility, free quick-pick prizes and pari-mutuel qualifications are
+required. Source geography/date/variant/table association and all literal schedule
+fields are checked. Private parsed evidence: work/nebraska_scope/2by2-report.json.
+
+Seventeen combined Nebraska Python tests pass, including five new 2by2 tests
+and seven malformed-source variants. Initial fixture preparation accidentally
+used system Python without lxml; rerun with established bundled runtime succeeded.
+No dependency or validation change. Remaining report families: Powerball/options,
+Mega Millions and Lotto America, then full qualifications/atomic/app/native.
+No public feed, build, Gmail, acceptance or deadline change.
