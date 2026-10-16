@@ -366,3 +366,22 @@ variants and missing/extra tiers or invalid counts. Remaining report families ar
 Powerball/options and Mega Millions, followed by full qualification/schedule
 assembly, atomic/app/native integration. No public feed/build/UI, Gmail,
 acceptance or deadline change.
+
+
+## October 16 — Powerball / Powerplay / Double Play reports
+
+Strict parsing now preserves all 26 physical tiers across base (nine), Powerplay
+(eight) and Double Play (nine) latest dated Nebraska reports. Double Play report
+date is tied to its own number group. Base advertisement is not imported into
+these reports. Powerplay source Prize cells mostly retain unmultiplied amounts
+while the separate draw multiplier is 3; source cells are not silently converted
+to enhanced payouts. Repeated base/Powerplay counts remain separate, with mandatory
+no-summing/no-distinct-option-purchase inference warning. Double Play's $10 million
+label is literal and independent of the base jackpot and Power Play multiplier.
+
+Twenty-five combined Nebraska Python tests pass, including four new Powerball
+tests, all five allowed multipliers, six malformed-source variants and missing/
+extra tiers or invalid counts. Private parsed evidence is
+work/nebraska_scope/powerball-report.json. Mega Millions is the remaining report
+family; full qualifications/schedules, atomic publisher and app/native work follow.
+No public feed/build/UI, Gmail, acceptance or deadline change.
