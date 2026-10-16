@@ -310,3 +310,21 @@ older-row validation. This parser intentionally does not attach latest report
 winners to older number results. Prize reports, schedules, atomic collection,
 app/native and private retailer audit remain pending. No public feed/build/UI,
 Gmail or acceptance change; release deadline unchanged.
+
+
+## October 16 — Six regular dated report parsers
+
+Strict latest-report parsing now covers Pick 5, Millionaire for Life, Pick 3,
+Pick 4, MyDaY and Xs & Os: six reports / 50 physical tiers from retained official
+HTML. Exact family, Nebraska geographic heading, latest-result date association,
+variant, columns, tier labels, literal prizes/odds and nonnegative integer source
+Winners are validated. Free quick-pick and lifetime labels remain literal; no
+cash conversion or unique-person/claim inference. Structural changes fail closed.
+
+Twelve combined Python tests pass (eight number tests plus four report tests,
+including twelve malformed-value variants and missing/duplicate report checks).
+Public-source fixtures contain only relevant detail sections; private parsed
+output is work/nebraska_scope/regular-reports.json. Remaining Powerball/options,
+Mega Millions, Lotto America and 2by2 report handling, full schedule/qualification
+extraction, atomic publisher and app/native gates are still open. No public feed,
+build/UI, Gmail or acceptance change. Deadline remains October 21 at 11:58 ET.
