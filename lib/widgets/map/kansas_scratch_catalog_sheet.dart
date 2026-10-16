@@ -171,14 +171,16 @@ class _KansasScratchCatalogSheetState extends State<KansasScratchCatalogSheet> {
                         '${games.length} of ${all.length} listed games',
                       ),
                     ),
-                    TextButton(
-                      onPressed: () => setState(() {
-                        _search.clear();
-                        _query = '';
-                        _price = null;
-                        _reset();
-                      }),
-                      child: const Text('Reset filters'),
+                    Flexible(
+                      child: TextButton(
+                        onPressed: () => setState(() {
+                          _search.clear();
+                          _query = '';
+                          _price = null;
+                          _reset();
+                        }),
+                        child: const Text('Reset filters'),
+                      ),
                     ),
                   ],
                 ),

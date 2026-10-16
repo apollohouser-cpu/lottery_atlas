@@ -602,3 +602,19 @@ remaining checks. No emulator navigation, build or repeat test was performed in
 this heartbeat, allowing the live user review to continue. This does not create
 a new permission gate or require the user to reconfirm earlier authorization.
 Kansas native acceptance remains open with its existing October 19 deadline.
+
+
+## October 15, 22:55 ET — Enlarged-text Scratch correction
+
+Independent 390x844 widget checks at 2x text reproduced a 23px horizontal and
+372px vertical overflow in Kansas Scratch: the unconstrained Reset filters
+button squeezed the count label into an extremely narrow column. Constraining
+the reset button with Flexible lets both labels wrap while preserving the tier
+viewport. Six tests now pass (two new enlarged-text/footer checks for Scratch
+and reports plus four existing Scratch layout/filter tests). Two-file analysis
+is clean. No source validation or data changed.
+
+The user-visible emulator was not navigated or restarted. Installed 2c4b6ed does
+not yet contain this fix; a new ordinary build and native enlarged-text check
+remain necessary. No full mobile/accessibility acceptance is claimed. Kansas
+remaining native groups and retention checks remain open, deadline unchanged.

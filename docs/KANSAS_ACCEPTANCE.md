@@ -652,3 +652,19 @@ checkpoint; no repeat adoption claim or build. App left on October 12 summary.
 Eight families plus remaining groups, wide layouts and request-failure retention
 remain open. Kansas not accepted; October 19 at 19:40 ET deadline unchanged.
 No Gmail, fees, second emulator or user action.
+
+
+## October 15, 22:55 ET — Enlarged-text Scratch correction
+
+Independent 390x844 widget checks at 2x text reproduced a 23px horizontal and
+372px vertical overflow in Kansas Scratch: the unconstrained Reset filters
+button squeezed the count label into an extremely narrow column. Constraining
+the reset button with Flexible lets both labels wrap while preserving the tier
+viewport. Six tests now pass (two new enlarged-text/footer checks for Scratch
+and reports plus four existing Scratch layout/filter tests). Two-file analysis
+is clean. No source validation or data changed.
+
+The user-visible emulator was not navigated or restarted. Installed 2c4b6ed does
+not yet contain this fix; a new ordinary build and native enlarged-text check
+remain necessary. No full mobile/accessibility acceptance is claimed. Kansas
+remaining native groups and retention checks remain open, deadline unchanged.
