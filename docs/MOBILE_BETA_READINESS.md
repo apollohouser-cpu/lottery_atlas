@@ -741,3 +741,21 @@ publication and public byte verification are closed as documented above.
 This is state supported-coverage acceptance, not full mobile beta, signed store
 submission or national release. Twelve states are accepted; 33 remain. No active
 successor selected in this checkpoint. No Gmail, fees or user action.
+
+
+### October 16 — Additional user-authorized PNY storage migration
+
+Moved Android SDK, project .dart_tool and user .pub-cache to PNY LotteryAtlas
+tooling/android-sdk, project/dart_tool and tooling/pub-cache. Original paths are
+symlinks. Existing SDK system-images symlink remains intact. Emulator stopped
+before SDK move; no builds were active. All copies passed rsync checksum
+comparison and linked read/write verification before original directories were
+removed. Ditto initially normalized five AppleDouble sidecars; explicit rsync
+copy resolved the comparison without discarding source files.
+
+Internal free space increased from about 11 GiB to 18 GiB. Flutter version and
+ADB version checks pass; AVD enumeration finds LotteryAtlas_API36. Two Kansas
+result-validator tests pass using relocated Dart/package caches. Initial test
+command named a nonexistent file; corrected to the existing validator suite.
+.gitignore now ignores .dart_tool as a symlink as well as a directory. Flutter
+SDK and Apple simulator storage remain internal. Keep PNY mounted during work.
