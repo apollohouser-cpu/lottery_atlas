@@ -218,3 +218,24 @@ extra tiers or invalid counts. Private parsed evidence is
 work/nebraska_scope/powerball-report.json. Mega Millions is the remaining report
 family; full qualifications/schedules, atomic publisher and app/native work follow.
 No public feed/build/UI, Gmail, acceptance or deadline change.
+
+
+## October 16 — Mega Millions final family report parser
+
+Added current-rules Mega Millions parsing: nine match categories, 41 source
+multiplier/count rows (one jackpot 1X source category and eight sets of five
+per-play multipliers). Complete nine-tier prize-range and five-row multiplier
+frequency/odds schedules remain literal. Report base-prize headings are explicitly
+separate from current enhanced prize ranges; jackpot 1X is not presented as an
+available purchasable multiplier. No computed payouts or unique-person totals.
+Date/geography, latest-number association, exact schedules, headings, row order,
+integer counts and current $5/per-play/jackpot qualifications are required.
+
+Twenty-nine combined Nebraska Python tests pass, including four new MM tests,
+seven malformed-source variants, missing/extra/wrong multiplier rows, invalid
+counts and old-rules rejection. Private output:
+work/nebraska_scope/mega-millions-report.json. All ten family report parsers now
+exist against retained captures; this is not a fresh assembled collector or
+published/app coverage. Next assemble required schedules/qualifications and
+all-family collection, atomic refresh, app integration and native checks.
+No public feed/build/UI, Gmail, acceptance or deadline change.
