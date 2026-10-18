@@ -251,3 +251,19 @@ baselines remain unchanged. All 42 Nebraska tests pass, including Scratch and
 four new collection tests. No public publication or native acceptance claimed.
 Full regular-family schedules/qualifications, atomic publication and app/native
 checks remain open. October 21 at 11:58 ET deadline remains unchanged.
+
+
+## October 18 — Fresh all-family private collection and failure retention
+
+Added a private staging collector for all ten public detail pages. Fresh retrieval
+at 03:09 ET validates 22 results and ten family reports, saved only under
+work/nebraska_scope/refresh-20261018 with the source HTML. All families must
+validate before atomic staging replacement. Request, validation and replacement
+failures preserve prior bytes/retrieval dates; no-baseline failure creates no
+output. Forty-six Nebraska tests pass, including failures in each family and
+simulated disk-replacement failure/temporary-file cleanup.
+
+This is not public refresh integration or acceptance. Full regular-family
+schedules/qualifications, publisher wiring, app loading and native verification
+remain open. No public feed, build/emulator, Gmail or deadline change. The
+supported release decision remains due October 21 at 11:58 ET.

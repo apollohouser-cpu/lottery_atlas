@@ -406,3 +406,19 @@ exist against retained captures; this is not a fresh assembled collector or
 published/app coverage. Next assemble required schedules/qualifications and
 all-family collection, atomic refresh, app integration and native checks.
 No public feed/build/UI, Gmail, acceptance or deadline change.
+
+
+## October 18 — Fresh all-family private collection and failure retention
+
+Added a private staging collector for all ten public detail pages. Fresh retrieval
+at 03:09 ET validates 22 results and ten family reports, saved only under
+work/nebraska_scope/refresh-20261018 with the source HTML. All families must
+validate before atomic staging replacement. Request, validation and replacement
+failures preserve prior bytes/retrieval dates; no-baseline failure creates no
+output. Forty-six Nebraska tests pass, including failures in each family and
+simulated disk-replacement failure/temporary-file cleanup.
+
+This is not public refresh integration or acceptance. Full regular-family
+schedules/qualifications, publisher wiring, app loading and native verification
+remain open. No public feed, build/emulator, Gmail or deadline change. The
+supported release decision remains due October 21 at 11:58 ET.
