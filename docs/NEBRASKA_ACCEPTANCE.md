@@ -303,3 +303,17 @@ physical repeated rows and September 13 inventory disclosure passed; landscape
 Scratch layout inspected. No acceptance yet: remaining family source returns,
 long schedule traversal, native adoption/request-failure retention, Android and
 retailer disposition remain open. No deadline change.
+
+
+### Native cold-start defect corrected and request-failure retention passed
+
+A fresh app process reached Nebraska before any other time-zone initialization
+and correctly exposed an initialization dependency in the new validator. The
+validator now initializes its own time-zone data; 28 app tests pass without
+test-side initialization. A private iOS probe called both production loaders
+against real remote caches and forced exactly two SocketExceptions. Returned
+objects matched caches and both stored JSON strings remained byte-identical:
+NE_NATIVE_RETENTION_PASS, 22 results/24 Scratch games. Evidence is private
+work/nebraska_scope/retention-log.txt. This proves request-failure retention,
+not OS-offline or tile behavior. Ordinary main.dart restoration is in progress.
+Source shortcut and explicit history/closing/unclaimed/MVP routes added.

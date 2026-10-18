@@ -183,6 +183,11 @@ class _NebraskaDrawCollectionSheetState
                       ),
                     ),
                     IconButton(
+                      tooltip: 'Official game source',
+                      onPressed: () => _open(r['sourceUrl']),
+                      icon: const Icon(Icons.open_in_new),
+                    ),
+                    IconButton(
                       tooltip: 'Close reports',
                       onPressed: () => Navigator.pop(context),
                       icon: const Icon(Icons.close),

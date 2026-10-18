@@ -4,13 +4,11 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:timezone/data/latest.dart' as tz;
 import 'package:lottery_atlas/services/nebraska_collection_validator.dart';
 import 'package:lottery_atlas/services/nebraska_collection_loader.dart';
 import 'package:lottery_atlas/widgets/map/nebraska_draw_collection_sheet.dart';
 
 void main() {
-  tz.initializeTimeZones();
   final scratchRaw = File(
     'data/nebraska_scratch_catalog.generated.json',
   ).readAsStringSync();

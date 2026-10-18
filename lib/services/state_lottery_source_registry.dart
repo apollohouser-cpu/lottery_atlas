@@ -647,6 +647,10 @@ class StateLotterySourceRegistry {
       stateName: 'Nebraska',
       providerName: 'Nebraska Lottery',
       resources: [
+        StateLotteryResource(title: 'Historical number search', subtitle: 'Official date-range search; no historical winner-report import.', url: 'https://nelottery.com/lotto-search-numbers?option=com_nelottlottosearchnumbers'),
+        StateLotteryResource(title: 'Scratch games closing', subtitle: 'Official closing notices; store availability unverified.', url: 'https://nelottery.com/scratch-games-closing'),
+        StateLotteryResource(title: 'Unclaimed Lotto prizes', subtitle: 'Selected outstanding prizes, not complete claims history.', url: 'https://nelottery.com/unclaimed-lotto'),
+        StateLotteryResource(title: 'MVP and promotions', subtitle: 'Official information only; no in-app entry or purchases.', url: 'https://nelottery.com/mvp-landing'),
         StateLotteryResource(
           title: 'Official Nebraska Lottery',
           subtitle:

@@ -1,8 +1,10 @@
 import 'dart:convert';
 import 'package:timezone/timezone.dart' as tz;
+import 'package:timezone/data/latest.dart' as tzdata;
 import 'nebraska_collection_contract.dart';
 
 class NebraskaCollectionValidator {
+  static bool _zonesReady = false;
   static void need(bool ok) {
     if (!ok) throw const FormatException('Invalid Nebraska collection');
   }
@@ -82,6 +84,10 @@ class NebraskaCollectionValidator {
   }
 
   static Map<String, dynamic> decode(String raw) {
+    if (!_zonesReady) {
+      tzdata.initializeTimeZones();
+      _zonesReady = true;
+    }
     final d = jsonDecode(raw);
     need(d is Map<String, dynamic>);
     need(
