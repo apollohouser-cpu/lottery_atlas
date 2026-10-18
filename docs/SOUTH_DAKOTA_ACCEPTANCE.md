@@ -160,3 +160,24 @@ and native-cache-scratch.json. No synthetic data or altered production entrypoin
 Remaining: other six groups' long schedules, dated-search route, layout variants,
 and controlled production-loader failure retention/normal restoration.
 No acceptance or deadline change; ordinary iOS remains at Xs & Os claim section.
+
+
+## October 18 — remaining native rule traversal and dated-search route
+
+Ordinary iOS 3bcc8d8 traversed the six remaining groups from summary through
+literal rule sections to retrieval/footer: Dakota Cash (including EZ Match),
+Mega Millions, Million 4 Life, Lotto America, Double Play and Powerball.
+Native accessibility observations exposed separate match/prize/odds fields,
+annuity labels and source qualifications, including Powerball's separate
+Double Play section. This complements the earlier Xs & Os traversal; no
+source count or payout was inferred from an option schedule.
+
+Dakota Cash October 14's Official dated results search opened Safari at
+https://lottery.sd.gov/winners/winning-numbers/ with no game/date parameters.
+It is a general search route: no automatic selected-date focus is claimed.
+OS return retained Dakota Cash October 14 and its summary. Rotating to
+landscape showed readable header, selection/date, numbers and count meanings
+without overlap. This is representative draw layout evidence; broader Scratch
+landscape/enlarged-text and production-loader native failure/normal restoration
+remain open. Current simulator is landscape on Dakota Cash October 14 summary.
+No acceptance, new build or deadline change.
