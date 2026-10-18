@@ -328,3 +328,21 @@ Six Flutter tests pass including all 14 selections with enlarged 2x text;
 changed UI files analyze cleanly. This verifies rendering, not native source
 return, scroll traversal or OS text settings. Full Scratch tier UI and native
 checks remain next; no readiness/deadline change.
+
+
+## October 18 — full Scratch inventory app integration
+
+Added a South Dakota Scratch sheet and validated remote/cache/bundle loader.
+All 35 published active-subset games and 293 physical tiers retain original
+winning inventory, cumulative paid tickets and computed remaining prizes.
+Source verification remains unpublished; listing completeness, store stock,
+dated claims and retailer joins are not implied. Search, ticket-price filtering,
+game selection and reset share the existing accessible sheet pattern.
+
+Three focused Flutter tests pass: strict arithmetic/unit/source validation,
+original-inventory continuity and request-failure cache retention, plus enlarged
+text search/empty/reset interaction. Three changed production files analyze
+cleanly. Generated Scratch baseline is registered as an offline asset. Native
+Scratch/detail/source returns and draw traversal, newer remote adoption and
+production-loader native retention remain open. No native build, acceptance,
+or deadline change; South Dakota remains due October 23 at 04:24 ET.
