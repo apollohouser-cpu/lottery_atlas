@@ -78,3 +78,18 @@ time. Distribution and disable dates are deliberately not mapped to claim dates.
 The six-hour refresh checks these same constraints. Five importer regression tests
 and an offline app-loading test cover the core boundaries. This is catalog-ready
 partial coverage, not all-state claims coverage or a completed retailer heat map.
+
+
+## October 18 activation — current official route capture
+
+South Dakota activated October 18, 2026 at 04:24 ET; scope due October 19, 2026 at 04:24 ET;
+supported release due October 23, 2026 at 04:24 ET. See SOUTH_DAKOTA_ACCEPTANCE.md.
+Fresh home/Lotto/Dakota Cash/winning-number HTML is private in
+`work/south_dakota_scope/`, with retrieval metadata. Current navigation lists
+Powerball/Double Play, Mega Millions, Dakota Cash, Millionaire for Life, Lotto
+America and Powerball Xs & Os. Related-game content also retains Lucky for Life;
+status is unresolved. Dakota Cash metadata mentions EZ Match. Actual draw API,
+options, history and literal schedules remain to inspect before scope closure.
+The Dakota Cash page's selected-winner cards include Powerball records: do not
+assign cards to the hosting page's game. No new public feed, build or acceptance
+claim is made. Existing Scratch validation remains intact; fresh audit pending.
