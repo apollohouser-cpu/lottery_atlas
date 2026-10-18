@@ -46,3 +46,7 @@ Scope closed October 18 at 05:22 ET; see SOUTH_DAKOTA_SOURCE_SCREEN.md for the p
 14-result target, source API evidence and explicit gaps. All implementation/native
 gates remain open. Fresh private Scratch audit: 35 active games / 293 tiers;
 no public feed updated. No deadline extension.
+
+October 18 parser checkpoint: tooling/south_dakota_draw_results.py validates the
+14-result number-only contract; 11 regression tests pass. No count/report or
+publication acceptance is implied; all remaining integrated gates stay open.

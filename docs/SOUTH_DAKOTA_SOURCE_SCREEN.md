@@ -149,3 +149,20 @@ scratch-fresh.json and official route captures in work/south_dakota_scope.
 No public feed or native build changed. Next: strict parsers for status,
 date, variant, count units and schedule extraction, then coupled publication,
 app integration and native gates.
+
+
+## October 18 — bounded number parser checkpoint
+
+Added strict six-family result parsing with the seven public result groups kept
+separate. Eleven regression tests pass against captured public API fixtures: all
+14 results, UTC-to-Central previous-day conversion, unordered response records,
+variant-specific source links, domain/cardinality/duplicate checks, source
+weekday checks, invalid/future/OPEN states and multiplier isolation. Powerball
+Double Play never inherits the base multiplier or jackpot. No prize amounts or
+winner counts enter this number-only output; reporting remains a separate
+validation contract. Explicit raw timestamps and America/Chicago date zone are
+retained. Missing/changed response structure fails closed.
+
+This parser is not connected to publication yet. Literal schedule extraction,
+count-report validation, coupled atomic collector, app integration and native
+acceptance remain open. No feed, build, acceptance or deadline changed.
