@@ -297,3 +297,20 @@ ARI/DEN/DET/MIA/MIN/NYG/TEN/WAS. No team is inferred from list position,
 a number's appearance, or an external sports result. This reviewed mapping
 will support app presentation; no new feed shape or native build is claimed.
 43 South Dakota Python tests pass. App/UI and native acceptance remain open.
+
+
+## October 18 — app data layer checkpoint
+
+Added independent Dart validation and remote/cache/bundle loading for the public
+collection. The app validates reviewed rule/report structure, count integer
+semantics, all number domains, date-zone conversion, local weekdays, variants,
+source links, report-result binding and overlapping correction retention.
+Time-zone data initializes within this validator, independent of other states.
+The offline asset is registered. Five Flutter data-layer tests pass: complete
+collection, malformed values/contracts, changed overlapping counts, request
+failure retention and persistence failure with valid newer remote data.
+Three production Dart files analyze cleanly.
+
+This data layer is not yet wired to a visible South Dakota screen. Widget/native
+flows, full Scratch tier UI and team presentation remain open. No new native
+build, acceptance or deadline change.

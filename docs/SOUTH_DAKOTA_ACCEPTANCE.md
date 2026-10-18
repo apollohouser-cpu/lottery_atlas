@@ -77,3 +77,7 @@ October 18 live-feed checkpoint: push/scheduled deployment successful; live
 JSON exactly matches refreshed baseline ea4ac9c. Explicit 32-team identity
 contract validated; 43 SD Python tests pass. App presentation and native
 acceptance still open; no readiness or deadline change.
+
+October 18 app data-layer checkpoint: strict Dart validator/cache loader and
+offline asset added; five Flutter tests pass and three Dart files analyze cleanly.
+Visible draw/Scratch integration and native checks remain open.
