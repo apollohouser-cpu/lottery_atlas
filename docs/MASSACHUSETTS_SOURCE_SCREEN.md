@@ -113,3 +113,22 @@ is verified in Sent and already asks for dates and reasons; no duplicate
 clarification was sent. No extension consent was given. Record the requested
 duration literally without inventing a promised calendar date. No records or
 fees arrived, and no public data or app deadline changed.
+
+
+## October 16 responses — reviewed October 18
+
+Two separate agency response letters address the September 13 records request
+(received September 14) and September 21 definitions request (received September
+22). Both decline the requests, stating that they do not reasonably describe a
+requested record and that the Lottery does not provide documents for commercial
+purposes. This records the agency position, not a legal conclusion about its
+validity. The letters identify appeal/review routes; no appeal was initiated.
+
+Both two-page PDFs were downloaded privately and full text extracted. No dataset,
+fee estimate or future response date was supplied. The earlier extension inquiry
+is superseded by these substantive responses. Source field definitions remain
+unresolved; public-source limitations and inactive state status are unchanged.
+New threads were reviewed; no reply or duplicate clarification was sent.
+Private originals, hashes and extraction evidence are under
+work/agency_email_checks/massachusetts_20261018. No private identifiers or
+attachment links are published.
