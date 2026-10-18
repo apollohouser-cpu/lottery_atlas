@@ -194,3 +194,23 @@ five existing Scratch). Fixtures contain only source API data or minimal
 rule-tab page structures, not unrelated selected-winner content. No public
 feed/build/native acceptance change. Next: dated report validation and coupled
 atomic collection, followed by app/native integration.
+
+
+## October 18 — atomic private collection checkpoint
+
+The private collector now fetches six result APIs and seven rule pages, validates
+all 14 results/23 rule tabs before replacement, and preserves raw source dates.
+It rejects retrieval/date regression, missing groups and changed overlapping
+draw identities/results pending explicit correction review. No public schema or
+scheduled publication is enabled yet; dated count/prize reporting is still a
+separate unfinished contract.
+
+31 South Dakota Python tests pass. New transaction tests inject failure at each
+of the 13 source requests, a changed literal schedule, a changed completed draw,
+a regressed retrieval clock and an atomic-replace disk failure. Prior bytes and
+dates survive each failure; temporary files are cleaned; no-baseline failure
+creates no output. This is the private staging transaction, not a claim that
+combined Scratch/draw public refresh or native cache testing is closed.
+
+Fresh live private staging succeeded with retrieval 2026-10-18T12:21:52.734136+00:00;
+14 results and seven rule pages agree with the strict contracts.

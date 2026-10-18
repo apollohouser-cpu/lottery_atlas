@@ -55,3 +55,8 @@ October 18 schedule checkpoint: all seven detail-page rule contracts extracted
 with physical table rows and qualifications. 24 combined South Dakota Python
 tests pass. MFL stale source wording and MM base-versus-multiplier distinctions
 are explicitly documented; dated report/collector/app/native gates remain open.
+
+October 18 collector checkpoint: private all-source number/schedule staging is
+atomic with retention/correction checks; 31 South Dakota Python tests pass.
+Dated report validation, coupled Scratch publication and app/native gates remain
+open; no acceptance or deadline change.
