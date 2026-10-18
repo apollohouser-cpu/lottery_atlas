@@ -240,3 +240,21 @@ variant separation, count types, missing/changed tier identities, monetary
 placeholders, annuities and explicit MM gaps. Report parser is not yet connected
 to staging/publication or app UI. Next integrate reports into atomic collection
 and retain overlapping report corrections for review, then public/app/native.
+
+
+## October 18 — reports integrated into private atomic collection
+
+The all-source staging transaction now includes the dated reports alongside
+14 results and seven rule pages. Twelve reports contain source-labeled SD
+Winners; two MM records retain explicit missing-count limitations. Changes to
+an overlapping report's counts, amounts, source label or structure require
+review and preserve the retained collection. Missing retained report structure
+and changed retained schedules also fail closed rather than silently migrate.
+The earlier number-only private snapshot is preserved separately; the new
+report-bearing baseline is work/south_dakota_scope/reports-collection-stage.json.
+
+41 South Dakota Python tests pass, including new report-count correction and
+missing-retained-report cases. Fresh live all-source collection succeeded at
+2026-10-18T14:28:27.837853+00:00. No new public feed, scheduled
+configuration, native build or acceptance. Next prepare the public contract and
+coupled Scratch/draw refresh, then app integration and native validation.

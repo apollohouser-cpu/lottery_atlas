@@ -30,6 +30,8 @@ class CollectionTest(unittest.TestCase):
         data=collect(self.output,fetch=source,now=NOW)
         self.assertEqual(14,len(data['results']));self.assertEqual(7,len(data['schedules']))
         self.assertNotIn('schemaVersion',data)
+        self.assertEqual(14,len(data['reports']))
+        self.assertEqual(2,sum(not r['tiers'] for r in data['reports']))
 
     def test_every_request_failure_preserves_bytes_dates(self):
         collect(self.output,fetch=source,now=NOW);before=self.output.read_bytes()
@@ -71,6 +73,26 @@ class CollectionTest(unittest.TestCase):
             with self.assertRaises(OSError):collect(self.output,fetch=source,now=NOW)
         self.assertEqual(before,self.output.read_bytes())
         self.assertEqual([self.output],list(Path(self.tmp.name).iterdir()))
+
+    def test_changed_report_count_retains_bytes(self):
+        collect(self.output,fetch=source,now=NOW);before=self.output.read_bytes()
+        def changed(url):
+            raw=source(url)
+            if url==API+'Dakota%20Cash':
+                d=json.loads(raw);d['draws'][1]['prizeTiers'][1]['shareCount']+=1
+                return json.dumps(d).encode()
+            return raw
+        with self.assertRaisesRegex(ValueError,'report correction'):
+            collect(self.output,fetch=changed,now=NOW)
+        self.assertEqual(before,self.output.read_bytes())
+
+    def test_missing_retained_reports_fail_closed(self):
+        collect(self.output,fetch=source,now=NOW)
+        d=json.loads(self.output.read_text());d.pop('reports')
+        self.output.write_text(json.dumps(d));before=self.output.read_bytes()
+        with self.assertRaisesRegex(ValueError,'schema migration'):
+            collect(self.output,fetch=source,now=NOW)
+        self.assertEqual(before,self.output.read_bytes())
 
     def test_no_baseline_failure_does_not_create_output(self):
         with self.assertRaises(OSError):collect(self.output,fetch=lambda u: (_ for _ in ()).throw(OSError('outage')),now=NOW)

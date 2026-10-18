@@ -64,3 +64,7 @@ open; no acceptance or deadline change.
 October 18 report-parser checkpoint: 12 source-labeled SD Winners reports plus
 two explicit MM count gaps validated; 39 South Dakota Python tests pass.
 Report collector wiring, public refresh, app and native gates remain open.
+
+October 18 integrated private report checkpoint: fresh live 14-result/report
+collection passed; 41 tests pass, including report-correction byte retention.
+Public contract/coupled refresh, app and native gates remain open.

@@ -1,4 +1,4 @@
-"""Private SD staging collector. Reporting and public integration remain gated."""
+"""Private SD staging collector. Public integration remains gated."""
 from datetime import datetime, timezone
 import json
 import os
@@ -9,6 +9,7 @@ from urllib.request import Request, urlopen
 
 from tooling.south_dakota_draw_results import SPECS, parse_results
 from tooling.south_dakota_schedules import SLUGS, parse_schedules
+from tooling.south_dakota_draw_reports import parse_reports
 
 API = 'https://lottery.sd.gov/api/igt/games/v2/draw-games/draws?game-names='
 
@@ -30,6 +31,18 @@ def check_continuity(previous, current):
     new_time = datetime.fromisoformat(current['retrievedAt'])
     if old_time.tzinfo is None or old_time > new_time:
         raise ValueError('Retrieval timestamp regression')
+    for field in ('reports', 'schedules'):
+        if field not in previous:
+            raise ValueError('Retained collection requires explicit schema migration')
+    old_reports = {(r['game'], r['variant'], r['drawId']): r for r in previous['reports']}
+    if len(old_reports) != 14:
+        raise ValueError('Incomplete retained report collection')
+    for report in current['reports']:
+        key = (report['game'], report['variant'], report['drawId'])
+        if key in old_reports and report != old_reports[key]:
+            raise ValueError('Dated report correction requires review')
+    if previous['schedules'] != current['schedules']:
+        raise ValueError('Retained schedule correction requires review')
     groups = {(r['game'],r['variant']) for r in current['results']}
     if groups != {(r['game'],r['variant']) for r in previous['results']}:
         raise ValueError('Result group loss')
@@ -50,19 +63,20 @@ def collect(output, *, fetch=fetch_page, now=None):
         raise ValueError('Aware retrieval timestamp required')
     output = Path(output)
     previous = json.loads(output.read_text()) if output.exists() else None
-    results, schedules = [], []
+    results, schedules, reports = [], [], []
     for slug, spec in SPECS.items():
         payload = json.loads(fetch(API + quote(spec[0])))
         results.extend(parse_results(payload, slug, now=now))
+        reports.extend(parse_reports(payload, slug, now=now))
     for slug in SLUGS:
         url = f'https://lottery.sd.gov/game/{slug}/'
         sections = parse_schedules(fetch(url), slug)
         schedules.append(dict(slug=slug, sourceUrl=url, sections=sections))
-    if len(results) != 14 or len(schedules) != 7:
+    if len(results) != 14 or len(reports) != 14 or len(schedules) != 7:
         raise ValueError('Incomplete staging collection')
-    result = dict(stage='private-number-and-schedule-validation-only', state='South Dakota',
-                  retrievedAt=now.isoformat(), results=results, schedules=schedules,
-                  limitations=['Dated winner/prize reports not integrated; no zero-winner inference.',
+    result = dict(stage='private-results-reports-schedules-validation-only', state='South Dakota',
+                  retrievedAt=now.isoformat(), results=results, reports=reports, schedules=schedules,
+                  limitations=['Mega Millions count geography unresolved; counts excluded, not zero.',
                                'API timestamps establish source calendar dates, not exact physical drawing times.',
                                'Literal MFL source retains stale Lucky for Life wording.',
                                'Mega Millions static base schedule is not a final multiplier ticket payout.'])
