@@ -9,6 +9,7 @@ from tooling.nebraska_powerball_report import parse_powerball
 from tooling.nebraska_mega_millions_report import parse_mega_millions
 from tooling.nebraska_lotto_america_report import parse_lotto_america
 from tooling.nebraska_2by2_report import parse_2by2
+from tooling.nebraska_regular_schedules import parse_regular_schedule
 
 OPTION_PARSERS = {
     'Powerball': parse_powerball,
@@ -33,6 +34,8 @@ def assemble_collection(pages, *, today, previous=None):
             parser = OPTION_PARSERS.get(family)
             reports.append(parser(pages[family], today=today) if parser else
                            parse_regular_report(pages[family], family, today=today))
+            if parser is None:
+                reports[-1]['ruleBlocks'] = parse_regular_schedule(pages[family], family)
         except ValueError as error:
             raise ValueError(f'{family}: {error}') from error
     collection = dict(state='NE', results=results, familyReports=reports,

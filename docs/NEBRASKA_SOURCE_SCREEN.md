@@ -422,3 +422,16 @@ This is not public refresh integration or acceptance. Full regular-family
 schedules/qualifications, publisher wiring, app loading and native verification
 remain open. No public feed, build/emulator, Gmail or deadline change. The
 supported release decision remains due October 21 at 11:58 ET.
+
+
+### October 18 — Regular-family literal rules checkpoint
+
+The six regular-family description sections are now extracted into ordered
+heading/text/table blocks with strict reviewed snapshots. Fixtures and the
+October 18 fresh private captures agree. Pick 3's literal $126 source amount
+is preserved, not silently corrected. Pick 4 table separators and separate
+Straight/Box rows remain physical rows. Millionaire for Life retains both
+annuity/cash pairs, the minimum 20-year qualification and split/parimutuel
+limitations. These are undated rules, not dated winner reports. The private
+collection attaches them to family reports, not bounded historical results.
+Fifty Nebraska Python tests pass; public integration remains pending.

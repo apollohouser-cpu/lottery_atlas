@@ -267,3 +267,18 @@ This is not public refresh integration or acceptance. Full regular-family
 schedules/qualifications, publisher wiring, app loading and native verification
 remain open. No public feed, build/emulator, Gmail or deadline change. The
 supported release decision remains due October 21 at 11:58 ET.
+
+
+## October 18 — Regular-family rules and schedule validation
+
+Six regular families now retain literal ordered rules, qualifications and table
+cells as separate ruleBlocks on family reports. Pick 3 prose bet types, all
+Pick 4 physical schedule rows and Millionaire for Life annuity/cash options
+remain distinct; no winner counts are derived from these rules. Reviewed
+fixtures match the fresh October 18 private captures for all six families.
+Changes to qualifications, payouts, section identity or table shape fail closed
+before collection assembly completes. Fifty Nebraska Python tests pass.
+
+Public publisher wiring, app rendering/loading and native acceptance remain
+open. No public feed or emulator change; release deadline remains October 21
+at 11:58 ET.
