@@ -23,7 +23,7 @@ def fetch_page(url):
         return raw
 
 
-def collect(output, *, fetch=fetch_page, now=None):
+def collect(output, *, fetch=fetch_page, now=None, publish=False):
     """Validate all families before replacing staging bytes, preserving failures."""
     now = now or datetime.now(ZoneInfo('America/Chicago'))
     if now.tzinfo is None or now.utcoffset() is None:
@@ -36,7 +36,10 @@ def collect(output, *, fetch=fetch_page, now=None):
         pages[family] = fetch(url)
     result = assemble_collection(pages, today=now.astimezone(ZoneInfo('America/Chicago')).date(), previous=previous)
     result['retrievedAt'] = now.isoformat()
-    result['stage'] = 'private-validation-only'
+    if publish:
+        result['schemaVersion'] = 1
+    else:
+        result['stage'] = 'private-validation-only'
     payload = json.dumps(result, indent=2, ensure_ascii=False) + '\n'
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = None
@@ -52,3 +55,13 @@ def collect(output, *, fetch=fetch_page, now=None):
         if temporary is not None:
             temporary.unlink(missing_ok=True)
     return result
+
+
+if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', required=True)
+    parser.add_argument('--publish', action='store_true')
+    args = parser.parse_args()
+    result = collect(args.output, publish=args.publish)
+    print(f"Validated {len(result['results'])} results / {len(result['familyReports'])} family reports")

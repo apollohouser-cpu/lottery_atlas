@@ -656,7 +656,7 @@ class StateLotterySourceRegistry {
         StateLotteryResource(
           title: 'Top prizes remaining',
           subtitle: 'Official Nebraska Scratch-Off top-prize information.',
-          url: 'https://demo.nelottery.com/homeapp/scratch/prizesremaining/pdf',
+          url: 'https://nelottery.com/images/media/Scratch_Prizes_Remaining.pdf',
         ),
       ],
     ),

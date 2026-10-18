@@ -26,6 +26,18 @@ class CollectorTest(unittest.TestCase):
             self.assertEqual(len(result['results']), 22)
             self.assertEqual(result['stage'], 'private-validation-only')
 
+    def test_public_schema_retains_atomic_behavior(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'published.json'
+            result = collect(path, fetch=self.fetch, now=NOW, publish=True)
+            self.assertEqual(result['schemaVersion'], 1)
+            self.assertNotIn('stage', result)
+            self.assertTrue(all(r['ruleBlocks'] for r in result['familyReports']))
+            before = path.read_bytes()
+            with self.assertRaises(ValueError):
+                collect(path, fetch=lambda _: b'<html>invalid</html>', now=NOW, publish=True)
+            self.assertEqual(path.read_bytes(), before)
+
     def test_each_network_failure_preserves_bytes_and_date(self):
         with tempfile.TemporaryDirectory() as folder:
             path = Path(folder) / 'snapshot.json'

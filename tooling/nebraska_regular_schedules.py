@@ -10,7 +10,7 @@ from tooling.nebraska_draw_results import plain
 
 SPEC_PATH = Path(__file__).with_name('nebraska_regular_schedule_specs.json')
 FAMILIES = ('Pick 5', 'Millionaire for Life', 'Pick 3', 'Pick 4', 'MyDaY',
-            'Powerball Xs and Os')
+            'Powerball Xs and Os', 'Powerball', 'Mega Millions', 'Lotto America', '2by2')
 
 
 def extract_blocks(raw):

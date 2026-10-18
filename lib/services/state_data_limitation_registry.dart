@@ -5,6 +5,14 @@ class StateDataLimitationRegistry {
 
   static String? noticeFor(String stateName) {
     final reason = switch (stateName) {
+      'Nebraska' =>
+        'Two recent results per group across ten families; Powerball and Double Play remain separate. '
+        'Dated latest reports use Nebraska Winners as a source label, not unique people or complete claims. '
+        'Older results do not inherit newer counts. Never sum overlapping options. '
+        'Tuesday placeholders are excluded on other days. Scratch structure Winners are not remaining prizes; '
+        'top-prize inventory is the manually reviewed September 13, 2026 snapshot. Unknown counts stay unknown. '
+        'One conflicting Scratch identity is excluded. Retailer records remain unaudited; no public joins, '
+        'coordinates or heat layer. Full history, promotions and MVP are official routes, not integrated datasets.',
       'Kansas' =>
         'Results cover two recent drawings per group across ten current families. '
             'Powerball base/Double Play and Pick 3 Midday/Evening remain separate. '

@@ -1,3 +1,5 @@
+import '../../widgets/map/nebraska_scratch_catalog_sheet.dart';
+import '../../widgets/map/nebraska_draw_collection_sheet.dart';
 import '../../widgets/map/kansas_scratch_catalog_sheet.dart';
 import '../../widgets/map/kansas_draw_collection_sheet.dart';
 import '../../widgets/map/louisiana_scratch_catalog_sheet.dart';
@@ -55,6 +57,17 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Nebraska')
+            Card(child: ListTile(title: const Text('Nebraska Scratch inventory'),
+              subtitle: const Text('Literal structure rows • Dated top-prize inventory'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NebraskaScratchCatalogSheet()),
+            )),
+          if (source.stateName == 'Nebraska')
+            Card(child: ListTile(
+              title: const Text('Nebraska results and prize reports'),
+              subtitle: const Text('Ten families • Dated source Winners • Literal rules'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NebraskaDrawCollectionSheet()),
+            )),
           if (source.stateName == 'Kansas')
             Card(child: ListTile(
               title: const Text('Kansas Scratch inventory'),

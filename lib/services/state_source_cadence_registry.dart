@@ -52,9 +52,9 @@ class StateSourceCadenceRegistry {
         return 'Missouri retailer-level winner releases are published monthly. '
             'The latest available month may lag the current date.';
       case 'Nebraska':
-        return 'Nebraska Scratch-Off prizes remaining and unclaimed Lotto '
-            'prizes are published weekly. Recent local winner notices may '
-            'update more often; check each source date separately.';
+        return 'Nebraska results and catalog imports are attempted every six hours. '
+            'Report dates differ from retrieval time. The manually reviewed September 13 '
+            'Scratch inventory does not advance automatically; failed refreshes retain prior data.';
       default:
         return null;
     }

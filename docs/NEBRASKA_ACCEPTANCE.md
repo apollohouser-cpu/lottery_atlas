@@ -282,3 +282,24 @@ before collection assembly completes. Fifty Nebraska Python tests pass.
 Public publisher wiring, app rendering/loading and native acceptance remain
 open. No public feed or emulator change; release deadline remains October 21
 at 11:58 ET.
+
+
+## October 18 — App integration and initial native traversal
+
+Integrated separate bounded-result and dated-report screens, all ten families'
+reviewed literal rule sections, a strict remote/cache/bundle loader, and a
+Nebraska Scratch structure/inventory screen with search and price filters.
+Source counts, option applicability, result domains, report association, rules
+and reviewed inventory dates fail closed. Scheduled Nebraska refresh now includes
+draw data inside the existing state transaction; public output uses schema 1.
+Fresh import at 02:55:03 America/Chicago validates 22 results/ten family reports.
+
+51 Python tests and 28 Flutter tests pass. Six new production Dart files analyze
+cleanly. Ordinary iOS debug build/install/launch passed on the original iPhone
+17e after migration. All eleven groups/both retained selections were traversed
+in native UI. Older selections disclose missing dated reports. Xs & Os source
+URL and return selection/scroll passed. Scratch search and $1 price filter,
+physical repeated rows and September 13 inventory disclosure passed; landscape
+Scratch layout inspected. No acceptance yet: remaining family source returns,
+long schedule traversal, native adoption/request-failure retention, Android and
+retailer disposition remain open. No deadline change.

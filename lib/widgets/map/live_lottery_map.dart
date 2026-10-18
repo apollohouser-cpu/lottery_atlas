@@ -1,3 +1,4 @@
+import 'nebraska_scratch_catalog_sheet.dart';
 import 'kansas_scratch_catalog_sheet.dart';
 import 'dart:async';
 import 'dart:convert';
@@ -5092,6 +5093,8 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                             },
                           ),
                     );
+                  } else if (state == 'Nebraska') {
+                    showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NebraskaScratchCatalogSheet());
                   } else if (state == 'Kansas') {
                     showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const KansasScratchCatalogSheet());
                   } else if (state == 'Louisiana') {
@@ -5566,7 +5569,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                           _showStateScratchGameOnMap(null),
                                       onGameSelected:
                                           _showStateScratchGameOnMap,
-                                      onOpenCatalog: () => selectedState.name == 'Kansas'
+                                      onOpenCatalog: () => selectedState.name == 'Nebraska'
+                                          ? showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NebraskaScratchCatalogSheet())
+                                          : selectedState.name == 'Kansas'
                                           ? showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const KansasScratchCatalogSheet())
                                           : selectedState.name == 'Louisiana'
                                           ? showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const LouisianaScratchCatalogSheet())

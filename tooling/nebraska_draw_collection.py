@@ -1,6 +1,6 @@
 """Assemble validated Nebraska captures without publishing partial collections.
 
-Schedules/qualifications for regular families remain a separate release gate.
+Literal rules remain separate from dated prize reports.
 This module deliberately keeps dated reports separate from bounded number rows.
 """
 from tooling.nebraska_draw_results import SPECS, parse_results
@@ -34,12 +34,11 @@ def assemble_collection(pages, *, today, previous=None):
             parser = OPTION_PARSERS.get(family)
             reports.append(parser(pages[family], today=today) if parser else
                            parse_regular_report(pages[family], family, today=today))
-            if parser is None:
-                reports[-1]['ruleBlocks'] = parse_regular_schedule(pages[family], family)
+            reports[-1]['ruleBlocks'] = parse_regular_schedule(pages[family], family)
         except ValueError as error:
             raise ValueError(f'{family}: {error}') from error
     collection = dict(state='NE', results=results, familyReports=reports,
-                      limitation='Bounded number results and separately dated latest reports. Older number rows do not inherit winner counts. Full schedules and app integration remain unaccepted.')
+                      limitation='Bounded number results and separately dated latest reports. Older number rows do not inherit winner counts. Source Winners are not unique people or complete claims. No retailer joins or coordinates.')
     if previous is not None:
         old_results = _newest_results(previous)
         new_results = _newest_results(collection)
