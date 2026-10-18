@@ -132,3 +132,18 @@ New threads were reviewed; no reply or duplicate clarification was sent.
 Private originals, hashes and extraction evidence are under
 work/agency_email_checks/massachusetts_20261018. No private identifiers or
 attachment links are published.
+
+## October 18 — User-authorized administrative appeal sent
+
+At the user's explicit direction, sent an appeal to the Supervisor of Records
+and copied the Lottery records custodian and responding legal office. Gmail Sent
+and all three attachments were verified: complete nine-message correspondence
+transcript with relevant headers, plus both original denial PDFs. The appeal
+requests review of reasonable-description and commercial-use grounds, focuses
+on existing records/documentation, and preserves the disclosed potential
+commercial use. No nonprofit purpose or human attestation was invented.
+
+No fees, deposits, paid processing or custom compilation are authorized. Await
+Supervisor response; no appeal number or promised response date yet. Do not
+resend. Private send evidence and packet remain under the existing private
+Massachusetts correspondence directory. No public data or acceptance change.
