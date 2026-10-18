@@ -422,3 +422,29 @@ without overlap. This is representative draw layout evidence; broader Scratch
 landscape/enlarged-text and production-loader native failure/normal restoration
 remain open. Current simulator is landscape on Dakota Cash October 14 summary.
 No acceptance, new build or deadline change.
+
+
+## October 18 — native request-failure retention and restoration
+
+Scratch landscape screenshot showed readable side-by-side search/price controls,
+selection and inventory limitations. A private temporary entrypoint then invoked
+both unchanged production loaders with only fetchRemote throwing a controlled
+SocketException, at an explicit 2x Flutter text scale. The installed native app
+rendered cached Scratch (35 games, literal tiers, retrieval 20:55:35.262Z) and
+cached Powerball October 17 results. Both persisted cache strings remained
+byte-for-byte identical to their pre-failure snapshots; private hashes are in
+work/south_dakota_scope/native-failure-retention.json. This is request-failure
+injection, not proof of full device network disconnection.
+
+Scratch 2x portrait controls remained reachable and tiers scrolled to the retained
+retrieval date. The draw 2x title screenshot appeared clipped at its first word;
+keep a bounded enlarged-title visual check open before final acceptance rather
+than inferring a full native accessibility pass from widget tests.
+
+The temporary entrypoint was restored byte-for-byte in a finally block. Ordinary
+main.dart rebuilt, installed and cold-launched successfully; normal map navigation
+is visible, with no probe tracked. Private probe/restoration build logs remain in
+work/south_dakota_scope. Android stopped; iOS upright on ordinary home map.
+Next resolve the enlarged draw-heading observation and verify ordinary South
+Dakota loading again, then consolidated tests/live verification/release decision.
+No acceptance or deadline change.
