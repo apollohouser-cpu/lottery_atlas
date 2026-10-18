@@ -759,3 +759,14 @@ result-validator tests pass using relocated Dart/package caches. Initial test
 command named a nonexistent file; corrected to the existing validator suite.
 .gitignore now ignores .dart_tool as a symlink as well as a directory. Flutter
 SDK and Apple simulator storage remain internal. Keep PNY mounted during work.
+
+
+### October 18 — Additional build-cache relocation
+
+After the Mac update, Flutter/ADB and existing PNY links work. Relocated
+~/Library/Developer/Xcode/DerivedData (524 MiB) to PNY
+LotteryAtlas/tooling/xcode-derived-data with original-path symlink. Full rsync
+checksum comparison and linked read/write passed before removing the original.
+Future default Xcode derived data now uses PNY. No Xcode build was active; no
+new iOS build validation is claimed. Flutter SDK (4 GiB) remains internal and
+in use by VS Code; CoreSimulator device data (7.1 GiB) remains internal.
