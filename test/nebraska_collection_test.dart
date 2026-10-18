@@ -22,6 +22,17 @@ void main() {
       throwsFormatException,
     );
   });
+  test('Scratch malformed odds and top prize fail closed', () {
+    for (final field in ['publishedOdds', 'prizeAmount']) {
+      final d = jsonDecode(scratchRaw);
+      d['catalogs'][0]['games'][0]['prizeStructure'][0][field] =
+          field == 'publishedOdds' ? 'unknown' : 99999999;
+      expect(
+        () => NebraskaScratchCatalogLoader.decode(jsonEncode(d)),
+        throwsFormatException,
+      );
+    }
+  });
   testWidgets('Scratch filters at enlarged text and detail rows', (
     tester,
   ) async {

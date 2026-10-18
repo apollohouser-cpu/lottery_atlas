@@ -77,7 +77,8 @@ class NebraskaScratchCatalogLoader {
       for (final t in rows) {
         need(
           text(t['prizeLabel']) &&
-              text(t['publishedOdds']) &&
+              t['publishedOdds'] is String &&
+              RegExp(r'^[\d,]+\.\d{2}$').hasMatch(t['publishedOdds']) &&
               count(t['publishedStructureWinners']),
         );
         need(!t.containsKey('remaining') && !t.containsKey('claimed'));
@@ -95,6 +96,14 @@ class NebraskaScratchCatalogLoader {
           );
         }
       }
+      final cash = rows
+          .where((t) => t.containsKey('prizeAmount'))
+          .map((t) => t['prizeAmount'] as int)
+          .toList();
+      need(
+        cash.isNotEmpty &&
+            cash.reduce((a, b) => a > b ? a : b) == g['topPrize'],
+      );
       final matched = (reviewed['games'] as List)
           .where((r) => r['id'] == g['id'])
           .toList();
