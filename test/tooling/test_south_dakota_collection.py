@@ -33,6 +33,14 @@ class CollectionTest(unittest.TestCase):
         self.assertEqual(14,len(data['reports']))
         self.assertEqual(2,sum(not r['tiers'] for r in data['reports']))
 
+    def test_public_contract_and_private_migration_is_explicit(self):
+        data=collect(self.output,fetch=source,now=NOW,publish=True)
+        self.assertEqual(1,data['schemaVersion']);self.assertNotIn('stage',data)
+        before=self.output.read_bytes()
+        with self.assertRaises(ValueError):collect(self.output,fetch=source,now=NOW)
+        self.assertEqual(before,self.output.read_bytes())
+        collect(self.output,fetch=source,now=NOW,publish=True)
+
     def test_every_request_failure_preserves_bytes_dates(self):
         collect(self.output,fetch=source,now=NOW);before=self.output.read_bytes()
         for fail in range(13):

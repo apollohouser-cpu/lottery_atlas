@@ -258,3 +258,24 @@ missing-retained-report cases. Fresh live all-source collection succeeded at
 2026-10-18T14:28:27.837853+00:00. No new public feed, scheduled
 configuration, native build or acceptance. Next prepare the public contract and
 coupled Scratch/draw refresh, then app integration and native validation.
+
+
+## October 18 — public contract and coupled refresh configured
+
+Fresh source collection produced schemaVersion 1 for the bounded 14 results,
+12 source-labeled reports plus two explicit MM gaps, and seven rule pages.
+Baseline files: data/south_dakota_draw_collection.generated.json and
+docs/south_dakota_draw_collection.json. Staging/public mode changes require an
+explicit baseline; no silent schema conversion of retained files.
+
+The existing South Dakota refresh job now owns both Scratch and draw outputs.
+Failure in either importer restores both prior byte streams and dates. The
+publish workflow stages the draw feed alongside the existing combined Scratch
+feed. 42 South Dakota tests and 13 shared transaction tests pass, including
+South Dakota failure at each importer with both baselines restored. Warnings
+in these tests are intentional injected failures.
+
+App integration, source qualifications in UI, team-name presentation and native
+acceptance remain open. This feed contract is not state acceptance. Deployment
+and independent live-feed verification remain to confirm after push. No native
+build or deadline change.

@@ -1,4 +1,4 @@
-"""Private SD staging collector. Public integration remains gated."""
+"""Atomic South Dakota results/reports/rules collector; app acceptance is separate."""
 from datetime import datetime, timezone
 import json
 import os
@@ -25,7 +25,7 @@ def fetch_page(url):
 def check_continuity(previous, current):
     if previous is None:
         return
-    if previous.get('stage') != current['stage'] or previous.get('state') != 'South Dakota':
+    if previous.get('stage') != current.get('stage') or previous.get('schemaVersion') != current.get('schemaVersion') or previous.get('state') != 'South Dakota':
         raise ValueError('Unrecognized retained collection')
     old_time = datetime.fromisoformat(previous['retrievedAt'])
     new_time = datetime.fromisoformat(current['retrievedAt'])
@@ -57,7 +57,7 @@ def check_continuity(previous, current):
                 raise ValueError('Published draw correction requires review')
 
 
-def collect(output, *, fetch=fetch_page, now=None):
+def collect(output, *, fetch=fetch_page, now=None, publish=False):
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None or now.utcoffset() is None:
         raise ValueError('Aware retrieval timestamp required')
@@ -80,6 +80,9 @@ def collect(output, *, fetch=fetch_page, now=None):
                                'API timestamps establish source calendar dates, not exact physical drawing times.',
                                'Literal MFL source retains stale Lucky for Life wording.',
                                'Mega Millions static base schedule is not a final multiplier ticket payout.'])
+    if publish:
+        result.pop('stage')
+        result['schemaVersion'] = 1
     check_continuity(previous, result)
     output.parent.mkdir(parents=True, exist_ok=True)
     temporary = None
@@ -101,6 +104,7 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', required=True)
+    parser.add_argument('--publish', action='store_true')
     args = parser.parse_args()
-    result = collect(args.output)
-    print(f"Privately staged {len(result['results'])} results / {len(result['schedules'])} rule pages")
+    result = collect(args.output, publish=args.publish)
+    print(f"Validated {len(result['results'])} results / {len(result['schedules'])} rule pages")
