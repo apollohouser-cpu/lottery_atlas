@@ -374,3 +374,30 @@ text, Scratch footer/detail return, draw newer-remote adoption and controlled
 production-loader request-failure retention. No acceptance or deadline change.
 Ordinary iOS remains running on filtered Moola inventory; Android is stopped.
 Private build evidence: work/south_dakota_scope/ios-build.log.
+
+
+## October 18 — native source returns and newer draw adoption
+
+Ordinary iOS 3bcc8d8: Moola's official detail button opened Safari at
+https://lottery.sd.gov/game/moola/. Returning through the OS Lottery Atlas link
+retained the $1 filter (4/35), Moola selection and lower-tier/footer scroll.
+The Scratch footer/list buttons are reachable; element-targeted scrolling
+resolved the earlier unsuccessful gestures. Website content rendering is not
+claimed from URL inspection alone.
+
+All seven draw groups' header source buttons opened their exact official paths:
+powerball-power-play, powerball-double-play, mega-millions, dakota-cash,
+millionaire-for-life, lotto-america and xs-and-os. Safari URL edit fields were
+inspected individually; OS return retained each selected October result.
+This closes family game-source navigation, not dated-search focus or full
+long-rule traversal. Xs & Os was traversed through all five literal match/prize/
+odds rows, qualifications and claim sections to the retrieval footer in native
+accessibility output; portrait screenshot confirmed readable claim prose.
+
+Newer real draw feed adoption observed in native UI and persisted preferences:
+retrievedAt 2026-10-18T20:47:10.319106+00:00 versus bundled 15:55 baseline.
+Private cache evidence saved under work/south_dakota_scope/native-cache-draw.json
+and native-cache-scratch.json. No synthetic data or altered production entrypoint.
+Remaining: other six groups' long schedules, dated-search route, layout variants,
+and controlled production-loader failure retention/normal restoration.
+No acceptance or deadline change; ordinary iOS remains at Xs & Os claim section.
