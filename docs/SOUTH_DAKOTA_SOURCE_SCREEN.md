@@ -346,3 +346,31 @@ cleanly. Generated Scratch baseline is registered as an offline asset. Native
 Scratch/detail/source returns and draw traversal, newer remote adoption and
 production-loader native retention remain open. No native build, acceptance,
 or deadline change; South Dakota remains due October 23 at 04:24 ET.
+
+
+## October 18 — ordinary iOS build and initial native traversal
+
+Ordinary main.dart simulator debug build at 3bcc8d8 passed (33.9-second Xcode
+build), installed and cold-launched on the original iPhone 17e/iOS 26.5 UUID.
+Android was shut down before iOS boot; PNY links and permissions unchanged.
+Navigated normal map search to South Dakota and Sources and coverage.
+
+Native draw dropdown selected all fourteen entries across seven groups and both
+dates. Local dates/numbers changed with each selection; Double Play omitted the
+base multiplier, both MM selections showed explicit excluded-count wording,
+and both Xs & Os selections showed the reviewed team abbreviations. Portrait
+Powerball screenshot showed readable separate source-count fields. This is
+summary-selection evidence only, not complete rule traversal/source-return.
+
+Native Scratch loaded 35 games, rendered original/paid/remaining fields and
+unpublished verification time. Name substring search selected Moola (1/35),
+reset restored 35/35, and the $1 filter selected four games. Moola tier scrolling
+reached tier 9 and the source-date qualification in accessibility output; the
+footer source buttons/return still need traversal. Some native scroll gestures
+left the viewport unchanged; do not count those attempts as completed checks.
+
+Remaining: complete long-rule and source-return flows, compact/wide/enlarged
+text, Scratch footer/detail return, draw newer-remote adoption and controlled
+production-loader request-failure retention. No acceptance or deadline change.
+Ordinary iOS remains running on filtered Moola inventory; Android is stopped.
+Private build evidence: work/south_dakota_scope/ios-build.log.
