@@ -820,3 +820,17 @@ Private evidence: work/simulator-copy-verification-20261018.txt (final content
 comparison with two subsequently corrected mode differences) and
 work/simulator-devices-pny-verified-20261018.json. Simulator runtimes/Xcode remain
 internal; this moves device data only. Keep PNY mounted for simulator use.
+
+
+### October 18 — Nebraska accepted; ordinary builds and migration verified
+
+Nebraska release aabff9f accepted early; 13 states accepted/32 remain. Ordinary
+iOS build, native flows, newer feed adoption and controlled production-loader
+request-failure retention passed. Probe restored to ordinary main.dart and cold
+launch into Nebraska passed. Ordinary Android debug APK built/installed and
+cold-launched on API36 ARM64; process running with no filtered runtime errors.
+Current native control cannot attach the standalone Android emulator; Android
+visual flows remain a beta gate, not inferred from successful launch. iOS is
+shut down, Android alone running. SDK/build/cache/device data use existing PNY
+links; no further migration or permission changes. Signing/accounts, broader
+persistence and distribution remain open. October20–27 is provisional beta only.

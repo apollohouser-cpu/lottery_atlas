@@ -1,9 +1,10 @@
-# Nebraska supported-coverage acceptance — active
+# Nebraska supported-coverage acceptance — accepted October 18, 2026
 
 Activated October 16, 2026 at **11:58 ET** after Kansas acceptance, as the sole
 active state. Scope/gap matrix due **October 17 at 11:58 ET**; supported release
 due **October 21 at 11:58 ET** (fresh 120 hours for substantial draw/app
-integration). No extension used. Nebraska is not accepted.
+integration). No extension used. Supported coverage accepted October 18 at 04:20 ET on
+release aabff9f, more than three days ahead of the original deadline.
 
 ## Selection and opening evidence
 
@@ -32,12 +33,12 @@ joins are authorized by possession of that workbook. Audit before any public use
 ## Gates
 
 - [x] Close products/options/sessions/history and supported/gap matrix (October 16, 14:00 ET).
-- [ ] Validate usable bounded draw data and explicit units/limitations.
-- [ ] Audit current Scratch tiers, report dates and identity exclusions.
-- [ ] Audit retailer routes/private delivery; approve only supported public fields.
-- [ ] Integrate atomic refresh/app loading and explicit source disclosures.
-- [ ] Native compact/wide, source returns, adoption and failure retention.
-- [ ] Consolidated validation and supported-release decision.
+- [x] Validate usable bounded draw data and explicit units/limitations.
+- [x] Audit current Scratch tiers, report dates and identity exclusions.
+- [x] Resolve retailer routes/private delivery scope; retain unaudited records privately and publish no fields.
+- [x] Integrate atomic refresh/app loading and explicit source disclosures.
+- [x] Native compact/wide, source returns, adoption and failure retention.
+- [x] Consolidated validation and supported-release decision.
 
 No public feed, app build or emulator change in activation. Kansas acceptance
 stays closed; mobile platform preparation is independent of state activation.
@@ -317,3 +318,54 @@ NE_NATIVE_RETENTION_PASS, 22 results/24 Scratch games. Evidence is private
 work/nebraska_scope/retention-log.txt. This proves request-failure retention,
 not OS-offline or tile behavior. Ordinary main.dart restoration is in progress.
 Source shortcut and explicit history/closing/unclaimed/MVP routes added.
+
+
+## October 18, 04:20 ET — Supported coverage accepted early
+
+Release **aabff9f** is pushed. All supported gates are closed with explicit
+limits; no extension used. 22 bounded results / ten families / eleven groups,
+ten separately dated latest family reports, all reviewed literal rules and
+schedules, and 24 Scratch games / 594 physical structure rows are integrated.
+22 top-prize counts retain the manually reviewed September 13 date; two unknown
+counts remain unknown and one conflicting identity remains excluded. Fresh
+October 18 Scratch audit is identical to retained catalog content.
+
+Native iOS evidence on the original iPhone 17e: all eleven groups and both
+selections traversed; older rows explicitly omit newer winner reports; all ten
+family source URLs verified in Safari and selection/scroll returns preserved.
+Full Pick 3/4 schedules, MFL annuity/cash pairs/minimum term, 2by2 Tuesday rules,
+Mega Millions range/frequency schedules, Lotto America literal X5 expressions,
+Powerball/Powerplay and separate Double Play reports reached their footers.
+Compact/wide layouts inspected. Scratch search/price filters and selected-game
+source/detail return preserved filters, selection and scroll. Enlarged text at
+2x passed widget tests for all 22 selections and Scratch.
+
+The native production-loader probe adopted retrieval 03:04:58 America/Chicago
+over the installed 02:55:03 bundle, then forced exactly two request failures.
+Both returned objects and persisted JSON strings matched pre-failure caches.
+Ordinary main.dart was rebuilt, installed and cold-launched successfully into
+Nebraska after the time-zone initialization fix. No probe is tracked or left
+installed. This is request-failure retention, not a claim of OS-offline map tiles.
+Private evidence: work/nebraska_scope/adoption-log.txt, retention-log.txt,
+ordinary-restoration-build.log and app-tests-final.log.
+
+Consolidated validation: **51 Nebraska Python + 12 transaction tests; 29 Flutter
+tests PASS**. Nine relevant production Dart files clean, with final Scratch
+validator analysis also clean. Ordinary Android debug build/install/cold launch
+passed on LotteryAtlas_API36; app process remains running and filtered
+AndroidRuntime/flutter error logs are empty. Android visual automation was not
+available through the current native-control tool, so broader Android visual
+beta acceptance is not claimed. iOS is shut down; only Android is running.
+
+Public draw feed and newer native adoption verified after successful deployment.
+The scheduled coupled Scratch/draw transaction preserves prior bytes/dates on
+failure. Retailer scope is explicitly excluded: the private delivery remains
+unaudited, no fields/coordinates/joins were published, and the broken legacy
+route is not offered as a finder. This bounded disposition satisfies the closed
+scope; a directory is a later enhancement, not a missing supported feature.
+History, closing/unclaimed and MVP routes are explicit; no full claims history,
+promotion entry or purchase flow. No fees, agency messages or attestations.
+
+Thirteen states accepted, 32 remain. No next state activated in this acceptance
+checkpoint. Broader mobile persistence, Android visual flows and distribution
+credentials remain platform gates.

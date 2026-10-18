@@ -435,3 +435,17 @@ annuity/cash pairs, the minimum 20-year qualification and split/parimutuel
 limitations. These are undated rules, not dated winner reports. The private
 collection attaches them to family reports, not bounded historical results.
 Fifty Nebraska Python tests pass; public integration remains pending.
+
+
+## October 18 — Supported release aabff9f accepted
+
+See NEBRASKA_ACCEPTANCE.md for consolidated live/native evidence. Results,
+separately dated latest Nebraska source Winners and literal rules/schedules now
+load through validated remote/cache/bundle paths. All older number rows retain
+explicit missing-report semantics. Scratch has 24 games/594 physical rows,
+22 reviewed September 13 top-prize counts, two unknown counts and one excluded
+identity; fresh October 18 comparison is unchanged. No inventory date advanced.
+Private retailer delivery remains excluded from public data pending audit; no
+coordinates or joins and no advertised working legacy finder. Source-only
+history/closing/unclaimed/MVP routes are in the app. Full history and directory
+work are enhancement gaps, not hidden coverage claims.

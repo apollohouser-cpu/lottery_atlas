@@ -7,7 +7,7 @@ state source-screen documents retain the detailed evidence and request history.
 
 The user authorizes proceeding toward iOS and Android beta testing with currently
 validated coverage. Full public release requires a usable, accepted supported
-experience in every U.S. state that operates a state lottery. Twelve accepted
+experience in every U.S. state that operates a state lottery. Thirteen accepted
 states are sufficient to start beta preparation, not to declare national readiness.
 A ten-year timeline and deeper historical data remain future updates.
 
@@ -45,7 +45,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Nebraska | October 21, 2026, 11:58 AM ET | Sole active from October 16, 11:58 AM; scope due October 17, 11:58 AM; substantial draw/app integration. |
+| Nebraska | Accepted October 18, 2026, 04:20 AM ET (due October 21, 11:58 AM) | Release aabff9f; bounded results/latest reports, literal Scratch and native retention accepted with explicit gaps. |
 | Kansas | Accepted October 16, 2026, 11:00 AM ET (due October 19, 7:40 PM) | Bounded results, literal schedules/Scratch and native retention accepted; explicit gaps retained. |
 | Louisiana | Accepted October 14, 2026, 6:44 PM ET (due October 17, 11:55 PM) | Fourteen reports, literal Scratch, native flows and retention accepted; explicit gaps retained. |
 | North Carolina | Accepted October 12, 2026, 11:00 PM ET (due October 13, 10:38 AM) | Bounded reports, literal Scratch and audited mapped archive accepted; explicit gaps retained. |
@@ -107,14 +107,16 @@ three-output refresh and newer native remote adoption are verified. Missouri clo
 See MISSOURI_ACCEPTANCE.md for its 28 reports, 73 listed Scratch games and dated
 two-city directory limits. North Carolina closed October 12 at 23:00 ET on release 7de7bb8; see
 NORTH_CAROLINA_ACCEPTANCE.md. Louisiana closed October 14 at 18:44 ET on release
-d68a843; see LOUISIANA_ACCEPTANCE.md. Twelve states are ready for supported
-testing; 33 remain. Kansas accepted October 16 at 11:00 ET on release 5d22fca,
+d68a843; see LOUISIANA_ACCEPTANCE.md. Thirteen states are ready for supported
+testing; 32 remain. Kansas accepted October 16 at 11:00 ET on release 5d22fca,
 ahead of October 19 at 19:40 ET with no extension. See KANSAS_ACCEPTANCE.md.
-Nebraska is sole active from October 16 at 11:58 ET, with scope due October 17
-at 11:58 ET and supported release due October 21 at 11:58 ET. See
-NEBRASKA_ACCEPTANCE.md. Mobile beta preparation remains open.
-NATIONAL_RELEASE_FORECAST.md retains the October 6 forecast baseline; four of
-five additional acceptances before its next routine reforecast are complete.
+Nebraska accepted October 18 at 04:20 ET on aabff9f, ahead of October 21 at
+11:58 ET with no extension. See NEBRASKA_ACCEPTANCE.md. No state is active in
+this acceptance checkpoint; select the next state with fresh activation/scope/
+release timestamps, never reuse Nebraska's deadline. Mobile beta work remains
+open. Five additional acceptances since October 6 are complete; the October 18
+reforecast is December 21–January 22 for national supported engineering, with
+explicit assumptions in NATIONAL_RELEASE_FORECAST.md.
 Continue authorized private records audits and no-fee correspondence separately.
 The NE/TX and SC scheduled recovery checkpoints are closed. No routine accepted-
 state UI rechecks or fees are authorized.

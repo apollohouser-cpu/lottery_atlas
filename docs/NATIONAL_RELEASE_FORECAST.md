@@ -1,16 +1,18 @@
-# National coverage readiness and forecast — October 6 baseline, October 16 status
+# National coverage readiness and forecast — October 18 reforecast
 
 Full public release requires usable accepted coverage in every lottery state;
 limited-state iOS/Android beta can proceed earlier. NASPL currently identifies
 [45 U.S. lottery states](https://www.naspl.org/faq). The repository has a source
-screen for each of those 45. Twelve are accepted, leaving 33 (Kansas accepted October 16). This state-based
+screen for each of those 45. Thirteen are accepted, leaving 32 (Nebraska accepted October 18). This state-based
 ledger does not silently count DC or territories as states or as accepted coverage.
 
 Missouri closed on release 337848b at October 7, 17:22 ET. The forecast below
-remains the October 6 baseline, with four of five additional acceptances completed.
+was the October 6 baseline; five additional acceptances are now complete.
 North Carolina closed October 12 at 23:00 ET on release 7de7bb8.
-The current remaining split is 17 scheduled catalog states and 16 states without
-scheduled state jobs. This count update is not a new calendar forecast.
+The current remaining split is 16 scheduled catalog states and 16 states without
+scheduled state jobs. The October 18 reforecast below uses the completed five-state checkpoint.
+
+Current national supported-engineering planning range: **December 21, 2026–January 22, 2027**, assuming 2–3 elapsed days for each of 32 remaining states. This is not a public-launch commitment; mobile and distribution gates remain separate.
 
 ## Evidence and forecast limits
 
@@ -25,7 +27,7 @@ Agency records and past audits can reduce effort but are not approved public dat
 
 Recent October 1–6 completion pace was roughly one accepted state per day, but
 those states had substantial prior work. Extrapolating that pace to unaudited
-states would understate risk. The working planning range is **2–3 elapsed days
+states would understate risk. The October 6 baseline used **2–3 elapsed days
 per remaining state**, or **74–111 days from October 6: December 19, 2026 through
 January 25, 2027 for national supported-coverage engineering**. This is an explicit
 planning assumption, not a statistically calibrated estimate or public launch date.
@@ -69,7 +71,6 @@ deadlines. Missouri was activated by the original audit and is now accepted. Nor
 | [Minnesota](MINNESOTA_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 38 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Mississippi](MISSISSIPPI_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [Montana](MONTANA_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
-| [Nebraska](NEBRASKA_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 24 listed games; unchanged | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [New Hampshire](NEW_HAMPSHIRE_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 58 listed games; retained_after_failure | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [New Jersey](NEW_JERSEY_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [New Mexico](NEW_MEXICO_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 58 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
@@ -91,6 +92,27 @@ Louisiana was accepted October 14 at 18:44 ET on release d68a843, ahead of
 October 17 at 23:55 ET. See LOUISIANA_ACCEPTANCE.md. Kansas accepted October 16 at 11:00 ET on release 5d22fca, ahead of
 October 19 at 19:40 ET with no extension.
 See KANSAS_ACCEPTANCE.md.
-The remaining count is 33; the October 6 calendar forecast remains unchanged
-pending five additional acceptances or a material blocker. Mobile beta work
-continues independently.
+Nebraska is now accepted; 32 remain. The October 18 reforecast below supersedes
+the October 6 calendar range. Mobile beta work continues independently.
+
+
+## October 18 routine reforecast after five further acceptances
+
+Nebraska accepted 04:20 ET on aabff9f. Missouri, North Carolina, Louisiana,
+Kansas and Nebraska are the five completions since the October 6 baseline.
+That is roughly 2.3 elapsed days per acceptance, including the user-requested
+Mac update/storage work; it is not a guaranteed future rate.
+
+Retain the explicit 2–3 elapsed days per remaining state planning assumption.
+32 states × 2–3 days = 64–96 days from October 18: **December 21, 2026 through
+January 22, 2027** for national supported-coverage engineering. This replaces
+the October 6 range as the current planning estimate, not a public launch date.
+A slower scenario of 16 scheduled-catalog states ×3 days and 16 others ×5 days
+is 128 days, **February 23, 2027**. Individual activation deadlines remain fresh
+72/120-hour windows according to scope; finish early when gates pass.
+
+No new state-by-state source audit is implied by this arithmetic. Source changes,
+private-record audits and mobile capacity can alter the estimate. Reforecast
+after five more acceptances (18 accepted) or a material blocker. Beta October
+20–27 remains provisional; signing/accounts, broader mobile flows and store
+approval are separate. Ten-year history is later.
