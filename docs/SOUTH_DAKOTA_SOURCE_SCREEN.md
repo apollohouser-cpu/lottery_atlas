@@ -214,3 +214,29 @@ combined Scratch/draw public refresh or native cache testing is closed.
 
 Fresh live private staging succeeded with retrieval 2026-10-18T12:21:52.734136+00:00;
 14 results and seven rule pages agree with the strict contracts.
+
+
+## October 18 — dated report parser checkpoint
+
+Separate strict report parsing now binds every report to its validated completed
+draw ID/date/variant. Twelve reports retain the official generic-table label
+SD Winners; the two Mega Millions selections instead carry an explicit missing
+count-geography limitation. MM counts are excluded, not converted to zero.
+The generic source binding was established in captured official winning-number
+JS; these are source-labeled counts, not unique people or paid claims.
+
+Powerball's repeated tier IDs are validated in their complete ordered base/DP
+contract. Double Play retains its own nine rows and no multiplier count; nonzero
+DP multiplier data fails closed. Power Play and All Star Bonus source counts
+remain separate from base counts and are not assumed to be subsets or summed.
+Dollar shareAmount values are not divided by 100. Zero prize amounts remain
+unknown/placeholder values with schedule guidance; no zero-dollar prize is
+claimed. MFL top rows use the official renderer's annuity labels, and Xs & Os
+amounts are omitted as in the official result table, with literal schedules
+separate. No derived multiplier payouts or unsupported MM totals.
+
+39 South Dakota Python tests pass, including eight dated-report tests for
+variant separation, count types, missing/changed tier identities, monetary
+placeholders, annuities and explicit MM gaps. Report parser is not yet connected
+to staging/publication or app UI. Next integrate reports into atomic collection
+and retain overlapping report corrections for review, then public/app/native.

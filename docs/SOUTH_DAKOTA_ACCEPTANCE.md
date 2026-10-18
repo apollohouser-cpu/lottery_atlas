@@ -60,3 +60,7 @@ October 18 collector checkpoint: private all-source number/schedule staging is
 atomic with retention/correction checks; 31 South Dakota Python tests pass.
 Dated report validation, coupled Scratch publication and app/native gates remain
 open; no acceptance or deadline change.
+
+October 18 report-parser checkpoint: 12 source-labeled SD Winners reports plus
+two explicit MM count gaps validated; 39 South Dakota Python tests pass.
+Report collector wiring, public refresh, app and native gates remain open.
