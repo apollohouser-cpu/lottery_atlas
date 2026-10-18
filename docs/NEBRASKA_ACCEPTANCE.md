@@ -239,3 +239,15 @@ exist against retained captures; this is not a fresh assembled collector or
 published/app coverage. Next assemble required schedules/qualifications and
 all-family collection, atomic refresh, app integration and native checks.
 No public feed/build/UI, Gmail, acceptance or deadline change.
+
+
+## October 18 — Post-update resumption and collection assembly
+
+PNY SDK/cache paths verified after the user-requested Mac update pause. Flutter
+and ADB work through existing links. Added all-family collection assembly with
+22 bounded results and ten separate family reports. Missing/corrupt families,
+regressing result/report dates and lost prior report variants fail closed; input
+baselines remain unchanged. All 42 Nebraska tests pass, including Scratch and
+four new collection tests. No public publication or native acceptance claimed.
+Full regular-family schedules/qualifications, atomic publication and app/native
+checks remain open. October 21 at 11:58 ET deadline remains unchanged.
