@@ -72,3 +72,8 @@ Public contract/coupled refresh, app and native gates remain open.
 October 18 public contract checkpoint: schemaVersion 1 baseline and coupled
 Scratch/draw refresh configured; 42 SD + 13 transaction tests pass. Deployment
 verification, app integration and native acceptance remain open.
+
+October 18 live-feed checkpoint: push/scheduled deployment successful; live
+JSON exactly matches refreshed baseline ea4ac9c. Explicit 32-team identity
+contract validated; 43 SD Python tests pass. App presentation and native
+acceptance still open; no readiness or deadline change.

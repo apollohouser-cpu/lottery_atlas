@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 import unittest
-from tooling.south_dakota_schedules import SLUGS, parse_schedules, fragment_blocks
+from tooling.south_dakota_schedules import SLUGS, parse_schedules, fragment_blocks, validate_teams
 
 ROOT = Path(__file__).parent / 'fixtures' / 'south_dakota'
 
@@ -13,6 +13,18 @@ def encode(data):
 class ScheduleTest(unittest.TestCase):
     def data(self, slug='dakota-cash'):
         return json.loads((ROOT/f'rules-{slug}.json').read_text())
+
+    def test_source_team_identity_map(self):
+        data=self.data('xs-and-os')['props']['pageProps']['post']['acf']['teamLogoMap']
+        teams=validate_teams(data)
+        self.assertEqual(['ARI','DEN','DET','MIA','MIN','NYG','TEN','WAS'],
+                         [teams[i] for i in ['1','10','11','20','21','24','31','32']])
+        for change in ('missing','duplicate','renamed'):
+            rows=[dict(r) for r in data]
+            if change=='missing':rows.pop()
+            elif change=='duplicate':rows[1]['id']=rows[0]['id']
+            else:rows[0]['teamName']='OTHER'
+            with self.subTest(change=change),self.assertRaises(ValueError):validate_teams(rows)
 
     def test_all_seven_pages_physical_rows(self):
         counts = {}

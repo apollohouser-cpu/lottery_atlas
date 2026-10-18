@@ -8,6 +8,7 @@ from tooling.south_dakota_draw_results import SPECS
 
 SLUGS = (*SPECS, 'powerball-double-play')
 CONTRACT = Path(__file__).with_name('south_dakota_schedule_specs.json')
+TEAM_CONTRACT = Path(__file__).with_name('south_dakota_team_specs.json')
 
 
 def text(node):
@@ -51,6 +52,19 @@ def fragment_blocks(raw):
     return blocks
 
 
+def validate_teams(rows):
+    if not isinstance(rows, list) or len(rows) != 32:
+        raise ValueError('Incomplete source team map')
+    mapped = {}
+    for row in rows:
+        if not isinstance(row, dict) or not isinstance(row.get('id'), str) or row['id'] in mapped:
+            raise ValueError('Invalid or duplicate source team ID')
+        mapped[row['id']] = row.get('teamName')
+    if mapped != json.loads(TEAM_CONTRACT.read_text()):
+        raise ValueError('Changed source team identity mapping')
+    return mapped
+
+
 def extract_tabs(raw, slug):
     if slug not in SLUGS:
         raise ValueError('Unsupported schedule game')
@@ -62,6 +76,8 @@ def extract_tabs(raw, slug):
     expected = 'Powerball' if slug == 'powerball-double-play' else SPECS[slug][0]
     if post.get('slug') != slug or post.get('acf', {}).get('igtIdentifier') != expected:
         raise ValueError('Schedule page identity mismatch')
+    if slug == 'xs-and-os':
+        validate_teams(post['acf'].get('teamLogoMap'))
     matches = [b['attributes']['data']['howtoplay']['howToPlayTabs']
                for b in post['blocks'] if b.get('attributes', {}).get('data', {}).get('howtoplay')]
     if len(matches) != 1 or not matches[0]:

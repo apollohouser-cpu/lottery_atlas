@@ -279,3 +279,21 @@ App integration, source qualifications in UI, team-name presentation and native
 acceptance remain open. This feed contract is not state acceptance. Deployment
 and independent live-feed verification remain to confirm after push. No native
 build or deadline change.
+
+
+## October 18 — deployed feed verified; team identity contract
+
+Both push and subsequent scheduled workflow runs for 6921225 completed
+successfully. Independent live draw feed retrieval exactly matches the
+scheduled baseline ea4ac9c, retrievedAt 2026-10-18T15:55:16.795276+00:00.
+The difference from the earlier local baseline was retrieval time only;
+results, reports and schedules were unchanged. The scheduled commit was
+fast-forwarded locally without replacing unrelated work.
+
+Xs & Os team IDs now validate against all 32 explicit official page mappings,
+with duplicate, missing and renamed identities rejected before collection.
+The captured result IDs 1/10/11/20/21/24/31/32 map to
+ARI/DEN/DET/MIA/MIN/NYG/TEN/WAS. No team is inferred from list position,
+a number's appearance, or an external sports result. This reviewed mapping
+will support app presentation; no new feed shape or native build is claimed.
+43 South Dakota Python tests pass. App/UI and native acceptance remain open.
