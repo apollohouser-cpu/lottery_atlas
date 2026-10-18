@@ -798,3 +798,25 @@ No probe code or state acceptance change. Simulator shut down after verification
 VS Code remains closed. Private logs: work/storage-migration-20261018.log,
 migration-flutter-tests-20261018.log, migration-android-build-20261018.log and
 migration-ios-rebuild-20261018.log. Keep PNY mounted for Flutter/build work.
+
+### October 18 — Simulator device migration completed after permission grant
+
+User explicitly approved Full Disk Access for Apple's CoreSimulator service and
+manually added its executable. Settings verified the service switch on. Refreshed
+PNY copy using checksum-based rsync; content matched. Corrected two destination
+cache-file modes to the source modes after verification. Retained the internal
+Devices directory as rollback while switching its original path to a symlink to
+/Volumes/PNY SSD/LotteryAtlas/tooling/ios-simulator-devices.
+
+Normal-path simctl enumeration retains all 11 original UUIDs. Original iPhone 17e
+booted; ordinary Runner.app installed and launched successfully. get_app_container
+resolves directly to PNY. Native map and Games navigation passed. Shutdown and
+second boot completed; app relaunched and native map rendered again. Internal
+rollback copy removed only after these checks. The earlier explicit --set probe
+returned no devices; completion is based on the verified normal-path symlink,
+not that probe. Full Disk Access remains enabled for the approved service.
+
+Private evidence: work/simulator-copy-verification-20261018.txt (final content
+comparison with two subsequently corrected mode differences) and
+work/simulator-devices-pny-verified-20261018.json. Simulator runtimes/Xcode remain
+internal; this moves device data only. Keep PNY mounted for simulator use.
