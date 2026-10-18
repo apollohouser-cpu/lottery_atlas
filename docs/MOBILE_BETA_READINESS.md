@@ -770,3 +770,31 @@ checksum comparison and linked read/write passed before removing the original.
 Future default Xcode derived data now uses PNY. No Xcode build was active; no
 new iOS build validation is claimed. Flutter SDK (4 GiB) remains internal and
 in use by VS Code; CoreSimulator device data (7.1 GiB) remains internal.
+
+
+### October 18 — Flutter migration passed; simulator relocation rolled back
+
+User authorized moving Flutter and simulator device data and closing VS Code.
+Closed VS Code normally and stopped CoreSimulator before copying. Flutter now
+lives at /Volumes/PNY SSD/LotteryAtlas/tooling/flutter with the original
+~/Development/flutter path linked. Ditto/rsync copy, full checksum comparison
+and linked read/write passed. Removed internal SDK backup only after six Flutter
+tests, Android debug build and iOS simulator debug build passed. Internal free
+space is approximately 24 GiB; PNY approximately 395 GiB.
+
+Simulator Devices (7.1 GiB) copied and checksum-verified at PNY
+LotteryAtlas/tooling/ios-simulator-devices, but CoreSimulator could not enumerate
+the devices through either symlink or explicit device-set path. Its log reports
+NSCocoaErrorDomain 513 / POSIX 1 Operation not permitted on external files.
+No privacy/security settings or volume ownership were changed. Restored original
+internal Devices directory from retained backup; PNY copy remains for diagnosis.
+External simulator relocation is NOT complete and has reclaimed no internal space.
+
+Original iPhone 17e booted successfully after rollback. First iOS rebuild hit a
+stale generated App.framework path; moved .dart_tool/flutter_build aside to
+flutter_build.pre-migration-validation (on PNY), rebuilt successfully, installed
+and launched ordinary app. Native UI shows South Carolina map and navigation.
+No probe code or state acceptance change. Simulator shut down after verification;
+VS Code remains closed. Private logs: work/storage-migration-20261018.log,
+migration-flutter-tests-20261018.log, migration-android-build-20261018.log and
+migration-ios-rebuild-20261018.log. Keep PNY mounted for Flutter/build work.
