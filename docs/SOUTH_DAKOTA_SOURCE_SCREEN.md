@@ -314,3 +314,17 @@ Three production Dart files analyze cleanly.
 This data layer is not yet wired to a visible South Dakota screen. Widget/native
 flows, full Scratch tier UI and team presentation remain open. No new native
 build, acceptance or deadline change.
+
+
+## October 18 — visible draw screen integrated
+
+South Dakota state source page opens the validated collection. Each of 14
+selections retains its own report/date/variant, physical schedule fields and
+official game return route. Xs & Os displays reviewed source team abbreviations.
+MM count gaps and static base-payout limitations remain visible; MFL stale
+source wording is explicitly qualified. Dated-search and game-page buttons
+are distinct. Selecting another result resets the detail scroll.
+Six Flutter tests pass including all 14 selections with enlarged 2x text;
+changed UI files analyze cleanly. This verifies rendering, not native source
+return, scroll traversal or OS text settings. Full Scratch tier UI and native
+checks remain next; no readiness/deadline change.

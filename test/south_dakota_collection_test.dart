@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+import '../lib/widgets/map/south_dakota_draw_collection_sheet.dart';
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
@@ -5,6 +7,44 @@ import '../lib/services/south_dakota_collection_validator.dart';
 import '../lib/services/south_dakota_collection_loader.dart';
 
 void main() {
+  testWidgets(
+    'every selection renders with enlarged text and explicit variants',
+    (tester) async {
+      final data =
+          jsonDecode(
+                File(
+                  'data/south_dakota_draw_collection.generated.json',
+                ).readAsStringSync(),
+              )
+              as Map<String, dynamic>;
+      for (var i = 0; i < 14; i++) {
+        await tester.pumpWidget(
+          MaterialApp(
+            home: MediaQuery(
+              data: const MediaQueryData(
+                size: Size(390, 844),
+                textScaler: TextScaler.linear(2),
+              ),
+              child: Scaffold(
+                body: SouthDakotaDrawCollectionSheet(
+                  key: ValueKey(i),
+                  reportsOverride: data,
+                  initialIndex: i,
+                ),
+              ),
+            ),
+          ),
+        );
+        await tester.pumpAndSettle();
+        expect(tester.takeException(), isNull, reason: 'selection $i');
+        expect(find.text('South Dakota results and schedules'), findsOneWidget);
+        if (data['results'][i]['game'] == 'Xs and Os') {
+          expect(find.textContaining('Teams:'), findsOneWidget);
+        }
+      }
+    },
+  );
+
   final raw = File(
     'data/south_dakota_draw_collection.generated.json',
   ).readAsStringSync();

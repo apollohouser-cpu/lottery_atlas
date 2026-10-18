@@ -81,3 +81,9 @@ acceptance still open; no readiness or deadline change.
 October 18 app data-layer checkpoint: strict Dart validator/cache loader and
 offline asset added; five Flutter tests pass and three Dart files analyze cleanly.
 Visible draw/Scratch integration and native checks remain open.
+
+October 18 visible draw integration: state source screen now opens 14 selectable
+results with dated reports, source links, team abbreviations and all literal
+rule sections. Six Flutter tests pass, including all selections at 2x text;
+two changed UI files analyze cleanly. Native traversal and full Scratch UI
+remain open; no native build or acceptance claimed.
