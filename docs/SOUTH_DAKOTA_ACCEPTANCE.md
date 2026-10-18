@@ -50,3 +50,8 @@ no public feed updated. No deadline extension.
 October 18 parser checkpoint: tooling/south_dakota_draw_results.py validates the
 14-result number-only contract; 11 regression tests pass. No count/report or
 publication acceptance is implied; all remaining integrated gates stay open.
+
+October 18 schedule checkpoint: all seven detail-page rule contracts extracted
+with physical table rows and qualifications. 24 combined South Dakota Python
+tests pass. MFL stale source wording and MM base-versus-multiplier distinctions
+are explicitly documented; dated report/collector/app/native gates remain open.

@@ -1,0 +1,84 @@
+{
+  "props": {
+    "pageProps": {
+      "post": {
+        "slug": "powerball-power-play",
+        "acf": {
+          "igtIdentifier": "Powerball"
+        },
+        "blocks": [
+          {
+            "attributes": {
+              "data": {
+                "howtoplay": {
+                  "howToPlayTabs": [
+                    {
+                      "tabTitle": "How to Play",
+                      "layouts": [
+                        {
+                          "layoutName": "list",
+                          "list": [
+                            {
+                              "content": "<strong>TICKETS</strong>\r\n\r\nDrawings are every Monday, Wednesday, and Saturday night. Purchase Powerball tickets at any <a href=\"https://lottery.sd.gov/locations/\"><span style=\"text-decoration: underline;\">participating retailer</span></a>. It\u2019s $2 per play. Or, $3 with optional Power Play.\r\n\r\nTickets may be purchased until 9 p.m. central on the evening of the draw."
+                            },
+                            {
+                              "content": "<strong>POWER PLAY &amp; DOUBLE PLAY</strong>\r\n\r\nWith Power Play, double the Match 5 prize and increases other non-jackpot prizes 2X, 3X, 4X, 5X or 10X for an additional $1 per play.\r\n\r\nA new feature called <a href=\"https://lottery.sd.gov/game/powerball-double-play/\"><span style=\"text-decoration: underline;\">Double Play</span></a> will give players another chance to match their Powerball numbers in a separate drawing with a top cash prize of $10 million. Double Play is available for an additional $1 per play."
+                            },
+                            {
+                              "content": "<strong>NUMBERS</strong>\r\n\r\nSelect five numbers from 1 to 69 for white balls; then select one number from 1 to 26 for the red Powerball."
+                            },
+                            {
+                              "content": "<strong>WINNING</strong>\r\n\r\nPlayers win a prize by matching some or all of the numbers drawn. Head to the Players Club to <a href=\"https://lottery.sd.gov/players-club/check-my-numbers/\"><span style=\"text-decoration: underline;\">Check Your Numbers</span></a> and find out if you're a winner."
+                            },
+                            {
+                              "content": "<strong>LEARN MORE</strong>\r\n\r\nVisit the <a href=\"https://www.powerball.com/games/home\" target=\"_blank\" rel=\"noopener\"><span style=\"text-decoration: underline;\">Powerball website</span></a> to learn more."
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "tabTitle": "Prizes and Odds",
+                      "layouts": [
+                        {
+                          "layoutName": "table",
+                          "table": "<h3><strong>POWER BALL</strong></h3>\r\n<table class=\"responsive\">\r\n<tbody>\r\n<tr>\r\n<th>MATCH</th>\r\n<th>PRIZE</th>\r\n<th>ODDS</th>\r\n</tr>\r\n<tr>\r\n<td>5/5 + Powerball</td>\r\n<td>Jackpot*</td>\r\n<td>1:292,201,338</td>\r\n</tr>\r\n<tr>\r\n<td>5/5</td>\r\n<td>$1,000,000</td>\r\n<td>1:11,688,054</td>\r\n</tr>\r\n<tr>\r\n<td>4/5 + Powerball</td>\r\n<td>$50,000</td>\r\n<td>1:913,129</td>\r\n</tr>\r\n<tr>\r\n<td>4/5</td>\r\n<td>$100</td>\r\n<td>1:36,525</td>\r\n</tr>\r\n<tr>\r\n<td>3/5 + Powerball</td>\r\n<td>$100</td>\r\n<td>1:14,494</td>\r\n</tr>\r\n<tr>\r\n<td>3/5</td>\r\n<td>$7</td>\r\n<td>1:580</td>\r\n</tr>\r\n<tr>\r\n<td>2/5 + Powerball</td>\r\n<td>$7</td>\r\n<td>1:701</td>\r\n</tr>\r\n<tr>\r\n<td>1/5 + Powerball</td>\r\n<td>$4</td>\r\n<td>1:92</td>\r\n</tr>\r\n<tr>\r\n<td>Powerball Only</td>\r\n<td>$4</td>\r\n<td>1:38</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<h4>Overall odds of winning any prize are 1:24.9</h4>\r\n*Subject to Powerball rules, all of the prize amounts may vary and become pari-mutuel with each drawing as a result of the amount of dollars played and number of winning tickets at each level. The jackpot prize will be divided equally among multiple winners."
+                        }
+                      ]
+                    },
+                    {
+                      "tabTitle": "Double Play Odds",
+                      "layouts": [
+                        {
+                          "layoutName": "table",
+                          "table": "<h3><strong>POWERBALL DOUBLE PLAY</strong></h3>\r\n<table class=\"responsive\">\r\n<tbody>\r\n<tr>\r\n<th>MATCH</th>\r\n<th>PRIZE</th>\r\n<th>ODDS</th>\r\n</tr>\r\n<tr>\r\n<td>5/5 + Double Play Powerball</td>\r\n<td>$10,000,000</td>\r\n<td>1:292,201,338</td>\r\n</tr>\r\n<tr>\r\n<td>5/5</td>\r\n<td>$500,000</td>\r\n<td>1:11,688,054</td>\r\n</tr>\r\n<tr>\r\n<td>4/5 + Double Play Powerball</td>\r\n<td>$50,000</td>\r\n<td>1:913,129</td>\r\n</tr>\r\n<tr>\r\n<td>4/5</td>\r\n<td>$500</td>\r\n<td>1:36,525</td>\r\n</tr>\r\n<tr>\r\n<td>3/5 + Double Play Powerball</td>\r\n<td>$500</td>\r\n<td>1:14,494</td>\r\n</tr>\r\n<tr>\r\n<td>3/5</td>\r\n<td>$20</td>\r\n<td>1:580</td>\r\n</tr>\r\n<tr>\r\n<td>2/5 + Double Play Powerball</td>\r\n<td>$20</td>\r\n<td>1:701</td>\r\n</tr>\r\n<tr>\r\n<td>1/5 + Double Play Powerball</td>\r\n<td>$10</td>\r\n<td>1:92</td>\r\n</tr>\r\n<tr>\r\n<td>Double Play Powerball Only</td>\r\n<td>$7</td>\r\n<td>1:38</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<h4>Overall odds of winning any prize are 1:24.9</h4>\r\n*Subject to Powerball rules, all of the prize amounts may vary and become pari-mutuel with each drawing as a result of the amount of dollars played and number of winning tickets at each level. The jackpot prize will be divided equally among multiple winners."
+                        }
+                      ]
+                    },
+                    {
+                      "tabTitle": "Claim Your Prize",
+                      "layouts": [
+                        {
+                          "layoutName": "wysiwyg",
+                          "content": "<h4>Prizes of $100 or Less</h4>\r\nSign the back of your ticket and present it to your local lottery retailer.\r\n<h4>Prizes of $101 or More</h4>\r\nThese must be paid by the Lottery. You can claim your prize by mail:\r\n<ul>\r\n \t<li>Sign the back of the ticket in the space provided.</li>\r\n \t<li>Fill out a claim form, available at your local lottery retailer. Or use the online Claim Form. Simply type in your information, print it off, sign and date it.</li>\r\n \t<li>Send the completed claim form and winning ticket to the Lottery at <a href=\"https://www.google.com/maps/place/711+E+Wells+Ave,+Pierre,+SD+57501/@44.364077,-100.3451182,17z/data=!3m1!4b1!4m5!3m4!1s0x87801218933c65a3:0xa901b601b5ea10d6!8m2!3d44.3640732!4d-100.3429295\" target=\"_blank\" rel=\"noopener\"><span style=\"text-decoration: underline;\">711 E Wells Ave., Pierre, SD 57501</span></a>.</li>\r\n \t<li>You should receive your prize money in 7-10 days.</li>\r\n \t<li style=\"list-style-type: none;\"></li>\r\n</ul>"
+                        },
+                        {
+                          "layoutName": "wysiwyg",
+                          "content": "<ul>\r\n \t<li>You may also claim your prize in person by visiting one of our <a href=\"https://lottery.sd.gov/locations/\"><span style=\"text-decoration: underline;\">validation centers</span></a> in Pierre, Rapid City or Sioux Falls.</li>\r\n \t<li>Any jackpot-winning ticket or the second prizes for Powerball must be presented in person at a <a href=\"https://lottery.sd.gov/locations/\"><span style=\"text-decoration: underline;\">Lottery office</span></a>. A jackpot-winning Powerball ticket must be presented in person at the Lottery office in Pierre at <a href=\"https://www.google.com/maps/place/711+E+Wells+Ave,+Pierre,+SD+57501/@44.364077,-100.3451182,17z/data=!3m1!4b1!4m5!3m4!1s0x87801218933c65a3:0xa901b601b5ea10d6!8m2!3d44.3640732!4d-100.3429295\" target=\"_blank\" rel=\"noopener\"><u>711 E Wells Ave., Pierre, SD 57501</u></a>.</li>\r\n</ul>"
+                        },
+                        {
+                          "layoutName": "wysiwyg",
+                          "content": "<h4>Jackpot Winner?</h4>\r\nCongratulations! Our first advice is that you immediately sign the back of the ticket and put it in a safe place. We strongly encourage you to take your time and seek professional financial and legal advice. We also offer a <a href=\"https://lottery.sd.gov/wp-content/uploads/2022/10/Winners-Handbook.pdf\" target=\"_blank\" rel=\"noopener\"><span style=\"text-decoration: underline;\">Winner\u2019s Handbook</span></a> with some tips to help you. When you\u2019re ready, give us a call to make arrangements to validate the ticket and claim your prize."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

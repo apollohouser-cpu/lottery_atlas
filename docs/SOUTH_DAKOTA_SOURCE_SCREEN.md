@@ -166,3 +166,31 @@ retained. Missing/changed response structure fails closed.
 This parser is not connected to publication yet. Literal schedule extraction,
 count-report validation, coupled atomic collector, app integration and native
 acceptance remain open. No feed, build, acceptance or deadline changed.
+
+
+## October 18 — literal rule/schedule parser checkpoint
+
+Seven current detail pages now have reviewed rule-tab contracts and strict
+extraction into ordered text/table blocks with source links. All 23 tabs,
+including claim qualifications, are retained; physical table rows are preserved:
+Powerball page 18 (base plus Double Play), Double Play page 9, Mega Millions 9,
+Dakota Cash 12 (four base plus eight EZ Match), Millionaire for Life 9,
+Lotto America 9, Xs & Os 5. The overlapping Powerball/Double Play schedules
+remain source-specific; these counts are physical rows, not unique prize types.
+Fresh captured pages match the contracts. Changed prizes, removed qualifications,
+ambiguous identity/tabs and malformed/spanning tables fail closed.
+
+Two source inconsistencies require visible qualification during integration:
+Millionaire for Life's page retains a Lucky for Life heading/purchase reference;
+its actual prize rows name the Millionaire Ball and annuities. Preserve the
+literal source text without relabeling the game or implying Lucky for Life is
+current. Mega Millions' static table contains base amounts while its result
+renderer separately exposes multipliers; do not represent the static base
+amount as the final current ticket payout. Count/report integration remains
+a separate validation contract. No inferred cash value or multiplier payouts.
+
+24 South Dakota Python tests pass (11 bounded results, eight rule/schedule,
+five existing Scratch). Fixtures contain only source API data or minimal
+rule-tab page structures, not unrelated selected-winner content. No public
+feed/build/native acceptance change. Next: dated report validation and coupled
+atomic collection, followed by app/native integration.
