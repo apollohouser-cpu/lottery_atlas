@@ -29,7 +29,7 @@ this checkpoint.
 
 ## Release gates
 
-- [ ] Close all products/options/history/session scope and explicit gaps.
+- [x] Close all products/options/history/session scope and explicit gaps.
 - [ ] Inspect actual official public draw requests, date/variant semantics and units.
 - [ ] Strict collectors, literal schedules and coupled atomic refresh retention.
 - [ ] Fresh Scratch identity/inventory audit and full supported tier display.
@@ -41,3 +41,8 @@ this checkpoint.
 
 Missing agency records do not block honest supported completion. No full claims,
 retailer-directory completeness, guessed coordinates or ten-year history claims.
+
+Scope closed October 18 at 05:22 ET; see SOUTH_DAKOTA_SOURCE_SCREEN.md for the product matrix,
+14-result target, source API evidence and explicit gaps. All implementation/native
+gates remain open. Fresh private Scratch audit: 35 active games / 293 tiers;
+no public feed updated. No deadline extension.

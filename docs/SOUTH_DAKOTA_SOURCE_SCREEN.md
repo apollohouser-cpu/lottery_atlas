@@ -93,3 +93,59 @@ options, history and literal schedules remain to inspect before scope closure.
 The Dakota Cash page's selected-winner cards include Powerball records: do not
 assign cards to the hosting page's game. No new public feed, build or acceptance
 claim is made. Existing Scratch validation remains intact; fresh audit pending.
+
+
+## Scope closed October 18 at 05:22 ET — public API and product dispositions
+
+Scope closed early; release deadline remains October 23 at 04:24 ET. This is
+research scope closure, not collector/app/native acceptance.
+
+| Product | Supported target and boundary |
+| --- | --- |
+| Powerball / Power Play / Double Play | Two completed draws each for base and Double Play, separate result groups; literal option schedules. Never attach base advertised jackpot to Double Play. |
+| Mega Millions | Two completed results and full literal multiplier schedules. API multiplier prize rows kept distinct; geographic count attribution requires separate validation because this component says only Winners. |
+| Dakota Cash / EZ Match | Two completed draw results, literal base and eight-row EZ Match prize/odds schedules. EZ Match is ticket-specific instant matching, not another dated draw. |
+| Millionaire for Life | Two completed results and literal annuity/cash qualifications; zero top-tier API amounts are not zero-value prizes. |
+| Lotto America / All Star Bonus | Two completed results, distinct multiplier semantics and literal schedules. |
+| Powerball Xs & Os | Two completed team results using explicit source ID/team map, all literal rules and schedules. |
+| Lucky for Life | Historical official route only. API returns February 21/20 local completed results followed by NO_MORE_DRAWS with a 1941 sentinel timestamp; no next draw or current-game claim. |
+| Scratch | Fresh validated published active subset: 35 games, 293 tiers out of a 100-entry listing. Source verification timestamp remains null; original/paid/remaining quantities are cumulative inventory, not dated claims. All tiers required in app. |
+| Video Lottery | Official overview and licensee/reports routes only; machine play, per-play results, claims and machine positions unsupported. |
+| Retailers / selected winners | Official locations and selected-winner routes; no imported joins/coordinates or complete directory/claims claim. Locations default returns a bounded 96-result view, not proof of statewide completeness. |
+| Players Club / second chance / mobile cashing | Official routes only; no login, entries, purchases or claims transactions in Atlas. |
+| Older history | Official winning-number search route; ten-year import deferred. |
+
+Target: **14 bounded results across six current families/seven result groups**,
+plus literal game/option schedules and full supported Scratch tiers. No daily
+Midday/Evening split was found in these current products; preserve source draw
+identity and variant rather than inventing sessions.
+
+The site's actual public request is
+`/api/igt/games/v2/draw-games/draws?game-names=...`; past-number search adds
+`date-from` and `date-to` Unix milliseconds. Six current identifiers each return
+one OPEN record and two PAYABLE records. Select by status/results, never array
+index. Powerball has Regular and Double Play result objects in each completed
+record; repeated tier IDs across variants cannot serve as globally unique keys.
+
+Preserve raw drawTime milliseconds and derive the calendar date explicitly in
+America/Chicago. These API timestamps do not establish exact physical drawing
+times; do not present their 21:15 operational value as broadcast time. The
+estimatedJackpot field is cents while jackpots.amount and prize shareAmount
+are dollar-valued in the site's respective formatters; never apply one global
+unit conversion.
+
+Official winning-number JS labels the generic table **SD Winners**, binding
+shareCount to that column and multiplierShareCount to a separate SD option
+column. This supports a source-labeled count unit, not unique persons or paid
+claims. Mega Millions uses a different renderer, so geographic attribution and
+zero/dash placeholders remain separate validation questions; exclude unsupported
+counts rather than infer them. Xs & Os renderer suppresses the prize column;
+use its literal schedule independently.
+
+Private evidence: all seven current detail pages, Lucky for Life detail,
+public responses and draw-api-audit.json; extracted *-rules.json; source JS
+2-dti7y5tqmn2.js (history/table binding), 3ya3s1xnb6tvy.js (API client/card);
+scratch-fresh.json and official route captures in work/south_dakota_scope.
+No public feed or native build changed. Next: strict parsers for status,
+date, variant, count units and schedule extraction, then coupled publication,
+app integration and native gates.
