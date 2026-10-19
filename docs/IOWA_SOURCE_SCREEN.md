@@ -299,3 +299,10 @@ and selection were readable, but this does not close all layout checks.
 Remaining native product-source flows, long schedules, enlarged-text/layout
 verification, newer remote adoption and controlled request-failure retention
 remain open. No acceptance or deadline change. No source data changed.
+
+Release38bcc62 pushed after clean rebase over scheduled feed241026d. Ordinary
+main.dart iOS build succeeded, installed, and cold-launched (PID55792); native
+home map appeared. No probe or source-data mutation. Simulator remains landscape;
+Android stopped. The updated inventory's native scrolling still needs verification;
+widget coverage and successful launch do not close that gate. Build log is private
+work/iowa_scope/landscape-ios-build.log.
