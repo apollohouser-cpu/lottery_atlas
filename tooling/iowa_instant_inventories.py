@@ -15,7 +15,7 @@ ROUTES = {
 def parse_inventories(raw, *, as_of):
     if type(as_of) is not date:
         raise ValueError('Calendar date required')
-    tree = html.fromstring(raw)
+    tree = html.fromstring(raw.decode('utf-8') if isinstance(raw, bytes) else raw)
     dates = tree.xpath('//*[@id="ContentPlaceHolder1_DataAsOf"]/text()')
     if len(dates) != 1 or not re.fullmatch(r'\d{1,2}/\d{1,2}/\d{4}', dates[0].strip()):
         raise ValueError('Invalid source date')

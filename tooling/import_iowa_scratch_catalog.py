@@ -23,7 +23,9 @@ def count(value):
     return int(value)
 
 def parse_report(raw):
-    tree = html.fromstring(raw)
+    # The official report is UTF-8 but omits a charset declaration. lxml's
+    # byte default otherwise corrupts trademark characters in game names.
+    tree = html.fromstring(raw.decode('utf-8') if isinstance(raw, bytes) else raw)
     dates = tree.xpath('//*[@id="ContentPlaceHolder1_DataAsOf"]/text()')
     if len(dates) != 1:
         raise ValueError('Missing source date')

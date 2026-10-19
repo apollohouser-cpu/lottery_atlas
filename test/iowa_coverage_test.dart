@@ -6,6 +6,35 @@ import '../lib/services/iowa_coverage_loader.dart';
 
 void main() {
   final raw = File('data/iowa_coverage.generated.json').readAsStringSync();
+  test(
+    'reviewed legacy UTF-8 names migrate without accepting count corrections',
+    () {
+      final old = jsonDecode(raw);
+      final inventories = old['instantInventories']['inventories'] as List;
+      for (final subset in inventories) {
+        for (final game in subset['games']) {
+          game['name'] = (game['name'] as String).replaceAll('™', 'â\u0084¢');
+        }
+      }
+      for (final game in old['scratchCatalog']['games']) {
+        game['name'] = (game['name'] as String).replaceAll('™', 'â\u0084¢');
+      }
+      final migrated = IowaCoverageValidator.decode(jsonEncode(old));
+      final corrected = IowaCoverageValidator.decode(raw);
+      expect(jsonEncode(migrated), jsonEncode(corrected));
+      IowaCoverageValidator.continuity(migrated, corrected);
+      final changed = jsonDecode(raw);
+      changed['instantInventories']['inventories'][1]['games'][0]['prizeTiers'][0]['claimed'] +=
+          1;
+      expect(
+        () => IowaCoverageValidator.continuity(
+          migrated,
+          IowaCoverageValidator.decode(jsonEncode(changed)),
+        ),
+        throwsFormatException,
+      );
+    },
+  );
   dynamic nextInventory() {
     final data = jsonDecode(raw);
     data['instantInventories']['sourceDate'] = '2026-10-18';

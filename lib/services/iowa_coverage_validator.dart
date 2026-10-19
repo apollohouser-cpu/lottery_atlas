@@ -34,12 +34,49 @@ class IowaCoverageValidator {
   };
   static const teams =
       'ARI ATL BAL BUF CAR CHI CIN CLE DAL DEN DET GB HOU IND JAX KC LAC LAR LV MIA MIN NE NO NYG NYJ PHI PIT SEA SF TB TEN WAS';
+  // Exact legacy decoder correction only; counts, dates and other identities
+  // still pass the complete validator and retained-snapshot continuity checks.
+  static void _repairReviewedNames(Map<String, dynamic> data) {
+    if (data['state'] != 'Iowa' || data['schemaVersion'] != 1) return;
+    const reviewed = {
+      'Scratch': {'693': 'SCRABBLE™ CROSSWORD GAME', '773': 'UNO™'},
+      'InstaPlay': {
+        '172': 'UNO™ PROGRESSIVE',
+        '177': 'IOWA STATE™',
+        '178': 'IOWA HAWKEYES™',
+      },
+    };
+    void repair(dynamic games, String kind) {
+      if (games is! List) return;
+      for (final game in games) {
+        if (game is! Map) continue;
+        final corrected = reviewed[kind]?[game['id']];
+        if (corrected != null &&
+            game['name'] == corrected.replaceAll('™', 'â\u0084¢')) {
+          game['name'] = corrected;
+        }
+      }
+    }
+
+    final inventory = data['instantInventories'];
+    if (inventory is Map && inventory['inventories'] is List) {
+      for (final subset in inventory['inventories']) {
+        if (subset is Map && subset['productType'] is String) {
+          repair(subset['games'], subset['productType']);
+        }
+      }
+    }
+    final scratch = data['scratchCatalog'];
+    if (scratch is Map) repair(scratch['games'], 'Scratch');
+  }
+
   static Map<String, dynamic> decode(String raw) {
     if (!_ready) {
       tzdata.initializeTimeZones();
       _ready = true;
     }
     final d = jsonDecode(raw) as Map<String, dynamic>;
+    _repairReviewedNames(d);
     final template = jsonDecode(iowaCoverageContractJson);
     exact(d['schemaVersion'], 1);
     exact(d['state'], 'Iowa');

@@ -10,6 +10,16 @@ def fixture():
 
 
 class TypedInventoriesTest(unittest.TestCase):
+    def test_utf8_report_names_and_invalid_bytes(self):
+        from tooling.import_iowa_scratch_catalog import parse_report
+        raw = fixture().replace('GAME (1)', 'GAME™ (1)').encode('utf-8')
+        for subset in self.parse(raw)['inventories']:
+            self.assertEqual(subset['games'][0]['name'], 'GAME™')
+        self.assertEqual(parse_report(raw)[1][0]['name'], 'GAME™')
+        for parser in (self.parse, parse_report):
+            with self.assertRaises(UnicodeDecodeError):
+                parser(raw.replace(b'GAME', b'GAME\xff'))
+
     def parse(self, raw):
         return parse_inventories(raw, as_of=date(2026,10,19))
 
