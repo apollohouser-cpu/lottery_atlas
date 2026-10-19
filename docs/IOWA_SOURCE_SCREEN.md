@@ -211,3 +211,9 @@ Next public snapshot/workflow integration and app presentation/loaders, then nat
 Staged the validated coupled schema1 Iowa baseline in data/iowa_coverage.generated.json and docs/iowa_coverage.json. It contains only audited public-source results, schedules, typed inventories and source provenance; no private agency records or retailer joins. Added a verified Scratch projection exporter, preserving the prior retrieval timestamp when the legacy Scratch catalog is unchanged. Scheduled Iowa refresh now couples both generated outputs under the existing state rollback transaction; a collector or projection failure retains both previous files and dates. The publishing workflow stages and tracks the new public snapshot.
 
 Fifty-five Iowa tests and13 state-transaction tests pass. Projection tests cover unchanged timestamp preservation and mismatched source/tier rejection. Deployment/live-byte confirmation remains next, followed by app integration and native checks. No new native build or acceptance; deadline unchanged.
+
+## October 19, 10:55 ET — deployment failure corrected and live baseline verified
+
+Publisher39264423117 failed in Python tests: Ubuntu's standard-library test package shadowed the repository namespace used by one new Iowa test fixture import. No source validator or production data failed. Removed that cross-test namespace dependency in44a1af1; all412 local Python tests pass, and recovery run39273203615 validate-and-build passed. The public iowa_coverage.json now matches the tracked baseline byte-for-byte. Existing published accepted-state data was retained during the failed run.
+
+Deployment/live baseline verification is closed. Next Iowa Dart loader/presentation integration and native acceptance. No native build or acceptance change; deadline unchanged.
