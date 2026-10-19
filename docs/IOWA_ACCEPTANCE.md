@@ -132,3 +132,11 @@ Added strict all-row parsing for separate Scratch, InstaPlay and PullTab $50-plu
 Fresh public report retains source date October17 but now lists50Scratch/266rows,25InstaPlay/142rows and9PullTab/9rows. Newly observed PullTab WHAT A GEM! (4) adds one literal $1,999 row; prior private capture had8PullTabs. This is a same-source-date inventory change, not evidence of a new verification date. Private typed-inventory-stage.json retains all three subsets. Forty-nine Iowa tests pass, including existing Scratch tests and four new typed-inventory regressions.
 
 Next couple typed inventory and validated draw collection with source-date/correction retention, then publish/integrate app/native. No public feed/build/UI/acceptance or deadline change.
+
+## October 19, 08:51 ET — coupled coverage staging
+
+Implemented collect_iowa_coverage.py: one atomic snapshot couples the strict draw collection, all three typed instant inventories and the existing verified Scratch detail/status catalog. The same fetched report bytes feed both inventory parsers; all50 Scratch details must validate and their identities/tiers must exactly match the typed Scratch subset before replacement. Draw staging remains private until the complete snapshot succeeds. Source date regressions, same-date inventory/detail corrections, disappearing identities/tiers and reversed cumulative counts fail closed for review.
+
+Fresh live staging retrieved12:51:07UTC passed82 deduplicated public requests:20 bounded draw results,50 verified Scratch games and84 typed games total (50Scratch/25InstaPlay/9PullTab). Report source date remainsOctober17. Per-source hashes are included in private work/iowa_scope/coupled-stage.json. Fifty-three Iowa tests pass; new transaction tests verify a detail failure after successful draw collection cannot expose partial updates, replace failures preserve bytes and remove staging files, source-date/tier mismatches reject the snapshot, and normal dated progression remains possible.
+
+Next public snapshot/workflow integration and app presentation/loaders, then native acceptance. No public feed/build/UI/acceptance or deadline change; Iowa remains sole active.
