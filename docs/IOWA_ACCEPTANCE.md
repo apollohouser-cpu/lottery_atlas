@@ -32,7 +32,7 @@ Existing Scratch report is explicitly $50-plus, cumulative claimed/unclaimed inv
 
 No public feed, app build, UI change or acceptance at activation. Missing agency records do not extend the app deadline. No new correspondence, fees, coordinates or heuristic joins.
 
-## October 18, 22:49 ET — actual report and session audit
+## October 18, 22:47 ET — actual report and session audit
 
 Captured all home-linked draw family/detail/result pages plus nine linked prize-report routes privately with retrieval/hash provenance in work/iowa_scope. Seven home-linked InstaPlay detail pages are samples, not a complete inventory. Actual result/report content is server-rendered HTML; no separate API is required or assumed at this stage.
 

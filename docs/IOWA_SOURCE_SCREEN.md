@@ -97,7 +97,7 @@ Iowa is now the sole active state under IOWA_ACCEPTANCE.md: scope due October19 
 
 Fresh home and six official HTML pages are private in work/iowa_scope with URL/retrieval/hash provenance. Home exposes PB/Double Play, MM, Lotto America, MFL, XsOs, Pick3/Pick4 midday-evening, Scratch, InstaPlay and Pull-Tabs. A legacy Lucky for Life image needs historical-status resolution. Public results are server-rendered with ASP.NET search controls; Pick3MPrizes.aspx, Pick3Prizes.aspx and PowerballPrizes.aspx are observed report links to inspect next. Date/session/variant/geographic units and all product options remain unclosed. No public output changed.
 
-## October 18, 22:49 ET — actual report and session audit
+## October 18, 22:47 ET — actual report and session audit
 
 Captured all home-linked draw family/detail/result pages plus nine linked prize-report routes privately with retrieval/hash provenance in work/iowa_scope. Seven home-linked InstaPlay detail pages are samples, not a complete inventory. Actual result/report content is server-rendered HTML; no separate API is required or assumed at this stage.
 
