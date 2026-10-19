@@ -124,3 +124,11 @@ Added collect_iowa_draws.py, a private atomic collector spanning 31 deduplicated
 Source bytes have per-URL SHA256 provenance. All parsing completes before a same-directory temporary write/fsync/atomic replacement. Retained date/group/time regressions and overlapping dated result/report corrections fail closed for review; changed schedules require review. Thirty-nine combined Iowa tests pass, including every one of the31 request failures preserving previous bytes, parser failures, replace failure/temporary cleanup, correction/regression rejection, Chicago calendar handling and normal successful refresh. Captured-source collection also passed before the live run.
 
 Next separate typed Scratch/InstaPlay/PullTab inventories and coupled publication, then app/native integration. No public feed/build/UI/acceptance or deadline change.
+
+## October 19, 07:47 ET — separate typed instant inventories
+
+Added strict all-row parsing for separate Scratch, InstaPlay and PullTab $50-plus cumulative claimed/unclaimed report subsets. Identity is product type plus game ID; repeated IDs across products cannot merge. Every source row is validated, with unknown products, malformed counts/prices, duplicate tiers, conflicting identities, changed columns, missing subsets and future source dates rejected. No report maximum is promoted to a progressive jackpot or advertised top prize. Below-$50 tiers, store stock and dated claims remain explicitly unavailable. Existing Scratch detail/status verification remains separate and unchanged.
+
+Fresh public report retains source date October17 but now lists50Scratch/266rows,25InstaPlay/142rows and9PullTab/9rows. Newly observed PullTab WHAT A GEM! (4) adds one literal $1,999 row; prior private capture had8PullTabs. This is a same-source-date inventory change, not evidence of a new verification date. Private typed-inventory-stage.json retains all three subsets. Forty-nine Iowa tests pass, including existing Scratch tests and four new typed-inventory regressions.
+
+Next couple typed inventory and validated draw collection with source-date/correction retention, then publish/integrate app/native. No public feed/build/UI/acceptance or deadline change.
