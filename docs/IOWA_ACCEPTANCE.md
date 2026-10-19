@@ -152,3 +152,9 @@ Fifty-five Iowa tests and13 state-transaction tests pass. Projection tests cover
 Publisher39264423117 failed in Python tests: Ubuntu's standard-library test package shadowed the repository namespace used by one new Iowa test fixture import. No source validator or production data failed. Removed that cross-test namespace dependency in44a1af1; all412 local Python tests pass, and recovery run39273203615 validate-and-build passed. The public iowa_coverage.json now matches the tracked baseline byte-for-byte. Existing published accepted-state data was retained during the failed run.
 
 Deployment/live baseline verification is closed. Next Iowa Dart loader/presentation integration and native acceptance. No native build or acceptance change; deadline unchanged.
+
+## October 19, 11:53 ET — initial Dart coverage loader
+
+Added the bundled Iowa snapshot and an injectable persistent loader with exact source-rule/chart contracts, ten result groups/two dates, numeric domains/Pick zeros, XsOs source-code identities, date/report joins, source-qualified counts and zero-jackpot-placeholder checks. Failure or malformed remote data retains the validated cache; newer retrieval of valid unchanged contents persists. Cold-start timezone initialization is explicit. Four Flutter tests pass and all three new production Dart files analyze cleanly.
+
+This is an initial loader checkpoint, not completed app integration. Instant inventories currently require the reviewed baseline exactly, conservatively retaining it on changes; implement full dated inventory validation/continuity before UI rollout. Visible draw/typed-inventory presentation, complete regression matrix and native checks remain open. No new native build/acceptance or deadline change.
