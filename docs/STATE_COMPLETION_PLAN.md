@@ -45,6 +45,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
+| Iowa | October 23, 2026 at 21:42 ET | Sole active from October18 21:42ET; scope due October19 21:42ET; fresh120-hour substantial draw/app integration. |
 | South Dakota | ACCEPTED October 18, 2026 at 20:42 ET | Release 94fd40c; ahead of October 23 at 04:24 ET; no extension. |
 | Nebraska | Accepted October 18, 2026, 04:20 AM ET (due October 21, 11:58 AM) | Release aabff9f; bounded results/latest reports, literal Scratch and native retention accepted with explicit gaps. |
 | Kansas | Accepted October 16, 2026, 11:00 AM ET (due October 19, 7:40 PM) | Bounded results, literal schedules/Scratch and native retention accepted; explicit gaps retained. |
@@ -112,7 +113,7 @@ d68a843; see LOUISIANA_ACCEPTANCE.md. Fourteen states are ready for supported
 testing; 31 remain. Kansas accepted October 16 at 11:00 ET on release 5d22fca,
 ahead of October 19 at 19:40 ET with no extension. See KANSAS_ACCEPTANCE.md.
 Nebraska accepted October 18 at 04:20 ET on aabff9f, ahead of October 21 at
-11:58 ET with no extension. See NEBRASKA_ACCEPTANCE.md. South Dakota accepted October 18 at 20:42 ET on `94fd40c`, ahead of October 23 at 04:24 ET with no extension. See SOUTH_DAKOTA_ACCEPTANCE.md. No next state is activated at this checkpoint; select the next state and assign fresh explicit scope/release deadlines before work. Mobile beta work remains
+11:58 ET with no extension. See NEBRASKA_ACCEPTANCE.md. South Dakota accepted October 18 at 20:42 ET on `94fd40c`, ahead of October 23 at 04:24 ET with no extension. See SOUTH_DAKOTA_ACCEPTANCE.md. Iowa is the sole active state from October18 at 21:42ET; scope due October19 at 21:42ET and supported release due October23 at 21:42ET. Fresh120-hour substantial draw/app integration; see IOWA_ACCEPTANCE.md. Mobile beta work remains
 open. Five additional acceptances since October 6 are complete; the October 18
 reforecast is December 21–January 22 for national supported engineering, with
 explicit assumptions in NATIONAL_RELEASE_FORECAST.md.

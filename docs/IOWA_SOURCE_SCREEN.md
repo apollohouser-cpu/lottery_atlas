@@ -90,3 +90,9 @@ source/schema failures preserve the previous file and stop the publishing run.
 The poll cadence is distinct from the source's unconfirmed publication cadence.
 Catalog readiness is reported after live deployment verification. Iowa remains
 incomplete for retailer-linked winner coverage under request #26-4068.
+
+## October 18, 21:42 ET — sole active state activation
+
+Iowa is now the sole active state under IOWA_ACCEPTANCE.md: scope due October19 21:42ET, supported release due October23 21:42ET, fresh120-hour substantial integration budget. Existing retailer heat-map gaps remain explicit; they do not block supported results and inventory without joins.
+
+Fresh home and six official HTML pages are private in work/iowa_scope with URL/retrieval/hash provenance. Home exposes PB/Double Play, MM, Lotto America, MFL, XsOs, Pick3/Pick4 midday-evening, Scratch, InstaPlay and Pull-Tabs. A legacy Lucky for Life image needs historical-status resolution. Public results are server-rendered with ASP.NET search controls; Pick3MPrizes.aspx, Pick3Prizes.aspx and PowerballPrizes.aspx are observed report links to inspect next. Date/session/variant/geographic units and all product options remain unclosed. No public output changed.
