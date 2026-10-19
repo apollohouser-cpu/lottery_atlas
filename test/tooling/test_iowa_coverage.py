@@ -6,7 +6,11 @@ from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import patch
 from tooling import collect_iowa_coverage as coverage
-from test.tooling.test_iowa_instant_inventories import fixture
+def fixture():
+    headers = ['Game Name (Game Number)', 'Game Type', 'Cost', 'Prize', 'Claimed', 'Unclaimed']
+    rows = ''.join('<tr>'+''.join('<td>'+v+'</td>' for v in ['GAME (1)', kind, '1', '$50', '2', '0'])+'</tr>' for kind in ['Scratch', 'InstaPlay', 'PullTab'])
+    return '<span id="ContentPlaceHolder1_DataAsOf">10/17/2026</span><table id="RemainPrizes_JS_DATATABLE"><thead><tr>'+''.join('<th>'+h+'</th>' for h in headers)+'</tr></thead><tbody>'+rows+'</tbody></table>'
+
 
 NOW = datetime(2026,10,19,13,tzinfo=timezone.utc)
 
