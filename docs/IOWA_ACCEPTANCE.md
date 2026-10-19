@@ -176,3 +176,25 @@ Nine Iowa Flutter tests pass, including all20 selections at2x text and traversal
 Integrated separate Scratch/InstaPlay/PullTab inventory selection, name/number search, price filter/reset, literal cumulative claimed/unclaimed tier details and official source links. Scratch details preserve status dates and source notes; other products explicitly exclude full schedules/current progressive jackpots. Report source date stays October17. Search/detail return preserves the filter in widget tests.
 
 Eleven Iowa Flutter tests pass, including all three product inventories at2x text and a PullTab search/detail/return/reset flow. Both Iowa sheets and the state source screen analyze cleanly. Ordinary main.dart iOS debug7dda240 built, installed and launched on the original iPhone17e simulator (process40813); no temporary probe used. Android remains stopped. Successful launch is not native visual acceptance: all native selection/date/source returns, long schedules, filters/details/layouts and production-loader failure/ordinary restoration checks remain open. No acceptance/deadline change.
+
+## October 19 — first native Iowa selection checkpoint
+
+Ordinary iOS7dda240 exercised all20 selections across all ten groups. Native
+accessibility output confirms both dates, Pick leading/repeated zero digits,
+explicit Pick report gaps, separate Double Play results and literal XsOs source
+abbreviations. Powerball portrait summary is readable. All three instant product
+counts (50/25/9) are visible. PullTab WHAT A GEM search, literal tier detail
+($1,999; claimed0/unclaimed12) and return with search retained passed.
+
+Named pre-acceptance defect: Scratch693 displays a corrupted trademark in its
+name. Captured official HTML contains UTF-8 bytes e2 84 a2; the inventory parsers
+pass undecorated bytes to lxml, producing Latin-1 mojibake. Next correct decoding
+in both inventory/report paths and review the precise name-only baseline/cache
+transition, preserving all dates/counts and strict correction protections. No
+fix or corrected publication is claimed yet. Private checkpoint is
+work/iowa_scope/native-checkpoint-20261019.json.
+
+Native source returns, long rules, remaining inventory filters/source returns,
+layout variants, newer remote adoption and controlled request-failure retention
+remain open. Ordinary app stays on filtered PullTab inventory; Android stopped.
+No acceptance or deadline change.
