@@ -45,7 +45,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Iowa | October 23, 2026 at 21:42 ET | Sole active from October18 21:42ET; scope due October19 21:42ET; fresh120-hour substantial draw/app integration. |
+| Iowa | October 23, 2026 at 21:42 ET | Sole active from October18 21:42ET; scope closed October19 00:46ET; fresh120-hour substantial draw/app integration. |
 | South Dakota | ACCEPTED October 18, 2026 at 20:42 ET | Release 94fd40c; ahead of October 23 at 04:24 ET; no extension. |
 | Nebraska | Accepted October 18, 2026, 04:20 AM ET (due October 21, 11:58 AM) | Release aabff9f; bounded results/latest reports, literal Scratch and native retention accepted with explicit gaps. |
 | Kansas | Accepted October 16, 2026, 11:00 AM ET (due October 19, 7:40 PM) | Bounded results, literal schedules/Scratch and native retention accepted; explicit gaps retained. |

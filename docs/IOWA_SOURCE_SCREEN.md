@@ -118,3 +118,28 @@ Fresh existing strict importer run against the October17 source report validated
 Most current prize schedules are image assets, not HTML tables. Captured seven official chart assets with URL/hash provenance. Direct visual review transcribed Pick3's nine and Pick4's fifteen literal rows into private reviewed-pick-schedules.json, preserving all six wager columns ($0.50,$1,$2,$3,$4,$5), printed odds and N/A straight/box half-dollar cells. These are prize schedules, never actual winner counts. Other family chart transcription and strict tests remain open; MFL also has separate annuity/cash sharing tables. The existing source-page labels alone cannot substitute for these physical schedules.
 
 The intended bounded result scope is two latest completed results per group: PB Regular/Double Play, MM, Lotto America, MFL, XsOs, Pick3 midday/evening and Pick4 midday/evening (ten groups/seven families). Counts require exact date/session/variant correspondence and proven source units; missing or unresolved reports remain explicit gaps. Final scope closure still requires remaining instant-product and official-route dispositions plus schedule/source contracts. No build, public feed, UI, acceptance or deadline change.
+
+## October 19, 00:46 ET — supported scope closed early
+
+Scope is closed before October19 21:42ET. Implementation and acceptance remain open; release deadline stays October23 21:42ET, no extension.
+
+| Product or feature | Supported release contract and boundary |
+| --- | --- |
+| Powerball / Double Play | Two latest completed dates per variant, exact dated Iowa-ticket report joins; Power Play literal schedule separate from Double Play. No inferred missing jackpot or unique-person counts. |
+| Mega Millions | Two latest completed dates and exact dated Iowa-ticket reports; current built-in per-play multiplier chart, historical structures excluded from current payouts. |
+| Lotto America | Two latest completed dates/reports plus All Star Bonus literal schedule and source qualifications. |
+| Millionaire for Life | Two latest completed dates/reports; literal annuity amounts, sharing/cash-option tables and qualifications retained. |
+| Powerball Xs & Os | Two latest completed dates with eight reviewed team identities and dated Iowa reports; source team mapping validation required before publication. |
+| Pick3 / Pick4 | Two dates in each midday/evening session, literal digits including zeros; all wager/straight-box/pair schedules and combinations. Unproven count units remain explicit unavailable report counts; no zero substitution or cross-date pairing. |
+| Scratch | Full dated $50-plus inventory report subset, all published rows, status dates, search/filter/detail/source return. Fresh private baseline50games266rows sourceOctober17. Below-$50 counts and store inventory unavailable, official detail route retained. |
+| InstaPlay / PullTabs | Separate typed dated $50-plus report inventories planned (private baseline25games142rows and8games8rows), with official game routes. Never merge with Scratch. Detail-level odds/progressive jackpots remain official-source routes rather than inferred dated draw reports or stock. |
+| Lucky for Life | Historical-only official route; finalFebruary21 drawing and finalclaimAugust20. No current/next draw. |
+| History | Bounded two-result selections; official historical search remains accessible. No ten-year completeness or automatically focused external date claim. |
+| Retailers / selected winners | Official lottery navigation and existing weekly directory route; no unaudited directory import, coordinates or heuristic retailer joins. Selected-winner news is not comprehensive claims. |
+| VIP Club / promotions / mobile / claiming | Official information routes only; no account entry, purchase, ticket validation, claim submission or attestation. |
+
+Public GET report routes and result tables are already captured; date controls are ASP.NET forms. Expected draw contract is20results/sevenfamilies/ten groups. Calendar dates are literal source dates with session identity, not invented midnight UTC events. Publish only validated complete source units; source failures retain prior bytes/dates.
+
+All eight image schedules now visually reviewed and transcribed into tooling/iowa_schedule_specs.json (74 physical rows, exact printed prize strings and rounded odds). Each records its image hash; a changed chart must fail closed pending review. Pick3nine/Pick4fifteen rows preserve all six wager columns and N/A cells. PB/DP/MM/LA/MFL/XsOs charts preserve different options and annuity semantics. Lotto America image odds have different rounding from the HTML report: retain source-specific values. Separate HTML footnotes, sharing tables and combinations still require collector extraction and tests; this scope closure does not claim implementation complete.
+
+Official route captures include [InstaPlay](https://www.ialottery.com/Pages/Games-Instaplay/Instaplay.aspx), [PullTabs](https://www.ialottery.com/Pages/Games-Pulltab/PulltabGamesListing.aspx), [claiming](https://ialottery.com/pages/games/claimingprizes.aspx), [VIP rules](https://www.ialottery.com/Pages/VIPClub/VIPClubRules.aspx) and [selected winners](https://www.ialottery.com/Pages/Pressroom/Winners_Main_Dynamic.aspx). Raw pages/hashes remain private. Next implement strict bounded result/report parsers and image-hash/schedule validation, then coupled atomic inventory/draw collection, app and native acceptance. No public feed or native build changed.

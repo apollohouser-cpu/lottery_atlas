@@ -1,0 +1,880 @@
+{
+  "schemaVersion": 1,
+  "review": "Direct visual review of eight official image charts, October 19, 2026. Parser must validate hash changes before reuse; source HTML qualifications are required separately.",
+  "schedules": [
+    {
+      "game": "Powerball",
+      "sourceUrl": "https://www.ialottery.com/Images/Game_Details/PowerballPowerPlayChart.jpg",
+      "sha256": "3c96c6bdfd3c6c171991fdabc05748359434e5b220625dd7d1be2a54dacf92f2",
+      "columns": [
+        "Prize",
+        "2X",
+        "3X",
+        "4X",
+        "5X",
+        "10X"
+      ],
+      "rows": [
+        {
+          "match": "5 + special ball",
+          "prizes": [
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*"
+          ],
+          "odds": "1 in 292.2 million"
+        },
+        {
+          "match": "5",
+          "prizes": [
+            "$1 million",
+            "$2 million",
+            "$2 million",
+            "$2 million",
+            "$2 million",
+            "$2 million"
+          ],
+          "odds": "1 in 11.7 million"
+        },
+        {
+          "match": "4 + special ball",
+          "prizes": [
+            "$50,000",
+            "$100,000",
+            "$150,000",
+            "$200,000",
+            "$250,000",
+            "$500,000"
+          ],
+          "odds": "1 in 913,129.1"
+        },
+        {
+          "match": "4",
+          "prizes": [
+            "$100",
+            "$200",
+            "$300",
+            "$400",
+            "$500",
+            "$1,000"
+          ],
+          "odds": "1 in 36,525.1"
+        },
+        {
+          "match": "3 + special ball",
+          "prizes": [
+            "$100",
+            "$200",
+            "$300",
+            "$400",
+            "$500",
+            "$1,000"
+          ],
+          "odds": "1 in 14,494.1"
+        },
+        {
+          "match": "3",
+          "prizes": [
+            "$7",
+            "$14",
+            "$21",
+            "$28",
+            "$35",
+            "$70"
+          ],
+          "odds": "1 in 579.7"
+        },
+        {
+          "match": "2 + special ball",
+          "prizes": [
+            "$7",
+            "$14",
+            "$21",
+            "$28",
+            "$35",
+            "$70"
+          ],
+          "odds": "1 in 701.3"
+        },
+        {
+          "match": "1 + special ball",
+          "prizes": [
+            "$4",
+            "$8",
+            "$12",
+            "$16",
+            "$20",
+            "$40"
+          ],
+          "odds": "1 in 91.9"
+        },
+        {
+          "match": "0 + special ball",
+          "prizes": [
+            "$4",
+            "$8",
+            "$12",
+            "$16",
+            "$20",
+            "$40"
+          ],
+          "odds": "1 in 38.3"
+        }
+      ],
+      "overallOdds": "1 in 24.87",
+      "notes": "Printed rounded odds retained. Source page jackpot/pari-mutuel and 10X qualifications must accompany chart; not actual draw payout."
+    },
+    {
+      "game": "Powerball Double Play",
+      "sourceUrl": "https://www.ialottery.com/Images/Game_Details/PowerballDoublePlayChart.jpg",
+      "sha256": "2aecbdd8038296631043cb952765a9a8ee115bd375b557c00ac4a0a896275fdf",
+      "columns": [
+        "Prize"
+      ],
+      "rows": [
+        {
+          "match": "5 + special ball",
+          "prizes": [
+            "$10 million"
+          ],
+          "odds": "1 in 292.2 million"
+        },
+        {
+          "match": "5",
+          "prizes": [
+            "$500,000"
+          ],
+          "odds": "1 in 11.7 million"
+        },
+        {
+          "match": "4 + special ball",
+          "prizes": [
+            "$50,000"
+          ],
+          "odds": "1 in 913,129.1"
+        },
+        {
+          "match": "4",
+          "prizes": [
+            "$500"
+          ],
+          "odds": "1 in 36,525.1"
+        },
+        {
+          "match": "3 + special ball",
+          "prizes": [
+            "$500"
+          ],
+          "odds": "1 in 14,494.1"
+        },
+        {
+          "match": "3",
+          "prizes": [
+            "$20"
+          ],
+          "odds": "1 in 579.7"
+        },
+        {
+          "match": "2 + special ball",
+          "prizes": [
+            "$20"
+          ],
+          "odds": "1 in 701.3"
+        },
+        {
+          "match": "1 + special ball",
+          "prizes": [
+            "$10"
+          ],
+          "odds": "1 in 91.9"
+        },
+        {
+          "match": "0 + special ball",
+          "prizes": [
+            "$7"
+          ],
+          "odds": "1 in 38.3"
+        }
+      ],
+      "overallOdds": "1 in 24.87",
+      "notes": "Separate variant; no Power Play multiplier."
+    },
+    {
+      "game": "Mega Millions",
+      "sourceUrl": "https://www.ialottery.com/Images/Game_Details/MMPrizeChart2025.jpg",
+      "sha256": "1f8c9d5585597eee1e74572249c4830a437172a92183d13d92832309afba74f9",
+      "columns": [
+        "2X",
+        "3X",
+        "4X",
+        "5X",
+        "10X"
+      ],
+      "rows": [
+        {
+          "match": "5 + special ball",
+          "prizes": [
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*"
+          ],
+          "odds": "1 in 290.5 million"
+        },
+        {
+          "match": "5",
+          "prizes": [
+            "$2 million",
+            "$3 million",
+            "$4 million",
+            "$5 million",
+            "$10 million"
+          ],
+          "odds": "1 in 12.6 million"
+        },
+        {
+          "match": "4 + special ball",
+          "prizes": [
+            "$20,000",
+            "$30,000",
+            "$40,000",
+            "$50,000",
+            "$100,000"
+          ],
+          "odds": "1 in 893,761.0"
+        },
+        {
+          "match": "4",
+          "prizes": [
+            "$1,000",
+            "$1,500",
+            "$2,000",
+            "$2,500",
+            "$5,000"
+          ],
+          "odds": "1 in 38,859.2"
+        },
+        {
+          "match": "3 + special ball",
+          "prizes": [
+            "$400",
+            "$600",
+            "$800",
+            "$1,000",
+            "$2,000"
+          ],
+          "odds": "1 in 13,965.0"
+        },
+        {
+          "match": "3",
+          "prizes": [
+            "$20",
+            "$30",
+            "$40",
+            "$50",
+            "$100"
+          ],
+          "odds": "1 in 607.2"
+        },
+        {
+          "match": "2 + special ball",
+          "prizes": [
+            "$20",
+            "$30",
+            "$40",
+            "$50",
+            "$100"
+          ],
+          "odds": "1 in 665.0"
+        },
+        {
+          "match": "1 + special ball",
+          "prizes": [
+            "$14",
+            "$21",
+            "$28",
+            "$35",
+            "$70"
+          ],
+          "odds": "1 in 86.8"
+        },
+        {
+          "match": "0 + special ball",
+          "prizes": [
+            "$10",
+            "$15",
+            "$20",
+            "$25",
+            "$50"
+          ],
+          "odds": "1 in 35.2"
+        }
+      ],
+      "overallOdds": "1 in 23",
+      "notes": "Built-in per-play multiplier; not a shared draw multiplier. Current 2025 chart, not historical Megaplier schedule. Source footnote base amounts remain separate."
+    },
+    {
+      "game": "Lotto America",
+      "sourceUrl": "https://www.ialottery.com/Images/Game_Details/LAPrizeChart.jpg",
+      "sha256": "0e4fb9586b185a80109ca847aaefe9860e0ca8161ba6dcd0df06f5a4b87a30a5",
+      "columns": [
+        "Prize",
+        "2X",
+        "3X",
+        "4X",
+        "5X"
+      ],
+      "rows": [
+        {
+          "match": "5 + special ball",
+          "prizes": [
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*",
+            "Jackpot*"
+          ],
+          "odds": "1 in 25.9 million"
+        },
+        {
+          "match": "5",
+          "prizes": [
+            "$20,000",
+            "$40,000",
+            "$60,000",
+            "$80,000",
+            "$100,000"
+          ],
+          "odds": "1 in 2.8 million"
+        },
+        {
+          "match": "4 + special ball",
+          "prizes": [
+            "$1,000",
+            "$2,000",
+            "$3,000",
+            "$4,000",
+            "$5,000"
+          ],
+          "odds": "1 in 110,594.0"
+        },
+        {
+          "match": "4",
+          "prizes": [
+            "$100",
+            "$200",
+            "$300",
+            "$400",
+            "$500"
+          ],
+          "odds": "1 in 12,288.2"
+        },
+        {
+          "match": "3 + special ball",
+          "prizes": [
+            "$20",
+            "$40",
+            "$60",
+            "$80",
+            "$100"
+          ],
+          "odds": "1 in 2,404.2"
+        },
+        {
+          "match": "3",
+          "prizes": [
+            "$5",
+            "$10",
+            "$15",
+            "$20",
+            "$25"
+          ],
+          "odds": "1 in 267.1"
+        },
+        {
+          "match": "2 + special ball",
+          "prizes": [
+            "$5",
+            "$10",
+            "$15",
+            "$20",
+            "$25"
+          ],
+          "odds": "1 in 160.2"
+        },
+        {
+          "match": "1 + special ball",
+          "prizes": [
+            "$2",
+            "$4",
+            "$6",
+            "$8",
+            "$10"
+          ],
+          "odds": "1 in 29.1"
+        },
+        {
+          "match": "0 + special ball",
+          "prizes": [
+            "$2",
+            "$4",
+            "$6",
+            "$8",
+            "$10"
+          ],
+          "odds": "1 in 16.9"
+        }
+      ],
+      "overallOdds": "1 in 9.63",
+      "notes": "Image rounded odds differ in precision from report HTML: retain source-specific printed precision; no silent reconciliation. Jackpot/pari-mutuel footnotes accompany chart."
+    },
+    {
+      "game": "Millionaire for Life",
+      "sourceUrl": "https://www.ialottery.com/Images/Game_Details/MFLPrizeandOddsChart.png",
+      "sha256": "3f19070b99c774695b39ac1d8aa37e251b748c831758991b39c369c10d2c8420",
+      "columns": [
+        "Prize"
+      ],
+      "rows": [
+        {
+          "match": "5 + special ball",
+          "prizes": [
+            "*$1,000,000 a year for LIFE"
+          ],
+          "odds": "1 in 22.9 million"
+        },
+        {
+          "match": "5",
+          "prizes": [
+            "*$100,000 a year for LIFE"
+          ],
+          "odds": "1 in 5.7 million"
+        },
+        {
+          "match": "4 + special ball",
+          "prizes": [
+            "*$7,500"
+          ],
+          "odds": "1 in 86,455.0"
+        },
+        {
+          "match": "4",
+          "prizes": [
+            "$500"
+          ],
+          "odds": "1 in 21,613.8"
+        },
+        {
+          "match": "3 + special ball",
+          "prizes": [
+            "$250"
+          ],
+          "odds": "1 in 1,662.6"
+        },
+        {
+          "match": "3",
+          "prizes": [
+            "$50"
+          ],
+          "odds": "1 in 415.6"
+        },
+        {
+          "match": "2 + special ball",
+          "prizes": [
+            "$25"
+          ],
+          "odds": "1 in 97.8"
+        },
+        {
+          "match": "2",
+          "prizes": [
+            "$8"
+          ],
+          "odds": "1 in 24.5"
+        },
+        {
+          "match": "1 + special ball",
+          "prizes": [
+            "$8"
+          ],
+          "odds": "1 in 15.6"
+        }
+      ],
+      "overallOdds": "1 in 8.46",
+      "notes": "Source literal annuity strings; preserve separate HTML sharing/cash-option tables and qualifications; do not convert annuity to lump sum."
+    },
+    {
+      "game": "Powerball Xs & Os",
+      "sourceUrl": "https://www.ialottery.com/Images/Game-logos/PBXOPrizeandOddsChart.png",
+      "sha256": "d01f6028f8605b9045139b6ac4a6b01b4e20370152ea79580bfac16e1ea699ab",
+      "columns": [
+        "Prize"
+      ],
+      "rows": [
+        {
+          "match": "8 teams",
+          "prizes": [
+            "JACKPOT"
+          ],
+          "odds": "1 in 10.51 million"
+        },
+        {
+          "match": "7 teams",
+          "prizes": [
+            "$20,000"
+          ],
+          "odds": "1 in 54,782.81"
+        },
+        {
+          "match": "6 teams",
+          "prizes": [
+            "$500"
+          ],
+          "odds": "1 in 1,361.06"
+        },
+        {
+          "match": "5 teams",
+          "prizes": [
+            "$40"
+          ],
+          "odds": "1 in 92.80"
+        },
+        {
+          "match": "4 teams",
+          "prizes": [
+            "$7"
+          ],
+          "odds": "1 in 14.14"
+        }
+      ],
+      "overallOdds": "1 in 12.16",
+      "notes": "Eight distinct source team results; source claim/pari-mutuel qualifications remain separate."
+    },
+    {
+      "game": "Pick3",
+      "sourceUrl": "https://www.ialottery.com/Images/Game_Details/P3PrizeChart_1.jpg",
+      "sha256": "d24b91f130b7fcbe4228b30fe63be232b07a53c03d4ffad000ad2a93152bbdab",
+      "columns": [
+        "$0.50",
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5"
+      ],
+      "rows": [
+        {
+          "match": "Straight",
+          "prizes": [
+            "$300",
+            "$600",
+            "$1,200",
+            "$1,800",
+            "$2,400",
+            "$3,000"
+          ],
+          "odds": "1 in 1,000"
+        },
+        {
+          "match": "Box 6-Way",
+          "prizes": [
+            "$50",
+            "$100",
+            "$200",
+            "$300",
+            "$400",
+            "$500"
+          ],
+          "odds": "1 in 167"
+        },
+        {
+          "match": "Box 3-Way",
+          "prizes": [
+            "$100",
+            "$200",
+            "$400",
+            "$600",
+            "$800",
+            "$1,000"
+          ],
+          "odds": "1 in 333"
+        },
+        {
+          "match": "Straight/Box 6-Way Exact",
+          "prizes": [
+            "N/A",
+            "$350",
+            "$700",
+            "$1,050",
+            "$1,400",
+            "$1,750"
+          ],
+          "odds": "1 in 1,000"
+        },
+        {
+          "match": "Straight/Box 6-Way Any",
+          "prizes": [
+            "N/A",
+            "$50",
+            "$100",
+            "$150",
+            "$200",
+            "$250"
+          ],
+          "odds": "1 in 167"
+        },
+        {
+          "match": "Straight/Box 3-Way Exact",
+          "prizes": [
+            "N/A",
+            "$400",
+            "$800",
+            "$1,200",
+            "$1,600",
+            "$2,000"
+          ],
+          "odds": "1 in 1,000"
+        },
+        {
+          "match": "Straight/Box 3-Way Any",
+          "prizes": [
+            "N/A",
+            "$100",
+            "$200",
+            "$300",
+            "$400",
+            "$500"
+          ],
+          "odds": "1 in 333"
+        },
+        {
+          "match": "Front Pair",
+          "prizes": [
+            "$30",
+            "$60",
+            "$120",
+            "$180",
+            "$240",
+            "$300"
+          ],
+          "odds": "1 in 100"
+        },
+        {
+          "match": "Back Pair",
+          "prizes": [
+            "$30",
+            "$60",
+            "$120",
+            "$180",
+            "$240",
+            "$300"
+          ],
+          "odds": "1 in 100"
+        }
+      ],
+      "overallOdds": null,
+      "notes": "Wager-specific prize schedule; N/A is inapplicable, not zero. Exact and Any rows remain distinct; never sum report counts."
+    },
+    {
+      "game": "Pick4",
+      "sourceUrl": "https://www.ialottery.com/Images/Game_Details/P4PrizeChart.jpg",
+      "sha256": "a672e800222fbe79fa9f5362db63a071d1704892ec473018cb9226e9bbbe33f4",
+      "columns": [
+        "$0.50",
+        "$1",
+        "$2",
+        "$3",
+        "$4",
+        "$5"
+      ],
+      "rows": [
+        {
+          "match": "Straight",
+          "prizes": [
+            "$3,000",
+            "$6,000",
+            "$12,000",
+            "$18,000",
+            "$24,000",
+            "$30,000"
+          ],
+          "odds": "1 in 10,000"
+        },
+        {
+          "match": "Box 24-Way (4 unique numbers)",
+          "prizes": [
+            "$125",
+            "$250",
+            "$500",
+            "$750",
+            "$1,000",
+            "$1,250"
+          ],
+          "odds": "1 in 417"
+        },
+        {
+          "match": "Box 12-Way (2 identical numbers)",
+          "prizes": [
+            "$250",
+            "$500",
+            "$1,000",
+            "$1,500",
+            "$2,000",
+            "$2,500"
+          ],
+          "odds": "1 in 833"
+        },
+        {
+          "match": "Box 6-Way (2 pairs identical numbers)",
+          "prizes": [
+            "$500",
+            "$1,000",
+            "$2,000",
+            "$3,000",
+            "$4,000",
+            "$5,000"
+          ],
+          "odds": "1 in 1,667"
+        },
+        {
+          "match": "Box 4-Way (3 identical numbers)",
+          "prizes": [
+            "$750",
+            "$1,500",
+            "$3,000",
+            "$4,500",
+            "$6,000",
+            "$7,500"
+          ],
+          "odds": "1 in 2,500"
+        },
+        {
+          "match": "Straight/Box 4-Way Exact",
+          "prizes": [
+            "N/A",
+            "$3,750",
+            "$7,500",
+            "$11,250",
+            "$15,000",
+            "$18,750"
+          ],
+          "odds": "1 in 10,000"
+        },
+        {
+          "match": "Straight/Box 4-Way Any",
+          "prizes": [
+            "N/A",
+            "$750",
+            "$1,500",
+            "$2,250",
+            "$3,000",
+            "$3,750"
+          ],
+          "odds": "1 in 2,500"
+        },
+        {
+          "match": "Straight/Box 6-Way Exact",
+          "prizes": [
+            "N/A",
+            "$3,500",
+            "$7,000",
+            "$10,500",
+            "$14,000",
+            "$17,500"
+          ],
+          "odds": "1 in 10,000"
+        },
+        {
+          "match": "Straight/Box 6-Way Any",
+          "prizes": [
+            "N/A",
+            "$500",
+            "$1,000",
+            "$1,500",
+            "$2,000",
+            "$2,500"
+          ],
+          "odds": "1 in 1,667"
+        },
+        {
+          "match": "Straight/Box 12-Way Exact",
+          "prizes": [
+            "N/A",
+            "$3,250",
+            "$6,500",
+            "$9,750",
+            "$13,000",
+            "$16,250"
+          ],
+          "odds": "1 in 10,000"
+        },
+        {
+          "match": "Straight/Box 12-Way Any",
+          "prizes": [
+            "N/A",
+            "$250",
+            "$500",
+            "$750",
+            "$1,000",
+            "$1,250"
+          ],
+          "odds": "1 in 833"
+        },
+        {
+          "match": "Straight/Box 24-Way Exact",
+          "prizes": [
+            "N/A",
+            "$3,125",
+            "$6,250",
+            "$9,375",
+            "$12,500",
+            "$15,625"
+          ],
+          "odds": "1 in 10,000"
+        },
+        {
+          "match": "Straight/Box 24-Way Any",
+          "prizes": [
+            "N/A",
+            "$125",
+            "$250",
+            "$375",
+            "$500",
+            "$625"
+          ],
+          "odds": "1 in 417"
+        },
+        {
+          "match": "Front Pair",
+          "prizes": [
+            "$30",
+            "$60",
+            "$120",
+            "$180",
+            "$240",
+            "$300"
+          ],
+          "odds": "1 in 100"
+        },
+        {
+          "match": "Back Pair",
+          "prizes": [
+            "$30",
+            "$60",
+            "$120",
+            "$180",
+            "$240",
+            "$300"
+          ],
+          "odds": "1 in 100"
+        }
+      ],
+      "overallOdds": null,
+      "notes": "Wager-specific prize schedule; N/A is inapplicable, not zero. Exact and Any rows remain distinct; never sum report counts."
+    }
+  ]
+}
