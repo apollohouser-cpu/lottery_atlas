@@ -177,8 +177,7 @@ class _IowaInstantInventorySheetState extends State<IowaInstantInventorySheet> {
                       )),
                 )
                 .toList();
-            return Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            return ListView(
               children: [
                 const Text(
                   'Iowa instant prize inventories',
@@ -249,23 +248,17 @@ class _IowaInstantInventorySheetState extends State<IowaInstantInventorySheet> {
                 Text(
                   '${filtered.length} of ${games.length} $type games in report',
                 ),
-                Expanded(
-                  child: ListView(
-                    children: [
-                      const Text(
-                        'Cumulative inventory, not dated winners or store availability. Below-\$50 prizes and progressive jackpots are not included.',
-                      ),
-                      for (final game in filtered)
-                        ListTile(
-                          title: Text('${game['name']} (${game['id']})'),
-                          subtitle: Text(
-                            '\$${game['cost']} · ${game['prizeTiers'].length} published tiers',
-                          ),
-                          onTap: () => detail(coverage, subset, game),
-                        ),
-                    ],
-                  ),
+                const Text(
+                  'Cumulative inventory, not dated winners or store availability. Below-\$50 prizes and progressive jackpots are not included.',
                 ),
+                for (final game in filtered)
+                  ListTile(
+                    title: Text('${game['name']} (${game['id']})'),
+                    subtitle: Text(
+                      '\$${game['cost']} · ${game['prizeTiers'].length} published tiers',
+                    ),
+                    onTap: () => detail(coverage, subset, game),
+                  ),
               ],
             );
           },

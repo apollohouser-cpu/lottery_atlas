@@ -282,3 +282,20 @@ Remaining product-source flows, layout variants, newer remote adoption and
 controlled production-loader failure retention/restoration still require checks.
 No code/build/acceptance/deadline change. Ordinary iOS04f8ef3 is at Pick4 Evening
 summary; Android stopped. Private evidence: work/iowa_scope/native-source-returns.json.
+
+## October 19, 19:14 ET — inventory short-height layout
+
+Native landscape inspection of ordinary iOS04f8ef3 showed the inventory controls
+consuming almost the entire sheet height, leaving the games below the viewport.
+Moved inventory controls and game rows into one scrollable list so controls can
+scroll away on short screens. Added a real844×390,2x-text widget regression that
+scrolls to WHAT A GEM!, opens details, and checks for layout exceptions. All13
+Iowa Flutter tests pass; changed production Dart analyzes cleanly.
+
+Long-rule traversal is still open: Pick4 Evening was only partly traversed;
+native scroll/drag attempts were inconsistent. AX nodes outside the visible
+viewport are not evidence of completed visual traversal. Landscape draw heading
+and selection were readable, but this does not close all layout checks.
+Remaining native product-source flows, long schedules, enlarged-text/layout
+verification, newer remote adoption and controlled request-failure retention
+remain open. No acceptance or deadline change. No source data changed.
