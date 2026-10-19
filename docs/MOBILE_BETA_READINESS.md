@@ -3,7 +3,7 @@
 October 6, 2026 audit. Beta is authorized for iOS and Android with validated
 coverage; national supported coverage is required before full public release.
 October 20–27 remains a provisional beta estimate, not a promised launch date.
-As of October 14, eleven states have accepted supported coverage, including Louisiana.
+As of October 18 at 20:42 ET, fourteen states have accepted supported coverage, including South Dakota.
 No mobile distribution is implied by desktop state acceptance.
 
 ## Verified local readiness
@@ -834,3 +834,7 @@ visual flows remain a beta gate, not inferred from successful launch. iOS is
 shut down, Android alone running. SDK/build/cache/device data use existing PNY
 links; no further migration or permission changes. Signing/accounts, broader
 persistence and distribution remain open. October20–27 is provisional beta only.
+
+## October 18, 20:42 ET — South Dakota ordinary iOS release
+
+Ordinary iOS debug `94fd40c` rebuilt, installed and cold-launched after the enlarged-title fix and private test-harness removal. Normal South Dakota draw and Scratch navigation passed. SD native acceptance is closed; see SOUTH_DAKOTA_ACCEPTANCE.md. iOS remains upright on the Scratch inventory; Android is stopped. Android last ordinary build remains `aabff9f`; broader Android visual flows, persistence, signing/accounts and distribution remain open. Fourteen accepted states/31 remaining does not establish national launch readiness. PNY links and permissions are unchanged.

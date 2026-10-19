@@ -1,6 +1,9 @@
 # South Dakota supported coverage acceptance
 
-Status: **ACTIVE — not accepted**. Sole active state.
+Status: **SUPPORTED COVERAGE ACCEPTED — October 18, 2026 at 20:42 ET**.
+
+Release: `94fd40c`, pushed. Completed before October 23 at 04:24 ET with no extension.
+Earlier checkpoints below are historical and superseded by this acceptance.
 
 - Activated: October 18, 2026 at 04:24 ET.
 - Scope closure due: October 19, 2026 at 04:24 ET.
@@ -30,14 +33,14 @@ this checkpoint.
 ## Release gates
 
 - [x] Close all products/options/history/session scope and explicit gaps.
-- [ ] Inspect actual official public draw requests, date/variant semantics and units.
-- [ ] Strict collectors, literal schedules and coupled atomic refresh retention.
-- [ ] Fresh Scratch identity/inventory audit and full supported tier display.
-- [ ] Remote/cache/bundle integration with explicit date and coverage semantics.
-- [ ] Native all groups/selections/source returns; long schedules; compact/wide.
-- [ ] Scratch filters/detail return; newer remote adoption; request-failure retention.
-- [ ] Ordinary build restored; appropriate tests and independent live-feed checks.
-- [ ] Record supported acceptance with explicit unavailable features.
+- [x] Inspect actual official public draw requests, date/variant semantics and units.
+- [x] Strict collectors, literal schedules and coupled atomic refresh retention.
+- [x] Fresh Scratch identity/inventory audit and full supported tier display.
+- [x] Remote/cache/bundle integration with explicit date and coverage semantics.
+- [x] Native all groups/selections/source returns; long schedules; compact/wide.
+- [x] Scratch filters/detail return; newer remote adoption; request-failure retention.
+- [x] Ordinary build restored; appropriate tests and independent live-feed checks.
+- [x] Record supported acceptance with explicit unavailable features.
 
 Missing agency records do not block honest supported completion. No full claims,
 retailer-directory completeness, guessed coordinates or ten-year history claims.
@@ -207,3 +210,13 @@ work/south_dakota_scope. Android stopped; iOS upright on ordinary home map.
 Next resolve the enlarged draw-heading observation and verify ordinary South
 Dakota loading again, then consolidated tests/live verification/release decision.
 No acceptance or deadline change.
+
+## October 18, 20:42 ET — supported acceptance
+
+Release `94fd40c` fixes enlarged draw headings by placing actions below the full-width title at large text sizes. Native 2x rendering shows the complete title. The private harness was removed; ordinary main.dart was restored byte-for-byte, rebuilt, installed and cold-launched. Normal map navigation to South Dakota loaded both the Powerball October 17 report and the 35-game Scratch inventory, with current persisted data and explicit limitations.
+
+All seven groups/both date selections, family source returns, literal long schedules, dated-search return, portrait/landscape, Scratch filtering/detail return, enlarged text and newer remote adoption are closed. Controlled production-loader SocketException tests retained both real persisted caches byte-for-byte; this is a request-failure test, not a device-wide offline claim. No probe is tracked.
+
+Consolidated validation: 43 South Dakota Python tests, 13 transaction tests and nine Flutter tests pass; seven production Dart files analyze cleanly. Independent live draw JSON matches the deployed local artifact exactly (retrieved October 18 at 20:47:10 UTC); all Scratch catalog content matches, with only the public publisher's additional updatedAt/timestampScope metadata. Ordinary iOS build and cold launch pass.
+
+Accepted scope: 14 bounded results across six families/seven groups, 12 source-labeled SD Winners reports and two explicit Mega Millions count gaps; seven rule pages/23 tabs; 35 active-listed Scratch games/293 tiers. SD Winners does not mean unique people or paid claims. Scratch remaining inventory is cumulative original minus paid, with unknown source verification time. No complete retailer directory, joins, coordinates, complete claims or ten-year history is claimed. The dated search opens the general winning-numbers page without automatic date focus. Historical Lucky for Life, instant EZ Match and the remaining official routes retain their explicit dispositions.
