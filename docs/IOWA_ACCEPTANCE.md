@@ -102,3 +102,11 @@ Added tooling/iowa_team_results.py. XsOs output preserves official image filenam
 All four captured source rows validate, yielding the two bounded selections for October11 and October4. Combined private captured-source staging now produces20results/ten groups/seven families,12 exact joined source-qualified reports, and eight explicit Pick count-unit gaps. This is private parsed-draw-report-stage.json, not a deployed feed or an atomic live collector. Twenty-five combined parser/chart/report/team regression tests pass.
 
 Next HTML schedule footnotes, annuity sharing and Pick combinations extraction/validation, then atomic live collector and separate typed instant inventories. Existing image hash gates remain required. No public feed/build/UI/acceptance or deadline change.
+
+## October 19, 04:47 ET — HTML annuity and combination contracts
+
+Added strict reviewed HTML schedule contracts for Millionaire for Life and both Pick combination pages. MFL preserves both physical sharing/cash-option tables (three top-prize rows and two tier-2 rows), minimum annuity and 20-year qualifications, Section 6.C. reference, 60-day election and equal-sharing limitation. Pick3 preserves all five combination examples and Pick4 all seven, including exact/any order, repeated-number cases and front/back pairs. Literal text and table cells are retained, not calculated payouts or winner counts.
+
+The parser isolates the single primary-content container and compares normalized headings, paragraphs and table cells against reviewed source contracts. Changed/missing qualifications, table values, game identity or duplicate containers fail closed; harmless whitespace/inline markup is normalized. All three captured pages validate. Thirty combined Iowa regression tests pass, including changed cash/sharing terms, missing text, altered combinations and wrong-game rejection.
+
+Remaining other-family HTML footnotes still require extraction before the atomic live collector. Typed instant inventories, public feed, app/native and acceptance remain open. No public feed/build/UI or deadline change.
