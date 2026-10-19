@@ -174,28 +174,49 @@ class _SouthDakotaDrawCollectionSheetState
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    const Expanded(
-                      child: Text(
-                        'South Dakota results and schedules',
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                        ),
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    const title = Text(
+                      'South Dakota results and schedules',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
                       ),
-                    ),
-                    IconButton(
-                      tooltip: 'Official game source',
-                      onPressed: () => _open(r['sourceUrl']),
-                      icon: const Icon(Icons.open_in_new),
-                    ),
-                    IconButton(
-                      tooltip: 'Close reports',
-                      onPressed: () => Navigator.pop(context),
-                      icon: const Icon(Icons.close),
-                    ),
-                  ],
+                    );
+                    final actions = Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        IconButton(
+                          tooltip: 'Official game source',
+                          onPressed: () => _open(r['sourceUrl']),
+                          icon: const Icon(Icons.open_in_new),
+                        ),
+                        IconButton(
+                          tooltip: 'Close reports',
+                          onPressed: () => Navigator.pop(context),
+                          icon: const Icon(Icons.close),
+                        ),
+                      ],
+                    );
+                    if (MediaQuery.textScalerOf(context).scale(20) > 30) {
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          title,
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: actions,
+                          ),
+                        ],
+                      );
+                    }
+                    return Row(
+                      children: [
+                        const Expanded(child: title),
+                        actions,
+                      ],
+                    );
+                  },
                 ),
                 DropdownButton<int>(
                   isExpanded: true,
