@@ -31,3 +31,15 @@ Existing Scratch report is explicitly $50-plus, cumulative claimed/unclaimed inv
 - [ ] Supported acceptance with explicit unavailable features.
 
 No public feed, app build, UI change or acceptance at activation. Missing agency records do not extend the app deadline. No new correspondence, fees, coordinates or heuristic joins.
+
+## October 18, 22:49 ET — actual report and session audit
+
+Captured all home-linked draw family/detail/result pages plus nine linked prize-report routes privately with retrieval/hash provenance in work/iowa_scope. Seven home-linked InstaPlay detail pages are samples, not a complete inventory. Actual result/report content is server-rendered HTML; no separate API is required or assumed at this stage.
+
+Powerball, Mega Millions, Lotto America, Millionaire for Life and Xs & Os prize pages explicitly describe winners for tickets purchased in Iowa. Preserve that source label rather than unique people/paid claims. Powerball has distinct Regular and Double Play report tables. Latest PB/MM/Lotto America report jackpot fields contain $0 while earlier dated rows have positive amounts: treat these as unresolved missing/placeholder jackpot data, never a zero-dollar advertised prize. MM includes obsolete historical headers/structures and blank modern MP cells; select the correct dated structure and do not invent a draw-wide built-in multiplier.
+
+Pick 3 and Pick 4 midday winning-number pages already show October 18, but their prize reports currently end October 17. Join only exact dates plus sessions; do not attach October17 counts to October18 numbers or mark absent reports as zero. These report pages do not provide the same explicit geographic/unit description seen on the multi-state pages; retain a count-unit validation gate before integration. Pick4 leading zeros are literal digits. Pick3 reports have nine wager columns and Pick4 fifteen, including distinct straight/box exact/any combinations; do not collapse or sum overlapping categories.
+
+Xs & Os dated results contain eight image sources (e.g. ARI.png and DEN.png) with positional alt text, not team names. A reviewed official mapping is needed; never interpret positional labels as teams. Its last visible result is October11 while other games are newer; no common latest date is imposed. Number pages and report pages have different history windows. Retain raw calendar dates and explicit session, without fabricating UTC timestamps.
+
+Next close the remaining full scope: exact literal schedules/options, Lucky for Life retirement/history, complete instant-product dispositions/current dated inventory, official retailer/winner/claim/club routes; then strict bounded parser and date/variant/unit tests. No public feed/build/UI/Gmail or acceptance change; original deadlines remain.
