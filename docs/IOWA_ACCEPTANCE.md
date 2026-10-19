@@ -140,3 +140,9 @@ Implemented collect_iowa_coverage.py: one atomic snapshot couples the strict dra
 Fresh live staging retrieved12:51:07UTC passed82 deduplicated public requests:20 bounded draw results,50 verified Scratch games and84 typed games total (50Scratch/25InstaPlay/9PullTab). Report source date remainsOctober17. Per-source hashes are included in private work/iowa_scope/coupled-stage.json. Fifty-three Iowa tests pass; new transaction tests verify a detail failure after successful draw collection cannot expose partial updates, replace failures preserve bytes and remove staging files, source-date/tier mismatches reject the snapshot, and normal dated progression remains possible.
 
 Next public snapshot/workflow integration and app presentation/loaders, then native acceptance. No public feed/build/UI/acceptance or deadline change; Iowa remains sole active.
+
+## October 19, 09:55 ET — public baseline and scheduled transaction wiring
+
+Staged the validated coupled schema1 Iowa baseline in data/iowa_coverage.generated.json and docs/iowa_coverage.json. It contains only audited public-source results, schedules, typed inventories and source provenance; no private agency records or retailer joins. Added a verified Scratch projection exporter, preserving the prior retrieval timestamp when the legacy Scratch catalog is unchanged. Scheduled Iowa refresh now couples both generated outputs under the existing state rollback transaction; a collector or projection failure retains both previous files and dates. The publishing workflow stages and tracks the new public snapshot.
+
+Fifty-five Iowa tests and13 state-transaction tests pass. Projection tests cover unchanged timestamp preservation and mismatched source/tier rejection. Deployment/live-byte confirmation remains next, followed by app integration and native checks. No new native build or acceptance; deadline unchanged.

@@ -2,12 +2,22 @@
   {
     "state": "Iowa",
     "outputs": [
+      "data/iowa_coverage.generated.json",
       "data/iowa_scratch_catalog.generated.json"
     ],
     "commands": [
       [
         "python3",
-        "tooling/import_iowa_scratch_catalog.py",
+        "-m",
+        "tooling.collect_iowa_coverage",
+        "--output",
+        "data/iowa_coverage.generated.json"
+      ],
+      [
+        "python3",
+        "-m",
+        "tooling.export_iowa_scratch",
+        "data/iowa_coverage.generated.json",
         "data/iowa_scratch_catalog.generated.json"
       ]
     ]
