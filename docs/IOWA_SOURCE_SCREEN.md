@@ -265,3 +265,20 @@ long schedules, inventory price/reset/product-source flows, layouts, newer remot
 adoption and controlled production-loader request-failure retention remain open.
 Iowa not accepted; release deadline unchanged. Ordinary app is on Scratch693 detail,
 Android stopped. Private correction audit: work/iowa_scope/encoding-correction.json.
+
+## October 19, 18:12 ET — native draw source returns
+
+Verified native header source buttons for all ten groups, including separate
+Pick midday/evening routes and Powerball/Double Play shared winning-number page.
+Safari address editing exposed the exact official Win.aspx URL in each case;
+OS return retained the selected group/date. This is source navigation, not an
+automatically focused date query. Powerball return also retained partial scroll.
+Scratch $1 filter showed5of50 games; Reset restored All prices and50of50.
+
+Long rules remain open: only partial Powerball chart traversal occurred. Native
+wheel scrolling did not advance this view; bounded touch drags advanced it.
+Do not infer complete schedule traversal from widget tests or partial output.
+Remaining product-source flows, layout variants, newer remote adoption and
+controlled production-loader failure retention/restoration still require checks.
+No code/build/acceptance/deadline change. Ordinary iOS04f8ef3 is at Pick4 Evening
+summary; Android stopped. Private evidence: work/iowa_scope/native-source-returns.json.
