@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'iowa_inventory_validator.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tzdata;
 import 'iowa_coverage_contract.dart';
@@ -182,9 +183,12 @@ class IowaCoverageValidator {
             day(group[0]['drawDate']).isAfter(day(group[1]['drawDate'])),
       );
     }
-    // Initial inventory contract stays reviewed: unknown additions/corrections cannot silently replace it.
-    exact(d['instantInventories'], template['instantInventories']);
-    exact(d['scratchCatalog'], template['scratchCatalog']);
+    IowaInventoryValidator.validate(
+      d['instantInventories'],
+      d['scratchCatalog'],
+      template,
+      cutoff,
+    );
     return d;
   }
 
@@ -194,6 +198,7 @@ class IowaCoverageValidator {
         next['retrievedAt'],
       ).isBefore(DateTime.parse(old['retrievedAt'])),
     );
+    IowaInventoryValidator.continuity(old, next);
     final previous = old['draws']['results'] as List;
     for (final row in next['draws']['results']) {
       final same = previous.where((r) => r['group'] == row['group']).toList();

@@ -6,6 +6,71 @@ import '../lib/services/iowa_coverage_loader.dart';
 
 void main() {
   final raw = File('data/iowa_coverage.generated.json').readAsStringSync();
+  dynamic nextInventory() {
+    final data = jsonDecode(raw);
+    data['instantInventories']['sourceDate'] = '2026-10-18';
+    data['scratchCatalog']['sourceDate'] = '2026-10-18';
+    for (final game in data['scratchCatalog']['games']) {
+      game['inventoryNote'] = (game['inventoryNote'] as String).replaceFirst(
+        '2026-10-17',
+        '2026-10-18',
+      );
+    }
+    return data;
+  }
+
+  test('dated typed inventory advances and retains product boundaries', () {
+    final old = IowaCoverageValidator.decode(raw), data = nextInventory();
+    final tier =
+        data['instantInventories']['inventories'][1]['games'][0]['prizeTiers'][0];
+    tier['claimed'] += 1;
+    tier['unclaimed'] -= 1;
+    final parsed = IowaCoverageValidator.decode(jsonEncode(data));
+    IowaCoverageValidator.continuity(old, parsed);
+    expect(
+      parsed['instantInventories']['inventories'][1]['productType'],
+      'InstaPlay',
+    );
+  });
+  test(
+    'inventory schema counts duplicate identities and unsafe sources reject',
+    () {
+      for (final change in [
+        (dynamic d) =>
+            d['instantInventories']['inventories'][1]['games'][0]['prizeTiers'][0]['claimed'] =
+                -1,
+        (dynamic d) =>
+            d['instantInventories']['inventories'][1]['productType'] =
+                'Scratch',
+        (dynamic d) => d['instantInventories']['inventories'][1]['games'].add(
+          d['instantInventories']['inventories'][1]['games'][0],
+        ),
+        (dynamic d) => d['scratchCatalog']['games'][0]['sourceUrl'] =
+            'https://example.com',
+        (dynamic d) => d['scratchCatalog']['games'][0]['topPrize'] = 1,
+      ]) {
+        final data = nextInventory();
+        change(data);
+        expect(
+          () => IowaCoverageValidator.decode(jsonEncode(data)),
+          throwsA(anything),
+        );
+      }
+    },
+  );
+  test('same-date changes and reversed cumulative counts fail continuity', () {
+    final old = IowaCoverageValidator.decode(raw);
+    for (final sameDate in [true, false]) {
+      final data = sameDate ? jsonDecode(raw) : nextInventory();
+      data['instantInventories']['inventories'][1]['games'][0]['prizeTiers'][0]['claimed'] -=
+          1;
+      final parsed = IowaCoverageValidator.decode(jsonEncode(data));
+      expect(
+        () => IowaCoverageValidator.continuity(old, parsed),
+        throwsA(anything),
+      );
+    }
+  });
   test('complete coupled baseline validates', () {
     final data = IowaCoverageValidator.decode(raw);
     expect(data['draws']['results'].length, 20);
