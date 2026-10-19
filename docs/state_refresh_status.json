@@ -1,5 +1,5 @@
 {
-  "attemptedAt": "2026-10-18T21:02:46.858603+00:00",
+  "attemptedAt": "2026-10-19T04:59:56.426253+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
@@ -47,8 +47,8 @@
     },
     {
       "state": "New Mexico",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/new_mexico_scratch_catalog.generated.json"
       ]
@@ -63,8 +63,8 @@
     },
     {
       "state": "Louisiana",
-      "status": "retained_after_failure",
-      "message": "Importer failed validation or could not retrieve its source.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/louisiana_scratch_catalog.generated.json",
         "data/louisiana_draw_reports.generated.json"
@@ -80,8 +80,8 @@
     },
     {
       "state": "Connecticut",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/connecticut_scratch_catalog.generated.json"
       ]
@@ -128,8 +128,8 @@
     },
     {
       "state": "Michigan",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/michigan_scratch_catalog.generated.json"
       ]
@@ -154,8 +154,8 @@
     },
     {
       "state": "Washington",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/washington_scratch_catalog.generated.json"
       ]
@@ -257,8 +257,8 @@
     },
     {
       "state": "Missouri",
-      "status": "retained_after_failure",
-      "message": "Importer failed validation or could not retrieve its source.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/state_winning_ticket_totals.json",
         "data/missouri_scratch_catalog.generated.json",
