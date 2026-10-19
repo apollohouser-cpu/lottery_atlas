@@ -1,3 +1,4 @@
+import '../../widgets/map/iowa_instant_inventory_sheet.dart';
 import '../../widgets/map/iowa_draw_collection_sheet.dart';
 import '../../widgets/map/south_dakota_scratch_catalog_sheet.dart';
 import '../../widgets/map/south_dakota_draw_collection_sheet.dart';
@@ -60,6 +61,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Iowa')
+            Card(child: ListTile(
+              title: const Text('Iowa instant prize inventories'),
+              subtitle: const Text('Separate Scratch, InstaPlay and PullTab report subsets'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const IowaInstantInventorySheet()),
+            )),
           if (source.stateName == 'Iowa')
             Card(child: ListTile(
               title: const Text('Iowa results and schedules'),
