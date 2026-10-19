@@ -147,3 +147,18 @@ No fees, deposits, paid processing or custom compilation are authorized. Await
 Supervisor response; no appeal number or promised response date yet. Do not
 resend. Private send evidence and packet remain under the existing private
 Massachusetts correspondence directory. No public data or acceptance change.
+
+## October 19 — Original correspondence supplied for appeal review
+
+The Supervisor's office requested the complete correspondence as forwarded
+messages or a PDF. After reviewing the appeal and original thread histories,
+supplied all nine original messages as EML attachments in one same-thread
+supplement, preserving original headers, bodies and attachments, including the
+two denial PDFs. Sent status and all nine attachments were verified. This was
+a requested format supplement, not a duplicate appeal or new records request.
+
+The Lottery separately acknowledged the October 18 correspondence and said it
+was reviewing it. Its description as a request does not establish a scope or
+deadline reset. No dataset, fee, appeal number or promised response date was
+provided. Await response; do not resend. No fees or paid work authorized; no
+public data or acceptance change. Evidence remains private.
