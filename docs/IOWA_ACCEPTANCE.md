@@ -198,3 +198,27 @@ Native source returns, long rules, remaining inventory filters/source returns,
 layout variants, newer remote adoption and controlled request-failure retention
 remain open. Ordinary app stays on filtered PullTab inventory; Android stopped.
 No acceptance or deadline change.
+
+## October 19, 17:05 ET — UTF-8 name correction and native recovery
+
+Fixed both report parsers to decode official UTF-8 bytes strictly before HTML
+parsing. Reviewed five exact name corrections against captured source bytes:
+Scratch693/773 and InstaPlay172/177/178. Updated only those names in the coupled
+baseline, Scratch projection and Dart contract; counts, dates, retrieval times
+and source hashes are unchanged. The Dart decoder migrates only those exact
+legacy spellings for those product/ID pairs before full validation. Same-date
+count corrections, other identity changes and all continuity checks still reject.
+
+56 Iowa Python tests and12 Flutter tests pass (the initial Flutter invocation
+included a nonexistent inventory test filename; corrected-path inventory tests
+passed). Changed Dart analyzes cleanly. Release04f8ef3 pushed; publisher39324356638
+succeeded and live coupled JSON matches corrected bytes. Ordinary iOS rebuilt,
+installed and cold-launched with existing cache retained. Native Scratch list and
+detail show SCRABBLE™ and UNO™ correctly. SCRABBLE official detail URL with game693
+opened in Safari; OS return retained detail and literal tiers. No probe used.
+
+Encoding defect is closed. Remaining native source returns for draw families,
+long schedules, inventory price/reset/product-source flows, layouts, newer remote
+adoption and controlled production-loader request-failure retention remain open.
+Iowa not accepted; release deadline unchanged. Ordinary app is on Scratch693 detail,
+Android stopped. Private correction audit: work/iowa_scope/encoding-correction.json.

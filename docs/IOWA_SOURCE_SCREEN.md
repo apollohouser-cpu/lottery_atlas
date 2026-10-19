@@ -241,3 +241,27 @@ Nine Iowa Flutter tests pass, including all20 selections at2x text and traversal
 Integrated separate Scratch/InstaPlay/PullTab inventory selection, name/number search, price filter/reset, literal cumulative claimed/unclaimed tier details and official source links. Scratch details preserve status dates and source notes; other products explicitly exclude full schedules/current progressive jackpots. Report source date stays October17. Search/detail return preserves the filter in widget tests.
 
 Eleven Iowa Flutter tests pass, including all three product inventories at2x text and a PullTab search/detail/return/reset flow. Both Iowa sheets and the state source screen analyze cleanly. Ordinary main.dart iOS debug7dda240 built, installed and launched on the original iPhone17e simulator (process40813); no temporary probe used. Android remains stopped. Successful launch is not native visual acceptance: all native selection/date/source returns, long schedules, filters/details/layouts and production-loader failure/ordinary restoration checks remain open. No acceptance/deadline change.
+
+## October 19, 17:05 ET — UTF-8 name correction and native recovery
+
+Fixed both report parsers to decode official UTF-8 bytes strictly before HTML
+parsing. Reviewed five exact name corrections against captured source bytes:
+Scratch693/773 and InstaPlay172/177/178. Updated only those names in the coupled
+baseline, Scratch projection and Dart contract; counts, dates, retrieval times
+and source hashes are unchanged. The Dart decoder migrates only those exact
+legacy spellings for those product/ID pairs before full validation. Same-date
+count corrections, other identity changes and all continuity checks still reject.
+
+56 Iowa Python tests and12 Flutter tests pass (the initial Flutter invocation
+included a nonexistent inventory test filename; corrected-path inventory tests
+passed). Changed Dart analyzes cleanly. Release04f8ef3 pushed; publisher39324356638
+succeeded and live coupled JSON matches corrected bytes. Ordinary iOS rebuilt,
+installed and cold-launched with existing cache retained. Native Scratch list and
+detail show SCRABBLE™ and UNO™ correctly. SCRABBLE official detail URL with game693
+opened in Safari; OS return retained detail and literal tiers. No probe used.
+
+Encoding defect is closed. Remaining native source returns for draw families,
+long schedules, inventory price/reset/product-source flows, layouts, newer remote
+adoption and controlled production-loader request-failure retention remain open.
+Iowa not accepted; release deadline unchanged. Ordinary app is on Scratch693 detail,
+Android stopped. Private correction audit: work/iowa_scope/encoding-correction.json.
