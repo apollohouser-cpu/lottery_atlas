@@ -8,6 +8,12 @@ PAGES = {
     'millionaire_for_life': 'MillionaireForLife',
     'pick3': 'Pick3WinningCombinations',
     'pick4': 'Pick4WinningCombinations',
+    'powerball': 'Powerball',
+    'mega_millions': 'MegaMillions',
+    'lotto_america': 'LottoAmerica',
+    'xsos': 'PowerballXsOs',
+    'pick3_rules': 'Pick3',
+    'pick4_rules': 'Pick4',
 }
 
 
@@ -23,11 +29,25 @@ def extract_sections(raw):
     if len(containers) != 1:
         raise ValueError('Ambiguous Iowa primary content')
     sections = []
+    elements = []
     for element in containers[0]:
+        if element.tag == 'div' and element.get('id'):
+            if element.get('id') not in {
+                'ContentPlaceHolder1_newTextPBDP',
+                'ContentPlaceHolder1_AddDoublePlay',
+                'ContentPlaceHolder1_newMatrixApril5',
+            }:
+                raise ValueError('Unknown Iowa rule section')
+            elements.extend(element)
+        else:
+            elements.append(element)
+    for element in elements:
         if element.tag in ('h2', 'h3', 'p'):
             text = _text(element)
             if text:
                 sections.append({'kind': element.tag, 'text': text})
+        elif element.tag in ('ul', 'ol'):
+            sections.append({'kind': element.tag, 'items': [_text(li) for li in element.xpath('./li')]})
         elif element.tag == 'table':
             rows = [[_text(cell) for cell in row.xpath('./th|./td')]
                     for row in element.xpath('./tr|./tbody/tr|./thead/tr')]
