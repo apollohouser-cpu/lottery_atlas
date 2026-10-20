@@ -288,3 +288,28 @@ Ordinary lib/main.dart rebuilt successfully, installed and cold-launched after
 the private target (PID59799); native home map verified. Simulator remains
 landscape, Android stopped. Restore log:
 work/iowa_scope/retention-ordinary-restore.log. No probe is tracked or installed.
+
+## October 19, 21:10 ET — refresh isolated for official source corrections
+
+A fresh coupled collection for the pending newer-remote adoption check failed
+closed on dated-result/report continuity. The staged retained snapshot remains
+byte-identical to the published baseline; no date was advanced or partial update
+published. Fresh private draw-only review identified four changed retained rows:
+Pick3 midday October18 changed2-3-7 to2-8-7; PB October17 jackpot placeholder became
+$586,400,000; MM October16 became$403,000,000; LA October17 became$2,250,000.
+Those three report tier counts did not change. Original captured Pick3MWin HTML
+contains2-3-7; freshly fetched official same-route HTML contains2-8-7 for the exact
+same date. Neither value is inferred. The published baseline still contains the
+older values and must not be described as current for these four rows.
+
+Review evidence is private work/iowa_scope/adoption-correction-review.json and
+pick3-midday-correction-20261019.html. Next review and implement a narrowly bounded
+correction migration in collector/app continuity, with regressions, before new
+publication/adoption. Do not weaken general continuity or change the deadline.
+Iowa remains unaccepted. User notified of this source change and refresh isolation.
+
+Separately, native PullTab WHAT A GEM! official product link opened exact route
+https://www.ialottery.com/Pages/Games-Pulltab/PulltabGamesListing.aspx ; Safari
+address verified and OS return retained game4 detail and its literal tiers.
+Simulator now upright in that ordinary detail; Android stopped. Other native
+long-rule/layout/source/adoption gates remain open; request-failure gate stays closed.
