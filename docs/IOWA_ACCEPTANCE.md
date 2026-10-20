@@ -338,3 +338,23 @@ Ordinary main.dart iOS build succeeded, installed/cold-launched (PID67179), home
 map verified upright. Existing native cache retained for the next real remote
 adoption check. No probe. Build log: work/iowa_scope/reviewed-correction-ios-build.log.
 Deployment/livebytes and native adoption are not yet claimed.
+
+## October 19, 23:16 ET — live correction recovery and native adoption verified
+
+Public iowa_coverage.json is byte-identical to the current published repository
+snapshot. Ordinary iOS 7eeec8b adopted that real newer remote snapshot with the
+existing cache retained: retrieved 2026-10-20T02:08:48.247238+00:00. Native draw
+presentation showed Powerball October17 jackpot $586,400,000 and Pick3 midday
+October18 numbers 2 · 8 · 7 with the explicit unavailable-count qualification.
+Read-only host inspection confirmed the persisted iowa_coverage_v1 cache is
+byte-identical to the live feed (SHA256
+bdbcb8a0cf480b29b6af1c90a2a1c7192b56d55b60d55218c06896a1870a51dc).
+Private evidence: work/iowa_scope/correction-native-adoption.json and preserved
+live/cache bytes. No injected response, cache rewrite, or probe was used.
+
+Deployment recovery and real newer-remote adoption gates are closed. The prior
+controlled request-failure retention gate remains closed. Remaining native
+long-schedule, enlarged/landscape and outstanding instant source-return flows
+still require verification; Iowa is not accepted. Release deadline remains
+October23 at21:42ET, with no extension. Ordinary app remains upright on the
+corrected Pick3 midday result; Android remains stopped.

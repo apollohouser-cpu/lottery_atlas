@@ -838,3 +838,7 @@ persistence and distribution remain open. October20–27 is provisional beta onl
 ## October 18, 20:42 ET — South Dakota ordinary iOS release
 
 Ordinary iOS debug `94fd40c` rebuilt, installed and cold-launched after the enlarged-title fix and private test-harness removal. Normal South Dakota draw and Scratch navigation passed. SD native acceptance is closed; see SOUTH_DAKOTA_ACCEPTANCE.md. iOS remains upright on the Scratch inventory; Android is stopped. Android last ordinary build remains `aabff9f`; broader Android visual flows, persistence, signing/accounts and distribution remain open. Fourteen accepted states/31 remaining does not establish national launch readiness. PNY links and permissions are unchanged.
+
+## October 19, 23:16 ET — Iowa ordinary iOS remote adoption
+
+Ordinary iOS `7eeec8b` adopted the real newer coupled Iowa feed and persisted bytes identical to the live publication. Corrected Pick3 midday numbers and the populated Powerball jackpot were verified in native presentation. The app remains upright; Android stopped. Iowa native layout/long-schedule/source-return gates remain open, so Iowa is not yet accepted. No probe or permission change. Broader Android, signing/accounts and distribution gates remain open.
