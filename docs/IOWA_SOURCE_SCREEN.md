@@ -420,3 +420,21 @@ layout/enlarged checks remain open; Iowa is not accepted. Deadline stays
 October23 at21:42ET with no extension. Ordinary iOS remains upright on game150
 detail; Android stopped. Previously closed adoption/failure-retention gates
 were not repeated.
+
+## October 20, 01:20 ET — ordinary landscape inventory interaction
+
+Ordinary iOS7eeec8b rotated to landscape with game150 detail retained. The
+heading, close action and visible literal tiers remained readable. Closed detail,
+returned to the InstaPlay list, and reopened game150 from its landscape row.
+Both landscape orientations displayed the detail without an observed overflow;
+restored upright portrait and verified the product/source-date/limitation text
+and tiers. This closes the observed landscape selection/return portion only.
+
+Long-list traversal remains unproven: wheel and drag input did not consistently
+advance the visible landscape viewport, although one list scroll moved the
+header and exposed the first game. AX includes offscreen content and is not
+being treated as proof of full visual traversal. No app defect is inferred from
+this control limitation. Next resolve native traversal and finish long schedules
+and enlarged layouts. No code/data change or repeat retention check. Iowa stays
+unaccepted with the October23 21:42ET deadline; Android stopped, ordinary iOS
+upright on game150 detail.
