@@ -70,3 +70,17 @@ without inferring a new request or changed August scope. All-tier aggregate
 counts, labeled partial retailer coverage and no-paid-work restrictions remain.
 No redundant acknowledgment or request sent. Await delivery for private audit;
 no California activation, public data promotion or legal deadline conclusion.
+
+## October 20 — compilation delay and revised follow-up
+
+The agency reports that compilation is taking longer than expected and promises
+more information by November 20, 2026. This supersedes the October 23 availability
+estimate for tracking; November 20 is a further-information date, not a guarantee
+of records delivery. No dataset, attachment, fee request or question accompanied
+the update.
+
+The full thread and both September 16 Sent scope clarifications were verified.
+The August scope, all-tier aggregate request and prohibition on paid work remain
+unchanged. No duplicate reply was sent. Await the update and audit any eventual
+delivery privately before integration. Original request-date discrepancy remains
+recorded above; no California activation or engineering deadline change.
