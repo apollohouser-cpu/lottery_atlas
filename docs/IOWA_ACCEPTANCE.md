@@ -411,3 +411,18 @@ acceptance. Other closed source/adoption/retention gates remain closed. Ordinary
 iOS7eeec8b remains upright on Powerball; Android stopped. Deadline October23
 21:42ET unchanged; no extension or acceptance. User notified of this persistent
 acceptance-control blocker, with no fee, credential, or permission action requested.
+
+## October 20, 05:25 ET — independent full-schedule layout regression
+
+Added a real-viewport widget traversal regression for all eight distinct schedule
+presentations at 390x844 and844x390, both at2x text. Each traverses the entire
+schedule/qualifications to the final Official results and history action and
+asserts it is hit-testable, with no layout/Flutter exception. All three draw-sheet
+tests pass. This extends the prior top-only enlarged-text coverage and confirms
+full content traversal in the Flutter test environment; it does not substitute
+for the still-open native gesture/visual gate.
+
+Raising the native Simulator window did not restore wheel traversal after the
+previous UI/device restart. Ordinary app remains upright on Iowa Powerball;
+Android stopped. Production code/data unchanged. Next native-control recovery
+and enlarged visual verification; Iowa not accepted, deadline unchanged.
