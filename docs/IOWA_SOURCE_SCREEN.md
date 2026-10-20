@@ -375,3 +375,9 @@ pass; changed production Dart analyzes cleanly. Regression dates now derive from
 fixture dates rather than expiring fixed timestamps. Deployment/livebytes and
 ordinary native newer-adoption verification remain next; Iowa not accepted,
 release deadline unchanged. Prior native failure-retention gate remains closed.
+
+Correction release7eeec8b pushed; publisher39357467529 observed in progress.
+Ordinary main.dart iOS build succeeded, installed/cold-launched (PID67179), home
+map verified upright. Existing native cache retained for the next real remote
+adoption check. No probe. Build log: work/iowa_scope/reviewed-correction-ios-build.log.
+Deployment/livebytes and native adoption are not yet claimed.
