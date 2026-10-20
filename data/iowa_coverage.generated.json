@@ -1,12 +1,29 @@
 {
   "schemaVersion": 1,
   "state": "Iowa",
-  "retrievedAt": "2026-10-20T02:08:48.247238+00:00",
+  "retrievedAt": "2026-10-20T04:54:02.162753+00:00",
   "draws": {
     "stage": "private-iowa-results-reports-rules-v1",
     "state": "Iowa",
-    "retrievedAt": "2026-10-20T02:08:48.247238+00:00",
+    "retrievedAt": "2026-10-20T04:54:02.162753+00:00",
     "results": [
+      {
+        "group": "powerball",
+        "drawDate": "2026-10-19",
+        "sourceDateText": "10/19/2026",
+        "numbers": [
+          8,
+          31,
+          32,
+          42,
+          48
+        ],
+        "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/PowerballWin.aspx",
+        "specialBall": 23,
+        "multiplier": 4,
+        "report": null,
+        "reportLimitation": "No validated report for this exact date and group"
+      },
       {
         "group": "powerball",
         "drawDate": "2026-10-17",
@@ -70,66 +87,20 @@
         }
       },
       {
-        "group": "powerball",
-        "drawDate": "2026-10-14",
-        "sourceDateText": "10/14/2026",
+        "group": "double_play",
+        "drawDate": "2026-10-19",
+        "sourceDateText": "10/19/2026",
         "numbers": [
-          3,
-          34,
-          37,
-          42,
-          46
+          11,
+          23,
+          24,
+          47,
+          49
         ],
         "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/PowerballWin.aspx",
-        "specialBall": 20,
-        "multiplier": 3,
-        "report": {
-          "group": "powerball",
-          "drawDate": "2026-10-14",
-          "sourceDateText": "10/14/2026",
-          "countLabel": "Winners for tickets purchased in Iowa (source label)",
-          "tiers": [
-            {
-              "sourceTierLabel": "Jackpot 5+1",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$1,000,000 5+0",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$50,000 4+1",
-              "sourceWinners": 2
-            },
-            {
-              "sourceTierLabel": "$100 4+0",
-              "sourceWinners": 5
-            },
-            {
-              "sourceTierLabel": "$100 3+1",
-              "sourceWinners": 8
-            },
-            {
-              "sourceTierLabel": "$7 3+0",
-              "sourceWinners": 222
-            },
-            {
-              "sourceTierLabel": "$7 2+1",
-              "sourceWinners": 164
-            },
-            {
-              "sourceTierLabel": "$4 1+1",
-              "sourceWinners": 1356
-            },
-            {
-              "sourceTierLabel": "$4 0+1",
-              "sourceWinners": 3283
-            }
-          ],
-          "sourceJackpotText": "$565,500,000",
-          "advertisedJackpotDollars": 565500000,
-          "multiplier": 3
-        }
+        "specialBall": 11,
+        "report": null,
+        "reportLimitation": "No validated report for this exact date and group"
       },
       {
         "group": "double_play",
@@ -185,64 +156,6 @@
             {
               "sourceTierLabel": "$7 0+1",
               "sourceWinners": 941
-            }
-          ]
-        }
-      },
-      {
-        "group": "double_play",
-        "drawDate": "2026-10-14",
-        "sourceDateText": "10/14/2026",
-        "numbers": [
-          11,
-          17,
-          37,
-          58,
-          69
-        ],
-        "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/PowerballWin.aspx",
-        "specialBall": 9,
-        "report": {
-          "group": "double_play",
-          "drawDate": "2026-10-14",
-          "sourceDateText": "10/14/2026",
-          "countLabel": "Winners for tickets purchased in Iowa (source label)",
-          "tiers": [
-            {
-              "sourceTierLabel": "$10,000,000 5+1",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$500,000 5+0",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$50,000 4+1",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$500 4+0",
-              "sourceWinners": 1
-            },
-            {
-              "sourceTierLabel": "$500 3+1",
-              "sourceWinners": 1
-            },
-            {
-              "sourceTierLabel": "$20 3+0",
-              "sourceWinners": 40
-            },
-            {
-              "sourceTierLabel": "$20 2+1",
-              "sourceWinners": 30
-            },
-            {
-              "sourceTierLabel": "$10 1+1",
-              "sourceWinners": 282
-            },
-            {
-              "sourceTierLabel": "$7 0+1",
-              "sourceWinners": 718
             }
           ]
         }
@@ -369,6 +282,23 @@
       },
       {
         "group": "lotto_america",
+        "drawDate": "2026-10-19",
+        "sourceDateText": "10/19/2026",
+        "numbers": [
+          14,
+          18,
+          38,
+          39,
+          47
+        ],
+        "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/LottoAmericaWin.aspx",
+        "specialBall": 9,
+        "multiplier": 3,
+        "report": null,
+        "reportLimitation": "No validated report for this exact date and group"
+      },
+      {
+        "group": "lotto_america",
         "drawDate": "2026-10-17",
         "sourceDateText": "10/17/2026",
         "numbers": [
@@ -430,66 +360,20 @@
         }
       },
       {
-        "group": "lotto_america",
-        "drawDate": "2026-10-14",
-        "sourceDateText": "10/14/2026",
+        "group": "millionaire_for_life",
+        "drawDate": "2026-10-19",
+        "sourceDateText": "10/19/2026",
         "numbers": [
-          6,
           10,
-          14,
-          29,
-          34
+          15,
+          35,
+          46,
+          48
         ],
-        "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/LottoAmericaWin.aspx",
-        "specialBall": 9,
-        "multiplier": 2,
-        "report": {
-          "group": "lotto_america",
-          "drawDate": "2026-10-14",
-          "sourceDateText": "10/14/2026",
-          "countLabel": "Winners for tickets purchased in Iowa (source label)",
-          "tiers": [
-            {
-              "sourceTierLabel": "Jackpot 5+1",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$20,000 5+0",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$1,000 4+1",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$100 4+0",
-              "sourceWinners": 1
-            },
-            {
-              "sourceTierLabel": "$20 3+1",
-              "sourceWinners": 11
-            },
-            {
-              "sourceTierLabel": "$5 3+0",
-              "sourceWinners": 133
-            },
-            {
-              "sourceTierLabel": "$5 2+1",
-              "sourceWinners": 143
-            },
-            {
-              "sourceTierLabel": "$2 1+1",
-              "sourceWinners": 879
-            },
-            {
-              "sourceTierLabel": "$2 0+1",
-              "sourceWinners": 1489
-            }
-          ],
-          "sourceJackpotText": "$2,200,000",
-          "advertisedJackpotDollars": 2200000,
-          "multiplier": 2
-        }
+        "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/MillionaireForLifeWin.aspx",
+        "specialBall": 5,
+        "report": null,
+        "reportLimitation": "No validated report for this exact date and group"
       },
       {
         "group": "millionaire_for_life",
@@ -550,64 +434,6 @@
         }
       },
       {
-        "group": "millionaire_for_life",
-        "drawDate": "2026-10-17",
-        "sourceDateText": "10/17/2026",
-        "numbers": [
-          15,
-          27,
-          41,
-          48,
-          55
-        ],
-        "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/MillionaireForLifeWin.aspx",
-        "specialBall": 3,
-        "report": {
-          "group": "millionaire_for_life",
-          "drawDate": "2026-10-17",
-          "sourceDateText": "10/17/2026",
-          "countLabel": "Winners for tickets purchased in Iowa (source label)",
-          "tiers": [
-            {
-              "sourceTierLabel": "$1M/Year for Life 5+1",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$100K/Year for Life 5+0",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$7,500 4+1",
-              "sourceWinners": 0
-            },
-            {
-              "sourceTierLabel": "$500 4+0",
-              "sourceWinners": 2
-            },
-            {
-              "sourceTierLabel": "$250 3+1",
-              "sourceWinners": 2
-            },
-            {
-              "sourceTierLabel": "$50 3+0",
-              "sourceWinners": 16
-            },
-            {
-              "sourceTierLabel": "$25 2+1",
-              "sourceWinners": 56
-            },
-            {
-              "sourceTierLabel": "$8 2+0",
-              "sourceWinners": 175
-            },
-            {
-              "sourceTierLabel": "$8 1+1",
-              "sourceWinners": 326
-            }
-          ]
-        }
-      },
-      {
         "group": "pick3_midday",
         "drawDate": "2026-10-19",
         "sourceDateText": "10/19/2026",
@@ -635,12 +461,12 @@
       },
       {
         "group": "pick3_evening",
-        "drawDate": "2026-10-18",
-        "sourceDateText": "10/18/2026",
+        "drawDate": "2026-10-19",
+        "sourceDateText": "10/19/2026",
         "numbers": [
-          0,
           5,
-          5
+          2,
+          8
         ],
         "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/Pick3Win.aspx",
         "report": null,
@@ -648,12 +474,12 @@
       },
       {
         "group": "pick3_evening",
-        "drawDate": "2026-10-17",
-        "sourceDateText": "10/17/2026",
+        "drawDate": "2026-10-18",
+        "sourceDateText": "10/18/2026",
         "numbers": [
-          4,
           0,
-          3
+          5,
+          5
         ],
         "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/Pick3Win.aspx",
         "report": null,
@@ -689,12 +515,12 @@
       },
       {
         "group": "pick4_evening",
-        "drawDate": "2026-10-18",
-        "sourceDateText": "10/18/2026",
+        "drawDate": "2026-10-19",
+        "sourceDateText": "10/19/2026",
         "numbers": [
-          4,
-          8,
-          5,
+          2,
+          0,
+          7,
           7
         ],
         "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/Pick4Win.aspx",
@@ -703,13 +529,13 @@
       },
       {
         "group": "pick4_evening",
-        "drawDate": "2026-10-17",
-        "sourceDateText": "10/17/2026",
+        "drawDate": "2026-10-18",
+        "sourceDateText": "10/18/2026",
         "numbers": [
-          0,
-          0,
+          4,
+          8,
           5,
-          2
+          7
         ],
         "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/Pick4Win.aspx",
         "report": null,
@@ -2440,59 +2266,59 @@
     "sources": [
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/PowerballWin.aspx",
-        "sha256": "d898233b06872e3ec9050d791588fc922f3b618a26fb94e6728216552cc7d15a"
+        "sha256": "d8ebfa16d51bc92853359a37cc760b094bf9c0dc51f3352f0bb2ea2dc86b6105"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/MegaMillionsWin.aspx",
-        "sha256": "085da391505cef42f7767660b65767e1edfef87e4a66c538ce51f0ec0e7394b5"
+        "sha256": "05c34fb2cfaee945964455e3742bb9e3ee10e048fb3d50df12f4861bfbf4124a"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/LottoAmericaWin.aspx",
-        "sha256": "48bf55ebea338f8bf598231bc7ee6f8a291eb423e700c05a63731fadbaf7e7ca"
+        "sha256": "699792156d2bcb4b6f93a34a4d40b757e03b335f4ced6f8ddb8fa04a4ad5b281"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/MillionaireForLifeWin.aspx",
-        "sha256": "8c87437a39da56bd073913eb20872c2e4613d94e2a3ad4d9e1ea481971e36ce7"
+        "sha256": "4d55df7e8ebc9f8b58e4d7b0835bb9bd31639d1270a27b05c3afe169c2564343"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/Pick3MWin.aspx",
-        "sha256": "ec7417e0dc05379d0215a19a3a4aff84e7e903a924bb055c0b7e8fa0883dfc3f"
+        "sha256": "966cd62390560bc237e4f43f29fb836b91f2498a638f1449ecbe1b0511b03254"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/Pick3Win.aspx",
-        "sha256": "eda027fb7a2df6d5de92f46130d4d160c00b5aeba07c6fc7ee965064ea568cc0"
+        "sha256": "8f38b24ec64fb2d2b69301bac3f3ebbb4558605bc1488a626905b12a72796129"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/Pick4MWin.aspx",
-        "sha256": "22aa42aad4996a3065437569307fe0ed5e69c2d3742af8b123e65bd315f151c1"
+        "sha256": "4953ab328059f88b6e21a43a07a1568b83325800f40f79702682e1a6caac325a"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/Pick4Win.aspx",
-        "sha256": "9aedb2cf58bec51049da7cfbf5ae9b436de2ee9f9712ef1f9b31b06176a7207a"
+        "sha256": "6b70f96d232823f89999f7be17e7c98c2603d0ee4326fcbd926ea2cfb5ded697"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/PowerballXOWin.aspx",
-        "sha256": "65a4f2a3130b57e81fab8d5d926b23b785d5a0abb4193a651d3f36d77ce65d09"
+        "sha256": "ff5d9134194548f01f92484a90c4b2e5a0a916137136e43c1a065a8b9b333f67"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/PowerballPrizes.aspx",
-        "sha256": "138e2acabc6d821df2c778970526b743035afe581ebf03dc669e57e2222921a0"
+        "sha256": "ae918f56b59ceb31dea5ad7ed6e3ca8a3da1defe36f98b0780ddb2e3af64cc49"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/MegaMillionsPrizes.aspx",
-        "sha256": "79e1c4a362505d5c0f54fd2a52356674b5164f910ab693d3d447726b2c2c59ed"
+        "sha256": "c7a3520824c241a7baab116fa95eac46fcb14c4767d026447448776c6a43ddc9"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/LottoAmericaPrizes.aspx",
-        "sha256": "002d3e2e8b5d2fdd35a5af548d86a4c718c545e5a04c680dab938d108aa6a962"
+        "sha256": "cb24247e2859262a8fe237babf746fdc681475584430e085d93d8a63e78574f1"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/MillionaireForLifePrizes.aspx",
-        "sha256": "0997d13482162f9fbf783c292da306f28c3941d38e289ee1c2f2fb0d99fa6480"
+        "sha256": "59e2ecea560537fd683670e1fa7892d6255a8696b19ea5b54744a2fb7f098329"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/PowerballXOPrizes.aspx",
-        "sha256": "48bf472aa693f84f08284269fc68142d93b0e22d1f270f86e93b5d700e68be8c"
+        "sha256": "5b4b605fd648b257b5e4e296859227495704beb666ac298a5c129c59da9a532e"
       },
       {
         "url": "https://www.ialottery.com/Images/Game_Details/PowerballPowerPlayChart.jpg",
@@ -2528,39 +2354,39 @@
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/MillionaireForLife.aspx",
-        "sha256": "51b3793617fc4420fbd92e43adbed52ebfd0e6b7b1064a23d37fb063a396c2ad"
+        "sha256": "0e744b04450daa06d7c21c8cd2632d46ad863af6a33952c5fcc3ad38c1251a4a"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/Pick3WinningCombinations.aspx",
-        "sha256": "ee36b24a5d55edbf8a7932fc65d955311d4fe3029f3af27b12ab27173906dba3"
+        "sha256": "02e611a51b1f916ac077d81788e596daef048e521ff17a219b8894565f99637d"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/Pick4WinningCombinations.aspx",
-        "sha256": "810e1f88ea858da612e0794b1af2776dce68bd63cfc5a822cfbc251d2c88f087"
+        "sha256": "e6dbf67c92414a92f70843cf1210723a80aa34ec3e5835b1013cdca345ce7d6d"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/Powerball.aspx",
-        "sha256": "31a756b70f15f0363be7f6fea4a05e933b658dbde9cb914cf195abb8a2237881"
+        "sha256": "8efcf0bcfe1cad46b5ece2548c0931db6b0badf24d361adf67b2dda8bc67d2d8"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/MegaMillions.aspx",
-        "sha256": "34a4b2439c34aa2617043177e04e87faa505b99be393d783b80084d3893784ac"
+        "sha256": "19d3f7d9c1d69f6eab8d94bf7547721a988d45ba7b1418c7bc9850f2f5f7be77"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/LottoAmerica.aspx",
-        "sha256": "f8fe7b7c4108f997b0eff91bb977f7994999dac375de163b31264006b415a628"
+        "sha256": "f4ecf4d025f7b686e7506a61849838c924fbd763f7ae3f6ba567df72cb32b7c9"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/PowerballXsOs.aspx",
-        "sha256": "e43a317065bedb83051d8cb13c0fdf982fabd616a82a4d56b005716d23cbf691"
+        "sha256": "6ee8f5c490765471ffabbeee2c1e78d5321164ce9030d698346c8fedbaf3911f"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/Pick3.aspx",
-        "sha256": "7a6e76e31ce3665cf7114be2b3abdf8a775ace5593f52d6eb25136f6320a7f65"
+        "sha256": "73381e896f7b71118a24c2f19bb5ec601d6103b0923ddae1b91d1c1a0c08286a"
       },
       {
         "url": "https://www.ialottery.com/Pages/Games-Online/Pick4.aspx",
-        "sha256": "f382f8b5086cef4b6e42c64a948d10613a5653f03699509a7675dd388771a29c"
+        "sha256": "b333a4f6176b28c61d144aeec263b93055db3d488f88bf75e0e5ade05aced52e"
       }
     ],
     "limitations": [
@@ -7351,59 +7177,59 @@
   "sources": [
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/PowerballWin.aspx",
-      "sha256": "d898233b06872e3ec9050d791588fc922f3b618a26fb94e6728216552cc7d15a"
+      "sha256": "d8ebfa16d51bc92853359a37cc760b094bf9c0dc51f3352f0bb2ea2dc86b6105"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/MegaMillionsWin.aspx",
-      "sha256": "085da391505cef42f7767660b65767e1edfef87e4a66c538ce51f0ec0e7394b5"
+      "sha256": "05c34fb2cfaee945964455e3742bb9e3ee10e048fb3d50df12f4861bfbf4124a"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/LottoAmericaWin.aspx",
-      "sha256": "48bf55ebea338f8bf598231bc7ee6f8a291eb423e700c05a63731fadbaf7e7ca"
+      "sha256": "699792156d2bcb4b6f93a34a4d40b757e03b335f4ced6f8ddb8fa04a4ad5b281"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/MillionaireForLifeWin.aspx",
-      "sha256": "8c87437a39da56bd073913eb20872c2e4613d94e2a3ad4d9e1ea481971e36ce7"
+      "sha256": "4d55df7e8ebc9f8b58e4d7b0835bb9bd31639d1270a27b05c3afe169c2564343"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/Pick3MWin.aspx",
-      "sha256": "ec7417e0dc05379d0215a19a3a4aff84e7e903a924bb055c0b7e8fa0883dfc3f"
+      "sha256": "966cd62390560bc237e4f43f29fb836b91f2498a638f1449ecbe1b0511b03254"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/Pick3Win.aspx",
-      "sha256": "eda027fb7a2df6d5de92f46130d4d160c00b5aeba07c6fc7ee965064ea568cc0"
+      "sha256": "8f38b24ec64fb2d2b69301bac3f3ebbb4558605bc1488a626905b12a72796129"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/Pick4MWin.aspx",
-      "sha256": "22aa42aad4996a3065437569307fe0ed5e69c2d3742af8b123e65bd315f151c1"
+      "sha256": "4953ab328059f88b6e21a43a07a1568b83325800f40f79702682e1a6caac325a"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/Pick4Win.aspx",
-      "sha256": "9aedb2cf58bec51049da7cfbf5ae9b436de2ee9f9712ef1f9b31b06176a7207a"
+      "sha256": "6b70f96d232823f89999f7be17e7c98c2603d0ee4326fcbd926ea2cfb5ded697"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/PowerballXOWin.aspx",
-      "sha256": "65a4f2a3130b57e81fab8d5d926b23b785d5a0abb4193a651d3f36d77ce65d09"
+      "sha256": "ff5d9134194548f01f92484a90c4b2e5a0a916137136e43c1a065a8b9b333f67"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/PowerballPrizes.aspx",
-      "sha256": "138e2acabc6d821df2c778970526b743035afe581ebf03dc669e57e2222921a0"
+      "sha256": "ae918f56b59ceb31dea5ad7ed6e3ca8a3da1defe36f98b0780ddb2e3af64cc49"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/MegaMillionsPrizes.aspx",
-      "sha256": "79e1c4a362505d5c0f54fd2a52356674b5164f910ab693d3d447726b2c2c59ed"
+      "sha256": "c7a3520824c241a7baab116fa95eac46fcb14c4767d026447448776c6a43ddc9"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/LottoAmericaPrizes.aspx",
-      "sha256": "002d3e2e8b5d2fdd35a5af548d86a4c718c545e5a04c680dab938d108aa6a962"
+      "sha256": "cb24247e2859262a8fe237babf746fdc681475584430e085d93d8a63e78574f1"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/MillionaireForLifePrizes.aspx",
-      "sha256": "0997d13482162f9fbf783c292da306f28c3941d38e289ee1c2f2fb0d99fa6480"
+      "sha256": "59e2ecea560537fd683670e1fa7892d6255a8696b19ea5b54744a2fb7f098329"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/PowerballXOPrizes.aspx",
-      "sha256": "48bf472aa693f84f08284269fc68142d93b0e22d1f270f86e93b5d700e68be8c"
+      "sha256": "5b4b605fd648b257b5e4e296859227495704beb666ac298a5c129c59da9a532e"
     },
     {
       "url": "https://www.ialottery.com/Images/Game_Details/PowerballPowerPlayChart.jpg",
@@ -7439,243 +7265,243 @@
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/MillionaireForLife.aspx",
-      "sha256": "51b3793617fc4420fbd92e43adbed52ebfd0e6b7b1064a23d37fb063a396c2ad"
+      "sha256": "0e744b04450daa06d7c21c8cd2632d46ad863af6a33952c5fcc3ad38c1251a4a"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/Pick3WinningCombinations.aspx",
-      "sha256": "ee36b24a5d55edbf8a7932fc65d955311d4fe3029f3af27b12ab27173906dba3"
+      "sha256": "02e611a51b1f916ac077d81788e596daef048e521ff17a219b8894565f99637d"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/Pick4WinningCombinations.aspx",
-      "sha256": "810e1f88ea858da612e0794b1af2776dce68bd63cfc5a822cfbc251d2c88f087"
+      "sha256": "e6dbf67c92414a92f70843cf1210723a80aa34ec3e5835b1013cdca345ce7d6d"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/Powerball.aspx",
-      "sha256": "31a756b70f15f0363be7f6fea4a05e933b658dbde9cb914cf195abb8a2237881"
+      "sha256": "8efcf0bcfe1cad46b5ece2548c0931db6b0badf24d361adf67b2dda8bc67d2d8"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/MegaMillions.aspx",
-      "sha256": "34a4b2439c34aa2617043177e04e87faa505b99be393d783b80084d3893784ac"
+      "sha256": "19d3f7d9c1d69f6eab8d94bf7547721a988d45ba7b1418c7bc9850f2f5f7be77"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/LottoAmerica.aspx",
-      "sha256": "f8fe7b7c4108f997b0eff91bb977f7994999dac375de163b31264006b415a628"
+      "sha256": "f4ecf4d025f7b686e7506a61849838c924fbd763f7ae3f6ba567df72cb32b7c9"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/PowerballXsOs.aspx",
-      "sha256": "e43a317065bedb83051d8cb13c0fdf982fabd616a82a4d56b005716d23cbf691"
+      "sha256": "6ee8f5c490765471ffabbeee2c1e78d5321164ce9030d698346c8fedbaf3911f"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/Pick3.aspx",
-      "sha256": "7a6e76e31ce3665cf7114be2b3abdf8a775ace5593f52d6eb25136f6320a7f65"
+      "sha256": "73381e896f7b71118a24c2f19bb5ec601d6103b0923ddae1b91d1c1a0c08286a"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Online/Pick4.aspx",
-      "sha256": "f382f8b5086cef4b6e42c64a948d10613a5653f03699509a7675dd388771a29c"
+      "sha256": "b333a4f6176b28c61d144aeec263b93055db3d488f88bf75e0e5ade05aced52e"
     },
     {
       "url": "https://ialottery.com/Pages/Games/RemainingPrizes.aspx",
-      "sha256": "f428af6df32950e6ad0b73bbd914e5f3e619c8f71ca7ead529072f163cfe2b03"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=797",
-      "sha256": "1b1c92fcca892a78ed56038b921b0f374cdf5bd7e8b9ca56105cd0a5ab105ca8"
+      "sha256": "62a9547e59b36409a31a182c11a53fa2547d0c9d7bffd2a96262928425190ed1"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=788",
-      "sha256": "240a358b6d3018fdb6c5525490b04f2b4b38a158c56240fa381bbeebe77eb63f"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=786",
-      "sha256": "94e9d4e77cef5c30d90583176c30dfdac47b5e7ed546e5634abcad960a4c1519"
+      "sha256": "ed005d390cb6b3c93864cd95f967f031c419b5cf396c4eed2719800b5707e601"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=770",
-      "sha256": "d1468f8a5db542d3c3640c83da6a8c9b408d72bb28a44ef5d8129d66e980e1c0"
+      "sha256": "1969c31563f1ee7c2b0c9985e16e9784a0da914c9ecf96d538703436d1fa7cfe"
     },
     {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=819",
-      "sha256": "d7f8780fc4e56624bf0e5cfe34ffec86cf342f8b0adb4292f34e901219b021ef"
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=797",
+      "sha256": "a820d71d728b45f3e220c4e834663e1dfa79eb0434184ec53585f8c1581f0cb8"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=615",
-      "sha256": "3e34285fe8fc41ede5fcce72ca50461a450a9c90323b5383dd160d01c95634f6"
+      "sha256": "836c712b885ef8cc429e735526f4250f0e08e52b0b0be37c75b5c8e229271d8c"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=786",
+      "sha256": "3f5938696dd54036f36b72b1cd3452530e281e5cf6c0febfd2daf73cb543c0cf"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=819",
+      "sha256": "6a6d24e51ddf8fcbeffff32b8ea41b467472d1d78bcf2b2c9aec0287f673fcc1"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=798",
-      "sha256": "3dc5cbc526f271e3b40214aa6fa1e2da8eecfe438294a0f2a6e35a818bd260a4"
+      "sha256": "02f5c0e8bdf896351032ba763413d277b575e51cd5157232c7cbc62051c329af"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=787",
-      "sha256": "d85b2674c6a718160db9e1956ffc2c4698a265b63b2027d706d5d93b68608ba4"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=803",
-      "sha256": "a4ec4182b4eedb884eac1d8778912c88907475ad9318a337935d34849239c3fb"
+      "sha256": "68bd4cf8c201993b72b8e1cd099ec6c6a6aef33a2fd16e1f459b35d791025135"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=616",
-      "sha256": "fe994383a4903717376ff68aa834fb24eccb697ad2a72febfb5f50141a82ee5e"
+      "sha256": "5e25f7a9c46ff7dfe9307dda5cfc3c4382a74aa292a225f0077026403172c5c4"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=803",
+      "sha256": "99356181ae3f2e83cbc7dc3bab1eca830c1f040b1b277c1ff93a9f65cd04e6c3"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=800",
-      "sha256": "331816121edaf4c1f2448453d77738cf4517f21adf0bdb4d736485688f35092f"
+      "sha256": "3a60c7432a5d4e06f3f3ca77a8beecd87ac932b2f45d061baaf609240de2e46e"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=774",
-      "sha256": "ae8a3a6a3af47359d58da91e52631f54148e4f15fbdaca12c45ad436ea803468"
+      "sha256": "d0ee6ae8587ad337e6968050ea8a23d5f25bc4b82f17121f7befd50a6c953b9a"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=801",
-      "sha256": "020dea1c38de268a8ff5209da3789700ea3ab8df11625a74156e2991c011662a"
+      "sha256": "6a22f99c0cd5ea37bdea6376b031a3d2be687a7934ce718841084e98ace105e5"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=795",
-      "sha256": "76dcd64b88a84afeb063edcb6c7eb7fb530e2418c38311d645828ebe3969850e"
+      "sha256": "cddefdb259e2e080aea6311ffdc8e541337aaba5e00e8f7d79d74e63451e55b0"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=771",
-      "sha256": "1f52799afa89e8f0d6b4435330adf6aac41962667f2c760d7987045b57c3af63"
+      "sha256": "2304d7f64ad9070964f9deb20ea5b7ea86b045e1f5951b1d2af7558480fd4290"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=802",
-      "sha256": "91b9042e875e97cbb9575ed868eeaf929c245396c5ddfc78c8e8037b5c441386"
+      "sha256": "1aa1fcc7a4ce87e678ec89458577f001f972f550cc9dd376ff40dc2978778ad3"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=799",
-      "sha256": "6bbbca09b6685a299068358479d9748395f27c5261bce5d385a4f5127432eaad"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=792",
-      "sha256": "52938de1a4fbf0d4b7138193e2e8200a368d3869ffafb7f5f313cab8de4ff065"
+      "sha256": "48ad2bfdb9291ca41ecc3659f2a3f7588efcd92a949d03730734abcfeda74ff1"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=789",
-      "sha256": "4918d3f4bc1a4ffc9a37b121a35bfcc6478a9b0f8445285706e49794aa9f5686"
+      "sha256": "f4da669b06facf99d6bb22e2191a067e7c7a8003186e06214b528604a135aace"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=759",
-      "sha256": "7fa0e0f9bf191b74ad2ac826d46f70fb6a32c4e400039a19aff8b8d13521179d"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=808",
-      "sha256": "253ae02b3c11d3074a8b7af0670eaa8ac21cec699ea274e04fbb65744dccf194"
+      "sha256": "4b50fd193f38631cd5d3e81ed765262830e352a647385b904d7b08e62e9b8c57"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=785",
-      "sha256": "09d9f418b02fc84f3bbfcd94fb55a06bf2e37a1bd674b52f9c5b64746d5dce95"
+      "sha256": "5d0e68b7c4cff00fe777b032680a0422d174b96b24b497a369e163556d5aaa4e"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=792",
+      "sha256": "b71edef172f344280563cea723d5fcaf8d4d867b223c45f74f26cb0123ef4adf"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=808",
+      "sha256": "7678125164f892c4190f2e738b1faa3ce3660b415f033e5e0d563713c4a99c05"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=778",
-      "sha256": "fc1c5803d187c46e90c33b2e02af32cd985d9d3aa59efb9990dd382ffbc7a301"
+      "sha256": "4d73a3e3f2e1830788fe3a9d8afa0ef0400743553c2baada3f5c82d1db2d4459"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=807",
-      "sha256": "34274279dc2d4a7666f13b13056c6e4f3b77e4e43e92766766014f82c99926bb"
+      "sha256": "90e03029e34f8556b9f5bbb22be63338e0d6dc47b0f530db501187f0a4758055"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=794",
-      "sha256": "2db8a188591869190e43527d39dfca1839d46c162fa007596856fb3d0e499c6d"
+      "sha256": "322e5eec5e6d32fc1c9f9b30ecefd4fa6ca90f604b5b962d3b36fb054598c06c"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=805",
-      "sha256": "87b996754eb923da519cb48b734ef8dec93d5dcd59abc7118984d5ca09991895"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=810",
-      "sha256": "bdf0f674172ba9267dd3c4d7f30ffb6b5a7d7d6a444a1656b375aa94f6cb370e"
+      "sha256": "935c0de24cd3b8337c370b9417066378b275788deebfd74c785cc9ca6e3b2256"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=809",
-      "sha256": "d7a8749b2c804fe164ef6a000d52121f3dfa63b7681b1eea6b28f45f3dc3dd59"
+      "sha256": "57b7a534103d539a0e363dc1174f4575820c13fcba46e2a536a53ba979ded6c0"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=810",
+      "sha256": "1540e8ee2ffc9155faf1d9b2968e3e97f8cdfc7f5a02bdef0d7fcf933d3cc2b0"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=775",
-      "sha256": "1a5ecd8a29413c43c1d3215154da205eb9a662c0881252e19dff9f10357f7be3"
+      "sha256": "0ed055d37c5824c5e8322cf115cf20e3541b672dd3481dff9eff502ffc311b10"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=743",
-      "sha256": "6cbcae0761b51ad9f87a9c25153dbfbdea9aa58891436f83903e31272200c2bf"
+      "sha256": "98c7a33deb4bf1c0b25a8474f15f5a5f776c4d36038522613199e70dbdd2a8d3"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=791",
-      "sha256": "d458d8afb9445a22a4540d27adb2253aa7ef36df69fb76ae8b520dc6330420f0"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=777",
-      "sha256": "b711dff639961989dde894668bba6bb873fb006847522af4ae4ac5b374b37448"
+      "sha256": "2823eb095e4480d55b2d46ed13cf17c3219735ef83500aa0a9a92fdd6661d275"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=796",
-      "sha256": "2577a12d2ebe90b610f6258611a9d313df52ccdd4a9c05db1bad30fe74b1e39a"
+      "sha256": "746f60fb1b76f0732a748fa59a9842a64eb9c3986c268bfd7024ccaaf158575d"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=777",
+      "sha256": "f7e1db7e5ad4d27267927536eeaee1810910828507e4e766e972732720f63858"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=776",
-      "sha256": "aee7b1ec20d0609c2a4286d13ce158f08937ca2750161edfdbd1ee91d23d1414"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=751",
-      "sha256": "157fdeffc4f5794ea929f8e19d93fd2e726e28ecb7fb72e6876cf19e8c42a84d"
+      "sha256": "35c453450b072c1151d61cf45a591cf938c1f2c32ec2f7b19178de4490280b67"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=811",
-      "sha256": "7154413912973bbd12ae7fb21edf35d6009c5049e7c36cf588db73e9b3a44b96"
+      "sha256": "7c9080c9c58108bba74549c43704fabcd69f413becc92d5f5bd2c913ee666f81"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=751",
+      "sha256": "26985d08857b7165d8594968b8375da102293700103f48455fa4e8e0e8293016"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=783",
-      "sha256": "f90d0cda9cd8bd6db4eba1d297b4b1c5da8e77d7515f54d3776c7323fbd3675f"
+      "sha256": "a330b5645703a1bc4ec8670c97c83b6bcc5b59c960fec8deb6d17cc29e893a62"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=782",
-      "sha256": "9c395208f6063d9cbe82e0a591af4ad869053fca36210ced6b252b141a51523a"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=781",
-      "sha256": "efde00b9ca3ed2a999ff2842daadf83b78474e00602532c54c25b66f70ad6b35"
+      "sha256": "299a7e6c530245bf70743e1152e1629a3f3e7caf566a4221f12857d29df6733e"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=780",
-      "sha256": "89ea633e3a14eae35688147209cc4e9e5f9061b2e95712960c1384bd2e261c41"
-    },
-    {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=813",
-      "sha256": "f5b547fac87673208b00f522739dced5caf40af3b40432df1b244e2919ecc9ef"
+      "sha256": "b198996058cc6bce1ff73c6339256200de29092023a9d55ade2f5d283d47a9f7"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=779",
-      "sha256": "5d2846aeb2b766ada30bf93d4f1d4d6ff1102a4725bd7d454c2bcfce54afffd3"
+      "sha256": "af4f91fff7c1f56156d15e55dd3ae1787989a24cf4047244113cc760a0927341"
     },
     {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=784",
-      "sha256": "eca66f2fd8118003314a2bd25c198eba7bf75e60ec5cfc16b34decbbac0c8e23"
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=781",
+      "sha256": "5a16e8ca6a79192f26f7976e0441d4be359cb7fd2bc78aa5d9dd8e54e5999aab"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=813",
+      "sha256": "6e1e41e1495f14998682f967b36b99f3d7b4ce58b9319811ec241d56b7197692"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=693",
-      "sha256": "c52c4bd49331c8b95312137fe7a85d60daeca59ecff2a2c06b0808af03994aec"
+      "sha256": "0564c8190b19da422e7dd694d8ec6cf18abd261395d0d758c4584b7aec840365"
     },
     {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=806",
-      "sha256": "51b8361db1ab0db034e1e57c4e4cb06adc101e57c0073273717481605e3aa090"
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=784",
+      "sha256": "e151a38047393ae3df70ad71b23adb543a391dda85e2f67675955ce41702eecf"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=790",
-      "sha256": "b341947958040a22e707e682ca7a696c0303633db64b35a29ea36215dc40e14f"
+      "sha256": "d48088dd3d00cd14905db4cfc9a558038d1a969de8552ffd4f9698d062eecaaf"
     },
     {
-      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=773",
-      "sha256": "d5140db0c2f77f44266c997af24b584cb69d3688c77b6a468fb48b441bb14f90"
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=806",
+      "sha256": "d66332c853b807b9f6b7febfa7e10e67a185db05dd3b6a0b24e9b176463699a1"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=793",
-      "sha256": "e506703627c7d592c2ff3512f259ff836426fb6e4c299801f22eb5d5fc26f593"
+      "sha256": "5cfb2c1e980b2f30db4b5f5666bc1fb847127af5b83b6bb52dd7c6f5b9c9740f"
+    },
+    {
+      "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=773",
+      "sha256": "29334640d6803aa181a1143e1fa29b7964c348c3bdb0d92607dfddc26d2fb222"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=804",
-      "sha256": "a4fb82b616353359032402fae9855638974f23ad2f97aec60160e0e8e24c60f4"
+      "sha256": "d5618d69416040853a972cf11f3d0c4bea6bfa9c42f9b97793ee12fd6debd432"
     },
     {
       "url": "https://www.ialottery.com/Pages/Games-Scratch/ScratchGamesDetail.aspx?g=645",
-      "sha256": "ca0917780bc66b26e591033823a36bb29e1aa8c049aba4449e29877bd06b088c"
+      "sha256": "531947f63128b09ceb4873067f797e041a207c3c7ccff79407985ed26df11f6d"
     }
   ]
 }
