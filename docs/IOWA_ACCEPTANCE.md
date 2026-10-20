@@ -426,3 +426,18 @@ Raising the native Simulator window did not restore wheel traversal after the
 previous UI/device restart. Ordinary app remains upright on Iowa Powerball;
 Android stopped. Production code/data unchanged. Next native-control recovery
 and enlarged visual verification; Iowa not accepted, deadline unchanged.
+
+## October 20, 06:19 ET — native gesture diagnostic needs manual observation
+
+Reset and reinitialized the CUA connection, then tested one schedule scroll;
+no viewport progression. This follows the unsuccessful Simulator restart,
+window refit and focus recovery. Stop retrying the same operations. Full-widget
+traversal checks already pass across all eight schedules at2x portrait/landscape,
+but native visual acceptance remains open and cannot be inferred from those tests.
+
+Requested one concrete diagnostic from the user: manually swipe upward within
+the currently open Iowa Powerball schedule and report whether content advances.
+If it does, that distinguishes automation gesture routing from app scrolling;
+it is not a request to repeat all acceptance or supply contact information.
+Ordinary iOS7eeec8b remains installed, upright on that screen. No probe, data/code
+change, second device, permission change, acceptance or deadline extension.
