@@ -358,3 +358,22 @@ long-schedule, enlarged/landscape and outstanding instant source-return flows
 still require verification; Iowa is not accepted. Release deadline remains
 October23 at21:42ET, with no extension. Ordinary app remains upright on the
 corrected Pick3 midday result; Android remains stopped.
+
+## October 20, 00:15 ET — InstaPlay source-return gates verified
+
+On ordinary iOS 7eeec8b, selected InstaPlay (25 of25 report games), opened
+SUPER 7S PROGRESSIVE150, scrolled to both source actions, and verified the official
+product route in Safari's address field:
+https://www.ialottery.com/Pages/Games-Instaplay/Instaplay.aspx . OS return retained
+the selected detail and literal ten tiers. The separate dated inventory action
+opened https://ialottery.com/Pages/Games/RemainingPrizes.aspx ; the visible report
+stated remaining prizes through October18,2026 and the $50-and-greater boundary.
+OS return again retained game150 and its literal tiers, including $50,000
+claimed15/unclaimed1 and $50 claimed42717/unclaimed3123. No progressive jackpot
+was inferred from the report. These two source-return gates are closed.
+
+No implementation or data changes were needed. Native long-schedule and
+layout/enlarged checks remain open; Iowa is not accepted. Deadline stays
+October23 at21:42ET with no extension. Ordinary iOS remains upright on game150
+detail; Android stopped. Previously closed adoption/failure-retention gates
+were not repeated.
