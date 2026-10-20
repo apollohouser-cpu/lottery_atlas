@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'iowa_inventory_validator.dart';
+import 'iowa_reviewed_corrections.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tzdata;
 import 'iowa_coverage_contract.dart';
@@ -241,7 +242,15 @@ class IowaCoverageValidator {
       final same = previous.where((r) => r['group'] == row['group']).toList();
       need(!day(row['drawDate']).isBefore(day(same.last['drawDate'])));
       for (final retained in same) {
-        if (retained['drawDate'] == row['drawDate']) exact(row, retained);
+        if (retained['drawDate'] == row['drawDate']) {
+          final reviewed = (jsonDecode(iowaReviewedCorrectionsJson) as List)
+              .any(
+                (change) =>
+                    jsonEncode(retained) == jsonEncode(change['before']) &&
+                    jsonEncode(row) == jsonEncode(change['after']),
+              );
+          if (!reviewed) exact(row, retained);
+        }
       }
     }
   }

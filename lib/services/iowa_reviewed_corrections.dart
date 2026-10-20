@@ -1,0 +1,418 @@
+// Exact official source transitions reviewed October 19, 2026.
+const iowaReviewedCorrectionsJson = r'''
+[
+  {
+    "group": "powerball",
+    "drawDate": "2026-10-17",
+    "before": {
+      "group": "powerball",
+      "drawDate": "2026-10-17",
+      "sourceDateText": "10/17/2026",
+      "numbers": [
+        12,
+        13,
+        24,
+        32,
+        35
+      ],
+      "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/PowerballWin.aspx",
+      "specialBall": 11,
+      "multiplier": 3,
+      "report": {
+        "group": "powerball",
+        "drawDate": "2026-10-17",
+        "sourceDateText": "10/17/2026",
+        "countLabel": "Winners for tickets purchased in Iowa (source label)",
+        "tiers": [
+          {
+            "sourceTierLabel": "Jackpot 5+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$1,000,000 5+0",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$50,000 4+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$100 4+0",
+            "sourceWinners": 4
+          },
+          {
+            "sourceTierLabel": "$100 3+1",
+            "sourceWinners": 14
+          },
+          {
+            "sourceTierLabel": "$7 3+0",
+            "sourceWinners": 364
+          },
+          {
+            "sourceTierLabel": "$7 2+1",
+            "sourceWinners": 335
+          },
+          {
+            "sourceTierLabel": "$4 1+1",
+            "sourceWinners": 2233
+          },
+          {
+            "sourceTierLabel": "$4 0+1",
+            "sourceWinners": 5207
+          }
+        ],
+        "sourceJackpotText": "$0",
+        "advertisedJackpotDollars": null,
+        "jackpotLimitation": "Source zero placeholder; advertised prize unavailable",
+        "multiplier": 3
+      }
+    },
+    "after": {
+      "group": "powerball",
+      "drawDate": "2026-10-17",
+      "sourceDateText": "10/17/2026",
+      "numbers": [
+        12,
+        13,
+        24,
+        32,
+        35
+      ],
+      "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/PowerballWin.aspx",
+      "specialBall": 11,
+      "multiplier": 3,
+      "report": {
+        "group": "powerball",
+        "drawDate": "2026-10-17",
+        "sourceDateText": "10/17/2026",
+        "countLabel": "Winners for tickets purchased in Iowa (source label)",
+        "tiers": [
+          {
+            "sourceTierLabel": "Jackpot 5+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$1,000,000 5+0",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$50,000 4+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$100 4+0",
+            "sourceWinners": 4
+          },
+          {
+            "sourceTierLabel": "$100 3+1",
+            "sourceWinners": 14
+          },
+          {
+            "sourceTierLabel": "$7 3+0",
+            "sourceWinners": 364
+          },
+          {
+            "sourceTierLabel": "$7 2+1",
+            "sourceWinners": 335
+          },
+          {
+            "sourceTierLabel": "$4 1+1",
+            "sourceWinners": 2233
+          },
+          {
+            "sourceTierLabel": "$4 0+1",
+            "sourceWinners": 5207
+          }
+        ],
+        "sourceJackpotText": "$586,400,000",
+        "advertisedJackpotDollars": 586400000,
+        "multiplier": 3
+      }
+    }
+  },
+  {
+    "group": "mega_millions",
+    "drawDate": "2026-10-16",
+    "before": {
+      "group": "mega_millions",
+      "drawDate": "2026-10-16",
+      "sourceDateText": "10/16/2026",
+      "numbers": [
+        2,
+        15,
+        31,
+        41,
+        68
+      ],
+      "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/MegaMillionsWin.aspx",
+      "specialBall": 11,
+      "report": {
+        "group": "mega_millions",
+        "drawDate": "2026-10-16",
+        "sourceDateText": "10/16/2026",
+        "countLabel": "Winners for tickets purchased in Iowa (source label)",
+        "tiers": [
+          {
+            "sourceTierLabel": "5+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "5+0",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "4+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "4+0",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "3+1",
+            "sourceWinners": 3
+          },
+          {
+            "sourceTierLabel": "3+0",
+            "sourceWinners": 65
+          },
+          {
+            "sourceTierLabel": "2+1",
+            "sourceWinners": 70
+          },
+          {
+            "sourceTierLabel": "1+1",
+            "sourceWinners": 515
+          },
+          {
+            "sourceTierLabel": "0+1",
+            "sourceWinners": 1251
+          }
+        ],
+        "sourceJackpotText": "$0",
+        "advertisedJackpotDollars": null,
+        "jackpotLimitation": "Source zero placeholder; advertised prize unavailable"
+      }
+    },
+    "after": {
+      "group": "mega_millions",
+      "drawDate": "2026-10-16",
+      "sourceDateText": "10/16/2026",
+      "numbers": [
+        2,
+        15,
+        31,
+        41,
+        68
+      ],
+      "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/MegaMillionsWin.aspx",
+      "specialBall": 11,
+      "report": {
+        "group": "mega_millions",
+        "drawDate": "2026-10-16",
+        "sourceDateText": "10/16/2026",
+        "countLabel": "Winners for tickets purchased in Iowa (source label)",
+        "tiers": [
+          {
+            "sourceTierLabel": "5+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "5+0",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "4+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "4+0",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "3+1",
+            "sourceWinners": 3
+          },
+          {
+            "sourceTierLabel": "3+0",
+            "sourceWinners": 65
+          },
+          {
+            "sourceTierLabel": "2+1",
+            "sourceWinners": 70
+          },
+          {
+            "sourceTierLabel": "1+1",
+            "sourceWinners": 515
+          },
+          {
+            "sourceTierLabel": "0+1",
+            "sourceWinners": 1251
+          }
+        ],
+        "sourceJackpotText": "$403,000,000",
+        "advertisedJackpotDollars": 403000000
+      }
+    }
+  },
+  {
+    "group": "lotto_america",
+    "drawDate": "2026-10-17",
+    "before": {
+      "group": "lotto_america",
+      "drawDate": "2026-10-17",
+      "sourceDateText": "10/17/2026",
+      "numbers": [
+        32,
+        39,
+        41,
+        45,
+        52
+      ],
+      "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/LottoAmericaWin.aspx",
+      "specialBall": 2,
+      "multiplier": 5,
+      "report": {
+        "group": "lotto_america",
+        "drawDate": "2026-10-17",
+        "sourceDateText": "10/17/2026",
+        "countLabel": "Winners for tickets purchased in Iowa (source label)",
+        "tiers": [
+          {
+            "sourceTierLabel": "Jackpot 5+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$20,000 5+0",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$1,000 4+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$100 4+0",
+            "sourceWinners": 4
+          },
+          {
+            "sourceTierLabel": "$20 3+1",
+            "sourceWinners": 20
+          },
+          {
+            "sourceTierLabel": "$5 3+0",
+            "sourceWinners": 106
+          },
+          {
+            "sourceTierLabel": "$5 2+1",
+            "sourceWinners": 184
+          },
+          {
+            "sourceTierLabel": "$2 1+1",
+            "sourceWinners": 1022
+          },
+          {
+            "sourceTierLabel": "$2 0+1",
+            "sourceWinners": 1919
+          }
+        ],
+        "sourceJackpotText": "$0",
+        "advertisedJackpotDollars": null,
+        "jackpotLimitation": "Source zero placeholder; advertised prize unavailable",
+        "multiplier": 5
+      }
+    },
+    "after": {
+      "group": "lotto_america",
+      "drawDate": "2026-10-17",
+      "sourceDateText": "10/17/2026",
+      "numbers": [
+        32,
+        39,
+        41,
+        45,
+        52
+      ],
+      "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/LottoAmericaWin.aspx",
+      "specialBall": 2,
+      "multiplier": 5,
+      "report": {
+        "group": "lotto_america",
+        "drawDate": "2026-10-17",
+        "sourceDateText": "10/17/2026",
+        "countLabel": "Winners for tickets purchased in Iowa (source label)",
+        "tiers": [
+          {
+            "sourceTierLabel": "Jackpot 5+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$20,000 5+0",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$1,000 4+1",
+            "sourceWinners": 0
+          },
+          {
+            "sourceTierLabel": "$100 4+0",
+            "sourceWinners": 4
+          },
+          {
+            "sourceTierLabel": "$20 3+1",
+            "sourceWinners": 20
+          },
+          {
+            "sourceTierLabel": "$5 3+0",
+            "sourceWinners": 106
+          },
+          {
+            "sourceTierLabel": "$5 2+1",
+            "sourceWinners": 184
+          },
+          {
+            "sourceTierLabel": "$2 1+1",
+            "sourceWinners": 1022
+          },
+          {
+            "sourceTierLabel": "$2 0+1",
+            "sourceWinners": 1919
+          }
+        ],
+        "sourceJackpotText": "$2,250,000",
+        "advertisedJackpotDollars": 2250000,
+        "multiplier": 5
+      }
+    }
+  },
+  {
+    "group": "pick3_midday",
+    "drawDate": "2026-10-18",
+    "before": {
+      "group": "pick3_midday",
+      "drawDate": "2026-10-18",
+      "sourceDateText": "10/18/2026",
+      "numbers": [
+        2,
+        3,
+        7
+      ],
+      "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/Pick3MWin.aspx",
+      "report": null,
+      "reportLimitation": "Pick source count units/geography unverified; counts excluded, not zero"
+    },
+    "after": {
+      "group": "pick3_midday",
+      "drawDate": "2026-10-18",
+      "sourceDateText": "10/18/2026",
+      "numbers": [
+        2,
+        8,
+        7
+      ],
+      "sourceUrl": "https://www.ialottery.com/Pages/Games-Online/Pick3MWin.aspx",
+      "report": null,
+      "reportLimitation": "Pick source count units/geography unverified; counts excluded, not zero"
+    }
+  }
+]
+''';

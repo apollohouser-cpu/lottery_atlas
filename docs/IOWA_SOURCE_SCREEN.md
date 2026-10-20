@@ -356,3 +356,22 @@ https://www.ialottery.com/Pages/Games-Pulltab/PulltabGamesListing.aspx ; Safari
 address verified and OS return retained game4 detail and its literal tiers.
 Simulator now upright in that ordinary detail; Android stopped. Other native
 long-rule/layout/source/adoption gates remain open; request-failure gate stays closed.
+
+## October 19, 22:12 ET — reviewed corrections and refreshed coupled snapshot
+
+Reviewed fresh literal official prize-report rows for PB October17 ($586,400,000),
+MM October16 ($403,000,000), LA October17 ($2,250,000), and the Pick3 midday
+October18 correction to2-8-7. Added an exact before/after full-row allowlist in
+Python collector and Dart continuity. Only those four forward transitions pass;
+reverse changes, extra count/digit changes and every unlisted correction still
+fail closed. Cached old records are not silently relabeled with newer source dates.
+
+A fresh complete coupled collection then passed:20results/10groups and84typedgames
+(50Scratch/266tiers,25InstaPlay/142tiers,9PullTab/9tiers), now official inventory
+sourceOctober18, retrieved2026-10-20T02:08:48.247238+00:00. Scratch detail verification
+and typed projection passed together. Updated coupled data/docs and Scratch
+projection; no private agency material included.57Iowa Python and14Flutter tests
+pass; changed production Dart analyzes cleanly. Regression dates now derive from
+fixture dates rather than expiring fixed timestamps. Deployment/livebytes and
+ordinary native newer-adoption verification remain next; Iowa not accepted,
+release deadline unchanged. Prior native failure-retention gate remains closed.

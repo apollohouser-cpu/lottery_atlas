@@ -6,6 +6,44 @@ import '../lib/services/iowa_coverage_loader.dart';
 
 void main() {
   final raw = File('data/iowa_coverage.generated.json').readAsStringSync();
+  test('reviewed source corrections allow only exact forward rows', () {
+    final changes = jsonDecode(
+      File('tooling/iowa_reviewed_corrections.json').readAsStringSync(),
+    );
+    for (final change in changes) {
+      final oldRaw = jsonDecode(raw);
+      final rows = oldRaw['draws']['results'] as List;
+      final i = rows.indexWhere(
+        (r) =>
+            r['group'] == change['group'] &&
+            r['drawDate'] == change['drawDate'],
+      );
+      rows[i] = change['before'];
+      final nextRaw = jsonDecode(jsonEncode(oldRaw));
+      nextRaw['draws']['results'][i] = change['after'];
+      final old = IowaCoverageValidator.decode(jsonEncode(oldRaw));
+      final next = IowaCoverageValidator.decode(jsonEncode(nextRaw));
+      IowaCoverageValidator.continuity(old, next);
+      expect(
+        () => IowaCoverageValidator.continuity(next, old),
+        throwsFormatException,
+      );
+      final bad = jsonDecode(jsonEncode(nextRaw));
+      final row = bad['draws']['results'][i];
+      if (row['report'] != null) {
+        row['report']['tiers'][0]['sourceWinners'] += 1;
+      } else {
+        row['numbers'][0] = 9;
+      }
+      expect(
+        () => IowaCoverageValidator.continuity(
+          old,
+          IowaCoverageValidator.decode(jsonEncode(bad)),
+        ),
+        throwsFormatException,
+      );
+    }
+  });
   test(
     'reviewed legacy UTF-8 names migrate without accepting count corrections',
     () {
@@ -37,12 +75,16 @@ void main() {
   );
   dynamic nextInventory() {
     final data = jsonDecode(raw);
-    data['instantInventories']['sourceDate'] = '2026-10-18';
-    data['scratchCatalog']['sourceDate'] = '2026-10-18';
+    final previousDate = data['instantInventories']['sourceDate'] as String;
+    final nextDate = DateTime.parse(
+      previousDate,
+    ).add(const Duration(days: 1)).toIso8601String().substring(0, 10);
+    data['instantInventories']['sourceDate'] = nextDate;
+    data['scratchCatalog']['sourceDate'] = nextDate;
     for (final game in data['scratchCatalog']['games']) {
       game['inventoryNote'] = (game['inventoryNote'] as String).replaceFirst(
-        '2026-10-17',
-        '2026-10-18',
+        previousDate,
+        nextDate,
       );
     }
     return data;
@@ -119,7 +161,7 @@ void main() {
             d['draws']['results'][0]['report']['advertisedJackpotDollars'] = 0,
         (dynamic d) => d['draws']['results'][0]['drawDate'] = '2026-02-30',
         (dynamic d) => d['draws']['results'][2]['multiplier'] = 2,
-        (dynamic d) => d['instantInventories']['sourceDate'] = '2026-10-18',
+        (dynamic d) => d['instantInventories']['sourceDate'] = '2100-01-01',
       ]) {
         final data = jsonDecode(raw);
         change(data);
@@ -154,7 +196,9 @@ void main() {
     'newer retrieval adopts and persists unchanged verified contents',
     () async {
       final data = jsonDecode(raw);
-      data['retrievedAt'] = '2026-10-19T13:00:00+00:00';
+      data['retrievedAt'] = DateTime.parse(
+        data['retrievedAt'],
+      ).add(const Duration(seconds: 1)).toIso8601String();
       data['draws']['retrievedAt'] = data['retrievedAt'];
       final newer = jsonEncode(data);
       String? saved;

@@ -20,6 +20,11 @@ REPORT_PAGES = dict(powerball='PowerballPrizes', double_play='PowerballPrizes',
                     millionaire_for_life='MillionaireForLifePrizes', xsos='PowerballXOPrizes')
 STAGE = 'private-iowa-results-reports-rules-v1'
 GROUPS = set(RESULTS) | {'xsos'}
+REVIEWED_CORRECTIONS = json.loads(Path(__file__).with_name('iowa_reviewed_corrections.json').read_text())
+
+def reviewed_correction(before, after):
+    return any(before == item['before'] and after == item['after'] for item in REVIEWED_CORRECTIONS)
+
 
 
 def fetch_page(url):
@@ -54,7 +59,8 @@ def check_continuity(previous, current):
             raise ValueError('Result date regression')
         indexed = {r['drawDate']: r for r in old}
         for row in new:
-            if row['drawDate'] in indexed and row != indexed[row['drawDate']]:
+            if (row['drawDate'] in indexed and row != indexed[row['drawDate']]
+                    and not reviewed_correction(indexed[row['drawDate']], row)):
                 raise ValueError('Dated result/report change requires review')
 
 
