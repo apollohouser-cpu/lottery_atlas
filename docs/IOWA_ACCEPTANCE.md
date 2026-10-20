@@ -263,3 +263,28 @@ home map appeared. No probe or source-data mutation. Simulator remains landscape
 Android stopped. The updated inventory's native scrolling still needs verification;
 widget coverage and successful launch do not close that gate. Build log is private
 work/iowa_scope/landscape-ios-build.log.
+
+## October 19, 20:12 ET — native production-loader request failure
+
+A private native target used the production IowaCoverageLoader with only its
+fetchRemote callback replaced by a controlled SocketException. It loaded the
+existing real SharedPreferences cache, returned the fully validated cached
+coverage, and left the persisted string byte-identical. Independent host-side
+comparison also matched the pre-run bytes (SHA256
+ da13440f6b13976b67cefd68b1f4448ca11d1ad1d3daab13bac50a74dd6a2aa7).
+This closes the controlled request-failure retention check, not device-offline
+behavior. The cached retrieval date remains2026-10-19T12:51:07.209463+00:00;
+no newer-source verification or date was invented. Evidence is private
+work/iowa_scope/native-failure-retention.json.
+
+The private target displayed the actual inventory widget at2x text in landscape;
+heading and controls were readable. Scroll gestures still did not reliably
+advance the Simulator, so full layout/long-rule traversal is not claimed.
+Newer remote adoption, long schedules, remaining product-source returns and
+integrated layout acceptance remain open. Iowa is not accepted; deadline unchanged.
+The tracked main.dart was never modified; private target is excluded from Git.
+
+Ordinary lib/main.dart rebuilt successfully, installed and cold-launched after
+the private target (PID59799); native home map verified. Simulator remains
+landscape, Android stopped. Restore log:
+work/iowa_scope/retention-ordinary-restore.log. No probe is tracked or installed.
