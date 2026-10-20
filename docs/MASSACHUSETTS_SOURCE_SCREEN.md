@@ -162,3 +162,19 @@ was reviewing it. Its description as a request does not establish a scope or
 deadline reset. No dataset, fee, appeal number or promised response date was
 provided. Await response; do not resend. No fees or paid work authorized; no
 public data or acceptance change. Evidence remains private.
+
+## October 19 — Appeal acknowledged and assigned for review
+
+The Supervisor's office formally acknowledged the appeal and assigned a staff
+reviewer. The notice promises a written disposition after review and asks to be
+notified if a satisfactory response arrives in the meantime. Future correspondence
+must reference the assigned case number, retained privately with the notice.
+The accompanying email to the custodian states a determination period of ten
+business days from receipt of the appeal petition; no calendar date is specified.
+This is not a ruling or a promise of records delivery.
+
+The original29-page PDF was retained privately and all-page text extracted.
+The packet includes prior correspondence; no new lottery dataset was delivered.
+The original appeal and requested supplement remain SENT-confirmed. No redundant
+reply, fee authorization, human attestation or public data integration occurred.
+Await review. Private evidence: work/agency_email_checks/massachusetts_20261019_ack.
