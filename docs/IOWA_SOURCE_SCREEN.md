@@ -438,3 +438,19 @@ this control limitation. Next resolve native traversal and finish long schedules
 and enlarged layouts. No code/data change or repeat retention check. Iowa stays
 unaccepted with the October23 21:42ET deadline; Android stopped, ordinary iOS
 upright on game150 detail.
+
+## October 20, 03:18 ET — native input traversal blocker isolated
+
+Long-schedule acceptance remains blocked by native input control: repeated
+wheel/container scroll, coordinate drag, and keyboard paging did not advance the
+Powerball schedule. Refitting the Simulator window through its Window menu also
+did not restore traversal. Semantic clicks still open/close/select normally.
+This is not evidence that the app cannot scroll, and offscreen AX text is not
+accepted as visual traversal. No production behavior was changed to bypass it.
+
+Stop repeating identical input attempts. Next recover the Simulator UI-control
+session and verify one actual scroll before continuing long-schedule/enlarged
+acceptance. Other closed source/adoption/retention gates remain closed. Ordinary
+iOS7eeec8b remains upright on Powerball; Android stopped. Deadline October23
+21:42ET unchanged; no extension or acceptance. User notified of this persistent
+acceptance-control blocker, with no fee, credential, or permission action requested.
