@@ -499,3 +499,14 @@ visual acceptance. The user's Game filter scroll report is already recorded and
 its fixed Close/Apply exits verified; no repeated manual request is pending for
 that defect. Ordinary app process43187 was restored to the retained South Carolina
 map. No settings, permissions, data, production code or deadline changed.
+
+## October 21, 11:06 ET — Flutter accessibility action diagnostic
+
+The Iowa schedule's existing ListView exposes a forward accessibility scroll
+action in Flutter's semantics tree. A focused regression dispatches that action
+through SemanticsOwner and verifies actual positive scroll offset without a
+pointer gesture. All four draw-sheet tests pass, including the existing full
+2x portrait/landscape traversal. This rules out a missing Flutter-side action in
+the tested layout; native bridge exposure/routing remains unverified. No
+production workaround, native rebuild, acceptance or deadline change. Next
+inspect native accessibility exposure rather than repeat ineffective wheel input.

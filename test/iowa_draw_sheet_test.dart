@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:flutter/semantics.dart';
 import 'package:flutter_test/flutter_test.dart';
 import '../lib/widgets/map/iowa_draw_collection_sheet.dart';
 
@@ -40,6 +41,33 @@ void main(){
         expect(tester.takeException(),isNull,reason:'end $size selection $index');
       }
     }
+  });
+
+  testWidgets('schedule exposes and responds to accessibility scroll actions', (tester) async {
+    final semantics = tester.ensureSemantics();
+
+    tester.view.devicePixelRatio = 1;
+    tester.view.physicalSize = const Size(390,844);
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await tester.pumpWidget(MaterialApp(home:Scaffold(
+      body:IowaDrawCollectionSheet(coverageOverride:data))));
+    await tester.pumpAndSettle();
+    final position = tester.state<ScrollableState>(find.byType(Scrollable).last).position;
+    expect(position.pixels, 0);
+    SemanticsNode? scrollNode;
+    void visit(SemanticsNode node) {
+      if (node.getSemanticsData().hasAction(SemanticsAction.scrollUp)) scrollNode = node;
+      node.visitChildren((child) { visit(child); return true; });
+    }
+    final owner = tester.binding.pipelineOwner.semanticsOwner!;
+    visit(owner.rootSemanticsNode!);
+    expect(scrollNode, isNotNull, reason:'Forward scroll must be exposed to the native accessibility bridge');
+    owner.performAction(scrollNode!.id, SemanticsAction.scrollUp);
+    await tester.pumpAndSettle();
+    expect(position.pixels, greaterThan(0));
+    expect(tester.takeException(), isNull);
+    semantics.dispose();
   });
 
 }
