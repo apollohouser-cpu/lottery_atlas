@@ -557,3 +557,17 @@ This closes Powerball's current-size portrait button-navigation traversal only,
 not swipe input, native2x/landscape, or the other seven distinct schedules.
 The app is left upright at the Powerball final source action. No data, code,
 acceptance or deadline change; next Double Play and remaining family schedules.
+
+## October 21, 15:09 ET — Double Play full native button traversal
+
+On ordinary iOS1065fe1, used Next page from the October19 Double Play summary
+through all nine prize tiers, its no-Power-Play qualification, the explicit shared
+Powerball-page warning, all shared rules/cash/history/footnotes, and the final
+coverage limits and visible Official results and history action. Overlapping
+native screenshots show the content and fixed navigation controls throughout.
+The dated report remains explicitly unavailable; shared regular Powerball terms
+are not represented as Double Play rules. This closes current-size portrait
+button-navigation traversal for Double Play only. Original gestures, native2x
+and landscape remain open. Six distinct schedules remain: Mega Millions, Lotto
+America, Million for Life, Pick3, Pick4 and XsOs. The simulator is left upright at
+the Double Play final source action. No data, code, acceptance or deadline change.
