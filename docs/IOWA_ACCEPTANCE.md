@@ -461,3 +461,18 @@ Close returns to the map. The user-selected South Carolina map was retained.
 Android stayed stopped. General native scrolling and Iowa long-schedule acceptance
 remain open; this fixes the trapped filter exit, not the underlying gesture cause.
 The October 23 21:42 ET deadline is unchanged.
+
+## October 21, 10:07 ET — independent Simulator input comparison
+
+Tested Apple's Settings app on the same original iPhone simulator without changing
+any settings. A CUA wheel scroll left the same listed rows; the exposed native
+accessibility `Scroll Down` action advanced to Privacy & Security, Apps and
+Developer, confirmed in a screenshot. A subsequent coordinate drag produced no
+AX viewport change. This establishes an input-method difference outside Lottery
+Atlas and narrows the investigation; it does not prove the app's gestures work
+or close Iowa's native traversal gate. Next inspect the Flutter scroll semantics
+and supported native accessibility path, without substituting offscreen text for
+visual acceptance. The user's Game filter scroll report is already recorded and
+its fixed Close/Apply exits verified; no repeated manual request is pending for
+that defect. Ordinary app process43187 was restored to the retained South Carolina
+map. No settings, permissions, data, production code or deadline changed.
