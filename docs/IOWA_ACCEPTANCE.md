@@ -590,3 +590,17 @@ remain separately labeled. This closes current-size portrait button traversal fo
 this schedule only. Pick3, Pick4 and XsOs remain, along with native2x/landscape and
 original swipe input. Simulator left upright at the final source action. No code,
 data, acceptance or deadline change; October23 21:42ET remains due.
+
+## October 21, 19:20 ET — Pick3 native portrait paging
+
+On ordinary iOS1065fe1, returned the October19 midday Pick3 selection to its
+summary with Previous page, then traversed the full schedule using Next page.
+Overlapping native screenshots cover all nine physical schedule rows and six
+wager columns, distinct Exact/Any rows and N/A values, published play types,
+session cutoffs, history, all five combination examples, coverage limitations and
+final visible results/history action. Counts remain excluded, explicitly not zero.
+Fixed source/close/paging controls remain available. This closes current-size
+portrait button traversal of the shared Pick3 schedule only; native2x/landscape
+and original swipe input remain open. Pick4 and XsOs are the two remaining distinct
+schedules. Simulator left upright at Pick3's final source action. No acceptance,
+data, code or deadline change; October23 21:42ET remains due.
