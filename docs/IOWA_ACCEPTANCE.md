@@ -563,3 +563,17 @@ This closes current-size portrait button traversal only, not native2x, landscape
 or original swipe input. Five distinct schedules remain: Lotto America,
 Millionaire for Life, Pick3, Pick4 and XsOs. Iowa remains unaccepted with the
 October23 21:42ET deadline unchanged. Simulator left upright at the final link.
+
+## October 21, 17:16 ET — Lotto America native portrait paging
+
+Ordinary iOS1065fe1 was traversed with the fixed paging buttons from the October19
+Lotto America summary through all nine tiers and all 2X/3X/4X/5X columns, source
+precision qualification, published rules and All Star Bonus terms, cash/annuity,
+history, sharing/pari-mutuel footnotes and final coverage limits/results action.
+Overlapping screenshots confirm readable content and available fixed controls.
+The summary explicitly marks the exact-date report unavailable and shows the
+source All Star Bonus separately. Current-size portrait button traversal closes
+for this schedule only; native2x, landscape and original swipe input remain open.
+Four distinct schedules remain: Millionaire for Life, Pick3, Pick4 and XsOs.
+Simulator remains upright at Lotto America's final source action. No code/data,
+acceptance or deadline change; October23 21:42ET remains the release decision due.
