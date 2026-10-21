@@ -238,175 +238,180 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
       context: context,
       backgroundColor: const Color(0xFF0B1D2C),
       isScrollControlled: true,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
-      ),
+      useSafeArea: true,
       builder: (sheetContext) => StatefulBuilder(
         builder: (context, setSheetState) => SafeArea(
-          child: SingleChildScrollView(
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 16, 20, 28),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Container(
-                    width: 42,
-                    height: 4,
-                    decoration: BoxDecoration(
-                      color: Colors.white24,
-                      borderRadius: BorderRadius.circular(99),
-                    ),
-                  ),
-                  const SizedBox(height: 18),
-                  const Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      'Game filter',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 21,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 10),
-                  ...LotteryGame.values.map((game) {
-                    final isSelected = game == selectedGame;
-                    return ListTile(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(14),
-                      ),
-                      tileColor: isSelected
-                          ? const Color(0x331478FF)
-                          : Colors.transparent,
-                      leading: Icon(
-                        game.icon,
-                        color: isSelected
-                            ? const Color(0xFF1478FF)
-                            : Colors.white70,
-                      ),
-                      title: Text(
-                        game.label,
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    const Expanded(
+                      child: Text(
+                        'Game filter',
                         style: TextStyle(
                           color: Colors.white,
-                          fontWeight: isSelected
-                              ? FontWeight.w700
-                              : FontWeight.w500,
+                          fontSize: 21,
+                          fontWeight: FontWeight.w700,
                         ),
                       ),
-                      trailing: isSelected
-                          ? const Icon(
-                              Icons.check_circle_rounded,
-                              color: Color(0xFF1478FF),
-                            )
-                          : null,
-                      onTap: () => setSheetState(() => selectedGame = game),
-                    );
-                  }),
-                  const Divider(color: Colors.white12, height: 28),
-                  const Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      'National Map Coverage',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
-                      ),
                     ),
-                  ),
-                  const SizedBox(height: 4),
-                  ...MapActivityScope.values.map(
-                    (scope) => RadioListTile<MapActivityScope>(
-                      contentPadding: EdgeInsets.zero,
-                      value: scope,
-                      groupValue: selectedActivityScope,
-                      activeColor: const Color(0xFF1478FF),
-                      title: Text(
-                        scope.label,
-                        style: const TextStyle(color: Colors.white),
-                      ),
-                      subtitle: Text(
-                        scope.description,
-                        style: const TextStyle(color: Colors.white60),
-                      ),
-                      onChanged: (value) {
-                        if (value != null) {
-                          setSheetState(() => selectedActivityScope = value);
-                        }
-                      },
+                    IconButton(
+                      tooltip: 'Close game filter',
+                      icon: const Icon(Icons.close, color: Colors.white),
+                      onPressed: () => Navigator.of(sheetContext).pop(),
                     ),
-                  ),
-                  const Divider(color: Colors.white12, height: 28),
-                  const Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      'Prize Amount',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    '${_formatPrize(selectedPrizeRange.start.round())} – '
-                    '${_formatPrize(selectedPrizeRange.end.round())}',
-                    style: const TextStyle(
-                      color: Color(0xFF60A5FA),
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  RangeSlider(
-                    values: selectedPrizeRange,
-                    min: 1,
-                    max: highestPublishedPrize.toDouble(),
-                    activeColor: const Color(0xFF1478FF),
-                    inactiveColor: Colors.white24,
-                    labels: RangeLabels(
-                      _formatPrize(selectedPrizeRange.start.round()),
-                      _formatPrize(selectedPrizeRange.end.round()),
-                    ),
-                    onChanged: highestPublishedPrize <= 1
-                        ? null
-                        : (value) =>
-                              setSheetState(() => selectedPrizeRange = value),
-                  ),
-                  const Text(
-                    'Choose the winning-prize range to show on the heat map.',
-                    style: TextStyle(color: Colors.white60, fontSize: 12),
-                  ),
-                  const SizedBox(height: 16),
-                  SizedBox(
-                    width: double.infinity,
-                    child: FilledButton(
-                      onPressed: () {
-                        _updateFilter(
-                          _filterState.copyWith(
-                            game: selectedGame,
-                            activityScope: selectedActivityScope,
-                            minimumPrize: selectedPrizeRange.start.round(),
-                            maximumPrize:
-                                selectedPrizeRange.end.round() >=
-                                    highestPublishedPrize
-                                ? null
-                                : selectedPrizeRange.end.round(),
-                            replaceMaximumPrize: true,
+                  ],
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      children: [
+                        ...LotteryGame.values.map((game) {
+                          final isSelected = game == selectedGame;
+                          return ListTile(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(14),
+                            ),
+                            tileColor: isSelected
+                                ? const Color(0x331478FF)
+                                : Colors.transparent,
+                            leading: Icon(
+                              game.icon,
+                              color: isSelected
+                                  ? const Color(0xFF1478FF)
+                                  : Colors.white70,
+                            ),
+                            title: Text(
+                              game.label,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: isSelected
+                                    ? FontWeight.w700
+                                    : FontWeight.w500,
+                              ),
+                            ),
+                            trailing: isSelected
+                                ? const Icon(
+                                    Icons.check_circle_rounded,
+                                    color: Color(0xFF1478FF),
+                                  )
+                                : null,
+                            onTap: () =>
+                                setSheetState(() => selectedGame = game),
+                          );
+                        }),
+                        const Divider(color: Colors.white12, height: 28),
+                        const Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            'National Map Coverage',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w700,
+                            ),
                           ),
-                        );
-                        Navigator.of(sheetContext).pop();
-                      },
-                      style: FilledButton.styleFrom(
-                        backgroundColor: const Color(0xFF1478FF),
-                        foregroundColor: Colors.white,
-                        minimumSize: const Size.fromHeight(50),
-                      ),
-                      child: const Text('Apply Game Filter'),
+                        ),
+                        const SizedBox(height: 4),
+                        ...MapActivityScope.values.map(
+                          (scope) => RadioListTile<MapActivityScope>(
+                            contentPadding: EdgeInsets.zero,
+                            value: scope,
+                            groupValue: selectedActivityScope,
+                            activeColor: const Color(0xFF1478FF),
+                            title: Text(
+                              scope.label,
+                              style: const TextStyle(color: Colors.white),
+                            ),
+                            subtitle: Text(
+                              scope.description,
+                              style: const TextStyle(color: Colors.white60),
+                            ),
+                            onChanged: (value) {
+                              if (value != null) {
+                                setSheetState(
+                                  () => selectedActivityScope = value,
+                                );
+                              }
+                            },
+                          ),
+                        ),
+                        const Divider(color: Colors.white12, height: 28),
+                        const Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            'Prize Amount',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          '${_formatPrize(selectedPrizeRange.start.round())} – '
+                          '${_formatPrize(selectedPrizeRange.end.round())}',
+                          style: const TextStyle(
+                            color: Color(0xFF60A5FA),
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        RangeSlider(
+                          values: selectedPrizeRange,
+                          min: 1,
+                          max: highestPublishedPrize.toDouble(),
+                          activeColor: const Color(0xFF1478FF),
+                          inactiveColor: Colors.white24,
+                          labels: RangeLabels(
+                            _formatPrize(selectedPrizeRange.start.round()),
+                            _formatPrize(selectedPrizeRange.end.round()),
+                          ),
+                          onChanged: highestPublishedPrize <= 1
+                              ? null
+                              : (value) => setSheetState(
+                                  () => selectedPrizeRange = value,
+                                ),
+                        ),
+                        const Text(
+                          'Choose the winning-prize range to show on the heat map.',
+                          style: TextStyle(color: Colors.white60, fontSize: 12),
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
+                ),
+                const SizedBox(height: 8),
+                SizedBox(
+                  width: double.infinity,
+                  child: FilledButton(
+                    onPressed: () {
+                      _updateFilter(
+                        _filterState.copyWith(
+                          game: selectedGame,
+                          activityScope: selectedActivityScope,
+                          minimumPrize: selectedPrizeRange.start.round(),
+                          maximumPrize:
+                              selectedPrizeRange.end.round() >=
+                                  highestPublishedPrize
+                              ? null
+                              : selectedPrizeRange.end.round(),
+                          replaceMaximumPrize: true,
+                        ),
+                      );
+                      Navigator.of(sheetContext).pop();
+                    },
+                    style: FilledButton.styleFrom(
+                      backgroundColor: const Color(0xFF1478FF),
+                      foregroundColor: Colors.white,
+                      minimumSize: const Size.fromHeight(50),
+                    ),
+                    child: const Text('Apply Game Filter'),
+                  ),
+                ),
+              ],
             ),
           ),
         ),

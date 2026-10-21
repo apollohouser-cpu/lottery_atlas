@@ -842,3 +842,23 @@ Ordinary iOS debug `94fd40c` rebuilt, installed and cold-launched after the enla
 ## October 19, 23:16 ET — Iowa ordinary iOS remote adoption
 
 Ordinary iOS `7eeec8b` adopted the real newer coupled Iowa feed and persisted bytes identical to the live publication. Corrected Pick3 midday numbers and the populated Powerball jackpot were verified in native presentation. The app remains upright; Android stopped. Iowa native layout/long-schedule/source-return gates remain open, so Iowa is not yet accepted. No probe or permission change. Broader Android, signing/accounts and distribution gates remain open.
+
+## October 20 — user-reported Game filter exit defect
+
+The user supplied a native screenshot of the Game filter with no visible close
+control and reported that manual scrolling did not work. This is new evidence
+for the filter screen; it does not establish the cause of the separate Iowa
+schedule gesture failure. The earlier request for manual diagnostic input must
+not be treated as unanswered for this filter defect.
+
+Changed the filter to a bounded layout with a fixed Close control and fixed
+Apply Game Filter button; only options scroll. Close discards pending changes.
+A 390x844, 2x-text widget regression verifies both actions are hit-testable
+without scrolling, Close does not apply, and Apply updates once and dismisses.
+The test passes. Analyzer reports only four existing Radio deprecation infos.
+Ordinary iOS simulator build passed, installed and cold-launched on the original
+iPhone 17e. Native screenshot confirms both Close and Apply visible; clicking
+Close returns to the map. The user-selected South Carolina map was retained.
+Android stayed stopped. General native scrolling and Iowa long-schedule acceptance
+remain open; this fixes the trapped filter exit, not the underlying gesture cause.
+The October 23 21:42 ET deadline is unchanged.
