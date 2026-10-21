@@ -1,5 +1,5 @@
 {
-  "attemptedAt": "2026-10-21T17:27:01.705944+00:00",
+  "attemptedAt": "2026-10-21T22:01:08.585096+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
@@ -173,8 +173,8 @@
     },
     {
       "state": "Kentucky",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "retained_after_failure",
+      "message": "Importer failed validation or could not retrieve its source.",
       "files": [
         "data/kentucky_scratch_catalog.generated.json",
         "data/kentucky_retailer_directory.generated.json",
