@@ -70,4 +70,33 @@ void main(){
     semantics.dispose();
   });
 
+  testWidgets('fixed page buttons traverse and return without swipe at 2x', (tester) async {
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    for (final size in [const Size(390,844), const Size(844,390)]) {
+      tester.view.physicalSize = size;
+      await tester.pumpWidget(MaterialApp(home:MediaQuery(
+        data:MediaQueryData(size:size,textScaler:const TextScaler.linear(2)),
+        child:Scaffold(body:IowaDrawCollectionSheet(key:ValueKey(size),coverageOverride:data)))));
+      await tester.pumpAndSettle();
+      final position = tester.state<ScrollableState>(find.byType(Scrollable).last).position;
+      var pages = 0;
+      while (find.text('Official results and history').hitTestable().evaluate().isEmpty && pages++ < 250) {
+        expect(find.byTooltip('Next page').hitTestable(), findsOneWidget);
+        final before = position.pixels;
+        await tester.tap(find.byTooltip('Next page'));
+        await tester.pumpAndSettle();
+        expect(position.pixels, greaterThan(before));
+      }
+      expect(find.text('Official results and history').hitTestable(), findsOneWidget);
+      while (position.pixels > 0 && pages-- > -250) {
+        await tester.tap(find.byTooltip('Previous page'));
+        await tester.pumpAndSettle();
+      }
+      expect(position.pixels, 0);
+      expect(tester.takeException(), isNull);
+    }
+  });
+
 }

@@ -527,3 +527,19 @@ October23 21:42ET (about57 hours remaining). Notify the user of that risk now;
 no extension is taken, no state is accepted and no second state is activated.
 Next investigate the iOS accessibility bridge/control compatibility while keeping
 the remaining native long-schedule and enlarged-layout gates open.
+
+## October 21, 13:12 ET — ordinary schedule paging alternative installed
+
+Added fixed Previous page and Next page controls beside source/close actions in
+Iowa schedules. They move the existing scroll position by80% of the viewport,
+with overlap and boundary clamping, allowing reading without a swipe. This is a
+user-visible navigation alternative, not a claim that native gestures recovered.
+Five draw-sheet tests pass, including button-only full forward/back traversal at
+2x in390x844 and844x390; production sheet analyzer reports no issues.
+Ordinary main.dart iOS build passed and was installed/cold-launched on the original
+iPhone17e (process81573). Native Next page visibly advanced Powerball into the
+$50,000/$100 tiers; Previous page returned to the dated result summary. No probe
+or second device. Full all-family paging/layout visual acceptance is still open,
+as is the original gesture issue. Iowa remains unaccepted and October23 21:42ET
+unchanged. Next use the now-working ordinary controls for complete native visual
+traversal, recording it specifically as button navigation.

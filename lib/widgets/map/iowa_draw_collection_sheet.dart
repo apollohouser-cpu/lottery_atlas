@@ -39,6 +39,16 @@ class _IowaDrawCollectionSheetState extends State<IowaDrawCollectionSheet> {
     super.dispose();
   }
 
+  void page(int direction) {
+    if (!scroll.hasClients) return;
+    final position = scroll.position;
+    // Overlap pages so a tier split at the viewport edge remains readable.
+    final target = (position.pixels + direction * position.viewportDimension * .8)
+        .clamp(position.minScrollExtent, position.maxScrollExtent);
+    scroll.animateTo(target, duration: const Duration(milliseconds: 200),
+        curve: Curves.easeOut);
+  }
+
   Future<void> open(String url) async {
     try {
       if (await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication)) {
@@ -206,6 +216,17 @@ class _IowaDrawCollectionSheetState extends State<IowaDrawCollectionSheet> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
+                    IconButton(
+                      tooltip: 'Previous page',
+                      onPressed: () => page(-1),
+                      icon: const Icon(Icons.keyboard_arrow_up),
+                    ),
+                    IconButton(
+                      tooltip: 'Next page',
+                      onPressed: () => page(1),
+                      icon: const Icon(Icons.keyboard_arrow_down),
+                    ),
+                    const Spacer(),
                     IconButton(
                       tooltip: 'Official game source',
                       onPressed: () => open(row['sourceUrl']),

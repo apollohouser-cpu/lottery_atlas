@@ -862,3 +862,19 @@ Close returns to the map. The user-selected South Carolina map was retained.
 Android stayed stopped. General native scrolling and Iowa long-schedule acceptance
 remain open; this fixes the trapped filter exit, not the underlying gesture cause.
 The October 23 21:42 ET deadline is unchanged.
+
+## October 21, 13:12 ET — ordinary schedule paging alternative installed
+
+Added fixed Previous page and Next page controls beside source/close actions in
+Iowa schedules. They move the existing scroll position by80% of the viewport,
+with overlap and boundary clamping, allowing reading without a swipe. This is a
+user-visible navigation alternative, not a claim that native gestures recovered.
+Five draw-sheet tests pass, including button-only full forward/back traversal at
+2x in390x844 and844x390; production sheet analyzer reports no issues.
+Ordinary main.dart iOS build passed and was installed/cold-launched on the original
+iPhone17e (process81573). Native Next page visibly advanced Powerball into the
+$50,000/$100 tiers; Previous page returned to the dated result summary. No probe
+or second device. Full all-family paging/layout visual acceptance is still open,
+as is the original gesture issue. Iowa remains unaccepted and October23 21:42ET
+unchanged. Next use the now-working ordinary controls for complete native visual
+traversal, recording it specifically as button navigation.
