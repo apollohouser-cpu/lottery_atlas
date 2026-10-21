@@ -510,3 +510,20 @@ pointer gesture. All four draw-sheet tests pass, including the existing full
 the tested layout; native bridge exposure/routing remains unverified. No
 production workaround, native rebuild, acceptance or deadline change. Next
 inspect native accessibility exposure rather than repeat ineffective wheel input.
+
+## October 21, 12:07 ET — native scroll action exposure and release risk
+
+Opened Iowa through the ordinary state picker and Sources and coverage route.
+The installed Powerball schedule's native AX tree exposes its scroll Group with
+only Cancel; no Scroll Up/Down action is offered on the Group or visible children.
+This differs from Apple's Settings container and the successful Flutter semantics
+regression. Do not invoke invented native action names or treat offscreen content
+as traversed. The bridge/control-path discrepancy remains unresolved; it does not
+prove the underlying app gesture implementation defective. Ordinary app is left
+on Iowa Powerball, with Close available; Android remains stopped.
+
+The prolonged native traversal blocker now creates a release-decision risk for
+October23 21:42ET (about57 hours remaining). Notify the user of that risk now;
+no extension is taken, no state is accepted and no second state is activated.
+Next investigate the iOS accessibility bridge/control compatibility while keeping
+the remaining native long-schedule and enlarged-layout gates open.
