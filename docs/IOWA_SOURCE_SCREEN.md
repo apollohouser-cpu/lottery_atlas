@@ -543,3 +543,17 @@ or second device. Full all-family paging/layout visual acceptance is still open,
 as is the original gesture issue. Iowa remains unaccepted and October23 21:42ET
 unchanged. Next use the now-working ordinary controls for complete native visual
 traversal, recording it specifically as button navigation.
+
+## October 21, 14:07 ET — Powerball full native button traversal
+
+On ordinary iOS1065fe1, paged the Powerball October19 selection from its summary
+through all prize tiers, qualifications, Power Play/Double Play distinctions,
+cash/annuity terms, history, jackpot-sharing/pari-mutuel/10X footnotes and final
+coverage limits/results link. Successive screenshots confirm readable content
+through the final visible Official results and history action; fixed paging,
+source and Close controls remained available. The existing initial tier screenshot
+from13:10 plus this overlapping traversal cover the full long presentation.
+This closes Powerball's current-size portrait button-navigation traversal only,
+not swipe input, native2x/landscape, or the other seven distinct schedules.
+The app is left upright at the Powerball final source action. No data, code,
+acceptance or deadline change; next Double Play and remaining family schedules.
