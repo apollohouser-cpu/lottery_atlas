@@ -577,3 +577,16 @@ for this schedule only; native2x, landscape and original swipe input remain open
 Four distinct schedules remain: Millionaire for Life, Pick3, Pick4 and XsOs.
 Simulator remains upright at Lotto America's final source action. No code/data,
 acceptance or deadline change; October23 21:42ET remains the release decision due.
+
+## October 21, 18:20 ET — Millionaire for Life native portrait paging
+
+Ordinary iOS1065fe1 was traversed with Next page from the October19 Millionaire
+for Life summary through all nine tiers, schedule qualifications, published rules,
+top/tier2 annuity and cash-option tables, sharing/liability footnotes, history,
+coverage limits and final visible Official results and history action. Overlapping
+native screenshots confirm readable table rows and fixed navigation controls.
+The exact-date report is explicitly unavailable; annuity amounts and cash options
+remain separately labeled. This closes current-size portrait button traversal for
+this schedule only. Pick3, Pick4 and XsOs remain, along with native2x/landscape and
+original swipe input. Simulator left upright at the final source action. No code,
+data, acceptance or deadline change; October23 21:42ET remains due.
