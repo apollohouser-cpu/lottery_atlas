@@ -548,3 +548,18 @@ button-navigation traversal for Double Play only. Original gestures, native2x
 and landscape remain open. Six distinct schedules remain: Mega Millions, Lotto
 America, Million for Life, Pick3, Pick4 and XsOs. The simulator is left upright at
 the Double Play final source action. No data, code, acceptance or deadline change.
+
+## October 21, 16:15 ET — Mega Millions native portrait paging
+
+On ordinary iOS1065fe1, selected October16 Mega Millions and used Previous page
+to reach the summary, then Next page through the complete presentation. Native
+screenshots cover the Iowa-ticket report, all nine schedule tiers with 2X/3X/4X/
+5X/10X amounts, per-play multiplier distinction, qualifications, published rules,
+cash/annuity terms, history, jackpot-sharing and pari-mutuel footnotes, coverage
+limits and the final visible Official results and history action. Fixed paging,
+source and Close controls remained available. Selection initially retained an
+intermediate scroll position; Previous page successfully returned to the top.
+This closes current-size portrait button traversal only, not native2x, landscape
+or original swipe input. Five distinct schedules remain: Lotto America,
+Millionaire for Life, Pick3, Pick4 and XsOs. Iowa remains unaccepted with the
+October23 21:42ET deadline unchanged. Simulator left upright at the final link.
