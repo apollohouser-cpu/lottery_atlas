@@ -770,3 +770,20 @@ This closes the observed normal-text long-detail button traversal in landscape,
 not all-product or enlarged-text native acceptance and not gesture recovery.
 No code, data or build changed. Ordinary app remains on that landscape summary;
 Android is stopped. Iowa is still active, due October23 21:42ET with no extension.
+
+
+## October 22, 04:22 ET — native landscape InstaPlay long-detail traversal
+
+On ordinary iOS9ff894e, returned from Scratch detail to filters using fixed
+Previous controls, selected the separate25-game InstaPlay inventory and paged
+to SUPER7S PROGRESSIVE150. Native landscape screenshots verified its complete
+ten-tier report subset with claimed/unclaimed values: $50000, $10000, $5000,
+$2000, $1000, $500, $200, $100, $60 and $50. The source-date and explicit
+no-current-progressive-jackpot/full-schedule limitation were readable, as were
+both final source actions. Fixed Close returned to the InstaPlay list.
+
+This closes the observed normal-text landscape long InstaPlay detail traversal
+using buttons. Enlarged native layouts and remaining integrated acceptance
+remain open; no gesture recovery or new source verification is claimed. No code
+or build change. Ordinary app remains in the landscape InstaPlay inventory,
+Android stopped, and October23 21:42ET is unchanged with no extension.
