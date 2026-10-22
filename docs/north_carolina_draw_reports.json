@@ -102,6 +102,217 @@
       "coverage": "North Carolina prizes and Wins only. Jackpot sharing and possible pari-mutuel lower prizes apply. Labels are not calculated total payouts or distinct-person counts; no retailer joins or map positions."
     },
     {
+      "id": "powerball-2026-10-21",
+      "game": "Powerball",
+      "session": "Drawing",
+      "drawDate": "2026-10-21",
+      "reportType": "tier-report",
+      "variants": [
+        {
+          "name": "Powerball",
+          "winningNumbers": [
+            1,
+            21,
+            44,
+            50,
+            57
+          ],
+          "powerball": 5,
+          "tiers": [
+            {
+              "matchLabel": "5+PB",
+              "sourceMatchLabel": "5+PB",
+              "prizeLabel": "$638,600,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "5",
+              "sourceMatchLabel": "5",
+              "prizeLabel": "$1,000,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4+PB",
+              "sourceMatchLabel": "4+PB",
+              "prizeLabel": "$50,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4",
+              "sourceMatchLabel": "4",
+              "prizeLabel": "$100",
+              "reportedWins": 9
+            },
+            {
+              "matchLabel": "3+PB",
+              "sourceMatchLabel": "3+PB",
+              "prizeLabel": "$100",
+              "reportedWins": 21
+            },
+            {
+              "matchLabel": "3",
+              "sourceMatchLabel": "3",
+              "prizeLabel": "$7",
+              "reportedWins": 639
+            },
+            {
+              "matchLabel": "2+PB",
+              "sourceMatchLabel": "2+PB",
+              "prizeLabel": "$7",
+              "reportedWins": 536
+            },
+            {
+              "matchLabel": "1+PB",
+              "sourceMatchLabel": "1+PB",
+              "prizeLabel": "$4",
+              "reportedWins": 4449
+            },
+            {
+              "matchLabel": "PB",
+              "sourceMatchLabel": "PB",
+              "prizeLabel": "$4",
+              "reportedWins": 10940
+            }
+          ],
+          "notes": [
+            "This table shows North Carolina wins. Powerball jackpots won outside the state of North Carolina are not shown."
+          ]
+        },
+        {
+          "name": "Power Play",
+          "multiplierLabel": "POWER PLAY 2x",
+          "tiers": [
+            {
+              "matchLabel": "5",
+              "sourceMatchLabel": "5",
+              "prizeLabel": "$2,000,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4+PB",
+              "sourceMatchLabel": "4+PB",
+              "prizeLabel": "$100,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4",
+              "sourceMatchLabel": "4",
+              "prizeLabel": "$200",
+              "reportedWins": 4
+            },
+            {
+              "matchLabel": "3+PB",
+              "sourceMatchLabel": "3+PB",
+              "prizeLabel": "$200",
+              "reportedWins": 8
+            },
+            {
+              "matchLabel": "3",
+              "sourceMatchLabel": "3",
+              "prizeLabel": "$14",
+              "reportedWins": 256
+            },
+            {
+              "matchLabel": "2+PB",
+              "sourceMatchLabel": "2+PB",
+              "prizeLabel": "$14",
+              "reportedWins": 260
+            },
+            {
+              "matchLabel": "1+PB",
+              "sourceMatchLabel": "1+PB",
+              "prizeLabel": "$8",
+              "reportedWins": 1951
+            },
+            {
+              "matchLabel": "PB",
+              "sourceMatchLabel": "PB",
+              "prizeLabel": "$8",
+              "reportedWins": 4736
+            }
+          ],
+          "notes": [
+            "The jackpot row is shared with the base table; no separate Power Play jackpot count is printed."
+          ]
+        },
+        {
+          "name": "Double Play",
+          "winningNumbers": [
+            7,
+            23,
+            31,
+            45,
+            59
+          ],
+          "powerball": 8,
+          "tiers": [
+            {
+              "matchLabel": "5+PB",
+              "sourceMatchLabel": "5+PB",
+              "prizeLabel": "$10,000,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "5",
+              "sourceMatchLabel": "5",
+              "prizeLabel": "$500,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4+PB",
+              "sourceMatchLabel": "4+PB",
+              "prizeLabel": "$50,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4",
+              "sourceMatchLabel": "4+PB",
+              "prizeLabel": "$500",
+              "reportedWins": 7
+            },
+            {
+              "matchLabel": "3+PB",
+              "sourceMatchLabel": "3+PB",
+              "prizeLabel": "$500",
+              "reportedWins": 5
+            },
+            {
+              "matchLabel": "3",
+              "sourceMatchLabel": "3",
+              "prizeLabel": "$20",
+              "reportedWins": 148
+            },
+            {
+              "matchLabel": "2+PB",
+              "sourceMatchLabel": "2+PB",
+              "prizeLabel": "$20",
+              "reportedWins": 107
+            },
+            {
+              "matchLabel": "1+PB",
+              "sourceMatchLabel": "1+PB",
+              "prizeLabel": "$10",
+              "reportedWins": 887
+            },
+            {
+              "matchLabel": "PB",
+              "sourceMatchLabel": "PB",
+              "prizeLabel": "$7",
+              "reportedWins": 2118
+            }
+          ],
+          "notes": [
+            "This table shows North Carolina wins."
+          ]
+        }
+      ],
+      "sourceWarnings": [
+        "Double Play four-white-ball row displays four white balls without a Powerball, but its source accessibility label says 4+PB. Both source labels are retained; no counts are reassigned."
+      ],
+      "sourceUrl": "https://nclottery.com/powerball?dd=10/21/2026",
+      "coverage": "North Carolina Wins only. Base, Power Play and Double Play counts remain separate; no distinct-person, total-payout, cash-option or retailer-location inference."
+    },
+    {
       "id": "powerball-2026-10-19",
       "game": "Powerball",
       "session": "Drawing",
@@ -310,217 +521,6 @@
         "Double Play four-white-ball row displays four white balls without a Powerball, but its source accessibility label says 4+PB. Both source labels are retained; no counts are reassigned."
       ],
       "sourceUrl": "https://nclottery.com/powerball?dd=10/19/2026",
-      "coverage": "North Carolina Wins only. Base, Power Play and Double Play counts remain separate; no distinct-person, total-payout, cash-option or retailer-location inference."
-    },
-    {
-      "id": "powerball-2026-10-17",
-      "game": "Powerball",
-      "session": "Drawing",
-      "drawDate": "2026-10-17",
-      "reportType": "tier-report",
-      "variants": [
-        {
-          "name": "Powerball",
-          "winningNumbers": [
-            12,
-            13,
-            24,
-            32,
-            35
-          ],
-          "powerball": 11,
-          "tiers": [
-            {
-              "matchLabel": "5+PB",
-              "sourceMatchLabel": "5+PB",
-              "prizeLabel": "$586,400,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "5",
-              "sourceMatchLabel": "5",
-              "prizeLabel": "$1,000,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4+PB",
-              "sourceMatchLabel": "4+PB",
-              "prizeLabel": "$50,000",
-              "reportedWins": 1
-            },
-            {
-              "matchLabel": "4",
-              "sourceMatchLabel": "4",
-              "prizeLabel": "$100",
-              "reportedWins": 11
-            },
-            {
-              "matchLabel": "3+PB",
-              "sourceMatchLabel": "3+PB",
-              "prizeLabel": "$100",
-              "reportedWins": 47
-            },
-            {
-              "matchLabel": "3",
-              "sourceMatchLabel": "3",
-              "prizeLabel": "$7",
-              "reportedWins": 926
-            },
-            {
-              "matchLabel": "2+PB",
-              "sourceMatchLabel": "2+PB",
-              "prizeLabel": "$7",
-              "reportedWins": 810
-            },
-            {
-              "matchLabel": "1+PB",
-              "sourceMatchLabel": "1+PB",
-              "prizeLabel": "$4",
-              "reportedWins": 6028
-            },
-            {
-              "matchLabel": "PB",
-              "sourceMatchLabel": "PB",
-              "prizeLabel": "$4",
-              "reportedWins": 13952
-            }
-          ],
-          "notes": [
-            "This table shows North Carolina wins. Powerball jackpots won outside the state of North Carolina are not shown."
-          ]
-        },
-        {
-          "name": "Power Play",
-          "multiplierLabel": "POWER PLAY 3x",
-          "tiers": [
-            {
-              "matchLabel": "5",
-              "sourceMatchLabel": "5",
-              "prizeLabel": "$2,000,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4+PB",
-              "sourceMatchLabel": "4+PB",
-              "prizeLabel": "$150,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4",
-              "sourceMatchLabel": "4",
-              "prizeLabel": "$300",
-              "reportedWins": 6
-            },
-            {
-              "matchLabel": "3+PB",
-              "sourceMatchLabel": "3+PB",
-              "prizeLabel": "$300",
-              "reportedWins": 27
-            },
-            {
-              "matchLabel": "3",
-              "sourceMatchLabel": "3",
-              "prizeLabel": "$21",
-              "reportedWins": 380
-            },
-            {
-              "matchLabel": "2+PB",
-              "sourceMatchLabel": "2+PB",
-              "prizeLabel": "$21",
-              "reportedWins": 350
-            },
-            {
-              "matchLabel": "1+PB",
-              "sourceMatchLabel": "1+PB",
-              "prizeLabel": "$12",
-              "reportedWins": 2550
-            },
-            {
-              "matchLabel": "PB",
-              "sourceMatchLabel": "PB",
-              "prizeLabel": "$12",
-              "reportedWins": 5974
-            }
-          ],
-          "notes": [
-            "The jackpot row is shared with the base table; no separate Power Play jackpot count is printed."
-          ]
-        },
-        {
-          "name": "Double Play",
-          "winningNumbers": [
-            13,
-            14,
-            30,
-            52,
-            60
-          ],
-          "powerball": 15,
-          "tiers": [
-            {
-              "matchLabel": "5+PB",
-              "sourceMatchLabel": "5+PB",
-              "prizeLabel": "$10,000,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "5",
-              "sourceMatchLabel": "5",
-              "prizeLabel": "$500,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4+PB",
-              "sourceMatchLabel": "4+PB",
-              "prizeLabel": "$50,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4",
-              "sourceMatchLabel": "4+PB",
-              "prizeLabel": "$500",
-              "reportedWins": 4
-            },
-            {
-              "matchLabel": "3+PB",
-              "sourceMatchLabel": "3+PB",
-              "prizeLabel": "$500",
-              "reportedWins": 1
-            },
-            {
-              "matchLabel": "3",
-              "sourceMatchLabel": "3",
-              "prizeLabel": "$20",
-              "reportedWins": 143
-            },
-            {
-              "matchLabel": "2+PB",
-              "sourceMatchLabel": "2+PB",
-              "prizeLabel": "$20",
-              "reportedWins": 106
-            },
-            {
-              "matchLabel": "1+PB",
-              "sourceMatchLabel": "1+PB",
-              "prizeLabel": "$10",
-              "reportedWins": 893
-            },
-            {
-              "matchLabel": "PB",
-              "sourceMatchLabel": "PB",
-              "prizeLabel": "$7",
-              "reportedWins": 2086
-            }
-          ],
-          "notes": [
-            "This table shows North Carolina wins."
-          ]
-        }
-      ],
-      "sourceWarnings": [
-        "Double Play four-white-ball row displays four white balls without a Powerball, but its source accessibility label says 4+PB. Both source labels are retained; no counts are reassigned."
-      ],
-      "sourceUrl": "https://nclottery.com/powerball?dd=10/17/2026",
       "coverage": "North Carolina Wins only. Base, Power Play and Double Play counts remain separate; no distinct-person, total-payout, cash-option or retailer-location inference."
     },
     {
@@ -2986,5 +2986,5 @@
       "coverage": "Official dated Cash 5 and Double Play prize-distribution tables. Wins are the source units, not distinct people. Advertised jackpot estimates and prize labels are not total amounts paid. No retailer joins or map positions."
     }
   ],
-  "updatedAt": "2026-10-22T04:56:33.358927+00:00"
+  "updatedAt": "2026-10-22T12:01:14.446336+00:00"
 }
