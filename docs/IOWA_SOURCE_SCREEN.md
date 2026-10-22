@@ -754,3 +754,19 @@ readable; Close returned to the paged list. Its short portrait detail fitted in
 the viewport, so that observation does not prove long-detail native paging.
 Broader landscape/enlarged native traversal remains next. No probe, acceptance,
 source data or deadline change; October23 21:42ET remains due.
+
+
+## October 22, 03:19 ET — native landscape long Scratch detail traversal
+
+On ordinary iOS9ff894e, opened 500X771 from the paged Scratch list and rotated
+to landscape. Fixed Next buttons visibly traversed the complete nine-tier
+$50-plus report subset: $500000, $25000, $5000, $2500, $1000, $500, $250,
+$150 and $100, with each claimed/unclaimed count readable across overlapping
+screenshots. The source date, game start, cumulative/stock limitations and both
+final official-source actions were readable. Four Previous actions returned to
+the complete game summary at the top. Close remained visible throughout.
+
+This closes the observed normal-text long-detail button traversal in landscape,
+not all-product or enlarged-text native acceptance and not gesture recovery.
+No code, data or build changed. Ordinary app remains on that landscape summary;
+Android is stopped. Iowa is still active, due October23 21:42ET with no extension.
