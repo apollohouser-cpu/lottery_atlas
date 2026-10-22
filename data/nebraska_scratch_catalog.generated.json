@@ -1,13 +1,13 @@
 {
   "source": "Nebraska official catalog and reviewed dated top-prize inventory",
-  "updatedAt": "2026-10-20T06:41:50.380366-05:00",
+  "updatedAt": "2026-10-22T16:38:27.046832-05:00",
   "catalogs": [
     {
       "state": "Nebraska",
       "source": "https://nelottery.com/scratch",
       "sourceDate": "2026-09-13",
       "inventorySource": "https://nelottery.com/images/media/Scratch_Prizes_Remaining.pdf",
-      "coverage": "Current catalog joined by printed game number to a manually reviewed dated top-prize report. Unknown unmatched counts remain missing. Prize-structure rows are not claims or remaining inventory. Excludes report-only games absent from current catalog; no retailer joins. Excluded unverified identities: Black Diamond Blowout (conflicting published game numbers).",
+      "coverage": "Current catalog joined by printed game number to a manually reviewed dated top-prize report. Unknown unmatched counts remain missing. Prize-structure rows are not claims or remaining inventory. Excludes report-only games absent from current catalog; no retailer joins.",
       "updateCadence": "Official remaining-prize report is weekly; this reviewed snapshot is not automatically refreshed. Catalog details checked every six hours.",
       "games": [
         {
@@ -3977,13 +3977,191 @@
             }
           ],
           "inventoryNote": "Remaining count unknown: absent from reviewed 2026-09-13 report. Prize-structure winners are not dated claims. Store availability unverified."
-        }
-      ],
-      "excludedGames": [
+        },
         {
+          "stateName": "Nebraska",
+          "id": "1416",
           "name": "Black Diamond Blowout",
+          "cost": 10,
+          "topPrize": 10000,
           "sourceUrl": "https://nelottery.com/scratch-detail?gameid=1099",
-          "reason": "Heading game 1417 conflicts with ticket-art filename 1416; identity unverified."
+          "prizeStructure": [
+            {
+              "prizeLabel": "10",
+              "publishedOdds": "10.00",
+              "publishedStructureWinners": 25680,
+              "prizeAmount": 10
+            },
+            {
+              "prizeLabel": "20",
+              "publishedOdds": "32.00",
+              "publishedStructureWinners": 8025,
+              "prizeAmount": 20
+            },
+            {
+              "prizeLabel": "20",
+              "publishedOdds": "32.00",
+              "publishedStructureWinners": 8025,
+              "prizeAmount": 20
+            },
+            {
+              "prizeLabel": "20",
+              "publishedOdds": "32.00",
+              "publishedStructureWinners": 8025,
+              "prizeAmount": 20
+            },
+            {
+              "prizeLabel": "30",
+              "publishedOdds": "65.85",
+              "publishedStructureWinners": 3900,
+              "prizeAmount": 30
+            },
+            {
+              "prizeLabel": "30",
+              "publishedOdds": "65.85",
+              "publishedStructureWinners": 3900,
+              "prizeAmount": 30
+            },
+            {
+              "prizeLabel": "30",
+              "publishedOdds": "61.14",
+              "publishedStructureWinners": 4200,
+              "prizeAmount": 30
+            },
+            {
+              "prizeLabel": "40",
+              "publishedOdds": "8,560.00",
+              "publishedStructureWinners": 30,
+              "prizeAmount": 40
+            },
+            {
+              "prizeLabel": "40",
+              "publishedOdds": "8,560.00",
+              "publishedStructureWinners": 30,
+              "prizeAmount": 40
+            },
+            {
+              "prizeLabel": "40",
+              "publishedOdds": "8,560.00",
+              "publishedStructureWinners": 30,
+              "prizeAmount": 40
+            },
+            {
+              "prizeLabel": "40",
+              "publishedOdds": "8,560.00",
+              "publishedStructureWinners": 30,
+              "prizeAmount": 40
+            },
+            {
+              "prizeLabel": "40",
+              "publishedOdds": "8,560.00",
+              "publishedStructureWinners": 30,
+              "prizeAmount": 40
+            },
+            {
+              "prizeLabel": "50",
+              "publishedOdds": "428.00",
+              "publishedStructureWinners": 600,
+              "prizeAmount": 50
+            },
+            {
+              "prizeLabel": "50",
+              "publishedOdds": "380.44",
+              "publishedStructureWinners": 675,
+              "prizeAmount": 50
+            },
+            {
+              "prizeLabel": "50",
+              "publishedOdds": "380.44",
+              "publishedStructureWinners": 675,
+              "prizeAmount": 50
+            },
+            {
+              "prizeLabel": "50",
+              "publishedOdds": "380.44",
+              "publishedStructureWinners": 675,
+              "prizeAmount": 50
+            },
+            {
+              "prizeLabel": "50",
+              "publishedOdds": "380.44",
+              "publishedStructureWinners": 675,
+              "prizeAmount": 50
+            },
+            {
+              "prizeLabel": "100",
+              "publishedOdds": "356.67",
+              "publishedStructureWinners": 720,
+              "prizeAmount": 100
+            },
+            {
+              "prizeLabel": "100",
+              "publishedOdds": "342.40",
+              "publishedStructureWinners": 750,
+              "prizeAmount": 100
+            },
+            {
+              "prizeLabel": "100",
+              "publishedOdds": "342.40",
+              "publishedStructureWinners": 750,
+              "prizeAmount": 100
+            },
+            {
+              "prizeLabel": "100",
+              "publishedOdds": "342.40",
+              "publishedStructureWinners": 750,
+              "prizeAmount": 100
+            },
+            {
+              "prizeLabel": "100",
+              "publishedOdds": "342.40",
+              "publishedStructureWinners": 750,
+              "prizeAmount": 100
+            },
+            {
+              "prizeLabel": "1000",
+              "publishedOdds": "85,600.00",
+              "publishedStructureWinners": 3,
+              "prizeAmount": 1000
+            },
+            {
+              "prizeLabel": "1000",
+              "publishedOdds": "85,600.00",
+              "publishedStructureWinners": 3,
+              "prizeAmount": 1000
+            },
+            {
+              "prizeLabel": "1000",
+              "publishedOdds": "85,600.00",
+              "publishedStructureWinners": 3,
+              "prizeAmount": 1000
+            },
+            {
+              "prizeLabel": "1000",
+              "publishedOdds": "85,600.00",
+              "publishedStructureWinners": 3,
+              "prizeAmount": 1000
+            },
+            {
+              "prizeLabel": "1000",
+              "publishedOdds": "85,600.00",
+              "publishedStructureWinners": 3,
+              "prizeAmount": 1000
+            },
+            {
+              "prizeLabel": "10000",
+              "publishedOdds": "85,600.00",
+              "publishedStructureWinners": 3,
+              "prizeAmount": 10000
+            },
+            {
+              "prizeLabel": "10000",
+              "publishedOdds": "42,800.00",
+              "publishedStructureWinners": 6,
+              "prizeAmount": 10000
+            }
+          ],
+          "inventoryNote": "Remaining count unknown: absent from reviewed 2026-09-13 report. Prize-structure winners are not dated claims. Store availability unverified."
         }
       ]
     }
