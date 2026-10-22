@@ -174,3 +174,23 @@ Fixtures contain only game/date/title/result arrays, no agency correspondence.
 Next finish MFL HTML results, bounded two-date collection, reports and schedule
 contracts; full-scope reconciliation remains due October23 at14:22ET. No new
 feed, app build, UI, acceptance or deadline change.
+
+
+## October 22, 18:28 ET — MFL HTML and Sum It Up validation
+
+Implemented the MFL history parser against the actual dedicated history table,
+excluding the shared Powerball check-number form. It validates the complete
+published table before selecting two dates; wrong page/headers, bad older rows,
+duplicate/unordered/future dates, invalid ball ranges and incomplete histories
+fail closed. The captured October21/October20 results parse successfully. Generic
+jackpot cells remain excluded from cash/annuity projections. This resolves result
+access despite the dated MFL API404; no claim of API recovery.
+
+Both reviewed Sum It Up images now have exact-byte hash gates that return the
+literal transcriptions only on a match. Changed images require review; output
+mutation cannot alter the retained specification. Added minimized public HTML
+and image fixtures plus mutation tests. All17 Idaho Python tests pass (existing
+Scratch tests included). No source refresh, public feed, app build or native
+acceptance claimed. Next complete the bounded two-date collector, dated reports
+and remaining schedule/product contracts, with scope reconciliation due October23
+at14:22ET and release October27 at14:22ET unchanged.
