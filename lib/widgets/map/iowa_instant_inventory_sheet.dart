@@ -58,8 +58,8 @@ class _IowaInstantInventorySheetState extends State<IowaInstantInventorySheet> {
         height: MediaQuery.sizeOf(context).height * .88,
         child: Padding(
           padding: const EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: _PagedInventoryBody(
+            closeTooltip: 'Close game details',
             children: [
               Text(
                 '${game['name']} (${game['id']})',
@@ -68,72 +68,55 @@ class _IowaInstantInventorySheetState extends State<IowaInstantInventorySheet> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Align(
-                alignment: Alignment.centerRight,
-                child: IconButton(
-                  tooltip: 'Close game details',
-                  onPressed: () => Navigator.pop(context),
-                  icon: const Icon(Icons.close),
+              Text('${subset['productType']} · \$${game['cost']}'),
+              Text(
+                'Report source date: ${coverage['instantInventories']['sourceDate']}',
+              ),
+              const Text(
+                'Published prizes of \$50 or more. Cumulative claimed/unclaimed counts, not dated claims or store stock.',
+              ),
+              if (scratch != null) ...[
+                Text(scratch['inventoryNote']),
+                for (final entry in {
+                  'startDate': 'Game start',
+                  'endDistributionDate': 'Distribution ended',
+                  'gameEndDate': 'Game ends',
+                  'lastDayToRedeem': 'Redeem by',
+                }.entries)
+                  if (scratch[entry.key] != null)
+                    Text('${entry.value}: ${scratch[entry.key]}'),
+              ] else
+                const Text(
+                  'This report does not supply the full prize schedule or a current progressive jackpot. See the official product page for those details.',
+                ),
+              for (final tier in game['prizeTiers'])
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Published prize: \$${tier['prizeAmount']}',
+                        style: const TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      Text('Cumulative claimed: ${tier['claimed']}'),
+                      Text('Unclaimed: ${tier['unclaimed']}'),
+                    ],
+                  ),
+                ),
+              TextButton(
+                onPressed: () =>
+                    open(scratch?['sourceUrl'] ?? subset['officialRoute']),
+                child: Text(
+                  scratch != null
+                      ? 'Official game details'
+                      : 'Official product page',
                 ),
               ),
-              Expanded(
-                child: ListView(
-                  children: [
-                    Text('${subset['productType']} · \$${game['cost']}'),
-                    Text(
-                      'Report source date: ${coverage['instantInventories']['sourceDate']}',
-                    ),
-                    const Text(
-                      'Published prizes of \$50 or more. Cumulative claimed/unclaimed counts, not dated claims or store stock.',
-                    ),
-                    if (scratch != null) ...[
-                      Text(scratch['inventoryNote']),
-                      for (final entry in {
-                        'startDate': 'Game start',
-                        'endDistributionDate': 'Distribution ended',
-                        'gameEndDate': 'Game ends',
-                        'lastDayToRedeem': 'Redeem by',
-                      }.entries)
-                        if (scratch[entry.key] != null)
-                          Text('${entry.value}: ${scratch[entry.key]}'),
-                    ] else
-                      const Text(
-                        'This report does not supply the full prize schedule or a current progressive jackpot. See the official product page for those details.',
-                      ),
-                    for (final tier in game['prizeTiers'])
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 10),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Published prize: \$${tier['prizeAmount']}',
-                              style: const TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Text('Cumulative claimed: ${tier['claimed']}'),
-                            Text('Unclaimed: ${tier['unclaimed']}'),
-                          ],
-                        ),
-                      ),
-                    TextButton(
-                      onPressed: () => open(
-                        scratch?['sourceUrl'] ?? subset['officialRoute'],
-                      ),
-                      child: Text(
-                        scratch != null
-                            ? 'Official game details'
-                            : 'Official product page',
-                      ),
-                    ),
-                    TextButton(
-                      onPressed: () =>
-                          open(coverage['instantInventories']['sourceUrl']),
-                      child: const Text('Official dated inventory report'),
-                    ),
-                  ],
-                ),
+              TextButton(
+                onPressed: () =>
+                    open(coverage['instantInventories']['sourceUrl']),
+                child: const Text('Official dated inventory report'),
               ),
             ],
           ),
@@ -177,19 +160,12 @@ class _IowaInstantInventorySheetState extends State<IowaInstantInventorySheet> {
                       )),
                 )
                 .toList();
-            return ListView(
+            return _PagedInventoryBody(
+              closeTooltip: 'Close Iowa inventory',
               children: [
                 const Text(
                   'Iowa instant prize inventories',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: IconButton(
-                    tooltip: 'Close Iowa inventory',
-                    onPressed: () => Navigator.pop(context),
-                    icon: const Icon(Icons.close),
-                  ),
                 ),
                 DropdownButton<String>(
                   isExpanded: true,
@@ -265,5 +241,70 @@ class _IowaInstantInventorySheetState extends State<IowaInstantInventorySheet> {
         ),
       ),
     ),
+  );
+}
+
+/// Keeps reading and exit controls reachable on short, enlarged layouts.
+class _PagedInventoryBody extends StatefulWidget {
+  const _PagedInventoryBody({
+    required this.children,
+    required this.closeTooltip,
+  });
+  final List<Widget> children;
+  final String closeTooltip;
+
+  @override
+  State<_PagedInventoryBody> createState() => _PagedInventoryBodyState();
+}
+
+class _PagedInventoryBodyState extends State<_PagedInventoryBody> {
+  final scroll = ScrollController();
+
+  @override
+  void dispose() {
+    scroll.dispose();
+    super.dispose();
+  }
+
+  void page(int direction) {
+    if (!scroll.hasClients) return;
+    final p = scroll.position;
+    scroll.animateTo(
+      (p.pixels + direction * p.viewportDimension * .8).clamp(
+        p.minScrollExtent,
+        p.maxScrollExtent,
+      ),
+      duration: const Duration(milliseconds: 200),
+      curve: Curves.easeOut,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) => Column(
+    children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          IconButton(
+            tooltip: 'Previous inventory page',
+            onPressed: () => page(-1),
+            icon: const Icon(Icons.arrow_upward),
+          ),
+          IconButton(
+            tooltip: 'Next inventory page',
+            onPressed: () => page(1),
+            icon: const Icon(Icons.arrow_downward),
+          ),
+          IconButton(
+            tooltip: widget.closeTooltip,
+            onPressed: () => Navigator.pop(context),
+            icon: const Icon(Icons.close),
+          ),
+        ],
+      ),
+      Expanded(
+        child: ListView(controller: scroll, children: widget.children),
+      ),
+    ],
   );
 }

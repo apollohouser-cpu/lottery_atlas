@@ -710,3 +710,24 @@ and app-integration evidence. Native layout/enlarged traversal remains open;
 normal-text button traversal across all eight schedules is documented above.
 The ordinary app restored in the preceding checkpoint remains installed; this
 test-only change requires no new native build. No acceptance or deadline change.
+
+
+## October 22, 02:24 ET — inventory button navigation and fixed exit
+
+Extended the working draw-sheet navigation approach to Iowa inventory lists and
+game details: fixed Previous/Next page and Close controls remain reachable while
+all content, including long game names, can scroll. Pages overlap by20% and clamp
+to the available range. This supplies an alternative to the unresolved native
+gesture issue; it does not claim gesture recovery.
+
+All four inventory widget tests pass, including a new button-only landscape2x
+flow through PullTab list, game detail, final dated-report action, close back to
+the same list position and Previous back to search. Production inventory sheet
+analyzer is clean. Ordinary main.dart iOS build passed (Xcode13.1s), installed
+and launched on the original iPhone17e (process23011); Android stayed stopped.
+Native Next moved the Scratch list from controls to later game rows with Close
+still visible. UNO773 opened with all four literal tiers and both source actions
+readable; Close returned to the paged list. Its short portrait detail fitted in
+the viewport, so that observation does not prove long-detail native paging.
+Broader landscape/enlarged native traversal remains next. No probe, acceptance,
+source data or deadline change; October23 21:42ET remains due.

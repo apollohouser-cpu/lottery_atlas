@@ -101,4 +101,68 @@ void main() {
     expect(find.byTooltip('Close game details'), findsOneWidget);
     expect(tester.takeException(), isNull);
   });
+  testWidgets(
+    'fixed paging reaches inventory and detail sources at 2x landscape',
+    (tester) async {
+      tester.view.physicalSize = const Size(844, 390);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await tester.pumpWidget(
+        MaterialApp(
+          home: MediaQuery(
+            data: const MediaQueryData(
+              size: Size(844, 390),
+              textScaler: TextScaler.linear(2),
+            ),
+            child: Scaffold(
+              body: IowaInstantInventorySheet(
+                coverageOverride: data,
+                initialType: 'PullTab',
+              ),
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      Future<void> pageUntil(Finder target) async {
+        for (
+          var i = 0;
+          i < 100 && target.hitTestable().evaluate().isEmpty;
+          i++
+        ) {
+          await tester.tap(find.byTooltip('Next inventory page').last);
+          await tester.pumpAndSettle();
+          expect(tester.takeException(), isNull);
+        }
+        expect(target.hitTestable(), findsOneWidget);
+      }
+
+      await pageUntil(find.text('WHAT A GEM! (4)'));
+      expect(
+        find.byTooltip('Close Iowa inventory').hitTestable(),
+        findsOneWidget,
+      );
+      await tester.tap(find.text('WHAT A GEM! (4)'));
+      await tester.pumpAndSettle();
+      await pageUntil(find.text('Official dated inventory report'));
+      expect(
+        find.byTooltip('Close game details').hitTestable(),
+        findsOneWidget,
+      );
+      await tester.tap(find.byTooltip('Close game details'));
+      await tester.pumpAndSettle();
+      expect(find.text('WHAT A GEM! (4)').hitTestable(), findsOneWidget);
+      for (
+        var i = 0;
+        i < 100 && find.byType(TextField).hitTestable().evaluate().isEmpty;
+        i++
+      ) {
+        await tester.tap(find.byTooltip('Previous inventory page'));
+        await tester.pumpAndSettle();
+      }
+      expect(find.byType(TextField).hitTestable(), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    },
+  );
 }
