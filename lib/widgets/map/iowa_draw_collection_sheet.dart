@@ -32,7 +32,7 @@ class _IowaDrawCollectionSheetState extends State<IowaDrawCollectionSheet> {
       ? Future.value(widget.coverageOverride!)
       : IowaCoverageLoader().load();
   late int selected = widget.initialIndex;
-  final scroll = ScrollController();
+  final scroll = ScrollController(keepScrollOffset: false);
   @override
   void dispose() {
     scroll.dispose();
@@ -255,13 +255,17 @@ class _IowaDrawCollectionSheetState extends State<IowaDrawCollectionSheet> {
                   ],
                   onChanged: (value) {
                     if (value != null) {
-                      if (scroll.hasClients) scroll.jumpTo(0);
                       setState(() => selected = value);
+                      // Reset after the new schedule and dropdown focus settle.
+                      WidgetsBinding.instance.addPostFrameCallback((_) {
+                        if (mounted && scroll.hasClients) scroll.jumpTo(0);
+                      });
                     }
                   },
                 ),
                 Expanded(
                   child: ListView(
+                    key: ValueKey(selected),
                     controller: scroll,
                     children: details(d, row),
                   ),

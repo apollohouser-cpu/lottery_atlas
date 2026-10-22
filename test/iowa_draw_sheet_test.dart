@@ -99,4 +99,27 @@ void main(){
     }
   });
 
+  testWidgets('changing a draw from a deep schedule returns to its summary', (tester) async {
+    tester.view.devicePixelRatio = 1;
+    tester.view.physicalSize = const Size(844,390);
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    await tester.pumpWidget(MaterialApp(home:Scaffold(body:
+      IowaDrawCollectionSheet(coverageOverride:data,initialIndex:18))));
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.text('Official results and history'),250,
+      scrollable:find.byType(Scrollable).last,maxScrolls:100);
+    final position = tester.state<ScrollableState>(find.byType(Scrollable).last).position;
+    expect(position.pixels,greaterThan(0));
+    await tester.tap(find.byType(DropdownButton<int>));
+    await tester.pumpAndSettle();
+    final rows=data['draws']['results'] as List;
+    final label='Pick4 Evening · ${rows[17]['drawDate']}';
+    await tester.tap(find.text(label).last);
+    await tester.pumpAndSettle();
+    expect(tester.state<ScrollableState>(find.byType(Scrollable).last).position.pixels,0);
+    expect(find.textContaining('Numbers:').hitTestable(),findsOneWidget);
+    expect(tester.takeException(),isNull);
+  });
+
 }

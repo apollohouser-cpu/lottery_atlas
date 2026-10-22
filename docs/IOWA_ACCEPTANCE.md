@@ -648,3 +648,16 @@ landscape coverage remain open, as does the original swipe-input investigation;
 button traversal is not proof of gesture recovery or overall acceptance.
 Simulator remains in landscape at the October11 XsOs final source action.
 No code, data, build or deadline change; October23 21:42ET remains due.
+
+## October 21, 23:21 ET — reset schedule position when selecting a draw
+
+Native landscape switching from the XsOs endpoint to Pick4 Evening October18
+opened in the middle of the Pick4 schedule, confirming the previously recorded
+retained-offset issue. The sheet now gives each selected result its own list
+identity, disables saved offset restoration and resets after the new frame.
+A landscape regression selects Pick4 from the bottom of XsOs and verifies the
+new result summary is visible at offset zero. Post-frame reset alone failed at
+344 pixels; resetting list identity/offset persistence passes. All six draw-sheet
+tests pass, including existing 2x traversal tests; production sheet analyzer is
+clean. Native verification of the updated build remains pending. No data,
+acceptance or deadline change; October23 21:42ET remains due.
