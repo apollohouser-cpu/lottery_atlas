@@ -830,3 +830,26 @@ process35951; native inspection confirmed the normal-size ordinary map restored.
 Production main was never edited and no probe is tracked. Android stayed stopped.
 Iowa remains active; remaining enlarged layouts and final integrated acceptance
 are open, with October23 21:42ET unchanged and no extension.
+
+
+## October 22, 07:25 ET — integrated portrait 2x InstaPlay and PullTab
+
+Using the same private untracked app-level2x entry point, traversed the production
+map/state selector, Iowa source screen and actual nested inventory modals.
+Portrait2x InstaPlay heading, selector, source date, count25/25 and cumulative
+limitations were readable. SUPER7S150 full ten-tier subset was read with
+four overlapping Next pages through both final source actions. All values matched
+the previously recorded literal report; the full-schedule/current-progressive
+qualification remained explicit. Close returned to the InstaPlay list.
+
+Previous returned to product controls; selected the separate9-game PullTab list,
+opened WHAT A GEM!4 and read the full title/type/$2/source-date/limitations plus
+its $1999 tier (claimed0/unclaimed12) and both final source actions at2x.
+Close returned to the PullTab list. These are portrait2x product-modal checkpoints,
+not enlarged draw or complete state acceptance. No new source verification.
+
+Private build passed (Xcode15.8s). Ordinary lib/main.dart then rebuilt successfully
+(Xcode36.6s), installed and launched process40151; native AX confirmed the ordinary
+map returned. Production main remained unchanged, no probe tracked, Android
+stopped. Remaining enlarged draw/integrated acceptance stays open; October23
+21:42ET remains unchanged with no extension.
