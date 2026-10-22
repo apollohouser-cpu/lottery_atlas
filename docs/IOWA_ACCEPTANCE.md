@@ -782,3 +782,28 @@ Enlarged native layouts and remaining integrated acceptance remain open. No
 code, data or build changed, and no gesture recovery or new source verification
 is claimed. Ordinary app remains in landscape PullTab inventory; Android is
 stopped. Iowa remains active, due October23 21:42ET without an extension.
+
+
+## October 22, 06:23 ET — integrated native 2x Scratch modal checkpoint
+
+A private untracked entry point applied TextScaler.linear(2) above the production
+Navigator while retaining HomeScreen, route observer and production screens.
+The simulator build passed (Xcode39.6s); navigated map/state search to Iowa,
+Sources and coverage, then the real inventory modal and nested detail modal.
+At landscape2x, the inventory heading, type selector, source date, fixed page/close
+controls and paged limitations were readable. A partial search value3 filtered
+11/50 games; Reset restored50/50. Exact773 typing/paste did not take reliably
+through automation, so exact-input success is not claimed.
+
+Opened $30,000 CROSSWORD615 and read its full four-tier subset through overlapping
+Next-page screenshots: $30000 claimed108/unclaimed43; $3000 216/86; $300
+3195/1335; $100 15360/6494. Title, price, source date, game start2022-12-29,
+all cumulative/stock qualifications and both final official-source actions were
+readable at2x. Fixed Close returned to the Scratch list. This is integrated
+landscape2x Scratch evidence, not all-product/enlarged-draw acceptance.
+
+Rebuilt ordinary lib/main.dart successfully (Xcode37.5s), installed and launched
+process35951; native inspection confirmed the normal-size ordinary map restored.
+Production main was never edited and no probe is tracked. Android stayed stopped.
+Iowa remains active; remaining enlarged layouts and final integrated acceptance
+are open, with October23 21:42ET unchanged and no extension.
