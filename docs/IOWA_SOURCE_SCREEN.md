@@ -873,3 +873,14 @@ No source refresh, new payout inference, acceptance or deadline change.
 Ordinary lib/main.dart restored with a successful 36.4s Xcode build, installed
 and launched; native AX confirmed the ordinary map. No tracked probe or
 production entry-point edit; Android remains stopped.
+
+
+## October 22, 09:20 ET — consolidated verification
+
+57 Iowa Python, 13 refresh-transaction and 19 Iowa Flutter tests pass; seven
+production Iowa Dart files analyze cleanly. Independent live feed matches the
+repository bytes, with the existing October 20 retrieval timestamp retained.
+Inventory filters/returns, real remote adoption, controlled request-failure cache
+retention and ordinary restoration are reconciled as closed in IOWA_ACCEPTANCE.md.
+Enlarged draw rules/layout and final integrated acceptance remain open; no source
+refresh, acceptance or deadline change.

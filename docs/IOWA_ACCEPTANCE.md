@@ -26,8 +26,8 @@ Existing Scratch report is explicitly $50-plus, cumulative claimed/unclaimed inv
 - [x] Fresh Scratch and other instant-product inventory dispositions and full supported rows.
 - [x] Remote/cache/bundle app integration with explicit dates and limitations.
 - [ ] Native groups/selections/source returns, schedules, layouts and enlarged text.
-- [ ] Inventory filters/detail returns, newer adoption and production-loader failure retention.
-- [ ] Ordinary build restoration, consolidated tests and independent live-feed verification.
+- [x] Inventory filters/detail returns, newer adoption and production-loader failure retention.
+- [x] Ordinary build restoration, consolidated tests and independent live-feed verification (October 22 checkpoint; repeat only after relevant changes).
 - [ ] Supported acceptance with explicit unavailable features.
 
 No public feed, app build, UI change or acceptance at activation. Missing agency records do not extend the app deadline. No new correspondence, fees, coordinates or heuristic joins.
@@ -850,3 +850,29 @@ No source refresh, new payout inference, acceptance or deadline change.
 Ordinary lib/main.dart restored with a successful 36.4s Xcode build, installed
 and launched; native AX confirmed the ordinary map. No tracked probe or
 production entry-point edit; Android remains stopped.
+
+
+## October 22, 09:20 ET — consolidated verification and gate reconciliation
+
+Consolidated current code checks pass: 57 Iowa Python tests, 13 scheduled-refresh
+transaction tests and 19 Iowa Flutter tests. All seven Iowa production Dart
+files analyze without issues. The transaction test warnings are deliberate
+failure injections, not live agency/source failures. Independent public-feed
+retrieval matches docs/iowa_coverage.json byte-for-byte, SHA256
+5f70e173016eda09cd158a09ddce53238e94b6fc5201d84b01d7b843e10f980f;
+retrievedAt remains 2026-10-20T11:41:19.039816+00:00. This checks deployment
+consistency, not a new official-source collection or verification date.
+
+Reconciled the opening checklist with existing evidence: inventory search,
+price/reset, product separation/detail/source returns, real newer-remote adoption
+and controlled production-loader request-failure retention are closed. Evidence
+is recorded in the October 19 18:12/20:12/23:16, October 20 00:15 and October 22
+inventory checkpoints. Ordinary restoration was confirmed at 08:27; no private
+build was installed this turn. The consolidated tests/restoration/live-feed gate
+is also closed at this checkpoint, subject to relevant subsequent code changes.
+
+The remaining native gate is enlarged draw rules/layout traversal and final
+integration reconciliation. All-family normal-text charts/rules, both dated
+selections and source returns already have separate evidence; do not repeat them
+without a named defect. Iowa remains unaccepted, due October 23 at 21:42 ET,
+with no extension. Android stays stopped and the ordinary iOS app is retained.
