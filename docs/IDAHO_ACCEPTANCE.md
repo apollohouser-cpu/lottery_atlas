@@ -151,3 +151,26 @@ The full-scope gate remains open for final rule/option and history reconciliatio
 remaining work is concrete, including strict schedule contracts and product-field
 validation. No feed/build/UI/acceptance or deadline change. Next implement the
 bounded draw parser and hash-gated schedule contracts after final reconciliation.
+
+
+## October 22, 17:32 ET — strict dated result parser
+
+Implemented tooling/idaho_draw_results.py for the seven captured working API
+families, producing ten distinct variant/session results per captured date set.
+MFL remains excluded pending its HTML parser; this is not the full22-result
+collection. Validation rejects wrong game/date/title/success, noncanonical or
+future dates, missing/extra result arrays, invalid ball identity/order/range,
+duplicate main balls, invalid multipliers and malformed Pick digit positions.
+Only explicit surrounding ASCII whitespace is trimmed. Pick leading zeros and
+literal two-digit XsOs source codes are retained; team names are not inferred.
+
+The parser deliberately projects result fields only. Unreviewed winner arrays,
+conflicting jackpot and cash fields cannot leak into output, and Double Play
+has no inherited Power Play multiplier. Source URLs are exact dated API routes.
+Seven regression tests pass against minimized public-source captures for all
+seven families, covering ten groups plus mutation rejection and exclusion tests.
+Fixtures contain only game/date/title/result arrays, no agency correspondence.
+
+Next finish MFL HTML results, bounded two-date collection, reports and schedule
+contracts; full-scope reconciliation remains due October23 at14:22ET. No new
+feed, app build, UI, acceptance or deadline change.
