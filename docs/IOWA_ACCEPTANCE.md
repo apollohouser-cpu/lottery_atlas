@@ -830,3 +830,23 @@ Private build passed (Xcode15.8s). Ordinary lib/main.dart then rebuilt successfu
 map returned. Production main remained unchanged, no probe tracked, Android
 stopped. Remaining enlarged draw/integrated acceptance stays open; October23
 21:42ET remains unchanged with no extension.
+
+
+## October 22, 08:27 ET — enlarged integrated Powerball chart
+
+Private untracked app-level 2x build passed (Xcode 36.1s), installed and launched
+on the original iPhone 17e. Traversed the real map/state selector and Iowa sources
+to the production draw modal in portrait. Powerball October 19 summary, explicit
+missing dated report, all nine literal chart rows (including every multiplier
+column and rounded odds), overall odds and chart qualification were visually read
+using nine overlapping Next-page advances. Heading and fixed paging/source/Close
+controls remained readable; selected dropdown text is ellipsized but the full
+date is readable in the summary. Close returned to the Iowa source screen.
+
+This closes the portrait 2x Powerball chart read-through only. The following full
+HTML rule read-through at 2x and consolidated native acceptance remain open.
+No source refresh, new payout inference, acceptance or deadline change.
+
+Ordinary lib/main.dart restored with a successful 36.4s Xcode build, installed
+and launched; native AX confirmed the ordinary map. No tracked probe or
+production entry-point edit; Android remains stopped.
