@@ -3,6 +3,231 @@
   "reports": [
     {
       "game": "Powerball",
+      "drawDate": "2026-10-21",
+      "powerPlayMultiplier": 2,
+      "variants": [
+        {
+          "variant": "Base without Power Play",
+          "tiers": [
+            {
+              "matchLabel": "5 White balls & Powerball",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "Jackpot",
+              "sourceAmount": null,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "5 White balls",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$1,000,000",
+              "sourceAmount": 1000000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White balls & Powerball",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$50,000",
+              "sourceAmount": 50000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White balls",
+              "sourcePrizeCount": 8,
+              "prizeLabel": "$100",
+              "sourceAmount": 100,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White balls & Powerball",
+              "sourcePrizeCount": 13,
+              "prizeLabel": "$100",
+              "sourceAmount": 100,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White balls",
+              "sourcePrizeCount": 436,
+              "prizeLabel": "$7",
+              "sourceAmount": 7,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "2 White balls & Powerball",
+              "sourcePrizeCount": 356,
+              "prizeLabel": "$7",
+              "sourceAmount": 7,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "1 White ball & Powerball",
+              "sourcePrizeCount": 2883,
+              "prizeLabel": "$4",
+              "sourceAmount": 4,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "0 White balls & Powerball",
+              "sourcePrizeCount": 6467,
+              "prizeLabel": "$4",
+              "sourceAmount": 4,
+              "cashPrize": null
+            }
+          ],
+          "sourceWinnerCount": 10163,
+          "sourcePayoutDollars": 45044
+        },
+        {
+          "variant": "With Power Play",
+          "tiers": [
+            {
+              "matchLabel": "5 White balls & Powerball",
+              "sourcePrizeCount": null,
+              "prizeLabel": "-",
+              "sourceAmount": null,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "5 White balls",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$2,000,000",
+              "sourceAmount": 2000000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White balls & Powerball",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$100,000",
+              "sourceAmount": 100000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White balls",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$200",
+              "sourceAmount": 200,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White balls & Powerball",
+              "sourcePrizeCount": 4,
+              "prizeLabel": "$200",
+              "sourceAmount": 200,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White balls",
+              "sourcePrizeCount": 60,
+              "prizeLabel": "$14",
+              "sourceAmount": 14,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "2 White balls & Powerball",
+              "sourcePrizeCount": 52,
+              "prizeLabel": "$14",
+              "sourceAmount": 14,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "1 White ball & Powerball",
+              "sourcePrizeCount": 404,
+              "prizeLabel": "$8",
+              "sourceAmount": 8,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "0 White balls & Powerball",
+              "sourcePrizeCount": 1034,
+              "prizeLabel": "$8",
+              "sourceAmount": 8,
+              "cashPrize": null
+            }
+          ],
+          "sourceWinnerCount": 1554,
+          "sourcePayoutDollars": 13872
+        },
+        {
+          "variant": "Double Play",
+          "tiers": [
+            {
+              "matchLabel": "5 White balls & Powerball",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$10,000,000",
+              "sourceAmount": 10000000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "5 White balls",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$500,000",
+              "sourceAmount": 500000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White balls & Powerball",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$50,000",
+              "sourceAmount": 50000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White balls",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$500",
+              "sourceAmount": 500,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White balls & Powerball",
+              "sourcePrizeCount": 1,
+              "prizeLabel": "$500",
+              "sourceAmount": 500,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White balls",
+              "sourcePrizeCount": 57,
+              "prizeLabel": "$20",
+              "sourceAmount": 20,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "2 White balls & Powerball",
+              "sourcePrizeCount": 48,
+              "prizeLabel": "$20",
+              "sourceAmount": 20,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "1 White ball & Powerball",
+              "sourcePrizeCount": 304,
+              "prizeLabel": "$10",
+              "sourceAmount": 10,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "0 White balls & Powerball",
+              "sourcePrizeCount": 700,
+              "prizeLabel": "$7",
+              "sourceAmount": 7,
+              "cashPrize": null
+            }
+          ],
+          "sourceWinnerCount": 1110,
+          "sourcePayoutDollars": 10540
+        }
+      ],
+      "mainSourceWinnerCount": 11717,
+      "mainSourcePayoutDollars": 58916,
+      "distinctTicketCount": null,
+      "finalityVerified": false,
+      "coverage": "Missouri source prizes. Main total combines without/with Power Play columns; Double Play is separate. No unique tickets or people across variants; unavailable jackpot Power Play cells remain null. Literal prizes do not establish cash options or claim dates.",
+      "family": "powerball",
+      "sessionKey": "draw",
+      "sourceUrl": "https://www.molottery.com/powerball/prizes-paid.do?date=2026-10-21"
+    },
+    {
+      "game": "Powerball",
       "drawDate": "2026-10-19",
       "powerPlayMultiplier": 4,
       "variants": [
@@ -225,231 +450,6 @@
       "family": "powerball",
       "sessionKey": "draw",
       "sourceUrl": "https://www.molottery.com/powerball/prizes-paid.do?date=2026-10-19"
-    },
-    {
-      "game": "Powerball",
-      "drawDate": "2026-10-17",
-      "powerPlayMultiplier": 3,
-      "variants": [
-        {
-          "variant": "Base without Power Play",
-          "tiers": [
-            {
-              "matchLabel": "5 White balls & Powerball",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "Jackpot",
-              "sourceAmount": null,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "5 White balls",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$1,000,000",
-              "sourceAmount": 1000000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White balls & Powerball",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$50,000",
-              "sourceAmount": 50000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White balls",
-              "sourcePrizeCount": 5,
-              "prizeLabel": "$100",
-              "sourceAmount": 100,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White balls & Powerball",
-              "sourcePrizeCount": 19,
-              "prizeLabel": "$100",
-              "sourceAmount": 100,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White balls",
-              "sourcePrizeCount": 625,
-              "prizeLabel": "$7",
-              "sourceAmount": 7,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "2 White balls & Powerball",
-              "sourcePrizeCount": 476,
-              "prizeLabel": "$7",
-              "sourceAmount": 7,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "1 White ball & Powerball",
-              "sourcePrizeCount": 3861,
-              "prizeLabel": "$4",
-              "sourceAmount": 4,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "0 White balls & Powerball",
-              "sourcePrizeCount": 8997,
-              "prizeLabel": "$4",
-              "sourceAmount": 4,
-              "cashPrize": null
-            }
-          ],
-          "sourceWinnerCount": 13983,
-          "sourcePayoutDollars": 61539
-        },
-        {
-          "variant": "With Power Play",
-          "tiers": [
-            {
-              "matchLabel": "5 White balls & Powerball",
-              "sourcePrizeCount": null,
-              "prizeLabel": "-",
-              "sourceAmount": null,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "5 White balls",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$2,000,000",
-              "sourceAmount": 2000000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White balls & Powerball",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$150,000",
-              "sourceAmount": 150000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White balls",
-              "sourcePrizeCount": 3,
-              "prizeLabel": "$300",
-              "sourceAmount": 300,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White balls & Powerball",
-              "sourcePrizeCount": 4,
-              "prizeLabel": "$300",
-              "sourceAmount": 300,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White balls",
-              "sourcePrizeCount": 89,
-              "prizeLabel": "$21",
-              "sourceAmount": 21,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "2 White balls & Powerball",
-              "sourcePrizeCount": 75,
-              "prizeLabel": "$21",
-              "sourceAmount": 21,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "1 White ball & Powerball",
-              "sourcePrizeCount": 555,
-              "prizeLabel": "$12",
-              "sourceAmount": 12,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "0 White balls & Powerball",
-              "sourcePrizeCount": 1288,
-              "prizeLabel": "$12",
-              "sourceAmount": 12,
-              "cashPrize": null
-            }
-          ],
-          "sourceWinnerCount": 2014,
-          "sourcePayoutDollars": 27660
-        },
-        {
-          "variant": "Double Play",
-          "tiers": [
-            {
-              "matchLabel": "5 White balls & Powerball",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$10,000,000",
-              "sourceAmount": 10000000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "5 White balls",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$500,000",
-              "sourceAmount": 500000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White balls & Powerball",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$50,000",
-              "sourceAmount": 50000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White balls",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$500",
-              "sourceAmount": 500,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White balls & Powerball",
-              "sourcePrizeCount": 2,
-              "prizeLabel": "$500",
-              "sourceAmount": 500,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White balls",
-              "sourcePrizeCount": 43,
-              "prizeLabel": "$20",
-              "sourceAmount": 20,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "2 White balls & Powerball",
-              "sourcePrizeCount": 39,
-              "prizeLabel": "$20",
-              "sourceAmount": 20,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "1 White ball & Powerball",
-              "sourcePrizeCount": 312,
-              "prizeLabel": "$10",
-              "sourceAmount": 10,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "0 White balls & Powerball",
-              "sourcePrizeCount": 756,
-              "prizeLabel": "$7",
-              "sourceAmount": 7,
-              "cashPrize": null
-            }
-          ],
-          "sourceWinnerCount": 1152,
-          "sourcePayoutDollars": 11052
-        }
-      ],
-      "mainSourceWinnerCount": 15997,
-      "mainSourcePayoutDollars": 89199,
-      "distinctTicketCount": null,
-      "finalityVerified": false,
-      "coverage": "Missouri source prizes. Main total combines without/with Power Play columns; Double Play is separate. No unique tickets or people across variants; unavailable jackpot Power Play cells remain null. Literal prizes do not establish cash options or claim dates.",
-      "family": "powerball",
-      "sessionKey": "draw",
-      "sourceUrl": "https://www.molottery.com/powerball/prizes-paid.do?date=2026-10-17"
     },
     {
       "game": "Powerball Xs & Os",
@@ -691,6 +691,144 @@
     },
     {
       "game": "MO Millions",
+      "drawDate": "2026-10-21",
+      "variants": [
+        {
+          "variant": "Main",
+          "tiers": [
+            {
+              "matchLabel": "6 White Balls",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$0",
+              "sourceAmount": 0,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "5 White Balls & Bulls-Eye",
+              "sourcePrizeCount": 4,
+              "prizeLabel": "$1,500",
+              "sourceAmount": 1500,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "5 White Balls",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$750",
+              "sourceAmount": 750,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White Balls & Bulls-Eye",
+              "sourcePrizeCount": 90,
+              "prizeLabel": "$50",
+              "sourceAmount": 50,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White Balls",
+              "sourcePrizeCount": 48,
+              "prizeLabel": "$25",
+              "sourceAmount": 25,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White Balls & Bulls-Eye",
+              "sourcePrizeCount": 1159,
+              "prizeLabel": "$6",
+              "sourceAmount": 6,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White Balls",
+              "sourcePrizeCount": 1057,
+              "prizeLabel": "$3",
+              "sourceAmount": 3,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "2 White Balls & Bulls-Eye",
+              "sourcePrizeCount": 4792,
+              "prizeLabel": "$2",
+              "sourceAmount": 2,
+              "cashPrize": null
+            }
+          ],
+          "sourceWinnerCount": 7150,
+          "sourcePayoutDollars": 31409
+        },
+        {
+          "variant": "Double Play",
+          "tiers": [
+            {
+              "matchLabel": "6 White Balls",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$50,000",
+              "sourceAmount": 50000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "5 White Balls & Bulls-Eye",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$2,000",
+              "sourceAmount": 2000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "5 White Balls",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$1,000",
+              "sourceAmount": 1000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White Balls & Bulls-Eye",
+              "sourcePrizeCount": 14,
+              "prizeLabel": "$70",
+              "sourceAmount": 70,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "4 White Balls",
+              "sourcePrizeCount": 7,
+              "prizeLabel": "$35",
+              "sourceAmount": 35,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White Balls & Bulls-Eye",
+              "sourcePrizeCount": 98,
+              "prizeLabel": "$10",
+              "sourceAmount": 10,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "3 White Balls",
+              "sourcePrizeCount": 133,
+              "prizeLabel": "$5",
+              "sourceAmount": 5,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "2 White Balls & Bulls-Eye",
+              "sourcePrizeCount": 547,
+              "prizeLabel": "$3",
+              "sourceAmount": 3,
+              "cashPrize": null
+            }
+          ],
+          "sourceWinnerCount": 799,
+          "sourcePayoutDollars": 4511
+        }
+      ],
+      "distinctTicketCount": null,
+      "finalityVerified": false,
+      "coverage": "Missouri source prizes. Bulls-Eye matches retain their own rows; Double Play totals remain separate. Printed zero top prize with no winners is not a zero jackpot assertion. No unique tickets/people across variants, cash-option or claim-date inference. EZ Match is not included.",
+      "family": "mo-millions",
+      "sessionKey": "draw",
+      "sourceUrl": "https://www.molottery.com/mo-millions/prizes-paid.do?date=2026-10-21"
+    },
+    {
+      "game": "MO Millions",
       "drawDate": "2026-10-17",
       "variants": [
         {
@@ -828,142 +966,47 @@
       "sourceUrl": "https://www.molottery.com/mo-millions/prizes-paid.do?date=2026-10-17"
     },
     {
-      "game": "MO Millions",
-      "drawDate": "2026-10-14",
-      "variants": [
+      "game": "Show Me Cash",
+      "drawDate": "2026-10-21",
+      "tiers": [
         {
-          "variant": "Main",
-          "tiers": [
-            {
-              "matchLabel": "6 White Balls",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$0",
-              "sourceAmount": 0,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "5 White Balls & Bulls-Eye",
-              "sourcePrizeCount": 1,
-              "prizeLabel": "$1,500",
-              "sourceAmount": 1500,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "5 White Balls",
-              "sourcePrizeCount": 3,
-              "prizeLabel": "$750",
-              "sourceAmount": 750,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White Balls & Bulls-Eye",
-              "sourcePrizeCount": 105,
-              "prizeLabel": "$50",
-              "sourceAmount": 50,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White Balls",
-              "sourcePrizeCount": 49,
-              "prizeLabel": "$25",
-              "sourceAmount": 25,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White Balls & Bulls-Eye",
-              "sourcePrizeCount": 1074,
-              "prizeLabel": "$6",
-              "sourceAmount": 6,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White Balls",
-              "sourcePrizeCount": 1075,
-              "prizeLabel": "$3",
-              "sourceAmount": 3,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "2 White Balls & Bulls-Eye",
-              "sourcePrizeCount": 4534,
-              "prizeLabel": "$2",
-              "sourceAmount": 2,
-              "cashPrize": null
-            }
-          ],
-          "sourceWinnerCount": 6841,
-          "sourcePayoutDollars": 28962
+          "matchLabel": "Match 5 of 5",
+          "sourcePrizeCount": 0,
+          "prizeLabel": "$0",
+          "sourceAmount": 0,
+          "cashPrize": null
         },
         {
-          "variant": "Double Play",
-          "tiers": [
-            {
-              "matchLabel": "6 White Balls",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$50,000",
-              "sourceAmount": 50000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "5 White Balls & Bulls-Eye",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$2,000",
-              "sourceAmount": 2000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "5 White Balls",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$1,000",
-              "sourceAmount": 1000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White Balls & Bulls-Eye",
-              "sourcePrizeCount": 13,
-              "prizeLabel": "$70",
-              "sourceAmount": 70,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "4 White Balls",
-              "sourcePrizeCount": 6,
-              "prizeLabel": "$35",
-              "sourceAmount": 35,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White Balls & Bulls-Eye",
-              "sourcePrizeCount": 140,
-              "prizeLabel": "$10",
-              "sourceAmount": 10,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "3 White Balls",
-              "sourcePrizeCount": 128,
-              "prizeLabel": "$5",
-              "sourceAmount": 5,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "2 White Balls & Bulls-Eye",
-              "sourcePrizeCount": 621,
-              "prizeLabel": "$3",
-              "sourceAmount": 3,
-              "cashPrize": null
-            }
-          ],
-          "sourceWinnerCount": 908,
-          "sourcePayoutDollars": 5023
+          "matchLabel": "Match 4 of 5",
+          "sourcePrizeCount": 10,
+          "prizeLabel": "$250",
+          "sourceAmount": 250,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": "Match 3 of 5",
+          "sourcePrizeCount": 571,
+          "prizeLabel": "$10",
+          "sourceAmount": 10,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": "Match 2 of 5",
+          "sourcePrizeCount": 6226,
+          "prizeLabel": "$1",
+          "sourceAmount": 1,
+          "cashPrize": null
         }
       ],
+      "sourceWinnerCount": 6807,
+      "sourcePayoutDollars": 14436,
       "distinctTicketCount": null,
       "finalityVerified": false,
-      "coverage": "Missouri source prizes. Bulls-Eye matches retain their own rows; Double Play totals remain separate. Printed zero top prize with no winners is not a zero jackpot assertion. No unique tickets/people across variants, cash-option or claim-date inference. EZ Match is not included.",
-      "family": "mo-millions",
+      "countUnit": "Source Number of MO Prizes; not verified distinct tickets or people",
+      "coverage": "Missouri published draw report. Source amounts are retained literally; a zero top-tier label with no winners does not establish a zero jackpot. No cash-option, claim-date or retailer inference.",
+      "family": "show-me-cash",
       "sessionKey": "draw",
-      "sourceUrl": "https://www.molottery.com/mo-millions/prizes-paid.do?date=2026-10-14"
+      "sourceUrl": "https://www.molottery.com/show-me-cash/prizes-paid.do?date=2026-10-21"
     },
     {
       "game": "Show Me Cash",
@@ -1009,47 +1052,101 @@
       "sourceUrl": "https://www.molottery.com/show-me-cash/prizes-paid.do?date=2026-10-20"
     },
     {
-      "game": "Show Me Cash",
-      "drawDate": "2026-10-19",
-      "tiers": [
+      "game": "Pick 3",
+      "drawDate": "2026-10-21",
+      "sessionLabel": "Midday",
+      "variants": [
         {
-          "matchLabel": "Match 5 of 5",
-          "sourcePrizeCount": 0,
-          "prizeLabel": "$0",
-          "sourceAmount": 0,
-          "cashPrize": null
+          "variant": "Pick 3",
+          "tiers": [
+            {
+              "matchLabel": "Straight*",
+              "sourcePrizeCount": 90,
+              "prizeLabel": "$300",
+              "sourceAmountCents": 30000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 3-way",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$100",
+              "sourceAmountCents": 10000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 6-way",
+              "sourcePrizeCount": 329,
+              "prizeLabel": "$50",
+              "sourceAmountCents": 5000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Front 2",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$30",
+              "sourceAmountCents": 3000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Back 2",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$30",
+              "sourceAmountCents": 3000,
+              "cashPrize": null
+            }
+          ]
         },
         {
-          "matchLabel": "Match 4 of 5",
-          "sourcePrizeCount": 10,
-          "prizeLabel": "$250",
-          "sourceAmount": 250,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": "Match 3 of 5",
-          "sourcePrizeCount": 507,
-          "prizeLabel": "$10",
-          "sourceAmount": 10,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": "Match 2 of 5",
-          "sourcePrizeCount": 5002,
-          "prizeLabel": "$1",
-          "sourceAmount": 1,
-          "cashPrize": null
+          "variant": "Pick 3 + Wild ball",
+          "tiers": [
+            {
+              "matchLabel": "Straight*",
+              "sourcePrizeCount": 14,
+              "prizeLabel": "$100",
+              "sourceAmountCents": 10000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 3-way",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$34",
+              "sourceAmountCents": 3400,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 6-way",
+              "sourcePrizeCount": 42,
+              "prizeLabel": "$17",
+              "sourceAmountCents": 1700,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Front 2",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$10",
+              "sourceAmountCents": 1000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Back 2",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$10",
+              "sourceAmountCents": 1000,
+              "cashPrize": null
+            }
+          ]
         }
       ],
-      "sourceWinnerCount": 5519,
-      "sourcePayoutDollars": 12572,
+      "sourceWinnerCount": 475,
+      "sourcePayoutCents": 4556400,
+      "sourcePayoutLabel": "$45,564",
+      "playBasisCents": 50,
       "distinctTicketCount": null,
       "finalityVerified": false,
-      "countUnit": "Source Number of MO Prizes; not verified distinct tickets or people",
-      "coverage": "Missouri published draw report. Source amounts are retained literally; a zero top-tier label with no winners does not establish a zero jackpot. No cash-option, claim-date or retailer inference.",
-      "family": "show-me-cash",
-      "sessionKey": "draw",
-      "sourceUrl": "https://www.molottery.com/show-me-cash/prizes-paid.do?date=2026-10-19"
+      "coverage": "Missouri published prizes based on $.50 plays. Base and Wild ball columns remain separate; combined source total is not verified distinct tickets or people. Straight asterisk retained literally. No exact draw timestamp, claim-date or retailer inference.",
+      "family": "pick3",
+      "sessionKey": "Midday",
+      "sourceUrl": "https://www.molottery.com/pick3/prizes-paid.do?date=2026-10-21&time=Midday"
     },
     {
       "game": "Pick 3",
@@ -1150,15 +1247,15 @@
     },
     {
       "game": "Pick 3",
-      "drawDate": "2026-10-19",
-      "sessionLabel": "Midday",
+      "drawDate": "2026-10-21",
+      "sessionLabel": "Evening",
       "variants": [
         {
           "variant": "Pick 3",
           "tiers": [
             {
               "matchLabel": "Straight*",
-              "sourcePrizeCount": 88,
+              "sourcePrizeCount": 125,
               "prizeLabel": "$300",
               "sourceAmountCents": 30000,
               "cashPrize": null
@@ -1172,21 +1269,21 @@
             },
             {
               "matchLabel": "Box 6-way",
-              "sourcePrizeCount": 282,
+              "sourcePrizeCount": 534,
               "prizeLabel": "$50",
               "sourceAmountCents": 5000,
               "cashPrize": null
             },
             {
               "matchLabel": "Front 2",
-              "sourcePrizeCount": 4,
+              "sourcePrizeCount": 11,
               "prizeLabel": "$30",
               "sourceAmountCents": 3000,
               "cashPrize": null
             },
             {
               "matchLabel": "Back 2",
-              "sourcePrizeCount": 1,
+              "sourcePrizeCount": 0,
               "prizeLabel": "$30",
               "sourceAmountCents": 3000,
               "cashPrize": null
@@ -1198,7 +1295,7 @@
           "tiers": [
             {
               "matchLabel": "Straight*",
-              "sourcePrizeCount": 10,
+              "sourcePrizeCount": 6,
               "prizeLabel": "$100",
               "sourceAmountCents": 10000,
               "cashPrize": null
@@ -1212,21 +1309,21 @@
             },
             {
               "matchLabel": "Box 6-way",
-              "sourcePrizeCount": 50,
+              "sourcePrizeCount": 34,
               "prizeLabel": "$17",
               "sourceAmountCents": 1700,
               "cashPrize": null
             },
             {
               "matchLabel": "Front 2",
-              "sourcePrizeCount": 0,
+              "sourcePrizeCount": 4,
               "prizeLabel": "$10",
               "sourceAmountCents": 1000,
               "cashPrize": null
             },
             {
               "matchLabel": "Back 2",
-              "sourcePrizeCount": 0,
+              "sourcePrizeCount": 2,
               "prizeLabel": "$10",
               "sourceAmountCents": 1000,
               "cashPrize": null
@@ -1234,16 +1331,16 @@
           ]
         }
       ],
-      "sourceWinnerCount": 435,
-      "sourcePayoutCents": 4250000,
-      "sourcePayoutLabel": "$42,500",
+      "sourceWinnerCount": 716,
+      "sourcePayoutCents": 6576800,
+      "sourcePayoutLabel": "$65,768",
       "playBasisCents": 50,
       "distinctTicketCount": null,
       "finalityVerified": false,
       "coverage": "Missouri published prizes based on $.50 plays. Base and Wild ball columns remain separate; combined source total is not verified distinct tickets or people. Straight asterisk retained literally. No exact draw timestamp, claim-date or retailer inference.",
       "family": "pick3",
-      "sessionKey": "Midday",
-      "sourceUrl": "https://www.molottery.com/pick3/prizes-paid.do?date=2026-10-19&time=Midday"
+      "sessionKey": "Evening",
+      "sourceUrl": "https://www.molottery.com/pick3/prizes-paid.do?date=2026-10-21&time=Evening"
     },
     {
       "game": "Pick 3",
@@ -1343,37 +1440,72 @@
       "sourceUrl": "https://www.molottery.com/pick3/prizes-paid.do?date=2026-10-20&time=Evening"
     },
     {
-      "game": "Pick 3",
-      "drawDate": "2026-10-19",
-      "sessionLabel": "Evening",
+      "game": "Pick 4",
+      "drawDate": "2026-10-21",
+      "sessionLabel": "Midday",
       "variants": [
         {
-          "variant": "Pick 3",
+          "variant": "Pick 4",
           "tiers": [
             {
               "matchLabel": "Straight*",
-              "sourcePrizeCount": 86,
+              "sourcePrizeCount": 3,
+              "prizeLabel": "$3,000",
+              "sourceAmountCents": 300000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 4-way",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$750",
+              "sourceAmountCents": 75000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 6-way",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$500",
+              "sourceAmountCents": 50000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 12-way",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$250",
+              "sourceAmountCents": 25000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 24-way",
+              "sourcePrizeCount": 146,
+              "prizeLabel": "$125",
+              "sourceAmountCents": 12500,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Front 3",
+              "sourcePrizeCount": 0,
               "prizeLabel": "$300",
               "sourceAmountCents": 30000,
               "cashPrize": null
             },
             {
-              "matchLabel": "Box 3-way",
+              "matchLabel": "Back 3",
               "sourcePrizeCount": 0,
-              "prizeLabel": "$100",
-              "sourceAmountCents": 10000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Box 6-way",
-              "sourcePrizeCount": 273,
-              "prizeLabel": "$50",
-              "sourceAmountCents": 5000,
+              "prizeLabel": "$300",
+              "sourceAmountCents": 30000,
               "cashPrize": null
             },
             {
               "matchLabel": "Front 2",
-              "sourcePrizeCount": 3,
+              "sourcePrizeCount": 4,
+              "prizeLabel": "$30",
+              "sourceAmountCents": 3000,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Mid 2",
+              "sourcePrizeCount": 0,
               "prizeLabel": "$30",
               "sourceAmountCents": 3000,
               "cashPrize": null
@@ -1388,56 +1520,91 @@
           ]
         },
         {
-          "variant": "Pick 3 + Wild ball",
+          "variant": "Pick 4 + Wild ball",
           "tiers": [
             {
               "matchLabel": "Straight*",
-              "sourcePrizeCount": 5,
-              "prizeLabel": "$100",
-              "sourceAmountCents": 10000,
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$750",
+              "sourceAmountCents": 75000,
               "cashPrize": null
             },
             {
-              "matchLabel": "Box 3-way",
+              "matchLabel": "Box 4-way",
               "sourcePrizeCount": 0,
-              "prizeLabel": "$34",
-              "sourceAmountCents": 3400,
+              "prizeLabel": "$190",
+              "sourceAmountCents": 19000,
               "cashPrize": null
             },
             {
               "matchLabel": "Box 6-way",
-              "sourcePrizeCount": 49,
-              "prizeLabel": "$17",
-              "sourceAmountCents": 1700,
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$125",
+              "sourceAmountCents": 12500,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 12-way",
+              "sourcePrizeCount": 7,
+              "prizeLabel": "$63",
+              "sourceAmountCents": 6300,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Box 24-way",
+              "sourcePrizeCount": 9,
+              "prizeLabel": "$31",
+              "sourceAmountCents": 3100,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Front 3",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$75",
+              "sourceAmountCents": 7500,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Back 3",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$75",
+              "sourceAmountCents": 7500,
               "cashPrize": null
             },
             {
               "matchLabel": "Front 2",
               "sourcePrizeCount": 0,
-              "prizeLabel": "$10",
-              "sourceAmountCents": 1000,
+              "prizeLabel": "$7.5",
+              "sourceAmountCents": 750,
+              "cashPrize": null
+            },
+            {
+              "matchLabel": "Mid 2",
+              "sourcePrizeCount": 0,
+              "prizeLabel": "$7.5",
+              "sourceAmountCents": 750,
               "cashPrize": null
             },
             {
               "matchLabel": "Back 2",
               "sourcePrizeCount": 0,
-              "prizeLabel": "$10",
-              "sourceAmountCents": 1000,
+              "prizeLabel": "$7.5",
+              "sourceAmountCents": 750,
               "cashPrize": null
             }
           ]
         }
       ],
-      "sourceWinnerCount": 416,
-      "sourcePayoutCents": 4087300,
-      "sourcePayoutLabel": "$40,873",
+      "sourceWinnerCount": 169,
+      "sourcePayoutCents": 2809000,
+      "sourcePayoutLabel": "$28,090",
       "playBasisCents": 50,
       "distinctTicketCount": null,
       "finalityVerified": false,
       "coverage": "Missouri published prizes based on $.50 plays. Base and Wild ball columns remain separate; combined source total is not verified distinct tickets or people. Straight asterisk retained literally. No exact draw timestamp, claim-date or retailer inference.",
-      "family": "pick3",
-      "sessionKey": "Evening",
-      "sourceUrl": "https://www.molottery.com/pick3/prizes-paid.do?date=2026-10-19&time=Evening"
+      "family": "pick4",
+      "sessionKey": "Midday",
+      "sourceUrl": "https://www.molottery.com/pick4/prizes-paid.do?date=2026-10-21&time=Midday"
     },
     {
       "game": "Pick 4",
@@ -1608,15 +1775,15 @@
     },
     {
       "game": "Pick 4",
-      "drawDate": "2026-10-19",
-      "sessionLabel": "Midday",
+      "drawDate": "2026-10-21",
+      "sessionLabel": "Evening",
       "variants": [
         {
           "variant": "Pick 4",
           "tiers": [
             {
               "matchLabel": "Straight*",
-              "sourcePrizeCount": 3,
+              "sourcePrizeCount": 2,
               "prizeLabel": "$3,000",
               "sourceAmountCents": 300000,
               "cashPrize": null
@@ -1637,21 +1804,21 @@
             },
             {
               "matchLabel": "Box 12-way",
-              "sourcePrizeCount": 49,
+              "sourcePrizeCount": 0,
               "prizeLabel": "$250",
               "sourceAmountCents": 25000,
               "cashPrize": null
             },
             {
               "matchLabel": "Box 24-way",
-              "sourcePrizeCount": 0,
+              "sourcePrizeCount": 120,
               "prizeLabel": "$125",
               "sourceAmountCents": 12500,
               "cashPrize": null
             },
             {
               "matchLabel": "Front 3",
-              "sourcePrizeCount": 0,
+              "sourcePrizeCount": 1,
               "prizeLabel": "$300",
               "sourceAmountCents": 30000,
               "cashPrize": null
@@ -1672,14 +1839,14 @@
             },
             {
               "matchLabel": "Mid 2",
-              "sourcePrizeCount": 0,
+              "sourcePrizeCount": 2,
               "prizeLabel": "$30",
               "sourceAmountCents": 3000,
               "cashPrize": null
             },
             {
               "matchLabel": "Back 2",
-              "sourcePrizeCount": 0,
+              "sourcePrizeCount": 4,
               "prizeLabel": "$30",
               "sourceAmountCents": 3000,
               "cashPrize": null
@@ -1691,7 +1858,7 @@
           "tiers": [
             {
               "matchLabel": "Straight*",
-              "sourcePrizeCount": 2,
+              "sourcePrizeCount": 0,
               "prizeLabel": "$750",
               "sourceAmountCents": 75000,
               "cashPrize": null
@@ -1705,21 +1872,21 @@
             },
             {
               "matchLabel": "Box 6-way",
-              "sourcePrizeCount": 6,
+              "sourcePrizeCount": 0,
               "prizeLabel": "$125",
               "sourceAmountCents": 12500,
               "cashPrize": null
             },
             {
               "matchLabel": "Box 12-way",
-              "sourcePrizeCount": 16,
+              "sourcePrizeCount": 28,
               "prizeLabel": "$63",
               "sourceAmountCents": 6300,
               "cashPrize": null
             },
             {
               "matchLabel": "Box 24-way",
-              "sourcePrizeCount": 0,
+              "sourcePrizeCount": 3,
               "prizeLabel": "$31",
               "sourceAmountCents": 3100,
               "cashPrize": null
@@ -1747,7 +1914,7 @@
             },
             {
               "matchLabel": "Mid 2",
-              "sourcePrizeCount": 0,
+              "sourcePrizeCount": 4,
               "prizeLabel": "$7.5",
               "sourceAmountCents": 750,
               "cashPrize": null
@@ -1762,16 +1929,16 @@
           ]
         }
       ],
-      "sourceWinnerCount": 76,
-      "sourcePayoutCents": 2450800,
-      "sourcePayoutLabel": "$24,508",
+      "sourceWinnerCount": 164,
+      "sourcePayoutCents": 2336700,
+      "sourcePayoutLabel": "$23,367",
       "playBasisCents": 50,
       "distinctTicketCount": null,
       "finalityVerified": false,
       "coverage": "Missouri published prizes based on $.50 plays. Base and Wild ball columns remain separate; combined source total is not verified distinct tickets or people. Straight asterisk retained literally. No exact draw timestamp, claim-date or retailer inference.",
       "family": "pick4",
-      "sessionKey": "Midday",
-      "sourceUrl": "https://www.molottery.com/pick4/prizes-paid.do?date=2026-10-19&time=Midday"
+      "sessionKey": "Evening",
+      "sourceUrl": "https://www.molottery.com/pick4/prizes-paid.do?date=2026-10-21&time=Evening"
     },
     {
       "game": "Pick 4",
@@ -1941,171 +2108,175 @@
       "sourceUrl": "https://www.molottery.com/pick4/prizes-paid.do?date=2026-10-20&time=Evening"
     },
     {
-      "game": "Pick 4",
-      "drawDate": "2026-10-19",
-      "sessionLabel": "Evening",
-      "variants": [
+      "game": "Cash Pop",
+      "drawDate": "2026-10-21",
+      "tiers": [
         {
-          "variant": "Pick 4",
-          "tiers": [
-            {
-              "matchLabel": "Straight*",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$3,000",
-              "sourceAmountCents": 300000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Box 4-way",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$750",
-              "sourceAmountCents": 75000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Box 6-way",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$500",
-              "sourceAmountCents": 50000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Box 12-way",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$250",
-              "sourceAmountCents": 25000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Box 24-way",
-              "sourcePrizeCount": 92,
-              "prizeLabel": "$125",
-              "sourceAmountCents": 12500,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Front 3",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$300",
-              "sourceAmountCents": 30000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Back 3",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$300",
-              "sourceAmountCents": 30000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Front 2",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$30",
-              "sourceAmountCents": 3000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Mid 2",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$30",
-              "sourceAmountCents": 3000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Back 2",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$30",
-              "sourceAmountCents": 3000,
-              "cashPrize": null
-            }
-          ]
+          "matchLabel": null,
+          "sourcePrizeCount": 0,
+          "prizeLabel": "$2,500",
+          "sourceAmount": 2500,
+          "cashPrize": null
         },
         {
-          "variant": "Pick 4 + Wild ball",
-          "tiers": [
-            {
-              "matchLabel": "Straight*",
-              "sourcePrizeCount": 6,
-              "prizeLabel": "$750",
-              "sourceAmountCents": 75000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Box 4-way",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$190",
-              "sourceAmountCents": 19000,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Box 6-way",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$125",
-              "sourceAmountCents": 12500,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Box 12-way",
-              "sourcePrizeCount": 16,
-              "prizeLabel": "$63",
-              "sourceAmountCents": 6300,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Box 24-way",
-              "sourcePrizeCount": 6,
-              "prizeLabel": "$31",
-              "sourceAmountCents": 3100,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Front 3",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$75",
-              "sourceAmountCents": 7500,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Back 3",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$75",
-              "sourceAmountCents": 7500,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Front 2",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$7.5",
-              "sourceAmountCents": 750,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Mid 2",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$7.5",
-              "sourceAmountCents": 750,
-              "cashPrize": null
-            },
-            {
-              "matchLabel": "Back 2",
-              "sourcePrizeCount": 0,
-              "prizeLabel": "$7.5",
-              "sourceAmountCents": 750,
-              "cashPrize": null
-            }
-          ]
+          "matchLabel": null,
+          "sourcePrizeCount": 0,
+          "prizeLabel": "$1,250",
+          "sourceAmount": 1250,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 0,
+          "prizeLabel": "$1,000",
+          "sourceAmount": 1000,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 0,
+          "prizeLabel": "$500",
+          "sourceAmount": 500,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 2,
+          "prizeLabel": "$250",
+          "sourceAmount": 250,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 2,
+          "prizeLabel": "$200",
+          "sourceAmount": 200,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 5,
+          "prizeLabel": "$150",
+          "sourceAmount": 150,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 0,
+          "prizeLabel": "$125",
+          "sourceAmount": 125,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 2,
+          "prizeLabel": "$100",
+          "sourceAmount": 100,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 3,
+          "prizeLabel": "$75",
+          "sourceAmount": 75,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 3,
+          "prizeLabel": "$70",
+          "sourceAmount": 70,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 5,
+          "prizeLabel": "$50",
+          "sourceAmount": 50,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 0,
+          "prizeLabel": "$40",
+          "sourceAmount": 40,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 3,
+          "prizeLabel": "$35",
+          "sourceAmount": 35,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 3,
+          "prizeLabel": "$30",
+          "sourceAmount": 30,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 13,
+          "prizeLabel": "$25",
+          "sourceAmount": 25,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 4,
+          "prizeLabel": "$20",
+          "sourceAmount": 20,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 5,
+          "prizeLabel": "$15",
+          "sourceAmount": 15,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 6,
+          "prizeLabel": "$14",
+          "sourceAmount": 14,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 17,
+          "prizeLabel": "$10",
+          "sourceAmount": 10,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 7,
+          "prizeLabel": "$7",
+          "sourceAmount": 7,
+          "cashPrize": null
+        },
+        {
+          "matchLabel": null,
+          "sourcePrizeCount": 17,
+          "prizeLabel": "$5",
+          "sourceAmount": 5,
+          "cashPrize": null
         }
       ],
-      "sourceWinnerCount": 120,
-      "sourcePayoutCents": 1719400,
-      "sourcePayoutLabel": "$17,194",
-      "playBasisCents": 50,
+      "sourceWinnerCount": 97,
+      "sourcePayoutDollars": 3598,
       "distinctTicketCount": null,
       "finalityVerified": false,
-      "coverage": "Missouri published prizes based on $.50 plays. Base and Wild ball columns remain separate; combined source total is not verified distinct tickets or people. Straight asterisk retained literally. No exact draw timestamp, claim-date or retailer inference.",
-      "family": "pick4",
-      "sessionKey": "Evening",
-      "sourceUrl": "https://www.molottery.com/pick4/prizes-paid.do?date=2026-10-19&time=Evening"
+      "countUnit": "Source Number of MO Prizes; not verified distinct tickets or people",
+      "coverage": "Missouri source prizes by prize amount for the named drawing session. No wager grouping, exact draw timestamp, unique ticket/person or claim-date inference.",
+      "sessionId": 1,
+      "sessionLabel": "Early Bird",
+      "family": "cash-pop",
+      "sessionKey": "1",
+      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=1&date=2026-10-21"
     },
     {
       "game": "Cash Pop",
@@ -2280,7 +2451,7 @@
     },
     {
       "game": "Cash Pop",
-      "drawDate": "2026-10-19",
+      "drawDate": "2026-10-21",
       "tiers": [
         {
           "matchLabel": null,
@@ -2305,28 +2476,28 @@
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 0,
+          "sourcePrizeCount": 1,
           "prizeLabel": "$500",
           "sourceAmount": 500,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 1,
+          "sourcePrizeCount": 6,
           "prizeLabel": "$250",
           "sourceAmount": 250,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 2,
+          "sourcePrizeCount": 7,
           "prizeLabel": "$200",
           "sourceAmount": 200,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 9,
           "prizeLabel": "$150",
           "sourceAmount": 150,
           "cashPrize": null
@@ -2340,114 +2511,114 @@
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 2,
+          "sourcePrizeCount": 14,
           "prizeLabel": "$100",
           "sourceAmount": 100,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 1,
+          "sourcePrizeCount": 8,
           "prizeLabel": "$75",
           "sourceAmount": 75,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 2,
+          "sourcePrizeCount": 14,
           "prizeLabel": "$70",
           "sourceAmount": 70,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 20,
+          "sourcePrizeCount": 40,
           "prizeLabel": "$50",
           "sourceAmount": 50,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 1,
+          "sourcePrizeCount": 4,
           "prizeLabel": "$40",
           "sourceAmount": 40,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 12,
           "prizeLabel": "$35",
           "sourceAmount": 35,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 5,
+          "sourcePrizeCount": 12,
           "prizeLabel": "$30",
           "sourceAmount": 30,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 6,
+          "sourcePrizeCount": 29,
           "prizeLabel": "$25",
           "sourceAmount": 25,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 5,
+          "sourcePrizeCount": 12,
           "prizeLabel": "$20",
           "sourceAmount": 20,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 2,
           "prizeLabel": "$15",
           "sourceAmount": 15,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 17,
           "prizeLabel": "$14",
           "sourceAmount": 14,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 23,
+          "sourcePrizeCount": 38,
           "prizeLabel": "$10",
           "sourceAmount": 10,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 5,
+          "sourcePrizeCount": 10,
           "prizeLabel": "$7",
           "sourceAmount": 7,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 13,
+          "sourcePrizeCount": 26,
           "prizeLabel": "$5",
           "sourceAmount": 5,
           "cashPrize": null
         }
       ],
-      "sourceWinnerCount": 99,
-      "sourcePayoutDollars": 3602,
+      "sourceWinnerCount": 262,
+      "sourcePayoutDollars": 12608,
       "distinctTicketCount": null,
       "finalityVerified": false,
       "countUnit": "Source Number of MO Prizes; not verified distinct tickets or people",
       "coverage": "Missouri source prizes by prize amount for the named drawing session. No wager grouping, exact draw timestamp, unique ticket/person or claim-date inference.",
-      "sessionId": 1,
-      "sessionLabel": "Early Bird",
+      "sessionId": 2,
+      "sessionLabel": "Late Morning",
       "family": "cash-pop",
-      "sessionKey": "1",
-      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=1&date=2026-10-19"
+      "sessionKey": "2",
+      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=2&date=2026-10-21"
     },
     {
       "game": "Cash Pop",
@@ -2622,7 +2793,7 @@
     },
     {
       "game": "Cash Pop",
-      "drawDate": "2026-10-19",
+      "drawDate": "2026-10-21",
       "tiers": [
         {
           "matchLabel": null,
@@ -2647,149 +2818,149 @@
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 0,
+          "sourcePrizeCount": 1,
           "prizeLabel": "$500",
           "sourceAmount": 500,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 1,
+          "sourcePrizeCount": 2,
           "prizeLabel": "$250",
           "sourceAmount": 250,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 1,
+          "sourcePrizeCount": 7,
           "prizeLabel": "$200",
           "sourceAmount": 200,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 0,
+          "sourcePrizeCount": 3,
           "prizeLabel": "$150",
           "sourceAmount": 150,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 0,
+          "sourcePrizeCount": 3,
           "prizeLabel": "$125",
           "sourceAmount": 125,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 9,
           "prizeLabel": "$100",
           "sourceAmount": 100,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 1,
+          "sourcePrizeCount": 5,
           "prizeLabel": "$75",
           "sourceAmount": 75,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 2,
+          "sourcePrizeCount": 8,
           "prizeLabel": "$70",
           "sourceAmount": 70,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 13,
+          "sourcePrizeCount": 30,
           "prizeLabel": "$50",
           "sourceAmount": 50,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 6,
+          "sourcePrizeCount": 3,
           "prizeLabel": "$40",
           "sourceAmount": 40,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 11,
+          "sourcePrizeCount": 9,
           "prizeLabel": "$35",
           "sourceAmount": 35,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 4,
           "prizeLabel": "$30",
           "sourceAmount": 30,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 18,
+          "sourcePrizeCount": 20,
           "prizeLabel": "$25",
           "sourceAmount": 25,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 5,
+          "sourcePrizeCount": 10,
           "prizeLabel": "$20",
           "sourceAmount": 20,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 0,
+          "sourcePrizeCount": 6,
           "prizeLabel": "$15",
           "sourceAmount": 15,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 6,
           "prizeLabel": "$14",
           "sourceAmount": 14,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 19,
+          "sourcePrizeCount": 36,
           "prizeLabel": "$10",
           "sourceAmount": 10,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 9,
+          "sourcePrizeCount": 14,
           "prizeLabel": "$7",
           "sourceAmount": 7,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 17,
+          "sourcePrizeCount": 32,
           "prizeLabel": "$5",
           "sourceAmount": 5,
           "cashPrize": null
         }
       ],
-      "sourceWinnerCount": 112,
-      "sourcePayoutDollars": 3260,
+      "sourceWinnerCount": 208,
+      "sourcePayoutDollars": 8607,
       "distinctTicketCount": null,
       "finalityVerified": false,
       "countUnit": "Source Number of MO Prizes; not verified distinct tickets or people",
       "coverage": "Missouri source prizes by prize amount for the named drawing session. No wager grouping, exact draw timestamp, unique ticket/person or claim-date inference.",
-      "sessionId": 2,
-      "sessionLabel": "Late Morning",
+      "sessionId": 3,
+      "sessionLabel": "Matinee",
       "family": "cash-pop",
-      "sessionKey": "2",
-      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=2&date=2026-10-19"
+      "sessionKey": "3",
+      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=3&date=2026-10-21"
     },
     {
       "game": "Cash Pop",
@@ -2964,7 +3135,7 @@
     },
     {
       "game": "Cash Pop",
-      "drawDate": "2026-10-19",
+      "drawDate": "2026-10-21",
       "tiers": [
         {
           "matchLabel": null,
@@ -2996,42 +3167,42 @@
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 4,
+          "sourcePrizeCount": 2,
           "prizeLabel": "$250",
           "sourceAmount": 250,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 0,
+          "sourcePrizeCount": 2,
           "prizeLabel": "$200",
           "sourceAmount": 200,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 4,
+          "sourcePrizeCount": 2,
           "prizeLabel": "$150",
           "sourceAmount": 150,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 5,
+          "sourcePrizeCount": 0,
           "prizeLabel": "$125",
           "sourceAmount": 125,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 8,
+          "sourcePrizeCount": 3,
           "prizeLabel": "$100",
           "sourceAmount": 100,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 6,
           "prizeLabel": "$75",
           "sourceAmount": 75,
           "cashPrize": null
@@ -3045,93 +3216,93 @@
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 28,
+          "sourcePrizeCount": 14,
           "prizeLabel": "$50",
           "sourceAmount": 50,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 0,
+          "sourcePrizeCount": 3,
           "prizeLabel": "$40",
           "sourceAmount": 40,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 11,
+          "sourcePrizeCount": 3,
           "prizeLabel": "$35",
           "sourceAmount": 35,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 6,
+          "sourcePrizeCount": 5,
           "prizeLabel": "$30",
           "sourceAmount": 30,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 41,
+          "sourcePrizeCount": 12,
           "prizeLabel": "$25",
           "sourceAmount": 25,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 5,
+          "sourcePrizeCount": 11,
           "prizeLabel": "$20",
           "sourceAmount": 20,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 5,
+          "sourcePrizeCount": 6,
           "prizeLabel": "$15",
           "sourceAmount": 15,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 7,
+          "sourcePrizeCount": 2,
           "prizeLabel": "$14",
           "sourceAmount": 14,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 42,
+          "sourcePrizeCount": 22,
           "prizeLabel": "$10",
           "sourceAmount": 10,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 13,
+          "sourcePrizeCount": 15,
           "prizeLabel": "$7",
           "sourceAmount": 7,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 25,
+          "sourcePrizeCount": 22,
           "prizeLabel": "$5",
           "sourceAmount": 5,
           "cashPrize": null
         }
       ],
-      "sourceWinnerCount": 213,
-      "sourcePayoutDollars": 7999,
+      "sourceWinnerCount": 136,
+      "sourcePayoutDollars": 4948,
       "distinctTicketCount": null,
       "finalityVerified": false,
       "countUnit": "Source Number of MO Prizes; not verified distinct tickets or people",
       "coverage": "Missouri source prizes by prize amount for the named drawing session. No wager grouping, exact draw timestamp, unique ticket/person or claim-date inference.",
-      "sessionId": 3,
-      "sessionLabel": "Matinee",
+      "sessionId": 4,
+      "sessionLabel": "Prime Time",
       "family": "cash-pop",
-      "sessionKey": "3",
-      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=3&date=2026-10-19"
+      "sessionKey": "4",
+      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=4&date=2026-10-21"
     },
     {
       "game": "Cash Pop",
@@ -3306,7 +3477,7 @@
     },
     {
       "game": "Cash Pop",
-      "drawDate": "2026-10-19",
+      "drawDate": "2026-10-21",
       "tiers": [
         {
           "matchLabel": null,
@@ -3317,7 +3488,7 @@
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 0,
+          "sourcePrizeCount": 1,
           "prizeLabel": "$1,250",
           "sourceAmount": 1250,
           "cashPrize": null
@@ -3338,21 +3509,21 @@
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 1,
           "prizeLabel": "$250",
           "sourceAmount": 250,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 1,
+          "sourcePrizeCount": 0,
           "prizeLabel": "$200",
           "sourceAmount": 200,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 1,
+          "sourcePrizeCount": 3,
           "prizeLabel": "$150",
           "sourceAmount": 150,
           "cashPrize": null
@@ -3366,42 +3537,42 @@
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 4,
+          "sourcePrizeCount": 6,
           "prizeLabel": "$100",
           "sourceAmount": 100,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 0,
           "prizeLabel": "$75",
           "sourceAmount": 75,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 3,
+          "sourcePrizeCount": 2,
           "prizeLabel": "$70",
           "sourceAmount": 70,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 10,
+          "sourcePrizeCount": 11,
           "prizeLabel": "$50",
           "sourceAmount": 50,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 1,
+          "sourcePrizeCount": 0,
           "prizeLabel": "$40",
           "sourceAmount": 40,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 4,
+          "sourcePrizeCount": 1,
           "prizeLabel": "$35",
           "sourceAmount": 35,
           "cashPrize": null
@@ -3415,65 +3586,65 @@
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 21,
+          "sourcePrizeCount": 12,
           "prizeLabel": "$25",
           "sourceAmount": 25,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 11,
+          "sourcePrizeCount": 2,
           "prizeLabel": "$20",
           "sourceAmount": 20,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 2,
+          "sourcePrizeCount": 1,
           "prizeLabel": "$15",
           "sourceAmount": 15,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 6,
+          "sourcePrizeCount": 1,
           "prizeLabel": "$14",
           "sourceAmount": 14,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 27,
+          "sourcePrizeCount": 18,
           "prizeLabel": "$10",
           "sourceAmount": 10,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 14,
+          "sourcePrizeCount": 6,
           "prizeLabel": "$7",
           "sourceAmount": 7,
           "cashPrize": null
         },
         {
           "matchLabel": null,
-          "sourcePrizeCount": 30,
+          "sourcePrizeCount": 11,
           "prizeLabel": "$5",
           "sourceAmount": 5,
           "cashPrize": null
         }
       ],
-      "sourceWinnerCount": 146,
-      "sourcePayoutDollars": 4707,
+      "sourceWinnerCount": 81,
+      "sourcePayoutDollars": 4636,
       "distinctTicketCount": null,
       "finalityVerified": false,
       "countUnit": "Source Number of MO Prizes; not verified distinct tickets or people",
       "coverage": "Missouri source prizes by prize amount for the named drawing session. No wager grouping, exact draw timestamp, unique ticket/person or claim-date inference.",
-      "sessionId": 4,
-      "sessionLabel": "Prime Time",
+      "sessionId": 5,
+      "sessionLabel": "Night Owl",
       "family": "cash-pop",
-      "sessionKey": "4",
-      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=4&date=2026-10-19"
+      "sessionKey": "5",
+      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=5&date=2026-10-21"
     },
     {
       "game": "Cash Pop",
@@ -3645,179 +3816,8 @@
       "family": "cash-pop",
       "sessionKey": "5",
       "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=5&date=2026-10-20"
-    },
-    {
-      "game": "Cash Pop",
-      "drawDate": "2026-10-19",
-      "tiers": [
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 0,
-          "prizeLabel": "$2,500",
-          "sourceAmount": 2500,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 0,
-          "prizeLabel": "$1,250",
-          "sourceAmount": 1250,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 0,
-          "prizeLabel": "$1,000",
-          "sourceAmount": 1000,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 0,
-          "prizeLabel": "$500",
-          "sourceAmount": 500,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 2,
-          "prizeLabel": "$250",
-          "sourceAmount": 250,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 3,
-          "prizeLabel": "$200",
-          "sourceAmount": 200,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 0,
-          "prizeLabel": "$150",
-          "sourceAmount": 150,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 3,
-          "prizeLabel": "$125",
-          "sourceAmount": 125,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 4,
-          "prizeLabel": "$100",
-          "sourceAmount": 100,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 1,
-          "prizeLabel": "$75",
-          "sourceAmount": 75,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 3,
-          "prizeLabel": "$70",
-          "sourceAmount": 70,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 8,
-          "prizeLabel": "$50",
-          "sourceAmount": 50,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 1,
-          "prizeLabel": "$40",
-          "sourceAmount": 40,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 1,
-          "prizeLabel": "$35",
-          "sourceAmount": 35,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 1,
-          "prizeLabel": "$30",
-          "sourceAmount": 30,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 13,
-          "prizeLabel": "$25",
-          "sourceAmount": 25,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 3,
-          "prizeLabel": "$20",
-          "sourceAmount": 20,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 4,
-          "prizeLabel": "$15",
-          "sourceAmount": 15,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 5,
-          "prizeLabel": "$14",
-          "sourceAmount": 14,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 10,
-          "prizeLabel": "$10",
-          "sourceAmount": 10,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 8,
-          "prizeLabel": "$7",
-          "sourceAmount": 7,
-          "cashPrize": null
-        },
-        {
-          "matchLabel": null,
-          "sourcePrizeCount": 16,
-          "prizeLabel": "$5",
-          "sourceAmount": 5,
-          "cashPrize": null
-        }
-      ],
-      "sourceWinnerCount": 86,
-      "sourcePayoutDollars": 3416,
-      "distinctTicketCount": null,
-      "finalityVerified": false,
-      "countUnit": "Source Number of MO Prizes; not verified distinct tickets or people",
-      "coverage": "Missouri source prizes by prize amount for the named drawing session. No wager grouping, exact draw timestamp, unique ticket/person or claim-date inference.",
-      "sessionId": 5,
-      "sessionLabel": "Night Owl",
-      "family": "cash-pop",
-      "sessionKey": "5",
-      "sourceUrl": "https://www.molottery.com/cash-pop/prizes-paid.do?type=5&date=2026-10-19"
     }
   ],
   "coverage": "Two latest linked reports per game/session within 40 days, using current and at most one prior calendar month. Published reports are not certified final. Source units and unavailable values retained.",
-  "updatedAt": "2026-10-21T05:06:35.184584+00:00"
+  "updatedAt": "2026-10-22T05:02:03.988967+00:00"
 }
