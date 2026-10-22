@@ -655,3 +655,19 @@ This completes all eight distinct schedules at the current portrait text size
 using buttons. Native2x/landscape and original swipe input remain open; this is
 not overall acceptance. Simulator left upright at XsOs final source action.
 No code, data or deadline change; October23 21:42ET remains due.
+
+## October 21, 22:26 ET — XsOs native landscape paging
+
+Ordinary iOS1065fe1 rotated the existing XsOs sheet to landscape, retained usable
+fixed controls, and switched from October18 to October11 through the visible
+selector. Overlapping native screenshots then verified the October11 summary,
+all five dated report tiers, all five literal schedule tiers and overall odds,
+full rules/cutoffs/claim and pari-mutuel qualifications, cash-only terms,
+promotional qualifications, history, random-draw footnote, full NFL disclaimer,
+coverage limits and final results/history action. Content remained readable at
+the current text size; no new layout defect appeared in this traversal.
+This closes the XsOs normal-text landscape traversal only. Native2x and broader
+landscape coverage remain open, as does the original swipe-input investigation;
+button traversal is not proof of gesture recovery or overall acceptance.
+Simulator remains in landscape at the October11 XsOs final source action.
+No code, data, build or deadline change; October23 21:42ET remains due.
