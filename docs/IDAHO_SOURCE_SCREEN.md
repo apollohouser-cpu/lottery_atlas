@@ -1,5 +1,9 @@
 # Idaho source screen — September 16, 2026
 
+**October 22, 14:22 ET: Idaho is now the sole active implementation state.**
+See IDAHO_ACCEPTANCE.md for fresh scope/release deadlines and opening evidence.
+Earlier single-product testing and correspondence do not imply full acceptance.
+
 The [official Scratch catalog](https://www.idaholottery.com/games/scratch)
 shows remaining prizes by game and tier, including lower tiers on its “View all
 prizes” display, plus percent sold. These are **remaining prizes**, not a

@@ -45,6 +45,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
+| Idaho | October 27, 2026 at 14:22 ET | Sole active from October22 14:22ET; scope due October23 14:22ET; fresh120-hour substantial all-game integration. |
 | Iowa | ACCEPTED October22,2026 at12:24ET | Production9ff894e; evidence through4e91052. Ahead of October23 21:42ET, no extension. |
 | South Dakota | ACCEPTED October 18, 2026 at 20:42 ET | Release 94fd40c; ahead of October 23 at 04:24 ET; no extension. |
 | Nebraska | Accepted October 18, 2026, 04:20 AM ET (due October 21, 11:58 AM) | Release aabff9f; bounded results/latest reports, literal Scratch and native retention accepted with explicit gaps. |
@@ -113,7 +114,7 @@ d68a843; see LOUISIANA_ACCEPTANCE.md. Fifteen states are ready for supported
 testing; 30 remain. Kansas accepted October 16 at 11:00 ET on release 5d22fca,
 ahead of October 19 at 19:40 ET with no extension. See KANSAS_ACCEPTANCE.md.
 Nebraska accepted October 18 at 04:20 ET on aabff9f, ahead of October 21 at
-11:58 ET with no extension. See NEBRASKA_ACCEPTANCE.md. South Dakota accepted October 18 at 20:42 ET on `94fd40c`, ahead of October 23 at 04:24 ET with no extension. See SOUTH_DAKOTA_ACCEPTANCE.md. Iowa accepted October22 at12:24ET on production9ff894e, with verification through4e91052, ahead of October23 21:42ET and no extension; see IOWA_ACCEPTANCE.md. No next state has been activated by this acceptance. Mobile beta work remains
+11:58 ET with no extension. See NEBRASKA_ACCEPTANCE.md. South Dakota accepted October 18 at 20:42 ET on `94fd40c`, ahead of October 23 at 04:24 ET with no extension. See SOUTH_DAKOTA_ACCEPTANCE.md. Iowa accepted October22 at12:24ET on production9ff894e, with verification through4e91052, ahead of October23 21:42ET and no extension; see IOWA_ACCEPTANCE.md. Idaho subsequently activated October22 at14:22ET; scope due October23 at14:22ET and release due October27 at14:22ET. See IDAHO_ACCEPTANCE.md. Mobile beta work remains
 open. Five additional acceptances since October 6 are complete; the October 18
 reforecast is December 21–January 22 for national supported engineering, with
 explicit assumptions in NATIONAL_RELEASE_FORECAST.md.
