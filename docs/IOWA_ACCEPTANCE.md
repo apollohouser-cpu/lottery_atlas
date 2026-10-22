@@ -668,3 +668,23 @@ verification paged twice into Powerball, selected Double Play October17, and
 visibly returned to its dated summary at the top with numbers, special ball,
 retrieval date and Iowa-ticket report qualifier readable. This confirms the
 selection-reset fix in a native flow; full landscape/2x acceptance remains open.
+
+
+## October 22, 00:19 ET — bounded native 2x draw check; ordinary build restored
+
+A private untracked native target rendered the production Iowa draw sheet and
+production loader at text scale 2 in a standalone Scaffold. Pick4 Midday October19
+showed its complete heading and fixed Previous/Next/source/close controls in
+landscape and upright portrait. Paging exposed the dated summary, numbers,
+retrieval time, bounded-history limitation, explicit excluded Pick count units
+and the published-schedule-versus-dated-payout distinction. Previous returned
+to the summary. The portrait selector truncates its date, while the complete
+date remains readable in the summary. This was a bounded component check, not
+whole-app large-text acceptance or a complete large-text schedule traversal.
+
+The private target was then replaced by an ordinary lib/main.dart simulator
+build (Xcode 15.3 seconds), installed and cold-launched on the original iPhone17e
+(process16193). A native screenshot verified the ordinary upright map and app
+navigation restored. lib/main.dart was never modified; no probe is tracked and
+Android remained stopped. Broader landscape/2x acceptance and original swipe
+behavior remain open. No acceptance or deadline change: October23 21:42ET.
