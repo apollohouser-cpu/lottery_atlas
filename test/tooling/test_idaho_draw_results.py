@@ -68,6 +68,14 @@ class IdahoResultsTest(unittest.TestCase):
         p = copy.deepcopy(SAMPLES['powerball-xs-os']); p['data']['winning_numbers'][0]['1'] = '33'
         with self.assertRaises(ValueError): self.parse('powerball-xs-os', p)
 
+    def test_canonical_string_weights_only(self):
+        p = copy.deepcopy(SAMPLES['powerball-xs-os'])
+        for row in p['data']['winning_numbers']: row['weight'] = str(row['weight'])
+        self.assertEqual(self.parse('powerball-xs-os', p), self.parse('powerball-xs-os'))
+        for invalid in ['00', ' 0', True, 0.0]:
+            p['data']['winning_numbers'][0]['weight'] = invalid
+            with self.subTest(invalid=invalid), self.assertRaises(ValueError): self.parse('powerball-xs-os', p)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -194,3 +194,27 @@ Scratch tests included). No source refresh, public feed, app build or native
 acceptance claimed. Next complete the bounded two-date collector, dated reports
 and remaining schedule/product contracts, with scope reconciliation due October23
 at14:22ET and release October27 at14:22ET unchanged.
+
+
+## October 22, 19:31 ET — bounded result window staged
+
+Added page-identity/history-date validation and a bounded window builder. It
+selects two actual history dates for each API family; Pick pages expose only one
+date, so the preceding daily date is a request candidate that must independently
+return both sessions with exact game/date identity. MFL remains the dedicated
+HTML source. All14 dated API responses were captured privately and validated with
+the opening HTML pages, producing22 results across11 groups/8 families in
+work/idaho_scope/result-window-stage.json. No winner reports, prize schedules,
+jackpots or instant catalogs are included in that stage.
+
+The first run correctly stopped on older XsOs string-valued weights. Inspection
+showed canonical decimal strings in exact array order, unlike the latest integer
+weights. Parser now explicitly accepts only those two equivalent encodings;
+noncanonical strings, booleans, floating values and wrong order still fail.
+All22 Idaho Python tests pass, including all14 request-failure positions,
+wrong-date responses, missing pages and malformed older history dates. Failure
+returns no partial window. This builder does not yet implement disk publication
+or correction retention; those remain required before any public feed.
+
+Next reconcile scope and finish exact dated report/schedule contracts and
+coupled product collection. No public feed/build/UI/acceptance or deadline change.

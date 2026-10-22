@@ -18,7 +18,12 @@ def _rows(rows, specs, unique=False):
         raise ValueError('Incomplete result array')
     values, labels = [], set()
     for index, (row, (prefix, low, high)) in enumerate(zip(rows, specs)):
-        if not isinstance(row, dict) or type(row.get('weight')) is not int or row['weight'] != index:
+        if not isinstance(row, dict):
+            raise ValueError('Malformed result row')
+        weight = row.get('weight')
+        # Older official responses encode weights as canonical decimal strings.
+        if not ((type(weight) is int and weight == index) or
+                (type(weight) is str and weight == str(index))):
             raise ValueError('Changed result order')
         label = row.get('0')
         if not isinstance(label, str) or not re.fullmatch(re.escape(prefix) + r' [0-9]+', label) or label in labels:
