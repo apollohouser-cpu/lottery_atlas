@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "state": "Oregon",
-  "retrievedAt": "2026-10-22T11:59:38.897Z",
+  "retrievedAt": "2026-10-22T17:17:10.336Z",
   "cadence": "Two latest finalized reports per game/session within a bounded 14-day source query. Actual source dates retained; scheduled refresh, not live results.",
   "coverage": "Six Oregon report families. Source-reported winners are not verified distinct tickets or people. No retailer allocation or complete statewide claims coverage.",
   "reports": [
@@ -1537,6 +1537,23 @@
       "limitations": "Source-reported Oregon prize rows, not distinct tickets or people. No cross-tier total, retailer allocation or complete claims coverage. Power Play overlap is not separately allocated; shared prizes and lifetime prizes retain source meaning. Unverified match/wager labels are omitted."
     },
     {
+      "id": "or-cp-10353",
+      "game": "Cash Pop",
+      "gameCode": "cp",
+      "drawNumber": 10353,
+      "drawDate": "2026-10-22",
+      "sourceDrawDateTime": "2026-10-22T06:59:00",
+      "sourceRoundedDrawDateTime": "2026-10-22T07:00:00",
+      "drawingTime": "07:00",
+      "dateBasis": "Source draw date/time; original wall-clock values retained without UTC conversion.",
+      "countUnit": "Oregon source-reported winners; distinct tickets or people not established.",
+      "winningTickets": null,
+      "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
+      "reportedWinners": 6,
+      "publishedPayoutDollars": 759,
+      "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
+    },
+    {
       "id": "or-cp-10337",
       "game": "Cash Pop",
       "gameCode": "cp",
@@ -1554,20 +1571,20 @@
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
-      "id": "or-cp-10321",
+      "id": "or-cp-10354",
       "game": "Cash Pop",
       "gameCode": "cp",
-      "drawNumber": 10321,
-      "drawDate": "2026-10-20",
-      "sourceDrawDateTime": "2026-10-20T06:59:00",
-      "sourceRoundedDrawDateTime": "2026-10-20T07:00:00",
-      "drawingTime": "07:00",
+      "drawNumber": 10354,
+      "drawDate": "2026-10-22",
+      "sourceDrawDateTime": "2026-10-22T07:59:00",
+      "sourceRoundedDrawDateTime": "2026-10-22T08:00:00",
+      "drawingTime": "08:00",
       "dateBasis": "Source draw date/time; original wall-clock values retained without UTC conversion.",
       "countUnit": "Oregon source-reported winners; distinct tickets or people not established.",
       "winningTickets": null,
       "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
-      "reportedWinners": 7,
-      "publishedPayoutDollars": 367,
+      "reportedWinners": 12,
+      "publishedPayoutDollars": 670,
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
@@ -1588,20 +1605,20 @@
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
-      "id": "or-cp-10322",
+      "id": "or-cp-10355",
       "game": "Cash Pop",
       "gameCode": "cp",
-      "drawNumber": 10322,
-      "drawDate": "2026-10-20",
-      "sourceDrawDateTime": "2026-10-20T07:59:00",
-      "sourceRoundedDrawDateTime": "2026-10-20T08:00:00",
-      "drawingTime": "08:00",
+      "drawNumber": 10355,
+      "drawDate": "2026-10-22",
+      "sourceDrawDateTime": "2026-10-22T08:59:00",
+      "sourceRoundedDrawDateTime": "2026-10-22T09:00:00",
+      "drawingTime": "09:00",
       "dateBasis": "Source draw date/time; original wall-clock values retained without UTC conversion.",
       "countUnit": "Oregon source-reported winners; distinct tickets or people not established.",
       "winningTickets": null,
       "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
-      "reportedWinners": 8,
-      "publishedPayoutDollars": 212,
+      "reportedWinners": 12,
+      "publishedPayoutDollars": 992,
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
@@ -1622,20 +1639,20 @@
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
-      "id": "or-cp-10323",
+      "id": "or-cp-10356",
       "game": "Cash Pop",
       "gameCode": "cp",
-      "drawNumber": 10323,
-      "drawDate": "2026-10-20",
-      "sourceDrawDateTime": "2026-10-20T08:59:00",
-      "sourceRoundedDrawDateTime": "2026-10-20T09:00:00",
-      "drawingTime": "09:00",
+      "drawNumber": 10356,
+      "drawDate": "2026-10-22",
+      "sourceDrawDateTime": "2026-10-22T09:59:00",
+      "sourceRoundedDrawDateTime": "2026-10-22T10:00:00",
+      "drawingTime": "10:00",
       "dateBasis": "Source draw date/time; original wall-clock values retained without UTC conversion.",
       "countUnit": "Oregon source-reported winners; distinct tickets or people not established.",
       "winningTickets": null,
       "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
-      "reportedWinners": 8,
-      "publishedPayoutDollars": 315,
+      "reportedWinners": 13,
+      "publishedPayoutDollars": 604,
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
@@ -1653,23 +1670,6 @@
       "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
       "reportedWinners": 14,
       "publishedPayoutDollars": 916,
-      "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
-    },
-    {
-      "id": "or-cp-10324",
-      "game": "Cash Pop",
-      "gameCode": "cp",
-      "drawNumber": 10324,
-      "drawDate": "2026-10-20",
-      "sourceDrawDateTime": "2026-10-20T09:59:00",
-      "sourceRoundedDrawDateTime": "2026-10-20T10:00:00",
-      "drawingTime": "10:00",
-      "dateBasis": "Source draw date/time; original wall-clock values retained without UTC conversion.",
-      "countUnit": "Oregon source-reported winners; distinct tickets or people not established.",
-      "winningTickets": null,
-      "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
-      "reportedWinners": 9,
-      "publishedPayoutDollars": 130,
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
