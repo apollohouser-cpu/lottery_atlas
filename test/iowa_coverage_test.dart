@@ -150,15 +150,20 @@ void main() {
   test(
     'wrong dates, variant multipliers, counts and source changes reject',
     () {
+      // Latest results may legitimately precede their dated prize reports.
+      dynamic powerballReport(dynamic d) =>
+          (d['draws']['results'] as List).firstWhere(
+            (r) => r['group'] == 'powerball' && r['report'] != null,
+          )['report'];
       for (final change in [
         (dynamic d) => d['draws']['results'][0]['numbers'][0] = 99,
         (dynamic d) =>
-            d['draws']['results'][0]['report']['group'] = 'double_play',
+            powerballReport(d)['group'] = 'double_play',
         (dynamic d) =>
-            d['draws']['results'][0]['report']['tiers'][0]['sourceWinners'] =
+            powerballReport(d)['tiers'][0]['sourceWinners'] =
                 -1,
         (dynamic d) =>
-            d['draws']['results'][0]['report']['advertisedJackpotDollars'] = 0,
+            powerballReport(d)['advertisedJackpotDollars'] = 0,
         (dynamic d) => d['draws']['results'][0]['drawDate'] = '2026-02-30',
         (dynamic d) => d['draws']['results'][2]['multiplier'] = 2,
         (dynamic d) => d['instantInventories']['sourceDate'] = '2100-01-01',

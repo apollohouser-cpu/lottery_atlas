@@ -711,3 +711,25 @@ build (Xcode 15.3 seconds), installed and cold-launched on the original iPhone17
 navigation restored. lib/main.dart was never modified; no probe is tracked and
 Android remained stopped. Broader landscape/2x acceptance and original swipe
 behavior remain open. No acceptance or deadline change: October23 21:42ET.
+
+
+## October 22, 01:21 ET — consolidated Iowa regression and live-byte check
+
+All 57 Iowa Python tests pass. The combined Flutter run initially exposed a
+stale test assumption: the newest Powerball result now legitimately has no dated
+report, so mutating its report failed before reaching validation. The negative
+report tests now select an actual Powerball row with a report; they still mutate
+variant, count and jackpot independently. No validator or production behavior was
+relaxed. All 18 Iowa Flutter tests pass together after this test-only repair.
+
+An independent public-feed download matches docs/iowa_coverage.json byte for
+byte (SHA256 5f70e173016eda09cd158a09ddce53238e94b6fc5201d84b01d7b843e10f980f),
+with 20 results and retained retrieval time 2026-10-20T11:41:19.039816+00:00.
+This verifies deployment bytes, not a new official-source refresh. Private
+capture: work/iowa_scope/live-consolidated-20261022.json.
+
+The opening checklist now reflects already documented source/parser, inventory
+and app-integration evidence. Native layout/enlarged traversal remains open;
+normal-text button traversal across all eight schedules is documented above.
+The ordinary app restored in the preceding checkpoint remains installed; this
+test-only change requires no new native build. No acceptance or deadline change.
