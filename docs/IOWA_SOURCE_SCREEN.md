@@ -1,4 +1,12 @@
-# Iowa source screen — September 12, 2026
+# Iowa source screen
+
+**Supported coverage accepted October22,2026 at12:24ET**, production `9ff894e`,
+verification through `4e91052`; see IOWA_ACCEPTANCE.md for the evidence matrix.
+Draws, literal schedules and separate typed instant inventories are supported.
+Retailer-level heat-map completeness remains unavailable. Earlier screening
+notes below are historical; their missing joins do not block supported coverage.
+
+## Initial screening — September12,2026
 
 Iowa has useful official public data, but **is not ready for the launch heat
 map** because the available winner report stops short of the current period

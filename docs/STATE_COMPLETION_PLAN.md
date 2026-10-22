@@ -7,7 +7,7 @@ state source-screen documents retain the detailed evidence and request history.
 
 The user authorizes proceeding toward iOS and Android beta testing with currently
 validated coverage. Full public release requires a usable, accepted supported
-experience in every U.S. state that operates a state lottery. Fourteen accepted
+experience in every U.S. state that operates a state lottery. Fifteen accepted
 states are sufficient to start beta preparation, not to declare national readiness.
 A ten-year timeline and deeper historical data remain future updates.
 
@@ -45,7 +45,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Iowa | October 23, 2026 at 21:42 ET | Sole active from October18 21:42ET; scope closed October19 00:46ET; fresh120-hour substantial draw/app integration. |
+| Iowa | ACCEPTED October22,2026 at12:24ET | Production9ff894e; evidence through4e91052. Ahead of October23 21:42ET, no extension. |
 | South Dakota | ACCEPTED October 18, 2026 at 20:42 ET | Release 94fd40c; ahead of October 23 at 04:24 ET; no extension. |
 | Nebraska | Accepted October 18, 2026, 04:20 AM ET (due October 21, 11:58 AM) | Release aabff9f; bounded results/latest reports, literal Scratch and native retention accepted with explicit gaps. |
 | Kansas | Accepted October 16, 2026, 11:00 AM ET (due October 19, 7:40 PM) | Bounded results, literal schedules/Scratch and native retention accepted; explicit gaps retained. |
@@ -102,18 +102,18 @@ available coverage. Virginia closed October 2 at 18:02 ET; see
 VIRGINIA_ACCEPTANCE.md for the consolidated release evidence and limitations.
 New York closed October 3, 2026 at 18:12 ET; see NEW_YORK_ACCEPTANCE.md.
 Ohio closed October 4, 2026 at 13:14 ET; see OHIO_ACCEPTANCE.md.
-All fourteen accepted states are ready for supported-coverage user testing. Colorado
+All fifteen accepted states are ready for supported-coverage user testing. Colorado
 closed October 5 at 15:33 ET; see COLORADO_ACCEPTANCE.md. Oregon closed October 6
 at 15:01 ET, ahead of October 10 at 16:35 ET; see OREGON_ACCEPTANCE.md. Its scheduled
 three-output refresh and newer native remote adoption are verified. Missouri closed October 7 at 17:22 ET on release 337848b, ahead of October 11.
 See MISSOURI_ACCEPTANCE.md for its 28 reports, 73 listed Scratch games and dated
 two-city directory limits. North Carolina closed October 12 at 23:00 ET on release 7de7bb8; see
 NORTH_CAROLINA_ACCEPTANCE.md. Louisiana closed October 14 at 18:44 ET on release
-d68a843; see LOUISIANA_ACCEPTANCE.md. Fourteen states are ready for supported
-testing; 31 remain. Kansas accepted October 16 at 11:00 ET on release 5d22fca,
+d68a843; see LOUISIANA_ACCEPTANCE.md. Fifteen states are ready for supported
+testing; 30 remain. Kansas accepted October 16 at 11:00 ET on release 5d22fca,
 ahead of October 19 at 19:40 ET with no extension. See KANSAS_ACCEPTANCE.md.
 Nebraska accepted October 18 at 04:20 ET on aabff9f, ahead of October 21 at
-11:58 ET with no extension. See NEBRASKA_ACCEPTANCE.md. South Dakota accepted October 18 at 20:42 ET on `94fd40c`, ahead of October 23 at 04:24 ET with no extension. See SOUTH_DAKOTA_ACCEPTANCE.md. Iowa is the sole active state from October18 at 21:42ET; scope due October19 at 21:42ET and supported release due October23 at 21:42ET. Fresh120-hour substantial draw/app integration; see IOWA_ACCEPTANCE.md. Mobile beta work remains
+11:58 ET with no extension. See NEBRASKA_ACCEPTANCE.md. South Dakota accepted October 18 at 20:42 ET on `94fd40c`, ahead of October 23 at 04:24 ET with no extension. See SOUTH_DAKOTA_ACCEPTANCE.md. Iowa accepted October22 at12:24ET on production9ff894e, with verification through4e91052, ahead of October23 21:42ET and no extension; see IOWA_ACCEPTANCE.md. No next state has been activated by this acceptance. Mobile beta work remains
 open. Five additional acceptances since October 6 are complete; the October 18
 reforecast is December 21–January 22 for national supported engineering, with
 explicit assumptions in NATIONAL_RELEASE_FORECAST.md.

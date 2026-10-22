@@ -3,7 +3,7 @@
 October 6, 2026 audit. Beta is authorized for iOS and Android with validated
 coverage; national supported coverage is required before full public release.
 October 20–27 remains a provisional beta estimate, not a promised launch date.
-As of October 18 at 20:42 ET, fourteen states have accepted supported coverage, including South Dakota.
+As of October22 at12:24ET, fifteen states have accepted supported coverage, including Iowa.
 No mobile distribution is implied by desktop state acceptance.
 
 ## Verified local readiness
@@ -878,3 +878,13 @@ or second device. Full all-family paging/layout visual acceptance is still open,
 as is the original gesture issue. Iowa remains unaccepted and October23 21:42ET
 unchanged. Next use the now-working ordinary controls for complete native visual
 traversal, recording it specifically as button navigation.
+
+
+## October22 — Iowa supported acceptance boundary
+
+Iowa accepted on production9ff894e with accumulated verification through4e91052.
+Its native reading path uses fixed paging controls; native swipe automation is
+not claimed recovered. See IOWA_ACCEPTANCE.md for the exact normal/enlarged and
+portrait/landscape evidence matrix. The ordinary app remains installed; Android
+was kept stopped during iOS work. Broader Android flows, signing/accounts and
+distribution are still open. Supported-state acceptance is not beta distribution.

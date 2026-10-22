@@ -1,6 +1,10 @@
 # Iowa supported coverage acceptance
 
-Status: **ACTIVE — not accepted**. Sole active state.
+Status: **SUPPORTED COVERAGE ACCEPTED — October 22, 2026 at 12:24 ET**.
+
+Production release: `9ff894e`, with verification through `4e91052`, all pushed.
+Completed before October 23 at 21:42 ET; no extension. Earlier open checkpoints
+are historical and superseded by the integrated decision below.
 
 - Activated: October 18, 2026 at 21:42 ET.
 - Full supported scope due: October 19, 2026 at 21:42 ET.
@@ -25,10 +29,10 @@ Existing Scratch report is explicitly $50-plus, cumulative claimed/unclaimed inv
 - [x] Strict bounded collectors and atomic correction/failure retention.
 - [x] Fresh Scratch and other instant-product inventory dispositions and full supported rows.
 - [x] Remote/cache/bundle app integration with explicit dates and limitations.
-- [ ] Native groups/selections/source returns, schedules, layouts and enlarged text.
+- [x] Native groups/selections/source returns, schedules, layouts and enlarged text (bounded evidence matrix below).
 - [x] Inventory filters/detail returns, newer adoption and production-loader failure retention.
 - [x] Ordinary build restoration, consolidated tests and independent live-feed verification (October 22 checkpoint; repeat only after relevant changes).
-- [ ] Supported acceptance with explicit unavailable features.
+- [x] Supported acceptance with explicit unavailable features.
 
 No public feed, app build, UI change or acceptance at activation. Missing agency records do not extend the app deadline. No new correspondence, fees, coordinates or heuristic joins.
 
@@ -916,3 +920,42 @@ No new build, code, source refresh, enlarged-text claim, acceptance or deadline
 change. Ordinary app remains on Iowa sources in landscape; Android stays stopped.
 Remaining native integration reconciliation must use the accumulated evidence
 without repeating closed portrait schedules, source returns or retention checks.
+
+
+## October 22, 12:24 ET — integrated supported release decision
+
+Accepted the implemented supported experience after reconciling the native evidence
+with the release gates. This decision combines full family/content checks with
+representative native layout checks; it does not assert that every family was
+manually traversed in every orientation and text scale.
+
+| Gate | Evidence and actual boundary |
+| --- | --- |
+| Groups and dates | October19 ordinary native traversal covers all20 selections/10groups; October19 18:12 verifies all10 official routes and OS returns. |
+| Complete schedule content | October21 14:07–21:18 reads all8 distinct charts and full rules using production paging buttons. Double Play remains distinct with the shared-source warning. |
+| Wide layouts | Full ordinary XsOs October21 22:26 and MFL October22 11:28, including all annuity/sharing rows. Deep selection reset independently fixed and verified October21 23:21. |
+| Enlarged draw text | Integrated portrait2x Powerball full chart and HTML rules October22 08:27/10:31; bounded native Pick4 portrait/landscape2x October22 00:19. All8 complete schedules also pass automated2x portrait/landscape traversal; those tests supplement the native observations. |
+| Typed inventories | Three distinct products, search/price/reset/detail/source returns; full ordinary landscape detail traversal for each type October22 03:19–05:22; integrated2x Scratch landscape and InstaPlay/PullTab portrait October22 06:23–07:25. |
+| Persistence | Real newer remote adoption October19 23:16; controlled production-loader SocketException retained real cache bytes and dates October19 20:12. Not a whole-device offline claim. |
+| Restoration and validation | Ordinary main.dart rebuilt/installed/launched October22 10:31 and used for subsequent native MFL flow. October22 09:20:57 Iowa Python +13 transaction +19 Flutter pass;7 production Dart files clean; live feed byte-identical. No subsequent production edit invalidated those checks. |
+
+Current accepted snapshot contains20 bounded results across10groups/7families,
+8 exact joined Iowa-ticket reports and12 explicit unavailable reports (including
+all8 Pick selections). The original12-report baseline count is not carried forward
+as a current claim. Eight reviewed charts contain74 physical rows, with9 HTML
+rule contracts. Separate October18 $50-plus cumulative subsets contain50 Scratch
+games/266 tiers,25 InstaPlay/142 tiers and9 PullTab/9 tiers. Retrieval remains
+2026-10-20T11:41:19.039816+00:00; this decision does not invent a newer source date.
+
+Limitations remain visible: no retailer joins/coordinates, comprehensive claims,
+complete history or store stock; unproven Pick count units excluded; missing
+exact-date reports and jackpot placeholders unavailable rather than zero;
+XsOs uses literal source codes; Lucky for Life is historical only; no progressive
+jackpot inferred from cumulative inventory. Native swipe automation remains
+unresolved. The verified fixed paging controls provide the accepted reading path;
+this acceptance does not claim gesture recovery or broader Android acceptance.
+
+No private correspondence or identifiers were published. Iowa is the fifteenth
+accepted state;30 remain. National release and mobile signing/distribution remain
+separate gates. Close routine Iowa acceptance repeats; reopen only for a named
+defect or meaningful new source evidence. No extension was used.
