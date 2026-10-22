@@ -684,3 +684,10 @@ new result summary is visible at offset zero. Post-frame reset alone failed at
 tests pass, including existing 2x traversal tests; production sheet analyzer is
 clean. Native verification of the updated build remains pending. No data,
 acceptance or deadline change; October23 21:42ET remains due.
+
+Ordinary main.dart a53c711 iOS simulator build passed, installed and cold-launched
+on the original iPhone17e (process12357), with Android stopped. Native landscape
+verification paged twice into Powerball, selected Double Play October17, and
+visibly returned to its dated summary at the top with numbers, special ball,
+retrieval date and Iowa-ticket report qualifier readable. This confirms the
+selection-reset fix in a native flow; full landscape/2x acceptance remains open.
