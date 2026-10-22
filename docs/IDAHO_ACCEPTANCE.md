@@ -53,3 +53,57 @@ missing records do not block honest supported completion.
 - [ ] Integrated supported acceptance and explicit unavailable features.
 
 No public feed, app build, UI change or acceptance is claimed by activation.
+
+
+## October 22, 15:31 ET — dated API and source-contract audit
+
+Captured the site's three linked bundled JavaScript files and eight dated
+API requests privately, with URL/hash/retrieval manifests in work/idaho_scope.
+The date-picker script constructs `/api/v1/drawgame/{page-slug}/{date}`.
+Seven requests returned dated game JSON; Millionaire For Life's October21
+request returned HTTP404. Its visible HTML still contains results, schedules
+and report tables, so this is an API-route limitation, not proof the game or
+its reports are absent. Use verified HTML as a candidate source; do not invent
+an alternate endpoint or carry a different game's data into it. The shared
+check-number form defaults to Powerball on other game pages; exclude that form
+from game-specific result parsing.
+
+Observed API contracts and unresolved issues:
+
+- Pick3 `winning_numbers`/`winners` and `_2` arrays correspond to the visible
+  Day/Night columns. Source strings include trailing carriage returns; trim only
+  explicitly allowed surrounding whitespace and preserve each digit, including
+  Pick4 Night's leading zero. Pick3 has twelve API report entries, including
+  three Sum It Up stakes, while the visible main table has nine rows.
+- Pick4 API labels repeat Any Order 4 Way, Front Pair and $5 Sum It Up, with
+  missing/distorted exact-any identities. These must not be repaired by position
+  or converted into invented zero counts. Bound the display to unambiguous
+  reviewed source rows or explicitly exclude ambiguous report coverage.
+- Powerball Idaho `winners` contains nine base entries of zero plus eight Power
+  Play entries. The site's own script filters only Power Play for the Idaho
+  table. Do not publish the undisplayed base zeros as verified Idaho reports.
+  Double Play has a separate result array and nine report entries.
+- Mega Millions has41 labeled report entries: one jackpot plus eight rows for
+  each of five per-play multipliers. The script inserts N/A jackpot cells in
+  later multiplier columns; those inserted cells are not source zero counts.
+- Lotto America separates nine base and eight All Star Bonus rows. Idaho and
+  national arrays are distinct. Idaho Cash retains four categorical tiers,
+  including Free Ticket; XsOs has eight numeric source team codes and five
+  match-count rows. Team code-to-image mapping is still unverified.
+- Powerball October21 API jackpot is635000000 while the visible past-draw row
+  says638.6 million. Its API cash matches the page's next-estimate cash amount.
+  Other fields also need date/provenance validation. Do not attach cash/next
+  estimates to historical results or silently choose a conflicting amount.
+
+The current Raffle page states sales began October21 and a December29 winner
+announcement, with a separate daily promotion already showing a six-digit
+number. The two-million-dollar-prize row's printed odds and the stated ticket
+limit require explicit source-qualification review; never recalculate or correct
+published odds silently. Separate final-draw status from promotional results.
+InstaPlay and Tabs remain separate product scope, not Scratch aliases.
+
+Next close all product dispositions and schedules, including image match labels,
+Sum It Up, Raffle promotional/final distinction, InstaPlay/Tab inventory semantics,
+and bounded history. Then implement strict parsers and atomic retention against
+these reviewed contracts. No new public feed, app build, UI or acceptance; scope
+and release deadlines remain October23/October27 at14:22ET, no extension.

@@ -177,3 +177,16 @@ attached PDF size were confirmed in the same thread.
 Await processing or records; do not resend. The form and contact details remain
 private. This correspondence does not activate Idaho or change public data
 coverage, and no delivery deadline is inferred from the general form text.
+
+
+## October 22 — all-game source-contract audit
+
+Dated APIs were inspected alongside their actual page tables and JavaScript;
+see IDAHO_ACCEPTANCE.md for the contract boundaries. Seven game routes returned
+JSON; Millionaire For Life's page-derived dated route returned404 while its HTML
+still carries results. Pick4 duplicated report labels, undisplayed Powerball base
+zeros, and conflicting Powerball historical jackpot values remain explicit gaps
+pending bounded parser decisions. No source normalization, invented counts,
+public feed promotion or complete coverage claim. Raffle final and promotional
+results, InstaPlay and Tabs require separate dispositions. Private source captures
+are retained; this technical audit sends no agency correspondence.
