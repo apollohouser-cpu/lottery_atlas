@@ -10,7 +10,9 @@ been sent. October 20–27 is a provisional planning window, not a launch promis
 Lottery Atlas helps explore available lottery reports, catalogs and retailer
 information with source dates and coverage limits. Supported state coverage has
 been accepted for Texas, Kentucky, South Carolina, Virginia, New York, Ohio,
-Colorado, Oregon, Missouri, North Carolina and Louisiana. Phone testing remains a separate requirement.
+Colorado, Oregon, Missouri, North Carolina, Louisiana, Kansas, Nebraska, South
+Dakota and Iowa (15 states as of October 22). Broader phone testing and signed
+distribution remain separate requirements.
 Other states are unfinished; their presence on the map is not evidence that
 national coverage is complete. Ten-year history is outside this beta scope.
 
@@ -57,7 +59,7 @@ map. Only report newer-data adoption when the displayed source/retrieval evidenc
 actually changes to a newer validated snapshot. A successful reconnect alone is
 not proof of a refresh.
 
-## Current local Android review — October 15
+## Historical local Android review — October 15
 
 The prepared API 36 emulator now runs ordinary debug build 2c4b6ed. This local
 review is separate from a signed beta invitation. The app version remains 1.0.0
@@ -70,7 +72,9 @@ and coverage. Source links open the configured external browser; on this emulato
 that is WebView Browser Tester. Use Android Back to return and check whether the
 selected game and scroll position remain unchanged.
 
-Kansas is still undergoing acceptance. For its reports, compare local draw date
+Kansas was undergoing acceptance at this checkpoint; it was accepted October 16.
+The following describes the October 15 Android handoff, not current state status.
+For its reports, compare local draw date
 with the separately labeled UTC timestamp; select both available dates and check
 that scroll returns to the top. Powerball Base/Double Play and Pick 3 Midday/
 Evening must stay distinct. Keno/Racetrax are retained snapshots, not live results.
@@ -84,6 +88,21 @@ Native checks recorded so far cover Kansas Scratch filtering/detail return and
 landscape, persistence, enlarged text and network recovery still need evidence;
 this list is a test handoff, not a claim they passed. Use the first-session
 checklist above for accepted-state mobile testing as well.
+
+## Current Iowa reading path — October 22
+
+Iowa is accepted for bounded draws and separate Scratch, InstaPlay and PullTab
+inventories. Use the fixed Previous page and Next page buttons to read long
+reports and inventory details, and Close to return. Button navigation is verified;
+native swipe automation is not claimed recovered. Read each product's source
+date and cumulative $50-plus subset limitation; these are not store stock or
+individual claim records. Missing exact-date reports remain unavailable.
+
+The ordinary iOS simulator build contains production revision 9ff894e. Latest
+Android launch evidence remains aabff9f; do not assume it contains Iowa or that
+broader Android visual testing passed. No signed installation route is available
+in this guide. Retain the per-build revision in feedback because version 1.0.0
+(build 1) alone does not distinguish these local builds.
 
 ## Feedback template
 

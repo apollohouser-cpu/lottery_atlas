@@ -71,3 +71,31 @@ manifests still require inspection.
 
 No policy has been published, store questionnaire submitted, signing credential
 created, account attested or mobile privacy acceptance claimed by this audit.
+
+
+## October 22 — embedded simulator manifest audit
+
+Inspected the existing ordinary iOS simulator Runner.app after Iowa acceptance;
+no new build or signing operation. Parsed all three embedded PrivacyInfo.xcprivacy
+files with plistlib, rather than inferring declarations from dependency names:
+
+| Embedded component | Declared accessed API categories / reasons |
+| --- | --- |
+| shared_preferences_foundation | UserDefaults: 1C8F.1 |
+| url_launcher_ios | Empty accessed-API list |
+| Flutter.framework | FileTimestamp: 0A2A.1, C617.1; SystemBootTime: 35F9.1 |
+
+All three declare tracking false and empty tracking-domain and collected-data
+lists. These are component declarations, not proof of app-wide network privacy
+or a completed store questionnaire. No root app privacy manifest was found in
+this simulator artifact. The final signed release archive still requires its own
+inspection and declaration review.
+
+The built Info.plist reports Lottery Atlas, version 1.0.0, build 1 and a Flutter
+local-network debugging usage description. Do not copy that debug permission
+behavior into release claims. Source Android main manifest declares INTERNET;
+it does not explicitly set allowBackup or dataExtractionRules. Backup exclusion
+and deletion from OS backups therefore remain unverified. No backup behavior was
+changed. Source dependency list remains the one inventoried above. No runtime
+traffic capture, final merged release-manifest audit or user-data deletion test
+is implied by this static inspection.

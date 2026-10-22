@@ -888,3 +888,16 @@ not claimed recovered. See IOWA_ACCEPTANCE.md for the exact normal/enlarged and
 portrait/landscape evidence matrix. The ordinary app remains installed; Android
 was kept stopped during iOS work. Broader Android flows, signing/accounts and
 distribution are still open. Supported-state acceptance is not beta distribution.
+
+
+## October 22, 13:25 ET — independent beta preparation
+
+Updated the tester guide to all fifteen accepted states, marked its October15
+Android handoff historical, and documented Iowa's verified button reading path
+and per-build revision boundaries. Inspected all three embedded privacy manifests
+in the existing ordinary iOS simulator artifact; exact declarations and backup
+limitations are recorded in MOBILE_PRIVACY_INVENTORY.md. This closes the initial
+simulator SDK-manifest inventory, not final signed-artifact privacy acceptance.
+No new build, simulator, signing identity, policy publication or invitation.
+Runtime traffic, persistence/deletion, final release manifests, broader Android
+visual flows and distribution gates remain open. No next state activated.
