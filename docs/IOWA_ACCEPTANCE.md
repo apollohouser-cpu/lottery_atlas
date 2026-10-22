@@ -876,3 +876,24 @@ integration reconciliation. All-family normal-text charts/rules, both dated
 selections and source returns already have separate evidence; do not repeat them
 without a named defect. Iowa remains unaccepted, due October 23 at 21:42 ET,
 with no extension. Android stays stopped and the ordinary iOS app is retained.
+
+
+## October 22, 10:31 ET — integrated enlarged Powerball rules
+
+The private untracked app-level 2x build passed (37.2s Xcode), installed and
+launched on the original iPhone 17e. Entered through the real map/state selector
+and Iowa source screen. In portrait, visually read the complete Powerball HTML
+rules using overlapping Next-page navigation: play ranges and purchase options,
+draw/cutoff/claim timing, Power Play exceptions and 10X limit, separately labeled
+Double Play terms, cash/annuity choices and payment qualifications, history,
+jackpot sharing and pari-mutuel footnotes. Reached the final official-rules link,
+full coverage limitations and official-results/history link. Text wrapped within
+the viewport and fixed paging/source/Close controls remained available. Close
+returned to the Iowa source screen. Together with the 08:27 chart checkpoint,
+this closes the integrated portrait 2x Powerball read-through. It does not claim
+all-family enlarged traversal or recovery of native swipe gestures.
+
+Ordinary lib/main.dart was rebuilt successfully (36.8s Xcode), installed and
+launched (process 53632); native AX confirmed the ordinary map. Android remained
+stopped. No production edits, tracked probe, source refresh, acceptance or
+deadline change. Final native integration reconciliation remains open.
