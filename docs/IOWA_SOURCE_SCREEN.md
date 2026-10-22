@@ -905,3 +905,22 @@ Ordinary lib/main.dart was rebuilt successfully (36.8s Xcode), installed and
 launched (process 53632); native AX confirmed the ordinary map. Android remained
 stopped. No production edits, tracked probe, source refresh, acceptance or
 deadline change. Final native integration reconciliation remains open.
+
+
+## October 22, 11:28 ET — full landscape Millionaire for Life traversal
+
+Used the ordinary installed app on the original iPhone 17e, entered Iowa through
+the map and source screen, selected Millionaire for Life October19, and rotated
+the actual modal to landscape. Sixteen overlapping Next-page advances visually
+covered the dated summary and explicit report gap, all nine literal prize rows
+and rounded odds, overall odds, full play/timing/claim terms, both annuity/cash
+sharing tables (all three top-prize rows and both tier-two rows), minimum-annuity
+and liability footnotes, 60-day choice and split-prize terms, history, source
+actions and full coverage limits. Fixed navigation and exit remained visible;
+text wrapped without observed horizontal clipping. Close returned to Iowa sources.
+
+This closes the ordinary-text landscape Millionaire for Life read-through only.
+No new build, code, source refresh, enlarged-text claim, acceptance or deadline
+change. Ordinary app remains on Iowa sources in landscape; Android stays stopped.
+Remaining native integration reconciliation must use the accumulated evidence
+without repeating closed portrait schedules, source returns or retention checks.
