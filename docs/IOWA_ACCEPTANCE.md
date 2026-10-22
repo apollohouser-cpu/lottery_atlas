@@ -764,3 +764,21 @@ using buttons. Enlarged native layouts and remaining integrated acceptance
 remain open; no gesture recovery or new source verification is claimed. No code
 or build change. Ordinary app remains in the landscape InstaPlay inventory,
 Android stopped, and October23 21:42ET is unchanged with no extension.
+
+
+## October 22, 05:22 ET — native landscape PullTab detail and return
+
+On ordinary iOS9ff894e, returned to the inventory controls with Previous,
+selected the separate nine-game PullTab inventory and opened WHAT A GEM!4.
+Native landscape inspection verified the title, $2 price, October18 report
+source date, $50-plus cumulative-count limitation and explicit absence of a
+full schedule/current progressive jackpot. Its one published tier was readable:
+$1999, cumulative claimed0 and unclaimed12. Next exposed both official-source
+actions while Previous/Next/Close stayed visible. Close returned to the same
+paged PullTab list with WHAT A GEM!4 visible.
+
+This closes this normal-text landscape PullTab detail/return checkpoint only.
+Enlarged native layouts and remaining integrated acceptance remain open. No
+code, data or build changed, and no gesture recovery or new source verification
+is claimed. Ordinary app remains in landscape PullTab inventory; Android is
+stopped. Iowa remains active, due October23 21:42ET without an extension.
