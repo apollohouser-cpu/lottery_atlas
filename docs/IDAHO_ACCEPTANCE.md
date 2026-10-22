@@ -107,3 +107,47 @@ Sum It Up, Raffle promotional/final distinction, InstaPlay/Tab inventory semanti
 and bounded history. Then implement strict parsers and atomic retention against
 these reviewed contracts. No new public feed, app build, UI or acceptance; scope
 and release deadlines remain October23/October27 at14:22ET, no extension.
+
+
+## October 22, 16:29 ET — other products and image schedule scope
+
+Captured all12 listed InstaPlay and11 listed Tab detail routes privately.
+These are catalog observations, not remaining-prize inventories. InstaPlay tables
+say Number of Prizes / Prize Amount / Odds; several progressive rows have $0
+placeholders and $10 Cash Spot has all-zero prize amounts. Do not treat those
+as zero-dollar prizes or remaining counts. Nine Tab pages are TouchTab wager/
+top-prize/overall-odds tables; two are fixed prize schedules. Fractional wager
+and prize values must survive. No remaining-count field is established for either
+product type. Opening Scratch listing has32 cards; its existing strict detail
+and claim-date validation must still run before a new accepted snapshot.
+
+Visually reviewed the two official Sum It Up images and transcribed their literal
+rows into tooling/idaho_sum_specs.json with exact image hashes: Pick3 has14 paired
+sum rows; Pick4 has37 sum rows and explicitly labels a $1 wager. Pick3's image
+itself lacks that heading, so its basis must be joined only to verified page text.
+The pages prohibit this option for pair wagers (front/back for Pick3; front/mid/
+back for Pick4). These are schedules, not actual winner counts. The specs are
+reviewed inputs, not yet wired to a collector or app.
+
+Planned bounded scope is now explicit: two available dated results for each of
+11 groups across8 families (Powerball and Double Play separate; Pick3/Pick4 Day
+and Night separate), literal main/option schedules and exact-date Idaho reports
+where unambiguous. Missing/ambiguous report rows remain unavailable; specifically
+exclude undisplayed Powerball base counts and unresolved Pick4 counts. Exclude
+conflicting historical jackpot/cash values rather than choosing a value. Use
+MFL HTML pending a proven dated route and preserve XsOs literal numeric source
+codes plus official images without invented expanded team names.
+
+Scratch remains a separate validated remaining-prize catalog with lower-tier
+unknowns. InstaPlay/Tab receive separate catalog/rule/schedule presentation with
+explicitly unavailable remaining counts and progressive placeholders; no false
+Scratch inventory semantics. Raffle receives its source-labeled schedule and
+separately dated daily promotion, with final drawing pending and printed odds
+qualifications retained. History is the bounded presented window, not ten years.
+Retailer lookup, claims/help, VIP and historical-game routes are source links,
+not retailer joins, claims datasets or new account interactions.
+
+The full-scope gate remains open for final rule/option and history reconciliation;
+remaining work is concrete, including strict schedule contracts and product-field
+validation. No feed/build/UI/acceptance or deadline change. Next implement the
+bounded draw parser and hash-gated schedule contracts after final reconciliation.

@@ -190,3 +190,11 @@ pending bounded parser decisions. No source normalization, invented counts,
 public feed promotion or complete coverage claim. Raffle final and promotional
 results, InstaPlay and Tabs require separate dispositions. Private source captures
 are retained; this technical audit sends no agency correspondence.
+
+
+October22 product audit: all12 listed InstaPlay and11 Tab detail pages captured.
+Their schedules do not establish remaining inventories. Progressive $0 fields
+remain unavailable, fractional wagers/prizes retained, TouchTab and fixed Tab
+schedules distinguished. Two Sum It Up images visually transcribed with hashes
+in tooling/idaho_sum_specs.json. See IDAHO_ACCEPTANCE.md for planned scope and
+remaining validation; no public product integration or acceptance yet.
