@@ -641,3 +641,17 @@ not zero. XsOs is the remaining distinct schedule for this portrait checkpoint;
 native2x/landscape and original swipe input remain open. Simulator left upright
 at Pick4's final source action. No code, data, acceptance or deadline change;
 October23 21:42ET remains due.
+
+## October 21, 21:18 ET — XsOs native portrait paging
+
+Ordinary iOS1065fe1 completed current-size portrait button traversal of XsOs from
+the October18 summary through its five dated report tiers, five schedule tiers,
+overall odds, published rules, cash-only qualification, promotional terms,
+history, random-draw/pari-mutuel footnotes, full disclaimer, coverage limits and
+final visible results/history action. Overlapping native screenshots confirm
+readable content and fixed paging/source/close controls. The eight source team
+abbreviations remain literal; source winners remain distinct from people/claims.
+This completes all eight distinct schedules at the current portrait text size
+using buttons. Native2x/landscape and original swipe input remain open; this is
+not overall acceptance. Simulator left upright at XsOs final source action.
+No code, data or deadline change; October23 21:42ET remains due.
