@@ -349,3 +349,22 @@ Next implement strict InstaPlay/Tab/Raffle parsing, refresh validated Scratch,
 and assemble the coupled atomic collector; then public feed and app/native work.
 Missing agency records do not block this bounded scope. No acceptance or new
 public feed/build/UI is claimed by scope closure.
+
+
+## October 23, 01:34 ET — strict InstaPlay detail schedules
+
+Added reviewed contracts for all12 retained InstaPlay detail pages and110 literal
+schedule rows. Exact title, rule text, odds-section qualifications, headers,
+ordered counts/prizes/odds and count attributes must match before projection.
+Changed details fail closed for review. Printed counts become schedulePrizeCount,
+never remaining inventory. All source $0 amounts become unavailable with their
+literal source label retained, including all seven $10 Cash Spot rows. No current
+progressive jackpot is inferred. Published odds remain literal even where they
+appear inconsistent; no recalculation is substituted.
+
+All12 full captured pages validate; all43 Idaho Python tests pass, including
+changed/missing rows, altered rules, wrong identity and placeholder semantics.
+No new retrieval or public publication. Listing-to-detail completeness, Tab and
+Raffle parsing, fresh Scratch and coupled atomic collection remain next; then
+app/native integration. Scope remains closed and release October27 14:22ET is
+unchanged. This detail-parser checkpoint is not acceptance or a new build.
