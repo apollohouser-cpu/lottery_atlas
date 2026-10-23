@@ -385,3 +385,20 @@ wrong fixed/TouchTab variant, fractional money and malformed schedules. No new
 retrieval, public feed or build. Next listing/detail completeness and Raffle,
 then fresh strict Scratch and coupled atomic publication, followed by app/native.
 Scope closed; release October27 14:22ET unchanged; no acceptance claimed.
+
+
+## October 23, 03:33 ET — instant catalog completeness joins
+
+Added strict list-to-detail collection for all12 InstaPlay and11 Tab games.
+Reviewed listing identities, names, types and prices must match, and grid/detail
+links cannot introduce unreviewed games. Each listed detail must validate with
+its own typed parser before a complete result returns. Blank official game IDs
+remain null; route slugs identify those games without inventing numeric IDs.
+Catalog prices are separately labeled from TouchTab's multiple wager options.
+
+Both full retained listings and all23 details pass. All51 Idaho Python tests
+pass, including failure at each of23 detail positions, changed listings and
+wrong-detail identity. This is an in-memory complete join, not disk publication
+or a fresh retrieval. Next Raffle parser, fresh strict Scratch and coupled atomic
+retention/publication, then app/native. Scope and October27 14:22ET deadline
+unchanged; no new public feed/build/UI or acceptance.
