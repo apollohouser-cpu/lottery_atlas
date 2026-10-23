@@ -679,3 +679,22 @@ other product/filter flows, portrait and native2x layouts, newer remote adoption
 and controlled loader-failure retention. Ordinary build is running; complete
 native acceptance, cache checks and final restoration remain open. No source
 refresh, acceptance, extension or deadline change.
+
+
+## October 23, 18:49 ET run — InstaPlay native flow and source notice
+
+On ordinary b8b99a2 iOS, reset the retained Mistletoe search (33/33 Scratch),
+switched to InstaPlay (12/12), and opened Jackpot USA. Inspected its normal-text
+landscape and upright portrait layout: source $0 is explicitly unavailable,
+printed schedule quantities are not remaining inventory, and collection time
+remains October23 11:41:13UTC. Fixed paging reached all schedule rows, rule prose
+and the official source. Safari opened idaholottery.com and displayed a
+Temporary Content Availability Notice stating that a technical content-delivery
+issue may leave information unavailable or not current. This is an observed
+publisher warning, not proof that the retained baseline is incorrect or that
+the notice first appeared today. No refresh or newer verification is claimed.
+Returning to the same app process retained the detail's final reading position.
+
+The simulator is now upright. Other products, remaining draw/date/schedule
+flows, native2x, remote adoption and failure-retention checks remain open.
+No acceptance or deadline change; retained data and validation are unchanged.
