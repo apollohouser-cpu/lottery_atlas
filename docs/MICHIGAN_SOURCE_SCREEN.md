@@ -154,3 +154,24 @@ coordination with other divisions. This is an agency response date, not a
 guaranteed retailer-file delivery. No dataset or new fee arrived. The October 8
 Sent reply remains confirmed; no duplicate acknowledgment was sent. Await the
 no-fee response under the existing limits. No public data or state activation.
+
+
+## October 23 — No-fee delivery received
+
+The agency delivered an active-retailer workbook, five preliminary unaudited
+revenue/expense PDFs and a response letter. The letter expressly states no fee
+is required. This satisfies the pending October30 response checkpoint; it does
+not establish complete fulfillment of the original data scope.
+
+The five reports are weekly revenue/expense reports for weeks ending August3,
+10,17,24 and31, with current-week and year-to-date comparisons. They must not be
+relabeled as drawing-date prize-tier winner counts. Original attachment bytes
+are retained privately with a SHA256 manifest; all PDF pages were text-extracted.
+Detailed workbook/field and PDF visual audits remain pending before integration.
+No retailer joins, coordinates, complete claims or winning-ticket counts are
+inferred from this delivery.
+
+The October8 bounded no-fee clarification remains Sent-confirmed in the reviewed
+thread. No new question or follow-up date was supplied; no duplicate reply sent.
+No attachment links, requester details or private correspondence identifiers are
+published here. Idaho remains the sole active implementation state.
