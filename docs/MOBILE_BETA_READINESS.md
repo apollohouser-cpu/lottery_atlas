@@ -901,3 +901,11 @@ simulator SDK-manifest inventory, not final signed-artifact privacy acceptance.
 No new build, simulator, signing identity, policy publication or invitation.
 Runtime traffic, persistence/deletion, final release manifests, broader Android
 visual flows and distribution gates remain open. No next state activated.
+
+
+## October 23, 17:42 ET run — Idaho ordinary simulator build
+
+Ordinary iOS b8b99a2 built, installed and cold-launched on the original iPhone17e;
+Android stayed stopped. Initial Idaho draw and unavailable-Scratch landscape
+flows are recorded in IDAHO_ACCEPTANCE.md. Native acceptance remains incomplete;
+this does not close beta persistence, Android, signing or distribution gates.

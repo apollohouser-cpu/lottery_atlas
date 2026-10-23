@@ -654,3 +654,28 @@ Product sheet/source screen/test analyze clean. Prior20 Idaho tests are unchange
 Next ordinary native build and all draw/product/source-return/layout/cache
 acceptance flows; no native build, source refresh, acceptance or deadline change
 at this checkpoint.
+
+
+## October 23, 17:42 ET run — ordinary native build and first bounded flows
+
+Built ordinary `lib/main.dart` from b8b99a2 for iOS simulator, installed and
+cold-launched on the original iPhone17e (process 52158). Android remained stopped;
+no probe entrypoint was used. Native Idaho source-screen entries opened both
+draw and product sheets. In normal-text landscape, the first Powerball summary
+showed the October21 result and original October23 collection timestamp. This
+is initial native evidence only, not all-selection acceptance.
+
+Searched Scratch for Mistletoe, observed 1 of 33 catalog entries, and opened
+Mistletoe Mystery 1933. Fixed paging traversed all eleven original-structure
+prize rows to the official source control; remaining counts stayed explicitly
+unavailable. The control opened Safari at idaholottery.com with the Mistletoe
+Mystery page title (page content was still loading when observed). Returning to
+the same running app retained the detail reading position. Closing details
+retained the Mistletoe query and one-result list. No source-page-content load
+claim is made.
+
+Next: remaining draw selections/dates/family source returns, full schedules,
+other product/filter flows, portrait and native2x layouts, newer remote adoption
+and controlled loader-failure retention. Ordinary build is running; complete
+native acceptance, cache checks and final restoration remain open. No source
+refresh, acceptance, extension or deadline change.
