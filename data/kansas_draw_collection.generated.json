@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "state": "KS",
-  "retrievedAt": "2026-10-23T04:53:41.411226+00:00",
+  "retrievedAt": "2026-10-23T11:42:48.708405+00:00",
   "reports": [
     {
       "id": "2by2:f5c8849a-1565-44aa-84b5-bf7e7750a75c",
@@ -98,47 +98,49 @@
       "scheduleKey": "2-by-2"
     },
     {
-      "id": "keno:3708250",
+      "id": "keno:3708338",
       "family": "Keno",
       "group": "keno",
       "session": "Frequent",
-      "drawNumber": "3708250",
-      "sourceExternalId": "3708250",
+      "drawNumber": "3708338",
+      "sourceExternalId": "3708338",
       "multiplier": null,
-      "sourceDrawTimestamp": "2026-10-23T04:24:00Z",
+      "sourceDrawTimestamp": "2026-10-23T11:24:00Z",
       "sourceDrawingDate": "2026-10-23",
-      "drawDate": "2026-10-22",
+      "drawDate": "2026-10-23",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "9",
+        "5",
+        "7",
         "11",
-        "14",
+        "13",
         "15",
+        "16",
         "20",
-        "21",
-        "26",
+        "22",
+        "28",
         "31",
-        "34",
-        "38",
-        "39",
-        "48",
-        "49",
-        "50",
-        "58",
-        "60",
-        "64",
-        "67",
-        "73"
+        "44",
+        "54",
+        "55",
+        "56",
+        "57",
+        "68",
+        "74",
+        "78",
+        "79"
       ],
       "specialNumbers": [
-        "53"
+        "64"
       ],
-      "sourceWarnings": [
-        "Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp."
-      ],
+      "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "9",
+          "value": "5",
+          "type": "NORMAL"
+        },
+        {
+          "value": "7",
           "type": "NORMAL"
         },
         {
@@ -146,7 +148,7 @@
           "type": "NORMAL"
         },
         {
-          "value": "14",
+          "value": "13",
           "type": "NORMAL"
         },
         {
@@ -154,15 +156,19 @@
           "type": "NORMAL"
         },
         {
+          "value": "16",
+          "type": "NORMAL"
+        },
+        {
           "value": "20",
           "type": "NORMAL"
         },
         {
-          "value": "21",
+          "value": "22",
           "type": "NORMAL"
         },
         {
-          "value": "26",
+          "value": "28",
           "type": "NORMAL"
         },
         {
@@ -170,51 +176,43 @@
           "type": "NORMAL"
         },
         {
-          "value": "34",
+          "value": "44",
           "type": "NORMAL"
         },
         {
-          "value": "38",
+          "value": "54",
           "type": "NORMAL"
         },
         {
-          "value": "39",
+          "value": "55",
           "type": "NORMAL"
         },
         {
-          "value": "48",
+          "value": "56",
           "type": "NORMAL"
         },
         {
-          "value": "49",
-          "type": "NORMAL"
-        },
-        {
-          "value": "50",
-          "type": "NORMAL"
-        },
-        {
-          "value": "53",
-          "type": "SPECIAL"
-        },
-        {
-          "value": "58",
-          "type": "NORMAL"
-        },
-        {
-          "value": "60",
+          "value": "57",
           "type": "NORMAL"
         },
         {
           "value": "64",
+          "type": "SPECIAL"
+        },
+        {
+          "value": "68",
           "type": "NORMAL"
         },
         {
-          "value": "67",
+          "value": "74",
           "type": "NORMAL"
         },
         {
-          "value": "73",
+          "value": "78",
+          "type": "NORMAL"
+        },
+        {
+          "value": "79",
           "type": "NORMAL"
         }
       ],
@@ -224,55 +222,49 @@
       "scheduleKey": "keno"
     },
     {
-      "id": "keno:3708249",
+      "id": "keno:3708337",
       "family": "Keno",
       "group": "keno",
       "session": "Frequent",
-      "drawNumber": "3708249",
-      "sourceExternalId": "3708249",
+      "drawNumber": "3708337",
+      "sourceExternalId": "3708337",
       "multiplier": null,
-      "sourceDrawTimestamp": "2026-10-23T04:20:00Z",
+      "sourceDrawTimestamp": "2026-10-23T11:20:00Z",
       "sourceDrawingDate": "2026-10-23",
-      "drawDate": "2026-10-22",
+      "drawDate": "2026-10-23",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "1",
-        "4",
         "6",
+        "10",
         "11",
+        "13",
         "14",
-        "15",
         "19",
-        "20",
-        "21",
-        "22",
-        "32",
-        "36",
-        "41",
-        "43",
+        "23",
+        "24",
+        "31",
         "44",
-        "52",
-        "74",
-        "77",
-        "78"
+        "47",
+        "53",
+        "60",
+        "63",
+        "64",
+        "69",
+        "72",
+        "73",
+        "76"
       ],
       "specialNumbers": [
-        "67"
+        "41"
       ],
-      "sourceWarnings": [
-        "Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp."
-      ],
+      "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "1",
-          "type": "NORMAL"
-        },
-        {
-          "value": "4",
-          "type": "NORMAL"
-        },
-        {
           "value": "6",
+          "type": "NORMAL"
+        },
+        {
+          "value": "10",
           "type": "NORMAL"
         },
         {
@@ -280,11 +272,11 @@
           "type": "NORMAL"
         },
         {
-          "value": "14",
+          "value": "13",
           "type": "NORMAL"
         },
         {
-          "value": "15",
+          "value": "14",
           "type": "NORMAL"
         },
         {
@@ -292,55 +284,59 @@
           "type": "NORMAL"
         },
         {
-          "value": "20",
+          "value": "23",
           "type": "NORMAL"
         },
         {
-          "value": "21",
+          "value": "24",
           "type": "NORMAL"
         },
         {
-          "value": "22",
-          "type": "NORMAL"
-        },
-        {
-          "value": "32",
-          "type": "NORMAL"
-        },
-        {
-          "value": "36",
+          "value": "31",
           "type": "NORMAL"
         },
         {
           "value": "41",
-          "type": "NORMAL"
-        },
-        {
-          "value": "43",
-          "type": "NORMAL"
+          "type": "SPECIAL"
         },
         {
           "value": "44",
           "type": "NORMAL"
         },
         {
-          "value": "52",
+          "value": "47",
           "type": "NORMAL"
         },
         {
-          "value": "67",
-          "type": "SPECIAL"
-        },
-        {
-          "value": "74",
+          "value": "53",
           "type": "NORMAL"
         },
         {
-          "value": "77",
+          "value": "60",
           "type": "NORMAL"
         },
         {
-          "value": "78",
+          "value": "63",
+          "type": "NORMAL"
+        },
+        {
+          "value": "64",
+          "type": "NORMAL"
+        },
+        {
+          "value": "69",
+          "type": "NORMAL"
+        },
+        {
+          "value": "72",
+          "type": "NORMAL"
+        },
+        {
+          "value": "73",
+          "type": "NORMAL"
+        },
+        {
+          "value": "76",
           "type": "NORMAL"
         }
       ],
@@ -1066,42 +1062,40 @@
       "scheduleKey": "powerball"
     },
     {
-      "id": "racetrax:850783",
+      "id": "racetrax:850860",
       "family": "Racetrax",
       "group": "racetrax",
       "session": "Frequent",
-      "drawNumber": "850783",
-      "sourceExternalId": "850783",
+      "drawNumber": "850860",
+      "sourceExternalId": "850860",
       "multiplier": 1,
-      "sourceDrawTimestamp": "2026-10-23T04:26:00Z",
+      "sourceDrawTimestamp": "2026-10-23T11:24:00Z",
       "sourceDrawingDate": "2026-10-23",
-      "drawDate": "2026-10-22",
+      "drawDate": "2026-10-23",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "3",
-        "4",
-        "8",
-        "1"
+        "9",
+        "2",
+        "1",
+        "8"
       ],
       "specialNumbers": [],
-      "sourceWarnings": [
-        "Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp."
-      ],
+      "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "3",
+          "value": "9",
           "type": "FIRST"
         },
         {
-          "value": "4",
+          "value": "2",
           "type": "SECOND"
         },
         {
-          "value": "8",
+          "value": "1",
           "type": "THIRD"
         },
         {
-          "value": "1",
+          "value": "8",
           "type": "FOURTH"
         }
       ],
@@ -1111,42 +1105,40 @@
       "scheduleKey": "racetrax"
     },
     {
-      "id": "racetrax:850782",
+      "id": "racetrax:850859",
       "family": "Racetrax",
       "group": "racetrax",
       "session": "Frequent",
-      "drawNumber": "850782",
-      "sourceExternalId": "850782",
-      "multiplier": 1,
-      "sourceDrawTimestamp": "2026-10-23T04:21:00Z",
+      "drawNumber": "850859",
+      "sourceExternalId": "850859",
+      "multiplier": 3,
+      "sourceDrawTimestamp": "2026-10-23T11:20:00Z",
       "sourceDrawingDate": "2026-10-23",
-      "drawDate": "2026-10-22",
+      "drawDate": "2026-10-23",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "3",
-        "2",
-        "10",
-        "4"
+        "6",
+        "7",
+        "4",
+        "1"
       ],
       "specialNumbers": [],
-      "sourceWarnings": [
-        "Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp."
-      ],
+      "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "3",
+          "value": "6",
           "type": "FIRST"
         },
         {
-          "value": "2",
+          "value": "7",
           "type": "SECOND"
         },
         {
-          "value": "10",
+          "value": "4",
           "type": "THIRD"
         },
         {
-          "value": "4",
+          "value": "1",
           "type": "FOURTH"
         }
       ],
