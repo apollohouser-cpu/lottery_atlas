@@ -219,3 +219,26 @@ option, sharing, annuity and history rules still require reconciliation before
 scope closure. No fresh retrieval, public feed, build, UI or acceptance claimed.
 Next finish those rule contracts and product dispositions, then coupled atomic
 collection. Original scope/release deadlines remain unchanged.
+
+
+## October 22, 23:27 ET — draw rule prose contracts
+
+All eight retained game pages now pass strict rule-prose contracts alongside
+schedule validation. These retain purchase/option terms, Sum It Up exclusions,
+annuity/cash alternatives and sharing/liability qualifications. No new source
+retrieval is claimed. All39 Idaho Python tests pass, including changed/removed
+prose and wrong-game rejection; presentation styles are excluded from rule text.
+
+Explicit source discrepancies must accompany presentation: Powerball prose says
+10x at $150 million or less while its footnote says under $150 million. Pick3
+introductory 4-way wording conflicts with its 3-way schedule, and its repeated-
+digit examples are inconsistent; never compute matching outcomes from those
+examples. Both Pick pages have ambiguous drawing-time wording, so no corrected
+cutoff is inferred. XsOs general split-prize language is qualified by the later
+lower-tier liability-limit rule. MM's legacy table heading remains subordinate
+to its explicit per-ticket multiplier description. These are source limitations,
+not permission to silently repair official text or broaden counts.
+
+Scope closure still requires final product/history dispositions and subsequent
+strict product collection. No public feed/build/UI or acceptance; scope due
+October23 14:22ET and release due October27 14:22ET remain unchanged.
