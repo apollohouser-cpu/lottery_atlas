@@ -260,3 +260,24 @@ older MFL. This is work/idaho_scope/result-report-stage.json, not a public feed 
 new source retrieval. All31 Idaho Python tests pass. Publication retention,
 schedules, other products and app/native remain open. Scope/release deadlines
 unchanged; next finalize the full scope and literal schedule/rule contracts.
+
+
+## October 22, 22:27 ET — literal draw schedule contracts
+
+Reviewed and gated all eight captured HTML prize matrices:70 physical rows,
+with exact game titles, column headings, ordered match identities, ball-symbol
+classes, literal cells and surrounding schedule text. Powerball preserves its
+PowerPlay and Double Play columns separately and its conditional10x footnote;
+no base schedule is invented. Pick3/4 retain the explicit $1 wager basis and
+Idaho Cash retains categorical Free Ticket and quick-pick qualification.
+Mega Millions' source heading literally says “Megaplier”; this legacy heading
+is preserved as source text, not interpreted as a shared draw multiplier.
+
+All eight retained full-page captures pass the contracts. All35 Idaho Python
+tests pass, including removed/duplicated tiers, altered prizes/matches/symbols,
+wrong titles/headers, changed qualifications and duplicate matrices. These
+contracts cover the tables and their immediate qualifications only; broader
+option, sharing, annuity and history rules still require reconciliation before
+scope closure. No fresh retrieval, public feed, build, UI or acceptance claimed.
+Next finish those rule contracts and product dispositions, then coupled atomic
+collection. Original scope/release deadlines remain unchanged.
