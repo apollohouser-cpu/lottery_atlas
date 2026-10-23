@@ -5,6 +5,8 @@ from lxml import html
 
 from tooling.idaho_draw_results import GAMES, API, parse_results
 from tooling.idaho_mfl_results import parse_results as parse_mfl
+from tooling.idaho_draw_reports import parse_reports
+from tooling.idaho_mfl_report import parse_report as parse_mfl_report
 
 
 def source_dates(raw, slug, *, as_of):
@@ -48,8 +50,17 @@ def build_window(pages, fetch_json, *, as_of):
     results = []
     for slug in GAMES:
         for draw_date in source_dates(pages[slug], slug, as_of=as_of):
-            results.extend(parse_results(fetch_json(API + slug + '/' + draw_date), slug, draw_date, as_of=as_of))
-    results.extend(parse_mfl(pages['millionaire-for-life'], as_of=as_of))
+            payload = fetch_json(API + slug + '/' + draw_date)
+            dated = parse_results(payload, slug, draw_date, as_of=as_of)
+            reports = {r['group']: r for r in parse_reports(payload, slug, draw_date, as_of=as_of)}
+            for result in dated:
+                joined = reports[result['group']]
+                result.update(report=joined['report'], reportGap=joined['gap'])
+            results.extend(dated)
+    for result in parse_mfl(pages['millionaire-for-life'], as_of=as_of):
+        report = parse_mfl_report(pages['millionaire-for-life'], result['drawDate'], as_of=as_of)
+        result.update(report=report, reportGap=None if report else 'No exact-date Idaho HTML report available.')
+        results.append(result)
     identities = {(r['group'], r['drawDate']) for r in results}
     groups = {r['group'] for r in results}
     if len(results) != 22 or len(identities) != 22 or len(groups) != 11:
@@ -57,4 +68,4 @@ def build_window(pages, fetch_json, *, as_of):
     if any(sum(r['group'] == group for r in results) != 2 for group in groups):
         raise ValueError('Wrong per-group window')
     return {'state': 'Idaho', 'results': results,
-            'coverage': 'Two dated results per group. Winner reports, schedules, jackpots and instant products are not included in this private stage.'}
+            'coverage': 'Two dated results per group with exact-date Idaho reports or explicit gaps. Schedules, jackpots and instant products are not included in this private stage.'}

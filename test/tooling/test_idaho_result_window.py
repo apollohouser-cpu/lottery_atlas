@@ -17,7 +17,7 @@ def pages():
         headers = ['Date', 'Winning Numbers'] + (['Multiplier'] if slug in ('powerball', 'lotto-america') else []) + ['Jackpot']
         dates = ['10/21/26'] if slug.startswith('pick-') else ['10/21/26', '10/20/26', '10/19/26']
         result[slug] = '<html><head><title>' + name + ' | Idaho Lottery</title></head><body><div id="tab4"><table><thead><tr>' + ''.join('<th>'+h+'</th>' for h in headers) + '</tr></thead><tbody>' + ''.join('<tr><td data-title="Date">'+d+'</td></tr>' for d in dates) + '</tbody></table></div></body></html>'
-    result['millionaire-for-life'] = (FIX / 'idaho_mfl_history.html').read_text()
+    result['millionaire-for-life'] = (FIX / 'idaho_mfl_report.html').read_text()
     return result
 
 

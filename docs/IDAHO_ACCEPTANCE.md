@@ -242,3 +242,21 @@ isolation, malformed/duplicate tiers, unsafe counts and exact-date rejection.
 This is a parser checkpoint, not published coverage. Next finalize scope and
 literal schedule/rule contracts, MFL reports and product validation, then atomic
 collection and app/native integration. Original deadlines unchanged.
+
+
+## October 22, 21:30 ET — MFL exact-date report and integrated private stage
+
+Implemented a strict MFL Idaho HTML report parser alongside its validated result
+history. The parser requires the Idaho regional date control, exact headers,
+all9 source match/prize identities and safe integer counts. The current October21
+report joins only October21; October20 remains unavailable. Missing, duplicated,
+wrong-region or malformed rows fail closed even when requesting an older date.
+Annuity labels remain literal; no cash-option value or paid-claim inference.
+
+The private window now joins each API report by its validated game/group/date and
+MFL by its own HTML report date. Replaying retained October22 captures produces
+22 results with12 supported reports and10 explicit gaps:8 Pick, older XsOs and
+older MFL. This is work/idaho_scope/result-report-stage.json, not a public feed or
+new source retrieval. All31 Idaho Python tests pass. Publication retention,
+schedules, other products and app/native remain open. Scope/release deadlines
+unchanged; next finalize the full scope and literal schedule/rule contracts.
