@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'idaho_coverage_contract.dart';
 
-/// Initial audited baseline gate. Not yet a validator for advancing source data.
+/// Reviewed contract with numeric Scratch continuity. Draw advancement is pending.
 class IdahoCoverageValidator {
   static final Map<String, dynamic> _contract = jsonDecode(
     idahoCoverageContractJson,
@@ -52,13 +52,64 @@ class IdahoCoverageValidator {
         throw const FormatException('Invalid source evidence');
       }
     }
-    if (!_equal(content, _contract)) {
+    final normalized = jsonDecode(jsonEncode(content)) as Map<String, dynamic>;
+    _scratch(_contract['scratch'], normalized['scratch']);
+    normalized['scratch'] = _contract['scratch'];
+    if (!_equal(normalized, _contract)) {
       throw const FormatException('Idaho content outside audited baseline');
     }
     return data;
   }
 
+  // Keep reviewed identities, metadata, original quantities and unknown statuses.
+  // Only known remaining quantities can decrease; the publisher applies this
+  // same rule because the source supplies no inventory verification date.
+  static void _scratch(dynamic before, dynamic after) {
+    if (after is! Map || after['games'] is! List) {
+      throw const FormatException('Missing Scratch catalog');
+    }
+    final normalized = jsonDecode(jsonEncode(after)) as Map<String, dynamic>;
+    final oldGames = before['games'] as List;
+    final games = normalized['games'] as List;
+    if (games.length != oldGames.length) {
+      throw const FormatException('Scratch identity loss');
+    }
+    for (var i = 0; i < games.length; i++) {
+      final game = games[i];
+      final old = oldGames[i];
+      if (game is! Map || game['prizeTiers'] is! List) {
+        throw const FormatException('Malformed Scratch game');
+      }
+      final tiers = game['prizeTiers'] as List;
+      final oldTiers = old['prizeTiers'] as List;
+      if (tiers.length != oldTiers.length) {
+        throw const FormatException('Scratch tier loss');
+      }
+      for (var j = 0; j < tiers.length; j++) {
+        final tier = tiers[j];
+        if (tier is! Map ||
+            tier['remaining'] is! int ||
+            tier['remaining'] < 0 ||
+            tier['remaining'] > oldTiers[j]['remaining']) {
+          throw const FormatException('Scratch count regression');
+        }
+      }
+      if (game['topPrizesRemaining'] is! int ||
+          game['topPrizesRemaining'] != tiers.first['remaining']) {
+        throw const FormatException('Scratch top-tier mismatch');
+      }
+      game['topPrizesRemaining'] = old['topPrizesRemaining'];
+      for (var j = 0; j < tiers.length; j++) {
+        tiers[j]['remaining'] = oldTiers[j]['remaining'];
+      }
+    }
+    if (!_equal(normalized, before)) {
+      throw const FormatException('Scratch structure or status changed');
+    }
+  }
+
   static void continuity(Map<String, dynamic> old, Map<String, dynamic> next) {
+    _scratch(old['scratch'], next['scratch']);
     if (DateTime.parse(
       next['collectionStartedAt'],
     ).isBefore(DateTime.parse(old['collectionStartedAt']))) {

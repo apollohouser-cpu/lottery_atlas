@@ -466,3 +466,18 @@ with strict dated result/report and typed product validation plus continuity
 before wiring visible screens. No UI or native build changed, and no acceptance
 or deadline change. Five Flutter tests pass; the three production Dart files
 and test analyze clean. Existing Python publication checks remain unchanged.
+
+
+## October 23, 12:46 ET — Dart numeric Scratch continuity
+
+The coupled loader now accepts decreasing known Scratch remaining quantities
+while preserving reviewed game/tier identities, original quantities, source
+metadata and explicit unknown status. Top-prize summaries must match the first
+tier. Increased, fractional or negative counts, missing games/tiers, changed
+structure and invented source dates fail closed. Continuity compares with the
+retained cache, not only the bundled baseline. Eight Flutter tests pass,
+including remote adoption and retention against a newer lower-count cache.
+
+Draw/date/report advancement and Raffle promotion advancement still require
+their strict dynamic validation before visible UI integration; their current
+exact-baseline gate remains. No native build, acceptance or deadline change.

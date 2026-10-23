@@ -68,4 +68,60 @@ void main() {
     ).load();
     expect(data['results'].length, 22);
   });
+  test(
+    'numeric Scratch decreases adopt without inventing verification date',
+    () async {
+      final candidate = jsonDecode(raw);
+      candidate['scratch']['games'][0]['topPrizesRemaining'] = 1;
+      candidate['scratch']['games'][0]['prizeTiers'][0]['remaining'] = 1;
+      String? saved;
+      final result = await IdahoCoverageLoader(
+        readCache: () async => raw,
+        writeCache: (value) async {
+          saved = value;
+        },
+        fetchRemote: () async => jsonEncode(candidate),
+        readBundle: () async => raw,
+      ).load();
+      expect(result['scratch']['games'][0]['topPrizesRemaining'], 1);
+      expect(result['scratch']['games'][0]['sourceDate'], isNull);
+      expect(saved, jsonEncode(candidate));
+    },
+  );
+  test('Scratch structural and count mutations fail closed', () {
+    for (final change in <void Function(dynamic)>[
+      (d) => d['scratch']['games'][0]['prizeTiers'][1]['remaining'] = -1,
+      (d) => d['scratch']['games'][0]['prizeTiers'][1]['remaining'] = 6,
+      (d) => d['scratch']['games'][0]['prizeTiers'][1]['remaining'] = 1.5,
+      (d) => d['scratch']['games'][0]['prizeTiers'][1]['original'] = 6,
+      (d) => d['scratch']['games'][0]['topPrizesRemaining'] = 1,
+      (d) => d['scratch']['games'].removeLast(),
+      (d) => d['scratch']['games'][0]['sourceDate'] = '2026-10-23',
+    ]) {
+      final candidate = jsonDecode(raw);
+      change(candidate);
+      expect(
+        () => IdahoCoverageValidator.decode(jsonEncode(candidate)),
+        throwsFormatException,
+      );
+    }
+  });
+  test(
+    'remote cannot increase counts relative to newer retained cache',
+    () async {
+      final cached = jsonDecode(raw);
+      cached['scratch']['games'][0]['prizeTiers'][1]['remaining'] = 3;
+      var writes = 0;
+      final result = await IdahoCoverageLoader(
+        readCache: () async => jsonEncode(cached),
+        writeCache: (_) async {
+          writes++;
+        },
+        fetchRemote: () async => raw,
+        readBundle: () async => raw,
+      ).load();
+      expect(result['scratch']['games'][0]['prizeTiers'][1]['remaining'], 3);
+      expect(writes, 0);
+    },
+  );
 }
