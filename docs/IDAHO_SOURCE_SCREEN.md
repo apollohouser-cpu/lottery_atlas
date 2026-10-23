@@ -499,3 +499,24 @@ Dart and test analyze clean. These synthetic tests do not assert a new source
 result. Draw/date/report advancement is still exact-baseline gated and remains
 next before visible UI. No source refresh, native build, acceptance or deadline
 change.
+
+
+## October 23, 14:41 ET — dynamic Dart draw/report validation
+
+Replaced the exact draw baseline restriction with strict validation of all eleven
+groups/two dates: ranges, unique main balls, Pick digit/session identity,
+Powerball/Double Play separation, per-draw multiplier constraints, literal XsOs
+codes/images, canonical dates and Boise collection-day bounds. Source routes and
+report joins must match the result date; Idaho labels, tier order, count units,
+free-ticket categories and all reviewed limitations remain exact. Counts must be
+nonnegative safe integers; Pick reports remain excluded. A missing exact-date
+report may become available; existing reports/results cannot change or disappear
+for retained dates. Every group's two-date window must progress without regression,
+including paired PB/DP and Pick Day/Night dates.
+
+Seventeen Flutter tests pass, including synthetic advancement of all groups,
+report availability upgrade, invalid identities/ranges/counts and cache retention
+after corrections/regressions. Changed Dart/test analyze clean. These are loader
+tests, not new source or native evidence. Next visible draw and typed-product
+integration, then native traversal and ordinary restoration. No native build,
+acceptance or deadline change.

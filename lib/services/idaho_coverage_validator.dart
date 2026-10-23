@@ -1,10 +1,11 @@
 import 'dart:convert';
+import 'idaho_draw_validator.dart';
 import 'package:timezone/data/latest.dart' as tzdata;
 import 'package:timezone/timezone.dart' as tz;
 import 'package:flutter/foundation.dart';
 import 'idaho_coverage_contract.dart';
 
-/// Reviewed contract with numeric Scratch continuity. Draw advancement is pending.
+/// Reviewed contract with numeric Scratch continuity. Strict draw/report and product continuity.
 class IdahoCoverageValidator {
   static final Map<String, dynamic> _contract = jsonDecode(
     idahoCoverageContractJson,
@@ -57,6 +58,12 @@ class IdahoCoverageValidator {
       }
     }
     final normalized = jsonDecode(jsonEncode(content)) as Map<String, dynamic>;
+    IdahoDrawValidator.validate(
+      normalized['results'],
+      _contract['results'],
+      time,
+    );
+    normalized['results'] = _contract['results'];
     _scratch(_contract['scratch'], normalized['scratch']);
     normalized['scratch'] = _contract['scratch'];
     _raffle(_contract['raffle'], normalized['raffle'], time);
@@ -171,6 +178,7 @@ class IdahoCoverageValidator {
   }
 
   static void continuity(Map<String, dynamic> old, Map<String, dynamic> next) {
+    IdahoDrawValidator.continuity(old['results'], next['results']);
     _scratch(old['scratch'], next['scratch']);
     _raffle(
       old['raffle'],
