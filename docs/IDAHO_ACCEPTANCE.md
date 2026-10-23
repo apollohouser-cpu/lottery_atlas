@@ -698,3 +698,25 @@ Returning to the same app process retained the detail's final reading position.
 The simulator is now upright. Other products, remaining draw/date/schedule
 flows, native2x, remote adoption and failure-retention checks remain open.
 No acceptance or deadline change; retained data and validation are unchanged.
+
+
+## October 23, 19:45 ET run — native TouchTab and Raffle flows
+
+Continued ordinary b8b99a2 on the original iPhone17e, upright at normal text.
+InstaPlay detail returned to its 12-entry catalog. Tabs showed 11 entries;
+Wild Thing Touchtab exposed all four separate wagers ($0.25/$0.50/$1/$2),
+corresponding top prizes ($50/$100/$200/$599), source odds and voucher/rule
+qualifications. Its source action opened Safari at idaholottery.com; returning
+to the same app process preserved the detail reading position and closing it
+restored the 11-entry catalog. This checks the OS handoff, not source-content
+completeness. Fixed Tab schedules and price-filter traversal remain open.
+
+Raffle showed one entry, the October21 daily promotion 012426 separately from
+unavailable final results, the retained odds discrepancy, announcement timing
+and all seven schedule rows. Fixed paging traversed the long rule text to the
+official source control. Safari handoff and return retained the final detail
+position. No new source retrieval or newer verification is claimed.
+
+Remaining native gates include draw groups/both dates/family source returns,
+full schedules, numeric Scratch/fixed Tabs/filter flows, native2x, newer remote
+adoption and controlled failure retention. No acceptance or deadline change.
