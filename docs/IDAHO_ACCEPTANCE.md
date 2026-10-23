@@ -547,3 +547,18 @@ visible UI integration. Do not adopt only the old numeric Scratch feed or turn
 unknown inventory into zeros. The remaining work is draw/product presentation,
 native traversal and cache recovery/ordinary-build restoration. No new native
 build or state acceptance; October27 14:22ET deadline unchanged.
+
+
+## October 23, 11:46 ET — initial Dart baseline loader
+
+Added the coupled Idaho asset, loader and audited baseline contract. Cache and
+bundle fallback preserve typed unavailable inventory, including Mistletoe Mystery;
+a rejected or failed remote request does not write over the retained cache.
+A valid remote response remains usable if persistence fails.
+
+This is an initial exact-content gate, NOT completed app integration: advancing
+source dates/counts currently fail closed. Next replace the baseline restriction
+with strict dated result/report and typed product validation plus continuity
+before wiring visible screens. No UI or native build changed, and no acceptance
+or deadline change. Five Flutter tests pass; the three production Dart files
+and test analyze clean. Existing Python publication checks remain unchanged.
