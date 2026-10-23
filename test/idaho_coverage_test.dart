@@ -124,4 +124,88 @@ void main() {
       expect(writes, 0);
     },
   );
+  test(
+    'Raffle promotion advances independently of unavailable final result',
+    () async {
+      final candidate = jsonDecode(raw);
+      candidate['raffle']['dailyPromotions'].add({
+        'date': '2026-10-22',
+        'ticketNumber': '000001',
+      });
+      final result = await IdahoCoverageLoader(
+        readCache: () async => raw,
+        writeCache: (_) async {},
+        fetchRemote: () async => jsonEncode(candidate),
+        readBundle: () async => raw,
+      ).load();
+      expect(result['raffle']['dailyPromotions'].length, 2);
+      expect(result['raffle']['finalResult'], isNull);
+    },
+  );
+  test(
+    'Raffle invalid dates, ticket ranges and final inference fail closed',
+    () {
+      for (final row in [
+        {'date': '2026-10-21', 'ticketNumber': '000001'},
+        {'date': '2026-10-24', 'ticketNumber': '000001'},
+        {'date': '2026-10-32', 'ticketNumber': '000001'},
+        {'date': '2026-10-22', 'ticketNumber': '000000'},
+        {'date': '2026-10-22', 'ticketNumber': '500001'},
+        {'date': '2026-10-22', 'ticketNumber': '1'},
+        {'date': '2026-10-22', 'ticketNumber': 1},
+      ]) {
+        final candidate = jsonDecode(raw);
+        candidate['raffle']['dailyPromotions'].add(row);
+        expect(
+          () => IdahoCoverageValidator.decode(jsonEncode(candidate)),
+          throwsFormatException,
+        );
+      }
+      final candidate = jsonDecode(raw);
+      candidate['raffle']['finalResult'] = '012426';
+      expect(
+        () => IdahoCoverageValidator.decode(jsonEncode(candidate)),
+        throwsFormatException,
+      );
+    },
+  );
+  test('Raffle future date uses Boise collection calendar', () {
+    final candidate = jsonDecode(raw);
+    candidate['collectionStartedAt'] = '2026-10-23T00:30:00Z';
+    candidate['raffle']['dailyPromotions'].add({
+      'date': '2026-10-23',
+      'ticketNumber': '000001',
+    });
+    expect(
+      () => IdahoCoverageValidator.decode(jsonEncode(candidate)),
+      throwsFormatException,
+    );
+  });
+  test('Raffle retained promotions cannot disappear or change', () async {
+    final cached = jsonDecode(raw);
+    cached['raffle']['dailyPromotions'].add({
+      'date': '2026-10-22',
+      'ticketNumber': '000001',
+    });
+    for (final correction in [false, true]) {
+      final candidate = jsonDecode(correction ? jsonEncode(cached) : raw);
+      if (correction) {
+        candidate['raffle']['dailyPromotions'][1]['ticketNumber'] = '000002';
+      }
+      var writes = 0;
+      final result = await IdahoCoverageLoader(
+        readCache: () async => jsonEncode(cached),
+        writeCache: (_) async {
+          writes++;
+        },
+        fetchRemote: () async => jsonEncode(candidate),
+        readBundle: () async => raw,
+      ).load();
+      expect(
+        result['raffle']['dailyPromotions'],
+        cached['raffle']['dailyPromotions'],
+      );
+      expect(writes, 0);
+    }
+  });
 }

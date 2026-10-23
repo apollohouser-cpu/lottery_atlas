@@ -481,3 +481,21 @@ including remote adoption and retention against a newer lower-count cache.
 Draw/date/report advancement and Raffle promotion advancement still require
 their strict dynamic validation before visible UI integration; their current
 exact-baseline gate remains. No native build, acceptance or deadline change.
+
+
+## October 23, 13:46 ET — Dart Raffle promotion validation
+
+Raffle daily promotions now advance independently of the unavailable final
+drawing. Validation requires ordered unique real dates within the reviewed
+October21–November9 promotion window, no later than the Boise collection
+calendar day, and literal six-digit ticket numbers 000001–500000. Existing
+promotions cannot disappear or change against either baseline or retained cache.
+Rules, schedules, edition, limitations and final-result status remain exact.
+Collections entering the December29 final-announcement period require review.
+
+Twelve Flutter tests pass, including synthetic promotion adoption, date/ticket
+rejection, Boise midnight boundary and correction/loss cache retention; changed
+Dart and test analyze clean. These synthetic tests do not assert a new source
+result. Draw/date/report advancement is still exact-baseline gated and remains
+next before visible UI. No source refresh, native build, acceptance or deadline
+change.

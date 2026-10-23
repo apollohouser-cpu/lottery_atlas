@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:timezone/data/latest.dart' as tzdata;
+import 'package:timezone/timezone.dart' as tz;
 import 'package:flutter/foundation.dart';
 import 'idaho_coverage_contract.dart';
 
@@ -7,6 +9,8 @@ class IdahoCoverageValidator {
   static final Map<String, dynamic> _contract = jsonDecode(
     idahoCoverageContractJson,
   );
+
+  static bool _zonesReady = false;
 
   static bool _equal(dynamic a, dynamic b) {
     if (a is Map && b is Map) {
@@ -55,6 +59,8 @@ class IdahoCoverageValidator {
     final normalized = jsonDecode(jsonEncode(content)) as Map<String, dynamic>;
     _scratch(_contract['scratch'], normalized['scratch']);
     normalized['scratch'] = _contract['scratch'];
+    _raffle(_contract['raffle'], normalized['raffle'], time);
+    normalized['raffle'] = _contract['raffle'];
     if (!_equal(normalized, _contract)) {
       throw const FormatException('Idaho content outside audited baseline');
     }
@@ -108,8 +114,69 @@ class IdahoCoverageValidator {
     }
   }
 
+  static void _raffle(dynamic before, dynamic after, DateTime collected) {
+    if (!_zonesReady) {
+      tzdata.initializeTimeZones();
+      _zonesReady = true;
+    }
+    final local = tz.TZDateTime.from(
+      collected,
+      tz.getLocation('America/Boise'),
+    );
+    final asOf = DateTime.utc(local.year, local.month, local.day);
+    if (!asOf.isBefore(DateTime.utc(2026, 12, 29))) {
+      throw const FormatException('Raffle announcement requires source review');
+    }
+    if (after is! Map || after['dailyPromotions'] is! List) {
+      throw const FormatException('Missing Raffle promotions');
+    }
+    final normalized = Map<String, dynamic>.from(after);
+    final rows = normalized['dailyPromotions'] as List;
+    final indexed = <String, dynamic>{};
+    String? previous;
+    for (final row in rows) {
+      if (row is! Map ||
+          !setEquals(row.keys.toSet(), {'date', 'ticketNumber'}) ||
+          row['date'] is! String ||
+          row['ticketNumber'] is! String) {
+        throw const FormatException('Malformed Raffle promotion');
+      }
+      final date = row['date'] as String;
+      final day = DateTime.tryParse(date);
+      final number = row['ticketNumber'] as String;
+      if (!RegExp(r'^2026-\d{2}-\d{2}$').hasMatch(date) ||
+          day == null ||
+          day.toIso8601String().substring(0, 10) != date ||
+          day.isBefore(DateTime(2026, 10, 21)) ||
+          day.isAfter(DateTime(2026, 11, 9)) ||
+          DateTime.utc(day.year, day.month, day.day).isAfter(asOf) ||
+          (previous != null && date.compareTo(previous) <= 0) ||
+          !RegExp(r'^[0-9]{6}$').hasMatch(number) ||
+          int.parse(number) < 1 ||
+          int.parse(number) > 500000) {
+        throw const FormatException('Invalid Raffle promotion');
+      }
+      indexed[date] = row;
+      previous = date;
+    }
+    for (final row in before['dailyPromotions'] as List) {
+      if (!_equal(indexed[row['date']], row)) {
+        throw const FormatException('Raffle promotion correction or loss');
+      }
+    }
+    normalized['dailyPromotions'] = before['dailyPromotions'];
+    if (!_equal(normalized, before)) {
+      throw const FormatException('Raffle rules or final result changed');
+    }
+  }
+
   static void continuity(Map<String, dynamic> old, Map<String, dynamic> next) {
     _scratch(old['scratch'], next['scratch']);
+    _raffle(
+      old['raffle'],
+      next['raffle'],
+      DateTime.parse(next['collectionStartedAt']),
+    );
     if (DateTime.parse(
       next['collectionStartedAt'],
     ).isBefore(DateTime.parse(old['collectionStartedAt']))) {
