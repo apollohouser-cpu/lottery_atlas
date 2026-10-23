@@ -369,3 +369,23 @@ identity and fetch failure. The source-availability parser blocker is resolved;
 coupled atomic collection/publication and app/native remain open. No newer
 retrieval, source verification date, public feed/build or acceptance claimed.
 Release October27 14:22ET unchanged. Next coupled collector and retention tests.
+
+
+## October 23, 07:42 ET — fresh complete coupled in-memory collection
+
+A fresh85-request official collection passed all supported components together:
+22 draw selections with12 exact Idaho reports/10 gaps, eight schedule/rule
+pages, both image schedules,12 InstaPlay/11 Tab details with complete listing
+joins,33 Scratch listings (32 numeric inventories and one explicitly unavailable)
+and the Raffle schedule/rules plus Oct21 daily promotion. Collection started
+11:41:13UTC; individual actual retrieval timestamps/hashes are private in
+work/idaho_scope/coupled-20261023T114113/manifest.json. Source verification dates
+remain unchanged/unknown where not published; request time is not verification.
+
+The new collector returns only after every component validates. Full replay
+matches the complete private stage, and controlled failure at each of85 request
+positions aborts collection. All63 Idaho Python tests pass. This establishes
+complete in-memory collection, not atomic public publication or persisted-cache
+retention. Next add correction/regression continuity and atomic disk replacement,
+then audited feed/workflow integration and app/native. No public feed/build/UI or
+acceptance yet; release October27 14:22ET unchanged.
