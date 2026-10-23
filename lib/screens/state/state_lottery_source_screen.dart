@@ -1,3 +1,4 @@
+import '../../widgets/map/idaho_product_sheet.dart';
 import '../../widgets/map/idaho_draw_collection_sheet.dart';
 import '../../widgets/map/iowa_instant_inventory_sheet.dart';
 import '../../widgets/map/iowa_draw_collection_sheet.dart';
@@ -62,6 +63,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Idaho')
+            ListTile(
+              title: const Text('Idaho product catalogs'),
+              subtitle: const Text('Scratch, InstaPlay, Tabs and Raffle with explicit availability'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const IdahoProductSheet()),
+            ),
           if (source.stateName == 'Idaho')
             ListTile(
               title: const Text('Idaho results and schedules'),

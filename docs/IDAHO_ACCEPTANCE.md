@@ -635,3 +635,22 @@ final source in portrait/landscape at2x. Sheet/source screen/test analyze clean.
 These are widget checks, not native acceptance. Next typed Scratch/InstaPlay/Tab/
 Raffle UI, then ordinary native build and acceptance flows. No new native build,
 source retrieval, acceptance or deadline change.
+
+
+## October 23, 16:44 ET — typed product presentation
+
+Added a separate Idaho product catalog entry using the coupled loader: Scratch
+includes all numeric games plus the explicitly unavailable game; InstaPlay/Tab
+catalogs show printed schedules and distinguish TouchTab wager/top-prize rows;
+Raffle daily promotions remain separate from its unavailable final drawing.
+Search, listed-price filters, reset, detail return, fixed paging and official
+sources are available. Unknown inventory and progressive placeholders are labeled
+unavailable, never zero. Collection time is not called an inventory verification
+date; source qualifications and game dates remain visible.
+
+Two new widget tests pass across all four product types with detail/source
+traversal at2x portrait/landscape and unavailable Scratch search/detail return.
+Product sheet/source screen/test analyze clean. Prior20 Idaho tests are unchanged.
+Next ordinary native build and all draw/product/source-return/layout/cache
+acceptance flows; no native build, source refresh, acceptance or deadline change
+at this checkpoint.
