@@ -218,3 +218,27 @@ or correction retention; those remain required before any public feed.
 
 Next reconcile scope and finish exact dated report/schedule contracts and
 coupled product collection. No public feed/build/UI/acceptance or deadline change.
+
+
+## October 22, 20:31 ET — strict Idaho report projection
+
+Added dated report parsing for the five reviewed API report families. It first
+validates game/date/result identity, then exact ordered source tier labels and
+nonnegative safe integer counts. Idaho arrays are used exclusively; national
+arrays never substitute. Powerball exposes only its8 published Power Play rows
+and9 separate Double Play rows, excluding undisplayed base zeros. Mega Millions
+preserves41 multiplier-specific rows; Lotto America17 base/bonus rows; Idaho
+Cash4 including categorical Free Ticket; XsOs5 match tiers. Counts remain labeled
+published Idaho prize-tier winners, not distinct tickets/people or cash claims.
+
+All14 captured dated responses validate:11 reports are available across the20
+API-derived selections. The older XsOs October11 response has an empty report
+array and remains unavailable, not zero. All8 Pick selections remain explicitly
+excluded pending report/unit review. The two MFL HTML result reports still need
+a separate exact-date report parser. No aggregates or inferred prizes are added.
+All27 Idaho Python tests pass, including missing-versus-zero reports, national
+isolation, malformed/duplicate tiers, unsafe counts and exact-date rejection.
+
+This is a parser checkpoint, not published coverage. Next finalize scope and
+literal schedule/rule contracts, MFL reports and product validation, then atomic
+collection and app/native integration. Original deadlines unchanged.
