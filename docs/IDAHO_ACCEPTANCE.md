@@ -368,3 +368,20 @@ No new retrieval or public publication. Listing-to-detail completeness, Tab and
 Raffle parsing, fresh Scratch and coupled atomic collection remain next; then
 app/native integration. Scope remains closed and release October27 14:22ET is
 unchanged. This detail-parser checkpoint is not acceptance or a new build.
+
+
+## October 23, 02:36 ET — strict typed Tab detail schedules
+
+Added exact reviewed contracts for all11 retained Tab detail pages/46 rows.
+Nine TouchTab schedules project wager/top-prize amounts in integer cents with
+literal overall odds; two fixed schedules project printed prize counts and
+amounts separately. Fractional values such as $0.25 wagers and $50.75/$101.75
+prizes survive exactly. Neither schedule type creates remaining-prize counts.
+Rules and location/day-of-play redemption qualifications remain source text.
+Changed headers, rows, identities or rules fail closed for review.
+
+All11 full captured pages validate and all47 Idaho Python tests pass, including
+wrong fixed/TouchTab variant, fractional money and malformed schedules. No new
+retrieval, public feed or build. Next listing/detail completeness and Raffle,
+then fresh strict Scratch and coupled atomic publication, followed by app/native.
+Scope closed; release October27 14:22ET unchanged; no acceptance claimed.
