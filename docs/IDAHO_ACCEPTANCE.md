@@ -616,3 +616,22 @@ after corrections/regressions. Changed Dart/test analyze clean. These are loader
 tests, not new source or native evidence. Next visible draw and typed-product
 integration, then native traversal and ordinary restoration. No native build,
 acceptance or deadline change.
+
+
+## October 23, 15:43 ET — visible Idaho draw integration
+
+Added Idaho results/schedules entry to the state source screen, backed by the
+coupled validated loader. All22 bounded selections expose exact Idaho report
+labels/tiers or explicit gaps, literal schedule rows and footnotes, reviewed rule
+prose/discrepancies, and both Sum It Up image transcriptions with their source
+wager-basis limitations. Powerball/Double Play columns remain separately labeled
+with a shared-page warning; MM has no shared draw multiplier. XsOs remain literal
+source codes. Fixed previous/next-page controls and official source actions are
+available; selection changes reset the reading position.
+
+Twenty Idaho Flutter tests pass: seventeen loader tests plus all22 selections at
+2x, Double Play warning traversal, and all eight family schedules plus DP to their
+final source in portrait/landscape at2x. Sheet/source screen/test analyze clean.
+These are widget checks, not native acceptance. Next typed Scratch/InstaPlay/Tab/
+Raffle UI, then ordinary native build and acceptance flows. No new native build,
+source retrieval, acceptance or deadline change.
