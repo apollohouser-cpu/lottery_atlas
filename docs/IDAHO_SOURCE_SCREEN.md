@@ -306,3 +306,22 @@ wrong-detail identity. This is an in-memory complete join, not disk publication
 or a fresh retrieval. Next Raffle parser, fresh strict Scratch and coupled atomic
 retention/publication, then app/native. Scope and October27 14:22ET deadline
 unchanged; no new public feed/build/UI or acceptance.
+
+
+## October 23, 04:38 ET — Raffle schedule and daily promotion parser
+
+Added strict2026 Raffle identity, seven-tier schedule and full two-section rule
+contracts. Daily promotion paragraphs are parsed separately: valid source-window
+dates, six-digit tickets000001–500000, unique dates and agreement between both
+published copies are required. Additional dated promotions can advance without
+changing static rules; missing/malformed copies fail closed. Final results remain
+unavailable and parsing stops for new review at the December29 announcement
+period rather than silently retaining a pending status after it.
+
+Retained October22 page validates with Oct21 promotional012426. Printed top-tier
+odds1:225000 and the500000-ticket/two-prize discrepancy remain explicit; final
+announcement qualifications and all claim/rule prose are preserved. All55 Idaho
+Python tests pass, including promotion progression, leading zeros, copy mismatch,
+invalid dates/numbers and changed odds/rules. No fresh retrieval or publication.
+Next fresh strict Scratch and coupled atomic collection/retention, then public
+feed and app/native. Scope closed; October27 14:22ET release unchanged.
