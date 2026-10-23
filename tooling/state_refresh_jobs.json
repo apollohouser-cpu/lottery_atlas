@@ -227,13 +227,15 @@
   {
     "state": "Idaho",
     "outputs": [
-      "data/idaho_scratch_catalog.generated.json"
+      "data/idaho_coverage.generated.json"
     ],
     "commands": [
       [
         "python3",
-        "tooling/import_idaho_scratch_catalog.py",
-        "data/idaho_scratch_catalog.generated.json"
+        "-m",
+        "tooling.collect_idaho_coverage",
+        "--output",
+        "data/idaho_coverage.generated.json"
       ]
     ]
   },

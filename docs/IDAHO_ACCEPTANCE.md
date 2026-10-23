@@ -508,3 +508,25 @@ Evidence is private atomic-replay-checks.json beside the prior coupled capture.
 No fresh retrieval, public feed, native build or acceptance. Next audit/export
 the coupled baseline and wire scheduled publication, then app/native integration.
 Release October27 14:22ET unchanged; scope remains closed.
+
+
+## October 23, 09:46 ET — audited coupled baseline and publisher wiring
+
+Staged identical public data/idaho_coverage.generated.json and
+ docs/idaho_coverage.json from the fully replay-validated October23 11:41:13UTC
+collection (223591 bytes each). All85 evidence URLs are public official sources;
+no private correspondence, local paths or agency identifiers enter the baseline.
+The feed retains all products, unavailable inventory and explicit report gaps.
+
+The scheduled Idaho transaction now invokes the coupled collector and preserves
+that single baseline on failure. Workflow staging/commit paths include the new
+feed. The old data/idaho_scratch_catalog.generated.json remains byte-for-byte
+unchanged with its original date; its numeric-only legacy schema cannot represent
+the new unavailable game. It is not refreshed or relabeled as this complete
+snapshot. The forthcoming Idaho app integration must use the coupled feed for
+current typed coverage. No legacy zero-count substitution or silent game removal.
+
+All476 Python tests pass, including67 Idaho tests and existing transaction tests.
+This checkpoint prepares publication; deployment/live-byte confirmation remains
+next, followed by Dart loader/UI and native acceptance. No native build or state
+acceptance; October27 14:22ET release deadline unchanged.
