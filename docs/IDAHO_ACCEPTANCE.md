@@ -530,3 +530,20 @@ All476 Python tests pass, including67 Idaho tests and existing transaction tests
 This checkpoint prepares publication; deployment/live-byte confirmation remains
 next, followed by Dart loader/UI and native acceptance. No native build or state
 acceptance; October27 14:22ET release deadline unchanged.
+
+
+## October 23, 10:44 ET — coupled deployment verified
+
+Publisher run39964023035 for fac9587 completed successfully. Independently fetched
+https://apollohouser-cpu.github.io/lottery_atlas/idaho_coverage.json and compared
+all223591 bytes with the audited tracked baseline: exact match, SHA256
+adcb110a68d8220120b4cd91b7f2bae48eb9bd974812f1351db339f9980e6642.
+This closes initial feed deployment, not mobile acceptance. No source retrieval
+date was advanced by checking the hosted copy.
+
+Next implement the Idaho Dart validator/loader with bundled fallback, strict
+dated result/report and typed product validation, and cache continuity before
+visible UI integration. Do not adopt only the old numeric Scratch feed or turn
+unknown inventory into zeros. The remaining work is draw/product presentation,
+native traversal and cache recovery/ordinary-build restoration. No new native
+build or state acceptance; October27 14:22ET deadline unchanged.
