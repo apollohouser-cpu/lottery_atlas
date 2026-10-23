@@ -242,3 +242,14 @@ not permission to silently repair official text or broaden counts.
 Scope closure still requires final product/history dispositions and subsequent
 strict product collection. No public feed/build/UI or acceptance; scope due
 October23 14:22ET and release due October27 14:22ET remain unchanged.
+
+
+## October 23, 00:29 ET — supported scope reconciliation
+
+The complete product/history/gap matrix is now fixed in IDAHO_ACCEPTANCE.md.
+Scope is closed ahead of its October23 14:22ET deadline; release implementation
+and acceptance remain open until evidenced. Raffle final and daily promotion
+remain separate, all retired-game imports are unavailable, and all current
+instant products require strict typed parsing before publication. Retained
+October22 captures support this decision; no newer source retrieval is claimed.
+Next strict product parsers and coupled atomic collection. No deadline change.

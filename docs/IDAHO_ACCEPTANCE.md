@@ -3,7 +3,7 @@
 Status: **ACTIVE — not accepted**. Sole active state from October 22, 2026
 at 14:22 ET, after Iowa acceptance.
 
-- Full supported scope and all product gaps due October 23 at 14:22 ET.
+- Full supported scope CLOSED October 23, 00:29 ET, ahead of October 23 at 14:22 ET.
 - Supported release decision due October 27 at 14:22 ET.
 - Fresh 120 elapsed hours for substantial all-game collection/app integration.
 - Extensions used: none. Finish early when evidence passes.
@@ -42,7 +42,7 @@ missing records do not block honest supported completion.
 
 ## Release gates
 
-- [ ] Reconcile every current product, variant, session, history limit and gap.
+- [x] Reconcile every current product, variant, session, history limit and gap (scope only; implementation/acceptance gates below remain open).
 - [ ] Validate actual dated source routes, count units and literal schedules.
 - [ ] Strict bounded collection with atomic correction/failure retention.
 - [ ] Fresh Scratch and separate instant-product dispositions.
@@ -304,3 +304,48 @@ not permission to silently repair official text or broaden counts.
 Scope closure still requires final product/history dispositions and subsequent
 strict product collection. No public feed/build/UI or acceptance; scope due
 October23 14:22ET and release due October27 14:22ET remain unchanged.
+
+
+## October 23, 00:29 ET — full supported scope closed
+
+The following matrix closes the 24-hour scope definition gate. It defines the
+required release implementation; it does not claim those features are already
+published or accepted. Evidence is the retained October22 official captures,
+reviewed contracts and earlier product audit. Release remains October27 14:22ET,
+with no extension and Idaho the sole active state.
+
+| Product | Required supported release surface | Explicit boundary |
+| --- | --- | --- |
+| Powerball / Double Play | Two dated selections each; separate results and Idaho reports; shared source page with correctly labeled PowerPlay/Double Play schedules and full qualifications | No undisplayed base winner counts; no conflicting historical jackpot/cash projection; conditional10x source discrepancy disclosed |
+| Mega Millions | Two dated results, exact-date Idaho multiplier-tier reports, literal schedule and rules | Per-ticket included multiplier, never a common draw multiplier; legacy Megaplier heading disclosed |
+| Lotto America | Two dated results, exact-date Idaho base/All Star Bonus reports, schedule and rules | National counts never substituted; jackpot sharing preserved |
+| Idaho Cash | Two dated results and Idaho reports; schedule and rules | Free Ticket categorical, quick-pick qualification; no invented dollar value or distinct-person count |
+| Millionaire For Life | Two HTML-derived dated results; report only for its own regional date; schedule and annuity/cash rule text | No invented API route or older-date report; static cash alternatives are rules, not actual paid claims |
+| Pick3 / Pick4 | Two dates for each Day/Night group; literal schedules, all rule prose and hash-gated Sum It Up images | All eight report selections excluded pending count-unit/identity verification; leading zeros preserved; inconsistent Pick3 examples and ambiguous time wording disclosed, never used to calculate matches/cutoffs |
+| Powerball Xs & Os | Two results with eight literal source codes and official images; exact-date Idaho report where present; schedule and full liability qualifications | No invented expanded team names; missing report unavailable; lower-tier sharing not inferred from general prose |
+| Scratch | Fresh strict list/detail/claim-date collection, remaining-prize tier catalog, search/filter/detail/source returns | Opening32 cards are not a freshly validated inventory; lower-tier unknowns retained; no full stock, sales or claims assertions |
+| InstaPlay | Separate typed catalog, detail rules and printed prize-count/amount/odds schedules for all listed games (opening12) | Printed counts are schedule counts, not remaining inventory; progressive and other $0 placeholders unavailable, not zero-dollar prizes |
+| Tabs | Separate typed catalog and detail schedules for all listed games (opening11: nine TouchTab and two fixed schedules) | TouchTab wager/top-prize/odds and fixed prize tables stay distinct; fractional values preserved; no remaining inventory |
+| 2026 Raffle | Literal seven-tier schedule/rules, final-draw status, separately dated daily promotional results with six-digit numbers | October22 capture has Oct21 promotional012426, not a final winner. Final announcement December29 12:20pm MT or within four business days after last ticket sold, whichever later. Printed top-tier odds1:225000 conflict with the stated500000-ticket limit/two prizes; preserve and label discrepancy, do not recalculate |
+| History / retired games | Bounded latest-two windows per active draw group, explicit history limitation and official source navigation | No complete archive or ten-year claim. Retired games, including Lucky for Life, receive no active results or invented current schedule; historical import is unavailable in this release |
+| Retailer / claims / VIP / help | Official source navigation with clear external destination | No retailer positions, coordinate joins, complete claims, account creation, submissions or attestations |
+
+The draw target is22 selections /11 groups /8 families. Replaying the retained
+captures currently yields12 exact reports and10 gaps, not a guaranteed future
+report count. The current rule scope is eight HTML schedule matrices/70 physical
+rows, eight prose contracts and two Sum It Up images/51 rows. No aggregate winner
+count, complete statewide coverage claim or duplicate XsOs alias is permitted.
+
+All products must carry actual retrieval/source dates, source URLs and limitations.
+List/detail identity completeness and schema validation precede publication.
+Coupled collection must stage all supported components, preserve prior bytes/dates
+on request/parse/write failure, reject unreviewed corrections/regressions, and
+publish atomically. UI/native gates must demonstrate all draw groups/both dates,
+source returns, long schedules, separate product filters/detail returns, enlarged
+text/layouts and remote adoption/failure retention, followed by ordinary-build
+restoration and independent live verification. These gates remain open.
+
+Next implement strict InstaPlay/Tab/Raffle parsing, refresh validated Scratch,
+and assemble the coupled atomic collector; then public feed and app/native work.
+Missing agency records do not block this bounded scope. No acceptance or new
+public feed/build/UI is claimed by scope closure.
