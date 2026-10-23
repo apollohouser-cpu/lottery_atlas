@@ -389,3 +389,26 @@ complete in-memory collection, not atomic public publication or persisted-cache
 retention. Next add correction/regression continuity and atomic disk replacement,
 then audited feed/workflow integration and app/native. No public feed/build/UI or
 acceptance yet; release October27 14:22ET unchanged.
+
+
+## October 23, 08:46 ET — continuity and atomic snapshot retention
+
+Added single-file atomic refresh around the complete collector. Existing draw
+windows cannot regress; overlapping result/report corrections or loss of known
+reports fail closed. Newly available exact-date reports may fill prior gaps.
+Scratch identity/status/structure changes require review and known remaining
+counts cannot increase. Instant catalogs and rule contracts must remain equal;
+Raffle promotion history cannot disappear or change. Unknown-to-known Scratch
+status currently requires review rather than silently changing representation.
+
+Unchanged content retains original bytes and collection date. A unique staged
+file is flushed before replacement; concurrent snapshot changes abort, and failed
+replacement cleans the temporary file. All67 Idaho tests pass, including count/
+date corrections, request failure, disk-replace failure and unchanged-byte/date
+retention. Full85-request retained-source replay initially writes successfully;
+controlled failure at every request preserves the prior complete snapshot bytes.
+Evidence is private atomic-replay-checks.json beside the prior coupled capture.
+
+No fresh retrieval, public feed, native build or acceptance. Next audit/export
+the coupled baseline and wire scheduled publication, then app/native integration.
+Release October27 14:22ET unchanged; scope remains closed.
