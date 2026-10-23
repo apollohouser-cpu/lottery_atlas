@@ -325,3 +325,27 @@ Python tests pass, including promotion progression, leading zeros, copy mismatch
 invalid dates/numbers and changed odds/rules. No fresh retrieval or publication.
 Next fresh strict Scratch and coupled atomic collection/retention, then public
 feed and app/native. Scope closed; October27 14:22ET release unchanged.
+
+
+## October 23, 05:34 ET — fresh Scratch source availability change
+
+Fresh official listing now contains33 cards. Mistletoe Mystery (public game1933)
+has blank remaining counts in all seven listed $25-plus tiers; its detail shows
+*not available for those same tiers and launch date October22. This is not a
+future-game exclusion or zero inventory. The existing strict importer correctly
+rejected the listing; no public snapshot or source-date advancement occurred.
+Raw listing/detail/claim captures and hashes are private under the dated
+work/idaho_scope/scratch-refresh directory.
+
+A diagnostic-only replay explicitly removed that one card to investigate the
+rest:32 other games/225 inventory tiers validate against fresh details and claim
+schedule. The private result is marked nonpublishable and is not a complete
+catalog. All56 Idaho Python tests pass, including regression checks that blank
+or unavailable high-tier counts cannot become zeros or lower-tier unknowns.
+
+Next add an explicitly typed unavailable-inventory disposition for this game,
+with full listing/detail identity and prize-structure validation, before coupled
+publication. Do not silently drop it, weaken existing numeric validation or use
+stale counts. This is a source availability change, not an extension: scope stays
+closed and release October27 14:22ET remains unchanged. No public feed/build/UI
+or acceptance is claimed.

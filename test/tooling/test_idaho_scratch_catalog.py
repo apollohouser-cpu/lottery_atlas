@@ -47,6 +47,14 @@ class IdahoTest(unittest.TestCase):
         for raw in [catalog()+catalog(),catalog().replace('$25','$5'),catalog().replace('/games/scratch/mega-cash','https://example.com/game'),catalog().replace('>3<','>-1<'),catalog().replace('Remaining','Claims')]:
             with self.subTest(raw=raw),self.assertRaises(ValueError):m.parse_catalog(raw)
 
+    def test_blank_high_tier_counts_are_not_zero_or_lower_tier_unknowns(self):
+        # October23 source: Mistletoe Mystery lists blank counts and its
+        # detail says *not available even for prizes at or above $25.
+        with self.assertRaises(ValueError):
+            m.parse_catalog(catalog().replace('>3<', '><'))
+        with self.assertRaises(ValueError):
+            m.parse_detail(detail().replace('>3<', '>*not available<'), GAME, {}, TODAY)
+
     def test_end_inclusive_and_claim_conflict_preserved(self):
         raw=table(['Number','Game Name','Official Game End','Last Day to Claim'],[['1919','Mega Cash','September 21, 2026','March 20, 2027']])
         with self.assertRaises(ValueError):m.parse_claims(table(['Number','Game Name','Official Game End','Last Day to Claim'],[]))
