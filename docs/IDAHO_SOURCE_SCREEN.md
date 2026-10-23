@@ -349,3 +349,23 @@ publication. Do not silently drop it, weaken existing numeric validation or use
 stale counts. This is a source availability change, not an extension: scope stays
 closed and release October27 14:22ET remains unchanged. No public feed/build/UI
 or acceptance is claimed.
+
+
+## October 23, 06:39 ET — typed unavailable Scratch recovery
+
+Added a separate reviewed unavailable-inventory type for Mistletoe Mystery,
+without relaxing the existing numeric importer. Exact listing identity, blank
+high-tier rows, detail image identity, price/top badges, all11 prize-structure
+rows, launch date and qualifications must agree with the reviewed source.
+Remaining counts stay null at every tier; original quantities are structure,
+not inventory. Unreviewed blanks, partially changed availability, identity or
+status changes fail closed. Numerically reported games retain strict validation.
+
+Complete replay of the fresh October23 captures now retains all33 listed games:
+32 numeric inventories/225 tiers plus one explicitly unavailable inventory with
+11 structure rows. Private typed-coverage-stage.json is not yet a published feed.
+All60 Idaho tests pass, including mixed known-zero/unknown inventories, duplicate
+identity and fetch failure. The source-availability parser blocker is resolved;
+coupled atomic collection/publication and app/native remain open. No newer
+retrieval, source verification date, public feed/build or acceptance claimed.
+Release October27 14:22ET unchanged. Next coupled collector and retention tests.
