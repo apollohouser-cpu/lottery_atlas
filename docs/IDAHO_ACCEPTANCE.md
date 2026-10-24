@@ -962,3 +962,23 @@ collection dates remain unchanged. Next resolve retention of that already-proven
 dated report with explicit original provenance and matching Python/Dart coverage,
 without weakening correction/report-loss checks or inventing a new retrieval.
 Newer remote adoption remains open; no acceptance or deadline change.
+
+
+## October 24, 09:00 ET run — bounded report-retention preparation
+
+Added an unwired preparation helper for the exact older-MFL report omission.
+It only carries an existing same-date report when all result identity/content
+matches, the older result has the known unavailable-HTML gap, and the original
+source hash and timezone-aware collection date are available. It preserves the
+original provenance through repeated retention and rejects corrections, current
+result loss, ambiguous/missing hashes and invalid dates. It never fills other
+families or overwrites a newly supplied report. Publication is not yet wired to
+this helper: Python continuity, Dart validation and visible provenance must be
+completed together before deployment.
+
+All71 Idaho Python tests pass. Applied privately to the retained October24
+candidate, it proposes13 reports (one carried October22 MFL report) and9 gaps.
+A diagnostic comparison with provenance removed passes all remaining existing
+content-continuity checks; this is not validation of the new provenance schema.
+Private retention-proposal.json is review material only. Public/bundled/cache
+bytes and dates are unchanged; newer remote adoption and acceptance remain open.
