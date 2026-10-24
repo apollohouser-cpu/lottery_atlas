@@ -6,7 +6,7 @@ from pathlib import Path
 import tempfile
 from datetime import datetime
 from tooling.idaho_coverage import collect
-from tooling.idaho_retained_reports import check_report_provenance
+from tooling.idaho_retained_reports import check_report_provenance, retain_mfl_report
 
 
 def _indexed(rows, key):
@@ -62,6 +62,7 @@ def refresh(path, fetch, *, now=None):
     candidate=collect(fetch,now=now)
     if original is not None:
         old=json.loads(original)
+        candidate=retain_mfl_report(old,candidate)
         check_continuity(old,candidate)
         a,b=copy.deepcopy(old),copy.deepcopy(candidate)
         for field in ['collectionStartedAt','sourceEvidence']:

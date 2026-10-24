@@ -1015,3 +1015,19 @@ changed production/test Dart files analyze cleanly. Publication retention is
 still unwired; next replay the actual private candidate through the client,
 then wire server refresh and verify deployment/native adoption. No new feed,
 native build, acceptance or deadline change in this pass.
+
+
+## October 24, 11:57 ET run — atomic retained-report publication wiring
+
+Server refresh now applies bounded older-MFL retention before strict continuity
+and atomic replacement. All85 hashed October24 10:58:20 UTC captures replayed
+through the real refresh path into a private file and exactly matched the reviewed
+13-report proposal. The actual proposal also passed Dart decoding, prior-snapshot
+continuity and repeated continuity in a private Flutter replay (one test).
+All73 Idaho Python tests pass, including disk-replace failure preserving prior
+bytes and successful retention preserving the original report and timestamp.
+
+Public/bundled data remain at the October23 collection in this pass. Next publish
+the reviewed candidate and verify live bytes and native newer-data adoption,
+including the retained-report disclosure. Native enlarged/integrated flows and
+ordinary restoration remain open; no acceptance or deadline change.

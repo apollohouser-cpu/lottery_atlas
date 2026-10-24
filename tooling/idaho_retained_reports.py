@@ -1,6 +1,6 @@
 """Prepare exact-date MFL report retention with original collection provenance.
 
-Not wired into publication until client validation/display supports provenance.
+Publication retains only eligible reports; clients validate and display provenance.
 Never treats the current page as evidence for an older report.
 """
 import copy

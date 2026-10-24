@@ -16,6 +16,28 @@ def sample():
 
 
 class IdahoPublicationTest(unittest.TestCase):
+    def test_refresh_retains_only_original_older_mfl_report_atomically(self):
+        old=json.loads(Path('data/idaho_coverage.generated.json').read_text())
+        new=copy.deepcopy(old)
+        rows=[r for r in new['results'] if r['group']=='millionaire-for-life']
+        latest=max(rows,key=lambda r:r['drawDate']);older=min(rows,key=lambda r:r['drawDate'])
+        original_report=copy.deepcopy(latest['report'])
+        from datetime import date,timedelta
+        older['drawDate']=(date.fromisoformat(latest['drawDate'])+timedelta(days=1)).isoformat()
+        older.update(report=None,reportGap='No exact-date Idaho HTML report available.')
+        latest.update(report=None,reportGap='No exact-date Idaho HTML report available.')
+        new['collectionStartedAt']='2026-10-25T11:00:00+00:00'
+        with tempfile.TemporaryDirectory() as directory:
+            p=Path(directory)/'snapshot.json';original=json.dumps(old).encode();p.write_bytes(original)
+            with patch('tooling.idaho_publication.collect',return_value=new),patch('tooling.idaho_publication.os.replace',side_effect=OSError('disk')):
+                with self.assertRaises(OSError):refresh(p,None)
+            self.assertEqual(p.read_bytes(),original)
+            with patch('tooling.idaho_publication.collect',return_value=new):out=refresh(p,None)
+            retained=next(r for r in out['results'] if r.get('reportProvenance'))
+            self.assertEqual(retained['report'],original_report)
+            self.assertEqual(retained['reportProvenance']['collectionStartedAt'],old['collectionStartedAt'])
+            self.assertEqual(json.loads(p.read_bytes()),out)
+
     def test_supported_progression(self):
         old=sample();new=copy.deepcopy(old)
         new['results'][0]['drawDate']='2026-10-23'
