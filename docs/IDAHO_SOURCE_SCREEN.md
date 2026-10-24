@@ -612,3 +612,21 @@ Remaining normal schedules/source returns: Pick4 (Day/Night) and XsOs.
 Native2x, remote adoption, controlled loader failure/cache retention and final
 ordinary restoration remain open. No refreshed collection, acceptance or
 changed deadline. Evidence here is native accessibility and OS handoff.
+
+
+## October 24, 03:55 ET run — Pick4 native schedule and session returns
+
+Ordinary b8b99a2 upright normal text: Pick4 Day October22 fixed paging traversed
+all sixteen schedule rows, source time-wording qualification, rule prose and
+all thirty-seven Sum It Up rows (0–36, explicit $1 wager) through the final
+dated-source control. Dated counts remain excluded, unavailable not zero.
+The Day source opened Safari at idaholottery.com and returning to process52158
+preserved selection and final reading position. Night October22 separately
+showed 0/8/6/8 and the excluded-report notice, opened Safari and retained its
+summary selection on return. No repeated Night full schedule traversal or
+external-page completeness claim is made.
+
+XsOs remains the normal schedule/source-return family to finish. Native2x,
+remote adoption, controlled loader failure/cache retention and final ordinary
+restoration remain open. No refreshed collection, acceptance or deadline change.
+This is native accessibility/paging and OS-handoff evidence.
