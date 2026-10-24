@@ -673,3 +673,22 @@ installed and cold-launched as process91488; normal home/map UI was verified.
 No probe is tracked or remains installed. Android stayed stopped. Native enlarged
 product/integrated/layout checks and newer remote adoption remain open; no
 acceptance, source refresh or deadline change.
+
+
+## October 24, 06:57 ET run — fresh candidate isolated for Raffle review
+
+A private full85-request collection started at2026-10-24T10:58:20.814654+00:00.
+The strict Raffle contract rejected it before publication; the private candidate
+retained its original bytes, and public/bundled/cache data were not replaced.
+Captures, hashes and outcome are retained under
+work/idaho_scope/refresh-20261024T105820/.
+
+Initial extracted comparison isolates a relocation of the literal “$1,000 Daily
+Winning Numbers:” heading in the first rules section; the second section and
+seven-row prize table are unchanged. Both source copies contain the original
+October21 promotion plus October22 ticket022175. This is candidate evidence only,
+not an accepted refresh or final-drawing result. Next review the exact heading
+relocation with a narrow parser regression, then replay all85 captured responses
+through collection and continuity before considering publication and native
+newer-remote adoption. Validation remains unchanged; no date was advanced.
+Native enlarged product/integrated/layout checks and acceptance remain open.
