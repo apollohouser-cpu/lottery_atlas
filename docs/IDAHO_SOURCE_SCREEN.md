@@ -852,3 +852,26 @@ work/idaho_scope/integrated-large-build.log (Xcode30.8s).
 Ordinary lib/main.dart restored by explicit rebuild (Xcode37.5s), installed and
 cold-launched as21402; native accessibility confirms normal home/map. No tracked
 probe or main.dart edit; Android remains stopped. Deadline unchanged.
+
+
+## October 24, 16:00 ET run — integrated 2x Raffle flow
+
+Using the ignored production-HomeScreen2x target on the original iPhone17e,
+opened Idaho via state search and Sources and coverage, switched the product
+catalog to Raffle, and opened its single entry. Native accessibility confirms
+both October21/22 daily promotions remain distinct from the unavailable final
+result, with the printed-odds discrepancy explicit. Fixed paging traversed all
+seven schedule tiers and the long rules to the final source control. This is
+accessibility/paging evidence, not a screenshot review of every rule paragraph.
+The source opened Safari at the exact official2026 Raffle URL; returning to the
+same process24784 preserved the final detail position. No swipe recovery claim.
+
+This closes the bounded integrated2x portrait Raffle traversal. Enlarged
+InstaPlay/Tab and representative landscape/draw checks remain open. Production
+code/data and acceptance are unchanged; no deadline extension. Ordinary restore
+is required after this private target and recorded below.
+
+Ordinary lib/main.dart explicitly rebuilt (Xcode37.6s), installed and cold-launched
+as25472; native accessibility confirms normal home/map. Android stayed stopped,
+main.dart unchanged, no tracked probe. Private logs: large-products-build.log
+and large-products-restore.log under work/idaho_scope.
