@@ -1058,3 +1058,22 @@ South Carolina home/map; this does not yet verify Idaho remote adoption or the
 new retained-report disclosure. Android remained stopped. The three changed
 Flutter test files analyze cleanly. Next verify Idaho native cache/adoption and
 enlarged integrated flows using this ordinary build.
+
+
+## October 24, 13:58 ET run — ordinary native newer-feed and provenance display
+
+On ordinary iOS process14225, navigated Idaho map → Sources and coverage →
+results. Powerball and both MFL dates show the October24 10:58:20 UTC collection.
+Native portrait screenshot and accessibility confirm the October22 MFL report's
+complete original October23 timestamp and “Not reverified by the current
+collection” disclosure, readable above the tier rows. The October23 MFL result
+has its separate current report and numbers.
+
+Read-only inspection of the real simulator preference cache confirms225451 bytes
+matching the published SHA2566f15be4b20834e84065e8c0896bd5af57f0accd1fab35fafc42e3934d8ac0b98.
+This verifies ordinary-loader cache persistence and visible current data. Since
+the installed bundle is also current, it is not independent proof of native
+old-cache migration; that transition has the production-loader automated test.
+Private evidence is in work/idaho_scope/native-adoption-20261024.json. No probe
+or app code changed; ordinary build remains installed, Android stopped. Enlarged
+integrated product/draw flows and final acceptance remain open. Deadline unchanged.
