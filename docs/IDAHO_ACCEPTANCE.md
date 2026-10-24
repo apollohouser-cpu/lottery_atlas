@@ -1160,3 +1160,36 @@ full-dart-analysis-20261024.log and retained-feed-failure-matrix.json under
 work/idaho_scope. Ordinary native build remains installed. Remaining work is
 enlarged InstaPlay/Tab and integrated enlarged draw evidence, followed by the
 bounded acceptance decision. No release/deadline or accepted-state scope change.
+
+
+## October 24, 19:03 ET run — integrated 2x InstaPlay and Tab flows
+
+On the original iPhone17e, the ignored production-HomeScreen2x target (process34906)
+opened Idaho through state search, map and Sources and coverage. InstaPlay showed
+12 entries; Jackpot USA300005 retained the explicit unavailable $0 placeholder,
+printed-schedule quantities and no remaining/progressive inference. Portrait
+screenshot verifies wrapping and accessible fixed controls. Native accessibility
+and paging traversed all13 schedule rows and rules to the source. Safari opened
+the exact official /games/instaplay/jackpot-usa URL; the already-documented
+Temporary Content Availability Notice appeared again. Returning to the same
+process preserved the final detail position and closing retained the InstaPlay
+catalog. This is not fresh source-data verification.
+
+Switched to Tabs (11 entries), opened Wild Thing7551 and traversed its four wager
+rows, distinct top prizes and voucher rules using fixed paging. Portrait screenshot
+shows readable final rules/source control. Safari opened the exact official
+/games/tabs/wild-thing-touchtab URL; return preserved the final position in the
+same process. Rotating that final detail to landscape also showed readable wrapped
+rules and reachable source/paging controls; then restored upright portrait.
+This is representative enlarged landscape evidence, not all-product/all-orientation
+manual traversal. No swipe recovery claim. Private build log:
+work/idaho_scope/large-instaplay-build.log (Xcode36.2s).
+
+The bounded enlarged InstaPlay/Tab checks are closed. Integrated enlarged draw
+and final acceptance reconciliation remain open. No production code/feed change,
+new source collection, acceptance or deadline extension. Ordinary restoration is
+recorded below after the private target.
+
+Ordinary lib/main.dart explicitly rebuilt (Xcode37.5s), installed and cold-launched
+as35709; native accessibility confirms the normal home/map. Android stayed
+stopped and main.dart unchanged. Restore log: work/idaho_scope/large-instaplay-restore.log.
