@@ -875,3 +875,21 @@ Ordinary lib/main.dart explicitly rebuilt (Xcode37.6s), installed and cold-launc
 as25472; native accessibility confirms normal home/map. Android stayed stopped,
 main.dart unchanged, no tracked probe. Private logs: large-products-build.log
 and large-products-restore.log under work/idaho_scope.
+
+
+## October 24, 16:56 ET run — ordinary Powerball landscape reading path
+
+On ordinary process25472, opened Idaho results from the integrated map/source
+route and rotated to landscape. Screenshot confirms readable summary/date and
+accessible fixed controls. Native paging traversed the eight Idaho Power Play
+count rows, all nine shared PowerPlay/Double Play schedule rows, source footnotes,
+10x-boundary discrepancy and official rules. Final screenshot confirms readable
+coverage limits and the visible final dated-source button. This is representative
+normal-scale landscape evidence; it does not claim every family at every scale
+or screenshot review of every paragraph. No new source launch was needed for
+this layout check; prior source-return evidence remains separate.
+
+Restored upright portrait and verified the same selection and content remained
+readable. Ordinary build stayed installed throughout; no probe/build/code/data
+change, Android stopped. Enlarged InstaPlay/Tab and integrated enlarged draw
+checks remain open. Acceptance and October27 14:22ET deadline unchanged.
