@@ -5,7 +5,9 @@ import 'package:lottery_atlas/services/idaho_coverage_loader.dart';
 import 'package:lottery_atlas/services/idaho_coverage_validator.dart';
 
 void main() {
-  final raw = File('data/idaho_coverage.generated.json').readAsStringSync();
+  final raw = File(
+    'test/fixtures/idaho_coverage_20261023.json',
+  ).readAsStringSync();
   test(
     'retained MFL report binds original evidence and rejects altered provenance',
     () {
@@ -57,6 +59,36 @@ void main() {
       expect(
         () => IdahoCoverageValidator.decode(jsonEncode(next)),
         throwsFormatException,
+      );
+    },
+  );
+  test(
+    'published snapshot advances old cache with original report provenance',
+    () async {
+      final published = File(
+        'data/idaho_coverage.generated.json',
+      ).readAsStringSync();
+      String? saved;
+      final result = await IdahoCoverageLoader(
+        readCache: () async => raw,
+        fetchRemote: () async => published,
+        writeCache: (value) async {
+          saved = value;
+        },
+      ).load();
+      expect(saved, published);
+      expect(result['collectionStartedAt'], '2026-10-24T10:58:20.814654+00:00');
+      expect(
+        (result['results'] as List).where((r) => r['report'] != null).length,
+        13,
+      );
+      final retained = (result['results'] as List).singleWhere(
+        (r) => r['reportProvenance'] != null,
+      );
+      expect(retained['drawDate'], '2026-10-22');
+      expect(
+        retained['reportProvenance']['collectionStartedAt'],
+        jsonDecode(raw)['collectionStartedAt'],
       );
     },
   );

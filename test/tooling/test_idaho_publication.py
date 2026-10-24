@@ -17,7 +17,7 @@ def sample():
 
 class IdahoPublicationTest(unittest.TestCase):
     def test_refresh_retains_only_original_older_mfl_report_atomically(self):
-        old=json.loads(Path('data/idaho_coverage.generated.json').read_text())
+        old=json.loads(Path('test/fixtures/idaho_coverage_20261023.json').read_text())
         new=copy.deepcopy(old)
         rows=[r for r in new['results'] if r['group']=='millionaire-for-life']
         latest=max(rows,key=lambda r:r['drawDate']);older=min(rows,key=lambda r:r['drawDate'])

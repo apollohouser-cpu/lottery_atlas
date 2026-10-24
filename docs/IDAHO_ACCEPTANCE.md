@@ -1031,3 +1031,19 @@ Public/bundled data remain at the October23 collection in this pass. Next publis
 the reviewed candidate and verify live bytes and native newer-data adoption,
 including the retained-report disclosure. Native enlarged/integrated flows and
 ordinary restoration remain open; no acceptance or deadline change.
+
+
+## October 24, 12:58 ET run — reviewed newer collection publication
+
+Promoted the complete October24 10:58:20.814654 UTC collection after hashed
+85-request replay and client/server continuity verification. The22 results now
+contain13 reports and9 explicit gaps: the October22 MFL report retains its original
+October23 collection evidence and is explicitly not reverified. Raffle promotions
+include October22 022175, with the final drawing still unavailable. No newer source
+retrieval is claimed. Legacy numeric-only Scratch data remain unchanged.
+
+Preserved the October23 snapshot as a fixed regression fixture. All25 Idaho
+Flutter coverage/draw/product tests and73 Idaho Python tests pass, including
+production-loader old-cache adoption of the exact newer snapshot and original
+report provenance. Deployment/live verification and native adoption follow;
+this is not state acceptance or a deadline change.

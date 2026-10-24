@@ -6,7 +6,7 @@ import 'package:lottery_atlas/widgets/map/idaho_draw_collection_sheet.dart';
 
 void main() {
   final data =
-      jsonDecode(File('data/idaho_coverage.generated.json').readAsStringSync())
+      jsonDecode(File('test/fixtures/idaho_coverage_20261023.json').readAsStringSync())
           as Map<String, dynamic>;
   testWidgets(
     'retained report displays original date and no reverification claim',
