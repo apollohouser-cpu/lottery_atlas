@@ -805,3 +805,23 @@ remaining external-source group returns include DP and those groups. Native2x,
 newer remote adoption, controlled loader-failure retention and final ordinary
 restoration remain open. No acceptance or deadline change. App stays on DP's
 final reading position.
+
+
+## October 24, 00:52 ET run — Double Play source return and MM long flow
+
+Ordinary b8b99a2 upright normal text: Double Play's family-source action opened
+Safari at idaholottery.com; returning to process52158 preserved the October21
+selection and final reading position.
+
+Mega Millions October20 fixed paging traversed the entire dated report through
+all2x/3x/4x/5x/10x categories, all nine schedule rows, source footnotes, explicit
+legacy-Megaplier heading discrepancy, current per-play multiplier rules and
+coverage limits to the final dated-source control. Its family-source action
+opened Safari; same-process return retained selection and reading position.
+This is native accessibility/paging evidence and OS handoff, not an external
+page freshness or all-page screenshot claim.
+
+Remaining normal schedules/source returns: Lotto America, Pick3, Pick4, XsOs
+(including separate Day/Night source-return paths). Native2x, newer remote
+adoption, controlled loader-failure retention and final ordinary restoration
+remain open. No source refresh, acceptance or deadline change.
