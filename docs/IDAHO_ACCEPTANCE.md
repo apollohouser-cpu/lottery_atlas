@@ -720,3 +720,27 @@ position. No new source retrieval or newer verification is claimed.
 Remaining native gates include draw groups/both dates/family source returns,
 full schedules, numeric Scratch/fixed Tabs/filter flows, native2x, newer remote
 adoption and controlled failure retention. No acceptance or deadline change.
+
+
+## October 23, 20:48 ET run — fixed Tab filter and numeric Scratch
+
+Ordinary b8b99a2, normal-text upright iPhone17e: Raffle detail closed to its
+one-entry catalog. Tabs listed-price filter $1.00 reduced 11 entries to3.
+Treasure Valley Saloon7065 exposed all six printed prize/quantity/odds rows
+and rules, with remaining inventory unavailable. Fixed paging reached its
+source control; closing details retained the three-result $1 filter. Reset
+restored All prices and11 entries. This fixed-Tab pass did not open its source.
+
+Switching to Scratch showed33 entries. Starry Night1935 displayed October5
+game start, collection October23 11:41:13UTC, unknown inventory-verification
+date, all nine numeric tiers and explicit unavailable $20/$10 lower tiers.
+Original quantities and remaining counts were separately labeled (including
+$500 original74/remaining72). Fixed paging reached the official source; Safari
+handoff at idaholottery.com and return to process52158 retained the detail
+reading position. No source-content-completeness or new retrieval claim.
+
+Remaining native gates: draw selections/dates/family source returns and long
+schedules, native2x layouts, newer remote adoption and controlled loader-failure
+retention. Product representative normal-text paths now include unknown and
+numeric Scratch, InstaPlay, TouchTab, fixed Tab and Raffle; this is not every
+product manually checked in every orientation. No acceptance/deadline change.
