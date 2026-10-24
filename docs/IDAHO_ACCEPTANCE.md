@@ -784,3 +784,24 @@ Remaining schedule/source families: PB/DP, MM, Lotto America, Pick3, Pick4 and
 XsOs. Native2x, representative remaining layouts, newer remote adoption and
 controlled loader-failure retention remain open. No source refresh, acceptance
 or deadline change. App remains upright at the Idaho Cash rule section.
+
+
+## October 23, 23:51 ET run — PB and Double Play native schedules
+
+Ordinary b8b99a2 upright normal text: fixed paging traversed Powerball October19
+through all nine shared schedule rows, separate PowerPlay/Double Play columns,
+source footnotes, preserved $150-million threshold discrepancy, rules and final
+dated-source control. Family-source Safari handoff and same-process return
+retained selection and final reading position.
+
+Double Play October21 separately traversed its report, explicit no-Power-Play
+warning, all nine shared schedule rows, footnotes/discrepancy and rule prose
+to the final dated-source control. No separate DP external-source action was
+performed in this pass. Evidence is native accessibility/paging traversal;
+no new source retrieval or all-page screenshot audit is claimed.
+
+Remaining normal schedule families: MM, Lotto America, Pick3, Pick4 and XsOs;
+remaining external-source group returns include DP and those groups. Native2x,
+newer remote adoption, controlled loader-failure retention and final ordinary
+restoration remain open. No acceptance or deadline change. App stays on DP's
+final reading position.
