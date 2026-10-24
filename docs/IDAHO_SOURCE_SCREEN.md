@@ -692,3 +692,25 @@ relocation with a narrow parser regression, then replay all85 captured responses
 through collection and continuity before considering publication and native
 newer-remote adoption. Validation remains unchanged; no date was advanced.
 Native enlarged product/integrated/layout checks and acceptance remain open.
+
+
+## October 24, 08:02 ET run — exact Raffle layout reviewed; report-loss gate holds
+
+Added a second exact reviewed Raffle contract for the October24 heading relocation.
+All rule/prize characters are unchanged after removing that one heading and
+whitespace; the second section/table are identical. Published presentation keeps
+its existing reviewed order. The parser still compares the entire old or new
+contract; changed odds, timing, heading amounts and disagreeing promotion copies
+are rejected. All68 Idaho Python tests pass including the new captured-layout
+regression. No Dart contract or public data changed.
+
+Hash-checked replay of all85 retained October24 captures now completes collection
+with22 results/12 reports, but strict continuity correctly rejects loss of the
+October22 Millionaire for Life report: that date has moved to the older result,
+and the current page supplies no exact-date HTML report for it. Its previously
+verified nine tiers must not be discarded. Private complete-stage.json retains
+the rejected candidate for provenance review; candidate.json, public data and
+collection dates remain unchanged. Next resolve retention of that already-proven
+dated report with explicit original provenance and matching Python/Dart coverage,
+without weakening correction/report-loss checks or inventing a new retrieval.
+Newer remote adoption remains open; no acceptance or deadline change.

@@ -7,6 +7,22 @@ RAW = (Path(__file__).parent / 'fixtures/idaho_raffle_2026.html').read_bytes()
 
 
 class IdahoRaffleTest(unittest.TestCase):
+    def test_reviewed_heading_relocation_preserves_rules_and_rejects_changes(self):
+        raw = (Path(__file__).parent / 'fixtures/idaho_raffle_relocated_20261024.html').read_bytes()
+        result = self.parse(raw, date(2026,10,24))
+        baseline = self.parse()
+        self.assertEqual(result['sourceRules'], baseline['sourceRules'])
+        self.assertEqual(result['schedule'], baseline['schedule'])
+        self.assertIsNone(result['finalResult'])
+        self.assertEqual(result['dailyPromotions'][-1], {'date':'2026-10-22','ticketNumber':'022175'})
+        for before, after in [(b'1:225000', b'1:250000'),
+                              (b'whichever is later', b'whichever is earlier'),
+                              (b'$1,000 Daily Winning Numbers:', b'$2,000 Daily Winning Numbers:')]:
+            with self.subTest(before=before), self.assertRaises(ValueError):
+                self.parse(raw.replace(before, after), date(2026,10,24))
+        with self.assertRaises(ValueError):
+            self.parse(raw.replace(b'022175', b'022176', 1), date(2026,10,24))
+
     def parse(self, raw=RAW, day=date(2026,10,23)):
         return parse_raffle(raw, as_of=day)
 

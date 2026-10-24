@@ -8,6 +8,9 @@ from zoneinfo import ZoneInfo
 from lxml import html
 
 SPEC = json.loads(Path(__file__).with_name('idaho_raffle_spec.json').read_text())
+# October 24 reviewed capture moves only the daily-number heading in tab2.
+# Compare the entire alternate contract, not a loose heading/text substitution.
+RELOCATED_SPEC = json.loads(Path(__file__).with_name('idaho_raffle_relocated_spec.json').read_text())
 SOURCE = 'https://www.idaholottery.com/games/raffle/idaho-1000000-raffle-2026'
 
 
@@ -54,7 +57,10 @@ def parse_raffle(raw, *, as_of=None):
     if as_of >= date(2026,12,29):
         raise ValueError('Final announcement period requires new source review')
     contract, promotions = _extract(raw, as_of)
-    if contract != SPEC: raise ValueError('Changed Raffle rules/schedule requires review')
+    if contract not in (SPEC, RELOCATED_SPEC):
+        raise ValueError('Changed Raffle rules/schedule requires review')
+    # Stable presentation order preserves existing client contracts; wording and
+    # all prize/rule content are identical in the reviewed alternate layout.
     return {'productType': 'raffle', 'edition': 2026, 'sourceUrl': SOURCE,
             'finalResult': None, 'finalResultStatus': 'not_yet_announced_in_reviewed_source',
             'dailyPromotions': promotions, 'sourceRules': copy.deepcopy(SPEC['sections']),
