@@ -6,6 +6,7 @@ from pathlib import Path
 import tempfile
 from datetime import datetime
 from tooling.idaho_coverage import collect
+from tooling.idaho_retained_reports import check_report_provenance
 
 
 def _indexed(rows, key):
@@ -15,6 +16,7 @@ def _indexed(rows, key):
 
 
 def check_continuity(old, new):
+    new = check_report_provenance(old, new)
     for field in ['schemaVersion','state','schedules','rules','sumSchedules','instantCatalogs','coverage']:
         if old[field] != new[field]: raise ValueError('Changed contract/catalog requires review: '+field)
     if datetime.fromisoformat(new['collectionStartedAt']) < datetime.fromisoformat(old['collectionStartedAt']):

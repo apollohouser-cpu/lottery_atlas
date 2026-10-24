@@ -982,3 +982,18 @@ A diagnostic comparison with provenance removed passes all remaining existing
 content-continuity checks; this is not validation of the new provenance schema.
 Private retention-proposal.json is review material only. Public/bundled/cache
 bytes and dates are unchanged; newer remote adoption and acceptance remain open.
+
+
+## October 24, 10:03 ET run — server provenance continuity validation
+
+Python continuity now validates a newly retained report's provenance against the
+actual prior snapshot and exact same-date report, using the bounded MFL retention
+rules. Existing provenance cannot change or disappear, and report corrections
+remain rejected. All72 Idaho Python tests pass. The real private13-report proposal
+passes full continuity with provenance intact; repeated continuity passes, while
+removing provenance or changing its hash/date or a report count is rejected.
+
+Automatic retention is still not connected to refresh. Dart decoding/cache
+continuity and visible original-report provenance are the next dependent changes;
+public/bundled/native data remain unchanged until those are verified. No native
+build, source refresh, release acceptance or deadline change.

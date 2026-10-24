@@ -69,3 +69,37 @@ def retain_mfl_report(old, candidate):
         row['reportGap'] = None
         row['reportProvenance'] = provenance
     return result
+
+
+def check_report_provenance(old, candidate):
+    """Validate each provenance addition against the actual prior snapshot.
+
+    Existing provenance is immutable. Return a comparison copy with newly
+    introduced provenance removed; all report content still faces continuity.
+    """
+    comparison = copy.deepcopy(candidate)
+    prior = {(r['group'], r['drawDate']): r for r in old['results']}
+    if len(prior) != len(old['results']):
+        raise ValueError('Duplicate prior result')
+    for row in comparison['results']:
+        if 'reportProvenance' not in row:
+            continue
+        before = prior.get((row['group'], row['drawDate']))
+        if before is None or before.get('report') is None:
+            raise ValueError('Retention has no previously verified report')
+        if 'reportProvenance' in before:
+            if row['reportProvenance'] != before['reportProvenance']:
+                raise ValueError('Original report provenance changed')
+            continue
+        missing = copy.deepcopy(candidate)
+        target = next(r for r in missing['results']
+                      if (r['group'], r['drawDate']) == (row['group'], row['drawDate']))
+        target.pop('reportProvenance')
+        target.update(report=None, reportGap=GAP)
+        expected = retain_mfl_report(old, missing)
+        retained = next(r for r in expected['results']
+                        if (r['group'], r['drawDate']) == (row['group'], row['drawDate']))
+        if row != retained:
+            raise ValueError('Report/provenance does not match original evidence')
+        row.pop('reportProvenance')
+    return comparison

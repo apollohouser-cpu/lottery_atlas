@@ -50,3 +50,19 @@ class RetainedReportTest(unittest.TestCase):
         self.assertEqual(retain_mfl_report(old,new),new)
         old,new=samples();new['results'][0]['report']={'changed':True}
         self.assertEqual(retain_mfl_report(old,new),new)
+
+    def test_provenance_transition_is_bound_to_original_evidence(self):
+        from tooling.idaho_retained_reports import check_report_provenance
+        old,new=samples();out=retain_mfl_report(old,new)
+        checked=check_report_provenance(old,out)
+        self.assertNotIn('reportProvenance',checked['results'][0])
+        self.assertEqual(checked['results'][0]['report'],old['results'][0]['report'])
+        for mutation in [lambda x:x['results'][0]['reportProvenance'].update(sha256='b'*64),
+                         lambda x:x['results'][0]['reportProvenance'].update(collectionStartedAt=new['collectionStartedAt']),
+                         lambda x:x['results'][0]['report']['tiers'][0].update(publishedWinnerCount=4),
+                         lambda x:x['results'][1].update(reportProvenance=out['results'][0]['reportProvenance'])]:
+            bad=copy.deepcopy(out);mutation(bad)
+            with self.subTest(mutation=mutation),self.assertRaises(ValueError):check_report_provenance(old,bad)
+        self.assertEqual(check_report_provenance(out,out),out)
+        bad=copy.deepcopy(out);bad['results'][0]['reportProvenance']['sha256']='b'*64
+        with self.assertRaises(ValueError):check_report_provenance(out,bad)
