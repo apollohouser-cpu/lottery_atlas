@@ -1077,3 +1077,26 @@ old-cache migration; that transition has the production-loader automated test.
 Private evidence is in work/idaho_scope/native-adoption-20261024.json. No probe
 or app code changed; ordinary build remains installed, Android stopped. Enlarged
 integrated product/draw flows and final acceptance remain open. Deadline unchanged.
+
+
+## October 24, 15:01 ET run — integrated 2x unavailable-Scratch flow
+
+Private ignored target wraps the production HomeScreen and route observer at
+explicit2x text scale. On the original iPhone17e, navigated state search → Idaho
+map → Sources and coverage → product catalogs, searched Mistletoe, and opened
+Mistletoe Mystery1933. Portrait screenshot confirms wrapping of title, collection
+date and unknown-inventory disclosure with fixed paging controls accessible.
+Traversed all11 printed-structure rows using Next inventory page; every remaining
+quantity stays unavailable. Official game details opened the correct Mistletoe
+page in Safari. Returning to the same process20728 preserved the final detail
+position; closing details preserved the Mistletoe query and1-of33 result.
+
+This is bounded integrated2x portrait evidence for unavailable Scratch only,
+not every product/family/orientation. Remaining enlarged product/draw and
+landscape checks remain open. No production source code, feed or acceptance
+change; ordinary restoration follows. Build log is private under
+work/idaho_scope/integrated-large-build.log (Xcode30.8s).
+
+Ordinary lib/main.dart restored by explicit rebuild (Xcode37.5s), installed and
+cold-launched as21402; native accessibility confirms normal home/map. No tracked
+probe or main.dart edit; Android remains stopped. Deadline unchanged.
