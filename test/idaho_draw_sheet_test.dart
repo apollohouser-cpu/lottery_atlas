@@ -9,6 +9,36 @@ void main() {
       jsonDecode(File('data/idaho_coverage.generated.json').readAsStringSync())
           as Map<String, dynamic>;
   testWidgets(
+    'retained report displays original date and no reverification claim',
+    (tester) async {
+      final retained = jsonDecode(jsonEncode(data)) as Map<String, dynamic>;
+      final index = (retained['results'] as List).indexWhere(
+        (r) => r['group'] == 'millionaire-for-life' && r['report'] != null,
+      );
+      retained['results'][index]['reportProvenance'] = {
+        'collectionStartedAt': '2026-10-23T11:41:13.552741+00:00',
+      };
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: IdahoDrawCollectionSheet(
+              coverageOverride: retained,
+              initialIndex: index,
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(
+        find.textContaining(
+          'Retained exact-date report. Originally collected: 2026-10-23T11:41:13.552741+00:00. Not reverified',
+        ),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    },
+  );
+  testWidgets(
     'all twenty-two selections render at enlarged text without errors',
     (tester) async {
       for (var i = 0; i < 22; i++) {

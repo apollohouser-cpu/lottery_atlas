@@ -179,6 +179,36 @@ class IdahoCoverageValidator {
 
   static void continuity(Map<String, dynamic> old, Map<String, dynamic> next) {
     IdahoDrawValidator.continuity(old['results'], next['results']);
+    for (final row in next['results']) {
+      if (!row.containsKey('reportProvenance')) continue;
+      final matches = (old['results'] as List)
+          .where(
+            (r) =>
+                r['group'] == row['group'] && r['drawDate'] == row['drawDate'],
+          )
+          .toList();
+      if (matches.length != 1 || matches.single['report'] == null) {
+        throw const FormatException('No original retained report');
+      }
+      final prior = matches.single;
+      dynamic expected = prior['reportProvenance'];
+      if (expected == null) {
+        final sources = (old['sourceEvidence'] as List)
+            .where((e) => e['url'] == row['sourceUrl'])
+            .toList();
+        if (sources.length != 1) {
+          throw const FormatException('Missing original evidence');
+        }
+        expected = {
+          'collectionStartedAt': old['collectionStartedAt'],
+          'sourceUrl': row['sourceUrl'],
+          'sha256': sources.single['sha256'],
+        };
+      }
+      if (!_equal(expected, row['reportProvenance'])) {
+        throw const FormatException('Changed original report provenance');
+      }
+    }
     _scratch(old['scratch'], next['scratch']);
     _raffle(
       old['raffle'],

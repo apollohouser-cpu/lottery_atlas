@@ -100,6 +100,32 @@ class IdahoDrawValidator {
         fail();
       }
       final normalized = copy(row) as Map;
+      if (row.containsKey('reportProvenance')) {
+        final p = row['reportProvenance'];
+        final latest = rows
+            .where((r) => r['group'] == g)
+            .map((r) => r['drawDate'] as String)
+            .reduce((a, b) => a.compareTo(b) > 0 ? a : b);
+        if (g != 'millionaire-for-life' ||
+            row['report'] == null ||
+            date.compareTo(latest) >= 0 ||
+            p is! Map ||
+            p.length != 3 ||
+            p['sourceUrl'] != row['sourceUrl'] ||
+            p['sha256'] is! String ||
+            !RegExp(r'^[0-9a-f]{64}$').hasMatch(p['sha256']) ||
+            p['collectionStartedAt'] is! String ||
+            !RegExp(r'(Z|[+-]\d\d:\d\d)$').hasMatch(p['collectionStartedAt'])) {
+          fail();
+        }
+        final original = DateTime.tryParse(p['collectionStartedAt']);
+        if (original == null ||
+            original.isAfter(collected) ||
+            original.isBefore(day)) {
+          fail();
+        }
+        normalized.remove('reportProvenance');
+      }
       normalized['numbers'] = template['numbers'];
       if (template.containsKey('specialNumber')) {
         ball(
@@ -246,6 +272,15 @@ class IdahoDrawValidator {
           if (prior['report'] == null && current['report'] != null) {
             normalized['report'] = current['report'];
             normalized['reportGap'] = current['reportGap'];
+          }
+          if (!prior.containsKey('reportProvenance') &&
+              current.containsKey('reportProvenance')) {
+            if (g != 'millionaire-for-life' ||
+                prior['report'] == null ||
+                !equal(prior['report'], current['report'])) {
+              fail();
+            }
+            normalized['reportProvenance'] = current['reportProvenance'];
           }
           if (!equal(normalized, current)) {
             fail();

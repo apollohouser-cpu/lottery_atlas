@@ -997,3 +997,21 @@ Automatic retention is still not connected to refresh. Dart decoding/cache
 continuity and visible original-report provenance are the next dependent changes;
 public/bundled/native data remain unchanged until those are verified. No native
 build, source refresh, release acceptance or deadline change.
+
+
+## October 24, 11:00 ET run — client retained-report validation and display
+
+Dart accepts bounded older-MFL report provenance only with an existing report,
+matching source, exact metadata shape, SHA256 syntax and original collection
+time no later than the current collection. Cache continuity binds additions to
+the actual prior same-date report and prior source hash/date; original provenance
+cannot be changed or removed. Existing report/count corrections remain rejected.
+The draw sheet now labels retained reports with their original collection date
+and explicitly says they were not reverified by the current collection.
+
+All22 coverage/draw Flutter tests pass, including provenance date/hash rejection,
+provenance-loss rejection and the visible retained-report disclosure. The five
+changed production/test Dart files analyze cleanly. Publication retention is
+still unwired; next replay the actual private candidate through the client,
+then wire server refresh and verify deployment/native adoption. No new feed,
+native build, acceptance or deadline change in this pass.

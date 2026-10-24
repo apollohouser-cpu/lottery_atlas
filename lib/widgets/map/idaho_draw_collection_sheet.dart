@@ -118,6 +118,8 @@ class _IdahoDrawCollectionSheetState extends State<IdahoDrawCollectionSheet> {
       else ...[
         entry('Dated Idaho report', [
           report['sourceLabel'],
+          if (row['reportProvenance'] != null)
+            'Retained exact-date report. Originally collected: ${row['reportProvenance']['collectionStartedAt']}. Not reverified by the current collection.',
           report['countDefinition'],
           if (report['limitation'] != null) report['limitation'],
         ]),

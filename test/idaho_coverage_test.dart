@@ -6,6 +6,60 @@ import 'package:lottery_atlas/services/idaho_coverage_validator.dart';
 
 void main() {
   final raw = File('data/idaho_coverage.generated.json').readAsStringSync();
+  test(
+    'retained MFL report binds original evidence and rejects altered provenance',
+    () {
+      final old = IdahoCoverageValidator.decode(raw);
+      final next = jsonDecode(raw) as Map<String, dynamic>;
+      final mfl = (next['results'] as List)
+          .where((r) => r['group'] == 'millionaire-for-life')
+          .toList();
+      final prior = mfl.firstWhere((r) => r['report'] != null);
+      final newer = mfl.firstWhere((r) => r['report'] == null);
+      newer['drawDate'] = '2026-10-23';
+      next['collectionStartedAt'] = '2026-10-24T10:58:20+00:00';
+      final source = (old['sourceEvidence'] as List).singleWhere(
+        (e) => e['url'] == prior['sourceUrl'],
+      );
+      prior['reportProvenance'] = {
+        'collectionStartedAt': old['collectionStartedAt'],
+        'sourceUrl': prior['sourceUrl'],
+        'sha256': source['sha256'],
+      };
+      final valid = IdahoCoverageValidator.decode(jsonEncode(next));
+      IdahoCoverageValidator.continuity(old, valid);
+      IdahoCoverageValidator.continuity(valid, valid);
+      for (final field in ['sha256', 'collectionStartedAt']) {
+        final bad = jsonDecode(jsonEncode(next)) as Map<String, dynamic>;
+        final row = (bad['results'] as List).firstWhere(
+          (r) => r['reportProvenance'] != null,
+        );
+        row['reportProvenance'][field] = field == 'sha256'
+            ? 'b' * 64
+            : next['collectionStartedAt'];
+        expect(
+          () => IdahoCoverageValidator.continuity(
+            old,
+            IdahoCoverageValidator.decode(jsonEncode(bad)),
+          ),
+          throwsFormatException,
+        );
+      }
+      final lost = jsonDecode(jsonEncode(next)) as Map<String, dynamic>;
+      (lost['results'] as List)
+          .firstWhere((r) => r['reportProvenance'] != null)
+          .remove('reportProvenance');
+      expect(
+        () => IdahoCoverageValidator.continuity(valid, lost),
+        throwsFormatException,
+      );
+      prior['reportProvenance']['sourceUrl'] = 'https://example.com';
+      expect(
+        () => IdahoCoverageValidator.decode(jsonEncode(next)),
+        throwsFormatException,
+      );
+    },
+  );
   test('audited typed baseline preserves unknown inventory', () {
     final data = IdahoCoverageValidator.decode(raw);
     expect(data['results'].length, 22);
