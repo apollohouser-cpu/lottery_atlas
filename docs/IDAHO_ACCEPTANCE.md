@@ -764,3 +764,23 @@ Remaining: family source returns, full schedule/rule reading paths, integrated
 native2x and representative orientation evidence, newer remote adoption,
 controlled failure retention and final ordinary restoration. No acceptance,
 source refresh, extension or deadline change. App remains on older MFL summary.
+
+
+## October 23, 22:52 ET run — MFL and Idaho Cash long reading paths
+
+Ordinary b8b99a2 upright normal text: fixed paging traversed MFL's nine schedule
+rows, source footnotes, full rule prose and coverage limits to the final dated
+source control. End-of-path screenshot inspected: annuity/cash-option prose and
+source controls remain readable. MFL rules source opened Safari; returning to
+the same process retained the October21 selection and final reading position.
+
+Idaho Cash October22 similarly traversed all four schedule rows, quick-pick-only
+free-ticket footnote, rules and final source controls. The family-source action
+opened Safari at idaholottery.com, and return retained selection and reading
+position. These are native navigation/retention checks, not verification that
+external page contents are complete or fresh.
+
+Remaining schedule/source families: PB/DP, MM, Lotto America, Pick3, Pick4 and
+XsOs. Native2x, representative remaining layouts, newer remote adoption and
+controlled loader-failure retention remain open. No source refresh, acceptance
+or deadline change. App remains upright at the Idaho Cash rule section.
