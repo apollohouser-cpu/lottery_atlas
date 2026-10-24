@@ -630,3 +630,22 @@ XsOs remains the normal schedule/source-return family to finish. Native2x,
 remote adoption, controlled loader failure/cache retention and final ordinary
 restoration remain open. No refreshed collection, acceptance or deadline change.
 This is native accessibility/paging and OS-handoff evidence.
+
+
+## October 24, 04:58 ET run — XsOs native schedule and source return
+
+Ordinary b8b99a2 upright normal text: XsOs October18 showed eight literal source
+team-image codes and its five Idaho report tiers. Fixed paging traversed all
+five schedule rows, footnotes, the split-prize/liability qualification, rules
+and coverage limits to the final dated-source control. The source opened Safari
+at idaholottery.com; return to process52158 retained the selected result and
+final reading position. This is native accessibility/paging and OS-handoff
+evidence, not an all-page screenshot or fresh external-source audit.
+
+Across the recorded native passes, normal-text schedule traversal now covers
+all eight families plus the separate Double Play path, both Sum It Up matrices,
+and source handoff/return for all eleven draw groups. All22 result selections
+were previously traversed. These bounded checks do not establish every family
+at every scale/orientation. Native2x, remote adoption, controlled loader failure
+cache-byte/date retention and final ordinary restoration remain open. No new
+collection, acceptance or deadline change.
