@@ -1141,3 +1141,22 @@ Restored upright portrait and verified the same selection and content remained
 readable. Ordinary build stayed installed throughout; no probe/build/code/data
 change, Android stopped. Enlarged InstaPlay/Tab and integrated enlarged draw
 checks remain open. Acceptance and October27 14:22ET deadline unchanged.
+
+
+## October 24, 17:57 ET run — post-publication regression and retention audit
+
+After the retained-report integration and fixture separation, the full Python
+suite passes482 tests. All six Idaho production Dart files analyze cleanly.
+Replayed the hashed85-request October24 capture against the now-published
+13-report snapshot, injecting a failure separately at every request position.
+All85 failures preserve exact225451 snapshot bytes, original collection date
+and retained-report provenance, with no temporary-file residue. A complete
+unchanged replay also preserves bytes and the original report provenance.
+This specifically audits the newer retained-report feed, not only the prior
+12-report baseline. No source retrieval/date advancement is claimed.
+
+Private logs/evidence: full-python-20261024.log,
+full-dart-analysis-20261024.log and retained-feed-failure-matrix.json under
+work/idaho_scope. Ordinary native build remains installed. Remaining work is
+enlarged InstaPlay/Tab and integrated enlarged draw evidence, followed by the
+bounded acceptance decision. No release/deadline or accepted-state scope change.
