@@ -897,3 +897,27 @@ were previously traversed. These bounded checks do not establish every family
 at every scale/orientation. Native2x, remote adoption, controlled loader failure
 cache-byte/date retention and final ordinary restoration remain open. No new
 collection, acceptance or deadline change.
+
+
+## October 24, 06:00 ET run — native cache failure retention and bounded 2x draw
+
+A private, ignored native target used the production Idaho loader with a
+controlled fetch callback throwing SocketException. It required the existing
+real persisted cache, compared raw before/after bytes and compared the returned
+validated map. All checks passed; collectionStartedAt remained
+2026-10-23T11:41:13.552741+00:00. Private evidence is
+work/idaho_scope/native-retention-evidence.json. This is a controlled request
+failure, not whole-device offline evidence or newer remote adoption.
+
+The same target displayed the production draw sheet at explicit 2x Flutter text
+in upright portrait. The Powerball October21 summary screenshot showed readable
+heading, controls and full dated heading below the ellipsized selector. Fixed
+paging traversed the report, all nine shared schedule rows, qualifications and
+rules through the final dated-source control. This is one enlarged native draw
+flow, not all-family/orientation or integrated-home navigation acceptance.
+
+Ordinary lib/main.dart was unchanged, rebuilt successfully (Xcode30.3s),
+installed and cold-launched as process91488; normal home/map UI was verified.
+No probe is tracked or remains installed. Android stayed stopped. Native enlarged
+product/integrated/layout checks and newer remote adoption remain open; no
+acceptance, source refresh or deadline change.
