@@ -1,5 +1,5 @@
 {
-  "attemptedAt": "2026-10-24T16:14:37.014601+00:00",
+  "attemptedAt": "2026-10-24T21:09:15.663776+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
@@ -48,16 +48,16 @@
     },
     {
       "state": "New Mexico",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/new_mexico_scratch_catalog.generated.json"
       ]
     },
     {
       "state": "Oklahoma",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/oklahoma_scratch_catalog.generated.json"
       ]
@@ -147,8 +147,8 @@
     },
     {
       "state": "Wisconsin",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "unchanged",
+      "message": "No file changes; this does not establish a new source date.",
       "files": [
         "data/wisconsin_scratch_catalog.generated.json"
       ]

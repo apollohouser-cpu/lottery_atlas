@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "state": "KS",
-  "retrievedAt": "2026-10-24T15:59:07.817946+00:00",
+  "retrievedAt": "2026-10-24T20:52:53.609437+00:00",
   "reports": [
     {
       "id": "2by2:689480ef-c351-4915-ace5-4aeaf548c957",
@@ -98,65 +98,61 @@
       "scheduleKey": "2-by-2"
     },
     {
-      "id": "keno:3708746",
+      "id": "keno:3708816",
       "family": "Keno",
       "group": "keno",
       "session": "Frequent",
-      "drawNumber": "3708746",
-      "sourceExternalId": "3708746",
+      "drawNumber": "3708816",
+      "sourceExternalId": "3708816",
       "multiplier": null,
-      "sourceDrawTimestamp": "2026-10-24T15:44:00Z",
+      "sourceDrawTimestamp": "2026-10-24T20:24:00Z",
       "sourceDrawingDate": "2026-10-24",
       "drawDate": "2026-10-24",
       "drawTimeZone": "America/Chicago",
       "numbers": [
+        "2",
+        "5",
+        "6",
         "9",
-        "15",
-        "19",
-        "22",
-        "24",
+        "12",
         "25",
-        "27",
+        "26",
+        "29",
+        "30",
+        "35",
         "41",
-        "43",
-        "45",
         "46",
-        "52",
+        "47",
         "53",
+        "56",
         "57",
-        "59",
-        "61",
-        "74",
-        "78",
-        "80"
+        "68",
+        "69",
+        "75"
       ],
       "specialNumbers": [
-        "17"
+        "39"
       ],
       "sourceWarnings": [],
       "sourceNumberOrder": [
+        {
+          "value": "2",
+          "type": "NORMAL"
+        },
+        {
+          "value": "5",
+          "type": "NORMAL"
+        },
+        {
+          "value": "6",
+          "type": "NORMAL"
+        },
         {
           "value": "9",
           "type": "NORMAL"
         },
         {
-          "value": "15",
-          "type": "NORMAL"
-        },
-        {
-          "value": "17",
-          "type": "SPECIAL"
-        },
-        {
-          "value": "19",
-          "type": "NORMAL"
-        },
-        {
-          "value": "22",
-          "type": "NORMAL"
-        },
-        {
-          "value": "24",
+          "value": "12",
           "type": "NORMAL"
         },
         {
@@ -164,19 +160,27 @@
           "type": "NORMAL"
         },
         {
-          "value": "27",
+          "value": "26",
           "type": "NORMAL"
+        },
+        {
+          "value": "29",
+          "type": "NORMAL"
+        },
+        {
+          "value": "30",
+          "type": "NORMAL"
+        },
+        {
+          "value": "35",
+          "type": "NORMAL"
+        },
+        {
+          "value": "39",
+          "type": "SPECIAL"
         },
         {
           "value": "41",
-          "type": "NORMAL"
-        },
-        {
-          "value": "43",
-          "type": "NORMAL"
-        },
-        {
-          "value": "45",
           "type": "NORMAL"
         },
         {
@@ -184,7 +188,7 @@
           "type": "NORMAL"
         },
         {
-          "value": "52",
+          "value": "47",
           "type": "NORMAL"
         },
         {
@@ -192,27 +196,23 @@
           "type": "NORMAL"
         },
         {
+          "value": "56",
+          "type": "NORMAL"
+        },
+        {
           "value": "57",
           "type": "NORMAL"
         },
         {
-          "value": "59",
+          "value": "68",
           "type": "NORMAL"
         },
         {
-          "value": "61",
+          "value": "69",
           "type": "NORMAL"
         },
         {
-          "value": "74",
-          "type": "NORMAL"
-        },
-        {
-          "value": "78",
-          "type": "NORMAL"
-        },
-        {
-          "value": "80",
+          "value": "75",
           "type": "NORMAL"
         }
       ],
@@ -222,40 +222,40 @@
       "scheduleKey": "keno"
     },
     {
-      "id": "keno:3708745",
+      "id": "keno:3708815",
       "family": "Keno",
       "group": "keno",
       "session": "Frequent",
-      "drawNumber": "3708745",
-      "sourceExternalId": "3708745",
+      "drawNumber": "3708815",
+      "sourceExternalId": "3708815",
       "multiplier": null,
-      "sourceDrawTimestamp": "2026-10-24T15:40:00Z",
+      "sourceDrawTimestamp": "2026-10-24T20:20:00Z",
       "sourceDrawingDate": "2026-10-24",
       "drawDate": "2026-10-24",
       "drawTimeZone": "America/Chicago",
       "numbers": [
         "3",
-        "6",
-        "8",
+        "7",
+        "11",
+        "12",
+        "13",
         "22",
-        "26",
-        "27",
+        "25",
+        "28",
         "29",
-        "32",
-        "36",
-        "39",
+        "37",
+        "38",
         "40",
-        "43",
-        "47",
-        "55",
-        "64",
-        "71",
-        "73",
-        "75",
-        "80"
+        "51",
+        "58",
+        "65",
+        "68",
+        "69",
+        "74",
+        "79"
       ],
       "specialNumbers": [
-        "25"
+        "67"
       ],
       "sourceWarnings": [],
       "sourceNumberOrder": [
@@ -264,11 +264,19 @@
           "type": "NORMAL"
         },
         {
-          "value": "6",
+          "value": "7",
           "type": "NORMAL"
         },
         {
-          "value": "8",
+          "value": "11",
+          "type": "NORMAL"
+        },
+        {
+          "value": "12",
+          "type": "NORMAL"
+        },
+        {
+          "value": "13",
           "type": "NORMAL"
         },
         {
@@ -277,14 +285,10 @@
         },
         {
           "value": "25",
-          "type": "SPECIAL"
-        },
-        {
-          "value": "26",
           "type": "NORMAL"
         },
         {
-          "value": "27",
+          "value": "28",
           "type": "NORMAL"
         },
         {
@@ -292,15 +296,11 @@
           "type": "NORMAL"
         },
         {
-          "value": "32",
+          "value": "37",
           "type": "NORMAL"
         },
         {
-          "value": "36",
-          "type": "NORMAL"
-        },
-        {
-          "value": "39",
+          "value": "38",
           "type": "NORMAL"
         },
         {
@@ -308,35 +308,35 @@
           "type": "NORMAL"
         },
         {
-          "value": "43",
+          "value": "51",
           "type": "NORMAL"
         },
         {
-          "value": "47",
+          "value": "58",
           "type": "NORMAL"
         },
         {
-          "value": "55",
+          "value": "65",
           "type": "NORMAL"
         },
         {
-          "value": "64",
+          "value": "67",
+          "type": "SPECIAL"
+        },
+        {
+          "value": "68",
           "type": "NORMAL"
         },
         {
-          "value": "71",
+          "value": "69",
           "type": "NORMAL"
         },
         {
-          "value": "73",
+          "value": "74",
           "type": "NORMAL"
         },
         {
-          "value": "75",
-          "type": "NORMAL"
-        },
-        {
-          "value": "80",
+          "value": "79",
           "type": "NORMAL"
         }
       ],
@@ -762,6 +762,44 @@
       "scheduleKey": "pick-3"
     },
     {
+      "id": "pick3-midday:16218",
+      "family": "Pick 3",
+      "group": "pick3-midday",
+      "session": "Midday",
+      "drawNumber": "16218",
+      "sourceExternalId": "16218",
+      "multiplier": null,
+      "sourceDrawTimestamp": "2026-10-24T18:13:00Z",
+      "sourceDrawingDate": "2026-10-24",
+      "drawDate": "2026-10-24",
+      "drawTimeZone": "America/Chicago",
+      "numbers": [
+        "7",
+        "8",
+        "6"
+      ],
+      "specialNumbers": [],
+      "sourceWarnings": [],
+      "sourceNumberOrder": [
+        {
+          "value": "7",
+          "type": "NORMAL"
+        },
+        {
+          "value": "8",
+          "type": "NORMAL"
+        },
+        {
+          "value": "6",
+          "type": "NORMAL"
+        }
+      ],
+      "teams": [],
+      "sourceUrl": "https://playonkansas.com/games/draw-games/pick-3",
+      "coverage": "Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.",
+      "scheduleKey": "pick-3"
+    },
+    {
       "id": "pick3-midday:16216",
       "family": "Pick 3",
       "group": "pick3-midday",
@@ -791,44 +829,6 @@
         },
         {
           "value": "4",
-          "type": "NORMAL"
-        }
-      ],
-      "teams": [],
-      "sourceUrl": "https://playonkansas.com/games/draw-games/pick-3",
-      "coverage": "Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.",
-      "scheduleKey": "pick-3"
-    },
-    {
-      "id": "pick3-midday:16214",
-      "family": "Pick 3",
-      "group": "pick3-midday",
-      "session": "Midday",
-      "drawNumber": "16214",
-      "sourceExternalId": "16214",
-      "multiplier": null,
-      "sourceDrawTimestamp": "2026-10-22T18:13:00Z",
-      "sourceDrawingDate": "2026-10-22",
-      "drawDate": "2026-10-22",
-      "drawTimeZone": "America/Chicago",
-      "numbers": [
-        "9",
-        "2",
-        "0"
-      ],
-      "specialNumbers": [],
-      "sourceWarnings": [],
-      "sourceNumberOrder": [
-        {
-          "value": "9",
-          "type": "NORMAL"
-        },
-        {
-          "value": "2",
-          "type": "NORMAL"
-        },
-        {
-          "value": "0",
           "type": "NORMAL"
         }
       ],
@@ -1062,40 +1062,40 @@
       "scheduleKey": "powerball"
     },
     {
-      "id": "racetrax:851222",
+      "id": "racetrax:851284",
       "family": "Racetrax",
       "group": "racetrax",
       "session": "Frequent",
-      "drawNumber": "851222",
-      "sourceExternalId": "851222",
-      "multiplier": 3,
-      "sourceDrawTimestamp": "2026-10-24T15:45:00Z",
+      "drawNumber": "851284",
+      "sourceExternalId": "851284",
+      "multiplier": 1,
+      "sourceDrawTimestamp": "2026-10-24T20:24:00Z",
       "sourceDrawingDate": "2026-10-24",
       "drawDate": "2026-10-24",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "4",
         "1",
         "2",
-        "3"
+        "4",
+        "8"
       ],
       "specialNumbers": [],
       "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "4",
+          "value": "1",
           "type": "FIRST"
         },
         {
-          "value": "1",
+          "value": "2",
           "type": "SECOND"
         },
         {
-          "value": "2",
+          "value": "4",
           "type": "THIRD"
         },
         {
-          "value": "3",
+          "value": "8",
           "type": "FOURTH"
         }
       ],
@@ -1105,40 +1105,40 @@
       "scheduleKey": "racetrax"
     },
     {
-      "id": "racetrax:851221",
+      "id": "racetrax:851283",
       "family": "Racetrax",
       "group": "racetrax",
       "session": "Frequent",
-      "drawNumber": "851221",
-      "sourceExternalId": "851221",
+      "drawNumber": "851283",
+      "sourceExternalId": "851283",
       "multiplier": 1,
-      "sourceDrawTimestamp": "2026-10-24T15:41:00Z",
+      "sourceDrawTimestamp": "2026-10-24T20:20:00Z",
       "sourceDrawingDate": "2026-10-24",
       "drawDate": "2026-10-24",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "2",
-        "5",
         "1",
-        "9"
+        "2",
+        "4",
+        "3"
       ],
       "specialNumbers": [],
       "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "2",
+          "value": "1",
           "type": "FIRST"
         },
         {
-          "value": "5",
+          "value": "2",
           "type": "SECOND"
         },
         {
-          "value": "1",
+          "value": "4",
           "type": "THIRD"
         },
         {
-          "value": "9",
+          "value": "3",
           "type": "FOURTH"
         }
       ],
