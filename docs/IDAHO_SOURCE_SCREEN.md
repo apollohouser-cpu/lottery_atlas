@@ -799,3 +799,14 @@ Flutter coverage/draw/product tests and73 Idaho Python tests pass, including
 production-loader old-cache adoption of the exact newer snapshot and original
 report provenance. Deployment/live verification and native adoption follow;
 this is not state acceptance or a deadline change.
+
+
+Deployment verification: fc16561 completed successfully in run40114079451.
+Independent live retrieval matches all225451 bytes and SHA256
+6f15be4b20834e84065e8c0896bd5af57f0accd1fab35fafc42e3934d8ac0b98.
+The ordinary iOS target rebuilt (Xcode33.0s), installed and cold-launched as
+process14225 on the original iPhone17e. Native accessibility confirms the ordinary
+South Carolina home/map; this does not yet verify Idaho remote adoption or the
+new retained-report disclosure. Android remained stopped. The three changed
+Flutter test files analyze cleanly. Next verify Idaho native cache/adoption and
+enlarged integrated flows using this ordinary build.
