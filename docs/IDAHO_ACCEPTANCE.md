@@ -744,3 +744,23 @@ schedules, native2x layouts, newer remote adoption and controlled loader-failure
 retention. Product representative normal-text paths now include unknown and
 numeric Scratch, InstaPlay, TouchTab, fixed Tab and Raffle; this is not every
 product manually checked in every orientation. No acceptance/deadline change.
+
+
+## October 23, 21:44 ET run — all22 native result selections
+
+Ordinary b8b99a2, upright normal text: traversed all22 selections through the
+actual native dropdown, checking fresh accessibility output after every choice.
+Both dates for all11 groups opened with their correct distinct result labels
+and numbers. PB/DP remained distinct, MM retained per-play multiplier wording,
+Lotto America showed its draw multiplier, Idaho Cash retained Free Ticket as a
+category, all eight Pick selections showed excluded report counts, XsOs retained
+literal source-code wording, and older XsOs/MFL showed explicit dated gaps.
+Each selection reset to its summary. Collection time stayed October23
+11:41:13UTC. This closes normal-text native result-selection traversal only;
+long report/schedule content below the initial viewport and source returns
+were not traversed in this pass. No claim of22 screenshot layout inspections.
+
+Remaining: family source returns, full schedule/rule reading paths, integrated
+native2x and representative orientation evidence, newer remote adoption,
+controlled failure retention and final ordinary restoration. No acceptance,
+source refresh, extension or deadline change. App remains on older MFL summary.
