@@ -302,3 +302,31 @@ multipliers and Double Play joins. Strict literal rule/schedule contracts and
 coupled collection/retention remain next, followed by app/native integration.
 No new all-game public feed, native build or acceptance; release remains due
 October29 21:06ET with no extension.
+
+
+## October25,04:16ET — literal rule and schedule gates
+
+Added seven explicit rule contracts and20 schedule groups/167 physical rows in
+oklahoma_draw_rule_specs.json, with oklahoma_draw_rules.py enforcing identity,
+eligibility, draw times, all match/prize/odds cells and four rich-text sections.
+Presentation marks and whitespace are normalized; changed text, structural nodes,
+assets/links, missing fields or changed schedule values require review. The
+returned source data preserves categorical prizes, separate Double Play columns,
+per-play Mega Millions multiplier groups and lifetime prize labels.
+
+Reviewed every retained schedule row and the additional disclaimers. Pick3's
+disclaimer explicitly provides Midday12:59PM and Evening8:59PM sales cutoffs,
+whereas how-to-play only mentions the latter; this clarifies the schedule but
+does not establish session identity for dated results. MFL how-to-play and
+sales-cutoff disclaimer differ. Xs & Os legend prose contains both1 in12 and
+1 in8.47 overall odds; both are retained without selecting a resolved value.
+Lotto America's SB-only row literally lists1 in160.94 in all five schedules;
+it is preserved, not mathematically corrected. Returned source notes identify
+these limitations for subsequent app disclosure.
+
+All seven retained HTML rule contracts pass. All31 Oklahoma Python tests pass,
+including five rule tests checking every family's schedule drift, missing rules,
+new assets, timing changes and prose versus presentation changes. No new source
+retrieval, all-game feed publication, build or acceptance. Next implement coupled
+atomic collection and correction/regression/failure retention, then app/native.
+October29 21:06ET release deadline remains unchanged; no extension.
