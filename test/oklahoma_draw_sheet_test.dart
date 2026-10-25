@@ -69,8 +69,9 @@ void main() {
       for (var page = 0; page < 100; page++) {
         await tester.tap(find.byTooltip('Next page'));
         await tester.pumpAndSettle();
-        if (find.text('Official game rules and results').evaluate().isNotEmpty)
+        if (find.text('Official game rules and results').evaluate().isNotEmpty) {
           break;
+        }
       }
       expect(find.text('Coverage limits'), findsOneWidget, reason: key);
       expect(find.textContaining('null'), findsNothing, reason: key);
