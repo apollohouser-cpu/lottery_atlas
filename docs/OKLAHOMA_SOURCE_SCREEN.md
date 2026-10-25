@@ -357,3 +357,24 @@ decreases/unknowns. No fresh source collection or public-feed deployment occurre
 Next perform a complete fresh collection, inspect any source changes without
 weakening contracts, wire the coupled feed publisher and verify deployed bytes;
 app/native gates follow. Release remains due October29 21:06ET, no extension.
+
+
+## October25,06:20ET — fresh coupled baseline prepared
+
+A complete78-request live collection finished October25 10:19:54.467830UTC.
+All strict draw/rule/product checks and continuity against the retained private
+replay passed. The new snapshot contains14 completed results/eight groups, all14
+winner reports unavailable, two scheduled entries excluded, seven rule contracts,
+50 Scratch games/653 numeric tiers and19 Fast Play games/219 typed tiers. Raw
+responses and per-response hashes/times are retained privately under
+work/oklahoma_scope/fresh_20261025_1018. No time was advanced by replay.
+
+Prepared data/oklahoma_coverage.generated.json and docs/oklahoma_coverage.json,
+258327 identical bytes, SHA256
+f39d241ea318baca262f4fdb0dd431d02360ab7438035c8f8360392acd31c0b5.
+The state refresh transaction now invokes the coupled collector and the publisher
+stages the coupled feed. Legacy Scratch-only data remains unchanged with its
+original date; the forthcoming app must consume the coupled snapshot. All512
+Python tests pass, including38 Oklahoma tests. Deployment and independent live
+byte verification are pending this commit; app/native and acceptance remain open.
+Release deadline October29 21:06ET unchanged, no extension.
