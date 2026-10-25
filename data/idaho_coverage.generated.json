@@ -1,8 +1,123 @@
 {
   "schemaVersion": 1,
   "state": "Idaho",
-  "collectionStartedAt": "2026-10-24T10:58:20.814654+00:00",
+  "collectionStartedAt": "2026-10-25T04:48:27.867601+00:00",
   "results": [
+    {
+      "group": "powerball",
+      "game": "Powerball",
+      "drawDate": "2026-10-24",
+      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-24",
+      "numbers": [
+        "04",
+        "05",
+        "15",
+        "19",
+        "55"
+      ],
+      "specialNumber": "19",
+      "multiplier": 2,
+      "report": {
+        "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-24",
+        "sourceLabel": "Idaho Winners",
+        "countDefinition": "Published Idaho prize-tier winner counts; distinct tickets and people are not established.",
+        "tiers": [
+          {
+            "sourceTier": "m5-pp",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m4-pb-pp",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m4-pp",
+            "publishedWinnerCount": 4
+          },
+          {
+            "sourceTier": "m3-pb-pp",
+            "publishedWinnerCount": 7
+          },
+          {
+            "sourceTier": "m3-pp",
+            "publishedWinnerCount": 188
+          },
+          {
+            "sourceTier": "m2-pb-pp",
+            "publishedWinnerCount": 123
+          },
+          {
+            "sourceTier": "m1-pb-pp",
+            "publishedWinnerCount": 975
+          },
+          {
+            "sourceTier": "m0-pb-pp",
+            "publishedWinnerCount": 2396
+          }
+        ],
+        "limitation": "Power Play rows only. Undisplayed base counts and jackpot count excluded."
+      },
+      "reportGap": null
+    },
+    {
+      "group": "powerball-double-play",
+      "game": "Powerball",
+      "drawDate": "2026-10-24",
+      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-24",
+      "numbers": [
+        "03",
+        "30",
+        "44",
+        "50",
+        "56"
+      ],
+      "specialNumber": "23",
+      "report": {
+        "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-24",
+        "sourceLabel": "Idaho Winners",
+        "countDefinition": "Published Idaho prize-tier winner counts; distinct tickets and people are not established.",
+        "tiers": [
+          {
+            "sourceTier": "m5-dpb",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m5",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m4-dpb",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m4",
+            "publishedWinnerCount": 3
+          },
+          {
+            "sourceTier": "m3-dpb",
+            "publishedWinnerCount": 1
+          },
+          {
+            "sourceTier": "m3",
+            "publishedWinnerCount": 75
+          },
+          {
+            "sourceTier": "m2-dpb",
+            "publishedWinnerCount": 65
+          },
+          {
+            "sourceTier": "m1-dpb",
+            "publishedWinnerCount": 480
+          },
+          {
+            "sourceTier": "m0-dpb",
+            "publishedWinnerCount": 1177
+          }
+        ],
+        "limitation": "Double Play only; no Power Play multiplier."
+      },
+      "reportGap": null
+    },
     {
       "group": "powerball",
       "game": "Powerball",
@@ -112,121 +227,6 @@
           {
             "sourceTier": "m0-dpb",
             "publishedWinnerCount": 884
-          }
-        ],
-        "limitation": "Double Play only; no Power Play multiplier."
-      },
-      "reportGap": null
-    },
-    {
-      "group": "powerball",
-      "game": "Powerball",
-      "drawDate": "2026-10-19",
-      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-19",
-      "numbers": [
-        "08",
-        "31",
-        "32",
-        "42",
-        "48"
-      ],
-      "specialNumber": "23",
-      "multiplier": 4,
-      "report": {
-        "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-19",
-        "sourceLabel": "Idaho Winners",
-        "countDefinition": "Published Idaho prize-tier winner counts; distinct tickets and people are not established.",
-        "tiers": [
-          {
-            "sourceTier": "m5-pp",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceTier": "m4-pb-pp",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceTier": "m4-pp",
-            "publishedWinnerCount": 2
-          },
-          {
-            "sourceTier": "m3-pb-pp",
-            "publishedWinnerCount": 7
-          },
-          {
-            "sourceTier": "m3-pp",
-            "publishedWinnerCount": 117
-          },
-          {
-            "sourceTier": "m2-pb-pp",
-            "publishedWinnerCount": 87
-          },
-          {
-            "sourceTier": "m1-pb-pp",
-            "publishedWinnerCount": 744
-          },
-          {
-            "sourceTier": "m0-pb-pp",
-            "publishedWinnerCount": 1700
-          }
-        ],
-        "limitation": "Power Play rows only. Undisplayed base counts and jackpot count excluded."
-      },
-      "reportGap": null
-    },
-    {
-      "group": "powerball-double-play",
-      "game": "Powerball",
-      "drawDate": "2026-10-19",
-      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-19",
-      "numbers": [
-        "11",
-        "23",
-        "24",
-        "47",
-        "49"
-      ],
-      "specialNumber": "11",
-      "report": {
-        "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-19",
-        "sourceLabel": "Idaho Winners",
-        "countDefinition": "Published Idaho prize-tier winner counts; distinct tickets and people are not established.",
-        "tiers": [
-          {
-            "sourceTier": "m5-dpb",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceTier": "m5",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceTier": "m4-dpb",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceTier": "m4",
-            "publishedWinnerCount": 1
-          },
-          {
-            "sourceTier": "m3-dpb",
-            "publishedWinnerCount": 3
-          },
-          {
-            "sourceTier": "m3",
-            "publishedWinnerCount": 43
-          },
-          {
-            "sourceTier": "m2-dpb",
-            "publishedWinnerCount": 53
-          },
-          {
-            "sourceTier": "m1-dpb",
-            "publishedWinnerCount": 375
-          },
-          {
-            "sourceTier": "m0-dpb",
-            "publishedWinnerCount": 787
           }
         ],
         "limitation": "Double Play only; no Power Play multiplier."
@@ -610,6 +610,98 @@
     {
       "group": "lotto-america",
       "game": "Lotto America",
+      "drawDate": "2026-10-24",
+      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/lotto-america/2026-10-24",
+      "numbers": [
+        "15",
+        "18",
+        "21",
+        "25",
+        "31"
+      ],
+      "specialNumber": "04",
+      "multiplier": 4,
+      "report": {
+        "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/lotto-america/2026-10-24",
+        "sourceLabel": "Idaho Winners",
+        "countDefinition": "Published Idaho prize-tier winner counts; distinct tickets and people are not established.",
+        "tiers": [
+          {
+            "sourceTier": "m5-sb",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m5",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m4-sb",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m4",
+            "publishedWinnerCount": 1
+          },
+          {
+            "sourceTier": "m3-sb",
+            "publishedWinnerCount": 6
+          },
+          {
+            "sourceTier": "m3",
+            "publishedWinnerCount": 44
+          },
+          {
+            "sourceTier": "m2-sb",
+            "publishedWinnerCount": 76
+          },
+          {
+            "sourceTier": "m1-sb",
+            "publishedWinnerCount": 384
+          },
+          {
+            "sourceTier": "m0-sb",
+            "publishedWinnerCount": 655
+          },
+          {
+            "sourceTier": "m5-asb",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m4-sb-asb",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m4-asb",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceTier": "m3-sb-asb",
+            "publishedWinnerCount": 1
+          },
+          {
+            "sourceTier": "m3-asb",
+            "publishedWinnerCount": 22
+          },
+          {
+            "sourceTier": "m2-sb-asb",
+            "publishedWinnerCount": 46
+          },
+          {
+            "sourceTier": "m1-sb-asb",
+            "publishedWinnerCount": 218
+          },
+          {
+            "sourceTier": "m0-sb-asb",
+            "publishedWinnerCount": 373
+          }
+        ],
+        "limitation": "Source tier labels retained; no aggregate count or prize entitlement inferred."
+      },
+      "reportGap": null
+    },
+    {
+      "group": "lotto-america",
+      "game": "Lotto America",
       "drawDate": "2026-10-21",
       "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/lotto-america/2026-10-21",
       "numbers": [
@@ -700,91 +792,37 @@
       "reportGap": null
     },
     {
-      "group": "lotto-america",
-      "game": "Lotto America",
-      "drawDate": "2026-10-19",
-      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/lotto-america/2026-10-19",
+      "group": "idaho-cash",
+      "game": "Idaho Cash",
+      "drawDate": "2026-10-24",
+      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/idaho-cash/2026-10-24",
       "numbers": [
+        "01",
+        "07",
+        "12",
         "14",
-        "18",
-        "38",
-        "39",
-        "47"
+        "35"
       ],
-      "specialNumber": "09",
-      "multiplier": 3,
       "report": {
-        "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/lotto-america/2026-10-19",
+        "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/idaho-cash/2026-10-24",
         "sourceLabel": "Idaho Winners",
         "countDefinition": "Published Idaho prize-tier winner counts; distinct tickets and people are not established.",
         "tiers": [
           {
-            "sourceTier": "m5-sb",
+            "sourceTier": "Jackpot",
             "publishedWinnerCount": 0
           },
           {
-            "sourceTier": "m5",
-            "publishedWinnerCount": 0
+            "sourceTier": "$200",
+            "publishedWinnerCount": 3
           },
           {
-            "sourceTier": "m4-sb",
-            "publishedWinnerCount": 0
+            "sourceTier": "$5",
+            "publishedWinnerCount": 163
           },
           {
-            "sourceTier": "m4",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceTier": "m3-sb",
-            "publishedWinnerCount": 2
-          },
-          {
-            "sourceTier": "m3",
-            "publishedWinnerCount": 35
-          },
-          {
-            "sourceTier": "m2-sb",
-            "publishedWinnerCount": 31
-          },
-          {
-            "sourceTier": "m1-sb",
-            "publishedWinnerCount": 249
-          },
-          {
-            "sourceTier": "m0-sb",
-            "publishedWinnerCount": 490
-          },
-          {
-            "sourceTier": "m5-asb",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceTier": "m4-sb-asb",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceTier": "m4-asb",
-            "publishedWinnerCount": 1
-          },
-          {
-            "sourceTier": "m3-sb-asb",
-            "publishedWinnerCount": 1
-          },
-          {
-            "sourceTier": "m3-asb",
-            "publishedWinnerCount": 15
-          },
-          {
-            "sourceTier": "m2-sb-asb",
-            "publishedWinnerCount": 29
-          },
-          {
-            "sourceTier": "m1-sb-asb",
-            "publishedWinnerCount": 174
-          },
-          {
-            "sourceTier": "m0-sb-asb",
-            "publishedWinnerCount": 232
+            "sourceTier": "Free Ticket",
+            "publishedWinnerCount": 1942
           }
         ],
         "limitation": "Source tier labels retained; no aggregate count or prize entitlement inferred."
@@ -830,42 +868,32 @@
       "reportGap": null
     },
     {
-      "group": "idaho-cash",
-      "game": "Idaho Cash",
-      "drawDate": "2026-10-22",
-      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/idaho-cash/2026-10-22",
+      "group": "pick-3-day",
+      "game": "Pick 3",
+      "drawDate": "2026-10-24",
+      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/pick-3/2026-10-24",
       "numbers": [
-        "01",
-        "03",
-        "08",
-        "34",
-        "45"
+        "2",
+        "9",
+        "0"
       ],
-      "report": {
-        "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/idaho-cash/2026-10-22",
-        "sourceLabel": "Idaho Winners",
-        "countDefinition": "Published Idaho prize-tier winner counts; distinct tickets and people are not established.",
-        "tiers": [
-          {
-            "sourceTier": "Jackpot",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceTier": "$200",
-            "publishedWinnerCount": 3
-          },
-          {
-            "sourceTier": "$5",
-            "publishedWinnerCount": 108
-          },
-          {
-            "sourceTier": "Free Ticket",
-            "publishedWinnerCount": 1173
-          }
-        ],
-        "limitation": "Source tier labels retained; no aggregate count or prize entitlement inferred."
-      },
-      "reportGap": null
+      "session": "day",
+      "report": null,
+      "reportGap": "Pick report identity/unit review is incomplete; counts excluded."
+    },
+    {
+      "group": "pick-3-night",
+      "game": "Pick 3",
+      "drawDate": "2026-10-24",
+      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/pick-3/2026-10-24",
+      "numbers": [
+        "7",
+        "3",
+        "6"
+      ],
+      "session": "night",
+      "report": null,
+      "reportGap": "Pick report identity/unit review is incomplete; counts excluded."
     },
     {
       "group": "pick-3-day",
@@ -896,28 +924,30 @@
       "reportGap": "Pick report identity/unit review is incomplete; counts excluded."
     },
     {
-      "group": "pick-3-day",
-      "game": "Pick 3",
-      "drawDate": "2026-10-22",
-      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/pick-3/2026-10-22",
+      "group": "pick-4-day",
+      "game": "Pick 4",
+      "drawDate": "2026-10-24",
+      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/pick-4/2026-10-24",
       "numbers": [
         "8",
-        "1",
-        "2"
+        "9",
+        "7",
+        "5"
       ],
       "session": "day",
       "report": null,
       "reportGap": "Pick report identity/unit review is incomplete; counts excluded."
     },
     {
-      "group": "pick-3-night",
-      "game": "Pick 3",
-      "drawDate": "2026-10-22",
-      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/pick-3/2026-10-22",
+      "group": "pick-4-night",
+      "game": "Pick 4",
+      "drawDate": "2026-10-24",
+      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/pick-4/2026-10-24",
       "numbers": [
-        "8",
-        "9",
-        "8"
+        "1",
+        "0",
+        "0",
+        "2"
       ],
       "session": "night",
       "report": null,
@@ -948,36 +978,6 @@
         "5",
         "8",
         "0"
-      ],
-      "session": "night",
-      "report": null,
-      "reportGap": "Pick report identity/unit review is incomplete; counts excluded."
-    },
-    {
-      "group": "pick-4-day",
-      "game": "Pick 4",
-      "drawDate": "2026-10-22",
-      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/pick-4/2026-10-22",
-      "numbers": [
-        "4",
-        "8",
-        "4",
-        "0"
-      ],
-      "session": "day",
-      "report": null,
-      "reportGap": "Pick report identity/unit review is incomplete; counts excluded."
-    },
-    {
-      "group": "pick-4-night",
-      "game": "Pick 4",
-      "drawDate": "2026-10-22",
-      "sourceUrl": "https://www.idaholottery.com/api/v1/drawgame/pick-4/2026-10-22",
-      "numbers": [
-        "0",
-        "8",
-        "6",
-        "8"
       ],
       "session": "night",
       "report": null,
@@ -1071,6 +1071,74 @@
     {
       "group": "millionaire-for-life",
       "game": "Millionaire For Life",
+      "drawDate": "2026-10-24",
+      "numbers": [
+        "13",
+        "37",
+        "38",
+        "48",
+        "53"
+      ],
+      "specialNumber": "01",
+      "sourceUrl": "https://www.idaholottery.com/games/draw/millionaire-for-life",
+      "report": {
+        "drawDate": "2026-10-24",
+        "sourceUrl": "https://www.idaholottery.com/games/draw/millionaire-for-life",
+        "sourceLabel": "Idaho Winners",
+        "countDefinition": "Published Idaho prize-tier winner counts; distinct tickets and people are not established.",
+        "tiers": [
+          {
+            "sourceMatch": "XXXXXY",
+            "prizeLabel": "$1,000,000 a year, FOR LIFE",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceMatch": "XXXXX",
+            "prizeLabel": "$100,000 a year, FOR LIFE",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceMatch": "XXXXY",
+            "prizeLabel": "$7,500",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceMatch": "XXXX",
+            "prizeLabel": "$500",
+            "publishedWinnerCount": 0
+          },
+          {
+            "sourceMatch": "XXXY",
+            "prizeLabel": "$250",
+            "publishedWinnerCount": 2
+          },
+          {
+            "sourceMatch": "XXX",
+            "prizeLabel": "$50",
+            "publishedWinnerCount": 5
+          },
+          {
+            "sourceMatch": "XXY",
+            "prizeLabel": "$25",
+            "publishedWinnerCount": 22
+          },
+          {
+            "sourceMatch": "XX",
+            "prizeLabel": "$8",
+            "publishedWinnerCount": 113
+          },
+          {
+            "sourceMatch": "XY",
+            "prizeLabel": "$8",
+            "publishedWinnerCount": 179
+          }
+        ]
+      },
+      "reportGap": null
+    },
+    {
+      "group": "millionaire-for-life",
+      "game": "Millionaire For Life",
       "drawDate": "2026-10-23",
       "numbers": [
         "18",
@@ -1134,79 +1202,11 @@
           }
         ]
       },
-      "reportGap": null
-    },
-    {
-      "group": "millionaire-for-life",
-      "game": "Millionaire For Life",
-      "drawDate": "2026-10-22",
-      "numbers": [
-        "06",
-        "27",
-        "28",
-        "29",
-        "33"
-      ],
-      "specialNumber": "01",
-      "sourceUrl": "https://www.idaholottery.com/games/draw/millionaire-for-life",
-      "report": {
-        "drawDate": "2026-10-22",
-        "sourceUrl": "https://www.idaholottery.com/games/draw/millionaire-for-life",
-        "sourceLabel": "Idaho Winners",
-        "countDefinition": "Published Idaho prize-tier winner counts; distinct tickets and people are not established.",
-        "tiers": [
-          {
-            "sourceMatch": "XXXXXY",
-            "prizeLabel": "$1,000,000 a year, FOR LIFE",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceMatch": "XXXXX",
-            "prizeLabel": "$100,000 a year, FOR LIFE",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceMatch": "XXXXY",
-            "prizeLabel": "$7,500",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceMatch": "XXXX",
-            "prizeLabel": "$500",
-            "publishedWinnerCount": 0
-          },
-          {
-            "sourceMatch": "XXXY",
-            "prizeLabel": "$250",
-            "publishedWinnerCount": 2
-          },
-          {
-            "sourceMatch": "XXX",
-            "prizeLabel": "$50",
-            "publishedWinnerCount": 9
-          },
-          {
-            "sourceMatch": "XXY",
-            "prizeLabel": "$25",
-            "publishedWinnerCount": 29
-          },
-          {
-            "sourceMatch": "XX",
-            "prizeLabel": "$8",
-            "publishedWinnerCount": 128
-          },
-          {
-            "sourceMatch": "XY",
-            "prizeLabel": "$8",
-            "publishedWinnerCount": 194
-          }
-        ]
-      },
       "reportGap": null,
       "reportProvenance": {
-        "collectionStartedAt": "2026-10-23T11:41:13.552741+00:00",
+        "collectionStartedAt": "2026-10-24T10:58:20.814654+00:00",
         "sourceUrl": "https://www.idaholottery.com/games/draw/millionaire-for-life",
-        "sha256": "5c240a1f4c528bb5aac18f89536d2ab8f71dc7dc14d0738000b189c23fe209a2"
+        "sha256": "f4a0875b9af6dd1fb5c44f458673e52040fee5f72b6ef8b71a1d44a68d728cd3"
       }
     }
   ],
@@ -5805,6 +5805,10 @@
       {
         "date": "2026-10-22",
         "ticketNumber": "022175"
+      },
+      {
+        "date": "2026-10-23",
+        "ticketNumber": "033840"
       }
     ],
     "sourceRules": [
@@ -5862,43 +5866,43 @@
   "sourceEvidence": [
     {
       "url": "https://www.idaholottery.com/games/draw/powerball",
-      "sha256": "a1285b35d806902ee9e1b6b43d2369fd794c6fc606ddcc5ccf3b8aa6a416786a"
+      "sha256": "d38026dcdbcbeff76402c6a96a4b273676018656ce622deba4eab076bdae3bbb"
     },
     {
       "url": "https://www.idaholottery.com/games/draw/mega-millions",
-      "sha256": "9a3a0bcf6bc03420f9681626bd8ad8f10423c4df90d82e1c5fb29e278f06e0cd"
+      "sha256": "d6401b8f55b627c10c7b3d90e9cff3672174a27b7b11a0fa0d24be8ba83eea76"
     },
     {
       "url": "https://www.idaholottery.com/games/draw/lotto-america",
-      "sha256": "fffc9b2b3a1d36f557aa3c755b2bd3984fa42ce5677b0fab5ed605d8752f54d8"
+      "sha256": "e67dd1c3f4c6726acb0f956bd87874f8e342bf431498dc304ba168f3307dac7f"
     },
     {
       "url": "https://www.idaholottery.com/games/draw/idaho-cash",
-      "sha256": "d558e0b5dc786ed54c9570d11a3a4e414891ec29531822f9b5a3198b3aab60ff"
+      "sha256": "4fbdb62b1d182dfd34f7cb5c98bd8e63866648235575caca4a80a66564e476a9"
     },
     {
       "url": "https://www.idaholottery.com/games/draw/pick-3",
-      "sha256": "e89b29d4ed9d825c15098fd8a839fff28180a68f0ed2fb7b63359f7454049e8b"
+      "sha256": "d367ce636a6b80a243c0ebc2416e8acf9cd8b498f06c8d5dbf66b05d3c99cc3f"
     },
     {
       "url": "https://www.idaholottery.com/games/draw/pick-4",
-      "sha256": "19610f21d9a7253252c3020dabc87aad23def6efc4ca056bb1e47020b96327d1"
+      "sha256": "e4b067f0965820e7897c6d71563405d298d0d3f188f41380cd1fb145de4b45ae"
     },
     {
       "url": "https://www.idaholottery.com/games/draw/powerball-xs-os",
-      "sha256": "7e1e6f10c8fa2c853f90e8f7a1da6d9bf42fbdcb7b36842247642bab653978c2"
+      "sha256": "b01dca3a7324a16678d78fd5a74412798fdbab26a13e608509b8e26b4217b4a9"
     },
     {
       "url": "https://www.idaholottery.com/games/draw/millionaire-for-life",
-      "sha256": "f4a0875b9af6dd1fb5c44f458673e52040fee5f72b6ef8b71a1d44a68d728cd3"
+      "sha256": "85959ec0ff5b6bfe82634d4700fe4e6657004bd306261d2e2b7df05eacb75da0"
+    },
+    {
+      "url": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-24",
+      "sha256": "a9127e234826ae7d28ab9c5f445b355158281cddb2a11f4334a8e07acdeecac3"
     },
     {
       "url": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-21",
       "sha256": "aa7cf417a19d52eb376b6c04003c5d141d6fabe231d6c91af7fe4a8e6e4801c1"
-    },
-    {
-      "url": "https://www.idaholottery.com/api/v1/drawgame/powerball/2026-10-19",
-      "sha256": "705f2d312fd954553878b0bc7c818f7c55beeaa5688187f0603c80efed4787f6"
     },
     {
       "url": "https://www.idaholottery.com/api/v1/drawgame/mega-millions/2026-10-23",
@@ -5909,36 +5913,36 @@
       "sha256": "19d3d322baad097055d799717567fcb2736fff5a9ee30f884ba9c9039ac7df83"
     },
     {
+      "url": "https://www.idaholottery.com/api/v1/drawgame/lotto-america/2026-10-24",
+      "sha256": "b23457577dd42e9116af3ea449747c612afd108353c44f6dd4dd8f06fac30d1a"
+    },
+    {
       "url": "https://www.idaholottery.com/api/v1/drawgame/lotto-america/2026-10-21",
       "sha256": "6f5f45e9207397ad9c3eb8972c4ed580f1ea56ebcec9b874d4651dc113ac7ad5"
     },
     {
-      "url": "https://www.idaholottery.com/api/v1/drawgame/lotto-america/2026-10-19",
-      "sha256": "ae1f8be3c3594bfe24d49167ed166ae9bd9b53ec69e157e0196f905388933f3d"
+      "url": "https://www.idaholottery.com/api/v1/drawgame/idaho-cash/2026-10-24",
+      "sha256": "ed431088f6e9531811cdd9adf3442d93006a4988cb1f469b2d3685c1e7961fc0"
     },
     {
       "url": "https://www.idaholottery.com/api/v1/drawgame/idaho-cash/2026-10-23",
       "sha256": "e871f63c1f27f786585e49fc28f450f53464e1343521dbd6fc0024cc9cc68b34"
     },
     {
-      "url": "https://www.idaholottery.com/api/v1/drawgame/idaho-cash/2026-10-22",
-      "sha256": "012425fadba9f6328acebee2f28b8d39660b131e85590c9c07151f496de22e91"
+      "url": "https://www.idaholottery.com/api/v1/drawgame/pick-3/2026-10-24",
+      "sha256": "d1b4fbd902bf7ca4f4b84c679064e1338be8c88ef97edc9e5f87e99353a6aef2"
     },
     {
       "url": "https://www.idaholottery.com/api/v1/drawgame/pick-3/2026-10-23",
       "sha256": "7e3e930c605183f9a56f7f7384350f5e133a9f52c484f2475135f7940728d99a"
     },
     {
-      "url": "https://www.idaholottery.com/api/v1/drawgame/pick-3/2026-10-22",
-      "sha256": "c01d542eae1e56c9ab6735a3fbe18bfd8e2cc037484fe1a54d713bb37460bbe5"
+      "url": "https://www.idaholottery.com/api/v1/drawgame/pick-4/2026-10-24",
+      "sha256": "3fcb00d37069a3ab454afcc1d8b6d9011434d90a486805d670bfadf1eeee7d4d"
     },
     {
       "url": "https://www.idaholottery.com/api/v1/drawgame/pick-4/2026-10-23",
       "sha256": "e7753b0c51bb6bc71527a57dce4c05f514480016e6f182db4ead58cd33fe21b7"
-    },
-    {
-      "url": "https://www.idaholottery.com/api/v1/drawgame/pick-4/2026-10-22",
-      "sha256": "9dbc6b1094546b9c2d05041c82b2577f5e09287c038088cc80dc2e465037959e"
     },
     {
       "url": "https://www.idaholottery.com/api/v1/drawgame/powerball-xs-os/2026-10-18",
@@ -5958,247 +5962,247 @@
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay",
-      "sha256": "19e3af946df272e45c5f768269ae2a2b3621c99fc03d582701166ca52d4aaff5"
+      "sha256": "a15ef7cf2a5a17e8fbdc018d2f2f28fefb1f8093546288e1e31a0fabf6dd86e3"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/jackpot-usa",
-      "sha256": "7a0628af1451eabd8254055705d33c3f747273bf788645d6e10d90ac88888aad"
+      "sha256": "2f9c63960cc72bf60d71ec19f0db809b0b342da663b470d906eea68a513747df"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/blackjack",
-      "sha256": "909cf2986e8161d9ead7ec5f9fabc209f42a763424cb74b3b6faacc3b91285c4"
+      "sha256": "15bc0bfc781d151918e907d78df1110693943dc7651f002285325b4d953f46ac"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/deal-me-in",
-      "sha256": "32c309d5b2ea6788285442c824e25a78f1e44b03da69d870cca356df3b50d674"
+      "sha256": "f40c5cfaa11b22ce818adf22efd6c45b222117d59630f4b7082f9511feadccb5"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/10-cash-spot",
-      "sha256": "4fd974f9847f2353d3476da01967ac58442bfd9bdcc110b0b8b6a116e4a56b53"
+      "sha256": "e09cb34fbffd0080a745012b7eff453c856edd3d5a2afc5b35b3c1ee74866a8e"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/twenty-20s",
-      "sha256": "f13f66eb68ddf79de6e830f34b1e58a5a6a5c81c444ccca9e6ed6705444fb7b2"
+      "sha256": "7fae19a51af6161297e7c795298d6e8228ddb3e73d7b9374993d2ee624c9c93c"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/fire-dice",
-      "sha256": "66cbf2e00b06d192874e1f69528aedd6207c46148dadda3595cb91ca808a5320"
+      "sha256": "28c34b5381f06dba887337d0c96ab46dc1c77536e1789cfb01e6e2b8af911648"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/super-seven",
-      "sha256": "6c88d78538cbabb78259256dbce09b4efab2155a25e705c26d66bc3af3349aa7"
+      "sha256": "21c53ef51d7951b00629f5c9d5a416ecf995819886703d0f343640860ac35c8a"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/ultimate-diamond-jackpot",
-      "sha256": "1f51078d7086a8ac8f07a5c3d768e58f6eda8adc9f7b0890615379f325572362"
+      "sha256": "2a5259e0528e0038f5a6434a59a44d3724bc9f2d595a9b1b2022f6ce6a06a62c"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/big-money-jackpot",
-      "sha256": "d23a60af4936be3b3ab8d7db1a46be0ef1b8b876cde2f369ad5ba734e78e264c"
+      "sha256": "bb61cfc8efbd05d59d08c5fe70906cb3a5ab5758bcfa9f4963e6c2cc128a698f"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/idaho-jackpot",
-      "sha256": "ad263c2f4848028b8ae4ed582759e397f59fe553f70918f36e1eacb959e321b7"
+      "sha256": "3833e024e91725c6f102a9b71c3cfbbf66f8102df48b571333dbb887a54c0c91"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/bank-buster",
-      "sha256": "d59d408c02c03f02a45fe76a3c4d7cc294f8c72d6d204d89408c04c1ecb9227c"
+      "sha256": "7e64b87ba2c04f2343fedbc130973ad9540421a307f4e7c3cfb70c93c5307340"
     },
     {
       "url": "https://www.idaholottery.com/games/instaplay/fabulous-five",
-      "sha256": "707d021e2c07688893a166093c73fc4479b6a6b06b9d68b49ae5a520a5835b9d"
+      "sha256": "73b0aed25f3f3779052e0006ae65790508fb824e838f6435d043af977a90768a"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs",
-      "sha256": "5b07f66de3beb66d9dd4391c842d0d9ce81badf0a186e435b8d2cea16eb41a14"
+      "sha256": "f8c796da648bf381d1cf291fea8ad2cf6ef63a06a49da6693ac47c280f350ad9"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/wild-thing-touchtab",
-      "sha256": "6535b3604360e7c23d7208a9a064f6f5f6b8a2decdeb33bc4d1194e3cf5e0167"
+      "sha256": "d3b0b04177a0725f524764548d1b770a5c621a80e5cb793d381b712ab2ec3eab"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/seven-diamonds-touchtab",
-      "sha256": "0503a9ca0e5d5d393b42b3fdd9ae17f43e9b7ffacfa822d49210ab818614f8a8"
+      "sha256": "0f7fbacaaa7dfdbd170c8e2cb43738c5d7ce4dd8831d4b31658529e06fac64db"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/dynamite-diamonds-touchtabs",
-      "sha256": "fe213107dd62b24c6ca4aca8c6eb4ad2e622eeaf48f9123e148bc09804714ec0"
+      "sha256": "3789f6dbea922a67ac1464bacb4a24c329b7f5e39786235d3cc8296b2faae3b4"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/aim-high-touchtab",
-      "sha256": "4dfe5fcc07728aee16599f078253b28d6e7ba3d8c4e4d8428b31073b54025854"
+      "sha256": "c986c68dea37453ae1873a963104bdd9857f7769a22410dddef1b4247c1171c2"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/fishin-riches-touchtab",
-      "sha256": "aeb100665e8f6a2e8130926c9d80d3b230631e0c2bed348bddca313fe50b79a6"
+      "sha256": "0c40714f823b65c1caaf141b1b337795a02c4fed434c493078e655a66f535308"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/frogger-touchtab",
-      "sha256": "01626f763439e78360a6ab5b4621047b72cc5cd90d797cd41802a5dc1eea3825"
+      "sha256": "19715c5e8bfe8ee3de1af9d071787fc3ea9dead0127c4d6a697c4e15ed2f03d6"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/huntin-riches-touchtab",
-      "sha256": "92a4d1fc44d460bb281b106adaeae71b68badb602120a2b5dcae94fe53bff76d"
+      "sha256": "ddf722560ad139de0acb0c6415f729091c117742f5fbeda293528bbfacb00ceb"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/money-mine-touchtab",
-      "sha256": "6328ae1e4d7d913a965727d452d086434e52c7c3f8e6579c6293192126d94df7"
+      "sha256": "e017cc9498a6a83bf179b173962f7eca5de432118788ec9e481af4b4232ee6af"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/treasure-valley-saloon-touchtab",
-      "sha256": "cabc5cf054ab4e43fe85b8fb43afff41802e38b9d8e6e6af6edf7195d75c272d"
+      "sha256": "bf6f1a7ea654bf0f5a837b579cb7246cbdaaee24cf98cfdef3ac3b5cbdcf2cd4"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/treasure-valley-saloon",
-      "sha256": "ca3b665f2db39e3aac03c7f2099bd59016fe1fb70306194e28e37c22ad411cff"
+      "sha256": "e0f1458fa74880dacc3e4c25fdd0861be6662a7a3bb094a32b37a5a084e27bcd"
     },
     {
       "url": "https://www.idaholottery.com/games/tabs/huntin-riches",
-      "sha256": "85e692a169fa9cedd3d7aab64f40f3389df195c69a56bca70f96d3891b2d91d1"
+      "sha256": "a932417aa489f9873134687d30a6476d4fb738934e191d398ab6e8fed984bb9f"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch",
-      "sha256": "9188db410bb2b5e90f370d11768ea353f6f4187013d8953f03f6b72aeff9856d"
+      "sha256": "e84a26d74cb6e726239be750b7f8661c90a8434c6a45090b392037dd3f0d52df"
     },
     {
       "url": "https://www.idaholottery.com/games/claim-scratch",
-      "sha256": "d204dd372203d73c6ff88b4251a8d4d12fea73b8b2eab86688edbbf57da81a6b"
+      "sha256": "ce61ed67333e3472346091532cb31d972771d81226e242048a519209ebaa4377"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/mistletoe-mystery",
-      "sha256": "44aa2c76a4077d9ace47ffca6ab624bd1fc054086f4a7af662faa84823d0c5fe"
+      "sha256": "1cf8bafe3ead1212cd2c8d1dbc0df54e5fbe19d1aaff27cd1e02a132a66753c3"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/starry-night",
-      "sha256": "f6a3d2e9df0abe1dc3d20af9863047aa40eb4eda4e744c5a66720a870c2088f4"
+      "sha256": "ae6c90ae99150bc62a8f76fd69b53101101d2450b5c233f35026526ace04edbc"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/elfin-rich",
-      "sha256": "f07e1304b0457e2e93b1633d59453a5e9f2ee79869c0cdd4179987634f414c1d"
+      "sha256": "a7c7b9962959c7d5c6156011b035e7b21d6da3171320368871d55ed6af5ae8ea"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/lady-luck-777",
-      "sha256": "f62be1dd5a6ef2de9f2360765e946a748480e63acf1a8e4eaebd1207a8ea8512"
+      "sha256": "0ffe00adbe52872831d93fc2d86242f8bcc9884144884652fdccc50efab4365d"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/mystery-tower-cashword",
-      "sha256": "4967ec559198d3278531fc87e64844e0cd331bf10d73b86e460955c335e390c7"
+      "sha256": "999a306186e064f101b472acfaeb691dfd74a92a70829f2785c394c1889c27f1"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/mega-cash",
-      "sha256": "85bc5e79b2f5e1fdd0df44f385591d8e8182692d4dae1d6a62ea70b536a87537"
+      "sha256": "81eec60407611a36a1fa7aa3b24e0e1eef801c5f6d86a04b544ee56191344730"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/chefs-kiss",
-      "sha256": "d89b7199f05b9d77c1b545fd4976eac898a4c10ccc9cce4fe203cf324a65602d"
+      "sha256": "2c4ecbe5a21385dd8b8b75fdac74b2dcd2497b3e90e471d2c5f13a44b2bf99ae"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/big-money",
-      "sha256": "f56e26113cd079ebe69dd7e59703e23a8c1e6d39cb72d85b578be552e707b23d"
+      "sha256": "6c5572135dc000f65f75fb615f469713fd0da9fdf9926283c949dc0edb3833c0"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/dia-de-los-muertos",
-      "sha256": "5ac410a8a06c61de87daab3b1006ce88a99b3b486a6f1df86d14c7a09cab47d4"
+      "sha256": "a72f58b51bd78472912249208dbffc83f3d57ad25f72c7f52d8d555f42ee5a7a"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/100-200-500-0",
-      "sha256": "6e54ac3d088c41e3f28c2b050506dfadfe5dbdcf179d62b90bba6d7a9a0df8cf"
+      "sha256": "256c6c9b230ef72af928c79db0a92e7e8ddf28e00eacd5cfc953386f4c82c6c2"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/cool-beans-bingo",
-      "sha256": "f5e52336ca8c6af4cb6fdd5684307dadd4a3aac5a8cdd5971fbca075b7240899"
+      "sha256": "fbb3776802058f364e64426285d597bc7b35b5c6731a67733a67cb03ea825bd2"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/mountains-of-cashword",
-      "sha256": "714c1093ae5a564c96218f7c6b07ec5c666d0b69afb6156ee0292beb93d8f703"
+      "sha256": "436128c2960e375491deeadb401102320d0b86305aef9bdf0cf80436cf1154aa"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/mega-multiplier",
-      "sha256": "635d74caa3e583260ea8f5fe92e6af6243c4564adbf02d88f134d248e4384b4e"
+      "sha256": "5f22ab53cedd637f9a2d1e90c925f9b59ade63a30de27880e5b964226a6077a2"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/ninja-cashword-attack",
-      "sha256": "ece15625a6b404e651209c2a5d13551b9778a6777653e22d75b7168f76ca7ee6"
+      "sha256": "abd26d09facd31d410918882c280344e0082adf5381355bf69cde6efae333811"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/huckleberry-bucks",
-      "sha256": "f916fb3c3c6eb19b45e4f4b13776615bf066926946beb287809ab7ad70b67ff3"
+      "sha256": "677916d2b887b38e0e45cb940830a44874db12b35475572c7d71df28b9f86235"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/power-up-slingo",
-      "sha256": "afd7bd06a4a97979c14cc137bf0ef2d8ac480710c980bfa6368d519556be6d66"
+      "sha256": "df2bae41264df6a0bb1e21d4eff79e30e5535989c1a52f679d105c65ebc03bea"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/pong",
-      "sha256": "060327707e624ce7cab2c80d502e4655d60145a0bb07f57e2639e456db37e3e6"
+      "sha256": "b620de70b923b30fac883d19a9a688ea3fc0d92af78b52f7d0e438db75ceb84d"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/centipede",
-      "sha256": "4b85d8a365d34a3bec0d96337bcaac3781c55433438a369af73b3b908a84f1bd"
+      "sha256": "2e24d1020d092fa66fd99b450c3ded6fca41f4a1a17ff1589024a1365e331208"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/asteroids",
-      "sha256": "5d2d28e5d50ac86e9e91f86be919e620a8500168c2bc7ef4654f0dc01dee15cb"
+      "sha256": "a696d883d4a6e929526fa605254d1e073d6e5050a94f353e300af0a65355b93d"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/bubbles-doubler",
-      "sha256": "12fd431e6ca1dd9c4d8eeafcd295b205bc9793a9caf40fde4e20c32891d7f06b"
+      "sha256": "151f08f349a3746a6cdc62adfa0bd252fe0e8f187db4ea5e084055b92507a2a1"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/cherry-8s-doubler",
-      "sha256": "3e23fcc89ec19c52e842d682ad4605ab67f8a422bbb22a1f520e997d73b02f69"
+      "sha256": "88081d96da00a1574216b6d746fe6eaa293528e5cf073d962668dc46ce2e84f6"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/gold-star-big-bingo",
-      "sha256": "12408dec0489c2d649ec925949518c9b5bf905563efd48bde549b8e27bc5d4e0"
+      "sha256": "a5c20e5981bb623075d00e8fe983d602e45ac10c93933c092dc5d3f2adbeda13"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/20x-the-cash",
-      "sha256": "138cda2be883940f382304973ed1d1356d57c53a3daed81b7153caa1fdb91f6e"
+      "sha256": "144bf04bfce3fdac4d7bca11c5ba65f8484c31e8dd782742e94805ea5b426400"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/high-life",
-      "sha256": "db01879830f0b79d9b6545d416c9620f8fd48d91f988b672723750a059d0da98"
+      "sha256": "78022f0063a55a33b1c6c4a2105a95fc600bac655bd792b2ac40426614cd6057"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/limited-18th-edition",
-      "sha256": "e1b18f09b2cd18ce5d11b55521ee9be38f891344ae2beda0270c7950382f5e2d"
+      "sha256": "5368fd161fc82e4ef0820117b3cade598a6143b549b7442cad8aab8ea4d3957d"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/777-jackpot",
-      "sha256": "b00f3337ce3f5f24d7338b17f775b75cc7e2b2db3580def754927ce312b8fbcd"
+      "sha256": "4ee3779551c84707e048a7346c30e1f1aff8640b1356163efc18c7a02a6d64e0"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/crazy-bingo",
-      "sha256": "5b5607fc8c139f47fb9f5248305e2ad97649d34bf74702306152f8574772d8c0"
+      "sha256": "71071e2cc0feb331a901bd037f21b44124a593ad42491614ef446af578506585"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/double-up-slingo",
-      "sha256": "e3618b4e55a0d42e523860be6ebb633da7c0be8924ce68c25e512ff359c601f6"
+      "sha256": "32fb8bceef15407cc6f6603128c0073295d9e1fd2f5677dccf6b8dd1c49293f0"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/fruit-explosion",
-      "sha256": "844e4aec64b9f2de846bda334dbfc13ed3e3ff3dd779f64545dee5e06f9f81e4"
+      "sha256": "c1343c0e00773966c389d0feb13a974c6fd4cfb27a5d2ccf157f057f1405220d"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/fire-ice-multiplier",
-      "sha256": "d21a89745abffc23665a2059161e12ba43a49e9ad2a53d9358b770c60e9787d6"
+      "sha256": "bbb993d1621652f1049c5a136e687fc6e4692aeaa6888c5c556acfe7fc49a2f6"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/lucky-no-7-1",
-      "sha256": "533787c5f509bccee7aa38593595f4b4ad6805d7b01cfff27fccbc5fcd0ea737"
+      "sha256": "272fe74a94c9883234f92703c17a0dc56eecb998579e9a593979e3b45689091d"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/galactic-cash",
-      "sha256": "b5a5473be9aac705f39b5c08a412e243032df50d27db9a39d8545e80bd77b09a"
+      "sha256": "fab3d0b8d65a6c11aacbacb3b6a7c4ebb2686721cd73a9e3e4f034d7afda3fdc"
     },
     {
       "url": "https://www.idaholottery.com/games/scratch/cashtronaut-cashword",
-      "sha256": "64d98a39f2b961b2d3283832eb9df697bcb1c0499f2309deb563982a9382e947"
+      "sha256": "1573e8d13a6d71a5b99149128876588e9be4b3251c710d9bdfa4c3ff2b7ceece"
     },
     {
       "url": "https://www.idaholottery.com/games/raffle/idaho-1000000-raffle-2026",
-      "sha256": "c00a22140738bcfe82494534cc448cc155d64f06904eff10f6e04f500f7aa5e5"
+      "sha256": "65d760e27f766fda23556366d1399b1ed048487e0945e346126a5ad6feb26abc"
     }
   ],
   "coverage": "Bounded supported results, exact-date Idaho reports or explicit gaps, literal schedules/rules and separate typed products. No complete history, claims, stock or retailer joins."

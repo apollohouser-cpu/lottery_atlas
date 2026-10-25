@@ -1,5 +1,5 @@
 {
-  "attemptedAt": "2026-10-24T21:09:15.663776+00:00",
+  "attemptedAt": "2026-10-25T04:59:53.450779+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
@@ -105,8 +105,8 @@
     },
     {
       "state": "New Hampshire",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/new_hampshire_scratch_catalog.generated.json"
       ]
@@ -121,16 +121,16 @@
     },
     {
       "state": "Idaho",
-      "status": "retained_after_failure",
-      "message": "Importer failed validation or could not retrieve its source.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/idaho_coverage.generated.json"
       ]
     },
     {
       "state": "Michigan",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/michigan_scratch_catalog.generated.json"
       ]
@@ -173,8 +173,8 @@
     },
     {
       "state": "Kentucky",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "retained_after_failure",
+      "message": "Importer failed validation or could not retrieve its source.",
       "files": [
         "data/kentucky_scratch_catalog.generated.json",
         "data/kentucky_retailer_directory.generated.json",
@@ -258,8 +258,8 @@
     },
     {
       "state": "Missouri",
-      "status": "retained_after_failure",
-      "message": "Importer failed validation or could not retrieve its source.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/state_winning_ticket_totals.json",
         "data/missouri_scratch_catalog.generated.json",

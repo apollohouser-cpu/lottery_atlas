@@ -5,6 +5,56 @@
     {
       "game": "Lotto",
       "session": "Drawing",
+      "drawDate": "2026-10-24",
+      "numbers": [
+        "01",
+        "16",
+        "20",
+        "30",
+        "35",
+        "36"
+      ],
+      "advertisedJackpot": "$850,000",
+      "tiers": [
+        {
+          "match": "6",
+          "sourceMatchLabel": "Lotto numbers: 1 through 6",
+          "winners": 0,
+          "prizeLabel": "Jackpot"
+        },
+        {
+          "match": "5",
+          "sourceMatchLabel": "Lotto numbers: 1 through 5",
+          "winners": 6,
+          "prizeLabel": "$1,000"
+        },
+        {
+          "match": "4",
+          "sourceMatchLabel": "Lotto numbers: 1 through 4",
+          "winners": 279,
+          "prizeLabel": "$50"
+        },
+        {
+          "match": "3",
+          "sourceMatchLabel": "Lotto numbers: 1 through 3",
+          "winners": 4264,
+          "prizeLabel": "$3"
+        }
+      ],
+      "sourceUpdatedText": "Last Updated: 10/21/2026 11:15:35 PM CDT",
+      "sourceUpdatedAt": "2026-10-21T23:15:35-05:00",
+      "sourceWarnings": [
+        "The printed source update date precedes the draw date. Both dates are retained without correction."
+      ],
+      "sourceUrl": "https://louisianalottery.com/draw-games/lotto/#2026-10-24",
+      "coverage": "Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.",
+      "qualifications": [
+        "The Lotto jackpot starts at a guaranteed $500,000 cash but grows based on sales for each drawing until it is won. Jackpot prizes, match-5 prizes, and match-4 prizes are pari-mutuel and are divided equally among all winning tickets, while the match-3 prize is a fixed amount."
+      ]
+    },
+    {
+      "game": "Lotto",
+      "session": "Drawing",
       "drawDate": "2026-10-21",
       "numbers": [
         "06",
@@ -51,51 +101,52 @@
       ]
     },
     {
-      "game": "Lotto",
+      "game": "Easy 5",
       "session": "Drawing",
-      "drawDate": "2026-10-17",
+      "drawDate": "2026-10-24",
       "numbers": [
-        "07",
-        "15",
-        "22",
-        "27",
-        "31",
-        "35"
+        "06",
+        "08",
+        "09",
+        "19",
+        "36"
       ],
-      "advertisedJackpot": "$800,000",
+      "advertisedJackpot": "$60,000",
       "tiers": [
         {
-          "match": "6",
-          "sourceMatchLabel": "Lotto numbers: 1 through 6",
+          "match": "5",
+          "sourceMatchLabel": "Easy 5 numbers: 1 through 5",
           "winners": 0,
           "prizeLabel": "Jackpot"
         },
         {
-          "match": "5",
-          "sourceMatchLabel": "Lotto numbers: 1 through 5",
-          "winners": 11,
-          "prizeLabel": "$1,000"
-        },
-        {
           "match": "4",
-          "sourceMatchLabel": "Lotto numbers: 1 through 4",
-          "winners": 312,
-          "prizeLabel": "$50"
+          "sourceMatchLabel": "Easy 5 numbers: 1 through 4",
+          "winners": 17,
+          "prizeLabel": "$100"
         },
         {
           "match": "3",
-          "sourceMatchLabel": "Lotto numbers: 1 through 3",
-          "winners": 4789,
-          "prizeLabel": "$3"
+          "sourceMatchLabel": "Easy 5 numbers: 1 through 3",
+          "winners": 507,
+          "prizeLabel": "$7"
+        },
+        {
+          "match": "2",
+          "sourceMatchLabel": "Easy 5 numbers: 1 and 2",
+          "winners": 5213,
+          "prizeLabel": "$1"
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/21/2026 11:15:35 PM CDT",
-      "sourceUpdatedAt": "2026-10-21T23:15:35-05:00",
-      "sourceWarnings": [],
-      "sourceUrl": "https://louisianalottery.com/draw-games/lotto/#2026-10-17",
+      "sourceUpdatedText": "Last Updated: 10/21/2026 11:15:45 PM CDT",
+      "sourceUpdatedAt": "2026-10-21T23:15:45-05:00",
+      "sourceWarnings": [
+        "The printed source update date precedes the draw date. Both dates are retained without correction."
+      ],
+      "sourceUrl": "https://louisianalottery.com/draw-games/easy-5/#2026-10-24",
       "coverage": "Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.",
       "qualifications": [
-        "The Lotto jackpot starts at a guaranteed $500,000 cash but grows based on sales for each drawing until it is won. Jackpot prizes, match-5 prizes, and match-4 prizes are pari-mutuel and are divided equally among all winning tickets, while the match-3 prize is a fixed amount."
+        "The Easy 5 jackpot starts at a guaranteed $50,000 cash but grows based on sales for each drawing until it is won. If the jackpot is not won, the prize is carried over and added to the jackpot prize pool of the next drawing."
       ]
     },
     {
@@ -146,50 +197,111 @@
       ]
     },
     {
-      "game": "Easy 5",
+      "game": "Powerball",
       "session": "Drawing",
-      "drawDate": "2026-10-17",
+      "drawDate": "2026-10-24",
       "numbers": [
-        "09",
-        "11",
-        "21",
-        "24",
-        "33"
+        "04",
+        "05",
+        "15",
+        "19",
+        "55"
       ],
-      "advertisedJackpot": "$70,000(ticket purchased)",
+      "powerball": "19",
+      "powerPlay": "2x",
+      "advertisedJackpot": "$664,900,000",
       "tiers": [
         {
+          "match": "5+PB",
+          "sourceMatchLabel": "Power Ball numbers: 1 through 5 plus Powerball",
+          "baseWinners": 0,
+          "basePrizeLabel": "JACKPOT",
+          "powerPlayWinners": null,
+          "powerPlayWinnersLabel": "N/A",
+          "powerPlayPrizeLabel": "N/A"
+        },
+        {
           "match": "5",
-          "sourceMatchLabel": "Easy 5 numbers: 1 through 5",
-          "winners": 1,
-          "prizeLabel": "Jackpot"
+          "sourceMatchLabel": "Power Ball numbers: 1 through 5",
+          "baseWinners": 0,
+          "basePrizeLabel": "$1,000,000",
+          "powerPlayWinners": 0,
+          "powerPlayWinnersLabel": "0",
+          "powerPlayPrizeLabel": "$2,000,000"
+        },
+        {
+          "match": "4+PB",
+          "sourceMatchLabel": "Power Ball numbers: 1 through 4 plus Powerball",
+          "baseWinners": 1,
+          "basePrizeLabel": "$50,000",
+          "powerPlayWinners": 0,
+          "powerPlayWinnersLabel": "0",
+          "powerPlayPrizeLabel": "$100,000"
         },
         {
           "match": "4",
-          "sourceMatchLabel": "Easy 5 numbers: 1 through 4",
-          "winners": 21,
-          "prizeLabel": "$100"
+          "sourceMatchLabel": "Power Ball numbers: 1 through 4",
+          "baseWinners": 4,
+          "basePrizeLabel": "$100",
+          "powerPlayWinners": 3,
+          "powerPlayWinnersLabel": "3",
+          "powerPlayPrizeLabel": "$200"
+        },
+        {
+          "match": "3+PB",
+          "sourceMatchLabel": "Power Ball numbers: 1 through 3 plus Powerball",
+          "baseWinners": 10,
+          "basePrizeLabel": "$100",
+          "powerPlayWinners": 6,
+          "powerPlayWinnersLabel": "6",
+          "powerPlayPrizeLabel": "$200"
         },
         {
           "match": "3",
-          "sourceMatchLabel": "Easy 5 numbers: 1 through 3",
-          "winners": 667,
-          "prizeLabel": "$7"
+          "sourceMatchLabel": "Power Ball numbers: 1 through 3",
+          "baseWinners": 331,
+          "basePrizeLabel": "$7",
+          "powerPlayWinners": 213,
+          "powerPlayWinnersLabel": "213",
+          "powerPlayPrizeLabel": "$14"
         },
         {
-          "match": "2",
-          "sourceMatchLabel": "Easy 5 numbers: 1 and 2",
-          "winners": 5513,
-          "prizeLabel": "$1"
+          "match": "2+PB",
+          "sourceMatchLabel": "Power Ball numbers: 1 and 2 plus Powerball",
+          "baseWinners": 246,
+          "basePrizeLabel": "$7",
+          "powerPlayWinners": 146,
+          "powerPlayWinnersLabel": "146",
+          "powerPlayPrizeLabel": "$14"
+        },
+        {
+          "match": "1+PB",
+          "sourceMatchLabel": "Power Ball numbers: 1 plus Powerball",
+          "baseWinners": 1739,
+          "basePrizeLabel": "$4",
+          "powerPlayWinners": 1062,
+          "powerPlayWinnersLabel": "1,062",
+          "powerPlayPrizeLabel": "$8"
+        },
+        {
+          "match": "0+PB",
+          "sourceMatchLabel": "Power Ball numbers: Powerball",
+          "baseWinners": 4147,
+          "basePrizeLabel": "$4",
+          "powerPlayWinners": 2279,
+          "powerPlayWinnersLabel": "2,279",
+          "powerPlayPrizeLabel": "$8"
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/21/2026 11:15:45 PM CDT",
-      "sourceUpdatedAt": "2026-10-21T23:15:45-05:00",
-      "sourceWarnings": [],
-      "sourceUrl": "https://louisianalottery.com/draw-games/easy-5/#2026-10-17",
+      "sourceUpdatedText": "Last Updated: 10/22/2026 12:15:47 AM CDT",
+      "sourceUpdatedAt": "2026-10-22T00:15:47-05:00",
+      "sourceWarnings": [
+        "The printed source update date precedes the draw date. Both dates are retained without correction."
+      ],
+      "sourceUrl": "https://louisianalottery.com/draw-games/powerball/#2026-10-24",
       "coverage": "Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.",
       "qualifications": [
-        "The Easy 5 jackpot starts at a guaranteed $50,000 cash but grows based on sales for each drawing until it is won. If the jackpot is not won, the prize is carried over and added to the jackpot prize pool of the next drawing."
+        "The advertised jackpot represents an estimate of the annuity amount, which is paid in 30 graduated installments. There is also a cash prize payment option equal to the jackpot prize pool. Jackpot prizes are available for payment after the 15th calendar day following the drawing, and winners have 60 days from the date of claim to decide on a payment option."
       ]
     },
     {
@@ -293,112 +405,6 @@
       "sourceUpdatedAt": "2026-10-22T00:15:47-05:00",
       "sourceWarnings": [],
       "sourceUrl": "https://louisianalottery.com/draw-games/powerball/#2026-10-21",
-      "coverage": "Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.",
-      "qualifications": [
-        "The advertised jackpot represents an estimate of the annuity amount, which is paid in 30 graduated installments. There is also a cash prize payment option equal to the jackpot prize pool. Jackpot prizes are available for payment after the 15th calendar day following the drawing, and winners have 60 days from the date of claim to decide on a payment option."
-      ]
-    },
-    {
-      "game": "Powerball",
-      "session": "Drawing",
-      "drawDate": "2026-10-19",
-      "numbers": [
-        "08",
-        "31",
-        "32",
-        "42",
-        "48"
-      ],
-      "powerball": "23",
-      "powerPlay": "4x",
-      "advertisedJackpot": "$610,600,000",
-      "tiers": [
-        {
-          "match": "5+PB",
-          "sourceMatchLabel": "Power Ball numbers: 1 through 5 plus Powerball",
-          "baseWinners": 0,
-          "basePrizeLabel": "JACKPOT",
-          "powerPlayWinners": null,
-          "powerPlayWinnersLabel": "N/A",
-          "powerPlayPrizeLabel": "N/A"
-        },
-        {
-          "match": "5",
-          "sourceMatchLabel": "Power Ball numbers: 1 through 5",
-          "baseWinners": 0,
-          "basePrizeLabel": "$1,000,000",
-          "powerPlayWinners": 0,
-          "powerPlayWinnersLabel": "0",
-          "powerPlayPrizeLabel": "$2,000,000"
-        },
-        {
-          "match": "4+PB",
-          "sourceMatchLabel": "Power Ball numbers: 1 through 4 plus Powerball",
-          "baseWinners": 0,
-          "basePrizeLabel": "$50,000",
-          "powerPlayWinners": 0,
-          "powerPlayWinnersLabel": "0",
-          "powerPlayPrizeLabel": "$200,000"
-        },
-        {
-          "match": "4",
-          "sourceMatchLabel": "Power Ball numbers: 1 through 4",
-          "baseWinners": 1,
-          "basePrizeLabel": "$100",
-          "powerPlayWinners": 1,
-          "powerPlayWinnersLabel": "1",
-          "powerPlayPrizeLabel": "$400"
-        },
-        {
-          "match": "3+PB",
-          "sourceMatchLabel": "Power Ball numbers: 1 through 3 plus Powerball",
-          "baseWinners": 8,
-          "basePrizeLabel": "$100",
-          "powerPlayWinners": 5,
-          "powerPlayWinnersLabel": "5",
-          "powerPlayPrizeLabel": "$400"
-        },
-        {
-          "match": "3",
-          "sourceMatchLabel": "Power Ball numbers: 1 through 3",
-          "baseWinners": 132,
-          "basePrizeLabel": "$7",
-          "powerPlayWinners": 86,
-          "powerPlayWinnersLabel": "86",
-          "powerPlayPrizeLabel": "$28"
-        },
-        {
-          "match": "2+PB",
-          "sourceMatchLabel": "Power Ball numbers: 1 and 2 plus Powerball",
-          "baseWinners": 158,
-          "basePrizeLabel": "$7",
-          "powerPlayWinners": 97,
-          "powerPlayWinnersLabel": "97",
-          "powerPlayPrizeLabel": "$28"
-        },
-        {
-          "match": "1+PB",
-          "sourceMatchLabel": "Power Ball numbers: 1 plus Powerball",
-          "baseWinners": 958,
-          "basePrizeLabel": "$4",
-          "powerPlayWinners": 658,
-          "powerPlayWinnersLabel": "658",
-          "powerPlayPrizeLabel": "$16"
-        },
-        {
-          "match": "0+PB",
-          "sourceMatchLabel": "Power Ball numbers: Powerball",
-          "baseWinners": 2446,
-          "basePrizeLabel": "$4",
-          "powerPlayWinners": 1461,
-          "powerPlayWinnersLabel": "1,461",
-          "powerPlayPrizeLabel": "$16"
-        }
-      ],
-      "sourceUpdatedText": "Last Updated: 10/22/2026 12:15:47 AM CDT",
-      "sourceUpdatedAt": "2026-10-22T00:15:47-05:00",
-      "sourceWarnings": [],
-      "sourceUrl": "https://louisianalottery.com/draw-games/powerball/#2026-10-19",
       "coverage": "Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.",
       "qualifications": [
         "The advertised jackpot represents an estimate of the annuity amount, which is paid in 30 graduated installments. There is also a cash prize payment option equal to the jackpot prize pool. Jackpot prizes are available for payment after the 15th calendar day following the drawing, and winners have 60 days from the date of claim to decide on a payment option."
@@ -698,12 +704,11 @@
           ]
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/20/2026 11:45:42 PM CDT",
-      "sourceUpdatedAt": "2026-10-20T23:45:42-05:00",
+      "sourceUpdatedText": "Last Updated: 10/24/2026 12:15:35 AM CDT",
+      "sourceUpdatedAt": "2026-10-24T00:15:35-05:00",
       "sourceWarnings": [
         "The source match descriptions call the Mega Ball \"Megaplier\". Literal labels and Mega Ball symbols are retained.",
-        "The source repeats the jackpot row across multiplier columns. These entries are not summed into a jackpot winner total.",
-        "The printed source update date precedes the draw date. Both dates are retained without correction."
+        "The source repeats the jackpot row across multiplier columns. These entries are not summed into a jackpot winner total."
       ],
       "sourceUrl": "https://louisianalottery.com/draw-games/mega-millions/#2026-10-23",
       "coverage": "Source-reported Louisiana winners by tier, not certified distinct tickets or people, complete claims, or retailer activity. Jackpot advertisement is not a paid total.",
@@ -1006,8 +1011,8 @@
           ]
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/20/2026 11:45:42 PM CDT",
-      "sourceUpdatedAt": "2026-10-20T23:45:42-05:00",
+      "sourceUpdatedText": "Last Updated: 10/24/2026 12:15:35 AM CDT",
+      "sourceUpdatedAt": "2026-10-24T00:15:35-05:00",
       "sourceWarnings": [
         "The source match descriptions call the Mega Ball \"Megaplier\". Literal labels and Mega Ball symbols are retained.",
         "The source repeats the jackpot row across multiplier columns. These entries are not summed into a jackpot winner total."
@@ -1022,11 +1027,11 @@
     {
       "game": "Pick 3",
       "session": "Daily",
-      "drawDate": "2026-10-23",
+      "drawDate": "2026-10-24",
       "digits": [
-        "7",
-        "3",
-        "5"
+        "6",
+        "9",
+        "6"
       ],
       "summaryColumns": [
         "Play Type",
@@ -1035,31 +1040,31 @@
       "playTypes": [
         {
           "playType": "Straight",
-          "statewideTotalLabel": "$32,250",
-          "statewideTotalCents": 3225000
+          "statewideTotalLabel": "$14,500",
+          "statewideTotalCents": 1450000
         },
         {
           "playType": "Box",
-          "statewideTotalLabel": "$27,960",
-          "statewideTotalCents": 2796000
+          "statewideTotalLabel": "$13,040",
+          "statewideTotalCents": 1304000
         },
         {
           "playType": "Straight/Box",
-          "statewideTotalLabel": "$29,580",
-          "statewideTotalCents": 2958000
+          "statewideTotalLabel": "$20,790",
+          "statewideTotalCents": 2079000
         },
         {
           "playType": "Combo",
-          "statewideTotalLabel": "$31,250",
-          "statewideTotalCents": 3125000
+          "statewideTotalLabel": "$18,250",
+          "statewideTotalCents": 1825000
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/22/2026 11:15:18 PM CDT",
-      "sourceUpdatedAt": "2026-10-22T23:15:18-05:00",
+      "sourceUpdatedText": "Last Updated: 10/23/2026 11:15:20 PM CDT",
+      "sourceUpdatedAt": "2026-10-23T23:15:20-05:00",
       "sourceWarnings": [
         "The printed source update date precedes the draw date. Both dates are retained without correction."
       ],
-      "sourceUrl": "https://louisianalottery.com/draw-games/pick-3/#2026-10-23",
+      "sourceUrl": "https://louisianalottery.com/draw-games/pick-3/#2026-10-24",
       "coverage": "Play-type dollar totals only; no source winner counts. Not certified distinct tickets or people, net payments, complete claims or retailer activity. Payout schedules are separate from observed totals.",
       "payoutSchedule": [
         {
@@ -1267,11 +1272,11 @@
     {
       "game": "Pick 3",
       "session": "Daily",
-      "drawDate": "2026-10-22",
+      "drawDate": "2026-10-23",
       "digits": [
-        "4",
-        "0",
-        "2"
+        "7",
+        "3",
+        "5"
       ],
       "summaryColumns": [
         "Play Type",
@@ -1280,29 +1285,29 @@
       "playTypes": [
         {
           "playType": "Straight",
-          "statewideTotalLabel": "$31,500",
-          "statewideTotalCents": 3150000
+          "statewideTotalLabel": "$32,250",
+          "statewideTotalCents": 3225000
         },
         {
           "playType": "Box",
-          "statewideTotalLabel": "$19,080",
-          "statewideTotalCents": 1908000
+          "statewideTotalLabel": "$27,960",
+          "statewideTotalCents": 2796000
         },
         {
           "playType": "Straight/Box",
-          "statewideTotalLabel": "$19,430",
-          "statewideTotalCents": 1943000
+          "statewideTotalLabel": "$29,580",
+          "statewideTotalCents": 2958000
         },
         {
           "playType": "Combo",
-          "statewideTotalLabel": "$27,000",
-          "statewideTotalCents": 2700000
+          "statewideTotalLabel": "$31,250",
+          "statewideTotalCents": 3125000
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/22/2026 11:15:18 PM CDT",
-      "sourceUpdatedAt": "2026-10-22T23:15:18-05:00",
+      "sourceUpdatedText": "Last Updated: 10/23/2026 11:15:20 PM CDT",
+      "sourceUpdatedAt": "2026-10-23T23:15:20-05:00",
       "sourceWarnings": [],
-      "sourceUrl": "https://louisianalottery.com/draw-games/pick-3/#2026-10-22",
+      "sourceUrl": "https://louisianalottery.com/draw-games/pick-3/#2026-10-23",
       "coverage": "Play-type dollar totals only; no source winner counts. Not certified distinct tickets or people, net payments, complete claims or retailer activity. Payout schedules are separate from observed totals.",
       "payoutSchedule": [
         {
@@ -1510,12 +1515,12 @@
     {
       "game": "Pick 4",
       "session": "Daily",
-      "drawDate": "2026-10-23",
+      "drawDate": "2026-10-24",
       "digits": [
-        "7",
         "9",
         "0",
-        "9"
+        "4",
+        "2"
       ],
       "summaryColumns": [
         "Play Type",
@@ -1524,31 +1529,31 @@
       "playTypes": [
         {
           "playType": "Straight",
-          "statewideTotalLabel": "$5,000",
-          "statewideTotalCents": 500000
+          "statewideTotalLabel": "$17,500",
+          "statewideTotalCents": 1750000
         },
         {
           "playType": "Box",
-          "statewideTotalLabel": "$10,000",
-          "statewideTotalCents": 1000000
+          "statewideTotalLabel": "$20,100",
+          "statewideTotalCents": 2010000
         },
         {
           "playType": "Straight/Box",
-          "statewideTotalLabel": "$8,100",
-          "statewideTotalCents": 810000
+          "statewideTotalLabel": "$0",
+          "statewideTotalCents": 0
         },
         {
           "playType": "Combo",
-          "statewideTotalLabel": "$5,000",
-          "statewideTotalCents": 500000
+          "statewideTotalLabel": "$0",
+          "statewideTotalCents": 0
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/22/2026 11:15:24 PM CDT",
-      "sourceUpdatedAt": "2026-10-22T23:15:24-05:00",
+      "sourceUpdatedText": "Last Updated: 10/23/2026 11:15:30 PM CDT",
+      "sourceUpdatedAt": "2026-10-23T23:15:30-05:00",
       "sourceWarnings": [
         "The printed source update date precedes the draw date. Both dates are retained without correction."
       ],
-      "sourceUrl": "https://louisianalottery.com/draw-games/pick-4/#2026-10-23",
+      "sourceUrl": "https://louisianalottery.com/draw-games/pick-4/#2026-10-24",
       "coverage": "Play-type dollar totals only; no source winner counts. Not certified distinct tickets or people, net payments, complete claims or retailer activity. Payout schedules are separate from observed totals.",
       "payoutSchedule": [
         {
@@ -1868,12 +1873,12 @@
     {
       "game": "Pick 4",
       "session": "Daily",
-      "drawDate": "2026-10-22",
+      "drawDate": "2026-10-23",
       "digits": [
-        "2",
-        "0",
+        "7",
         "9",
-        "0"
+        "0",
+        "9"
       ],
       "summaryColumns": [
         "Play Type",
@@ -1882,29 +1887,29 @@
       "playTypes": [
         {
           "playType": "Straight",
-          "statewideTotalLabel": "$30,000",
-          "statewideTotalCents": 3000000
+          "statewideTotalLabel": "$5,000",
+          "statewideTotalCents": 500000
         },
         {
           "playType": "Box",
-          "statewideTotalLabel": "$43,000",
-          "statewideTotalCents": 4300000
+          "statewideTotalLabel": "$10,000",
+          "statewideTotalCents": 1000000
         },
         {
           "playType": "Straight/Box",
-          "statewideTotalLabel": "$18,900",
-          "statewideTotalCents": 1890000
+          "statewideTotalLabel": "$8,100",
+          "statewideTotalCents": 810000
         },
         {
           "playType": "Combo",
-          "statewideTotalLabel": "$12,500",
-          "statewideTotalCents": 1250000
+          "statewideTotalLabel": "$5,000",
+          "statewideTotalCents": 500000
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/22/2026 11:15:24 PM CDT",
-      "sourceUpdatedAt": "2026-10-22T23:15:24-05:00",
+      "sourceUpdatedText": "Last Updated: 10/23/2026 11:15:30 PM CDT",
+      "sourceUpdatedAt": "2026-10-23T23:15:30-05:00",
       "sourceWarnings": [],
-      "sourceUrl": "https://louisianalottery.com/draw-games/pick-4/#2026-10-22",
+      "sourceUrl": "https://louisianalottery.com/draw-games/pick-4/#2026-10-23",
       "coverage": "Play-type dollar totals only; no source winner counts. Not certified distinct tickets or people, net payments, complete claims or retailer activity. Payout schedules are separate from observed totals.",
       "payoutSchedule": [
         {
@@ -2224,13 +2229,13 @@
     {
       "game": "Pick 5",
       "session": "Daily",
-      "drawDate": "2026-10-23",
+      "drawDate": "2026-10-24",
       "digits": [
-        "0",
+        "5",
+        "9",
+        "1",
         "3",
-        "6",
-        "8",
-        "1"
+        "2"
       ],
       "summaryColumns": [
         "Play Type",
@@ -2246,9 +2251,9 @@
         },
         {
           "playType": "Box",
-          "statewideTotalLabel": "$7,800",
-          "statewideTotalCents": 780000,
-          "statewideWinners": 39
+          "statewideTotalLabel": "$6,200",
+          "statewideTotalCents": 620000,
+          "statewideWinners": 31
         },
         {
           "playType": "Front 4",
@@ -2264,35 +2269,35 @@
         },
         {
           "playType": "Front 3",
-          "statewideTotalLabel": "$250",
-          "statewideTotalCents": 25000,
-          "statewideWinners": 1
+          "statewideTotalLabel": "$500",
+          "statewideTotalCents": 50000,
+          "statewideWinners": 2
         },
         {
           "playType": "Back 3",
-          "statewideTotalLabel": "$0",
-          "statewideTotalCents": 0,
-          "statewideWinners": 0
+          "statewideTotalLabel": "$500",
+          "statewideTotalCents": 50000,
+          "statewideWinners": 2
         },
         {
           "playType": "Front 2",
-          "statewideTotalLabel": "$50",
-          "statewideTotalCents": 5000,
-          "statewideWinners": 2
+          "statewideTotalLabel": "$100",
+          "statewideTotalCents": 10000,
+          "statewideWinners": 4
         },
         {
           "playType": "Back 2",
-          "statewideTotalLabel": "$50",
-          "statewideTotalCents": 5000,
-          "statewideWinners": 2
+          "statewideTotalLabel": "$25",
+          "statewideTotalCents": 2500,
+          "statewideWinners": 1
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/22/2026 11:15:24 PM CDT",
-      "sourceUpdatedAt": "2026-10-22T23:15:24-05:00",
+      "sourceUpdatedText": "Last Updated: 10/23/2026 11:15:30 PM CDT",
+      "sourceUpdatedAt": "2026-10-23T23:15:30-05:00",
       "sourceWarnings": [
         "The printed source update date precedes the draw date. Both dates are retained without correction."
       ],
-      "sourceUrl": "https://louisianalottery.com/draw-games/pick-5/#2026-10-23",
+      "sourceUrl": "https://louisianalottery.com/draw-games/pick-5/#2026-10-24",
       "coverage": "Source statewide winners and dollar totals by play type. Not certified distinct tickets or people, net payments, complete claims or retailer activity. Payout schedules are separate from observed totals.",
       "payoutSchedule": [
         {
@@ -2726,13 +2731,13 @@
     {
       "game": "Pick 5",
       "session": "Daily",
-      "drawDate": "2026-10-22",
+      "drawDate": "2026-10-23",
       "digits": [
-        "2",
-        "9",
-        "2",
+        "0",
         "3",
-        "7"
+        "6",
+        "8",
+        "1"
       ],
       "summaryColumns": [
         "Play Type",
@@ -2748,9 +2753,9 @@
         },
         {
           "playType": "Box",
-          "statewideTotalLabel": "$4,000",
-          "statewideTotalCents": 400000,
-          "statewideWinners": 10
+          "statewideTotalLabel": "$7,800",
+          "statewideTotalCents": 780000,
+          "statewideWinners": 39
         },
         {
           "playType": "Front 4",
@@ -2766,9 +2771,9 @@
         },
         {
           "playType": "Front 3",
-          "statewideTotalLabel": "$500",
-          "statewideTotalCents": 50000,
-          "statewideWinners": 2
+          "statewideTotalLabel": "$250",
+          "statewideTotalCents": 25000,
+          "statewideWinners": 1
         },
         {
           "playType": "Back 3",
@@ -2778,21 +2783,21 @@
         },
         {
           "playType": "Front 2",
-          "statewideTotalLabel": "$150",
-          "statewideTotalCents": 15000,
-          "statewideWinners": 6
+          "statewideTotalLabel": "$50",
+          "statewideTotalCents": 5000,
+          "statewideWinners": 2
         },
         {
           "playType": "Back 2",
-          "statewideTotalLabel": "$0",
-          "statewideTotalCents": 0,
-          "statewideWinners": 0
+          "statewideTotalLabel": "$50",
+          "statewideTotalCents": 5000,
+          "statewideWinners": 2
         }
       ],
-      "sourceUpdatedText": "Last Updated: 10/22/2026 11:15:24 PM CDT",
-      "sourceUpdatedAt": "2026-10-22T23:15:24-05:00",
+      "sourceUpdatedText": "Last Updated: 10/23/2026 11:15:30 PM CDT",
+      "sourceUpdatedAt": "2026-10-23T23:15:30-05:00",
       "sourceWarnings": [],
-      "sourceUrl": "https://louisianalottery.com/draw-games/pick-5/#2026-10-22",
+      "sourceUrl": "https://louisianalottery.com/draw-games/pick-5/#2026-10-23",
       "coverage": "Source statewide winners and dollar totals by play type. Not certified distinct tickets or people, net payments, complete claims or retailer activity. Payout schedules are separate from observed totals.",
       "payoutSchedule": [
         {
@@ -3225,5 +3230,5 @@
     }
   ],
   "coverage": "Two recent source reports per family; seven families. Published winner or dollar units remain separate by source column. No statewide claims completeness, distinct-person aggregation, retailer joins or paid-jackpot conversion.",
-  "updatedAt": "2026-10-24T04:41:48.007864+00:00"
+  "updatedAt": "2026-10-25T04:46:21.609316+00:00"
 }
