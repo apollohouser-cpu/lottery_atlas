@@ -153,3 +153,40 @@ information or authorize fees. Missing agency records will remain explicit gaps.
 Next capture embedded results and all game/rule pages, fix the complete product/
 history/gap matrix, then strict parsers, coupled atomic publication and app/native
 acceptance. No new public all-game feed, app build or acceptance at activation.
+
+## October 25 evening — embedded source and history reconnaissance
+
+Private scope-manifest.json captures 22 pages; embed-manifest.json captures 16
+linked payloads; history-manifest.json captures all ten archive selectors for
+October22–25. All include actual retrieval times, byte lengths and SHA256 hashes
+under ignored work/new_mexico_scope. No public feed changed.
+
+Six current draw families plus Powerball Double Play have linked results.
+Pick3 Plus/Pick4 Plus payloads explicitly label DAY/EVE; retain leading zeroes
+and key by date/session, never source row order (some dates list DAY before EVE).
+Current Pick Plus rules describe Straight/Box/Combo and pair plays, not a separate
+bonus-number drawing. Prizes are subject to pari-mutuel reductions with a stated
+per-tier maximum payout of $125,000 from June27,2021. Exact rule validation remains
+open. PB, DP, MM and Lotto America tables explicitly label New Mexico results;
+count units and disjoint base/add-on semantics still need validation. These are
+candidate reports, not accepted imports. MM tables distinguish five per-play
+multiplier groups. Current draw results and future jackpot estimates are separate.
+
+Archive selectors also include Hot Lotto, legacy Pick3/Pick4 and Lucky Numbers
+Bingo. The first three return no results for the requested current window, which
+does not establish historical absence. Lucky Numbers returns a JavaScript search
+shell, not validated results. Rules navigation also lists Fast Play!; its current
+status/catalog must be resolved before scope closure. Historical overview mentions
+Mega Match4 and a New Year's Eve Raffle. These remain explicit research items.
+The archive's static default iframe queries March/April2015 despite a current
+visible date range; do not import that default as current. That retained response
+also includes April15 beyond its April14 end parameter, so filter/validate actual
+row dates independently of requested bounds. Full history completeness unverified.
+
+Fresh Scratch endpoint shows67 rows at literal October25,2026 03:18PM, timezone
+unpublished. Existing strict parser joins ending notices and retains57 unexpired
+entries, excludes10 passed claim deadlines, and preserves unrelated anomalous
+historical rows525/551 as quarantined. Private scratch-audit.json records this
+result; not a new publication. Estimated top-prize semantics remain unchanged.
+Next resolve Fast Play/Lucky Numbers/retired scope, inspect rule contracts and
+report units, then close the full matrix before strict all-game implementation.
