@@ -129,3 +129,34 @@ listing has102 entries,50 eligible under the existing no-end-date filter; fresh
 detail validation is pending. One Fast Play detail confirms distinct remaining
 and original quantities and a separate progressive estimate. No public data was
 changed. See OKLAHOMA_ACCEPTANCE.md for gates, limits and fresh deadlines.
+
+
+## October24,22:02ET — full navigation and catalog audit
+
+Decoded official navigation and captured the complete draw/Fast Play listings
+plus five additional draw detail pages. Seven new responses have private hashes
+and UTC retrieval timestamps in work/oklahoma_scope/catalog-manifest.json and
+draw-manifest.json (twelve opening responses in total). The full draw listing,
+unlike the home teaser, includes seven families: Powerball, Mega Millions,
+Lotto America, Powerball Xs & Os, Millionaire For Life, Pick3 and Cash5.
+Double Play is a separate nested Powerball drawing. All seven CMS end dates
+are null. Each detail embeds two result records, but PB, Lotto America and MFL
+include one scheduled/empty record; two records do not mean two completed draws.
+
+Fast Play listing contains32 entries beyond the twelve initially rendered cards:
+19 have no end date and13 have ended. All ten nonprogressive entries are ended;
+the no-end-date subset is progressive. This is listing evidence only, not fresh
+verification of every detail/inventory. Do not confuse the Fast Play game named
+Double Play Progressive with the nested Powerball Double Play drawing.
+
+Pick3 CMS lists two daily times (13:10 and21:10), while Cash5 lists21:10.
+Session identification and local draw-date joins therefore remain explicit
+scope questions; do not silently assume one Pick3 session. Pick3 legend has five
+match categories; Cash5 has four, including categorical Free Ticket. No dated
+winner-count geography/units are accepted from these observations. Current and
+retired history gaps, scheduled-result treatment, full Fast Play eligibility,
+and source client display semantics must be reconciled before scope closure.
+
+Next inspect the source client result/session and winner-table contracts and
+review all seven rules/schedules. No public feed/app/build or acceptance change;
+October25 21:06ET scope and October29 21:06ET release deadlines unchanged.
