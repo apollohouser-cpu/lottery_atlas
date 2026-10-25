@@ -260,3 +260,18 @@ jackpot loss and unknown inventory. Replay preserves original capture provenance
 no new source verification timestamp, feed publication, app build or acceptance.
 Next close the explicit scope/gap matrix, implement strict draw contracts and
 coupled collection/retention before app integration. Deadlines unchanged.
+
+
+## October25,02:07ET — scope decision
+
+The fixed supported product/history/gap matrix is in OKLAHOMA_ACCEPTANCE.md.
+All seven current draw families plus nested Double Play, Scratchers and Fast Play
+are included; current-game scope is grounded in complete navigation/listings.
+The retained opening window has12 completed records and four scheduled empty
+records including nested Double Play. These are implementation targets, not
+published parser results. All exact-date winner reports remain unavailable until
+geography and units can be proved. Pick3 session identity and session-specific
+history remain explicitly unavailable; timestamps alone do not establish sessions.
+Retired archives, ended inventory, promotions as claims and retailer joins remain
+unavailable/excluded as detailed in the matrix. Scope closed before its deadline;
+release still due October29 21:06ET, with no new public data/build or acceptance.

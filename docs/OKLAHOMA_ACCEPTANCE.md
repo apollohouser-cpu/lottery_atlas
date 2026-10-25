@@ -42,7 +42,7 @@ estimate as a fixed tier prize. Full schedules and unknown statuses need review.
 
 ## Gates and next work
 
-- [ ] Exhaustive current/retired product and history/gap matrix within24 hours.
+- [x] Current product and explicit history/gap scope fixed October25 at02:07ET; matrix below.
 - [ ] Review dated-result identity/status/timezone, count units and literal rules.
 - [ ] Validate full Fast Play and fresh Scratch inventory with explicit unknowns.
 - [ ] Coupled atomic publication, continuity/correction and failure retention.
@@ -187,3 +187,54 @@ jackpot loss and unknown inventory. Replay preserves original capture provenance
 no new source verification timestamp, feed publication, app build or acceptance.
 Next close the explicit scope/gap matrix, implement strict draw contracts and
 coupled collection/retention before app integration. Deadlines unchanged.
+
+
+## October25,02:07ET — supported scope and gap matrix CLOSED
+
+Scope is fixed before the October25 21:06ET scope deadline. This closes the
+scope decision only; strict draw parsing, coupled publication, app/native checks
+and supported acceptance remain open. Oklahoma is the sole active state. The
+release-decision deadline remains October29 21:06ET, without extension.
+
+The complete official draw navigation identifies seven current families, with
+Double Play nested under Powerball. The complete product listings identify
+Scratchers and Fast Play. The release must implement every row below and visibly
+explain each unavailable feature; a source link alone does not satisfy the row.
+Counts below describe the retained opening captures, not a new source refresh.
+
+| Product or variant | Required supported surface | Bounded evidence and explicit gaps |
+| --- | --- | --- |
+| Powerball | Completed results, Power Play value, literal rules and prize schedule | One completed opening result; scheduled empty entry excluded. Winner counts and dated payouts unavailable because field geography/meaning is unverified. |
+| Powerball Double Play | Separate nested completed result and separate prize schedule column | One completed opening result; scheduled entry excluded. Never merge its balls or prizes with the base drawing. Winner counts/payouts unavailable. |
+| Mega Millions | Two bounded completed results and five per-play multiplier schedules | No invented draw-wide multiplier; no use of legacy Megaplier labels. Winner counts and dated payouts unavailable. |
+| Lotto America | Completed result, All Star Bonus value and five schedules | One completed opening result; scheduled entry excluded. Winner counts/payouts unavailable. |
+| Millionaire for Life | Completed result and lifetime-prize rules/schedule | One completed opening result; scheduled entry excluded. No cash-equivalent inference or winner-count report. |
+| Powerball Xs & Os | Two completed results using literal ordered source codes, rules and schedule | Logo/name mapping remains unavailable until validated; no invented team labels, count geography or dated payout. |
+| Pick3 | Two bounded completed ordered-digit results; Straight/Box/pair rules and five schedule categories | Session identity not established by result payload. Show session unavailable, never infer Evening from time alone. Midday and Evening are both explicitly listed as lacking verified session-specific history. Retain two-time versus one-cutoff prose discrepancy. No winner counts. |
+| Cash5 | Two bounded completed results and four schedule categories | Free Ticket remains categorical. Shared-pool prose is a rule, not a dated actual payout. No winner counts. |
+| Scratchers | All eligible launched, no-end-date, non-pull-tab entries with typed original/remaining inventory and detail/source navigation | Opening listing102, eligible50; later detail audit653 numeric rows. Explicit null inventory must remain unknown if it returns. Other52 listing entries are outside this inventory subset; no retired inventory/history or dated claims. |
+| Fast Play | All eligible launched, no-end-date progressive entries, typed cash/JACKPOT rows and separate variable estimate | Listing32, eligible19; detail audit219 rows. Other13 ended entries unavailable for inventory/history. Active nonprogressive additions require a reviewed parser contract. Fast Play Double Play Progressive is distinct from the draw variant. |
+| Retired draw games and older history | Explicit unavailable coverage notice and official source path | No retired-game result import or complete archive accepted. Legacy translation names do not establish a current game or usable archive. Only the bounded completed source records above are in scope. |
+| Promotions, second chance and selective winner stories | Explain exclusion from drawing/claim counts | Not comprehensive winning-ticket records; no promotion inferred to be a final draw result. |
+| Retailers, claims and store inventory | Explicit unavailable coverage | No retailer coordinates/joins, complete dated claims, physical ticket stock or inferred sales. Agency records limitation remains unchanged; missing records do not block honest supported completion. |
+
+The opening draw window contains12 completed results across eight result groups
+(seven families plus Double Play), with four scheduled empty records excluded
+including the nested scheduled Double Play. These are parser targets, not a
+published or validated result count. All12 exact-date winner-count reports are
+currently unavailable; absence is not zero. No numeric report is required for
+honest completion where its units/geography cannot be verified. Later verified
+reports may only enter through exact date/game/variant joins and strict contracts.
+
+Preserve raw UTC timestamps and original capture provenance. Derive displayed
+calendar dates using America/Chicago with a documented conversion; never silently
+copy drawingDateUTC as the local date. Do not infer session identity from that
+conversion. Future collection must reject malformed completed records, unexpected
+identities, changed schedules or inventory arithmetic, and retain prior complete
+bytes/dates on failure. It must not publish a partially refreshed mix.
+
+Remaining work is implementation of this fixed scope: strict draw/rule validators,
+atomic all-product collection and retention, app loader/bundle/cache, all-result
+and product navigation with explicit gaps, native sources/layout/paging and
+ordinary restoration, then independent deployed verification. The scope decision
+makes no new public-feed, app-build or acceptance claim.
