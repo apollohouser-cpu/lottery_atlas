@@ -160,3 +160,47 @@ and source client display semantics must be reconciled before scope closure.
 Next inspect the source client result/session and winner-table contracts and
 review all seven rules/schedules. No public feed/app/build or acceptance change;
 October25 21:06ET scope and October29 21:06ET release deadlines unchanged.
+
+
+## October24,23:07ET — rule structures and client semantics audit
+
+Reviewed retained rule prose for all seven current draw families and counted
+20 prize-legend groups containing167 physical match rows. Powerball has six
+groups/54 rows (its first group includes a distinct Double Play prize column),
+Mega Millions five/45, Lotto America five/45, Millionaire for Life one/nine,
+Pick3 one/five, Cash5 one/four and Xs & Os one/five. These are source structure
+counts, not winner counts; strict row-contract validation remains open.
+
+Powerball rules specify5/69+1/26, optional Power Play and Double Play, and the
+10X threshold of $150 million. Mega Millions specifies5/70+1/24 with a per-play
+2X/3X/4X/5X/10X multiplier. Lotto America specifies5/52+1/10 and optional
+All Star Bonus. Millionaire for Life specifies5/58+1/5. Pick3 uses three ordered
+0–9 digits with Straight, Box and pair categories; Cash5 uses5/36 and includes
+categorical Free Ticket. Xs & Os uses eight of32 team logos: retained result
+codes must remain literal until the logo/code mapping is verified. Cash5 prose
+also describes a shared pretax pool when more than five top-prize winners occur;
+do not infer an actual dated payout from the advertised top prize.
+
+Captured45 source client scripts linked by the retained Pick3 page, with UTC
+retrieval times and SHA256 hashes in private client-manifest.json; all retained
+hashes rechecked. Client configuration explicitly names America/Chicago and
+contains a UTC-to-local date helper, supporting the required local-date audit.
+It also contains UTC-only formatting, so configuration alone does not establish
+which formatter renders a particular result. Translations distinguish Pick3
+Midday1:10PM and Evening9:10PM, consistent with its two CMS times, but the rule
+prose gives only an8:59PM CST cutoff. Preserve that discrepancy. The two retained
+Pick3 completed timestamps correspond to evening local dates; midday history is
+not established by those records.
+
+Client translations include Oklahoma-winner labels and legacy game/multiplier
+names, but the inspected scripts do not establish the actual shareCount or
+multiplierShareCount rendering joins. Count geography, zero payout meaning and
+session joins remain unverified and must not be promoted. Legacy translation
+names are not proof of current offered games or an available retired history.
+The current family list remains grounded in the full official navigation.
+
+Next resolve bounded result/session contracts and explicitly classify unavailable
+history/count fields, then validate Scratch and Fast Play details before scope
+closure and publication. No public feed, app build, source-date advancement or
+acceptance change. Scope due October25 21:06ET and release due October29 21:06ET
+remain unchanged; no extension.
