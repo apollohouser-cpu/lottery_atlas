@@ -275,3 +275,30 @@ history remain explicitly unavailable; timestamps alone do not establish session
 Retired archives, ended inventory, promotions as claims and retailer joins remain
 unavailable/excluded as detailed in the matrix. Scope closed before its deadline;
 release still due October29 21:06ET, with no new public data/build or acceptance.
+
+
+## October25,03:10ET — bounded completed-result parser
+
+Added tooling/import_oklahoma_draws.py with explicit contracts for all seven
+families and separate nested Double Play. It validates CMS/envelope/result game
+identity, bounded newest-first windows, unique identities/local dates, UTC date
+consistency, completion status, number count/range/type/order and multipliers.
+Pick3 preserves repeated ordered digits with session unavailable. Xs & Os keeps
+literal source codes. Mega Millions never receives a draw-wide multiplier.
+Double Play must join its parent by local date, status and later timestamp.
+Scheduled records must be empty and are excluded; future completed records fail.
+
+Replayed all seven retained HTML captures with their original manifest retrieval
+times:12 completed results across eight groups, four scheduled records excluded.
+All12 winner reports remain explicitly unavailable; source prizeTiers and private
+source identifiers are not exported. Local dates use America/Chicago while raw
+UTC timestamps and original retrieval provenance are preserved. No source refresh
+or newer verification is claimed by replay. Output remains private.
+
+All26 Oklahoma Python tests pass (eight draw, ten Fast Play, eight Scratch).
+Draw tests cover all family contracts, repeated Pick3 digits, range/type/order,
+malformed/future dates, scheduled contamination, mismatched identities,
+multipliers and Double Play joins. Strict literal rule/schedule contracts and
+coupled collection/retention remain next, followed by app/native integration.
+No new all-game public feed, native build or acceptance; release remains due
+October29 21:06ET with no extension.
