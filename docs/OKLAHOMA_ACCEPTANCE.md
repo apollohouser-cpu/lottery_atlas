@@ -451,3 +451,25 @@ collection, app build or acceptance is claimed. Next: ordinary native build,
 all draw/product/source-return flows, representative enlarged/landscape layouts,
 cache/failure continuity and ordinary restoration. October 29 at 21:06 ET release
 deadline remains unchanged, no extension.
+
+## October 25, 12:30 ET — ordinary native build and draw selections
+
+Ordinary `lib/main.dart` built for the existing iPhone 17e simulator in 34.2s,
+installed and cold-launched as process 89126. No probe target or entry-point edit.
+The native route through Oklahoma → Sources and coverage opens both new entries.
+All 14 dated selections were traversed at normal portrait size: PB/DP October24
+and21, MM October23 and20, LA October24 and21, MFL October24, Pick3 October24
+and23, Cash5 October24 and23, Xs & Os October18. Each showed the expected number
+or literal-code shape and an unavailable winner report; DP prize columns stayed
+separate, Pick3 session identity stayed unavailable.
+
+The ordinary loader visibly adopted a newer remote collection: displayed draw
+capture times run from October25 11:34:51.069367 through 11:34:52.730595 UTC.
+This is native observation of capture provenance, not a new independent full-feed
+hash verification. Powerball's official link opened its Oklahoma Lottery page in
+Safari and the OS Lottery Atlas return preserved the selected drawing.
+
+Partial native evidence only: remaining seven group source returns, complete
+schedule/rule paging, product flows, enlarged/landscape checks and controlled
+cache/failure evidence remain open. Android stayed stopped. No acceptance or
+release-date change; October29 21:06ET remains the deadline.
