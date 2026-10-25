@@ -62,6 +62,74 @@ void main() {
       throwsFormatException,
     );
   });
+  Map<String, dynamic> advanced() {
+    final d = fixture();
+    final rows = d['results'] as List;
+    final indices = [
+      for (var i = 0; i < rows.length; i++)
+        if (rows[i]['game'] == 'powerball-xs-os') i,
+    ];
+    final newest = Map<String, dynamic>.from(rows[indices.first] as Map);
+    rows[indices.last] = Map<String, dynamic>.from(newest);
+    final stamp = DateTime.parse(
+      newest['drawDateTimeUTC'] as String,
+    ).add(const Duration(days: 1));
+    newest['drawDateTimeUTC'] = stamp.toIso8601String().replaceFirst(
+      '.000Z',
+      'Z',
+    );
+    newest['date'] = DateTime.parse(
+      newest['date'] as String,
+    ).add(const Duration(days: 1)).toIso8601String().substring(0, 10);
+    rows[indices.first] = newest;
+    return d;
+  }
+
+  test('strict rolling window advances and retains source codes', () {
+    final next = OklahomaCoverageValidator.decode(jsonEncode(advanced()));
+    OklahomaCoverageValidator.continuity(fixture(), next);
+    expect(
+      () => OklahomaCoverageValidator.continuity(next, fixture()),
+      throwsFormatException,
+    );
+  });
+  test('same-date corrections rejected', () {
+    final d = fixture();
+    d['results'][0]['numbers'][0] = 69;
+    expect(
+      () => OklahomaCoverageValidator.decode(jsonEncode(d)),
+      throwsFormatException,
+    );
+  });
+  test('advancing results reject out-of-range code and report injection', () {
+    for (final field in ['numbers', 'reportStatus', 'session']) {
+      final d = advanced();
+      final r = (d['results'] as List).firstWhere(
+        (r) => r['game'] == 'powerball-xs-os',
+      );
+      if (field == 'numbers') {
+        r['numbers'] = [0, 2, 3, 4, 5, 6, 7, 8];
+      }
+      if (field == 'reportStatus') {
+        r[field] = 'available';
+      }
+      if (field == 'session') {
+        r[field] = 'Evening';
+      }
+      expect(
+        () => OklahomaCoverageValidator.decode(jsonEncode(d)),
+        throwsFormatException,
+      );
+    }
+  });
+  test('Double Play parent loss rejected', () {
+    final d = fixture();
+    (d['results'] as List).removeWhere((r) => r['variant'] == 'double_play');
+    expect(
+      () => OklahomaCoverageValidator.decode(jsonEncode(d)),
+      throwsFormatException,
+    );
+  });
   test('baseline all products and unavailable reports', () {
     final d = OklahomaCoverageValidator.decode(raw);
     expect(d['results'].length, 14);
@@ -97,7 +165,7 @@ void main() {
       throwsFormatException,
     );
   });
-  test('dated advancement remains explicitly fail closed', () {
+  test('date without matching UTC timestamp is rejected', () {
     final d = fixture();
     d['results'][0]['date'] = '2026-10-25';
     expect(

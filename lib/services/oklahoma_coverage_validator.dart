@@ -1,8 +1,8 @@
 import 'dart:convert';
+import 'oklahoma_draw_validator.dart';
 import 'oklahoma_coverage_contract.dart';
 
-/// Initial strict baseline with numeric inventory continuity.
-/// Dated result advancement remains fail-closed until its dynamic gate lands.
+/// Strict dynamic dated results with bounded inventory and source continuity.
 class OklahomaCoverageValidator {
   static final Map<String, dynamic> _baseline = jsonDecode(
     oklahomaCoverageContractJson,
@@ -68,7 +68,20 @@ class OklahomaCoverageValidator {
       }
     }
     normalized['updatedAt'] = _baseline['updatedAt'];
-    for (final field in ['sources', 'results']) {
+    OklahomaDrawValidator.validate(
+      data['results'] as List,
+      _baseline['results'] as List,
+    );
+    final excluded = data['excludedScheduled'];
+    if (excluded is! int ||
+        excluded < 0 ||
+        excluded > 8 ||
+        (data['results'] as List).length + excluded > 16) {
+      throw const FormatException('Invalid scheduled count');
+    }
+    normalized['results'] = _baseline['results'];
+    normalized['excludedScheduled'] = _baseline['excludedScheduled'];
+    for (final field in ['sources']) {
       final list = normalized[field] as List;
       final expected = _baseline[field] as List;
       if (list.length != expected.length) {
@@ -159,6 +172,10 @@ class OklahomaCoverageValidator {
     if (_time(next['updatedAt']).isBefore(_time(old['updatedAt']))) {
       throw const FormatException('Cache time regression');
     }
+    OklahomaDrawValidator.continuity(
+      old['results'] as List,
+      next['results'] as List,
+    );
     final oldSources = old['sources'] as List;
     final newSources = next['sources'] as List;
     for (var i = 0; i < oldSources.length; i++) {

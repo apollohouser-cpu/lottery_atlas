@@ -390,3 +390,25 @@ regression against cache are rejected even if the overall collection time grows.
 Eleven Flutter loader tests pass; changed Dart/test analyze clean. Dynamic draw
 advancement remains fail-closed and is next before visible UI/native integration.
 No new source refresh, build or acceptance; October29 21:06ET deadline unchanged.
+
+
+## October25,09:28ET — strict dynamic Dart draw windows
+
+Added OklahomaDrawValidator and connected it to baseline and retained-cache
+validation. Eight required result groups now accept bounded rolling dates with
+exact static metadata, game ranges/cardinality, Pick3 ordered digits, literal
+Xs & Os codes, multiplier variants, UTC/Chicago calendar conversion and source
+retrieval joins. Completed results cannot be newer than their capture. Nested
+Double Play must retain the same local date and a later timestamp than Powerball.
+Unverified reports and Pick3 sessions remain unavailable; payload injection fails.
+
+Continuity rejects corrections to overlapping dates, newest-window regression,
+group loss and holes inside the rolling window, against both bundle and cache.
+Scheduled counts are separately bounded and never become completed results.
+Fifteen Flutter tests pass, including valid rolling advancement, cache rollback,
+report/session injection, invalid codes, local-date mismatch and Double Play loss;
+changed production/test Dart analyze clean. Numeric/unknown inventory handling
+and exact rule contracts remain in force. Catalog identity/structure changes still
+require review. Next visible draw/rule and typed Scratch/Fast Play UI, followed by
+native source-return/layout/cache flows and ordinary restoration. No new source
+refresh, native build or acceptance; October29 21:06ET deadline unchanged.
