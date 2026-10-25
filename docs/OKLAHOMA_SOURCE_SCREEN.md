@@ -389,3 +389,24 @@ All78 retained capture hashes were recalculated successfully. Initial coupled
 feed deployment is closed; this is not app/native acceptance. Next implement the
 strict Dart loader, bundled/cache continuity and visible draw/product experience,
 then native flows and ordinary restoration. Deadline remains October29 21:06ET.
+
+
+## October25,07:24ET — initial Dart loader and bundled baseline
+
+Added an Oklahoma-specific loader, reviewed baseline contract and bundled coupled
+feed asset. It validates all static metadata, rule structures, exact current
+results and source URLs, checks retrieval timestamps, and accepts only bounded
+numeric inventory decreases with original quantities and tier identities intact.
+Progressive estimates remain independently nullable/positive. Cache continuity
+also prevents inventory increases relative to the retained cache, even when the
+new count would fit beneath the older bundled count. Controlled retrieval or
+validation failure returns valid cache/bundle without writing bad bytes; a cache
+write failure does not discard a valid remote response.
+
+Seven Flutter loader/validator tests pass; the three new production Dart files
+and test analyze clean. This is an initial fail-closed stage, not completed app
+integration: changed draw dates/windows, catalog changes and transitions to
+explicit-null inventory are still rejected against the baseline. Next implement
+strict dynamic result/provenance and unknown-inventory contracts before visible
+UI, then draw/product/native/cache flows and ordinary restoration. No native build,
+source refresh or Oklahoma acceptance. October29 21:06ET deadline unchanged.
