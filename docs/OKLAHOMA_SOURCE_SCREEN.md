@@ -1,5 +1,8 @@
 # Oklahoma source screen — September 14, 2026
 
+**October24,2026 at21:06ET: sole active state.** Scope due October25 at21:06ET;
+supported release due October29 at21:06ET. See OKLAHOMA_ACCEPTANCE.md.
+
 The Oklahoma Lottery's [Scratcher catalog](https://www.lottery.ok.gov/scratchers)
 publishes game-level top prizes remaining and overall odds. Individual
 [Fast Play pages](https://www.lottery.ok.gov/fast-play/) publish each prize tier's
@@ -112,3 +115,17 @@ The fresh local import validated all 50 games. All 134 Python tests passed,
 including three new regression tests covering unknown inventory, malformed
 structures and broad inventory loss. Publishing and live verification are still
 pending; this does not establish all-tier claims or retailer-map completeness.
+
+
+## October24 opening all-game audit
+
+Five official captures and hashes are private in work/oklahoma_scope. Current
+[home](https://oklottery.com/) links Powerball/Double Play, Mega Millions,
+Scratchers and Fast Play; exhaustive scope remains open. Draw bodies are client
+rendered; embedded CMS contains schedules and nested results, including scheduled
+empty PB/DP entries. UTC date labels must not be copied as Oklahoma draw dates.
+Tier count geography and zero payout meanings remain unverified. The Scratcher
+listing has102 entries,50 eligible under the existing no-end-date filter; fresh
+detail validation is pending. One Fast Play detail confirms distinct remaining
+and original quantities and a separate progressive estimate. No public data was
+changed. See OKLAHOMA_ACCEPTANCE.md for gates, limits and fresh deadlines.
