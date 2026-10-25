@@ -938,3 +938,10 @@ collection, app build or acceptance is claimed. Next: ordinary native build,
 all draw/product/source-return flows, representative enlarged/landscape layouts,
 cache/failure continuity and ordinary restoration. October 29 at 21:06 ET release
 deadline remains unchanged, no extension.
+
+## October 25, 2026 at 17:44 ET — Oklahoma supported acceptance
+
+Seventeen states accepted;28 remain. See OKLAHOMA_ACCEPTANCE.md for bounded
+native/automated/live/retention evidence. Ordinary main restored and launched13065;
+Android stopped. Signing, distribution, broader Android, platform persistence and
+privacy remain open. This is not beta or national-release readiness.

@@ -569,3 +569,40 @@ Ordinary `lib/main.dart` restoration completed:22.7s build, installed and
 cold-launched as13065, native map/navigation visible. Main source stayed unchanged;
 no probe tracked. Android stayed stopped. Final source-byte/publisher comparison
 and acceptance matrix review remain next.
+
+## Final supported acceptance — October 25, 2026 at 17:44 ET
+
+The following matrix supersedes earlier pending-gate statements. Production data
+is7438c02; app implementation through c3697b4 with native evidence through684fbfa.
+The independent live download at21:37:59.271636UTC exactly matches both generated
+and published repository files:258327bytes, SHA256
+`d4b568269ad54cdbee0a9826e831febbfc66b96d7141c2cfa885ac1034ee4c91`.
+Actual collection completion remains20:55:01.638862UTC; this review does not
+invent a newer source retrieval date.
+
+| Gate | Accepted bounded evidence |
+| --- | --- |
+| Scope | Seven draw families plus nested Double Play; explicit current/retired-history gaps;50 eligible Scratch and19 eligible Fast Play. |
+| Results |14 completed selections/eight groups;14 unavailable reports;two scheduled rows excluded; local dates validated; Pick3 sessions unavailable. |
+| Rules |Seven literal contracts/20 groups/167 rows; PB/DP columns separate; categorical/lifetime prizes and source discrepancies retained. |
+| Products |50Scratch/653tiers;19FastPlay/219tiers including19categorical JACKPOT rows; original/remaining quantities distinct; progressive estimate separate. |
+| Publication |78-request coupled atomic collector; failure positions, disk failure, corrections and regressions retain bytes; legacy Scratch-only feed not relabeled. |
+| App |Strict dynamic draw and inventory continuity, bundle/cache/remote validation, typed product UI and explicit unknowns. |
+| Native normal |All14 selections, eight group source OS returns, eight schedule/rule paging flows; both product details and two official-source returns. |
+| Filters |Ordinary Scratch search858 returns one game; combining $1 price yields zero catalog matches; Reset restores50. Unknown Scratch search/detail return covered by widget test. |
+| Layout |Representative native2x PB, Scratch and Fast Play; Fast Play landscape paging/close; automated all14 selections and all rule flows plus both product types at2x portrait/landscape. Not every family manually tested at every scale/orientation. |
+| Retention |Newer remote adopted; injected native SocketException preserves persisted bytes and returns validated cache. Not a whole-device offline claim. |
+| Restoration |Ordinary main rebuilt22.7s, installed/cold-launched13065 and used for final native filters. No tracked probe; Android stopped. |
+| Final checks |38Oklahoma Python tests and19Flutter tests pass; six production Dart files analyze clean; prior full512Python run retained as earlier evidence. |
+
+Winner-count geography/units, Pick3 session history, older/retired result history,
+complete claims, retailer joins/coordinates and store stock remain unavailable.
+Xs & Os stays literal codes; source contradictions are disclosed, not resolved by
+inference. Missing reports never mean zero. These unavailable agency/source records
+do not block supported acceptance. Mobile persistence, broader Android, signing,
+privacy and distribution gates remain separate and open.
+
+Oklahoma finished early without extension. Seventeen accepted;28 unfinished.
+Select the next unfinished state with a fresh explicit activation and deadlines;
+never inherit Oklahoma's deadline. National estimate remains unchanged until18
+acceptances or a material blocker; no national-launch or beta-readiness claim.

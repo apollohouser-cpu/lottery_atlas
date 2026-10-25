@@ -3,15 +3,14 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
-## Current decision — October24,2026 at20:10ET
+## Current decision — October 25, 2026 at 17:44 ET
 
-Idaho supported coverage is ACCEPTED on production fc16561 with the final evidence
-matrix in IDAHO_ACCEPTANCE.md. Sixteen states are accepted;29 remain. Historical
-fifteen/30 and Idaho-active statements below are superseded. Oklahoma activated October24 at21:06ET as the sole active state; scope due
-October25 at21:06ET and supported release due October29 at21:06ET, fresh120hours.
-Oklahoma scope closed October25 at02:07ET with explicit unavailable reports/history; implementation gates remain open.
-See OKLAHOMA_ACCEPTANCE.md. Do not routinely reopen Idaho or other accepted states. Beta gates
-remain separate; national estimate unchanged until18 acceptances/material blocker.
+Oklahoma supported coverage is ACCEPTED on production7438c02, with the bounded
+final evidence matrix in OKLAHOMA_ACCEPTANCE.md. Seventeen states are accepted;
+28 remain. Completed before October29 at21:06ET without extension. No state is
+currently active. Select the next unfinished state and give it fresh explicit
+scope/release deadlines. Do not routinely reopen accepted states. Mobile gates
+remain separate; national forecast unchanged until18 acceptances/material blocker.
 
 ## Beta and national public release — approved October 6, 2026
 
@@ -55,7 +54,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Oklahoma | October29,2026 at21:06ET | Sole active October24 at21:06ET; scope closed October25 at02:07ET; substantial all-game integration, no extension. |
+| Oklahoma | ACCEPTED October 25, 2026 at 17:44 ET | Production7438c02; bounded native/retention evidence complete early, no extension. |
 | Idaho | ACCEPTED October24,2026 at20:10ET | Production fc16561; bounded native/retention evidence complete before October27 14:22ET, no extension. |
 | Iowa | ACCEPTED October22,2026 at12:24ET | Production9ff894e; evidence through4e91052. Ahead of October23 21:42ET, no extension. |
 | South Dakota | ACCEPTED October 18, 2026 at 20:42 ET | Release 94fd40c; ahead of October 23 at 04:24 ET; no extension. |
