@@ -7,6 +7,61 @@ import 'package:lottery_atlas/services/oklahoma_coverage_validator.dart';
 void main() {
   final raw = File('data/oklahoma_coverage.generated.json').readAsStringSync();
   Map<String, dynamic> fixture() => jsonDecode(raw) as Map<String, dynamic>;
+  void unknown(Map<String, dynamic> d, String kind) {
+    final game = d['products'][kind]['games'][0];
+    game['prizeTiers'] = [];
+    if (kind == 'scratch') {
+      game['topPrizesRemaining'] = null;
+      game['inventoryNote'] =
+          'Prize inventory not published for this game; remaining counts are unknown. ${game['inventoryNote']}';
+    } else {
+      game['inventoryStatus'] = 'unavailable';
+    }
+  }
+
+  test('explicit unknown inventory remains empty and nullable', () {
+    for (final kind in ['scratch', 'fastPlay']) {
+      final d = fixture();
+      unknown(d, kind);
+      final next = OklahomaCoverageValidator.decode(jsonEncode(d));
+      expect(next['products'][kind]['games'][0]['prizeTiers'], isEmpty);
+      OklahomaCoverageValidator.continuity(fixture(), next);
+      OklahomaCoverageValidator.continuity(next, fixture());
+      if (kind == 'scratch') {
+        expect(
+          next['products'][kind]['games'][0]['topPrizesRemaining'],
+          isNull,
+        );
+      }
+    }
+  });
+  test('empty inventory requires explicit unknown status', () {
+    for (final kind in ['scratch', 'fastPlay']) {
+      final d = fixture();
+      d['products'][kind]['games'][0]['prizeTiers'] = [];
+      expect(
+        () => OklahomaCoverageValidator.decode(jsonEncode(d)),
+        throwsFormatException,
+      );
+    }
+  });
+  test('product and source timestamps must join', () {
+    final d = fixture();
+    d['products']['scratch']['games'][0]['retrievedAt'] = d['updatedAt'];
+    expect(
+      () => OklahomaCoverageValidator.decode(jsonEncode(d)),
+      throwsFormatException,
+    );
+  });
+  test('individual source cache regression rejected', () {
+    final old = fixture();
+    final next = fixture();
+    old['sources'][0]['retrievedAt'] = old['updatedAt'];
+    expect(
+      () => OklahomaCoverageValidator.continuity(old, next),
+      throwsFormatException,
+    );
+  });
   test('baseline all products and unavailable reports', () {
     final d = OklahomaCoverageValidator.decode(raw);
     expect(d['results'].length, 14);

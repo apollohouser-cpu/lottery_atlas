@@ -45,6 +45,28 @@ class OklahomaCoverageValidator {
       item[key] = expected[key];
     }
 
+    final captured = <String, String>{};
+    for (final source in data['sources'] as List) {
+      if (captured.containsKey(source['url'])) {
+        throw const FormatException('Duplicate source provenance');
+      }
+      captured[source['url'] as String] = source['retrievedAt'] as String;
+    }
+    void joined(Map item, String stampKey) {
+      if (captured[item['sourceUrl']] != item[stampKey]) {
+        throw const FormatException('Source retrieval join mismatch');
+      }
+    }
+
+    for (final result in data['results'] as List) {
+      joined(result as Map, 'retrievedAt');
+    }
+    for (final catalog in (data['products'] as Map).values) {
+      joined(catalog as Map, 'listingRetrievedAt');
+      for (final game in catalog['games'] as List) {
+        joined(game as Map, 'retrievedAt');
+      }
+    }
     normalized['updatedAt'] = _baseline['updatedAt'];
     for (final field in ['sources', 'results']) {
       final list = normalized[field] as List;
@@ -71,7 +93,32 @@ class OklahomaCoverageValidator {
         stamp(game, original, 'retrievedAt');
         final tiers = game['prizeTiers'] as List;
         final prior = original['prizeTiers'] as List;
-        if (tiers.length != prior.length) {
+        final unknown = tiers.isEmpty;
+        if (unknown) {
+          if (kind == 'scratch') {
+            const prefix =
+                'Prize inventory not published for this game; remaining counts are unknown. ';
+            if (!game.containsKey('topPrizesRemaining') ||
+                game['topPrizesRemaining'] != null ||
+                game['inventoryNote'] !=
+                    '$prefix${original['inventoryNote']}') {
+              throw const FormatException(
+                'Missing explicit unknown Scratch status',
+              );
+            }
+            game['inventoryNote'] = original['inventoryNote'];
+            game['topPrizesRemaining'] = original['topPrizesRemaining'];
+          } else {
+            if (game['inventoryStatus'] != 'unavailable') {
+              throw const FormatException(
+                'Missing explicit unknown Fast Play status',
+              );
+            }
+            game['inventoryStatus'] = original['inventoryStatus'];
+          }
+          game['prizeTiers'] = jsonDecode(jsonEncode(prior));
+        }
+        if (!unknown && tiers.length != prior.length) {
           throw const FormatException('Changed inventory structure');
         }
         for (var j = 0; j < tiers.length; j++) {
@@ -82,7 +129,7 @@ class OklahomaCoverageValidator {
             throw const FormatException('Invalid remaining count');
           }
         }
-        if (kind == 'scratch') {
+        if (kind == 'scratch' && !unknown) {
           final top = tiers.singleWhere(
             (t) => t['prizeAmount'] == game['topPrize'],
           );
@@ -90,7 +137,7 @@ class OklahomaCoverageValidator {
             throw const FormatException('Top tier mismatch');
           }
           game['topPrizesRemaining'] = original['topPrizesRemaining'];
-        } else {
+        } else if (kind == 'fastPlay') {
           final estimate = game['progressiveEstimate'];
           if (estimate != null && (estimate is! int || estimate <= 0)) {
             throw const FormatException('Invalid progressive estimate');
@@ -112,11 +159,24 @@ class OklahomaCoverageValidator {
     if (_time(next['updatedAt']).isBefore(_time(old['updatedAt']))) {
       throw const FormatException('Cache time regression');
     }
+    final oldSources = old['sources'] as List;
+    final newSources = next['sources'] as List;
+    for (var i = 0; i < oldSources.length; i++) {
+      if (oldSources[i]['url'] != newSources[i]['url'] ||
+          _time(
+            newSources[i]['retrievedAt'],
+          ).isBefore(_time(oldSources[i]['retrievedAt']))) {
+        throw const FormatException('Source capture regressed against cache');
+      }
+    }
     for (final kind in ['scratch', 'fastPlay']) {
       final before = old['products'][kind]['games'] as List;
       final after = next['products'][kind]['games'] as List;
       for (var i = 0; i < before.length; i++) {
         final tiers = before[i]['prizeTiers'] as List;
+        if ((after[i]['prizeTiers'] as List).isEmpty || tiers.isEmpty) {
+          continue;
+        }
         for (var j = 0; j < tiers.length; j++) {
           if (after[i]['prizeTiers'][j]['remainingPrizes'] >
               tiers[j]['remainingPrizes']) {

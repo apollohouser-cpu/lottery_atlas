@@ -373,3 +373,20 @@ explicit-null inventory are still rejected against the baseline. Next implement
 strict dynamic result/provenance and unknown-inventory contracts before visible
 UI, then draw/product/native/cache flows and ordinary restoration. No native build,
 source refresh or Oklahoma acceptance. October29 21:06ET deadline unchanged.
+
+
+## October25,08:24ET — explicit unknown inventory and provenance joins
+
+The Dart validator now accepts the collector's explicit unknown inventory forms:
+Scratch requires empty tiers, null top remaining and the exact unknown notice;
+Fast Play requires empty tiers and unavailable status. Missing or inconsistent
+status still fails. Returned data retains those empty/null values without copying
+baseline quantities or converting them to zero. Known inventory continues to
+validate all original quantities and permit only decreases against known cache.
+
+Every result, product detail and listing timestamp must now join its matching
+source URL's retrieval timestamp. Duplicate sources and individual source-time
+regression against cache are rejected even if the overall collection time grows.
+Eleven Flutter loader tests pass; changed Dart/test analyze clean. Dynamic draw
+advancement remains fail-closed and is next before visible UI/native integration.
+No new source refresh, build or acceptance; October29 21:06ET deadline unchanged.
