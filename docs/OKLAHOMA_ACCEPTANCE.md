@@ -293,3 +293,30 @@ new assets, timing changes and prose versus presentation changes. No new source
 retrieval, all-game feed publication, build or acceptance. Next implement coupled
 atomic collection and correction/regression/failure retention, then app/native.
 October29 21:06ET release deadline remains unchanged; no extension.
+
+
+## October25,05:20ET — coupled collection and atomic retention
+
+Added oklahoma_coverage.py to collect all seven draw/rule pages, both complete
+product listings and every eligible product detail before replacing one snapshot.
+The retained-source replay requires78 responses and yields12 results, seven rule
+contracts,50 Scratch games and19 Fast Play games. Every source keeps its original
+retrieval timestamp in this replay; the mixed earlier captures are not represented
+as a fresh synchronized collection. The trial snapshot remains private.
+
+Continuity rejects result corrections, newest-date regression, group loss and
+holes inside a rolling result window. Product identity/metadata, prize structure
+and original quantities must remain stable; remaining quantities may decrease.
+Explicit-null inventory remains unknown, and variable progressive estimates stay
+separate. Catalogs below the reviewed eligible baseline stop collection. Full
+validation precedes fsynced temporary-file replacement; failures retain prior
+snapshot bytes and dates and clean temporary files.
+
+All38 Oklahoma Python tests pass. Additionally, replay injected a retrieval
+failure at each of the78 request positions; every position retained the exact
+previous snapshot bytes. Unit tests cover successful replacement, disk-replace
+failure cleanup, correction/regression rejection, inventory increases and allowed
+decreases/unknowns. No fresh source collection or public-feed deployment occurred.
+Next perform a complete fresh collection, inspect any source changes without
+weakening contracts, wire the coupled feed publisher and verify deployed bytes;
+app/native gates follow. Release remains due October29 21:06ET, no extension.
