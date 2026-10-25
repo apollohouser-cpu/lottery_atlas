@@ -1,3 +1,4 @@
+import '../../widgets/map/oklahoma_draw_collection_sheet.dart';
 import '../../widgets/map/idaho_product_sheet.dart';
 import '../../widgets/map/idaho_draw_collection_sheet.dart';
 import '../../widgets/map/iowa_instant_inventory_sheet.dart';
@@ -63,6 +64,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Oklahoma')
+            ListTile(
+              title: const Text('Oklahoma results and schedules'),
+              subtitle: const Text('Bounded draws, literal rules and explicit report gaps'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const OklahomaDrawCollectionSheet()),
+            ),
           if (source.stateName == 'Idaho')
             ListTile(
               title: const Text('Idaho product catalogs'),

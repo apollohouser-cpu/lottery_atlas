@@ -449,3 +449,22 @@ and exact rule contracts remain in force. Catalog identity/structure changes sti
 require review. Next visible draw/rule and typed Scratch/Fast Play UI, followed by
 native source-return/layout/cache flows and ordinary restoration. No new source
 refresh, native build or acceptance; October29 21:06ET deadline unchanged.
+
+
+## October25,10:28ET — visible draw and rule sheet
+
+Added the Oklahoma results/schedules entry on its state source screen, backed by
+the coupled loader. Every dated selection shows local date, ordered numbers or
+literal codes, applicable multiplier, capture time and unavailable report notice.
+Pick3 explicitly lacks session history. Fixed paging exposes all literal rule
+sections, source discrepancies and schedules. Powerball and Double Play display
+separate prize columns; Double Play does not show Power Play multiplier schedules.
+Mega Millions identifies per-play multipliers. Categorical and lifetime prizes
+remain literal; no source report counts or code-to-team inference was added.
+
+Two widget tests pass: all14 selections at2x text in portrait and landscape, and
+fixed paging through all eight family/variant rule flows to coverage limits.
+Changed production/test Dart analyze clean. This is automated widget evidence,
+not native source-return or manual all-scale acceptance. Typed Scratch/Fast Play
+UI is next, followed by ordinary native build and complete bounded flow checks.
+No native build, new source refresh or Oklahoma acceptance; deadline unchanged.
