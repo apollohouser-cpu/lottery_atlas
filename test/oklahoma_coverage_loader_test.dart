@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
-import '../lib/services/oklahoma_coverage_loader.dart';
-import '../lib/services/oklahoma_coverage_validator.dart';
+import 'package:lottery_atlas/services/oklahoma_coverage_loader.dart';
+import 'package:lottery_atlas/services/oklahoma_coverage_validator.dart';
 
 void main() {
   final raw = File('data/oklahoma_coverage.generated.json').readAsStringSync();

@@ -49,8 +49,9 @@ class OklahomaCoverageValidator {
     for (final field in ['sources', 'results']) {
       final list = normalized[field] as List;
       final expected = _baseline[field] as List;
-      if (list.length != expected.length)
+      if (list.length != expected.length) {
         throw const FormatException('Changed baseline window');
+      }
       for (var i = 0; i < list.length; i++) {
         stamp(list[i] as Map, expected[i] as Map, 'retrievedAt');
       }
@@ -61,16 +62,18 @@ class OklahomaCoverageValidator {
       stamp(catalog, expected, 'listingRetrievedAt');
       final games = catalog['games'] as List;
       final originals = expected['games'] as List;
-      if (games.length != originals.length)
+      if (games.length != originals.length) {
         throw const FormatException('Changed catalog');
+      }
       for (var i = 0; i < games.length; i++) {
         final game = games[i] as Map;
         final original = originals[i] as Map;
         stamp(game, original, 'retrievedAt');
         final tiers = game['prizeTiers'] as List;
         final prior = original['prizeTiers'] as List;
-        if (tiers.length != prior.length)
+        if (tiers.length != prior.length) {
           throw const FormatException('Changed inventory structure');
+        }
         for (var j = 0; j < tiers.length; j++) {
           final count = tiers[j]['remainingPrizes'];
           if (count is! int ||
