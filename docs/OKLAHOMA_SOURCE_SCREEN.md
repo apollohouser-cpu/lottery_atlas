@@ -510,3 +510,22 @@ Partial native evidence only: remaining seven group source returns, complete
 schedule/rule paging, product flows, enlarged/landscape checks and controlled
 cache/failure evidence remain open. Android stayed stopped. No acceptance or
 release-date change; October29 21:06ET remains the deadline.
+
+## October 25, 13:34 ET — normal native schedules and source returns
+
+On the ordinary iPhone 17e build, fixed Next page controls traversed all eight
+family/variant schedule and rule flows through Coverage limits: Powerball (8
+pages), Double Play (3), Mega Millions (8), Lotto America (8), Millionaire for
+Life (4), Pick3 (2), Cash5 (1), and Xs & Os (2). These are normal portrait native
+checks; they do not establish every family at every scale or orientation.
+
+Seven remaining draw-group external-source/OS-return flows closed: DP to the
+Powerball page, MM to megamillions, LA to lotto-america, MFL to millionaire-for-life,
+Pick3 to pick3, Cash5 to cash-5 and Xs & Os to powerball-xs-os, all under the
+official Oklahoma draw-games path. Safari's address field verified each URL;
+the OS Lottery Atlas return preserved each selected drawing. With the prior
+Powerball flow, all eight group source returns are now covered.
+
+Product native flows, representative enlarged/landscape checks, controlled
+cache/failure evidence and final ordinary-state verification remain open. No
+new source collection or acceptance; release deadline remains October29 21:06ET.
