@@ -1,7 +1,8 @@
 # Idaho supported coverage acceptance
 
-Status: **ACTIVE — not accepted**. Sole active state from October 22, 2026
-at 14:22 ET, after Iowa acceptance.
+Status: **ACCEPTED October 24, 2026 at 20:10 ET** for bounded supported coverage.
+Activated October22 at14:22ET; completed before October27 14:22ET, no extension.
+See the final consolidated evidence matrix below.
 
 - Full supported scope CLOSED October 23, 00:29 ET, ahead of October 23 at 14:22 ET.
 - Supported release decision due October 27 at 14:22 ET.
@@ -43,14 +44,14 @@ missing records do not block honest supported completion.
 ## Release gates
 
 - [x] Reconcile every current product, variant, session, history limit and gap (scope only; implementation/acceptance gates below remain open).
-- [ ] Validate actual dated source routes, count units and literal schedules.
-- [ ] Strict bounded collection with atomic correction/failure retention.
-- [ ] Fresh Scratch and separate instant-product dispositions.
-- [ ] Remote/cache/bundle presentation with actual dates and limitations.
-- [ ] Native selections, sources, full schedules, layouts and enlarged text.
-- [ ] Inventory search/filter/detail returns and persistence/recovery.
-- [ ] Ordinary build restoration, tests and independent live verification.
-- [ ] Integrated supported acceptance and explicit unavailable features.
+- [x] Validate actual dated source routes, count units and literal schedules.
+- [x] Strict bounded collection with atomic correction/failure retention.
+- [x] Fresh Scratch and separate instant-product dispositions.
+- [x] Remote/cache/bundle presentation with actual dates and limitations.
+- [x] Native selections, sources, full schedules, layouts and enlarged text.
+- [x] Inventory search/filter/detail returns and persistence/recovery.
+- [x] Ordinary build restoration, tests and independent live verification.
+- [x] Integrated supported acceptance and explicit unavailable features.
 
 No public feed, app build, UI change or acceptance is claimed by activation.
 
@@ -1193,3 +1194,83 @@ recorded below after the private target.
 Ordinary lib/main.dart explicitly rebuilt (Xcode37.5s), installed and cold-launched
 as35709; native accessibility confirms the normal home/map. Android stayed
 stopped and main.dart unchanged. Restore log: work/idaho_scope/large-instaplay-restore.log.
+
+
+## October 24, 20:05 ET run — integrated enlarged draw traversal
+
+The ignored production-HomeScreen2x target built (Xcode36.5s) and ran as39185
+on the original iPhone17e. Navigated search → Idaho map → Sources and coverage →
+results. Portrait screenshot confirms readable full Powerball October21 heading,
+numbers, original collection timestamp and fixed controls; the selector itself
+ellipsizes but the full date is repeated below. Native accessibility and fixed
+paging traversed all eight Idaho Power Play count rows, all nine shared
+PowerPlay/Double Play schedule rows, source footnotes, the explicit10x boundary
+discrepancy, rules and coverage limits. Final screenshot confirms the dated-source
+button is visible and readable. Safari opened the exact official dated API URL
+/api/v1/drawgame/powerball/2026-10-21; returning to the same process preserved
+selection and final reading position. This closes the integrated enlarged draw
+navigation gap with representative Powerball evidence, not every family/layout
+or screenshot review of every rule paragraph. No swipe recovery is claimed.
+
+Independent live verification at2026-10-25T00:06:33Z matches all225451 published
+bytes and SHA2566f15be4b20834e84065e8c0896bd5af57f0accd1fab35fafc42e3934d8ac0b98.
+This is deployment verification, not a newer source collection. Private evidence:
+work/idaho_scope/live-final-20261024.json and large-draw-integrated-build.log.
+Production code/data remain unchanged. Final consolidated acceptance review is
+next; no extension or second active state. Ordinary restoration follows below.
+
+Ordinary lib/main.dart explicitly rebuilt (Xcode36.9s), installed and cold-launched
+as39842; native accessibility confirms normal home/map. Android stayed stopped,
+main.dart unchanged, no tracked probe. Private restore log:
+work/idaho_scope/large-draw-integrated-restore.log.
+
+
+## Supported coverage ACCEPTED — October 24, 2026, 20:10 ET
+
+Idaho is accepted for the bounded supported experience on production fc16561,
+with accumulated native/validation evidence through this decision. Completed
+before October27 14:22ET with no extension. Historical open-gate statements above
+are superseded by this decision; routine Idaho repeats are closed absent a named
+defect or meaningful new evidence. Sixteen states are accepted;29 remain.
+
+### Consolidated evidence boundary
+
+| Gate | Accepted evidence |
+| --- | --- |
+| Dated draws |22 bounded results,11 groups,8 families;13 exact-date reports and9 explicit gaps. One older MFL report retains original October23 provenance and is explicitly not reverified by the October24 collection. |
+| Literal contracts | Eight schedules/70 rows, eight rules contracts, two Sum It Up matrices/51 rows; reviewed source discrepancies preserved. |
+| Typed products |33 Scratch games:32 numeric games/225 tiers plus Mistletoe Mystery with unavailable remaining inventory and11 structure rows;12 InstaPlay/110 schedule rows;11 Tabs/46 rows; Raffle seven tiers with daily promotions distinct from unavailable final drawing. |
+| Native normal reading | All22 selection paths; all8 families plus separate DP shared schedule path, both Sum matrices, and11 source handoff/returns. Pick Night summary/source checks reuse the shared schedule traversed on Day. |
+| Native products | Unknown and numeric Scratch, InstaPlay, TouchTab, fixed Tab and Raffle detail reading; source returns and search/price filter/reset persistence as recorded. |
+| Enlarged/layout | Integrated2x Scratch, InstaPlay, Tab, Raffle and representative Powerball route; normal Powerball landscape plus representative enlarged Tab landscape. Automated all-family2x portrait/landscape coverage supplements these bounded native observations. |
+| Cache/refresh | Controlled native production-loader SocketException preserves prior cache bytes/date; ordinary current225451-byte cache matches publication. Old-cache to newer-feed adoption is production-loader automated evidence. All85 failure positions on the newer retained-report feed preserve bytes/date/provenance; unchanged replay and correction/regression guards pass. |
+| Validation/release |482 Python tests including73 Idaho;25 Idaho Flutter tests; six production Dart files clean. Live225451 bytes independently match at2026-10-25T00:06:33Z. Ordinary main target rebuilt/installed/cold-launched as39842 after private2x target. |
+
+Native evidence combines accessibility/paging with representative screenshots;
+it is not every family manually inspected at every scale/orientation or every
+paragraph screenshot-reviewed. Fixed paging is the accepted reading path; native
+swipe automation is unresolved. Controlled request failure is not whole-device
+offline evidence. No offline map tiles or complete persistent national data claim.
+
+Collection remains2026-10-24T10:58:20.814654+00:00. Source bytes are not newly
+verified by this decision. Published SHA256:
+6f15be4b20834e84065e8c0896bd5af57f0accd1fab35fafc42e3934d8ac0b98.
+Legacy numeric-only Scratch feed remains unchanged; the app uses the coupled feed.
+
+### Explicit unavailable features and separate work
+
+No complete history, claims, stock, retailer coordinates/joins or progressive
+inference. Pick report count units remain excluded; absent exact-date reports
+are unavailable, not zero. XsOs keeps literal source codes; Idaho and national
+tables stay separate; free tickets remain categorical. InstaPlay/Tab schedule
+counts are not remaining inventory. Retired-game history and final Raffle result
+are unavailable. Source content-availability notice and reported discrepancies
+remain disclosed. The pending unsigned agency form does not block this supported
+release and no automatic attestation is authorized.
+
+Idaho is ready for supported-coverage testing. Mobile signing/distribution,
+broader Android flows and platform persistence/privacy remain separate open gates;
+this is not beta distribution or national public-release acceptance. Next state
+must receive its own explicit activation and scope/release deadlines; none is
+activated by this decision. National estimate is unchanged pending18 acceptances
+or a material blocker.

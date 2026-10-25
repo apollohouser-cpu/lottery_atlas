@@ -3,6 +3,15 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
+## Current decision — October24,2026 at20:10ET
+
+Idaho supported coverage is ACCEPTED on production fc16561 with the final evidence
+matrix in IDAHO_ACCEPTANCE.md. Sixteen states are accepted;29 remain. Historical
+fifteen/30 and Idaho-active statements below are superseded. No state is currently
+active; select the next state and assign its own scope/release deadlines at actual
+activation. Do not routinely reopen Idaho or other accepted states. Beta gates
+remain separate; national estimate unchanged until18 acceptances/material blocker.
+
 ## Beta and national public release — approved October 6, 2026
 
 The user authorizes proceeding toward iOS and Android beta testing with currently
@@ -45,7 +54,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Idaho | October 27, 2026 at 14:22 ET | Sole active from October22 14:22ET; scope closed October23 before14:22ET; fresh120-hour substantial all-game integration. |
+| Idaho | ACCEPTED October24,2026 at20:10ET | Production fc16561; bounded native/retention evidence complete before October27 14:22ET, no extension. |
 | Iowa | ACCEPTED October22,2026 at12:24ET | Production9ff894e; evidence through4e91052. Ahead of October23 21:42ET, no extension. |
 | South Dakota | ACCEPTED October 18, 2026 at 20:42 ET | Release 94fd40c; ahead of October 23 at 04:24 ET; no extension. |
 | Nebraska | Accepted October 18, 2026, 04:20 AM ET (due October 21, 11:58 AM) | Release aabff9f; bounded results/latest reports, literal Scratch and native retention accepted with explicit gaps. |

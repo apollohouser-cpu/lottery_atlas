@@ -909,3 +909,12 @@ Ordinary iOS b8b99a2 built, installed and cold-launched on the original iPhone17
 Android stayed stopped. Initial Idaho draw and unavailable-Scratch landscape
 flows are recorded in IDAHO_ACCEPTANCE.md. Native acceptance remains incomplete;
 this does not close beta persistence, Android, signing or distribution gates.
+
+
+## October24,20:10ET — Idaho supported acceptance
+
+Sixteen states now have accepted bounded supported coverage;29 remain. Idaho's
+final native/automated/live/retention matrix is in IDAHO_ACCEPTANCE.md. The ordinary
+iOS main target is restored and cold-launched as39842; Android stayed stopped.
+This does not close signing, distribution, broader Android flows, platform
+persistence/privacy or national-release gates. October20–27 beta remains provisional.
