@@ -492,3 +492,43 @@ Powerball flow, all eight group source returns are now covered.
 Product native flows, representative enlarged/landscape checks, controlled
 cache/failure evidence and final ordinary-state verification remain open. No
 new source collection or acceptance; release deadline remains October29 21:06ET.
+
+## October 25, 17:38 ET — native products after desktop update
+
+The update left iPhone17 running; it was stopped before booting the original
+17e. Initial post-boot launch returned no process handle; retry recovered as9503.
+The existing ordinary installation opened both coupled product types. Cash Flash
+858 showed original tickets and separate original/remaining tiers; Blazin' Bucks
+Progressive242 showed a separate variable estimate and categorical JACKPOT tier.
+Fixed paging reached every tier and official link in both representative details.
+Safari URLs matched the respective official Scratch/Fast Play game paths and OS
+return preserved each detail. Catalogs showed50Scratch/19FastPlay.
+
+Native loader adopted collection completed20:55:01.638862UTC, with Cash Flash
+capture20:54:17.949001 and Blazin' Bucks20:54:51.149305. An independent download
+at21:37:59.271636UTC saved privately has258327bytes and SHA256
+`d4b568269ad54cdbee0a9826e831febbfc66b96d7141c2cfa885ac1034ee4c91`.
+This records retrieved live bytes; comparison against publisher output remains
+part of final verification. Controlled retention/enlarged layout checks and final
+ordinary restoration are still pending. No Oklahoma acceptance yet.
+
+## October 25, 17:42 ET — controlled native retention and enlarged flows
+
+Private untracked harness used the production loader with its ordinary persisted
+cache and an injected SocketException. Result: fetch attempted, persisted cache
+bytes identical, returned data equal to validated cache, passed=true. Retained
+collection completion20:55:01.638862UTC. This is controlled loader failure, not
+whole-device offline evidence. The harness result is saved privately.
+
+Global2x text applied to the navigator and modal details. Representative Powerball
+paging reached Coverage limits (29page actions); Cash Flash detail reached its
+source control (3page actions); Blazin' Bucks detail reached the categorical
+JACKPOT and source control (5page actions). Fast Play detail was additionally
+rotated to landscape and paged with fixed controls; close remained usable.
+This is representative native coverage, not every family at every orientation.
+Ordinary restoration and final acceptance verification follow; no acceptance yet.
+
+Ordinary `lib/main.dart` restoration completed:22.7s build, installed and
+cold-launched as13065, native map/navigation visible. Main source stayed unchanged;
+no probe tracked. Android stayed stopped. Final source-byte/publisher comparison
+and acceptance matrix review remain next.
