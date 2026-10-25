@@ -378,3 +378,14 @@ original date; the forthcoming app must consume the coupled snapshot. All512
 Python tests pass, including38 Oklahoma tests. Deployment and independent live
 byte verification are pending this commit; app/native and acceptance remain open.
 Release deadline October29 21:06ET unchanged, no extension.
+
+
+## October25 — initial coupled deployment verified
+
+Production a9f3c2a deployed successfully in workflow40184377143. Independent
+live fetch at 2026-10-25T10:22:17.841304+00:00 matched all258327 local bytes and
+SHA256 f39d241ea318baca262f4fdb0dd431d02360ab7438035c8f8360392acd31c0b5.
+All78 retained capture hashes were recalculated successfully. Initial coupled
+feed deployment is closed; this is not app/native acceptance. Next implement the
+strict Dart loader, bundled/cache continuity and visible draw/product experience,
+then native flows and ordinary restoration. Deadline remains October29 21:06ET.
