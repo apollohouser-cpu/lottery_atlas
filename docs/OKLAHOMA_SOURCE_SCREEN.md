@@ -204,3 +204,38 @@ history/count fields, then validate Scratch and Fast Play details before scope
 closure and publication. No public feed, app build, source-date advancement or
 acceptance change. Scope due October25 21:06ET and release due October29 21:06ET
 remain unchanged; no extension.
+
+
+## October25,00:13ET — complete eligible product detail audit
+
+Fetched all 50 eligible Scratcher and 19 no-end-date Fast Play detail pages
+against the retained complete listings. The 69 successful responses were
+retrieved October25 04:12:39–04:13:03 UTC and retained privately with individual
+UTC timestamps and SHA256 hashes in work/oklahoma_scope/product_audit_20261025.
+All 69 stored hashes were independently recalculated. This is a fresh detail
+audit against the earlier listings, not a fresh atomic catalog publication.
+
+All 50 Scratch details pass the existing strict parser's identity, eligibility,
+prize-format, duplicate-tier, inventory arithmetic and advertised-top-tier checks.
+They now contain 653 numeric prize rows; none has explicit-null inventory in this
+audit. The six previously unavailable games therefore have published structures
+in these captures. Preserve the old public snapshot and its date until a complete
+validated collection is published; do not silently change unknowns to counts.
+
+All 19 eligible Fast Play details match listing game ID, slug, ticket price,
+launch date and null end date and retain progressive=true. Their single prize
+groups contain 219 rows: 200 literal cash rows and 19 categorical JACKPOT rows.
+Every original/remaining count is a nonnegative integer with remaining no larger
+than original; labels are unique per game and totalTickets is a positive integer.
+Each game has exactly one JACKPOT row. The separate changing topPrize estimate
+must not replace that categorical label or be checked as a fixed maximum cash
+prize. Original prizes, remaining prizes and total tickets remain distinct.
+This private audit is not a production Fast Play parser or acceptance gate.
+
+The 13 ended Fast Play entries and 52 Scratch entries outside the existing
+eligible filter remain outside this current-product inventory audit; no complete
+retired-game inventory/history or claim counts are inferred. Count geography and
+Pick3 session joins remain separate unresolved draw contracts. Next encode the
+bounded product/history/gap matrix and strict Fast Play parser, then coupled
+collection and publication. No public feed or native build changed. Scope and
+release deadlines remain October25 and October29 respectively, both21:06ET.
