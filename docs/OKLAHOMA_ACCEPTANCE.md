@@ -166,3 +166,24 @@ Pick3 session joins remain separate unresolved draw contracts. Next encode the
 bounded product/history/gap matrix and strict Fast Play parser, then coupled
 collection and publication. No public feed or native build changed. Scope and
 release deadlines remain October25 and October29 respectively, both21:06ET.
+
+
+## October25,01:08ET — strict Fast Play parser
+
+Added tooling/import_oklahoma_fast_play.py without a publication entry point.
+It validates listing identities, Chicago-local launch eligibility, ending status,
+and progressive-only coverage; an active nonprogressive game requires review.
+Detail validation joins the listing metadata, preserves printed/internal IDs,
+and strictly checks cash labels, categorical JACKPOT, original/remaining counts,
+duplicates and missing versus explicit-null inventory. Zero progressive estimate
+is unavailable; positive estimates stay separate from fixed prize tiers.
+
+The complete retained32-entry listing and all19 eligible captured details pass,
+producing219 rows. The listing includes unprefixed slugs: printed game numbers
+come from detail gameNumber, with a numeric slug prefix cross-checked only when
+present. All18 Oklahoma Python tests pass (10 Fast Play, eight Scratch), including
+identity/status drift, local dates, malformed counts, duplicate cash aliases,
+jackpot loss and unknown inventory. Replay preserves original capture provenance;
+no new source verification timestamp, feed publication, app build or acceptance.
+Next close the explicit scope/gap matrix, implement strict draw contracts and
+coupled collection/retention before app integration. Deadlines unchanged.
