@@ -7,9 +7,9 @@ state source-screen documents retain the detailed evidence and request history.
 
 Oklahoma supported coverage is ACCEPTED on production7438c02, with the bounded
 final evidence matrix in OKLAHOMA_ACCEPTANCE.md. Seventeen states are accepted;
-28 remain. Completed before October29 at21:06ET without extension. No state is
-currently active. Select the next unfinished state and give it fresh explicit
-scope/release deadlines. Do not routinely reopen accepted states. Mobile gates
+28 remain. Completed before October29 at21:06ET without extension. New Mexico activated October25 at18:38ET as the sole active state. Scope due
+October26 at18:38ET; supported release due October30 at18:38ET, fresh120hours.
+See NEW_MEXICO_ACCEPTANCE.md; no extension used. Do not routinely reopen accepted states. Mobile gates
 remain separate; national forecast unchanged until18 acceptances/material blocker.
 
 ## Beta and national public release — approved October 6, 2026
@@ -54,6 +54,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
+| New Mexico | October30,2026 at18:38ET | Sole active October25 at18:38ET; scope due October26 at18:38ET; substantial all-game integration. |
 | Oklahoma | ACCEPTED October 25, 2026 at 17:44 ET | Production7438c02; bounded native/retention evidence complete early, no extension. |
 | Idaho | ACCEPTED October24,2026 at20:10ET | Production fc16561; bounded native/retention evidence complete before October27 14:22ET, no extension. |
 | Iowa | ACCEPTED October22,2026 at12:24ET | Production9ff894e; evidence through4e91052. Ahead of October23 21:42ET, no extension. |
