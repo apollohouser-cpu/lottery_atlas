@@ -468,3 +468,23 @@ Changed production/test Dart analyze clean. This is automated widget evidence,
 not native source-return or manual all-scale acceptance. Typed Scratch/Fast Play
 UI is next, followed by ordinary native build and complete bounded flow checks.
 No native build, new source refresh or Oklahoma acceptance; deadline unchanged.
+
+## October 25, 11:24 ET — typed product UI
+
+Oklahoma now has a separate Scratch/Fast Play catalog entry backed by the coupled
+loader. Search by name/printed game number and price filtering lead to details
+with per-game retrieval time, original ticket and prize quantities, remaining
+counts or explicit unknowns, and official source links. Fast Play's variable
+progressive estimate remains separate from its categorical JACKPOT tier. Neither
+product implies retailer stock or complete claims history. Fixed paging and close
+controls remain reachable at enlarged text sizes.
+
+Validation: 19 Oklahoma Flutter tests pass together (15 loader/continuity, two
+draw/rule, two product UI); the new product widget, test and source entry analyze
+clean. Product tests traverse both types and detail/source-link visibility at 2x
+portrait and landscape and exercise unavailable Scratch search/detail return.
+These are widget tests, not native OS source-return evidence. No new source
+collection, app build or acceptance is claimed. Next: ordinary native build,
+all draw/product/source-return flows, representative enlarged/landscape layouts,
+cache/failure continuity and ordinary restoration. October 29 at 21:06 ET release
+deadline remains unchanged, no extension.

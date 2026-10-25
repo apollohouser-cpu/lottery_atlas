@@ -1,3 +1,4 @@
+import '../../widgets/map/oklahoma_product_sheet.dart';
 import '../../widgets/map/oklahoma_draw_collection_sheet.dart';
 import '../../widgets/map/idaho_product_sheet.dart';
 import '../../widgets/map/idaho_draw_collection_sheet.dart';
@@ -64,6 +65,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Oklahoma')
+            ListTile(
+              title: const Text('Oklahoma Scratch and Fast Play'),
+              trailing: const Icon(Icons.chevron_right),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const OklahomaProductSheet()),
+            ),
           if (source.stateName == 'Oklahoma')
             ListTile(
               title: const Text('Oklahoma results and schedules'),
