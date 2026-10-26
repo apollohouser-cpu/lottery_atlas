@@ -381,3 +381,23 @@ clean. Prior30 draw/loader tests remain prior evidence. No native OS return or
 new source verification is claimed. Next ordinary native build and all supported
 flows, representative layout/cache continuity and restoration; release deadline
 October30 18:38ET unchanged, no acceptance or extension.
+
+## October26 — first ordinary Android native checkpoint
+
+Ordinary `lib/main.dart` debug APK built in16.7seconds, installed and cold-launched
+on the user-requested Android emulator; iOS remained shut down. The ordinary map
+opened, state search selected New Mexico, and Sources and coverage exposed both
+new coupled entries. Normal portrait Powerball October24 results and its exact
+report rendered with the scheduled October26 13:08UTC collection. The official
+Powerball archive opened in the OS WebView Browser Tester, visibly loaded dated
+results, and Android Back returned to the same selected result/report.
+
+The57-entry estimated Scratch catalog and Lottery Bucks486 details rendered
+with the literal October26 05:05AM source time, unpublished timezone, actual
+retrieval, estimated count and explicit missing ending notices. Its official
+inventory URL opened externally and Back returned to the same detail; this
+checkpoint verifies URL dispatch/return, not the inventory webpage rendering.
+Private screenshots/XML and build log are retained in `work/new_mexico_scope`.
+This is partial native evidence only: remaining draw selections/source returns,
+all rule flows, status/ending-link flows, enlarged/landscape, controlled cache
+failure and final restoration remain open. No acceptance or deadline change.
