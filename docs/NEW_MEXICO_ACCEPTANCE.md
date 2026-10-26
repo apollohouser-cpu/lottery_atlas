@@ -100,3 +100,21 @@ Next implement strict current result/rule/report validators against retained
 captures, then coupled collection and app integration. No new all-game feed or
 New Mexico native build is claimed. Android was separately built/installed/launched
 at the user's request after shutting down iOS; that is not NM acceptance evidence.
+
+## October25,21:42ET — bounded archive result validator
+
+Added strict current-format archive parser for all six families and nine groups,
+including explicit DAY/EVE and separate Powerball Double Play. Against retained
+October22–25 captures,21 completed result records validate; latest-two-per-group
+selection yields14 records because the short opening window has only one PB,
+DP, MM and LA date. These are private implementation results, not accepted or
+published coverage. Next collection must widen the bounded window to obtain two
+actual dates where available; never duplicate or invent missing dates.
+
+Eleven focused Python tests pass: all families/groups, leading zeroes, session
+identity/order, DP separation, bad heading, duplicate identity, number range/
+uniqueness/special-ball identity, missing/conflicting sessions, window/future-date
+rejection, multiplier validation and unsupported historical formats. All report
+statuses remain unavailable pending separate report validators. Rules, full
+collection, atomic continuity, app/native and acceptance remain open. No source
+refresh, public feed or new app build this pass. Deadline unchanged.

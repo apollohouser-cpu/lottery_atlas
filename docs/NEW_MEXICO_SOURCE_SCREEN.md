@@ -211,3 +211,13 @@ MONOPOLY MILLIONAIRES' CLUB and earlier Quicksters. All retired/prior-version
 history remains unavailable for import, with explicit gaps rather than invented
 zeroes. Current PB/MM/LA/DP report units remain a validator gate despite explicit
 New Mexico headings. Scope closure does not assert report acceptance.
+
+October25,21:42ET: retained archive captures now drive a strict current-format
+result parser and six minimized public-source HTML test fixtures. Eleven tests
+pass. The short October22–25 opening window validates21 raw records, bounded to14
+across nine groups; it is not a complete two-date collection. Pick digits retain
+leading zeroes; rows must match explicit session classes and dates, main/special
+ball ranges and current multiplier rules. DP stays separate. All winner reports
+remain unavailable until independently validated. No new source retrieval or
+publication is claimed; next implement literal rules/report validation and the
+wider-window coupled collector.
