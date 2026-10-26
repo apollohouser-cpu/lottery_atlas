@@ -264,3 +264,20 @@ This verifies deployed bytes, not a newer source retrieval. Initial coupled
 publication is complete. Next strict Dart validation/loading and bundled/cache
 continuity, then visible supported flows/native acceptance. New Mexico remains
 sole active and unaccepted; release deadlineOctober30 18:38ET unchanged.
+
+## October 26 — initial Dart loader and bundled continuity
+
+Added the coupled baseline asset, reviewed Dart contract and cache/remote/bundle
+loader. Nine Flutter tests pass: exact baseline reports/gaps, estimated inventory
+decreases, rejection of increases against retained cache, changed data/units/rules,
+source joins, updated capture adoption, request-failure retention, corrupt-cache
+bundle fallback and persistence failure. Three production Dart files and the test
+analyze clean. No native build or UI integration has been performed.
+
+This is deliberately an initial implementation: draw dates, query windows, report
+values, Scratch source timestamp/metadata and catalog membership remain exact
+baseline contracts. They fail closed on advancement. Implement strict dynamic
+result/report/window and Scratch date/expiry validation next before exposing the
+loader in visible New Mexico flows. Current tests are automated loader evidence,
+not native cache or whole-device offline evidence. Source collection/deployment
+and October30 18:38ET deadline remain unchanged; New Mexico is not accepted.

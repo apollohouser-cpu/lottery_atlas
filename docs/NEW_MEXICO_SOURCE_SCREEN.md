@@ -284,3 +284,10 @@ independent live bytes matched at08:43:56.680967UTC (173719bytes, SHA256
 cf57691ed15228e2744bada9a7c48b6e0294ebba45ac0f4f266d92db116a413a).
 Actual source collection remains08:41:53.073902UTC. App integration/native gates
 remain open; this does not accept New Mexico or refresh legacy Scratch-only dates.
+
+October26 initial Dart checkpoint: bundled coupled baseline and guarded loader
+added; nine Flutter tests pass and changed Dart analyzes clean. Only capture times
+and estimated inventory decreases can advance currently. Dynamic draw/report/
+query-window and Scratch timestamp/expiry validation remain the next gate; these
+changes fail closed today. No new source retrieval, visible UI, native build or
+acceptance evidence is claimed.
