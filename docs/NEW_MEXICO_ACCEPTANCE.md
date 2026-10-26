@@ -219,3 +219,23 @@ and required timezone. These are collection tests, not yet disk-retention tests.
 No candidate has been published. Next atomic persistence and correction/window/
 report-loss/Scratch continuity tests, then baseline publication and app/native.
 No app build, acceptance or deadline change.
+
+## October 26 — atomic persistence and continuity checkpoint
+
+The coupled collector now writes through a same-directory temporary file,
+flush/fsync and atomic replacement. All 18 injected request failures and an
+injected replacement failure preserve prior disk bytes; temporary files are
+removed. Continuity rejects result/report corrections, backward or reduced draw
+windows, rule changes, Scratch count increases, metadata changes and source-time
+regressions (including within the same source day). New Scratch identities require
+review. Removal requires a previously recorded expired claim deadline and explicit
+exclusion in the fresh catalog.
+
+An older exact-date report still in the bounded window is retained when the latest
+report endpoint moves on, with its original retrieval date and source hash record.
+It is not labeled freshly verified. Missing retained provenance fails closed.
+Tests cover this retention, valid draw-window advancement and inventory decreases.
+All 54 focused New Mexico tests pass. No new source collection, public all-game
+feed, app build, native evidence or acceptance is claimed by this checkpoint.
+The October 30 at 18:38 ET release deadline is unchanged. Next wire the coupled
+publisher and verify deployment before strict Dart loader/bundle/cache integration.

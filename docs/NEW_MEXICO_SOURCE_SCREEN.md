@@ -264,3 +264,10 @@ and actual UTC retrieval times. LA's weekday heading is now checked against its
 explicit report date; Yesterday never determines a date. Forty-five focused
 tests pass, including18 request-failure positions. Atomic disk retention/public
 publication remain unfinished; private candidate is not an accepted live feed.
+
+October 26 persistence checkpoint: coupled refresh now preserves prior disk bytes
+on all 18 injected source failures and replacement failure. Correction/window/
+Scratch continuity is enforced; older exact-date reports retain original capture
+provenance when the latest endpoint advances. 54 focused tests pass. This adds
+engineering evidence only; the last private source collection and its dates remain
+unchanged, with no new public coupled feed or native acceptance.
