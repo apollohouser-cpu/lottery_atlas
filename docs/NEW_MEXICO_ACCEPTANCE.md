@@ -401,3 +401,31 @@ Private screenshots/XML and build log are retained in `work/new_mexico_scope`.
 This is partial native evidence only: remaining draw selections/source returns,
 all rule flows, status/ending-link flows, enlarged/landscape, controlled cache
 failure and final restoration remain open. No acceptance or deadline change.
+
+## October26 12:55 ET — Android selection and product-source checkpoint
+
+All18 dated selections were traversed through the ordinary Android dropdown at
+normal portrait size, with native accessibility captures confirming each selected
+label and visible numbers. The final Pick4 EVE October24 screenshot shows its
+explicit unavailable-report wording and literal schedule. This closes selection
+traversal only, not every schedule page, source return or enlarged layout.
+
+Scratch ending-notice URL dispatch and return to the same Lottery Bucks detail
+passed. The complete normal-portrait game-status explanation was read; Fast Play
+and games/promotions links dispatched to their official URLs and Back preserved
+the status view. The games page exposed its actual navigation in the OS browser.
+No source payload refresh or new availability conclusion is inferred from these
+link checks. Private XML evidence is retained under work/new_mexico_scope.
+
+All32 New Mexico Flutter tests pass together. Independent live download at
+2026-10-26T16:54:14.504004UTC matches generated and published repository bytes:
+173581bytes, SHA256
+`5a8bc600cc0de2c168ff237e1a0c88b396474331e3b9f7e5dc12dead12271944`.
+Its actual collection timestamp is2026-10-26T13:08:04.958883UTC (scheduled
+refresh), distinct from this verification time. Earlier baseline hash remains
+historical evidence.
+
+Remaining native gates: eight other group source returns beyond the prior
+Powerball return, all full rule/schedule paths, representative enlarged/landscape,
+controlled cache failure and final restoration. Android remains running with
+the ordinary app; iOS is shut down. No acceptance or deadline change.
