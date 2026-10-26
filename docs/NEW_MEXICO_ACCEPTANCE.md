@@ -452,3 +452,29 @@ report/rule-link returns, controlled cache-failure continuity and final ordinary
 restoration. A private copy of the real Android preferences datastore was saved
 for the retention check; copying it alone does not establish failure retention.
 Android stays running, iOS shut down. No new collection, acceptance or extension.
+
+## October26 14:53 ET — native rules, controlled retention and restoration
+
+All six distinct official rule-page links opened in the Android OS browser and
+Back preserved the selected game/date and reading position. Powerball's rule page
+is shared with Double Play. Private `rule-link-returns.json` and XML captures
+record these URL dispatch/return checks; completed rendering of every external
+page is not claimed. Separate exact-report link returns remain open.
+
+An ignored private native target invoked the production New Mexico loader with
+only its remote-fetch callback replaced by a controlled SocketException. It read
+the existing real SharedPreferencesAsync cache, confirmed the callback ran,
+returned the same validated cached data, and verified the stored cache string
+remained byte-identical. Its retained collection time was
+2026-10-26T13:08:04.958883UTC. The private result JSON records all checks true.
+This is controlled loader failure evidence, not whole-device offline behavior.
+
+The same private target displayed production draw/product components with global
+2x text. Representative portrait Powerball numbers/report paging, Scratch catalog
+and Lottery Bucks detail/paging/return were inspected; status opened with explicit
+availability limits. This does not establish native landscape or every enlarged
+family flow. Ordinary main.dart was never edited. It was rebuilt in10.7seconds,
+installed and cold-launched as PID12966; a fresh screenshot/accessibility capture
+confirmed the normal map, replacing the private target. Android stays running;
+iOS remains shut down. Remaining work: native landscape, separate exact-report
+link returns and final acceptance reconciliation. No acceptance or extension.
