@@ -362,3 +362,22 @@ Next add the coupled estimated Scratch catalog and explicit Fast Play/historical
 status-gap UI, then native all-flow/source-return, representative layout, retention
 and ordinary restoration evidence. No new source retrieval/build/acceptance or
 change to October30 18:38ET deadline.
+
+## October26 — coupled Scratch and status UI
+
+Added the New Mexico Scratch/game-status source entry backed by the coupled
+loader. Search by name/printed ID, price filtering and details preserve estimated
+top-prize semantics, literal source time with unknown timezone, actual retrieval
+times and published sales-end/claim dates. Missing notices are explicit; ended but
+redeemable games are not presented as verified store stock. Separate official
+inventory and ending-notice links remain reachable through fixed paging.
+
+The status view preserves ended/announced-ending/paused Fast Play distinctions,
+marks current availability/progressive values unverified, dates its source screen
+to October25, and explains historical/promotional gaps separately. Two new widget
+tests pass for global2x portrait/landscape catalog/detail/source-link visibility,
+status reading, search/no-match/reset and detail return. Changed Dart analyzes
+clean. Prior30 draw/loader tests remain prior evidence. No native OS return or
+new source verification is claimed. Next ordinary native build and all supported
+flows, representative layout/cache continuity and restoration; release deadline
+October30 18:38ET unchanged, no acceptance or extension.

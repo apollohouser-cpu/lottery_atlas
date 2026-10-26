@@ -319,3 +319,9 @@ no unverified image content is transcribed. All selections and seven family/vari
 schedule paths pass2x portrait/landscape widget coverage;30NMFlutter tests pass.
 Native OS evidence and coupled Scratch/status-gap UI remain pending. No fresh
 source verification or state acceptance implied.
+
+October26 product UI checkpoint: coupled estimated Scratch catalog now shows
+source/retrieval provenance, claim notices and explicit missing dates. Fast Play
+and historical/promotional gaps preserve October25 status-screen limits, not live
+availability. Two global2x portrait/landscape widget tests pass; changed Dart clean.
+Native build, OS returns and acceptance remain open; no fresh source claim.
