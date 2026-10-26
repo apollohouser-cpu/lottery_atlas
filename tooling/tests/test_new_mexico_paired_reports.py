@@ -12,6 +12,10 @@ class PairedReportTests(unittest.TestCase):
             r=parse_paired_report(self.raw(g),self.draw(g))
             self.assertEqual((17,count,value),(len(r['tiers']),r['totalPrizesWon'],r['totalPrizeValue']))
             self.assertEqual(2,len({t['column'] for t in r['tiers']}))
+    def test_literal_weekday_heading_uses_explicit_date(self):
+        raw=self.raw('lottoamerica').replace("Yesterday's", "Saturday's")
+        self.assertEqual('2026-10-24',parse_paired_report(raw,self.draw('lottoamerica'))['date'])
+        with self.assertRaises(ValueError):parse_paired_report(raw.replace("Saturday's","Friday's"),self.draw('lottoamerica'))
     def test_exact_joins(self):
         for g in ['powerball','lottoamerica']:
             for key,val in [('date','2026-10-21'),('session','DAY'),('variant','double_play'),('multiplier',3)]:

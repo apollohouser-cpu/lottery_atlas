@@ -255,3 +255,12 @@ never a parsed relative date. Jackpot add-on dashes are non-applicable; unknown
 actual jackpot awards fail closed. Thirty-nine focused tests pass. All four
 latest candidate report validators exist; atomic collection and public integration
 remain open, with original retained capture provenance unchanged.
+
+October26,02:43ET: fresh private18-request candidate completed06:43:29.695059UTC:
+18results/ninegroups/two dates each, four exact reports and14 explicit gaps; all
+six rule contracts pass;57 eligible estimated Scratch entries dated literally
+October25 09:22PM (timezone unknown). Candidate sources include per-request hashes
+and actual UTC retrieval times. LA's weekday heading is now checked against its
+explicit report date; Yesterday never determines a date. Forty-five focused
+tests pass, including18 request-failure positions. Atomic disk retention/public
+publication remain unfinished; private candidate is not an accepted live feed.

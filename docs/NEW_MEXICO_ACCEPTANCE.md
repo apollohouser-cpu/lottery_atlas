@@ -194,3 +194,28 @@ candidate latest reports now have strict validators. No fresh retrieval, public
 feed, app or native acceptance this pass. Next wider-window coupled collection,
 original retrieval provenance and atomic correction/regression/failure retention,
 then app/native integration. Release deadline unchanged.
+
+## October26,02:43ET — complete private coupled collection
+
+An18-request private collection finished at2026-10-26T06:43:29.695059UTC. The
+explicit October12–26 Denver-local archive window yields18 bounded completed
+results: two dates in all nine groups. Four exact-date NM reports attach;14
+results retain explicit unavailable reports. Six rule contracts/ten tables/111
+physical rows pass. Scratch has57 unexpired estimated top-prize entries; literal
+source timestamp October25,2026 09:22PM, timezone unpublished. Per-request UTC
+retrieval time, byte length and SHA256 provenance is retained in the candidate
+snapshot and private captures under work/new_mexico_scope/collection-20261026.
+
+Initial private collection rejected LA's changed relative heading (Saturday's
+instead of Yesterday's). Reviewed the actual response: explicit October24 date
+and all report contents remained consistent. The validator now accepts named
+weekdays only when they agree with the explicit date, or the literal Yesterday
+heading without deriving a date from it. A regression rejects conflicting weekday
+labels. No validation of dates/counts/prizes was relaxed.
+
+Forty-five focused tests pass, including all18 injected request-failure positions
+aborting in-memory collection, exact report joins, explicit gaps, source hashes
+and required timezone. These are collection tests, not yet disk-retention tests.
+No candidate has been published. Next atomic persistence and correction/window/
+report-loss/Scratch continuity tests, then baseline publication and app/native.
+No app build, acceptance or deadline change.

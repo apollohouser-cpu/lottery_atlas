@@ -181,7 +181,7 @@ def parse_paired_report(raw, draw):
         raise ValueError('Missing/duplicate paired report heading')
     heading=plain(headings[0])
     if game=='lottoamerica':
-        if heading!="Yesterday's New Mexico Drawing Results":
+        if not re.fullmatch(r"(?:Yesterday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)'s New Mexico Drawing Results", heading):
             raise ValueError('Changed Lotto America geography/heading')
         candidates=[plain(p) for p in tree.xpath('//p') if plain(p).startswith("New Mexico's prizes drawn on ")]
         if len(candidates)!=1:
@@ -194,6 +194,8 @@ def parse_paired_report(raw, draw):
     day=datetime.strptime(match[1],'%B %d, %Y').date().isoformat()
     if day!=draw.get('date'):
         raise ValueError('Report/result date mismatch')
+    if game=='lottoamerica' and not heading.startswith("Yesterday's") and not heading.startswith(datetime.fromisoformat(day).strftime('%A')+"'s"):
+        raise ValueError('Conflicting report weekday')
     tables=tree.xpath('//table')
     if len(tables)!=2 or tables[0].xpath('.//table'):
         raise ValueError('Changed paired report tables')
