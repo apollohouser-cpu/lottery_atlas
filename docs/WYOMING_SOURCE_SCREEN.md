@@ -50,9 +50,7 @@ that approach.
 
 ## September 28 administrative contact confirmation
 
-WyoLotto Support asked for business name and phone in message 1a0e96dfea81e416
-at 19:11 UTC to confirm the existing request (support ticket 488). Reply
-1a0e99ba2ed3fd63 supplied Lottery Atlas as the project name, Apollo Houser as
+WyoLotto Support asked for business name and phone at 19:11 UTC to confirm the existing request. The Sent-confirmed reply supplied Lottery Atlas as the project name, Apollo Houser as
 requester, and the phone already provided in prior official records correspondence.
 The phone is intentionally omitted from this public source-screen document.
 
@@ -65,9 +63,31 @@ is required; preserve the public-source limitations above.
 ## September 29 administrative forwarding acknowledgment
 
 At 17:22 UTC, WyoLotto Support confirmed receipt of the contact details and said
-the correspondence had been forwarded to David Stevens for review (message
-1a0ee30c62f4adaa; subject references tickets 488 and 515). No records, revised
+the correspondence had been forwarded to David Stevens for review (private correspondence references retained locally). No records, revised
 substantive decision, response deadline or fee request accompanied this message.
 The September 21 refusals remain the latest substantive disposition. Monitor
 for a further response; no reply or user action is required for this acknowledgment.
 No fees or new compilation are authorized, and no public data changed.
+
+## October 26, 19:00 ET — sole active state
+
+Wyoming activated after New Mexico acceptance. Full supported current/retired
+scope and gap matrix due October27 at19:00ET; supported release due October31
+at19:00ET, fresh120hours for substantial draw/Keno integration. No extension.
+Eighteen states accepted;27 unfinished including Wyoming. See
+[WYOMING_ACCEPTANCE.md](WYOMING_ACCEPTANCE.md).
+
+Four official opening captures at23:00:01–02UTC are hashed privately under
+work/wyoming_scope/opening-manifest.json. [Current catalog](https://wyolotto.com/games)
+links Cowboy Draw, Powerball, Mega Millions, Millionaire for Life,2by2 and Keno.
+[Results](https://wyolotto.com/wyo-wins/check-your-numbers) and
+[Keno](https://wyolotto.com/games/keno) expose dynamic search/history controls;
+this shell alone does not verify payloads, draw dates/IDs, timezones, counts,
+prize geography or history depth. Existing agency refusal/no-Scratch evidence
+remains authoritative for those limitations; no new correspondence is needed.
+
+Next inspect official result payloads, all rules/add-ons and retired/history
+sources, then fix the full matrix before strict parsers/coupled publication/app
+work. No new public feed, build or accepted Wyoming coverage is claimed.
+Private administrative identifiers were removed from this source screen; the
+original audit copy remains private.

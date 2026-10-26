@@ -7,9 +7,9 @@ state source-screen documents retain the detailed evidence and request history.
 
 New Mexico supported coverage is ACCEPTED on production c27df43 with the bounded
 final matrix in NEW_MEXICO_ACCEPTANCE.md. Eighteen states accepted;27 remain.
-Completed before October30 at18:38ET without extension. No state currently active.
-Next select one unfinished state and explicitly assign fresh scope/release deadlines;
-never inherit New Mexico's deadline. Accepted states stay closed absent a named
+Completed before October30 at18:38ET without extension. Wyoming is the sole active
+state from October26 at19:00ET: scope due October27 at19:00ET, supported release
+due October31 at19:00ET, fresh120hours. See WYOMING_ACCEPTANCE.md. Accepted states stay closed absent a named
 defect or meaningful new evidence. Android remains running in the ordinary app.
 Mobile/distribution gates remain separate. The18-acceptance reforecast is now
 December19,2026–January15,2027 for supported engineering at2–3days per remaining
@@ -41,8 +41,8 @@ account/signing blockers after completing independent preparation.
 
 The previously discussed October 20–27 window is a provisional beta planning
 estimate only, subject to the mobile audit. It is not a national public-release
-commitment. See NATIONAL_RELEASE_FORECAST.md for the October 18 reforecast and provisional
-December 21, 2026–January 22, 2027 national engineering range;
+commitment. See NATIONAL_RELEASE_FORECAST.md for the October26 reforecast and provisional
+December19,2026–January15,2027 national engineering range;
 continue publishing supported state updates during beta. Public release requires
 national acceptance plus mobile stability, release packaging and applicable store
 submission readiness. Store approval is separate from engineering completion.
@@ -58,7 +58,8 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| New Mexico | October30,2026 at18:38ET | Sole active October25 at18:38ET; scope due October26 at18:38ET; substantial all-game integration. |
+| Wyoming | October31,2026 at19:00ET | Sole active October26 at19:00ET; scope due October27 at19:00ET; substantial draw/Keno integration. |
+| New Mexico | ACCEPTED October26,2026 | Acceptance478b572; bounded evidence complete before October30 18:38ET, no extension. |
 | Oklahoma | ACCEPTED October 25, 2026 at 17:44 ET | Production7438c02; bounded native/retention evidence complete early, no extension. |
 | Idaho | ACCEPTED October24,2026 at20:10ET | Production fc16561; bounded native/retention evidence complete before October27 14:22ET, no extension. |
 | Iowa | ACCEPTED October22,2026 at12:24ET | Production9ff894e; evidence through4e91052. Ahead of October23 21:42ET, no extension. |
