@@ -311,3 +311,11 @@ upgrades while preserving older report capture provenance. Corrections/report lo
 fail closed.28Flutter tests pass; changed Dart clean. No new retrieval or native
 build; visible UI and native acceptance are next. Prior exact-baseline advancement
 limitation is superseded.
+
+October26 visible draw checkpoint: coupled source-screen entry now exposes18dated
+results, exact NM reports or gaps, literal schedules/rule prose and separate
+result/report/rule links. Pick example images are linked as official source images;
+no unverified image content is transcribed. All selections and seven family/variant
+schedule paths pass2x portrait/landscape widget coverage;30NMFlutter tests pass.
+Native OS evidence and coupled Scratch/status-gap UI remain pending. No fresh
+source verification or state acceptance implied.

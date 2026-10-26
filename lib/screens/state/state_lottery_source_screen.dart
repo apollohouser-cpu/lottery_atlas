@@ -1,3 +1,4 @@
+import '../../widgets/map/new_mexico_draw_collection_sheet.dart';
 import '../../widgets/map/oklahoma_product_sheet.dart';
 import '../../widgets/map/oklahoma_draw_collection_sheet.dart';
 import '../../widgets/map/idaho_product_sheet.dart';
@@ -65,6 +66,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'New Mexico')
+            ListTile(
+              title: const Text('New Mexico results and schedules'),
+              subtitle: const Text('Dated results, New Mexico reports, literal rules and explicit gaps'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NewMexicoDrawCollectionSheet()),
+            ),
           if (source.stateName == 'Oklahoma')
             ListTile(
               title: const Text('Oklahoma Scratch and Fast Play'),

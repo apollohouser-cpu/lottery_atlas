@@ -340,3 +340,25 @@ Changed production/test Dart analyzes clean. These are automated tests, not nati
 OS evidence or a fresh collection. Next visible draw/rule and estimated Scratch/
 status-gap UI, then native flows/cache/restoration. No new build or acceptance;
 October30 at18:38ET deadline remains unchanged.
+
+## October26 — visible draw, report and schedule flows
+
+New Mexico's source screen now opens the coupled result sheet. All18 dated
+selections include explicit Pick sessions, preserved digits, separate Double Play,
+result retrieval dates and exact report availability. Four joined report types
+show original report dates/retrievals, source Winners and prize totals with literal
+column/per-play multiplier labels. Missing reports remain explicitly unavailable.
+Official result/report/rule links are separate.
+
+Six families plus Double Play expose their applicable literal schedules and full
+rule text. Printed row/column spans are expanded for readable labeled rows; Pick
+example images remain official image links, without invented descriptions of their
+contents. Fixed paging/close/source controls remain accessible. All18 selections
+and full schedule/rule/limits paging across all seven family/variant paths pass
+widget tests at2x in portrait and landscape.30New Mexico Flutter tests pass together;
+changed Dart analyzes clean. This is widget evidence only, not native OS returns.
+
+Next add the coupled estimated Scratch catalog and explicit Fast Play/historical
+status-gap UI, then native all-flow/source-return, representative layout, retention
+and ordinary restoration evidence. No new source retrieval/build/acceptance or
+change to October30 18:38ET deadline.
