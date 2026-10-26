@@ -1,9 +1,10 @@
 import 'dart:convert';
+import 'new_mexico_report_validator.dart';
 import 'new_mexico_draw_validator.dart';
 import 'new_mexico_scratch_validator.dart';
 import 'new_mexico_coverage_contract.dart';
 
-/// Initial fail-closed contract: dated draws/reports/rules remain baseline-bound.
+/// Dynamic dated results and exact-report contracts with retained provenance.
 /// Capture/source times and estimated inventory may advance with strict continuity.
 class NewMexicoCoverageValidator {
   static final Map<String, dynamic> _baseline = jsonDecode(
@@ -54,6 +55,10 @@ class NewMexicoCoverageValidator {
       next['queryWindow'] as Map,
       updated,
     );
+    NewMexicoReportValidator.continuity(
+      prior['results'] as List,
+      next['results'] as List,
+    );
     final captured = <String, String>{};
     for (final source in next['sources'] as List) {
       if (captured.containsKey(source['url'])) {
@@ -67,8 +72,57 @@ class NewMexicoCoverageValidator {
       }
       captured[source['url'] as String] = source['retrievedAt'] as String;
     }
+    final retained = next['retainedReportSources'] as List? ?? [];
+    final usedRetained = <String>{};
+    final retainedKeys = <String>{};
+    for (final source in retained) {
+      final key = '${source['url']}|${source['retrievedAt']}';
+      if (!retainedKeys.add(key) ||
+          source.length != 4 ||
+          source['bytes'] is! int ||
+          source['bytes'] <= 0 ||
+          source['sha256'] is! String ||
+          !RegExp(r'^[a-f0-9]{64}$').hasMatch(source['sha256']) ||
+          _time(source['retrievedAt']).isAfter(updated)) {
+        throw const FormatException('Invalid retained report provenance');
+      }
+    }
+    void reportJoin(Map report) {
+      final stamp = _time(report['retrievedAt']);
+      if (stamp.isAfter(updated) ||
+          stamp.isBefore(DateTime.parse(report['date'] as String))) {
+        throw const FormatException('Invalid report capture date');
+      }
+      if (captured[report['sourceUrl']] == report['retrievedAt']) {
+        return;
+      }
+      final key = '${report['sourceUrl']}|${report['retrievedAt']}';
+      if (!retainedKeys.contains(key)) {
+        throw const FormatException('Missing retained report source');
+      }
+      usedRetained.add(key);
+      final previousSources = [
+        ...prior['sources'] as List,
+        ...?prior['retainedReportSources'] as List?,
+      ];
+      final known = previousSources.where(
+        (s) =>
+            s['url'] == report['sourceUrl'] &&
+            s['retrievedAt'] == report['retrievedAt'],
+      );
+      if (known.isNotEmpty &&
+          NewMexicoReportValidator.canonical(known.first) !=
+              NewMexicoReportValidator.canonical(
+                retained.firstWhere(
+                  (s) => '${s['url']}|${s['retrievedAt']}' == key,
+                ),
+              )) {
+        throw const FormatException('Retained fingerprint changed');
+      }
+    }
+
     void join(dynamic url, dynamic stamp) {
-      if (captured[url] != stamp) {
+      if (_time(stamp).isAfter(updated) || captured[url] != stamp) {
         throw const FormatException('Capture join mismatch');
       }
     }
@@ -76,8 +130,11 @@ class NewMexicoCoverageValidator {
     for (final row in next['results'] as List) {
       join(row['sourceUrl'], row['retrievedAt']);
       if (row['report'] != null) {
-        join(row['report']['sourceUrl'], row['report']['retrievedAt']);
+        reportJoin(row['report'] as Map);
       }
+    }
+    if (usedRetained.length != retainedKeys.length) {
+      throw const FormatException('Unused retained source');
     }
     for (final rule in next['rules'] as List) {
       join(rule['sourceUrl'], rule['retrievedAt']);
@@ -109,6 +166,12 @@ class NewMexicoCoverageValidator {
       }
     }
 
+    normalized['results'] = jsonDecode(jsonEncode(prior['results']));
+    normalized['queryWindow'] = prior['queryWindow'];
+    normalized.remove('retainedReportSources');
+    if (prior.containsKey('retainedReportSources')) {
+      normalized['retainedReportSources'] = prior['retainedReportSources'];
+    }
     normalize(normalized, prior);
     final sources = normalized['sources'] as List;
     final oldSources = prior['sources'] as List;
@@ -116,6 +179,16 @@ class NewMexicoCoverageValidator {
       throw const FormatException('Capture set changed');
     }
     for (var i = 0; i < sources.length; i++) {
+      final url = sources[i]['url'] as String;
+      final previousUrl = oldSources[i]['url'] as String;
+      if (previousUrl.contains('/pastdrawings/search/?')) {
+        final game = Uri.parse(previousUrl).queryParameters['game']!;
+        if (url !=
+            NewMexicoDrawValidator.queryUrl(game, next['queryWindow'] as Map)) {
+          throw const FormatException('Archive source identity changed');
+        }
+        sources[i]['url'] = previousUrl;
+      }
       sources[i]['bytes'] = oldSources[i]['bytes'];
       sources[i]['sha256'] = oldSources[i]['sha256'];
     }

@@ -303,3 +303,11 @@ query validation and overlap continuity added; six new tests,20 NM Flutter tests
 pass together. Denver-local date boundary is enforced. Final coupled contract still
 gates window/report advancement pending dynamic report/provenance integration.
 No new source retrieval or native evidence is claimed.
+
+October26 dynamic report/loader checkpoint: all four NM report schemas enforce
+exact joins, source units, tier/column/multiplier semantics and reconciled totals.
+Coupled remote loading now permits valid draw/query advancement and exact-date gap
+upgrades while preserving older report capture provenance. Corrections/report loss
+fail closed.28Flutter tests pass; changed Dart clean. No new retrieval or native
+build; visible UI and native acceptance are next. Prior exact-baseline advancement
+limitation is superseded.

@@ -315,3 +315,28 @@ new result windows remain fail-closed until dynamic report validation and retain
 report provenance are integrated. The result validator's advancement tests do not
 claim end-to-end remote advancement. Complete that integration next, then visible
 UI/native flows. No source refresh, native build, acceptance or deadline change.
+
+## October26 — dynamic reports and coupled loader advancement
+
+Completed dynamic validation for all four supported report schemas. Exact draw/
+date/session/variant/geography and source Winners units are preserved. Tier
+identity, column/per-play multiplier identity, prize schedules and integer totals
+must reconcile. PB Match5 Power Play stays fixed at $2million; other paired prizes
+follow the validated multiplier. A nonzero categorical jackpot award remains
+unavailable pending verified actual value, never substituted from an estimate.
+
+The coupled loader now accepts validated result/query-window advancement and
+exact-date gap upgrades. Overlapping results/reports cannot be corrected or lost.
+Current captures and older retained reports use separate source provenance; older
+reports keep their original retrieval dates and known hashes. Invalid/unreferenced
+retained sources, mismatched joins and backward cache data fail closed. Rules and
+unreviewed catalog identities remain strict contracts. This supersedes the initial
+exact-result/report advancement limitation.
+
+All 28 New Mexico Flutter tests pass, including production-loader adoption of an
+advanced completed Pick result, report schemas/count changes, multiplier prizes,
+exact-date report upgrades, original-provenance retention and query advancement.
+Changed production/test Dart analyzes clean. These are automated tests, not native
+OS evidence or a fresh collection. Next visible draw/rule and estimated Scratch/
+status-gap UI, then native flows/cache/restoration. No new build or acceptance;
+October30 at18:38ET deadline remains unchanged.

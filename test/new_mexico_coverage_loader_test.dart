@@ -56,7 +56,7 @@ void main() {
       );
     }
   });
-  test('draw advancement is explicitly gated pending dynamic validator', () {
+  test('unpaired Powerball date advancement is rejected', () {
     final data = fixture();
     data['results'][0]['date'] = '2026-10-26';
     expect(
