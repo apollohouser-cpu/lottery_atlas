@@ -478,3 +478,21 @@ installed and cold-launched as PID12966; a fresh screenshot/accessibility captur
 confirmed the normal map, replacing the private target. Android stays running;
 iOS remains shut down. Remaining work: native landscape, separate exact-report
 link returns and final acceptance reconciliation. No acceptance or extension.
+
+## October26 15:52 ET — Powerball report endpoint failure
+
+Native exact-report link verification found the official Powerball base report
+endpoint redirecting to the lottery's404page. Independent HTTP retrieval confirmed
+404 at19:52:38UTC. The official Powerball game page still embeds that same relative
+report URL; no replacement endpoint is verified. Double Play, Mega Millions and
+Lotto America report endpoints returned HTTP200 in the same bounded check. These
+status checks are not a new parsed collection or freshness claim for stored data.
+
+The ordinary app returned from the404page to the retained October24 Powerball
+report and its original capture date. Published/bundled/cache data were not
+replaced or re-dated. Existing atomic collection must continue to fail closed
+when a required report source fails. Private audit: report-link-audit.json and
+pb-link-audit.html under work/new_mexico_scope. Do not fabricate a replacement
+URL or count. Next verify source recovery or provide an honest source-unavailable
+reading path, finish other report returns and landscape, then reconcile acceptance.
+New Mexico remains active, not accepted; October30 18:38ET unchanged.
