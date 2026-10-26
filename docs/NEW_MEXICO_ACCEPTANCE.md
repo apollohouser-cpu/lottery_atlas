@@ -281,3 +281,20 @@ result/report/window and Scratch date/expiry validation next before exposing the
 loader in visible New Mexico flows. Current tests are automated loader evidence,
 not native cache or whole-device offline evidence. Source collection/deployment
 and October30 18:38ET deadline remain unchanged; New Mexico is not accepted.
+
+## October26 — dynamic estimated Scratch continuity
+
+Dart validation now accepts advancing literal Scratch timestamps and their matching
+source dates/notes while keeping the source timezone unknown. Same-day wall-clock
+regressions, invalid calendar dates, impossible hours, future source days, count
+increases and changed inventory interpretations are rejected. Catalog identities
+are joined by printed ID; removals require a previously recorded claim deadline
+strictly before the collection day plus explicit expired exclusion. New identities
+remain review-gated; names, prices, prize amounts and deadline changes fail closed.
+
+Fourteen New Mexico Flutter tests pass (nine loader, five Scratch); changed Dart
+analyzes clean. Cache continuity uses the retained source timestamp and counts,
+not merely the bundled baseline. No new source collection, UI/native build or
+acceptance. Dynamic draw/report/query-window advancement is still pending and
+fails closed; implement that before visible integration. Release deadline remains
+October30 at18:38ET, no extension.

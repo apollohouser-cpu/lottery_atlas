@@ -1,8 +1,9 @@
 import 'dart:convert';
+import 'new_mexico_scratch_validator.dart';
 import 'new_mexico_coverage_contract.dart';
 
 /// Initial fail-closed contract: dated draws/reports/rules remain baseline-bound.
-/// Capture times may advance and estimated top-prize counts may decrease.
+/// Capture/source times and estimated inventory may advance with strict continuity.
 class NewMexicoCoverageValidator {
   static final Map<String, dynamic> _baseline = jsonDecode(
     newMexicoCoverageContractJson,
@@ -110,20 +111,11 @@ class NewMexicoCoverageValidator {
       sources[i]['bytes'] = oldSources[i]['bytes'];
       sources[i]['sha256'] = oldSources[i]['sha256'];
     }
-    final games = normalized['scratch']['games'] as List;
-    final oldGames = prior['scratch']['games'] as List;
-    if (games.length != oldGames.length) {
-      throw const FormatException('Unreviewed Scratch set');
-    }
-    for (var i = 0; i < games.length; i++) {
-      final count = games[i]['topPrizesRemaining'];
-      if (count is! int ||
-          count < 0 ||
-          count > oldGames[i]['topPrizesRemaining']) {
-        throw const FormatException('Estimated top-prize regression');
-      }
-      games[i]['topPrizesRemaining'] = oldGames[i]['topPrizesRemaining'];
-    }
+    NewMexicoScratchValidator.normalize(
+      normalized['scratch'] as Map,
+      prior['scratch'] as Map,
+      next['queryWindow']['end'] as String,
+    );
     if (!_equal(normalized, prior)) {
       throw const FormatException('Unreviewed New Mexico contract change');
     }

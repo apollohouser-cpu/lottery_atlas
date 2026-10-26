@@ -291,3 +291,9 @@ and estimated inventory decreases can advance currently. Dynamic draw/report/
 query-window and Scratch timestamp/expiry validation remain the next gate; these
 changes fail closed today. No new source retrieval, visible UI, native build or
 acceptance evidence is claimed.
+
+October26 Dart Scratch checkpoint: literal source date/time advancement, estimated
+count decreases and explicitly supported claim-expiry removal now validate against
+retained state. Unknown timezone remains unknown; no UTC source-time inference.
+Fourteen loader/Scratch tests pass. Dynamic draw/report/window validation remains
+open, with no fresh retrieval, native build or acceptance claimed.
