@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'new_mexico_draw_validator.dart';
 import 'new_mexico_scratch_validator.dart';
 import 'new_mexico_coverage_contract.dart';
 
@@ -46,6 +47,13 @@ class NewMexicoCoverageValidator {
     if (updated.isBefore(_time(prior['updatedAt']))) {
       throw const FormatException('Collection regression');
     }
+    NewMexicoDrawValidator.continuity(
+      prior['results'] as List,
+      prior['queryWindow'] as Map,
+      next['results'] as List,
+      next['queryWindow'] as Map,
+      updated,
+    );
     final captured = <String, String>{};
     for (final source in next['sources'] as List) {
       if (captured.containsKey(source['url'])) {

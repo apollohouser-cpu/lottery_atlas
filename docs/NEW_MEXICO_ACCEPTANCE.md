@@ -298,3 +298,20 @@ not merely the bundled baseline. No new source collection, UI/native build or
 acceptance. Dynamic draw/report/query-window advancement is still pending and
 fails closed; implement that before visible integration. Release deadline remains
 October30 at18:38ET, no extension.
+
+## October26 — dynamic result validator checkpoint
+
+Added and invoked the strict Dart result validator: all nine groups require two
+unique completed dates, valid calendar dates inside the explicit 14-day query,
+Denver-local collection-day bounds, exact official query URL, explicit Pick
+DAY/EVE sessions, valid ball counts/ranges, preserved digit strings, distinct
+non-Pick main balls and game-specific multiplier semantics. PB/DP dates must pair.
+Continuity rejects corrections to overlapping results and backward/missing windows.
+Six new tests cover these gates, including legitimate new Pick results and UTC/
+Denver date boundaries. All 20 New Mexico Flutter tests pass; changed Dart is clean.
+
+The coupled loader still applies its final exact dated-result/report contract:
+new result windows remain fail-closed until dynamic report validation and retained
+report provenance are integrated. The result validator's advancement tests do not
+claim end-to-end remote advancement. Complete that integration next, then visible
+UI/native flows. No source refresh, native build, acceptance or deadline change.

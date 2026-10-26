@@ -297,3 +297,9 @@ count decreases and explicitly supported claim-expiry removal now validate again
 retained state. Unknown timezone remains unknown; no UTC source-time inference.
 Fourteen loader/Scratch tests pass. Dynamic draw/report/window validation remains
 open, with no fresh retrieval, native build or acceptance claimed.
+
+October26 dynamic-result checkpoint: strict Dart group/date/session/variant/range/
+query validation and overlap continuity added; six new tests,20 NM Flutter tests
+pass together. Denver-local date boundary is enforced. Final coupled contract still
+gates window/report advancement pending dynamic report/provenance integration.
+No new source retrieval or native evidence is claimed.
