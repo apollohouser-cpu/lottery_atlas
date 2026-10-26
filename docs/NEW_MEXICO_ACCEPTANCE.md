@@ -239,3 +239,19 @@ All 54 focused New Mexico tests pass. No new source collection, public all-game
 feed, app build, native evidence or acceptance is claimed by this checkpoint.
 The October 30 at 18:38 ET release deadline is unchanged. Next wire the coupled
 publisher and verify deployment before strict Dart loader/bundle/cache integration.
+
+## October 26, 04:41 ET — coupled publication baseline prepared
+
+Fresh atomic collection finished at 2026-10-26T08:41:53.073902UTC: 18 requests,
+18 results across nine groups, four exact reports and 14 unavailable reports,
+six rule contracts (ten tables/111 physical rows), and 57 estimated top-prize
+Scratch entries. Source inventory still says October25 09:22PM with no published
+timezone. Continuity against the prior private complete candidate passes.
+
+The generated and public baseline files match at 173,719 bytes, SHA256
+cf57691ed15228e2744bada9a7c48b6e0294ebba45ac0f4f266d92db116a413a.
+The state refresh manifest now owns the coupled file; legacy Scratch-only data
+stays at its original date. The workflow stages the coupled public file and runs
+all focused New Mexico tests. All 512 existing Python tests and 54 focused New
+Mexico tests pass. Deployment and independent live-byte verification remain
+pending until recorded below. No app integration, build or acceptance is implied.

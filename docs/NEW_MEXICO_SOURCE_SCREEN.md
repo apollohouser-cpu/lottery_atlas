@@ -271,3 +271,10 @@ Scratch continuity is enforced; older exact-date reports retain original capture
 provenance when the latest endpoint advances. 54 focused tests pass. This adds
 engineering evidence only; the last private source collection and its dates remain
 unchanged, with no new public coupled feed or native acceptance.
+
+October26 04:41ET: fresh18-request coupled baseline finished08:41:53.073902UTC,
+with18results/four exact reports/14gaps and57estimated Scratch entries. Six rule
+contracts remain unchanged. Scratch source timestamp remainsOctober25 09:22PM,
+timezone unpublished. Generated/public candidate bytes match (173719); workflow
+and state refresh manifest now target coupled coverage. Live deployment verification
+is pending. Legacy Scratch-only data remains unchanged with original provenance.
