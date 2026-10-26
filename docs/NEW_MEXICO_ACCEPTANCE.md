@@ -255,3 +255,12 @@ stays at its original date. The workflow stages the coupled public file and runs
 all focused New Mexico tests. All 512 existing Python tests and 54 focused New
 Mexico tests pass. Deployment and independent live-byte verification remain
 pending until recorded below. No app integration, build or acceptance is implied.
+
+Deployment CLOSED: production ed20e90, successful workflow40294152989.
+Independent live download verified at2026-10-26T08:43:56.680967UTC matches both
+repository files exactly:173719bytes, SHA256
+cf57691ed15228e2744bada9a7c48b6e0294ebba45ac0f4f266d92db116a413a.
+This verifies deployed bytes, not a newer source retrieval. Initial coupled
+publication is complete. Next strict Dart validation/loading and bundled/cache
+continuity, then visible supported flows/native acceptance. New Mexico remains
+sole active and unaccepted; release deadlineOctober30 18:38ET unchanged.

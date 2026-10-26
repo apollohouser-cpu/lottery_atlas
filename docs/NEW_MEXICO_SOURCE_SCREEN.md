@@ -278,3 +278,9 @@ contracts remain unchanged. Scratch source timestamp remainsOctober25 09:22PM,
 timezone unpublished. Generated/public candidate bytes match (173719); workflow
 and state refresh manifest now target coupled coverage. Live deployment verification
 is pending. Legacy Scratch-only data remains unchanged with original provenance.
+
+Initial coupled deployment verified: ed20e90 / successful run40294152989;
+independent live bytes matched at08:43:56.680967UTC (173719bytes, SHA256
+cf57691ed15228e2744bada9a7c48b6e0294ebba45ac0f4f266d92db116a413a).
+Actual source collection remains08:41:53.073902UTC. App integration/native gates
+remain open; this does not accept New Mexico or refresh legacy Scratch-only dates.
