@@ -229,3 +229,11 @@ table is per-play multiplier odds, not a draw result. Seven rule tests plus elev
 draw tests pass. Brochure PDFs/images are not claimed visually audited. Exact-date
 report validation and atomic coupled collection remain open; no source refresh or
 public publication this pass.
+
+October25,23:44ET: the retained official-linked Double Play table now passes
+strict exact-date/geography/schema/tier/count/total validation: nine tiers,
+664 source Winners / prizes won, $5,967 total prize value for October24. These
+are source prizes-won units, not deduplicated people/tickets or paid claims.
+Seven report regressions pass,25 focused NM tests together. No new retrieval,
+publication or report availability in the app is claimed. Main PB, MM and LA
+column validation remains outstanding; historical exact-date gaps stay unavailable.

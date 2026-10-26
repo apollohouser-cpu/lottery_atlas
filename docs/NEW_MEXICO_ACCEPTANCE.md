@@ -136,3 +136,22 @@ wrong page identity. The prior source captures are reused with their original
 retrieval times; no fresh source collection, public feed, app build or native
 acceptance. Next exact-date report validation, wider bounded collection and
 atomic retention, then coupled app/native integration. Deadline unchanged.
+
+## October25,23:44ET — exact-date Double Play report validation
+
+Added a separate validator for the retained October24 New Mexico Double Play
+report. Its nine source Winners columns reconcile to664 Total Prizes Won and
+$5,967 Total Prize Value. The contract preserves the source unit as Winners /
+prizes won; this is not unique people, deduplicated tickets or paid claims.
+Attachment requires an independently validated Powerball Double Play result on
+exactly the same date, with no session. Main Powerball/other dates are rejected.
+Geography, headers, tier identities, fixed schedule, integer counts and both
+source totals are checked; no absent report becomes zero.
+
+Twenty-five focused tests pass (11 results,7 rules,7 reports), including wrong
+date/variant/session/geography, changed prizes/tiers, malformed counts, totals
+mismatch and missing/duplicate tables. This is a retained-source parser result,
+not public integration or a fresh verification. PB/Power Play, MM and LA report
+validators remain open. Next complete their column/variant validation, widen
+collection and implement atomic retention before app/native. No new build/feed,
+acceptance or deadline change.
