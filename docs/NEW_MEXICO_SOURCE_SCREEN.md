@@ -343,3 +343,25 @@ pb-link-audit.html under work/new_mexico_scope. Do not fabricate a replacement
 URL or count. Next verify source recovery or provide an honest source-unavailable
 reading path, finish other report returns and landscape, then reconcile acceptance.
 New Mexico remains active, not accepted; October30 18:38ET unchanged.
+
+## October26 17:01 ET — source recovery and native landscape
+
+The Powerball base report endpoint recovered: HTTP200 at20:58:14UTC and the
+strict parser validated October24's17tiers,3641source prizes won and$21897total.
+Private recovery bytes/hash are retained; this single-source check does not
+advance the coupled snapshot's13:08:04UTC collection date. No replacement URL
+or validation relaxation was needed.
+
+All four exact-report links now have ordinary Android OS dispatch/Back-return
+evidence, preserving their selected date and reading position. Representative
+normal landscape Lotto America report paging and Scratch catalog/Lottery Bucks
+detail paging/return were visually inspected. Fixed controls stayed reachable;
+source-time/count/unknown-date wording remained readable. Original rotation
+settings were restored (user_rotation0, accelerometer_rotation1), with ordinary
+portrait app confirmed afterward. iOS remains shut down.
+
+Final focused54New Mexico Python tests pass; production New Mexico Dart and
+state source-screen analysis is clean. Prior32Flutter tests and bounded native
+retention/restoration evidence stand. Next reconcile the final acceptance matrix
+and any remaining search/filter checks; New Mexico is still active, not accepted.
+October30 18:38ET deadline is unchanged.
