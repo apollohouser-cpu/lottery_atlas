@@ -190,3 +190,24 @@ historical rows525/551 as quarantined. Private scratch-audit.json records this
 result; not a new publication. Estimated top-prize semantics remain unchanged.
 Next resolve Fast Play/Lucky Numbers/retired scope, inspect rule contracts and
 report units, then close the full matrix before strict all-game implementation.
+
+## October25,20:38ET — scope/history boundary closed
+
+The full supported matrix is fixed in NEW_MEXICO_ACCEPTANCE.md; implementation
+and acceptance remain open. Additional24 official captures (Fast Play/about plus
+1996–2017 history pages) are hashed in private retired-manifest.json.
+[Fast Play status](https://www.nmlottery.com/games/fast-play/) explicitly marks
+six named games ended and announces March2026 endings for Jackpot7s/Red Hot
+Jackpot Bingo and a JackpotUSA pause. Retained sales prose does not verify resumed
+availability. These products will have explicit historical/availability gaps,
+not current inventory or inferred progressive values.
+
+The [FY2021 Lottery financial report](https://www.nmlottery.com/wp-content/uploads/2022/01/New-Mexico-Lottery-Authority-FY-2021-Financial-Audit-Report-Final.pdf)
+records Lucky Numbers Bingo ending in March2019 and Pick3 replacement by Pick3
+Plus in June2021. Its financial aggregates are not draw-level winner reports.
+[Historical pages](https://www.nmlottery.com/lottery-info/lottery-history/)
+identify Daily Millions, Mega Match4, 4 This Way!, Hot Lotto, New Year's Eve Raffle,
+MONOPOLY MILLIONAIRES' CLUB and earlier Quicksters. All retired/prior-version
+history remains unavailable for import, with explicit gaps rather than invented
+zeroes. Current PB/MM/LA/DP report units remain a validator gate despite explicit
+New Mexico headings. Scope closure does not assert report acceptance.
