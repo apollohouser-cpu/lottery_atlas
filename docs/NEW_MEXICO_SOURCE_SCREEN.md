@@ -365,3 +365,15 @@ state source-screen analysis is clean. Prior32Flutter tests and bounded native
 retention/restoration evidence stand. Next reconcile the final acceptance matrix
 and any remaining search/filter checks; New Mexico is still active, not accepted.
 October30 18:38ET deadline is unchanged.
+
+## October 26 — supported coverage accepted
+
+New Mexico is the eighteenth accepted state;27 remain. The final bounded evidence
+matrix in [NEW_MEXICO_ACCEPTANCE.md](NEW_MEXICO_ACCEPTANCE.md) controls the claim.
+All native search/filter/reset/detail-return gates now close alongside prior
+results/rules/source returns, representative layout, real-cache failure retention
+and ordinary restoration. Current coupled collection remains13:08:04.958883UTC;
+independent live verification remains16:54:14.504004UTC. The20:58:14UTC Powerball
+recovery was a single-source check, not a new collection. No complete claims,
+retailer joins, retired imports, current Fast Play catalog or source-timezone
+inference. Completed before October30 18:38ET, no extension. Android stays running.

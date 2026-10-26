@@ -3,14 +3,18 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
-## Current decision — October 25, 2026 at 17:44 ET
+## Current decision — October 26, 2026
 
-Oklahoma supported coverage is ACCEPTED on production7438c02, with the bounded
-final evidence matrix in OKLAHOMA_ACCEPTANCE.md. Seventeen states are accepted;
-28 remain. Completed before October29 at21:06ET without extension. New Mexico activated October25 at18:38ET as the sole active state. Scope due
-October26 at18:38ET; supported release due October30 at18:38ET, fresh120hours.
-See NEW_MEXICO_ACCEPTANCE.md; no extension used. Do not routinely reopen accepted states. Mobile gates
-remain separate; national forecast unchanged until18 acceptances/material blocker.
+New Mexico supported coverage is ACCEPTED on production c27df43 with the bounded
+final matrix in NEW_MEXICO_ACCEPTANCE.md. Eighteen states accepted;27 remain.
+Completed before October30 at18:38ET without extension. No state currently active.
+Next select one unfinished state and explicitly assign fresh scope/release deadlines;
+never inherit New Mexico's deadline. Accepted states stay closed absent a named
+defect or meaningful new evidence. Android remains running in the ordinary app.
+Mobile/distribution gates remain separate. The18-acceptance reforecast is now
+December19,2026–January15,2027 for supported engineering at2–3days per remaining
+state; a five-day-per-state slower scenario is March10. These are estimates,
+not public-launch commitments; see NATIONAL_RELEASE_FORECAST.md.
 
 ## Beta and national public release — approved October 6, 2026
 

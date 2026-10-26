@@ -1,6 +1,6 @@
 # New Mexico supported coverage acceptance
 
-Status: **ACTIVE — not accepted**.
+Status: **ACCEPTED — October 26, 2026**. Final matrix below supersedes historical progress entries.
 
 ## October 25, 18:38 ET — New Mexico activated
 
@@ -35,12 +35,12 @@ acceptance. No new public all-game feed, app build or acceptance at activation.
 ## Gates
 
 - [x] Complete current/retired product and history/gap matrix within24hours (October25 20:38ET).
-- [ ] Validate results, sessions, Plus variants, geography/units and literal rules.
-- [ ] Fresh estimated Scratch inventory and ending/claim boundaries.
-- [ ] Atomic collection and strict correction/regression/failure retention.
-- [ ] Coupled app loader/bundle/cache and visible supported product flows.
-- [ ] Native sources/returns, reading/filter/layout flows and controlled retention.
-- [ ] Ordinary restoration, tests, independent live verification and acceptance.
+- [x] Validate results, sessions, Plus variants, geography/units and literal rules.
+- [x] Fresh estimated Scratch inventory and ending/claim boundaries.
+- [x] Atomic collection and strict correction/regression/failure retention.
+- [x] Coupled app loader/bundle/cache and visible supported product flows.
+- [x] Native sources/returns, reading/filter/layout flows and controlled retention.
+- [x] Ordinary restoration, tests, independent live verification and acceptance.
 
 ## October 25, 20:38 ET — supported scope fixed
 
@@ -518,3 +518,32 @@ state source-screen analysis is clean. Prior32Flutter tests and bounded native
 retention/restoration evidence stand. Next reconcile the final acceptance matrix
 and any remaining search/filter checks; New Mexico is still active, not accepted.
 October30 18:38ET deadline is unchanged.
+
+## October 26 — final supported acceptance
+
+New Mexico supported coverage is ACCEPTED on implemented production c27df43,
+including the scheduled snapshot published in274798d. Eighteen states accepted;
+27 remain. Completed before October30 at18:38ET without extension. No state is
+active immediately after this decision; the next activation needs fresh scope
+and release deadlines. Accepted states stay closed absent a named defect or
+meaningful new evidence. This accepts the fixed supported scope, not complete
+history, claims, retailer joins or mobile/distribution readiness.
+
+| Gate | Final bounded evidence |
+| --- | --- |
+| Results and reports | 18 completed results, nine groups, two dates each; four exact-date New Mexico reports and14 explicit unavailable reports. Session, variant, number, multiplier, geography, source count/prize totals and report joins strictly validated. Source Winners/prizes won are not unique people or deduplicated tickets. |
+| Rules and status | Six HTML rule contracts, ten tables,111 physical rows including headers; literal text, spans and caveats preserved. Seven family/variant reading paths. Fast Play ended/announced-ending/paused distinctions, retired games and promotions remain explicit gaps; no inferred current catalog or progressive value. HTML contracts are not a brochure/image visual audit. |
+| Scratch | 57 estimated top-prize entries; source literal October26 05:05AM with timezone unpublished. Ending/claim boundaries and unknowns preserved. Not all-tier claims or store stock. Legacy Scratch-only feed retains its original date. |
+| Publication | Coupled collection completed2026-10-26T13:08:04.958883UTC. Independent live download at16:54:14.504004UTC matched generated/published173581bytes, SHA256 5a8bc600cc0de2c168ff237e1a0c88b396474331e3b9f7e5dc12dead12271944. No later coupled collection is claimed. |
+| Atomic continuity | All18 request-failure positions and disk replacement retain bytes/date; corrections, window regressions, report loss and Scratch continuity fail closed. Dynamic Dart validators preserve original provenance for retained reports. |
+| Native navigation | All18 selections, nine group archive OS returns, six distinct rule URL returns and four exact-report URL returns. Product inventory/ending/status URL returns preserve context. Dispatch/return evidence does not claim every external page fully rendered. |
+| Native reading and filters | All seven normal portrait rule paths traversed with fixed-button paging and accessibility captures. Native ID486 search opened Lottery Bucks and returned to the filtered catalog; $5 filter showed13 of57 entries; combined nonmatching search showed0 of57; Reset restored all57 and all prices. Private acceptance-search/price/no-match/reset captures retained. |
+| Layout | Representative global2x portrait production draw/Scratch/detail flows using a private target, plus ordinary normal landscape Lotto America report and Scratch detail paging/return. Automated2x portrait/landscape widget coverage supplements this; not every family manually inspected at every scale/orientation. |
+| Real cache | Controlled production-loader SocketException used existing Android SharedPreferencesAsync cache; callback ran, validated cached data returned, stored cache string byte-identical and13:08:04UTC collection retained. Not whole-device offline. |
+| Ordinary restoration | main.dart never edited; ordinary target rebuilt10.7seconds, installed/cold-launched PID12966 after private probe. Subsequent landscape and final search/filter checks ran in ordinary app; rotation restored, Android remains running, iOS shut down. No tracked probe. |
+| Validation | 54 focused New Mexico Python tests,32 Flutter tests and nine production Dart files clean. Earlier512 existing Python tests remain prior evidence, not a fresh rerun. |
+
+The temporary official Powerball report404 recovered at20:58:14UTC with strict
+source parsing. That individual recovery did not re-date the coupled feed.
+Missing agency records/private PDF audit remain honest unsupported boundaries;
+no correspondence resend, fee, human attestation or private identifier publication.

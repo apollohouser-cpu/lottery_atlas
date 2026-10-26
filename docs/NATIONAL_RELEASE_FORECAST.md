@@ -1,9 +1,9 @@
-# National coverage readiness and forecast — October 18 reforecast
+# National coverage readiness and forecast — October 26 reforecast
 
 Full public release requires usable accepted coverage in every lottery state;
 limited-state iOS/Android beta can proceed earlier. NASPL currently identifies
 [45 U.S. lottery states](https://www.naspl.org/faq). The repository has a source
-screen for each of those 45. Fifteen are accepted, leaving30 (Iowa accepted October22). This state-based
+screen for each of those 45. Eighteen are accepted, leaving27 (New Mexico accepted October26). This state-based
 ledger does not silently count DC or territories as states or as accepted coverage.
 
 Missouri closed on release 337848b at October 7, 17:22 ET. The forecast below
@@ -12,7 +12,7 @@ North Carolina closed October 12 at 23:00 ET on release 7de7bb8.
 At the October18 forecast checkpoint the remaining split was16 scheduled catalog states and16 states without
 scheduled state jobs. The October 18 reforecast below uses the completed five-state checkpoint.
 
-Current national supported-engineering planning range: **December 21, 2026–January 22, 2027**, assuming 2–3 elapsed days for each of 32 remaining states. This is not a public-launch commitment; mobile and distribution gates remain separate.
+Current national supported-engineering planning range: **December 19, 2026–January 15, 2027**, assuming 2–3 elapsed days for each of27 remaining states. This is not a public-launch commitment; mobile and distribution gates remain separate.
 
 ## Evidence and forecast limits
 
@@ -60,10 +60,8 @@ deadlines. Missouri was activated by the original audit and is now accepted. Nor
 | [Delaware](DELAWARE_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 37 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Florida](FLORIDA_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [Georgia](GEORGIA_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
-| [Idaho](IDAHO_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 33 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Illinois](ILLINOIS_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [Indiana](INDIANA_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 67 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
-| [Iowa](IOWA_SOURCE_SCREEN.md) | Accepted October22: bounded draws, schedules, typed inventories | Retailer joins and comprehensive claims remain unavailable | Complete |
 | [Maine](MAINE_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 35 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Maryland](MARYLAND_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 93 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Massachusetts](MASSACHUSETTS_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
@@ -73,12 +71,9 @@ deadlines. Missouri was activated by the original audit and is now accepted. Nor
 | [Montana](MONTANA_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [New Hampshire](NEW_HAMPSHIRE_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 58 listed games; retained_after_failure | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [New Jersey](NEW_JERSEY_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
-| [New Mexico](NEW_MEXICO_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 58 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [North Dakota](NORTH_DAKOTA_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
-| [Oklahoma](OKLAHOMA_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 50 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Pennsylvania](PENNSYLVANIA_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [Rhode Island](RHODE_ISLAND_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
-| [South Dakota](SOUTH_DAKOTA_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 35 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Tennessee](TENNESSEE_SOURCE_SCREEN.md) | Source-screen / starter routes; no configured recurring state job | Source revalidation, usable data integration, refresh and native acceptance | 5 days provisional |
 | [Vermont](VERMONT_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 88 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
 | [Washington](WASHINGTON_SOURCE_SCREEN.md) | Scheduled Scratch catalog: 58 listed games; updated | Draw/product scope, report and directory integration, native acceptance | 3–5 days |
@@ -122,3 +117,24 @@ October22 ledger update: Iowa is the fifteenth accepted state;30 remain. This is
 an acceptance-ledger update, not a routine reforecast. The October18 planning
 range remains an estimate; next routine reforecast at18 accepted states unless
 a material blocker requires an earlier revision.
+
+## October 26 routine reforecast at18 acceptances
+
+South Dakota, Iowa, Idaho, Oklahoma and New Mexico are the five completions since
+the October18 checkpoint. Eighteen accepted leaves27 unfinished. Their roughly
+eight elapsed days are useful evidence of progress but do not establish the same
+rate for remaining unaudited states. Retain the2–3 elapsed days/state assumption:
+27 ×2–3 =54–81days from October26, **December19,2026–January15,2027**. This
+supersedes the October18 calendar range as supported-engineering planning only.
+
+For a conservative capacity scenario,27 ×5days =135days, **March10,2027**. This
+uniform assumption replaces the older catalog/noncatalog split scenario; no
+fresh audit of every remaining source or complexity band is implied. It is not
+an instruction to consume each deadline. Each substantial activation still gets
+its own fresh120-hour maximum and should finish early when its gates pass.
+
+Reforecast at23 accepted states or a material blocker. Mobile persistence,
+privacy, signing/accounts, distribution and store readiness remain separate;
+national public launch requires every lottery state plus those gates. The
+October20–27 beta window remains provisional; ten-year history remains later.
+Historical dated sections above retain their original estimates as audit history.

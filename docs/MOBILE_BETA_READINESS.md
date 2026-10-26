@@ -945,3 +945,12 @@ Seventeen states accepted;28 remain. See OKLAHOMA_ACCEPTANCE.md for bounded
 native/automated/live/retention evidence. Ordinary main restored and launched13065;
 Android stopped. Signing, distribution, broader Android, platform persistence and
 privacy remain open. This is not beta or national-release readiness.
+
+## October 26 — New Mexico supported acceptance
+
+Eighteen states accepted;27 remain. NEW_MEXICO_ACCEPTANCE.md bounds the native
+Android, automated, source, cache and restoration evidence. Ordinary main rebuilt
+and cold-launched after the private target; Android remains running at the user's
+request, iOS shut down. Representative enlarged/landscape flows do not close
+broader platform persistence, Android visual, signing/accounts, privacy or
+distribution gates. October20–27 beta remains provisional, not a readiness claim.
