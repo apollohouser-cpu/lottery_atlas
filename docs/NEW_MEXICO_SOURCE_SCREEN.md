@@ -237,3 +237,11 @@ are source prizes-won units, not deduplicated people/tickets or paid claims.
 Seven report regressions pass,25 focused NM tests together. No new retrieval,
 publication or report availability in the app is claimed. Main PB, MM and LA
 column validation remains outstanding; historical exact-date gaps stay unavailable.
+
+October26,00:38ET: retained October23 MM table validates41 rows across categorical
+jackpot and five per-play multiplier groups. Source totals reconcile to1,054
+prizes won/$20,989; preserve literal Winners / prizes-won units, never unique
+people or tickets. Seven added MM regressions pass (32 focused tests together).
+A nonzero categorical jackpot count without a verified actual award value fails
+closed rather than using a future jackpot estimate. PB/LA column validation and
+coupled collection remain open. No new retrieval or public report availability.

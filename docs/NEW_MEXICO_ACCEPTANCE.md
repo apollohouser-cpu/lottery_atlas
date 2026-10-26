@@ -155,3 +155,21 @@ not public integration or a fresh verification. PB/Power Play, MM and LA report
 validators remain open. Next complete their column/variant validation, widen
 collection and implement atomic retention before app/native. No new build/feed,
 acceptance or deadline change.
+
+## October26,00:38ET — Mega Millions per-play reports
+
+Retained October23 NM Mega Millions report now passes strict exact-date joins and
+six-group validation: one categorical jackpot row plus eight tiers for each of
+2X/3X/4X/5X/10X. Its41 rows reconcile to1,054 source Winners / prizes won and
+$20,989 Total Prize Value. The multiplier belongs to each purchased play; no
+single drawing-wide multiplier, unique people or deduplicated ticket count is
+inferred. All five groups, headers/spans, tier identities and literal prizes must
+match the current format. Unknown jackpot award value fails closed if its winner
+count becomes nonzero; never substitute the next advertised jackpot.
+
+Thirty-two focused Python tests pass (11 results,7 rules,7 DP reports,7 MM reports).
+MM regressions cover date/variant/session/multiplier joins, geography, missing or
+reordered groups, mutated count/prize/totals, spans and unknown jackpot payout.
+No fresh source retrieval/publication, native build or acceptance. PB/Power Play
+and LA/All Star Bonus report validation remains next, then wider-window coupled
+collection/retention and app/native. Original October30 18:38ET deadline unchanged.
