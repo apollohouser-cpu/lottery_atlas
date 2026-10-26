@@ -150,3 +150,88 @@ def parse_mega_millions(raw, draw):
                 geography='New Mexico',countUnit='source Winners / prizes won',
                 countNote='Source Winners per purchased-play multiplier; reconciles to Total Prizes Won. Not unique people, deduplicated tickets or paid claims. No drawing-wide multiplier.',
                 sourceUrl=MM_SOURCE,tiers=tiers,totalPrizesWon=count,totalPrizeValue=value)
+
+PAIRED = {
+    'powerball': dict(name='Powerball', addon='With Power Play', jackpot='Jackpot/Grand Prize',
+                      matches=DP_MATCHES, prizes=[None,1000000,50000,100,100,7,7,4,4],
+                      source='https://www.nmlottery.com/rts/games/powerball-2015/table.aspx', multipliers={2,3,4,5,10}),
+    'lottoamerica': dict(name='Lotto America', addon='With All Star Bonus', jackpot='Grand Prize',
+                        matches=['5 White Balls + Star Ball','All 5 white balls','4 white balls + Star Ball','4 white balls','3 white balls + Star Ball','3 white balls','2 white balls + Star Ball','1 white ball + Star Ball','Star Ball'],
+                        prizes=[None,20000,1000,100,20,5,5,2,2],
+                        source='https://nmlotterydynamic.sks.com/rts/games/LottoAmerica/Table.aspx',multipliers={2,3,4,5}),
+}
+
+
+def labeled_money(text):
+    match=re.fullmatch(r'\$([1-9][0-9]*) (Million|Thousand)',text)
+    if match:
+        return int(match[1]) * (1000000 if match[2]=='Million' else 1000)
+    return money(text)
+
+
+def parse_paired_report(raw, draw):
+    game=draw.get('game');multiplier=draw.get('multiplier')
+    if game not in PAIRED or draw.get('variant')!='base' or draw.get('session') is not None:
+        raise ValueError('Wrong paired report/result identity')
+    spec=PAIRED[game]
+    if type(multiplier) is not int or multiplier not in spec['multipliers']:
+        raise ValueError('Missing validated drawing multiplier')
+    tree=html.fromstring(raw);headings=tree.xpath('//h2')
+    if len(headings)!=1:
+        raise ValueError('Missing/duplicate paired report heading')
+    heading=plain(headings[0])
+    if game=='lottoamerica':
+        if heading!="Yesterday's New Mexico Drawing Results":
+            raise ValueError('Changed Lotto America geography/heading')
+        candidates=[plain(p) for p in tree.xpath('//p') if plain(p).startswith("New Mexico's prizes drawn on ")]
+        if len(candidates)!=1:
+            raise ValueError('Missing/duplicate explicit report date')
+        match=re.fullmatch(r"New Mexico's prizes drawn on ([A-Za-z]+ [0-9]{1,2}, [0-9]{4})\.",candidates[0])
+    else:
+        match=re.fullmatch(r"New Mexico's Drawing Results for ([A-Za-z]+ [0-9]{1,2}, [0-9]{4})",heading)
+    if not match:
+        raise ValueError('Wrong report geography/date')
+    day=datetime.strptime(match[1],'%B %d, %Y').date().isoformat()
+    if day!=draw.get('date'):
+        raise ValueError('Report/result date mismatch')
+    tables=tree.xpath('//table')
+    if len(tables)!=2 or tables[0].xpath('.//table'):
+        raise ValueError('Changed paired report tables')
+    rows=tables[0].xpath('./tr|./thead/tr|./tbody/tr|./tfoot/tr')
+    if len(rows)!=11:
+        raise ValueError('Missing/duplicate paired tier')
+    first=[(plain(c),c.get('rowspan','1'),c.get('colspan','1')) for c in rows[0].xpath('./th|./td')]
+    if first!=[('Match','2','1'),(spec['name'],'1','2'),(spec['addon'],'1','2')]:
+        raise ValueError('Changed paired group identity/span')
+    second=rows[1].xpath('./th|./td')
+    if [plain(c) for c in second]!=['Prize','Winners','Winners','Prize'] or any(c.get('rowspan','1')!='1' or c.get('colspan','1')!='1' for c in second):
+        raise ValueError('Changed paired column identity')
+    tiers=[]
+    for i,row in enumerate(rows[2:]):
+        cells=row.xpath('./th|./td')
+        if len(cells)!=5 or any(c.get('rowspan','1')!='1' or c.get('colspan','1')!='1' for c in cells):
+            raise ValueError('Changed paired body schema')
+        label,base_prize,base_count,add_count,add_prize=map(plain,cells)
+        if label!=spec['matches'][i]:
+            raise ValueError('Changed tier identity/order')
+        count=integer(base_count)
+        if i==0:
+            if base_prize!=spec['jackpot'] or (add_count,add_prize)!=('-','-') or count!=0:
+                raise ValueError('Unverified jackpot award or changed non-applicable cells')
+            tiers.append(dict(match=label,column=spec['name'],prizeLabel=base_prize,prizeValue=None,sourceWinners=0))
+            continue
+        base=spec['prizes'][i];addon=2000000 if game=='powerball' and i==1 else base*multiplier
+        if labeled_money(base_prize)!=base or labeled_money(add_prize)!=addon:
+            raise ValueError('Prize schedule/drawing multiplier mismatch')
+        tiers.extend([dict(match=label,column=spec['name'],prizeLabel=base_prize,prizeValue=base,sourceWinners=count),
+                      dict(match=label,column=spec['addon'],prizeLabel=add_prize,prizeValue=addon,sourceWinners=integer(add_count))])
+    totals=table_rows(tables[1])
+    if len(totals)!=2 or totals[0]!=['Total Prizes Won','Total Prize Value'] or len(totals[1])!=2:
+        raise ValueError('Changed paired totals schema')
+    count,value=integer(totals[1][0]),money(totals[1][1])
+    if count!=sum(t['sourceWinners'] for t in tiers) or value!=sum(t['sourceWinners']*(t['prizeValue'] or 0) for t in tiers):
+        raise ValueError('Paired columns do not reconcile to report totals')
+    return dict(game=game,variant='base',date=day,session=None,multiplier=multiplier,
+                geography='New Mexico',countUnit='source Winners / prizes won',
+                countNote='Separate source columns reconcile additively to Total Prizes Won. Not unique people, deduplicated tickets or paid claims. Non-applicable jackpot add-on cells remain absent.',
+                sourceUrl=spec['source'],tiers=tiers,totalPrizesWon=count,totalPrizeValue=value)

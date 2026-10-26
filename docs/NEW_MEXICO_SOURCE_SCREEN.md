@@ -245,3 +245,13 @@ people or tickets. Seven added MM regressions pass (32 focused tests together).
 A nonzero categorical jackpot count without a verified actual award value fails
 closed rather than using a future jackpot estimate. PB/LA column validation and
 coupled collection remain open. No new retrieval or public report availability.
+
+October26,01:40ET: retained October24 paired PB/Power Play and LA/All Star Bonus
+reports validate17 count entries each. Separate columns reconcile to source
+prizes-won totals3,641/$21,897 and2,310/$11,939 respectively. Column labels and
+literal Winners units are retained; no unique-ticket/person interpretation.
+Explicit dated LA paragraph overrides no date—Yesterday is simply retained prose,
+never a parsed relative date. Jackpot add-on dashes are non-applicable; unknown
+actual jackpot awards fail closed. Thirty-nine focused tests pass. All four
+latest candidate report validators exist; atomic collection and public integration
+remain open, with original retained capture provenance unchanged.

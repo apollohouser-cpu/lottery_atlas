@@ -173,3 +173,24 @@ reordered groups, mutated count/prize/totals, spans and unknown jackpot payout.
 No fresh source retrieval/publication, native build or acceptance. PB/Power Play
 and LA/All Star Bonus report validation remains next, then wider-window coupled
 collection/retention and app/native. Original October30 18:38ET deadline unchanged.
+
+## October26,01:40ET — paired PB/LA report columns
+
+Retained October24 PB/Power Play and LA/All Star Bonus tables now pass exact-date,
+game, geography and multiplier joins. Each has17 count entries (one jackpot and
+separate base/add-on entries for eight other tiers). PB columns reconcile to3,641
+source prizes won/$21,897; LA to2,310/$11,939. Preserve source column labels and
+Winners / prizes-won units. Additive reconciliation is a report arithmetic check,
+not evidence of unique people, deduplicated tickets or claims paid. Jackpot add-on
+dashes remain non-applicable, not zero counts. Nonzero categorical jackpot awards
+without verified value fail closed. PB Match5 Power Play remains fixed$2million,
+while lower prizes must match the validated draw multiplier. LA's literal dated
+paragraph is authoritative; its relative Yesterday heading is never a date source.
+
+Thirty-nine focused tests pass (11 results,7 rules,21 reports). Seven new paired
+report tests cover both reports, exact joins, geography/date, header spans/column
+swaps, counts/totals, jackpot unknowns/dashes and missing/duplicate tiers. All four
+candidate latest reports now have strict validators. No fresh retrieval, public
+feed, app or native acceptance this pass. Next wider-window coupled collection,
+original retrieval provenance and atomic correction/regression/failure retention,
+then app/native integration. Release deadline unchanged.
