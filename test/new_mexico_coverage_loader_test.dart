@@ -72,7 +72,9 @@ void main() {
         if (v is Map) {
           for (final k in v.keys.toList()) {
             if (['updatedAt', 'retrievedAt', 'endingRetrievedAt'].contains(k)) {
-              v[k] = '2026-10-26T09:00:00Z';
+              v[k] = DateTime.parse(
+                fixture()['updatedAt'] as String,
+              ).add(const Duration(seconds: 1)).toIso8601String();
             } else {
               advance(v[k]);
             }
