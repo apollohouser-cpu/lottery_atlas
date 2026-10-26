@@ -118,3 +118,21 @@ rejection, multiplier validation and unsupported historical formats. All report
 statuses remain unavailable pending separate report validators. Rules, full
 collection, atomic continuity, app/native and acceptance remain open. No source
 refresh, public feed or new app build this pass. Deadline unchanged.
+
+## October25,22:40ET — literal current rule contracts
+
+Six current how-to-play HTML contracts now validate ten physical tables with111
+physical rows including headings: PB3/31 (base, Power Play, DP), MM2/18 (prizes
+and per-play multiplier odds), LA2/21 (base/All Star Bonus), RRC1/6, Pick3Plus1/13,
+Pick4Plus1/22. Cells retain literal text, header status, row/column spans and
+embedded image references; no merged-cell flattening or odds recalculation.
+Complete normalized page prose is gated alongside tables, including pari-mutuel
+caveats, Pick caps, PB10x threshold and MM per-play assignment. These are HTML
+schedule contracts, not rendered brochure/PDF verification or dated payouts.
+
+Eighteen focused Python tests pass together (11 results,7 rules). Rule tests
+reject changed prizes/caveats, missing/duplicate tables, changed merged cells and
+wrong page identity. The prior source captures are reused with their original
+retrieval times; no fresh source collection, public feed, app build or native
+acceptance. Next exact-date report validation, wider bounded collection and
+atomic retention, then coupled app/native integration. Deadline unchanged.

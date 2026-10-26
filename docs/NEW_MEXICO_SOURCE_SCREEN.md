@@ -221,3 +221,11 @@ ball ranges and current multiplier rules. DP stays separate. All winner reports
 remain unavailable until independently validated. No new source retrieval or
 publication is claimed; next implement literal rules/report validation and the
 wider-window coupled collector.
+
+October25,22:40ET: added literal contracts for all six retained current how-to-play
+HTML pages: ten tables/111 physical rows including headings, with span/header/text
+semantics and full caveat prose preserved. PB includes Double Play; MM's second
+table is per-play multiplier odds, not a draw result. Seven rule tests plus eleven
+draw tests pass. Brochure PDFs/images are not claimed visually audited. Exact-date
+report validation and atomic coupled collection remain open; no source refresh or
+public publication this pass.
