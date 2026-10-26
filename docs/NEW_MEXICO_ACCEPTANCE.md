@@ -429,3 +429,26 @@ Remaining native gates: eight other group source returns beyond the prior
 Powerball return, all full rule/schedule paths, representative enlarged/landscape,
 controlled cache failure and final restoration. Android remains running with
 the ordinary app; iOS is shut down. No acceptance or deadline change.
+
+## October26 — remaining group returns and native rule paging
+
+Eight additional ordinary Android result-group source dispatch/Back-return checks
+passed: Double Play, Mega Millions, Lotto America, Roadrunner Cash and both
+sessions of each Pick Plus family. Each official archive URL was captured in
+the external OS browser and Back preserved the selected date/session. Together
+with the earlier Powerball check, all nine groups have native source-return
+evidence. This does not claim every external page finished rendering.
+
+Native fixed-button paging traversed all seven family/variant schedule/rule paths
+at normal portrait size through the final coverage limits and dated-results link:
+Powerball10pages, Double Play8, Mega Millions14, Lotto America12, Roadrunner4,
+Pick3 Plus7 and Pick4 Plus11. These are automated native accessibility captures
+from the ordinary app, not a claim of manual visual review at every size.
+Private per-page XML and traversal summaries are retained. All18 dated native
+selections and32Flutter tests remain the preceding checkpoint evidence.
+
+Remaining work includes representative enlarged/landscape visual checks, separate
+report/rule-link returns, controlled cache-failure continuity and final ordinary
+restoration. A private copy of the real Android preferences datastore was saved
+for the retention check; copying it alone does not establish failure retention.
+Android stays running, iOS shut down. No new collection, acceptance or extension.
