@@ -15,11 +15,35 @@ SITE = 'https://wyolotto.com'
 GAMES = tuple(draws.SPECS) + ('keno',)
 
 
+def validate_catalog(catalog, draw_config, rapid_config):
+    games = catalog.get('data', {}).get('games') if isinstance(catalog, dict) else None
+    expected = {(g, 'rapid' if g == 'keno' else 'draw', False) for g in GAMES}
+    if (catalog.get('status') != 'success' or not isinstance(games, list)
+            or len(games) != len(expected)
+            or {(r.get('identifier'), r.get('type'), r.get('isRetired')) for r in games} != expected):
+        raise ValueError('Current Wyoming catalog changed')
+    if (not isinstance(draw_config, list) or len(draw_config) != 5
+            or {r.get('id') for r in draw_config} != {s[0] for s in draws.SPECS.values()}
+            or any(r.get('activeTo') is not None for r in draw_config)):
+        raise ValueError('Active draw identities changed')
+    if not isinstance(rapid_config, list) or len(rapid_config) != 1:
+        raise ValueError('Rapid game catalog changed')
+    r = rapid_config[0]
+    contract = dict(id=draws.KENO_ID, activeTo=None, minDrawValue=1, maxDrawValue=80,
+                    drawFrequencyInSeconds=240, drawFrequencyInMinutes=4,
+                    hasProgressiveJackpots=False)
+    if any(k not in r or type(r[k]) is not type(v) or r[k] != v for k,v in contract.items()):
+        raise ValueError('Keno configuration changed')
+
+
 def collect(fetch, clock=lambda: datetime.now(timezone.utc)):
     sources = []
     end = clock()
     if end.tzinfo is None or end.utcoffset() != timedelta(0):
         raise ValueError('Collection clock must be UTC')
+    # Service echoes millisecond precision; issue whole-second query boundaries.
+    # Actual retrieval timestamps below retain the clock's full precision.
+    end = end.replace(microsecond=0)
     start = max(end - timedelta(days=14), draws.SUPPORTED_FROM)
     if start >= end:
         raise ValueError('Unsupported collection window')
@@ -33,6 +57,10 @@ def collect(fetch, clock=lambda: datetime.now(timezone.utc)):
         sources.append(dict(url=url, retrievedAt=stamp.isoformat(), bytes=len(raw),
                             sha256=hashlib.sha256(raw).hexdigest()))
         return raw, stamp.isoformat()
+    catalog, _ = get(f'{SITE}/api/v1/game/all?platform=web&cmsPreview=false')
+    draw_config, _ = get(f'{API}/v1/draw-games')
+    rapid_config, _ = get(f'{API}/v1/rapid-games')
+    validate_catalog(json.loads(catalog), json.loads(draw_config), json.loads(rapid_config))
     results = []
     query = urlencode(dict(startDate=start.isoformat(), endDate=end.isoformat()))
     for game, spec in draws.SPECS.items():

@@ -257,3 +257,31 @@ gates, run a fresh private coupled collection with retained raw evidence, then
 publish only after validation. Dart/UI/native and ordinary restoration remain
 open. Wyoming is not accepted; October31 at19:00ET remains the release deadline
 without extension. Android's ordinary installed app remains unchanged.
+
+## October 27 — fresh private coupled baseline and transport gates
+
+Official transport, six-game catalog, five active draw identities and Keno
+configuration gates are implemented. Keno range/identity/cadence configuration
+changes fail closed; API credentials stay in caller configuration and are never
+serialized. Source redirects require review before credentials can be forwarded.
+
+A fresh21-request private collection completed at **09:08:26.821262UTC October27**:
+10 draw results (two per five families), five bounded Keno results, all15 reports
+unavailable, six literal rules and five reviewed schedule-image hashes. The
+private205312-byte candidate has SHA256
+`2372205d598238d18853d5beb273b4df23f7a5d5a59d8fd5b03b9c18663273c0`.
+Raw responses, original capture timestamps and hashes are retained privately.
+Every source hash matches its manifest. Replaying failures at all21 request
+positions preserves the real candidate bytes/date. Twenty-eight focused tests
+pass, including catalog/config mutations and synthetic disk-replace retention.
+
+The initial private attempt rejected the service's millisecond-rounded range
+boundary. Queries now use exact whole-second boundaries while actual capture
+timestamps retain full precision; strict range equality remains enforced. The
+failed attempt produced no snapshot. This is resolved implementation validation,
+not a production outage or a deadline extension.
+
+No public Wyoming feed/deployment, app build or acceptance yet. Next integrate
+the transport configuration into publication, deploy and independently verify,
+then strict Dart loader/bundle/cache, UI/native and ordinary restoration. Release
+October31 at19:00ET remains unchanged; Android ordinary app remains running.

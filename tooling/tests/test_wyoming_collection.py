@@ -18,6 +18,14 @@ class WyomingCollectionTests(unittest.TestCase):
         self.calls += 1
         if self.calls == self.fail:
             raise OSError('controlled request failure')
+        if '/api/v1/game/all?' in url:
+            return json.dumps({'status':'success','data':{'games':[
+                dict(identifier=g,type='rapid' if g=='keno' else 'draw',isRetired=False) for g in coverage.GAMES]}}).encode()
+        if url.endswith('/v1/draw-games'):
+            return json.dumps([dict(id=s[0],activeTo=None) for s in coverage.draws.SPECS.values()]).encode()
+        if url.endswith('/v1/rapid-games'):
+            return json.dumps([dict(id=coverage.draws.KENO_ID,activeTo=None,minDrawValue=1,maxDrawValue=80,
+                drawFrequencyInSeconds=240,drawFrequencyInMinutes=4,hasProgressiveJackpots=False)]).encode()
         if '/list-drawings?' in url:
             game=next(g for g,s in coverage.draws.SPECS.items() if s[0] in url)
             a=draw_tests.WyomingDrawTests().row(game);b=copy.deepcopy(a)
@@ -55,7 +63,7 @@ class WyomingCollectionTests(unittest.TestCase):
 
     def test_complete_coupling_and_no_private_fields(self):
         data=self.candidate()
-        self.assertEqual(self.calls,18)
+        self.assertEqual(self.calls,21)
         self.assertEqual(len(data['results']),15)
         self.assertEqual(len(data['rules']),6)
         self.assertTrue(all(r['reportStatus']=='unavailable' for r in data['results']))
@@ -65,7 +73,7 @@ class WyomingCollectionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             path=Path(directory)/'snapshot.json'
             coverage.refresh(path,self.fetch,lambda:NOW);original=path.read_bytes()
-            for position in range(1,19):
+            for position in range(1,22):
                 self.calls=0;self.fail=position
                 with self.subTest(position=position),self.assertRaises(OSError):
                     coverage.refresh(path,self.fetch,lambda:NOW)
@@ -127,3 +135,24 @@ class WyomingCollectionTests(unittest.TestCase):
             with patch.object(coverage,'collect',return_value=candidate),self.assertRaises(ValueError):
                 coverage.refresh(path,self.fetch,lambda:NOW)
             self.assertEqual(path.read_bytes(),original)
+
+    def test_catalog_and_config_changes_rejected(self):
+        for endpoint, mutate in [
+            ('/api/v1/game/all?',lambda d:d['data']['games'].pop()),
+            ('/v1/draw-games',lambda d:d[0].update(activeTo='2026-10-27T00:00:00Z')),
+            ('/v1/rapid-games',lambda d:d[0].update(hasProgressiveJackpots=True)),
+            ('/v1/rapid-games',lambda d:d[0].update(drawFrequencyInSeconds=60)),
+        ]:
+            def corrupt(url):
+                raw=self.fetch(url)
+                if (endpoint in url if '?' in endpoint else url.endswith(endpoint)):
+                    d=json.loads(raw);mutate(d);return json.dumps(d).encode()
+                return raw
+            with self.subTest(endpoint=endpoint),self.assertRaises(ValueError):
+                coverage.collect(corrupt,lambda:NOW)
+
+    def test_query_seconds_and_actual_capture_precision(self):
+        stamp=NOW.replace(microsecond=123456)
+        data=coverage.collect(self.fetch,lambda:stamp)
+        self.assertEqual(data['queryWindow']['end'],NOW.isoformat())
+        self.assertEqual(data['sources'][0]['retrievedAt'],stamp.isoformat())
