@@ -213,3 +213,22 @@ Sixteen focused Wyoming tests pass together (draw, Keno and rule suites). No
 new source refresh, public feed, app build or acceptance. Next complete cadence/
 version gates and coupled collection/atomic retention, then app/native work.
 Scope closed in c59e8d4; release October31 19:00ET unchanged, no extension.
+
+## October 27 — bounded version and draw cadence gates
+
+Completed-result validation now enforces the literal Mountain-time weekdays and
+clock times from the retained official rules for all five draw families, including
+America/Denver daylight-saving conversion. Completed draw IDs must increase with
+time. Both draw and Keno imports reject records before October12,2026 UTC, the
+start of the reviewed capture window; this is an explicit supported-history
+boundary, not an asserted game inception or historical format-change date.
+Older formats remain unavailable pending separate evidence. Empty pending rows
+remain excluded and do not become results.
+
+Nineteen focused Wyoming tests pass, including wrong weekday/time, fractional
+seconds, older records, ID regression and both sides of the November DST change.
+All45 retained draw rows and five retained Keno rows pass these gates after their
+original manifest hashes were checked. This reuses original capture timestamps;
+it is not a new source collection. No public Wyoming feed, app build or acceptance.
+Next implement coupled atomic collection and failure/correction/regression
+retention. Release October31 at19:00ET remains unchanged, no extension.

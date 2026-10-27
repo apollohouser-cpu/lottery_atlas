@@ -3,6 +3,16 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 MOUNTAIN = ZoneInfo('America/Denver')
+# Supported capture window, NOT the inception date of any game or format.
+# Earlier records require separate version evidence before import.
+SUPPORTED_FROM = datetime(2026, 10, 12, tzinfo=timezone.utc)
+CADENCE = {
+    'cowboy-draw': ({0, 3}, 14, 0),
+    'powerball': ({0, 2, 5}, 20, 59),
+    'mega-millions': ({1, 4}, 21, 0),
+    'millionaire-for-life': (set(range(7)), 21, 15),
+    '2by2': (set(range(7)), 20, 30),
+}
 SPECS = {
     'cowboy-draw': ('bafaf5b5-8a50-4401-9684-0dbe85b2afb5', 5, 45, 0, 0),
     'powerball': ('acc3110d-907c-413c-8bae-62decf6d4b36', 5, 69, 1, 26),
@@ -66,6 +76,12 @@ def parse_draws(payload, game, *, start, end, retrieved_at):
             continue
         if status != 'ACTIVE':
             raise ValueError('Unknown result status')
+        local = at.astimezone(MOUNTAIN)
+        days, hour, minute = CADENCE[game]
+        if (at < SUPPORTED_FROM or local.weekday() not in days
+                or (local.hour, local.minute, local.second, local.microsecond)
+                != (hour, minute, 0, 0)):
+            raise ValueError('Unsupported version window or drawing cadence')
         raw = result.get('drawResult')
         if not isinstance(raw, dict) or raw.get('drawGameId') != gid:
             raise ValueError('Wrong game identity')
@@ -102,7 +118,10 @@ def parse_draws(payload, game, *, start, end, retrieved_at):
         })
     if not output:
         raise ValueError('No completed drawings')
-    return sorted(output, key=lambda r: r['drawTimeUtc'], reverse=True)
+    output.sort(key=lambda r: r['drawTimeUtc'], reverse=True)
+    if any(a['drawId'] <= b['drawId'] for a, b in zip(output, output[1:])):
+        raise ValueError('Drawing IDs/time order disagree')
+    return output
 
 
 KENO_ID = 'e4c6419b-8e17-439d-a0c8-6ba2630e8149'
@@ -130,7 +149,7 @@ def parse_keno(payload, *, first_id, last_id, start, end, retrieved_at):
         if type(draw_id) is not int or not first_id <= draw_id <= last_id or draw_id in ids:
             raise ValueError('Invalid/duplicate/out-of-range Keno draw ID')
         at = instant(raw.get('drawingDate'))
-        if not lo <= at <= hi or at in times:
+        if not lo <= at <= hi or at < SUPPORTED_FROM or at in times:
             raise ValueError('Invalid/duplicate Keno time')
         primary = raw.get('primary')
         if not isinstance(primary, dict) or set(primary) - {'winningNumbers', 'bonusNumbers', 'multipliers'}:
