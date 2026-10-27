@@ -138,3 +138,32 @@ Official JavaScript also identifies draw-game list/details and Keno date-to-draw
 and draw-ID-range endpoints. Actual payload capture, timezone/identity/status
 validation and exhaustive retired/add-on scope remain next. No new public feed,
 build or acceptance; scope due October27 19:00ET and release October31 19:00ET.
+
+## October 26, 22:00 ET — bounded result payloads captured
+
+The official site's game-data client returned five active draw-game definitions
+and a current/previous response containing six identities. The extra identity
+is not automatically a current game: catalog joins and retired scope remain gates.
+The current/previous response contains PENDING future results alongside ACTIVE
+completed results; never publish future jackpot metadata as a completed drawing.
+
+Explicit UTC query October12 00:00 through October27 01:57 returned45 ACTIVE
+raw draw records: Cowboy Draw5,2by2 fifteen, Millionaire for Life15, Mega Millions4
+and Powerball6. These are unvalidated research rows, not an accepted inventory.
+UTC dates differ from local draw dates for evening games. Preserve actual
+source instants until Mountain-time schedule conversion is validated.2by2 uses
+two primary winningNumbers plus two bonusNumbers; those represent color groups
+requiring explicit mapping, not a conventional single bonus ball.
+
+Keno date-range lookup returned minimum472009 and maximum472352; a bounded
+draw-ID request returned five records472348–472352 inclusive. This demonstrates
+endpoint inclusivity for this capture, not complete history or continuous IDs.
+Each sampled result carries drawingDate and20 primary numbers. Raw captures
+and per-request hashes/timestamps are private under work/wyoming_scope; the
+private client extracts public-site configuration without publishing it.
+
+Next finish retired/add-on scope and count geography, then strict parsers. The
+[official transition notice](https://wyolotto.com/news/new-millionaire-for-life-game)
+identifies Millionaire for Life's February22,2026 introduction and Lucky for Life
+retirement; historical data must remain separate from current results. No new
+feed/build/acceptance. Scope/release deadlines unchanged, no extension.
