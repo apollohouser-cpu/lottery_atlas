@@ -96,4 +96,38 @@ void main() {
       throwsFormatException,
     );
   });
+  test('all five draw families advance from an older bounded cache', () {
+    final prior = data();
+    for (final row in prior['results'] as List) {
+      if (row['game'] == 'keno') continue;
+      row['drawId'] -= 2;
+      final at = DateTime.parse(
+        row['drawTimeUtc'],
+      ).subtract(const Duration(days: 7));
+      row['drawTimeUtc'] = at.toIso8601String();
+      row['drawDate'] = DateTime.parse(
+        row['drawDate'],
+      ).subtract(const Duration(days: 7)).toIso8601String().substring(0, 10);
+    }
+    WyomingCoverageValidator.continuity(prior, data());
+    for (final game in [
+      'cowboy-draw',
+      'powerball',
+      'mega-millions',
+      'millionaire-for-life',
+      '2by2',
+    ]) {
+      final corrupt = data();
+      final row = (corrupt['results'] as List).firstWhere(
+        (r) => r['game'] == game,
+      );
+      row['drawTimeUtc'] = DateTime.parse(
+        row['drawTimeUtc'],
+      ).add(const Duration(minutes: 1)).toIso8601String();
+      expect(
+        () => WyomingCoverageValidator.continuity(prior, corrupt),
+        throwsFormatException,
+      );
+    }
+  });
 }

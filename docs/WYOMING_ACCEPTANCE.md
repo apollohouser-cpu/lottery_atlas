@@ -342,3 +342,27 @@ is clean. These are automated tests, not native cache evidence. No native build,
 visible Wyoming UI or acceptance yet. Next broaden dynamic draw advancement
 coverage and integrate visible draw/Keno/rule flows, then native checks and
 ordinary restoration. October31 at19:00ET remains unchanged, no extension.
+
+## October 27 — visible Wyoming results, schedules and rules
+
+The Wyoming state source screen now opens the coupled results sheet: all10 dated
+draw selections and five numbered Keno selections, explicit unavailable reports,
+Mountain dates plus UTC times, source retrieval dates and coverage gaps. The
+sheet renders39 reviewed image-schedule rows and all10 Keno tables/38 rows with
+literal rule prose, annual lifetime prizes, categorical free plays, qualifying
+Tuesday doubling and per-play Mega Millions multipliers. Official result, rule
+and schedule-image links and fixed reading-page controls are available. No
+Scratch inventory or Wyoming Double Play is invented.
+
+Both widget tests pass: all15 selections at2x text in portrait and landscape,
+and fixed paging through all six families to rules/coverage limits at both
+orientations. Seven loader/validator tests pass separately, now including all
+five draw families advancing from an older synthetic cache and rejection of
+wrong schedule times. Changed UI, source-screen and tests analyze clean. These
+are automated rendering/continuity checks, not native OS-return evidence.
+
+Next ordinary native Android build and all selection/source-return/rule reading
+flows, representative enlarged/landscape checks, controlled real-cache failure
+continuity and ordinary restoration. No Wyoming native build or acceptance yet;
+release October31 at19:00ET unchanged, no extension. Existing Android app remains
+running, iOS shut down; source collection remains the verified10:06 snapshot.
