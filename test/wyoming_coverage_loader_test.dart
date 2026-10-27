@@ -1,11 +1,18 @@
 import 'dart:convert';
+import 'package:lottery_atlas/services/wyoming_coverage_contract.dart';
 import 'dart:io';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lottery_atlas/services/wyoming_coverage_loader.dart';
 import 'package:lottery_atlas/services/wyoming_coverage_validator.dart';
 
 void main() {
-  final raw = File('data/wyoming_coverage.generated.json').readAsStringSync();
+  const raw = wyomingCoverageContractJson;
+  test('latest published snapshot advances from bundled baseline', () {
+    final live = WyomingCoverageValidator.decode(
+      File('data/wyoming_coverage.generated.json').readAsStringSync(),
+    );
+    expect(live['results'].length, 15);
+  });
   Map<String, dynamic> data() => jsonDecode(raw);
   test('baseline has all groups and unavailable reports', () {
     final d = WyomingCoverageValidator.decode(raw);

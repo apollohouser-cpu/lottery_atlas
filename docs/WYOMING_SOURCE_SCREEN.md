@@ -379,3 +379,32 @@ flows, representative enlarged/landscape checks, controlled real-cache failure
 continuity and ordinary restoration. No Wyoming native build or acceptance yet;
 release October31 at19:00ET unchanged, no extension. Existing Android app remains
 running, iOS shut down; source collection remains the verified10:06 snapshot.
+
+## October 27 — ordinary Android build, selections and source returns
+
+Ordinary main built successfully (Gradle17.5s), installed and cold-launched with
+process16355. Android is the only running emulator; iOS is shut down. All15
+native selections (10 draw dates, five Keno IDs472458–472462) were traversed and
+captured through native accessibility. Six family source links opened the OS
+browser with the expected official URL and returned to the selected app result.
+This verifies URL dispatch and app return, not complete external page rendering.
+Normal portrait2by2 screenshot reviewed: color groups, categorical/qualifying
+prize caveats, unavailable report and beginning of schedule are readable.
+
+The ordinary production loader adopted the newer scheduled12:15:52.817858UTC
+collection. Independent live download13:16:40.913481UTC matches scheduled commit
+042fe1c generated/public bytes:205319 bytes, SHA256
+`29cbce37f2cc13e5c20d01c68be3fc9a9dc791e4bb1c9539050651da22a94777`.
+Counts remain15 results/all15 reports unavailable and six rules. This is remote
+adoption evidence, not controlled offline/cache-retention evidence.
+
+Ten focused Flutter tests pass against the current snapshot. The synthetic
+Keno-advancement fixture now uses the fixed reviewed baseline so a moving
+scheduled window cannot place its synthetic result beyond the test query;
+a separate test validates the actual latest published snapshot. Test analysis
+clean; validation was not relaxed.
+
+Next six normal rule-reading paths and separate rule/image URL returns,
+representative enlarged/landscape checks, controlled real-cache failure
+continuity and final ordinary restoration. No Wyoming acceptance yet; deadline
+October31 at19:00ET unchanged, no extension. Android remains running.
