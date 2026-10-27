@@ -69,3 +69,24 @@ client configuration stays in private source captures, not tracked feed/docs.
 Next capture bounded result payloads through the official implementation, inspect
 five schedule images and history/retired notices, then fix the full scope matrix.
 No new feed/build/acceptance, no deadline change; Wyoming remains sole active.
+
+## October 26, 21:05 ET — five schedule images visually reviewed
+
+Official rule-linked schedule images were retrieved with hashes/timestamps in
+work/wyoming_scope/schedule-image-manifest.json and visually inspected. Private
+literal transcription records39 prize rows: Cowboy Draw4, Powerball9, Mega
+Millions9, Millionaire for Life9 and2by2 eight. Keno's ten structured tables
+remain38 data rows, separately captured; no claim of completed parser validation.
+
+Preserve distinctions: Cowboy Draw Jackpot is categorical; Mega Millions image
+states automatic multiplication of every non-jackpot win, so its printed values
+are not a single draw-wide final payout. Millionaire for Life's first two prizes
+are annual lifetime amounts, not lump sums.2by2 has separate red/white matches,
+base/doubled columns and categorical free plays; its jackpot asterisk requires
+rule-prose reconciliation. Powerball image is the base table, not a verified
+Power Play/Double Play schedule. No missing variant is inferred from the image.
+
+Official JavaScript also identifies draw-game list/details and Keno date-to-draw-ID
+and draw-ID-range endpoints. Actual payload capture, timezone/identity/status
+validation and exhaustive retired/add-on scope remain next. No new public feed,
+build or acceptance; scope due October27 19:00ET and release October31 19:00ET.
