@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "state": "KS",
-  "retrievedAt": "2026-10-27T12:16:00.588780+00:00",
+  "retrievedAt": "2026-10-27T18:04:31.904036+00:00",
   "reports": [
     {
       "id": "2by2:eb215783-3f6c-4ae1-aa37-68197e277755",
@@ -98,57 +98,57 @@
       "scheduleKey": "2-by-2"
     },
     {
-      "id": "keno:3709718",
+      "id": "keno:3709805",
       "family": "Keno",
       "group": "keno",
       "session": "Frequent",
-      "drawNumber": "3709718",
-      "sourceExternalId": "3709718",
+      "drawNumber": "3709805",
+      "sourceExternalId": "3709805",
       "multiplier": null,
-      "sourceDrawTimestamp": "2026-10-27T11:56:00Z",
+      "sourceDrawTimestamp": "2026-10-27T17:44:00Z",
       "sourceDrawingDate": "2026-10-27",
       "drawDate": "2026-10-27",
       "drawTimeZone": "America/Chicago",
       "numbers": [
+        "6",
         "11",
-        "12",
-        "14",
-        "24",
+        "16",
+        "22",
         "26",
-        "31",
+        "28",
+        "35",
         "36",
         "37",
-        "39",
-        "40",
-        "42",
-        "62",
-        "65",
+        "41",
+        "45",
+        "46",
+        "51",
+        "55",
+        "57",
         "68",
-        "69",
-        "70",
-        "71",
-        "77",
+        "73",
+        "78",
         "79"
       ],
       "specialNumbers": [
-        "30"
+        "74"
       ],
       "sourceWarnings": [],
       "sourceNumberOrder": [
+        {
+          "value": "6",
+          "type": "NORMAL"
+        },
         {
           "value": "11",
           "type": "NORMAL"
         },
         {
-          "value": "12",
+          "value": "16",
           "type": "NORMAL"
         },
         {
-          "value": "14",
-          "type": "NORMAL"
-        },
-        {
-          "value": "24",
+          "value": "22",
           "type": "NORMAL"
         },
         {
@@ -156,11 +156,11 @@
           "type": "NORMAL"
         },
         {
-          "value": "30",
-          "type": "SPECIAL"
+          "value": "28",
+          "type": "NORMAL"
         },
         {
-          "value": "31",
+          "value": "35",
           "type": "NORMAL"
         },
         {
@@ -172,23 +172,27 @@
           "type": "NORMAL"
         },
         {
-          "value": "39",
+          "value": "41",
           "type": "NORMAL"
         },
         {
-          "value": "40",
+          "value": "45",
           "type": "NORMAL"
         },
         {
-          "value": "42",
+          "value": "46",
           "type": "NORMAL"
         },
         {
-          "value": "62",
+          "value": "51",
           "type": "NORMAL"
         },
         {
-          "value": "65",
+          "value": "55",
+          "type": "NORMAL"
+        },
+        {
+          "value": "57",
           "type": "NORMAL"
         },
         {
@@ -196,19 +200,15 @@
           "type": "NORMAL"
         },
         {
-          "value": "69",
+          "value": "73",
           "type": "NORMAL"
         },
         {
-          "value": "70",
-          "type": "NORMAL"
+          "value": "74",
+          "type": "SPECIAL"
         },
         {
-          "value": "71",
-          "type": "NORMAL"
-        },
-        {
-          "value": "77",
+          "value": "78",
           "type": "NORMAL"
         },
         {
@@ -222,14 +222,14 @@
       "scheduleKey": "keno"
     },
     {
-      "id": "keno:3709717",
+      "id": "keno:3709804",
       "family": "Keno",
       "group": "keno",
       "session": "Frequent",
-      "drawNumber": "3709717",
-      "sourceExternalId": "3709717",
+      "drawNumber": "3709804",
+      "sourceExternalId": "3709804",
       "multiplier": null,
-      "sourceDrawTimestamp": "2026-10-27T11:52:00Z",
+      "sourceDrawTimestamp": "2026-10-27T17:40:00Z",
       "sourceDrawingDate": "2026-10-27",
       "drawDate": "2026-10-27",
       "drawTimeZone": "America/Chicago",
@@ -237,25 +237,25 @@
         "1",
         "3",
         "5",
-        "7",
         "8",
-        "16",
-        "21",
-        "22",
-        "25",
+        "18",
+        "26",
         "29",
-        "31",
-        "33",
+        "32",
+        "36",
+        "38",
+        "40",
         "41",
-        "48",
+        "54",
+        "55",
         "63",
-        "64",
         "65",
-        "71",
-        "77"
+        "68",
+        "73",
+        "80"
       ],
       "specialNumbers": [
-        "18"
+        "43"
       ],
       "sourceWarnings": [],
       "sourceNumberOrder": [
@@ -272,31 +272,15 @@
           "type": "NORMAL"
         },
         {
-          "value": "7",
-          "type": "NORMAL"
-        },
-        {
           "value": "8",
           "type": "NORMAL"
         },
         {
-          "value": "16",
-          "type": "NORMAL"
-        },
-        {
           "value": "18",
-          "type": "SPECIAL"
-        },
-        {
-          "value": "21",
           "type": "NORMAL"
         },
         {
-          "value": "22",
-          "type": "NORMAL"
-        },
-        {
-          "value": "25",
+          "value": "26",
           "type": "NORMAL"
         },
         {
@@ -304,11 +288,19 @@
           "type": "NORMAL"
         },
         {
-          "value": "31",
+          "value": "32",
           "type": "NORMAL"
         },
         {
-          "value": "33",
+          "value": "36",
+          "type": "NORMAL"
+        },
+        {
+          "value": "38",
+          "type": "NORMAL"
+        },
+        {
+          "value": "40",
           "type": "NORMAL"
         },
         {
@@ -316,7 +308,15 @@
           "type": "NORMAL"
         },
         {
-          "value": "48",
+          "value": "43",
+          "type": "SPECIAL"
+        },
+        {
+          "value": "54",
+          "type": "NORMAL"
+        },
+        {
+          "value": "55",
           "type": "NORMAL"
         },
         {
@@ -324,19 +324,19 @@
           "type": "NORMAL"
         },
         {
-          "value": "64",
-          "type": "NORMAL"
-        },
-        {
           "value": "65",
           "type": "NORMAL"
         },
         {
-          "value": "71",
+          "value": "68",
           "type": "NORMAL"
         },
         {
-          "value": "77",
+          "value": "73",
+          "type": "NORMAL"
+        },
+        {
+          "value": "80",
           "type": "NORMAL"
         }
       ],
@@ -1062,40 +1062,40 @@
       "scheduleKey": "powerball"
     },
     {
-      "id": "racetrax:852083",
+      "id": "racetrax:852161",
       "family": "Racetrax",
       "group": "racetrax",
       "session": "Frequent",
-      "drawNumber": "852083",
-      "sourceExternalId": "852083",
-      "multiplier": 3,
-      "sourceDrawTimestamp": "2026-10-27T11:56:00Z",
+      "drawNumber": "852161",
+      "sourceExternalId": "852161",
+      "multiplier": 1,
+      "sourceDrawTimestamp": "2026-10-27T17:47:00Z",
       "sourceDrawingDate": "2026-10-27",
       "drawDate": "2026-10-27",
       "drawTimeZone": "America/Chicago",
       "numbers": [
+        "5",
         "1",
-        "3",
-        "7",
-        "2"
+        "2",
+        "4"
       ],
       "specialNumbers": [],
       "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "1",
+          "value": "5",
           "type": "FIRST"
         },
         {
-          "value": "3",
+          "value": "1",
           "type": "SECOND"
         },
         {
-          "value": "7",
+          "value": "2",
           "type": "THIRD"
         },
         {
-          "value": "2",
+          "value": "4",
           "type": "FOURTH"
         }
       ],
@@ -1105,40 +1105,40 @@
       "scheduleKey": "racetrax"
     },
     {
-      "id": "racetrax:852082",
+      "id": "racetrax:852160",
       "family": "Racetrax",
       "group": "racetrax",
       "session": "Frequent",
-      "drawNumber": "852082",
-      "sourceExternalId": "852082",
-      "multiplier": 1,
-      "sourceDrawTimestamp": "2026-10-27T11:51:00Z",
+      "drawNumber": "852160",
+      "sourceExternalId": "852160",
+      "multiplier": 4,
+      "sourceDrawTimestamp": "2026-10-27T17:42:00Z",
       "sourceDrawingDate": "2026-10-27",
       "drawDate": "2026-10-27",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "4",
-        "2",
         "3",
-        "8"
+        "11",
+        "7",
+        "1"
       ],
       "specialNumbers": [],
       "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "4",
+          "value": "3",
           "type": "FIRST"
         },
         {
-          "value": "2",
+          "value": "11",
           "type": "SECOND"
         },
         {
-          "value": "3",
+          "value": "7",
           "type": "THIRD"
         },
         {
-          "value": "8",
+          "value": "1",
           "type": "FOURTH"
         }
       ],
