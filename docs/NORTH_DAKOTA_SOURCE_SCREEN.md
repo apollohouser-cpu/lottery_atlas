@@ -206,3 +206,28 @@ a62291b342ca642a1db0137e152339eae8e7217af3352b4e240b57ed0416cd9d.
 Actual source collection remains20:21:36.071144UTC, not the live-check time.
 Next strict Dart loader/bundle/cache and visible/native flows; no ND app build
 or acceptance. Deadline unchanged. Ordinary Android remains running.
+
+## October 27 — strict Dart loader, bundle and cache continuity
+
+Added the bundled coupled snapshot and NorthDakotaCoverageLoader with strict
+baseline-relative and retained-cache-relative validation. All five date-only
+family windows may advance; exact retained dates reject corrections, losses or
+regression. Central capture-date bounds and weekday cadence validate without
+inventing draw instants. Number/color groups, PB/LA multipliers, MM per-play
+semantics, unavailable reports, catalog/retired status, literal rule DOM and all
+eleven source joins remain enforced. Extra fields and changed contracts fail
+closed. Remote failure preserves validated cached/bundled dates; persistence
+failure does not discard a valid response.
+
+Nine focused Flutter tests pass, including newer remote persistence of exact
+bytes, older remote rejection against newer cache, controlled SocketException,
+corrupt cache/bundle fallback, rule/source/identity mutations, five-family window
+advancement, corrections and date-loss rejection. Three production Dart files
+and the test analyze clean. These are automated loader tests, not native cache
+or whole-device offline evidence. Source collection/live verification timestamps
+remain unchanged. No visible ND UI, native build or acceptance yet.
+
+Next visible all-family result/rule/status UI, widget checks and ordinary native
+flows/controlled real-cache retention/restoration. Android ordinary process20769
+confirmed running; iOS not started. ND sole active, nineteen accepted; November1
+10:29AM EST deadline unchanged, no extension.
