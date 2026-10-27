@@ -317,3 +317,21 @@ Thirty focused Wyoming tests pass. Deployment and independent live verification
 are pending at this checkpoint; no app build or Wyoming acceptance. Next close
 publication verification, then strict Dart loader/bundle/cache and visible/native
 flows. Release October31 at19:00ET unchanged, no extension.
+
+## October 27 — initial deployment verified
+
+Initial Wyoming coupled deployment is CLOSED on c8efce8 (baseline0194569),
+successful workflow40486006067. Independent public download at
+**10:09:02.588373UTC October27** matches the generated/staged205312 bytes exactly:
+SHA256 `0d82ae6653dc05bd094e8172d6aea6a97431342a1db87a717e782b6fc4a6b564`.
+The actual source collection remains10:06:23.250012UTC, not the live-download time.
+All512 existing Python tests,54 New Mexico publication tests and30 focused
+Wyoming tests pass. The first publication run failed the existing hardcoded
+29-job ownership count after adding the30th job; c8efce8 updates that expectation,
+retaining unique-output ownership checks, and the subsequent full workflow passes.
+No data validation was weakened and no prior feed was overwritten by that failure.
+
+Next strict Wyoming Dart validator/loader, bundled/cache continuity, visible
+all-family/Keno/rule flows, native evidence and ordinary restoration. No Wyoming
+native build or acceptance yet. Eighteen accepted,27 unfinished; Wyoming sole
+active; October31 at19:00ET unchanged, no extension. Mobile readiness is separate.
