@@ -118,3 +118,28 @@ Next literal rule/table contracts with rowspan/colspan preservation, then
 coupled atomic collection/publication and app/native integration. No new public
 feed/build/acceptance. November1 10:29AM EST release deadline unchanged, no
 extension; North Dakota sole active. Android ordinary app remains running.
+
+## October 27 — literal rules and merged schedule contracts
+
+Five current rule-page sections now validate against reviewed canonical HTML
+contracts in tooling/north_dakota_rule_specs.json. The parser preserves prose,
+links, table headers, all62 physical rows, literal cell text, rowspan and colspan.
+Changes to prizes, qualifying language, links or cell spans fail closed for
+review. Harmless indentation is normalized. Original capture hashes were checked;
+no new retrieval date is claimed. Seventeen focused ND tests pass (ten results,
+seven rules), including changed conditions/prizes, merged cells and malformed
+sections. Public fixtures contain only the official game-information sections.
+
+Table semantics remain literal:2by2 rowspan cells cover multiple match patterns,
+with Free Ticket/2 Free Tickets categorical; PB Match5 Power Play is always
+$2million; MM base and per-play prize range are separate; MFL annual lifetime
+prizes retain minimum-term/splitting caveats. Source layout inconsistencies are
+retained: MFL title spans8 despite three body columns; MM title/footer spans7
+while its merged header includes a two-column Odds cell. Do not invent extra
+prize columns to reconcile those source attributes. This is a structural/prose
+audit, not a browser/PDF visual audit or native UI acceptance.
+
+Next coupled atomic collection, continuity and failure-position retention,
+then publication/Dart/UI/native. No new public feed/build/acceptance. ND remains
+sole active; November1 10:29AM EST unchanged, no extension. Android ordinary app
+remains running and iOS remains shut down.
