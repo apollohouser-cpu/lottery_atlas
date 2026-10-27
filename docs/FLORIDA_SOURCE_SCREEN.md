@@ -47,8 +47,7 @@ no new counts or retailer points are verified by this request itself.
 
 ### September 25 cost estimate — paid processing on hold
 
-Open Government replied at 15:18 UTC in Gmail message 1a0d92564939ca2a with
-PRR Invoice - Apollo Houser.pdf. The extracted one-page invoice estimates $46.81
+Open Government replied at 15:18 UTC with a cost-estimate invoice. The extracted one-page invoice estimates $46.81
 for one hour of IT resources and requires payment before review/processing/release;
 actual cost may vary. The September 14 clarification had limited initial reports
 to August 1–31, 2026 and explicitly withheld fee authorization.
@@ -58,11 +57,11 @@ verified public sources remain usable independently of this records request.
 
 ### September 25 correspondence follow-through
 
-Sent September 25 follow-up 1a0da387a9aed9f8 explicitly withholding payment and paid processing. Asked for separate existing reports, directory, definitions or public links available without charge or custom programming. No fee was approved.
+Sent September 25 follow-up explicitly withholding payment and paid processing. Asked for separate existing reports, directory, definitions or public links available without charge or custom programming. No fee was approved.
 
 ### September 28 public-source alternative response
 
-Open Government replied in message 1a0e7df0fbe59b70 with existing public options:
+Open Government replied with existing public options:
 [draw results](https://floridalottery.com/games/draw-games) containing winning-ticket
 counts by selected draw date, game and tier; [Scratch-Off pages](https://floridalottery.com/games/scratch-offs)
 with start/end dates and the Odds & Prizes chart; and the address/ZIP-searchable
@@ -72,3 +71,15 @@ directory or verified historical retailer join. The $46.81 paid processing remai
 on hold; no payment or paid work is authorized. Record these as agency-identified
 public alternatives for later source-specific verification, without claiming new
 map coverage or submitting another duplicate request.
+### October 27 administrative closure
+
+The agency closed the fee-bearing request for nonpayment. No payment or paid
+processing was authorized, and this notice delivers no records or new deadline.
+The full correspondence thread confirms the September 25 sent refusal of paid
+work and the September 28 agency referral to public sources. The closure's
+statement that there was no further communication does not reflect those retained
+messages. No duplicate reply or new request was sent.
+
+The public-source alternatives above remain independently available for later
+validation. This administrative closure does not change verified map coverage or
+supply the missing August records, statewide directory, or retailer joins.
