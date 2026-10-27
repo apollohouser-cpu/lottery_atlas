@@ -14,7 +14,7 @@ STAMP = datetime(2026, 10, 27, 18, tzinfo=timezone.utc)
 
 def captures():
     specs = json.loads(coverage.SPEC_PATH.read_text())
-    sources = {}
+    sources = {coverage.CATALOG_URL: (ROOT / 'catalog.html').read_bytes()}
     for game in coverage.GAMES:
         sources[coverage.draws.source_url(game)] = markup(FIXTURE[game]).encode()
         sources[specs[game]['sourceUrl']] = (ROOT / (game+'-rules.html')).read_bytes()
@@ -27,7 +27,7 @@ class CollectionTests(unittest.TestCase):
 
     def test_coupled_provenance_and_gaps(self):
         d = self.baseline()
-        self.assertEqual((len(d['results']), len(d['rules']), len(d['sources'])), (10, 5, 10))
+        self.assertEqual((len(d['results']), len(d['rules']), len(d['sources'])), (10, 5, 11))
         for row in d['results']:
             self.assertEqual(row['reportStatus'], 'unavailable')
             self.assertNotIn('drawId', row)
@@ -39,7 +39,7 @@ class CollectionTests(unittest.TestCase):
             path = Path(root)/'coverage.json'
             coverage.refresh(path, captures().__getitem__, lambda: STAMP)
             original = path.read_bytes()
-            for failure in range(10):
+            for failure in range(11):
                 count = 0
                 def fetch(url):
                     nonlocal count

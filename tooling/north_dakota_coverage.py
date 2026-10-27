@@ -11,6 +11,7 @@ from pathlib import Path
 import tempfile
 from tooling import import_north_dakota_draws as draws
 from tooling.north_dakota_rules import SPEC_PATH, parse_rules
+from tooling.north_dakota_catalog import URL as CATALOG_URL, parse_catalog
 
 GAMES = tuple(draws.SPECS)
 
@@ -37,6 +38,9 @@ def collect(fetch, clock=lambda: datetime.now(timezone.utc)):
         sources.append(dict(url=url, retrievedAt=stamp, bytes=len(raw),
                             sha256=hashlib.sha256(raw).hexdigest()))
         return text, stamp
+    html, stamp = get(CATALOG_URL)
+    catalog = parse_catalog(html)
+    catalog['retrievedAt'] = stamp
     for game in GAMES:
         html, stamp = get(draws.source_url(game))
         results.extend(draws.parse_draws(html, game, retrieved_at=stamp)[:2])
@@ -45,7 +49,7 @@ def collect(fetch, clock=lambda: datetime.now(timezone.utc)):
         rule['retrievedAt'] = stamp
         rules.append(rule)
     return dict(schemaVersion=1, state='North Dakota', updatedAt=sources[-1]['retrievedAt'],
-                results=results, rules=rules, sources=sources,
+                results=results, rules=rules, sources=sources, catalog=catalog,
                 coverageNote='Latest two published dates per current family. Date-only results; all exact-date winner reports unavailable. Not complete history.',
                 unavailable=['Exact-date North Dakota winner counts and payout reports',
                              'Retired games, older formats and complete history',
@@ -60,6 +64,8 @@ def continuity(prior, candidate):
         raise ValueError('Capture regressed')
     def stable(row):
         return {k: v for k, v in row.items() if k not in ('sourceRetrievedAt', 'retrievedAt')}
+    if stable(prior['catalog']) != stable(candidate['catalog']):
+        raise ValueError('Catalog boundary changed')
     if [stable(r) for r in prior['rules']] != [stable(r) for r in candidate['rules']]:
         raise ValueError('Rule contract changed')
     if any(prior[k] != candidate[k] for k in ('coverageNote', 'unavailable')):

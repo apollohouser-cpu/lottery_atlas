@@ -166,3 +166,28 @@ unchanged, no extension; ND remains sole active. Ordinary Android process20769
 confirmed running; iOS was not started. No agency mail checked in this development
 session. Florida's separate October27 administrative closure is recorded in its
 source screen and does not authorize paid processing or reopen accepted states.
+
+## October 27 — catalog/status gate and fresh private collection
+
+The official catalog now has a reviewed six-card contract: five current games
+and Lucky for Life explicitly ended February21,2026. Changes in product identity,
+price, multiplier wording, links or retired status fail closed. Catalog marketing
+about winners is not imported as count evidence. The source's unclosed paragraph
+markup is retained in the literal event contract, not silently repaired into new
+semantics. Official transport permits only the eleven reviewed HTTPS URLs and
+rejects redirects pending review.
+
+A fresh complete eleven-request collection finished October27 at
+20:21:36.071144UTC. Original response bytes remain private in
+work/north_dakota_scope/collection-20261027T202131Z; all eleven byte lengths and
+SHA256 hashes match candidate provenance. Candidate contains ten date-only
+results/five families, all ten reports unavailable, five rule contracts with62
+physical rows and the current/retired catalog status. No public feed or source
+verification claim is inferred from the earlier retained fixtures.
+
+Twenty-nine focused ND tests pass, including all eleven request-failure positions,
+changed catalog/status rejection, unreviewed transport URL rejection, corrections,
+rule changes and disk-replace retention. Android ordinary process20769 remains
+running; no iOS start or app build. Next integrate coupled publication and its
+transaction gates, then strict Dart loader/UI/native. No ND acceptance; release
+November1 at10:29AM EST unchanged, no extension. Nineteen accepted; ND sole active.
