@@ -183,3 +183,18 @@ records. This private candidate is not a new public feed or accepted coverage.
 Keno parsing, schedule/cadence/version gates, literal rule contracts, collection
 continuity and app/native work remain. Exact reports remain unavailable. Release
 October31 19:00ET unchanged, no extension.
+
+## October27 — bounded Keno parser
+
+Official rapid-game metadata confirms Keno range1–80 and240-second nominal
+frequency; captured privately with original retrieval/hash. Added strict Keno
+parser validating inclusive ID bounds, UTC time window, source game identity,
+20 unique integer numbers1–80, draw-ID/time ordering and no unexpected
+bonus/multiplier/secondary/session structure. Source number order is preserved.
+Gaps do not produce invented draws; jackpot metadata is excluded from results.
+
+All five retained Keno records472348–472352 pass. Eleven focused Wyoming tests
+pass together, including mutation cases for both draw and Keno parsers. No fresh
+result collection or public feed/build/acceptance. Next cadence/version and
+literal rule contracts, coupled atomic collection, then app/native gates. All
+reports remain unavailable; October31 19:00ET deadline unchanged.

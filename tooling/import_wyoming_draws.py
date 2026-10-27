@@ -103,3 +103,52 @@ def parse_draws(payload, game, *, start, end, retrieved_at):
     if not output:
         raise ValueError('No completed drawings')
     return sorted(output, key=lambda r: r['drawTimeUtc'], reverse=True)
+
+
+KENO_ID = 'e4c6419b-8e17-439d-a0c8-6ba2630e8149'
+
+
+def parse_keno(payload, *, first_id, last_id, start, end, retrieved_at):
+    """Validate inclusive requested IDs without asserting gap-free history."""
+    if (type(first_id) is not int or type(last_id) is not int
+            or first_id <= 0 or last_id < first_id
+            or not isinstance(payload, list) or not payload):
+        raise ValueError('Invalid Keno request/response')
+    lo, hi, captured = map(instant, (start, end, retrieved_at))
+    if lo > hi or hi > captured:
+        raise ValueError('Invalid Keno time window')
+    output, ids, times = [], set(), set()
+    for row in payload:
+        if not isinstance(row, dict) or set(row) - {'result', 'jackpot'}:
+            raise ValueError('Unknown Keno envelope')
+        raw = row.get('result')
+        if not isinstance(raw, dict) or raw.get('rapidGameId') != KENO_ID:
+            raise ValueError('Wrong Keno identity')
+        if raw.get('secondary') is not None or raw.get('sequenceNumber') is not None:
+            raise ValueError('Unknown Keno variant')
+        draw_id = raw.get('drawingNumber')
+        if type(draw_id) is not int or not first_id <= draw_id <= last_id or draw_id in ids:
+            raise ValueError('Invalid/duplicate/out-of-range Keno draw ID')
+        at = instant(raw.get('drawingDate'))
+        if not lo <= at <= hi or at in times:
+            raise ValueError('Invalid/duplicate Keno time')
+        primary = raw.get('primary')
+        if not isinstance(primary, dict) or set(primary) - {'winningNumbers', 'bonusNumbers', 'multipliers'}:
+            raise ValueError('Unknown Keno number structure')
+        main = numbers(primary.get('winningNumbers'), 20, 80)
+        numbers(primary.get('bonusNumbers'), 0, 0)
+        if primary.get('multipliers') not in (None, []):
+            raise ValueError('Unknown Keno multiplier')
+        ids.add(draw_id)
+        times.add(at)
+        output.append({'game': 'keno', 'drawId': draw_id,
+                       'drawTimeUtc': at.isoformat(),
+                       'drawDate': at.astimezone(MOUNTAIN).date().isoformat(),
+                       'timeZone': 'America/Denver', 'numbers': main,
+                       'reportStatus': 'unavailable',
+                       'sourceRetrievedAt': retrieved_at,
+                       'sourceUrl': 'https://wyolotto.com/games/keno'})
+    output.sort(key=lambda r: r['drawId'], reverse=True)
+    if any(a['drawTimeUtc'] <= b['drawTimeUtc'] for a,b in zip(output,output[1:])):
+        raise ValueError('Keno draw IDs/time order disagree')
+    return output
