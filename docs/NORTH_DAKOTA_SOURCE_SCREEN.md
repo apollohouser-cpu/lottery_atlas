@@ -27,3 +27,14 @@ multi-state games. This agency response verifies the scope and cadence but also
 confirms that the requested complete all-tier count is not maintained. North
 Dakota remains a partial public-winner subset and is not ready for full-state
 testing.
+
+## October 27, 2026 at 11:29 AM EDT — sole active state
+
+North Dakota activated after Wyoming acceptance. See NORTH_DAKOTA_ACCEPTANCE.md.
+Scope due October28 at11:29AM EDT; supported release due November1 at10:29AM EST
+(120elapsed hours across the DST transition), no extension. Two official opening
+pages captured15:29:38–39UTC with hashes privately retained. Current navigation
+identifies five draw families, Power Play and All Star Bonus, and explicitly
+retired Lucky for Life. Exhaustive scope and payload/rule semantics remain next.
+Prior agency limitations stand; no duplicate request or invented Scratch product.
+No new public feed/build/acceptance. Android ordinary app stays running.
