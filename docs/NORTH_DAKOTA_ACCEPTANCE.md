@@ -191,3 +191,19 @@ rule changes and disk-replace retention. Android ordinary process20769 remains
 running; no iOS start or app build. Next integrate coupled publication and its
 transaction gates, then strict Dart loader/UI/native. No ND acceptance; release
 November1 at10:29AM EST unchanged, no extension. Nineteen accepted; ND sole active.
+
+## October 27 — coupled publication integration
+
+Staged the replay-verified private eleven-source collection for the public feed;
+actual collection remains20:21:36.071144UTC. The scheduled refresh manifest now
+owns the single ND coupled output, and publication validates its current catalog,
+source inventory/timestamp joins, rules, date-only result groups, ranges,
+multipliers and unavailable reports before copying to the public directory.
+The existing independent-state transaction preserves the previous ND baseline
+on a failed refresh. Publication does not imply app or state acceptance.
+
+Thirty-one focused ND tests and512 existing Python tests pass, including13
+transaction tests. The manifest ownership test now expects31 refresh jobs.
+Deployment and independent live-byte verification remain pending until confirmed.
+Next strict Dart loader/bundle/cache and visible/native flows. No new app build;
+ND sole active and November1 10:29AM EST release deadline unchanged.

@@ -1,5 +1,20 @@
 [
   {
+    "state": "North Dakota",
+    "outputs": [
+      "data/north_dakota_coverage.generated.json"
+    ],
+    "commands": [
+      [
+        "python3",
+        "-m",
+        "tooling.collect_north_dakota_coverage",
+        "--output",
+        "data/north_dakota_coverage.generated.json"
+      ]
+    ]
+  },
+  {
     "state": "Wyoming",
     "outputs": [
       "data/wyoming_coverage.generated.json"
