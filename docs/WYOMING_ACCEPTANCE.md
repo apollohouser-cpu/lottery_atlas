@@ -232,3 +232,28 @@ original manifest hashes were checked. This reuses original capture timestamps;
 it is not a new source collection. No public Wyoming feed, app build or acceptance.
 Next implement coupled atomic collection and failure/correction/regression
 retention. Release October31 at19:00ET remains unchanged, no extension.
+
+## October 27 — coupled collection and atomic retention implementation
+
+Added the in-memory Wyoming collector and atomic refresh transaction. Its18
+result/rule requests cover five draw windows, a separately bound Keno range and
+five-ID lookup, six literal rule payloads and five reviewed image-byte contracts.
+The output requires two completed dates per draw family and five returned Keno
+IDs; missing data fails collection instead of being invented. Each capture keeps
+its actual transport completion timestamp, byte length and SHA256. All15 target
+reports remain explicitly unavailable. The collector emits no API credentials,
+customer IDs, private result IDs or estimated jackpot fields.
+
+Twenty-six focused tests pass. Synthetic transaction tests inject failures at
+all18 request positions and preserve the prior snapshot bytes/date. Disk-replace
+failure cleans up its temporary file and preserves prior bytes; corrections,
+interior result loss, rule changes and window/date regressions fail before
+replacement. A newer bounded Keno window can advance. Literal rule/image tests
+remain separate from the transaction suite's mocked rule transport.
+
+This is implementation and synthetic failure evidence, not a fresh collection or
+public deployment. Next wire the official transport and catalog/config identity
+gates, run a fresh private coupled collection with retained raw evidence, then
+publish only after validation. Dart/UI/native and ordinary restoration remain
+open. Wyoming is not accepted; October31 at19:00ET remains the release deadline
+without extension. Android's ordinary installed app remains unchanged.
