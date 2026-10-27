@@ -211,3 +211,18 @@ pass together, including mutation cases for both draw and Keno parsers. No fresh
 result collection or public feed/build/acceptance. Next cadence/version and
 literal rule contracts, coupled atomic collection, then app/native gates. All
 reports remain unavailable; October31 19:00ET deadline unchanged.
+
+## October27 — literal rule and image contracts
+
+Added six exact structured rule contracts and five SHA256-gated schedule-image
+contracts. Every retained rule response and original image passes. Changed prose,
+prizes, table structure or image bytes fail closed for review, including in-place
+image replacement at the same URL. Returned schedules preserve the reviewed39
+image prize rows and Keno ten tables/38 data rows, with categorical jackpots,
+annual lifetime prizes, free plays and multiplier caveats. These are schedules,
+not dated payout/count reports.
+
+Sixteen focused Wyoming tests pass together (draw, Keno and rule suites). No
+new source refresh, public feed, app build or acceptance. Next complete cadence/
+version gates and coupled collection/atomic retention, then app/native work.
+Scope closed in c59e8d4; release October31 19:00ET unchanged, no extension.
