@@ -1,3 +1,4 @@
+import '../../widgets/map/north_dakota_draw_collection_sheet.dart';
 import '../../widgets/map/wyoming_draw_collection_sheet.dart';
 import '../../widgets/map/new_mexico_product_sheet.dart';
 import '../../widgets/map/new_mexico_draw_collection_sheet.dart';
@@ -68,6 +69,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'North Dakota')
+            ListTile(
+              title: const Text('North Dakota results and schedules'),
+              subtitle: const Text('Five draw families, literal rules and explicit report gaps'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NorthDakotaDrawCollectionSheet()),
+            ),
           if (source.stateName == 'Wyoming')
             ListTile(
               title: const Text('Wyoming results and schedules'),

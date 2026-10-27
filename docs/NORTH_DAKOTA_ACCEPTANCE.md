@@ -240,3 +240,26 @@ Next visible all-family result/rule/status UI, widget checks and ordinary native
 flows/controlled real-cache retention/restoration. Android ordinary process20769
 confirmed running; iOS not started. ND sole active, nineteen accepted; November1
 10:29AM EST deadline unchanged, no extension.
+
+## October 27 — visible draw/rule/status UI and ordinary Android build
+
+Added the North Dakota results and schedules entry to its state source screen.
+All ten date-only selections show separate number groups, PB/LA multipliers,
+MM per-play wording and explicit unavailable reports. Five literal schedules
+render as labeled match/prize/odds cards, preserving PB/LA merged multiplier
+qualifications and MM ranges.2by2 shared rowspan prizes are expanded to each
+covered match pattern, including categorical free tickets and qualifying Tuesday
+conditions. Full rule prose/footnotes, retired-LFL/no-Scratch limits, retrieval
+dates, official result/rule links, fixed paging and close controls are available.
+
+Twelve focused Flutter tests pass (nine loader and three UI), covering all ten
+selections at2x portrait/landscape, all five family fixed-page paths and2by2
+merged-prize patterns. Changed widget/source entry and UI test analyze clean.
+Ordinary main.dart Android debug build passed (Gradle16.4s), installed successfully
+and cold-launch command succeeded. This is build/install evidence, not native
+visual/source-return acceptance. iOS was not started; Android remains running.
+
+Next native selections/source returns, full normal rule traversal, representative
+enlarged/landscape checks, controlled real-cache failure and final restoration.
+No new source collection or ND acceptance. Nineteen accepted; ND sole active;
+November1 10:29AM EST release deadline unchanged, no extension.
