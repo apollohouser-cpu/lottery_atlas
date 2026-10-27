@@ -167,3 +167,13 @@ Next finish retired/add-on scope and count geography, then strict parsers. The
 identifies Millionaire for Life's February22,2026 introduction and Lucky for Life
 retirement; historical data must remain separate from current results. No new
 feed/build/acceptance. Scope/release deadlines unchanged, no extension.
+
+## October26 — full supported scope closed
+
+The complete current/retired/variant/history matrix is fixed in
+[WYOMING_ACCEPTANCE.md](WYOMING_ACCEPTANCE.md), before the scope deadline.
+Five active draw families plus Keno; Lucky for Life retired, Ragtime Raffle
+historical, no Scratch and no Wyoming Double Play. Reports remain unavailable
+pending geography/units/tier validation despite private summary payloads.
+Next strict parsers and atomic coupled collection; no public feed/build or
+acceptance. Release October31 19:00ET unchanged, no extension.

@@ -30,7 +30,7 @@ established. Prior refusal of aggregate reports remains recorded; no new request
 
 ## Gates
 
-- [ ] Full current/retired/variant/history matrix within24hours.
+- [x] Full current/retired/variant/history matrix within24hours (October26).
 - [ ] Strict bounded results, identities, dates, source geography/units and literal rules.
 - [ ] Explicit unavailable counts, histories, retailer joins and unsupported products.
 - [ ] Atomic coupled collection/publication and byte/date retention on failure.
@@ -119,3 +119,48 @@ Next finish retired/add-on scope and count geography, then strict parsers. The
 identifies Millionaire for Life's February22,2026 introduction and Lucky for Life
 retirement; historical data must remain separate from current results. No new
 feed/build/acceptance. Scope/release deadlines unchanged, no extension.
+
+## October 26, 23:05 ET — full supported scope fixed
+
+Scope-definition gate CLOSED before October27 19:00ET. This is the implementation
+contract, not source-parser, app or release acceptance. Release remains October31
+19:00ET with no extension. Current catalog, six rule responses, five schedule
+images, bounded result endpoints, inactive draw definitions and historical
+references establish the following supported and unavailable matrix.
+
+| Product / variant | Supported target | Explicit boundary |
+| --- | --- | --- |
+| Cowboy Draw | Latest two completed dates, five numbers, literal schedule and variable jackpot caveat | No complete history or inferred actual jackpot payout |
+| Powerball / Power Play | Latest two completed dates with bonus ball and draw multiplier; base image and literal Power Play prose including fixed Match5 prize and10x condition | Do not fabricate a multiplier schedule or infer winning-ticket units |
+| Double Play | Explain not offered based on official linked Wyoming rules | No Wyoming DP results or counts imported |
+| Mega Millions | Latest two dates, five numbers plus Mega Ball; image base values and per-play2x/3x/4x/5x/10x explanation | No current drawing-wide multiplier, legacy Megaplier/Just the Jackpot imports or invented final payout |
+| Millionaire for Life | Latest two dates, five numbers and special ball; nine-tier image with annual lifetime prizes categorical | No lump-sum conversion, complete historical results or claims |
+| 2by2 | Latest two dates with separate red/white number groups; eight-tier base/doubled schedule, categorical free plays | Tuesday doubling requires qualifying seven-draw increments and excludes redeemed Free Plays; not every Tuesday ticket doubles |
+| Keno | Five most recent verified completed draw IDs from a bounded date/ID query; preserve source number order,20 numbers and timestamp; ten spot tables38 rows based on$1 wager | No complete rapid history, inferred missing draws, live-game animation or progressive amount |
+| Lucky for Life | Historical retired status and explicit unavailable archive | Inactive definition ends February22 UTC; never include in current catalog or infer complete archive from stale current/previous payload |
+| Ragtime Raffle / older promotions | Historical unavailable explanation with official historical reference | No verified current raffle, final result history or complete claims; brand artwork is not proof of current play |
+| Prior versions of current games | Explicit historical gap | No cross-version numeric-range, price, multiplier or prize inference |
+| Scratch / instant products | Explain confirmed absence in prior agency response | No synthetic catalog/inventory |
+| Winner notices / prize reports | Unavailable exact-date all-tier report unless independently proven with geography, units and tier joins; preserve source links | Selected public winners are incomplete; no unique-person counts, complete claims or retailer heat-map joins |
+| Retailer directory / player rewards / second chance | Source-linked limitations, distinct from ordinary draw results | No fabricated coordinates/identifiers, comprehensive retailer export or submitted entries |
+
+The inactive-inclusive game-data response identifies Lucky For Life as the sixth
+identity in current/previous data; only five active draw definitions plus Keno
+are current. [Transition notice](https://wyolotto.com/news/new-millionaire-for-life-game)
+confirms replacement. [Wyoming Powerball rules](https://wyolotto.com/wp-content/uploads/2022/07/WyoLotto-Powerball-Game-Rules.pdf)
+explicitly exclude Double Play participation; current catalog/prose offers Power
+Play only. [Historical brand reference](https://wyolotto.com/wp-content/uploads/2025/04/WyoLotto_BrandBook_2025-for-web.pdf)
+retains Ragtime Raffle identity but supplies no current result inventory. These
+references support scope; no full PDF visual audit is claimed.
+
+A bounded Powerball winners-summary response and prize-table response were
+captured privately. The summary has tier IDs and totals; the table labels matches
+as Tier1 etc. Customer IDs alone do not establish count geography or meaning.
+All exact reports remain unavailable pending independent unit/geography and
+literal tier reconciliation; no counts are promoted from this research capture.
+
+Next strict results/rules validators, bounded coupled collection and atomic
+failure retention, then loader/UI/native evidence. Enforce UTC-to-Mountain local
+dates, source identity/range/status, categorical prizes and no silent corrections.
+Missing records do not block this honest supported scope. No public feed/build
+or Wyoming acceptance at scope closure;18 accepted27 unfinished.
