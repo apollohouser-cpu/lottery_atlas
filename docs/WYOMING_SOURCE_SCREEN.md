@@ -408,3 +408,35 @@ Next six normal rule-reading paths and separate rule/image URL returns,
 representative enlarged/landscape checks, controlled real-cache failure
 continuity and final ordinary restoration. No Wyoming acceptance yet; deadline
 October31 at19:00ET unchanged, no extension. Android remains running.
+
+## October 27 — native rules, controlled cache retention and ordinary restoration
+
+All six normal portrait rule paths were traversed with fixed page buttons and
+native accessibility captures: 2by2 seven pages, Cowboy Draw six, Powerball
+seven, Mega Millions seven, Millionaire for Life six and Keno thirteen. Six
+rule URLs and five reviewed schedule-image URLs dispatched to the OS browser
+and returned to the selected result. These are URL/return checks, not a claim
+that every external document rendered fully.
+
+A private native target exercised the production loader against the existing
+persisted Wyoming cache while its remote fetch threw a controlled SocketException.
+The persisted cache string stayed byte-identical; the returned validated object
+and collection date 2026-10-27T12:15:52.817858+00:00 were retained. All recorded
+checks passed. This is controlled loader-failure evidence, not whole-device
+offline evidence. The probe remains private and was not added to production.
+
+Representative global 2x portrait Cowboy Draw result/gap and schedule pages
+were visually reviewed. The selector abbreviates its label at 2x; the complete
+date is readable in the result heading. Ordinary normal landscape result and
+schedule pages were also visually reviewed using fixed paging. This is not a
+manual audit of every family at every scale/orientation; the existing automated
+all-selection/all-family 2x portrait/landscape tests supplement this evidence.
+
+Ordinary lib/main.dart rebuilt successfully (Gradle10.6s), installed and
+cold-launched as process20769, then used for the landscape checks. Original
+rotation settings restored; Android remains running, iOS remains shut down.
+No production source changed and no new source collection is claimed.
+
+Next reconcile the final acceptance matrix against the retained evidence and
+close any remaining named gate. Wyoming remains the sole active state and is
+not yet accepted; October31 at19:00ET deadline unchanged, no extension.
