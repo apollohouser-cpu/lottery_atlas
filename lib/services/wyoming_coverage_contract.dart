@@ -1,0 +1,6007 @@
+// Reviewed coupled Wyoming baseline.
+const wyomingCoverageContractJson = r'''{
+  "schemaVersion": 1,
+  "state": "Wyoming",
+  "updatedAt": "2026-10-27T10:06:23.250012+00:00",
+  "queryWindow": {
+    "start": "2026-10-13T10:06:19+00:00",
+    "end": "2026-10-27T10:06:19+00:00"
+  },
+  "kenoWindow": {
+    "start": "2026-10-26T10:06:19+00:00",
+    "end": "2026-10-27T10:06:19+00:00",
+    "firstId": 472439,
+    "lastId": 472443
+  },
+  "results": [
+    {
+      "game": "cowboy-draw",
+      "drawId": 1211,
+      "drawTimeUtc": "2026-10-26T20:00:00+00:00",
+      "drawDate": "2026-10-26",
+      "timeZone": "America/Denver",
+      "numbers": [
+        20,
+        45,
+        23,
+        9,
+        37
+      ],
+      "bonusNumbers": [],
+      "numberLabel": "Main",
+      "bonusLabel": "Bonus",
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.202489+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "cowboy-draw",
+      "drawId": 1210,
+      "drawTimeUtc": "2026-10-22T20:00:00+00:00",
+      "drawDate": "2026-10-22",
+      "timeZone": "America/Denver",
+      "numbers": [
+        4,
+        34,
+        35,
+        8,
+        27
+      ],
+      "bonusNumbers": [],
+      "numberLabel": "Main",
+      "bonusLabel": "Bonus",
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.202489+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "powerball",
+      "drawId": 1541,
+      "drawTimeUtc": "2026-10-27T02:59:00+00:00",
+      "drawDate": "2026-10-26",
+      "timeZone": "America/Denver",
+      "numbers": [
+        18,
+        26,
+        49,
+        50,
+        54
+      ],
+      "bonusNumbers": [
+        1
+      ],
+      "numberLabel": "Main",
+      "bonusLabel": "Bonus",
+      "multiplier": 3,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.418336+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "powerball",
+      "drawId": 1540,
+      "drawTimeUtc": "2026-10-25T02:59:00+00:00",
+      "drawDate": "2026-10-24",
+      "timeZone": "America/Denver",
+      "numbers": [
+        4,
+        5,
+        15,
+        19,
+        55
+      ],
+      "bonusNumbers": [
+        19
+      ],
+      "numberLabel": "Main",
+      "bonusLabel": "Bonus",
+      "multiplier": 2,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.418336+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "mega-millions",
+      "drawId": 1270,
+      "drawTimeUtc": "2026-10-24T03:00:00+00:00",
+      "drawDate": "2026-10-23",
+      "timeZone": "America/Denver",
+      "numbers": [
+        3,
+        7,
+        46,
+        49,
+        51
+      ],
+      "bonusNumbers": [
+        5
+      ],
+      "numberLabel": "Main",
+      "bonusLabel": "Bonus",
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.577803+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "mega-millions",
+      "drawId": 1269,
+      "drawTimeUtc": "2026-10-21T03:00:00+00:00",
+      "drawDate": "2026-10-20",
+      "timeZone": "America/Denver",
+      "numbers": [
+        13,
+        28,
+        33,
+        35,
+        48
+      ],
+      "bonusNumbers": [
+        3
+      ],
+      "numberLabel": "Main",
+      "bonusLabel": "Bonus",
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.577803+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "millionaire-for-life",
+      "drawId": 247,
+      "drawTimeUtc": "2026-10-27T03:15:00+00:00",
+      "drawDate": "2026-10-26",
+      "timeZone": "America/Denver",
+      "numbers": [
+        28,
+        32,
+        34,
+        37,
+        40
+      ],
+      "bonusNumbers": [
+        4
+      ],
+      "numberLabel": "Main",
+      "bonusLabel": "Bonus",
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.731626+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "millionaire-for-life",
+      "drawId": 246,
+      "drawTimeUtc": "2026-10-26T03:15:00+00:00",
+      "drawDate": "2026-10-25",
+      "timeZone": "America/Denver",
+      "numbers": [
+        7,
+        30,
+        35,
+        37,
+        58
+      ],
+      "bonusNumbers": [
+        2
+      ],
+      "numberLabel": "Main",
+      "bonusLabel": "Bonus",
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.731626+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "2by2",
+      "drawId": 2053,
+      "drawTimeUtc": "2026-10-27T02:30:00+00:00",
+      "drawDate": "2026-10-26",
+      "timeZone": "America/Denver",
+      "numbers": [
+        9,
+        23
+      ],
+      "bonusNumbers": [
+        4,
+        15
+      ],
+      "numberLabel": "White",
+      "bonusLabel": "Red",
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.876473+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "2by2",
+      "drawId": 2052,
+      "drawTimeUtc": "2026-10-26T02:30:00+00:00",
+      "drawDate": "2026-10-25",
+      "timeZone": "America/Denver",
+      "numbers": [
+        11,
+        22
+      ],
+      "bonusNumbers": [
+        18,
+        19
+      ],
+      "numberLabel": "White",
+      "bonusLabel": "Red",
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:20.876473+00:00",
+      "sourceUrl": "https://wyolotto.com/wyo-wins/check-your-numbers"
+    },
+    {
+      "game": "keno",
+      "drawId": 472443,
+      "drawTimeUtc": "2026-10-27T07:57:00+00:00",
+      "drawDate": "2026-10-27",
+      "timeZone": "America/Denver",
+      "numbers": [
+        26,
+        78,
+        39,
+        44,
+        73,
+        63,
+        16,
+        27,
+        15,
+        77,
+        2,
+        74,
+        45,
+        9,
+        35,
+        20,
+        14,
+        79,
+        71,
+        43
+      ],
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:21.110019+00:00",
+      "sourceUrl": "https://wyolotto.com/games/keno"
+    },
+    {
+      "game": "keno",
+      "drawId": 472442,
+      "drawTimeUtc": "2026-10-27T07:53:00+00:00",
+      "drawDate": "2026-10-27",
+      "timeZone": "America/Denver",
+      "numbers": [
+        50,
+        75,
+        19,
+        39,
+        76,
+        42,
+        72,
+        49,
+        4,
+        46,
+        31,
+        1,
+        54,
+        41,
+        14,
+        16,
+        59,
+        5,
+        24,
+        38
+      ],
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:21.110019+00:00",
+      "sourceUrl": "https://wyolotto.com/games/keno"
+    },
+    {
+      "game": "keno",
+      "drawId": 472441,
+      "drawTimeUtc": "2026-10-27T07:49:00+00:00",
+      "drawDate": "2026-10-27",
+      "timeZone": "America/Denver",
+      "numbers": [
+        4,
+        2,
+        76,
+        39,
+        37,
+        65,
+        35,
+        59,
+        24,
+        21,
+        62,
+        49,
+        51,
+        30,
+        74,
+        11,
+        70,
+        63,
+        18,
+        42
+      ],
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:21.110019+00:00",
+      "sourceUrl": "https://wyolotto.com/games/keno"
+    },
+    {
+      "game": "keno",
+      "drawId": 472440,
+      "drawTimeUtc": "2026-10-27T07:45:00+00:00",
+      "drawDate": "2026-10-27",
+      "timeZone": "America/Denver",
+      "numbers": [
+        36,
+        35,
+        27,
+        9,
+        74,
+        30,
+        55,
+        4,
+        65,
+        69,
+        52,
+        76,
+        41,
+        46,
+        34,
+        79,
+        60,
+        20,
+        25,
+        26
+      ],
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:21.110019+00:00",
+      "sourceUrl": "https://wyolotto.com/games/keno"
+    },
+    {
+      "game": "keno",
+      "drawId": 472439,
+      "drawTimeUtc": "2026-10-27T07:41:00+00:00",
+      "drawDate": "2026-10-27",
+      "timeZone": "America/Denver",
+      "numbers": [
+        51,
+        17,
+        70,
+        72,
+        14,
+        5,
+        8,
+        79,
+        53,
+        29,
+        22,
+        23,
+        7,
+        74,
+        35,
+        46,
+        28,
+        27,
+        20,
+        63
+      ],
+      "reportStatus": "unavailable",
+      "sourceRetrievedAt": "2026-10-27T10:06:21.110019+00:00",
+      "sourceUrl": "https://wyolotto.com/games/keno"
+    }
+  ],
+  "rules": [
+    {
+      "game": "cowboy-draw",
+      "sourceUrl": "https://wyolotto.com/games/cowboy-draw",
+      "coverage": "Literal published schedules and rules, not dated payouts or winner counts.",
+      "rules": [
+        {
+          "title": "About the game",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Cowboy Draw about copy",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Draw schedule"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Mondays at 2:00 p.m. MT. Thursdays at 2:00 p.m. MT."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "On draw days"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ticket sales close at 1:45 p.m. MT. Ticket sales reopen at 2:05 p.m. MT."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Pick five numbers from 1 to 45."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Tickets are $5 for two (2) sets of five (5) numbers."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "responsiveImage",
+              "data": {
+                "description": "Cowboy Draw prize and odds structure",
+                "mobileImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/3rLwLxyYdjr0eoO9c7mAc9/f0d5fcaa8539305460ab4833647ba3e9/cowboy-draw-payouts.jpg"
+                },
+                "desktopImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/3rLwLxyYdjr0eoO9c7mAc9/f0d5fcaa8539305460ab4833647ba3e9/cowboy-draw-payouts.jpg"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "How to play",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "How to Play - Cowboy Draw",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ways to pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Quick Pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "There are two options for having the ticket terminal generate random numbers for you:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Just ask the clerk for a Cowboy Draw Quick Pick—it’s that easy!"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Mark the QP box on your playslip (using pencil, blue, or black ink)."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Manual pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "To select your own numbers, fill out a playslip with pencil or blue or black ink. A single playslip offers two sets of numbers. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "If you make a mistake, mark the VOID box. DO NOT ERASE."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Multidraw"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Play the same numbers for 2, 3, 4, 5, 10, or 20 consecutive drawings! Either mark the Multidraw box on your playslip or tell the clerk how many draws you want."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Buying your tickets"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/find-a-retailer",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Find a WyoLotto Retailer>"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Every Cowboy Draw ticket is $5 for two sets of numbers (“plays”)."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your receipt. It displays:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The numbers for each play"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The date of the drawing"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The dollar amount you paid"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "Please confirm the accuracy of your picks."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Canceling a ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Cowboy Draw tickets may be cancelled only by returning the ticket to the retailer that sold the ticket on the same date of purchase. Canceling a Cowboy Draw ticket will also cancel any advanced draws that remain on the ticket."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Sign your ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your property. Protect it by signing your name on the back. If your ticket is lost or stolen, the only way to prove ownership is through your name, address, and signature."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Checking your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "To see if you’ve won:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Take your ticket to a WyoLotto retailer*"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": ""
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/connect",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Download the WyoLotto app"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " and use the ticket scanner"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Visit the "
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/wyo-wins/check-your-numbers/",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Check Your Numbers"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " page"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Check your local newspaper or local TV broadcast to see if winning numbers are posted"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Call 855-995-6886"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "If you win"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "You must redeem your winning tickets within 180 days from the draw date. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Visit "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/claim-your-prize",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Claim Your Prize"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " for all info you need to get paid!"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "*The Lottery terminal at retailers is the only official source of verified winning ticket numbers. The Lottery is not responsible for inaccurate listings in newspapers, online, or any other sources."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Cowboy Draw disclaimer",
+                "document": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://assets.ctfassets.net/t4gszq77ol4q/6mgpRmTy582acKYmYpTD0P/a8047659ddf3c00fb717408970b50bcf/WyoLotto-Cowboy-Draw-Game-Rules.pdf",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Cowboy Draw Game Rules"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": " The lottery is a form of entertainment. Please play responsibly. Cowboy Draw is governed by state law and the rules, regulations, and directives of the Wyoming Lottery Corporation. Ticket purchasers must be at least 18 years of age. The Wyoming Lottery Corporation shall not be responsible for lost or stolen Cowboy Draw tickets."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/t4gszq77ol4q/3rLwLxyYdjr0eoO9c7mAc9/f0d5fcaa8539305460ab4833647ba3e9/cowboy-draw-payouts.jpg",
+        "sha256": "03126121750bb4f8d810c3c0581a7176aff2cc9e78831b7492b2921c6b8d8976"
+      },
+      "visualSchedule": {
+        "rows": [
+          [
+            "5",
+            "Jackpot"
+          ],
+          [
+            "4",
+            "$1,000"
+          ],
+          [
+            "3",
+            "$20"
+          ],
+          [
+            "2",
+            "$5"
+          ]
+        ],
+        "overallOdds": "1:6"
+      },
+      "retrievedAt": "2026-10-27T10:06:21.472915+00:00",
+      "imageRetrievedAt": "2026-10-27T10:06:21.666757+00:00"
+    },
+    {
+      "game": "powerball",
+      "sourceUrl": "https://wyolotto.com/games/powerball",
+      "coverage": "Literal published schedules and rules, not dated payouts or winner counts.",
+      "rules": [
+        {
+          "title": "About the game",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Powerball about copy",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Draw schedule"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Mondays at 8:59 p.m. MT. Wednesdays at 8:59 p.m. MT. Saturdays at 8:59 p.m. MT."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "On draw days"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ticket sales close at 7:59 p.m. MT. Ticket sales reopen shortly after the drawing."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Pick five numbers from 1 to 69 and one Powerball number from 1 to 26."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Plays are $2 for each set of five (5) numbers (plus $1 for each optional Power Play)."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Add on Power Play"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Power Play for $1 per play gives you the chance to multiply your winnings. (Jackpot excluded.)"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "responsiveImage",
+              "data": {
+                "description": "Powerball prize and odds structure",
+                "mobileImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/1VETIwtDPBw4SpTW2hjIdm/f2f38595ffbdc9160da25a19c6109664/Powerball_payouts.png"
+                },
+                "desktopImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/1VETIwtDPBw4SpTW2hjIdm/f2f38595ffbdc9160da25a19c6109664/Powerball_payouts.png"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "How to play",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "How to play - Powerball",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ways to pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Quick Pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "There are two options for having the ticket terminal generate random numbers for you:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Just ask the clerk for a Powerball Quick Pick—it’s that easy! "
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Mark the QP box on your playslip (using pencil, blue, or black ink)."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Manual pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "To select your own numbers, fill out a playslip with pencil or blue or black ink. A single playslip offers up to five sets of numbers. If you make a mistake, mark the VOID box.\nDO NOT ERASE"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Multidraw"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Play the same numbers for 2, 3, 4, 5, 10, or 20 consecutive drawings! Either mark the Multidraw box on your playslip or tell the clerk how many draws you want. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Power Play"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Players have an option to add Power Play for an additional $1 per play. Match 5 white balls and win $2 million!\n\nThe Power Play option also offers other set prizes. When the jackpot is under $151 million, the 10x multiplier could win you up to $500,000. (Jackpot excluded.)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Buying your tickets"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/find-a-retailer",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Find a WyoLotto Retailer>"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Every Powerball ticket is $2 per set of five (5) numbers and (1) Powerball (plus $1 for each optional Power Play). "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your receipt. It displays:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The numbers for each play "
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The date of the drawing "
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The dollar amount you paid"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "Please confirm the accuracy of your number picks. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Canceling a ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Powerball tickets cannot be canceled. It is important you check the accuracy of your playslip with the vendor before finalizing your purchase."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Sign your ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your property. Protect it by signing your name on the back. If your ticket is lost or stolen, the only way to prove ownership is through your name, address, and signature."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Checking your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "To see if you’ve won:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Take your ticket to a WyoLotto retailer*"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": ""
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/connect",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Download the WyoLotto app"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " and use the ticket scanner"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Visit the "
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/wyo-wins/check-your-numbers",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Check Your Numbers"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " page"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Check your local newspaper or local TV broadcast to see if winning numbers are posted"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Call 855-995-6886"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "If you win"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "You must redeem your winning tickets within 180 days from the draw date. \nVisit "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/claim-your-prize",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Claim Your Prize"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " for all info you need to get paid!"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "*The Lottery terminal at retailers is the only official source of verified winning ticket numbers. The Lottery is not responsible for inaccurate listings in newspapers, online, or any other sources. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Powerball disclaimer",
+                "document": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://assets.ctfassets.net/t4gszq77ol4q/3UpP5TT0uYD0Cs4v4J0vmf/1332697a8427f536de7bc4c90f7cf603/WyoLotto-Powerball-Game-Rules.pdf",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Powerball Game Rules"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " | "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://www.powerball.com/games/home",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Powerball Prizes and Odds"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": " The lottery is a form of entertainment. Please play responsibly. Powerball is governed by state law and the rules, regulations and directives of the Wyoming Lottery Corporation. Ticket purchasers must be at least 18 years of age. The Wyoming Lottery Corporation shall not be responsible for lost or stolen Powerball tickets."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/t4gszq77ol4q/1VETIwtDPBw4SpTW2hjIdm/f2f38595ffbdc9160da25a19c6109664/Powerball_payouts.png",
+        "sha256": "525c6cf99fc069c794d27a0610f1f779bd244716c48bc4a3eda123c8a3c2991b"
+      },
+      "visualSchedule": {
+        "rows": [
+          [
+            "5+PB",
+            "JACKPOT!"
+          ],
+          [
+            "5",
+            "$1,000,000"
+          ],
+          [
+            "4+PB",
+            "$50,000"
+          ],
+          [
+            "4",
+            "$100"
+          ],
+          [
+            "3+PB",
+            "$100"
+          ],
+          [
+            "3",
+            "$7"
+          ],
+          [
+            "2+PB",
+            "$7"
+          ],
+          [
+            "1+PB",
+            "$4"
+          ],
+          [
+            "PB",
+            "$4"
+          ]
+        ],
+        "overallOdds": "1:24.87"
+      },
+      "retrievedAt": "2026-10-27T10:06:21.910623+00:00",
+      "imageRetrievedAt": "2026-10-27T10:06:22.031875+00:00"
+    },
+    {
+      "game": "mega-millions",
+      "sourceUrl": "https://wyolotto.com/games/mega-millions",
+      "coverage": "Literal published schedules and rules, not dated payouts or winner counts.",
+      "rules": [
+        {
+          "title": "About the game",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Mega Millions about copy",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Draw schedule"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Tuesdays at 9:00 p.m. MT. Fridays at 9:00 p.m. MT."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "On draw days"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ticket sales close at 8:00 p.m. MT. Ticket sales reopen shortly after each draw."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Pick five numbers from 1 to 70 and one Mega Ball number from 1 to 24. Plays are $5 for each set of six numbers."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Built-In Multiplier"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Every non-jackpot win is automatically multiplied: 2x, 3x, 4x, 5x, or 10x. A multiplier is randomly assigned to each set of numbers you play."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "responsiveImage",
+              "data": {
+                "description": "Mega Millions prize and odds structure",
+                "mobileImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/6TFUDs5bC8oCP5ENTazBQm/edb8c64f0bf0b1112124a21902c623a8/MM_Payouts__2_.png"
+                },
+                "desktopImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/6TFUDs5bC8oCP5ENTazBQm/edb8c64f0bf0b1112124a21902c623a8/MM_Payouts__2_.png"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "How to play",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "How to Play - Mega Millions",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ways to pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Quick Pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "There are two options for having the ticket terminal generate random numbers for you: "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Just ask the clerk for a Mega Millions Quick Pick—it’s that easy!"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Mark the QP box on your playslip (using pencil, blue, or black ink)."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Manual pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "To select your own numbers, fill out a playslip with pencil or blue or black ink. A single playslip offers up to five sets of numbers. If you make a mistake, mark the VOID box.\nDO NOT ERASE"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Multidraw"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Play the same numbers for 2, 3, 4, 5, 10, or 20 consecutive drawings! Either mark the Multidraw box on your playslip or tell the clerk how many draws you want."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Built-In Multiplier"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Every non-jackpot win is automatically multiplied: 2x, 3x, 4x, 5x, or 10x. A multiplier is randomly assigned to each set of numbers you play."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Buying your tickets"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/find-a-retailer",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Find a WyoLotto retailer>"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "A standard Mega Millions ticket is $5 for each set of five (5) numbers and (1) Mega Ball."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your receipt. It displays:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The numbers for each play"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The date of the drawing"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The dollar amount you paid"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "Please confirm the accuracy of your number picks. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Canceling a ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Mega Millions tickets cannot be canceled. It is important you check the accuracy of your playslip with the vendor before finalizing your purchase."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Sign your ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your property. Protect it by signing your name on the back. If your ticket is lost or stolen, the only way to prove ownership is through your name, address, and signature."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Checking your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "To see if you’ve won:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Take your ticket to a WyoLotto retailer*"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": ""
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/connect",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Download the WyoLotto app"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " and use the ticket scanner"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Visit the "
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/wyo-wins/check-your-numbers/",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Check Your Numbers"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " page"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Check your local newspaper or local TV broadcast to see if winning numbers are posted"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Call 855-995-6886"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "If you win"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "You must redeem your winning tickets within 180 days from the draw date. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Visit "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/claim-your-prize",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Claim Your Prize"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " for all info you need to get paid!"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "*The Lottery terminal at retailers is the only official source of verified winning ticket numbers. The Lottery is not responsible for inaccurate listings in newspapers, online, or any other sources."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Mega Millions disclaimer",
+                "document": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://assets.ctfassets.net/t4gszq77ol4q/6Yvn7H1KusicCbTPhoScKa/3fff011083a3d2ea6e7ada82fdfe100c/Final_Draft_Mega_Millions_Rules_-_New_change_April_2025__1_.pdf",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Mega Millions Game Rules"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " | "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://www.megamillions.com/how-to-play",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Mega Millions Prizes and Odds"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": " The lottery is a form of entertainment. Please play responsibly. Mega Millions is governed by state law and the rules, regulations, and directives of the Wyoming Lottery Corporation. Ticket purchasers must be at least 18 years of age. The Wyoming Lottery Corporation shall not be responsible for lost or stolen Mega Millions tickets."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/t4gszq77ol4q/6TFUDs5bC8oCP5ENTazBQm/edb8c64f0bf0b1112124a21902c623a8/MM_Payouts__2_.png",
+        "sha256": "50483c7afccae67bf75fc84263f94414f15a6bf54ecb0d62ef370082aa737ad2"
+      },
+      "visualSchedule": {
+        "rows": [
+          [
+            "5+MB",
+            "JACKPOT!"
+          ],
+          [
+            "5",
+            "$1,000,000"
+          ],
+          [
+            "4+MB",
+            "$10,000"
+          ],
+          [
+            "4",
+            "$500"
+          ],
+          [
+            "3+MB",
+            "$200"
+          ],
+          [
+            "3",
+            "$10"
+          ],
+          [
+            "2+MB",
+            "$10"
+          ],
+          [
+            "1+MB",
+            "$7"
+          ],
+          [
+            "MB",
+            "$5"
+          ]
+        ],
+        "overallOdds": "1:23.07",
+        "note": "Every non-jackpot win is automatically multiplied"
+      },
+      "retrievedAt": "2026-10-27T10:06:22.301997+00:00",
+      "imageRetrievedAt": "2026-10-27T10:06:22.415893+00:00"
+    },
+    {
+      "game": "millionaire-for-life",
+      "sourceUrl": "https://wyolotto.com/games/millionaire-for-life",
+      "coverage": "Literal published schedules and rules, not dated payouts or winner counts.",
+      "rules": [
+        {
+          "title": "About the game",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Millionaire for Life about copy",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Draw schedule"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Daily at 9:15 p.m. MT."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "On draw days (every day)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ticket sales close at 8:15 p.m. MT. Ticket sales reopen shortly after each draw."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Choose five numbers from 1 to 58 and one Millionaire Ball™ number from 1 to 5."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Plays are $5 for each set of six (6) numbers."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "responsiveImage",
+              "data": {
+                "description": "Millionaire for Life prize and odds structure",
+                "mobileImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/1VVZC67fIhEajwtqZcA73s/2792bad861d31d62ad4c5441d2348225/Payout-Graphic.png"
+                },
+                "desktopImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/1VVZC67fIhEajwtqZcA73s/2792bad861d31d62ad4c5441d2348225/Payout-Graphic.png"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "How to play",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "How to Play - Millionaire for Life",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ways to pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Quick Pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "There are two options for having the ticket terminal generate random numbers for you: "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Just ask the clerk for a Millionaire for Life Quick Pick—it’s that easy! "
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Mark the QP box on your playslip (using pencil, blue, or black ink)."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Manual pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "To select your own numbers, fill out a playslip with pencil or blue or black ink. A single playslip offers up to five sets of six (6) numbers. If you make a mistake, mark the VOID box. DO NOT ERASE"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Multidraw"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Play the same numbers for 2, 3, 4, 5, 10, or 20 consecutive drawings! Either mark the Multidraw box on your playslip or tell the clerk how many draws you want. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Buying your tickets"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/find-a-retailer",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Find a WyoLotto Retailer>"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Every Millionaire for Life ticket is $5 for a set of six (6) numbers."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your receipt. It displays: "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The numbers for each play "
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The date of the drawing "
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The dollar amount you paid"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "Please confirm the accuracy of your number picks. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Canceling a ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Millionaire for Life tickets cannot be canceled. It is important you check the accuracy of your playslip with the vendor before finalizing your purchase."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Sign your ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your property. Protect it by signing your name on the back. If your ticket is lost or stolen, the only way to prove ownership is through your name, address, and signature."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Checking your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "To see if you’ve won:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Take your ticket to a WyoLotto retailer*"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": ""
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/connect",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Download the WyoLotto app"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " and use the ticket scanner"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Visit the "
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/wyo-wins/check-your-numbers/",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Check Your Numbers"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " page"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Check your local newspaper or local TV broadcast to see if winning numbers are posted"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Call 855-995-6886"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "If you win"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "You must redeem your winning tickets within 180 days from the draw date. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Visit "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/claim-your-prize",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Claim Your Prize"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " for all info you need to get paid!"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "*The Lottery terminal at retailers is the only official source of verified winning ticket numbers. The Lottery is not responsible for inaccurate listings in newspapers, online, or any other sources."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Millionaire for Life disclaimer",
+                "document": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://assets.ctfassets.net/t4gszq77ol4q/5VOv618XNxc1F7D5qMg26a/da06cf0571e2327348f5c657d591a230/WyoLotto-Millionaire-for-Life-Final-Game-Rules.pdf",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Millionaire for Life Game Rules"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " | "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://www.powerball.com/millionaire-for-life",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Millionaire for Life Prizes & Odds"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": " The lottery is a form of entertainment. Please play responsibly. Millionaire for Life is governed by state law and the rules, regulations, and directives of the Wyoming Lottery Corporation. Ticket purchasers must be at least 18 years of age. The Wyoming Lottery Corporation shall not be responsible for lost or stolen Millionaire for Life tickets."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/t4gszq77ol4q/1VVZC67fIhEajwtqZcA73s/2792bad861d31d62ad4c5441d2348225/Payout-Graphic.png",
+        "sha256": "84423abbd9c0da3cd87c9ea25846d5a5cb170e170bbe7b11cc4dfb81c72c906e"
+      },
+      "visualSchedule": {
+        "rows": [
+          [
+            "5+special",
+            "$1,000,000 EVERY YEAR FOR LIFE"
+          ],
+          [
+            "5",
+            "$100,000 EVERY YEAR FOR LIFE"
+          ],
+          [
+            "4+special",
+            "$7,500"
+          ],
+          [
+            "4",
+            "$500"
+          ],
+          [
+            "3+special",
+            "$250"
+          ],
+          [
+            "3",
+            "$50"
+          ],
+          [
+            "2+special",
+            "$25"
+          ],
+          [
+            "2",
+            "$8"
+          ],
+          [
+            "1+special",
+            "$8"
+          ]
+        ],
+        "overallOdds": "1:8.5"
+      },
+      "retrievedAt": "2026-10-27T10:06:22.577330+00:00",
+      "imageRetrievedAt": "2026-10-27T10:06:22.689729+00:00"
+    },
+    {
+      "game": "2by2",
+      "sourceUrl": "https://wyolotto.com/games/2by2",
+      "coverage": "Literal published schedules and rules, not dated payouts or winner counts.",
+      "rules": [
+        {
+          "title": "About the game",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "2by2 about copy",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Draw schedule"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Daily at 8:30 p.m. MT."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "On draw days (every day)"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ticket sales close at 7:30 p.m. MT before each drawing. Ticket sales reopen shortly after the drawing."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Pick two red numbers from 1 to 26 and two white numbers from 1 to 26. 2by2 tickets cost $1 for a set of four (4) numbers."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Double your winnings"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Every time you purchase a multidraw in increments of seven (7, 14, 21, 28, 35, or 42), any prizes won on a Tuesday will be automatically doubled in value! (Does not apply to prizes won on a Free Play that is redeemed for a Tuesday drawing.)"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "responsiveImage",
+              "data": {
+                "description": "2by2 prize and odds structure",
+                "mobileImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/6sMQDV38Cy01jX51AcgTKI/17491c79bac9988079944d2195664afb/2by2_Payouts.png"
+                },
+                "desktopImage": {
+                  "imageUrl": "https://images.ctfassets.net/t4gszq77ol4q/6sMQDV38Cy01jX51AcgTKI/17491c79bac9988079944d2195664afb/2by2_Payouts.png"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "title": "How to play",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "How to Play - 2by2",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ways to pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Quick Pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "There are two options for having the ticket terminal generate random numbers for you: "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Just ask the clerk for a 2by2 Quick Pick—it’s that easy! "
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Mark the QP box on your playslip (using pencil, blue, or black ink)."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Manual pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "To select your own numbers, fill out a playslip with pencil or blue or black ink. A single playslip offers one set of four (4) numbers. If you make a mistake, mark the VOID box. DO NOT ERASE."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Multidraw"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Play the same numbers for 2, 3, 7, 14, 21, 28, 35, or 42 consecutive drawings! Either mark the Multidraw box on your playslip or tell the clerk how many draws you want. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Buying your tickets"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/find-a-retailer",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Find a WyoLotto Retailer>"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Every 2by2 ticket is $1 per set of four numbers."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your receipt. It displays:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The numbers you picked or the numbers you’re playing"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The date of the drawing"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The dollar amount you paid"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "Please confirm the accuracy of your number picks. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Canceling a ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "2by2 tickets cannot be canceled. It is important you check the accuracy of your playslip with the vendor before finalizing your purchase."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Sign your ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your property. Protect it by signing your name on the back. If your ticket is lost or stolen, the only way to prove ownership is through your name, address, and signature."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Checking your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "To see if you’ve won:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Take your ticket to a WyoLotto retailer*"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": ""
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/connect",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Download the WyoLotto app"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " and use the ticket scanner"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Visit the "
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/wyo-wins/check-your-numbers/",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Check Your Numbers"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " page"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Check your local newspaper or local TV broadcast to see if winning numbers are posted"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Call 855-995-6886"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "If you win"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "You must redeem your winning tickets within 180 days from the draw date. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Visit "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/claim-your-prize",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Claim Your Prize"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " for all info you need to get paid!"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": "*The Lottery terminal at retailers is the only official source of verified winning ticket numbers. The Lottery is not responsible for inaccurate listings in newspapers, online, or any other sources."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "2by2 disclaimer",
+                "document": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://assets.ctfassets.net/t4gszq77ol4q/2rZcyB88bEFiau0xGFW9O3/28c2d302fc6cc97a3af8096c60f005b5/WyoLotto-2by2-Game-Rules.pdf",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "2by2 Game Rules"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " | "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://www.powerball.com/games/2by2",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "2by2 Prizes and Odds"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": " The lottery is a form of entertainment. Please play responsibly. 2by2 is governed by state law and the rules, regulations and directives of the Wyoming Lottery Corporation. Ticket purchasers must be at least 18 years of age. The Wyoming Lottery Corporation shall not be responsible for lost or stolen 2by2 tickets."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "image": {
+        "url": "https://images.ctfassets.net/t4gszq77ol4q/6sMQDV38Cy01jX51AcgTKI/17491c79bac9988079944d2195664afb/2by2_Payouts.png",
+        "sha256": "415a295fd6d90d3ba3c697cb7afb14d7f01bb38ac4ccabb830d2158cc117ac1b"
+      },
+      "visualSchedule": {
+        "rows": [
+          [
+            "2 red + 2 white",
+            "$22,000*",
+            "$44,000*"
+          ],
+          [
+            "2 red + 1 white",
+            "$100",
+            "$200"
+          ],
+          [
+            "1 red + 2 white",
+            "$100",
+            "$200"
+          ],
+          [
+            "2 red",
+            "$3",
+            "$6"
+          ],
+          [
+            "2 white",
+            "$3",
+            "$6"
+          ],
+          [
+            "1 red + 1 white",
+            "$3",
+            "$6"
+          ],
+          [
+            "1 red",
+            "FREE PLAY",
+            "2 FREE PLAYS"
+          ],
+          [
+            "1 white",
+            "FREE PLAY",
+            "2 FREE PLAYS"
+          ]
+        ],
+        "overallOdds": "1:3.59",
+        "note": "asterisk not explained on image; verify linked rule prose"
+      },
+      "retrievedAt": "2026-10-27T10:06:22.920800+00:00",
+      "imageRetrievedAt": "2026-10-27T10:06:23.038500+00:00"
+    },
+    {
+      "game": "keno",
+      "sourceUrl": "https://wyolotto.com/games/keno",
+      "coverage": "Literal published schedules and rules, not dated payouts or winner counts.",
+      "rules": [
+        {
+          "title": "About the game",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Keno about — how to play steps",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "How to Play"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "1. There are 20 numbers drawn every 4 minutes. Choose how many you want to try to match. Odds vary. See payout table."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "2. Choose the numbers you think will be drawn. 1-spot game → pick 1 number. 2-spot game → pick 2 numbers. And so on. Quick Pick generates random numbers."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "3. Payout tables are based on a $1 wager. If you wager more than $1, prizes are multiplied by your wager amount."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "4. You don’t have to fill out a slip every four minutes. Play the same set of numbers for multiple draws in a row with consecutive plays."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Keno about — ticket cost note",
+                "document": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Also: Check your total ticket cost to make sure it doesn’t exceed the maximum ($125)."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Prize Chart & Odds"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "10-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "10-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 10-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "10",
+                    "$200,000"
+                  ],
+                  [
+                    "9",
+                    "$10,000"
+                  ],
+                  [
+                    "8",
+                    "$500"
+                  ],
+                  [
+                    "7",
+                    "$50"
+                  ],
+                  [
+                    "6",
+                    "$10"
+                  ],
+                  [
+                    "5",
+                    "$2"
+                  ],
+                  [
+                    "0",
+                    "$5"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 9.05"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "9-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "9-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 9-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "9",
+                    "$75,000"
+                  ],
+                  [
+                    "8",
+                    "$3,500"
+                  ],
+                  [
+                    "7",
+                    "$200"
+                  ],
+                  [
+                    "6",
+                    "$20"
+                  ],
+                  [
+                    "5",
+                    "$5"
+                  ],
+                  [
+                    "4",
+                    "$1"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 6.53"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "8-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "8-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 8-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "8",
+                    "$15,000"
+                  ],
+                  [
+                    "7",
+                    "$800"
+                  ],
+                  [
+                    "6",
+                    "$60"
+                  ],
+                  [
+                    "5",
+                    "$10"
+                  ],
+                  [
+                    "4",
+                    "$2"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 9.77"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "7-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "7-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 7-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "7",
+                    "$8,000"
+                  ],
+                  [
+                    "6",
+                    "$100"
+                  ],
+                  [
+                    "5",
+                    "$16"
+                  ],
+                  [
+                    "4",
+                    "$2"
+                  ],
+                  [
+                    "3",
+                    "$1"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 4.23"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "6-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "6-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 6-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "6",
+                    "$2,000"
+                  ],
+                  [
+                    "5",
+                    "$50"
+                  ],
+                  [
+                    "4",
+                    "$5"
+                  ],
+                  [
+                    "3",
+                    "$1"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 6.19"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "5-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "5-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 5-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "5",
+                    "$500"
+                  ],
+                  [
+                    "4",
+                    "$16"
+                  ],
+                  [
+                    "3",
+                    "$2"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 10.34"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "4-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "4-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 4-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "4",
+                    "$80"
+                  ],
+                  [
+                    "3",
+                    "$5"
+                  ],
+                  [
+                    "2",
+                    "$1"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 3.86"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "3-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "3-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 3-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "3",
+                    "$24"
+                  ],
+                  [
+                    "2",
+                    "$2.50"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 6.55"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "2-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "2-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 2-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "2",
+                    "$5"
+                  ],
+                  [
+                    "1",
+                    "$1"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 2.27"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "1-Spot",
+                "document": [
+                  {
+                    "type": "heading-2",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "1-Spot"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "contentType": "csvTable",
+              "data": {
+                "name": "KENO 1-Spot Prize Chart",
+                "headers": [
+                  "Match",
+                  "Prize"
+                ],
+                "rows": [
+                  [
+                    "1",
+                    "$2.50"
+                  ]
+                ],
+                "footer": [
+                  "Overall odds are 1 in 4"
+                ]
+              }
+            },
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Keno about — prize chart footnotes",
+                "document": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Disclaimer: The prize values shown here are based on a $1 wager. Multiply larger wagers by the payout amount for total potential winnings. The grand prize limit for all wagers is $200,000."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Also: Approximate overall odds to win a prize range from 1 in 2.27 to 10.34. Approximate odds to win the top prize on the 10-spot game are 1 in 8.91 million."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "How to play",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "How to Play - Keno",
+                "document": [
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Ways to pick your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Quick Pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "To play with randomly generated numbers, pick how many spots you want to play, and then fill in the Quick Pick bubble on your playslip."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Manual pick"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "To play your own numbers, select how many spots you want to play (1-10). Then, pick your numbers (1-80). You have to pick as many numbers as spots. "
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Mark your playslip with a blue or black ink pen."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Buying your tickets"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/find-a-retailer",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Find a WyoLotto Retailer>"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Grab tickets on the go from any WyoLotto retailer or hang and play KENO at any number of bars and restaurants across the state."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your receipt. It displays:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The numbers for each play"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The date and number of the drawing"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "The dollar amount you paid."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Please confirm the accuracy of your number picks."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Total ticket cost cannot exceed $125."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "To determine total ticket cost, multiply your wager ($1, $2, $3, $4, $5, $10, $20) by the number of consecutive draws you want to play (up to 20)."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Limits on consecutive draws"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "There is no limit on consecutive draws (up to 20) for wagers up to $5."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "$10 wagers are limited to 10 consecutive draws."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "$20 wagers are limited to 5 consecutive draws."
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Canceling a ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "KENO tickets cannot be canceled. It is important you check the accuracy of your playslip with the retailer before finalizing your purchase."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "Sign your ticket"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Your ticket is your property. Protect it by signing your name on the back. If your ticket is lost or stolen, the only way to prove ownership is through your name, address, and signature."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-1",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Checking your numbers"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "To see if you’ve won:"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "heading-4",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [
+                          "bold"
+                        ],
+                        "data": {
+                          "text": "If you win"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "unordered-list",
+                    "content": [
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Take your ticket to a WyoLotto retailer*"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": ""
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/connect",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Download the WyoLotto app"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " and use the ticket scanner feature"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Watch drawings in person at your local hangout"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "list-item",
+                        "content": [
+                          {
+                            "type": "paragraph",
+                            "content": [
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": "Visit the "
+                                }
+                              },
+                              {
+                                "type": "link",
+                                "data": {
+                                  "route": "/wyo-wins/check-your-numbers",
+                                  "text": {
+                                    "type": "text",
+                                    "marks": [],
+                                    "data": {
+                                      "text": "Check Your Numbers"
+                                    }
+                                  },
+                                  "isAbsolute": false
+                                }
+                              },
+                              {
+                                "type": "text",
+                                "marks": [],
+                                "data": {
+                                  "text": " page"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "You must redeem your winning tickets within 180 days from the draw date."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "Visit "
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "/players/claim-your-prize",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "Claim Your Prize"
+                            }
+                          },
+                          "isAbsolute": false
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": " for all information on obtaining your winnings."
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": "*The Lottery terminal at retailers is the only official source of verified winning ticket numbers. The Lottery is not responsible for inaccurate listings in newspapers, online, or any other sources."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Disclaimer",
+          "content": [
+            {
+              "contentType": "text",
+              "data": {
+                "name": "Keno disclaimer",
+                "document": [
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "type": "text",
+                        "marks": [],
+                        "data": {
+                          "text": ""
+                        }
+                      },
+                      {
+                        "type": "link",
+                        "data": {
+                          "route": "https://assets.ctfassets.net/t4gszq77ol4q/75CiWwlqb1JLHLVfZMsg0D/dd419590eb56fde226f14df4b76b2835/WyoLotto-KENO-Game-Rules.pdf",
+                          "text": {
+                            "type": "text",
+                            "marks": [],
+                            "data": {
+                              "text": "KENO Game Rules"
+                            }
+                          },
+                          "isAbsolute": true
+                        }
+                      },
+                      {
+                        "type": "text",
+                        "marks": [
+                          "italic"
+                        ],
+                        "data": {
+                          "text": " The lottery is a form of entertainment. Please play responsibly. WyoLotto KENO is governed by state law and the rules, regulations, and directives of the Wyoming Lottery Corporation. Ticket purchasers must be at least 18 years of age. The Wyoming Lottery Corporation shall not be responsible for lost or stolen KENO tickets."
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "retrievedAt": "2026-10-27T10:06:23.250012+00:00",
+      "imageRetrievedAt": null
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://wyolotto.com/api/v1/game/all?platform=web&cmsPreview=false",
+      "retrievedAt": "2026-10-27T10:06:19.492137+00:00",
+      "bytes": 13713,
+      "sha256": "8abccec917271f6dfeae2b2f746a471ccd15953737d8830b2c43272d42c0c3d5"
+    },
+    {
+      "url": "https://prod.game-data.gambytservices.com/v1/draw-games",
+      "retrievedAt": "2026-10-27T10:06:19.859389+00:00",
+      "bytes": 2975,
+      "sha256": "599981e703954889c17017c6525c57e1c321034fe70ec736cf9719373e166816"
+    },
+    {
+      "url": "https://prod.game-data.gambytservices.com/v1/rapid-games",
+      "retrievedAt": "2026-10-27T10:06:19.978013+00:00",
+      "bytes": 731,
+      "sha256": "7d58b4a96d61631a8c6fa9c42f3e7f440d2b8967d592e512f3c55e2c0e69e69b"
+    },
+    {
+      "url": "https://prod.game-data.gambytservices.com/v1/draw-games/bafaf5b5-8a50-4401-9684-0dbe85b2afb5/list-drawings?startDate=2026-10-13T10%3A06%3A19%2B00%3A00&endDate=2026-10-27T10%3A06%3A19%2B00%3A00",
+      "retrievedAt": "2026-10-27T10:06:20.202489+00:00",
+      "bytes": 3582,
+      "sha256": "8ec19536ac2924c63179bb3d423c90cd9454e819b884bfcf183e87a80aaf1abb"
+    },
+    {
+      "url": "https://prod.game-data.gambytservices.com/v1/draw-games/acc3110d-907c-413c-8bae-62decf6d4b36/list-drawings?startDate=2026-10-13T10%3A06%3A19%2B00%3A00&endDate=2026-10-27T10%3A06%3A19%2B00%3A00",
+      "retrievedAt": "2026-10-27T10:06:20.418336+00:00",
+      "bytes": 5580,
+      "sha256": "31dc066c0e73cade4c7b8b4d6a727befeb18b291ebd71a84648f41dddbddd664"
+    },
+    {
+      "url": "https://prod.game-data.gambytservices.com/v1/draw-games/710b085b-affd-4145-82cd-90d3e499f869/list-drawings?startDate=2026-10-13T10%3A06%3A19%2B00%3A00&endDate=2026-10-27T10%3A06%3A19%2B00%3A00",
+      "retrievedAt": "2026-10-27T10:06:20.577803+00:00",
+      "bytes": 3724,
+      "sha256": "b505e785c4d130f1d3aa0e26fce44045da7171f70078c87ebf869b34977f85bb"
+    },
+    {
+      "url": "https://prod.game-data.gambytservices.com/v1/draw-games/321502b0-5b10-472e-94ff-a199b9eb1f2e/list-drawings?startDate=2026-10-13T10%3A06%3A19%2B00%3A00&endDate=2026-10-27T10%3A06%3A19%2B00%3A00",
+      "retrievedAt": "2026-10-27T10:06:20.731626+00:00",
+      "bytes": 7162,
+      "sha256": "81da3f23d7d290e7e01f8e6198c850e0e08e8dcc2d23c371fc4cd03cd3604ce1"
+    },
+    {
+      "url": "https://prod.game-data.gambytservices.com/v1/draw-games/7f2aa0ca-b70e-4373-ba42-0c382300452f/list-drawings?startDate=2026-10-13T10%3A06%3A19%2B00%3A00&endDate=2026-10-27T10%3A06%3A19%2B00%3A00",
+      "retrievedAt": "2026-10-27T10:06:20.876473+00:00",
+      "bytes": 7097,
+      "sha256": "5eb8075f017a1eb9536aaa16952021c04c7ae9d6c1758535bdcfe5a5902cc50c"
+    },
+    {
+      "url": "https://prod.game-data.gambytservices.com/v1/rapid-games/e4c6419b-8e17-439d-a0c8-6ba2630e8149/draw-numbers-by-date/2026-10-26T10%3A06%3A19%2B00%3A00/2026-10-27T10%3A06%3A19%2B00%3A00",
+      "retrievedAt": "2026-10-27T10:06:20.993350+00:00",
+      "bytes": 95,
+      "sha256": "46d8427d6e3ddecb84f7cecebd28151c14b484217c89c138f132344b3f4a8d2b"
+    },
+    {
+      "url": "https://prod.game-data.gambytservices.com/v1/rapid-games/e4c6419b-8e17-439d-a0c8-6ba2630e8149/drawings/472439/472443",
+      "retrievedAt": "2026-10-27T10:06:21.110019+00:00",
+      "bytes": 1959,
+      "sha256": "90021136759e427cab5b132e39f7176eb7c646a0ddee75b8d39e764f0e31da1a"
+    },
+    {
+      "url": "https://wyolotto.com/api/v1/game/rules?identifier=cowboy-draw&platform=web&cmsPreview=false",
+      "retrievedAt": "2026-10-27T10:06:21.472915+00:00",
+      "bytes": 8055,
+      "sha256": "9dbc8412f2c7ff6749d36d211db115f2a0bbc1f407cae19a903cbf793f7f9ef0"
+    },
+    {
+      "url": "https://images.ctfassets.net/t4gszq77ol4q/3rLwLxyYdjr0eoO9c7mAc9/f0d5fcaa8539305460ab4833647ba3e9/cowboy-draw-payouts.jpg",
+      "retrievedAt": "2026-10-27T10:06:21.666757+00:00",
+      "bytes": 35980,
+      "sha256": "03126121750bb4f8d810c3c0581a7176aff2cc9e78831b7492b2921c6b8d8976"
+    },
+    {
+      "url": "https://wyolotto.com/api/v1/game/rules?identifier=powerball&platform=web&cmsPreview=false",
+      "retrievedAt": "2026-10-27T10:06:21.910623+00:00",
+      "bytes": 8986,
+      "sha256": "42003e97c061b2f18863a6b3297710dedfcbffe019176aecdc886c885d5e3246"
+    },
+    {
+      "url": "https://images.ctfassets.net/t4gszq77ol4q/1VETIwtDPBw4SpTW2hjIdm/f2f38595ffbdc9160da25a19c6109664/Powerball_payouts.png",
+      "retrievedAt": "2026-10-27T10:06:22.031875+00:00",
+      "bytes": 109417,
+      "sha256": "525c6cf99fc069c794d27a0610f1f779bd244716c48bc4a3eda123c8a3c2991b"
+    },
+    {
+      "url": "https://wyolotto.com/api/v1/game/rules?identifier=mega-millions&platform=web&cmsPreview=false",
+      "retrievedAt": "2026-10-27T10:06:22.301997+00:00",
+      "bytes": 8795,
+      "sha256": "4b39cf5d22dc9f9d2df53a217f0ab34f4d1dd4ab47baf1ee65762375bd110379"
+    },
+    {
+      "url": "https://images.ctfassets.net/t4gszq77ol4q/6TFUDs5bC8oCP5ENTazBQm/edb8c64f0bf0b1112124a21902c623a8/MM_Payouts__2_.png",
+      "retrievedAt": "2026-10-27T10:06:22.415893+00:00",
+      "bytes": 84871,
+      "sha256": "50483c7afccae67bf75fc84263f94414f15a6bf54ecb0d62ef370082aa737ad2"
+    },
+    {
+      "url": "https://wyolotto.com/api/v1/game/rules?identifier=millionaire-for-life&platform=web&cmsPreview=false",
+      "retrievedAt": "2026-10-27T10:06:22.577330+00:00",
+      "bytes": 8283,
+      "sha256": "19a123b5cedf5f191905a783d53207bc0758d791a8ed554ebfcbef55fdff22c6"
+    },
+    {
+      "url": "https://images.ctfassets.net/t4gszq77ol4q/1VVZC67fIhEajwtqZcA73s/2792bad861d31d62ad4c5441d2348225/Payout-Graphic.png",
+      "retrievedAt": "2026-10-27T10:06:22.689729+00:00",
+      "bytes": 50923,
+      "sha256": "84423abbd9c0da3cd87c9ea25846d5a5cb170e170bbe7b11cc4dfb81c72c906e"
+    },
+    {
+      "url": "https://wyolotto.com/api/v1/game/rules?identifier=2by2&platform=web&cmsPreview=false",
+      "retrievedAt": "2026-10-27T10:06:22.920800+00:00",
+      "bytes": 8453,
+      "sha256": "ebdb478f2904fc4dc101d518b62c2dae1abac7944ef9ffb31a3b8f9ccb2e4947"
+    },
+    {
+      "url": "https://images.ctfassets.net/t4gszq77ol4q/6sMQDV38Cy01jX51AcgTKI/17491c79bac9988079944d2195664afb/2by2_Payouts.png",
+      "retrievedAt": "2026-10-27T10:06:23.038500+00:00",
+      "bytes": 49936,
+      "sha256": "415a295fd6d90d3ba3c697cb7afb14d7f01bb38ac4ccabb830d2158cc117ac1b"
+    },
+    {
+      "url": "https://wyolotto.com/api/v1/game/rules?identifier=keno&platform=web&cmsPreview=false",
+      "retrievedAt": "2026-10-27T10:06:23.250012+00:00",
+      "bytes": 13135,
+      "sha256": "faa4f7260f931ede8cdd10f2fdae5367d427c957bb0ecee1d68330b8e5b916e7"
+    }
+  ],
+  "coverageNote": "Latest two completed dates per draw family and five bounded Keno IDs. All winner reports unavailable; no inferred zero counts or complete history.",
+  "unavailable": [
+    "Exact Wyoming winner counts and dated payout reports",
+    "Earlier formats, retired games and complete history",
+    "Retailer joins, coordinates and complete claims",
+    "Wyoming Double Play and Scratch products"
+  ]
+}
+''';

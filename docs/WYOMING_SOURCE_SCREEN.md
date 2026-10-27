@@ -335,3 +335,23 @@ Next strict Wyoming Dart validator/loader, bundled/cache continuity, visible
 all-family/Keno/rule flows, native evidence and ordinary restoration. No Wyoming
 native build or acceptance yet. Eighteen accepted,27 unfinished; Wyoming sole
 active; October31 at19:00ET unchanged, no extension. Mobile readiness is separate.
+
+## October 27 — strict Dart loader and coupled validation
+
+Added the Wyoming bundle, injectable production loader and strict validator.
+Validation binds the21 source identities and query parameters, captures, rule
+contracts and image hashes; checks all six result groups, number ranges,2by2
+color labels, Power Play, Mountain dates/cadences, Keno ID bounds/order and
+unavailable report status. Unknown fields, corrections, interior losses and
+window/capture regressions fail closed against both the reviewed baseline and
+retained cache. Keno can advance without inventing missing history. The bundle
+uses the already verified10:06 collection, not a new source refresh.
+
+Six Flutter tests pass, covering baseline, schema/number/date/rule/provenance
+mutations, valid Keno advancement and retained correction rejection, controlled
+SocketException cache fallback, corrupt-cache bundle fallback, invalid remote
+rejection and persistence-write failure. Changed loader/validator/test analysis
+is clean. These are automated tests, not native cache evidence. No native build,
+visible Wyoming UI or acceptance yet. Next broaden dynamic draw advancement
+coverage and integrate visible draw/Keno/rule flows, then native checks and
+ordinary restoration. October31 at19:00ET remains unchanged, no extension.
