@@ -91,3 +91,29 @@ sources, then fix the full matrix before strict parsers/coupled publication/app
 work. No new public feed, build or accepted Wyoming coverage is claimed.
 Private administrative identifiers were removed from this source screen; the
 original audit copy remains private.
+
+## October 26, 20:05 ET — official dynamic contracts located
+
+Captured the five remaining game HTML shells, the site's public JavaScript bundle,
+its all-games response and all six rule responses privately. Hashes/timestamps
+are in work/wyoming_scope/game-manifest.json and api-manifest.json. The bundle
+identifies same-origin `/api/v1/game/all` and `/api/v1/game/rules` (identifier,
+platform=web, cmsPreview=false); all seven requests returned success envelopes.
+These are research captures, not validated or published app data.
+
+The all-games response contains six current entries: five draw games and rapid
+Keno, none marked retired. This does not prove historic scope completeness.
+Keno's rule response has ten structured spot tables with38 data rows excluding
+headers; the other five game responses link prize/odds images. Those images still
+need visual review before literal schedule transcription/validation. Rule prose
+and monetary/odds semantics are not yet contract-gated. Never substitute an
+estimated jackpot for a dated prize or treat catalog startDate as game inception.
+
+Result and Keno history code uses a separate game-data service. Keno queries
+explicit draw-number ranges; standard draw data has primary/secondary result
+structures. Exact payload identities, timezones, bonus/color grouping, statuses,
+count units/geography and current/historical add-ons remain unverified. Public
+client configuration stays in private source captures, not tracked feed/docs.
+Next capture bounded result payloads through the official implementation, inspect
+five schedule images and history/retired notices, then fix the full scope matrix.
+No new feed/build/acceptance, no deadline change; Wyoming remains sole active.
