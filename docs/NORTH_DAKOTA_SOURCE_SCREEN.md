@@ -134,3 +134,26 @@ Next coupled atomic collection, continuity and failure-position retention,
 then publication/Dart/UI/native. No new public feed/build/acceptance. ND remains
 sole active; November1 10:29AM EST unchanged, no extension. Android ordinary app
 remains running and iOS remains shut down.
+
+## October 27 — coupled result/rule transaction and retention
+
+Added tooling/north_dakota_coverage.py: ten required source requests couple the
+five current result tables and five reviewed rule sections into one atomic
+candidate. Each capture retains its URL, actual retrieval timestamp, byte length
+and SHA256; results remain date-only with all exact-date reports unavailable.
+Latest-two windows advance without silently accepting corrections, retained-date
+loss, missing families, capture/date regressions or changed rule/coverage contracts.
+
+Twenty-five focused ND tests pass. All ten request-failure positions preserve
+prior bytes and dates; malformed rules produce no initial file; a parsed result
+correction and disk-replace failure preserve the original snapshot. Temporary
+files are cleaned after replace failure. These tests use retained public fixtures
+and injected clocks, not a new live source collection or live verification.
+
+Next add the reviewed current-catalog/status gate and official transport, collect
+a fresh complete candidate privately, then integrate publication and Dart/UI/native.
+No public ND feed, app build or acceptance yet. Release November1 at10:29AM EST
+unchanged, no extension; ND remains sole active. Ordinary Android process20769
+confirmed running; iOS was not started. No agency mail checked in this development
+session. Florida's separate October27 administrative closure is recorded in its
+source screen and does not authorize paid processing or reopen accepted states.
