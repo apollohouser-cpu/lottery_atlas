@@ -1,6 +1,6 @@
 {
   "source": "Virginia Lottery official statewide retailer finder",
-  "retrievedAt": "2026-10-24T11:12:32.506Z",
+  "retrievedAt": "2026-10-27T12:22:07.569Z",
   "coverage": "Queried all 135 county/city options in the official Virginia Lottery finder. It returned 5397 unique retailers; 5332 received exact Census or verified ArcGIS address coordinates. 65 unresolved addresses were excluded from the map rather than estimated.",
   "directories": [
     {
@@ -9424,17 +9424,6 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
-          "id": "va-2afab6254bd719eb",
-          "name": "COUNTRY MART",
-          "address": "3911 Swords Creek Rd",
-          "city": "Swords Creek",
-          "postalCode": "24649",
-          "county": "Russell",
-          "latitude": 37.041512477953,
-          "longitude": -81.919993254898,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
           "id": "va-2b40606bf3d71d64",
           "name": "M & Q MARKET",
           "address": "4800 River Rd",
@@ -12886,17 +12875,6 @@
           "county": "Fauquier",
           "latitude": 38.555343755462,
           "longitude": -77.671262081269,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "va-3a7a01d97ef9df95",
-          "name": "7-ELEVEN 2581-36085",
-          "address": "1245 Seminole Trail",
-          "city": "Charlottesville",
-          "postalCode": "22901",
-          "county": "Albemarle",
-          "latitude": 38.070495367913,
-          "longitude": -78.483788275178,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -22701,6 +22679,17 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
+          "id": "va-65025eb4c2b70a42",
+          "name": "7-ELEVEN 2514-38064",
+          "address": "7337 Pocahontas Trl",
+          "city": "Williamsburg",
+          "postalCode": "23185",
+          "county": "James City",
+          "latitude": 37.253930084973,
+          "longitude": -76.66560082178,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
           "id": "va-6518fc4cafbc05e7",
           "name": "WAL-MART #2089 SUPERCENTER",
           "address": "13245 Lee Hwy.",
@@ -26100,6 +26089,17 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
+          "id": "va-7329bdc553befd6a",
+          "name": "7-ELEVEN 2514-33718",
+          "address": "4701 Taylor Rd.",
+          "city": "Chesapeake",
+          "postalCode": "23321",
+          "county": "Chesapeake",
+          "latitude": 36.848023010813,
+          "longitude": -76.424471007858,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
           "id": "va-7332bc815a1815ba",
           "name": "7-ELEVEN 2554-10707 F",
           "address": "8319 Old Keene Mill",
@@ -28608,17 +28608,6 @@
           "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
-          "id": "va-7e4e2dc9c727f57c",
-          "name": "7-ELEVEN 1156-38064C",
-          "address": "7337 Pocahontas Trl",
-          "city": "Williamsburg",
-          "postalCode": "23185",
-          "county": "James City",
-          "latitude": 37.253930272353,
-          "longitude": -76.665602216867,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
           "id": "va-7e50007f34d6dd61",
           "name": "CIRCLE T FUEL",
           "address": "4930 Chamberlayne Ave",
@@ -31059,17 +31048,6 @@
           "latitude": 38.544781786691,
           "longitude": -77.331692521328,
           "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "va-898a232ca07c71c6",
-          "name": "7-ELEVEN 1475-33718 C",
-          "address": "4701 Taylor Rd.",
-          "city": "Chesapeake",
-          "postalCode": "23321",
-          "county": "Chesapeake",
-          "latitude": 36.848023010813,
-          "longitude": -76.424471007858,
-          "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
           "id": "va-89ad0f6463bc4d76",
@@ -36110,6 +36088,17 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
+          "id": "va-9e3f7f147d93d559",
+          "name": "EZN EXPRESS MART",
+          "address": "5700 Hopkins Rd Ste A",
+          "city": "North Chesterfield",
+          "postalCode": "23234",
+          "county": "Chesterfield",
+          "latitude": 37.442168811076,
+          "longitude": -77.473107863904,
+          "coordinateSource": "ArcGIS World Geocoder verified point address"
+        },
+        {
           "id": "va-9e48cb4246693900",
           "name": "BARON CAMERON SUNOCO",
           "address": "10701 Leesburg Pike",
@@ -38860,6 +38849,17 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
+          "id": "va-aaf1ff9cbd8dc794",
+          "name": "SN3911 LLC",
+          "address": "3911 Swords Creek Rd",
+          "city": "Swords Creek",
+          "postalCode": "24649",
+          "county": "Russell",
+          "latitude": 37.041510012463,
+          "longitude": -81.919992630479,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
           "id": "va-ab1c6f9e6bbe2650",
           "name": "FOOD LION #1179",
           "address": "4092 Lankford Highway",
@@ -41236,6 +41236,17 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
+          "id": "va-b5afcb7b8c2775a3",
+          "name": "7-ELEVEN 2547-36085C",
+          "address": "1245 Seminole Trail",
+          "city": "Charlottesville",
+          "postalCode": "22901",
+          "county": "Albemarle",
+          "latitude": 38.070497121337,
+          "longitude": -78.483786677462,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
           "id": "va-b5c5bb3e8db452a3",
           "name": "7-ELEVEN 2554-40054",
           "address": "21880 Ryan Center Way",
@@ -41475,17 +41486,6 @@
           "county": "Prince William",
           "latitude": 38.568935357232,
           "longitude": -77.319451626576,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "va-b6c92c9186907f4c",
-          "name": "CITY MARKET 1",
-          "address": "2517 Hull St",
-          "city": "Richmond",
-          "postalCode": "23224",
-          "county": "Richmond (City)",
-          "latitude": 37.513865997582,
-          "longitude": -77.455354379362,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
