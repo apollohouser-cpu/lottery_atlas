@@ -207,3 +207,11 @@ transaction tests. The manifest ownership test now expects31 refresh jobs.
 Deployment and independent live-byte verification remain pending until confirmed.
 Next strict Dart loader/bundle/cache and visible/native flows. No new app build;
 ND sole active and November1 10:29AM EST release deadline unchanged.
+
+Initial coupled deployment CLOSED: publisher40587030753 succeeded on d915ad7.
+Independent live download at2026-10-27T21:29:27.448155+00:00 matched generated and public
+repository bytes: 125386 bytes, SHA256
+a62291b342ca642a1db0137e152339eae8e7217af3352b4e240b57ed0416cd9d.
+Actual source collection remains20:21:36.071144UTC, not the live-check time.
+Next strict Dart loader/bundle/cache and visible/native flows; no ND app build
+or acceptance. Deadline unchanged. Ordinary Android remains running.
