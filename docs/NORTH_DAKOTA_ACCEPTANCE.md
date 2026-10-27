@@ -90,3 +90,31 @@ then coupled atomic collection/publication, Dart/UI/native and retention. No new
 public feed/build/acceptance. Nineteen accepted,26 unfinished; North Dakota sole
 active; November1 10:29AM EST release deadline unchanged, no extension. Android
 ordinary app stays running; accepted-state work remains closed.
+
+## October 27 — strict date-only result parser
+
+Implemented tooling/import_north_dakota_draws.py against the retained official
+HTML tables. All70 current-family source rows validate (PB/MM/MFL/LA ten each,
+2by2 thirty); the private latest-two candidate contains10 results. Original
+source hashes were verified before parsing. No new collection or verification
+time is assigned to those retained captures.
+
+The parser binds the page heading, exact table/header shape, current family,
+strict number cardinality/ranges, descending unique dates, weekday cadence,
+UTC capture and Central capture-date boundary. September1,2026 is the reviewed
+window floor, not a claimed game inception or format-change date. Older formats
+remain unavailable. Date-only results stay date-only: no UTC drawing instant
+or synthetic drawing ID is created.2by2 red and white groups remain separate.
+PB/LA multipliers validate independently; MM legacy Megaplier must be literal
+N/A, never a drawing-wide multiplier. Advertised jackpot cells are structurally
+checked but excluded from actual-result payout data. All reports stay unavailable.
+
+Ten focused tests pass, including retained source rows, wrong identities/headers,
+merged/malformed markup, duplicate/reordered/future/older dates, wrong cadence,
+number/multiplier failures and retired-game rejection. Public test fixtures
+contain only extracted official table values and source provenance.
+
+Next literal rule/table contracts with rowspan/colspan preservation, then
+coupled atomic collection/publication and app/native integration. No new public
+feed/build/acceptance. November1 10:29AM EST release deadline unchanged, no
+extension; North Dakota sole active. Android ordinary app remains running.
