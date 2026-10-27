@@ -177,3 +177,22 @@ historical, no Scratch and no Wyoming Double Play. Reports remain unavailable
 pending geography/units/tier validation despite private summary payloads.
 Next strict parsers and atomic coupled collection; no public feed/build or
 acceptance. Release October31 19:00ET unchanged, no extension.
+
+## October27 — initial draw parser implemented
+
+The five current draw families now have a bounded parser in
+`tooling/import_wyoming_draws.py`. It validates query bounds, UTC instants,
+source game identity, result timestamp agreement, completed status, positive
+unique draw IDs, number group cardinality/range/uniqueness and Power Play
+multiplier. It rejects unknown secondary/session structures and drawing-wide
+Mega Millions multipliers; empty PENDING rows are excluded. Local dates use
+America/Denver. Public candidate records omit customer/internal result IDs.
+
+The official UI code renders2by2 bonusNumbers in red before white primary
+numbers; the parser preserves the two groups and permits equal numbers across
+colors. Six focused tests pass with mutation subcases. All45 retained completed
+rows pass without a source refresh; latest-two selection would yield ten draw
+records. This private candidate is not a new public feed or accepted coverage.
+Keno parsing, schedule/cadence/version gates, literal rule contracts, collection
+continuity and app/native work remain. Exact reports remain unavailable. Release
+October31 19:00ET unchanged, no extension.
