@@ -1,5 +1,20 @@
 [
   {
+    "state": "Wyoming",
+    "outputs": [
+      "data/wyoming_coverage.generated.json"
+    ],
+    "commands": [
+      [
+        "python3",
+        "-m",
+        "tooling.collect_wyoming_coverage",
+        "--output",
+        "data/wyoming_coverage.generated.json"
+      ]
+    ]
+  },
+  {
     "state": "Iowa",
     "outputs": [
       "data/iowa_coverage.generated.json",

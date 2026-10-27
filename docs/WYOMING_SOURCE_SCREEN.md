@@ -298,3 +298,22 @@ No public Wyoming feed/deployment, app build or acceptance yet. Next integrate
 the transport configuration into publication, deploy and independently verify,
 then strict Dart loader/bundle/cache, UI/native and ordinary restoration. Release
 October31 at19:00ET remains unchanged; Android ordinary app remains running.
+
+## October 27 — coupled baseline publication prepared
+
+The official public-site bootstrap now resolves transport configuration in memory;
+no API key is embedded in source, feeds or logs. Scheduled Wyoming refresh is
+isolated through the existing state refresh runner, preserving prior bytes/date
+on errors. The public feed staging and commit paths include Wyoming.
+
+A fresh21-request collection completed **10:06:23.250012UTC October27** and passed
+continuity against the09:08 baseline. It contains15 results (10 draw, five Keno),
+all15 reports unavailable, six literal rule contracts and five reviewed images.
+Generated and staged public bytes are205312 bytes, SHA256
+`0d82ae6653dc05bd094e8172d6aea6a97431342a1db87a717e782b6fc4a6b564`.
+Actual raw responses and source timestamps remain private. Public configuration
+bootstrap is an additional request outside the21 coupled data/rule requests.
+Thirty focused Wyoming tests pass. Deployment and independent live verification
+are pending at this checkpoint; no app build or Wyoming acceptance. Next close
+publication verification, then strict Dart loader/bundle/cache and visible/native
+flows. Release October31 at19:00ET unchanged, no extension.
