@@ -954,3 +954,11 @@ and cold-launched after the private target; Android remains running at the user'
 request, iOS shut down. Representative enlarged/landscape flows do not close
 broader platform persistence, Android visual, signing/accounts, privacy or
 distribution gates. October20–27 beta remains provisional, not a readiness claim.
+
+## October 27 — Wyoming supported acceptance
+
+Nineteen states accepted;26 remain. WYOMING_ACCEPTANCE.md bounds source, native,
+automated, live and controlled cache-retention evidence. Ordinary Android main
+restored and running; iOS shut down. This closes Wyoming supported coverage,
+not broader platform persistence/privacy, signing/accounts or distribution.
+The provisional October20–27 beta window does not establish beta readiness.

@@ -3,7 +3,7 @@
 Full public release requires usable accepted coverage in every lottery state;
 limited-state iOS/Android beta can proceed earlier. NASPL currently identifies
 [45 U.S. lottery states](https://www.naspl.org/faq). The repository has a source
-screen for each of those 45. Eighteen are accepted, leaving27 (New Mexico accepted October26). This state-based
+screen for each of those 45. Nineteen are accepted, leaving26 (Wyoming accepted October27). This state-based
 ledger does not silently count DC or territories as states or as accepted coverage.
 
 Missouri closed on release 337848b at October 7, 17:22 ET. The forecast below
@@ -12,7 +12,7 @@ North Carolina closed October 12 at 23:00 ET on release 7de7bb8.
 At the October18 forecast checkpoint the remaining split was16 scheduled catalog states and16 states without
 scheduled state jobs. The October 18 reforecast below uses the completed five-state checkpoint.
 
-Current national supported-engineering planning range: **December 19, 2026–January 15, 2027**, assuming 2–3 elapsed days for each of27 remaining states. This is not a public-launch commitment; mobile and distribution gates remain separate.
+Current national supported-engineering planning range: **December 19, 2026–January 15, 2027**, based on the October26 checkpoint assumption of2–3 elapsed days for each of27 then-remaining states. Wyoming acceptance updates the ledger without a routine reforecast; next checkpoint is23 accepted or a material blocker. This is not a public-launch commitment; mobile and distribution gates remain separate.
 
 ## Evidence and forecast limits
 

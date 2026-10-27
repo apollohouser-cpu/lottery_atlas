@@ -1,6 +1,11 @@
 # Wyoming supported coverage acceptance
 
-Status: **ACTIVE — not accepted**.
+Status: **ACCEPTED — October 27, 2026 at 11:20 ET**.
+
+Supported release on production 5cf166f with scheduled snapshot 042fe1c and
+native verification through fa7236a. Final evidence matrix below supersedes
+historical pending statements. Nineteen states accepted;26 unfinished.
+No state is active until a fresh activation is recorded.
 
 ## October 26, 19:00 ET — Wyoming activated
 
@@ -31,12 +36,12 @@ established. Prior refusal of aggregate reports remains recorded; no new request
 ## Gates
 
 - [x] Full current/retired/variant/history matrix within24hours (October26).
-- [ ] Strict bounded results, identities, dates, source geography/units and literal rules.
-- [ ] Explicit unavailable counts, histories, retailer joins and unsupported products.
-- [ ] Atomic coupled collection/publication and byte/date retention on failure.
-- [ ] Strict app loader, bundle/cache continuity and visible supported flows.
-- [ ] Native selections/source returns, reading/filter/layout and controlled cache retention.
-- [ ] Ordinary restoration, focused tests, independent live verification and acceptance.
+- [x] Strict bounded results, identities, dates, source geography/units and literal rules.
+- [x] Explicit unavailable counts, histories, retailer joins and unsupported products.
+- [x] Atomic coupled collection/publication and byte/date retention on failure.
+- [x] Strict app loader, bundle/cache continuity and visible supported flows.
+- [x] Native selections/source returns, reading/filter/layout and controlled cache retention.
+- [x] Ordinary restoration, focused tests, independent live verification and acceptance.
 
 Next inspect the official site's result implementation and all linked game/rule
 pages, including Keno draw-number semantics and historical/retired notices.
@@ -427,3 +432,36 @@ No production source changed and no new source collection is claimed.
 Next reconcile the final acceptance matrix against the retained evidence and
 close any remaining named gate. Wyoming remains the sole active state and is
 not yet accepted; October31 at19:00ET deadline unchanged, no extension.
+
+## Final supported acceptance — October 27, 2026 at 11:20 ET
+
+Wyoming supported coverage is ACCEPTED before October31 at19:00ET, without
+extension. Scope was fixed within its first24hours. This is supported state
+acceptance, not mobile distribution or national-release readiness.
+
+| Gate | Accepted evidence and boundary |
+| --- | --- |
+| Results | Ten completed results across five draw families, two dates each; five separately bounded Keno IDs472458–472462. Mountain local dates, UTC instants, source IDs/ranges/cadences and Power Play validated. No inferred continuous history. |
+| Reports | All15 exact-date winner reports explicitly unavailable. No zero counts or geography/units inferred from private summary payloads. |
+| Schedules/rules | Six literal rule contracts; five reviewed image contracts with39 prize rows; Keno ten tables/38 rows. Categorical jackpots/free plays/annual prizes, qualifying Tuesday doubling and MM per-play multipliers retained. Image changes fail closed. |
+| Publication | Coupled21-request data/rule collection plus public configuration bootstrap; atomic retention on transport/validation/replace failure. Initial successful deployment40486006067; scheduled snapshot042fe1c adopted by ordinary native loader. |
+| Live bytes | Actual collection12:15:52.817858UTC October27. Independent download15:19:19.535750UTC October27 matches generated/published205319 bytes, SHA256 `29cbce37f2cc13e5c20d01c68be3fc9a9dc791e4bb1c9539050651da22a94777`. Download time is not a new collection. |
+| App continuity | Strict baseline/cache validation; valid newer draw/Keno advancement; correction/loss/regression rejection. Controlled production-loader SocketException retained real persisted cache string byte-for-byte and the validated data/date. Not whole-device offline. |
+| Native interaction | All15 selections, six family result-source OS returns, six rule URL returns and five image URL returns. Six normal portrait rule paths completed with fixed-button paging/accessibility captures. Top source and bottom dated-results controls use the same row source URL. No complete external-browser rendering claim. |
+| Layout | Representative normal portrait2by2, global2x portrait Cowboy Draw results/schedule, and ordinary normal landscape Cowboy Draw results/schedule visually reviewed. All15 selections and all six family rule paths also tested automatically at2x portrait/landscape. Not every family manually inspected at every scale. |
+| Restoration | Ordinary main rebuilt10.6s, installed/cold-launched20769 and subsequently used for landscape checks. Original rotation restored; Android stays running, iOS shut down. No tracked probe. |
+| Validation |30 focused Wyoming Python tests pass at closure;10 focused Flutter tests pass on the accepted snapshot; five production Dart files analyze clean. Prior512 existing Python and54 NM publication tests remain prior evidence, not newly rerun. |
+
+No Scratch product, Wyoming Double Play, retired Lucky for Life import, Ragtime
+archive, complete claims/history, retailer joins/coordinates or progressive
+inference is accepted. Fixed paging is the evidenced reading path; no native
+swipe recovery is claimed. Earlier historical-only versions stay unavailable.
+All named supported gates are closed; extra history and agency records are
+backlog items rather than acceptance prerequisites.
+
+Nineteen accepted;26 unfinished. Wyoming joins the accepted states and stays
+closed absent a named defect or meaningful new evidence. Next select one
+unfinished state and explicitly record its fresh scope/release deadlines; never
+inherit Wyoming's deadline. The October26 forecast remains unchanged until
+23 accepted or a material blocker. Mobile/privacy/persistence/signing/distribution
+gates remain separate and open.

@@ -440,3 +440,14 @@ No production source changed and no new source collection is claimed.
 Next reconcile the final acceptance matrix against the retained evidence and
 close any remaining named gate. Wyoming remains the sole active state and is
 not yet accepted; October31 at19:00ET deadline unchanged, no extension.
+
+## October 27, 11:20 ET — supported coverage accepted
+
+Wyoming is accepted on production5cf166f, scheduled snapshot042fe1c and native
+verification throughfa7236a. See WYOMING_ACCEPTANCE.md for the final bounded
+evidence matrix. Fifteen results, all15 reports unavailable; six literal rules,
+39 reviewed image rows and38 Keno table rows. No broader claims/history,
+retailer joins or unsupported products inferred. Independent live verification
+at15:19:19.535750UTC matched205319 bytes; actual collection remains12:15:52.817858UTC.
+Ordinary Android app restored/running; iOS shut down. Deadline met early without
+extension. Nineteen accepted,26 unfinished; mobile readiness remains separate.

@@ -3,18 +3,19 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
-## Current decision — October 26, 2026
+## Current decision — October 27, 2026
 
-New Mexico supported coverage is ACCEPTED on production c27df43 with the bounded
-final matrix in NEW_MEXICO_ACCEPTANCE.md. Eighteen states accepted;27 remain.
-Completed before October30 at18:38ET without extension. Wyoming is the sole active
-state from October26 at19:00ET: scope due October27 at19:00ET, supported release
-due October31 at19:00ET, fresh120hours. See WYOMING_ACCEPTANCE.md. Accepted states stay closed absent a named
-defect or meaningful new evidence. Android remains running in the ordinary app.
-Mobile/distribution gates remain separate. The18-acceptance reforecast is now
-December19,2026–January15,2027 for supported engineering at2–3days per remaining
-state; a five-day-per-state slower scenario is March10. These are estimates,
-not public-launch commitments; see NATIONAL_RELEASE_FORECAST.md.
+Wyoming supported coverage is ACCEPTED at11:20ET on production5cf166f with
+scheduled snapshot042fe1c and native verification throughfa7236a. The final
+bounded matrix is in WYOMING_ACCEPTANCE.md. Nineteen states accepted;26 remain.
+Completed before October31 at19:00ET without extension. No state is active.
+Next select one unfinished state and explicitly activate its own scope/release
+deadlines; never inherit Wyoming's deadline. Accepted states stay closed absent
+a named defect or meaningful new evidence. Android remains running in the
+ordinary app; iOS is shut down. Mobile/distribution gates remain separate.
+The October26 18-acceptance forecast remains December19,2026–January15,2027;
+five-day-per-state slower scenario March10. These are estimates, not launch
+commitments. Next routine reforecast at23 accepted or a material blocker.
 
 ## Beta and national public release — approved October 6, 2026
 
@@ -58,7 +59,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Wyoming | October31,2026 at19:00ET | Sole active October26 at19:00ET; scope due October27 at19:00ET; substantial draw/Keno integration. |
+| Wyoming | ACCEPTED October27,2026 at11:20ET | Production5cf166f; final bounded native/live/cache matrix closed early, no extension. |
 | New Mexico | ACCEPTED October26,2026 | Acceptance478b572; bounded evidence complete before October30 18:38ET, no extension. |
 | Oklahoma | ACCEPTED October 25, 2026 at 17:44 ET | Production7438c02; bounded native/retention evidence complete early, no extension. |
 | Idaho | ACCEPTED October24,2026 at20:10ET | Production fc16561; bounded native/retention evidence complete before October27 14:22ET, no extension. |
