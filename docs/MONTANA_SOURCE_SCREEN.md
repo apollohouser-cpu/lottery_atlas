@@ -156,3 +156,15 @@ Next inspect literal rule contracts/results implementation, retired/status links
 complete typed catalogs and privately delivered workbook. Scope due October28
 23:30EDT and release November1 22:30EST unchanged, no extension. Montana sole
 active;20accepted25unfinished. Android ordinary app remains running; no iOS start.
+
+## October 28 at 01:34 EDT — supported scope closed
+
+The fixed full product/history/gap matrix is in MONTANA_ACCEPTANCE.md. Regular
+draw target:14 date-only results/seven groups, all count reports currently
+unavailable. Scope also includes all published Scratch/Treasure Play catalogs,
+Montana Millionaire offer/status, retired Lucky for Life, unavailable Can-Am
+promotion, second-chance limits and a separate sports-wagering source boundary.
+The linked Scratch ending-date PDF requires audit; catalog listing alone never
+establishes active sales, remaining prizes or printed game identity. No new source
+retrieval timestamp, feed, native build or acceptance is claimed in this decision.
+Scope closed early; release November1 22:30EST unchanged without extension.
