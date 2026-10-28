@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../services/montana_coverage_loader.dart';
@@ -128,7 +129,7 @@ class _MontanaDrawCollectionSheetState
             headers = doublePlay
                 ? ['Match', 'Prize', 'Odds']
                 : List<String>.from(cells!);
-          } else {
+          } else if (!listEquals(cells, headers)) {
             widgets.add(
               entry('Match ${cells!.first}', [
                 for (var i = 1; i < cells.length; i++)

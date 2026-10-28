@@ -115,4 +115,39 @@ void main() {
     expect(observed, contains('Odds: 1:292,201,338.00'));
     expect(tester.takeException(), isNull);
   });
+  testWidgets('Big Sky repeated heading is not a prize tier', (tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: MontanaDrawCollectionSheet(
+            coverageOverride: data,
+            initialIndex: 12,
+          ),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    final observed = <String>{};
+    for (var page = 0; page < 100; page++) {
+      for (final text in tester.widgetList<Text>(find.byType(Text))) {
+        if (text.data != null) observed.add(text.data!);
+      }
+      if (find
+          .text('Official dated results')
+          .hitTestable()
+          .evaluate()
+          .isNotEmpty) {
+        break;
+      }
+      await tester.tap(find.byTooltip('Next page'));
+      await tester.pumpAndSettle();
+    }
+    expect(observed, isNot(contains('Match Match')));
+    expect(observed, isNot(contains('Odds: Odds')));
+    expect(observed, contains('Match 4/4 + BN'));
+    expect(observed, contains('Match 1/4 + BN'));
+    expect(observed, contains(r'Prize: $0 + $10'));
+    expect(find.text('Official dated results').hitTestable(), findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
 }

@@ -431,3 +431,18 @@ rule URL returns, product/search/detail/source flows, representative enlarged an
 landscape checks, controlled real-cache failure continuity and final ordinary
 restoration. Android remains running on the ordinary app. No new source
 collection or deadline change; November1 22:30EST remains the release deadline.
+
+## October 28 — repeated Big Sky schedule heading correction
+
+The retained Big Sky Bonus table repeats its Match/Odds/Prize heading between
+base and combined bonus schedules. The app previously rendered that second
+heading as a spurious “Match Match” tier. The renderer now recognizes an exact
+repeat of the table heading and omits the duplicate heading from prize rows;
+all literal base/bonus prize rows remain intact. A regression check verifies no
+fake tier and preserves the combined bonus rows and categorical prize text.
+
+All15 Montana Flutter tests pass (nine loader, four draw, two product); changed
+renderer and test analyze clean. This is automated widget evidence, not new
+native rule traversal. Native rule/product/source-return, enlarged/landscape,
+controlled real-cache failure and final ordinary restoration gates remain open.
+No source refresh or acceptance; November1 22:30EST deadline unchanged.
