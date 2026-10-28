@@ -8,9 +8,10 @@ state source-screen documents retain the detailed evidence and request history.
 North Dakota supported coverage is ACCEPTED October27 at22:34EDT on production
 f79ea59, scheduled snapshot6c5a3d7, with the final bounded matrix in
 NORTH_DAKOTA_ACCEPTANCE.md. Twenty states accepted;25 unfinished. Completed before
-November1 at10:29AM EST without extension. No active state remains. Next select
-one unfinished state and explicitly activate its own scope deadline within24hours
-and fresh72/120hour supported release deadline; never inherit ND's deadline.
+November1 at10:29AM EST without extension. Montana is the sole active state
+from October27 at23:30EDT. Scope due October28 at23:30EDT; supported release due
+November1 at22:30EST (November2 at03:30UTC), fresh120elapsed hours across DST.
+See MONTANA_ACCEPTANCE.md. No extension; never inherit ND's deadline.
 Accepted states stay closed absent a named defect or meaningful new evidence.
 Android ordinary app remains running; iOS is shut down. Mobile/distribution gates
 remain separate.
@@ -60,6 +61,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
+| Montana | November1,2026 at22:30EST | Sole active October27 at23:30EDT; scope due October28 at23:30EDT; fresh120elapsed hours. |
 | North Dakota | November1,2026 at10:29AM EST | ACCEPTED October27 at22:34EDT, early without extension; see NORTH_DAKOTA_ACCEPTANCE.md. |
 | Wyoming | ACCEPTED October27,2026 at11:20ET | Production5cf166f; final bounded native/live/cache matrix closed early, no extension. |
 | New Mexico | ACCEPTED October26,2026 | Acceptance478b572; bounded evidence complete before October30 18:38ET, no extension. |

@@ -41,7 +41,7 @@ recurring source, with a fallback to the most recent complete month. Delivery
 is through the web portal; the requester asked for an estimate before any paid
 processing. The portal displayed a successful-submission confirmation. Its
 confirmation email arrived at 2:58 a.m. Eastern on September 16 and assigned
-case `26-PIR-2200` (queue: Intake). No responsive dataset has arrived.
+case `the private request reference` (queue: Intake). No responsive dataset has arrived.
 At 11:00 a.m. Eastern, OPIR sent a formal acknowledgment letter confirming
 receipt under that same case number. It says OPIR will review the request,
 clarify or deny if necessary, or provide records, and will supply a cost
@@ -74,26 +74,46 @@ unless a separate official inventory source is verified.
 
 Read-only audit files live under ignored `work/montana_catalog/`: all 11
 HTML pages, `audit.py` and `audit.json`. No Montana public catalog or activity
-feed changed during this pass. OPIR case 26-PIR-2200 remains pending.
+feed changed during this pass. OPIR case the private request reference remains pending.
 
 ### September 25 release notification — documents not yet inspected
 
-Gmail message 1a0d91d1e84517e3 at 15:09 UTC marks 26-PIR-2200 complete and says
+Gmail notification at 15:09 UTC marks the private request reference complete and says
 released documents are available. The official Open Documents link redirects to
 MT.gov sign-in; no released file is attached to the notification. This supersedes
 pending-request status but is not yet an inspectable data delivery.
 A standard no-fee delivery follow-up was sent to the notification's assigned
 contact, celina.clift@mt.gov, requesting the already released files by attachment
-or a direct download without a new account. Sent message 1a0d94e847b234fe.
+or a direct download without a new account. Sent Gmail notification.
 No additional assembly or fees were authorized. Monitor that delivery reply;
 Montana implementation remains queued while Kentucky stays active.
 
 ### September 25 workbook emailed
 
-The delivery follow-up succeeded: message 1a0d963017e17b69 at 16:25 UTC attaches
-26-PIR-2200.xlsx (220,068 bytes). Rebecca Narmore directs subsequent questions to
+The delivery follow-up succeeded: Gmail notification at 16:25 UTC attaches
+the released workbook (220,068 bytes). Rebecca Narmore directs subsequent questions to
 rebecca.narmore2@mt.gov because the request is closed. The login-only delivery
 obstacle is resolved. Gmail marks this application/octet-stream attachment as
 unsupported for connector extraction; do not call its attachment reader for it.
 The workbook still needs a private browser download and content/semantics audit.
 Do not count it as inspected or publish any new Montana claims from this notice.
+
+## October 27, 2026 at 23:30 EDT — sole active state
+
+Montana activates after North Dakota acceptance. See MONTANA_ACCEPTANCE.md:
+full scope/gap matrix due October28 at23:30EDT; supported release due November1
+at22:30EST (November2 at03:30UTC), fresh120elapsed hours across DST, no extension.
+The September Scratch catalog and workbook delivery are foundations, not current
+all-game acceptance. Workbook semantics remain unaudited; do not resend the
+confirmed delivery request or promote private records without auditing them.
+
+Opening direct HTTP requests to the official home page returned403, including
+an ordinary browser user-agent attempt. www home/Scratch variants also returned
+403; these failed response bodies, hashes and actual capture times are retained
+privately in work/montana_scope/opening-manifest.json, not successful source
+captures. The read-only web tool could read the official home page, establishing
+an alternate research path but not production transport recovery. Next inspect
+all official game/history/rule links and establish a repeatable permitted capture
+path before publication. No prior valid data bytes or dates were replaced.
+Administrative request/message identifiers removed from this public source screen;
+the original audit copy is retained privately. No new feed, build or acceptance.
