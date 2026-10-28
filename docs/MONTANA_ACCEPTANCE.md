@@ -315,3 +315,20 @@ new app build or state acceptance yet. Next publication integration and independ
 live verification, then strict Dart/cache/UI/native. Private workbook audit
 remains pending; no records request resent. Android ordinary app25048 remains
 running. Montana sole active; November1 22:30EST deadline unchanged, no extension.
+
+## October 28 — initial coupled publication integration
+
+The reviewed24-source collection from2026-10-28T13:42:33.180344UTC is staged as
+one generated/public Montana snapshot, preserving all retrieval dates and explicit
+limitations. A strict publication validator checks source inventory/provenance,
+source-date joins, draw ranges/cadence/multipliers, full rule/catalog/offer/ending
+contracts and unavailable-report semantics. The state refresh transaction owns
+only this coupled output; failures retain its previous bytes and dates.
+
+Fifty-three focused Montana tests and512 existing Python tests pass. The refresh
+manifest assertion now includes Montana as its32nd independently refreshed state.
+The first local full-suite attempt used a Python without required dependencies;
+the configured bundled Python completed all512 tests successfully. No validation
+was weakened. Deployment and independent live-byte verification remain pending
+at this commit; no new native build or state acceptance. Next live verification,
+strict Dart loader/cache and UI/native flows. November1 22:30EST unchanged.

@@ -1,5 +1,26 @@
 [
   {
+    "state": "Montana",
+    "outputs": [
+      "data/montana_coverage.generated.json"
+    ],
+    "commands": [
+      [
+        "python3",
+        "-m",
+        "tooling.collect_montana_coverage",
+        "--output",
+        "data/montana_coverage.generated.json"
+      ],
+      [
+        "python3",
+        "-m",
+        "tooling.validate_montana_coverage",
+        "data/montana_coverage.generated.json"
+      ]
+    ]
+  },
+  {
     "state": "North Dakota",
     "outputs": [
       "data/north_dakota_coverage.generated.json"

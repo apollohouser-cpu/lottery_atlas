@@ -291,7 +291,7 @@ class RefreshStatesTest(unittest.TestCase):
 
     def test_manifest_owns_each_output_once_and_commands_reference_owned_data(self):
         jobs=json.loads((ROOT/'tooling/state_refresh_jobs.json').read_text())
-        self.assertEqual(len(jobs),31)
+        self.assertEqual(len(jobs),32)
         outputs=[p for j in jobs for p in j['outputs']]
         self.assertEqual(len(outputs),len(set(outputs)))
         for job in jobs:
