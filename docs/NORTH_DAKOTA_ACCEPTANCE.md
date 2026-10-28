@@ -263,3 +263,32 @@ Next native selections/source returns, full normal rule traversal, representativ
 enlarged/landscape checks, controlled real-cache failure and final restoration.
 No new source collection or ND acceptance. Nineteen accepted; ND sole active;
 November1 10:29AM EST release deadline unchanged, no extension.
+
+## October 27 evening — ordinary Android selections and source returns
+
+On the sole Android emulator, navigated the ordinary installed app from the map
+to North Dakota's Sources and coverage entry. All ten native dated selections
+were selected through the actual dropdown, and their primary numbers and explicit
+unavailable report labels matched the retained scheduled snapshot. Five family
+result-source actions opened the correct official URL in the OS browser handler
+and Back returned to the ordinary sheet. These are OS launch/return checks;
+the first Powerball capture contains browser chrome/URL only and does not prove
+full external-page rendering. Private accessibility captures are under
+work/north_dakota_native/selection-*.xml and source-*.xml.
+
+Viewed the normal portrait Powerball screenshot: header, date, numbers, Power
+Play, report gap, paging/source/close controls and initial rule prose are readable.
+The native UI reports result retrieval22:17:06.341442UTC from the scheduled feed;
+this is an observed newer source timestamp, not independent cache-byte verification.
+
+2by2's complete normal portrait fixed-page path traversed five accessibility
+captures to the footer, including all match patterns, categorical Free Ticket /
+2 Free Tickets and qualifying Tuesday language. Its separate official-rule URL
+opened and returned to the sheet. This is bounded accessibility/button evidence,
+not manual all-family/all-scale visual inspection. Four remaining normal rule
+paths and four rule-link returns, representative enlarged/landscape checks,
+controlled real-cache continuity and final ordinary restoration remain open.
+
+No build/source refresh or acceptance in this checkpoint. Android ordinary app
+remains running; iOS not started. ND sole active; November1 10:29AM EST unchanged,
+no extension. Accepted states remain closed.
