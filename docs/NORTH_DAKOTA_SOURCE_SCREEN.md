@@ -25,8 +25,8 @@ cadence and are made when the Sales and Marketing Manager has time, and that
 North Dakota offers no Scratch/instant tickets because state law permits only
 multi-state games. This agency response verifies the scope and cadence but also
 confirms that the requested complete all-tier count is not maintained. North
-Dakota remains a partial public-winner subset and is not ready for full-state
-testing.
+Dakota public winner notices remain a partial subset; the final supported
+acceptance below supersedes this initial testing assessment.
 
 ## October 27, 2026 at 11:29 AM EDT — sole active state
 
@@ -312,3 +312,15 @@ the ordinary map with normal text, and the private helper now removes temporary
 XML before each capture. No tracked probe or iOS start; Android stays running.
 Representative ordinary landscape and final live/evidence consolidation remain
 next. No acceptance or deadline change; ND sole active, November1 10:29AM EST.
+
+## October 27 at 22:34 EDT — supported coverage accepted
+
+See NORTH_DAKOTA_ACCEPTANCE.md for the final bounded matrix. Ten date-only
+results/five families, all ten reports unavailable, five literal rule contracts
+and62 physical rows are integrated and accepted. Live125386bytes independently
+matched at2026-10-28T02:33:37.591413UTC; actual collection remains October27
+22:17:08.270587UTC. All ten native selections, five result-source and five rule
+OS returns, five normal rule paths, representative2x portrait/ordinary landscape,
+controlled real-cache failure retention and ordinary restoration are closed.
+This does not establish complete winner counts/history or retailer joins. Android
+ordinary app remains running; mobile/distribution gates remain separate.

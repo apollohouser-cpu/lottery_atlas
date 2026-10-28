@@ -962,3 +962,13 @@ automated, live and controlled cache-retention evidence. Ordinary Android main
 restored and running; iOS shut down. This closes Wyoming supported coverage,
 not broader platform persistence/privacy, signing/accounts or distribution.
 The provisional October20–27 beta window does not establish beta readiness.
+
+### October 27 at 22:34 EDT — North Dakota supported acceptance
+
+North Dakota is the twentieth accepted state;25 remain. Final ordinary Android
+build (10.5s) was installed/cold-launched25048 and used for representative landscape;
+portrait restored and Android remains running, iOS not started. Controlled ND
+production-loader failure retained real-cache bytes/date; this is not whole-device
+offline or closure of broader platform persistence. See NORTH_DAKOTA_ACCEPTANCE.md.
+Privacy, signing/accounts and distribution remain open; the provisional October20–27
+beta window is not a readiness claim.

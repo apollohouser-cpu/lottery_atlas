@@ -1,6 +1,6 @@
 # North Dakota supported coverage acceptance
 
-Status: **ACTIVE — not accepted**.
+Status: **ACCEPTED — October 27, 2026 at 22:34 EDT**, bounded by the final matrix below.
 
 ## October 27, 2026 at 11:29 AM EDT — activation
 
@@ -30,14 +30,14 @@ agency response. Do not fabricate inventory.
 ## Gates
 
 - [x] Exhaustive current/retired/variant/history matrix within24hours.
-- [ ] Official result implementation and per-game rules/schedules; exact identity,
+- [x] Official result implementation and per-game rules/schedules; exact identity,
   date/timezone, number ranges, source geography and count units validated.
-- [ ] Honest unavailable reports/history/retailer joins; no missing-to-zero conversion.
-- [ ] Strict parsers, coupled atomic collection/publication, byte/date retention.
-- [ ] Strict app loader/bundle/cache advancement and visible all-family flows.
-- [ ] Native selections/source returns, reading and representative enlarged/landscape checks.
-- [ ] Controlled real-cache failure continuity, ordinary restoration, tests and independent live verification.
-- [ ] Explicit final supported acceptance decision.
+- [x] Honest unavailable reports/history/retailer joins; no missing-to-zero conversion.
+- [x] Strict parsers, coupled atomic collection/publication, byte/date retention.
+- [x] Strict app loader/bundle/cache advancement and visible all-family flows.
+- [x] Native selections/source returns, reading and representative enlarged/landscape checks.
+- [x] Controlled real-cache failure continuity, ordinary restoration, tests and independent live verification.
+- [x] Explicit final supported acceptance decision.
 
 Next inspect all five current game pages, historical/retired links and result
 archives; capture the actual dynamic payloads and literal rules. Validate local
@@ -321,3 +321,31 @@ the ordinary map with normal text, and the private helper now removes temporary
 XML before each capture. No tracked probe or iOS start; Android stays running.
 Representative ordinary landscape and final live/evidence consolidation remain
 next. No acceptance or deadline change; ND sole active, November1 10:29AM EST.
+
+## October 27 at 22:34 EDT — final supported acceptance
+
+North Dakota supported coverage is ACCEPTED on production f79ea59 (strict loader
+c778306), scheduled snapshot6c5a3d7 and native verification through5336230 plus
+this final landscape check. Completed before November1 at10:29AM EST without
+extension. Twenty states accepted;25 unfinished. No active state remains.
+
+| Gate | Final bounded evidence |
+| --- | --- |
+| Current results and gaps | Ten date-only results, two dates for each of five families; all ten exact-date North Dakota winner reports unavailable, never zero |
+| Rules/catalog | Five literal rule contracts,62 physical rows including headers/footers; five current games and retired Lucky for Life status |
+| Publication | Actual coupled collection2026-10-27T22:17:08.270587UTC; independent live download2026-10-28T02:33:37.591413UTC matched generated/public repository bytes,125386bytes, SHA256 9ab7e9c4dea9ff147a9f2888ee7e7d49356c0d10858d9d9fa1660749fb4029a5; semantic validator passes |
+| Native navigation | All ten selections, five result-source OS returns and five separate rule-link OS returns; all five normal portrait fixed-page/accessibility paths |
+| Layout | Representative2x portrait and ordinary normal landscape Powerball inspected; landscape fixed-page advance exposed readable qualifying prose and controls. Not every family manually inspected at every scale/orientation |
+| Cache | Controlled production-loader SocketException against real persisted cache retained exact bytes and22:17:08.270587UTC collection date; not whole-device offline |
+| Restoration | Ordinary main rebuilt10.5s, installed/cold-launched25048 and used for subsequent landscape; portrait rotation restored, Android running, iOS not started |
+| Checks |31 focused Python and512 existing Python including13 transactions at publication;12 Flutter tests and changed Dart clean at implementation. Those prior test runs are not newly rerun evidence |
+
+No Scratch, ND Double Play, retired-game imports, complete history/claims,
+all-tier count reports, retailer joins/coordinates or progressive inference.
+Free tickets and annual prizes remain categorical;2by2 Tuesday doubling remains
+conditional on qualifying tickets and MM multipliers remain per-play. Missing
+agency records do not block this bounded supported release. Mobile privacy,
+platform persistence, signing/accounts and distribution remain separate open gates.
+Next select one unfinished state and explicitly activate fresh scope/release
+deadlines; never inherit North Dakota's deadline. Accepted states stay closed
+absent a named defect or meaningful new evidence.
