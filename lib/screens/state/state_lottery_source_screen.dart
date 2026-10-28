@@ -1,3 +1,4 @@
+import '../../widgets/map/montana_product_sheet.dart';
 import '../../widgets/map/montana_draw_collection_sheet.dart';
 import '../../widgets/map/north_dakota_draw_collection_sheet.dart';
 import '../../widgets/map/wyoming_draw_collection_sheet.dart';
@@ -70,6 +71,12 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Montana')
+            ListTile(
+              title: const Text('Montana catalogs and notices'),
+              subtitle: const Text('Scratch, Treasure Play, raffle offer and separate ending notice'),
+              onTap: () => showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const MontanaProductSheet()),
+            ),
           if (source.stateName == 'Montana')
             ListTile(
               title: const Text('Montana results and schedules'),

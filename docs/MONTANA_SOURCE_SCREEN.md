@@ -426,3 +426,26 @@ and the widget test analyze clean. This is widget evidence only, not native OS
 returns or a manual all-scale audit. No native build or acceptance yet; Android
 ordinary app25048 remains running. Next catalog/raffle/ending-status UI, then
 native flow/cache checks and ordinary restoration. November1 22:30EST unchanged.
+
+## October 28 — catalog, raffle and ending-notice UI
+
+Montana's second state entry now opens searchable Scratch and Treasure Play
+catalogs, the separate2026 raffle offer and the51-row ending notice. Catalog
+cards/details identify website entries rather than printed game numbers, preserve
+missing titles, and explicitly leave sales/remaining inventory unavailable.
+Details show literal source wording, categorical prize structures, advertised
+estimates and official catalog/image links. Raffle quantities remain planned
+prizes, with promotional/final dates distinct and current results unavailable.
+Ending notices retain their printed date, retrieval date and separate numbered
+game identities; there is no title-based catalog join.
+
+Two product widget tests pass, covering all four paths, catalog detail/source
+controls and notice paging in portrait/landscape with global2x text (including
+nested detail routes), plus missing-title search, detail return and no-match
+handling. The existing nine loader and three draw widget tests passed during
+this change. Changed production/test analysis is clean. These are widget paths,
+not native external-browser returns or a manual all-product visual audit.
+Android ordinary app25048 remains running. Next ordinary native build followed
+by draw/product/source-return, representative enlarged/landscape and controlled
+cache continuity checks, then ordinary restoration. No Montana acceptance or
+new source collection; November1 22:30EST deadline unchanged, no extension.
