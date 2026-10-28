@@ -982,3 +982,24 @@ are recorded explicitly; backup behavior remains unverified. No settings changed
 release artifact signed or privacy gate marked complete. Montana native UI control
 is still awaiting the previously requested alternative-tool authorization; no
 repeat prompt or new acceptance claim.
+
+### October 28 — favorite storage failure correction
+
+Found and reproduced a shared mobile persistence defect: favorite games and
+places notified the UI of an addition/removal before storage completed. A thrown
+storage write could therefore display a change that would disappear on restart.
+Both services now publish changes only after successful persistence and serialize
+mutations so overlapping taps cannot overwrite each other's changes. Failure
+propagates to the caller while preserving the previous visible list; the queue
+continues to accept a later successful change.
+
+The new failure regression failed against the old services and passes after the
+fix. Four service tests pass, covering failed additions/removals, unchanged
+stored and visible records, no false notifications, recovery, concurrent toggles,
+existing favorite lifecycle and saved-ticket lifecycle. This is in-memory platform
+test evidence; device restart/deletion, OS backup behavior and broader native UI
+acceptance remain open. Montana UI-control authorization is still pending.
+
+Changed service/test analysis is clean. Ordinary main.dart Android build passed
+in16.2seconds, installed and launched as process30031; Android remains running.
+No private probe or iOS simulator was started for this change.

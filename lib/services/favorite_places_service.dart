@@ -13,6 +13,18 @@ class FavoritePlacesService {
   );
 
   static bool _didLoad = false;
+  static Future<void> _pendingWrite = Future<void>.value();
+
+  // Serialize read/modify/write so overlapping taps cannot discard a favorite.
+  // A failed write must not poison the next attempted change.
+  static Future<T> _mutate<T>(Future<T> Function() action) {
+    final result = _pendingWrite.then((_) => action());
+    _pendingWrite = result.then<void>(
+      (_) {},
+      onError: (Object _, StackTrace _) {},
+    );
+    return result;
+  }
 
   static Future<void> load() async {
     if (_didLoad) return;
@@ -30,10 +42,11 @@ class FavoritePlacesService {
     _didLoad = true;
   }
 
-  static bool contains(String key) => places.value.any((place) => place.key == key);
+  static bool contains(String key) =>
+      places.value.any((place) => place.key == key);
 
   /// Returns true when the place is now saved, false when it was removed.
-  static Future<bool> toggle(FavoritePlace place) async {
+  static Future<bool> toggle(FavoritePlace place) => _mutate(() async {
     await load();
     final updated = List<FavoritePlace>.from(places.value);
     final existingIndex = updated.indexWhere((item) => item.key == place.key);
@@ -45,12 +58,12 @@ class FavoritePlacesService {
     }
     await _persist(updated);
     return isSaved;
-  }
+  });
 
-  static Future<void> remove(String key) async {
+  static Future<void> remove(String key) => _mutate(() async {
     await load();
     await _persist(places.value.where((place) => place.key != key));
-  }
+  });
 
   static List<FavoritePlace> _sorted(Iterable<FavoritePlace> values) {
     final sorted = values.toList()
@@ -63,10 +76,10 @@ class FavoritePlacesService {
 
   static Future<void> _persist(Iterable<FavoritePlace> values) async {
     final sorted = _sorted(values);
-    places.value = sorted;
     await _store.setStringList(
       _storageKey,
       sorted.map((place) => place.encode()).toList(growable: false),
     );
+    places.value = sorted;
   }
 }
