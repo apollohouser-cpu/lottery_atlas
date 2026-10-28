@@ -183,3 +183,28 @@ Retained capture hashes were verified before extraction; original source dates
 are unchanged. Next typed catalogs/status, private workbook/ending-notice audit
 and coupled publication, then app/native. No public feed/build or acceptance;
 Montana sole active and November1 22:30EST unchanged without extension.
+
+## October 28 — typed literal catalog extraction
+
+Added tooling/montana_catalog.py for complete linked Scratch/Treasure Play page
+sets, with CMS identity/price taxonomy, published headings, literal rules text,
+image references and win/prize/odds rows. Retained hash-verified captures parse
+57 Scratch entries/1,100 body rows and12 Treasure Play entries/52 body rows;
+prior physical-row totals include headers. No numeric inventory, printed game
+number or active-sales status is inferred. Jackpot, Ticket, vehicle and combined
+prize text remains literal rather than forced into cash values.
+
+One Scratch CMS entry (2863) lacks a published title heading. It remains an
+explicit unavailable title, with its website identity and source text retained;
+no image filename is promoted as a game name. Other headings sometimes omit
+price prefixes; the explicit price taxonomy remains separate from title text.
+All remaining quantities and sales statuses are unavailable pending sources.
+
+Twenty-seven focused Python tests pass, including complete page sets, missing
+terminal pages, cross-page duplicate IDs, malformed identities/prices/types,
+changed headers/unclosed cells, explicit missing title and categorical jackpot
+preservation. Compressed public fixtures retain exact official page bytes, with
+private original capture provenance unchanged. This is structural/literal
+extraction; future refresh continuity, reviewed catalog semantics/status contracts,
+ending-notice/workbook audit and coupled publication remain unfinished. No feed,
+app build or acceptance. Montana sole active; deadline unchanged, no extension.
