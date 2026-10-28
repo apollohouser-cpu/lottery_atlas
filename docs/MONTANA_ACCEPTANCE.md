@@ -208,3 +208,27 @@ private original capture provenance unchanged. This is structural/literal
 extraction; future refresh continuity, reviewed catalog semantics/status contracts,
 ending-notice/workbook audit and coupled publication remain unfinished. No feed,
 app build or acceptance. Montana sole active; deadline unchanged, no extension.
+
+## October 28 — ending-notice audit and byte gate
+
+Used the PDF skill to extract and visually inspect both pages of the official
+linked Scratch ending notice. Fifty-one numbered games appear on both pages;
+page2 adds last-redemption dates. Public-sales start/end columns reconcile
+across pages. The printed source date is July28,2026 at08:24, timezone unpublished;
+it is not a current catalog update. Original PDF/hash/retrieval time and rendered
+pages are private in work/montana_scope. Administrative footer details are not
+copied into the public contract.
+
+Added a strict SHA256-gated reviewed contract: changed PDF bytes require new
+review rather than silently reusing parsed dates. The public contract contains
+only game numbers/titles and literal start/end/redemption dates, with no inferred
+CMS join. Duplicate titles occur for different numbered editions, so title-only
+matching is explicitly unsafe. Catalog sales status remains unavailable pending
+an independently verified identity join; absence from this notice never means
+active. Original51 rows validate against retained PDF bytes.
+
+Thirty focused Python tests pass, including date ordering, distinct same-title
+identities, changed-PDF rejection and UTC provenance/copy isolation. No full
+workbook audit, public feed, native build or acceptance is claimed. Next catalog
+continuity/status and raffle contracts, private workbook audit and coupled
+publication. Montana sole active; November1 22:30EST unchanged, no extension.
