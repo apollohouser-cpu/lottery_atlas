@@ -972,3 +972,13 @@ production-loader failure retained real-cache bytes/date; this is not whole-devi
 offline or closure of broader platform persistence. See NORTH_DAKOTA_ACCEPTANCE.md.
 Privacy, signing/accounts and distribution remain open; the provisional October20–27
 beta window is not a readiness claim.
+
+### October 28 — Android debug artifact permission inventory
+
+Audited the restored ordinary Android APK's compiled permissions and merged
+manifest; see MOBILE_PRIVACY_INVENTORY.md. INTERNET plus a signature-level
+application receiver permission are declared. Debug status and component exports
+are recorded explicitly; backup behavior remains unverified. No settings changed,
+release artifact signed or privacy gate marked complete. Montana native UI control
+is still awaiting the previously requested alternative-tool authorization; no
+repeat prompt or new acceptance claim.

@@ -99,3 +99,24 @@ and deletion from OS backups therefore remain unverified. No backup behavior was
 changed. Source dependency list remains the one inventoried above. No runtime
 traffic capture, final merged release-manifest audit or user-data deletion test
 is implied by this static inspection.
+
+## October 28 — ordinary Android debug artifact audit
+
+Inspected the restored ordinary main.dart APK after the Montana cache test,
+using aapt2 against the compiled APK and the corresponding merged manifest.
+The compiled permission list contains INTERNET and the application-scoped
+DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION; the latter is declared signature-level.
+No location, camera, microphone, contacts or advertising-ID permission appears
+in this artifact's declared permission list. This is not a runtime traffic claim.
+
+The merged artifact is explicitly debuggable, targets API36 and has minimum API24.
+MainActivity is exported as the launcher; the URL-launcher WebViewActivity and
+AndroidX startup provider are not exported. The exported profile-installer
+receiver requires android.permission.DUMP. No allowBackup, fullBackupContent or
+dataExtractionRules attribute is declared, so backup exclusion and deletion from
+backups remain unverified. No permission, backup or device setting was changed.
+
+Private build hashes, merged XML and compiled permission output are retained in
+work/mobile_privacy_20261028. This debug-artifact check supplements the source
+inventory; final signed-release manifests, runtime traffic, user-data deletion,
+signing and distribution gates remain open. Android ordinary app remains running.
