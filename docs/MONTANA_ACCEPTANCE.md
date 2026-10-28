@@ -250,3 +250,22 @@ hash checked before extraction; no fresh collection/feed/native build or state
 acceptance. Next catalog refresh continuity/current status gates and private
 workbook audit, then coupled atomic collection/publication and app/native.
 Montana sole active; November1 22:30EST deadline unchanged without extension.
+
+## October 28 — catalog refresh contracts
+
+Added strict baseline contracts for all57 Scratch and12 Treasure Play CMS
+entries. Refreshes reject missing identities, changed titles/prices, schedules,
+source prose, image references and availability semantics until reviewed. Only
+an explicitly labeled Treasure Play Current Jackpot amount may rise or fall;
+it remains a literal advertised estimate, never an actual payout, stock or
+winner count. Starting jackpots and schedule prizes cannot change through that
+exception. Catalog order is immaterial; entry identity is not.
+
+Forty-one focused Python tests pass, including both catalog baselines, missing
+Scratch title preservation, changed identities/status/schedules, malformed
+estimates and upward/downward advertised-estimate continuity. These contracts
+use retained source captures and do not claim a fresh collection or visual audit
+of every catalog image. Catalog sales and remaining inventory remain unavailable.
+No new feed, app build or acceptance. Next current-game status gate, private
+workbook audit and coupled atomic collection/publication, then Dart/UI/native.
+Montana remains sole active; November1 22:30EST deadline unchanged, no extension.
