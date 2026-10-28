@@ -283,3 +283,32 @@ controlled real-cache continuity and final ordinary restoration remain open.
 No build/source refresh or acceptance in this checkpoint. Android ordinary app
 remains running; iOS not started. ND sole active; November1 10:29AM EST unchanged,
 no extension. Accepted states remain closed.
+
+## October 27 evening — normal rule paths and controlled native retention
+
+Closed the remaining four ordinary normal-portrait rule paths with fixed native
+paging and accessibility captures: Powerball6pages, Mega Millions5, Millionaire
+for Life4 and Lotto America5. All published match labels were encountered and
+each separate official-rule URL opened in the OS browser handler and returned.
+Together with prior2by2 evidence, all five normal rule paths and five rule-link
+returns are closed. Viewed the Lotto America footer screenshot: odds, annuity
+and splitting caveats, retrieval time, retired/no-Scratch limits and source
+controls are readable. This remains bounded accessibility/button evidence, not
+manual all-family/all-scale inspection.
+
+A private untracked native target exercised the production ND loader against the
+real persisted cache, injecting a SocketException only at fetchRemote. The saved
+result confirms request attempted, persisted cache string byte-identical, returned
+validated cache identical, collection timestamp22:17:08.270587UTC retained and
+passed=true. This is controlled loader failure, not whole-device offline. A
+representative2x Powerball portrait screenshot and button advance retain readable
+numbers, report gap, qualifying prose and fixed controls. The2x setting was an
+app-wide harness text scaler, not an OS font-setting change or every-family audit.
+
+Ordinary lib/main.dart rebuilt (Gradle10.5s), installed and cold-launched process
+25048. A first immediate accessibility dump failed with a null root; its stale
+file was excluded. A fresh dump after deleting the old temporary file confirms
+the ordinary map with normal text, and the private helper now removes temporary
+XML before each capture. No tracked probe or iOS start; Android stays running.
+Representative ordinary landscape and final live/evidence consolidation remain
+next. No acceptance or deadline change; ND sole active, November1 10:29AM EST.
