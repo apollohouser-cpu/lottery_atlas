@@ -269,3 +269,21 @@ identities, changed-PDF rejection and UTC provenance/copy isolation. No full
 workbook audit, public feed, native build or acceptance is claimed. Next catalog
 continuity/status and raffle contracts, private workbook audit and coupled
 publication. Montana sole active; November1 22:30EST unchanged, no extension.
+
+## October 28 — current raffle offer contract
+
+Montana Millionaire now has a strict six-section contract covering the duplicate
+published sale/drawing summaries and prize schedules, FAQs and How to Play.
+Current2026 offer is separate from excluded2025/older result tables. Planned
+prize quantities never become actual winners; no current results are imported.
+November30 promotional and December28 final drawing dates remain distinct, and
+the sale-start time retains unpublished timezone rather than inventing UTC.
+Leading-zero ticket-range text remains literal. Changed sale dates, ticket range,
+prize quantities or sections fail closed pending review.
+
+Thirty-five focused Python tests pass, including changed offer terms, missing
+identity/sections, historical-result exclusion and copy isolation. Retained source
+hash checked before extraction; no fresh collection/feed/native build or state
+acceptance. Next catalog refresh continuity/current status gates and private
+workbook audit, then coupled atomic collection/publication and app/native.
+Montana sole active; November1 22:30EST deadline unchanged without extension.

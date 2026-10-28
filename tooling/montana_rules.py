@@ -10,7 +10,8 @@ PANELS=['e-n-tab-content-100611249'+str(i) for i in (3,4,5)]
 VOID={'area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr'}
 
 class Sections(HTMLParser):
-    def __init__(self):
+    def __init__(self, section_ids=None):
+        self.section_ids=section_ids or PANELS+['eael-data-table-wrapper-553a46a']
         super().__init__(convert_charrefs=True)
         self.sections=[];self.stack=[];self.root=None;self.events=[];self.pending='';self.ignore=0
         self.titles=[];self.title=None
@@ -22,7 +23,8 @@ class Sections(HTMLParser):
         if tag=='title':self.title=[]
         if self.root is None:
             key=a.get('id')
-            if key not in PANELS and key!='eael-data-table-wrapper-553a46a':return
+            if key not in self.section_ids:key='data-id:'+a.get('data-id','')
+            if key not in self.section_ids:return
             self.root=key;self.stack=[];self.events=[]
         self.flush()
         if tag in ('script','style','svg') or self.ignore:
