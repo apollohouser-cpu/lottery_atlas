@@ -332,3 +332,19 @@ the configured bundled Python completed all512 tests successfully. No validation
 was weakened. Deployment and independent live-byte verification remain pending
 at this commit; no new native build or state acceptance. Next live verification,
 strict Dart loader/cache and UI/native flows. November1 22:30EST unchanged.
+
+## October 28 at 10:45 EDT — initial publication verified
+
+Productione657efb deployed successfully in publisher run40708739733. Independent
+live download at2026-10-28T14:45:28.559658UTC matched all807455 repository bytes:
+SHA256ac78cf0162bb1bab1262ab7602fb8ed1ec7655ba7e91d120db1e68c031a35ee1.
+Actual source collection remains2026-10-28T13:42:33.180344UTC; this deployment
+check is not a new source collection. Initial publication gate is closed.
+
+The feed includes14 results with explicit report gaps, six rule contracts,
+57 Scratch and12 Treasure Play catalog entries, separately typed raffle offer
+and ending notice, and fixed current/retired boundaries. No inventory, complete
+history or winner counts are inferred. Next strict Dart loader/bundle/cache
+continuity, visible UI and native verification/restoration. No Montana app build
+or state acceptance yet. Twenty accepted,25 unfinished; Montana sole active and
+November1 22:30EST deadline unchanged, no extension.
