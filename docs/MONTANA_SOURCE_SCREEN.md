@@ -168,3 +168,29 @@ The linked Scratch ending-date PDF requires audit; catalog listing alone never
 establishes active sales, remaining prizes or printed game identity. No new source
 retrieval timestamp, feed, native build or acceptance is claimed in this decision.
 Scope closed early; release November1 22:30EST unchanged without extension.
+
+## October 28 — strict date-only draw parser
+
+Implemented tooling/import_montana_draws.py against hash-verified retained official
+history tables. All709 source rows validate across seven groups: PB79, DP79,
+MM52, MFL184, LA79, Montana Cash52 and Big Sky Bonus184. Private latest-two
+candidate has14 results. This reuses original October28 capture timestamps;
+no new live source verification or public feed is claimed.
+
+Parser binds page title, exact result-table inventory/headers, unique descending
+dates, weekday cadence, Mountain capture-day bounds, number cardinality/ranges,
+separate DP and bonus identities, and PB/LA multipliers. April26,2026 is the
+reviewed source-window floor, not a game inception date. Montana Cash advertised
+base plus Max Cash must reconcile to the combined amount, but those estimates
+are not promoted as actual payouts. Headline widgets and winner tables cannot
+supply dates/numbers/counts. All reports remain unavailable; MM has no inferred
+draw-wide multiplier and date-only results have no invented instant.
+
+Twelve focused tests pass, including all retained tables, variant separation,
+headline/report isolation, identity/header/table mutations, invalid numbers,
+date/cadence/order/capture failures, multiplier/amount errors, merged/unclosed
+cells and retired-game rejection. Public fixtures contain extracted official
+result tables only. Next literal rule contracts, typed catalog/status and private
+workbook/ending-notice audits, then coupled publication and app/native flows.
+No native build or acceptance; Montana sole active, release November1 at22:30EST
+unchanged without extension. Android remains running; iOS not started.
