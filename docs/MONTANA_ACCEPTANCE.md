@@ -412,3 +412,22 @@ Android ordinary app25048 remains running. Next ordinary native build followed
 by draw/product/source-return, representative enlarged/landscape and controlled
 cache continuity checks, then ordinary restoration. No Montana acceptance or
 new source collection; November1 22:30EST deadline unchanged, no extension.
+
+## October 28 — ordinary Android build and result traversal
+
+Built the ordinary main.dart Android app in17.5seconds, installed and cold-launched
+process26770. No probe entry point or iOS simulator was started. All14 dated
+Montana selections were traversed on the native app; each selection's displayed
+numbers and explicit report gap matched the coupled feed. All seven group result
+source controls launched an external app and returned to the Montana sheet.
+Private accessibility captures retain each selection and OS return under
+work/montana_native. These checks establish navigation/return, not full external
+web-page content rendering. A normal portrait Big Sky Bonus screenshot was also
+visually inspected. Initial map accessibility dumps returned null; opening the
+state picker restored usable accessibility capture, with no app/data reset.
+
+This is partial native evidence, not acceptance. Next all normal rule paths and
+rule URL returns, product/search/detail/source flows, representative enlarged and
+landscape checks, controlled real-cache failure continuity and final ordinary
+restoration. Android remains running on the ordinary app. No new source
+collection or deadline change; November1 22:30EST remains the release deadline.
