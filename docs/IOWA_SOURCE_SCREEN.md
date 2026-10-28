@@ -932,3 +932,13 @@ No new build, code, source refresh, enlarged-text claim, acceptance or deadline
 change. Ordinary app remains on Iowa sources in landscape; Android stays stopped.
 Remaining native integration reconciliation must use the accumulated evidence
 without repeating closed portrait schedules, source returns or retention checks.
+
+## October 28 — agency workbook release notification
+
+The agency notified the requester that a responsive workbook was released,
+then separately closed the records request. The email contains a portal link,
+not the workbook itself. The portal currently requires sign-in; original file
+bytes have not yet been retrieved or audited. No contents, field definitions,
+retailer joins or completeness are inferred from the notification or closure.
+Private email evidence is retained. No fee was authorized and no duplicate
+request or reply was sent. Existing accepted supported coverage is unchanged.
