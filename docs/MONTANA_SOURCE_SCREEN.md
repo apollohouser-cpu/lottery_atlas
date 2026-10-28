@@ -487,3 +487,21 @@ No source refresh or acceptance; November1 22:30EST deadline unchanged.
 Ordinary main.dart rebuilt in8.8seconds after the header fix, installed and
 launched as process28952. Android remains running; no iOS device started.
 This install does not establish new native rule traversal or cache evidence.
+
+## October 28 — native production-loader cache failure continuity
+
+A private untracked Android test entry point exercised the unchanged production
+MontanaCoverageLoader with a controlled HttpClient creation SocketException.
+The loader attempted the request once, returned all14 results with original
+collection date2026-10-28T13:42:33.180344+00:00, and preserved the real807455-byte
+Montana SharedPreferences cache exactly. The complete datastore bytes also
+matched before/after. Private logs and hashes are in work/montana_native.
+This verifies controlled loader failure retention, not whole-device offline,
+map availability or live source refresh. No synthetic snapshot was seeded.
+
+Ordinary lib/main.dart was then rebuilt in10.8seconds, installed and launched
+as process29606. Android remains running; iOS was not started. The private test
+entry point is not tracked and main.dart was never edited. Native normal rule
+paths/rule URL returns, product/search/detail/source flows and representative
+enlarged/landscape checks remain open; this does not establish Montana acceptance.
+November1 22:30EST release deadline remains unchanged, with no extension.
