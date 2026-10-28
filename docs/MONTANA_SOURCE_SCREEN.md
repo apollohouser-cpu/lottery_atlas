@@ -325,3 +325,30 @@ retirement evidence, and verify copy isolation. No fresh collection, public feed
 native build or acceptance is claimed. Next coupled atomic collection/retention
 and publication; private workbook audit remains pending and no records request
 will be resent. Montana sole active; November1 22:30EST deadline unchanged.
+
+## October 28 — coupled collection and atomic retention
+
+A complete24-request official collection finished at
+2026-10-28T13:42:33.180344UTC. All original response lengths and SHA256 hashes
+match the private manifest and candidate source records. Six shared draw/rule
+pages supply14 date-only results across seven groups and six rule contracts;
+all14 exact reports remain unavailable. Twelve Scratch and three Treasure Play
+pages supply57 and12 literal catalog entries. Games navigation, the raffle offer
+and the reviewed ending PDF complete the transaction. The PDF's original printed
+July28 date is preserved; fetching it today does not update its contents or imply
+a new ending notice. Catalog identities remain distinct from printed game numbers.
+
+The collector validates every component before atomic replacement and rejects
+result corrections/window regressions, changed coverage/catalog/rule/offer
+contracts and capture-clock regressions. Fifty-one focused Python tests pass.
+All24 injected request-failure positions preserve prior snapshot bytes; disk
+replacement failure also preserves bytes and removes the temporary file. The
+transaction unit test substitutes only the private-footer PDF transport payload;
+its SHA-gated parser has separate tests, and the actual24-source collection used
+the original PDF with that parser enabled. No whole-device offline claim.
+
+Private evidence: work/montana_scope/collection-20261028T134159Z. No public feed,
+new app build or state acceptance yet. Next publication integration and independent
+live verification, then strict Dart/cache/UI/native. Private workbook audit
+remains pending; no records request resent. Android ordinary app25048 remains
+running. Montana sole active; November1 22:30EST deadline unchanged, no extension.
