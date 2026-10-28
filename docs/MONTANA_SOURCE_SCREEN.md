@@ -194,3 +194,29 @@ result tables only. Next literal rule contracts, typed catalog/status and privat
 workbook/ending-notice audits, then coupled publication and app/native flows.
 No native build or acceptance; Montana sole active, release November1 at22:30EST
 unchanged without extension. Android remains running; iOS not started.
+
+## October 28 — literal draw-rule contracts
+
+Added six strict family rule contracts covering How to Play, About, Prizes and
+Odds, plus Powerball's separately placed Double Play schedule. Seventy physical
+table rows include headers: PB/DP20, MM10, MFL10, LA10, Montana Cash6, Big Sky
+Bonus14. Literal text, links/image references and table cells/spans are retained;
+changed conditions/prizes/identity or missing sections fail closed. These are
+HTML text/table contracts, not image-content or brochure visual audits. Rule
+images are references only and do not independently establish omitted terms.
+
+Reviewed source text establishes Montana Power Play included with PB, separate
+optional DP unaffected by Power Play, MFL annual prizes, and Big Sky Bonus base
+versus combined-bonus schedules. Source discrepancies stay literal and require
+visible qualification: DP headings reverse body odds/money order; Montana Cash
+purchase text conflicts with its About cost and mentions DP; PB About contains
+an unverified United Kingdom sales claim. These statements are source prose,
+not independent geographic coverage assertions. No invented variant or correction.
+
+Twenty focused Python tests pass (12 results,8 rules), including changed prizes,
+conditions, identities, section inventory, cell spans/duplicate attributes and
+malformed markup; harmless whitespace/headlines do not alter the contracts.
+Retained capture hashes were verified before extraction; original source dates
+are unchanged. Next typed catalogs/status, private workbook/ending-notice audit
+and coupled publication, then app/native. No public feed/build or acceptance;
+Montana sole active and November1 22:30EST unchanged without extension.
