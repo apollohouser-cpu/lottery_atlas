@@ -348,3 +348,24 @@ history or winner counts are inferred. Next strict Dart loader/bundle/cache
 continuity, visible UI and native verification/restoration. No Montana app build
 or state acceptance yet. Twenty accepted,25 unfinished; Montana sole active and
 November1 22:30EST deadline unchanged, no extension.
+
+## October 28 — strict Dart loader and cache continuity
+
+Added the coupled Montana asset, reviewed contract, strict dynamic validator and
+production loader. All seven draw groups enforce ranges, cadence, Mountain-local
+capture dates, exact source joins, report gaps and unchanged overlapping results.
+Both catalog kinds retain complete literal schedules and unknown availability;
+only labeled advertised progressive estimates may change. Rules, retirement,
+raffle offer and ending-notice contracts remain gated. Refresh/source timestamps
+cannot regress against retained cache. Malformed remote data and controlled
+network failure preserve valid cached data; persistence failure does not discard
+a valid remote response.
+
+Nine focused Flutter tests pass, including synthetic daily-result advancement,
+cached regression rejection, estimate changes, source/identity/schema mutations,
+correction rejection, bundle fallback and cache-write failure. Three production
+Dart files plus the test analyze clean. These are automated loader tests, not
+native cache or whole-device offline evidence. No new source collection or native
+build. Android ordinary app25048 remains running. Next visible draw/rule and
+catalog/raffle/ending-status UI, then native flows and ordinary restoration.
+Montana remains sole active; November1 22:30EST unchanged, no extension.
