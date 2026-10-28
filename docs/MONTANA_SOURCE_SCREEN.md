@@ -306,3 +306,22 @@ of every catalog image. Catalog sales and remaining inventory remain unavailable
 No new feed, app build or acceptance. Next current-game status gate, private
 workbook audit and coupled atomic collection/publication, then Dart/UI/native.
 Montana remains sole active; November1 22:30EST deadline unchanged, no extension.
+
+## October 28 — product navigation and retirement gate
+
+The reviewed official Games navigation now has a strict contract. New, missing
+or changed product links require scope review before a coupled refresh. Six
+regular families, optional Powerball Double Play, two instant catalog kinds and
+the separately gated raffle offer retain their fixed coverage boundaries.
+Lucky for Life retirement is backed by the existing strict Millionaire for Life
+rule-prose contract, never inferred from an absent navigation link. The Can-Am
+advertisement remains an unresolved link whose opening target returned404;
+external sports wagering is a source boundary, not a lottery-results import.
+Neither navigation nor catalog appearance establishes sales or remaining stock.
+
+Forty-five focused Python tests pass using retained source fixtures. Tests reject
+changed product links, missing navigation, wrong page identity and missing
+retirement evidence, and verify copy isolation. No fresh collection, public feed,
+native build or acceptance is claimed. Next coupled atomic collection/retention
+and publication; private workbook audit remains pending and no records request
+will be resent. Montana sole active; November1 22:30EST deadline unchanged.
