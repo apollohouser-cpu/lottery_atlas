@@ -406,3 +406,23 @@ native cache or whole-device offline evidence. No new source collection or nativ
 build. Android ordinary app25048 remains running. Next visible draw/rule and
 catalog/raffle/ending-status UI, then native flows and ordinary restoration.
 Montana remains sole active; November1 22:30EST unchanged, no extension.
+
+## October 28 — visible Montana draw and rule sheet
+
+Montana's state screen now opens all14 dated selections across six families and
+Double Play. Results retain date-only precision and explicit unavailable reports.
+The fixed paging controls traverse literal rule prose and vertical prize rows
+without requiring a horizontally scrolling table. Power Play and Double Play
+remain distinct. The Double Play source's reversed Odds/Prize headings are
+explicitly disclosed, with money labeled Prize and odds labeled Odds. Montana
+Cash's contradictory purchase prose and the unverified Powerball geographic
+claim are disclosed; neither creates an invented variant or count geography.
+Annual prizes and per-play Mega Millions multipliers remain categorical/literal.
+
+Three widget tests pass: all14 selections and all seven rule paths at2x text in
+portrait/landscape, plus explicit Double Play prize/odds association. The previous
+nine loader tests also passed with this UI change. Two changed production files
+and the widget test analyze clean. This is widget evidence only, not native OS
+returns or a manual all-scale audit. No native build or acceptance yet; Android
+ordinary app25048 remains running. Next catalog/raffle/ending-status UI, then
+native flow/cache checks and ordinary restoration. November1 22:30EST unchanged.
