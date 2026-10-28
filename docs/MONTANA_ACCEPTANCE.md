@@ -44,3 +44,42 @@ No new Montana public feed/build/acceptance at activation. Ordinary Android
 process25048 confirmed running; iOS not started. Mobile privacy/platform
 persistence/signing/accounts/distribution remain separate open gates. Accepted
 states remain closed absent a named defect or meaningful new evidence.
+
+## October 28 — successful game-page capture and expanded product screen
+
+Ordinary curl retrieval of the linked /games/ page succeeded, followed by13
+successful official page responses in a14-page scope pass. The Can-Am navigation
+link returned404 and remains unavailable; no bypass or altered validation was
+used. The home/www403 attempts remain historical failures, not overwritten
+successful captures. The in-app browser also rendered the games page. Successful
+game-page transport does not prove home-page recovery or production publication.
+Original bytes/status/timestamps/SHA256 are private in scope-manifest.json under
+work/montana_scope. Pagination followed only official links: twelve Scratch pages
+expose57 CMS entries/1,157 physical table rows including headers; three Treasure
+Play pages expose12 entries/64 physical rows. These are catalog/schedule structures,
+not remaining stock, claims or accepted game identities. Original pagination
+captures are in pagination-manifest.json; no public feed or new native build.
+
+The current navigation establishes six regular draw families (PB, MM, MFL,
+Lotto America, Montana Cash and Big Sky Bonus), Power Play/Double Play,
+All Star Bonus, Max Cash, Montana Millionaire raffle, Scratch, Treasure Play and
+a sportsbook link. Sports wagering stays a source-linked boundary, not automated
+betting or fabricated lottery draws. Full retired/history/status reconciliation
+and strict rules remain open before scope closure.
+
+Concrete source hazards now recorded: Big Sky Bonus headline shows October27
+while its history table starts October26; never join headline numbers to another
+date's report. PB Double Play winner table has one row per date with a jackpot
+match label and a large count; report units/geography and schema remain unverified.
+PB Double Play schedule headings say Match/Odds/Prize while body money/odds order
+is reversed. Montana Cash purchase prose mentions Double Play and inconsistent
+per-play costs; preserve and disclose source discrepancies rather than infer a
+new variant. All exact-date winner reports remain unavailable pending validation.
+Montana Millionaire advertises November1 sales and November30/December28,2026
+promotional/final drawings; its historical table begins December26,2025. Planned
+prize quantities and older raffle results must never become current winners.
+
+Next inspect literal rule contracts/results implementation, retired/status links,
+complete typed catalogs and privately delivered workbook. Scope due October28
+23:30EDT and release November1 22:30EST unchanged, no extension. Montana sole
+active;20accepted25unfinished. Android ordinary app remains running; no iOS start.
