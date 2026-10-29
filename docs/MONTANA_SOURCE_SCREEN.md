@@ -505,3 +505,25 @@ entry point is not tracked and main.dart was never edited. Native normal rule
 paths/rule URL returns, product/search/detail/source flows and representative
 enlarged/landscape checks remain open; this does not establish Montana acceptance.
 November1 22:30EST release deadline remains unchanged, with no extension.
+
+## October 28 evening — scheduled snapshot and native remote adoption
+
+Scheduled snapshot bc7b96e collected Montana at2026-10-28T22:38:28.861665+00:00.
+An independent live download at2026-10-29T00:48:05.995494+00:00 matched all807455
+repository bytes, SHA256 a301d8b3b3651347f147d4bce7d5ad6451e77b31ded337e84a06b2359e14f3cd.
+The strict Python publication validator accepts these bytes. The14 result dates
+and numbers are unchanged from the initial publication; this is fresh source
+retrieval provenance, not an invented new draw or wider history window.
+
+A private untracked Android target called the unchanged production loader with
+its ordinary network/cache paths. It adopted the newer remote snapshot over the
+real13:42:33 cache, persisted the exact independently verified bytes, and returned
+the same parsed data. No fetch/cache override or synthetic data was injected.
+Private verification and device log are retained in work/montana_native/adoption.
+This closes newer remote adoption for this snapshot, not native rule/product/UI
+traversal. Existing UI-control authorization remains pending; no repeat request.
+Montana remains unaccepted and the November1 22:30EST deadline is unchanged.
+
+Ordinary main.dart was rebuilt in11.0seconds, installed and launched30693
+after the private adoption target. Android remains running; iOS not started.
+No tracked probe or main.dart edit was introduced.
