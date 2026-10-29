@@ -1,7 +1,47 @@
 {
   "state": "South Dakota",
-  "retrievedAt": "2026-10-28T22:39:17.253244+00:00",
+  "retrievedAt": "2026-10-29T05:52:59.070411+00:00",
   "results": [
+    {
+      "game": "Powerball",
+      "variant": "Regular",
+      "drawId": "3229",
+      "rawDrawTime": 1793240100000,
+      "drawDate": "2026-10-28",
+      "dateZone": "America/Chicago",
+      "primary": [
+        "11",
+        "13",
+        "16",
+        "47",
+        "60"
+      ],
+      "secondary": [
+        "13"
+      ],
+      "multiplier": 2,
+      "sourceUrl": "https://lottery.sd.gov/game/powerball-power-play/"
+    },
+    {
+      "game": "Powerball",
+      "variant": "Double Play",
+      "drawId": "3229",
+      "rawDrawTime": 1793240100000,
+      "drawDate": "2026-10-28",
+      "dateZone": "America/Chicago",
+      "primary": [
+        "15",
+        "22",
+        "23",
+        "48",
+        "65"
+      ],
+      "secondary": [
+        "9"
+      ],
+      "multiplier": null,
+      "sourceUrl": "https://lottery.sd.gov/game/powerball-double-play/"
+    },
     {
       "game": "Powerball",
       "variant": "Regular",
@@ -38,46 +78,6 @@
       ],
       "secondary": [
         "8"
-      ],
-      "multiplier": null,
-      "sourceUrl": "https://lottery.sd.gov/game/powerball-double-play/"
-    },
-    {
-      "game": "Powerball",
-      "variant": "Regular",
-      "drawId": "3227",
-      "rawDrawTime": 1792894500000,
-      "drawDate": "2026-10-24",
-      "dateZone": "America/Chicago",
-      "primary": [
-        "4",
-        "5",
-        "15",
-        "19",
-        "55"
-      ],
-      "secondary": [
-        "19"
-      ],
-      "multiplier": 2,
-      "sourceUrl": "https://lottery.sd.gov/game/powerball-power-play/"
-    },
-    {
-      "game": "Powerball",
-      "variant": "Double Play",
-      "drawId": "3227",
-      "rawDrawTime": 1792894500000,
-      "drawDate": "2026-10-24",
-      "dateZone": "America/Chicago",
-      "primary": [
-        "3",
-        "30",
-        "44",
-        "50",
-        "56"
-      ],
-      "secondary": [
-        "23"
       ],
       "multiplier": null,
       "sourceUrl": "https://lottery.sd.gov/game/powerball-double-play/"
@@ -125,6 +125,24 @@
     {
       "game": "Dakota Cash",
       "variant": "Regular",
+      "drawId": "2958",
+      "rawDrawTime": 1793240100000,
+      "drawDate": "2026-10-28",
+      "dateZone": "America/Chicago",
+      "primary": [
+        "12",
+        "17",
+        "21",
+        "28",
+        "35"
+      ],
+      "secondary": [],
+      "multiplier": null,
+      "sourceUrl": "https://lottery.sd.gov/game/dakota-cash/"
+    },
+    {
+      "game": "Dakota Cash",
+      "variant": "Regular",
       "drawId": "2957",
       "rawDrawTime": 1792894500000,
       "drawDate": "2026-10-24",
@@ -141,22 +159,24 @@
       "sourceUrl": "https://lottery.sd.gov/game/dakota-cash/"
     },
     {
-      "game": "Dakota Cash",
+      "game": "Million 4 Life",
       "variant": "Regular",
-      "drawId": "2956",
-      "rawDrawTime": 1792635300000,
-      "drawDate": "2026-10-21",
+      "drawId": "249",
+      "rawDrawTime": 1793240100000,
+      "drawDate": "2026-10-28",
       "dateZone": "America/Chicago",
       "primary": [
-        "6",
-        "12",
-        "19",
-        "25",
-        "35"
+        "15",
+        "30",
+        "36",
+        "44",
+        "46"
       ],
-      "secondary": [],
+      "secondary": [
+        "1"
+      ],
       "multiplier": null,
-      "sourceUrl": "https://lottery.sd.gov/game/dakota-cash/"
+      "sourceUrl": "https://lottery.sd.gov/game/millionaire-for-life/"
     },
     {
       "game": "Million 4 Life",
@@ -179,24 +199,24 @@
       "sourceUrl": "https://lottery.sd.gov/game/millionaire-for-life/"
     },
     {
-      "game": "Million 4 Life",
+      "game": "Lotto America",
       "variant": "Regular",
-      "drawId": "247",
-      "rawDrawTime": 1793067300000,
-      "drawDate": "2026-10-26",
+      "drawId": "1159",
+      "rawDrawTime": 1793240100000,
+      "drawDate": "2026-10-28",
       "dateZone": "America/Chicago",
       "primary": [
-        "28",
-        "32",
-        "34",
-        "37",
-        "40"
+        "3",
+        "14",
+        "15",
+        "33",
+        "43"
       ],
       "secondary": [
-        "4"
+        "8"
       ],
-      "multiplier": null,
-      "sourceUrl": "https://lottery.sd.gov/game/millionaire-for-life/"
+      "multiplier": 2,
+      "sourceUrl": "https://lottery.sd.gov/game/lotto-america/"
     },
     {
       "game": "Lotto America",
@@ -214,26 +234,6 @@
       ],
       "secondary": [
         "9"
-      ],
-      "multiplier": 4,
-      "sourceUrl": "https://lottery.sd.gov/game/lotto-america/"
-    },
-    {
-      "game": "Lotto America",
-      "variant": "Regular",
-      "drawId": "1157",
-      "rawDrawTime": 1792894500000,
-      "drawDate": "2026-10-24",
-      "dateZone": "America/Chicago",
-      "primary": [
-        "15",
-        "18",
-        "21",
-        "25",
-        "31"
-      ],
-      "secondary": [
-        "4"
       ],
       "multiplier": 4,
       "sourceUrl": "https://lottery.sd.gov/game/lotto-america/"
@@ -282,6 +282,172 @@
     }
   ],
   "reports": [
+    {
+      "drawId": "3229",
+      "drawDate": "2026-10-28",
+      "game": "Powerball",
+      "variant": "Regular",
+      "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
+      "countUnit": "SD Winners (official source label; not unique people or paid claims)",
+      "optionLabel": "Power Play",
+      "tiers": [
+        {
+          "sourceTierId": "1",
+          "match": "5/5+PB",
+          "sdWinners": 0,
+          "sdOptionWinners": 0,
+          "prizeAmountDollars": null,
+          "prizeLabel": "See literal prize schedule (source amount is a placeholder)"
+        },
+        {
+          "sourceTierId": "2",
+          "match": "5/5",
+          "sdWinners": 0,
+          "sdOptionWinners": 0,
+          "prizeAmountDollars": 1000000,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "3",
+          "match": "4/5+PB",
+          "sdWinners": 0,
+          "sdOptionWinners": 0,
+          "prizeAmountDollars": 50000,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "4",
+          "match": "4/5",
+          "sdWinners": 0,
+          "sdOptionWinners": 0,
+          "prizeAmountDollars": 100,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "5",
+          "match": "3/5+PB",
+          "sdWinners": 1,
+          "sdOptionWinners": 0,
+          "prizeAmountDollars": 100,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "6",
+          "match": "3/5",
+          "sdWinners": 49,
+          "sdOptionWinners": 25,
+          "prizeAmountDollars": 7,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "7",
+          "match": "2/5+PB",
+          "sdWinners": 43,
+          "sdOptionWinners": 27,
+          "prizeAmountDollars": 7,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "8",
+          "match": "1/5+PB",
+          "sdWinners": 322,
+          "sdOptionWinners": 194,
+          "prizeAmountDollars": 4,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "9",
+          "match": "0/5+PB",
+          "sdWinners": 792,
+          "sdOptionWinners": 393,
+          "prizeAmountDollars": 4,
+          "prizeLabel": null
+        }
+      ]
+    },
+    {
+      "drawId": "3229",
+      "drawDate": "2026-10-28",
+      "game": "Powerball",
+      "variant": "Double Play",
+      "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
+      "countUnit": "SD Winners (official source label; not unique people or paid claims)",
+      "optionLabel": null,
+      "tiers": [
+        {
+          "sourceTierId": "1",
+          "match": "5/5+PB DP",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": null,
+          "prizeLabel": "See literal prize schedule (source amount is a placeholder)"
+        },
+        {
+          "sourceTierId": "2",
+          "match": "5/5 DP",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 500000,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "3",
+          "match": "4/5+PB DP",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 50000,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "4",
+          "match": "4/5 DP",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 500,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "5",
+          "match": "3/5+PB DP",
+          "sdWinners": 1,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 500,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "6",
+          "match": "3/5 DP",
+          "sdWinners": 18,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 20,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "7",
+          "match": "2/5+PB DP",
+          "sdWinners": 20,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 20,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "8",
+          "match": "1/5+PB DP",
+          "sdWinners": 132,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 10,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "9",
+          "match": "0/5+PB DP",
+          "sdWinners": 364,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 7,
+          "prizeLabel": null
+        }
+      ]
+    },
     {
       "drawId": "3228",
       "drawDate": "2026-10-26",
@@ -449,172 +615,6 @@
       ]
     },
     {
-      "drawId": "3227",
-      "drawDate": "2026-10-24",
-      "game": "Powerball",
-      "variant": "Regular",
-      "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
-      "countUnit": "SD Winners (official source label; not unique people or paid claims)",
-      "optionLabel": "Power Play",
-      "tiers": [
-        {
-          "sourceTierId": "1",
-          "match": "5/5+PB",
-          "sdWinners": 0,
-          "sdOptionWinners": 0,
-          "prizeAmountDollars": null,
-          "prizeLabel": "See literal prize schedule (source amount is a placeholder)"
-        },
-        {
-          "sourceTierId": "2",
-          "match": "5/5",
-          "sdWinners": 0,
-          "sdOptionWinners": 0,
-          "prizeAmountDollars": 1000000,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "3",
-          "match": "4/5+PB",
-          "sdWinners": 0,
-          "sdOptionWinners": 0,
-          "prizeAmountDollars": 50000,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "4",
-          "match": "4/5",
-          "sdWinners": 2,
-          "sdOptionWinners": 0,
-          "prizeAmountDollars": 100,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "5",
-          "match": "3/5+PB",
-          "sdWinners": 9,
-          "sdOptionWinners": 0,
-          "prizeAmountDollars": 100,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "6",
-          "match": "3/5",
-          "sdWinners": 69,
-          "sdOptionWinners": 49,
-          "prizeAmountDollars": 7,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "7",
-          "match": "2/5+PB",
-          "sdWinners": 54,
-          "sdOptionWinners": 18,
-          "prizeAmountDollars": 7,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "8",
-          "match": "1/5+PB",
-          "sdWinners": 347,
-          "sdOptionWinners": 189,
-          "prizeAmountDollars": 4,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "9",
-          "match": "0/5+PB",
-          "sdWinners": 849,
-          "sdOptionWinners": 456,
-          "prizeAmountDollars": 4,
-          "prizeLabel": null
-        }
-      ]
-    },
-    {
-      "drawId": "3227",
-      "drawDate": "2026-10-24",
-      "game": "Powerball",
-      "variant": "Double Play",
-      "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
-      "countUnit": "SD Winners (official source label; not unique people or paid claims)",
-      "optionLabel": null,
-      "tiers": [
-        {
-          "sourceTierId": "1",
-          "match": "5/5+PB DP",
-          "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": null,
-          "prizeLabel": "See literal prize schedule (source amount is a placeholder)"
-        },
-        {
-          "sourceTierId": "2",
-          "match": "5/5 DP",
-          "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 500000,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "3",
-          "match": "4/5+PB DP",
-          "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 50000,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "4",
-          "match": "4/5 DP",
-          "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 500,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "5",
-          "match": "3/5+PB DP",
-          "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 500,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "6",
-          "match": "3/5 DP",
-          "sdWinners": 11,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 20,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "7",
-          "match": "2/5+PB DP",
-          "sdWinners": 23,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 20,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "8",
-          "match": "1/5+PB DP",
-          "sdWinners": 159,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 10,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "9",
-          "match": "0/5+PB DP",
-          "sdWinners": 372,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 7,
-          "prizeLabel": null
-        }
-      ]
-    },
-    {
       "drawId": "1717",
       "drawDate": "2026-10-27",
       "game": "Mega Millions",
@@ -633,6 +633,49 @@
       "tiers": [],
       "countUnit": null,
       "limitation": "Mega Millions count geography and multiplier units unresolved; counts excluded, not zero."
+    },
+    {
+      "drawId": "2958",
+      "drawDate": "2026-10-28",
+      "game": "Dakota Cash",
+      "variant": "Regular",
+      "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
+      "countUnit": "SD Winners (official source label; not unique people or paid claims)",
+      "optionLabel": null,
+      "tiers": [
+        {
+          "sourceTierId": "1",
+          "match": "Match 5",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": null,
+          "prizeLabel": "See literal prize schedule (source amount is a placeholder)"
+        },
+        {
+          "sourceTierId": "2",
+          "match": "Match 4",
+          "sdWinners": 11,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 100,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "3",
+          "match": "Match 3",
+          "sdWinners": 227,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 3,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "4",
+          "match": "Match 2",
+          "sdWinners": 2147,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 1,
+          "prizeLabel": null
+        }
+      ]
     },
     {
       "drawId": "2957",
@@ -678,9 +721,9 @@
       ]
     },
     {
-      "drawId": "2956",
-      "drawDate": "2026-10-21",
-      "game": "Dakota Cash",
+      "drawId": "249",
+      "drawDate": "2026-10-28",
+      "game": "Million 4 Life",
       "variant": "Regular",
       "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
       "countUnit": "SD Winners (official source label; not unique people or paid claims)",
@@ -688,34 +731,74 @@
       "tiers": [
         {
           "sourceTierId": "1",
-          "match": "Match 5",
+          "match": "5/5+MB",
           "sdWinners": 0,
           "sdOptionWinners": null,
           "prizeAmountDollars": null,
-          "prizeLabel": "See literal prize schedule (source amount is a placeholder)"
+          "prizeLabel": "$1M/YEAR FOR LIFE"
         },
         {
           "sourceTierId": "2",
-          "match": "Match 4",
-          "sdWinners": 6,
+          "match": "5/5",
+          "sdWinners": 0,
           "sdOptionWinners": null,
-          "prizeAmountDollars": 100,
-          "prizeLabel": null
+          "prizeAmountDollars": null,
+          "prizeLabel": "$100K/YEAR FOR LIFE"
         },
         {
           "sourceTierId": "3",
-          "match": "Match 3",
-          "sdWinners": 199,
+          "match": "4/5+MB",
+          "sdWinners": 0,
           "sdOptionWinners": null,
-          "prizeAmountDollars": 3,
+          "prizeAmountDollars": 7500,
           "prizeLabel": null
         },
         {
           "sourceTierId": "4",
-          "match": "Match 2",
-          "sdWinners": 2002,
+          "match": "4/5",
+          "sdWinners": 1,
           "sdOptionWinners": null,
-          "prizeAmountDollars": 1,
+          "prizeAmountDollars": 500,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "5",
+          "match": "3/5+MB",
+          "sdWinners": 2,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 250,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "6",
+          "match": "3/5",
+          "sdWinners": 7,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 50,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "7",
+          "match": "2/5+MB",
+          "sdWinners": 16,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 25,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "8",
+          "match": "2/5",
+          "sdWinners": 87,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 8,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "9",
+          "match": "1/5+MB",
+          "sdWinners": 126,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 8,
           "prizeLabel": null
         }
       ]
@@ -804,84 +887,84 @@
       ]
     },
     {
-      "drawId": "247",
-      "drawDate": "2026-10-26",
-      "game": "Million 4 Life",
+      "drawId": "1159",
+      "drawDate": "2026-10-28",
+      "game": "Lotto America",
       "variant": "Regular",
       "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
       "countUnit": "SD Winners (official source label; not unique people or paid claims)",
-      "optionLabel": null,
+      "optionLabel": "All Star Bonus",
       "tiers": [
         {
           "sourceTierId": "1",
-          "match": "5/5+MB",
+          "match": "5/5+SB",
           "sdWinners": 0,
-          "sdOptionWinners": null,
+          "sdOptionWinners": 0,
           "prizeAmountDollars": null,
-          "prizeLabel": "$1M/YEAR FOR LIFE"
+          "prizeLabel": "See literal prize schedule (source amount is a placeholder)"
         },
         {
           "sourceTierId": "2",
           "match": "5/5",
           "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": null,
-          "prizeLabel": "$100K/YEAR FOR LIFE"
+          "sdOptionWinners": 0,
+          "prizeAmountDollars": 20000,
+          "prizeLabel": null
         },
         {
           "sourceTierId": "3",
-          "match": "4/5+MB",
+          "match": "4/5+SB",
           "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 7500,
+          "sdOptionWinners": 0,
+          "prizeAmountDollars": 1000,
           "prizeLabel": null
         },
         {
           "sourceTierId": "4",
           "match": "4/5",
           "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 500,
+          "sdOptionWinners": 0,
+          "prizeAmountDollars": 100,
           "prizeLabel": null
         },
         {
           "sourceTierId": "5",
-          "match": "3/5+MB",
+          "match": "3/5+SB",
           "sdWinners": 1,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 250,
+          "sdOptionWinners": 0,
+          "prizeAmountDollars": 20,
           "prizeLabel": null
         },
         {
           "sourceTierId": "6",
           "match": "3/5",
-          "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 50,
+          "sdWinners": 18,
+          "sdOptionWinners": 11,
+          "prizeAmountDollars": 5,
           "prizeLabel": null
         },
         {
           "sourceTierId": "7",
-          "match": "2/5+MB",
-          "sdWinners": 15,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 25,
+          "match": "2/5+SB",
+          "sdWinners": 26,
+          "sdOptionWinners": 17,
+          "prizeAmountDollars": 5,
           "prizeLabel": null
         },
         {
           "sourceTierId": "8",
-          "match": "2/5",
-          "sdWinners": 82,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 8,
+          "match": "1/5+SB",
+          "sdWinners": 126,
+          "sdOptionWinners": 90,
+          "prizeAmountDollars": 2,
           "prizeLabel": null
         },
         {
           "sourceTierId": "9",
-          "match": "1/5+MB",
-          "sdWinners": 139,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 8,
+          "match": "0/5+SB",
+          "sdWinners": 246,
+          "sdOptionWinners": 137,
+          "prizeAmountDollars": 2,
           "prizeLabel": null
         }
       ]
@@ -964,89 +1047,6 @@
           "match": "0/5+SB",
           "sdWinners": 211,
           "sdOptionWinners": 125,
-          "prizeAmountDollars": 2,
-          "prizeLabel": null
-        }
-      ]
-    },
-    {
-      "drawId": "1157",
-      "drawDate": "2026-10-24",
-      "game": "Lotto America",
-      "variant": "Regular",
-      "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
-      "countUnit": "SD Winners (official source label; not unique people or paid claims)",
-      "optionLabel": "All Star Bonus",
-      "tiers": [
-        {
-          "sourceTierId": "1",
-          "match": "5/5+SB",
-          "sdWinners": 0,
-          "sdOptionWinners": 0,
-          "prizeAmountDollars": null,
-          "prizeLabel": "See literal prize schedule (source amount is a placeholder)"
-        },
-        {
-          "sourceTierId": "2",
-          "match": "5/5",
-          "sdWinners": 0,
-          "sdOptionWinners": 0,
-          "prizeAmountDollars": 20000,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "3",
-          "match": "4/5+SB",
-          "sdWinners": 0,
-          "sdOptionWinners": 0,
-          "prizeAmountDollars": 1000,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "4",
-          "match": "4/5",
-          "sdWinners": 0,
-          "sdOptionWinners": 2,
-          "prizeAmountDollars": 100,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "5",
-          "match": "3/5+SB",
-          "sdWinners": 1,
-          "sdOptionWinners": 1,
-          "prizeAmountDollars": 20,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "6",
-          "match": "3/5",
-          "sdWinners": 20,
-          "sdOptionWinners": 12,
-          "prizeAmountDollars": 5,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "7",
-          "match": "2/5+SB",
-          "sdWinners": 41,
-          "sdOptionWinners": 29,
-          "prizeAmountDollars": 5,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "8",
-          "match": "1/5+SB",
-          "sdWinners": 207,
-          "sdOptionWinners": 116,
-          "prizeAmountDollars": 2,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "9",
-          "match": "0/5+SB",
-          "sdWinners": 351,
-          "sdOptionWinners": 193,
           "prizeAmountDollars": 2,
           "prizeLabel": null
         }

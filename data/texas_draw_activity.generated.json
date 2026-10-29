@@ -1,6 +1,6 @@
 {
   "source": "Texas Lottery official draw-specific Where Sold tables",
-  "updatedAt": "2026-10-28T22:58:09.033Z",
+  "updatedAt": "2026-10-29T06:07:07.087Z",
   "sourceLastUpdated": "2026-10-28T12:00:00.000Z",
   "coverage": "2026 draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.",
   "activities": [
@@ -2811,6 +2811,24 @@
       "prizeAmount": 25000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158400904.html",
       "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-10-26"
+    },
+    {
+      "id": "tx-draw-b6054ccf041d0a5a08f8d5be",
+      "latitude": 32.117460184068,
+      "longitude": -96.477613761397,
+      "city": "CORSICANA",
+      "county": "Navarro",
+      "state": "TX",
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "retailerName": "FOODMART #1",
+      "retailerAddress": "2809 N BEATON ST, CORSICANA, TX 75110",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-10-28T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 25000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158400906.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-10-28"
     }
   ],
   "excluded": [
@@ -4020,6 +4038,14 @@
       "gameName": "Powerball",
       "date": "2026-10-26",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158400904.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "date": "2026-10-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158400906.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -5732,6 +5758,14 @@
       "gameName": "Lotto Texas",
       "date": "2026-10-26",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Lotto_Texas/Winning_Numbers/details.html_1158400904.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Lotto Texas",
+      "date": "2026-10-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Lotto_Texas/Winning_Numbers/details.html_1158400906.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -8478,6 +8512,14 @@
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158400905.html",
       "sourceRows": 0,
       "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "date": "2026-10-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158400906.html",
+      "sourceRows": 1,
+      "mappedRows": 1
     },
     {
       "game": "state-draw",
@@ -16716,6 +16758,22 @@
       "gameName": "All or Nothing",
       "date": "2026-10-28",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_140764238.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-10-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1481067106.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-10-28",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_2120986962.html",
       "sourceRows": 0,
       "mappedRows": 0
     }
