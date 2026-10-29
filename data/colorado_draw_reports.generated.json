@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "state": "Colorado",
-  "retrievedAt": "2026-10-29T06:00:44.716Z",
+  "retrievedAt": "2026-10-29T13:13:43.729Z",
   "cadence": "Two recent complete published reports per family; Cash 5 skips dates with wholly unpublished EZ Match sections within eight official linked dates. Displayed draw dates remain the actual selected dates. Pick 3 keeps the newest Midday and Evening reports. Scheduled refresh, not a live feed.",
   "coverage": "Colorado source-reported tier winners across six current draw families, separate variants and wager units. EZ Match players and dollars remain separate. No distinct-ticket aggregate or retailer allocation.",
   "reports": [
@@ -1326,6 +1326,46 @@
       "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
     },
     {
+      "id": "co-cash5-2026-10-28",
+      "game": "Cash 5",
+      "drawDate": "2026-10-28",
+      "sourceUrl": "https://www.coloradolottery.com/en/games/cash5/drawings/2026-10-28/",
+      "tiers": [
+        {
+          "match": "5 of 5",
+          "variant": "Base",
+          "reportedWinners": 1,
+          "prizeLabel": "$20,000"
+        },
+        {
+          "match": "4 of 5",
+          "variant": "Base",
+          "reportedWinners": 34,
+          "prizeLabel": "$200"
+        },
+        {
+          "match": "3 of 5",
+          "variant": "Base",
+          "reportedWinners": 606,
+          "prizeLabel": "$10"
+        },
+        {
+          "match": "2 of 5",
+          "variant": "Base",
+          "reportedWinners": 4783,
+          "prizeLabel": "$1"
+        }
+      ],
+      "ezMatch": {
+        "date": "2026-10-28",
+        "reportedPlayers": 1044,
+        "publishedPayoutDollars": 3219,
+        "periodLabel": "4:30 AM–11:59 PM on draw date"
+      },
+      "prizeNotes": [],
+      "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
+    },
+    {
       "id": "co-cash5-2026-10-27",
       "game": "Cash 5",
       "drawDate": "2026-10-27",
@@ -1360,46 +1400,6 @@
         "date": "2026-10-27",
         "reportedPlayers": 849,
         "publishedPayoutDollars": 3179,
-        "periodLabel": "4:30 AM–11:59 PM on draw date"
-      },
-      "prizeNotes": [],
-      "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
-    },
-    {
-      "id": "co-cash5-2026-10-26",
-      "game": "Cash 5",
-      "drawDate": "2026-10-26",
-      "sourceUrl": "https://www.coloradolottery.com/en/games/cash5/drawings/2026-10-26/",
-      "tiers": [
-        {
-          "match": "5 of 5",
-          "variant": "Base",
-          "reportedWinners": 0,
-          "prizeLabel": "$20,000"
-        },
-        {
-          "match": "4 of 5",
-          "variant": "Base",
-          "reportedWinners": 27,
-          "prizeLabel": "$200"
-        },
-        {
-          "match": "3 of 5",
-          "variant": "Base",
-          "reportedWinners": 484,
-          "prizeLabel": "$10"
-        },
-        {
-          "match": "2 of 5",
-          "variant": "Base",
-          "reportedWinners": 4263,
-          "prizeLabel": "$1"
-        }
-      ],
-      "ezMatch": {
-        "date": "2026-10-26",
-        "reportedPlayers": 994,
-        "publishedPayoutDollars": 2969,
         "periodLabel": "4:30 AM–11:59 PM on draw date"
       },
       "prizeNotes": [],
