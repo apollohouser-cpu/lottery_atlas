@@ -1061,3 +1061,20 @@ The user explicitly requested the iOS simulator. This supersedes the earlier
 Android-running/iOS-shutdown preference: keep one simulator, using iPhone17e and
 leaving Android stopped until the user changes that preference. Beta participation
 and the four readiness gates remain unchanged.
+
+## October 31 — iOS heat-bubble details recovery
+
+The user reported that the South Carolina York County heat bubble could not be
+selected. The details path awaited a macOS-only setMapActive method channel before
+opening its sheet; iOS has no implementation. Live map bridge calls now use a
+platform guard, preserving macOS suspension/restoration while letting iOS/Android
+map sheets proceed. Heat targets also have named button semantics.
+
+Three focused bridge tests pass, including both mobile platforms with no mocked
+native handler and macOS false/true delivery. Targeted analysis has only the
+existing curly-braces info at the unrelated camera-fit conditional. Ordinary iOS
+build passed (Xcode15.5seconds), installed and launched36853. CUA could bind the
+Simulator this session; after user interaction, fresh accessibility inspection
+confirmed the York, SC filtered county heat activity panel and its records were
+visible. This confirms the panel was reached, not an agent-performed full native
+acceptance sweep. Android remains stopped; the four beta gates remain open.

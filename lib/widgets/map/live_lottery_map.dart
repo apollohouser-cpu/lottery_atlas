@@ -22,6 +22,7 @@ import '../../models/state_scratch_game.dart';
 import '../../models/state_lottery_data_profile.dart';
 import '../../app/app_route_observer.dart';
 import '../../services/app_preferences.dart';
+import '../../services/map_mouse_bridge.dart';
 import '../../services/favorite_places_service.dart';
 import '../../services/favorite_games_service.dart';
 import '../../services/lottery_activity_feed_service.dart';
@@ -214,10 +215,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     )..addListener(_advanceRetailerFocusAnimation);
 
     _magicMouseChannel.setMethodCallHandler(_handleNativeMouseEvent);
-    _magicMouseChannel.invokeMethod<void>(
-      'setMapActive',
-      _hostingRoute?.isCurrent ?? true,
-    );
+    MapMouseBridge.setMapActive(_hostingRoute?.isCurrent ?? true);
 
     _stateHitNotifier.addListener(_updateHoveredState);
     _countyHitNotifier.addListener(_updateHoveredCounty);
@@ -309,16 +307,13 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
   @override
   void didPushNext() {
-    _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    MapMouseBridge.setMapActive(false);
   }
 
   @override
   void didPopNext() {
     if (mounted) {
-      _magicMouseChannel.invokeMethod<void>(
-        'setMapActive',
-        _hostingRoute?.isCurrent ?? true,
-      );
+      MapMouseBridge.setMapActive(_hostingRoute?.isCurrent ?? true);
     }
   }
 
@@ -348,7 +343,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     _retailerFocusAnimationController
       ..removeListener(_advanceRetailerFocusAnimation)
       ..dispose();
-    _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    MapMouseBridge.setMapActive(false);
     _magicMouseChannel.setMethodCallHandler(null);
 
     _stateHitNotifier.removeListener(_updateHoveredState);
@@ -595,7 +590,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     // The native Magic Mouse bridge otherwise sees wheel movement even while
     // a Flutter sheet is in front of the map. Temporarily hand scrolling to
     // the picker so its game list can be browsed normally.
-    await _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    await MapMouseBridge.setMapActive(false);
     if (!mounted) return;
 
     String? selection;
@@ -708,10 +703,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>(
-          'setMapActive',
-          _hostingRoute?.isCurrent ?? true,
-        );
+        await MapMouseBridge.setMapActive(_hostingRoute?.isCurrent ?? true);
       }
     }
 
@@ -2547,7 +2539,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       context,
     ).formatMediumDate(activity.drawDate);
 
-    await _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    await MapMouseBridge.setMapActive(false);
     if (!mounted) return;
     try {
       await showModalBottomSheet<void>(
@@ -2981,10 +2973,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>(
-          'setMapActive',
-          _hostingRoute?.isCurrent ?? true,
-        );
+        await MapMouseBridge.setMapActive(_hostingRoute?.isCurrent ?? true);
       }
     }
   }
@@ -3001,7 +2990,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
     // The macOS bridge must release scroll handling while a long county sheet
     // is open; otherwise Magic Mouse wheel movement is routed to the map.
-    await _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    await MapMouseBridge.setMapActive(false);
     if (!mounted) return;
     try {
       await showModalBottomSheet<void>(
@@ -3300,10 +3289,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>(
-          'setMapActive',
-          _hostingRoute?.isCurrent ?? true,
-        );
+        await MapMouseBridge.setMapActive(_hostingRoute?.isCurrent ?? true);
       }
     }
   }
@@ -3647,7 +3633,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       }
     }
 
-    await _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    await MapMouseBridge.setMapActive(false);
     if (!mounted) return;
 
     String? selectedCountyId;
@@ -3830,10 +3816,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>(
-          'setMapActive',
-          _hostingRoute?.isCurrent ?? true,
-        );
+        await MapMouseBridge.setMapActive(_hostingRoute?.isCurrent ?? true);
       }
     }
 
@@ -3873,7 +3856,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       return;
     }
 
-    await _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    await MapMouseBridge.setMapActive(false);
     if (!mounted) return;
 
     StateRetailer? selectedRetailer;
@@ -4046,10 +4029,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>(
-          'setMapActive',
-          _hostingRoute?.isCurrent ?? true,
-        );
+        await MapMouseBridge.setMapActive(_hostingRoute?.isCurrent ?? true);
       }
     }
 
@@ -4177,7 +4157,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         ? 0
         : counties.first.totalWinningTickets;
 
-    await _magicMouseChannel.invokeMethod<void>('setMapActive', false);
+    await MapMouseBridge.setMapActive(false);
     if (!mounted) return;
     try {
       await showModalBottomSheet<void>(
@@ -4327,10 +4307,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       );
     } finally {
       if (mounted) {
-        await _magicMouseChannel.invokeMethod<void>(
-          'setMapActive',
-          _hostingRoute?.isCurrent ?? true,
-        );
+        await MapMouseBridge.setMapActive(_hostingRoute?.isCurrent ?? true);
       }
     }
   }
@@ -4988,7 +4965,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                         child: GestureDetector(
                           behavior: HitTestBehavior.opaque,
                           onTap: () => _focusCountyHeatBubble(county),
-                          child: const SizedBox.expand(),
+                          child: Semantics(
+                            button: true,
+                            label: '${county.county} County heat activity',
+                            child: const SizedBox.expand(),
+                          ),
                         ),
                       ),
                     );
@@ -5094,9 +5075,19 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                           ),
                     );
                   } else if (state == 'Nebraska') {
-                    showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NebraskaScratchCatalogSheet());
+                    showModalBottomSheet<void>(
+                      context: context,
+                      isScrollControlled: true,
+                      useSafeArea: true,
+                      builder: (_) => const NebraskaScratchCatalogSheet(),
+                    );
                   } else if (state == 'Kansas') {
-                    showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const KansasScratchCatalogSheet());
+                    showModalBottomSheet<void>(
+                      context: context,
+                      isScrollControlled: true,
+                      useSafeArea: true,
+                      builder: (_) => const KansasScratchCatalogSheet(),
+                    );
                   } else if (state == 'Louisiana') {
                     showModalBottomSheet<void>(
                       context: context,
@@ -5189,10 +5180,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 onSearchSelected: _navigateToSearchResult,
                 onStateSelected: _focusStateByName,
                 onSearchVisibilityChanged: (isOpen) {
-                  _magicMouseChannel.invokeMethod<void>(
-                    'setMapActive',
-                    !isOpen,
-                  );
+                  MapMouseBridge.setMapActive(!isOpen);
                 },
                 onActivityRefresh: _refreshPublishedActivityFeed,
               ),
@@ -5268,12 +5256,8 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   builder: (context, constraints) => Align(
                     alignment: Alignment.topLeft,
                     child: MouseRegion(
-                      onEnter: (_) => _magicMouseChannel.invokeMethod<void>(
-                        'setMapActive',
-                        false,
-                      ),
-                      onExit: (_) => _magicMouseChannel.invokeMethod<void>(
-                        'setMapActive',
+                      onEnter: (_) => MapMouseBridge.setMapActive(false),
+                      onExit: (_) => MapMouseBridge.setMapActive(
                         _hostingRoute?.isCurrent ?? true,
                       ),
                       child: NextDrawingsPanel(
@@ -5454,13 +5438,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                 ? constraints.maxWidth
                                 : controlWidth,
                             child: MouseRegion(
-                              onEnter: (_) => _magicMouseChannel
-                                  .invokeMethod<void>('setMapActive', false),
-                              onExit: (_) =>
-                                  _magicMouseChannel.invokeMethod<void>(
-                                    'setMapActive',
-                                    _hostingRoute?.isCurrent ?? true,
-                                  ),
+                              onEnter: (_) =>
+                                  MapMouseBridge.setMapActive(false),
+                              onExit: (_) => MapMouseBridge.setMapActive(
+                                _hostingRoute?.isCurrent ?? true,
+                              ),
                               child: NextDrawingsPanel(
                                 width: double.infinity,
                                 stateName: _selectedStateName,
@@ -5496,13 +5478,11 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                 ? constraints.maxWidth
                                 : controlWidth,
                             child: MouseRegion(
-                              onEnter: (_) => _magicMouseChannel
-                                  .invokeMethod<void>('setMapActive', false),
-                              onExit: (_) =>
-                                  _magicMouseChannel.invokeMethod<void>(
-                                    'setMapActive',
-                                    _hostingRoute?.isCurrent ?? true,
-                                  ),
+                              onEnter: (_) =>
+                                  MapMouseBridge.setMapActive(false),
+                              onExit: (_) => MapMouseBridge.setMapActive(
+                                _hostingRoute?.isCurrent ?? true,
+                              ),
                               child: isSouthCarolinaSelected
                                   ? _SouthCarolinaScratchOffsPanel(
                                       width: double.infinity,
@@ -5569,15 +5549,34 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                           _showStateScratchGameOnMap(null),
                                       onGameSelected:
                                           _showStateScratchGameOnMap,
-                                      onOpenCatalog: () => selectedState.name == 'Nebraska'
-                                          ? showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const NebraskaScratchCatalogSheet())
+                                      onOpenCatalog: () =>
+                                          selectedState.name == 'Nebraska'
+                                          ? showModalBottomSheet<void>(
+                                              context: context,
+                                              isScrollControlled: true,
+                                              useSafeArea: true,
+                                              builder: (_) =>
+                                                  const NebraskaScratchCatalogSheet(),
+                                            )
                                           : selectedState.name == 'Kansas'
-                                          ? showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const KansasScratchCatalogSheet())
+                                          ? showModalBottomSheet<void>(
+                                              context: context,
+                                              isScrollControlled: true,
+                                              useSafeArea: true,
+                                              builder: (_) =>
+                                                  const KansasScratchCatalogSheet(),
+                                            )
                                           : selectedState.name == 'Louisiana'
-                                          ? showModalBottomSheet<void>(context: context, isScrollControlled: true, useSafeArea: true, builder: (_) => const LouisianaScratchCatalogSheet())
+                                          ? showModalBottomSheet<void>(
+                                              context: context,
+                                              isScrollControlled: true,
+                                              useSafeArea: true,
+                                              builder: (_) =>
+                                                  const LouisianaScratchCatalogSheet(),
+                                            )
                                           : _openOfficialScratchCatalog(
-                                            selectedStateSource,
-                                          ),
+                                              selectedStateSource,
+                                            ),
                                     )
                                   : _StateScratchOffsSourcePanel(
                                       stateName: selectedState.name,
