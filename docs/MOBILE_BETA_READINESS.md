@@ -1,5 +1,26 @@
 # Mobile beta readiness
 
+## October 31 — user-directed prerequisites before beta testing
+
+The user requested completion of all four readiness items before beta testing,
+with notification when all four are complete. Do not recruit or invite testers,
+start a beta cohort, or treat the prior provisional window as readiness.
+Development verification needed to establish these prerequisites remains separate
+from tester participation. None of the four items is currently complete.
+
+| Prerequisite | Evidence required to close | Current gap |
+| --- | --- | --- |
+| Favorites and saved tickets persist reliably | Real-device restart and update retention, individual deletion, and storage-failure recovery on supported platforms | Service regression tests exist; real-device lifecycle evidence remains open |
+| Phone layouts, navigation and source links work | Bounded device matrix with small/large screens, keyboard/safe areas, enlarged text, landscape, source launch/return and usable exits | State-level evidence is partial; broader mobile matrix and Montana native paths remain open |
+| Privacy disclosures and backup/deletion behavior are complete | Verified runtime destinations, final artifact permissions/manifests, documented backup/reset behavior and accurate privacy/support materials | Static inventory exists; runtime, backup/deletion and final disclosures remain open |
+| Signing, distribution, installation and updates are ready | Verified existing account/identifier configuration, signed installable artifacts and installation/update evidence; distribution configured without inviting testers | Accounts/signing and signed artifact/device evidence remain unverified |
+
+Keep human account attestations with the account holder and do not authorize fees.
+The outstanding alternative UI-control authorization is not inferred from this
+readiness request. Montana remains the sole active state with its existing deadline.
+Notify completion only when evidence closes every row; report material blockers
+without claiming that compilation or unit tests establish device acceptance.
+
 October 6, 2026 audit. Beta is authorized for iOS and Android with validated
 coverage; national supported coverage is required before full public release.
 October 20–27 remains a provisional beta estimate, not a promised launch date.
