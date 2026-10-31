@@ -1,6 +1,6 @@
 {
   "state": "South Dakota",
-  "retrievedAt": "2026-10-30T22:24:22.769288+00:00",
+  "retrievedAt": "2026-10-31T05:46:35.526888+00:00",
   "results": [
     {
       "game": "Powerball",
@@ -85,6 +85,26 @@
     {
       "game": "Mega Millions",
       "variant": "Regular",
+      "drawId": "1718",
+      "rawDrawTime": 1793412900000,
+      "drawDate": "2026-10-30",
+      "dateZone": "America/Chicago",
+      "primary": [
+        "5",
+        "10",
+        "38",
+        "49",
+        "68"
+      ],
+      "secondary": [
+        "17"
+      ],
+      "multiplier": null,
+      "sourceUrl": "https://lottery.sd.gov/game/mega-millions/"
+    },
+    {
+      "game": "Mega Millions",
+      "variant": "Regular",
       "drawId": "1717",
       "rawDrawTime": 1793153700000,
       "drawDate": "2026-10-27",
@@ -98,26 +118,6 @@
       ],
       "secondary": [
         "3"
-      ],
-      "multiplier": null,
-      "sourceUrl": "https://lottery.sd.gov/game/mega-millions/"
-    },
-    {
-      "game": "Mega Millions",
-      "variant": "Regular",
-      "drawId": "1716",
-      "rawDrawTime": 1792808100000,
-      "drawDate": "2026-10-23",
-      "dateZone": "America/Chicago",
-      "primary": [
-        "3",
-        "7",
-        "46",
-        "49",
-        "51"
-      ],
-      "secondary": [
-        "5"
       ],
       "multiplier": null,
       "sourceUrl": "https://lottery.sd.gov/game/mega-millions/"
@@ -161,6 +161,26 @@
     {
       "game": "Million 4 Life",
       "variant": "Regular",
+      "drawId": "251",
+      "rawDrawTime": 1793412900000,
+      "drawDate": "2026-10-30",
+      "dateZone": "America/Chicago",
+      "primary": [
+        "10",
+        "15",
+        "25",
+        "29",
+        "50"
+      ],
+      "secondary": [
+        "3"
+      ],
+      "multiplier": null,
+      "sourceUrl": "https://lottery.sd.gov/game/millionaire-for-life/"
+    },
+    {
+      "game": "Million 4 Life",
+      "variant": "Regular",
       "drawId": "250",
       "rawDrawTime": 1793326500000,
       "drawDate": "2026-10-29",
@@ -174,26 +194,6 @@
       ],
       "secondary": [
         "3"
-      ],
-      "multiplier": null,
-      "sourceUrl": "https://lottery.sd.gov/game/millionaire-for-life/"
-    },
-    {
-      "game": "Million 4 Life",
-      "variant": "Regular",
-      "drawId": "249",
-      "rawDrawTime": 1793240100000,
-      "drawDate": "2026-10-28",
-      "dateZone": "America/Chicago",
-      "primary": [
-        "15",
-        "30",
-        "36",
-        "44",
-        "46"
-      ],
-      "secondary": [
-        "1"
       ],
       "multiplier": null,
       "sourceUrl": "https://lottery.sd.gov/game/millionaire-for-life/"
@@ -615,8 +615,8 @@
       ]
     },
     {
-      "drawId": "1717",
-      "drawDate": "2026-10-27",
+      "drawId": "1718",
+      "drawDate": "2026-10-30",
       "game": "Mega Millions",
       "variant": "Regular",
       "sourceUrl": "https://lottery.sd.gov/game/mega-millions/",
@@ -625,8 +625,8 @@
       "limitation": "Mega Millions count geography and multiplier units unresolved; counts excluded, not zero."
     },
     {
-      "drawId": "1716",
-      "drawDate": "2026-10-23",
+      "drawId": "1717",
+      "drawDate": "2026-10-27",
       "game": "Mega Millions",
       "variant": "Regular",
       "sourceUrl": "https://lottery.sd.gov/game/mega-millions/",
@@ -721,6 +721,89 @@
       ]
     },
     {
+      "drawId": "251",
+      "drawDate": "2026-10-30",
+      "game": "Million 4 Life",
+      "variant": "Regular",
+      "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
+      "countUnit": "SD Winners (official source label; not unique people or paid claims)",
+      "optionLabel": null,
+      "tiers": [
+        {
+          "sourceTierId": "1",
+          "match": "5/5+MB",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": null,
+          "prizeLabel": "$1M/YEAR FOR LIFE"
+        },
+        {
+          "sourceTierId": "2",
+          "match": "5/5",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": null,
+          "prizeLabel": "$100K/YEAR FOR LIFE"
+        },
+        {
+          "sourceTierId": "3",
+          "match": "4/5+MB",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 7500,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "4",
+          "match": "4/5",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 500,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "5",
+          "match": "3/5+MB",
+          "sdWinners": 0,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 250,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "6",
+          "match": "3/5",
+          "sdWinners": 11,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 50,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "7",
+          "match": "2/5+MB",
+          "sdWinners": 30,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 25,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "8",
+          "match": "2/5",
+          "sdWinners": 90,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 8,
+          "prizeLabel": null
+        },
+        {
+          "sourceTierId": "9",
+          "match": "1/5+MB",
+          "sdWinners": 136,
+          "sdOptionWinners": null,
+          "prizeAmountDollars": 8,
+          "prizeLabel": null
+        }
+      ]
+    },
+    {
       "drawId": "250",
       "drawDate": "2026-10-29",
       "game": "Million 4 Life",
@@ -797,89 +880,6 @@
           "sourceTierId": "9",
           "match": "1/5+MB",
           "sdWinners": 164,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 8,
-          "prizeLabel": null
-        }
-      ]
-    },
-    {
-      "drawId": "249",
-      "drawDate": "2026-10-28",
-      "game": "Million 4 Life",
-      "variant": "Regular",
-      "sourceUrl": "https://lottery.sd.gov/winners/winning-numbers/",
-      "countUnit": "SD Winners (official source label; not unique people or paid claims)",
-      "optionLabel": null,
-      "tiers": [
-        {
-          "sourceTierId": "1",
-          "match": "5/5+MB",
-          "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": null,
-          "prizeLabel": "$1M/YEAR FOR LIFE"
-        },
-        {
-          "sourceTierId": "2",
-          "match": "5/5",
-          "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": null,
-          "prizeLabel": "$100K/YEAR FOR LIFE"
-        },
-        {
-          "sourceTierId": "3",
-          "match": "4/5+MB",
-          "sdWinners": 0,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 7500,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "4",
-          "match": "4/5",
-          "sdWinners": 1,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 500,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "5",
-          "match": "3/5+MB",
-          "sdWinners": 2,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 250,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "6",
-          "match": "3/5",
-          "sdWinners": 7,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 50,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "7",
-          "match": "2/5+MB",
-          "sdWinners": 16,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 25,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "8",
-          "match": "2/5",
-          "sdWinners": 87,
-          "sdOptionWinners": null,
-          "prizeAmountDollars": 8,
-          "prizeLabel": null
-        },
-        {
-          "sourceTierId": "9",
-          "match": "1/5+MB",
-          "sdWinners": 126,
           "sdOptionWinners": null,
           "prizeAmountDollars": 8,
           "prizeLabel": null
