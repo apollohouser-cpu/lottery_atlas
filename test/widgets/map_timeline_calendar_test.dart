@@ -6,6 +6,48 @@ import 'package:lottery_atlas/widgets/map/map_controls_overlay.dart';
 import 'package:lottery_atlas/widgets/map/map_filter_state.dart';
 
 void main() {
+  for (final size in [const Size(390, 844), const Size(844, 390)]) {
+    testWidgets('map scrubber changes date directly at $size', (tester) async {
+      tester.view.devicePixelRatio = 1;
+      tester.view.physicalSize = size;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      MapFilterState? selected;
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Scaffold(
+            body: MapControlsOverlay(
+              showHeaderControls: false,
+              dayOnlyActivity: true,
+              filterState: MapFilterState(
+                dateRange: DateTimeRange(
+                  start: DateTime(2026, 1, 28),
+                  end: DateTime(2026, 1, 28, 23, 59),
+                ),
+              ),
+              onFilterChanged: (value) => selected = value,
+            ),
+          ),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(find.byType(Slider), findsOneWidget);
+      expect(find.byType(BottomSheet), findsNothing);
+      final before = selected!.dateRange.start;
+      final rect = tester.getRect(find.byType(Slider));
+      expect(rect.left, greaterThanOrEqualTo(0));
+      expect(rect.right, lessThanOrEqualTo(size.width));
+      expect(rect.bottom, lessThan(size.height));
+      await tester.drag(find.byType(Slider), Offset(-rect.width / 2, 0));
+      await tester.pumpAndSettle();
+      expect(selected!.dateRange.start, isNot(before));
+      expect(selected!.dateRange.start.hour, 0);
+      expect(find.byType(BottomSheet), findsNothing);
+      expect(find.textContaining('Now showing:'), findsOneWidget);
+      expect(tester.takeException(), isNull);
+    });
+  }
+
   testWidgets('rotation moves phone controls into a bounded landscape column', (
     tester,
   ) async {

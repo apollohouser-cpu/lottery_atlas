@@ -1045,3 +1045,19 @@ Ordinary lib/main.dart Android debug build passed (Gradle 17.4seconds), installe
 with existing app data retained, and cold-launched as process3222. Android remains
 running; iOS was not started. No native UI traversal or persistence acceptance is
 claimed from installation. Montana remains unaccepted with its unchanged deadline.
+
+## October 31 — visible phone timeline scrubbing
+
+At the user's request, the phone map now keeps its timeline slider and selected
+period directly on the map. The existing timeline button opens date, scale and
+playback controls. Both presentations share the same slider/filter implementation,
+including whole-day restrictions for date-only records. Thirteen timeline widget
+tests pass, including direct drag/filter updates in portrait and landscape and
+existing doubled-text coverage. Targeted analysis reports only four pre-existing
+Radio groupValue/onChanged deprecation notices. Ordinary iOS simulator build passes
+(Xcode17.0seconds); native traversal is not established by widget tests.
+
+The user explicitly requested the iOS simulator. This supersedes the earlier
+Android-running/iOS-shutdown preference: keep one simulator, using iPhone17e and
+leaving Android stopped until the user changes that preference. Beta participation
+and the four readiness gates remain unchanged.

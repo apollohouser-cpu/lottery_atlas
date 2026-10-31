@@ -1162,6 +1162,31 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
                         ],
                       ),
                       const SizedBox(height: 6),
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.fromLTRB(8, 8, 8, 0),
+                        decoration: BoxDecoration(
+                          color: const Color(0xF0091826),
+                          borderRadius: BorderRadius.circular(14),
+                          border: Border.all(color: const Color(0xFF355066)),
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Text(
+                              'Now showing: ${_timelineLabel()}'
+                              '${widget.dayOnlyActivity ? ' · ${widget.dayOnlyDateLabel} only; times unavailable' : ''}',
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                color: Color(0xFF93C5FD),
+                                fontSize: 11,
+                              ),
+                            ),
+                            _timelineSlider(),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 6),
                       SizedBox(
                         width: double.infinity,
                         child: FilledButton.icon(
@@ -1934,58 +1959,57 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
           ),
         ),
         const SizedBox(height: 4),
-        SliderTheme(
-          data: SliderTheme.of(context).copyWith(
-            activeTrackColor: const Color(0xFF1478FF),
-            inactiveTrackColor: Colors.white24,
-            thumbColor: Colors.white,
-            overlayColor: const Color(0x331478FF),
-            trackHeight: 3,
-          ),
-          child: !kIsWeb && defaultTargetPlatform == TargetPlatform.macOS
-              // Avoid the Material value-indicator portal whose detached
-              // semantics node is rejected by the current macOS engine.
-              ? Semantics(
-                  label: 'Timeline',
-                  value: _timelineLabel(),
-                  child: SizedBox(
-                    width: double.infinity,
-                    child: CupertinoSlider(
-                      value: _initialTimelineValue(),
-                      min: 0,
-                      max: _maximumTimelineValue(),
-                      divisions: _maximumTimelineValue()
-                          .round()
-                          .clamp(1, 10000)
-                          .toInt(),
-                      activeColor: const Color(0xFF1478FF),
-                      onChanged: (value) {
-                        _stopTimelinePlayback();
-                        _setTimelineValue(value);
-                      },
-                    ),
-                  ),
-                )
-              : Slider(
-                  value: _initialTimelineValue(),
-                  min: 0,
-                  max: _maximumTimelineValue(),
-                  // Each slider step is a week, calendar day, weekday, or hour,
-                  // depending on the selected timeline scale.
-                  divisions: _maximumTimelineValue()
-                      .round()
-                      .clamp(1, 10000)
-                      .toInt(),
-                  label: _timelineLabel(),
-                  onChanged: (value) {
-                    _stopTimelinePlayback();
-                    _setTimelineValue(value);
-                  },
-                ),
-        ),
+        _timelineSlider(),
         _timelineAxis(),
       ],
     ),
+  );
+
+  Widget _timelineSlider() => SliderTheme(
+    data: SliderTheme.of(context).copyWith(
+      activeTrackColor: const Color(0xFF1478FF),
+      inactiveTrackColor: Colors.white24,
+      thumbColor: Colors.white,
+      overlayColor: const Color(0x331478FF),
+      trackHeight: 3,
+    ),
+    child: !kIsWeb && defaultTargetPlatform == TargetPlatform.macOS
+        // Avoid the Material value-indicator portal whose detached
+        // semantics node is rejected by the current macOS engine.
+        ? Semantics(
+            label: 'Timeline',
+            value: _timelineLabel(),
+            child: SizedBox(
+              width: double.infinity,
+              child: CupertinoSlider(
+                value: _initialTimelineValue(),
+                min: 0,
+                max: _maximumTimelineValue(),
+                divisions: _maximumTimelineValue()
+                    .round()
+                    .clamp(1, 10000)
+                    .toInt(),
+                activeColor: const Color(0xFF1478FF),
+                onChanged: (value) {
+                  _stopTimelinePlayback();
+                  _setTimelineValue(value);
+                },
+              ),
+            ),
+          )
+        : Slider(
+            value: _initialTimelineValue(),
+            min: 0,
+            max: _maximumTimelineValue(),
+            // Each slider step is a week, calendar day, weekday, or hour,
+            // depending on the selected timeline scale.
+            divisions: _maximumTimelineValue().round().clamp(1, 10000).toInt(),
+            label: _timelineLabel(),
+            onChanged: (value) {
+              _stopTimelinePlayback();
+              _setTimelineValue(value);
+            },
+          ),
   );
 
   String _timelineAnchorLabel() {
