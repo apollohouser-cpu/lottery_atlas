@@ -14,13 +14,27 @@ class SavedTicketService {
   static const _storageKey = 'lottery_atlas.saved_lottery_tickets';
   static Future<SharedPreferences>? _preferencesFuture;
 
-  static Future<SharedPreferences> _preferences() =>
-      _preferencesFuture ??= SharedPreferences.getInstance();
+  static Future<void> _pending = Future<void>.value();
 
-  static Future<List<SavedLotteryTicket>> load() async {
+  // Reads share the queue so callers never observe the optimistic preferences
+  // cache while a write is still pending or after a rejected write.
+  static Future<T> _serialize<T>(Future<T> Function() action) {
+    final result = _pending.then((_) => action());
+    _pending = result.then<void>((_) {}, onError: (Object _, StackTrace _) {});
+    return result;
+  }
+
+  static Future<SharedPreferences> _preferences() async {
+    final preferences = await (_preferencesFuture ??=
+        SharedPreferences.getInstance());
+    await preferences.reload();
+    return preferences;
+  }
+
+  static Future<List<SavedLotteryTicket>> load() => _serialize(() async {
     final preferences = await _preferences();
     return _decode(preferences.getString(_storageKey));
-  }
+  });
 
   /// Saves a number set and verifies it reached device storage.
   static Future<SavedLotteryTicket> save({
@@ -28,7 +42,7 @@ class SavedTicketService {
     required List<String> whiteNumbers,
     required String specialNumber,
     String? label,
-  }) async {
+  }) => _serialize(() async {
     final preferences = await _preferences();
     final tickets = _decode(preferences.getString(_storageKey));
     final normalizedWhiteNumbers = whiteNumbers
@@ -65,14 +79,15 @@ class SavedTicketService {
       throw StateError('Your number set could not be saved on this device.');
     }
 
+    await preferences.reload();
     final verifiedTickets = _decode(preferences.getString(_storageKey));
     if (!verifiedTickets.any((ticket) => ticket.id == savedTicket.id)) {
       throw StateError('Your saved number set could not be verified.');
     }
     return savedTicket;
-  }
+  });
 
-  static Future<void> rename(String id, String? label) async {
+  static Future<void> rename(String id, String? label) => _serialize(() async {
     final preferences = await _preferences();
     final tickets = _decode(preferences.getString(_storageKey));
     final normalizedLabel = label?.trim();
@@ -93,9 +108,9 @@ class SavedTicketService {
     if (!wasWritten) {
       throw StateError('The saved number set could not be renamed.');
     }
-  }
+  });
 
-  static Future<void> delete(String id) async {
+  static Future<void> delete(String id) => _serialize(() async {
     final preferences = await _preferences();
     final tickets = _decode(preferences.getString(_storageKey));
     tickets.removeWhere((ticket) => ticket.id == id);
@@ -106,7 +121,7 @@ class SavedTicketService {
     if (!wasWritten) {
       throw StateError('The saved number set could not be removed.');
     }
-  }
+  });
 
   static List<SavedLotteryTicket> _decode(String? raw) {
     if (raw == null || raw.isEmpty) return <SavedLotteryTicket>[];

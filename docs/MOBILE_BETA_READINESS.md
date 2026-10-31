@@ -1024,3 +1024,24 @@ acceptance remain open. Montana UI-control authorization is still pending.
 Changed service/test analysis is clean. Ordinary main.dart Android build passed
 in16.2seconds, installed and launched as process30031; Android remains running.
 No private probe or iOS simulator was started for this change.
+
+## October 31 — rejected saved-ticket writes no longer leak into reads
+
+A new regression reproduced a rejected rename appearing in subsequent service
+reads: legacy SharedPreferences updates its memory cache before the platform
+write succeeds. SavedTicketService now reloads platform storage before reads and
+mutations, and serializes those operations so a read cannot observe a pending
+optimistic write. Save verification reloads storage rather than reading only the
+memory cache. A failed operation does not poison the queue for later recovery.
+
+The new failure regression failed before the fix and passes afterward, covering
+rejected rename, delete and save, successful recovery, and overlapping save/delete.
+It and the existing saved-ticket lifecycle test pass (two tests); changed Dart
+analysis and git diff whitespace checks pass. These tests use a controlled
+in-memory platform implementation, not real-device restart/update, OS backup or
+native UI evidence. All four beta prerequisites remain open; no testers invited.
+
+Ordinary lib/main.dart Android debug build passed (Gradle 17.4seconds), installed
+with existing app data retained, and cold-launched as process3222. Android remains
+running; iOS was not started. No native UI traversal or persistence acceptance is
+claimed from installation. Montana remains unaccepted with its unchanged deadline.
