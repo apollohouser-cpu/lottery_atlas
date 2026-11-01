@@ -143,3 +143,28 @@ and main page disagree on the purchase cutoff (23:59 versus 23:44:59); both give
 Rule and history contracts, complete instant/ended catalog audit, and production
 capture remain next. Scope is still open; November 2 09:15 EST scope and November 6
 09:15 EST release deadlines are unchanged. No feed, native build, or acceptance.
+
+## November 1 Fast Play browser catalog evidence
+
+Ordinary browser navigation to the [Fast Play index](https://www.arizonalottery.com/fast-play/)
+rendered dynamic advertised jackpots. Selecting its All filter revealed 25 game
+cards, with 25 distinct printed game numbers verified against retained accessibility
+text. Private evidence: work/arizona_scope/fast-play-all-browser-20261101.txt and
+fast-play-browser-manifest.json (byte length/hash, capture method, identities).
+This is a browser observation, not raw HTTP recovery, an automated collector,
+individual-game prize audit, retailer availability, or remaining inventory.
+
+The ended-game table exposes conflicting metadata: its visible column says Game
+End Date, while its accessibility description calls the dates claim deadlines
+180 days after game end; the surrounding prose instead measures claims from
+purchase. Retain the literal visible heading and flag this conflict. Do not
+calculate claim deadlines or overwrite the source's date meaning. The reader's
+See All links returned the same page; expanded historical completeness is unproven.
+
+The [Fast Play rules link](https://www.arizonalottery.com/fast-play/game-rules-and-prohibition/)
+is a bulk-purchase prohibition, not an exhaustive per-game prize schedule. The
+[regulatory index](https://www.arizonalottery.com/regulatory-rules/) points to
+Administrative Code Title 19 Chapter 3 and separately identifies advisory policies;
+those links do not themselves establish a parsed game contract. Next retain the
+Scratchers All listing and audit individual detail/history/rule sources. Scope
+remains open with the original November 2/November 6 deadlines unchanged.
