@@ -574,3 +574,16 @@ visually confirmed. This does not cover all families at all scales. Catalog/imag
 source returns, complete multi-character search and enlarged-text native checks
 remain open. Private record: work/montana_native/ios-dp-landscape-20261101.json.
 No acceptance or deadline extension; November 1 at 22:30 EST remains fixed.
+
+## November 1 — Scratch detail source returns
+
+On the ordinary iPhone17e app, Scratch website entry2857 ($1 Stocking Stuffer)
+opened its native detail and fixed paging reached the literal structure footer.
+Official image1 opened a rendered New! catalog badge from montanalottery.com in
+Safari; this is a badge, not evidence of a ticket image. The official product
+catalog control opened the rendered Montana Lottery Scratch Games page. Each OS
+return restored the detail footer. This verifies representative source navigation,
+not all entry images or a new external content audit. Private record:
+work/montana_native/ios-scratch-returns-20261101.json. Treasure Play source/image
+returns, complete search and enlarged-text native checks remain open. No acceptance
+or deadline change; iOS remains in portrait and Android remains stopped.
