@@ -556,3 +556,21 @@ Six selected-group rule paths/returns now have iOS evidence; the separate Double
 Play selection remains, along with catalog/image links, complete search and
 enlarged/landscape. Private record: work/montana_native/ios-cash-bsb-returns-20261101.json.
 No acceptance or deadline change; November1 at22:30EST remains fixed.
+
+## November 1 — Double Play rule return and representative landscape
+
+The separate Powerball Double Play selection completed normal-portrait fixed
+paging to Official game rules, opened the rendered Montana Lottery Powerball
+page in Safari, and returned through the OS control to the prior reading position.
+All seven selected-group normal-portrait rule paths and rule-source returns now
+have native iOS evidence. The Double Play source-header discrepancy and separate
+Prize/Odds labels remained present. This is navigation evidence, not a new full
+website audit.
+
+A representative ordinary landscape view of the Double Play schedule was visually
+inspected with readable header, selector, fixed controls and labeled rows. Previous
+and Next changed the visible schedule rows. Upright portrait was restored and
+visually confirmed. This does not cover all families at all scales. Catalog/image
+source returns, complete multi-character search and enlarged-text native checks
+remain open. Private record: work/montana_native/ios-dp-landscape-20261101.json.
+No acceptance or deadline extension; November 1 at 22:30 EST remains fixed.
