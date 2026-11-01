@@ -168,3 +168,25 @@ Administrative Code Title 19 Chapter 3 and separately identifies advisory polici
 those links do not themselves establish a parsed game contract. Next retain the
 Scratchers All listing and audit individual detail/history/rule sources. Scope
 remains open with the original November 2/November 6 deadlines unchanged.
+
+## November 1 Scratchers browser catalog evidence
+
+The [Scratchers index](https://www.arizonalottery.com/scratchers/) All filter
+exposed 58 cards with distinct printed game numbers. Its ended-table See All
+control expanded six initial rows to 14 distinct games with literal Last Day to
+Claim Prizes dates. This closes the observed expansion step, not complete historical
+coverage. Private accessibility observations and byte hashes are retained in
+work/arizona_scope/scratchers-all-ended-browser-20261101.txt and
+scratchers-browser-manifest.json. Repeated titles remain separate numbered games.
+
+The [Holiday Cheer #1558 detail](https://www.arizonalottery.com/scratchers/1558-holiday-cheer/)
+initially showed an empty prize table; after scripts populated it, the browser
+exposed seven rows with prize, odds, and remaining-of-total values. The observation
+is retained privately as holiday-cheer-browser-20261101.txt. This confirms a
+browser-visible source candidate, not validation of every game, a source update
+timestamp, tickets remaining, retailer stock, or a production refresh mechanism.
+Preserve the source's prize units and do not derive ticket inventory from them.
+
+Next: complete repeatable capture and individual rule/detail/history contracts;
+then close the full supported scope by November 2 at09:15EST. Release remains
+November 6 at09:15EST without extension. No Arizona feed or acceptance yet.
