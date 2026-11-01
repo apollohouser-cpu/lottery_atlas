@@ -531,3 +531,16 @@ This is bounded navigation and return evidence, not a fresh source-content audit
 Five other selected-group rule paths/returns, catalog/image links, complete search
 and enlarged/landscape checks remain open. Private record:
 work/montana_native/ios-rule-returns-20261101.json. No acceptance or deadline change.
+
+## November 1 — additional iOS rule source returns
+
+Millionaire for Life and Lotto America normal-portrait fixed paging reached
+the official-rule controls. Each opened the rendered Montana Lottery game page
+in Safari and returned through the OS control to its prior reading position.
+Annual lifetime prize wording and Lotto America All Star Bonus columns remained
+visible. This is navigation evidence, not a full website audit. Together with
+Powerball and Mega Millions, four selected-group rule paths/returns are verified
+on iOS; Double Play, Montana Cash and Big Sky Bonus remain. Catalog/image links,
+complete search and enlarged/landscape remain open. Private evidence:
+work/montana_native/ios-mfl-la-returns-20261101.json. Deadline remains November1
+22:30EST; no acceptance or extension.
