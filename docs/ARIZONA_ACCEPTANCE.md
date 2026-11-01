@@ -42,3 +42,35 @@ Missing agency records do not block supported completion with explicit gaps.
 No Arizona feed, native build or acceptance is claimed. Accepted states remain
 closed. iPhone17e ordinary app stays running; Android remains stopped. All four
 mobile beta prerequisites remain open and no testers are invited.
+
+## November 1 — linked-source discovery and capture limits
+
+The [Quick Draw index](https://www.arizonalottery.com/quick-draw/) names eight
+hourly products: One To Win,5/10/45,5 In-A-Line,Lucky Links,Two to Win,Money Roll,
+Hi-Lo and Pick Your Bet. Their distinct matching/position/bet structures require
+individual review; no hourly result or count is inferred from the index.
+
+[Fast Play](https://www.arizonalottery.com/fast-play/) exposes numbered current
+product links, a separate ended-game section and Top Prizes Remaining. Blank
+progressive amounts in reader output are unavailable, not zero. End dates and
+claim dates must remain separate; old/new editions cannot be joined by title.
+
+The [Powerball page](https://www.arizonalottery.com/draw-games/powerball/) links
+separate base and Double Play180-day PDFs. Reader HTML has blank dynamic date and
+number cells, so repeated prize templates cannot be parsed as actual results.
+Direct ordinary requests to Powerball,Quick Draw,Fast Play and both linked PDFs
+all returned403; raw failed bodies/hash manifests are privately retained in
+work/arizona_scope/linked-capture-20261101. Reader PDF access is not raw transport
+recovery, a visual PDF audit or validation of report units/geography.
+
+[The Pick](https://www.arizonalottery.com/draw-games/the-pick/) explicitly separates
+pre-June14,2026 history and advertises a built-in multiplier plus a separate instant
+The Pick Plus add-on. Do not mix formats or treat the add-on as a dated drawing.
+[Mega Millions](https://www.arizonalottery.com/draw-games/mega-millions/) retains
+multiplier-specific prize columns; no drawing-wide multiplier may be inferred.
+
+Next finish individual product/rule/history and instant-catalog reconciliation,
+then fix scope before November2 at09:15EST. Permitted repeatable capture remains
+unresolved; no Arizona parser/feed/native acceptance or deadline change. No new
+agency request or human attestation. iPhone17e ordinary app remains the selected
+simulator; no builds or device switches were performed.
