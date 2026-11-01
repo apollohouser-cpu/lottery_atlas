@@ -490,3 +490,19 @@ Montana remains unaccepted and the November1 22:30EST deadline is unchanged.
 Ordinary main.dart was rebuilt in11.0seconds, installed and launched30693
 after the private adoption target. Android remains running; iOS not started.
 No tracked probe or main.dart edit was introduced.
+
+## October 31 evening — bounded iOS navigation verification
+
+The user-selected iPhone17e ordinary app is now controllable through CUA. Native
+search reached Montana, then menu → Sources and coverage → results. Powerball
+result/gap/rule text and next-page rules were observed, the selector exposed all14
+results, and Double Play opened. Scratch showed57 entries; the missing-title
+website entry2863 detail opened and returned. A single-character query filtered
+to26 entries and reset restored57; Treasure Play showed12 entries.
+
+Multi-character input remains unresolved: typing2863 yielded only3, and the
+accessibility setValue attempt did not change it. This is not full search
+acceptance or yet a diagnosed app defect. Full rule/source-return traversal,
+remaining product paths and enlarged/landscape verification remain open. Private
+evidence: work/montana_native/ios-progress-20261101.json. No acceptance or deadline
+extension; November1 at22:30EST remains fixed. Android remains stopped.
