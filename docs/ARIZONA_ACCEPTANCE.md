@@ -190,3 +190,25 @@ Preserve the source's prize units and do not derive ticket inventory from them.
 Next: complete repeatable capture and individual rule/detail/history contracts;
 then close the full supported scope by November 2 at09:15EST. Release remains
 November 6 at09:15EST without extension. No Arizona feed or acceptance yet.
+
+## November 1 exact link and FAQ reconciliation
+
+Accessibility snapshots abbreviate many URLs with ellipses. They remain useful
+for visible labels and table evidence, but cannot establish exact source URLs.
+Read-only browser DOM anchor capture now retains complete Scratchers hrefs in
+work/arizona_scope/scratchers-links-dom-20261101.json. An exact printed-number join
+matched all 58 observed catalog identities to one unique path each, including
+1493 whose navigation label omits the hash symbol. scratchers-source-join-audit.json
+records the mapping and capture hash. No URL was reconstructed from a title.
+This is DOM evidence, not an original HTTP response or production collector.
+
+The [official FAQ](https://www.arizonalottery.com/frequently-asked-questions/)
+corroborates purchase-date claims for Fast Play, unlike the conflicting table
+accessibility description. It lists only two Quick Draw history links versus eight
+games in the dedicated index, and associates EXTRA! with The Pick while the current
+product page describes The Pick Plus. Preserve these differences; the FAQ is not
+an exhaustive catalog or replacement for product-specific history. Second Chance
+is directed to Players Club and remains a promotion boundary, not regular draws.
+No retirement date is inferred from absent navigation or unsuccessful search.
+
+Scope, capture/parser and beta gates remain open; deadlines unchanged.
