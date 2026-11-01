@@ -17,7 +17,7 @@ from tester participation. None of the four items is currently complete.
 
 Keep human account attestations with the account holder and do not authorize fees.
 The outstanding alternative UI-control authorization is not inferred from this
-readiness request. Montana supported coverage is accepted November1; no state is currently active.
+readiness request. Montana supported coverage is accepted November1; Arizona is now the sole active state.
 Notify completion only when evidence closes every row; report material blockers
 without claiming that compilation or unit tests establish device acceptance.
 

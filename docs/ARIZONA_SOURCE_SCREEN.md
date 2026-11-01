@@ -27,3 +27,11 @@ page, but several listing cards exposed a blank top-prize amount; details would
 need independent validation. No automated Arizona import was enabled and no
 records-use attestation was made. Continue with accessible official sources
 while preserving this limitation.
+
+## November 1 — active scope opening
+
+Arizona activated at09:15EST with scope due November2 at09:15EST and supported
+release due November6 at09:15EST. See ARIZONA_ACCEPTANCE.md. Direct draw-game
+and Scratchers requests again returned403; private failed-response manifests are
+retained. Web-reader access supports initial product discovery only, not recovered
+production transport. No formal attestation, fees, new correspondence or feed.
