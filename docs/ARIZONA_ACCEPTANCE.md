@@ -271,3 +271,15 @@ prize values or draw results. Four focused Python tests pass, including negative
 identity/link/provenance cases. This is the first source-join component, not a
 complete catalog/detail parser or repeatable production collector. Fast Play,
 draw/rule capture and publication remain open; fixed scope/deadline unchanged.
+
+## November 1 catalog continuity implementation
+
+Fresh read-only DOM navigation capture retained all 25 Fast Play numbered links
+with complete hrefs (work/arizona_scope/fast-play-navigation-dom-20261101.json).
+Both catalog navigation fixtures now pass the shared validator. Added timezone-
+qualified acquisition-time validation, malformed-row rejection, and a continuity
+gate that rejects changed identity/title/source or duplicate records while allowing
+ordering changes. Seven focused Python tests pass. This validates 83 navigation
+identities across the two catalogs, not 83 detailed prize schedules or inventories.
+Full draw/detail capture and production refresh remain open; no feed or native
+build was made and the November6 09:15EST deadline remains unchanged.

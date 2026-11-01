@@ -2,7 +2,7 @@ import copy
 import json
 import unittest
 from pathlib import Path
-from tooling.arizona_catalog_links import parse_navigation
+from tooling.arizona_catalog_links import parse_navigation, validate_continuity
 
 
 class CatalogLinksTest(unittest.TestCase):
@@ -35,6 +35,28 @@ class CatalogLinksTest(unittest.TestCase):
         for key in ('sourceUrl', 'captureKind', 'capturedAt'):
             c = copy.deepcopy(self.capture); c.pop(key)
             with self.assertRaises(ValueError): parse_navigation(c, 'scratchers', self.ids)
+
+    def test_fast_play_observed_navigation(self):
+        c = json.loads(Path('tooling/fixtures/arizona/fast-play-navigation.json').read_text())
+        ids = {'169','171','175','178','179','180','181','182','183','184','185',
+               '187','189','192','193','196','198','199','200','201','202','203','204','205','206'}
+        self.assertEqual(len(parse_navigation(c, 'fast-play', ids)), 25)
+        with self.assertRaises(ValueError): parse_navigation(c, 'scratchers', ids)
+
+    def test_timestamp_and_malformed_rows(self):
+        for date in ('not-a-date', '2026-11-01', '2026-11-01T12:00:00'):
+            c = copy.deepcopy(self.capture); c['capturedAt'] = date
+            with self.assertRaises(ValueError): parse_navigation(c, 'scratchers', self.ids)
+        c = copy.deepcopy(self.capture); c['links'][0] = None
+        with self.assertRaises(ValueError): parse_navigation(c, 'scratchers', self.ids)
+
+    def test_continuity_blocks_changed_titles_sources_and_duplicates(self):
+        baseline = parse_navigation(self.capture, 'scratchers', self.ids)
+        validate_continuity(list(reversed(baseline)), baseline)
+        for field in ('title', 'sourceUrl', 'gameNumber'):
+            changed = copy.deepcopy(baseline); changed[0][field] += 'changed'
+            with self.assertRaises(ValueError): validate_continuity(changed, baseline)
+        with self.assertRaises(ValueError): validate_continuity(baseline + baseline[:1], baseline)
 
 
 if __name__ == '__main__': unittest.main()
