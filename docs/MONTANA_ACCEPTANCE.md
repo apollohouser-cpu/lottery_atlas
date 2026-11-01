@@ -506,3 +506,16 @@ acceptance or yet a diagnosed app defect. Full rule/source-return traversal,
 remaining product paths and enlarged/landscape verification remain open. Private
 evidence: work/montana_native/ios-progress-20261101.json. No acceptance or deadline
 extension; November1 at22:30EST remains fixed. Android remains stopped.
+
+## October 31 late evening — iOS notice source returns
+
+CUA verified normal-portrait raffle and ending-notice paths on the ordinary
+iPhone17e app. Fixed paging reached each official source control. The raffle
+opened the rendered Montana Millionaire page in Safari; the ending notice opened
+a two-page PDF. The OS Lottery Atlas return restored each sheet at its prior
+reading position. Raffle planned-quantity/result-gap labels and the ending
+notice's separate numbered-game disclaimer were present. This is source
+navigation/return evidence, not a new full content audit. Private evidence is
+work/montana_native/ios-notice-returns-20261101.json. Multi-character search,
+remaining rule/catalog links and enlarged/landscape checks remain open. No
+acceptance or extension; ordinary iOS remains running and Android stopped.
