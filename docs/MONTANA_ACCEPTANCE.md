@@ -600,3 +600,16 @@ image link or a full external audit. Private record:
 work/montana_native/ios-treasure-returns-20261101.json. Complete multi-character
 search and enlarged-text native checks remain open. No acceptance or deadline
 change; ordinary iPhone17e remains running in portrait and Android is stopped.
+
+## November 1 — native catalog search verification
+
+Incremental CUA typing with accessibility observations between characters retained
+complete multi-character queries on the ordinary iPhone17e app. Treasure Play
+query520 returned its single entry;5209 produced the explicit no-match state;
+Reset restored12 entries. Scratch query2863 returned the single Title unavailable
+entry;28639 produced no matches; Reset restored57 entries. The earlier bulk-input
+anomaly was not reproduced by this method; its underlying cause is not diagnosed,
+and no search code change was made. This closes the bounded multi-character
+search/no-match/reset paths for both catalogs. Private record:
+work/montana_native/ios-search-20261101.json. Enlarged-text native verification
+remains open; no state acceptance, beta readiness or deadline change.
