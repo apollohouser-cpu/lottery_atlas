@@ -3,23 +3,23 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
-## Current decision — October 27, 2026
+## Current decision — November 1, 2026
 
-North Dakota supported coverage is ACCEPTED October27 at22:34EDT on production
-f79ea59, scheduled snapshot6c5a3d7, with the final bounded matrix in
-NORTH_DAKOTA_ACCEPTANCE.md. Twenty states accepted;25 unfinished. Completed before
-November1 at10:29AM EST without extension. Montana is the sole active state
-from October27 at23:30EDT. Scope due October28 at23:30EDT; supported release due
-November1 at22:30EST (November2 at03:30UTC), fresh120elapsed hours across DST.
-See MONTANA_ACCEPTANCE.md. No extension; never inherit ND's deadline.
-Accepted states stay closed absent a named defect or meaningful new evidence.
-October31 user preference supersedes the prior Android setup: iPhone17e is the
-selected running simulator and Android is stopped; keep only one simulator.
-Mobile/distribution gates remain separate. All four prerequisites in
-MOBILE_BETA_READINESS.md must be verified before beta participation or invitations.
-The October26 18-acceptance forecast remains December19,2026–January15,2027;
-five-day-per-state slower scenario March10. These are estimates, not launch
-commitments. Next routine reforecast at23 accepted or a material blocker.
+Montana supported coverage is ACCEPTED November1 at08:15EST, before its22:30EST
+release deadline without extension. See MONTANA_ACCEPTANCE.md for the final
+bounded source/publication/native/cache matrix and explicit unavailable features.
+Twenty-one states accepted;24 unfinished. No state is currently active. Next select
+one unfinished state and explicitly activate fresh scope and72/120-hour release
+deadlines; never inherit Montana's deadline. Accepted states stay closed absent a
+named defect or meaningful new evidence. Missing agency records do not block
+honest supported completion; audit private deliveries before public integration.
+
+Keep iPhone17e running with the ordinary app and Android stopped, one simulator.
+All four MOBILE_BETA_READINESS.md prerequisites remain open and must be verified
+before beta testing or invitations. Notify when all four are complete. The
+October26 forecast remains December19,2026–January15,2027; five-day slower scenario
+March10. These are estimates, not launch commitments. Next routine reforecast at23
+accepted or a material blocker. Routine Gmail belongs to the separate automation.
 
 ## Beta and national public release — approved October 6, 2026
 
@@ -63,7 +63,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Montana | November1,2026 at22:30EST | Sole active October27 at23:30EDT; scope due October28 at23:30EDT; fresh120elapsed hours. |
+| Montana | November1,2026 at22:30EST | ACCEPTED November1 at08:15EST, early without extension; see MONTANA_ACCEPTANCE.md. |
 | North Dakota | November1,2026 at10:29AM EST | ACCEPTED October27 at22:34EDT, early without extension; see NORTH_DAKOTA_ACCEPTANCE.md. |
 | Wyoming | ACCEPTED October27,2026 at11:20ET | Production5cf166f; final bounded native/live/cache matrix closed early, no extension. |
 | New Mexico | ACCEPTED October26,2026 | Acceptance478b572; bounded evidence complete before October30 18:38ET, no extension. |

@@ -11,13 +11,13 @@ from tester participation. None of the four items is currently complete.
 | Prerequisite | Evidence required to close | Current gap |
 | --- | --- | --- |
 | Favorites and saved tickets persist reliably | Real-device restart and update retention, individual deletion, and storage-failure recovery on supported platforms | Service regression tests exist; real-device lifecycle evidence remains open |
-| Phone layouts, navigation and source links work | Bounded device matrix with small/large screens, keyboard/safe areas, enlarged text, landscape, source launch/return and usable exits | State-level evidence is partial; broader mobile matrix and Montana native paths remain open |
+| Phone layouts, navigation and source links work | Bounded device matrix with small/large screens, keyboard/safe areas, enlarged text, landscape, source launch/return and usable exits | Montana bounded state paths accepted; broader mobile device/OS accessibility matrix remains open |
 | Privacy disclosures and backup/deletion behavior are complete | Verified runtime destinations, final artifact permissions/manifests, documented backup/reset behavior and accurate privacy/support materials | Static inventory exists; runtime, backup/deletion and final disclosures remain open |
 | Signing, distribution, installation and updates are ready | Verified existing account/identifier configuration, signed installable artifacts and installation/update evidence; distribution configured without inviting testers | Accounts/signing and signed artifact/device evidence remain unverified |
 
 Keep human account attestations with the account holder and do not authorize fees.
 The outstanding alternative UI-control authorization is not inferred from this
-readiness request. Montana remains the sole active state with its existing deadline.
+readiness request. Montana supported coverage is accepted November1; no state is currently active.
 Notify completion only when evidence closes every row; report material blockers
 without claiming that compilation or unit tests establish device acceptance.
 
@@ -1078,3 +1078,15 @@ Simulator this session; after user interaction, fresh accessibility inspection
 confirmed the York, SC filtered county heat activity panel and its records were
 visible. This confirms the panel was reached, not an agent-performed full native
 acceptance sweep. Android remains stopped; the four beta gates remain open.
+
+
+## November 1 — Montana supported acceptance
+
+Montana is the twenty-first accepted state;24 remain. Native coverage combines
+Android result/retention evidence with iPhone17e rule/product/source-return paths,
+ordinary representative landscape and an explicit2x production-sheet harness.
+The harness does not establish ordinary-app OS Dynamic Type propagation or broader
+mobile accessibility readiness. Ordinary lib/main.dart was restored, installed and
+launched24927; iPhone17e remains running and Android is stopped. All four beta
+prerequisites remain open, including real-device persistence, privacy/backup,
+signing/distribution and broader layouts. No testers invited or beta cohort begun.

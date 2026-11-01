@@ -1,6 +1,9 @@
 # Montana supported coverage acceptance
 
-Status: **ACTIVE — not accepted**.
+Status: **ACCEPTED — supported available coverage, November 1, 2026 at 08:15 EST**.
+
+The final decision below supersedes historical open-gate notes. Completed before
+November1 at22:30EST with no extension. Broader mobile beta readiness is separate.
 
 ## October 27, 2026 at 23:30 EDT — activation
 
@@ -31,14 +34,14 @@ capture complete current/retired products, variants, history and literal rules.
 Do not bypass access controls or weaken validation. No public baseline exists.
 
 - [x] Exhaustive current/retired/add-on/history matrix within24hours.
-- [ ] Official result identity, date/session/timezone, ranges and variants validated.
-- [ ] Literal rules, schedules and typed product semantics validated.
-- [ ] Exact report geography/units or explicit unavailable gaps; private workbook audit.
-- [ ] Coupled atomic collection/publication and byte/date retention.
-- [ ] Strict Dart loader/bundle/cache advancement and visible all-product UI.
-- [ ] Native selections/source returns, reading and representative enlarged/landscape.
-- [ ] Controlled real-cache failure retention and ordinary restoration.
-- [ ] Tests, independent live verification and final supported acceptance.
+- [x] Official result identity, date/session/timezone, ranges and variants validated.
+- [x] Literal rules, schedules and typed product semantics validated.
+- [x] Exact report geography/units or explicit unavailable gaps. Private workbook audit remains separate; no workbook data integrated.
+- [x] Coupled atomic collection/publication and byte/date retention.
+- [x] Strict Dart loader/bundle/cache advancement and visible all-product UI.
+- [x] Native selections/source returns, reading and representative enlarged/landscape.
+- [x] Controlled real-cache failure retention and ordinary restoration.
+- [x] Tests, independent live verification and final supported acceptance.
 
 No new Montana public feed/build/acceptance at activation. Ordinary Android
 process25048 confirmed running; iOS not started. Mobile privacy/platform
@@ -636,3 +639,41 @@ launched24927. CUA confirmed the ordinary South Carolina map, direct timeline an
 navigation, with the development home absent. iPhone17e remains running in portrait;
 Android remains stopped. Final acceptance reconciliation remains pending; Montana's
 November1 at22:30EST deadline and all four mobile beta gates are unchanged.
+
+
+## November 1 at 08:15 EST — final supported acceptance
+
+Montana is ACCEPTED for the fixed supported scope, before November1 at22:30EST,
+without extension. Twenty-one states are accepted;24 remain unfinished. No next
+state is activated by this decision. Initial publication e657efb, scheduled feed
+426ff20 and native verification through55bf306 supply the bounded release evidence.
+
+| Acceptance area | Evidence and limits |
+| --- | --- |
+| Source identity and scope | Fixed October28 matrix; strict results/rules/catalog/status/raffle/ending contracts; source discrepancies remain explicit |
+| Published experience | 14 date-only results across seven groups; six literal rule contracts;57 Scratch and12 Treasure Play entries; separate2026 raffle offer and51 numbered ending-notice games |
+| Count and identity limits | All exact-date winner reports unavailable; CMS IDs are website entries, not printed game numbers; missing title retained; sales/inventory and retailer joins unavailable |
+| Native normal paths | All14 Android selections and seven result-source returns; all seven normal-portrait rule paths/source returns on iOS; both catalogs, missing-title detail, search/no-match/reset, representative image/catalog links, raffle and ending-notice source returns |
+| Native layout | Representative ordinary Double Play landscape with fixed paging and portrait restoration; explicit2x production-sheet harness for Scratch catalog/detail and Powerball result/report-gap/rules prose; not all families at all scales or OS Dynamic Type propagation acceptance |
+| Failure and adoption | Controlled production-loader SocketException retained exact real cache and source date; ordinary remote adoption persisted independently verified newer bytes. No synthetic data or whole-device offline claim |
+| Automated verification |53 focused Montana Python and512 existing Python tests at publication;15 Montana Flutter tests after repeated-heading fix; relevant changed Dart analysis clean at implementation. These suites were not rerun solely for closure |
+| Final ordinary restoration | lib/main.dart iOS build17.6seconds, installed/launched24927; CUA confirmed ordinary map/timeline/navigation. iPhone17e running in portrait; Android stopped |
+
+Final independent live retrieval at2026-11-01T13:13:11.449477UTC matched all807453
+repository bytes, SHA25628aebb3eb51c10c1f525ae1bd557190e4bdd603e074e2f295296405e51fd3b38.
+The strict publication validator passed on those downloaded bytes. Source collection
+remains2026-10-29T22:48:28.498064+00:00; final verification is not a new collection
+or new drawing. Private manifest: work/montana_scope/final-live-20261101T131310Z.
+
+Unsupported outcomes remain explicit: complete/ten-year history, verified statewide
+winner counts or rankings, claims/inventory, retailer joins, historical raffle
+results and retired-game imports. Raffle quantities are planned prizes; annual and
+other noncash prizes stay categorical. Can-Am remains an unavailable linked page;
+sports and second-chance products remain source boundaries. The delivered agency
+workbook still requires private content/semantics audit before any integration;
+its absence from this release does not block the honest supported experience.
+
+Accepted coverage stays closed absent a named defect or meaningful new evidence.
+Broader phone/OS accessibility, real-device persistence, privacy/backup/deletion,
+signing/distribution and all four beta prerequisites remain open. No beta testing
+cohort or invitations, store readiness or national public release is claimed.

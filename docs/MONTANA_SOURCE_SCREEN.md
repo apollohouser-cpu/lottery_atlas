@@ -527,3 +527,15 @@ Montana remains unaccepted and the November1 22:30EST deadline is unchanged.
 Ordinary main.dart was rebuilt in11.0seconds, installed and launched30693
 after the private adoption target. Android remains running; iOS not started.
 No tracked probe or main.dart edit was introduced.
+
+
+## November 1 — supported coverage accepted
+
+Supported available coverage is accepted before the fixed release deadline, with
+final scope and evidence in MONTANA_ACCEPTANCE.md. Twenty-one states accepted;
+24 remain. All exact-date count reports, sales/inventory, retailer joins and
+unaudited agency workbook content remain unavailable. No public private identifiers,
+new source collection, statewide totals or broader history are inferred. Final live
+bytes matched the repository and passed the strict validator. Native result/rule,
+product/source-return, representative layout and cache/restoration checks are
+bounded explicitly in the acceptance record. Mobile beta prerequisites stay open.
