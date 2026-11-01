@@ -74,3 +74,45 @@ then fix scope before November2 at09:15EST. Permitted repeatable capture remains
 unresolved; no Arizona parser/feed/native acceptance or deadline change. No new
 agency request or human attestation. iPhone17e ordinary app remains the selected
 simulator; no builds or device switches were performed.
+
+## November 1 — session, add-on and browser rendering evidence
+
+[Pick3](https://www.arizonalottery.com/draw-games/pick-3/) and
+[Pick4](https://www.arizonalottery.com/draw-games/pick-4/) distinguish midday/evening
+and one-play/two-play prize schedules. Pick3 separately links pre-June14,2026
+PDFs. Preserve leading zeros, positional digits, play type, session and format;
+sales cutoff times are not drawing instants. PDF report units/geography still
+require audit before any counts are published.
+
+[Triple Twist](https://www.arizonalottery.com/draw-games/triple-twist/) separates
+single-line and combined-line schedules; its extra ticket rows are not extra
+drawings. [Fantasy5](https://www.arizonalottery.com/draw-games/fantasy-5/) has an
+instant EXTRA! add-on, distinct from daily drawn results.
+[Powerball Xs & Os](https://www.arizonalottery.com/draw-games/powerball-xs-os/)
+is a random team-logo drawing, explicitly independent of NFL outcomes. Its
+lower tiers can become pari-mutuel; nominal schedules cannot stand in for actual
+payouts. The page flags a September13,2026 payout exception and a separate promotion.
+
+[Instant Tabs](https://www.arizonalottery.com/scratchers/instant-tabs/) describes
+pull-tab products with same-place/day redemption; it does not establish an
+exhaustive per-game remaining-prize feed. The
+[Top Prizes Remaining page](https://www.arizonalottery.com/scratchers/top-prizes-remaining/)
+returns blank data cells through the reader. A representative
+[Holiday Cheer detail](https://www.arizonalottery.com/scratchers/1558-holiday-cheer/)
+exposes identity/start date/overall odds but blank dynamic prize rows in that
+reader. No blank is interpreted as zero or extrapolated to other games.
+
+Ordinary in-app browser navigation to the official Powerball page succeeded.
+Initial accessibility output had blank results; a later observation after page
+scripts loaded showed dated Powerball and Double Play rows and numerical prize
+columns. This demonstrates browser rendering, not direct HTTP recovery, report
+semantic validation or an automated source collector. Private observed accessibility
+text is retained at work/arizona_scope/powerball-browser-20261101.txt. Clicking the
+PDF link did not yield a separately observed document; no original PDF capture or
+visual audit is claimed. No CAPTCHA was solved or security control bypassed.
+
+Next inspect the remaining Quick Draw variants, complete instant/ended catalogs
+and official rules, then close the scope matrix. Browser-rendered content is a
+possible permitted capture path to evaluate with explicit provenance; do not
+replace original-source evidence with hand-entered observations. Scope and release
+deadlines remain unchanged. No Arizona feed/build/acceptance or beta gate closure.
