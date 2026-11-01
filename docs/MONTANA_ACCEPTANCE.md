@@ -613,3 +613,26 @@ and no search code change was made. This closes the bounded multi-character
 search/no-match/reset paths for both catalogs. Private record:
 work/montana_native/ios-search-20261101.json. Enlarged-text native verification
 remains open; no state acceptance, beta readiness or deadline change.
+
+## November 1 — representative explicit 2x native layout and restoration
+
+An untracked development target wrapped unchanged production Montana sheets in
+MediaQuery TextScaler.linear(2), using their normal loader/cache/network. On the
+native iPhone17e, CUA verified Scratch catalog fixed paging, entry2857 nested detail
+paging and both close/return paths. Powerball2026-10-28 showed the enlarged result,
+explicit unavailable report and rules prose through fixed paging; Close returned
+to the development home. Inspected screenshots showed wrapped readable content
+and accessible fixed controls. The draw dropdown ellipsized visually while the
+complete selected identity remained in the result body and accessibility tree.
+
+This is representative explicit-scale portrait evidence, not every product at
+every scale or ordinary-app OS Dynamic Type propagation acceptance. Earlier
+Simulator/Settings text-size attempts did not establish a changed effective scale.
+No generated coverage, loader override or production source edit was used.
+Private evidence: work/montana_native/ios-explicit-text-scale-20261101.json.
+
+Ordinary lib/main.dart was rebuilt successfully (Xcode17.6seconds), installed and
+launched24927. CUA confirmed the ordinary South Carolina map, direct timeline and
+navigation, with the development home absent. iPhone17e remains running in portrait;
+Android remains stopped. Final acceptance reconciliation remains pending; Montana's
+November1 at22:30EST deadline and all four mobile beta gates are unchanged.
