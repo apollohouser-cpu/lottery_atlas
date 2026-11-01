@@ -519,3 +519,15 @@ navigation/return evidence, not a new full content audit. Private evidence is
 work/montana_native/ios-notice-returns-20261101.json. Multi-character search,
 remaining rule/catalog links and enlarged/landscape checks remain open. No
 acceptance or extension; ordinary iOS remains running and Android stopped.
+
+## October 31 night — first two iOS rule source returns
+
+Normal-portrait Powerball and Mega Millions fixed paging reached their official
+rule controls. Both opened rendered Montana Lottery game pages in Safari and
+returned through the OS Lottery Atlas control to the prior reading position.
+Powerball's Double Play header-discrepancy disclosure and money/odds associations
+were visible; Mega Millions retained per-play multiplier wording and columns.
+This is bounded navigation and return evidence, not a fresh source-content audit.
+Five other selected-group rule paths/returns, catalog/image links, complete search
+and enlarged/landscape checks remain open. Private record:
+work/montana_native/ios-rule-returns-20261101.json. No acceptance or deadline change.
