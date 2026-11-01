@@ -259,3 +259,15 @@ source returns/representative enlarged-text and landscape checks, followed by
 ordinary iOS restoration. An all-links placeholder is not sufficient. Any inability
 to satisfy those gates is a named release blocker, not automatic scope reduction.
 Next priority is repeatable permitted capture and parsers against retained evidence.
+
+## November 1 first parser boundary
+
+Added tooling/arizona_catalog_links.py and a sanitized observed DOM navigation
+fixture containing the 58 numbered Scratchers links. The validator requires an
+explicit expected identity set, rejects missing/extra/duplicate games, foreign or
+truncated URLs, and paths whose printed number differs from the source label.
+It retains literal titles and exact observed paths; it produces no inventory,
+prize values or draw results. Four focused Python tests pass, including negative
+identity/link/provenance cases. This is the first source-join component, not a
+complete catalog/detail parser or repeatable production collector. Fast Play,
+draw/rule capture and publication remain open; fixed scope/deadline unchanged.
