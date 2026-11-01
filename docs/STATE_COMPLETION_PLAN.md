@@ -9,7 +9,7 @@ Montana supported coverage is ACCEPTED November1 at08:15EST, before its22:30EST
 release deadline without extension. See MONTANA_ACCEPTANCE.md for the final
 bounded source/publication/native/cache matrix and explicit unavailable features.
 Twenty-one states accepted;24 unfinished. Arizona is the sole active state from
-November1 at09:15EST. Full scope due November2 at09:15EST; supported release due
+November1 at09:15EST. Full supported scope fixed November1 at16:22EST, before November2 at09:15EST; supported release due
 November6 at09:15EST (14:15UTC), fresh120elapsed hours. See ARIZONA_ACCEPTANCE.md.
 No extension or inherited Montana deadline. Accepted states stay closed absent a
 named defect or meaningful new evidence. Missing agency records do not block
@@ -64,7 +64,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Arizona | November6,2026 at09:15EST | Sole active November1 at09:15EST; scope due November2 at09:15EST; fresh120elapsed hours. |
+| Arizona | November6,2026 at09:15EST | Sole active November1 at09:15EST; scope fixed November1 at16:22EST; capture/implementation open; fresh120elapsed hours. |
 | Montana | November1,2026 at22:30EST | ACCEPTED November1 at08:15EST, early without extension; see MONTANA_ACCEPTANCE.md. |
 | North Dakota | November1,2026 at10:29AM EST | ACCEPTED October27 at22:34EDT, early without extension; see NORTH_DAKOTA_ACCEPTANCE.md. |
 | Wyoming | ACCEPTED October27,2026 at11:20ET | Production5cf166f; final bounded native/live/cache matrix closed early, no extension. |

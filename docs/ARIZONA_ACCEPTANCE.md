@@ -32,7 +32,7 @@ instants, count geography, retailer positions or total coverage. Formal records
 portal use requires a human commercial/noncommercial attestation; none is made.
 Missing agency records do not block supported completion with explicit gaps.
 
-- [ ] Full product/history/gap matrix fixed within24hours.
+- [x] Full supported product/history/gap matrix fixed November1 at16:22EST; see fixed scope below.
 - [ ] Permitted source capture, strict parsers and semantic contracts.
 - [ ] Coupled publication and failure retention.
 - [ ] Strict app loader, visible supported products and explicit unavailable data.
@@ -212,3 +212,50 @@ is directed to Players Club and remains a promotion boundary, not regular draws.
 No retirement date is inferred from absent navigation or unsuccessful search.
 
 Scope, capture/parser and beta gates remain open; deadlines unchanged.
+
+## Fixed supported scope — November 1 at 16:22 EST
+
+Scope is fixed before November 2 at09:15EST. Source capture and implementation are
+still open; this is not acceptance. The release deadline remains November 6
+at09:15EST (14:15UTC), without extension. The matrix below consolidates the official
+product pages, index expansions and source discrepancies screened above. It sets
+release obligations, not a claim that data has already been collected.
+
+| Product boundary | Required supported implementation | Explicit unavailable boundary |
+| --- | --- | --- |
+| Powerball / Power Play / Double Play | Base and Double Play separate result identities; literal schedules and Power Play distinctions | No inferred Arizona counts from national or ambiguous reports |
+| Powerball Xs & Os | Separate team-logo results and literal rules, liability/exception disclosures | No conversion to sports outcomes or invented numeric balls |
+| Mega Millions | Results and literal multiplier-specific schedule | No invented drawing-wide multiplier |
+| The Pick / The Pick Plus | Current-format results and rules; instant add-on separately described | Pre-June14 format history not merged; FAQ EXTRA! wording retained as discrepancy |
+| Pick3 / Pick4 | Midday/evening identities, ordered digits including zeros, literal play schedules | Cutoffs are not invented draw instants; older format imports excluded |
+| Triple Twist | Drawn result and separate single-line/combined-line schedules | Extra ticket rows not additional draws |
+| Fantasy5 / EXTRA! | Daily results and rules; instant add-on boundary | Add-on outcomes not dated draw results |
+| Eight Quick Draw products | Each individual product listed in the Quick Draw matrix above; draw ID/date/time, ordered digits/symbols where applicable, bonus/base-prize fields and literal schedules | No collapse to a daily result; wager-unit wins not persons/tickets; liability exceptions preserved |
+| Scratchers | Entire observed 58-entry numbered catalog, detail/source paths and literal schedules where validated; separate 14-row ending notice | No retailer stock, tickets remaining or title-based edition joins; remaining-prize fields withheld until complete capture/semantics audit |
+| Fast Play | Entire observed 25-entry numbered catalog, detail/source paths and literal schedules where validated; separate four observed ended-game rows | Advertised progressive jackpots not paid prizes; conflicting ending-date metadata disclosed; no inventory |
+| Instant Tabs | Product description, official source, explicit absence of audited per-game catalog/results | No invented game list, remaining prizes or draw history |
+| Second Chance / Players Club | Official promotion boundary and source | No account entry, promotion participation, invented regular results or prize counts |
+| Retired games and prior formats | Explicit unavailable historical coverage; retain specifically linked prior-format sources for later audit | No retirement dates inferred from navigation absence or third-party search; no complete retired-game history claim |
+
+The bounded result target is the latest two validated records in each of 19
+identities: eleven main draw/session/add-on identities (Powerball, Double Play,
+Xs & Os, Mega Millions, The Pick, Pick3 midday/evening, Pick4 midday/evening,
+Triple Twist, Fantasy5) plus eight Quick Draw products. The resulting 38 is a
+planning target, not an observed record count. A missing/ambiguous source must be
+shown as unavailable, with exact reason; it must never be filled with templates.
+Reports start unavailable unless geography and units are independently established.
+No ten-year history, statewide claims, retailer joins or map positions are in scope.
+
+Capture must retain actual observed source content, acquisition timestamps,
+complete source URLs and hashes. Browser-derived text must be labeled as such;
+HTTP403 bodies cannot be promoted, and browser access does not prove scheduled
+HTTP transport works. No manual transcription of result values into production.
+Validate identity, completeness, source joins, rule changes and refresh regressions
+before atomic publication; failed refresh must retain prior bytes and dates.
+
+Acceptance still requires substantive draw/catalog app support, explicit gaps,
+strict loading/cache behavior, live publication verification and native navigation/
+source returns/representative enlarged-text and landscape checks, followed by
+ordinary iOS restoration. An all-links placeholder is not sufficient. Any inability
+to satisfy those gates is a named release blocker, not automatic scope reduction.
+Next priority is repeatable permitted capture and parsers against retained evidence.

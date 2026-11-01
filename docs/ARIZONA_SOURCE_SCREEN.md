@@ -45,3 +45,11 @@ schedule, ordered digit/dice results, and wager-unit reports ($2 for Pick Your B
 $1 on several other pages). These are not accepted person/ticket counts. Reader
 result cells remain blank; no production transport recovery or source collection
 is claimed. Scope closure and existing deadlines remain unchanged.
+
+### November 1 supported scope fixed
+
+Full supported scope was fixed at16:22EST, before the November2 09:15EST scope
+deadline. See ARIZONA_ACCEPTANCE.md#fixed-supported-scope--november-1-at-1622-est
+for every reviewed product, nineteen result-identity targets and explicit gaps.
+Capture/parsers, publication and native acceptance remain open. Release remains
+November6 at09:15EST; no extension, feed or acceptance is claimed.
