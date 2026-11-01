@@ -13,8 +13,10 @@ from October27 at23:30EDT. Scope due October28 at23:30EDT; supported release due
 November1 at22:30EST (November2 at03:30UTC), fresh120elapsed hours across DST.
 See MONTANA_ACCEPTANCE.md. No extension; never inherit ND's deadline.
 Accepted states stay closed absent a named defect or meaningful new evidence.
-Android ordinary app remains running; iOS is shut down. Mobile/distribution gates
-remain separate.
+October31 user preference supersedes the prior Android setup: iPhone17e is the
+selected running simulator and Android is stopped; keep only one simulator.
+Mobile/distribution gates remain separate. All four prerequisites in
+MOBILE_BETA_READINESS.md must be verified before beta participation or invitations.
 The October26 18-acceptance forecast remains December19,2026–January15,2027;
 five-day-per-state slower scenario March10. These are estimates, not launch
 commitments. Next routine reforecast at23 accepted or a material blocker.
