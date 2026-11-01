@@ -544,3 +544,15 @@ on iOS; Double Play, Montana Cash and Big Sky Bonus remain. Catalog/image links,
 complete search and enlarged/landscape remain open. Private evidence:
 work/montana_native/ios-mfl-la-returns-20261101.json. Deadline remains November1
 22:30EST; no acceptance or extension.
+
+## November 1 — Montana Cash and Big Sky Bonus iOS rule returns
+
+Both normal-portrait rule paths were paged to their official-rule links, opened
+the rendered Montana Lottery game page in Safari, and returned through the OS
+control to the prior reading position. Cash purchase-prose caveats and categorical
+Jackpot/Max Cash prizes remained visible. Big Sky Bonus retained base, bonus and
+combined schedules. This is navigation evidence, not a full external audit.
+Six selected-group rule paths/returns now have iOS evidence; the separate Double
+Play selection remains, along with catalog/image links, complete search and
+enlarged/landscape. Private record: work/montana_native/ios-cash-bsb-returns-20261101.json.
+No acceptance or deadline change; November1 at22:30EST remains fixed.
