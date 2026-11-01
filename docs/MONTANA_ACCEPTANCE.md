@@ -587,3 +587,16 @@ not all entry images or a new external content audit. Private record:
 work/montana_native/ios-scratch-returns-20261101.json. Treasure Play source/image
 returns, complete search and enlarged-text native checks remain open. No acceptance
 or deadline change; iOS remains in portrait and Android remains stopped.
+
+## November 1 — Treasure Play detail source returns
+
+Treasure Play website entry520 ($20 Loaded Progressive) opened from the native
+catalog. The detail retained the categorical Jackpot prize and separate advertised
+progressive estimate disclaimer. Fixed paging reached the source controls. Official
+image1 rendered the corresponding game artwork in Safari; Official product catalog
+rendered Montana Lottery's Treasure Play page. Both OS returns restored the prior
+detail reading position. This is representative navigation evidence, not every
+image link or a full external audit. Private record:
+work/montana_native/ios-treasure-returns-20261101.json. Complete multi-character
+search and enlarged-text native checks remain open. No acceptance or deadline
+change; ordinary iPhone17e remains running in portrait and Android is stopped.
