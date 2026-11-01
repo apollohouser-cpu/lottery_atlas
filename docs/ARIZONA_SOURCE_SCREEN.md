@@ -35,3 +35,13 @@ release due November6 at09:15EST. See ARIZONA_ACCEPTANCE.md. Direct draw-game
 and Scratchers requests again returned403; private failed-response manifests are
 retained. Web-reader access supports initial product discovery only, not recovered
 production transport. No formal attestation, fees, new correspondence or feed.
+
+### November 1 Quick Draw review
+
+The eight linked game pages now have a product-by-product discovery matrix in
+[ARIZONA_ACCEPTANCE.md](ARIZONA_ACCEPTANCE.md#november-1-quick-draw-source-screen).
+Critical boundaries are hourly Draw ID/time identity, Lucky Links' distinct daily
+schedule, ordered digit/dice results, and wager-unit reports ($2 for Pick Your Bet,
+$1 on several other pages). These are not accepted person/ticket counts. Reader
+result cells remain blank; no production transport recovery or source collection
+is claimed. Scope closure and existing deadlines remain unchanged.

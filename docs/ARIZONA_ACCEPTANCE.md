@@ -116,3 +116,30 @@ and official rules, then close the scope matrix. Browser-rendered content is a
 possible permitted capture path to evaluate with explicit provenance; do not
 replace original-source evidence with hand-entered observations. Scope and release
 deadlines remain unchanged. No Arizona feed/build/acceptance or beta gate closure.
+
+## November 1 Quick Draw source screen
+
+All eight linked Quick Draw game pages were inspected through the web reader.
+This is discovery, not a retained raw-source collection: dated result cells remain
+blank in this reader. Each table exposes Draw ID and drawing time; these must be
+retained together with date and Arizona timezone rather than collapsed to one
+result per calendar day. History depth and a repeatable permitted capture remain open.
+
+| Official product | Required distinctions |
+| --- | --- |
+| [One To Win](https://www.arizonalottery.com/quick-draw/one-to-win/) | One number 1–15; draw-specific base prize, wager scaling, and liability exception. Published wins are $1 wager units, not people or tickets. |
+| [5/10/45](https://www.arizonalottery.com/quick-draw/51045/) | Ten drawn numbers from 1–45; selected spot count, Bullseye, and Super Bonus are separate dimensions. Wins use $1 units. |
+| [5 In-A-Line](https://www.arizonalottery.com/quick-draw/5-in-a-line/) | Five ordered digits 0–9; preserve zeros and prefix matches. Super Bonus and liability exception remain separate from nominal tiers. |
+| [Lucky Links](https://www.arizonalottery.com/quick-draw/lucky-links/) | Eight numbers 1–22; ticket grid/free center and line tiers, not an unordered ticket match count. Page specifies 19 daily draws, 05:00–23:00, unlike the other seven pages' 20. |
+| [Two to Win](https://www.arizonalottery.com/quick-draw/two-to-win/) | Two digits 00–99, straight/box/front/back and Super Bonus; wins use $1 units. |
+| [Money Roll](https://www.arizonalottery.com/quick-draw/money-roll/) | Five dice symbols matched by position; Super Bonus; wins use $1 units. Do not coerce symbols into a sorted number set. |
+| [Hi-Lo](https://www.arizonalottery.com/quick-draw/hi-lo/) | Twenty numbers from 1–60; low 1–30/high 31–60, grouped count tiers, Super Bonus, and liability wording; wins use $1 units. |
+| [Pick Your Bet](https://www.arizonalottery.com/quick-draw/pick-your-bet/) | One number 1–38; number/parity/low-high bet types and Super Bonus. Wins use $2 units, unlike the $1-unit tables. |
+
+No wager-unit column is approved as a winner-person or winning-ticket count.
+The One To Win [detail page](https://www.arizonalottery.com/quick-draw/one-to-win/how-to-play/)
+and main page disagree on the purchase cutoff (23:59 versus 23:44:59); both give
+23:45 as the last drawing. Preserve the discrepancy, not an inferred correction.
+Rule and history contracts, complete instant/ended catalog audit, and production
+capture remain next. Scope is still open; November 2 09:15 EST scope and November 6
+09:15 EST release deadlines are unchanged. No feed, native build, or acceptance.
