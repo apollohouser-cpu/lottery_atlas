@@ -178,3 +178,26 @@ The packet includes prior correspondence; no new lottery dataset was delivered.
 The original appeal and requested supplement remain SENT-confirmed. No redundant
 reply, fee authorization, human attestation or public data integration occurred.
 Await review. Private evidence: work/agency_email_checks/massachusetts_20261019_ack.
+
+## November 2 — appeal closed; narrower documentation request acknowledged
+
+The Supervisor closed the administrative appeal without ordering production,
+encouraging further clarification of specific existing records. The original
+five-page determination was retained privately and its complete text reviewed;
+no dataset was delivered. The determination quotes the Lottery's commercial-use
+position but does not expressly resolve that ground. This supersedes the prior
+awaiting-disposition status.
+
+At the user's explicit direction, sent a narrower request for current existing
+data dictionary, API schema or field-definition documentation for prizeAmount,
+prizeDescription, paidPrizes and prizesRemaining at the public instant-game-prizes
+endpoint. It excludes historical versions, correspondence searches, winner and
+retailer records, custom reports and newly written explanations. Potential
+commercial use remains disclosed; no fees or paid work are authorized. Gmail
+SENT status and the exact recipient/body were confirmed.
+
+The Lottery acknowledged receipt November 2 and says it is reviewing the request.
+The afternoon thread check confirms no substantive decision, records, fee,
+question or promised response date. No acknowledgment reply or duplicate request
+was sent. Await the substantive response. Evidence and administrative identifiers
+remain private; no public dataset or state acceptance changed.
