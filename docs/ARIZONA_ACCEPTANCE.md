@@ -523,3 +523,20 @@ Sixty-nine focused Arizona tests pass. Lucky Links and Hi-Lo still need strict
 result parsers. Rules/products, hourly refresh across day boundaries, coupled
 publication and native acceptance remain open. No feed/build/acceptance or HTTP
 transport recovery is claimed; November 6 09:15 EST remains the release deadline.
+
+## November 2 Lucky Links hourly evidence
+
+Retained nine November 2 result/detail pairs at 2026-11-02T20:54:00.938Z,
+Draw IDs 31404–31396, 13:00 through 05:00 Arizona time. Strict parsing requires
+eight distinct numbers in 1–22, Super Bonus 1x–5x, consecutive hourly identities
+and exact prize-detail headers. Lucky Links has nineteen scheduled daily draws,
+05:00–23:00, unlike the twenty-draw families. Latest observed numbers are
+03/06/10/12/13/14/17/20 with 2x Super Bonus. These are draw numbers, not positions
+on a purchased 3x3 ticket; no ticket grid, lines won, counts or actual payouts
+are inferred. All reports remain unavailable. The source's ticket grid and
+pari-mutuel conditions remain rule information requiring separate presentation.
+
+Seventy-two focused Arizona tests pass. Hi-Lo still needs a strict result parser;
+hourly refresh/day-boundary continuity, rules/products, coupled publication and
+native acceptance remain open. No Arizona feed/build/acceptance or direct HTTP
+recovery is claimed. November 6 09:15 EST release deadline is unchanged.
