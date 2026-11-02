@@ -231,3 +231,20 @@ remain separate from actual payouts. Sixty-two focused Arizona tests pass.
 Four other QuickDraw families, rules/products and publication/native gates remain
 open. No public feed/build/acceptance or HTTP recovery; November6 09:15EST release
 deadline unchanged. This is bounded dated DOM evidence, not complete history.
+
+## November 2 Pick Your Bet hourly evidence
+
+Retained eight populated November 2 result/detail pairs at 18:52:05.600 UTC,
+Draw IDs 21069–21062, 11:40 through 04:40 Arizona time. Strict parsing preserves
+literal two-digit numbers (including 07), Odd/Even and Low/High labels, and Super
+Bonus. Category consistency, 1–38 range, hourly schedule, consecutive identities,
+future-time rejection and exact nested prize headers are enforced. The latest
+observed number is 35, Odd, High, with 2x Super Bonus. Source prize-detail units
+are based on $2 wagers, not ticket or person counts; no counts or actual payouts
+are promoted and reports remain unavailable. Sixty-five focused Arizona tests
+pass, including contradictory-category and missing-hour rejection.
+
+Three Quick Draw families still need strict result parsers; hourly refresh/day
+boundary continuity, rules/products, coupled publication and native acceptance
+remain open. No Arizona feed/build/acceptance or direct HTTP recovery is claimed.
+The November 6 09:15 EST release deadline is unchanged.
