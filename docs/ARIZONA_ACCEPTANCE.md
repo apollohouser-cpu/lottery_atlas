@@ -283,3 +283,22 @@ ordering changes. Seven focused Python tests pass. This validates 83 navigation
 identities across the two catalogs, not 83 detailed prize schedules or inventories.
 Full draw/detail capture and production refresh remain open; no feed or native
 build was made and the November6 09:15EST deadline remains unchanged.
+
+## November 1 Powerball DOM evidence parser
+
+Retained structured, populated browser DOM tables from the official Powerball
+page, with acquisition timestamp, in private work/arizona_scope and an observed
+fixture. The two tables share an HTML ID; exact column headers distinguish
+Powerball from Double Play without relying on table order. The strict parser
+validates 77 Powerball and 60 Double Play date-only rows, including the latest
+October 31 and October 28 results. These are observed rows, not the full Arizona
+scope target or complete historical coverage. Nested prize details are retained
+as source evidence but no counts/reports are promoted: geography and units remain
+unverified. No draw timestamps are fabricated.
+
+Twelve focused Python tests pass across draw and catalog navigation parsers,
+including blank templates, invalid ranges, duplicate/out-of-order dates, cadence,
+changed table structure, source provenance and table-order independence. Browser
+DOM access is not direct HTTP recovery or a scheduled collector. Remaining game,
+rule/detail, refresh continuity, coupled publication, app and native gates remain
+open; no Arizona feed/build/acceptance. November 6 09:15 EST release is unchanged.
