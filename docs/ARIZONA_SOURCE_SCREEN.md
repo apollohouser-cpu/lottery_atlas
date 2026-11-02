@@ -283,3 +283,22 @@ Seventy-two focused Arizona tests pass. Hi-Lo still needs a strict result parser
 hourly refresh/day-boundary continuity, rules/products, coupled publication and
 native acceptance remain open. No Arizona feed/build/acceptance or direct HTTP
 recovery is claimed. November 6 09:15 EST release deadline is unchanged.
+
+## November 2 Hi-Lo hourly evidence
+
+Retained eleven populated November 2 result/detail pairs at 2026-11-02T21:48:26.547Z,
+Draw IDs 21082–21072, 14:10 through 04:10 Arizona time. Strict parser preserves
+separately labeled high/low number totals, requires each in 0–20 and sum 20,
+validates Super Bonus 1x–5x, hourly schedule/identity continuity, and exact nested
+prize-detail headers. Latest observed information is Hi 9 / Lo 11, Super Bonus
+1x. The underlying twenty drawn numbers are not provided by this result table
+and are not invented. Category totals are not winner counts; source $1 wager
+win units remain unpromoted and reports unavailable. The observed SEE MORE
+footer is explicitly recognized, not interpreted as another draw. This is a
+bounded DOM capture, not a claim of exhaustive history or pagination traversal.
+
+Seventy-six focused Arizona tests pass. All eight Quick Draw families now have
+initial strict result parsers on retained dated captures. This does not close
+hourly refresh/day-boundary continuity, rules/products, coupled publication or
+native acceptance. No Arizona feed/build/acceptance or HTTP recovery is claimed.
+November 6 09:15 EST remains the unchanged supported-release deadline.
