@@ -384,3 +384,15 @@ Thirty-six focused Arizona tests pass, including The Pick overlap/correction gat
 range/cadence and prior-format rejection. No scheduled transport recovery, feed,
 app build or acceptance. Remaining capture/rules/publication/native gates and
 November6 09:15EST deadline remain unchanged.
+
+## November 2 Pick 3 explicit sessions
+
+Retained populated official DOM evidence containing 282 date/session rows: 141
+Midday and 141 Evening, June14 through November1. Strict parser uses literal
+session labels, preserves three ordered digits including zeros/repeats, and
+rejects missing/duplicate/interleaved session gaps and prior-format dates. Latest
+two per session remain a selection target; no invented clock times or payout
+counts are produced. Source prize-count prose points to next-day PDF availability;
+DOM detail values remain unpromoted, reports unavailable. Forty focused Arizona
+tests pass. No HTTP recovery, feed, app build or acceptance; remaining capture,
+rule/detail, publication/native gates and November6 09:15EST deadline unchanged.
