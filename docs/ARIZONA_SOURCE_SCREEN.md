@@ -217,3 +217,17 @@ detail numbers and the pari-mutuel prize condition do not establish ticket count
 or actual payouts. Fifty-nine focused Arizona tests pass. Five other QuickDraw
 families, rules/products and publication/native gates remain open. No feed/build,
 HTTP recovery or acceptance; November6 09:15EST release deadline unchanged.
+
+## November 2 Money Roll hourly evidence
+
+Retained six populated November2 hourly result/detail pairs, Draw IDs27652–27647
+at09:50 through04:50 Arizona time. Parser preserves five literal ordered dice
+labels, including repeats, rather than treating the draw as unordered numbers.
+Latest labels are ONE/FIVE/FOUR/TWO/THREE with Super Bonus3x. Explicit source,
+50-minute schedule, six-label vocabulary and nested prize-header contracts reject
+invalid symbols, missing hours and changed structure. The source's$1-wager-based
+win units remain unpromoted; reports are unavailable and pari-mutuel limitations
+remain separate from actual payouts. Sixty-two focused Arizona tests pass.
+Four other QuickDraw families, rules/products and publication/native gates remain
+open. No public feed/build/acceptance or HTTP recovery; November6 09:15EST release
+deadline unchanged. This is bounded dated DOM evidence, not complete history.
