@@ -72,3 +72,16 @@ changed table structure, source provenance and table-order independence. Browser
 DOM access is not direct HTTP recovery or a scheduled collector. Remaining game,
 rule/detail, refresh continuity, coupled publication, app and native gates remain
 open; no Arizona feed/build/acceptance. November 6 09:15 EST release is unchanged.
+
+## November 1 Fantasy 5 structured evidence
+
+Captured the populated official Fantasy 5 result table through ordinary browser
+DOM observation and retained timestamped evidence privately plus a source fixture.
+Strict parsing validates 179 consecutive date-only rows, latest October31/30;
+blank templates, missing daily rows, duplicate numbers, out-of-range values and
+changed source/table structure fail closed. Nested prize details are retained but
+not promoted to counts or reports; instant EXTRA is not a separate draw result.
+Twenty-two focused Arizona parser tests pass. This is parser development, not
+HTTP transport recovery, a scheduled collector, new public feed or acceptance.
+Other game/rule/detail capture and publication/native gates remain open. Arizona
+remains sole active with unchanged November6 09:15EST release deadline.
