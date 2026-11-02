@@ -176,3 +176,18 @@ Fifty focused Arizona tests pass. All reports remain unavailable. This is an
 internal validation step, not a public feed or atomic acquisition/publication.
 Eight QuickDraw groups, rules, products and native gates remain outstanding;
 November6 at09:15EST release deadline is unchanged, with no acceptance or build.
+
+## November 2 One To Win hourly evidence
+
+Retained the populated official November2 date-selected DOM table: three hourly
+results with Draw IDs36268/36267/36266 at06:45/05:45/04:45 Arizona time, numbers
+6/14/12 and literal base prize amounts$7/$7/$5. Strict parsing joins the selected
+date with each printed time in America/Phoenix, rejects future/out-of-schedule
+rows, ID/hour gaps and changed table contracts. Base amounts remain per-wager
+source values, not actual payouts; the pari-mutuel limitation remains explicit.
+The source labels its win units as based on$1 wagers, so none become ticket or
+person counts and reports remain unavailable. Fifty-three focused Arizona tests
+pass. This captures one QuickDraw family on one date, not complete daily/history
+coverage or a new coupled collection. Seven other QuickDraw families, rules,
+products, publication and native checks remain open; no feed/build/acceptance or
+HTTP recovery is claimed. November6 09:15EST release deadline is unchanged.
