@@ -461,3 +461,16 @@ from actual payouts. Fifty-six focused Arizona tests pass. This is one day's
 bounded DOM evidence, not full history, raw HTTP recovery or coupled publication.
 Six other QuickDraw families, rules/products and publication/native gates remain
 open. No feed/build/acceptance; November6 09:15EST release deadline unchanged.
+
+## November 2 5 In-A-Line hourly evidence
+
+Retained six populated November2 result/detail pairs, Draw IDs33027–33022 at09:30
+through04:30 Arizona time. Latest ordered digits64972/85271 carry Super Bonus1x/3x;
+other observed rows preserve repeated digits and zeros. Extended the hourly digit
+parser with a separate five-digit/source/minute/header contract, retaining the
+Two To Win contract. Changed time, digit width, source identity, nested prize
+headers and missing hourly pairs fail closed. Reports remain unavailable; source
+detail numbers and the pari-mutuel prize condition do not establish ticket counts
+or actual payouts. Fifty-nine focused Arizona tests pass. Five other QuickDraw
+families, rules/products and publication/native gates remain open. No feed/build,
+HTTP recovery or acceptance; November6 09:15EST release deadline unchanged.
