@@ -1107,3 +1107,13 @@ restart/update/deletion acceptance. No simulator rebuild or installation was
 performed for this change; the ordinary iOS app remains as previously installed,
 with Android stopped. All four beta prerequisites remain open. Arizona remains
 the sole active state with its November 6 at 09:15 EST release deadline unchanged.
+
+## November 2 — ordinary iOS build includes startup persistence fix
+
+Built ordinary main.dart from 28a0429 for iOS simulator (Xcode14.1seconds), installed
+without removing app data, and cold-launched on the already running iPhone17e.
+CUA verified the South Carolina map and visible timeline, opened Favorites to its
+empty-state screen, then returned to the map. No favorites were added or deleted
+in this smoke check; it does not establish saved-record retention across restart
+or update. Android stayed stopped; no extra simulator or probe target was used.
+All four beta prerequisites and Arizona's release deadline remain unchanged.
