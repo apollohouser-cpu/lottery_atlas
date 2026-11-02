@@ -327,3 +327,18 @@ Twenty-two focused Arizona parser tests pass. This is parser development, not
 HTTP transport recovery, a scheduled collector, new public feed or acceptance.
 Other game/rule/detail capture and publication/native gates remain open. Arizona
 remains sole active with unchanged November6 09:15EST release deadline.
+
+## November 1 Triple Twist structured evidence
+
+Captured 180 populated daily Triple Twist rows from the official browser DOM,
+latest November1 and October31. Added explicit six-of-42 validation using a shared
+daily-lotto parser with Fantasy5's separate five-of-41/source contract. The three
+rows on a purchased ticket are not three drawings. The latest source detail row
+contains zeros; these are not promoted to verified zero winners or counts.
+All report statuses remain unavailable pending semantics/timing validation.
+
+Twenty-six focused Arizona parser tests pass, including cross-game source rejection,
+exact number cardinality/ranges and missing daily results. Retained capture is
+DOM evidence, not HTTP recovery or scheduled collection. No public feed, app build
+or acceptance; remaining capture/rules/publication/native gates and November6
+09:15EST release deadline are unchanged.
