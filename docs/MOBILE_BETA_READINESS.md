@@ -1090,3 +1090,20 @@ mobile accessibility readiness. Ordinary lib/main.dart was restored, installed a
 launched24927; iPhone17e remains running and Android is stopped. All four beta
 prerequisites remain open, including real-device persistence, privacy/backup,
 signing/distribution and broader layouts. No testers invited or beta cohort begun.
+
+## November 2 — concurrent startup favorite load correction
+
+Reproduced a startup race in both favorite services: a delayed initial storage
+read could finish after a second load and successful addition, replacing the
+visible favorite with the older snapshot. Startup callers and mutations now share
+one in-flight load. Failed loads release that shared future so later calls can
+retry; successful writes still precede visible changes.
+
+The new delayed-read regression failed before the fix and passes afterward. Six
+focused favorite and saved-ticket tests pass together, including storage failure,
+recovery, overlapping mutations and existing lifecycle checks. Changed Dart files
+analyze clean. This is controlled in-memory platform evidence, not physical-device
+restart/update/deletion acceptance. No simulator rebuild or installation was
+performed for this change; the ordinary iOS app remains as previously installed,
+with Android stopped. All four beta prerequisites remain open. Arizona remains
+the sole active state with its November 6 at 09:15 EST release deadline unchanged.

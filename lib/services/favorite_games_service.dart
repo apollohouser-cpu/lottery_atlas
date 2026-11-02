@@ -14,6 +14,7 @@ class FavoriteGamesService {
   );
 
   static bool _didLoad = false;
+  static Future<void>? _loading;
   static Future<void> _pendingWrite = Future<void>.value();
 
   // Serialize read/modify/write so overlapping taps cannot discard a favorite.
@@ -27,8 +28,14 @@ class FavoriteGamesService {
     return result;
   }
 
-  static Future<void> load() async {
-    if (_didLoad) return;
+  static Future<void> load() {
+    if (_didLoad) return Future<void>.value();
+    // Startup callers and mutations must share the same storage snapshot.
+    // A late duplicate read could otherwise replace a newly saved favorite.
+    return _loading ??= _load().whenComplete(() => _loading = null);
+  }
+
+  static Future<void> _load() async {
     final saved = await _store.getStringList(_storageKey) ?? const <String>[];
     final byKey = <String, FavoriteLotteryGame>{};
     for (final raw in saved) {
