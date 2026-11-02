@@ -505,3 +505,21 @@ Three Quick Draw families still need strict result parsers; hourly refresh/day
 boundary continuity, rules/products, coupled publication and native acceptance
 remain open. No Arizona feed/build/acceptance or direct HTTP recovery is claimed.
 The November 6 09:15 EST release deadline is unchanged.
+
+## November 2 5/10/45 hourly evidence
+
+Retained nine populated result/detail pairs for November 2 at 2026-11-02T19:50:27.982Z,
+Draw IDs 36264–36256, 12:15 through 04:15 Arizona time. The strict parser validates
+ten distinct numbers in 1–45, the separately labeled Bullseye belonging to that
+set, hourly timing/identity continuity and exact nested prize-detail structure.
+Latest observed numbers are 03/06/11/13/14/16/18/19/33/34, Bullseye 03, Super Bonus
+2x. The allowed bonus contract includes 10x/12x/20x without truncating digits;
+those values are covered by synthetic parser checks, not claimed observed here.
+The source's $1 wager-based win units are not ticket/person counts and are not
+promoted; reports remain unavailable. Base/Bullseye prize schedules and the
+stated pari-mutuel limit are not actual payout reports.
+
+Sixty-nine focused Arizona tests pass. Lucky Links and Hi-Lo still need strict
+result parsers. Rules/products, hourly refresh across day boundaries, coupled
+publication and native acceptance remain open. No feed/build/acceptance or HTTP
+transport recovery is claimed; November 6 09:15 EST remains the release deadline.
