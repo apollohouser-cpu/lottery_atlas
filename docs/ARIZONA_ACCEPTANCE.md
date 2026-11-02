@@ -342,3 +342,18 @@ exact number cardinality/ranges and missing daily results. Retained capture is
 DOM evidence, not HTTP recovery or scheduled collection. No public feed, app build
 or acceptance; remaining capture/rules/publication/native gates and November6
 09:15EST release deadline are unchanged.
+
+## November 1 Mega Millions structured evidence
+
+Retained populated official browser DOM results: 51 date-only draws, latest
+October30 and October27. Strict current-format parser validates five distinct
+white balls 1–70, Mega Ball 1–24, Tuesday/Friday continuity, acquisition timezone,
+source and exact table structure. Prior-format dates are rejected rather than
+silently assigned current rules. No global draw multiplier is invented; per-play
+multipliers belong to the separate rule contract. Nested counts remain source
+evidence only; reports are unavailable until semantics are validated.
+
+Thirty focused Arizona parser tests pass. No HTTP transport recovery, scheduled
+collector, public feed, app build or acceptance is claimed. Remaining game/rule/
+detail capture, publication and native gates stay open; November6 09:15EST release
+remains unchanged.
