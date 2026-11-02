@@ -1117,3 +1117,22 @@ empty-state screen, then returned to the map. No favorites were added or deleted
 in this smoke check; it does not establish saved-record retention across restart
 or update. Android stayed stopped; no extra simulator or probe target was used.
 All four beta prerequisites and Arizona's release deadline remain unchanged.
+
+## November 2 — ordinary iOS location-favorite lifecycle
+
+On iPhone17e/iOS26.5 with the ordinary 28a0429 simulator artifact, used CUA to add
+the observed Denton activity location from Lottery Activity. Its control changed
+to Remove favorite. After process termination and cold launch, Favorites still
+showed Denton. Terminated again, installed the same artifact over the existing app
+without uninstalling, and launched; Favorites again retained Denton. Removed that
+development-check favorite through the UI, cold-launched again, and verified
+Favorites showed its empty state. Returned to the South Carolina map; ordinary
+app process71710 remains running and Android stayed stopped. Private accessibility
+evidence is retained under work/mobile_persistence_20261102, with the tool trace
+recording the final empty-state observation.
+
+This establishes one location-favorite path across simulator process restart,
+same-artifact replacement installation, and removal/restart. It is not a physical
+phone check, version migration, signed distribution update, backup/restore test,
+or saved-ticket/game-favorite acceptance. All four beta prerequisites remain open.
+No Arizona scope, acceptance, publication or release deadline changed.
