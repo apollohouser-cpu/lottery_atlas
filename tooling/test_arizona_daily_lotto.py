@@ -31,3 +31,23 @@ class DailyLottoTests(unittest.TestCase):
     def test_missing_daily_result_fails(self):
         del self.capture['tables'][0]['rows'][3:5]
         with self.assertRaises(ValueError): parse_capture(self.capture, 'triple-twist')
+
+    def test_the_pick_current_format(self):
+        capture = json.loads((Path(__file__).parent / 'fixtures/arizona/the-pick-tables.json').read_text())
+        result = parse_capture(capture, 'the-pick')
+        self.assertEqual(len(result), 60)
+        self.assertEqual(result[0]['numbers'], [3, 6, 10, 30, 34, 39])
+        self.assertEqual(result[-1]['drawDate'], '2026-06-15')
+        self.assertNotIn('multiplier', result[0])
+        for col, value in [(0, '10/30/2026'), (1, '1 2 3 4 5 41')]:
+            bad = copy.deepcopy(capture)
+            bad['tables'][0]['rows'][1][col]['text'] = value
+            with self.assertRaises(ValueError): parse_capture(bad, 'the-pick')
+
+    def test_the_pick_prior_format_rejected(self):
+        capture = json.loads((Path(__file__).parent / 'fixtures/arizona/the-pick-tables.json').read_text())
+        pair = copy.deepcopy(capture['tables'][0]['rows'][-3:-1])
+        pair[0][0]['text'] = '6/13/2026'
+        capture['tables'][0]['rows'][-1:-1] = pair
+        with self.assertRaisesRegex(ValueError, 'prior-format'):
+            parse_capture(capture, 'the-pick')

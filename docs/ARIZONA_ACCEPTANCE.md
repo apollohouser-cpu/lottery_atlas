@@ -372,3 +372,15 @@ Thirty-four focused Arizona tests pass, including all three newly covered game
 groups and existing Powerball refresh cases. No source refresh, feed, native build
 or acceptance occurred. Capture of remaining games/rules/details and coupled
 publication remain open; November6 09:15EST release deadline is unchanged.
+
+## November 2 The Pick current-format evidence
+
+Retained 60 populated official DOM draw rows from June15 through October31, with
+latest October31/28. The single-pool parser now validates The Pick's distinct
+six-of-40 contract, Monday/Wednesday/Saturday continuity and June14 format boundary.
+Prior-format rows fail closed; no built-in per-play multiplier or instant Plus
+result is invented from this date/number table. Reports remain unavailable.
+Thirty-six focused Arizona tests pass, including The Pick overlap/correction gates,
+range/cadence and prior-format rejection. No scheduled transport recovery, feed,
+app build or acceptance. Remaining capture/rules/publication/native gates and
+November6 09:15EST deadline remain unchanged.

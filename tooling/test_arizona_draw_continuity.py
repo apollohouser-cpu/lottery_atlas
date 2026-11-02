@@ -15,6 +15,7 @@ class ContinuityTests(unittest.TestCase):
             ('fantasy-5', 'fantasy5-tables.json', lambda c: daily(c, 'fantasy-5')),
             ('triple-twist', 'triple-twist-tables.json', lambda c: daily(c, 'triple-twist')),
             ('mega-millions', 'mega-millions-tables.json', mega),
+            ('the-pick', 'the-pick-tables.json', lambda c: daily(c, 'the-pick')),
         ]:
             self.draws[game] = parser(json.loads((root / filename).read_text()))
 

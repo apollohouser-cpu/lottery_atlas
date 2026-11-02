@@ -1,9 +1,9 @@
-"""Strict daily Arizona lotto DOM evidence; no prize-count inference."""
+"""Strict Arizona single-pool lotto DOM evidence; no prize-count inference."""
 import re
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
-CONTRACTS = {'fantasy-5': (5, 41), 'triple-twist': (6, 42)}
+CONTRACTS = {'fantasy-5': (5, 41), 'triple-twist': (6, 42), 'the-pick': (6, 40)}
 
 
 def parse_capture(capture, game):
@@ -37,8 +37,14 @@ def parse_capture(capture, game):
         if not re.fullmatch(r'\d{1,2}/\d{1,2}/\d{4}', row[0]):
             raise ValueError('invalid date')
         day = datetime.strptime(row[0], '%m/%d/%Y').date()
-        if day > today or (previous and previous - day != timedelta(days=1)):
-            raise ValueError('future, missing, duplicate or unordered daily result')
+        weekdays = (0, 2, 5) if game == 'the-pick' else tuple(range(7))
+        expected = previous - timedelta(days=1) if previous else None
+        while expected and expected.weekday() not in weekdays:
+            expected -= timedelta(days=1)
+        if day > today or day.weekday() not in weekdays or (expected and day != expected):
+            raise ValueError('future, missing, duplicate or unordered scheduled result')
+        if game == 'the-pick' and day < datetime(2026, 6, 14).date():
+            raise ValueError('prior-format The Pick requires separate contract')
         previous = day
         if not re.fullmatch(r'\d{1,2}( \d{1,2}){' + str(count - 1) + '}', row[1]):
             raise ValueError('invalid numbers')
