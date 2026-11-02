@@ -357,3 +357,18 @@ Thirty focused Arizona parser tests pass. No HTTP transport recovery, scheduled
 collector, public feed, app build or acceptance is claimed. Remaining game/rule/
 detail capture, publication and native gates stay open; November6 09:15EST release
 remains unchanged.
+
+## November 2 shared result-continuity gate
+
+Extracted the existing Powerball overlap gate for reuse with strictly parsed
+Fantasy5, TripleTwist and MegaMillions collections. It rejects missing/extra game
+groups, mislabeled rows, duplicate/unordered dates, missing prior selections,
+latest-date regression and corrections/missing dates within overlapping history.
+Old tails may roll off; latest two are selected only after validation. Powerball's
+capture-level acquisition-time check remains in its wrapper. The shared gate is
+for parsed rows and does not replace acquisition/provenance checks or persistence.
+
+Thirty-four focused Arizona tests pass, including all three newly covered game
+groups and existing Powerball refresh cases. No source refresh, feed, native build
+or acceptance occurred. Capture of remaining games/rules/details and coupled
+publication remain open; November6 09:15EST release deadline is unchanged.
