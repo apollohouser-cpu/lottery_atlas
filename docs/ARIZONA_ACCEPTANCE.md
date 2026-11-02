@@ -407,3 +407,16 @@ sources and changed headers fail closed. Reports remain unavailable and source
 counts are not promoted. Forty-two focused Arizona tests pass. No new public
 feed/app build/acceptance or HTTP recovery. Remaining source/rule/detail captures,
 coupled publication/native checks and November6 09:15EST release are unchanged.
+
+## November 2 Xs & Os literal result evidence
+
+Retained eight populated Sunday result rows, September13 through November1,
+including exact abbreviation/image-alt/source-path joins. Strict parser preserves
+eight distinct literal team labels per draw without expanding names or inferring
+NFL game outcomes. Only 28 labels observed in these rows are currently admitted;
+unseen labels fail closed for review, not guessed completion of the 32-team roster.
+Weekly gaps and changed image joins fail validation. Reports remain unavailable,
+including the latest zero-filled details; September13 pari-mutuel exception stays
+explicit in scope. Forty-five focused Arizona tests pass. No feed/build/acceptance
+or scheduled transport recovery; remaining rules/catalog/detail/QuickDraw capture,
+publication/native gates and November6 09:15EST release remain unchanged.
