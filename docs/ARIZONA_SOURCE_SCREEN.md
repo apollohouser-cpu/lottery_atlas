@@ -324,3 +324,21 @@ no partial or invented draw is substituted.
 Rules/products, repeatable coupled acquisition/publication, application and
 native acceptance remain open. No feed/build/acceptance or HTTP recovery is
 claimed. November 6 09:15 EST release deadline remains unchanged.
+
+## November 2 complete draw-bundle validation
+
+Added an internal validation entry point combining all eight regular source
+captures (eleven groups) and eight Quick Draw sources into nineteen groups with
+two retained results each. The 38 results are now demonstrated on the retained
+fixtures; this is not a fresh coupled collection or a published feed. Each
+source retains its actual observation time. No shared collection timestamp is
+manufactured. Regular date-only results remain date-only; hourly identities,
+ordered digits/dice, and Hi-Lo category totals retain their distinct meanings.
+All 38 report statuses are unavailable.
+
+Eighty-four focused Arizona tests pass. Tests reject each of the sixteen missing
+sources and each changed source header, preserve input objects on failure, and
+verify all nineteen groups. Publication remains blocked on the separate rules,
+products, repeatable permitted acquisition, application and native gates; no
+partial draw bundle is returned if either source family fails. No public feed,
+build, acceptance or HTTP recovery is claimed. November 6 09:15 EST unchanged.
