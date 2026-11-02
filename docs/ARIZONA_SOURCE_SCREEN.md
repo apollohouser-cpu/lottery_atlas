@@ -139,3 +139,14 @@ counts are produced. Source prize-count prose points to next-day PDF availabilit
 DOM detail values remain unpromoted, reports unavailable. Forty focused Arizona
 tests pass. No HTTP recovery, feed, app build or acceptance; remaining capture,
 rule/detail, publication/native gates and November6 09:15EST deadline unchanged.
+
+## November 2 Pick 4 explicit sessions
+
+Retained 282 populated Pick4 date/session rows: 141 Midday and 141 Evening,
+June14 through November1. Extended digit-game validation with an explicit Pick4
+source, four ordered digits, and separate detail-header contract including Mid
+Pair. Leading zeros/repeats remain intact; session gaps, wrong widths, cross-game
+sources and changed headers fail closed. Reports remain unavailable and source
+counts are not promoted. Forty-two focused Arizona tests pass. No new public
+feed/app build/acceptance or HTTP recovery. Remaining source/rule/detail captures,
+coupled publication/native checks and November6 09:15EST release are unchanged.
