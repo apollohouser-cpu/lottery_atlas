@@ -191,3 +191,16 @@ pass. This captures one QuickDraw family on one date, not complete daily/history
 coverage or a new coupled collection. Seven other QuickDraw families, rules,
 products, publication and native checks remain open; no feed/build/acceptance or
 HTTP recovery is claimed. November6 09:15EST release deadline is unchanged.
+
+## November 2 Two To Win hourly evidence
+
+Retained five populated November2 hourly result/detail pairs, Draw IDs27646–27642
+at08:20 through04:20 Arizona time. Latest observed ordered digits are61 and99,
+with Super Bonus1x and2x. Strict parsing preserves leading zeros/repeated digits,
+checks date/time/ID continuity and validates paired detail headers without
+promoting the source's$1-wager-based win units into ticket/person counts. Reports
+remain unavailable; base wager prizes and the pari-mutuel condition stay separate
+from actual payouts. Fifty-six focused Arizona tests pass. This is one day's
+bounded DOM evidence, not full history, raw HTTP recovery or coupled publication.
+Six other QuickDraw families, rules/products and publication/native gates remain
+open. No feed/build/acceptance; November6 09:15EST release deadline unchanged.
