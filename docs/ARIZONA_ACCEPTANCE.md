@@ -559,3 +559,25 @@ initial strict result parsers on retained dated captures. This does not close
 hourly refresh/day-boundary continuity, rules/products, coupled publication or
 native acceptance. No Arizona feed/build/acceptance or HTTP recovery is claimed.
 November 6 09:15 EST remains the unchanged supported-release deadline.
+
+## November 2 Quick Draw assembly and refresh gate
+
+Added an internal strict assembler requiring all eight Quick Draw families,
+retaining each dated capture's actual provenance. It selects sixteen results
+(two per family) only after source parsing, duplicate-day/identity checks,
+chronological hourly continuity, and retained-result comparison. Overlapping
+corrections, missing retained selections, latest-result regressions and retrieval
+time regressions fail closed before any result is returned. No files or public
+feed are written by this helper.
+
+Multi-day captures must bridge 23:xx to the next day's 04:xx; Lucky Links instead
+bridges 23:00 to 05:00. Consecutive draw IDs are required across those boundaries.
+Synthetic tests cover both overnight schedules; retained live fixtures remain
+single-day observations and do not establish live overnight adoption. Eighty
+focused Arizona tests pass. Existing per-day parsers require at least two rows,
+so early-day collection must retain prior data until two new rows are available;
+no partial or invented draw is substituted.
+
+Rules/products, repeatable coupled acquisition/publication, application and
+native acceptance remain open. No feed/build/acceptance or HTTP recovery is
+claimed. November 6 09:15 EST release deadline remains unchanged.
