@@ -66,3 +66,29 @@ def parse_capture(capture):
             results.append(result)
         found[game] = results
     return found
+
+
+def select_refresh(candidate, retained):
+    """Return latest two per game only after validating both full captures.
+
+    Corrections require review. A moving source window may drop old history,
+    but must retain the previous two selected draws and every overlapping date.
+    Callers must keep the old bytes/date when this raises; this function does
+    not mutate either input or perform persistence.
+    """
+    new = parse_capture(candidate)
+    old = parse_capture(retained)
+    timestamp = lambda c: datetime.fromisoformat(c['retrievedAt'].replace('Z', '+00:00'))
+    if timestamp(candidate) < timestamp(retained):
+        raise ValueError('acquisition time regressed')
+    for game in HEADERS:
+        by_date = {row['drawDate']: row for row in new[game]}
+        if new[game][0]['drawDate'] < old[game][0]['drawDate']:
+            raise ValueError('latest draw regressed')
+        if any(row['drawDate'] not in by_date for row in old[game][:2]):
+            raise ValueError('retained selections missing')
+        oldest = new[game][-1]['drawDate']
+        for row in old[game]:
+            if row['drawDate'] >= oldest and by_date.get(row['drawDate']) != row:
+                raise ValueError('overlapping result missing or corrected')
+    return {game: draws[:2] for game, draws in new.items()}

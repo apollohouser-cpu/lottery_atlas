@@ -302,3 +302,15 @@ changed table structure, source provenance and table-order independence. Browser
 DOM access is not direct HTTP recovery or a scheduled collector. Remaining game,
 rule/detail, refresh continuity, coupled publication, app and native gates remain
 open; no Arizona feed/build/acceptance. November 6 09:15 EST release is unchanged.
+
+## November 1 Powerball refresh selection gate
+
+Added a pure refresh-selection gate over both fully validated DOM captures. It
+rejects older acquisition timestamps, latest-draw regression, missing prior
+selections, and missing/corrected overlapping results. Old history may roll off
+the source window; latest two per game are selected only after these checks.
+Eighteen focused Python tests pass across Powerball and catalog navigation,
+including a synthetic future-date advance used only in tests. No new source
+collection, production publication or native build occurred. This gate does not
+itself persist data or establish atomic cache/collector behavior; those remain
+open with other game/rule/detail parsers. Release deadline is unchanged.

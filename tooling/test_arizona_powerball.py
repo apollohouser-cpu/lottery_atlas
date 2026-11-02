@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import unittest
 
-from tooling.arizona_powerball import parse_capture
+from tooling.arizona_powerball import parse_capture, select_refresh
 
 
 class PowerballCaptureTests(unittest.TestCase):
@@ -52,6 +52,51 @@ class PowerballCaptureTests(unittest.TestCase):
             bad[key] = value
             with self.assertRaises(ValueError):
                 parse_capture(bad)
+
+    def test_refresh_selects_latest_two_without_mutating_inputs(self):
+        before = copy.deepcopy(self.capture)
+        selected = select_refresh(self.capture, before)
+        self.assertEqual(self.capture, before)
+        self.assertEqual({k: len(v) for k, v in selected.items()},
+                         {'powerball': 2, 'powerball-double-play': 2})
+
+    def test_refresh_rejects_valid_but_corrected_numbers(self):
+        bad = copy.deepcopy(self.capture)
+        bad['tables'][0]['rows'][1][1]['text'] = '3 4 18 50 56'
+        with self.assertRaisesRegex(ValueError, 'corrected'):
+            select_refresh(bad, self.capture)
+
+    def test_refresh_rejects_missing_overlapping_row_and_latest_regression(self):
+        for index in (1, 5):
+            bad = copy.deepcopy(self.capture)
+            del bad['tables'][0]['rows'][index:index+2]
+            with self.subTest(index=index), self.assertRaises(ValueError):
+                select_refresh(bad, self.capture)
+
+    def test_refresh_rejects_retrieval_regression(self):
+        bad = copy.deepcopy(self.capture)
+        bad['retrievedAt'] = '2026-11-01T00:00:00Z'
+        with self.assertRaisesRegex(ValueError, 'acquisition'):
+            select_refresh(bad, self.capture)
+
+    def test_refresh_allows_old_tail_to_roll_off(self):
+        new = copy.deepcopy(self.capture)
+        for table in new['tables']:
+            del table['rows'][-3:-1]
+        self.assertEqual(select_refresh(new, self.capture),
+                         select_refresh(self.capture, self.capture))
+
+    def test_synthetic_date_advance_preserves_retained_overlap(self):
+        new = copy.deepcopy(self.capture)
+        new['retrievedAt'] = '2026-11-03T08:00:00Z'
+        for table in new['tables']:
+            pair = copy.deepcopy(table['rows'][1:3])
+            pair[0][0]['text'] = '11/2/2026'
+            table['rows'][1:1] = pair
+        selected = select_refresh(new, self.capture)
+        self.assertTrue(all([r['drawDate'] for r in draws] ==
+                            ['2026-11-02', '2026-10-31']
+                            for draws in selected.values()))
 
 
 if __name__ == '__main__':
