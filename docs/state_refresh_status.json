@@ -1,5 +1,5 @@
 {
-  "attemptedAt": "2026-11-02T06:24:54.897120+00:00",
+  "attemptedAt": "2026-11-02T16:23:42.359622+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
@@ -97,8 +97,8 @@
     },
     {
       "state": "Maryland",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/maryland_scratch_catalog.generated.json"
       ]
@@ -121,8 +121,8 @@
     },
     {
       "state": "Vermont",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/vermont_scratch_catalog.generated.json"
       ]
@@ -179,8 +179,8 @@
     },
     {
       "state": "Washington",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/washington_scratch_catalog.generated.json"
       ]
@@ -197,8 +197,8 @@
     },
     {
       "state": "Kentucky",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "retained_after_failure",
+      "message": "Importer failed validation or could not retrieve its source.",
       "files": [
         "data/kentucky_scratch_catalog.generated.json",
         "data/kentucky_retailer_directory.generated.json",
@@ -260,8 +260,8 @@
     },
     {
       "state": "Texas",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/texas_scratch_catalog.generated.json",
         "data/texas_retailer_directory.generated.json",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "state": "Oregon",
-  "retrievedAt": "2026-11-02T06:16:05.575Z",
+  "retrievedAt": "2026-11-02T16:06:45.550Z",
   "cadence": "Two latest finalized reports per game/session within a bounded 14-day source query. Actual source dates retained; scheduled refresh, not live results.",
   "coverage": "Six Oregon report families. Source-reported winners are not verified distinct tickets or people. No retailer allocation or complete statewide claims coverage.",
   "reports": [
@@ -1537,6 +1537,23 @@
       "limitations": "Source-reported Oregon prize rows, not distinct tickets or people. No cross-tier total, retailer allocation or complete claims coverage. Power Play overlap is not separately allocated; shared prizes and lifetime prizes retain source meaning. Unverified match/wager labels are omitted."
     },
     {
+      "id": "or-cp-10529",
+      "game": "Cash Pop",
+      "gameCode": "cp",
+      "drawNumber": 10529,
+      "drawDate": "2026-11-02",
+      "sourceDrawDateTime": "2026-11-02T06:59:00",
+      "sourceRoundedDrawDateTime": "2026-11-02T07:00:00",
+      "drawingTime": "07:00",
+      "dateBasis": "Source draw date/time; original wall-clock values retained without UTC conversion.",
+      "countUnit": "Oregon source-reported winners; distinct tickets or people not established.",
+      "winningTickets": null,
+      "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
+      "reportedWinners": 5,
+      "publishedPayoutDollars": 340,
+      "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
+    },
+    {
       "id": "or-cp-10513",
       "game": "Cash Pop",
       "gameCode": "cp",
@@ -1554,20 +1571,20 @@
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
-      "id": "or-cp-10497",
+      "id": "or-cp-10530",
       "game": "Cash Pop",
       "gameCode": "cp",
-      "drawNumber": 10497,
-      "drawDate": "2026-10-31",
-      "sourceDrawDateTime": "2026-10-31T06:59:00",
-      "sourceRoundedDrawDateTime": "2026-10-31T07:00:00",
-      "drawingTime": "07:00",
+      "drawNumber": 10530,
+      "drawDate": "2026-11-02",
+      "sourceDrawDateTime": "2026-11-02T07:59:00",
+      "sourceRoundedDrawDateTime": "2026-11-02T08:00:00",
+      "drawingTime": "08:00",
       "dateBasis": "Source draw date/time; original wall-clock values retained without UTC conversion.",
       "countUnit": "Oregon source-reported winners; distinct tickets or people not established.",
       "winningTickets": null,
       "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
-      "reportedWinners": 10,
-      "publishedPayoutDollars": 293,
+      "reportedWinners": 5,
+      "publishedPayoutDollars": 395,
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
@@ -1585,23 +1602,6 @@
       "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
       "reportedWinners": 13,
       "publishedPayoutDollars": 745,
-      "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
-    },
-    {
-      "id": "or-cp-10498",
-      "game": "Cash Pop",
-      "gameCode": "cp",
-      "drawNumber": 10498,
-      "drawDate": "2026-10-31",
-      "sourceDrawDateTime": "2026-10-31T07:59:00",
-      "sourceRoundedDrawDateTime": "2026-10-31T08:00:00",
-      "drawingTime": "08:00",
-      "dateBasis": "Source draw date/time; original wall-clock values retained without UTC conversion.",
-      "countUnit": "Oregon source-reported winners; distinct tickets or people not established.",
-      "winningTickets": null,
-      "sourceUrl": "https://www.oregonlottery.org/cash-pop/winning-numbers/",
-      "reportedWinners": 10,
-      "publishedPayoutDollars": 355,
       "limitations": "Aggregate report, not jackpot winners or a prize-tier breakdown. No retailer locations or complete claims coverage."
     },
     {
