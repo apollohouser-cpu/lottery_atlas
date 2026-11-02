@@ -163,3 +163,16 @@ including the latest zero-filled details; September13 pari-mutuel exception stay
 explicit in scope. Forty-five focused Arizona tests pass. No feed/build/acceptance
 or scheduled transport recovery; remaining rules/catalog/detail/QuickDraw capture,
 publication/native gates and November6 09:15EST release remain unchanged.
+
+## November 2 regular-result collection validation
+
+Added an aggregate validator for all eight retained regular-game DOM captures,
+covering eleven groups and selecting twenty-two date/session results. Each group
+retains its source's actual retrieval time and DOM provenance; differing captures
+are not relabeled as a fresh coupled collection. Every source passes its strict
+parser before selection, and a missing source, changed header, swapped identity,
+retrieval regression or overlapping result correction rejects the collection.
+Fifty focused Arizona tests pass. All reports remain unavailable. This is an
+internal validation step, not a public feed or atomic acquisition/publication.
+Eight QuickDraw groups, rules, products and native gates remain outstanding;
+November6 at09:15EST release deadline is unchanged, with no acceptance or build.
