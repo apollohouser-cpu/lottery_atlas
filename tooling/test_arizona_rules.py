@@ -190,3 +190,35 @@ class PickYourBetRulesTests(unittest.TestCase):
             else: bad['tables'][0][part]=''
             with self.assertRaises(ValueError): parse_capture(bad,'pick-your-bet')
         with self.assertRaises(ValueError): parse_capture(self.capture,'money-roll')
+
+
+class FiveTenFortyFiveRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/51045-rules.json').read_text())
+
+    def test_spot_schedules_keep_base_and_additive_bullseye_separate(self):
+        rule=parse_capture(self.capture,'51045')
+        nested=rule['tables'][0]['nestedTables']
+        self.assertEqual([len(t['rows']) for t in nested],[8,6,5,4,3])
+        self.assertEqual(nested[0]['rows'][1][1:],['$500','+$700'])
+        self.assertEqual(nested[0]['rows'][6][1:],['$1','No Prize'])
+        self.assertEqual(nested[4]['rows'][1][1:],['$3','+$27'])
+        self.assertIn('above $200,000',rule['tables'][0]['sectionText'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_nested_cells_labels_and_prose_are_continuity_gated(self):
+        for t,table in enumerate(self.capture['tables'][0]['nestedTables']):
+            for i,row in enumerate(table['rows']):
+                for j in range(len(row)):
+                    bad=copy.deepcopy(self.capture)
+                    bad['tables'][0]['nestedTables'][t]['rows'][i][j]+=' changed'
+                    with self.subTest(table=t,row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'51045')
+            bad=copy.deepcopy(self.capture);bad['tables'][0]['nestedTables'][t]['label']=''
+            with self.assertRaises(ValueError): parse_capture(bad,'51045')
+        for part in ('howToPlay','sectionText'):
+            bad=copy.deepcopy(self.capture)
+            if part=='howToPlay': bad[part]=''
+            else: bad['tables'][0][part]=''
+            with self.assertRaises(ValueError): parse_capture(bad,'51045')
+        bad=copy.deepcopy(self.capture);bad['tables'][0]['nestedTables'].pop()
+        with self.assertRaises(ValueError): parse_capture(bad,'51045')

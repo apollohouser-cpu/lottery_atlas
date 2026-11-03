@@ -704,3 +704,18 @@ actual payout totals. All cells and both prose sections are change-gated;
 coupled collection, publication and native acceptance remain open. No Arizona
 feed/build/acceptance or direct HTTP recovery is claimed. November 6 09:15 EST
 release deadline and all four open mobile beta prerequisites remain unchanged.
+
+
+## November 3 — eight Quick Draw inline rule families retained
+
+Retained 5/10/45's five nested spot schedules (8/6/5/4/3 physical rows,
+including headers and odds notes), outer schedule and attached play/caveats at
+22:16:46.787 UTC. The eighth reviewed inline rule contract preserves base prizes
+and additive Bullseye amounts separately, the zero-match five-spot prize,
+Super Bonus choices and conditional sharing above $200,000. Nested identity,
+every nested cell and prose are continuity-gated; 101 focused Arizona tests pass.
+All eight Quick Draw inline rule families now have retained contracts. Linked
+full-detail review, regular draw rules, products, coupled acquisition, publication
+and native acceptance remain open. No feed/build/acceptance or direct HTTP
+recovery is claimed. November 6 09:15 EST deadline is unchanged; all four mobile
+beta prerequisites remain open.
