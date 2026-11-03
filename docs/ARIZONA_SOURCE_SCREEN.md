@@ -396,3 +396,27 @@ Ninety-three focused Arizona tests pass, including every cell and both prose
 sections changing or disappearing. Other rule families, linked full details,
 products, publication and native gates remain open. No feed/build/acceptance or
 HTTP recovery is claimed; November 6 09:15 EST deadline unchanged.
+
+
+## November 3 — One to Win rules and Powerball PDF cross-check
+
+Retained the nine-row One to Win prize/odds schedule and both attached prose
+sections at 19:14:56.968 UTC. Fifth reviewed inline rule contract preserves the
+$1 base wager, seven possible base prizes, overall 1-in-15 odds and conditional
+sharing for a $250 prize draw above $200,000. Rules are not actual payouts.
+Every cell and both prose sections are change-gated; 95 focused Arizona tests
+pass. Remaining rule families, linked full details, products, coupled collection,
+publication and native acceptance remain open.
+
+The official Powerball 180-day PDF reader independently matches the retained
+October 28 and October 31 numbers, Powerball and Power Play. It also shows a
+November 2 result; this has not been adopted into the draw bundle. Ordinary
+HTTP download still returns 403 (17 bytes), privately retained under
+`work/arizona_scope/powerball-pdf-20261103/`. Reader access is not raw PDF
+acquisition or HTTP recovery. Prize-column geography/units remain unresolved;
+no counts or payout reports were imported. Source:
+https://files.arizonalottery.com/past-180-days/Past180Days_Powerball.pdf
+
+No Arizona feed/build/acceptance is claimed. November 6 at 09:15 EST remains
+the supported-release deadline without extension. All four mobile beta
+prerequisites remain open.
