@@ -4,6 +4,40 @@
     {
       "family": "Powerball",
       "group": "powerball",
+      "drawDate": "2026-11-02",
+      "dateZone": "America/Chicago",
+      "fields": [
+        {
+          "label": "White",
+          "values": [
+            7,
+            23,
+            29,
+            64,
+            66
+          ],
+          "sourceText": "07, 23, 29, 64, 66"
+        },
+        {
+          "label": "Powerball",
+          "values": [
+            23
+          ],
+          "sourceText": "23"
+        },
+        {
+          "label": "Powerplay",
+          "values": [
+            4
+          ],
+          "sourceText": "4"
+        }
+      ],
+      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Powerball"
+    },
+    {
+      "family": "Powerball",
+      "group": "powerball",
       "drawDate": "2026-10-31",
       "dateZone": "America/Chicago",
       "fields": [
@@ -37,34 +71,27 @@
     },
     {
       "family": "Powerball",
-      "group": "powerball",
-      "drawDate": "2026-10-28",
+      "group": "double-play",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "fields": [
         {
-          "label": "White",
+          "label": "Double Play White",
           "values": [
-            11,
-            13,
-            16,
-            47,
-            60
+            20,
+            23,
+            24,
+            33,
+            61
           ],
-          "sourceText": "11, 13, 16, 47, 60"
+          "sourceText": "20, 23, 24, 33, 61"
         },
         {
-          "label": "Powerball",
+          "label": "Double Play Powerball",
           "values": [
-            13
+            1
           ],
-          "sourceText": "13"
-        },
-        {
-          "label": "Powerplay",
-          "values": [
-            2
-          ],
-          "sourceText": "2"
+          "sourceText": "01"
         }
       ],
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Powerball"
@@ -92,33 +119,6 @@
             24
           ],
           "sourceText": "24"
-        }
-      ],
-      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Powerball"
-    },
-    {
-      "family": "Powerball",
-      "group": "double-play",
-      "drawDate": "2026-10-28",
-      "dateZone": "America/Chicago",
-      "fields": [
-        {
-          "label": "Double Play White",
-          "values": [
-            15,
-            22,
-            23,
-            48,
-            65
-          ],
-          "sourceText": "15, 22, 23, 48, 65"
-        },
-        {
-          "label": "Double Play Powerball",
-          "values": [
-            9
-          ],
-          "sourceText": "09"
         }
       ],
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Powerball"
@@ -180,6 +180,26 @@
     {
       "family": "Pick 5",
       "group": "pick-5",
+      "drawDate": "2026-11-02",
+      "dateZone": "America/Chicago",
+      "fields": [
+        {
+          "label": "Pick 5 White",
+          "values": [
+            6,
+            14,
+            28,
+            34,
+            38
+          ],
+          "sourceText": "06, 14, 28, 34, 38"
+        }
+      ],
+      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+5"
+    },
+    {
+      "family": "Pick 5",
+      "group": "pick-5",
       "drawDate": "2026-11-01",
       "dateZone": "America/Chicago",
       "fields": [
@@ -198,24 +218,38 @@
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+5"
     },
     {
-      "family": "Pick 5",
-      "group": "pick-5",
-      "drawDate": "2026-10-31",
+      "family": "Lotto America",
+      "group": "lotto-america",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "fields": [
         {
-          "label": "Pick 5 White",
+          "label": "Red",
           "values": [
-            1,
-            7,
-            9,
-            24,
-            36
+            4,
+            20,
+            47,
+            48,
+            50
           ],
-          "sourceText": "01, 07, 09, 24, 36"
+          "sourceText": "04, 20, 47, 48, 50"
+        },
+        {
+          "label": "Star Ball",
+          "values": [
+            9
+          ],
+          "sourceText": "09"
+        },
+        {
+          "label": "All Star Bonus",
+          "values": [
+            4
+          ],
+          "sourceText": "4"
         }
       ],
-      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+5"
+      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Lotto+America"
     },
     {
       "family": "Lotto America",
@@ -252,38 +286,31 @@
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Lotto+America"
     },
     {
-      "family": "Lotto America",
-      "group": "lotto-america",
-      "drawDate": "2026-10-28",
+      "family": "Millionaire for Life",
+      "group": "millionaire-for-life",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "fields": [
         {
-          "label": "Red",
+          "label": "White",
           "values": [
-            3,
             14,
-            15,
-            33,
-            43
+            26,
+            48,
+            51,
+            52
           ],
-          "sourceText": "03, 14, 15, 33, 43"
+          "sourceText": "14, 26, 48, 51, 52"
         },
         {
-          "label": "Star Ball",
+          "label": "Millionaire Ball",
           "values": [
-            8
+            3
           ],
-          "sourceText": "08"
-        },
-        {
-          "label": "All Star Bonus",
-          "values": [
-            2
-          ],
-          "sourceText": "2"
+          "sourceText": "03"
         }
       ],
-      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Lotto+America"
+      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Millionaire+for+Life"
     },
     {
       "family": "Millionaire for Life",
@@ -313,31 +340,22 @@
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Millionaire+for+Life"
     },
     {
-      "family": "Millionaire for Life",
-      "group": "millionaire-for-life",
-      "drawDate": "2026-10-31",
+      "family": "Pick 3",
+      "group": "pick-3",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "fields": [
         {
           "label": "White",
           "values": [
-            15,
-            23,
-            38,
-            39,
-            58
+            8,
+            6,
+            2
           ],
-          "sourceText": "15, 23, 38, 39, 58"
-        },
-        {
-          "label": "Millionaire Ball",
-          "values": [
-            1
-          ],
-          "sourceText": "01"
+          "sourceText": "8, 6, 2"
         }
       ],
-      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Millionaire+for+Life"
+      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+3"
     },
     {
       "family": "Pick 3",
@@ -358,22 +376,23 @@
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+3"
     },
     {
-      "family": "Pick 3",
-      "group": "pick-3",
-      "drawDate": "2026-10-31",
+      "family": "Pick 4",
+      "group": "pick-4",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "fields": [
         {
-          "label": "White",
+          "label": "Numbers",
           "values": [
-            2,
-            0,
-            7
+            8,
+            1,
+            5,
+            4
           ],
-          "sourceText": "2, 0, 7"
+          "sourceText": "8, 1, 5, 4"
         }
       ],
-      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+3"
+      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+4"
     },
     {
       "family": "Pick 4",
@@ -395,23 +414,29 @@
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+4"
     },
     {
-      "family": "Pick 4",
-      "group": "pick-4",
-      "drawDate": "2026-10-31",
+      "family": "2by2",
+      "group": "2by2",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "fields": [
         {
-          "label": "Numbers",
+          "label": "Red",
           "values": [
-            8,
-            8,
-            0,
-            2
+            6,
+            25
           ],
-          "sourceText": "8, 8, 0, 2"
+          "sourceText": "06, 25"
+        },
+        {
+          "label": "White",
+          "values": [
+            1,
+            17
+          ],
+          "sourceText": "01, 17"
         }
       ],
-      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+4"
+      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=2by2"
     },
     {
       "family": "2by2",
@@ -439,29 +464,34 @@
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=2by2"
     },
     {
-      "family": "2by2",
-      "group": "2by2",
-      "drawDate": "2026-10-31",
+      "family": "MyDaY",
+      "group": "myday",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "fields": [
         {
-          "label": "Red",
+          "label": "Month",
           "values": [
-            14,
-            26
+            1
           ],
-          "sourceText": "14, 26"
+          "sourceText": "1"
         },
         {
-          "label": "White",
+          "label": "Day",
           "values": [
-            8,
-            26
+            15
           ],
-          "sourceText": "08, 26"
+          "sourceText": "15"
+        },
+        {
+          "label": "Year",
+          "values": [
+            28
+          ],
+          "sourceText": "28"
         }
       ],
-      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=2by2"
+      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=MyDaY"
     },
     {
       "family": "MyDaY",
@@ -489,36 +519,6 @@
             4
           ],
           "sourceText": "04"
-        }
-      ],
-      "sourceUrl": "https://nelottery.com/lotto-detail?gamename=MyDaY"
-    },
-    {
-      "family": "MyDaY",
-      "group": "myday",
-      "drawDate": "2026-10-31",
-      "dateZone": "America/Chicago",
-      "fields": [
-        {
-          "label": "Month",
-          "values": [
-            6
-          ],
-          "sourceText": "6"
-        },
-        {
-          "label": "Day",
-          "values": [
-            20
-          ],
-          "sourceText": "20"
-        },
-        {
-          "label": "Year",
-          "values": [
-            47
-          ],
-          "sourceText": "47"
         }
       ],
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=MyDaY"
@@ -576,12 +576,12 @@
       "dateZone": "America/Chicago",
       "geographicUnit": "Nebraska",
       "countUnit": "Winners (source label)",
-      "multiplier": 3,
+      "multiplier": 4,
       "reports": [
         {
           "variant": "regular",
           "sourceLabel": "Powerball",
-          "drawDate": "2026-10-31",
+          "drawDate": "2026-11-02",
           "tiers": [
             {
               "match": "5 of 5 + Powerball",
@@ -610,31 +610,31 @@
             {
               "match": "3 of 5 + Powerball",
               "prizeLabel": "$100",
-              "sourceWinners": 11,
+              "sourceWinners": 7,
               "oddsLabel": "1 in 14,494"
             },
             {
               "match": "3 of 5",
               "prizeLabel": "$7",
-              "sourceWinners": 274,
+              "sourceWinners": 192,
               "oddsLabel": "1 in 579"
             },
             {
               "match": "2 of 5 + Powerball",
               "prizeLabel": "$7",
-              "sourceWinners": 232,
+              "sourceWinners": 155,
               "oddsLabel": "1 in 701"
             },
             {
               "match": "1 of 5 + Powerball",
               "prizeLabel": "$4",
-              "sourceWinners": 1686,
+              "sourceWinners": 1219,
               "oddsLabel": "1 in 91"
             },
             {
               "match": "Powerball",
               "prizeLabel": "$4",
-              "sourceWinners": 3843,
+              "sourceWinners": 2770,
               "oddsLabel": "1 in 38"
             }
           ]
@@ -642,7 +642,7 @@
         {
           "variant": "powerplay",
           "sourceLabel": "Powerball Powerplay",
-          "drawDate": "2026-10-31",
+          "drawDate": "2026-11-02",
           "tiers": [
             {
               "match": "5 of 5",
@@ -659,7 +659,7 @@
             {
               "match": "4 of 5",
               "prizeLabel": "$100",
-              "sourceWinners": 0,
+              "sourceWinners": 1,
               "oddsLabel": "1 in 36,525"
             },
             {
@@ -671,25 +671,25 @@
             {
               "match": "3 of 5",
               "prizeLabel": "$7",
-              "sourceWinners": 59,
+              "sourceWinners": 48,
               "oddsLabel": "1 in 579"
             },
             {
               "match": "2 of 5 + Powerball",
               "prizeLabel": "$7",
-              "sourceWinners": 41,
+              "sourceWinners": 28,
               "oddsLabel": "1 in 701"
             },
             {
               "match": "1 of 5 + Powerball",
               "prizeLabel": "$4",
-              "sourceWinners": 298,
+              "sourceWinners": 255,
               "oddsLabel": "1 in 91"
             },
             {
               "match": "Powerball",
               "prizeLabel": "$4",
-              "sourceWinners": 714,
+              "sourceWinners": 527,
               "oddsLabel": "1 in 38"
             }
           ]
@@ -697,7 +697,7 @@
         {
           "variant": "double-play",
           "sourceLabel": "Powerball Double Play",
-          "drawDate": "2026-10-31",
+          "drawDate": "2026-11-02",
           "tiers": [
             {
               "match": "5 of 5 + Powerball",
@@ -732,25 +732,25 @@
             {
               "match": "3 of 5",
               "prizeLabel": "$20",
-              "sourceWinners": 22,
+              "sourceWinners": 41,
               "oddsLabel": "1 in 579"
             },
             {
               "match": "2 of 5 + Powerball",
               "prizeLabel": "$20",
-              "sourceWinners": 19,
+              "sourceWinners": 24,
               "oddsLabel": "1 in 701"
             },
             {
               "match": "1 of 5 + Powerball",
               "prizeLabel": "$10",
-              "sourceWinners": 154,
+              "sourceWinners": 105,
               "oddsLabel": "1 in 91"
             },
             {
               "match": "Powerball",
               "prizeLabel": "$7",
-              "sourceWinners": 455,
+              "sourceWinners": 297,
               "oddsLabel": "1 in 38"
             }
           ]
@@ -1283,7 +1283,7 @@
     {
       "family": "Pick 5",
       "group": "pick-5",
-      "drawDate": "2026-11-01",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+5",
       "geographicUnit": "Nebraska",
@@ -1300,19 +1300,19 @@
           "match": "4 of 5",
           "prizeLabel": "$500",
           "oddsLabel": "1 in 3,760",
-          "sourceWinners": 12
+          "sourceWinners": 14
         },
         {
           "match": "3 of 5",
           "prizeLabel": "$9",
           "oddsLabel": "1 in 111",
-          "sourceWinners": 344
+          "sourceWinners": 449
         },
         {
           "match": "2 of 5",
           "prizeLabel": "Free $1 Quick Pick Play",
           "oddsLabel": "1 in 10",
-          "sourceWinners": 4027
+          "sourceWinners": 5278
         }
       ],
       "ruleBlocks": [
@@ -1373,12 +1373,12 @@
       "dateZone": "America/Chicago",
       "geographicUnit": "Nebraska",
       "countUnit": "Winners (source label)",
-      "multiplier": 3,
+      "multiplier": 4,
       "reports": [
         {
           "variant": "regular",
           "sourceLabel": "Lotto America Regular",
-          "drawDate": "2026-10-31",
+          "drawDate": "2026-11-02",
           "tiers": [
             {
               "match": "5 of 5 + Star Ball",
@@ -1401,37 +1401,37 @@
             {
               "match": "4 of 5",
               "prizeLabel": "$100",
-              "sourceWinners": 3,
+              "sourceWinners": 1,
               "oddsLabel": "1 in 12,288"
             },
             {
               "match": "3 of 5 + Star Ball",
               "prizeLabel": "$20",
-              "sourceWinners": 3,
+              "sourceWinners": 4,
               "oddsLabel": "1 in 2,404"
             },
             {
               "match": "3 of 5",
               "prizeLabel": "$5",
-              "sourceWinners": 50,
+              "sourceWinners": 25,
               "oddsLabel": "1 in 267"
             },
             {
               "match": "2 of 5 + Star Ball",
               "prizeLabel": "$5",
-              "sourceWinners": 71,
+              "sourceWinners": 40,
               "oddsLabel": "1 in 160"
             },
             {
               "match": "1 of 5 + Star Ball",
               "prizeLabel": "$2",
-              "sourceWinners": 429,
+              "sourceWinners": 295,
               "oddsLabel": "1 in 29"
             },
             {
               "match": "0 of 5 + Star Ball",
               "prizeLabel": "$2",
-              "sourceWinners": 741,
+              "sourceWinners": 546,
               "oddsLabel": "1 in 17"
             }
           ]
@@ -1439,47 +1439,47 @@
         {
           "variant": "all-star-factor",
           "sourceLabel": "Lotto America All Star Factor",
-          "drawDate": "2026-10-31",
+          "drawDate": "2026-11-02",
           "tiers": [
             {
               "match": "5 of 5",
-              "prizeLabel": "$20,000 X 3",
+              "prizeLabel": "$20,000 X 4",
               "sourceWinners": 0
             },
             {
               "match": "4 of 5 + Star Ball",
-              "prizeLabel": "$1,000 X 3",
+              "prizeLabel": "$1,000 X 4",
               "sourceWinners": 0
             },
             {
               "match": "4 of 5",
-              "prizeLabel": "$100 X 3",
+              "prizeLabel": "$100 X 4",
               "sourceWinners": 0
             },
             {
               "match": "3 of 5 + Star Ball",
-              "prizeLabel": "$20 X 3",
-              "sourceWinners": 2
+              "prizeLabel": "$20 X 4",
+              "sourceWinners": 3
             },
             {
               "match": "3 of 5",
-              "prizeLabel": "$5 X 3",
-              "sourceWinners": 12
+              "prizeLabel": "$5 X 4",
+              "sourceWinners": 6
             },
             {
               "match": "2 of 5 + Star Ball",
-              "prizeLabel": "$5 X 3",
-              "sourceWinners": 29
+              "prizeLabel": "$5 X 4",
+              "sourceWinners": 16
             },
             {
               "match": "1 of 5 + Star Ball",
-              "prizeLabel": "$2 X 3",
-              "sourceWinners": 110
+              "prizeLabel": "$2 X 4",
+              "sourceWinners": 85
             },
             {
               "match": "0 of 5 + Star Ball",
-              "prizeLabel": "$2 X 3",
-              "sourceWinners": 224
+              "prizeLabel": "$2 X 4",
+              "sourceWinners": 166
             }
           ]
         }
@@ -1540,7 +1540,7 @@
     {
       "family": "Millionaire for Life",
       "group": "millionaire-for-life",
-      "drawDate": "2026-11-01",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Millionaire+for+Life",
       "geographicUnit": "Nebraska",
@@ -1581,7 +1581,7 @@
           "match": "3/5",
           "prizeLabel": "$50",
           "oddsLabel": "1 in 416",
-          "sourceWinners": 2
+          "sourceWinners": 5
         },
         {
           "match": "2/5 + MB",
@@ -1593,13 +1593,13 @@
           "match": "2/5",
           "prizeLabel": "$8",
           "oddsLabel": "1 in 24",
-          "sourceWinners": 101
+          "sourceWinners": 94
         },
         {
           "match": "1/5 + MB",
           "prizeLabel": "$8",
           "oddsLabel": "1 in 16",
-          "sourceWinners": 175
+          "sourceWinners": 184
         }
       ],
       "ruleBlocks": [
@@ -1673,7 +1673,7 @@
     {
       "family": "Pick 3",
       "group": "pick-3",
-      "drawDate": "2026-11-01",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+3",
       "geographicUnit": "Nebraska",
@@ -1684,13 +1684,13 @@
           "match": "Straight",
           "prizeLabel": "$600",
           "oddsLabel": "1 in 1,000",
-          "sourceWinners": 1
+          "sourceWinners": 5
         },
         {
           "match": "Box (6 Way)",
           "prizeLabel": "$100",
           "oddsLabel": "1 in 166",
-          "sourceWinners": 7
+          "sourceWinners": 13
         },
         {
           "match": "Box (3 Way)",
@@ -1702,13 +1702,13 @@
           "match": "S/B (Straight)",
           "prizeLabel": "$350",
           "oddsLabel": "1 in 1,000",
-          "sourceWinners": 4
+          "sourceWinners": 12
         },
         {
           "match": "S/B (Box - 6 Way)",
           "prizeLabel": "$50",
           "oddsLabel": "1 in 200",
-          "sourceWinners": 70
+          "sourceWinners": 58
         },
         {
           "match": "S/B (Box - 3 Way)",
@@ -1720,19 +1720,19 @@
           "match": "CMB (Match 3 Positionally)",
           "prizeLabel": "$100",
           "oddsLabel": "1 in 1,000",
-          "sourceWinners": 1
+          "sourceWinners": 0
         },
         {
           "match": "CMB (Match 2 Positionally)",
           "prizeLabel": "$8",
           "oddsLabel": "1 in 37",
-          "sourceWinners": 11
+          "sourceWinners": 9
         },
         {
           "match": "CMB (Match 1 Positionally)",
           "prizeLabel": "$1",
           "oddsLabel": "1 in 4",
-          "sourceWinners": 95
+          "sourceWinners": 154
         }
       ],
       "ruleBlocks": [
@@ -1805,7 +1805,7 @@
     {
       "family": "Pick 4",
       "group": "pick-4",
-      "drawDate": "2026-11-01",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=Pick+4",
       "geographicUnit": "Nebraska",
@@ -1822,7 +1822,7 @@
           "match": "Box (24 Way)",
           "prizeLabel": "$250",
           "oddsLabel": "1 in 416",
-          "sourceWinners": 0
+          "sourceWinners": 3
         },
         {
           "match": "Box (12 Way)",
@@ -1852,7 +1852,7 @@
           "match": "S/B (24 Way Any)",
           "prizeLabel": "$125",
           "oddsLabel": "1 in 416",
-          "sourceWinners": 4
+          "sourceWinners": 9
         },
         {
           "match": "S/B (12 Way Exact)",
@@ -1894,19 +1894,19 @@
           "match": "Front Pair (Exact)",
           "prizeLabel": "$60",
           "oddsLabel": "1 in 100",
-          "sourceWinners": 1
+          "sourceWinners": 0
         },
         {
           "match": "Middle Pair (Exact)",
           "prizeLabel": "$60",
           "oddsLabel": "1 in 100",
-          "sourceWinners": 4
+          "sourceWinners": 1
         },
         {
           "match": "Back Pair (Exact)",
           "prizeLabel": "$60",
           "oddsLabel": "1 in 100",
-          "sourceWinners": 1
+          "sourceWinners": 2
         }
       ],
       "ruleBlocks": [
@@ -2084,7 +2084,7 @@
       "reports": [
         {
           "variant": "regular",
-          "drawDate": "2026-11-01",
+          "drawDate": "2026-11-02",
           "applicable": true,
           "tiers": [
             {
@@ -2097,26 +2097,26 @@
               "match": "3 of 4",
               "prizeLabel": "$100",
               "oddsLabel": "1 in 2,201",
-              "sourceWinners": 2
+              "sourceWinners": 5
             },
             {
               "match": "2 of 4",
               "prizeLabel": "$3",
               "oddsLabel": "1 in 383",
-              "sourceWinners": 170
+              "sourceWinners": 163
             },
             {
               "match": "1 of 4",
               "prizeLabel": "Free $1 Quick Pick Play",
               "oddsLabel": "1 in 8",
-              "sourceWinners": 1567
+              "sourceWinners": 1624
             }
           ],
           "countUnit": "Winners (source label)"
         },
         {
           "variant": "tuesday",
-          "drawDate": "2026-11-01",
+          "drawDate": "2026-11-02",
           "applicable": false,
           "tiers": [
             {
@@ -2332,7 +2332,7 @@
     {
       "family": "MyDaY",
       "group": "myday",
-      "drawDate": "2026-11-01",
+      "drawDate": "2026-11-02",
       "dateZone": "America/Chicago",
       "sourceUrl": "https://nelottery.com/lotto-detail?gamename=MyDaY",
       "geographicUnit": "Nebraska",
@@ -2349,13 +2349,13 @@
           "match": "Day+Year",
           "prizeLabel": "$365",
           "oddsLabel": "1 in 3,320",
-          "sourceWinners": 0
+          "sourceWinners": 2
         },
         {
           "match": "Month+Year",
           "prizeLabel": "$52",
           "oddsLabel": "1 in 1,240",
-          "sourceWinners": 4
+          "sourceWinners": 1
         },
         {
           "match": "Month+Day",
@@ -2367,19 +2367,19 @@
           "match": "Year",
           "prizeLabel": "$7",
           "oddsLabel": "1 in 113",
-          "sourceWinners": 36
+          "sourceWinners": 26
         },
         {
           "match": "Day",
           "prizeLabel": "$4",
           "oddsLabel": "1 in 34",
-          "sourceWinners": 140
+          "sourceWinners": 206
         },
         {
           "match": "Month",
           "prizeLabel": "$1",
           "oddsLabel": "1 in 13",
-          "sourceWinners": 376
+          "sourceWinners": 402
         }
       ],
       "ruleBlocks": [
@@ -2531,6 +2531,6 @@
     }
   ],
   "limitation": "Bounded number results and separately dated latest reports. Older number rows do not inherit winner counts. Source Winners are not unique people or complete claims. No retailer joins or coordinates.",
-  "retrievedAt": "2026-11-02T19:02:25.892916-06:00",
+  "retrievedAt": "2026-11-03T08:20:12.931601-06:00",
   "schemaVersion": 1
 }

@@ -1,6 +1,6 @@
 {
   "source": "Texas Lottery official draw-specific Where Sold tables",
-  "updatedAt": "2026-11-03T01:19:23.031Z",
+  "updatedAt": "2026-11-03T14:37:19.876Z",
   "sourceLastUpdated": "2026-11-02T12:00:00.000Z",
   "coverage": "2026 draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.",
   "activities": [
@@ -2865,6 +2865,42 @@
       "prizeAmount": 25000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158400930.html",
       "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-10-31"
+    },
+    {
+      "id": "tx-draw-0f894ce2b284cb8455c2c486",
+      "latitude": 31.116807135972,
+      "longitude": -97.414172470529,
+      "city": "TEMPLE",
+      "county": "Bell",
+      "state": "TX",
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "retailerName": "WAL-MART SUPERCENTER #6929",
+      "retailerAddress": "6801 W ADAMS AVENUE, TEMPLE, TX 76502",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-11-02T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 25000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401799.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-11-02"
+    },
+    {
+      "id": "tx-draw-bebf973a0718ff369b1f1990",
+      "latitude": 30.330641423506,
+      "longitude": -97.549006406939,
+      "city": "MANOR",
+      "county": "Travis",
+      "state": "TX",
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "retailerName": "SNACK STOP",
+      "retailerAddress": "17111 BLAKE MANOR ROAD SUITE 1, MANOR, TX 78653",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-11-02T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 25000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401799.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-11-02"
     }
   ],
   "excluded": [
@@ -4090,6 +4126,14 @@
       "gameName": "Powerball",
       "date": "2026-10-31",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158400930.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "date": "2026-11-02",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158401799.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -5831,6 +5875,14 @@
     },
     {
       "game": "state-draw",
+      "gameName": "Lotto Texas",
+      "date": "2026-11-02",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Lotto_Texas/Winning_Numbers/details.html_1158401799.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
       "gameName": "Texas Two Step",
       "date": "2026-01-01",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/Winning_Numbers/details.html_1158372007.html",
@@ -6524,6 +6576,14 @@
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/Winning_Numbers/details.html_1158400907.html",
       "sourceRows": 1,
       "mappedRows": 1
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Texas Two Step",
+      "date": "2026-11-02",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Texas_Two_Step/Winning_Numbers/details.html_1158401799.html",
+      "sourceRows": 0,
+      "mappedRows": 0
     },
     {
       "game": "state-draw",
@@ -8612,6 +8672,14 @@
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158400930.html",
       "sourceRows": 1,
       "mappedRows": 1
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "date": "2026-11-02",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401799.html",
+      "sourceRows": 2,
+      "mappedRows": 2
     },
     {
       "game": "state-draw",
@@ -16978,6 +17046,14 @@
       "gameName": "All or Nothing",
       "date": "2026-11-02",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1607902531.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-11-02",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1970008401.html",
       "sourceRows": 0,
       "mappedRows": 0
     },

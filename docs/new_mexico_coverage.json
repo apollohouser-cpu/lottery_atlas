@@ -1,8 +1,161 @@
 {
   "schemaVersion": 1,
   "state": "New Mexico",
-  "updatedAt": "2026-11-03T01:02:54.002835+00:00",
+  "updatedAt": "2026-11-03T14:20:40.160818+00:00",
   "results": [
+    {
+      "game": "powerball",
+      "variant": "base",
+      "date": "2026-11-02",
+      "session": null,
+      "numbers": [
+        "7",
+        "23",
+        "29",
+        "64",
+        "66"
+      ],
+      "specialBall": 23,
+      "multiplier": 4,
+      "reportStatus": "available",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:30.642480+00:00",
+      "report": {
+        "game": "powerball",
+        "variant": "base",
+        "date": "2026-11-02",
+        "session": null,
+        "multiplier": 4,
+        "geography": "New Mexico",
+        "countUnit": "source Winners / prizes won",
+        "countNote": "Separate source columns reconcile additively to Total Prizes Won. Not unique people, deduplicated tickets or paid claims. Non-applicable jackpot add-on cells remain absent.",
+        "sourceUrl": "https://www.nmlottery.com/rts/games/powerball-2015/table.aspx",
+        "tiers": [
+          {
+            "match": "5 White Balls + Powerball",
+            "column": "Powerball",
+            "prizeLabel": "Jackpot/Grand Prize",
+            "prizeValue": null,
+            "sourceWinners": 0
+          },
+          {
+            "match": "5 White Balls",
+            "column": "Powerball",
+            "prizeLabel": "$1 Million",
+            "prizeValue": 1000000,
+            "sourceWinners": 0
+          },
+          {
+            "match": "5 White Balls",
+            "column": "With Power Play",
+            "prizeLabel": "$2 Million",
+            "prizeValue": 2000000,
+            "sourceWinners": 0
+          },
+          {
+            "match": "4 White Balls + Powerball",
+            "column": "Powerball",
+            "prizeLabel": "$50,000",
+            "prizeValue": 50000,
+            "sourceWinners": 0
+          },
+          {
+            "match": "4 White Balls + Powerball",
+            "column": "With Power Play",
+            "prizeLabel": "$200 Thousand",
+            "prizeValue": 200000,
+            "sourceWinners": 0
+          },
+          {
+            "match": "4 White Balls",
+            "column": "Powerball",
+            "prizeLabel": "$100",
+            "prizeValue": 100,
+            "sourceWinners": 0
+          },
+          {
+            "match": "4 White Balls",
+            "column": "With Power Play",
+            "prizeLabel": "$400",
+            "prizeValue": 400,
+            "sourceWinners": 0
+          },
+          {
+            "match": "3 White Balls + Powerball",
+            "column": "Powerball",
+            "prizeLabel": "$100",
+            "prizeValue": 100,
+            "sourceWinners": 3
+          },
+          {
+            "match": "3 White Balls + Powerball",
+            "column": "With Power Play",
+            "prizeLabel": "$400",
+            "prizeValue": 400,
+            "sourceWinners": 5
+          },
+          {
+            "match": "3 White Balls",
+            "column": "Powerball",
+            "prizeLabel": "$7",
+            "prizeValue": 7,
+            "sourceWinners": 85
+          },
+          {
+            "match": "3 White Balls",
+            "column": "With Power Play",
+            "prizeLabel": "$28",
+            "prizeValue": 28,
+            "sourceWinners": 35
+          },
+          {
+            "match": "2 White Balls + Powerball",
+            "column": "Powerball",
+            "prizeLabel": "$7",
+            "prizeValue": 7,
+            "sourceWinners": 73
+          },
+          {
+            "match": "2 White Balls + Powerball",
+            "column": "With Power Play",
+            "prizeLabel": "$28",
+            "prizeValue": 28,
+            "sourceWinners": 33
+          },
+          {
+            "match": "1 White Ball + Powerball",
+            "column": "Powerball",
+            "prizeLabel": "$4",
+            "prizeValue": 4,
+            "sourceWinners": 510
+          },
+          {
+            "match": "1 White Ball + Powerball",
+            "column": "With Power Play",
+            "prizeLabel": "$16",
+            "prizeValue": 16,
+            "sourceWinners": 258
+          },
+          {
+            "match": "Powerball",
+            "column": "Powerball",
+            "prizeLabel": "$4",
+            "prizeValue": 4,
+            "sourceWinners": 1204
+          },
+          {
+            "match": "Powerball",
+            "column": "With Power Play",
+            "prizeLabel": "$16",
+            "prizeValue": 16,
+            "sourceWinners": 549
+          }
+        ],
+        "totalPrizesWon": 2755,
+        "totalPrizeValue": 25078,
+        "retrievedAt": "2026-11-03T14:20:38.276098+00:00"
+      }
+    },
     {
       "game": "powerball",
       "variant": "base",
@@ -18,8 +171,8 @@
       "specialBall": 20,
       "multiplier": 3,
       "reportStatus": "available",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:43.157290+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:30.642480+00:00",
       "report": {
         "game": "powerball",
         "variant": "base",
@@ -158,155 +311,89 @@
     },
     {
       "game": "powerball",
-      "variant": "base",
-      "date": "2026-10-28",
+      "variant": "double_play",
+      "date": "2026-11-02",
       "session": null,
       "numbers": [
-        "11",
-        "13",
-        "16",
-        "47",
-        "60"
+        "20",
+        "23",
+        "24",
+        "33",
+        "61"
       ],
-      "specialBall": 13,
-      "multiplier": 2,
+      "specialBall": 1,
+      "multiplier": null,
       "reportStatus": "available",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:43.157290+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:30.642480+00:00",
       "report": {
         "game": "powerball",
-        "variant": "base",
-        "date": "2026-10-28",
+        "variant": "double_play",
+        "date": "2026-11-02",
         "session": null,
-        "multiplier": 2,
         "geography": "New Mexico",
         "countUnit": "source Winners / prizes won",
-        "countNote": "Separate source columns reconcile additively to Total Prizes Won. Not unique people, deduplicated tickets or paid claims. Non-applicable jackpot add-on cells remain absent.",
-        "sourceUrl": "https://www.nmlottery.com/rts/games/powerball-2015/table.aspx",
+        "countNote": "Source Winners columns reconcile to Total Prizes Won. Not unique people, deduplicated tickets, claims paid or retailer stock.",
+        "sourceUrl": "https://www.nmlottery.com/rts/games/powerball-2015/table-double-play.aspx",
         "tiers": [
           {
             "match": "5 White Balls + Powerball",
-            "column": "Powerball",
-            "prizeLabel": "Jackpot/Grand Prize",
-            "prizeValue": null,
+            "prizeLabel": "$10,000,000",
+            "prizeValue": 10000000,
             "sourceWinners": 0
           },
           {
             "match": "5 White Balls",
-            "column": "Powerball",
-            "prizeLabel": "$1 Million",
-            "prizeValue": 1000000,
-            "sourceWinners": 0
-          },
-          {
-            "match": "5 White Balls",
-            "column": "With Power Play",
-            "prizeLabel": "$2 Million",
-            "prizeValue": 2000000,
+            "prizeLabel": "$500,000",
+            "prizeValue": 500000,
             "sourceWinners": 0
           },
           {
             "match": "4 White Balls + Powerball",
-            "column": "Powerball",
             "prizeLabel": "$50,000",
             "prizeValue": 50000,
             "sourceWinners": 0
           },
           {
-            "match": "4 White Balls + Powerball",
-            "column": "With Power Play",
-            "prizeLabel": "$100 Thousand",
-            "prizeValue": 100000,
-            "sourceWinners": 0
-          },
-          {
             "match": "4 White Balls",
-            "column": "Powerball",
-            "prizeLabel": "$100",
-            "prizeValue": 100,
-            "sourceWinners": 1
-          },
-          {
-            "match": "4 White Balls",
-            "column": "With Power Play",
-            "prizeLabel": "$200",
-            "prizeValue": 200,
+            "prizeLabel": "$500",
+            "prizeValue": 500,
             "sourceWinners": 0
           },
           {
             "match": "3 White Balls + Powerball",
-            "column": "Powerball",
-            "prizeLabel": "$100",
-            "prizeValue": 100,
-            "sourceWinners": 4
-          },
-          {
-            "match": "3 White Balls + Powerball",
-            "column": "With Power Play",
-            "prizeLabel": "$200",
-            "prizeValue": 200,
-            "sourceWinners": 4
+            "prizeLabel": "$500",
+            "prizeValue": 500,
+            "sourceWinners": 0
           },
           {
             "match": "3 White Balls",
-            "column": "Powerball",
-            "prizeLabel": "$7",
-            "prizeValue": 7,
-            "sourceWinners": 93
-          },
-          {
-            "match": "3 White Balls",
-            "column": "With Power Play",
-            "prizeLabel": "$14",
-            "prizeValue": 14,
-            "sourceWinners": 46
+            "prizeLabel": "$20",
+            "prizeValue": 20,
+            "sourceWinners": 28
           },
           {
             "match": "2 White Balls + Powerball",
-            "column": "Powerball",
+            "prizeLabel": "$20",
+            "prizeValue": 20,
+            "sourceWinners": 19
+          },
+          {
+            "match": "1 White Ball + Powerball",
+            "prizeLabel": "$10",
+            "prizeValue": 10,
+            "sourceWinners": 157
+          },
+          {
+            "match": "Powerball",
             "prizeLabel": "$7",
             "prizeValue": 7,
-            "sourceWinners": 83
-          },
-          {
-            "match": "2 White Balls + Powerball",
-            "column": "With Power Play",
-            "prizeLabel": "$14",
-            "prizeValue": 14,
-            "sourceWinners": 44
-          },
-          {
-            "match": "1 White Ball + Powerball",
-            "column": "Powerball",
-            "prizeLabel": "$4",
-            "prizeValue": 4,
-            "sourceWinners": 581
-          },
-          {
-            "match": "1 White Ball + Powerball",
-            "column": "With Power Play",
-            "prizeLabel": "$8",
-            "prizeValue": 8,
-            "sourceWinners": 308
-          },
-          {
-            "match": "Powerball",
-            "column": "Powerball",
-            "prizeLabel": "$4",
-            "prizeValue": 4,
-            "sourceWinners": 1396
-          },
-          {
-            "match": "Powerball",
-            "column": "With Power Play",
-            "prizeLabel": "$8",
-            "prizeValue": 8,
-            "sourceWinners": 632
+            "sourceWinners": 313
           }
         ],
-        "totalPrizesWon": 3192,
-        "totalPrizeValue": 19220,
-        "retrievedAt": "2026-10-31T21:38:54.909736+00:00"
+        "totalPrizesWon": 517,
+        "totalPrizeValue": 4701,
+        "retrievedAt": "2026-11-03T14:20:38.432531+00:00"
       }
     },
     {
@@ -324,8 +411,8 @@
       "specialBall": 24,
       "multiplier": null,
       "reportStatus": "available",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:43.157290+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:30.642480+00:00",
       "report": {
         "game": "powerball",
         "variant": "double_play",
@@ -397,93 +484,6 @@
       }
     },
     {
-      "game": "powerball",
-      "variant": "double_play",
-      "date": "2026-10-28",
-      "session": null,
-      "numbers": [
-        "15",
-        "22",
-        "23",
-        "48",
-        "65"
-      ],
-      "specialBall": 9,
-      "multiplier": null,
-      "reportStatus": "available",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:43.157290+00:00",
-      "report": {
-        "game": "powerball",
-        "variant": "double_play",
-        "date": "2026-10-28",
-        "session": null,
-        "geography": "New Mexico",
-        "countUnit": "source Winners / prizes won",
-        "countNote": "Source Winners columns reconcile to Total Prizes Won. Not unique people, deduplicated tickets, claims paid or retailer stock.",
-        "sourceUrl": "https://www.nmlottery.com/rts/games/powerball-2015/table-double-play.aspx",
-        "tiers": [
-          {
-            "match": "5 White Balls + Powerball",
-            "prizeLabel": "$10,000,000",
-            "prizeValue": 10000000,
-            "sourceWinners": 0
-          },
-          {
-            "match": "5 White Balls",
-            "prizeLabel": "$500,000",
-            "prizeValue": 500000,
-            "sourceWinners": 0
-          },
-          {
-            "match": "4 White Balls + Powerball",
-            "prizeLabel": "$50,000",
-            "prizeValue": 50000,
-            "sourceWinners": 0
-          },
-          {
-            "match": "4 White Balls",
-            "prizeLabel": "$500",
-            "prizeValue": 500,
-            "sourceWinners": 1
-          },
-          {
-            "match": "3 White Balls + Powerball",
-            "prizeLabel": "$500",
-            "prizeValue": 500,
-            "sourceWinners": 0
-          },
-          {
-            "match": "3 White Balls",
-            "prizeLabel": "$20",
-            "prizeValue": 20,
-            "sourceWinners": 15
-          },
-          {
-            "match": "2 White Balls + Powerball",
-            "prizeLabel": "$20",
-            "prizeValue": 20,
-            "sourceWinners": 19
-          },
-          {
-            "match": "1 White Ball + Powerball",
-            "prizeLabel": "$10",
-            "prizeValue": 10,
-            "sourceWinners": 168
-          },
-          {
-            "match": "Powerball",
-            "prizeLabel": "$7",
-            "prizeValue": 7,
-            "sourceWinners": 364
-          }
-        ],
-        "totalPrizesWon": 567,
-        "totalPrizeValue": 5408,
-        "retrievedAt": "2026-10-31T21:38:54.997260+00:00"
-      }
-    },
-    {
       "game": "megamillions",
       "variant": "base",
       "date": "2026-10-30",
@@ -498,8 +498,8 @@
       "specialBall": 17,
       "multiplier": null,
       "reportStatus": "available",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=megamillions&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:44.510035+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=megamillions&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:32.021610+00:00",
       "report": {
         "game": "megamillions",
         "variant": "base",
@@ -800,7 +800,7 @@
         ],
         "totalPrizesWon": 1021,
         "totalPrizeValue": 18047,
-        "retrievedAt": "2026-11-03T01:02:52.521764+00:00"
+        "retrievedAt": "2026-11-03T14:20:38.773259+00:00"
       }
     },
     {
@@ -818,8 +818,8 @@
       "specialBall": 3,
       "multiplier": null,
       "reportStatus": "available",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=megamillions&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:44.510035+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=megamillions&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:32.021610+00:00",
       "report": {
         "game": "megamillions",
         "variant": "base",
@@ -1126,6 +1126,159 @@
     {
       "game": "lottoamerica",
       "variant": "base",
+      "date": "2026-11-02",
+      "session": null,
+      "numbers": [
+        "4",
+        "20",
+        "47",
+        "48",
+        "50"
+      ],
+      "specialBall": 9,
+      "multiplier": 4,
+      "reportStatus": "available",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=lottoamerica&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:33.102553+00:00",
+      "report": {
+        "game": "lottoamerica",
+        "variant": "base",
+        "date": "2026-11-02",
+        "session": null,
+        "multiplier": 4,
+        "geography": "New Mexico",
+        "countUnit": "source Winners / prizes won",
+        "countNote": "Separate source columns reconcile additively to Total Prizes Won. Not unique people, deduplicated tickets or paid claims. Non-applicable jackpot add-on cells remain absent.",
+        "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/LottoAmerica/Table.aspx",
+        "tiers": [
+          {
+            "match": "5 White Balls + Star Ball",
+            "column": "Lotto America",
+            "prizeLabel": "Grand Prize",
+            "prizeValue": null,
+            "sourceWinners": 0
+          },
+          {
+            "match": "All 5 white balls",
+            "column": "Lotto America",
+            "prizeLabel": "$20,000",
+            "prizeValue": 20000,
+            "sourceWinners": 0
+          },
+          {
+            "match": "All 5 white balls",
+            "column": "With All Star Bonus",
+            "prizeLabel": "$80,000",
+            "prizeValue": 80000,
+            "sourceWinners": 0
+          },
+          {
+            "match": "4 white balls + Star Ball",
+            "column": "Lotto America",
+            "prizeLabel": "$1,000",
+            "prizeValue": 1000,
+            "sourceWinners": 1
+          },
+          {
+            "match": "4 white balls + Star Ball",
+            "column": "With All Star Bonus",
+            "prizeLabel": "$4,000",
+            "prizeValue": 4000,
+            "sourceWinners": 0
+          },
+          {
+            "match": "4 white balls",
+            "column": "Lotto America",
+            "prizeLabel": "$100",
+            "prizeValue": 100,
+            "sourceWinners": 1
+          },
+          {
+            "match": "4 white balls",
+            "column": "With All Star Bonus",
+            "prizeLabel": "$400",
+            "prizeValue": 400,
+            "sourceWinners": 0
+          },
+          {
+            "match": "3 white balls + Star Ball",
+            "column": "Lotto America",
+            "prizeLabel": "$20",
+            "prizeValue": 20,
+            "sourceWinners": 3
+          },
+          {
+            "match": "3 white balls + Star Ball",
+            "column": "With All Star Bonus",
+            "prizeLabel": "$80",
+            "prizeValue": 80,
+            "sourceWinners": 3
+          },
+          {
+            "match": "3 white balls",
+            "column": "Lotto America",
+            "prizeLabel": "$5",
+            "prizeValue": 5,
+            "sourceWinners": 33
+          },
+          {
+            "match": "3 white balls",
+            "column": "With All Star Bonus",
+            "prizeLabel": "$20",
+            "prizeValue": 20,
+            "sourceWinners": 13
+          },
+          {
+            "match": "2 white balls + Star Ball",
+            "column": "Lotto America",
+            "prizeLabel": "$5",
+            "prizeValue": 5,
+            "sourceWinners": 63
+          },
+          {
+            "match": "2 white balls + Star Ball",
+            "column": "With All Star Bonus",
+            "prizeLabel": "$20",
+            "prizeValue": 20,
+            "sourceWinners": 22
+          },
+          {
+            "match": "1 white ball + Star Ball",
+            "column": "Lotto America",
+            "prizeLabel": "$2",
+            "prizeValue": 2,
+            "sourceWinners": 315
+          },
+          {
+            "match": "1 white ball + Star Ball",
+            "column": "With All Star Bonus",
+            "prizeLabel": "$8",
+            "prizeValue": 8,
+            "sourceWinners": 184
+          },
+          {
+            "match": "Star Ball",
+            "column": "Lotto America",
+            "prizeLabel": "$2",
+            "prizeValue": 2,
+            "sourceWinners": 577
+          },
+          {
+            "match": "Star Ball",
+            "column": "With All Star Bonus",
+            "prizeLabel": "$8",
+            "prizeValue": 8,
+            "sourceWinners": 339
+          }
+        ],
+        "totalPrizesWon": 1554,
+        "totalPrizeValue": 8548,
+        "retrievedAt": "2026-11-03T14:20:38.940053+00:00"
+      }
+    },
+    {
+      "game": "lottoamerica",
+      "variant": "base",
       "date": "2026-10-31",
       "session": null,
       "numbers": [
@@ -1138,8 +1291,8 @@
       "specialBall": 6,
       "multiplier": 3,
       "reportStatus": "available",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=lottoamerica&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:47.791473+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=lottoamerica&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:33.102553+00:00",
       "report": {
         "game": "lottoamerica",
         "variant": "base",
@@ -1277,157 +1430,23 @@
       }
     },
     {
-      "game": "lottoamerica",
+      "game": "roadrunnercash",
       "variant": "base",
-      "date": "2026-10-28",
+      "date": "2026-11-02",
       "session": null,
       "numbers": [
-        "3",
-        "14",
-        "15",
-        "33",
-        "43"
+        "12",
+        "19",
+        "25",
+        "27",
+        "34"
       ],
-      "specialBall": 8,
-      "multiplier": 2,
-      "reportStatus": "available",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=lottoamerica&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:47.791473+00:00",
-      "report": {
-        "game": "lottoamerica",
-        "variant": "base",
-        "date": "2026-10-28",
-        "session": null,
-        "multiplier": 2,
-        "geography": "New Mexico",
-        "countUnit": "source Winners / prizes won",
-        "countNote": "Separate source columns reconcile additively to Total Prizes Won. Not unique people, deduplicated tickets or paid claims. Non-applicable jackpot add-on cells remain absent.",
-        "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/LottoAmerica/Table.aspx",
-        "tiers": [
-          {
-            "match": "5 White Balls + Star Ball",
-            "column": "Lotto America",
-            "prizeLabel": "Grand Prize",
-            "prizeValue": null,
-            "sourceWinners": 0
-          },
-          {
-            "match": "All 5 white balls",
-            "column": "Lotto America",
-            "prizeLabel": "$20,000",
-            "prizeValue": 20000,
-            "sourceWinners": 0
-          },
-          {
-            "match": "All 5 white balls",
-            "column": "With All Star Bonus",
-            "prizeLabel": "$40,000",
-            "prizeValue": 40000,
-            "sourceWinners": 0
-          },
-          {
-            "match": "4 white balls + Star Ball",
-            "column": "Lotto America",
-            "prizeLabel": "$1,000",
-            "prizeValue": 1000,
-            "sourceWinners": 0
-          },
-          {
-            "match": "4 white balls + Star Ball",
-            "column": "With All Star Bonus",
-            "prizeLabel": "$2,000",
-            "prizeValue": 2000,
-            "sourceWinners": 0
-          },
-          {
-            "match": "4 white balls",
-            "column": "Lotto America",
-            "prizeLabel": "$100",
-            "prizeValue": 100,
-            "sourceWinners": 1
-          },
-          {
-            "match": "4 white balls",
-            "column": "With All Star Bonus",
-            "prizeLabel": "$200",
-            "prizeValue": 200,
-            "sourceWinners": 0
-          },
-          {
-            "match": "3 white balls + Star Ball",
-            "column": "Lotto America",
-            "prizeLabel": "$20",
-            "prizeValue": 20,
-            "sourceWinners": 5
-          },
-          {
-            "match": "3 white balls + Star Ball",
-            "column": "With All Star Bonus",
-            "prizeLabel": "$40",
-            "prizeValue": 40,
-            "sourceWinners": 2
-          },
-          {
-            "match": "3 white balls",
-            "column": "Lotto America",
-            "prizeLabel": "$5",
-            "prizeValue": 5,
-            "sourceWinners": 45
-          },
-          {
-            "match": "3 white balls",
-            "column": "With All Star Bonus",
-            "prizeLabel": "$10",
-            "prizeValue": 10,
-            "sourceWinners": 20
-          },
-          {
-            "match": "2 white balls + Star Ball",
-            "column": "Lotto America",
-            "prizeLabel": "$5",
-            "prizeValue": 5,
-            "sourceWinners": 81
-          },
-          {
-            "match": "2 white balls + Star Ball",
-            "column": "With All Star Bonus",
-            "prizeLabel": "$10",
-            "prizeValue": 10,
-            "sourceWinners": 32
-          },
-          {
-            "match": "1 white ball + Star Ball",
-            "column": "Lotto America",
-            "prizeLabel": "$2",
-            "prizeValue": 2,
-            "sourceWinners": 382
-          },
-          {
-            "match": "1 white ball + Star Ball",
-            "column": "With All Star Bonus",
-            "prizeLabel": "$4",
-            "prizeValue": 4,
-            "sourceWinners": 210
-          },
-          {
-            "match": "Star Ball",
-            "column": "Lotto America",
-            "prizeLabel": "$2",
-            "prizeValue": 2,
-            "sourceWinners": 615
-          },
-          {
-            "match": "Star Ball",
-            "column": "With All Star Bonus",
-            "prizeLabel": "$4",
-            "prizeValue": 4,
-            "sourceWinners": 353
-          }
-        ],
-        "totalPrizesWon": 1746,
-        "totalPrizeValue": 5676,
-        "retrievedAt": "2026-10-31T21:38:55.360315+00:00"
-      }
+      "specialBall": null,
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=roadrunnercash&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:34.238266+00:00",
+      "report": null
     },
     {
       "game": "roadrunnercash",
@@ -1444,27 +1463,8 @@
       "specialBall": null,
       "multiplier": null,
       "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=roadrunnercash&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:48.825692+00:00",
-      "report": null
-    },
-    {
-      "game": "roadrunnercash",
-      "variant": "base",
-      "date": "2026-10-31",
-      "session": null,
-      "numbers": [
-        "05",
-        "12",
-        "29",
-        "33",
-        "36"
-      ],
-      "specialBall": null,
-      "multiplier": null,
-      "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=roadrunnercash&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:48.825692+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=roadrunnercash&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:34.238266+00:00",
       "report": null
     },
     {
@@ -1480,8 +1480,8 @@
       "specialBall": null,
       "multiplier": null,
       "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:49.869017+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:35.472006+00:00",
       "report": null
     },
     {
@@ -1497,8 +1497,25 @@
       "specialBall": null,
       "multiplier": null,
       "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:49.869017+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:35.472006+00:00",
+      "report": null
+    },
+    {
+      "game": "pick3plus",
+      "variant": "base",
+      "date": "2026-11-02",
+      "session": "EVE",
+      "numbers": [
+        "8",
+        "5",
+        "1"
+      ],
+      "specialBall": null,
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:35.472006+00:00",
       "report": null
     },
     {
@@ -1514,25 +1531,8 @@
       "specialBall": null,
       "multiplier": null,
       "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:49.869017+00:00",
-      "report": null
-    },
-    {
-      "game": "pick3plus",
-      "variant": "base",
-      "date": "2026-10-31",
-      "session": "EVE",
-      "numbers": [
-        "1",
-        "0",
-        "8"
-      ],
-      "specialBall": null,
-      "multiplier": null,
-      "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:49.869017+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:35.472006+00:00",
       "report": null
     },
     {
@@ -1549,8 +1549,8 @@
       "specialBall": null,
       "multiplier": null,
       "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:51.133684+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:36.839824+00:00",
       "report": null
     },
     {
@@ -1567,8 +1567,26 @@
       "specialBall": null,
       "multiplier": null,
       "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:51.133684+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:36.839824+00:00",
+      "report": null
+    },
+    {
+      "game": "pick4plus",
+      "variant": "base",
+      "date": "2026-11-02",
+      "session": "EVE",
+      "numbers": [
+        "2",
+        "6",
+        "9",
+        "7"
+      ],
+      "specialBall": null,
+      "multiplier": null,
+      "reportStatus": "unavailable",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:36.839824+00:00",
       "report": null
     },
     {
@@ -1585,26 +1603,8 @@
       "specialBall": null,
       "multiplier": null,
       "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:51.133684+00:00",
-      "report": null
-    },
-    {
-      "game": "pick4plus",
-      "variant": "base",
-      "date": "2026-10-31",
-      "session": "EVE",
-      "numbers": [
-        "3",
-        "6",
-        "8",
-        "6"
-      ],
-      "specialBall": null,
-      "multiplier": null,
-      "reportStatus": "unavailable",
-      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:51.133684+00:00",
+      "sourceUrl": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:36.839824+00:00",
       "report": null
     }
   ],
@@ -2517,7 +2517,7 @@
           ]
         ]
       ],
-      "retrievedAt": "2026-11-03T01:02:44.220158+00:00"
+      "retrievedAt": "2026-11-03T14:20:31.835616+00:00"
     },
     {
       "game": "megamillions",
@@ -2895,7 +2895,7 @@
           ]
         ]
       ],
-      "retrievedAt": "2026-11-03T01:02:45.466668+00:00"
+      "retrievedAt": "2026-11-03T14:20:32.925927+00:00"
     },
     {
       "game": "lottoamerica",
@@ -3573,7 +3573,7 @@
           ]
         ]
       ],
-      "retrievedAt": "2026-11-03T01:02:48.675179+00:00"
+      "retrievedAt": "2026-11-03T14:20:34.040622+00:00"
     },
     {
       "game": "roadrunnercash",
@@ -3722,7 +3722,7 @@
           ]
         ]
       ],
-      "retrievedAt": "2026-11-03T01:02:49.675789+00:00"
+      "retrievedAt": "2026-11-03T14:20:35.126785+00:00"
     },
     {
       "game": "pick3plus",
@@ -4259,7 +4259,7 @@
           ]
         ]
       ],
-      "retrievedAt": "2026-11-03T01:02:50.727187+00:00"
+      "retrievedAt": "2026-11-03T14:20:36.495198+00:00"
     },
     {
       "game": "pick4plus",
@@ -5141,7 +5141,7 @@
           ]
         ]
       ],
-      "retrievedAt": "2026-11-03T01:02:51.998006+00:00"
+      "retrievedAt": "2026-11-03T14:20:37.726078+00:00"
     }
   ],
   "scratch": {
@@ -5149,8 +5149,8 @@
     "source": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
     "inventorySource": "https://nmlotteryscratchers.sks.com/ScratchersPrize/GetTopPrizesHtml",
     "endingSource": "https://www.nmlottery.com/games/scratchers/games-ending/",
-    "sourceDate": "2026-11-02",
-    "sourceTimestamp": "November 2, 2026 01:20 PM",
+    "sourceDate": "2026-11-03",
+    "sourceTimestamp": "November 3, 2026 03:06 AM",
     "sourceTimezone": null,
     "coverage": "Estimated top-prize report entries excluding passed official claim deadlines. Includes ended games still redeemable; does not establish active store stock, all-tier claims or retailer joins.",
     "updateCadence": "Checked every six hours; source publication cadence unconfirmed.",
@@ -5177,9 +5177,9 @@
         "name": "Lottery Bucks",
         "cost": 5,
         "topPrize": 5,
-        "topPrizesRemaining": 193616,
+        "topPrizesRemaining": 193614,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5189,7 +5189,7 @@
         "topPrize": 15000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5201,7 +5201,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-08-21",
         "lastDayToRedeem": "2026-11-19",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-08-21; redeem by 2026-11-19. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-08-21; redeem by 2026-11-19. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5211,7 +5211,7 @@
         "topPrize": 10000,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5223,7 +5223,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-09-17",
         "lastDayToRedeem": "2026-12-16",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5233,7 +5233,7 @@
         "topPrize": 200000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5243,7 +5243,7 @@
         "topPrize": 50000,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5251,9 +5251,9 @@
         "name": "$25, $50 Or $100",
         "cost": 10,
         "topPrize": 100,
-        "topPrizesRemaining": 5324,
+        "topPrizesRemaining": 5319,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5263,7 +5263,7 @@
         "topPrize": 500,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5273,7 +5273,7 @@
         "topPrize": 100000,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5283,7 +5283,7 @@
         "topPrize": 10000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5293,7 +5293,7 @@
         "topPrize": 500,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5303,7 +5303,7 @@
         "topPrize": 20000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5313,7 +5313,7 @@
         "topPrize": 20000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5323,7 +5323,7 @@
         "topPrize": 50000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5333,7 +5333,7 @@
         "topPrize": 500,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5345,7 +5345,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-08-20",
         "lastDayToRedeem": "2026-11-18",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-08-20; redeem by 2026-11-18. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-08-20; redeem by 2026-11-18. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5355,7 +5355,7 @@
         "topPrize": 500,
         "topPrizesRemaining": 6,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5365,7 +5365,7 @@
         "topPrize": 1000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5375,7 +5375,7 @@
         "topPrize": 500,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5387,7 +5387,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-10-23",
         "lastDayToRedeem": "2027-01-21",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-10-23; redeem by 2027-01-21. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-10-23; redeem by 2027-01-21. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5395,9 +5395,9 @@
         "name": "777",
         "cost": 2,
         "topPrize": 7000,
-        "topPrizesRemaining": 2,
+        "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5407,7 +5407,7 @@
         "topPrize": 500,
         "topPrizesRemaining": 9,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5417,7 +5417,7 @@
         "topPrize": 500,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5429,7 +5429,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-09-17",
         "lastDayToRedeem": "2026-12-16",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5441,7 +5441,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-09-17",
         "lastDayToRedeem": "2026-12-16",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5453,7 +5453,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-09-17",
         "lastDayToRedeem": "2026-12-16",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5465,7 +5465,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-09-17",
         "lastDayToRedeem": "2026-12-16",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5477,7 +5477,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-09-17",
         "lastDayToRedeem": "2026-12-16",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5487,7 +5487,7 @@
         "topPrize": 25000,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5497,7 +5497,7 @@
         "topPrize": 700,
         "topPrizesRemaining": 4,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5507,7 +5507,7 @@
         "topPrize": 10000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5519,7 +5519,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-09-17",
         "lastDayToRedeem": "2026-12-16",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-09-17; redeem by 2026-12-16. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5529,7 +5529,7 @@
         "topPrize": 5000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5539,7 +5539,7 @@
         "topPrize": 2100,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5549,7 +5549,7 @@
         "topPrize": 5000,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5559,7 +5559,7 @@
         "topPrize": 1000,
         "topPrizesRemaining": 1,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5569,7 +5569,7 @@
         "topPrize": 1000,
         "topPrizesRemaining": 5,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5579,7 +5579,7 @@
         "topPrize": 500,
         "topPrizesRemaining": 39,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5589,7 +5589,7 @@
         "topPrize": 5000,
         "topPrizesRemaining": 0,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5601,7 +5601,7 @@
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
         "endDate": "2026-10-08",
         "lastDayToRedeem": "2027-01-06",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-10-08; redeem by 2027-01-06. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Game ends 2026-10-08; redeem by 2027-01-06. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5611,7 +5611,7 @@
         "topPrize": 20000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5621,7 +5621,7 @@
         "topPrize": 10000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5631,7 +5631,7 @@
         "topPrize": 30000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5641,7 +5641,7 @@
         "topPrize": 5000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5651,7 +5651,7 @@
         "topPrize": 1000,
         "topPrizesRemaining": 3,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5661,7 +5661,7 @@
         "topPrize": 5000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5671,7 +5671,7 @@
         "topPrize": 1000,
         "topPrizesRemaining": 3,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5681,7 +5681,7 @@
         "topPrize": 5000,
         "topPrizesRemaining": 3,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5691,7 +5691,7 @@
         "topPrize": 10000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5701,7 +5701,7 @@
         "topPrize": 25000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5711,7 +5711,7 @@
         "topPrize": 25000,
         "topPrizesRemaining": 4,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5721,7 +5721,7 @@
         "topPrize": 5000,
         "topPrizesRemaining": 2,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5729,9 +5729,9 @@
         "name": "Winter Cash",
         "cost": 1,
         "topPrize": 25,
-        "topPrizesRemaining": 3996,
+        "topPrizesRemaining": 3991,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5739,9 +5739,9 @@
         "name": "Elf",
         "cost": 2,
         "topPrize": 500,
-        "topPrizesRemaining": 17,
+        "topPrizesRemaining": 16,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5751,7 +5751,7 @@
         "topPrize": 1000,
         "topPrizesRemaining": 3,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       },
       {
         "stateName": "New Mexico",
@@ -5761,125 +5761,125 @@
         "topPrize": 5000,
         "topPrizesRemaining": 3,
         "sourceUrl": "https://www.nmlottery.com/games/scratchers/top-prizes-not-yet-claimed/",
-        "inventoryNote": "Estimated top-prize inventory as of November 2, 2026 01:20 PM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
+        "inventoryNote": "Estimated top-prize inventory as of November 3, 2026 03:06 AM (timezone unpublished). Tickets may already be sold or awaiting redemption. Not dated winning-ticket totals; store availability unverified."
       }
     ],
-    "retrievedAt": "2026-11-03T01:02:53.114022+00:00",
-    "endingRetrievedAt": "2026-11-03T01:02:54.002835+00:00"
+    "retrievedAt": "2026-11-03T14:20:39.266008+00:00",
+    "endingRetrievedAt": "2026-11-03T14:20:40.160818+00:00"
   },
   "sources": [
     {
-      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:43.157290+00:00",
-      "bytes": 12372,
-      "sha256": "5778d4bb66fc7e693f12932fe7d6132b5e5529761d6cd1495d75108b1709e2f0"
+      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=powerball&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:30.642480+00:00",
+      "bytes": 12370,
+      "sha256": "1b266a4e5dc8dfeb2481028840739e82ec15fe6f6aa083e25925d3e272d04db8"
     },
     {
       "url": "https://www.nmlottery.com/games/powerball/how-to-play-powerball/",
-      "retrievedAt": "2026-11-03T01:02:44.220158+00:00",
+      "retrievedAt": "2026-11-03T14:20:31.835616+00:00",
       "bytes": 193634,
-      "sha256": "e74a3e06ca8cf52ae836dc94c2a30297432249fd4e68a9fef77934e72849e336"
+      "sha256": "dbe3c43b9b66adfe81485e7af83eb8a3b82167363d2806c1d5c1b4fae62fcb67"
     },
     {
-      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=megamillions&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:44.510035+00:00",
+      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=megamillions&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:32.021610+00:00",
       "bytes": 7356,
-      "sha256": "1d3385db1eb09bec5b947872fc7de509c216e2efd6e404d6c4b178c43530ce57"
+      "sha256": "7aae15c857cef1ad58f8bb33f93a24141535b5e0b9231c793ed5bf9633c9b40a"
     },
     {
       "url": "https://www.nmlottery.com/games/mega-millions/how-to-play-mega-millions/",
-      "retrievedAt": "2026-11-03T01:02:45.466668+00:00",
+      "retrievedAt": "2026-11-03T14:20:32.925927+00:00",
       "bytes": 182215,
-      "sha256": "75edcee006e5a9b038f89833cadbaa90579dcb931fcacfb365feb23a039523c9"
+      "sha256": "0f58bf143b11f592f1e6a134e27abe14bc93a25e26abee876ee52a191a032879"
     },
     {
-      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=lottoamerica&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:47.791473+00:00",
-      "bytes": 9113,
-      "sha256": "d7d8441f35dae4f2fc9de21f718fff3392dc3492d32ab89695146c92d41bda64"
+      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=lottoamerica&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:33.102553+00:00",
+      "bytes": 9107,
+      "sha256": "9da9d2b55a350f03f16ed9d894477eaca89a51db560001d498103ff0ce2b7b6a"
     },
     {
       "url": "https://www.nmlottery.com/games/lotto-america/how-to-play-lotto-america/",
-      "retrievedAt": "2026-11-03T01:02:48.675179+00:00",
+      "retrievedAt": "2026-11-03T14:20:34.040622+00:00",
       "bytes": 188323,
-      "sha256": "34cf086084e81aa4e7f10a36440589503090b6003165fb2c446964fad261eecd"
+      "sha256": "6cda572c53d9b7dc72752d1e420387ef8c65f95068717d93b6e927777cbb6560"
     },
     {
-      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=roadrunnercash&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:48.825692+00:00",
-      "bytes": 11835,
-      "sha256": "afba289d2136d4009e022937718d29a6609f08149d79792dbfe4e6738a8cfeb8"
+      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=roadrunnercash&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:34.238266+00:00",
+      "bytes": 11834,
+      "sha256": "3644fb9fa3a57eb636f5babff802069f4e343e2937fe8b5693c23f3e2e2af6fe"
     },
     {
       "url": "https://www.nmlottery.com/games/roadrunner-cash/how-to-play-roadrunner-cash/",
-      "retrievedAt": "2026-11-03T01:02:49.675789+00:00",
+      "retrievedAt": "2026-11-03T14:20:35.126785+00:00",
       "bytes": 180168,
-      "sha256": "c1eb06915aad07d49f30c98a9850bf5fe572885b152a14f27d2d92edd2c99228"
+      "sha256": "978348345df9f81df06fbcaa1f867f0cfb3bcaacb2583d04c72c0dac9f748a9e"
     },
     {
-      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:49.869017+00:00",
-      "bytes": 16968,
-      "sha256": "5ecc0e91809af13f361e6fc07bcdf1a87408eeed72b651272169430701329ad3"
+      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick3plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:35.472006+00:00",
+      "bytes": 16554,
+      "sha256": "1feface7833fa67220f659e51da71e64c5e2b41f3495fdd751d5a407f9129b2e"
     },
     {
       "url": "https://www.nmlottery.com/games/pick-3-plus/how-to-play-pick-3-plus/",
-      "retrievedAt": "2026-11-03T01:02:50.727187+00:00",
+      "retrievedAt": "2026-11-03T14:20:36.495198+00:00",
       "bytes": 193665,
-      "sha256": "02949dba56e804141dda5eb3bb31ef3da0b9ffe459f40f7a868ca5363ea88c48"
+      "sha256": "8424f34b81595e57afb08da86c1ae79ea8acf436e8b13541241f5ff8935dfec2"
     },
     {
-      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F19%2F2026&end=11%2F02%2F2026&sort=drawn&appmode=true&seamless-embed=true",
-      "retrievedAt": "2026-11-03T01:02:51.133684+00:00",
-      "bytes": 18030,
-      "sha256": "b39f9a9997592a2ca8b82ced8585cb053945a18b711ddb7fc6539a3ec037c3c6"
+      "url": "https://nmlotterydynamic.sks.com/rts/games/pastdrawings/search/?game=pick4plus&start=10%2F20%2F2026&end=11%2F03%2F2026&sort=drawn&appmode=true&seamless-embed=true",
+      "retrievedAt": "2026-11-03T14:20:36.839824+00:00",
+      "bytes": 17582,
+      "sha256": "0bd577d814419e6708d301187b8257a494e053815068b7d645b28f2a36d1cfb3"
     },
     {
       "url": "https://www.nmlottery.com/games/pick-4-plus/how-to-play-pick-4-plus/",
-      "retrievedAt": "2026-11-03T01:02:51.998006+00:00",
+      "retrievedAt": "2026-11-03T14:20:37.726078+00:00",
       "bytes": 197871,
-      "sha256": "9647ca793b25339fdd261b7a1f4b1ce1d344d1f4eb6de4aa063d80f35648b80c"
+      "sha256": "6d22652d8e232c3f8b36814144ec14162cf48cf419dd01899bff2296477a70ab"
     },
     {
       "url": "https://www.nmlottery.com/rts/games/powerball-2015/table.aspx",
-      "retrievedAt": "2026-11-03T01:02:52.107269+00:00",
-      "bytes": 3481,
-      "sha256": "579e09bc7b8d20bc679f824f10bbbdf19d8fc86bc87f734de217a8028b118c63"
+      "retrievedAt": "2026-11-03T14:20:38.276098+00:00",
+      "bytes": 3480,
+      "sha256": "7ba72b478c19306e55cffeabf47332ae2e29d2a421d54dc7f0db1f68e48d8196"
     },
     {
       "url": "https://www.nmlottery.com/rts/games/powerball-2015/table-double-play.aspx",
-      "retrievedAt": "2026-11-03T01:02:52.213182+00:00",
+      "retrievedAt": "2026-11-03T14:20:38.432531+00:00",
       "bytes": 2665,
-      "sha256": "17417d5b2559789af02b693745dd63e389207f1e248873558d6756e6ff0a2c1e"
+      "sha256": "e004513d60d0d7150f5d968d291e591d1c028ea2a2dff5df7b82e38c5776b144"
     },
     {
       "url": "https://webservices.nmlottery.com/rts/games/MegaMillions-2025/table.aspx",
-      "retrievedAt": "2026-11-03T01:02:52.521764+00:00",
+      "retrievedAt": "2026-11-03T14:20:38.773259+00:00",
       "bytes": 10109,
       "sha256": "f195b099f18174e937819196d232e63e8c8ff4553cd32471ea2aa425a42fa2af"
     },
     {
       "url": "https://nmlotterydynamic.sks.com/rts/games/LottoAmerica/Table.aspx",
-      "retrievedAt": "2026-11-03T01:02:52.717320+00:00",
+      "retrievedAt": "2026-11-03T14:20:38.940053+00:00",
       "bytes": 3578,
-      "sha256": "96b8189a6796eb002cd87ba1260714c21b8310956ed957a1f7401aeb1d2fcb51"
+      "sha256": "913658045276b21c0e9b112cd29d1b50b1caa0c666845f43cb0faac457064ecc"
     },
     {
       "url": "https://nmlotteryscratchers.sks.com/ScratchersPrize/GetTopPrizesHtml",
-      "retrievedAt": "2026-11-03T01:02:53.114022+00:00",
+      "retrievedAt": "2026-11-03T14:20:39.266008+00:00",
       "bytes": 15617,
-      "sha256": "38f1ec170facab538eab22ac05641cda9bca40d3f313f8d5bbcd67c52cb4f44f"
+      "sha256": "afd43d596ebcf74ab9071594f10ae0201a75a1cfeff55fff37ce1f7e0c5d1817"
     },
     {
       "url": "https://www.nmlottery.com/games/scratchers/games-ending/",
-      "retrievedAt": "2026-11-03T01:02:54.002835+00:00",
+      "retrievedAt": "2026-11-03T14:20:40.160818+00:00",
       "bytes": 208989,
-      "sha256": "be903f0b4f6e0d370830dcf88f1bdbf9ac512b2040986fe94064726b1133bac0"
+      "sha256": "36e1c23591fc9ed329db113791841527fcfa1de6faeb98ed2c4e80aea08c0328"
     }
   ],
   "queryWindow": {
-    "start": "2026-10-19",
-    "end": "2026-11-02",
+    "start": "2026-10-20",
+    "end": "2026-11-03",
     "timezone": "America/Denver"
   },
   "coverageNote": "Latest two available dates per explicit group; exact-date New Mexico source Winners / prizes-won reports only. Missing reports unavailable, never zero. Estimated top-prize Scratch inventory, timezone unpublished. No complete history, claims, retailer joins, unique people/tickets or store stock.",
@@ -5891,28 +5891,28 @@
   ],
   "retainedReportSources": [
     {
+      "url": "https://nmlotterydynamic.sks.com/rts/games/LottoAmerica/Table.aspx",
+      "retrievedAt": "2026-11-03T01:02:52.717320+00:00",
+      "bytes": 3578,
+      "sha256": "96b8189a6796eb002cd87ba1260714c21b8310956ed957a1f7401aeb1d2fcb51"
+    },
+    {
+      "url": "https://www.nmlottery.com/rts/games/powerball-2015/table-double-play.aspx",
+      "retrievedAt": "2026-11-03T01:02:52.213182+00:00",
+      "bytes": 2665,
+      "sha256": "17417d5b2559789af02b693745dd63e389207f1e248873558d6756e6ff0a2c1e"
+    },
+    {
       "url": "https://webservices.nmlottery.com/rts/games/MegaMillions-2025/table.aspx",
       "retrievedAt": "2026-10-30T22:24:40.328272+00:00",
       "bytes": 10110,
       "sha256": "8df35f71f35f16f2164a86c14033aaad8f563e5f47a0a5213aaf899346622758"
     },
     {
-      "url": "https://www.nmlottery.com/rts/games/powerball-2015/table-double-play.aspx",
-      "retrievedAt": "2026-10-31T21:38:54.997260+00:00",
-      "bytes": 2665,
-      "sha256": "69950f0b97aa85536f86186412815a43b33ad4cc3d0314ef05fde92fbc94c52e"
-    },
-    {
-      "url": "https://nmlotterydynamic.sks.com/rts/games/LottoAmerica/Table.aspx",
-      "retrievedAt": "2026-10-31T21:38:55.360315+00:00",
-      "bytes": 3578,
-      "sha256": "5f175c37231ade845f8e59136e4267c0d3c680d909d205437cf46266c98c88c4"
-    },
-    {
       "url": "https://www.nmlottery.com/rts/games/powerball-2015/table.aspx",
-      "retrievedAt": "2026-10-31T21:38:54.909736+00:00",
-      "bytes": 3478,
-      "sha256": "612b315685b2f2dfa59d755c2cd1d45080a8cbbc05d3e197e1ed6c4f5a7c4743"
+      "retrievedAt": "2026-11-03T01:02:52.107269+00:00",
+      "bytes": 3481,
+      "sha256": "579e09bc7b8d20bc679f824f10bbbdf19d8fc86bc87f734de217a8028b118c63"
     }
   ]
 }
