@@ -85,3 +85,29 @@ class FiveInLineRulesTests(unittest.TestCase):
             else: bad['tables'][0][part]=''
             with self.assertRaises(ValueError): parse_capture(bad,'5-in-a-line')
         with self.assertRaises(ValueError): parse_capture(self.capture,'lucky-links')
+
+
+class TwoToWinRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/two-to-win-rules.json').read_text())
+
+    def test_bet_types_and_conditional_sharing(self):
+        rule=parse_capture(self.capture,'two-to-win')
+        self.assertEqual(len(rule['tables'][0]['rows']),6)
+        self.assertEqual(rule['tables'][0]['rows'][2],['Box','$30','1 in 50'])
+        self.assertIn('above $60,000',rule['tables'][0]['sectionText'])
+        self.assertIn('00-99',rule['howToPlay'])
+        self.assertIn('front digit, or back digit',rule['howToPlay'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_each_cell_and_prose_change_rejected(self):
+        for i,row in enumerate(self.capture['tables'][0]['rows']):
+            for j in range(len(row)):
+                bad=copy.deepcopy(self.capture);bad['tables'][0]['rows'][i][j]+=' changed'
+                with self.subTest(row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'two-to-win')
+        for part in ('howToPlay','sectionText'):
+            bad=copy.deepcopy(self.capture)
+            if part=='howToPlay': bad[part]=''
+            else: bad['tables'][0][part]=''
+            with self.assertRaises(ValueError): parse_capture(bad,'two-to-win')
+        with self.assertRaises(ValueError): parse_capture(self.capture,'5-in-a-line')

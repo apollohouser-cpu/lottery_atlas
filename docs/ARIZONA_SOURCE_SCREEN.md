@@ -384,3 +384,15 @@ remain schedules, not actual payouts. All cells and prose are continuity-gated;
 ninety-one focused Arizona tests pass. Other rule families, linked full details,
 products, publication and native gates remain open. No feed/build/acceptance or
 HTTP recovery is claimed; November 6 09:15 EST deadline unchanged.
+
+## November 2 late evening — Two to Win literal rules
+
+Retained the six-row official prize/odds schedule and attached play instructions,
+schedule and conditional-sharing caveats. Fourth reviewed rule contract preserves
+Straight, Box, Front and Back as separate bet types, the 00–99 number range,
+wager options and sharing above $60,000. The printed Box odds remain literal
+source rules; no new interpretation of repeated-digit wagers is invented.
+Ninety-three focused Arizona tests pass, including every cell and both prose
+sections changing or disappearing. Other rule families, linked full details,
+products, publication and native gates remain open. No feed/build/acceptance or
+HTTP recovery is claimed; November 6 09:15 EST deadline unchanged.
