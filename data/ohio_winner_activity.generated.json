@@ -1,9 +1,9 @@
 {
   "source": "Ohio Lottery official press release API and active retailer directory",
   "sourceUrl": "https://www.ohiolottery.com/about/media-center/press-releases",
-  "updatedAt": "2026-10-31T12:45:51.590Z",
-  "sourceLastUpdated": "2026-10-29T15:58:17.000Z",
-  "coverage": "149 physical retailer-level Ohio Lottery winner releases from January 1, 2026 through the current official publication date, each matched to exactly one active official retailer address. Dates are release publication dates, not verified draw or claim dates; publication times do not establish when tickets won.",
+  "updatedAt": "2026-11-03T01:11:56.704Z",
+  "sourceLastUpdated": "2026-11-02T15:41:03.000Z",
+  "coverage": "150 physical retailer-level Ohio Lottery winner releases from January 1, 2026 through the current official publication date, each matched to exactly one active official retailer address. Dates are release publication dates, not verified draw or claim dates; publication times do not establish when tickets won.",
   "activities": [
     {
       "id": "oh-2026-01-05-14477-oh-028109",
@@ -2686,6 +2686,24 @@
       "prizeAmount": 20000,
       "sourceUrl": "https://www.ohiolottery.com/about/media-center/press-releases",
       "sourceLabel": "Official Ohio Lottery winner release · Man in Jefferson County Wins $20,000, Splits Win with Grandma · Oct 29, 2026"
+    },
+    {
+      "id": "oh-2026-11-02-14855-oh-032513",
+      "latitude": 40.888546,
+      "longitude": -80.6949,
+      "city": "Columbiana",
+      "county": "Columbiana",
+      "state": "OH",
+      "game": "powerball",
+      "gameName": "Powerball",
+      "retailerName": "COLUMBIANA STORE",
+      "retailerAddress": "31 W Park Ave, Columbiana, OH 44408",
+      "coordinateSource": "Ohio Lottery published retailer coordinate",
+      "drawDate": "2026-11-02T15:41:03.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 793000000,
+      "sourceUrl": "https://www.ohiolottery.com/about/media-center/press-releases/Powerball-Jackpot-11-2-26",
+      "sourceLabel": "Official Ohio Lottery winner release · Columbiana Store Sells $150,000 Powerball Winner, Jackpot Grows to $793 Million · Nov 02, 2026"
     }
   ],
   "excluded": [
@@ -3013,6 +3031,11 @@
       "articleID": 14853,
       "title": "Bloomville Man Wins $140,000 Jackpot",
       "reason": "No exact official retailer address matched"
+    },
+    {
+      "articleID": 14854,
+      "title": "Two Winners Hit Separate Rolling Cash 5 Jackpots",
+      "reason": "Not a mappable winner release"
     }
   ]
 }

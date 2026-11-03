@@ -1,8 +1,8 @@
 {
   "source": "Virginia Lottery official Latest Winners archive and statewide retailer finder",
-  "updatedAt": "2026-10-28T09:41:00.000Z",
-  "sourceLastUpdated": "2026-10-28T09:41:00.000Z",
-  "coverage": "112 physical retailer-level winner releases from 2024 through 2026, each matched to exactly one official Virginia Lottery retailer address with a previously verified precise coordinate. 4 unsupported/unverified game releases, 59 online-only releases, 49 releases without an exact current-directory address match, and 2 shared-address matches were excluded rather than inferred. drawDate stores the official publication timestamp because the archive does not publish a structured draw/claim date for every record.",
+  "updatedAt": "2026-11-02T13:46:00.000Z",
+  "sourceLastUpdated": "2026-11-02T13:46:00.000Z",
+  "coverage": "113 physical retailer-level winner releases from 2024 through 2026, each matched to exactly one official Virginia Lottery retailer address with a previously verified precise coordinate. 4 unsupported/unverified game releases, 60 online-only releases, 50 releases without an exact current-directory address match, and 2 shared-address matches were excluded rather than inferred. drawDate stores the official publication timestamp because the archive does not publish a structured draw/claim date for every record.",
   "activities": [
     {
       "id": "va-2024-01-08-21c58ed6-176f-4638-834e-68d04f0c4fdc",
@@ -2019,6 +2019,24 @@
       "prizeAmount": 100000,
       "sourceUrl": "https://www.valottery.com/winnersnews/latestwinners?itemId=74eb5f6d-be6a-4258-8585-059756fb94b7",
       "sourceLabel": "Official Virginia Lottery winner release · Oct 28, 2026"
+    },
+    {
+      "id": "va-2026-11-02-5f889a7c-9477-4d5c-b043-677129797fa1",
+      "latitude": 37.316794859859,
+      "longitude": -79.965096293001,
+      "city": "Roanoke",
+      "county": "Roanoke (City)",
+      "state": "VA",
+      "game": "powerball",
+      "gameName": "Powerball",
+      "retailerName": "KROGER 325 (FRONT OFFICE)",
+      "retailerAddress": "5050 Rutgers St, Roanoke, VA 24012",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-11-02T13:46:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 200000,
+      "sourceUrl": "https://www.valottery.com/winnersnews/latestwinners?itemId=5f889a7c-9477-4d5c-b043-677129797fa1",
+      "sourceLabel": "Official Virginia Lottery winner release · Nov 02, 2026"
     }
   ]
 }
