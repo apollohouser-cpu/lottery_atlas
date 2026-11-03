@@ -434,3 +434,16 @@ pass. Remaining rules, linked full details, products, coupled collection,
 publication and native acceptance remain open. Direct HTTP recovery is not
 claimed; no Arizona feed/build/acceptance. November 6 09:15 EST deadline and
 all four open mobile beta prerequisites remain unchanged.
+
+
+## November 3 afternoon — Pick Your Bet literal rules
+
+Retained the four-row official Pick Your Bet schedule and attached play/caveat
+sections at 21:15:19.383 UTC. Seventh reviewed inline rule contract preserves
+three distinct bet types, the explicit $2 wager basis, Low 1–19 / High 20–38,
+and listed wager options. The schedule is not converted to a $1 basis or
+actual payout totals. All cells and both prose sections are change-gated;
+99 focused Arizona tests pass. Remaining rules, linked full details, products,
+coupled collection, publication and native acceptance remain open. No Arizona
+feed/build/acceptance or direct HTTP recovery is claimed. November 6 09:15 EST
+release deadline and all four open mobile beta prerequisites remain unchanged.

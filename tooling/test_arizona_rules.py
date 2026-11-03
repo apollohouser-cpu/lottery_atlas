@@ -163,3 +163,30 @@ class MoneyRollRulesTests(unittest.TestCase):
             else: bad['tables'][0][part]=''
             with self.assertRaises(ValueError): parse_capture(bad,'money-roll')
         with self.assertRaises(ValueError): parse_capture(self.capture,'one-to-win')
+
+
+class PickYourBetRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/pick-your-bet-rules.json').read_text())
+
+    def test_two_dollar_wager_and_distinct_bet_types(self):
+        rule=parse_capture(self.capture,'pick-your-bet')
+        self.assertEqual(rule['tables'][0]['rows'],[
+            ['Bet Type','Prize','Odds*'],['Lucky Number','$50','1 in 38'],
+            ['Odd/Even','$3','1 in 2'],['Low/High','$3','1 in 2']])
+        self.assertIn('chart based on a $2 wager',rule['tables'][0]['sectionText'])
+        self.assertIn('Low (1 - 19) or High (20 - 38)',rule['howToPlay'])
+        self.assertIn('$2, $4, $6, $10, or $20',rule['howToPlay'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_each_cell_and_prose_change_rejected(self):
+        for i,row in enumerate(self.capture['tables'][0]['rows']):
+            for j in range(len(row)):
+                bad=copy.deepcopy(self.capture);bad['tables'][0]['rows'][i][j]+=' changed'
+                with self.subTest(row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'pick-your-bet')
+        for part in ('howToPlay','sectionText'):
+            bad=copy.deepcopy(self.capture)
+            if part=='howToPlay': bad[part]=''
+            else: bad['tables'][0][part]=''
+            with self.assertRaises(ValueError): parse_capture(bad,'pick-your-bet')
+        with self.assertRaises(ValueError): parse_capture(self.capture,'money-roll')
