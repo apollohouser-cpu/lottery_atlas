@@ -33,3 +33,29 @@ class RulesTests(unittest.TestCase):
         bad=copy.deepcopy(self.capture);bad['tables'][0]['sectionText']=''
         with self.assertRaises(ValueError): parse_capture(bad,'hi-lo')
         with self.assertRaises(ValueError): parse_capture(self.capture,'unknown')
+
+
+class LuckyLinksRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/lucky-links-rules.json').read_text())
+
+    def test_grid_and_combined_top_tier_preserved(self):
+        rule=parse_capture(self.capture,'lucky-links')
+        self.assertEqual(len(rule['tables'][0]['rows']),8)
+        self.assertEqual(rule['tables'][0]['rows'][1],['7-8 Lines','$25,000','1 in 319,770.0'])
+        self.assertIn('7 lines automatically forms 8 lines',rule['tables'][0]['sectionText'])
+        self.assertIn('above $125,000',rule['tables'][0]['sectionText'])
+        self.assertIn('3x3 grid with the center space “Free”',rule['howToPlay'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_each_cell_and_both_prose_sections_reject_changes(self):
+        for i,row in enumerate(self.capture['tables'][0]['rows']):
+            for j in range(len(row)):
+                bad=copy.deepcopy(self.capture);bad['tables'][0]['rows'][i][j]+=' changed'
+                with self.subTest(row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'lucky-links')
+        for part in ('howToPlay','sectionText'):
+            bad=copy.deepcopy(self.capture)
+            if part=='howToPlay': bad[part]=''
+            else: bad['tables'][0][part]=''
+            with self.assertRaises(ValueError): parse_capture(bad,'lucky-links')
+        with self.assertRaises(ValueError): parse_capture(self.capture,'hi-lo')

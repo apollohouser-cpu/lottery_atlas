@@ -359,3 +359,16 @@ still November 2. No draw capture was adopted from that default; future-time
 gates remain in force. Future collection must explicitly select the intended
 Arizona date and retain it with the observation. No HTTP recovery, public feed,
 build or acceptance is claimed. November 6 09:15 EST deadline remains unchanged.
+
+## November 2 evening — Lucky Links literal rules
+
+Retained the official Lucky Links prize/odds schedule (eight physical rows),
+play instructions and attached caveats at November 3 02:02:18.845 UTC. The reviewed
+contract preserves the combined 7–8 Lines tier, the source explanation that
+seven lines automatically form eight, the ticket's free center, optional $1
+Super Bonus and conditional sharing above $125,000. No ticket positions or
+actual payouts are inferred. Every schedule cell and both prose sections are
+gated against changes; eighty-nine focused Arizona tests pass. Hi-Lo and Lucky
+Links are the two initial rule contracts; other families and linked full-detail
+review remain open. No feed/build/acceptance or transport recovery is claimed.
+November 6 09:15 EST supported-release deadline remains unchanged.
