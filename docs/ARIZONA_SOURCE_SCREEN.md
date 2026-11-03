@@ -462,3 +462,17 @@ full-detail review, regular draw rules, products, coupled acquisition, publicati
 and native acceptance remain open. No feed/build/acceptance or direct HTTP
 recovery is claimed. November 6 09:15 EST deadline is unchanged; all four mobile
 beta prerequisites remain open.
+
+
+## November 3 evening — Fantasy 5 symbolic rule tiers
+
+Retained the six-row Fantasy 5 rule schedule, play instructions and caveats at
+23:21:25.173 UTC. Ninth inline rule contract includes observed winning-ball
+symbol counts (5/4/3/2), since the matching-number cells contain no text.
+Changes to these symbols now fail validation as do changed cells or missing
+prose. Jackpot sharing and the introductory EXTRA! terms remain literal; the
+full EXTRA! schedule and linked full-detail review are still pending. These
+are rules, not actual payout reports. 103 focused Arizona tests pass. Remaining
+regular rules, products, coupled acquisition, publication and native acceptance
+remain open. No feed/build/acceptance or HTTP recovery is claimed. November 6
+09:15 EST release deadline and all four open beta prerequisites are unchanged.
