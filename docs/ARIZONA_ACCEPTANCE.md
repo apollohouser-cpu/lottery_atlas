@@ -599,3 +599,20 @@ verify all nineteen groups. Publication remains blocked on the separate rules,
 products, repeatable permitted acquisition, application and native gates; no
 partial draw bundle is returned if either source family fails. No public feed,
 build, acceptance or HTTP recovery is claimed. November 6 09:15 EST unchanged.
+
+## November 2 evening — first literal rule contract
+
+Retained Hi-Lo's official prize/odds table (nine physical rows), attached
+schedule/claim/pari-mutuel caveats, and play instructions as dated DOM evidence.
+The strict rule parser gates every literal cell and both prose sections against
+a reviewed contract, preserving the $55,500 conditional-sharing language and
+all wager choices. Rule schedules are explicitly distinguished from actual
+payouts. Changed cells, omitted caveats, provenance changes and timezone-free
+retrievals reject; eighty-seven focused Arizona tests pass. This first contract
+does not complete the other rule families or linked full-detail review.
+
+The browser date selector defaulted to November 3 while Arizona local date was
+still November 2. No draw capture was adopted from that default; future-time
+gates remain in force. Future collection must explicitly select the intended
+Arizona date and retain it with the observation. No HTTP recovery, public feed,
+build or acceptance is claimed. November 6 09:15 EST deadline remains unchanged.
