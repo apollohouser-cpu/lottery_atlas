@@ -420,3 +420,17 @@ https://files.arizonalottery.com/past-180-days/Past180Days_Powerball.pdf
 No Arizona feed/build/acceptance is claimed. November 6 at 09:15 EST remains
 the supported-release deadline without extension. All four mobile beta
 prerequisites remain open.
+
+
+## November 3 afternoon — Money Roll literal rules
+
+Retained the six-row Money Roll prize/odds schedule and attached play/caveat
+sections at 20:20:13.655 UTC. Sixth reviewed inline rule contract preserves
+Quick Pick-only play, same-position dice matching, optional $1 Super Bonus and
+the literal conditional-sharing wording for five dice with 5X at $100,000.
+No inferred ticket positions, actual payouts or winner counts are introduced.
+All cells and both prose sections are change-gated; 97 focused Arizona tests
+pass. Remaining rules, linked full details, products, coupled collection,
+publication and native acceptance remain open. Direct HTTP recovery is not
+claimed; no Arizona feed/build/acceptance. November 6 09:15 EST deadline and
+all four open mobile beta prerequisites remain unchanged.

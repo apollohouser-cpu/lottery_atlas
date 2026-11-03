@@ -137,3 +137,29 @@ class OneToWinRulesTests(unittest.TestCase):
             else: bad['tables'][0][part]=''
             with self.assertRaises(ValueError): parse_capture(bad,'one-to-win')
         with self.assertRaises(ValueError): parse_capture(self.capture,'two-to-win')
+
+
+class MoneyRollRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/money-roll-rules.json').read_text())
+
+    def test_position_matching_and_literal_sharing_condition(self):
+        rule=parse_capture(self.capture,'money-roll')
+        self.assertEqual(len(rule['tables'][0]['rows']),6)
+        self.assertEqual(rule['tables'][0]['rows'][1],['5','$1,000','1 in 7,776'])
+        self.assertIn('same position',rule['howToPlay'])
+        self.assertIn('Quick Pick only',rule['howToPlay'])
+        self.assertIn('5 dice with 5X multiplier drawn is $100,000',rule['tables'][0]['sectionText'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_each_cell_and_prose_change_rejected(self):
+        for i,row in enumerate(self.capture['tables'][0]['rows']):
+            for j in range(len(row)):
+                bad=copy.deepcopy(self.capture);bad['tables'][0]['rows'][i][j]+=' changed'
+                with self.subTest(row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'money-roll')
+        for part in ('howToPlay','sectionText'):
+            bad=copy.deepcopy(self.capture)
+            if part=='howToPlay': bad[part]=''
+            else: bad['tables'][0][part]=''
+            with self.assertRaises(ValueError): parse_capture(bad,'money-roll')
+        with self.assertRaises(ValueError): parse_capture(self.capture,'one-to-win')
