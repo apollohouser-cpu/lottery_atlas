@@ -629,3 +629,15 @@ gated against changes; eighty-nine focused Arizona tests pass. Hi-Lo and Lucky
 Links are the two initial rule contracts; other families and linked full-detail
 review remain open. No feed/build/acceptance or transport recovery is claimed.
 November 6 09:15 EST supported-release deadline remains unchanged.
+
+## November 2 evening — 5 In-A-Line literal rules
+
+Retained the seven-row official prize/odds schedule with play instructions and
+attached caveats. Third reviewed rule contract preserves sequential prefix
+matching, Quick Pick-only play, optional Super Bonus and conditional sharing
+above $25,000. The source's literal “First Digits” table label is retained rather
+than silently rewritten to the result-detail table's “First Digit.” Rule prizes
+remain schedules, not actual payouts. All cells and prose are continuity-gated;
+ninety-one focused Arizona tests pass. Other rule families, linked full details,
+products, publication and native gates remain open. No feed/build/acceptance or
+HTTP recovery is claimed; November 6 09:15 EST deadline unchanged.
