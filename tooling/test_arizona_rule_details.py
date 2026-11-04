@@ -300,3 +300,25 @@ class MoneyRollDetailTests(unittest.TestCase):
             with self.assertRaises(ValueError):parse_capture(bad,'money-roll')
         bad=copy.deepcopy(self.capture);bad['sections']=[]
         with self.assertRaises(ValueError):parse_capture(bad,'money-roll')
+
+
+class FiveInALineDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/5-in-a-line-rule-details.json').read_text())
+
+    def test_ordered_digits_bonus_and_sharing_preserved(self):
+        rule=parse_capture(self.capture,'5-in-a-line');text=rule['sections'][0]['text']
+        self.assertIn('Quick Pick only',text)
+        self.assertIn('each from zero to nine',text)
+        self.assertIn('exact drawn order sequence',text)
+        self.assertIn('Super Bonus for $1 per play',text)
+        self.assertIn('above $25,000',text)
+        self.assertIn('4:30 AM',text)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_changed_order_and_liability_rejected(self):
+        for old,new in [('exact drawn order sequence','any order'),('above $25,000','above $5,000'),('zero to nine','one to nine')]:
+            bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(bad,'5-in-a-line')
+        bad=copy.deepcopy(self.capture);bad['sections']=[]
+        with self.assertRaises(ValueError):parse_capture(bad,'5-in-a-line')

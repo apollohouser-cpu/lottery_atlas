@@ -1028,3 +1028,16 @@ Arizona tests pass. Three Quick Draw linked-detail pages, products, coupled
 publication and native acceptance remain open. Previously reported deadline
 risk is unchanged; release remains November 6 09:15 EST. No feed/build/acceptance
 or HTTP recovery is claimed; all four beta prerequisites remain open.
+
+
+## November 4 — 5 In-A-Line linked details
+
+Retained complete linked instructions/FAQ/disclaimers with strict source,
+prose and link validation. Quick Pick-only five digits from zero through nine,
+exact drawn sequence, $1 play and optional $1 Super Bonus remain literal.
+Fifteen consecutive draws, 4:30 AM–11:30 PM drawings and the above-$25,000
+five-match/5X sharing condition are preserved without invented ticket positions.
+145 focused Arizona tests pass. Two Quick Draw linked-detail pages, products,
+coupled publication and native acceptance remain open. Previously reported
+release risk is unchanged; November 6 09:15 EST remains the deadline. No
+feed/build/acceptance or HTTP recovery is claimed; all four beta gates stay open.
