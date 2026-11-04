@@ -985,3 +985,18 @@ tests pass. Six Quick Draw linked-detail pages, products, coupled publication
 and native acceptance remain open. Previously reported release risk is unchanged;
 November 6 09:15 EST remains the deadline. No feed/build/acceptance or HTTP
 recovery is claimed; all four beta prerequisites remain open.
+
+
+## November 4 — One To Win linked details
+
+Retained complete linked instructions/FAQ/disclaimers with strict provenance
+and prose validation. The wager scales the selected $5–$250 draw prize; no
+separate bonus multiplier is inferred. Bet All, fifteen plays per ticket,
+fifteen consecutive draws, $1/$2/$5/$10/$20 wagers and 4:45 AM–11:45 PM drawings
+remain literal. Sharing applies to the $250 prize draw above $200,000, with
+per-dollar shares rounded down; the FAQ's generic jackpot wording is retained
+alongside that specific condition. 139 focused Arizona tests pass. Five Quick
+Draw linked-detail pages, products, coupled publication and native acceptance
+remain open. Previously reported deadline risk is unchanged; release remains
+November 6 09:15 EST. No feed/build/acceptance or HTTP recovery is claimed;
+all four beta prerequisites remain open.

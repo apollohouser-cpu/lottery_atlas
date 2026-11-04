@@ -237,3 +237,24 @@ class LuckyLinksDetailTests(unittest.TestCase):
             with self.assertRaises(ValueError):parse_capture(bad,'lucky-links')
         bad=copy.deepcopy(self.capture);bad['sections']=[]
         with self.assertRaises(ValueError):parse_capture(bad,'lucky-links')
+
+
+class OneToWinDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/one-to-win-rule-details.json').read_text())
+
+    def test_wager_is_not_an_extra_draw_multiplier(self):
+        rule=parse_capture(self.capture,'one-to-win');text=rule['sections'][0]['text']
+        self.assertIn('Your wager acts as a multiplier',text)
+        self.assertIn('Bet All',text)
+        self.assertIn('$250 prize draw is above $200,000',text)
+        self.assertIn('rounded down to the nearest dollar',text)
+        self.assertIn('4:45 AM',text)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_changed_liability_wager_and_missing_sections_rejected(self):
+        for old,new in [('$200,000','$250,000'),('rounded down','rounded up'),('fifteen times','twenty times')]:
+            bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(bad,'one-to-win')
+        bad=copy.deepcopy(self.capture);bad['sections']=[]
+        with self.assertRaises(ValueError):parse_capture(bad,'one-to-win')
