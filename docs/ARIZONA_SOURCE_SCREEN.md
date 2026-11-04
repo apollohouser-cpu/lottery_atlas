@@ -652,3 +652,18 @@ individual prize-tier odds. Twelve consecutive dates, daily drawings and the
 details, products, coupled acquisition, publication and native acceptance
 remain open. No feed/build/acceptance or HTTP recovery is claimed. November 6
 09:15 EST deadline and all four beta prerequisites remain unchanged.
+
+
+## November 4 — Pick 3 linked play-type details
+
+Retained both official linked instructions/FAQ sections and exact source links.
+The reviewed contract preserves Straight, repeated-digit Box 3-Way,
+all-distinct Box 6-Way, Straight/Box, Front Pair and Back Pair definitions;
+these six play-type families remain distinct from the nine inline prize rows.
+One/two sets of 000–999, $1 game cost for either play count, midday/evening
+cutoffs, twelve consecutive drawings and number-specific sales limits remain
+literal. No ticket positions or available inventory are inferred from those
+limits. 129 focused Arizona tests pass. Remaining linked details, products,
+coupled acquisition, publication and native acceptance stay open. No Arizona
+feed/build/acceptance or HTTP recovery is claimed. November 6 09:15 EST deadline
+and all four beta prerequisites remain unchanged.

@@ -126,3 +126,28 @@ class FantasyFiveDetailTests(unittest.TestCase):
                 with self.assertRaises(ValueError):parse_capture(bad,'fantasy-5')
         bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace('does not apply','applies')
         with self.assertRaises(ValueError):parse_capture(bad,'fantasy-5')
+
+
+class PickThreeDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/pick-3-rule-details.json').read_text())
+
+    def test_box_semantics_and_two_sessions_preserved(self):
+        rule=parse_capture(self.capture,'pick-3');text=rule['sections'][0]['text']
+        self.assertIn('Two of the three numbers you select must be the same',text)
+        self.assertIn('All three of the numbers you select must be different',text)
+        self.assertIn('000 – 999',text)
+        self.assertIn('maximum sales limit',rule['sections'][1]['text'])
+        self.assertIn('11:59 AM',rule['sections'][1]['text'])
+        self.assertIn('6:59 PM',rule['sections'][1]['text'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_changed_box_definition_and_missing_limits_rejected(self):
+        for i,section in enumerate(self.capture['sections']):
+            bad=copy.deepcopy(self.capture);bad['sections'][i]['text']=''
+            with self.assertRaises(ValueError):parse_capture(bad,'pick-3')
+            for j in range(len(section['links'])):
+                bad=copy.deepcopy(self.capture);bad['sections'][i]['links'][j]['href']='https://example.com/'
+                with self.assertRaises(ValueError):parse_capture(bad,'pick-3')
+        bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace('must be the same','must be different')
+        with self.assertRaises(ValueError):parse_capture(bad,'pick-3')
