@@ -785,3 +785,20 @@ are change-gated; 111 focused Arizona tests pass. Linked full details, remaining
 regular rules, products, coupled collection, publication and native acceptance
 remain open. No feed/build/acceptance or HTTP recovery is claimed. November 6
 09:15 EST deadline and all four open beta prerequisites remain unchanged.
+
+
+## November 3 late evening — Mega Millions inline rules
+
+Retained the official browser DOM at November 4 04:33:04.128 UTC. Fourteenth
+inline rule contract preserves nine matching tiers with distinct white-ball
+and Mega Ball symbols, all eight nested multiplier prize schedules, and the
+separate five-row multiplier-odds schedule. Literal nested accessibility labels
+are retained; matching tiers use the observed symbols rather than interpreting
+those labels as white-ball counts. Jackpot-sharing and no-jackpot-multiplier
+caveats, seasonal Arizona sales cutoffs, and $5 play instructions remain intact.
+All table cells, nested schedules, symbols and prose are change-gated; 113
+focused Arizona tests pass. This is a rule observation, not a draw-wide
+multiplier or actual payout report. Linked full details, remaining regular
+rules, products, coupled acquisition, publication and native acceptance remain
+open. No Arizona feed/build/acceptance or direct HTTP recovery is claimed.
+Release remains November 6 09:15 EST; all four beta prerequisites remain open.
