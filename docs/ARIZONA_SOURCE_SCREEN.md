@@ -621,3 +621,18 @@ Arizona tests pass. Other linked details, products, coupled acquisition,
 publication and native acceptance remain open. No feed/build/acceptance or
 HTTP recovery is claimed; November 6 09:15 EST release deadline and all four
 open beta prerequisites remain unchanged.
+
+
+## November 4 — The Pick linked details and Plus schedules
+
+Retained both full instruction/FAQ sections and individually opened all five
+Plus prize accordions ($1–$5 labels). Their separate observations are included
+in the strict detail contract; the ordinary section capture was taken with
+$5 expanded. Repeat capture must use that same documented expansion state.
+Plus remains a separately printed instant game with ticket-specific odds, not
+a draw multiplier or result. The five-board printing increment, $1-per-game
+add-on wording, jackpot cash-default wording, annuity-factor/pool definitions
+and 6:59 PM cutoff remain literal. 125 focused Arizona tests pass. Other
+linked details, products, coupled acquisition, publication and native
+acceptance remain open. No feed/build/acceptance or HTTP recovery is claimed;
+November 6 09:15 EST deadline and all four beta prerequisites remain unchanged.

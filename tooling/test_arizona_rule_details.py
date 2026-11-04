@@ -79,3 +79,26 @@ class MegaMillionsDetailTests(unittest.TestCase):
         for old,new in [('1 – 24','1 – 25'),('$5','$2')]:
             bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace(old,new)
             with self.assertRaises(ValueError):parse_capture(bad,'mega-millions')
+
+
+class ThePickDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/the-pick-rule-details.json').read_text())
+
+    def test_all_five_plus_schedules_and_cash_default_preserved(self):
+        rule=parse_capture(self.capture,'the-pick')
+        self.assertEqual(len(rule['sections']),7)
+        self.assertEqual([s['text'].splitlines()[0] for s in rule['sections'][2:]],
+                         [f'${i} The Pick Plus game' for i in range(1,6)])
+        self.assertIn('$2, $5, $10, $20',rule['sections'][2]['text'])
+        self.assertIn('$47, $50.',rule['sections'][6]['text'])
+        self.assertIn('prints and plays separately',rule['sections'][0]['text'])
+        self.assertIn('paid as a lump sum of cash',rule['sections'][1]['text'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_lost_accordion_or_changed_prose_rejected(self):
+        for i in range(len(self.capture['sections'])):
+            bad=copy.deepcopy(self.capture);bad['sections'].pop(i)
+            with self.assertRaises(ValueError):parse_capture(bad,'the-pick')
+            bad=copy.deepcopy(self.capture);bad['sections'][i]['text']+=' changed'
+            with self.assertRaises(ValueError):parse_capture(bad,'the-pick')
