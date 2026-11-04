@@ -32,3 +32,25 @@ class RuleDetailsTests(unittest.TestCase):
         with self.assertRaises(ValueError):parse_capture(bad,'powerball')
         bad=copy.deepcopy(self.capture);bad['sections'].pop()
         with self.assertRaises(ValueError):parse_capture(bad,'powerball')
+
+
+class XsOsDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/powerball-xs-os-rule-details.json').read_text())
+
+    def test_conflicting_cutoff_is_disclosed_not_normalized(self):
+        rule=parse_capture(self.capture,'powerball-xs-os')
+        self.assertIn('8:59 p.m.',rule['sections'][0]['text'])
+        self.assertIn('5:59/6:59',rule['sourceConflicts'][0])
+        self.assertNotIn('salesCutoff',rule)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+        rule['sourceConflicts'].clear()
+        self.assertEqual(len(parse_capture(self.capture,'powerball-xs-os')['sourceConflicts']),1)
+
+    def test_removed_conflicting_prose_or_source_links_rejected(self):
+        for i,section in enumerate(self.capture['sections']):
+            bad=copy.deepcopy(self.capture);bad['sections'][i]['text']=''
+            with self.assertRaises(ValueError):parse_capture(bad,'powerball-xs-os')
+            for j in range(len(section['links'])):
+                bad=copy.deepcopy(self.capture);bad['sections'][i]['links'][j]['href']='https://example.com/'
+                with self.assertRaises(ValueError):parse_capture(bad,'powerball-xs-os')

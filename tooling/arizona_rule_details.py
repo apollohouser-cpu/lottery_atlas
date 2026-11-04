@@ -5,6 +5,13 @@ from datetime import datetime
 from pathlib import Path
 
 CONTRACTS = json.loads(Path(__file__).with_name('arizona_rule_detail_contracts.json').read_text())
+SOURCE_CONFLICTS = {
+    'powerball-xs-os': [
+        'Sales cutoff unresolved: the product page states 5:59/6:59 PM Arizona '
+        'time seasonally; the linked details state 8:59/9:59 PM. Neither is '
+        'selected as a normalized cutoff.'
+    ]
+}
 
 
 def parse_capture(capture, game):
@@ -20,4 +27,5 @@ def parse_capture(capture, game):
     if any(capture[key] != value for key, value in CONTRACTS[game].items()):
         raise ValueError('reviewed rule detail changed')
     return dict(game=game, **copy.deepcopy(capture), recordType='game-rule-details',
-                actualPayoutsAvailable=False)
+                actualPayoutsAvailable=False,
+                sourceConflicts=copy.deepcopy(SOURCE_CONFLICTS.get(game, [])))

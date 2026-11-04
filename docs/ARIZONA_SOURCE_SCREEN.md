@@ -591,3 +591,19 @@ of this linked Powerball page only; other linked details, products, coupled
 acquisition, publication and native acceptance remain open. 119 focused Arizona
 tests pass. No feed/build/acceptance or HTTP recovery is claimed; November 6
 09:15 EST deadline and all four beta prerequisites remain unchanged.
+
+
+## November 4 — Xs & Os linked details and source conflict
+
+Retained the linked how-to-play instructions and FAQ, with exact prose/link
+validation. A named source conflict is now explicit in parser output: the
+product page states seasonal sales cutoffs of 5:59/6:59 PM Arizona time, while
+the linked details state 8:59/9:59 PM. Neither is selected as a normalized
+cutoff; both observations remain intact for source review. This does not affect
+the retained draw results and is not a reason to invent a corrected rule.
+Linked-page review preserves Sunday draws, 8-of-32 selection, $5 play, up to
+ten consecutive dates, 180-day claims and lower-tier pari-mutuel caveats.
+121 focused Arizona tests pass. Other linked rules, products, coupled
+acquisition, publication and native acceptance remain open. No Arizona
+feed/build/acceptance or HTTP recovery is claimed; November 6 09:15 EST release
+deadline and all four open beta prerequisites remain unchanged.
