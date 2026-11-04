@@ -799,3 +799,18 @@ coverage only: products, coupled repeat acquisition/publication, application
 integration and native acceptance remain open. Previously reported release risk
 is unchanged; November 6 09:15 EST remains the deadline. No feed/build/acceptance
 or HTTP recovery is claimed; all four beta gates remain open.
+
+
+## November 4 — first Scratchers detail capture and tier validator
+
+Captured Set For Life #1401 after its dynamic prize rows rendered: seven prize
+tiers, literal remaining/original prize counts and odds, $50 ticket price and
+January 31, 2023 start date. An initially empty table is rejected, not imported
+as zero prizes. The tier validator rejects impossible counts, invalid odds and
+changed product identity. Remaining prizes are not ticket inventory. Three
+rule-symbol image URLs have blank alt text; their meanings remain unverified,
+and no symbol interpretation or complete product-rule acceptance is claimed.
+153 focused Arizona tests pass. This is the first detail fixture, not completion
+of the 58-product Scratchers or 25-product Fast Play matrix. Repeat acquisition,
+publication, app/native and all beta gates remain open. Previously reported
+release risk and November 6 09:15 EST deadline are unchanged.
