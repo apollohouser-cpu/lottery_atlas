@@ -388,3 +388,35 @@ class MegaMillionsRulesTests(unittest.TestCase):
         with self.assertRaises(ValueError): parse_capture(bad,'mega-millions')
         bad=copy.deepcopy(self.capture);bad['tables'].pop()
         with self.assertRaises(ValueError): parse_capture(bad,'mega-millions')
+
+
+class PowerballRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/powerball-rules.json').read_text())
+
+    def test_double_play_and_fixed_match_five_power_play_remain_distinct(self):
+        rule=parse_capture(self.capture,'powerball');base,double=rule['tables']
+        for table in (base,double):
+            symbols=[r[0] for r in table['matchingSymbols'] if r[0]]
+            self.assertEqual([(s.count('winning-ball'),s.count('winning-ball m')) for s in symbols],
+                             [(5,1),(5,0),(4,1),(4,0),(3,1),(3,0),(2,1),(1,1),(0,1)])
+        self.assertEqual(base['nestedTables'][0]['rows'],[['x2: $2,000,000']])
+        self.assertEqual(double['rows'][1][1],'$10 Million*')
+        self.assertIn('Power Play does not apply to Double Play prizes',base['sectionText'])
+        self.assertIn('$150,000,000 or less',base['sectionText'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_all_schedule_cells_symbols_and_caveats_are_gated(self):
+        for t,table in enumerate(self.capture['tables']):
+            for i,row in enumerate(table['rows']):
+                for j in range(len(row)):
+                    bad=copy.deepcopy(self.capture);bad['tables'][t]['rows'][i][j]+=' changed'
+                    with self.subTest(table=t,row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'powerball')
+            bad=copy.deepcopy(self.capture);bad['tables'][t]['matchingSymbols'][1][0][-1]='winning-ball'
+            with self.assertRaises(ValueError): parse_capture(bad,'powerball')
+            bad=copy.deepcopy(self.capture);bad['tables'][t]['sectionText']=''
+            with self.assertRaises(ValueError): parse_capture(bad,'powerball')
+        for n,table in enumerate(self.capture['tables'][0]['nestedTables']):
+            for j in range(len(table['rows'][0])):
+                bad=copy.deepcopy(self.capture);bad['tables'][0]['nestedTables'][n]['rows'][0][j]='changed'
+                with self.assertRaises(ValueError): parse_capture(bad,'powerball')

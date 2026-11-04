@@ -802,3 +802,18 @@ multiplier or actual payout report. Linked full details, remaining regular
 rules, products, coupled acquisition, publication and native acceptance remain
 open. No Arizona feed/build/acceptance or direct HTTP recovery is claimed.
 Release remains November 6 09:15 EST; all four beta prerequisites remain open.
+
+
+## November 4 — Powerball, Power Play and Double Play inline rules
+
+Retained the official browser DOM at 2026-11-04T05:28:20.809Z. Fifteenth inline
+rule contract retains both nine-tier schedules with distinct white-ball and
+Powerball symbols, plus all eight nested Power Play schedules. Match-five's
+fixed $2 million Power Play prize, the $150 million 10X eligibility ceiling,
+jackpot sharing and exclusions of Power Play from jackpots and Double Play
+remain explicit. No actual payout totals or ticket positions are inferred.
+All schedules, symbols and attached caveats are change-gated; 115 focused
+Arizona tests pass. Xs & Os inline rules, linked full details, products, coupled
+acquisition, publication and native acceptance remain open. No Arizona
+feed/build/acceptance or direct HTTP recovery is claimed. November 6 09:15 EST
+release deadline and all four beta prerequisites remain unchanged.
