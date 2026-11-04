@@ -54,3 +54,28 @@ class XsOsDetailTests(unittest.TestCase):
             for j in range(len(section['links'])):
                 bad=copy.deepcopy(self.capture);bad['sections'][i]['links'][j]['href']='https://example.com/'
                 with self.assertRaises(ValueError):parse_capture(bad,'powerball-xs-os')
+
+
+class MegaMillionsDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/mega-millions-rule-details.json').read_text())
+
+    def test_current_matrix_and_jackpot_exception_remain_literal(self):
+        rule=parse_capture(self.capture,'mega-millions')
+        self.assertIn('Five white balls (1 – 70)',rule['sections'][0]['text'])
+        self.assertIn('One Mega Ball number (1 – 24)',rule['sections'][0]['text'])
+        self.assertIn('tickets cost $5 per game',rule['sections'][0]['text'])
+        self.assertIn('Multipliers do not apply to the jackpot',rule['sections'][1]['text'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+        self.assertNotIn('drawMultiplier',rule)
+
+    def test_changed_matrix_cutoff_and_links_fail_closed(self):
+        for i,section in enumerate(self.capture['sections']):
+            bad=copy.deepcopy(self.capture);bad['sections'][i]['text']=''
+            with self.assertRaises(ValueError):parse_capture(bad,'mega-millions')
+            for j in range(len(section['links'])):
+                bad=copy.deepcopy(self.capture);bad['sections'][i]['links'][j]['href']='https://example.com/'
+                with self.assertRaises(ValueError):parse_capture(bad,'mega-millions')
+        for old,new in [('1 – 24','1 – 25'),('$5','$2')]:
+            bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(bad,'mega-millions')

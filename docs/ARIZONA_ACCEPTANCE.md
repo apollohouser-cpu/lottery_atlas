@@ -864,3 +864,17 @@ ten consecutive dates, 180-day claims and lower-tier pari-mutuel caveats.
 acquisition, publication and native acceptance remain open. No Arizona
 feed/build/acceptance or HTTP recovery is claimed; November 6 09:15 EST release
 deadline and all four open beta prerequisites remain unchanged.
+
+
+## November 4 — Mega Millions linked details
+
+Retained and reviewed the official linked instructions and FAQ in two complete
+sections, with exact title/source/prose/link validation. Current $5 play and
+5-of-70 plus 1-of-24 selections, Tuesday/Friday draws, claim and seasonal cutoff
+wording, and the jackpot multiplier exclusion are preserved. This page does
+not establish an assignment mechanism for the displayed multiplier schedule;
+no draw-wide multiplier or additional mechanism is inferred. 123 focused
+Arizona tests pass. Other linked details, products, coupled acquisition,
+publication and native acceptance remain open. No feed/build/acceptance or
+HTTP recovery is claimed; November 6 09:15 EST release deadline and all four
+open beta prerequisites remain unchanged.
