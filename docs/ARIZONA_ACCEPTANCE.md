@@ -893,3 +893,19 @@ and 6:59 PM cutoff remain literal. 125 focused Arizona tests pass. Other
 linked details, products, coupled acquisition, publication and native
 acceptance remain open. No feed/build/acceptance or HTTP recovery is claimed;
 November 6 09:15 EST deadline and all four beta prerequisites remain unchanged.
+
+
+## November 4 — Fantasy 5 linked details, EXTRA! and Doubler
+
+Retained both official linked instruction/FAQ sections with strict source,
+title, prose and link validation. EXTRA! stays a separate instant game: $1/$2
+options, up to $250/$500, five ticket numbers and cumulative matching prizes;
+its numbers are explicitly unrelated to draw results. The approximate one-in-ten
+Doubler designation applies to non-jackpot prizes and excludes EXTRA!, rather
+than supplying a draw-wide multiplier. Both the displayed 1-in-3.8 overall
+EXTRA! odds and the footnote that odds vary are retained without inventing
+individual prize-tier odds. Twelve consecutive dates, daily drawings and the
+6:59 PM cutoff remain literal. 127 focused Arizona tests pass. Other linked
+details, products, coupled acquisition, publication and native acceptance
+remain open. No feed/build/acceptance or HTTP recovery is claimed. November 6
+09:15 EST deadline and all four beta prerequisites remain unchanged.

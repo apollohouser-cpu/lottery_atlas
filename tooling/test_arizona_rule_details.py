@@ -102,3 +102,27 @@ class ThePickDetailTests(unittest.TestCase):
             with self.assertRaises(ValueError):parse_capture(bad,'the-pick')
             bad=copy.deepcopy(self.capture);bad['sections'][i]['text']+=' changed'
             with self.assertRaises(ValueError):parse_capture(bad,'the-pick')
+
+
+class FantasyFiveDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/fantasy-5-rule-details.json').read_text())
+
+    def test_extra_is_separate_and_doubler_exclusions_preserved(self):
+        rule=parse_capture(self.capture,'fantasy-5');text=rule['sections'][0]['text']
+        self.assertIn('EXTRA! numbers are not associated with draw numbers',text)
+        self.assertIn('The Doubler feature does not apply to EXTRA!',text)
+        self.assertIn('Approximately one in every 10 tickets',text)
+        self.assertIn('doubles all non-jackpot prizes',text)
+        self.assertIn('up to 12 consecutive drawing dates',rule['sections'][1]['text'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_lost_exclusions_or_changed_links_rejected(self):
+        for i,section in enumerate(self.capture['sections']):
+            bad=copy.deepcopy(self.capture);bad['sections'][i]['text']=''
+            with self.assertRaises(ValueError):parse_capture(bad,'fantasy-5')
+            for j in range(len(section['links'])):
+                bad=copy.deepcopy(self.capture);bad['sections'][i]['links'][j]['href']='https://example.com/'
+                with self.assertRaises(ValueError):parse_capture(bad,'fantasy-5')
+        bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace('does not apply','applies')
+        with self.assertRaises(ValueError):parse_capture(bad,'fantasy-5')
