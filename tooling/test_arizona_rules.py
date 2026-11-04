@@ -249,3 +249,30 @@ class FantasyFiveRulesTests(unittest.TestCase):
             if part=='howToPlay': bad[part]=''
             else: bad['tables'][0][part]=''
             with self.assertRaises(ValueError): parse_capture(bad,'fantasy-5')
+
+
+class ThePickRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/the-pick-rules.json').read_text())
+
+    def test_symbolic_match_tiers_and_extra_caveat_preserved(self):
+        rule=parse_capture(self.capture,'the-pick');table=rule['tables'][0]
+        self.assertEqual([r[0] for r in table['matchingSymbols'][1:5]],[6,5,4,3])
+        self.assertEqual([r[1] for r in table['rows'][1:5]],['Jackpot*','$1,000','$25','$2'])
+        self.assertIn('cost $2 per game',rule['howToPlay'])
+        self.assertIn('Odds vary per Plus game',table['sectionText'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_symbol_changes_and_lost_caveats_rejected(self):
+        for i in range(1,5):
+            bad=copy.deepcopy(self.capture);bad['tables'][0]['matchingSymbols'][i][0]-=1
+            with self.subTest(row=i),self.assertRaises(ValueError): parse_capture(bad,'the-pick')
+        for i,row in enumerate(self.capture['tables'][0]['rows']):
+            for j in range(len(row)):
+                bad=copy.deepcopy(self.capture);bad['tables'][0]['rows'][i][j]+=' changed'
+                with self.subTest(row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'the-pick')
+        for part in ('howToPlay','sectionText'):
+            bad=copy.deepcopy(self.capture)
+            if part=='howToPlay': bad[part]=''
+            else: bad['tables'][0][part]=''
+            with self.assertRaises(ValueError): parse_capture(bad,'the-pick')

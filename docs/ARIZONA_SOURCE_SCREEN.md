@@ -476,3 +476,17 @@ are rules, not actual payout reports. 103 focused Arizona tests pass. Remaining
 regular rules, products, coupled acquisition, publication and native acceptance
 remain open. No feed/build/acceptance or HTTP recovery is claimed. November 6
 09:15 EST release deadline and all four open beta prerequisites are unchanged.
+
+
+## November 3 evening — The Pick current inline rules
+
+Retained The Pick's six-row schedule and play/caveat sections at November 4
+00:25:16.799 UTC (November 3 local). Tenth inline rule contract preserves
+observed 6/5/4/3 matching-ball symbols, current $2 play price, jackpot sharing
+and the note that Plus odds vary by game. The site's separate built-in multiplier
+and Plus details still require linked full-detail review; this base schedule
+alone does not complete those add-ons. 105 focused Arizona tests pass, including
+symbol/cell changes and lost caveats. No actual payouts, feed/build/acceptance or
+HTTP recovery is claimed. Remaining rules/products, coupled acquisition,
+publication and native gates remain open. November 6 09:15 EST deadline and
+all four open mobile beta prerequisites remain unchanged.
