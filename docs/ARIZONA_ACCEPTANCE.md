@@ -924,3 +924,17 @@ limits. 129 focused Arizona tests pass. Remaining linked details, products,
 coupled acquisition, publication and native acceptance stay open. No Arizona
 feed/build/acceptance or HTTP recovery is claimed. November 6 09:15 EST deadline
 and all four beta prerequisites remain unchanged.
+
+
+## November 4 — Pick 4 linked details and named source discrepancies
+
+Retained the official linked instructions and FAQ. Two discrepancies are
+explicit in parser output: the Box 24-Way paragraph says two digits differ,
+while the player tip and Straight/Box 24-Way say all four differ; and the FAQ
+odds link points to Pick 3. Neither is silently corrected or used to derive a
+matching algorithm/Pick 4 odds. The independent inline Pick 4 schedule remains
+intact. Twelve listed play types, pair positions, both daily cutoffs and
+number-specific sales limits are retained as prose. 131 focused Arizona tests
+pass. Other linked details, products, coupled acquisition, publication and
+native acceptance remain open. No feed/build/acceptance or HTTP recovery is
+claimed. November 6 09:15 EST deadline and all four beta prerequisites unchanged.

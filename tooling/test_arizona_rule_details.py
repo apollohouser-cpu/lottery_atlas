@@ -151,3 +151,24 @@ class PickThreeDetailTests(unittest.TestCase):
                 with self.assertRaises(ValueError):parse_capture(bad,'pick-3')
         bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace('must be the same','must be different')
         with self.assertRaises(ValueError):parse_capture(bad,'pick-3')
+
+
+class PickFourDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/pick-4-rule-details.json').read_text())
+
+    def test_conflicting_box_wording_and_wrong_odds_link_disclosed(self):
+        rule=parse_capture(self.capture,'pick-4')
+        self.assertEqual(len(rule['sourceConflicts']),2)
+        self.assertIn('All four numbers selected are different',rule['sections'][0]['text'])
+        self.assertIn('two of the four numbers selected are different',rule['sections'][0]['text'])
+        self.assertTrue(any(link['href'].endswith('/pick-3/') for link in rule['sections'][1]['links']))
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_silent_source_corrections_rejected(self):
+        bad=copy.deepcopy(self.capture)
+        bad['sections'][0]['text']=bad['sections'][0]['text'].replace('two of the four numbers selected are different','all four numbers selected are different')
+        with self.assertRaises(ValueError):parse_capture(bad,'pick-4')
+        bad=copy.deepcopy(self.capture)
+        for link in bad['sections'][1]['links']:link['href']=link['href'].replace('/pick-3/','/pick-4/')
+        with self.assertRaises(ValueError):parse_capture(bad,'pick-4')

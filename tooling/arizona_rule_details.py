@@ -6,6 +6,13 @@ from pathlib import Path
 
 CONTRACTS = json.loads(Path(__file__).with_name('arizona_rule_detail_contracts.json').read_text())
 SOURCE_CONFLICTS = {
+    'pick-4': [
+        'Box 24-Way wording conflicts: the player tip says all four digits '
+        'differ, while the Box 24-Way paragraph says two differ. Preserve both; '
+        'do not normalize the latter into a matching algorithm.',
+        'The Pick 4 FAQ odds link points to Pick 3. It is retained as source '
+        'evidence, not treated as a Pick 4 odds source.'
+    ],
     'powerball-xs-os': [
         'Sales cutoff unresolved: the product page states 5:59/6:59 PM Arizona '
         'time seasonally; the linked details state 8:59/9:59 PM. Neither is '
