@@ -784,3 +784,18 @@ five-match/5X sharing condition are preserved without invented ticket positions.
 coupled publication and native acceptance remain open. Previously reported
 release risk is unchanged; November 6 09:15 EST remains the deadline. No
 feed/build/acceptance or HTTP recovery is claimed; all four beta gates stay open.
+
+
+## November 4 — remaining Quick Draw linked details
+
+Retained complete 5/10/45 and Pick Your Bet linked instructions/FAQ/disclaimers.
+5/10/45 keeps its alternative Bullseye/double-cost and Super Bonus/triple-cost
+choices, literal multiplier set and above-$200,000 five-match/20X sharing rule.
+Pick Your Bet retains $2/$4/$6/$10/$20 wagers and a bonus costing the base wager;
+its mistaken Two to Win claim heading is disclosed without changing identity.
+149 focused Arizona tests pass. All sixteen draw-product linked-detail sources
+now have reviewed observations and strict contracts. This is source-parser
+coverage only: products, coupled repeat acquisition/publication, application
+integration and native acceptance remain open. Previously reported release risk
+is unchanged; November 6 09:15 EST remains the deadline. No feed/build/acceptance
+or HTTP recovery is claimed; all four beta gates remain open.

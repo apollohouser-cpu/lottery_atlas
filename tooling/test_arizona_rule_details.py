@@ -322,3 +322,33 @@ class FiveInALineDetailTests(unittest.TestCase):
             with self.assertRaises(ValueError):parse_capture(bad,'5-in-a-line')
         bad=copy.deepcopy(self.capture);bad['sections']=[]
         with self.assertRaises(ValueError):parse_capture(bad,'5-in-a-line')
+
+
+class RemainingQuickDrawDetailTests(unittest.TestCase):
+    def capture(self,game):
+        return json.loads((Path(__file__).parent/f'fixtures/arizona/{game}-rule-details.json').read_text())
+
+    def test_51045_alternative_addons_and_costs(self):
+        rule=parse_capture(self.capture('51045'),'51045');text=rule['sections'][0]['text']
+        for phrase in ['one of two add-ons', 'double the cost', 'triple the cost',
+                       '2X, 3X, 4X, 5X, 6X, 10X, 12X and 20X', 'above $200,000', '4:15 AM']:
+            self.assertIn(phrase,text)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_pick_your_bet_wager_cost_and_source_label(self):
+        rule=parse_capture(self.capture('pick-your-bet'),'pick-your-bet');text=rule['sections'][0]['text']
+        for phrase in ['$2, $4, $6, $10, or $20', 'same cost as your base wager', '1 - 38', '4:40 AM']:
+            self.assertIn(phrase,text)
+        self.assertEqual(len(rule['sourceConflicts']),1)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_addon_cost_changes_fail_closed(self):
+        for game,old,new in [('51045','triple the cost','double the cost'),
+                             ('pick-your-bet','same cost as your base wager','$1')]:
+            bad=self.capture(game);bad['sections'][0]['text']=bad['sections'][0]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(bad,game)
+
+    def test_missing_caveats_fail_closed(self):
+        for game in ['51045','pick-your-bet']:
+            bad=self.capture(game);bad['sections'][0]['text']=bad['sections'][0]['text'].split('DISCLAIMERS')[0]
+            with self.assertRaises(ValueError):parse_capture(bad,game)

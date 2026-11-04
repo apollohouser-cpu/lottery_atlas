@@ -6,6 +6,10 @@ from pathlib import Path
 
 CONTRACTS = json.loads(Path(__file__).with_name('arizona_rule_detail_contracts.json').read_text())
 SOURCE_CONFLICTS = {
+    'pick-your-bet': [
+        'The linked Pick Your Bet claim FAQ heading names Two to Win. '
+        'Retain the source label without changing the game identity.'
+    ],
     'hi-lo': [
         'Linked Hi-Lo instructions refer to a two-digit number and a Two to '
         'Win claim heading. These labels are preserved literally; they do '
