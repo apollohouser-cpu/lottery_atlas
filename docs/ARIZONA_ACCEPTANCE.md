@@ -938,3 +938,22 @@ number-specific sales limits are retained as prose. 131 focused Arizona tests
 pass. Other linked details, products, coupled acquisition, publication and
 native acceptance remain open. No feed/build/acceptance or HTTP recovery is
 claimed. November 6 09:15 EST deadline and all four beta prerequisites unchanged.
+
+
+## November 4 — Triple Twist linked details; release risk review
+
+Retained complete linked instructions/FAQ with exact source, prose and link
+validation. First-row selection, two computer-selected rows, up to four wins,
+daily draws and twelve consecutive dates remain ticket rules, not invented
+positions. A named cutoff conflict is disclosed: the product page says 6:59 PM
+Arizona time, while linked details say seasonal 6:59/7:59 PM. Neither is
+normalized. 133 focused Arizona tests pass. All eight regular draw pages now
+have linked-detail observations; the eight Quick Draw details still need review.
+
+At November 4 14:44 UTC, fewer than 48 elapsed hours remain before the unchanged
+November 6 14:15 UTC release deadline. Release is at risk: product detail capture,
+coupled repeat acquisition/publication, application integration and native
+acceptance are still open. Parser tests alone do not close those gates. No
+extension, scope reduction, feed/build/acceptance or HTTP recovery is claimed.
+All four beta prerequisites remain open. Next work must close the remaining
+source matrix and coupled publication path, followed by bounded native checks.

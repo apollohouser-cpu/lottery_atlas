@@ -172,3 +172,24 @@ class PickFourDetailTests(unittest.TestCase):
         bad=copy.deepcopy(self.capture)
         for link in bad['sections'][1]['links']:link['href']=link['href'].replace('/pick-3/','/pick-4/')
         with self.assertRaises(ValueError):parse_capture(bad,'pick-4')
+
+
+class TripleTwistDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/triple-twist-rule-details.json').read_text())
+
+    def test_three_rows_are_ticket_rules_and_cutoff_conflict_disclosed(self):
+        rule=parse_capture(self.capture,'triple-twist')
+        self.assertIn('remaining two rows of six numbers',rule['sections'][0]['text'])
+        self.assertIn('up to four times on a single game',rule['sections'][0]['text'])
+        self.assertIn('7:59 pm',rule['sections'][1]['text'])
+        self.assertIn('Sales cutoff unresolved',rule['sourceConflicts'][0])
+        self.assertNotIn('ticketPositions',rule)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_changed_rows_or_silently_corrected_cutoff_rejected(self):
+        for i,old,new in [(0,'remaining two rows','remaining three rows'),(1,'7:59 pm','6:59 pm')]:
+            bad=copy.deepcopy(self.capture);bad['sections'][i]['text']=bad['sections'][i]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(bad,'triple-twist')
+        bad=copy.deepcopy(self.capture);bad['sections'].pop()
+        with self.assertRaises(ValueError):parse_capture(bad,'triple-twist')

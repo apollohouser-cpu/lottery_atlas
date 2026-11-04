@@ -6,6 +6,11 @@ from pathlib import Path
 
 CONTRACTS = json.loads(Path(__file__).with_name('arizona_rule_detail_contracts.json').read_text())
 SOURCE_CONFLICTS = {
+    'triple-twist': [
+        'Sales cutoff unresolved: the product page states 6:59 PM Arizona '
+        'time; linked details state seasonal 6:59/7:59 PM. Neither is '
+        'selected as a normalized cutoff.'
+    ],
     'pick-4': [
         'Box 24-Way wording conflicts: the player tip says all four digits '
         'differ, while the Box 24-Way paragraph says two differ. Preserve both; '
