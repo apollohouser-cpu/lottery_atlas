@@ -490,3 +490,16 @@ symbol/cell changes and lost caveats. No actual payouts, feed/build/acceptance o
 HTTP recovery is claimed. Remaining rules/products, coupled acquisition,
 publication and native gates remain open. November 6 09:15 EST deadline and
 all four open mobile beta prerequisites remain unchanged.
+
+
+## November 3 evening — Pick 3 play-specific rules
+
+Retained Pick 3's ten-row inline schedule and complete attached caveats at
+November 4 01:24:49.616 UTC (November 3 local). Eleventh inline rule contract
+keeps the one-play/two-play prize columns distinct, all nine named wager rows,
+000–999 selection, midday/evening sales cutoffs and number-specific sales-limit
+notice. All cells and both prose sections are change-gated; 107 focused Arizona
+tests pass. Linked full details, other regular rules, products, coupled
+acquisition, publication and native acceptance remain open. No feed/build/
+acceptance or HTTP recovery is claimed. November 6 09:15 EST deadline and all
+four open mobile beta prerequisites remain unchanged.

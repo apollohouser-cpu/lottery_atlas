@@ -276,3 +276,28 @@ class ThePickRulesTests(unittest.TestCase):
             if part=='howToPlay': bad[part]=''
             else: bad['tables'][0][part]=''
             with self.assertRaises(ValueError): parse_capture(bad,'the-pick')
+
+
+class PickThreeRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/pick-3-rules.json').read_text())
+
+    def test_play_columns_and_sales_limits_remain_distinct(self):
+        rule=parse_capture(self.capture,'pick-3');table=rule['tables'][0]
+        self.assertEqual(len(table['rows']),10)
+        self.assertEqual(table['rows'][0],['Play Type','Odds','2 Play Prize','1 Play Prize'])
+        self.assertEqual(table['rows'][1][2:],['$250','$500'])
+        self.assertIn('maximum sales limit',table['sectionText'])
+        self.assertIn('000 – 999',rule['howToPlay'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_changed_cells_and_missing_prose_rejected(self):
+        for i,row in enumerate(self.capture['tables'][0]['rows']):
+            for j in range(len(row)):
+                bad=copy.deepcopy(self.capture);bad['tables'][0]['rows'][i][j]+=' changed'
+                with self.subTest(row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'pick-3')
+        for part in ('howToPlay','sectionText'):
+            bad=copy.deepcopy(self.capture)
+            if part=='howToPlay': bad[part]=''
+            else: bad['tables'][0][part]=''
+            with self.assertRaises(ValueError): parse_capture(bad,'pick-3')
