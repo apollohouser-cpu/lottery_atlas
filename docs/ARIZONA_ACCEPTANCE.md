@@ -1014,3 +1014,17 @@ repeated-digit Box eligibility is not supplied by this page and is not invented.
 coupled publication and native acceptance remain open. Previously reported
 release risk is unchanged; November 6 09:15 EST remains the deadline. No
 feed/build/acceptance or HTTP recovery is claimed; all four beta gates stay open.
+
+
+## November 4 — Money Roll linked details
+
+Retained complete linked instructions/FAQ/disclaimers with strict source,
+prose and link validation. Quick Pick-only five dice, matching two through five
+in the same position, $1/$2/$5/$10/$20 wagers, optional $1 Super Bonus and
+fifteen consecutive draws remain literal. The sharing condition says the
+five-dice/5X total "is $100,000"; it is not silently rewritten as "above".
+4:50 AM–11:50 PM drawings and per-dollar prize shares are preserved. 143 focused
+Arizona tests pass. Three Quick Draw linked-detail pages, products, coupled
+publication and native acceptance remain open. Previously reported deadline
+risk is unchanged; release remains November 6 09:15 EST. No feed/build/acceptance
+or HTTP recovery is claimed; all four beta prerequisites remain open.

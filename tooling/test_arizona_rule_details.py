@@ -279,3 +279,24 @@ class TwoToWinDetailTests(unittest.TestCase):
             with self.assertRaises(ValueError):parse_capture(bad,'two-to-win')
         bad=copy.deepcopy(self.capture);bad['sections']=[]
         with self.assertRaises(ValueError):parse_capture(bad,'two-to-win')
+
+
+class MoneyRollDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/money-roll-rule-details.json').read_text())
+
+    def test_ordered_dice_and_literal_liability_condition_preserved(self):
+        rule=parse_capture(self.capture,'money-roll');text=rule['sections'][0]['text']
+        self.assertIn('Quick Pick only',text)
+        self.assertIn('same position as the drawn dice',text)
+        self.assertIn('Super Bonus for $1',text)
+        self.assertIn('5X multiplier drawn is $100,000',text)
+        self.assertIn('4:50 AM',text)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_changed_position_or_liability_condition_rejected(self):
+        for old,new in [('same position','any position'),('drawn is $100,000','drawn is above $100,000'),('Super Bonus for $1','Super Bonus for $2')]:
+            bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(bad,'money-roll')
+        bad=copy.deepcopy(self.capture);bad['sections']=[]
+        with self.assertRaises(ValueError):parse_capture(bad,'money-roll')
