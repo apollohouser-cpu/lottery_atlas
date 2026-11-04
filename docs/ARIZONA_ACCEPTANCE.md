@@ -1000,3 +1000,17 @@ Draw linked-detail pages, products, coupled publication and native acceptance
 remain open. Previously reported deadline risk is unchanged; release remains
 November 6 09:15 EST. No feed/build/acceptance or HTTP recovery is claimed;
 all four beta prerequisites remain open.
+
+
+## November 4 — Two To Win linked details
+
+Retained complete linked instructions/FAQ/disclaimers with strict source,
+prose and link validation. 00–99 selections, four bet types, ten plays per
+ticket, fifteen consecutive draws, wager-scaled base prizes and the literal
+$1 Super Bonus with 1X–5X drawing multiplier remain intact. The above-$60,000
+straight/5X sharing condition and per-dollar allocation remain explicit;
+repeated-digit Box eligibility is not supplied by this page and is not invented.
+141 focused Arizona tests pass. Four Quick Draw linked-detail pages, products,
+coupled publication and native acceptance remain open. Previously reported
+release risk is unchanged; November 6 09:15 EST remains the deadline. No
+feed/build/acceptance or HTTP recovery is claimed; all four beta gates stay open.

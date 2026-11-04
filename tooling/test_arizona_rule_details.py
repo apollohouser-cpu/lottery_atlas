@@ -258,3 +258,24 @@ class OneToWinDetailTests(unittest.TestCase):
             with self.assertRaises(ValueError):parse_capture(bad,'one-to-win')
         bad=copy.deepcopy(self.capture);bad['sections']=[]
         with self.assertRaises(ValueError):parse_capture(bad,'one-to-win')
+
+
+class TwoToWinDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/two-to-win-rule-details.json').read_text())
+
+    def test_wager_prizes_bonus_and_sharing_preserved(self):
+        rule=parse_capture(self.capture,'two-to-win');text=rule['sections'][0]['text']
+        self.assertIn('00 - 99',text)
+        self.assertIn('Straight, Box, Front or Back',text)
+        self.assertIn('Super Bonus for $1',text)
+        self.assertIn('above $60,000',text)
+        self.assertIn('4:20 AM',text)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_changed_bonus_and_sharing_rejected(self):
+        for old,new in [('Super Bonus for $1','Super Bonus for $2'),('above $60,000','above $6,000'),('00 - 99','01 - 99')]:
+            bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(bad,'two-to-win')
+        bad=copy.deepcopy(self.capture);bad['sections']=[]
+        with self.assertRaises(ValueError):parse_capture(bad,'two-to-win')
