@@ -1,7 +1,7 @@
 {
   "source": "Kentucky Lottery official statewide retailer finder",
-  "retrievedAt": "2026-11-03T14:29:03.584Z",
-  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3489 unique retailers; 3398 received exact Census or verified ArcGIS point-address coordinates. 91 unresolved addresses were excluded rather than estimated.",
+  "retrievedAt": "2026-11-04T19:57:46.043Z",
+  "coverage": "Queried every one of Kentucky's 120 counties. The official directory returned 3485 unique retailers; 3393 received exact Census or verified ArcGIS point-address coordinates. 92 unresolved addresses were excluded rather than estimated.",
   "directories": [
     {
       "state": "Kentucky",
@@ -2228,17 +2228,6 @@
           "latitude": 37.854758816704,
           "longitude": -85.968904172056,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
-        },
-        {
-          "id": "ky-0e7bc88c4c830936",
-          "name": "HOMETOWN MARATHON",
-          "address": "109 Quisenberry Ave",
-          "city": "Danville",
-          "postalCode": "40422",
-          "county": "Boyle County",
-          "latitude": 37.646592304686,
-          "longitude": -84.789242250667,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
           "id": "ky-0e81f2f36ce18e8b",
@@ -6287,17 +6276,6 @@
           "latitude": 37.299402662227,
           "longitude": -83.872759753779,
           "coordinateSource": "ArcGIS World Geocoder verified point address"
-        },
-        {
-          "id": "ky-2c81ab030777a1fa",
-          "name": "ROCKFORD MINI MART",
-          "address": "2323 Rockford Lane",
-          "city": "Louisville",
-          "postalCode": "40216",
-          "county": "Jefferson County",
-          "latitude": 38.176199073286,
-          "longitude": -85.837436288155,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
           "id": "ky-2ca4edf0b8ed50db",
@@ -14338,17 +14316,6 @@
           "county": "Jefferson County",
           "latitude": 38.33915966499,
           "longitude": -85.619814696179,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "ky-61bee7fd916717d6",
-          "name": "7 STAR FOOD MART",
-          "address": "2121 Crums Lane",
-          "city": "Louisville",
-          "postalCode": "40216",
-          "county": "Jefferson County",
-          "latitude": 38.194486720418,
-          "longitude": -85.812463622849,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -31589,17 +31556,6 @@
           "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
-          "id": "ky-d935323783698aa2",
-          "name": "1002 ESTEPP'S FRIENDLY SHELL",
-          "address": "1951 Stanton Way",
-          "city": "Lexington",
-          "postalCode": "40511",
-          "county": "Fayette County",
-          "latitude": 38.102391303182,
-          "longitude": -84.483726840037,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
           "id": "ky-d9542642822ac6d9",
           "name": "PRESTONSBURG DOUBLE KWIK #23",
           "address": "468 Us 23 North",
@@ -32026,17 +31982,6 @@
           "county": "Jefferson County",
           "latitude": 38.133707057748,
           "longitude": -85.659043085633,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "ky-dd03f31b0c02e8bc",
-          "name": "SEVEN STAR KY",
-          "address": "2051 E Blue Lick Rd",
-          "city": "Shepherdsville",
-          "postalCode": "40165",
-          "county": "Bullitt County",
-          "latitude": 38.06149203904,
-          "longitude": -85.70306885786,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -37433,6 +37378,14 @@
           "city": "Belfry",
           "postalCode": "41503",
           "county": "Pike County",
+          "reason": "No precise address-level coordinate passed verification"
+        },
+        {
+          "name": "BJ'S WHOLESALE CLUB #255",
+          "address": "4000 Vandalay Dr",
+          "city": "Frankfort",
+          "postalCode": "40601",
+          "county": "Franklin County",
           "reason": "No precise address-level coordinate passed verification"
         },
         {
