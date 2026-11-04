@@ -420,3 +420,29 @@ class PowerballRulesTests(unittest.TestCase):
             for j in range(len(table['rows'][0])):
                 bad=copy.deepcopy(self.capture);bad['tables'][0]['nestedTables'][n]['rows'][0][j]='changed'
                 with self.assertRaises(ValueError): parse_capture(bad,'powerball')
+
+
+class XsOsRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/powerball-xs-os-rules.json').read_text())
+
+    def test_team_matches_and_parimutuel_limits_preserved(self):
+        rule=parse_capture(self.capture,'powerball-xs-os');table=rule['tables'][0]
+        self.assertEqual([r[0] for r in table['rows'][1:6]],['Match 8','Match 7','Match 6','Match 5','Match 4'])
+        self.assertEqual([r[1] for r in table['rows'][1:6]],['Jackpot','$20,000','$500','$40','$7'])
+        self.assertIn('Lower-tier prizes may become pari-mutuel',table['sectionText'])
+        self.assertIn('not based on, determined by, or dependent on the outcome of NFL games',table['sectionText'])
+        self.assertIn('September 13, 2026',table['sectionText'])
+        self.assertIn('8 team logos from a set of 32',rule['howToPlay'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_changed_cells_or_lost_disclaimers_rejected(self):
+        for i,row in enumerate(self.capture['tables'][0]['rows']):
+            for j in range(len(row)):
+                bad=copy.deepcopy(self.capture);bad['tables'][0]['rows'][i][j]+=' changed'
+                with self.subTest(row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'powerball-xs-os')
+        for part in ('sectionText','howToPlay'):
+            bad=copy.deepcopy(self.capture)
+            if part=='howToPlay': bad[part]=''
+            else: bad['tables'][0][part]=''
+            with self.assertRaises(ValueError): parse_capture(bad,'powerball-xs-os')

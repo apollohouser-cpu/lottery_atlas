@@ -817,3 +817,19 @@ Arizona tests pass. Xs & Os inline rules, linked full details, products, coupled
 acquisition, publication and native acceptance remain open. No Arizona
 feed/build/acceptance or direct HTTP recovery is claimed. November 6 09:15 EST
 release deadline and all four beta prerequisites remain unchanged.
+
+
+## November 4 — Xs & Os inline rules
+
+Retained official browser DOM at 2026-11-04T06:30:59.337Z. Sixteenth inline rule
+contract retains all five team-match prize tiers and attached caveats, including
+lower-tier pari-mutuel eligibility, jackpot sharing, independence from NFL
+outcomes, seasonal Arizona sales cutoffs and the September 13 payout referral.
+That referral is not an audited payout report. The 8-of-32 selection and $5
+play instructions are preserved. Table cells and complete attached prose are
+change-gated; 117 focused Arizona tests pass. Inline rule contracts now cover
+all sixteen current draw product pages, including the separate Double Play
+schedule within Powerball; this does not close linked full-detail/add-on rules.
+Products, coupled acquisition, publication and native acceptance remain open.
+No feed/build/acceptance or direct HTTP recovery is claimed. Release remains
+November 6 09:15 EST, and all four beta prerequisites remain open.
