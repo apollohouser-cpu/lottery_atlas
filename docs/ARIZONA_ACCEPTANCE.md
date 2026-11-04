@@ -833,3 +833,18 @@ schedule within Powerball; this does not close linked full-detail/add-on rules.
 Products, coupled acquisition, publication and native acceptance remain open.
 No feed/build/acceptance or direct HTTP recovery is claimed. Release remains
 November 6 09:15 EST, and all four beta prerequisites remain open.
+
+
+## November 4 — linked Powerball full-detail capture
+
+Retained the official linked how-to-play page, including its two complete
+instruction/FAQ sections and source links. Added a separate strict rule-detail
+parser: exact reviewed title, URL, prose and links plus aware acquisition time
+are required. Power Play's fixed match-five amount, Double Play exclusion,
+shared Double Play top prize, 10X ceiling, claim deadlines and seasonal cutoffs
+remain literal. Historical winner anecdotes in FAQ prose are not promoted to
+result rows, inventory, counts or audited payout reports. This closes review
+of this linked Powerball page only; other linked details, products, coupled
+acquisition, publication and native acceptance remain open. 119 focused Arizona
+tests pass. No feed/build/acceptance or HTTP recovery is claimed; November 6
+09:15 EST deadline and all four beta prerequisites remain unchanged.
