@@ -41,3 +41,27 @@ def parse_capture(capture, expected_url, expected_header):
                 overallOddsOneIn=overall[1],rules=copy.deepcopy(capture['rules']),
                 prizeDetails=capture['prizeDetails'],inventoryAvailable=False,
                 symbolInterpretationAvailable=False)
+
+
+def validate_continuity(capture, baseline):
+    """Gate repeat observations; corrections need explicit review, not silent adoption."""
+    old=parse_capture(baseline,baseline['sourceUrl'],baseline['header'])
+    new=parse_capture(capture,baseline['sourceUrl'],baseline['header'])
+    if datetime.fromisoformat(new['retrievedAt'].replace('Z','+00:00')) < datetime.fromisoformat(old['retrievedAt'].replace('Z','+00:00')):
+        raise ValueError('retrieval date regressed')
+    if new['rules'] != old['rules'] or new['overallOddsOneIn'] != old['overallOddsOneIn']:
+        raise ValueError('rules or overall odds changed; review required')
+    def caveat(c):
+        if c['prizeDetails'].count(c['table']) != 1:
+            raise ValueError('tier table and detail observation disagree')
+        return c['prizeDetails'].replace(c['table'],'',1).strip()
+    if caveat(capture) != caveat(baseline):
+        raise ValueError('prize terms changed; review required')
+    if len(new['tiers']) != len(old['tiers']):
+        raise ValueError('tier set changed')
+    for current,previous in zip(new['tiers'],old['tiers']):
+        if any(current[k] != previous[k] for k in ('prizeLabel','oddsOneIn','originalPrizes')):
+            raise ValueError('tier identity or original structure changed')
+        if current['remainingPrizes'] > previous['remainingPrizes']:
+            raise ValueError('remaining prize increase requires review')
+    return new

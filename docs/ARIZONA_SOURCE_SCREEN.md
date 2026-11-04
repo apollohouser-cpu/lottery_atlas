@@ -814,3 +814,16 @@ and no symbol interpretation or complete product-rule acceptance is claimed.
 of the 58-product Scratchers or 25-product Fast Play matrix. Repeat acquisition,
 publication, app/native and all beta gates remain open. Previously reported
 release risk and November 6 09:15 EST deadline are unchanged.
+
+
+## November 4 — Scratchers repeat-observation guard
+
+Added continuity validation before later Scratchers observations can be adopted:
+require the same complete tier identities, odds, original counts, rule text and
+symbol URLs, overall odds and annuity/cash terms. Remaining-prize decreases are
+allowed; increases require source review. Regressing retrieval times, partial
+rows and disagreement between separately captured table/detail text fail closed.
+157 focused Arizona tests pass. This guard is development verification, not a
+successful live repeat or publication. Product capture, symbol review, coupled
+publication and native acceptance remain open; the previously reported deadline
+risk and November 6 09:15 EST deadline remain unchanged.
