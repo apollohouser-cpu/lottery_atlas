@@ -503,3 +503,15 @@ tests pass. Linked full details, other regular rules, products, coupled
 acquisition, publication and native acceptance remain open. No feed/build/
 acceptance or HTTP recovery is claimed. November 6 09:15 EST deadline and all
 four open mobile beta prerequisites remain unchanged.
+
+
+## November 3 late evening — Pick 4 play-specific rules
+
+Retained Pick 4's seventeen-row inline schedule and complete attached caveats at
+November 4 02:19:50.952 UTC. Twelfth inline rule contract preserves sixteen
+wager rows, distinct one-play/two-play prizes, four-digit selection including
+leading zeros, and front/mid/back pair labels. Every cell and both prose sections
+are change-gated; 109 focused Arizona tests pass. Linked full details, remaining
+regular rules, products, coupled collection, publication and native acceptance
+remain open. No actual payout totals, feed/build/acceptance or HTTP recovery is
+claimed. November 6 09:15 EST deadline and all four beta prerequisites unchanged.
