@@ -215,3 +215,25 @@ class HiLoDetailTests(unittest.TestCase):
             with self.assertRaises(ValueError):parse_capture(bad,'hi-lo')
         bad=copy.deepcopy(self.capture);bad['sections']=[]
         with self.assertRaises(ValueError):parse_capture(bad,'hi-lo')
+
+
+class LuckyLinksDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/lucky-links-rule-details.json').read_text())
+
+    def test_grid_rule_does_not_invent_ticket_positions(self):
+        rule=parse_capture(self.capture,'lucky-links');text=rule['sections'][0]['text']
+        self.assertIn('3x3 grid',text)
+        self.assertIn('7 lines automatically forms 8 lines',text)
+        self.assertIn('5:00 AM',text)
+        self.assertIn('$125,000',text)
+        self.assertIn('Super Bonus for $1',text)
+        self.assertNotIn('ticketPositions',rule)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_grid_bonus_and_sharing_changes_fail_closed(self):
+        for old,new in [('3x3','4x4'),('Super Bonus for $1','Super Bonus for $2'),('$125,000','$25,000')]:
+            bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(bad,'lucky-links')
+        bad=copy.deepcopy(self.capture);bad['sections']=[]
+        with self.assertRaises(ValueError):parse_capture(bad,'lucky-links')

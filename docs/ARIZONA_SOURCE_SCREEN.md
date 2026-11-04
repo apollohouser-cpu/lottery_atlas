@@ -714,3 +714,17 @@ Arizona tests pass. Seven Quick Draw linked-detail pages remain, along with
 products, coupled acquisition/publication and native acceptance. The previously
 reported deadline risk remains; November 6 09:15 EST is unchanged. No
 feed/build/acceptance or HTTP recovery is claimed; all four beta gates stay open.
+
+
+## November 4 — Lucky Links linked details
+
+Retained complete linked instructions/FAQ/disclaimers with exact source and
+prose validation. Quick Pick-only eight-of-22 numbers, a 3x3 ticket grid with
+free center, two-or-more winning lines and the seven-lines-implies-eight note
+remain rules, not fabricated ticket positions. $1 play and optional $1 Super
+Bonus, 1X–5X drawing multiplier, fifteen consecutive draws, 5 AM–11 PM drawings
+and the above-$125,000 sharing condition remain literal. 137 focused Arizona
+tests pass. Six Quick Draw linked-detail pages, products, coupled publication
+and native acceptance remain open. Previously reported release risk is unchanged;
+November 6 09:15 EST remains the deadline. No feed/build/acceptance or HTTP
+recovery is claimed; all four beta prerequisites remain open.
