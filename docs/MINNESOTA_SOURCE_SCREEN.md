@@ -37,3 +37,23 @@ inbox is generally monitored Tuesday through Thursday (except vacations),
 requests are processed as resources permit, and simpler requests take
 precedence. It points to the public Winners page but supplies no responsive
 records, ticket-count definition, or estimated completion date.
+
+
+## November 3 — original request closed without records delivery
+
+The agency closed the original request, referring generally to its website and
+rules. It characterized the requested information as already online, unclear,
+or nonpublic security information, citing Minn. Stat. 13.37. This records the
+agency's stated position; it does not independently establish the exemption's
+application. The response did not map those reasons to individual requested
+fields or identify specific responsive pages. No responsive dataset, fee,
+question or promised follow-up date was supplied; attached images are signature
+logos. The original request was verified SENT and the returned thread contains
+no intervening clarification reply. No new reply or fee authorization occurred.
+Private thread evidence is retained under work/agency_email_checks/minnesota_20261103.
+
+Public-source screening remains available. A possible bounded clarification is
+to ask for exact public page/report links for existing draw prize counts and
+Scratch prize tables, and identify which original items were unclear versus
+withheld, without requesting new compilation or security-sensitive records.
+Minnesota remains unfinished; Arizona remains the sole active state.
