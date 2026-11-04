@@ -326,3 +326,31 @@ class PickFourRulesTests(unittest.TestCase):
             if part=='howToPlay': bad[part]=''
             else: bad['tables'][0][part]=''
             with self.assertRaises(ValueError): parse_capture(bad,'pick-4')
+
+
+class TripleTwistRulesTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/triple-twist-rules.json').read_text())
+
+    def test_line_and_combined_line_schedules_are_separate(self):
+        rule=parse_capture(self.capture,'triple-twist')
+        self.assertEqual([len(t['rows']) for t in rule['tables']],[6,7])
+        self.assertEqual([r[0] for r in rule['tables'][0]['matchingSymbols'][1:5]],[6,5,4,3])
+        self.assertEqual(rule['tables'][1]['rows'][1],['10+ of 18','$2,000','142,824.9**'])
+        self.assertIn('two additional rows of six numbers',rule['howToPlay'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_both_tables_symbols_and_prose_are_gated(self):
+        for t,table in enumerate(self.capture['tables']):
+            for i,row in enumerate(table['rows']):
+                for j in range(len(row)):
+                    bad=copy.deepcopy(self.capture);bad['tables'][t]['rows'][i][j]+=' changed'
+                    with self.subTest(table=t,row=i,column=j),self.assertRaises(ValueError): parse_capture(bad,'triple-twist')
+            bad=copy.deepcopy(self.capture);bad['tables'][t]['sectionText']=''
+            with self.assertRaises(ValueError): parse_capture(bad,'triple-twist')
+        bad=copy.deepcopy(self.capture);bad['tables'][0]['matchingSymbols'][1][0]=5
+        with self.assertRaises(ValueError): parse_capture(bad,'triple-twist')
+        bad=copy.deepcopy(self.capture);bad['tables'].pop()
+        with self.assertRaises(ValueError): parse_capture(bad,'triple-twist')
+        bad=copy.deepcopy(self.capture);bad['howToPlay']=''
+        with self.assertRaises(ValueError): parse_capture(bad,'triple-twist')

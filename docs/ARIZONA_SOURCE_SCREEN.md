@@ -515,3 +515,16 @@ are change-gated; 109 focused Arizona tests pass. Linked full details, remaining
 regular rules, products, coupled collection, publication and native acceptance
 remain open. No actual payout totals, feed/build/acceptance or HTTP recovery is
 claimed. November 6 09:15 EST deadline and all four beta prerequisites unchanged.
+
+
+## November 3 late evening — Triple Twist line and combined-line rules
+
+Retained Triple Twist's six-row line schedule and seven-row combined-line
+schedule at November 4 03:29:03.681 UTC. Thirteenth inline rule contract keeps
+the symbolic 6/5/4/3 matches separate from combined 10+/9/8/7/6/5-of-18 tiers,
+preserves the combined-odds footnote and two additional computer-selected rows,
+and does not invent ticket positions. Both tables, symbols and attached prose
+are change-gated; 111 focused Arizona tests pass. Linked full details, remaining
+regular rules, products, coupled collection, publication and native acceptance
+remain open. No feed/build/acceptance or HTTP recovery is claimed. November 6
+09:15 EST deadline and all four open beta prerequisites remain unchanged.
