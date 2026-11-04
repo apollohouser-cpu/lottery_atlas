@@ -1,5 +1,5 @@
 {
-  "attemptedAt": "2026-11-03T23:40:32.457874+00:00",
+  "attemptedAt": "2026-11-04T06:42:01.501954+00:00",
   "note": "Refresh attempts are not source dates or proof of complete statewide coverage.",
   "states": [
     {
@@ -153,8 +153,8 @@
     },
     {
       "state": "Michigan",
-      "status": "unchanged",
-      "message": "No file changes; this does not establish a new source date.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/michigan_scratch_catalog.generated.json"
       ]
@@ -216,8 +216,8 @@
     },
     {
       "state": "Virginia",
-      "status": "updated",
-      "message": "Import completed; source dates remain in each dataset.",
+      "status": "retained_after_failure",
+      "message": "Importer failed validation or could not retrieve its source.",
       "files": [
         "data/virginia_scratch_catalog.generated.json",
         "data/virginia_retailer_directory.generated.json",
@@ -282,8 +282,8 @@
     },
     {
       "state": "Missouri",
-      "status": "retained_after_failure",
-      "message": "Importer failed validation or could not retrieve its source.",
+      "status": "updated",
+      "message": "Import completed; source dates remain in each dataset.",
       "files": [
         "data/state_winning_ticket_totals.json",
         "data/missouri_scratch_catalog.generated.json",
