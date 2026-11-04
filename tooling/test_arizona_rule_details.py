@@ -193,3 +193,25 @@ class TripleTwistDetailTests(unittest.TestCase):
             with self.assertRaises(ValueError):parse_capture(bad,'triple-twist')
         bad=copy.deepcopy(self.capture);bad['sections'].pop()
         with self.assertRaises(ValueError):parse_capture(bad,'triple-twist')
+
+
+class HiLoDetailTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/hi-lo-rule-details.json').read_text())
+
+    def test_wager_matched_bonus_and_literal_labels_preserved(self):
+        rule=parse_capture(self.capture,'hi-lo');text=rule['sections'][0]['text']
+        self.assertIn('same cost as your base wager',text)
+        self.assertIn('1X, 2X, 3X, 4X, or 5X',text)
+        self.assertIn('4:10 AM',text)
+        self.assertIn('11:10 PM',text)
+        self.assertIn('TWO TO WIN PRIZE',text)
+        self.assertTrue(rule['sourceConflicts'])
+        self.assertFalse(rule['actualPayoutsAvailable'])
+
+    def test_changed_bonus_cost_or_missing_caveats_rejected(self):
+        for old,new in [('same cost as your base wager','$1'),('$55,500','$555'),('TWO TO WIN PRIZE','HI-LO PRIZE')]:
+            bad=copy.deepcopy(self.capture);bad['sections'][0]['text']=bad['sections'][0]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(bad,'hi-lo')
+        bad=copy.deepcopy(self.capture);bad['sections']=[]
+        with self.assertRaises(ValueError):parse_capture(bad,'hi-lo')

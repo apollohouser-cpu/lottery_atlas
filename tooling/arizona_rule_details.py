@@ -6,6 +6,11 @@ from pathlib import Path
 
 CONTRACTS = json.loads(Path(__file__).with_name('arizona_rule_detail_contracts.json').read_text())
 SOURCE_CONFLICTS = {
+    'hi-lo': [
+        'Linked Hi-Lo instructions refer to a two-digit number and a Two to '
+        'Win claim heading. These labels are preserved literally; they do '
+        'not change the Hi-Lo count model or identify a Two to Win source.'
+    ],
     'triple-twist': [
         'Sales cutoff unresolved: the product page states 6:59 PM Arizona '
         'time; linked details state seasonal 6:59/7:59 PM. Neither is '

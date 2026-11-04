@@ -700,3 +700,17 @@ acceptance are still open. Parser tests alone do not close those gates. No
 extension, scope reduction, feed/build/acceptance or HTTP recovery is claimed.
 All four beta prerequisites remain open. Next work must close the remaining
 source matrix and coupled publication path, followed by bounded native checks.
+
+
+## November 4 — Hi-Lo linked details
+
+Retained the complete linked instructions, FAQ and disclaimers. Super Bonus
+cost equals the base wager; its 1X–5X multiplier applies at the drawing level.
+Thirteen Hi-Lo choices, ten plays per ticket, up to fifteen consecutive draws,
+4:10 AM–11:10 PM draws and the literal $55,500 sharing caveat are preserved.
+Source labels referring to a two-digit number and a Two to Win claim heading
+are explicitly disclosed, not used to change the Hi-Lo model. 135 focused
+Arizona tests pass. Seven Quick Draw linked-detail pages remain, along with
+products, coupled acquisition/publication and native acceptance. The previously
+reported deadline risk remains; November 6 09:15 EST is unchanged. No
+feed/build/acceptance or HTTP recovery is claimed; all four beta gates stay open.
