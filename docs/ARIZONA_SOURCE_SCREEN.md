@@ -1069,3 +1069,19 @@ The sheet requires injected validated data and is not yet wired into the map or
 a remote loader. Public deployment, strict Dart loader, draw presentation,
 symbol review and native checks remain open. Deadline remains November 6
 09:15 EST without extension; all beta gates remain open.
+
+
+## November 5 — draw application presentation
+
+Added the Arizona draw sheet with all nineteen named result/session selections,
+latest-two cards, explicit date-only versus Arizona hourly times, draw IDs,
+ordered digit/dice fields, team labels, bonus/base amounts and unavailable-report
+disclosures. Source observations, known rule conflicts, linked full rules and
+literal detailed wording remain available separately from results.
+Three focused tests pass for all result formats/leading-zero preservation,
+result-source callback, and hourly selection at 390×844 with explicit 2x text.
+Scoped Flutter analysis passes. This remains an injected-data development sheet,
+not native acceptance, complete illustrated schedule presentation or OS Dynamic
+Type verification. Strict loader, map integration, symbol/schedule review, public
+deployment and native checks remain open. November 6 09:15 EST deadline is
+unchanged; all beta gates remain open.
