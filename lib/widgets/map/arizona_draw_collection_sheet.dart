@@ -1,3 +1,4 @@
+import 'arizona_coverage_limits.dart';
 import 'package:flutter/material.dart';
 import 'arizona_rule_schedule.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -156,6 +157,7 @@ class _ArizonaDrawCollectionSheetState
                 line(
                   'Two recent observed results. Full history and actual payout reports are unavailable.',
                 ),
+                ArizonaCoverageLimits(coverage: widget.coverage),
                 for (final row in rows)
                   Card(
                     child: Padding(

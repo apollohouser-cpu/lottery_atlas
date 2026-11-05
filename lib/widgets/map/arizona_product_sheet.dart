@@ -1,3 +1,4 @@
+import 'arizona_coverage_limits.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -192,6 +193,7 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
                 line(
                   'Source-listed products; no retailer inventory or ticket availability.',
                 ),
+                ArizonaCoverageLimits(coverage: widget.coverage),
                 if (products.isEmpty)
                   line('No matching games. Clear search to show all products.'),
                 for (final product in products)

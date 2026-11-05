@@ -1197,3 +1197,19 @@ Run with `PYTHONPATH=.:tooling python3 tooling/compile_arizona_candidate.py
 
 All197focused Arizona Python tests pass, including five packaging tests covering
 byte reproducibility, check-only behavior, source continuity and write failure.
+
+
+## November 5 — complete coverage-gap disclosure in both collections
+
+Both Arizona development collection sheets now expose the reviewed coverage
+limitations in a scrollable expansion near the top. This makes Instant Tabs,
+promotion/retired-history gaps, unavailable payout reports/counts/retailer joins,
+progressive caveats, image-dependent rules and source ambiguities discoverable
+inside the app rather than only in the candidate artifact. The source artifact,
+acquisition dates and pinned digest are unchanged.
+Seven focused draw/product/disclosure widget tests pass, including access to
+Instant Tabs/history gaps in both collections and the enlarged-text ended-product
+path after scrolling. Scoped analysis passes. Native verification of this added
+disclosure remains pending; earlier native draw checks precede this UI change.
+Ordinary installed app remains running, Android stopped. Publication, remaining
+native/cache checks and Arizona acceptance remain open; deadline unchanged.

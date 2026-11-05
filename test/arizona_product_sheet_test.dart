@@ -78,6 +78,11 @@ void main() {
       await tester.pumpAndSettle();
       await tester.enterText(find.byType(TextField), '203');
       await tester.pumpAndSettle();
+      await tester.scrollUntilVisible(
+        find.text('HAUNTED CASH #203'),
+        200,
+        scrollable: find.byType(Scrollable).last,
+      );
       expect(find.text('Ended game'), findsOneWidget);
       await tester.tap(find.text('HAUNTED CASH #203'));
       await tester.pumpAndSettle();
