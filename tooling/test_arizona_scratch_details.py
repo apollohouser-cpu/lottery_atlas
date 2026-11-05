@@ -50,3 +50,22 @@ class ScratchContinuityTests(unittest.TestCase):
     def test_mismatched_rendered_sections_rejected(self):
         c=copy.deepcopy(self.capture);c['table']=c['table'].replace('2 of 6','1 of 6')
         with self.assertRaises(ValueError):self.validate(c)
+
+class AdditionalScratchEvidenceTests(unittest.TestCase):
+    def test_live_repeat_matches_retained_baseline(self):
+        from arizona_scratch_details import validate_continuity
+        root=Path(__file__).parent/'fixtures/arizona'
+        old=json.loads((root/'1401-detail.json').read_text())
+        new=json.loads((root/'1401-detail-repeat.json').read_text())
+        result=validate_continuity(new,old)
+        self.assertEqual(len(result['tiers']),7)
+        self.assertGreater(new['retrievedAt'],old['retrievedAt'])
+    def test_treasure_hunt_literal_prizes_and_coordinate_rules(self):
+        c=json.loads((Path(__file__).parent/'fixtures/arizona/1470-detail.json').read_text())
+        result=parse_capture(c,'https://www.arizonalottery.com/scratchers/1470-arizona-treasure-hunt/',
+            'ARIZONA TREASURE HUNT #1470\nTOP PRIZE: $20,000\nTicket Price: $3 Start Date: 12/3/2024')
+        self.assertEqual(len(result['tiers']),10)
+        self.assertEqual(result['tiers'][0]['remainingPrizes'],1)
+        self.assertIn('24 TREASURE MAP locations',result['rules']['text'])
+        self.assertNotIn('ticketPositions',result)
+        self.assertFalse(result['inventoryAvailable'])

@@ -827,3 +827,17 @@ rows and disagreement between separately captured table/detail text fail closed.
 successful live repeat or publication. Product capture, symbol review, coupled
 publication and native acceptance remain open; the previously reported deadline
 risk and November 6 09:15 EST deadline remain unchanged.
+
+
+## November 4 evening — live Scratchers repeat and Treasure Hunt
+
+A fresh ordinary-browser capture of #1401 passes continuity against the retained
+baseline with all seven tiers unchanged. This verifies one product's repeat
+path, not the full catalog or HTTP recovery. Added #1470 Arizona Treasure Hunt:
+ten literal prize tiers, $3 price, December 3, 2024 start date and coordinate
+instructions retained without constructing ticket positions. Two of 58 fixed
+Scratchers product details are captured; Fast Play detail coverage remains open.
+159 focused Arizona tests pass. Publication/app/native and all beta gates remain
+open; previously reported release risk and November 6 09:15 EST deadline remain
+unchanged. Source acquisition timestamps retain UTC dates independently of this
+Eastern-time work log.
