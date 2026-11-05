@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'package:crypto/crypto.dart';
+import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 /// Fixed reviewed development artifact. New observations require Python source
 /// validation and an explicitly reviewed digest update; arbitrary JSON is never
@@ -11,6 +13,18 @@ class ArizonaCoverageLoader {
     required this.readCache,
     required this.writeCache,
   });
+  static const developmentCacheKey = 'arizona_development_candidate_v1';
+  factory ArizonaCoverageLoader.development() {
+    late final prefs = SharedPreferencesAsync();
+    return ArizonaCoverageLoader(
+      readBundle: () =>
+          rootBundle.loadString('data/arizona_coverage.candidate.json'),
+      readCache: () => prefs.getString(developmentCacheKey),
+      writeCache: (raw) => prefs.setString(developmentCacheKey, raw),
+      fetchRemote: () async =>
+          throw StateError('Arizona remote feed is not enabled'),
+    );
+  }
   final Future<String> Function() readBundle;
   final Future<String> Function() fetchRemote;
   final Future<String?> Function() readCache;

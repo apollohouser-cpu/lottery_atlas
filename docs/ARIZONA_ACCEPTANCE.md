@@ -1375,3 +1375,18 @@ at 390×844 with explicit 2x text and source-order/leading-zero results. Scoped
 analysis passes. This closes development schedule rendering only; native paths,
 OS Dynamic Type, instant-product illustrated symbols, map wiring and public
 release remain open. Deadline remains November 6 09:15 EST without extension.
+
+
+## November 5 — gated state-screen integration
+
+Arizona source-screen routes now connect both sheets through the strict loader
+and bundled reviewed candidate when ARIZONA_DEVELOPMENT is explicitly enabled.
+The default ordinary app keeps these unfinished routes disabled. Development
+cache uses its own key; remote collection is explicitly unavailable and the view
+shows retained observations with original dates. Lazy preferences initialization
+allows validated bundle fallback if storage initialization fails.
+Fourteen component tests pass, and route tests pass with the flag off and on,
+including bundle loading, visible retention notice, draw close/return and product
+entry. Scoped analysis passes. No native build/install or public deployment is
+claimed. Illustrated instant rules, production enablement and native acceptance
+remain open; November 6 09:15 EST deadline is unchanged.
