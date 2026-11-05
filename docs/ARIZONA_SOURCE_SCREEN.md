@@ -947,3 +947,18 @@ sources and a late failure that leaves retained inputs unchanged. This is an
 in-memory selection gate, not atomic disk publication or full live repeat
 acceptance. Source symbols, publication/app/native and beta gates remain open.
 Previously reported release risk and November 6 09:15 EST deadline are unchanged.
+
+
+## November 5 — combined private staging transaction
+
+Implemented a single-file staging transaction coupling all nineteen draw groups,
+60 Scratchers/26 Fast Play observations, sixteen inline draw rules and seventeen
+linked rule/detail sources. Every component validates before file creation;
+source timestamps stay individual. The staged artifact explicitly says private
+development snapshot and productionReady false. It uses retained observations,
+not a fresh atomic source collection. 184 focused Arizona tests pass, including
+component rejection and controlled replace failure preserving previous bytes
+and removing temporary files. A private staged artifact was written successfully.
+This does not close full live repeat acquisition, symbol review, production feed,
+application/native acceptance or beta gates. Previously reported release risk
+and November 6 09:15 EST deadline remain unchanged.
