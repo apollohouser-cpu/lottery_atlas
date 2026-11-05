@@ -932,3 +932,18 @@ the product implementation matrix without resetting or extending the deadline.
 176 focused Arizona tests pass. Symbol review, repeat matrix validation,
 publication/app/native and all beta gates remain open. Previously reported
 release risk and November 6 09:15 EST deadline are unchanged.
+
+
+## November 5 — coupled product selection gate
+
+Added an all-or-error selector for the reviewed 60 Scratchers and 26 Fast Play
+product observations. Both catalogs must retain their exact reviewed identity
+sets and pass every tier/rule continuity check before any result is returned.
+Printed header numbers must match source URLs; ticket prices, calendar dates
+and the explicit Game Ended marker are validated. #203 is emitted as ended;
+a listed start date is not asserted to mean current ticket availability.
+181 focused Arizona tests pass, including missing/duplicate/cross-catalog
+sources and a late failure that leaves retained inputs unchanged. This is an
+in-memory selection gate, not atomic disk publication or full live repeat
+acceptance. Source symbols, publication/app/native and beta gates remain open.
+Previously reported release risk and November 6 09:15 EST deadline are unchanged.
