@@ -5,10 +5,10 @@ from datetime import datetime
 from decimal import Decimal
 
 
-def parse_capture(capture, expected_url, expected_header):
+def parse_capture(capture, expected_url, expected_header, *, kind="scratcher", extra_prize_labels=()):
     if set(capture) != {'sourceUrl','captureKind','retrievedAt','header','table','rules','prizeDetails'}:
         raise ValueError('scratcher capture fields changed')
-    if capture['sourceUrl'] != expected_url or capture['captureKind'] != 'browser-dom-scratcher-detail-observation':
+    if capture['sourceUrl'] != expected_url or capture['captureKind'] != f'browser-dom-{kind}-detail-observation':
         raise ValueError('scratcher provenance mismatch')
     if datetime.fromisoformat(capture['retrievedAt'].replace('Z','+00:00')).tzinfo is None:
         raise ValueError('retrieval timezone required')
@@ -23,7 +23,7 @@ def parse_capture(capture, expected_url, expected_header):
     tiers=[];seen=set()
     for line in lines:
         parts=line.split('\t')
-        if len(parts)!=3 or not parts[0].startswith('$') or parts[0] in seen:
+        if len(parts)!=3 or (not parts[0].startswith('$') and parts[0] not in extra_prize_labels) or parts[0] in seen:
             raise ValueError('invalid or duplicate prize tier')
         seen.add(parts[0])
         numeric=r'(?:[0-9]+|[1-9][0-9]{0,2}(?:,[0-9]{3})+)'

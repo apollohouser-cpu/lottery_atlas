@@ -841,3 +841,17 @@ Scratchers product details are captured; Fast Play detail coverage remains open.
 open; previously reported release risk and November 6 09:15 EST deadline remain
 unchanged. Source acquisition timestamps retain UTC dates independently of this
 Eastern-time work log.
+
+
+## November 4 evening — first Fast Play progressive detail
+
+Retained #169 Multiplier Mania Progressive after ten prize tiers loaded. The
+progressive tier remains labeled Progressive; its displayed $266,958 jackpot
+is only a timestamped observation, never a guaranteed fixed prize. $20 ticket
+price, September 3, 2024 start date, row multiplier exclusion for the progressive
+jackpot, purchase-date claim period and bulk-purchase restriction are retained.
+Unloaded jackpot and changed identity/rules/FAQ fail validation. 163 focused
+Arizona tests pass. This is one of 25 Fast Play detail targets; general Fast Play
+variants, full repeat continuity and linked prohibition details still need review.
+No feed, native acceptance or HTTP recovery is claimed. Previously reported
+release risk and November 6 09:15 EST deadline are unchanged; beta gates stay open.
