@@ -995,3 +995,22 @@ Quick Draw refresh, symbol review, production feed and app/native acceptance
 remain open; this is not an atomic source collection or HTTP transport recovery.
 The November 6 09:15 EST deadline and previously reported release risk are
 unchanged. All four beta prerequisites remain open.
+
+
+## November 5 — complete Quick Draw repeat and early-day assembly
+
+All eight hourly sources were recaptured for November 2–5, including retained
+overlap and overnight transitions. Money Roll history was expanded before
+capturing its rendered dice labels. The combined nineteen-group selector and
+private staging transaction pass, retaining 38 selected results with individual
+source times. Capture SHA256: ab50fba6c0eb5d1dd29eb85e9b4a267f3cea42ae6caec528ca3cb8b4043a7a92.
+
+The live first draw of a new day exposed a per-page two-result assumption.
+Parsers now accept one complete result on a dated page; assembly still requires
+at least two results across days and preserves every schedule, draw-ID, overlap,
+future-date and correction check. Reviewed SEE MORE footers are accepted; unknown
+footers still fail. 186 focused tests pass, including first-draw overnight
+selection, single-result-only rejection and malformed footer rejection. This
+closes bounded draw repeat acquisition, not production/app/native acceptance.
+Symbol review and publication remain open; no HTTP recovery or atomic source
+collection is claimed. Release deadline remains November 6 09:15 EST, unchanged.

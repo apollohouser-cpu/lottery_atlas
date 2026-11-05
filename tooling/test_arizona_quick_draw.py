@@ -62,3 +62,25 @@ class QuickDrawTests(unittest.TestCase):
         bad = copy.deepcopy(self.captures)
         bad['hi-lo'].append(copy.deepcopy(bad['hi-lo'][0]))
         with self.assertRaises(ValueError): parse_captures(bad)
+
+    def test_first_draw_of_day_uses_previous_day_for_second_selection(self):
+        for game,start in [('lucky-links',5),('hi-lo',4)]:
+            candidate = self.boundary(game,start)
+            # Keep only the first scheduled draw of the newer day.
+            del candidate[game][0]['tables'][0]['rows'][1:3]
+            result = select_refresh(candidate,candidate)
+            self.assertEqual([r['drawId'] for r in result['groups'][game]], ['101','100'])
+            single = copy.deepcopy(candidate)
+            single[game] = single[game][:1]
+            with self.assertRaises(ValueError): parse_captures(single)
+            empty = copy.deepcopy(candidate)
+            del empty[game][0]['tables'][0]['rows'][1:-1]
+            with self.assertRaises(ValueError): parse_captures(empty)
+
+    def test_reviewed_pagination_footer_only(self):
+        for game in self.captures:
+            candidate = copy.deepcopy(self.captures)
+            candidate[game][0]['tables'][0]['rows'][-1][0]['text'] = 'SEE MORE'
+            select_refresh(candidate,candidate)
+            candidate[game][0]['tables'][0]['rows'][-1][0]['text'] = 'unrecognized footer'
+            with self.assertRaises(ValueError): parse_captures(candidate)

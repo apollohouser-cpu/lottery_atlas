@@ -25,11 +25,11 @@ def parse_capture(capture):
     if len(tables) != 1:
         raise ValueError('one result table required')
     rows = [[cell['text'] for cell in row] for row in tables[0]['rows']]
-    if rows[0] != ['Draw ID', 'Drawing Time', 'Winning Numbers', 'Bullseye', 'Super Bonus', ''] or rows[-1] != ['']:
+    if rows[0] != ['Draw ID', 'Drawing Time', 'Winning Numbers', 'Bullseye', 'Super Bonus', ''] or rows[-1] not in ([''], ['SEE MORE']):
         raise ValueError('table boundary changed')
     body = rows[1:-1]
-    if len(body) % 2 or not 4 <= len(body) <= 40:
-        raise ValueError('two to twenty hourly rows required')
+    if len(body) % 2 or not 2 <= len(body) <= 40:
+        raise ValueError('one to twenty hourly rows required')
     results = []
     previous = None
     previous_id = None

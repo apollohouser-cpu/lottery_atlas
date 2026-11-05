@@ -49,6 +49,8 @@ def parse_captures(captures):
                         (previous + timedelta(days=1)).replace(hour=5 if game == 'lucky-links' else 4))
             if instant(newer) != expected or int(newer['drawId']) != int(older['drawId']) + 1:
                 raise ValueError('missing scheduled draw or discontinuous identity')
+        if len(rows) < 2:
+            raise ValueError("two hourly results required across captured days")
         groups[game] = rows
     return groups, provenance
 
