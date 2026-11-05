@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'arizona_rule_schedule.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 /// Development presentation; callers must supply validated Arizona coverage.
@@ -192,6 +193,13 @@ class _ArizonaDrawCollectionSheetState
                       line(
                         '${p['selectedDate'] ?? 'Product page'} · ${p['retrievedAt']}',
                       ),
+                  ],
+                ),
+                ExpansionTile(
+                  key: ValueKey('schedule-$selected'),
+                  title: const Text('Prize schedules and add-ons'),
+                  children: [
+                    ArizonaRuleSchedule(rule: widget.coverage['rules'][family]),
                   ],
                 ),
                 for (final conflict in details['sourceConflicts'])

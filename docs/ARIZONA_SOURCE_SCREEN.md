@@ -1103,3 +1103,18 @@ or persistence failure, with retry/close for unavailable data. No production
 URL or map entry is enabled; these injected storage tests do not close real-cache
 or native acceptance. Map wiring, illustrated rules, publication and native
 checks remain open. Deadline remains November 6 09:15 EST without extension.
+
+
+## November 5 — draw schedule presentation
+
+Connected all sixteen inline rule families to the draw sheet, including nested
+multiplier/Bullseye tables, complete schedule wording/caveats, add-on prose and
+original rule acquisition dates. Reviewed matching-ball counts now render as
+text, distinguishing white-number matches from Powerball/Mega Ball matches;
+single-pool symbol counts retain their matching-number meaning. Unreviewed
+symbol classes fail rather than being silently labeled.
+Six focused draw/schedule tests pass, including all sixteen schedule families
+at 390×844 with explicit 2x text and source-order/leading-zero results. Scoped
+analysis passes. This closes development schedule rendering only; native paths,
+OS Dynamic Type, instant-product illustrated symbols, map wiring and public
+release remain open. Deadline remains November 6 09:15 EST without extension.
