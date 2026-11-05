@@ -1410,3 +1410,22 @@ remain open. Ordinary main was rebuilt without the development flag in 17.0
 seconds, installed and launched; its map was visibly restored. Android remained
 stopped. No tracked probe was introduced. The November 6 09:15 EST release
 deadline remains unchanged.
+
+
+## November 5 — all draw selections on iPhone 17e
+
+The gated ordinary-main development build completed in 38.2 seconds. All nineteen
+native draw/session choices were selected through the production sheet dropdown.
+Private accessibility evidence records both result cards for each choice; all38
+result dates, ordered number/digit/dice/team fields, scalar result fields and
+hourly draw IDs/times matched the reviewed candidate. This verifies selection
+and native content rendering at the current ordinary portrait scale only.
+Powerball's result-source button opened the official Arizona Powerball page in
+Safari; the visible Lottery Atlas return control restored the unchanged sheet.
+The source page initially displayed blank dynamic results, so this checks link
+navigation, not refreshed source data or transport recovery. Other source-return
+paths, landscape/accessibility and real-cache acceptance remain open.
+
+Ordinary main was rebuilt without the development flag in16.9 seconds, installed,
+launched and visibly restored; Android stayed stopped. No production publication
+or Arizona acceptance is claimed. Deadline remains November6 09:15EST.
