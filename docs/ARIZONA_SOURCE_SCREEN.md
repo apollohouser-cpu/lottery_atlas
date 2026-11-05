@@ -869,3 +869,16 @@ remain separate from this additional Fast Play restriction source. Product
 matrix capture, repeat Fast Play continuity, publication and native acceptance
 remain open. Previously reported release risk and November 6 09:15 EST deadline
 are unchanged; all beta gates remain open.
+
+
+## November 4 late evening — Fast Play continuity gate
+
+Extended the repeat-observation gate to progressive Fast Play: jackpot growth
+or reset is allowed while complete prize tiers, odds, original prize counts,
+rules and claim restrictions must remain consistent. Remaining-count increases,
+partial tables, mismatched sections and regressing acquisition dates require
+review. Anchored jackpot parsing prevents truncating unseparated dollar values.
+169 focused Arizona tests pass. This is development validation, not a new live
+Fast Play repeat or publication. Product capture and app/native acceptance remain
+open; previously reported release risk and November 6 09:15 EST deadline are
+unchanged. All four beta prerequisites remain open.

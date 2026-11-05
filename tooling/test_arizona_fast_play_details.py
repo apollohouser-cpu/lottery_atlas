@@ -27,3 +27,27 @@ class FastPlayDetailTests(unittest.TestCase):
         r=parse_capture(c,self.c)
         self.assertEqual(r['progressiveJackpotObserved'],'$267,000')
         self.assertEqual(r['tiers'][0]['prizeLabel'],'Progressive')
+
+
+class FastPlayContinuityTests(unittest.TestCase):
+    setUp=FastPlayDetailTests.setUp
+    def validate(self,c):
+        from arizona_fast_play_details import validate_continuity
+        return validate_continuity(c,self.c)
+    def test_jackpot_reset_and_prize_decrease_allowed(self):
+        c=copy.deepcopy(self.c);c['header']=c['header'].replace('$266,958','$100,000')
+        for k in ('table','prizeDetails'):c[k]=c[k].replace('7 of 12','6 of 12')
+        self.assertEqual(self.validate(c)['progressiveJackpotObserved'],'$100,000')
+    def test_partial_tiers_and_changed_originals_rejected(self):
+        for old,new in [('$20\t7.14\t143,451 of 235,200\n',''),('7 of 12','7 of 13'),('140,000','140,001'),('7 of 12','8 of 12')]:
+            c=copy.deepcopy(self.c)
+            for k in ('table','prizeDetails'):c[k]=c[k].replace(old,new)
+            with self.assertRaises(ValueError):self.validate(c)
+    def test_time_regression_and_inconsistent_sections_rejected(self):
+        for k,v in [('retrievedAt','2020-01-01T00:00:00Z'),('prizeDetails',self.c['prizeDetails'].replace('7 of 12','6 of 12'))]:
+            c=copy.deepcopy(self.c);c[k]=v
+            with self.assertRaises(ValueError):self.validate(c)
+
+    def test_unseparated_jackpot_not_truncated(self):
+        c=copy.deepcopy(self.c);c['header']=c['header'].replace('$266,958','$267000')
+        self.assertEqual(self.validate(c)['progressiveJackpotObserved'],'$267000')

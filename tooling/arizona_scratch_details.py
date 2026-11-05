@@ -43,10 +43,10 @@ def parse_capture(capture, expected_url, expected_header, *, kind="scratcher", e
                 symbolInterpretationAvailable=False)
 
 
-def validate_continuity(capture, baseline):
+def validate_continuity(capture, baseline, *, kind="scratcher", extra_prize_labels=()):
     """Gate repeat observations; corrections need explicit review, not silent adoption."""
-    old=parse_capture(baseline,baseline['sourceUrl'],baseline['header'])
-    new=parse_capture(capture,baseline['sourceUrl'],baseline['header'])
+    old=parse_capture(baseline,baseline['sourceUrl'],baseline['header'],kind=kind,extra_prize_labels=extra_prize_labels)
+    new=parse_capture(capture,baseline['sourceUrl'],baseline['header'],kind=kind,extra_prize_labels=extra_prize_labels)
     if datetime.fromisoformat(new['retrievedAt'].replace('Z','+00:00')) < datetime.fromisoformat(old['retrievedAt'].replace('Z','+00:00')):
         raise ValueError('retrieval date regressed')
     if new['rules'] != old['rules'] or new['overallOddsOneIn'] != old['overallOddsOneIn']:

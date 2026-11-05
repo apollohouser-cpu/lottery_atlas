@@ -1,7 +1,7 @@
 """Bounded Fast Play detail parsing; progressive value is an observation only."""
 import copy
 import re
-from arizona_scratch_details import parse_capture as parse_tiers
+from arizona_scratch_details import parse_capture as parse_tiers, validate_continuity as validate_tiers
 
 
 def parse_capture(capture, baseline):
@@ -11,7 +11,7 @@ def parse_capture(capture, baseline):
         raise ValueError('Fast Play rules or claim restrictions changed')
     header=capture['header']
     old=baseline['header']
-    pattern=r'PROGRESSIVE JACKPOT: (\$[0-9]{1,3}(?:,[0-9]{3})*|\$[0-9]+)'
+    pattern=r'PROGRESSIVE JACKPOT: (\$[0-9]{1,3}(?:,[0-9]{3})*|\$[0-9]+)(?=\n|$)'
     match=re.search(pattern,header)
     if not match or re.sub(pattern,'PROGRESSIVE JACKPOT: <observed>',header) != re.sub(pattern,'PROGRESSIVE JACKPOT: <observed>',old):
         raise ValueError('Fast Play identity or loaded jackpot changed shape')
@@ -21,4 +21,15 @@ def parse_capture(capture, baseline):
         raise ValueError('missing progressive tier')
     result.update(faq=copy.deepcopy(capture['faq']),progressiveJackpotObserved=match[1],
                   progressiveJackpotGuaranteed=False)
+    return result
+
+
+def validate_continuity(capture, baseline):
+    result=parse_capture(capture,baseline)
+    # A progressive jackpot may grow or reset; fixed tier definitions may not
+    # silently change with it. Normalize only the already validated header.
+    current={k:copy.deepcopy(v) for k,v in capture.items() if k!='faq'}
+    previous={k:copy.deepcopy(v) for k,v in baseline.items() if k!='faq'}
+    current['header']=previous['header']
+    validate_tiers(current,previous,kind='fast-play',extra_prize_labels=('Progressive',))
     return result
