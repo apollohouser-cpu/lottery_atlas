@@ -1172,3 +1172,28 @@ paths, landscape/accessibility and real-cache acceptance remain open.
 Ordinary main was rebuilt without the development flag in16.9 seconds, installed,
 launched and visibly restored; Android stayed stopped. No production publication
 or Arizona acceptance is claimed. Deadline remains November6 09:15EST.
+
+
+## November 5 — repeatable candidate packaging and byte verification
+
+`tooling/compile_arizona_candidate.py` now packages the reviewed development
+candidate from candidate and retained private source snapshots. It revalidates
+all captures, ignores cached parsed results, preserves source dates, and replaces
+one output atomically only after all validation succeeds. Failed validation or
+replacement preserves previous bytes; temporary files are removed. Check mode
+compares exact existing bytes without writing. Private source inputs cannot be
+overwritten by the output path. This command does not publish or approve a digest.
+
+The current bundled candidate was regenerated in check mode from the complete
+private source snapshot:499059bytes, SHA256
+23b668a9a2f5c51f8eddf2b66ea7b366d0f3d4c3879111e46bf9c1bb530c670d,
+exactly matching the pinned Dart loader. Source capture remains browser-derived;
+productionReady remains false. This provides repeatable packaging, not public
+publication or real-device cache acceptance. Deadline unchanged November6 09:15EST.
+
+Run with `PYTHONPATH=.:tooling python3 tooling/compile_arizona_candidate.py
+--candidate <private-new-snapshot> --retained <private-prior-snapshot>
+--output <candidate-file> --check` (omit `--check` only to write a candidate).
+
+All197focused Arizona Python tests pass, including five packaging tests covering
+byte reproducibility, check-only behavior, source continuity and write failure.
