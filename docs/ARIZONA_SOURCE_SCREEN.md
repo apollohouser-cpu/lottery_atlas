@@ -855,3 +855,17 @@ Arizona tests pass. This is one of 25 Fast Play detail targets; general Fast Pla
 variants, full repeat continuity and linked prohibition details still need review.
 No feed, native acceptance or HTTP recovery is claimed. Previously reported
 release risk and November 6 09:15 EST deadline are unchanged; beta gates stay open.
+
+
+## November 4 late evening — linked Fast Play restriction source
+
+Retained the full official Game Rules and Prohibition page as a separate rule
+source with exact provenance/text validation. Its aggregate purchase threshold,
+24-hour period, multiple-location and acting-in-concert language, prize denial
+and investigation provisions remain literal source statements. They are not
+converted into purchasing advice or an independent legal determination.
+165 focused Arizona tests pass. The sixteen draw-product rule-detail sources
+remain separate from this additional Fast Play restriction source. Product
+matrix capture, repeat Fast Play continuity, publication and native acceptance
+remain open. Previously reported release risk and November 6 09:15 EST deadline
+are unchanged; all beta gates remain open.

@@ -352,3 +352,18 @@ class RemainingQuickDrawDetailTests(unittest.TestCase):
         for game in ['51045','pick-your-bet']:
             bad=self.capture(game);bad['sections'][0]['text']=bad['sections'][0]['text'].split('DISCLAIMERS')[0]
             with self.assertRaises(ValueError):parse_capture(bad,game)
+
+
+class FastPlayProhibitionTests(unittest.TestCase):
+    def setUp(self):
+        self.capture=json.loads((Path(__file__).parent/'fixtures/arizona/fast-play-prohibition-rule-details.json').read_text())
+    def test_aggregate_restriction_retained(self):
+        rule=parse_capture(self.capture,'fast-play-prohibition')
+        text=rule['sections'][0]['text']
+        for phrase in ['exceeding $50,000','twenty-four (24) hour period','multiple retail locations','acting in concert','Denial of Prize Payment']:
+            self.assertIn(phrase,text)
+        self.assertFalse(rule['actualPayoutsAvailable'])
+    def test_changed_threshold_or_aggregation_rejected(self):
+        for old,new in [('exceeding $50,000','exceeding $500,000'),('twenty-four (24)','forty-eight (48)'),('multiple retail locations','one retail location')]:
+            c=copy.deepcopy(self.capture);c['sections'][0]['text']=c['sections'][0]['text'].replace(old,new)
+            with self.assertRaises(ValueError):parse_capture(c,'fast-play-prohibition')
