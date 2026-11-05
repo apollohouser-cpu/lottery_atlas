@@ -1271,3 +1271,19 @@ selection, single-result-only rejection and malformed footer rejection. This
 closes bounded draw repeat acquisition, not production/app/native acceptance.
 Symbol review and publication remain open; no HTTP recovery or atomic source
 collection is claimed. Release deadline remains November 6 09:15 EST, unchanged.
+
+
+## November 5 — ending notices captured and repeated
+
+Complete expanded Scratchers ending notices retain fourteen numbered rows. Fast
+Play now lists five ended rows, adding Haunted Cash #203 with visible Game End
+Date November 2, consistent with its already-reviewed ended detail. This is new
+source evidence after scope fixation, not a deadline reset. Both complete tables
+pass a second ordinary-browser capture and strict identity/date/link continuity.
+The parser preserves literal column labels and dates; Fast Play's conflicting
+claim-deadline accessibility description remains disclosed. No claim deadline
+is calculated, and no inventory or ticket availability is inferred.
+189 focused Arizona tests pass, including malformed dates, duplicate identities,
+source mismatches, unexpanded controls and changed-notice rejection. Publication,
+symbol review and app/native acceptance remain open. Release deadline remains
+November 6 09:15 EST without extension; beta prerequisites remain open.
