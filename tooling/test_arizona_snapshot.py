@@ -29,7 +29,7 @@ def fixture_snapshot():
     return {'draws':{'regular':{g:draw(g) for g in SOURCES},'quickDraw':{g:[draw(g)] for g in PARSERS}},
             'products':{'scratchers':read('scratchers-details-batch.json')+read('scratchers-november-additions.json'),
                         'fast-play':read('fast-play-details-batch.json')+[read('207-detail.json')]},
-            'rules':rules,'details':details}
+            'rules':rules,'details':details,'endings':read('ending-notices.json')}
 
 class SnapshotTests(unittest.TestCase):
     def setUp(self):self.c=fixture_snapshot()

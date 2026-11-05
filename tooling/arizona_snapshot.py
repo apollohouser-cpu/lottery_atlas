@@ -5,13 +5,14 @@ import tempfile
 from datetime import datetime
 from pathlib import Path
 from tooling.arizona_draw_bundle import select_refresh as draw_refresh
+from arizona_endings import validate_continuity as ending_refresh
 from arizona_product_bundle import select_refresh as product_refresh
 from arizona_rules import CONTRACTS as RULES, parse_capture as parse_rule
 from arizona_rule_details import CONTRACTS as DETAILS, parse_capture as parse_detail
 
 
 def validate(candidate,retained):
-    required={'draws','products','rules','details'}
+    required={'draws','products','rules','details','endings'}
     for bundle in (candidate,retained):
         if not isinstance(bundle,dict) or set(bundle)!=required:
             raise ValueError('complete Arizona source snapshot required')
@@ -28,6 +29,11 @@ def validate(candidate,retained):
             if datetime.fromisoformat(new['retrievedAt'].replace('Z','+00:00'))<datetime.fromisoformat(old['retrievedAt'].replace('Z','+00:00')):
                 raise ValueError('rule acquisition regressed')
             result[family][game]=new
+    for bundle in (candidate,retained):
+        if not isinstance(bundle['endings'],dict) or set(bundle['endings']) != {'scratchers','fast-play'}:
+            raise ValueError('both ending notice families required')
+    result['endings']={kind:ending_refresh(candidate['endings'][kind],retained['endings'][kind],kind)
+                       for kind in ('scratchers','fast-play')}
     return result
 
 

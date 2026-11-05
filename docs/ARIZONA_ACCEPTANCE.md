@@ -1287,3 +1287,23 @@ is calculated, and no inventory or ticket availability is inferred.
 source mismatches, unexpanded controls and changed-notice rejection. Publication,
 symbol review and app/native acceptance remain open. Release deadline remains
 November 6 09:15 EST without extension; beta prerequisites remain open.
+
+
+## November 5 — application candidate and coupled endings
+
+Ending notices now participate in the same all-or-error staging transaction as
+results, products and rules. Missing either notice family or changed notice
+identity/date prevents replacement. A 499,059-byte private application candidate
+compiles the validated nineteen draw groups, 60 Scratchers/26 Fast Play products,
+sixteen inline rule families, seventeen linked details and both notice families.
+It preserves individual source times, literal prize counts and source conflicts,
+without exporting raw capture envelopes or asserting an atomic acquisition.
+
+Image-dependent product instructions are explicitly marked official-source-required
+and link to their illustrated source; incomplete text with missing symbols is
+not presented as complete instructions. This is a presentation safeguard, not
+completed symbol interpretation or a reduction of the fixed supported scope.
+192 focused tests pass, including late ending failure preserving prior bytes
+and symbol-dependent instruction handling. Candidate productionReady remains
+false. App loader/UI integration, symbol review, public deployment and native
+acceptance remain open. Deadline remains November 6 09:15 EST; no extension.
