@@ -69,3 +69,22 @@ class AdditionalScratchEvidenceTests(unittest.TestCase):
         self.assertIn('24 TREASURE MAP locations',result['rules']['text'])
         self.assertNotIn('ticketPositions',result)
         self.assertFalse(result['inventoryAvailable'])
+
+class ScratchCatalogCaptureTests(unittest.TestCase):
+    def test_all_fixed_scope_products_have_loaded_tiers(self):
+        root=Path(__file__).parent/'fixtures/arizona'
+        captures=json.loads((root/'scratchers-details-batch.json').read_text())
+        navigation=json.loads((root/'scratchers-navigation.json').read_text())
+        expected={'https://www.arizonalottery.com'+r['href'] for r in navigation['links']}
+        self.assertEqual({c['sourceUrl'] for c in captures},expected)
+        self.assertEqual(len(captures),len(expected))
+        for c in captures:
+            with self.subTest(source=c['sourceUrl']):
+                result=parse_capture(c,c['sourceUrl'],c['header'])
+                self.assertTrue(result['tiers'])
+                self.assertFalse(result['inventoryAvailable'])
+    def test_trailing_nonbreaking_space_in_odds_is_not_missing_data(self):
+        root=Path(__file__).parent/'fixtures/arizona'
+        captures=json.loads((root/'scratchers-details-batch.json').read_text())
+        c=next(c for c in captures if '#1539' in c['header'])
+        self.assertEqual(parse_capture(c,c['sourceUrl'],c['header'])['overallOddsOneIn'],'3.50')

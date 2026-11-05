@@ -14,7 +14,7 @@ def parse_capture(capture, expected_url, expected_header, *, kind="scratcher", e
         raise ValueError('retrieval timezone required')
     if capture['header'] != expected_header:
         raise ValueError('reviewed product header changed')
-    lines=[s for s in capture['table'].splitlines() if s.strip()]
+    lines=[s.strip() for s in capture['table'].splitlines() if s.strip()]
     if not lines or lines.pop(0) != 'Prize\tOdds 1 In\tPrizes Remaining':
         raise ValueError('tier columns changed')
     overall=re.fullmatch(r'Overall Odds: 1 in ([0-9]+(?:\.[0-9]+)?)',lines.pop() if lines else '')

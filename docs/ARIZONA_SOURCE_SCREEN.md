@@ -882,3 +882,20 @@ review. Anchored jackpot parsing prevents truncating unseparated dollar values.
 Fast Play repeat or publication. Product capture and app/native acceptance remain
 open; previously reported release risk and November 6 09:15 EST deadline are
 unchanged. All four beta prerequisites remain open.
+
+
+## November 5 — full fixed-scope Scratchers detail batch captured
+
+Sequential ordinary-browser observations now cover all 58 fixed-scope product
+URLs with 567 rendered prize tiers. Captures preserve individual acquisition
+times (the first two products retain earlier observations), literal headers,
+rules and symbol URLs. Two source tables end their overall-odds line with a
+nonbreaking space; trim boundary whitespace without altering numeric validation.
+171 focused Arizona tests pass, including exact catalog URL-set coverage.
+This closes initial detail acquisition, not symbol interpretation, complete
+rule acceptance, whole-catalog repeat continuity, publication or native checks.
+Navigation also exposes #1554 Clue and #1555 Diamond Deluxe beyond the fixed
+58-product baseline; these are new source evidence awaiting explicit review,
+not silently included in the captured count. Fast Play details remain incomplete.
+Previously reported release risk and November 6 09:15 EST deadline are unchanged;
+all four beta gates remain open. No HTTP transport recovery is claimed.
