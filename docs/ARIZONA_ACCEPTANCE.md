@@ -1307,3 +1307,22 @@ completed symbol interpretation or a reduction of the fixed supported scope.
 and symbol-dependent instruction handling. Candidate productionReady remains
 false. App loader/UI integration, symbol review, public deployment and native
 acceptance remain open. Deadline remains November 6 09:15 EST; no extension.
+
+
+## November 5 — instant-product application presentation
+
+Implemented an Arizona product sheet against the validated application candidate:
+Scratchers/Fast Play selection, name/number search, no-match/reset, numbered
+product details, literal tier odds/counts, full prize wording, progressive
+disclaimers, ended status, ending notices and official source launch. Missing
+symbol interpretations remain explicitly linked to official illustrated rules;
+incomplete symbol text is not displayed as complete instructions.
+
+Two widget tests pass: search/reset and official-source callback with detail
+return, plus ended Fast Play #203 at 390×844 and explicit 2x text. Scoped Flutter
+analysis passes. These are development widget tests, not native source-launch
+acceptance, OS Dynamic Type evidence or real-device lifecycle verification.
+The sheet requires injected validated data and is not yet wired into the map or
+a remote loader. Public deployment, strict Dart loader, draw presentation,
+symbol review and native checks remain open. Deadline remains November 6
+09:15 EST without extension; all beta gates remain open.
