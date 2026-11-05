@@ -88,3 +88,14 @@ class ScratchCatalogCaptureTests(unittest.TestCase):
         captures=json.loads((root/'scratchers-details-batch.json').read_text())
         c=next(c for c in captures if '#1539' in c['header'])
         self.assertEqual(parse_capture(c,c['sourceUrl'],c['header'])['overallOddsOneIn'],'3.50')
+
+class NovemberScratchAdditionsTests(unittest.TestCase):
+    def test_new_product_identity_and_start_dates(self):
+        rows=json.loads((Path(__file__).parent/'fixtures/arizona/scratchers-november-additions.json').read_text())
+        expected={'https://www.arizonalottery.com/scratchers/1554-clue/':'1554',
+                  'https://www.arizonalottery.com/scratchers/1555-diamond-deluxe/':'1555'}
+        self.assertEqual({r['sourceUrl'] for r in rows},set(expected))
+        for c in rows:
+            self.assertIn('#'+expected[c['sourceUrl']],c['header'])
+            self.assertIn('Start Date: 11/3/2026',c['header'])
+            self.assertEqual(len(parse_capture(c,c['sourceUrl'],c['header'])['tiers']),10)

@@ -77,3 +77,14 @@ class FastPlayMatrixTests(unittest.TestCase):
         old=next(c for c in rows if '#175' in c['header']);new=copy.deepcopy(old)
         new['header']=new['header'].replace('$10,000','$20,000')
         with self.assertRaises(ValueError):parse_capture(new,old)
+
+class PrizePyramidTests(unittest.TestCase):
+    def test_new_fixed_prize_product(self):
+        c=json.loads((Path(__file__).parent/'fixtures/arizona/207-detail.json').read_text())
+        self.assertEqual(c['sourceUrl'],'https://www.arizonalottery.com/fast-play/207-prize-pyramid/')
+        self.assertIn('Start Date: 11/3/2026',c['header'])
+        r=parse_capture(c,c)
+        self.assertEqual(len(r['tiers']),11)
+        self.assertIsNone(r['progressiveJackpotObserved'])
+        self.assertIn('Each PYRAMID and PYRAMID LEVEL is played separately',r['rules']['text'])
+        self.assertNotIn('ticketPositions',r)
