@@ -1219,3 +1219,20 @@ and removing temporary files. A private staged artifact was written successfully
 This does not close full live repeat acquisition, symbol review, production feed,
 application/native acceptance or beta gates. Previously reported release risk
 and November 6 09:15 EST deadline remain unchanged.
+
+
+## November 5 — complete live product repeat passes
+
+Fresh sequential ordinary-browser captures from 10:08:39–10:10:56 UTC cover all
+60 Scratchers and 26 Fast Play products. The combined continuity gate passes
+against the retained baseline, including exact identity sets, complete tiers,
+original counts/odds, rules, terms, FAQ and nonregressing acquisition times.
+Progressive headings were required to load before capture. Evidence SHA256:
+0e818ba0f0355ef07bd15bbd3a7ffe197098e1bc1b6fb44508efc0d3690612af.
+The full repeated product set also passes combined private staging with retained
+draw/rule observations. Private captures and manifest are retained under
+work/arizona_scope; productionReady remains false. This closes the bounded
+whole-product repeat check, not draw refresh, source-symbol interpretation,
+production feed or native acceptance. No HTTP recovery or atomic source-time
+claim is made. Previously reported release risk and November 6 09:15 EST deadline
+remain unchanged; all beta gates remain open.
