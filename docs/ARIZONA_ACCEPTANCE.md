@@ -1342,3 +1342,21 @@ not native acceptance, complete illustrated schedule presentation or OS Dynamic
 Type verification. Strict loader, map integration, symbol/schedule review, public
 deployment and native checks remain open. November 6 09:15 EST deadline is
 unchanged; all beta gates remain open.
+
+
+## November 5 — push recovered and fixed-artifact loader
+
+GitHub push recovered; draw presentation commit 9e47407 is now remote. Added a
+Dart loader pinned to the exact reviewed candidate SHA256, rather than accepting
+unreviewed JSON with a matching shape. Every content change requires upstream
+Python validation and explicit digest review; automatic evolving-feed adoption
+is not claimed. The current digest identifies a nonproduction candidate only.
+
+Cache corruption falls back to the validated bundle, failed remote validation
+preserves saved content/source dates, and storage failure does not discard a
+valid response. Six loader tests pass and scoped analysis passes. An integration
+view connects the loader to draw/product sheets and visibly discloses refresh
+or persistence failure, with retry/close for unavailable data. No production
+URL or map entry is enabled; these injected storage tests do not close real-cache
+or native acceptance. Map wiring, illustrated rules, publication and native
+checks remain open. Deadline remains November 6 09:15 EST without extension.
