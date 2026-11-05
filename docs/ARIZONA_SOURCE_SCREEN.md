@@ -1133,3 +1133,23 @@ including bundle loading, visible retention notice, draw close/return and produc
 entry. Scoped analysis passes. No native build/install or public deployment is
 claimed. Illustrated instant rules, production enablement and native acceptance
 remain open; November 6 09:15 EST deadline is unchanged.
+
+
+## November 5 — first native development route verification
+
+The gated ordinary-main iOS simulator build completed in 42.3 seconds and was
+installed/launched on the sole iPhone 17e simulator. Native navigation from the
+map state picker through Arizona Sources and coverage reached both gated routes.
+Powerball loaded both dated results, the retention notice and expanded prize
+schedule. Draw close returned to the source screen. Scratchers loaded its catalog;
+SET FOR LIFE #1401 opened with acquisition date, all seven prize tiers, inventory
+limitations and the incomplete illustrated-instruction disclosure. Detail close
+returned to the catalog and catalog close returned to the source screen.
+
+This is representative native development verification, not all-family native
+acceptance, real-cache failure/adoption, external-source return verification or
+OS Dynamic Type acceptance. Illustrated instant rules and production publication
+remain open. Ordinary main was rebuilt without the development flag in 17.0
+seconds, installed and launched; its map was visibly restored. Android remained
+stopped. No tracked probe was introduced. The November 6 09:15 EST release
+deadline remains unchanged.
