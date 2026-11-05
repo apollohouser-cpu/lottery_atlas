@@ -1236,3 +1236,19 @@ whole-product repeat check, not draw refresh, source-symbol interpretation,
 production feed or native acceptance. No HTTP recovery or atomic source-time
 claim is made. Previously reported release risk and November 6 09:15 EST deadline
 remain unchanged; all beta gates remain open.
+
+
+## November 5 — regular draw repeat passes
+
+Fresh ordinary-browser observations from all eight regular draw sources pass the
+strict continuity selector, producing the latest two observed results for each
+of eleven groups (22 results). Latest dates are November 4 for daily games and
+Powerball/Double Play/The Pick, November 3 for Mega Millions, and November 1 for
+weekly Xs & Os. Team image/label joins remain validated. Actual payout reports
+remain unavailable; rendered prize counts were not promoted. Private capture
+SHA256: 1739f92b8b2dd25dd6c13c114d29dc2a39b26d99449c6603c70fad502114f69f. The combined private staging transaction also passes with these
+new observations and individually dated retained Quick Draw/rule evidence.
+Quick Draw refresh, symbol review, production feed and app/native acceptance
+remain open; this is not an atomic source collection or HTTP transport recovery.
+The November 6 09:15 EST deadline and previously reported release risk are
+unchanged. All four beta prerequisites remain open.
