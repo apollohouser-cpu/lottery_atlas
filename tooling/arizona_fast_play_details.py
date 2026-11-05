@@ -13,13 +13,16 @@ def parse_capture(capture, baseline):
     old=baseline['header']
     pattern=r'PROGRESSIVE JACKPOT: (\$[0-9]{1,3}(?:,[0-9]{3})*|\$[0-9]+)(?=\n|$)'
     match=re.search(pattern,header)
-    if not match or re.sub(pattern,'PROGRESSIVE JACKPOT: <observed>',header) != re.sub(pattern,'PROGRESSIVE JACKPOT: <observed>',old):
+    progressive='PROGRESSIVE JACKPOT:' in old
+    if progressive and (not match or re.sub(pattern,'PROGRESSIVE JACKPOT: <observed>',header) != re.sub(pattern,'PROGRESSIVE JACKPOT: <observed>',old)):
         raise ValueError('Fast Play identity or loaded jackpot changed shape')
+    if not progressive and (header != old or 'TOP PRIZE: $' not in header):
+        raise ValueError('fixed prize identity changed')
     stripped={k:v for k,v in capture.items() if k!='faq'}
-    result=parse_tiers(stripped,baseline['sourceUrl'],header,kind='fast-play',extra_prize_labels=('Progressive',))
-    if sum(t['prizeLabel']=='Progressive' for t in result['tiers']) != 1:
+    result=parse_tiers(stripped,baseline['sourceUrl'],header,kind='fast-play',extra_prize_labels=('Progressive',),overall_label=('Overal Odds' if '/175-monopoly/' in baseline['sourceUrl'] else 'Overall Odds'))
+    if sum(t['prizeLabel']=='Progressive' for t in result['tiers']) != int(progressive):
         raise ValueError('missing progressive tier')
-    result.update(faq=copy.deepcopy(capture['faq']),progressiveJackpotObserved=match[1],
+    result.update(faq=copy.deepcopy(capture['faq']),progressiveJackpotObserved=match[1] if progressive else None,
                   progressiveJackpotGuaranteed=False)
     return result
 
@@ -31,5 +34,5 @@ def validate_continuity(capture, baseline):
     current={k:copy.deepcopy(v) for k,v in capture.items() if k!='faq'}
     previous={k:copy.deepcopy(v) for k,v in baseline.items() if k!='faq'}
     current['header']=previous['header']
-    validate_tiers(current,previous,kind='fast-play',extra_prize_labels=('Progressive',))
+    validate_tiers(current,previous,kind='fast-play',extra_prize_labels=('Progressive',),overall_label=('Overal Odds' if '/175-monopoly/' in baseline['sourceUrl'] else 'Overall Odds'))
     return result

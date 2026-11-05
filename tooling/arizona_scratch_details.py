@@ -5,7 +5,7 @@ from datetime import datetime
 from decimal import Decimal
 
 
-def parse_capture(capture, expected_url, expected_header, *, kind="scratcher", extra_prize_labels=()):
+def parse_capture(capture, expected_url, expected_header, *, kind="scratcher", extra_prize_labels=(), overall_label="Overall Odds"):
     if set(capture) != {'sourceUrl','captureKind','retrievedAt','header','table','rules','prizeDetails'}:
         raise ValueError('scratcher capture fields changed')
     if capture['sourceUrl'] != expected_url or capture['captureKind'] != f'browser-dom-{kind}-detail-observation':
@@ -17,7 +17,7 @@ def parse_capture(capture, expected_url, expected_header, *, kind="scratcher", e
     lines=[s.strip() for s in capture['table'].splitlines() if s.strip()]
     if not lines or lines.pop(0) != 'Prize\tOdds 1 In\tPrizes Remaining':
         raise ValueError('tier columns changed')
-    overall=re.fullmatch(r'Overall Odds: 1 in ([0-9]+(?:\.[0-9]+)?)',lines.pop() if lines else '')
+    overall=re.fullmatch(re.escape(overall_label)+r': 1 in ([0-9]+(?:\.[0-9]+)?)',lines.pop() if lines else '')
     if not overall or Decimal(overall[1]) < 1 or not lines:
         raise ValueError('missing tiers or invalid overall odds')
     tiers=[];seen=set()
@@ -43,10 +43,10 @@ def parse_capture(capture, expected_url, expected_header, *, kind="scratcher", e
                 symbolInterpretationAvailable=False)
 
 
-def validate_continuity(capture, baseline, *, kind="scratcher", extra_prize_labels=()):
+def validate_continuity(capture, baseline, *, kind="scratcher", extra_prize_labels=(), overall_label="Overall Odds"):
     """Gate repeat observations; corrections need explicit review, not silent adoption."""
-    old=parse_capture(baseline,baseline['sourceUrl'],baseline['header'],kind=kind,extra_prize_labels=extra_prize_labels)
-    new=parse_capture(capture,baseline['sourceUrl'],baseline['header'],kind=kind,extra_prize_labels=extra_prize_labels)
+    old=parse_capture(baseline,baseline['sourceUrl'],baseline['header'],kind=kind,extra_prize_labels=extra_prize_labels,overall_label=overall_label)
+    new=parse_capture(capture,baseline['sourceUrl'],baseline['header'],kind=kind,extra_prize_labels=extra_prize_labels,overall_label=overall_label)
     if datetime.fromisoformat(new['retrievedAt'].replace('Z','+00:00')) < datetime.fromisoformat(old['retrievedAt'].replace('Z','+00:00')):
         raise ValueError('retrieval date regressed')
     if new['rules'] != old['rules'] or new['overallOddsOneIn'] != old['overallOddsOneIn']:

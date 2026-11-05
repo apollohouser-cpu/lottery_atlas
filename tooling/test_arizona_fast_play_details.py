@@ -51,3 +51,29 @@ class FastPlayContinuityTests(unittest.TestCase):
     def test_unseparated_jackpot_not_truncated(self):
         c=copy.deepcopy(self.c);c['header']=c['header'].replace('$266,958','$267000')
         self.assertEqual(self.validate(c)['progressiveJackpotObserved'],'$267000')
+
+class FastPlayMatrixTests(unittest.TestCase):
+    def test_fixed_scope_identity_and_complete_tiers(self):
+        from arizona_fast_play_details import validate_continuity
+        root=Path(__file__).parent/'fixtures/arizona'
+        rows=json.loads((root/'fast-play-details-batch.json').read_text())
+        links=json.loads((root/'fast-play-navigation.json').read_text())['links']
+        self.assertEqual(len(rows),len(links))
+        self.assertEqual({r['sourceUrl'] for r in rows},{'https://www.arizonalottery.com'+l['href'] for l in links})
+        for c in rows:
+            with self.subTest(url=c['sourceUrl']):
+                r=validate_continuity(c,c)
+                self.assertTrue(r['tiers'])
+                self.assertEqual(r['progressiveJackpotObserved'] is not None,'PROGRESSIVE JACKPOT:' in c['header'])
+    def test_live_169_repeat(self):
+        from arizona_fast_play_details import validate_continuity
+        root=Path(__file__).parent/'fixtures/arizona'
+        rows=json.loads((root/'fast-play-details-batch.json').read_text())
+        old=json.loads((root/'169-detail.json').read_text())
+        new=next(c for c in rows if c['sourceUrl']==old['sourceUrl'])
+        self.assertEqual(len(validate_continuity(new,old)['tiers']),10)
+    def test_fixed_prize_change_is_not_progressive_reset(self):
+        rows=json.loads((Path(__file__).parent/'fixtures/arizona/fast-play-details-batch.json').read_text())
+        old=next(c for c in rows if '#175' in c['header']);new=copy.deepcopy(old)
+        new['header']=new['header'].replace('$10,000','$20,000')
+        with self.assertRaises(ValueError):parse_capture(new,old)

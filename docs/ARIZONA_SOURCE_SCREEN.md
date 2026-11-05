@@ -899,3 +899,20 @@ Navigation also exposes #1554 Clue and #1555 Diamond Deluxe beyond the fixed
 not silently included in the captured count. Fast Play details remain incomplete.
 Previously reported release risk and November 6 09:15 EST deadline are unchanged;
 all four beta gates remain open. No HTTP transport recovery is claimed.
+
+
+## November 5 — fixed-scope Fast Play detail matrix captured
+
+All 25 fixed-scope Fast Play product URLs now have initial rendered detail
+observations, totaling 219 prize tiers. Fixed top prizes are validated separately
+from progressive jackpot observations. Monopoly's literal "Overal Odds" label
+is accepted only for its reviewed URL; no broad spelling fallback is added.
+Money Vault's initially empty jackpot was recaptured after loading. A fresh
+#169 observation passes continuity against its prior capture. 174 focused
+Arizona tests pass. #203 Haunted Cash now explicitly says Game Ended; do not
+present the fixed navigation baseline as a list of currently active games.
+Current navigation also shows #207 Prize Pyramid, pending explicit new-product
+review alongside the two newly observed Scratchers. Initial product acquisition
+is not symbol review, full repeat acceptance or publication. App/native and all
+beta gates remain open; previously reported release risk and November 6 09:15
+EST deadline remain unchanged. Direct HTTP recovery is not claimed.
