@@ -1390,3 +1390,32 @@ source dates and incomplete-rule disclosures remain unchanged until that work
 passes. Direct HTTP403 remains unresolved. Ordinary iOS app remains running,
 Android stopped; all four beta gates remain open. Arizona release deadline is
 still November6 09:15EST, without extension.
+
+
+## November 6 — source-bound illustrated rules compiled into candidate
+
+Implemented strict inline reconstruction for the45 visually reviewed products.
+The compiler validates original rule hashes, source URLs, ordered image/alt lists,
+DOM text/HTML continuity and private screenshot/DOM hashes before inserting
+bracketed visual descriptions at each image position. Missing, extra, reordered,
+changed-source or blank-label evidence fails rather than inventing instructions.
+An incomplete review set fails before the atomic candidate write.
+
+The resulting development candidate is535928bytes, SHA256
+17cb702fe6100bf32f65e0911e73c7d7bb312d7321f5a02dc9bf15baf51524d3.
+Bundle, staging file and test fixture match. A field comparison confirms all
+non-rule product values and all draw/rule-detail/ending data retain their original
+values and acquisition dates. The app displays the reconstructed text with an
+explicit bracketed-description explanation and the existing official source link.
+The static transport digest pin was reviewed and updated; productionReady remains
+false and ordinary Arizona routes remain gated. Live deployment of these new
+bytes and new native presentation are not yet claimed.
+
+203 focused Python tests and11 Flutter product/layout/loader tests pass; scoped
+analysis passes. Packaging --check reproduced exact bytes and the strict staging
+validator passed. The initial Flutter explanation assertion targeted a lazily
+unmounted row; the corrected test scrolls to verify its visible explanation before
+continuing to the official source action. Private captures remain excluded from
+publication. Next: native reviewed-rule presentation and remaining source paths,
+live candidate verification and the final supported-release decision. Ordinary
+iOS app remains running; Android stopped. November6 09:15EST is unchanged.

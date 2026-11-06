@@ -7,7 +7,7 @@ import hashlib
 from pathlib import Path
 import sys
 
-REVIEWED_SHA256 = '23b668a9a2f5c51f8eddf2b66ea7b366d0f3d4c3879111e46bf9c1bb530c670d'
+REVIEWED_SHA256 = '17cb702fe6100bf32f65e0911e73c7d7bb312d7321f5a02dc9bf15baf51524d3'
 
 
 def validate_bytes(payload):

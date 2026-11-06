@@ -42,6 +42,18 @@ void main() {
       opened.toString(),
       'https://www.arizonalottery.com/scratchers/1401-set-for-life/',
     );
+    final explanation = find.textContaining('Bracketed symbol descriptions');
+    await tester.scrollUntilVisible(
+      explanation,
+      300,
+      scrollable: find
+          .descendant(
+            of: find.byType(ListView).last,
+            matching: find.byType(Scrollable),
+          )
+          .first,
+    );
+    expect(explanation.hitTestable(), findsOneWidget);
     final source = find.text('Official game and illustrated instructions');
     await tester.scrollUntilVisible(
       source,
@@ -53,7 +65,7 @@ void main() {
           )
           .first,
     );
-    expect(find.textContaining('Complete symbol instructions'), findsOneWidget);
+    expect(find.textContaining('[symbol: LIFE]'), findsOneWidget);
     await tester.tap(source);
     await tester.pumpAndSettle();
     expect(

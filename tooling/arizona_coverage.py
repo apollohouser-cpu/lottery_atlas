@@ -21,8 +21,12 @@ PRODUCT_FIELDS = ('gameNumber','header','sourceUrl','retrievedAt','sourceStatus'
                   'symbolInterpretationAvailable')
 
 
-def compile_coverage(candidate, retained):
+def compile_coverage(candidate, retained, *, symbol_reviews=None):
     validated = validate(candidate, retained)
+    reviewed = {}
+    if symbol_reviews is not None:
+        from arizona_symbol_reviews import load_reviews
+        reviewed = load_reviews(symbol_reviews, validated['products'])
     products = {}
     for kind, rows in validated['products'].items():
         products[kind] = []
@@ -35,6 +39,9 @@ def compile_coverage(candidate, retained):
                 'sourceUrl':row['sourceUrl'],
                 'reason':'Consult official illustrated instructions for matching symbols.' if row['rules']['images'] else None,
             }
+            if row['sourceUrl'] in reviewed:
+                product['rulePresentation'] = reviewed[row['sourceUrl']]
+                product['symbolInterpretationAvailable'] = True
             if kind == 'fast-play':
                 for key in ('progressiveJackpotObserved','progressiveJackpotGuaranteed','faq'):
                     product[key] = copy.deepcopy(row[key])
@@ -51,5 +58,5 @@ def compile_coverage(candidate, retained):
         'rules':copy.deepcopy(validated['rules']),
         'ruleDetails':copy.deepcopy(validated['details']),
         'endingNotices':copy.deepcopy(validated['endings']),
-        'limitations':list(LIMITATIONS),
+        'limitations':[('Bracketed product-rule symbol descriptions are visually reviewed; consult official illustrated instructions.' if reviewed and 'Product rule images' in item else item) for item in LIMITATIONS],
     }

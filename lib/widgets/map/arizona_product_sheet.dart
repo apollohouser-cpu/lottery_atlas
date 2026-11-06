@@ -108,7 +108,10 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
                     ],
                   ),
                   line('How to play'),
-                  if (presentation['status'] == 'literal-text')
+                  if (presentation['status'] == 'reviewed-symbol-text')
+                    line(presentation['reason']),
+                  if (presentation['status'] == 'literal-text' ||
+                      presentation['status'] == 'reviewed-symbol-text')
                     line(presentation['text'])
                   else
                     line(

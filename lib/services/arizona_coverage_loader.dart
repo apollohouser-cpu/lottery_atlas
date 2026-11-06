@@ -52,7 +52,7 @@ class ArizonaCoverageLoader {
   final Future<String?> Function() readCache;
   final Future<void> Function(String) writeCache;
   static const reviewedCandidateSha256 =
-      '23b668a9a2f5c51f8eddf2b66ea7b366d0f3d4c3879111e46bf9c1bb530c670d';
+      '17cb702fe6100bf32f65e0911e73c7d7bb312d7321f5a02dc9bf15baf51524d3';
 
   static Map<String, dynamic> decode(String raw) {
     if (sha256.convert(utf8.encode(raw)).toString() !=

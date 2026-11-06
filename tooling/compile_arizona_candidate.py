@@ -25,9 +25,9 @@ def read_captures(path):
     return envelope['captures']
 
 
-def package(candidate, retained, destination, *, check=False):
+def package(candidate, retained, destination, *, check=False, symbol_reviews=None):
     # Finish all source validation before touching an existing artifact.
-    coverage = compile_coverage(read_captures(candidate), read_captures(retained))
+    coverage = compile_coverage(read_captures(candidate), read_captures(retained), symbol_reviews=symbol_reviews)
     payload = (json.dumps(coverage, ensure_ascii=False, sort_keys=True,
                           indent=2) + '\n').encode('utf-8')
     destination = Path(destination)
@@ -59,10 +59,11 @@ def main():
     parser.add_argument('--candidate', required=True, type=Path)
     parser.add_argument('--retained', required=True, type=Path)
     parser.add_argument('--output', required=True, type=Path)
+    parser.add_argument('--symbol-reviews', type=Path, help='Private complete visual review evidence directory')
     parser.add_argument('--check', action='store_true', help='Verify existing bytes without writing')
     args = parser.parse_args()
     print(json.dumps(package(args.candidate, args.retained, args.output,
-                             check=args.check), sort_keys=True))
+                             check=args.check, symbol_reviews=args.symbol_reviews), sort_keys=True))
 
 
 if __name__ == '__main__':
