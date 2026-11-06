@@ -9,6 +9,7 @@ on:
     branches: [main]
     paths:
       - 'data/**'
+      - 'docs/arizona_coverage.candidate.json'
       - 'tooling/**'
       - 'test/tooling/**'
       - '.github/workflows/publish-activity-feed.yml'
@@ -70,6 +71,8 @@ jobs:
           cp data/idaho_coverage.generated.json docs/idaho_coverage.json
           cp data/oklahoma_coverage.generated.json docs/oklahoma_coverage.json
           cp data/new_mexico_coverage.generated.json docs/new_mexico_coverage.json
+          python3 -m tooling.validate_arizona_candidate data/arizona_coverage.candidate.json
+          cmp data/arizona_coverage.candidate.json docs/arizona_coverage.candidate.json
           python3 -m tooling.validate_montana_coverage data/montana_coverage.generated.json
           cp data/montana_coverage.generated.json docs/montana_coverage.json
           python3 -m tooling.validate_north_dakota_coverage data/north_dakota_coverage.generated.json

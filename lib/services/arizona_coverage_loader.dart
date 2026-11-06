@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:crypto/crypto.dart';
+import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -23,6 +24,27 @@ class ArizonaCoverageLoader {
       writeCache: (raw) => prefs.setString(developmentCacheKey, raw),
       fetchRemote: () async =>
           throw StateError('Arizona remote feed is not enabled'),
+    );
+  }
+
+  /// Reviewed static candidate transport, still gated from ordinary app routes.
+  /// Successful download does not imply a fresh agency collection or acceptance.
+  static const candidateUrl =
+      'https://apollohouser-cpu.github.io/lottery_atlas/arizona_coverage.candidate.json';
+  factory ArizonaCoverageLoader.preview() {
+    late final prefs = SharedPreferencesAsync();
+    return ArizonaCoverageLoader(
+      readBundle: () =>
+          rootBundle.loadString('data/arizona_coverage.candidate.json'),
+      readCache: () => prefs.getString(developmentCacheKey),
+      writeCache: (raw) => prefs.setString(developmentCacheKey, raw),
+      fetchRemote: () async {
+        final response = await http.get(Uri.parse(candidateUrl));
+        if (response.statusCode != 200) {
+          throw StateError('Arizona candidate HTTP ${response.statusCode}');
+        }
+        return utf8.decode(response.bodyBytes);
+      },
     );
   }
   final Future<String> Function() readBundle;

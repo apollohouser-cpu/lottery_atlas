@@ -1495,3 +1495,24 @@ reset and both coverage disclosures continue to pass (seven focused tests).
 This is widget-layout evidence, not ordinary OS Dynamic Type or native landscape
 acceptance. The currently installed ordinary iPhone app is unchanged. No feed or
 acceptance claim; November6 09:15EST remains the release deadline.
+
+
+## November 5 — candidate publication staging
+
+The complete revalidated development candidate is now staged at
+`docs/arizona_coverage.candidate.json` in97bc488, exactly499059bytes with the
+existing reviewed digest. This is explicitly productionReady=false, not an
+accepted state feed. The deployment workflow now validates the exact digest and
+requires bundled/public candidate byte equality before uploading Pages; a changed
+candidate cannot silently enter the deployment. Direct candidate-path edits also
+trigger that workflow. Source capture timestamps are unchanged.
+
+A separate preview loader factory fetches the fixed Pages candidate URL using
+strict UTF-8 and HTTP200, then the existing digest validation/cache-retention
+path. Ordinary routes remain disabled and development defaults remain offline;
+remote native adoption is not yet claimed. Six loader tests and scoped analysis
+pass; the Python transport validator rejects modified bytes and matches the Dart
+pin. The first live URL check returned404 before this deployment trigger was
+added. Live publication verification is pending, not reported as successful.
+Instant illustrated rules, remaining native/cache evidence and acceptance remain
+open. November6 09:15EST deadline is unchanged.
