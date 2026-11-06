@@ -86,3 +86,19 @@ test checks the 36-game subset, exclusion and two unknown counts. Generated
 and offline feeds are wired into the six-hour publisher and combined feed,
 now containing 22 state catalogs. This is catalog coverage, not dated claims
 or a complete retailer map; Maine's FOAA response remains pending.
+
+## November 6 — agency request closed without delivery
+
+DAFS states that no further responsive information is available and closes the
+September13 request, referring generally to the Maine Lottery website. It cites
+the statutory provision concerning creation of nonexistent records/reports; this
+records the agency's position, not an independent legal determination. No
+responsive file, specific field-to-source mapping, fee, question or promised
+follow-up date was supplied.
+
+The complete returned thread and original SENT request were verified. No reply,
+duplicate request or fee authorization was sent. Private correspondence evidence
+is retained under work/agency_email_checks/maine_20261106. This supersedes the
+prior pending-FOAA status. Existing public-source catalog evidence is unchanged;
+closure neither supplies complete winning-ticket coverage nor blocks honest
+supported-source work. Maine remains unfinished; Delaware is the sole active state.
