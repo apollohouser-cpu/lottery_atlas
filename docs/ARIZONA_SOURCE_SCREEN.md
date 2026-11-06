@@ -1539,3 +1539,13 @@ November6 publication follow-up: release validation and upload passed, but GitHu
 Pages deployment timed out. Release endpoint404; failed deployment retried only.
 This is a hosting failure, not new agency-source evidence. Bundled observations
 and original dates remain available in ordinary iOS routes. Acceptance remains open.
+
+## November 6 at11:48EST — supported acceptance
+
+Arizona supported coverage is accepted after its missed09:15EST deadline, without
+extension. Pages retry succeeded; live release535917 bytes matched SHA256
+fa48e46f0d526f4fee7dc0ea71db84202f028d6102475824b2f3668d62f961d5 and strict
+packaging at16:47:05UTC. Native production remote adoption and exact cache
+retention passed; ordinary app restored. See ARIZONA_ACCEPTANCE.md for the final
+bounded matrix and unavailable data. Direct agency HTTP remains unresolved;
+source dates unchanged. All four mobile beta prerequisites remain open.

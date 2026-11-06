@@ -1,22 +1,45 @@
 # Arizona supported coverage acceptance
 
-Status: **ACTIVE — not accepted**.
+Status: **ACCEPTED — supported available coverage, November 6, 2026 at 11:48 EST**.
 
-## Current readiness — November 6 after the release deadline
+This final decision supersedes historical open-gate notes below. The09:15EST
+release deadline was missed; acceptance is late, with no extension or revised
+deadline. Scope was fixed within its original24-hour window.
 
-**The November6 09:15EST (14:15UTC) release deadline was missed.** Arizona remains
-active and unaccepted. No extension or replacement deadline is assigned.
+## Final supported acceptance
 
-Source/parser and development presentation work have bounded evidence below.
-Production packaging and ordinary-route integration pass207 Python and23 Arizona
-Flutter tests;
-publication, live-byte equality and final ordinary-build/native verification are
-still pending. The release package preserves all reviewed source values and
-collection dates, changing only artifact identity and productionReady. Those
-metadata fields do not constitute state acceptance.
+Production47e2dc7 and ordinary-route evidencec71b35e are published. Deployment
+42237272970 attempt2 recovered after the initial Pages timeout. At16:47:05UTC,
+live535917 bytes matched the reviewed release and strict candidate-to-release
+packaging check: SHA256
+`fa48e46f0d526f4fee7dc0ea71db84202f028d6102475824b2f3668d62f961d5`.
 
-All four mobile beta prerequisites remain open. State publication alone does not
-establish beta readiness.
+Supported scope is38 recent results in19 session groups,16 draw-family rules,
+17 linked rule details,60 Scratchers/587 tiers and26 Fast Play/230 tiers, plus
+14 Scratchers and5 Fast Play ending notices. All original source dates are
+preserved. Refresh is reviewed browser capture and strict packaging; this is
+not recovered direct agency HTTP or an automatic live agency collector.
+
+Prior native evidence covers all19 selections, all16 draw-family full-rule
+returns, both catalog search/no-match/reset paths, representative illustrated
+rules and source returns, representative landscape and explicit2x layouts.
+Ordinary production routes and exits were verified on iPhone17e. The production
+cache harness now passed live remote adoption/persistence and exact retention
+through a fresh native preferences reader after an invalid remote response with
+bundle deliberately unavailable. Prior cache restored. Ordinary main rebuilt
+in15.3s, installed/launched PID91152 and map verified; Android remained stopped.
+Private native-release-cache and live-release evidence is retained locally.
+207 Python and23 Arizona Flutter tests passed for production integration.
+
+This accepts bounded supported coverage, not actual payout reports, winner counts,
+retailer joins/inventory, complete history, exhaustive Instant Tabs or promotions.
+Rule conflicts and ending-date ambiguity remain visible. No Android navigation,
+ordinary OS DynamicType propagation, physical-device lifecycle or mobile beta
+acceptance is inferred. All four mobile beta prerequisites remain open.
+
+Twenty-two states are accepted;23 unfinished. Arizona is closed absent a named
+defect or meaningful new evidence. The next state requires explicit activation
+with its own fresh scope and release deadlines; none is inherited from Arizona.
 
 ## November 1, 2026 at 09:15 EST — activation
 
