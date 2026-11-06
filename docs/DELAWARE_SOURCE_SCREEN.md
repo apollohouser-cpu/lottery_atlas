@@ -102,3 +102,24 @@ Next inspect linked result/report/rule tables, resolve Lucky For Life status,
 audit instant detail/coming-soon/second-chance boundaries, and fix the complete
 supported matrix before November7 at12:48EST. Release deadline November11 at
 12:48EST unchanged; no acceptance or new native build claimed.
+
+## November 6 — report semantics and first strict draw-report parser
+
+Captured28 linked rule/report/history/instant-boundary pages with ordinary HTTP200;
+raw hashes and retrieval times retained in work/delaware_scope/rules-history-manifest.json.
+The Lucky For Life November history table has headers but no result rows: that
+is unavailable observed history, not zero winners or evidence that the game is
+currently operating. Its legacy daily-rule page remains separately identified.
+Coming-soon and second-chance pages are captured; their product/promotion scope
+still needs reconciliation before the fixed scope decision.
+
+Multi-Win Lotto's Number Of Winners table has two distinct category groups:
+Win in A Line (four columns) and Combination Win (six columns). Both contain6N,
+so a label-only map would silently merge different counts. New strict parser
+preserves group plus label, source title/URL, date and published count without
+summing categories or inferring unique tickets, geography or retailer positions.
+The retained fixture has10 dated rows from October27 through November5. Header
+spans, row labels/width, nonnegative integers, unique descending dates and future
+bounds fail closed. Ten focused Delaware tests pass, including existing catalog
+checks. No report output is published yet; complete report-unit qualification
+and integration remain open. Release and scope deadlines unchanged.
