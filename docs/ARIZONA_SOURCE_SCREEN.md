@@ -1284,3 +1284,25 @@ The November6 09:15EST deadline is unchanged.
 
 Ordinary main rebuilt in15.2seconds without development flags, installed/launched
 and visually restored after the harness. No tracked probe remains.
+
+
+## November 5 at23:30EST — native catalog interactions
+
+An untracked harness using the actual coverage/product widgets compiled in39.1
+seconds on the sole iPhone17e. Both Scratchers and Fast Play no-match searches
+and clear/reset paths were exercised; reset restored each catalog. Searching203
+opened HAUNTED CASH with ended status, all eight prize tiers, original acquisition
+date and literal text instructions. Detail close returned to the filtered catalog.
+The expanded Fast Play ending section exposed all five notices and the original
+end-date/claim-deadline ambiguity, without calculating a deadline.
+
+Ordinary-scale landscape showed the retention banner, fixed close control,
+family picker and search with no observed horizontal clipping. This was a bounded
+initial landscape view, not a complete scrolled landscape or enlarged-text/native
+OS accessibility audit. The harness is not the ordinary map route. The attempted
+detail scroll did not reach its source action, so no new external product source
+return is claimed. Remaining native source paths and illustrated-rule gaps remain
+open; deadline November6 09:15EST is unchanged.
+
+Simulator returned to upright orientation. Ordinary main rebuilt in17.6seconds,
+installed/launched and map verified. Android stayed stopped; no tracked probe.
