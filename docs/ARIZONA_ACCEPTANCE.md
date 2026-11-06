@@ -2,21 +2,21 @@
 
 Status: **ACTIVE — not accepted**.
 
-## Current readiness — November 6 morning
+## Current readiness — November 6 after the release deadline
 
-The source/parser and development presentation work is implemented. Revalidation
-passes203 Python tests and22 Arizona Flutter tests; private-source packaging
-reproduces the exact535928-byte reviewed candidate. All16 draw-family full-rule
-native returns, all19 result selections, representative catalog/rule navigation,
-enlarged/landscape widget checks, and current-candidate native cache retention
-have bounded evidence below.
+**The November6 09:15EST (14:15UTC) release deadline was missed.** Arizona remains
+active and unaccepted. No extension or replacement deadline is assigned.
 
-Release remains **not accepted**: the published artifact is still a development
-candidate (productionReadyfalse); ordinary Arizona routes remain gated. Production
-artifact promotion, ordinary-route integration, live release equality and final
-ordinary-build/native acceptance must be completed before supported acceptance.
-Do not confuse passed candidate checks with an ordinary released experience.
-The November6 09:15EST release-decision deadline remains unchanged.
+Source/parser and development presentation work have bounded evidence below.
+Production packaging and ordinary-route integration pass207 Python and23 Arizona
+Flutter tests;
+publication, live-byte equality and final ordinary-build/native verification are
+still pending. The release package preserves all reviewed source values and
+collection dates, changing only artifact identity and productionReady. Those
+metadata fields do not constitute state acceptance.
+
+All four mobile beta prerequisites remain open. State publication alone does not
+establish beta readiness.
 
 ## November 1, 2026 at 09:15 EST — activation
 

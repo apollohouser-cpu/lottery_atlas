@@ -3,7 +3,7 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
-## Current decision — November 1, 2026
+## Current decision — November 6, 2026
 
 Montana supported coverage is ACCEPTED November1 at08:15EST, before its22:30EST
 release deadline without extension. See MONTANA_ACCEPTANCE.md for the final
@@ -11,7 +11,9 @@ bounded source/publication/native/cache matrix and explicit unavailable features
 Twenty-one states accepted;24 unfinished. Arizona is the sole active state from
 November1 at09:15EST. Full supported scope fixed November1 at16:22EST, before November2 at09:15EST; supported release due
 November6 at09:15EST (14:15UTC), fresh120elapsed hours. See ARIZONA_ACCEPTANCE.md.
-No extension or inherited Montana deadline. Accepted states stay closed absent a
+The November6 09:15EST deadline was missed: Arizona remains active and unaccepted.
+Production integration is underway; no replacement deadline or extension is assigned.
+No inherited Montana deadline. Accepted states stay closed absent a
 named defect or meaningful new evidence. Missing agency records do not block
 honest supported completion; audit private deliveries before public integration.
 
@@ -64,7 +66,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Arizona | November6,2026 at09:15EST | Sole active November1 at09:15EST; scope fixed November1 at16:22EST; capture/implementation open; fresh120elapsed hours. |
+| Arizona | November6,2026 at09:15EST | Sole active November1 at09:15EST; scope fixed November1 at16:22EST; DEADLINE MISSED; production integration and final live/native verification remain open; no extension. |
 | Montana | November1,2026 at22:30EST | ACCEPTED November1 at08:15EST, early without extension; see MONTANA_ACCEPTANCE.md. |
 | North Dakota | November1,2026 at10:29AM EST | ACCEPTED October27 at22:34EDT, early without extension; see NORTH_DAKOTA_ACCEPTANCE.md. |
 | Wyoming | ACCEPTED October27,2026 at11:20ET | Production5cf166f; final bounded native/live/cache matrix closed early, no extension. |

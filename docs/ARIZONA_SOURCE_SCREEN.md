@@ -1526,3 +1526,11 @@ release verification remain open. No deadline extension or acceptance is claimed
 
 Ordinary lib/main.dart restored in15.4s, installed/launched and verified on the
 map. Android remained stopped; all four beta prerequisites remain open.
+
+## November 6 — release deadline missed
+
+Arizona remains the sole active, unaccepted state after its09:15EST deadline.
+No extension is assigned. Reviewed source observations and their original dates
+are retained. Production packaging and ordinary app routes are being integrated;
+live publication and final ordinary native verification are pending. No new
+agency collection or direct HTTP recovery is claimed.

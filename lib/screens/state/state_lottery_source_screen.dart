@@ -73,14 +73,14 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
-          if (source.stateName == 'Arizona' && const bool.fromEnvironment('ARIZONA_DEVELOPMENT')) ...[
+          if (source.stateName == 'Arizona') ...[
             for (final products in [false, true]) ListTile(
               title: Text(products ? 'Arizona instant games and notices' : 'Arizona results and schedules'),
               subtitle: Text(products ? 'Scratchers, Fast Play and literal ending notices' : 'Draw results, hourly games and published prize schedules'),
               onTap: () => showModalBottomSheet<void>(
                 context: context, isScrollControlled: true, useSafeArea: true,
                 builder: (_) => SizedBox(height: MediaQuery.sizeOf(context).height * .94,
-                  child: ArizonaCoverageView(loader: ArizonaCoverageLoader.development(), products: products)),
+                  child: ArizonaCoverageView(loader: ArizonaCoverageLoader.published(), products: products)),
               ),
             ),
           ],

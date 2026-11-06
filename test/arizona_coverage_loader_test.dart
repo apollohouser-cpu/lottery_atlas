@@ -7,6 +7,33 @@ void main() {
   final raw = File(
     'test/fixtures/arizona_coverage_candidate.json',
   ).readAsStringSync();
+  test(
+    'release loader rejects candidate refresh and retains released data',
+    () async {
+      final released = File(
+        'data/arizona_coverage.generated.json',
+      ).readAsStringSync();
+      var writes = 0;
+      final loader = ArizonaCoverageLoader(
+        releaseOnly: true,
+        readBundle: () async => released,
+        readCache: () async => raw,
+        writeCache: (_) async {
+          writes++;
+        },
+        fetchRemote: () async => raw,
+      );
+      final result = await loader.load();
+      expect(result.origin, 'bundle');
+      expect(result.refreshFailed, isTrue);
+      expect(result.data, jsonDecode(released));
+      expect(writes, 0);
+      expect(
+        () => ArizonaCoverageLoader.decode('${released} '),
+        throwsFormatException,
+      );
+    },
+  );
   test('reviewed artifact accepts all nineteen groups', () {
     expect(ArizonaCoverageLoader.decode(raw)['drawGroups'].length, 19);
   });
