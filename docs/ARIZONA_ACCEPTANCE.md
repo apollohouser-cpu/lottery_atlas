@@ -2,6 +2,22 @@
 
 Status: **ACTIVE — not accepted**.
 
+## Current readiness — November 6 morning
+
+The source/parser and development presentation work is implemented. Revalidation
+passes203 Python tests and22 Arizona Flutter tests; private-source packaging
+reproduces the exact535928-byte reviewed candidate. All16 draw-family full-rule
+native returns, all19 result selections, representative catalog/rule navigation,
+enlarged/landscape widget checks, and current-candidate native cache retention
+have bounded evidence below.
+
+Release remains **not accepted**: the published artifact is still a development
+candidate (productionReadyfalse); ordinary Arizona routes remain gated. Production
+artifact promotion, ordinary-route integration, live release equality and final
+ordinary-build/native acceptance must be completed before supported acceptance.
+Do not confuse passed candidate checks with an ordinary released experience.
+The November6 09:15EST release-decision deadline remains unchanged.
+
 ## November 1, 2026 at 09:15 EST — activation
 
 Arizona is the sole active state after Montana acceptance. Twenty-one states
@@ -1760,3 +1776,26 @@ ordinary map verified. Android stayed stopped. No production code changed in
 this check. Final production publication, ordinary-route integration and supported
 release decision remain open; Arizona stays active, productionReadyfalse, with
 November6 09:15EST unchanged. All four mobile beta prerequisites remain open.
+
+
+## November 6 — current reviewed-candidate native cache and integrated tests
+
+Revalidated all retained capture components and symbol-review evidence:203 Python
+tests pass; source packaging --check reproduces535928bytes with SHA256
+17cb702fe6100bf32f65e0911e73c7d7bb312d7321f5a02dc9bf15baf51524d3.
+All22 Arizona Flutter tests pass. Ordinary route tests still confirm the existing
+development gate; they do not imply production routes are available.
+
+A private native cache harness built in14.6s and displayed PASS for live adoption
+of this current reviewed candidate, native SharedPreferences persistence, and
+exact retained content after an invalid remote response with bundle unavailable.
+The failure load used a fresh native preferences reader, and the previous cache
+was restored afterward. Evidence is retained privately. This supersedes the
+older499059-byte candidate for this bounded cache check, but does not claim
+physical-device favorites/ticket lifecycle or restart/update acceptance.
+
+Production artifact promotion, ordinary-route integration and final live/native
+release verification remain open. No deadline extension or acceptance is claimed.
+
+Ordinary lib/main.dart restored in15.4s, installed/launched and verified on the
+map. Android remained stopped; all four beta prerequisites remain open.
