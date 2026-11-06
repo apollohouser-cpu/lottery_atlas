@@ -53,3 +53,28 @@ The prior agency inquiry remains separate. No new message, fee, or attestation.
 
 No Delaware draw feed/build/acceptance claimed. iPhone17e ordinary app remains
 running, Android stopped. All four mobile beta prerequisites remain open.
+
+## November 6 — linked source capture and current catalog validation
+
+Thirteen linked official pages returned HTTP200: nine draw-family pages (including
+Lucky For Life), three Keno pages and Past Numbers. Raw files/hashes/timestamps
+are retained in work/delaware_scope/linked-manifest.json. Linked prizes/odds,
+number-of-winners and November2026 history URLs are inventoried privately.
+Lucky For Life still describes daily draws and links November history despite
+being absent from the main current-game navigation; current status remains a
+named reconciliation gap rather than an assumed retired/current classification.
+Play5 explicitly distinguishes DAY/NIGHT/BOTH and published drawing/cutoff times;
+leading zeros and session identity must be preserved. Keno results require
+separate semantic inspection; page retrieval alone is not observed draw coverage.
+
+Existing strict Scratch parser validates39 current printed identities against49
+report rows and35 closeout rows, yielding39 joined games. Report timestamp is
+November5,2026 at10:33:35AM, source timezone unspecified. These counts describe
+captured catalog/report/closeout records, not wins or retailer stock. Private
+joined candidate retained; no public output overwritten or source date advanced.
+The three-design game528 remains one printed identity under the existing join.
+
+Next inspect linked result/report/rule tables, resolve Lucky For Life status,
+audit instant detail/coming-soon/second-chance boundaries, and fix the complete
+supported matrix before November7 at12:48EST. Release deadline November11 at
+12:48EST unchanged; no acceptance or new native build claimed.
