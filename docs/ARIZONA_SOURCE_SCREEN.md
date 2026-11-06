@@ -1306,3 +1306,26 @@ open; deadline November6 09:15EST is unchanged.
 
 Simulator returned to upright orientation. Ordinary main rebuilt in17.6seconds,
 installed/launched and map verified. Android stayed stopped; no tracked probe.
+
+
+## November 6 at00:38EST — reachable product sources and native returns
+
+Product details now keep an Official product source action beside the fixed close
+control, so the official page remains reachable without traversing every prize
+tier. Five focused product/layout tests and scoped analysis pass. An untracked
+production-widget harness built in36.5seconds on the sole iPhone17e.
+
+SET FOR LIFE #1401 and MULTIPLIER MANIA PROGRESSIVE #169 each opened their matching
+official product page in Safari. The visible Lottery Atlas return restored the
+same detail and original source acquisition date. In particular, the Fast Play
+page showed a changed live progressive amount while the returned app preserved
+its explicitly observed267052 value and original2026-11-05T10:10:17.664Z date;
+no refresh or guaranteed payout was inferred from navigation. Private native
+return evidence is retained under work/arizona_scope.
+
+This closes representative source launch/return for both instant families, not
+all product links, illustrated instruction interpretation or the full mobile
+accessibility matrix. Arizona remains ACTIVE and the November6 09:15EST release
+deadline is unchanged. All four mobile beta prerequisites remain open.
+Ordinary main rebuilt without development flags in16.3seconds, installed/launched
+and its map verified (PID64503). Android remained stopped; no tracked probe.

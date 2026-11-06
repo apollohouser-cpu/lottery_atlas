@@ -36,6 +36,12 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('SET FOR LIFE #1401'));
     await tester.pumpAndSettle();
+    await tester.tap(find.text('Official product source'));
+    await tester.pumpAndSettle();
+    expect(
+      opened.toString(),
+      'https://www.arizonalottery.com/scratchers/1401-set-for-life/',
+    );
     final source = find.text('Official game and illustrated instructions');
     await tester.scrollUntilVisible(
       source,

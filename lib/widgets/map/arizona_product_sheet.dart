@@ -62,13 +62,20 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
         height: MediaQuery.sizeOf(context).height * .9,
         child: Column(
           children: [
-            Align(
-              alignment: Alignment.centerRight,
-              child: IconButton(
-                tooltip: 'Close product details',
-                icon: const Icon(Icons.close),
-                onPressed: () => Navigator.pop(context),
-              ),
+            Row(
+              children: [
+                Expanded(
+                  child: TextButton(
+                    onPressed: () => open(product['sourceUrl']),
+                    child: const Text('Official product source'),
+                  ),
+                ),
+                IconButton(
+                  tooltip: 'Close product details',
+                  icon: const Icon(Icons.close),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
             ),
             Expanded(
               child: ListView(
