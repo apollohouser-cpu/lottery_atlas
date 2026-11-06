@@ -12,6 +12,105 @@ void main() {
             ).readAsStringSync(),
           )
           as Map<String, dynamic>;
+  for (final size in [const Size(390, 844), const Size(844, 390)]) {
+    testWidgets('direct product rules retain source and exits at 2x $size', (
+      tester,
+    ) async {
+      tester.view.physicalSize = size;
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      Uri? opened;
+      await tester.pumpWidget(
+        MaterialApp(
+          builder: (context, child) => MediaQuery(
+            data: MediaQuery.of(
+              context,
+            ).copyWith(textScaler: const TextScaler.linear(2)),
+            child: child!,
+          ),
+          home: Scaffold(
+            body: ArizonaProductSheet(
+              coverage: data,
+              openSource: (uri) async {
+                opened = uri;
+                return true;
+              },
+            ),
+          ),
+        ),
+      );
+      await tester.scrollUntilVisible(
+        find.byType(TextField),
+        200,
+        scrollable: find
+            .descendant(
+              of: find.byType(ListView).first,
+              matching: find.byType(Scrollable),
+            )
+            .first,
+      );
+      await tester.enterText(find.byType(TextField), '1401');
+      await tester.pumpAndSettle();
+      await tester.scrollUntilVisible(
+        find.text('SET FOR LIFE #1401'),
+        200,
+        scrollable: find
+            .descendant(
+              of: find.byType(ListView).first,
+              matching: find.byType(Scrollable),
+            )
+            .first,
+      );
+      for (
+        var i = 0;
+        i < 12 &&
+            find.text('SET FOR LIFE #1401').hitTestable().evaluate().isEmpty;
+        i++
+      ) {
+        await tester.drag(find.byType(ListView).first, const Offset(0, -150));
+        await tester.pumpAndSettle();
+      }
+      await tester.tap(find.text('SET FOR LIFE #1401'));
+      await tester.pumpAndSettle();
+      await tester.tap(find.byTooltip('Open product rules'));
+      await tester.pumpAndSettle();
+      expect(
+        find.byTooltip('Close product rules').hitTestable(),
+        findsOneWidget,
+      );
+      expect(
+        find.text('Official illustrated rules').hitTestable(),
+        findsOneWidget,
+      );
+      await tester.tap(find.text('Official illustrated rules'));
+      await tester.pumpAndSettle();
+      expect(opened!.path, '/scratchers/1401-set-for-life/');
+      await tester.scrollUntilVisible(
+        find.textContaining('[symbol: LIFE]'),
+        250,
+        scrollable: find.byType(Scrollable).last,
+      );
+      final rules = find.textContaining('[symbol: LIFE]');
+      expect(rules, findsOneWidget);
+      final viewport = tester.getRect(find.byType(ListView).last);
+      expect(tester.getRect(rules).overlaps(viewport), isTrue);
+      await tester.drag(find.byType(ListView).last, const Offset(0, -400));
+      await tester.pumpAndSettle();
+      expect(
+        find.byTooltip('Close product rules').hitTestable(),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+      await tester.tap(find.byTooltip('Close product rules'));
+      await tester.pumpAndSettle();
+      expect(
+        find.byTooltip('Close product details').hitTestable(),
+        findsOneWidget,
+      );
+      expect(tester.takeException(), isNull);
+    });
+  }
   testWidgets('search no-match/reset and symbol source link', (tester) async {
     Uri? opened;
     await tester.pumpWidget(

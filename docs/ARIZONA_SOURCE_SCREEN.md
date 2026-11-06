@@ -1448,3 +1448,31 @@ verified after removing the private harness. Android remains stopped. Remaining
 draw source/rule paths and final release checks stay open; productionReady is
 false and ordinary Arizona routes remain gated. All four beta prerequisites
 remain open. November6 09:15EST deadline remains unchanged.
+
+
+## November 6 — draw-rule returns and enlarged product rules
+
+The production draw sheet in a private iPhone17e harness opened the matching
+Powerball and One To Win full how-to-play pages in Safari. Returning preserved
+Powerball's November4/November2 date-only results, and One To Win's November5
+04:45/November4 23:45 Arizona-time results with draw IDs36326/36325 and wager-unit
+disclosure. These two full-rule source/return paths are verified; the other14
+source families remain unverified natively. This adds no new source collection.
+
+Added portrait390x844 and landscape844x390 explicit2x widget coverage for the
+direct product-rule modal: catalog entry, rule/source controls, official1401
+URL, scrollable reviewed wording, and usable close/return to details. Seven
+focused product/compact tests pass. Initial test failures were ambiguous nested
+scrollables and center-hit assertions on text taller than the viewport; tests
+now target the catalog scrollable, scroll the entry into hit range, and verify
+rule-text/viewport intersection with scrolling and fixed usable exits. No
+production validation or UI requirement was relaxed. This is explicit text-scale
+verification, not ordinary OS DynamicType or physical-device acceptance.
+
+Arizona remains active and gated; final production publication/acceptance and
+remaining native paths remain open. November6 09:15EST is unchanged. All four
+beta gates remain open.
+
+Scoped analysis passed. Ordinary lib/main.dart rebuilt in17.1s, installed and
+launched, with the ordinary map verified after the harness. Android stayed
+stopped; no tracked probe or development flag was introduced.
