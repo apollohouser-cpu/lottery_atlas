@@ -1259,3 +1259,28 @@ pin. The first live URL check returned404 before this deployment trigger was
 added. Live publication verification is pending, not reported as successful.
 Instant illustrated rules, remaining native/cache evidence and acceptance remain
 open. November6 09:15EST deadline is unchanged.
+
+
+## November 5 at22:29EST — live candidate and native cache transport
+
+The Pages development candidate returnedHTTP200 at2026-11-06T03:29:20.805784UTC.
+All499059bytes exactly matched the bundle and strict reviewed SHA256
+23b668a9a2f5c51f8eddf2b66ea7b366d0f3d4c3879111e46bf9c1bb530c670d.
+This verifies static candidate publication, not direct agency transport recovery,
+a new source collection, automatic evolving refresh or an accepted state release.
+
+A private untracked native harness compiled in39.2seconds and ran on the sole
+iPhone17e. The preview loader fetched the live candidate, adopted it and wrote
+native SharedPreferencesAsync storage. A new preferences reader then retained
+the exact candidate/source dates under an intentionally invalid remote response
+with bundle fallback disabled. Native PASS output was observed and saved privately.
+The harness restored the previous development cache value (or removed its test
+value when none existed). This closes this bounded simulator remote-adoption and
+invalid-refresh retention check. It does not establish physical-device favorites,
+saved-ticket lifecycle persistence, restart/update retention or all failure modes.
+No tracked probe or Android launch. Arizona remains ACTIVE; illustrated instant
+rules, remaining native paths/layout evidence and release decision remain open.
+The November6 09:15EST deadline is unchanged.
+
+Ordinary main rebuilt in15.2seconds without development flags, installed/launched
+and visually restored after the harness. No tracked probe remains.
