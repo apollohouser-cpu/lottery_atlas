@@ -1225,3 +1225,16 @@ scroll-to-end, expand, switch-family, first-product visibility and collapsed-not
 regression. Scoped analysis passes. Native acceptance of this change is pending.
 No artifact/source-date changes or production publication; ordinary iPhone app
 remains running and Arizona's November6 09:15EST deadline is unchanged.
+
+
+## November 5 — compact landscape overflow fixed
+
+A new integrated 844×390, explicit2x text test reproduced a42pixel bottom
+overflow in the product collection while the retained-data banner was visible.
+The catalog picker and search now scroll with catalog content; the close control
+stays outside that scroll area. Both collection exits remain reachable in this
+bounded landscape test. Product detail/search, family switching, ending expansion
+reset and both coverage disclosures continue to pass (seven focused tests).
+This is widget-layout evidence, not ordinary OS Dynamic Type or native landscape
+acceptance. The currently installed ordinary iPhone app is unchanged. No feed or
+acceptance claim; November6 09:15EST remains the release deadline.

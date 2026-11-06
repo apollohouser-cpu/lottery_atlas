@@ -40,7 +40,12 @@ void main() {
     await tester.scrollUntilVisible(
       source,
       300,
-      scrollable: find.byType(Scrollable).last,
+      scrollable: find
+          .descendant(
+            of: find.byType(ListView).last,
+            matching: find.byType(Scrollable),
+          )
+          .first,
     );
     expect(find.textContaining('Complete symbol instructions'), findsOneWidget);
     await tester.tap(source);
@@ -81,7 +86,12 @@ void main() {
       await tester.scrollUntilVisible(
         find.text('HAUNTED CASH #203'),
         200,
-        scrollable: find.byType(Scrollable).last,
+        scrollable: find
+            .descendant(
+              of: find.byType(ListView).last,
+              matching: find.byType(Scrollable),
+            )
+            .first,
       );
       expect(find.text('Ended game'), findsOneWidget);
       await tester.tap(find.text('HAUNTED CASH #203'));
@@ -101,11 +111,27 @@ void main() {
     await tester.scrollUntilVisible(
       find.text('Ending notices'),
       600,
-      scrollable: find.byType(Scrollable).last,
+      scrollable: find
+          .descendant(
+            of: find.byType(ListView).last,
+            matching: find.byType(Scrollable),
+          )
+          .first,
       maxScrolls: 60,
     );
     await tester.tap(find.text('Ending notices'));
     await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(
+      find.text('Scratchers'),
+      -600,
+      scrollable: find
+          .descendant(
+            of: find.byType(ListView).last,
+            matching: find.byType(Scrollable),
+          )
+          .first,
+      maxScrolls: 60,
+    );
     await tester.tap(find.text('Scratchers').last);
     await tester.pumpAndSettle();
     await tester.tap(find.text('Fast Play').last);
@@ -117,7 +143,12 @@ void main() {
     await tester.scrollUntilVisible(
       find.text('Ending notices'),
       600,
-      scrollable: find.byType(Scrollable).last,
+      scrollable: find
+          .descendant(
+            of: find.byType(ListView).last,
+            matching: find.byType(Scrollable),
+          )
+          .first,
       maxScrolls: 40,
     );
     expect(find.textContaining('No adjusted claim deadline'), findsNothing);

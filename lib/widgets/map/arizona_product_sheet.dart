@@ -151,49 +151,52 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
               ),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12),
-            child: DropdownButtonFormField<String>(
-              initialValue: family,
-              isExpanded: true,
-              items: const [
-                DropdownMenuItem(
-                  value: 'scratchers',
-                  child: Text('Scratchers'),
-                ),
-                DropdownMenuItem(value: 'fast-play', child: Text('Fast Play')),
-              ],
-              onChanged: (value) {
-                if (value != null) {
-                  setState(() {
-                    family = value;
-                    search.clear();
-                    if (scroll.hasClients) scroll.jumpTo(0);
-                  });
-                }
-              },
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(12),
-            child: TextField(
-              controller: search,
-              onChanged: (_) => setState(() {}),
-              decoration: InputDecoration(
-                labelText: 'Search name or game number',
-                suffixIcon: IconButton(
-                  tooltip: 'Clear product search',
-                  icon: const Icon(Icons.clear),
-                  onPressed: () => setState(search.clear),
-                ),
-              ),
-            ),
-          ),
           Expanded(
             child: ListView(
               controller: scroll,
               padding: const EdgeInsets.all(12),
               children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 12),
+                  child: DropdownButtonFormField<String>(
+                    initialValue: family,
+                    isExpanded: true,
+                    items: const [
+                      DropdownMenuItem(
+                        value: 'scratchers',
+                        child: Text('Scratchers'),
+                      ),
+                      DropdownMenuItem(
+                        value: 'fast-play',
+                        child: Text('Fast Play'),
+                      ),
+                    ],
+                    onChanged: (value) {
+                      if (value != null) {
+                        setState(() {
+                          family = value;
+                          search.clear();
+                          if (scroll.hasClients) scroll.jumpTo(0);
+                        });
+                      }
+                    },
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: TextField(
+                    controller: search,
+                    onChanged: (_) => setState(() {}),
+                    decoration: InputDecoration(
+                      labelText: 'Search name or game number',
+                      suffixIcon: IconButton(
+                        tooltip: 'Clear product search',
+                        icon: const Icon(Icons.clear),
+                        onPressed: () => setState(search.clear),
+                      ),
+                    ),
+                  ),
+                ),
                 line(
                   'Source-listed products; no retailer inventory or ticket availability.',
                 ),
