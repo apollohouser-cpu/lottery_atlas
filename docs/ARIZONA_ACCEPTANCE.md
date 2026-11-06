@@ -1626,3 +1626,24 @@ positions, prize inventory, a new feed collection or full acceptance. Compiler
 integration remains pending, so candidate bytes and incomplete-rule disclosures
 are unchanged. Browser research left the ordinary iOS app running and Android
 stopped. The November6 09:15EST deadline and four open beta gates are unchanged.
+
+
+## November 6 — all candidate image-dependent products visually reviewed
+
+Ordinary-browser visual review now covers all45 image-dependent candidate
+products (42 Scratchers, three Fast Play), comprising102 inline image occurrences
+and91 distinct source image URLs. Each saved DOM section matches the retained
+ordered image/alt list, product URL and whitespace-normalized rule text. Private
+review records bind the labels to original rule hashes and saved screenshot/DOM
+hashes. Magnified screenshot checks corrected two provisional visual readings:
+State Forty Eight1548 shows paired money bags; Clue1554 shows an hourglass.
+No label was inferred solely from a filename or product name.
+
+This completes the bounded visual identification pass for this candidate, not
+compiler integration or a published rule-text update. Next: strict source-bound
+inline text reconstruction, failure/continuity tests, reviewed candidate rebuild,
+app presentation and remaining native/release checks. Existing candidate bytes,
+source dates and incomplete-rule disclosures remain unchanged until that work
+passes. Direct HTTP403 remains unresolved. Ordinary iOS app remains running,
+Android stopped; all four beta gates remain open. Arizona release deadline is
+still November6 09:15EST, without extension.
