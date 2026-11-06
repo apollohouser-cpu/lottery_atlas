@@ -123,3 +123,46 @@ spans, row labels/width, nonnegative integers, unique descending dates and futur
 bounds fail closed. Ten focused Delaware tests pass, including existing catalog
 checks. No report output is published yet; complete report-unit qualification
 and integration remain open. Release and scope deadlines unchanged.
+
+## Fixed supported scope — November 6, 2026 at15:49EST
+
+Scope fixed before November7 at12:48EST. Release remains November11 at12:48EST
+(17:48UTC), no extension. This fixes implementation targets and explicit gaps;
+it is not publication or acceptance and target row counts are not observations.
+
+| Family | Supported target | Explicit boundary |
+| --- | --- | --- |
+| Powerball | Base and Double Play results; Power Play; literal rules/tiers; source returns | Distinct draws and prize schedules, no inferred actual payouts |
+| Powerball Xs & Os | Team-logo results and rules/tiers; published Delaware report where qualified | Random logo draws, not NFL outcomes; no number conversion |
+| Lotto America | Results, All Star Bonus and literal rules/tiers | Multiplier distinct from base drawn numbers |
+| Mega Millions | Results and multiplier-specific rule/tiers | No fabricated drawing-wide multiplier |
+| Play3, Play4, Play5 | Separate DAY/NIGHT groups; positional digits and all published bet types/tiers | Preserve leading zeros; drawing times distinct from sales cutoffs |
+| Multi-Win Lotto | Results, line and combination schedules, grouped published report categories | Repeated6N labels retain group; no cross-category sum or unique-ticket inference |
+| Keno | Dated/game-number results, literal local display time and Bonus multiplier, full published spot schedules | No assumed timezone/instant or complete historical archive |
+| Lucky For Life | Clearly historical/legacy source page, rules and dated available report | Current navigation omits it; November history empty; report latest February21. Do not label active or invent a retirement date |
+| Instant Games | All39 captured current printed identities, available source prize data and illustrated instructions; shared designs preserved | Remaining prizes are not claims or retailer inventory; unknown unavailable tiers explicit |
+| Coming soon | Separate source-listed532 Did I Win? and520 $50,000 Bonus Stars | Not current sales/inventory; featured navigation excluded |
+| Closeout | All35 captured closeout rows with literal dates and separate sales/claim semantics | Not complete retired catalog or full historical availability |
+| Second chance | Source-linked eligibility/rule information and explicit registration boundary | No login, ticket submission, entry, or claimed complete promotions archive |
+
+Result target: latest two validated observations in each of12 ordinary draw/session
+ groups plus Keno, where actually available. Historical Lucky For Life remains
+separate. Capture available monthly history as source evidence; full long-term
+history remains unavailable until independently validated. All linked current
+number-of-winners reports will be screened for game/date/session/unit/geography;
+only supported literal categories may be displayed, otherwise explicitly unavailable.
+No complete statewide total, retailer positions/joins, or unique-ticket counts.
+Sports betting, video lottery, casino table games and iGaming are outside the
+lottery draw/instant dataset; provide clear exclusions rather than invented coverage.
+
+Keno's ordinary date-search form was submitted for November5 using its provided
+session token/cookie. It returned HTTP200,1164267 bytes, with explicit date, game
+numbers, local display times,20-number rows and multipliers. Original bytes and
+hash retained in work/delaware_scope/keno-query-manifest.json. This is permitted
+read-only result lookup, not betting or access-control bypass. No parsed result
+count or feed is claimed yet; strict shape/range/date/identity validation comes next.
+
+Next implement complete strict result/rule/report contracts against retained
+captures, couple atomic publication and failure retention, then integrate ordinary
+app/native paths. Existing Multi-Win parser and catalog tests remain valid; no
+new mobile build or beta readiness claim.

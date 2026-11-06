@@ -67,7 +67,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Delaware | November11,2026 at12:48EST | Sole active November6 at12:48EST; scope due November7 at12:48EST; fresh120elapsed hours, no extension. |
+| Delaware | November11,2026 at12:48EST | Sole active November6 at12:48EST; scope fixed November6 at15:49EST before November7 deadline; fresh120elapsed hours, no extension. |
 | Arizona | November6,2026 at09:15EST | ACCEPTED November6 at11:48EST, late; deadline missed without extension. See ARIZONA_ACCEPTANCE.md. |
 | Montana | November1,2026 at22:30EST | ACCEPTED November1 at08:15EST, early without extension; see MONTANA_ACCEPTANCE.md. |
 | North Dakota | November1,2026 at10:29AM EST | ACCEPTED October27 at22:34EDT, early without extension; see NORTH_DAKOTA_ACCEPTANCE.md. |
