@@ -203,3 +203,20 @@ acceptance is claimed. Scope fixed November6 at15:49EST; release remains
 November11 at12:48EST without extension. Next cover Powerball/Double Play,
 Lotto America, Mega Millions, Multi-Win and Xs & Os result contracts and integrate
 literal rules and qualified reports.
+
+## November 6 — Multi-Win, Mega Millions and Lotto America results
+
+New monthly result contracts validate five Multi-Win, one Mega Millions and two
+Lotto America rows in the retained November captures. Mega Millions needs a
+preceding-month capture to satisfy the latest-two target; no missing row is
+invented. Source URLs/titles, month/date/order, row labels, number cardinality,
+uniqueness and published game ranges are checked. Special balls must carry the
+correct source color marker and range; Lotto America All Star Bonus stays
+separate. No drawing-wide Mega Millions multiplier is fabricated.
+
+Actual source-table excerpts are regression fixtures. Twenty focused Delaware
+tests pass, including wrong-game sources, special-ball confusion, range errors,
+duplicate dates and unsupported multipliers. Private parsed observations are not
+a public feed. Powerball/Double Play and Xs & Os result contracts, remaining
+literal rules/reports and coupled app/publication/native work remain open.
+Release November11 at12:48EST is unchanged; no acceptance or beta claim.
