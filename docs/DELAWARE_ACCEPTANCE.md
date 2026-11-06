@@ -142,3 +142,21 @@ Next implement complete strict result/rule/report contracts against retained
 captures, couple atomic publication and failure retention, then integrate ordinary
 app/native paths. Existing Multi-Win parser and catalog tests remain valid; no
 new mobile build or beta readiness claim.
+
+## November 6 — strict Keno result validation
+
+New Keno date-search parser validates the retained November5 response as327
+observed rows, game numbers1464188–1464514. This is the captured response count,
+not proof of a complete drawing day or all historical results. Each row retains
+its printed date, game number, literal local display time,20 distinct numbers
+in1–80 and source-listed Bonus multiplier. Published Bonus table permits1/3/4/5/10;
+other multipliers fail closed. No timezone or UTC drawing instant is inferred.
+
+Source URL/title and requested date must agree. Empty results, malformed number
+sets, duplicate/unordered game numbers or display times, future dates and unknown
+multipliers are rejected. Two actual source-row excerpts form a public regression
+fixture without form tokens. Full source and validated development output remain
+private. Thirteen focused Delaware tests pass (catalog, Multi-Win and Keno).
+No production feed/native build/acceptance yet; fixed scope and release deadline
+remain unchanged. Next implement the ordinary draw/session parsers and literal
+rule/report contracts, then coupled publication and ordinary app integration.
