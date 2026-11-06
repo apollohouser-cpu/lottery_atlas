@@ -90,4 +90,37 @@ void main() {
       expect(tester.takeException(), isNull);
     },
   );
+  testWidgets('switching catalog returns to top and resets ending expansion', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(body: ArizonaProductSheet(coverage: data)),
+      ),
+    );
+    await tester.scrollUntilVisible(
+      find.text('Ending notices'),
+      600,
+      scrollable: find.byType(Scrollable).last,
+      maxScrolls: 60,
+    );
+    await tester.tap(find.text('Ending notices'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Scratchers').last);
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Fast Play').last);
+    await tester.pumpAndSettle();
+    final first = (data['products']['fast-play'][0]['header'] as String)
+        .split('\n')
+        .first;
+    expect(find.text(first).hitTestable(), findsOneWidget);
+    await tester.scrollUntilVisible(
+      find.text('Ending notices'),
+      600,
+      scrollable: find.byType(Scrollable).last,
+      maxScrolls: 40,
+    );
+    expect(find.textContaining('No adjusted claim deadline'), findsNothing);
+    expect(tester.takeException(), isNull);
+  });
 }

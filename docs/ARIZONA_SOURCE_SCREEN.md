@@ -1213,3 +1213,15 @@ path after scrolling. Scoped analysis passes. Native verification of this added
 disclosure remains pending; earlier native draw checks precede this UI change.
 Ordinary installed app remains running, Android stopped. Publication, remaining
 native/cache checks and Arizona acceptance remain open; deadline unchanged.
+
+
+## November 5 — catalog switching and push recovery
+
+GitHub push recovered and disclosure commit79ea277 is remote. Catalog switching
+now returns the list to its beginning and resets the family-specific ending
+notice expansion, preventing the previous catalog's scroll/expansion state from
+obscuring the newly selected products. Three product tests pass, including a
+scroll-to-end, expand, switch-family, first-product visibility and collapsed-notice
+regression. Scoped analysis passes. Native acceptance of this change is pending.
+No artifact/source-date changes or production publication; ordinary iPhone app
+remains running and Arizona's November6 09:15EST deadline is unchanged.

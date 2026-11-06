@@ -19,10 +19,12 @@ class ArizonaProductSheet extends StatefulWidget {
 class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
   String family = 'scratchers';
   final search = TextEditingController();
+  final scroll = ScrollController();
 
   @override
   void dispose() {
     search.dispose();
+    scroll.dispose();
     super.dispose();
   }
 
@@ -166,6 +168,7 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
                   setState(() {
                     family = value;
                     search.clear();
+                    if (scroll.hasClients) scroll.jumpTo(0);
                   });
                 }
               },
@@ -188,6 +191,7 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
           ),
           Expanded(
             child: ListView(
+              controller: scroll,
               padding: const EdgeInsets.all(12),
               children: [
                 line(
@@ -210,6 +214,7 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
                     onTap: () => details(product),
                   ),
                 ExpansionTile(
+                  key: ValueKey('endings-$family'),
                   title: const Text('Ending notices'),
                   children: [
                     line('Observed: ${endings['retrievedAt']}'),
