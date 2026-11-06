@@ -1534,3 +1534,8 @@ No extension is assigned. Reviewed source observations and their original dates
 are retained. Production packaging and ordinary app routes are being integrated;
 live publication and final ordinary native verification are pending. No new
 agency collection or direct HTTP recovery is claimed.
+
+November6 publication follow-up: release validation and upload passed, but GitHub
+Pages deployment timed out. Release endpoint404; failed deployment retried only.
+This is a hosting failure, not new agency-source evidence. Bundled observations
+and original dates remain available in ordinary iOS routes. Acceptance remains open.

@@ -1819,3 +1819,16 @@ successful live adoption. Deployment workflow42237272970 remains in progress at
 this checkpoint. Live equality and production cache adoption are still open;
 Arizona remains unaccepted. No deadline extension. Ordinary iPhone17e remains
 running and Android stopped.
+
+## November 6 — publication failure isolated
+
+Workflow42237272970 passed validation, release equality, artifact staging and
+upload; the GitHub Pages deployment step timed out. The release URL still
+returns404. Only the failed deployment was retried (attempt2), with existing
+permissions and validation unchanged. Retry outcome remains pending.
+
+A separate private production-cache harness now builds successfully (39.0s) but
+was not installed or claimed to pass: live adoption depends on publication. The
+ordinary installed app remains running. Source bytes and dates remain unchanged,
+no agency HTTP recovery is claimed, and Arizona remains unaccepted after its
+missed deadline with no extension.
