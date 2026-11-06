@@ -1733,3 +1733,30 @@ beta gates remain open.
 Scoped analysis passed. Ordinary lib/main.dart rebuilt in17.1s, installed and
 launched, with the ordinary map verified after the harness. Android stayed
 stopped; no tracked probe or development flag was introduced.
+
+
+## November 6 — all sixteen draw-family full-rule returns verified
+
+Completed the remaining14 full-rule launch/return paths on iPhone17e using the
+production draw sheet in a private development harness: Powerball Xs & Os,
+Mega Millions, The Pick, Fantasy5, Triple Twist, Pick3, Pick4, Two to Win,
+5 In-A-Line, Money Roll, Pick Your Bet,5/10/45,Lucky Links and Hi-Lo. Each opened
+the matching Arizona Lottery how-to-play heading in Safari and returned to its
+selected results. Together with the earlier Powerball and One To Win checks,
+all16 draw-family full-rule paths now have native destination/return evidence.
+Pick3/Pick4 used midday selections; this does not claim separate evening link
+checks, all result-source links, or Android navigation.
+
+Returned dates, digits/dice, draw IDs, bonus fields and disclosed source conflicts
+remained visible. Pick Your Bet and Hi-Lo required ordinary content scrolling to
+reach the full-rule action; both remained reachable and preserved the selection
+on return. Private return trees were retained. A stale helper label was corrected
+against each recorded tree's actual selected button; all13 structured trees match
+their reconciled identities, with Xs & Os separately verified in the session.
+No new observations or public data changes were inferred from these navigations.
+
+Harness build36.4s; ordinary lib/main.dart restore18.1s, installed/launched and
+ordinary map verified. Android stayed stopped. No production code changed in
+this check. Final production publication, ordinary-route integration and supported
+release decision remain open; Arizona stays active, productionReadyfalse, with
+November6 09:15EST unchanged. All four mobile beta prerequisites remain open.
