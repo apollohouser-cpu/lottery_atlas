@@ -29,7 +29,7 @@ void main() {
       expect(result.data, jsonDecode(released));
       expect(writes, 0);
       expect(
-        () => ArizonaCoverageLoader.decode('${released} '),
+        () => ArizonaCoverageLoader.decode('$released '),
         throwsFormatException,
       );
     },

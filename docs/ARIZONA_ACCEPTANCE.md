@@ -1799,3 +1799,23 @@ release verification remain open. No deadline extension or acceptance is claimed
 
 Ordinary lib/main.dart restored in15.4s, installed/launched and verified on the
 map. Android remained stopped; all four beta prerequisites remain open.
+
+## November 6 — ordinary release integration after missed deadline
+
+Production integration pushed in47e2dc7. Reviewed release bytes are535917, SHA256
+`fa48e46f0d526f4fee7dc0ea71db84202f028d6102475824b2f3668d62f961d5`.
+The package changes only recordType and productionReady; source values and dates
+are unchanged. Published loading uses a separate cache and rejects candidate
+refreshes.207 Python and23 Arizona Flutter tests passed.
+
+Ordinary main iOS simulator build passed in14.0s, installed and launched PID68389.
+CUA followed Arizona map → Sources and coverage → both ordinary Arizona routes;
+draws displayed November4/2 Powerball observations, products displayed numbered
+Scratchers, and both close controls returned to the source screen. The pending
+release endpoint returned404 and both sheets honestly showed refresh unavailable
+while retaining bundled source dates. Private ordinary-release draw/product AX
+evidence is retained. This establishes fallback and ordinary entry paths, not
+successful live adoption. Deployment workflow42237272970 remains in progress at
+this checkpoint. Live equality and production cache adoption are still open;
+Arizona remains unaccepted. No deadline extension. Ordinary iPhone17e remains
+running and Android stopped.
