@@ -184,3 +184,22 @@ private. Thirteen focused Delaware tests pass (catalog, Multi-Win and Keno).
 No production feed/native build/acceptance yet; fixed scope and release deadline
 remain unchanged. Next implement the ordinary draw/session parsers and literal
 rule/report contracts, then coupled publication and ordinary app integration.
+
+## November 6 — Play3/4/5 positional session parser
+
+Strict monthly parsers now validate33 captured rows across Play3/4/5: each source
+contains six DAY and five NIGHT observations for November1–6. November6 has only
+a DAY row in these captures; the missing NIGHT is neither synthesized nor zero.
+Session identity comes from the source sun/moon marker, with missing, unknown or
+ambiguous markers rejected. Positional digits remain strings, preserving leading
+zeros and repeated digits. No drawing instant is invented.
+
+Exact game/month title and source URL, table headers/row labels, digit count,
+single ASCII digits, date bounds/order and duplicate date/session rejection are
+covered. Three source-table excerpts are retained as public regression fixtures;
+full captures and parsed development observations remain private. Seventeen
+focused Delaware tests pass. No production publication, new native build or
+acceptance is claimed. Scope fixed November6 at15:49EST; release remains
+November11 at12:48EST without extension. Next cover Powerball/Double Play,
+Lotto America, Mega Millions, Multi-Win and Xs & Os result contracts and integrate
+literal rules and qualified reports.
