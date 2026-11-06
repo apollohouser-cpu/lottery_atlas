@@ -1609,3 +1609,20 @@ the existing official-source-required disclosure remains accurate. No candidate
 bytes, dates, digest or production flag changed. Native ordinary iOS app was not
 replaced, Android stayed stopped. Arizona remains active, all four beta gates
 remain open, and the November6 09:15EST deadline is unchanged.
+
+
+## November 6 — ten additional Scratchers symbol reviews
+
+Visually reviewed ten more official illustrated rule sections:1479,1480,1484,
+1490,1489,1493,1496,1499,1503 and1502. Saved screenshots and DOM sections privately;
+all ordered image/alt lists, source URLs and whitespace-normalized rule text
+match the retained candidate captures. The review ledger binds visual labels to
+source-rule, DOM and screenshot hashes and rejects duplicate product entries.
+
+The cumulative audit now covers14 of45 image-dependent products and30 symbol
+occurrences. All three image-dependent Fast Play entries are included;31
+Scratchers remain unreviewed. These are source-artwork observations, not ticket
+positions, prize inventory, a new feed collection or full acceptance. Compiler
+integration remains pending, so candidate bytes and incomplete-rule disclosures
+are unchanged. Browser research left the ordinary iOS app running and Android
+stopped. The November6 09:15EST deadline and four open beta gates are unchanged.
