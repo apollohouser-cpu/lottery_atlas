@@ -1329,3 +1329,26 @@ accessibility matrix. Arizona remains ACTIVE and the November6 09:15EST release
 deadline is unchanged. All four mobile beta prerequisites remain open.
 Ordinary main rebuilt without development flags in16.3seconds, installed/launched
 and its map verified (PID64503). Android remained stopped; no tracked probe.
+
+
+## November 6 — bounded illustrated-symbol review started
+
+The retained detail captures contain45 image-dependent products:42 Scratchers and
+three Fast Play entries, with91 distinct image URLs across them. This is an audit
+inventory, not a ticket-position or inventory count. Seven sampled direct image
+requests returnedHTTP403; no transport recovery is claimed or bypass attempted.
+
+Ordinary browser screenshots and inline DOM joins visually establish all seven
+symbols across SET FOR LIFE1401 and the three image-dependent Fast Play products:
+MONOPOLY175, $100/$200/$500 BLOWOUT193 and HOLIDAY BLOWOUT206. The visible symbols
+are10X/50X/LIFE, chest/question mark, solid starburst and outlined snowflake,
+respectively. Exact ordered image URLs/alt text matched the retained captures;
+whitespace-normalized rule text also matched. Private screenshots, DOM captures,
+source-rule hashes and reviewed labels are retained in work/arizona_scope/symbol-audit.
+
+This is four reviewed products, with41 image-dependent Scratchers still requiring
+visual review. Reviewed text has not yet entered the compiled candidate or app;
+the existing official-source-required disclosure remains accurate. No candidate
+bytes, dates, digest or production flag changed. Native ordinary iOS app was not
+replaced, Android stayed stopped. Arizona remains active, all four beta gates
+remain open, and the November6 09:15EST deadline is unchanged.
