@@ -67,3 +67,13 @@ combined catalog exactly matched the publisher's repository snapshot, including
 all 35 Delaware games. Activity and retailer feeds also matched their published
 snapshots. Delaware is ready for current-catalog testing; full map coverage is
 still limited as described above.
+
+## November 6 at12:48EST — supported-coverage activation
+
+Delaware is the sole active state after Arizona acceptance. Scope due November7
+at12:48EST; release November11 at12:48EST (17:48UTC), fresh120elapsed hours for
+substantial draw/rule/app integration, no inherited deadline or extension. See
+DELAWARE_ACCEPTANCE.md. Four opening ordinary HTTPS captures returned200; private
+raw bytes/hashes retained. No current catalog count or draw import claimed yet.
+Current/retired Lucky For Life, daily sessions, add-ons and Keno boundaries need
+reconciliation. No new agency correspondence or private delivery integration.

@@ -12,8 +12,10 @@ Twenty-two states accepted;23 unfinished. Arizona supported coverage is ACCEPTED
 November6 at11:48EST, after its09:15EST release deadline. The deadline was missed
 and never extended. See ARIZONA_ACCEPTANCE.md for live-byte, native/cache evidence
 and explicit unsupported scope. Arizona stays closed absent a named defect or
-meaningful new evidence. Next unfinished state requires explicit activation and
-fresh deadlines; no successor deadline is inherited. Missing agency records do
+meaningful new evidence. Delaware is now the sole active state from November6
+at12:48EST: scope due November7 at12:48EST, release due November11 at12:48EST
+(17:48UTC), fresh120elapsed hours for substantial draw/rule integration. See
+DELAWARE_ACCEPTANCE.md. No successor deadline is inherited. Missing agency records do
 not block honest supported completion; audit private deliveries before integration.
 
 Keep iPhone17e running with the ordinary app and Android stopped, one simulator.
@@ -65,6 +67,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
+| Delaware | November11,2026 at12:48EST | Sole active November6 at12:48EST; scope due November7 at12:48EST; fresh120elapsed hours, no extension. |
 | Arizona | November6,2026 at09:15EST | ACCEPTED November6 at11:48EST, late; deadline missed without extension. See ARIZONA_ACCEPTANCE.md. |
 | Montana | November1,2026 at22:30EST | ACCEPTED November1 at08:15EST, early without extension; see MONTANA_ACCEPTANCE.md. |
 | North Dakota | November1,2026 at10:29AM EST | ACCEPTED October27 at22:34EDT, early without extension; see NORTH_DAKOTA_ACCEPTANCE.md. |
