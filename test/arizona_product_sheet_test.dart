@@ -42,6 +42,15 @@ void main() {
       opened.toString(),
       'https://www.arizonalottery.com/scratchers/1401-set-for-life/',
     );
+    await tester.tap(find.byTooltip('Open product rules'));
+    await tester.pumpAndSettle();
+    expect(find.byTooltip('Close product rules').hitTestable(), findsOneWidget);
+    expect(find.textContaining('[symbol: LIFE]'), findsOneWidget);
+    await tester.tap(find.text('Official illustrated rules'));
+    await tester.pumpAndSettle();
+    expect(opened!.path, '/scratchers/1401-set-for-life/');
+    await tester.tap(find.byTooltip('Close product rules'));
+    await tester.pumpAndSettle();
     final explanation = find.textContaining('Bracketed symbol descriptions');
     await tester.scrollUntilVisible(
       explanation,

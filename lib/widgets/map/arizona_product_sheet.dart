@@ -52,8 +52,63 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
     child: Text(text),
   );
 
-  void details(Map product) {
+  List<Widget> ruleContent(Map product) {
     final presentation = product['rulePresentation'] as Map;
+    return [
+      line('How to play'),
+      if (presentation['status'] == 'reviewed-symbol-text')
+        line(presentation['reason']),
+      if (presentation['status'] == 'literal-text' ||
+          presentation['status'] == 'reviewed-symbol-text')
+        line(presentation['text'])
+      else
+        line(
+          'Consult the official illustrated instructions for matching symbols. Complete symbol instructions are not available here.',
+        ),
+    ];
+  }
+
+  void showRules(Map product) {
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      useSafeArea: true,
+      builder: (context) => SizedBox(
+        height: MediaQuery.sizeOf(context).height * .9,
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: TextButton(
+                    onPressed: () => open(product['sourceUrl']),
+                    child: const Text('Official illustrated rules'),
+                  ),
+                ),
+                IconButton(
+                  tooltip: 'Close product rules',
+                  onPressed: () => Navigator.pop(context),
+                  icon: const Icon(Icons.close),
+                ),
+              ],
+            ),
+            Expanded(
+              child: ListView(
+                padding: const EdgeInsets.all(16),
+                children: [
+                  line(product['header']),
+                  line('Source observed: ${product['retrievedAt']}'),
+                  ...ruleContent(product),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void details(Map product) {
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
@@ -69,6 +124,11 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
                     onPressed: () => open(product['sourceUrl']),
                     child: const Text('Official product source'),
                   ),
+                ),
+                IconButton(
+                  tooltip: 'Open product rules',
+                  icon: const Icon(Icons.menu_book),
+                  onPressed: () => showRules(product),
                 ),
                 IconButton(
                   tooltip: 'Close product details',
@@ -107,16 +167,7 @@ class _ArizonaProductSheetState extends State<ArizonaProductSheet> {
                       ),
                     ],
                   ),
-                  line('How to play'),
-                  if (presentation['status'] == 'reviewed-symbol-text')
-                    line(presentation['reason']),
-                  if (presentation['status'] == 'literal-text' ||
-                      presentation['status'] == 'reviewed-symbol-text')
-                    line(presentation['text'])
-                  else
-                    line(
-                      'Consult the official illustrated instructions for matching symbols. Complete symbol instructions are not available here.',
-                    ),
+                  ...ruleContent(product),
                   TextButton(
                     onPressed: () => open(product['sourceUrl']),
                     child: const Text(

@@ -1419,3 +1419,32 @@ continuing to the official source action. Private captures remain excluded from
 publication. Next: native reviewed-rule presentation and remaining source paths,
 live candidate verification and the final supported-release decision. Ordinary
 iOS app remains running; Android stopped. November6 09:15EST is unchanged.
+
+
+## November 6 — direct product rules and native source returns
+
+Added a fixed Open product rules action to product details. Rules open directly
+with the original source-observation date, reviewed inline symbol descriptions,
+and fixed official-source/close controls, without scrolling past prize tiers.
+The existing detail rules remain available through shared rendering.
+
+On iPhone17e, the production product widgets in a private development harness
+showed SET FOR LIFE1401's 10X/50X/LIFE instructions and annuity terms, and
+MONOPOLY175's chest/question-mark instructions, with readable ordinary portrait
+layout and bracketed-description disclosure. Both official illustrated-rule
+buttons opened the matching agency product page in Safari; returning preserved
+the same rule sheet and original acquisition date. This is representative native
+verification, not all-product/all-scale or OS DynamicType acceptance.
+
+The live static development candidate returned HTTP200 at
+2026-11-06T10:42:59.911750+00:00: 535928bytes, SHA256
+17cb702fe6100bf32f65e0911e73c7d7bb312d7321f5a02dc9bf15baf51524d3.
+Strict validation and exact bundle equality passed. This verifies candidate
+hosting, not agency HTTP recovery, new source collection or production acceptance.
+
+Five focused product/compact Flutter tests and scoped analysis passed. Ordinary
+lib/main.dart rebuilt in16.7s, installed and launched; the ordinary map was
+verified after removing the private harness. Android remains stopped. Remaining
+draw source/rule paths and final release checks stay open; productionReady is
+false and ordinary Arizona routes remain gated. All four beta prerequisites
+remain open. November6 09:15EST deadline remains unchanged.
