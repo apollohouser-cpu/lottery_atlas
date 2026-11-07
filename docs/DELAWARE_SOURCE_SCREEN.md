@@ -396,3 +396,21 @@ The exact source/title, audited normalized body text and table/column cardinalit
 fail closed on changes. Thirty-four focused Delaware tests pass. No new public
 feed/build/acceptance; remaining rules/reports and coupled production/native work
 continue under the unchanged November11 12:48EST release deadline.
+
+
+### November7 — Keno spot schedules and source-limit conflict
+
+All ten source spot schedules now preserve37 literal prize tiers, individual
+spot odds, five Bonus multiplier probability rows and the overall multiplier
+probability statement. Zero-match awards remain attached to the proper spot
+game. The page states payouts are based on a$1 wager; no actual payouts or
+winning-ticket counts are inferred.
+
+The source simultaneously states a$1,000,000 Bonus maximum and$900,000 Bonus
+cap. Both statements and its liability-pool/more-than-two-winners wording are
+retained with an explicit unresolved-conflict disclosure; no computed payout
+guarantee or silent correction. Exact source/title, audited normalized text,
+spot identity and tier structure fail closed on change. Thirty-six focused
+Delaware tests pass. No new public feed/build/acceptance. Remaining legacy rules,
+report qualification and production/native integration continue under unchanged
+November11 12:48EST release deadline.
