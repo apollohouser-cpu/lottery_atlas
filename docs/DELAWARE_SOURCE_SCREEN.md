@@ -278,3 +278,21 @@ multiplier report. Preserve the source and disclose report unavailability unless
 independent evidence resolves the mismatch. This does not block honest supported
 results/rules completion. Remaining report/rule parsing, publication and native
 acceptance stay open. No feed/build/acceptance; November11 12:48EST unchanged.
+
+
+### November6 — Xs & Os qualified prize schedule
+
+Five literal prize/odds tiers now validate from the retained official page.
+The jackpot remains the word Jackpot, not an invented cash value. Overall odds
+and mandatory qualifications are retained: jackpot cash is pari-mutuel,
+lower tiers may also become pari-mutuel, and logo draws are independent of NFL
+outcomes. Changed/missing qualifications fail closed. This is a prize schedule,
+not actual payouts; separate second-chance entry is not performed. Twenty-eight
+focused Delaware tests pass. Source excerpts are public fixtures, full captures
+and parsed candidate private. Remaining rules/reports and production/native work
+remain open; no new feed or acceptance. November11 12:48EST unchanged.
+
+Development follow-up checked the previously emailed Pages failure for b58af59.
+Newer runs for dd1aea7,3053a9e and fb60758 all completed successfully; latest
+run42331472724 is successful. No current deployment failure is inferred from the
+older email, and no source refresh/retrieval date was advanced by this check.
