@@ -532,3 +532,18 @@ Private semantic notes retain exact image provenance and printed summary fields.
 Full row transcription/arithmetic reconciliation and the remaining image review
 are still pending. This is bounded content screening, not complete instant audit
 or release acceptance. November11 at12:48EST remains unchanged.
+
+### November7 — game528 printed-summary reconciliation
+
+Visual transcription of the Win/Winners columns found29 ordinary Scratch
+structure rows plus one second-chance trip row. The printed99,521-prize total
+matches the ordinary rows alone; the printed1,357,250-dollar value matches those
+rows plus the75,000-dollar trip. Including the trip gives99,522 table entries.
+This mixed summary scope is preserved as a source qualification, not silently
+corrected or presented as one Scratch-only total. These are printed ticket-run
+structure quantities, never actual paid claims or retailer inventory.
+
+Private row-order transcription and arithmetic evidence retain the image hash
+and original retrieval date. Combination/bonus/odds columns and remaining images
+still need complete review. No public feed/build/acceptance; release deadline
+November11 at12:48EST remains unchanged.

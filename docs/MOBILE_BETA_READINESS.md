@@ -10,6 +10,8 @@ probe, rebuilt in22.4s, signature checked, installed in place and launched.
 No saved app data was uninstalled. Historical preparation entries below are
 superseded by this status. All four broader gates remain open; no peer invitations.
 Keep simulator closed, Android stopped, PNY mounted and builds sequential.
+Owner may disconnect the phone; continue independent work and request reconnection
+only when a prepared install or physical-device verification needs it.
 
 ## November7 — owner physical-device preparation
 
