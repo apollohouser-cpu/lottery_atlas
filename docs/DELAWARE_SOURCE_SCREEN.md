@@ -257,3 +257,24 @@ actual title/results excerpts, with no form tokens. Twenty-four focused Delaware
 tests pass. Literal rules, qualified reports, production publication and native
 acceptance remain open; no new feed/build or acceptance is claimed. The fixed
 scope and November11 12:48EST release deadline are unchanged.
+
+
+### November6 — qualified Xs & Os report and report-screen finding
+
+The captured Xs & Os report explicitly identifies Number of Delaware Winners.
+Strict parsing now preserves eight dated rows (September13–November1), with
+five literal match categories each. The latest row publishes0/0/3/39/243 for
+Match8/7/6/5/4. These are source category counts, not inferred unique-ticket
+counts, actual payout totals or retailer locations. Source URL/title/geography,
+headers, row labels, dates/order, integer counts and merged-cell rejection are
+validated. Public fixture is the actual title/table excerpt; full raw provenance
+and parsed candidate remain private. Twenty-six focused Delaware tests pass.
+
+Screening found an unresolved Lotto America report schema inconsistency:
+its grouped header says All Star Bonus Multiplier Winners, but the corresponding
+body data-labels say Power Play; group colspans also specify10 while each group
+has nine category columns. Do not silently relabel or publish this as a qualified
+multiplier report. Preserve the source and disclose report unavailability unless
+independent evidence resolves the mismatch. This does not block honest supported
+results/rules completion. Remaining report/rule parsing, publication and native
+acceptance stay open. No feed/build/acceptance; November11 12:48EST unchanged.
