@@ -347,3 +347,19 @@ The30 existing focused Delaware tests still pass. Parsed candidates remain
 private and no public feed, native build or acceptance is claimed. Remaining
 rules/reports, integration and native checks continue under the unchanged
 November11 12:48EST release deadline.
+
+
+### November7 — Lotto America illustrated prize qualification
+
+Nine visually audited Lotto America match tiers now preserve the base prizes,
+source odds and separate2X/3X/4X/5X All-Star Bonus prizes. The jackpot explicitly
+has no multiplier. The base$1 play and additional$1 multiplier cost remain distinct.
+The page's estimated annuity starting amount is not presented as a current jackpot.
+
+The loader couples exact chart URL/SHA256 to the official page identity, chart
+reference, introduction and pari-mutuel prize qualification. Actual captured
+inputs pass; changed chart bytes/URL or qualification fail closed. Thirty existing
+focused tests pass. The previously identified winner-report labeling inconsistency
+remains isolated; this rule schedule does not resolve that separate report defect.
+No new public feed/build/acceptance. Remaining rules/report qualification and
+production/native integration continue; November11 12:48EST unchanged.

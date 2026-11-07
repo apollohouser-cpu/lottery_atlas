@@ -1,0 +1,106 @@
+{
+  "game": "Lotto America",
+  "chartUrl": "https://delotterywebcontent.blob.core.windows.net/delottery-site-assets/images/lotto-america/prizechart.jpg",
+  "chartSha256": "dda3a84c1c7ababf8c437716c5f588b07426ca907721792911e0e93e9c357da3",
+  "basePlayCost": 1,
+  "allStarBonusAdditionalCost": 1,
+  "tiers": [
+    {
+      "match": "5 + Star Ball",
+      "prize": "Jackpot",
+      "sourceOdds": "1:25,989,600",
+      "allStarBonusPrizes": null
+    },
+    {
+      "match": "5",
+      "prize": 20000,
+      "sourceOdds": "1:2,887,733",
+      "allStarBonusPrizes": {
+        "2X": 40000,
+        "3X": 60000,
+        "4X": 80000,
+        "5X": 100000
+      }
+    },
+    {
+      "match": "4 + Star Ball",
+      "prize": 1000,
+      "sourceOdds": "1:110,594",
+      "allStarBonusPrizes": {
+        "2X": 2000,
+        "3X": 3000,
+        "4X": 4000,
+        "5X": 5000
+      }
+    },
+    {
+      "match": "4",
+      "prize": 100,
+      "sourceOdds": "1:12,288",
+      "allStarBonusPrizes": {
+        "2X": 200,
+        "3X": 300,
+        "4X": 400,
+        "5X": 500
+      }
+    },
+    {
+      "match": "3 + Star Ball",
+      "prize": 20,
+      "sourceOdds": "1:2,404",
+      "allStarBonusPrizes": {
+        "2X": 40,
+        "3X": 60,
+        "4X": 80,
+        "5X": 100
+      }
+    },
+    {
+      "match": "3",
+      "prize": 5,
+      "sourceOdds": "1:267",
+      "allStarBonusPrizes": {
+        "2X": 10,
+        "3X": 15,
+        "4X": 20,
+        "5X": 25
+      }
+    },
+    {
+      "match": "2 + Star Ball",
+      "prize": 5,
+      "sourceOdds": "1:160",
+      "allStarBonusPrizes": {
+        "2X": 10,
+        "3X": 15,
+        "4X": 20,
+        "5X": 25
+      }
+    },
+    {
+      "match": "1 + Star Ball",
+      "prize": 2,
+      "sourceOdds": "1:29",
+      "allStarBonusPrizes": {
+        "2X": 4,
+        "3X": 6,
+        "4X": 8,
+        "5X": 10
+      }
+    },
+    {
+      "match": "Star Ball",
+      "prize": 2,
+      "sourceOdds": "1:16.9",
+      "allStarBonusPrizes": {
+        "2X": 4,
+        "3X": 6,
+        "4X": 8,
+        "5X": 10
+      }
+    }
+  ],
+  "overallOddsText": "Overall odds of winning a prize are 1:9.63.",
+  "jackpotQualification": "All-Star Bonus Multiplier does not apply to jackpot.",
+  "reviewMethod": "Visual transcription; exact audited image bytes required."
+}
