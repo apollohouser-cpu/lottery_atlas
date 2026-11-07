@@ -220,3 +220,21 @@ duplicate dates and unsupported multipliers. Private parsed observations are not
 a public feed. Powerball/Double Play and Xs & Os result contracts, remaining
 literal rules/reports and coupled app/publication/native work remain open.
 Release November11 at12:48EST is unchanged; no acceptance or beta claim.
+
+## November 6 — Powerball/Double Play and preceding-month coverage
+
+Strict paired-row parsing validates two Powerball and two distinct Double Play
+observations (November2/4) from the retained monthly source. Game labels, common
+printed date, distinct number containers, special-ball roles/ranges and Power Play
+are checked; Power Play is never copied to Double Play. Corrupt/missing paired
+containers, duplicate dates, wrong ranges and unknown multipliers fail closed.
+Twenty-two focused Delaware tests pass. Public fixture contains only the actual
+source title/table excerpt; no form tokens or private identifiers.
+
+Followed the observed Previous Month link from Mega Millions November history.
+The October response returned200,52850 bytes and validates nine dated rows,
+latest October30; together with November3 this supplies two observed results
+without inventing an absent November row. Private manifest/bytes preserve the
+independent retrieval time and source dates. No public feed or new native build.
+Xs & Os logo parsing, literal rules/qualified reports and production integration
+remain open. Fixed scope and November11 at12:48EST deadline are unchanged.
