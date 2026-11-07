@@ -390,3 +390,20 @@ spot identity and tier structure fail closed on change. Thirty-six focused
 Delaware tests pass. No new public feed/build/acceptance. Remaining legacy rules,
 report qualification and production/native integration continue under unchanged
 November11 12:48EST release deadline.
+
+
+### November7 — legacy Lucky For Life chart
+
+Ten visually audited legacy tiers retain the source Prize (up to) semantics,
+weekly/yearly life-prize labels and all chart qualifications. Split-prize winner
+thresholds,20-year minimum periods, cash alternatives, liability pools, minimum
+prizes, dollar rounding and non-natural-person caveat remain explicit. The chart
+is historical/legacy evidence only: no current operation or retirement date is
+inferred from the still-accessible page.
+
+Exact audited image SHA256 and URL are required. The captured image passed;
+changed bytes and wrong URL failed. Parsed candidate remains private. Current
+and legacy prize-schedule candidates now exist, but how-to-play/rule links,
+remaining report qualification, instant detail coverage and production/native
+integration still require completion. No public feed/build/acceptance; release
+November11 12:48EST unchanged.
