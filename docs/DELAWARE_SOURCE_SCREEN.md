@@ -238,3 +238,22 @@ without inventing an absent November row. Private manifest/bytes preserve the
 independent retrieval time and source dates. No public feed or new native build.
 Xs & Os logo parsing, literal rules/qualified reports and production integration
 remain open. Fixed scope and November11 at12:48EST deadline are unchanged.
+
+
+### November6 Xs & Os monthly logo validation
+
+Followed the official draw navigation history link and its observed Previous
+Month link. Raw November/October responses and retrieval hashes are retained
+privately in `work/delaware_scope/xsos-manifest.json`. Strict parsing validates
+one November1 observation and four October observations (latest October25),
+supplying the latest two across the month boundary. Eight source-labelled team
+codes, names and matching logo URLs are preserved per draw; these are random
+lottery results, not NFL outcomes or numeric balls. Source results remain
+unofficial and tickets remain proof of winning.
+
+The parser rejects changed source/title/date identity, malformed logo groups,
+duplicate identities and mismatched image paths. Public fixtures contain only
+actual title/results excerpts, with no form tokens. Twenty-four focused Delaware
+tests pass. Literal rules, qualified reports, production publication and native
+acceptance remain open; no new feed/build or acceptance is claimed. The fixed
+scope and November11 12:48EST release deadline are unchanged.
