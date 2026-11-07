@@ -306,3 +306,20 @@ wrong source were verified to fail closed. This is a development candidate, not
 a published rule feed. Other illustrated schedules still require structured
 transcription/qualification before integration; Lucky For Life stays historical.
 No native build/acceptance; release November11 12:48EST unchanged.
+
+
+### November7 — Play3/4 illustrated bet schedules
+
+Visual transcription now covers all nine Play3 and13 Play4 chart rows, alongside
+13 Play5 rows. Straight/box rows preserve separate straight-and-box versus
+box-only outcomes; merged payout cells do not become invented50-cent/$1 columns.
+Combination rows retain minimum ticket costs and per-straight-bet costs. Play4
+explicit ticket-cost/prize options remain separate. Rounded probabilities stay
+literal to the chart, including combination-row probabilities; none are recomputed.
+
+A shared chart loader verifies game, exact source URL and audited image SHA256.
+All three actual captured images passed; changed bytes and wrong URLs failed.
+The30 existing focused Delaware tests still pass. Parsed candidates remain
+private and no public feed, native build or acceptance is claimed. Remaining
+rules/reports, integration and native checks continue under the unchanged
+November11 12:48EST release deadline.

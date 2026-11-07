@@ -1,0 +1,83 @@
+{
+  "game": "Play 3",
+  "sourceUrl": "https://www.delottery.com/Drawing-Games/Play-3/Prizes-And-Odds",
+  "chartUrl": "https://www.delottery.com/Content/images/drawing-games-play-three-payout-chart.jpg?width=768&mode=crop&scale=both",
+  "chartSha256": "8ba4dc6ca6867f9b4ad8a005853736158acc9dc96a134f5359ad2221b041113f",
+  "reviewMethod": "Visual transcription of official chart; valid only for the exact audited image bytes.",
+  "tiers": [
+    {
+      "label": "Straight",
+      "description": "Match a 3-digit number in exact order",
+      "sourceProbability": "1 in 1,000",
+      "prize50CentBet": 250,
+      "prize1DollarBet": 500
+    },
+    {
+      "label": "3-way box",
+      "description": "Match a 3-digit number with 2 digits the same",
+      "sourceProbability": "1 in 333.333",
+      "prize50CentBet": 80,
+      "prize1DollarBet": 160
+    },
+    {
+      "label": "6-way box",
+      "description": "Match a 3-digit number with all digits different",
+      "sourceProbability": "1 in 166.67",
+      "prize50CentBet": 40,
+      "prize1DollarBet": 80
+    },
+    {
+      "label": "Front pair",
+      "description": "Match the first two digits in exact order",
+      "sourceProbability": "1 in 100",
+      "prize50CentBet": 25,
+      "prize1DollarBet": 50
+    },
+    {
+      "label": "Back pair",
+      "description": "Match the last two digits in exact order",
+      "sourceProbability": "1 in 100",
+      "prize50CentBet": 25,
+      "prize1DollarBet": 50
+    },
+    {
+      "label": "3-way combination",
+      "description": "Three straight bets with two digits the same",
+      "sourceProbability": "1 in 1,000",
+      "prize50CentBet": 250,
+      "prize1DollarBet": 500,
+      "minimumTicketCost": 1.5,
+      "costPerStraightBet": 0.5
+    },
+    {
+      "label": "6-way combination",
+      "description": "Six straight bets",
+      "sourceProbability": "1 in 1,000",
+      "prize50CentBet": 250,
+      "prize1DollarBet": 500,
+      "minimumTicketCost": 3,
+      "costPerStraightBet": 0.5
+    },
+    {
+      "label": "Straight/box 3-way",
+      "description": "Straight and boxed bets with two digits the same",
+      "sourceProbability": "1 in 333.333",
+      "ticketCost": 1,
+      "straightBetCost": 0.5,
+      "boxBetCost": 0.5,
+      "straightAndBoxPrize": 330,
+      "boxOnlyPrize": 80
+    },
+    {
+      "label": "Straight/box 6-way",
+      "description": "Straight and boxed bets with all digits different",
+      "sourceProbability": "1 in 166.67",
+      "ticketCost": 1,
+      "straightBetCost": 0.5,
+      "boxBetCost": 0.5,
+      "straightAndBoxPrize": 290,
+      "boxOnlyPrize": 40
+    }
+  ],
+  "coverage": "Published bet-specific prize schedule and literal rounded probabilities, not actual payouts. Combination ticket cost differs from cost per straight bet. Straight/box outcomes are distinct; no invented $1 column for merged cells. Illustrative numbers are not results."
+}

@@ -1,0 +1,145 @@
+{
+  "game": "Play 4",
+  "sourceUrl": "https://www.delottery.com/Drawing-Games/Play-4/Prizes-And-Odds",
+  "chartUrl": "https://www.delottery.com/Content/images/drawing-games-play-four-payout-chart.jpg?width=768&mode=crop&scale=both",
+  "chartSha256": "9bc89bfefd1ffa524c4a9823d9e54967d9ceba259c28774a1396a54aaf1542cc",
+  "reviewMethod": "Visual transcription of official chart; valid only for the exact audited image bytes.",
+  "tiers": [
+    {
+      "label": "Straight",
+      "description": "Match a 4-digit number in exact order",
+      "sourceProbability": "1 in 10,000",
+      "prize50CentBet": 2500,
+      "prize1DollarBet": 5000
+    },
+    {
+      "label": "4-way box",
+      "description": "Match a 4-digit number with 3 digits the same",
+      "sourceProbability": "1 in 2,500",
+      "prize50CentBet": 625,
+      "prize1DollarBet": 1250
+    },
+    {
+      "label": "6-way box",
+      "description": "Match a 4-digit number with two pairs",
+      "sourceProbability": "1 in 1,666.67",
+      "prize50CentBet": 417,
+      "prize1DollarBet": 834
+    },
+    {
+      "label": "12-way box",
+      "description": "Match a 4-digit number with 2 digits the same",
+      "sourceProbability": "1 in 833.33",
+      "prize50CentBet": 208,
+      "prize1DollarBet": 416
+    },
+    {
+      "label": "24-way box",
+      "description": "Match a 4-digit number with all digits different",
+      "sourceProbability": "1 in 416.67",
+      "prize50CentBet": 104,
+      "prize1DollarBet": 208
+    },
+    {
+      "label": "Straight/box 4-way",
+      "description": "Straight and boxed bets with three digits the same",
+      "sourceProbability": "1 in 2,500",
+      "minimumTicketCost": 1,
+      "straightAndBoxPrize": 3125,
+      "boxOnlyPrize": 625
+    },
+    {
+      "label": "Straight/box 6-way",
+      "description": "Straight and boxed bets with two pairs",
+      "sourceProbability": "1 in 1,666.67",
+      "minimumTicketCost": 1,
+      "straightAndBoxPrize": 2917,
+      "boxOnlyPrize": 417
+    },
+    {
+      "label": "Straight/box 12-way",
+      "description": "Straight and boxed bets with two digits the same",
+      "sourceProbability": "1 in 833.33",
+      "minimumTicketCost": 1,
+      "straightAndBoxPrize": 2708,
+      "boxOnlyPrize": 208
+    },
+    {
+      "label": "Straight/box 24-way",
+      "description": "Straight and boxed bets with all digits different",
+      "sourceProbability": "1 in 416.67",
+      "minimumTicketCost": 1,
+      "straightAndBoxPrize": 2604,
+      "boxOnlyPrize": 104
+    },
+    {
+      "label": "4-way combination",
+      "description": "Four straight bets with three digits the same",
+      "sourceProbability": "1 in 2,500",
+      "minimumTicketCost": 2,
+      "costPerStraightBet": 0.5,
+      "ticketPrizeOptions": [
+        {
+          "ticketCost": 2,
+          "prize": 2500
+        },
+        {
+          "ticketCost": 4,
+          "prize": 5000
+        }
+      ]
+    },
+    {
+      "label": "6-way combination",
+      "description": "Six straight bets with two pairs",
+      "sourceProbability": "1 in 1,666.67",
+      "minimumTicketCost": 3,
+      "costPerStraightBet": 0.5,
+      "ticketPrizeOptions": [
+        {
+          "ticketCost": 3,
+          "prize": 2500
+        },
+        {
+          "ticketCost": 6,
+          "prize": 5000
+        }
+      ]
+    },
+    {
+      "label": "12-way combination",
+      "description": "Twelve straight bets with two digits the same",
+      "sourceProbability": "1 in 833.33",
+      "minimumTicketCost": 6,
+      "costPerStraightBet": 0.5,
+      "ticketPrizeOptions": [
+        {
+          "ticketCost": 6,
+          "prize": 2500
+        },
+        {
+          "ticketCost": 12,
+          "prize": 5000
+        }
+      ]
+    },
+    {
+      "label": "24-way combination",
+      "description": "Twenty-four straight bets with all digits different",
+      "sourceProbability": "1 in 416.67",
+      "minimumTicketCost": 12,
+      "costPerStraightBet": 0.5,
+      "ticketPrizeOptions": [
+        {
+          "ticketCost": 12,
+          "prize": 2500
+        },
+        {
+          "ticketCost": 24,
+          "prize": 5000
+        }
+      ]
+    }
+  ],
+  "coverage": "Published bet-specific prize schedule and literal rounded probabilities, not actual payouts. Combination ticket cost differs from cost per straight bet. Straight/box outcomes are distinct; no invented $1 column for merged cells. Illustrative numbers are not results."
+}
