@@ -537,3 +537,22 @@ All39 retained images pass. Forty-four focused Delaware tests pass, including
 four new continuity/tampering tests. This validates evidence integrity only;
 it does not certify unreviewed image wording or prize semantics. No public
 feed/build/acceptance; November11 at12:48EST remains unchanged.
+
+### November7 — combined private coverage candidate
+
+Composed the retained opening draw/rule/catalog sources into one explicitly
+incomplete private artifact:26 results across13 groups,10 rule families,39
+current catalog identities,39 validated linked images and35 closeout notices.
+Top-prize source date remains November5; original per-source retrieval dates
+remain intact. Composition does not claim a fresh agency collection.
+
+Opening source URLs, successful status, timezone-qualified retrieval times and
+exact bytes/hashes validate before parsing; duplicate/changed evidence rejects.
+The existing strict draw/rule/image validators and numbered catalog/report join
+all run before output. Output uses exclusive creation and cannot overwrite an
+existing candidate. Forty-seven focused Delaware tests pass.
+
+Private artifact remains productionReady=false with incomplete-development
+identity. Instant semantic audit, actual-report integration, publication and
+ordinary app/native evidence are still open. No public feed/build/acceptance;
+November11 at12:48EST release deadline is unchanged.
