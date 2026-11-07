@@ -450,3 +450,21 @@ current remaining prizes or retailer stock. Full39-image content audit and
 structured integration remain pending; acquisition is not semantic acceptance.
 Existing36 focused tests pass. No new feed/build/acceptance; November11 12:48EST
 release deadline unchanged.
+
+
+### November7 — combined opening draw candidate
+
+A repeatable evidence-replay builder now validates source hashes/byte sizes and
+runs every current draw parser together. It validates386 retained observations
+and selects26 rows across13 game/session groups: latest two within the opening
+captures, not a claim of live freshness or complete history. Each selected row
+retains its own source URL, retrieval time, hash and coverage qualification;
+no global rebuild timestamp replaces source collection dates.
+
+Duplicate identities, missing groups, insufficient observations and altered
+source bytes fail closed. A changed-byte probe was rejected before candidate
+creation. Output requires a new file and remains private at
+work/delaware_scope/draw-candidate-20261107.json. Thirty-six focused tests pass.
+This closes a development composition step only; publication schema, scheduled
+capture, remaining report/instant audits and native acceptance remain open.
+Release November11 12:48EST unchanged; no public feed/build/acceptance claimed.
