@@ -461,3 +461,19 @@ Thirty-six focused Delaware tests still pass. This is not a public release or
 complete how-to-play/instant audit. Remaining report/instant qualification,
 publication schema/scheduling and ordinary app/native checks remain open.
 Release November11 12:48EST unchanged; no new feed/build/acceptance.
+
+
+### November7 — Play session report contracts
+
+Play3/4/5 opening reports validate explicit November6 DAY identity using both
+header icon/label and mobile row text. Nine/thirteen/eight literal categories
+respectively are retained. Desktop/mobile summary duplicates must agree and are
+not added together. Source Total Winners values195/29/7 stay literal, without
+unique-person/ticket or geographic inference. Play5 Boxed prize stays Varies;
+its absent Total Won is unavailable. No payout is derived by multiplying the
+50-cent schedule column by counts.
+
+Changed session/date, categories, responsive totals and column identities fail
+closed. Thirty-eight focused Delaware tests pass. Private parsed reports are
+not published; unit qualification and app disclosures remain necessary. No new
+feed/build/acceptance; November11 12:48EST release deadline unchanged.
