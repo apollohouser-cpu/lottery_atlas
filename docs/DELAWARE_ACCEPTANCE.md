@@ -492,3 +492,19 @@ unique/nonfuture dates fail closed. Forty focused Delaware tests pass. Parsed
 report remains private, with source-unit uncertainty disclosed before any future
 integration. No new feed/build/acceptance; fixed scope remains the November6
 15:49EST decision and release remains November11 12:48EST without extension.
+
+### November7 — shared-design and promotion detail boundary
+
+Visually screened retained detail images528 (Game Show Experience) and533
+(Pay Raise), verifying their source hashes and byte sizes first. Game528 depicts
+three designs under the same numbered identity. Its printed prize table includes
+a separate second-chance trip row with a75,000-dollar value and no numeric odds.
+That row must not become an ordinary Scratch cash tier or observed claim count;
+no promotion deadline is inferred. Game533 uses independent vertical arrow/STOP
+paths rather than number matching. Both sheets base printed prize structures on
+the stated390,000 ordered tickets; neither provides current retailer inventory.
+
+Private semantic notes retain exact image provenance and printed summary fields.
+Full row transcription/arithmetic reconciliation and the remaining image review
+are still pending. This is bounded content screening, not complete instant audit
+or release acceptance. November11 at12:48EST remains unchanged.
