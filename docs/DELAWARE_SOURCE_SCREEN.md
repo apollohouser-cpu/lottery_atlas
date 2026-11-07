@@ -468,3 +468,20 @@ work/delaware_scope/draw-candidate-20261107.json. Thirty-six focused tests pass.
 This closes a development composition step only; publication schema, scheduled
 capture, remaining report/instant audits and native acceptance remain open.
 Release November11 12:48EST unchanged; no public feed/build/acceptance claimed.
+
+
+### November7 — combined rule candidate
+
+A repeatable rule-evidence builder now composes ten prize-schedule families,
+including separate Powerball/Double Play groups within the Powerball family and
+explicit historical/legacy Lucky For Life status. All original page/image byte
+sizes and hashes are checked before the individual rule validators run. Each
+family retains its own page/chart retrieval dates and evidence; composition does
+not advance freshness or erase source contradictions.
+
+The private rule-candidate-20261107.json validates successfully. A substituted
+Play4 image fails before output creation; existing outputs are never overwritten.
+Thirty-six focused Delaware tests still pass. This is not a public release or
+complete how-to-play/instant audit. Remaining report/instant qualification,
+publication schema/scheduling and ordinary app/native checks remain open.
+Release November11 12:48EST unchanged; no new feed/build/acceptance.
