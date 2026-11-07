@@ -477,3 +477,18 @@ Changed session/date, categories, responsive totals and column identities fail
 closed. Thirty-eight focused Delaware tests pass. Private parsed reports are
 not published; unit qualification and app disclosures remain necessary. No new
 feed/build/acceptance; November11 12:48EST release deadline unchanged.
+
+
+### November7 — historical Lucky For Life report
+
+The retained legacy report validates ten dated rows, February12–21,2026, with
+ten literal match categories each. The original dates remain unchanged; November
+retrieval is not current draw activity. Historical/legacy status is explicit,
+and no retirement date, unique-person/ticket unit, geographic extent or payout
+is inferred from the Number Of Winners title.
+
+Source/title, category labels, table shape, nonnegative counts and descending
+unique/nonfuture dates fail closed. Forty focused Delaware tests pass. Parsed
+report remains private, with source-unit uncertainty disclosed before any future
+integration. No new feed/build/acceptance; fixed scope remains the November6
+15:49EST decision and release remains November11 12:48EST without extension.
