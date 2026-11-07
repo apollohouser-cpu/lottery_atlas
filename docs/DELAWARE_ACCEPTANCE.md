@@ -339,3 +339,19 @@ focused tests pass. The previously identified winner-report labeling inconsisten
 remains isolated; this rule schedule does not resolve that separate report defect.
 No new public feed/build/acceptance. Remaining rules/report qualification and
 production/native integration continue; November11 12:48EST unchanged.
+
+
+### November7 — Mega Millions literal schedule
+
+Nine current-chart tiers and five multiplier-frequency rows are retained with
+April5,2025 effective date. The source AVERAGE PRIZE column stays separate from
+RANGE OF PRIZE WIN: no expected payout is calculated or mislabeled. Multiplier
+assignment is per board at purchase, never per drawing. Frequency summary/notes,
+overall odds and pari-mutuel qualification are preserved; previous chart modal
+is outside this current-rule contract.
+
+Exact source/title, table cardinality and audited normalized body-text digest
+fail closed on semantic change, including changed qualifications or effective
+date. Thirty-two focused Delaware tests pass. No new feed/build/acceptance;
+remaining rule/report contracts and production/native integration continue.
+Release November11 12:48EST unchanged.
