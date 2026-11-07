@@ -272,3 +272,19 @@ Development follow-up checked the previously emailed Pages failure for b58af59.
 Newer runs for dd1aea7,3053a9e and fb60758 all completed successfully; latest
 run42331472724 is successful. No current deployment failure is inferred from the
 older email, and no source refresh/retrieval date was advanced by this check.
+
+
+### November6 — Multi-Win grouped prize schedules
+
+Strict rule parsing preserves four Win in a line and six Combination win tiers.
+The two six-number categories stay distinct: the line prize is literally
+$50,000 +, while combination six is $3. The zero-match qualification explicitly
+requires no numbers matched on any three lines. Overall1:5.7 odds and its source
+PDF link are preserved; PDF contents are not yet audited. Undated page Total
+Prizes/Total Money aggregates are excluded from imported rule data.
+
+Changed group identity, tier structure, growing-prize qualification, zero-match
+note and odds fail closed. Thirty focused Delaware tests pass. Full captured
+bytes and development output remain private; actual source excerpt is a regression
+fixture. Remaining rules/reports, coupled publication and native acceptance stay
+open. No new public feed/build/acceptance; November11 12:48EST unchanged.
