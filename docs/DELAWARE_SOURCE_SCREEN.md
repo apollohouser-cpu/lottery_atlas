@@ -547,3 +547,17 @@ Private row-order transcription and arithmetic evidence retain the image hash
 and original retrieval date. Combination/bonus/odds columns and remaining images
 still need complete review. No public feed/build/acceptance; release deadline
 November11 at12:48EST remains unchanged.
+
+### November7 — repeatable instant-image continuity validation
+
+Added a replay validator joining every retained detail image to the captured
+current catalog by numbered identity, exact URL and shared-design names. It
+requires complete one-to-one coverage, HTTP200 capture status, expected image
+filename/type/signature, byte size/hash and timezone-qualified acquisition date.
+Changed catalog/image bytes, missing or duplicate entries, unknown identities,
+changed names/URLs, traversal filenames and failed captures reject.
+
+All39 retained images pass. Forty-four focused Delaware tests pass, including
+four new continuity/tampering tests. This validates evidence integrity only;
+it does not certify unreviewed image wording or prize semantics. No public
+feed/build/acceptance; November11 at12:48EST remains unchanged.
