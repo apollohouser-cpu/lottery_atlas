@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:crypto/crypto.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter/services.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// Fixed reviewed Arizona artifacts. New observations require Python source
@@ -113,12 +114,16 @@ class ArizonaCoverageLoader {
     try {
       final raw = await readCache();
       if (raw != null) retained = decodeForLoad(raw);
-    } catch (_) {}
+    } catch (error) {
+      debugPrint('Arizona cache load failed: $error');
+    }
     if (retained == null) {
       origin = 'bundle';
       try {
         retained = decodeForLoad(await readBundle());
-      } catch (_) {}
+      } catch (error) {
+        debugPrint('Arizona bundle load failed: $error');
+      }
     }
     try {
       final raw = await fetchRemote().timeout(const Duration(seconds: 8));
@@ -135,7 +140,8 @@ class ArizonaCoverageLoader {
         refreshFailed: false,
         persistenceFailed: !persisted,
       );
-    } catch (_) {
+    } catch (error) {
+      debugPrint('Arizona refresh failed: $error');
       if (retained == null) {
         throw StateError('No validated Arizona coverage available');
       }

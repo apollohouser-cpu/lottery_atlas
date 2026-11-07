@@ -1,5 +1,84 @@
 # Mobile beta readiness
 
+## Current owner-device status — November7
+
+Personal Team signing, physical iPhone17 Pro Max installation and launch are now
+verified. Owner confirms Arizona draw results are visible. Native production
+loader and saved-cache bytes match the reviewed Arizona release; earlier loading
+failure root cause remains undetermined. Ordinary app restored after temporary
+probe, rebuilt in22.4s, signature checked, installed in place and launched.
+No saved app data was uninstalled. Historical preparation entries below are
+superseded by this status. All four broader gates remain open; no peer invitations.
+Keep simulator closed, Android stopped, PNY mounted and builds sequential.
+
+## November7 — owner physical-device preparation
+
+User selected their physical iPhone17 Pro Max for initial owner development
+verification before peer testers. This is distinct from the iPhone17e simulator;
+all four readiness gates remain open and no peer invitation is authorized.
+November7 follow-up: the selected phone is paired and connected with Developer
+Mode enabled on iOS27.2. Xcode27.2 now launches from PNY SSD; its downloaded XIP
+passed Apple's package-signature check. The system command-line selection still
+points to Xcode26.6; development checks can select the external toolchain per
+process. Zero valid code-signing identities remain, Runner has no DEVELOPMENT_TEAM,
+and Xcode's Apple Accounts pane requests sign-in. The owner sign-in dialog is
+open; account/team/provisioning and signed installation remain unverified.
+No fees, enrollment or attestations performed.
+No device identifiers are recorded publicly. The owner reported macOS closing
+the simulator during storage optimization; leave it closed while preparing the
+connected physical phone. Android remains stopped; keep builds sequential.
+
+## November7 — storage recovery after owner restart
+
+Owner authorized moving suitable files to PNY after memory exhaustion and a
+forced restart. Migrated iOS DeviceSupport, Camera Raw cache, inactive VS Code
+and GitHub updater caches, and phone-repair utility data to PNY with original-path
+symlinks. Each directory passed source/destination SHA256 inventory verification
+and linked-path verification before removing internal originals. Private manifests
+remain on PNY. Internal free space measured29GiB after migration (8.6GiB after
+restart); PNY359GiB free. Existing projects, account data and simulator links were
+preserved. Keep PNY mounted, simulator closed and builds sequential. SSD storage
+does not increase RAM. Xcode Apple Account now shows a Personal Team; signing
+certificates and signed-device installation remain unverified.
+
+## November7 — first owner phone installation
+
+User explicitly requested beginning their private iPhone trial. Xcode27.2 Personal
+Team provisioning succeeded; signed release build completed in53.6s (90.7MB).
+Physical iPhone17 Pro Max installation succeeded. Local codesign deep/strict
+verification passed; embedded profile covers one device and expires November14.
+Launch was denied by iOS security, citing signature/entitlements or missing user
+trust; phone-side developer trust is the next check. Successful launch and all
+four readiness gates remain unverified. No peer invitations or paid enrollment.
+Private signing/project/device/install evidence stays under work/owner_iphone;
+team identifiers were removed from tracked project configuration after building.
+
+## November7 — owner launch and Arizona loading defect
+
+Owner confirmed the installed app opens, then reported “Coverage unavailable”
+on Arizona results and schedules. This physical-device loading defect remains
+open; matching bundled/live release digests and passing widget tests do not
+resolve it. Added loading-stage diagnostics and direct Arizona map Drawings /
+Scratch routes. Signed release rebuilt in26.2s, strict codesign verification and
+in-place device installation passed; eight focused loader/route tests passed.
+Diagnostic console attached for owner reproduction; root cause and successful
+phone results display are not yet verified. Saved app data was not uninstalled.
+All four broader readiness gates remain open.
+
+Follow-up native startup probe used the production published loader on the owner's
+phone and returned remote coverage with19 draw groups. Retrieved app preferences
+confirm the saved Arizona bytes match the reviewed release SHA256. The earlier
+failure's cause remains undetermined; this establishes transport/loading and
+cache-write success, not yet owner-observed results-screen recovery. Temporary
+startup probe source was restored before rebuilding the ordinary app. Private
+probe and preferences evidence stays under work/owner_iphone.
+
+Owner subsequently confirmed Arizona draw results are visible on the physical
+phone. Results-screen recovery is now user-observed; the earlier loading
+failure's root cause remains undetermined. Owner noted no corresponding heat-map
+change. Arizona supported draw observations do not provide verified geographic
+winning-ticket activity; no locations or heat points are inferred from results.
+
 ## October 31 — user-directed prerequisites before beta testing
 
 The user requested completion of all four readiness items before beta testing,
@@ -13,7 +92,7 @@ from tester participation. None of the four items is currently complete.
 | Favorites and saved tickets persist reliably | Real-device restart and update retention, individual deletion, and storage-failure recovery on supported platforms | Service regression tests exist; real-device lifecycle evidence remains open |
 | Phone layouts, navigation and source links work | Bounded device matrix with small/large screens, keyboard/safe areas, enlarged text, landscape, source launch/return and usable exits | Montana bounded state paths accepted; broader mobile device/OS accessibility matrix remains open |
 | Privacy disclosures and backup/deletion behavior are complete | Verified runtime destinations, final artifact permissions/manifests, documented backup/reset behavior and accurate privacy/support materials | Static inventory exists; runtime, backup/deletion and final disclosures remain open |
-| Signing, distribution, installation and updates are ready | Verified existing account/identifier configuration, signed installable artifacts and installation/update evidence; distribution configured without inviting testers | Accounts/signing and signed artifact/device evidence remain unverified |
+| Signing, distribution, installation and updates are ready | Verified existing account/identifier configuration, signed installable artifacts and installation/update evidence; distribution configured without inviting testers | Personal Team signed install, launch and in-place updates verified on owner phone; distribution setup and saved-user-data update retention remain open |
 
 Keep human account attestations with the account holder and do not authorize fees.
 The outstanding alternative UI-control authorization is not inferred from this

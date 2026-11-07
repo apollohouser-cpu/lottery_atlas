@@ -18,7 +18,9 @@ at12:48EST: scope due November7 at12:48EST, release due November11 at12:48EST
 DELAWARE_ACCEPTANCE.md. No successor deadline is inherited. Missing agency records do
 not block honest supported completion; audit private deliveries before integration.
 
-Keep iPhone17e running with the ordinary app and Android stopped, one simulator.
+November7 owner-device preparation supersedes the simulator preference: leave
+the simulator closed during storage pressure and use the connected iPhone17 Pro
+Max for development verification. Android stays stopped; builds remain sequential.
 All four MOBILE_BETA_READINESS.md prerequisites remain open and must be verified
 before beta testing or invitations. Notify when all four are complete. The
 October26 forecast remains December19,2026–January15,2027; five-day slower scenario

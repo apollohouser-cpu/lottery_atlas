@@ -1,3 +1,5 @@
+import '../../services/arizona_coverage_loader.dart';
+import 'arizona_coverage_view.dart';
 import 'nebraska_scratch_catalog_sheet.dart';
 import 'kansas_scratch_catalog_sheet.dart';
 import 'dart:async';
@@ -454,6 +456,21 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     if (!mounted) return;
     setState(() {});
     _restartHeatBubbleAnimation();
+  }
+
+  void _openArizonaCoverage({bool products = false}) {
+    showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      useSafeArea: true,
+      builder: (_) => SizedBox(
+        height: MediaQuery.sizeOf(context).height * .94,
+        child: ArizonaCoverageView(
+          loader: ArizonaCoverageLoader.published(),
+          products: products,
+        ),
+      ),
+    );
   }
 
   void _onScratchCatalogChanged() {
@@ -5028,38 +5045,47 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                     ),
                   );
                 },
-                onDrawings: () => showModalBottomSheet<void>(
-                  context: context,
-                  isScrollControlled: true,
-                  useSafeArea: true,
-                  builder: (sheetContext) => SafeArea(
-                    child: Padding(
-                      padding: const EdgeInsets.all(12),
-                      child: NextDrawingsPanel(
-                        width: double.infinity,
-                        stateName: _selectedStateName,
-                        isExpanded: true,
-                        onExpandedChanged: (_) => Navigator.pop(sheetContext),
-                        onViewNationalResults: () {
-                          Navigator.pop(sheetContext);
-                          Navigator.of(context).push(
-                            MaterialPageRoute<void>(
-                              builder: (_) => const NationalDrawResultsScreen(),
-                            ),
-                          );
-                        },
-                        onStateDrawSelected: (game) {
-                          Navigator.pop(sheetContext);
-                          _showStateDrawGameOnMap(game);
-                        },
-                        showStateLabel: true,
+                onDrawings: () {
+                  if (_selectedStateName == 'Arizona') {
+                    _openArizonaCoverage();
+                    return;
+                  }
+                  showModalBottomSheet<void>(
+                    context: context,
+                    isScrollControlled: true,
+                    useSafeArea: true,
+                    builder: (sheetContext) => SafeArea(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12),
+                        child: NextDrawingsPanel(
+                          width: double.infinity,
+                          stateName: _selectedStateName,
+                          isExpanded: true,
+                          onExpandedChanged: (_) => Navigator.pop(sheetContext),
+                          onViewNationalResults: () {
+                            Navigator.pop(sheetContext);
+                            Navigator.of(context).push(
+                              MaterialPageRoute<void>(
+                                builder: (_) =>
+                                    const NationalDrawResultsScreen(),
+                              ),
+                            );
+                          },
+                          onStateDrawSelected: (game) {
+                            Navigator.pop(sheetContext);
+                            _showStateDrawGameOnMap(game);
+                          },
+                          showStateLabel: true,
+                        ),
                       ),
                     ),
-                  ),
-                ),
+                  );
+                },
                 onScratch: () {
                   final state = _selectedStateName;
-                  if (state == 'South Carolina') {
+                  if (state == 'Arizona') {
+                    _openArizonaCoverage(products: true);
+                  } else if (state == 'South Carolina') {
                     _openSouthCarolinaScratchOffPicker();
                   } else if (state == 'North Carolina') {
                     showModalBottomSheet<void>(
