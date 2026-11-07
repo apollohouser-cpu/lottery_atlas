@@ -288,3 +288,21 @@ note and odds fail closed. Thirty focused Delaware tests pass. Full captured
 bytes and development output remain private; actual source excerpt is a regression
 fixture. Remaining rules/reports, coupled publication and native acceptance stay
 open. No new public feed/build/acceptance; November11 12:48EST unchanged.
+
+
+### November7 — illustrated rule capture and Play5 transcription
+
+Five linked chart images returned HTTP200 and were visually inspected: Lotto
+America, legacy Lucky For Life and Play3/4/5. Exact URLs, bytes, hashes and retrieval
+times remain in work/delaware_scope/rule-charts-manifest.json. These are image
+sources, not absent rules simply because the HTML has no prize table.
+
+Play5's13 rows are transcribed with bet type, matching requirement, literal
+rounded source probability and separate50-cent/$1 prizes. The source's30-way box
+is $825/$1,650; its rounded probabilities are retained without recomputation.
+Illustrative number permutations are not imported as results. The transcription
+loader requires both the exact audited image SHA256 and URL; altered bytes and
+wrong source were verified to fail closed. This is a development candidate, not
+a published rule feed. Other illustrated schedules still require structured
+transcription/qualification before integration; Lucky For Life stays historical.
+No native build/acceptance; release November11 12:48EST unchanged.
