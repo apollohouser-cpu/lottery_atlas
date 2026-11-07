@@ -407,3 +407,22 @@ and legacy prize-schedule candidates now exist, but how-to-play/rule links,
 remaining report qualification, instant detail coverage and production/native
 integration still require completion. No public feed/build/acceptance; release
 November11 12:48EST unchanged.
+
+
+### November7 — repeatable instant detail acquisition
+
+All39 current catalog-linked official detail images are captured with successful
+HTTP200 responses, content-type/signature checks, byte counts, hashes and separate
+retrieval times. Private manifest: work/delaware_scope/instant_details_20261107_encoded/manifest.json.
+The acquisition command requires a new destination and never overwrites prior
+evidence or public data. An initial literal-space URL failed for game533;
+percent-encoding that observed URL fixed transport and the complete rerun passed.
+The initial failed manifest is retained rather than presented as complete.
+
+Visual screening of game425 confirms full illustrated instructions and prize
+combination tables are available. Its Winners/Prize Value columns describe a
+printed prize structure based on the stated ticket run, not observed claims,
+current remaining prizes or retailer stock. Full39-image content audit and
+structured integration remain pending; acquisition is not semantic acceptance.
+Existing36 focused tests pass. No new feed/build/acceptance; November11 12:48EST
+release deadline unchanged.
