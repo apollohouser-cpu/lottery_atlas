@@ -1,0 +1,175 @@
+{
+  "sourceUrl": "https://www.delottery.com/Drawing-Games/Powerball/Prizes-And-Odds",
+  "title": "Prizes And Odds - Powerball - Drawing Games | Delaware Lottery",
+  "auditedBodyTextSha256": "91470db5d4548f02a482ea5ead05b4a4c1507cc47a8f851a8f658d1849929a6e",
+  "groups": [
+    {
+      "game": "Powerball",
+      "tiers": [
+        {
+          "match": "5 numbers plus the Powerball",
+          "prize": "Jackpot**",
+          "sourceOdds": "1:292,201,338.0000",
+          "powerPlayQualification": "Power Play\u00ae does not apply to jackpot"
+        },
+        {
+          "match": "5 numbers",
+          "prize": "$1,000,000",
+          "sourceOdds": "1:11,688,053.5200",
+          "powerPlayPrizes": {
+            "2X": "$2,000,000",
+            "3X": "$2,000,000",
+            "4X": "$2,000,000",
+            "5X": "$2,000,000",
+            "10X": "$2,000,000"
+          }
+        },
+        {
+          "match": "4 numbers plus the Powerball",
+          "prize": "$50,000",
+          "sourceOdds": "1:913,129.1813",
+          "powerPlayPrizes": {
+            "2X": "$100,000",
+            "3X": "$150,000",
+            "4X": "$200,000",
+            "5X": "$250,000",
+            "10X": "$500,000"
+          }
+        },
+        {
+          "match": "4 numbers",
+          "prize": "$100",
+          "sourceOdds": "1:36,525.1673",
+          "powerPlayPrizes": {
+            "2X": "$200",
+            "3X": "$300",
+            "4X": "$400",
+            "5X": "$500",
+            "10X": "$1,000"
+          }
+        },
+        {
+          "match": "3 numbers plus the Powerball",
+          "prize": "$100",
+          "sourceOdds": "1:14,494.1140",
+          "powerPlayPrizes": {
+            "2X": "$200",
+            "3X": "$300",
+            "4X": "$400",
+            "5X": "$500",
+            "10X": "$1,000"
+          }
+        },
+        {
+          "match": "3 numbers",
+          "prize": "$7",
+          "sourceOdds": "1:579.7646",
+          "powerPlayPrizes": {
+            "2X": "$14",
+            "3X": "$21",
+            "4X": "$28",
+            "5X": "$35",
+            "10X": "$70"
+          }
+        },
+        {
+          "match": "2 numbers plus the Powerball",
+          "prize": "$7",
+          "sourceOdds": "1:701.3281",
+          "powerPlayPrizes": {
+            "2X": "$14",
+            "3X": "$21",
+            "4X": "$28",
+            "5X": "$35",
+            "10X": "$70"
+          }
+        },
+        {
+          "match": "1 number plus the Powerball",
+          "prize": "$4",
+          "sourceOdds": "1:91.9775",
+          "powerPlayPrizes": {
+            "2X": "$8",
+            "3X": "$12",
+            "4X": "$16",
+            "5X": "$20",
+            "10X": "$40"
+          }
+        },
+        {
+          "match": "Powerball only",
+          "prize": "$4",
+          "sourceOdds": "1:38.3239",
+          "powerPlayPrizes": {
+            "2X": "$8",
+            "3X": "$12",
+            "4X": "$16",
+            "5X": "$20",
+            "10X": "$40"
+          }
+        }
+      ]
+    },
+    {
+      "game": "Double Play",
+      "tiers": [
+        {
+          "match": "5 numbers plus the Powerball",
+          "prize": "$10,000,000*",
+          "sourceOdds": "1:292,201,338"
+        },
+        {
+          "match": "5 numbers",
+          "prize": "$500,000",
+          "sourceOdds": "1:11,688,053.52"
+        },
+        {
+          "match": "4 numbers plus the Powerball",
+          "prize": "$50,000",
+          "sourceOdds": "1:913,129.18"
+        },
+        {
+          "match": "4 numbers",
+          "prize": "$500",
+          "sourceOdds": "1:36,525.17"
+        },
+        {
+          "match": "3 numbers plus the Powerball",
+          "prize": "$500",
+          "sourceOdds": "1:14,494.11"
+        },
+        {
+          "match": "3 numbers",
+          "prize": "$20",
+          "sourceOdds": "1:579.76"
+        },
+        {
+          "match": "2 numbers plus the Powerball",
+          "prize": "$20",
+          "sourceOdds": "1:701.33"
+        },
+        {
+          "match": "1 number plus the Powerball",
+          "prize": "$10",
+          "sourceOdds": "1:91.98"
+        },
+        {
+          "match": "Powerball only",
+          "prize": "$7",
+          "sourceOdds": "1:38.32"
+        }
+      ]
+    }
+  ],
+  "qualifications": [
+    "*Subject to published Powerball\u00ae rules, the prize amounts may be modified.",
+    "**The Jackpot prize will be divided equally among multiple winners. The annuity option will be paid in 30 payments over 29 years unless the cash option is selected at the time of claim. The cash option is paid in one lump sum.",
+    "\u2020The 10 times Power Play\u00ae multiplier is available when the annuity Jackpot is less than $150 million unless otherwise announced.",
+    "For an additional $1 per play, Double Play\u00ae offers another chance to match your Powerball\u00ae numbers in a separate drawing with a top cash prize of $10 million.",
+    "Double Play\u00ae Prizes are not eligible for Power Play\u00ae multipliers.",
+    "*The Double Play\u00ae top prize will be divided equally among multiple winners. The annuity option will be paid in 30 payments over 29 years unless the cash option is selected at the time of claim. The cash option is paid in one lump sum.",
+    "Overall odds of winning are approximately 1:24.867"
+  ],
+  "coverage": "Literal schedules, not actual payouts. Double Play page calls its top prize cash but repeats an annuity/cash-option footnote; both source statements retained without resolving the conflict. Power Play is not applied to Double Play.",
+  "reviewMethod": "Audited literal source text; semantic changes require re-audit."
+}

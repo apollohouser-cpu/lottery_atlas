@@ -355,3 +355,20 @@ fail closed on semantic change, including changed qualifications or effective
 date. Thirty-two focused Delaware tests pass. No new feed/build/acceptance;
 remaining rule/report contracts and production/native integration continue.
 Release November11 12:48EST unchanged.
+
+
+### November7 — separate Powerball and Double Play schedules
+
+Nine Powerball and nine Double Play tiers now preserve literal prizes/odds and
+source qualifications. Powerball match-five prizes remain$2 million at every
+listed Power Play level; no blanket multiplication is applied. Jackpot exclusion,
+10X availability below$150 million unless otherwise announced, and Double Play's
+explicit exclusion from Power Play remain in the contract.
+
+A source inconsistency is retained and disclosed: the Double Play introduction
+calls its top prize cash, while its footnote repeats annuity/cash-option language.
+Neither statement is silently corrected or treated as a resolved payment rule.
+The exact source/title, audited normalized body text and table/column cardinalities
+fail closed on changes. Thirty-four focused Delaware tests pass. No new public
+feed/build/acceptance; remaining rules/reports and coupled production/native work
+continue under the unchanged November11 12:48EST release deadline.
