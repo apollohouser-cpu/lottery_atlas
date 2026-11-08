@@ -5,7 +5,14 @@ from pathlib import Path
 import tempfile
 import unittest
 from tooling.validate_delaware_instant_evidence import validate
-from test.tooling.test_delaware_scratch_catalog import card, IMAGE
+# Keep this fixture independent of Python's standard-library `test` package.
+IMAGE = 'https://delotterywebcontent.blob.core.windows.net/delottery-site-assets/images/instant-lottery/instant-details/game.jpg'
+
+
+def card(name):
+    return (f'<div class="item" data-gamenumber="528"><div data-toggle="modal" '
+            f'data-gamenumber="528" data-gamename="{name}" data-amount="5" '
+            f'data-topprize="30000" data-imagedetailinfo="{IMAGE}"></div></div>')
 
 
 class InstantEvidenceTest(unittest.TestCase):
