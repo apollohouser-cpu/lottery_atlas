@@ -698,3 +698,16 @@ WIN, Winners and Prize Value. Row products and totals reconcile to74,521 prizes
 and $222,910 in the ordered-ticket structure, not actual claims/current inventory.
 Remaining detail audit and production/native work stay open. No public feed/build,
 acceptance or change to November11 at12:48EST deadline.
+
+### November8 — six additional game-specific instruction screens
+
+Images509/510/511/513/514/515 passed manifest-hash and visual instruction screening.
+509 has five distinct subgames: special50 symbols have different effects depending
+on their subgame.510 uses14 caller symbols and separate boards with horizontal/
+vertical four-symbol lines; no diagonal award is stated.511 is a printed instant
+game with distinct roulette/chip/Ace/slot-symbol conditions, not live casino data.
+Monopoly513/514/515 retain different multiplier sets and printed identities.
+
+Private summaries retain exact source hashes/dates and ticket-run meaning. Full
+row transcription and remaining detail review are incomplete. Production/native
+integration remains open; no new public feed/build/acceptance or deadline change.
