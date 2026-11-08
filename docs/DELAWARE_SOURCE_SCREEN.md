@@ -735,3 +735,17 @@ Monopoly513/514/515 retain different multiplier sets and printed identities.
 Private summaries retain exact source hashes/dates and ticket-run meaning. Full
 row transcription and remaining detail review are incomplete. Production/native
 integration remains open; no new public feed/build/acceptance or deadline change.
+
+### November8 — six further instant rule boundaries
+
+Images516/517/518/521/522/523 passed exact manifest-hash and visual instruction
+checks.518 retains separate puzzle legends and a separate7-symbol bonus; its final
+three Winners cells contain asterisks whose meaning remains unestablished.521's
+multiplier applies to total winnings;523 requires a winning7/11/21 sum within an
+individual game before applying its bonus multiplier.522 separates main-game
+ANY-$50 wording from its Mini Blowout bonus.516/517 retain their own multiplier
+and win-all effects. Private literal summaries preserve source dates and hashes.
+
+Full tier transcription/qualification remains incomplete; source marks are not
+silently dropped. No claims, inventory or map points are inferred. Production and
+native acceptance remain open; no new public feed/build or deadline change.
