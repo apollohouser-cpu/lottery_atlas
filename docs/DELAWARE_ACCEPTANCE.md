@@ -622,3 +622,19 @@ dates remain unchanged; no unique-ticket/person totals or locations are inferred
 Base Powerball/Power Play and Lotto America header conflicts remain unavailable.
 Instant detail semantics and production/native work remain open. No new public
 feed/build/acceptance; November11 at12:48EST deadline unchanged.
+
+### November8 — instant instruction and annuity-value distinctions
+
+Retained official detail images443 and451 passed exact manifest-hash checks and
+visual semantic screening. Game443 separates its $1,000,000 annuity description
+($50,000/year for20years) from the printed WIN-column $640,000 valuation; its
+row lists two prizes and $1,280,000 combined value. These labels must remain
+distinct, with no inferred payout election or actual claims. Its number-match,
+5X and instant-$100 symbols differ from451's number-match, double-prize moneybag
+and instant-$100 money-roll symbols. Private provenance and review notes retained.
+
+Both sheets describe450,000 ordered tickets; their printed Winners/prize values
+are ticket-run structure, not current remaining prizes, retailer stock or observed
+wins. Full row transcription/arithmetic reconciliation and the remaining instant
+semantic audit are still open. No new public feed/build/acceptance; November11
+at12:48EST release deadline remains unchanged.
