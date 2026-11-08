@@ -7,9 +7,10 @@ from tooling import delaware_xsos_report as xsos
 from tooling import delaware_play_report as play
 from tooling import delaware_luckyforlife_report as legacy
 from tooling import delaware_doubleplay_report as doubleplay
+from tooling import delaware_megamillions_report as mega
 
 TARGETS = [('Multi-Win-Lotto', multiwin), ('Powerball-Xs-And-Os', xsos),
-           ('Powerball', doubleplay), ('Play-3', play), ('Play-4', play), ('Play-5', play), ('Lucky-For-Life', legacy)]
+           ('Powerball', doubleplay), ('Mega-Millions', mega), ('Play-3', play), ('Play-4', play), ('Play-5', play), ('Lucky-For-Life', legacy)]
 
 
 def build(root):
@@ -42,7 +43,7 @@ def build(root):
             'Source category counts remain literal; no cross-category sums or unique-person/ticket totals inferred.',
             'Report dates and sessions are independent of selected latest draw rows; no automatic attachment to another drawing.',
             'Lucky For Life reports are historical/legacy, not evidence of current operation.',
-            'Lotto America and base Powerball/Power Play grouped-header conflicts remain unresolved. Only the independent Double Play table is integrated from the Powerball page; Mega Millions reports remain unintegrated.',
+            'Lotto America and base Powerball/Power Play grouped-header conflicts remain unresolved. Only the independent Double Play table is integrated from the Powerball page; Mega Millions current-rule reports exclude the legacy Megaplier table.',
             'No within-state win locations, retailer joins or derived payout amounts.',
         ],
     }

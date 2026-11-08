@@ -16,6 +16,7 @@ class ReportCandidateTest(unittest.TestCase):
         for slug, fixture in [('Multi-Win-Lotto', 'multiwin_report.html'),
                               ('Powerball-Xs-And-Os', 'xsos_report.html'),
                               ('Powerball', 'doubleplay_report.html'),
+                              ('Mega-Millions', 'megamillions_report.html'),
                               ('Play-3', 'play3_report.html'), ('Play-4', 'play4_report.html'),
                               ('Play-5', 'play5_report.html'), ('Lucky-For-Life', 'luckyforlife_report.html')]:
             raw = (fixture_root / fixture).read_bytes()
@@ -32,7 +33,7 @@ class ReportCandidateTest(unittest.TestCase):
     def test_session_and_legacy_boundaries_preserved(self):
         data = self.run_build()
         reports = {r['family']: r['report'] for r in data['reports']}
-        self.assertEqual(len(reports), 7)
+        self.assertEqual(len(reports), 8)
         self.assertEqual(reports['Powerball-Double-Play']['game'], 'Powerball Double Play')
         self.assertNotIn('Powerball', reports)
         self.assertEqual(reports['Play-3']['session'], 'day')

@@ -606,3 +606,19 @@ and Mega Millions reports remain unintegrated. No counts are promoted to unique
 tickets, payouts or map activity. Instant semantic review, production publication
 and ordinary native verification remain open. No new public feed/build/acceptance;
 November11 at12:48EST remains unchanged.
+
+### November7 — current-rule Mega Millions reports
+
+Strict parsing now preserves20 dated current-rule report panels, each with41
+match/multiplier categories and five separately labeled source multiplier totals.
+Panel identity, visible date and printer-link date must agree. Exact Delaware
+heading, columns, baseline prizes, multiplier labels, counts and descending dates
+validate; duplicates or semantic drift reject. The old Megaplier table stays
+excluded. Jackpot/prize labels are not represented as actual paid totals.
+
+Retained full-source replay succeeds and the combined private candidate now
+contains eight qualified report families. Fifty-six focused tests pass. Source
+dates remain unchanged; no unique-ticket/person totals or locations are inferred.
+Base Powerball/Power Play and Lotto America header conflicts remain unavailable.
+Instant detail semantics and production/native work remain open. No new public
+feed/build/acceptance; November11 at12:48EST deadline unchanged.
