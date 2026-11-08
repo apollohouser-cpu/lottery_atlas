@@ -616,3 +616,17 @@ locations. Fifty-two focused tests pass, including identity/date/category/count
 rejection cases. Private report candidate only; combined integration and remaining
 Mega Millions report work remain open. No public feed/build/acceptance; release
 November11 at12:48EST unchanged.
+
+### November7 — seventh qualified report integrated
+
+The combined private candidate now includes independent Powerball Double Play
+as its own report family, separate from base Powerball and selected draw rows.
+Seven qualified families replay successfully against retained source hashes.
+A regression test injects conflicting base-table values and verifies they cannot
+enter the Double Play report. Fifty-three focused Delaware tests pass.
+
+Unresolved Lotto America/base Powerball grouped-header conflicts remain excluded,
+and Mega Millions reports remain unintegrated. No counts are promoted to unique
+tickets, payouts or map activity. Instant semantic review, production publication
+and ordinary native verification remain open. No new public feed/build/acceptance;
+November11 at12:48EST remains unchanged.

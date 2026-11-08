@@ -6,9 +6,10 @@ from tooling import delaware_multiwin_report as multiwin
 from tooling import delaware_xsos_report as xsos
 from tooling import delaware_play_report as play
 from tooling import delaware_luckyforlife_report as legacy
+from tooling import delaware_doubleplay_report as doubleplay
 
 TARGETS = [('Multi-Win-Lotto', multiwin), ('Powerball-Xs-And-Os', xsos),
-           ('Play-3', play), ('Play-4', play), ('Play-5', play), ('Lucky-For-Life', legacy)]
+           ('Powerball', doubleplay), ('Play-3', play), ('Play-4', play), ('Play-5', play), ('Lucky-For-Life', legacy)]
 
 
 def build(root):
@@ -31,7 +32,8 @@ def build(root):
         if slug.startswith('Play-'):
             kwargs['digits'] = int(slug[-1])
         parsed = module.parse(raw.decode("utf-8"), **kwargs)
-        reports.append({'family': slug, 'report': parsed,
+        family = 'Powerball-Double-Play' if module is doubleplay else slug
+        reports.append({'family': family, 'report': parsed,
                         'evidence': {k: entry[k] for k in ['url', 'retrievedAt', 'bytes', 'sha256']}})
     return {
         'status': 'private qualified report candidate; not a map activity feed',
@@ -40,7 +42,7 @@ def build(root):
             'Source category counts remain literal; no cross-category sums or unique-person/ticket totals inferred.',
             'Report dates and sessions are independent of selected latest draw rows; no automatic attachment to another drawing.',
             'Lucky For Life reports are historical/legacy, not evidence of current operation.',
-            'Lotto America report schema conflict remains unresolved; Powerball/Mega Millions reports are not integrated here.',
+            'Lotto America and base Powerball/Power Play grouped-header conflicts remain unresolved. Only the independent Double Play table is integrated from the Powerball page; Mega Millions reports remain unintegrated.',
             'No within-state win locations, retailer joins or derived payout amounts.',
         ],
     }

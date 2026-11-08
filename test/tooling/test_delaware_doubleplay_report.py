@@ -14,6 +14,12 @@ class DoublePlayReportTest(unittest.TestCase):
         self.assertEqual([v['publishedCount'] for v in result['rows'][0]['categories']], [0,0,0,0,0,23,18,135,303])
         self.assertNotIn('total', result)
 
+    def test_conflicting_base_table_cannot_contaminate_doubleplay(self):
+        base = '<table><thead><tr><th colspan="10">Power Play Winners</th></tr></thead><tbody><tr><td>999999</td></tr></tbody></table>'
+        result = parse(RAW.replace('<h3>', base+'<h3>', 1), source_url=SOURCE, observed_date=date(2026,11,6))
+        self.assertEqual(len(result['rows']), 10)
+        self.assertNotIn(999999, [c['publishedCount'] for r in result['rows'] for c in r['categories']])
+
     def test_identity_and_category_drift_reject(self):
         for old,new in [('Double Play® Winners','Power Play Winners'), ('Number of Delaware Winners','National Winners'),
                         ('data-label="5+0"','data-label="4+0"'), ('11/04/2026','11/07/2026'), ('303','-1')]:
