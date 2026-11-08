@@ -556,3 +556,22 @@ Private artifact remains productionReady=false with incomplete-development
 identity. Instant semantic audit, actual-report integration, publication and
 ordinary app/native evidence are still open. No public feed/build/acceptance;
 November11 at12:48EST release deadline is unchanged.
+
+### November7 — qualified reports composed separately
+
+Combined private coverage now includes six separately qualified report families:
+Multi-Win Lotto, Powerball Xs & Os, Play3/4/5 and historical Lucky For Life.
+Every retained report validates exact source URL, status, acquisition timestamp
+and bytes/hash before its strict semantic parser runs. UTF-8 decoding is explicit
+so trademark and cent characters retain their source meaning.
+
+Reports retain their own dates/sessions and are not automatically attached to
+latest draw rows. Source category counts remain literal; no overlapping sums,
+unique people/tickets, derived payouts or map positions are created. Lucky For
+Life remains historical. Lotto America schema conflict and unintegrated
+Powerball/Mega Millions reports remain explicit limitations. Fifty focused
+Delaware tests pass; retained combined artifact replay also passes.
+
+This remains an incomplete private candidate, not a new public feed, app build
+or acceptance. Instant semantic review and production/native work remain open;
+November11 at12:48EST is unchanged.

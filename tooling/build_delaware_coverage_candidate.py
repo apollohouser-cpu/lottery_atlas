@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from tooling.build_delaware_draw_candidate import build as build_draws
 from tooling.build_delaware_rule_candidate import build as build_rules
+from tooling.build_delaware_report_candidate import build as build_reports
 from tooling.validate_delaware_instant_evidence import validate as validate_images
 from tooling.import_delaware_scratch_catalog import parse_catalog, parse_report, parse_closeouts, join
 
@@ -45,6 +46,7 @@ def build(root):
         'stateCode': 'DE', 'schemaVersion': 1, 'productionReady': False,
         'recordType': 'incomplete-development-candidate',
         'draws': draws, 'rules': rules, 'products': products,
+        'publishedReports': build_reports(root),
         'productEvidence': evidence, 'detailImages': images,
         'closeouts': [{'gameId': gid, 'dateLaunched': value['start'].isoformat(),
                       'announcedEndOfSales': value['end'].isoformat()}
@@ -54,7 +56,7 @@ def build(root):
             'Instant detail image integrity verified; complete semantic transcription remains pending.',
             'Printed prize structures, remaining top prizes, and actual claims are distinct.',
             'Game528 printed count excludes its second-chance trip while printed value includes it; no combined Scratch-only summary is published.',
-            'Actual winner-report integration remains pending; no counts or geography inferred.',
+            'Qualified source reports are separate from draw results; remaining report conflicts and unit uncertainty are disclosed.',
             'No retailer inventory, geographic wins, complete history or production acceptance.',
         ],
     }
