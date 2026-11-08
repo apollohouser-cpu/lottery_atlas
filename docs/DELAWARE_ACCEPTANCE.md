@@ -684,3 +684,17 @@ and disclose the valuation caveat; do not silently repair or infer a cash electi
 502 number-match/2X/5X/$100-bill instructions were also screened. Complete remaining
 instant audit and production/native evidence remain open; no new public feed/build,
 acceptance or deadline change. Private source bytes and acquisition dates retained.
+
+### November8 — multi-game504 and conditional tripler507
+
+Images504/505/507 passed manifest-hash and visual instruction checks.504 combines
+separate symbol-line, two-card bingo and reverse-side crossword games, each with
+its own winning condition/legend.507 requires three matching prize amounts before
+its separate SMASH tripler applies; the symbol alone does not establish a win.
+505 uses number matching and an instant-$200 burst.
+
+All14 rows of507 were transcribed privately with combinations, literal odds,
+WIN, Winners and Prize Value. Row products and totals reconcile to74,521 prizes
+and $222,910 in the ordered-ticket structure, not actual claims/current inventory.
+Remaining detail audit and production/native work stay open. No public feed/build,
+acceptance or change to November11 at12:48EST deadline.
