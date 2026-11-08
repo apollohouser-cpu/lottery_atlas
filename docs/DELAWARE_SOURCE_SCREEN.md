@@ -678,3 +678,17 @@ ordered-ticket structure, not claims or remaining prizes. Combination/odds colum
 are not fully transcribed, so this is not complete tier acceptance. Remaining
 instant review and production/native work stay open; no new feed/build/acceptance
 or deadline change.
+
+### November8 — six further instant instruction screens
+
+Retained images476/478/483/495/496/499 passed exact manifest-hash checks and
+visual identity/instruction screening. The bill in476 pays $200; the bag in478
+wins all25 prizes; bags in495/496 pay $100. WILD wins20 prizes in495 but25 in496.
+Sticky Notes483 uses smile/lightbulb symbols and six illustrated designs under
+one printed identity; Power7 uses a $20 circled7 and ten-prize lightning bolt.
+These differences must remain game-specific rather than using a generic symbol rule.
+
+Printed ticket-run summaries and provenance are retained privately. They are not
+claims, remaining prizes or retailer inventory. Full row transcription/arithmetic
+and the rest of the instant audit remain open, alongside production/native work.
+No new public feed/build/acceptance or change to November11 at12:48EST deadline.
