@@ -662,3 +662,19 @@ are ticket-run structure, not current remaining prizes, retailer stock or observ
 wins. Full row transcription/arithmetic reconciliation and the remaining instant
 semantic audit are still open. No new public feed/build/acceptance; November11
 at12:48EST release deadline remains unchanged.
+
+### November8 — symbol and crossword instruction distinctions
+
+Retained detail images464/467/470 passed manifest-hash verification and visual
+instruction screening. Fast Bucks464 pays by QUICK/bill/BUCKS symbols rather than
+matching numbers. Crossword467 plays its two grids separately with20 revealed
+letters and separate bonus spots; word counts cannot be pooled. Lucky Stars470
+uses number matching plus bag/2X/LUCKY symbols: its bag pays the shown prize,
+not the double-prize behavior of451. Preserve these per-game distinctions.
+
+For467, all23 printed WIN/WINNERS row pairs were transcribed privately and
+reconcile to108,264 prizes and $2,486,800 printed prize value. These describe the
+ordered-ticket structure, not claims or remaining prizes. Combination/odds columns
+are not fully transcribed, so this is not complete tier acceptance. Remaining
+instant review and production/native work stay open; no new feed/build/acceptance
+or deadline change.
