@@ -599,3 +599,20 @@ Delaware tests pass; retained combined artifact replay also passes.
 This remains an incomplete private candidate, not a new public feed, app build
 or acceptance. Instant semantic review and production/native work remain open;
 November11 at12:48EST is unchanged.
+
+### November7 — separate Double Play report contract
+
+The retained Powerball page contains an independently labeled Double Play table.
+Its strict parser requires the exact page identity, Number of Delaware Winners
+heading, unique adjacent Double Play heading, nine match columns and matching
+row labels. Ten dated rows validate; the latest November4 row remains separate
+from base Powerball. Original bytes/hash and acquisition date were verified.
+
+Base/Power Play grouped headers specify spans of10 for nine category columns;
+that table remains excluded rather than silently corrected. The new parser
+extracts only the independently qualified Double Play table, preserving literal
+category counts without totals, derived payouts, ticket/person inference or map
+locations. Fifty-two focused tests pass, including identity/date/category/count
+rejection cases. Private report candidate only; combined integration and remaining
+Mega Millions report work remain open. No public feed/build/acceptance; release
+November11 at12:48EST unchanged.
