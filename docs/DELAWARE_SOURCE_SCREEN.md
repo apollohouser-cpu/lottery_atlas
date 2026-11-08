@@ -692,3 +692,19 @@ Printed ticket-run summaries and provenance are retained privately. They are not
 claims, remaining prizes or retailer inventory. Full row transcription/arithmetic
 and the rest of the instant audit remain open, alongside production/native work.
 No new public feed/build/acceptance or change to November11 at12:48EST deadline.
+
+### November8 — instant503 tiers and501 valuation caveat
+
+Retained images501/502/503 passed manifest-hash and visual semantic checks.
+All11 rows of503 ($50 & $100) were transcribed with literal combinations, WIN,
+odds, Winners and Prize Value. Every row product and both printed totals reconcile:
+46,410 prizes and $2,691,000 in the ordered-ticket structure. Rounded odds remain
+literal source values; none of these figures are actual claims or remaining prizes.
+
+Game501 differs from443: its top row prints WIN $1,000,000, Winners2 and Prize
+Value $1,280,000 alongside the $50,000/year for20years description. Multiplication
+of WIN by Winners does not match that value. Preserve the separate source fields
+and disclose the valuation caveat; do not silently repair or infer a cash election.
+502 number-match/2X/5X/$100-bill instructions were also screened. Complete remaining
+instant audit and production/native evidence remain open; no new public feed/build,
+acceptance or deadline change. Private source bytes and acquisition dates retained.
