@@ -999,3 +999,14 @@ now compose privately,575 rows total, preserving original source dates and odds.
 counts, not claims or remaining inventory. Eighteen full tables and production/
 app/native acceptance remain open; no public feed/build or November11 deadline
 change.
+
+### November9 — Monopoly50X game515 full printed table
+
+All 28 rows visually transcribed against the retained image hash. Products and
+printed totals reconcile to 108,772 prizes/$2,699,000 across 390,000 ordered $10
+tickets. 10X/20X/50X multiply the associated prize. Twenty-two reviewed structures
+now compose privately, 603 rows total, retaining source dates and literal odds.
+
+64 focused tests and retained candidate replay pass. Printed run counts are not
+claims or remaining inventory. Seventeen full tables and production/app/native
+acceptance remain open; no public feed/build or November11 deadline change.
