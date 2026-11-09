@@ -15,7 +15,7 @@ class ReviewedTierTest(unittest.TestCase):
 
     def test_reviewed_tables_preserve_literal_odds_and_run_meaning(self):
         tables = compose(self.images)
-        self.assertEqual([len(t['tiers']) for t in tables], [11, 14, 31, 23, 30])
+        self.assertEqual([len(t['tiers']) for t in tables], [11, 14, 31, 23, 30, 31])
         self.assertEqual(tables[1]['tiers'][0]['oddsOneIn'], '12.50')
         self.assertEqual(tables[2]['tiers'][-1]['oddsOneIn'], '78,000')
         self.assertEqual(tables[2]['printedPrizeTotal'], 95975)

@@ -801,3 +801,16 @@ Five reviewed structures now compose privately,109 rows total. Counts remain
 printed ordered-run prizes, never claims or inventory.62 focused tests and full
 candidate replay pass. Other tiers, production/app/native evidence and acceptance
 remain unfinished; no public feed/build or change to November11 release deadline.
+
+### November9 — Hot Cocoa Cash538 full printed table
+
+Visually reviewed and transcribed31 rows against the retained image's exact hash.
+Row products and totals reconcile to69,992 printed prizes/$881,400 across270,000
+ordered $5 tickets. CAKE doubles its associated prize; the bag pays the shown
+prize. Literal combinations and rounded odds remain source-specific. Six reviewed
+structures now compose privately,140 rows total, with original acquisition dates.
+These are ordered-run structures, not actual claims or remaining inventory.
+
+62 focused tests and retained candidate replay pass. Other instant tables and
+production/app/native evidence remain open. No public feed/build, acceptance or
+change to November11 at12:48EST release deadline.
