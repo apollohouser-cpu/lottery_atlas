@@ -725,3 +725,20 @@ and win-all effects. Private literal summaries preserve source dates and hashes.
 Full tier transcription/qualification remains incomplete; source marks are not
 silently dropped. No claims, inventory or map points are inferred. Production and
 native acceptance remain open; no new public feed/build or deadline change.
+
+### November8 — all39 retained instant instruction screens indexed
+
+The remaining531/536/537/538/539/540/542 instruction screens and425's earlier
+screen are now individually recorded with verified image hashes and original
+acquisition dates. A private index verifies exactly39 unique identities matching
+the retained image manifest. This completes the bounded identity/instruction
+screen, not full prize-tier transcription or semantic acceptance.
+
+Seasonal designs remain one identity per printed game.536's tree pays one prize
+while537's tree wins all10;538's bag pays the shown prize;542's star doubles all
+winnings.540's four games retain distinct matching rules. All printed summary
+counts remain ticket-run structure, never claims or inventory. Outstanding tier
+transcription, valuation/asterisk qualifications, production integration and
+native evidence remain explicit. No new public feed/build/acceptance; November11
+at12:48EST deadline unchanged. Next compose reviewed instructions with strict
+identity/provenance checks and retain unavailable tier coverage honestly.
