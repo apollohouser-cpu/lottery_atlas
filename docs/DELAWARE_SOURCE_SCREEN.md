@@ -977,3 +977,15 @@ Seventeen reviewed structures now compose privately,468 rows total.64 focused
 tests and retained candidate replay pass. Original dates remain unchanged and
 counts are run structure, not claims/inventory. Remaining tables and production/
 app/native acceptance stay open; no public feed/build or November11 deadline change.
+
+### November9 — Loteria Fiesta510 full printed table
+
+All24 rows visually transcribed against the retained source hash. Products and
+totals reconcile to139,110 prizes/$1,562,000 across480,000 ordered $5 tickets.
+Each board is played separately using14 caller symbols; complete four-symbol
+horizontal/vertical lines win, with no diagonal award inferred. Eighteen reviewed
+structures now compose privately,492 rows total, preserving dates and literal odds.
+
+64 focused tests and retained candidate replay pass. Counts are printed ordered-run
+structure, not claims or inventory. Remaining tables and production/app/native
+acceptance remain open; no public feed/build or November11 deadline change.
