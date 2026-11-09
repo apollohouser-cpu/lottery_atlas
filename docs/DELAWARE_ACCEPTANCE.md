@@ -881,3 +881,15 @@ Eleven reviewed structures now compose privately,290 rows total.63 focused tests
 pass and retained candidate replay succeeds. These remain ordered-run structures,
 not claims or inventory. Other tiers and production/app/native acceptance remain
 open; no public feed/build or November11 deadline change.
+
+### November9 — Lucky Stars470 full printed table
+
+All41 rows visually transcribed against the retained source hash, with literal
+combinations and odds. Products and printed totals reconcile to121,863 prizes/
+$5,184,000 across360,000 ordered $20 tickets. Bag pays the shown prize,2X doubles
+its associated prize and LUCKY wins all25 prizes. Twelve reviewed structures now
+compose privately,331 rows total; original source dates remain unchanged.
+
+63 focused tests and retained candidate replay pass. Printed run structure is
+not actual claims or inventory. Remaining tables and production/app/native
+acceptance remain open; no public feed/build or November11 deadline change.
