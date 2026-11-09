@@ -965,3 +965,14 @@ structures now compose privately,492 rows total, preserving dates and literal od
 64 focused tests and retained candidate replay pass. Counts are printed ordered-run
 structure, not claims or inventory. Remaining tables and production/app/native
 acceptance remain open; no public feed/build or November11 deadline change.
+
+### November9 — Power7499 full printed table
+
+All30 rows visually transcribed against the retained source hash. Products and
+totals reconcile to76,584 prizes/$402,620 across330,000 ordered $2 tickets.
+7 pays$20; BOLT wins all10 prizes. Nineteen reviewed structures now compose
+privately,522 rows total, with original dates and literal odds preserved.
+
+64 focused tests and retained candidate replay pass. Counts remain printed run
+structure, not claims or inventory. Remaining tables and production/app/native
+acceptance stay open; no public feed/build or November11 deadline change.
