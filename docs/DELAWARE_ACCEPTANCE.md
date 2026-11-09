@@ -893,3 +893,15 @@ compose privately,331 rows total; original source dates remain unchanged.
 63 focused tests and retained candidate replay pass. Printed run structure is
 not actual claims or inventory. Remaining tables and production/app/native
 acceptance remain open; no public feed/build or November11 deadline change.
+
+### November9 — 100X the Celebration476 full printed table
+
+Visually transcribed36 rows from the hash-verified retained image. Products and
+printed totals reconcile to104,181 prizes/$5,188,000 across360,000 ordered $20
+tickets.100X multiplies its associated prize by100; BILL pays$200. Literal odds
+retain their printed trailing decimal zeros. Thirteen reviewed structures now
+compose privately,367 rows total; original source dates remain unchanged.
+
+63 focused tests and retained candidate replay pass. Counts describe ordered-run
+prizes, not claims or inventory. Remaining tables and production/app/native work
+stay open; no public feed/build, acceptance or November11 deadline change.
