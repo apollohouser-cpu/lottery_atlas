@@ -43,6 +43,13 @@ def compose(images, spec=None):
                 label = '; '.join(name + ': ' + row[key] for name, key in columns if row[key])
                 if label != combination:
                     raise ValueError('Puzzle columns disagree with combination')
+            if 'mainPrize' in row or 'bonusPrize' in row:
+                if not all(isinstance(row.get(key), str) for key in ('mainPrize', 'bonusPrize')):
+                    raise ValueError('Incomplete main/bonus columns')
+                label = '; '.join(name + ': ' + row[key] for name, key in
+                                  [('Main', 'mainPrize'), ('Bonus', 'bonusPrize')] if row[key])
+                if label != combination:
+                    raise ValueError('Main/bonus columns disagree with combination')
             for key in ('win', 'printedWinners', 'printedPrizeValue'):
                 if type(row[key]) is not int or row[key] <= 0:
                     raise ValueError('Invalid tier value')

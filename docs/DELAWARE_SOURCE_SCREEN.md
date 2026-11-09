@@ -964,3 +964,16 @@ with original acquisition dates. These counts are not claims or inventory.
 
 63 focused tests and retained candidate replay pass. Other tables and production/
 app/native acceptance remain open; no public feed/build or November11 deadline change.
+
+### November9 — First State $250 Blowout522 full printed table
+
+All18 rows visually transcribed against the retained image hash with separate
+main/bonus columns, including source blanks. Products and totals reconcile to
+64,550 prizes/$5,575,000 across300,000 ordered $25 tickets. Main ANY-$50 wording
+remains distinct from the separately played Mini Blowout. Composition rejects
+swapped main/bonus fields; the new regression passes.
+
+Seventeen reviewed structures now compose privately,468 rows total.64 focused
+tests and retained candidate replay pass. Original dates remain unchanged and
+counts are run structure, not claims/inventory. Remaining tables and production/
+app/native acceptance stay open; no public feed/build or November11 deadline change.
