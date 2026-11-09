@@ -976,3 +976,14 @@ privately,522 rows total, with original dates and literal odds preserved.
 64 focused tests and retained candidate replay pass. Counts remain printed run
 structure, not claims or inventory. Remaining tables and production/app/native
 acceptance stay open; no public feed/build or November11 deadline change.
+
+### November9 — 777 game517 full printed table
+
+All31 rows visually transcribed against the retained image hash. Products and
+totals reconcile to66,707 prizes/$403,800 across330,000 ordered $2 tickets.
+77 doubles the associated prize;777 wins all10 prizes. Twenty reviewed structures
+now compose privately,553 rows total, preserving source dates and literal odds.
+
+64 focused tests and retained candidate replay pass. Counts remain printed run
+structure, not claims or inventory. Other tables and production/app/native
+acceptance remain open; no public feed/build or November11 deadline change.
