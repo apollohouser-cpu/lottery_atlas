@@ -953,3 +953,14 @@ structures now compose privately,420 rows total, with original source dates.
 63 focused tests and retained candidate replay pass. Counts remain ordered-run
 structure, not claims or inventory. Other tables and production/app/native evidence
 remain open; no public feed/build, acceptance or November11 deadline change.
+
+### November9 — Monopoly10X513 full printed table
+
+All30 rows visually transcribed against the retained source hash. Products and
+totals reconcile to72,265 prizes/$442,800 across360,000 ordered $2 tickets.
+5X/10X multiply their associated prize; literal rounded odds and combinations
+are preserved. Sixteen reviewed structures now compose privately,450 rows total,
+with original acquisition dates. These counts are not claims or inventory.
+
+63 focused tests and retained candidate replay pass. Other tables and production/
+app/native acceptance remain open; no public feed/build or November11 deadline change.
