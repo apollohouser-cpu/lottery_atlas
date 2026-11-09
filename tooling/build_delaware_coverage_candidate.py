@@ -9,6 +9,7 @@ from tooling.build_delaware_rule_candidate import build as build_rules
 from tooling.build_delaware_report_candidate import build as build_reports
 from tooling.validate_delaware_instant_evidence import validate as validate_images
 from tooling.delaware_instant_instructions import compose as compose_instructions
+from tooling.delaware_instant_tiers import compose as compose_tiers
 from tooling.import_delaware_scratch_catalog import parse_catalog, parse_report, parse_closeouts, join
 
 
@@ -49,6 +50,7 @@ def build(root):
         'draws': draws, 'rules': rules, 'products': products,
         'publishedReports': build_reports(root),
         'productEvidence': evidence, 'detailImages': images,
+        'reviewedInstantPrizeStructures': compose_tiers(images),
         'instantInstructions': compose_instructions(
             json.loads((root / 'instant-instruction-screen-index.json').read_text()), images),
         'closeouts': [{'gameId': gid, 'dateLaunched': value['start'].isoformat(),

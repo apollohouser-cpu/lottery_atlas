@@ -781,3 +781,18 @@ its tier coverage is not complete. Valuation/asterisk caveats remain attached.
 Fifty-nine focused tests pass, including mutation and count-exclusion checks;
 full retained candidate replay passes. ProductionReady remains false. Publication,
 app/native integration and remaining tier audit are open; release deadline unchanged.
+
+### November8 — two reviewed instant prize structures composed
+
+The already visually transcribed503 and507 tables now compose into the private
+candidate:11 and14 rows respectively. Exact reviewed image hashes/URLs must match
+independently validated source evidence. Literal combination/odds strings and
+original acquisition dates are preserved; row valuation and both printed totals
+must reconcile. Mutation tests reject changed sources, missing identities, omitted
+or duplicate rows, invalid numbers and nonfinite odds.
+
+These counts describe prizes in the ordered-ticket run, explicitly not actual
+claims or remaining inventory. No other game's partial table or valuation conflict
+is promoted. Sixty-two focused tests and full retained candidate replay pass.
+Other tier audits, production/app/native integration and acceptance remain open;
+no new public feed/build or deadline change.
