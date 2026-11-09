@@ -772,3 +772,18 @@ claims or remaining inventory. No other game's partial table or valuation confli
 is promoted. Sixty-two focused tests and full retained candidate replay pass.
 Other tier audits, production/app/native integration and acceptance remain open;
 no new public feed/build or deadline change.
+
+### November8 — DE luxe Bucks531 full printed table review
+
+Visually transcribed all31 rows from the hash-verified retained531 source image.
+Combinations, WIN amounts, literal odds including comma separators, printed Winners
+and Prize Value are preserved. Row products and totals reconcile to95,975 prizes
+and $1,269,000 across the stated390,000 ordered $5 tickets. The diamond symbol
+doubles its associated prize. These are printed run structures, not actual claims
+or remaining inventory. Original acquisition provenance is unchanged.
+
+The private composer now has three reviewed structures (503/507/531),56 total
+rows. Strict odds formatting rejects malformed separators and exponent notation;
+62 focused tests and retained candidate replay pass. Other tables, source valuation
+qualifications and production/native work remain open. No public feed/build or
+acceptance; November11 at12:48EST deadline unchanged.

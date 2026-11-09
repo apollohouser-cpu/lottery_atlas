@@ -1,6 +1,7 @@
 """Bounded reviewed printed structures; never actual claims or inventory."""
 import copy
 import json
+import re
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
@@ -39,7 +40,10 @@ def compose(images, spec=None):
                 if type(row[key]) is not int or row[key] <= 0:
                     raise ValueError('Invalid tier value')
             try:
-                odds = Decimal(row['oddsOneIn'])
+                literal = row['oddsOneIn']
+                if not isinstance(literal, str) or not re.fullmatch(r'(?:[0-9]+|[0-9]{1,3}(?:,[0-9]{3})+)(?:\.[0-9]+)?', literal):
+                    raise ValueError('Invalid printed odds format')
+                odds = Decimal(literal.replace(',', ''))
             except (InvalidOperation, TypeError, ValueError):
                 raise ValueError('Invalid printed odds')
             if not isinstance(row['oddsOneIn'], str) or not odds.is_finite() or odds < 1:

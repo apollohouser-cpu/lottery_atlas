@@ -15,8 +15,10 @@ class ReviewedTierTest(unittest.TestCase):
 
     def test_reviewed_tables_preserve_literal_odds_and_run_meaning(self):
         tables = compose(self.images)
-        self.assertEqual([len(t['tiers']) for t in tables], [11, 14])
+        self.assertEqual([len(t['tiers']) for t in tables], [11, 14, 31])
         self.assertEqual(tables[1]['tiers'][0]['oddsOneIn'], '12.50')
+        self.assertEqual(tables[2]['tiers'][-1]['oddsOneIn'], '78,000')
+        self.assertEqual(tables[2]['printedPrizeTotal'], 95975)
         for table in tables:
             self.assertFalse(table['actualClaimsAvailable'])
             self.assertFalse(table['remainingInventoryAvailable'])
@@ -32,6 +34,7 @@ class ReviewedTierTest(unittest.TestCase):
     def test_bad_values_omissions_or_duplicates_fail(self):
         for key, value in [('win', 51), ('printedWinners', True),
                            ('printedPrizeValue', 1), ('oddsOneIn', 'NaN'),
+                           ('oddsOneIn', '7,80,00'), ('oddsOneIn', '1e3'),
                            ('oddsOneIn', '0'), ('combination', '')]:
             spec = copy.deepcopy(self.spec)
             spec['tables'][0]['tiers'][0][key] = value
