@@ -766,3 +766,18 @@ transcription, valuation/asterisk qualifications, production integration and
 native evidence remain explicit. No new public feed/build/acceptance; November11
 at12:48EST deadline unchanged. Next compose reviewed instructions with strict
 identity/provenance checks and retain unavailable tier coverage honestly.
+
+### November8 — reviewed instructions composed under strict provenance
+
+The private combined candidate now includes all39 instruction summaries joined
+only to independently validated image identities, source URLs, acquisition times
+and SHA256 bytes. Duplicate/missing games, changed provenance, empty boundaries,
+invalid review times or an unexpected complete-tier claim reject composition.
+Source catalog names are retained instead of substituting review shorthand.
+
+Only instructions and qualifications are promoted by this contract; printed run
+totals and partially transcribed tables are excluded. Every entry explicitly says
+its tier coverage is not complete. Valuation/asterisk caveats remain attached.
+Fifty-nine focused tests pass, including mutation and count-exclusion checks;
+full retained candidate replay passes. ProductionReady remains false. Publication,
+app/native integration and remaining tier audit are open; release deadline unchanged.
