@@ -811,3 +811,17 @@ rows. Strict odds formatting rejects malformed separators and exponent notation;
 62 focused tests and retained candidate replay pass. Other tables, source valuation
 qualifications and production/native work remain open. No public feed/build or
 acceptance; November11 at12:48EST deadline unchanged.
+
+### November9 — seasonal536/537 full printed tables
+
+Hash-verified and visually transcribed23 rows for536 and30 for537. Both row
+products and printed totals reconcile:536 has62,238 prizes/$207,560 across360,000
+ordered $1 tickets;537 has62,747/$329,830 across270,000 ordered $2 tickets.
+Literal odds and combination labels are retained.536's TREE wins its associated
+prize and GIFT doubles it;537's TREE wins all10 prizes and CANDY CANE doubles its
+associated prize. Shared seasonal designs remain single game identities.
+
+Five reviewed structures now compose privately,109 rows total. Counts remain
+printed ordered-run prizes, never claims or inventory.62 focused tests and full
+candidate replay pass. Other tiers, production/app/native evidence and acceptance
+remain unfinished; no public feed/build or change to November11 release deadline.
