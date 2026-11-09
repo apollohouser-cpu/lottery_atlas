@@ -917,3 +917,15 @@ privately,398 rows total, preserving original acquisition dates and literal odds
 63 focused tests and retained candidate replay pass. Counts are printed run
 structure, not claims or inventory. Other tables and production/app/native evidence
 remain open; no public feed/build, acceptance or November11 deadline change.
+
+### November9 — 7-11-21523 full printed table
+
+All22 rows visually transcribed from the hash-verified retained image. Products
+and totals reconcile to70,375 prizes/$223,575 across390,000 ordered $1 tickets.
+An individual game must sum to7/11/21; the bonus multiplier applies to all prizes
+won. Literal odds and combination labels remain intact. Fifteen reviewed
+structures now compose privately,420 rows total, with original source dates.
+
+63 focused tests and retained candidate replay pass. Counts remain ordered-run
+structure, not claims or inventory. Other tables and production/app/native evidence
+remain open; no public feed/build, acceptance or November11 deadline change.
