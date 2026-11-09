@@ -867,3 +867,17 @@ original acquisition dates retained.
 62 focused tests and retained candidate replay pass. Remaining instant tables,
 production/app/native evidence and acceptance stay open. No public feed/build or
 change to November11 at12:48EST release deadline.
+
+### November9 — Crossword467 full printed table
+
+Completed all23 rows, extending the earlier amount/count-only review with literal
+odds and separate Game1/Game2/Bonus spots columns, including source blanks.
+Hash-verified source totals reconcile to108,264 prizes/$2,486,800 across360,000
+ordered $10 tickets. Distinct puzzle columns cannot be interchanged: composition
+checks their labeled combination and a mutation regression rejects a swapped game.
+The two puzzles are played separately; bonus amounts retain their own column.
+
+Eleven reviewed structures now compose privately,290 rows total.63 focused tests
+pass and retained candidate replay succeeds. These remain ordered-run structures,
+not claims or inventory. Other tiers and production/app/native acceptance remain
+open; no public feed/build or November11 deadline change.

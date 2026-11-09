@@ -36,6 +36,13 @@ def compose(images, spec=None):
             if not isinstance(combination, str) or not combination.strip() or combination in combinations:
                 raise ValueError('Invalid or duplicate combination')
             combinations.add(combination)
+            columns = [('Game1', 'game1'), ('Game2', 'game2'), ('Bonus spots', 'bonusSpots')]
+            if any(key in row for _, key in columns):
+                if not all(isinstance(row.get(key), str) for _, key in columns):
+                    raise ValueError('Incomplete puzzle columns')
+                label = '; '.join(name + ': ' + row[key] for name, key in columns if row[key])
+                if label != combination:
+                    raise ValueError('Puzzle columns disagree with combination')
             for key in ('win', 'printedWinners', 'printedPrizeValue'):
                 if type(row[key]) is not int or row[key] <= 0:
                     raise ValueError('Invalid tier value')
