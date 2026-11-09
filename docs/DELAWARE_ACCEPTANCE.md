@@ -905,3 +905,15 @@ compose privately,367 rows total; original source dates remain unchanged.
 63 focused tests and retained candidate replay pass. Counts describe ordered-run
 prizes, not claims or inventory. Remaining tables and production/app/native work
 stay open; no public feed/build, acceptance or November11 deadline change.
+
+### November9 — Sticky Notes483 full printed table
+
+All31 rows visually transcribed against the retained image hash. Products and
+totals reconcile to72,691 prizes/$405,350 across330,000 ordered $2 tickets.
+BULB doubles the associated prize; the smile symbol pays the shown prize. Six
+printed designs retain one game identity. Fourteen reviewed structures now compose
+privately,398 rows total, preserving original acquisition dates and literal odds.
+
+63 focused tests and retained candidate replay pass. Counts are printed run
+structure, not claims or inventory. Other tables and production/app/native evidence
+remain open; no public feed/build, acceptance or November11 deadline change.
