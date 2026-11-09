@@ -865,3 +865,16 @@ dates remain unchanged; printed run counts are not claims or inventory.
 62 focused tests and full retained candidate replay pass. Remaining table audits,
 production/app/native evidence and acceptance stay open. No public feed/build or
 change to November11 at12:48EST release deadline.
+
+### November9 — Win Big451 full printed table
+
+All34 rows visually transcribed against the retained image hash. Row products
+and printed totals reconcile to144,554 prizes/$10,142,500 across450,000 ordered
+$30 tickets. MONEYBAG doubles the associated prize; MONEY ROLL pays$100. The
+printed table total is preserved separately from the ticket's promotional
+“over$9.9million” wording. No claimed wins or remaining inventory are inferred.
+
+Nine reviewed structures now compose privately,231 rows total. Original source
+dates and literal odds remain unchanged.62 focused tests and retained candidate
+replay pass. Remaining tiers and production/app/native evidence stay open; no
+public feed/build, acceptance or November11 deadline change.
