@@ -827,3 +827,17 @@ Original acquisition times remain unchanged; counts are run structure, not claim
 62 focused tests and full retained candidate replay pass. Other tables and
 production/app/native work remain open; no public feed/build or acceptance.
 November11 at12:48EST release deadline remains unchanged.
+
+### November9 — Jumbo Bucks Emerald542 full printed table
+
+All31 rows visually transcribed from the hash-verified retained image. Row products
+and totals reconcile to76,452 prizes/$405,675 across330,000 ordered $2 tickets.
+STAR doubles ALL winnings: the printed mixed combinations on rows12/21 therefore
+apply doubling to the full combination, unlike JUMBO's five-times associated
+prize. Literal printed labels and odds are retained with the reviewed instructions.
+Eight reviewed structures now compose privately,197 rows total. Original source
+dates remain unchanged; printed run counts are not claims or inventory.
+
+62 focused tests and full retained candidate replay pass. Remaining table audits,
+production/app/native evidence and acceptance stay open. No public feed/build or
+change to November11 at12:48EST release deadline.
