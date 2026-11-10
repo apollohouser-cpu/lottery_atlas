@@ -1274,3 +1274,21 @@ remain unwired. Source timestamps,33 reviewed structures,six exclusions and
 all39 product joins are preserved. No public coverage feed, production release,
 acceptance or beta gate is claimed. Production UI/publication and native evidence
 remain next; November11 at12:48EST remains the fixed release deadline.
+
+## November 10 — Instant Games presentation
+
+Added a searchable39-product Flutter presentation with game-number identity,
+shared ticket designs, dated top-prize inventory, illustrated-source links,
+reviewed instructions and explicit prize-structure dispositions. Validated tiers
+show literal combinations, printed WIN, odds, printed quantities and values;
+excluded structures show their source qualification instead of numeric tables.
+Annuity advertised face values remain separate from printed WIN/value evidence.
+Official-source failures remain visible and source return preserves the detail.
+
+Four widget tests pass: shared game528 search/navigation/source return, excluded
+443 annuity qualification,504 column labels at320px with explicit2x text, and
+failed source launch. Targeted analysis passes. Explicit2x widget text is not OS
+Dynamic Type or a physical-device check. No ordinary route, deployed coverage
+feed or native acceptance is enabled by this presentation-only change. Draw/rule/
+report presentation, publication and native verification remain open; fixed
+November11 12:48EST deadline and previously reported risk are unchanged.
