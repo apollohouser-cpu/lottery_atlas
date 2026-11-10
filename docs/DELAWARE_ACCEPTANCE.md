@@ -1122,3 +1122,15 @@ replay pass. Printed run counts are not claims or remaining inventory.
 
 Game425 stays isolated; eight other full-table reviews and production/app/native
 acceptance remain open. No new public feed/build or November11 deadline change.
+
+### November10 — Winter Spectacular game540 full printed table
+
+All 31 rows visually transcribed against the retained image hash. Row products
+and totals reconcile to 45,058 prizes/$2,160,000 across 150,000 ordered $20 tickets.
+Four separate matching games retain their distinct instructions. Thirty-one
+reviewed structures now compose privately, 896 rows total, retaining source dates
+and odds. 64 focused tests and candidate replay pass. Printed run counts are not
+claims or remaining inventory.
+
+Game425 stays isolated; seven other full-table reviews and production/app/native
+acceptance remain open. No new public feed/build or November11 deadline change.
