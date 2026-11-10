@@ -1081,3 +1081,18 @@ and literal odds.
 64 focused tests and retained candidate replay pass. Printed run counts are not
 claims or remaining inventory. Thirteen full tables and production/app/native
 acceptance remain open; no public feed/build or November11 deadline change.
+
+### November9 — Pay Raise game533 full printed table and deployment recovery
+
+All 28 rows visually transcribed against the retained image hash. Row products
+and printed totals reconcile to 104,564 prizes/$1,268,850 across 390,000 ordered
+$5 tickets. Each vertical game plays separately; reach the prize before STOP.
+Twenty-seven reviewed structures now compose privately, 768 rows total,
+retaining source dates and literal odds. 64 focused tests and retained candidate
+replay pass. Printed run counts are not claims or remaining inventory.
+Twelve full tables and production/app/native acceptance remain open.
+
+Existing publication run42743796240 for42fd4bf failed at Pages deployment with
+"Timeout reached, aborting!" after validation/build passed. Authorized failed-job
+retry completed successfully on attempt2. This is pipeline recovery, not new
+Delaware public coverage or acceptance. November11 deadline remains unchanged.
