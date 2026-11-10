@@ -1072,3 +1072,17 @@ Existing publication run42743796240 for42fd4bf failed at Pages deployment with
 "Timeout reached, aborting!" after validation/build passed. Authorized failed-job
 retry completed successfully on attempt2. This is pipeline recovery, not new
 Delaware public coverage or acceptance. November11 deadline remains unchanged.
+
+### November9 — Summer Dreamin’ game425 source conflict isolated
+
+Visually transcribed all 27 rows privately and verified the retained image hash.
+Printed WIN/count products and summary reconcile to 119,298 prizes/$3,105,000,
+but row25 prints `($100 x 4) + $100 w/SUNGLASSES` beside WIN $1,000, eight winners
+and $8,000 value. The instructions define sunglasses as $100, so the printed
+combination implies $500 instead. No corrected combination or payout is inferred.
+
+The full table remains excluded from composed reviewed prize structures until
+qualified conflict handling is implemented; its private transcription is retained.
+The 27 composed structures/768 rows are unchanged. This is a source inconsistency,
+not evidence of actual claims or inventory. Remaining audit and production/native
+work stay open; November11 deadline unchanged.
