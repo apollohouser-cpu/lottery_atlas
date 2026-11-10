@@ -1344,3 +1344,22 @@ Two new widget tests traverse all35 notices/source links and narrow320px explici
 passes. These checks are not native or OS Dynamic Type evidence. Coming-soon and
 second-chance source presentation still need completion before release packaging;
 public routes/publication and native verification remain open. Deadline unchanged.
+
+## November 10 — retained coming-soon and second-chance boundaries
+
+Verified the original November6 coming-soon/second-chance bytes against their
+retained manifest and reviewed hashes. Coming-soon parsing excludes featured
+navigation and collapses matching designs to532 Did I Win? and520 $50,000 Bonus
+Stars; conflicting shared identities fail. These remain separate from current
+sales/inventory, with source-listed instructions/prices and no inferred launch
+or remaining counts. Second-chance information describes the source's eligible-
+ticket/Players Club routing and links to its official information page; no
+registration, login, ticket submission or entry performed. Detailed current
+eligibility and complete promotion history remain unavailable here.
+
+Added both sections to coverage presentation. All prior candidate fields compare
+unchanged; only promotions were added. New reviewed candidate SHA256:
+`77da403a86ac7ece2f36372213ec2ce4282abaa7f0c523b1000bfa18049c7fe1`.
+73 focused Python tests and eight affected Flutter tests pass; targeted analysis
+passes. Original acquisition dates retained. Production packaging, ordinary
+routes/publication and native verification remain open; deadline unchanged.

@@ -1,5 +1,6 @@
 """Compose retained Delaware sources into a private, explicitly incomplete candidate."""
 import argparse
+from tooling.delaware_promotions import build as build_promotions
 from datetime import datetime
 import hashlib
 import json
@@ -60,6 +61,7 @@ def build(root):
         'instantInstructions': instructions,
         'instantProductDetails': compose_product_details(
             products, images, instructions, tiers, exclusions),
+        'promotions': build_promotions(root),
         'closeouts': [{'gameId': gid, 'dateLaunched': value['start'].isoformat(),
                       'announcedEndOfSales': value['end'].isoformat()}
                      for gid, value in sorted(closeouts.items(), key=lambda item: int(item[0]))],

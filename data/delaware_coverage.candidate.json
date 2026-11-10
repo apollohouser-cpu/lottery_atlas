@@ -28293,6 +28293,44 @@
       "retailerInventoryAvailable": false
     }
   ],
+  "promotions": {
+    "comingSoon": {
+      "games": [
+        {
+          "gameId": "532",
+          "name": "Did I Win?",
+          "ticketPrice": 1,
+          "advertisedTopPrize": 2000,
+          "instructions": "Find a YES, NICE, or WINNER symbol, win the PRIZE shown. Find a DOUBLE$ symbol, win DOUBLE the PRIZE shown."
+        },
+        {
+          "gameId": "520",
+          "name": "$50,000 Bonus Stars",
+          "ticketPrice": 10,
+          "advertisedTopPrize": 50000,
+          "instructions": "See ticket back for full play instructions."
+        }
+      ],
+      "evidence": {
+        "url": "https://www.delottery.com/Instant-Games/Coming-Soon",
+        "retrievedAt": "2026-11-06T19:48:07.740486+00:00",
+        "sha256": "2104654bfb1b10d4c318807db9df32374b0e457ef4e531848d1f2e79512aabd9",
+        "bytes": 92344
+      },
+      "coverage": "Listed as coming soon at source observation; not current sales, inventory or a launch-date guarantee. Shared designs use one game identity. Complete prize tiers unavailable."
+    },
+    "secondChance": {
+      "evidence": {
+        "url": "https://www.delottery.com/Instant-Games/Second-Chance-Drawing",
+        "retrievedAt": "2026-11-06T19:48:07.858407+00:00",
+        "sha256": "b1df72f183d2ee13f10436fbe683d668307d32ecca4498fcfeaa0c947279d407",
+        "bytes": 75774
+      },
+      "summary": "The source directs eligible instant-ticket holders to Players Club registration or login and its rules/entry site. Eligibility is not established for every ticket.",
+      "rulesAndEntryUrl": "https://www.deilottery.com/",
+      "coverage": "Source-linked information only; no registration, login, ticket submission or entry is performed. Detailed eligibility and current promotion rules must be checked at the official site; no complete promotions archive."
+    }
+  },
   "closeouts": [
     {
       "gameId": "442",

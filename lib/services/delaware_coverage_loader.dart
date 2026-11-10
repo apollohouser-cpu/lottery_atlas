@@ -32,7 +32,7 @@ class DelawareCoverageLoader {
   final Future<String?> Function() readCache;
   final Future<void> Function(String) writeCache;
   static const reviewedCandidateSha256 =
-      '9a9a37116452b8f7cb4239b10475a196b31a723e5231cec8be27a61925f76c08';
+      '77da403a86ac7ece2f36372213ec2ce4282abaa7f0c523b1000bfa18049c7fe1';
 
   static Map<String, dynamic> decode(String raw) {
     final digest = sha256.convert(utf8.encode(raw)).toString();

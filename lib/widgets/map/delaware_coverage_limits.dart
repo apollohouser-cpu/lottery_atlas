@@ -59,6 +59,40 @@ class DelawareCoverageLimits extends StatelessWidget {
               'Complete retired catalogs, complete promotion archives and ten-year history are unavailable. Sports betting, video lottery, casino table games and iGaming are outside this coverage. No ticket entry, registration or betting is performed.',
             ),
             const Divider(),
+            paragraph('Coming soon at source observation'),
+            paragraph(coverage['promotions']['comingSoon']['coverage']),
+            paragraph(
+              'Source observed: ${coverage['promotions']['comingSoon']['evidence']['retrievedAt']}',
+            ),
+            TextButton(
+              onPressed: () => open(
+                context,
+                coverage['promotions']['comingSoon']['evidence']['url'],
+              ),
+              child: const Text('Official coming-soon source'),
+            ),
+            for (final game
+                in coverage['promotions']['comingSoon']['games'] as List) ...[
+              paragraph('${game['name']} · #${game['gameId']}'),
+              paragraph(
+                'Listed ticket price: \$${game['ticketPrice']} · Advertised top prize: \$${game['advertisedTopPrize']}',
+              ),
+              paragraph(game['instructions']),
+            ],
+            paragraph('Second chance information'),
+            paragraph(coverage['promotions']['secondChance']['summary']),
+            paragraph(coverage['promotions']['secondChance']['coverage']),
+            paragraph(
+              'Source observed: ${coverage['promotions']['secondChance']['evidence']['retrievedAt']}',
+            ),
+            TextButton(
+              onPressed: () => open(
+                context,
+                coverage['promotions']['secondChance']['evidence']['url'],
+              ),
+              child: const Text('Official second-chance information'),
+            ),
+            const Divider(),
             paragraph('Announced sales closeouts'),
             paragraph(
               'These are retained announced end-of-sales dates, not prize-claim deadlines or a complete retired catalog. Check the official source for current notices.',
