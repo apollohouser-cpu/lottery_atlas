@@ -1282,3 +1282,19 @@ This is private integration preparation, not a public feed, app route, native
 verification or acceptance. Production publication and native evidence remain
 open. The November11 12:48EST release deadline is unchanged; with roughly one day
 remaining, those outstanding integration and verification steps put it at risk.
+
+## November 10 — bundled development transport
+
+Replayed the retained-source compiler and staged its exact938,953-byte candidate
+as a bundled development asset. Python and Dart validators pin SHA256
+`9a9a37116452b8f7cb4239b10475a196b31a723e5231cec8be27a61925f76c08`.
+The isolated Delaware loader rejects altered components, retains validated cache
+or bundle content on failed refresh, and reports persistence failure separately.
+Six Flutter tests pass and targeted analysis reports no issues. These are
+in-memory transport tests, not physical-device lifecycle evidence.
+
+The development factory enables no remote endpoint, and ordinary app routes
+remain unwired. Source timestamps,33 reviewed structures,six exclusions and
+all39 product joins are preserved. No public coverage feed, production release,
+acceptance or beta gate is claimed. Production UI/publication and native evidence
+remain next; November11 at12:48EST remains the fixed release deadline.
