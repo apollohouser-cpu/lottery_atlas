@@ -1146,3 +1146,17 @@ counts are not claims or remaining inventory.
 
 Game425 stays isolated; six other full-table reviews and production/app/native
 acceptance remain open. No new public feed/build or November11 deadline change.
+
+### November10 — Crossword X-TRA7s game518 marked-count audit
+
+All 26 rows transcribed privately against the retained image hash, preserving
+Puzzle1, Puzzle2 and X-TRA bonus as separate columns, including blank cells.
+Printed WIN/count arithmetic and totals reconcile to 106,194 prizes/$1,278,750
+when the numerical portions of the final three marked counts are used. Those
+cells literally read `8*`, `8*`, `7*`; the retained image does not establish the
+asterisk meaning. The private record retains those strings unchanged.
+
+No unmarked counts or inferred footnote meaning were promoted. Game518 remains
+outside the 32 composed structures/927 rows pending qualified handling, alongside
+game425's isolated combination conflict. Five other full-table reviews and
+production/app/native acceptance remain open; November11 deadline unchanged.
