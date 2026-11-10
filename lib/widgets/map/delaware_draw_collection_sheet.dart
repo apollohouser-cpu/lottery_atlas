@@ -1,3 +1,4 @@
+import 'delaware_reference_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -58,6 +59,30 @@ class _DelawareDrawCollectionSheetState
         child: ListView(
           padding: const EdgeInsets.all(16),
           children: [
+            Wrap(
+              spacing: 12,
+              children: [
+                for (final reports in [false, true])
+                  TextButton(
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute<void>(
+                        builder: (_) => DelawareReferenceSheet(
+                          coverage: widget.coverage,
+                          reports: reports,
+                          openSource: widget.openSource,
+                        ),
+                      ),
+                    ),
+                    child: Text(
+                      reports
+                          ? 'Published count reports'
+                          : 'Prize schedules and rules',
+                    ),
+                  ),
+              ],
+            ),
+
             line(
               'Retained observations with original draw and source dates. This is not a live or complete result history.',
             ),

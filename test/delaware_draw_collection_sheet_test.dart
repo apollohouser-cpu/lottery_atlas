@@ -11,6 +11,13 @@ void main() {
           )
           as Map<String, dynamic>;
   Future<void> select(WidgetTester tester, String value) async {
+    await tester.scrollUntilVisible(
+      find.byType(DropdownButtonFormField<String>),
+      150,
+    );
+    await tester.pumpAndSettle();
+    await tester.ensureVisible(find.byType(DropdownButtonFormField<String>));
+    await tester.pumpAndSettle();
     await tester.tap(find.byType(DropdownButtonFormField<String>));
     await tester.pumpAndSettle();
     final item = find.text(value).last;

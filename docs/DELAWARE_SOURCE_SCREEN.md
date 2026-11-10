@@ -1336,3 +1336,20 @@ named defect, not a reopening of Arizona acceptance or evidence about the prior
 owner-phone loading failure. Six new widget checks and targeted analysis pass.
 Rules/reports, publication and native verification remain outstanding. Deadline
 November11 12:48EST unchanged; physical beta gates remain open.
+
+## November 10 — rule and qualified-report navigation
+
+Draw presentation now links to ten retained rule families and eight qualified
+report families. Details preserve nested source groups, category counts, literal
+zeroes, wager labels, source totals and original acquisition dates. Report dates
+remain independent of the selected drawing; no computed payout or cross-category
+sum is introduced. Mega Millions effective date, AVERAGE PRIZE column, prize
+ranges and multiplier summary cells stay separate. Unsupported report conflicts
+and legacy status appear in the report navigation, with source links on details.
+
+Three new widget tests pass, including all18 detail contracts, Play3 literal
+counts/source totals, and Mega Millions source return and320px explicit2x layout.
+Existing three draw and three loader-view checks pass; targeted analysis passes.
+No physical-device or OS Dynamic Type verification is inferred. Closeout/overall
+scope presentation, production publication/routes and native acceptance remain
+open. November11 12:48EST deadline and previously disclosed risk are unchanged.
