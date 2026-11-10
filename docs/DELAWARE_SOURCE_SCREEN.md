@@ -1122,3 +1122,15 @@ structures now compose privately, 799 rows total, retaining source dates and odd
 claims or remaining inventory. Game425 remains isolated for its source conflict;
 ten other full-table reviews and production/app/native acceptance remain open.
 No new public feed/build or November11 deadline change.
+
+### November10 — Cash King game478 full printed table
+
+All 41 rows visually transcribed against the retained image hash. Row products
+and totals reconcile to 119,045 prizes/$9,473,000 across 420,000 ordered $30
+tickets. 2X/5X/10X/20X/100X multiply the associated prize; MONEYBAG wins all25.
+Twenty-nine reviewed structures now compose privately, 840 rows total, retaining
+source dates and literal odds. 64 focused tests and candidate replay pass.
+
+Printed run counts are not claims or remaining inventory. Game425 stays isolated;
+nine other full-table reviews and production/app/native acceptance remain open.
+No new public feed/build or November11 deadline change.
