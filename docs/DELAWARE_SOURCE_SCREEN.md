@@ -1069,3 +1069,15 @@ total, retaining source dates and literal odds.
 64 focused tests and retained candidate replay pass. Printed run counts are not
 claims or remaining inventory. Fourteen full tables and production/app/native
 acceptance remain open; no public feed/build or November11 deadline change.
+
+### November9 — $24K Gold Rush game502 full printed table
+
+All 30 rows visually transcribed against the retained image hash. Row products
+and printed totals reconcile to 105,296 prizes/$2,692,750 across 390,000 ordered
+$10 tickets. 2X/5X multiply the associated prize; BILL pays $100. Twenty-six
+reviewed structures now compose privately, 740 rows total, retaining source dates
+and literal odds.
+
+64 focused tests and retained candidate replay pass. Printed run counts are not
+claims or remaining inventory. Thirteen full tables and production/app/native
+acceptance remain open; no public feed/build or November11 deadline change.
