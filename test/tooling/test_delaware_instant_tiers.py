@@ -15,7 +15,7 @@ class ReviewedTierTest(unittest.TestCase):
 
     def test_reviewed_tables_preserve_literal_odds_and_run_meaning(self):
         tables = compose(self.images)
-        self.assertEqual([len(t['tiers']) for t in tables], [11, 14, 31, 23, 30, 31, 26, 31, 34, 36, 23, 41, 36, 31, 22, 30, 18, 24, 30, 31, 22, 28, 37, 28, 42, 30, 28, 31, 41, 25, 31, 31])
+        self.assertEqual([len(t['tiers']) for t in tables], [11, 14, 31, 23, 30, 31, 26, 31, 34, 36, 23, 41, 36, 31, 22, 30, 18, 24, 30, 31, 22, 28, 37, 28, 42, 30, 28, 31, 41, 25, 31, 31, 26])
         self.assertEqual(tables[1]['tiers'][0]['oddsOneIn'], '12.50')
         self.assertEqual(tables[2]['tiers'][-1]['oddsOneIn'], '78,000')
         self.assertEqual(tables[2]['printedPrizeTotal'], 95975)
@@ -38,6 +38,13 @@ class ReviewedTierTest(unittest.TestCase):
         spec = copy.deepcopy(self.spec)
         row = next(t for t in spec['tables'] if t['gameId'] == '467')['tiers'][0]
         row['game1'], row['game2'] = row['game2'], row['game1']
+        with self.assertRaises(ValueError): compose(self.images, spec)
+
+    def test_three_game_columns_preserve_identity(self):
+        spec = copy.deepcopy(self.spec)
+        row = next(t for t in spec['tables'] if t['gameId'] == '504')['tiers'][2]
+        self.assertEqual(row['game3'], '3 WORDS')
+        row['game2'], row['game3'] = row['game3'], row['game2']
         with self.assertRaises(ValueError): compose(self.images, spec)
 
     def test_main_bonus_columns_cannot_be_swapped(self):

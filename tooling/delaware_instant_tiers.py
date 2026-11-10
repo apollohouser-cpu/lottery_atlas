@@ -36,7 +36,7 @@ def compose(images, spec=None):
             if not isinstance(combination, str) or not combination.strip() or combination in combinations:
                 raise ValueError('Invalid or duplicate combination')
             combinations.add(combination)
-            columns = [('Game1', 'game1'), ('Game2', 'game2'), ('Bonus spots', 'bonusSpots')]
+            columns = [('Game1', 'game1'), ('Game2', 'game2'), ('Game3', 'game3')] if gid == '504' else [('Game1', 'game1'), ('Game2', 'game2'), ('Bonus spots', 'bonusSpots')]
             if any(key in row for _, key in columns):
                 if not all(isinstance(row.get(key), str) for _, key in columns):
                     raise ValueError('Incomplete puzzle columns')

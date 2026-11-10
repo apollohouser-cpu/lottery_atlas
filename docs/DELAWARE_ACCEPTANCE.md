@@ -1213,3 +1213,18 @@ Table509 remains outside the 32 composed structures/927 rows. The distinct
 Game1 double/Game3 five-times symbol rules remain preserved. One full-table
 review and qualified exclusions/production/app/native work remain open.
 November11 release deadline unchanged.
+
+### November10 — 3 for $10 game504 and full-table screening checkpoint
+
+All 26 rows transcribed against the retained image hash, preserving Game1,
+Game2 and Game3 columns. Products/totals reconcile to 102,265 prizes/$2,486,800.
+The composer validates the three-column labels; a swapped-column rejection test
+passes. 65 focused tests and retained candidate replay pass. Thirty-three
+structures/953 rows compose privately as printed runs, never claims/inventory.
+
+All 39 retained detail tables now have full visual transcriptions. Six remain
+excluded from standard composition:425/509 combination conflicts,528 mixed scope
+and combination conflict,518 unexplained count marks,443 repeated rows and
+annuity valuation,501 annuity valuation mismatch. These exclusions require
+explicit release disclosure; validation was not weakened. Production integration,
+publication and native acceptance remain open. November11 deadline unchanged.
