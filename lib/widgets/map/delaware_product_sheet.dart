@@ -1,3 +1,4 @@
+import 'delaware_coverage_limits.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -28,7 +29,24 @@ class _DelawareProductSheetState extends State<DelawareProductSheet> {
           .contains(query.toLowerCase());
     }).toList();
     return Scaffold(
-      appBar: AppBar(title: const Text('Delaware Instant Games')),
+      appBar: AppBar(
+        title: const Text('Delaware Instant Games'),
+        actions: [
+          IconButton(
+            tooltip: 'Coverage and closeouts',
+            icon: const Icon(Icons.info_outline),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(
+                builder: (_) => DelawareCoverageLimits(
+                  coverage: widget.coverage,
+                  openSource: widget.openSource,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
       body: SafeArea(
         child: Column(
           children: [

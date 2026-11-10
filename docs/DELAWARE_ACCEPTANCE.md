@@ -1329,3 +1329,18 @@ Existing three draw and three loader-view checks pass; targeted analysis passes.
 No physical-device or OS Dynamic Type verification is inferred. Closeout/overall
 scope presentation, production publication/routes and native acceptance remain
 open. November11 12:48EST deadline and previously disclosed risk are unchanged.
+
+## November 10 — closeouts and scope disclosures
+
+Added coverage/closeout navigation from both Delaware drawings and Instant Games.
+All35 retained closeout rows display their literal launch and announced sales-end
+dates with original source provenance and an official-source action. Sales ends
+are explicitly not claim deadlines. Scope explains legacy Lucky For Life,
+remaining-prize versus printed-run versus claims distinctions, unavailable maps/
+retailer stock/history, and excluded non-lottery gambling products.
+
+Two new widget tests traverse all35 notices/source links and narrow320px explicit
+2x disclosures. Seven affected product/draw tests also pass; targeted analysis
+passes. These checks are not native or OS Dynamic Type evidence. Coming-soon and
+second-chance source presentation still need completion before release packaging;
+public routes/publication and native verification remain open. Deadline unchanged.

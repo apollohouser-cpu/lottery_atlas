@@ -1,3 +1,4 @@
+import 'delaware_coverage_limits.dart';
 import 'delaware_reference_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -54,7 +55,24 @@ class _DelawareDrawCollectionSheetState
     final current = selected ?? groups.first;
     final rows = results.where((row) => group(row) == current).toList();
     return Scaffold(
-      appBar: AppBar(title: const Text('Delaware Drawings')),
+      appBar: AppBar(
+        title: const Text('Delaware Drawings'),
+        actions: [
+          IconButton(
+            tooltip: 'Coverage and closeouts',
+            icon: const Icon(Icons.info_outline),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(
+                builder: (_) => DelawareCoverageLimits(
+                  coverage: widget.coverage,
+                  openSource: widget.openSource,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(16),
