@@ -9,7 +9,7 @@ from tooling.build_delaware_rule_candidate import build as build_rules
 from tooling.build_delaware_report_candidate import build as build_reports
 from tooling.validate_delaware_instant_evidence import validate as validate_images
 from tooling.delaware_instant_instructions import compose as compose_instructions
-from tooling.delaware_instant_tiers import compose as compose_tiers
+from tooling.delaware_instant_tiers import compose as compose_tiers, compose_exclusions
 from tooling.import_delaware_scratch_catalog import parse_catalog, parse_report, parse_closeouts, join
 
 
@@ -44,13 +44,16 @@ def build(root):
     products = join(catalog, stamp, report, closeouts, observed)
     images = validate_images(root / 'instant.html', root / 'instant_details_20261107_encoded')
     draws, rules = build_draws(root), build_rules(root)
+    tiers = compose_tiers(images)
+    exclusions = compose_exclusions(images, tiers)
     return {
         'stateCode': 'DE', 'schemaVersion': 1, 'productionReady': False,
         'recordType': 'incomplete-development-candidate',
         'draws': draws, 'rules': rules, 'products': products,
         'publishedReports': build_reports(root),
         'productEvidence': evidence, 'detailImages': images,
-        'reviewedInstantPrizeStructures': compose_tiers(images),
+        'reviewedInstantPrizeStructures': tiers,
+        'instantPrizeStructureExclusions': exclusions,
         'instantInstructions': compose_instructions(
             json.loads((root / 'instant-instruction-screen-index.json').read_text()), images),
         'closeouts': [{'gameId': gid, 'dateLaunched': value['start'].isoformat(),
@@ -58,7 +61,7 @@ def build(root):
                      for gid, value in sorted(closeouts.items(), key=lambda item: int(item[0]))],
         'limitations': [
             'Retained opening observations only; composition is not a new source collection.',
-            'Instant detail image integrity verified; complete semantic transcription remains pending.',
+            'All retained instant detail tables screened; excluded structures carry explicit source qualifications.',
             'Printed prize structures, remaining top prizes, and actual claims are distinct.',
             'Game528 printed count excludes its second-chance trip while printed value includes it; no combined Scratch-only summary is published.',
             'Qualified source reports are separate from draw results; remaining report conflicts and unit uncertainty are disclosed.',

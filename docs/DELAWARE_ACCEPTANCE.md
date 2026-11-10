@@ -1228,3 +1228,17 @@ and combination conflict,518 unexplained count marks,443 repeated rows and
 annuity valuation,501 annuity valuation mismatch. These exclusions require
 explicit release disclosure; validation was not weakened. Production integration,
 publication and native acceptance remain open. November11 deadline unchanged.
+
+### November10 — complete instant disposition contract
+
+The private combined candidate now carries six explicit prize-structure
+exclusions with official source URLs, hashes, original observation dates and
+reasons. Composition requires every retained detail identity to belong to exactly
+one reviewed table or exclusion. Missing, duplicate, overlapping, changed-source
+and unexplained exclusions fail closed. The candidate's obsolete pending-
+transcription limitation now describes the completed screen and qualifications.
+
+68 focused tests and candidate replay pass: 33 structures/953 rows plus six
+excluded structures account for all39 detail identities. No conflicted values
+were promoted. Production integration/publication/native acceptance remain open;
+November11 deadline unchanged.

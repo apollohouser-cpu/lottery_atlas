@@ -74,3 +74,28 @@ def compose(images, spec=None):
                     actualClaimsAvailable=False, remainingInventoryAvailable=False)
         result.append(item)
     return result
+
+
+def compose_exclusions(images, reviewed, exclusions=None):
+    """Require every image to have either a validated table or an explicit exclusion."""
+    if exclusions is None:
+        exclusions = json.loads(Path(__file__).with_name('delaware_instant_exclusions.json').read_text())
+    sources = {item['gameId']: item for item in images}
+    covered = {item['gameId'] for item in reviewed}
+    if len(sources) != len(images) or len(covered) != len(reviewed) or not covered <= sources.keys():
+        raise ValueError('Invalid reviewed coverage identities')
+    result = []
+    for item in exclusions:
+        gid = item['gameId']
+        if gid in covered or gid not in sources:
+            raise ValueError('Duplicate or missing exclusion identity')
+        source = sources[gid]
+        if item['sourceUrl'] != source['sourceUrl'] or item['sourceSha256'] != source['sha256']:
+            raise ValueError('Excluded source changed')
+        if not isinstance(item.get('reason'), str) or not item['reason'].strip():
+            raise ValueError('Missing exclusion explanation')
+        covered.add(gid)
+        result.append(dict(item, sourceRetrievedAt=source['retrievedAt'], status='excluded'))
+    if covered != sources.keys():
+        raise ValueError('Unaccounted instant detail source')
+    return result
