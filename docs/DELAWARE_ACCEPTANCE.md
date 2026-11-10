@@ -1110,3 +1110,15 @@ source dates and literal odds. 64 focused tests and candidate replay pass.
 Printed run counts are not claims or remaining inventory. Game425 stays isolated;
 nine other full-table reviews and production/app/native acceptance remain open.
 No new public feed/build or November11 deadline change.
+
+### November10 — Casino Nights game511 full printed table
+
+All 25 rows visually transcribed against the retained image hash. Row products
+and totals reconcile to 104,635 prizes/$1,268,450 across 390,000 ordered $5 tickets.
+Separate roulette/chips/cards/slots areas are printed instant-game mechanics,
+not live casino activity. Thirty reviewed structures now compose privately,
+865 rows total, retaining source dates and odds. 64 focused tests and candidate
+replay pass. Printed run counts are not claims or remaining inventory.
+
+Game425 stays isolated; eight other full-table reviews and production/app/native
+acceptance remain open. No new public feed/build or November11 deadline change.
