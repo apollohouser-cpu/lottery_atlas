@@ -1855,3 +1855,12 @@ was not installed or claimed to pass: live adoption depends on publication. The
 ordinary installed app remains running. Source bytes and dates remain unchanged,
 no agency HTTP recovery is claimed, and Arizona remains unaccepted after its
 missed deadline with no extension.
+
+## November 10 — bounded retry callback defect
+
+Delaware integration testing exposed ArizonaCoverageView's retry callback
+returning a Future from setState. This triggers a Flutter debug assertion and
+prevents the expected rebuild. Changed the callback to a void block; a widget
+regression transitions from unavailable bytes to the exact released artifact
+and verifies successful retry without exceptions. Acceptance remains closed;
+this does not establish the cause of the earlier owner-phone loading failure.

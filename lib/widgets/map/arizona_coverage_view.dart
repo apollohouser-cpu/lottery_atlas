@@ -31,7 +31,9 @@ class _ArizonaCoverageViewState extends State<ArizonaCoverageView> {
                 'Arizona coverage is unavailable. No validated saved data was found.',
               ),
               TextButton(
-                onPressed: () => setState(() => loading = widget.loader.load()),
+                onPressed: () => setState(() {
+                  loading = widget.loader.load();
+                }),
                 child: const Text('Retry'),
               ),
               TextButton(

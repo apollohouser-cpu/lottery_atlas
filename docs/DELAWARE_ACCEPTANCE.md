@@ -1292,3 +1292,23 @@ Dynamic Type or a physical-device check. No ordinary route, deployed coverage
 feed or native acceptance is enabled by this presentation-only change. Draw/rule/
 report presentation, publication and native verification remain open; fixed
 November11 12:48EST deadline and previously reported risk are unchanged.
+
+## November 10 — observed drawings and loader presentation
+
+Added13 selectable game/session groups with26 retained results. Digits, special
+balls, Power Play, All Star Bonus, Keno game numbers/local display times and
+Xs & Os team identities remain distinct. Results display original acquisition
+and draw dates, no live/history completeness claim, and no geographic activity.
+Three widget tests cover session changes, separate Double Play/Powerball values,
+source return and320px explicit2x team-name layout. Loader presentation adds
+retained-data warnings, failure/retry and product/draw selection; two Delaware
+view tests pass. No ordinary map route or public feed enabled yet.
+
+Retry testing exposed a concrete inherited Arizona view defect: an expression
+callback returned a Future from setState, triggering Flutter's debug assertion
+and preventing rebuild. Changed only that callback to a void block in both
+views; a released-Arizona-artifact retry regression passes. This is a bounded
+named defect, not a reopening of Arizona acceptance or evidence about the prior
+owner-phone loading failure. Six new widget checks and targeted analysis pass.
+Rules/reports, publication and native verification remain outstanding. Deadline
+November11 12:48EST unchanged; physical beta gates remain open.
