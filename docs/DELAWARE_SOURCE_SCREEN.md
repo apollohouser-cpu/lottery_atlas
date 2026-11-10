@@ -1224,3 +1224,16 @@ from that value. No $640,000 replacement WIN or payment election is inferred.
 Table501 remains outside the 32 composed structures/927 rows pending qualified
 handling; strict product validation is unchanged. Two other full-table reviews
 and production/app/native acceptance remain open. November11 deadline unchanged.
+
+### November10 — Lucky Times50 game509 full private audit
+
+All 41 rows visually transcribed against the retained image hash. WIN/count
+products and summary reconcile to 119,129 prizes/$9,480,000. Row22 prints
+`$10 (GAME 3 "50")` beside WIN $500, 112 winners and $56,000 value. Game3's
+instructions define that symbol as five times the prize, implying $50 instead.
+No substituted $100 base prize or reinterpretation as 50X is inferred.
+
+Table509 remains outside the 32 composed structures/927 rows. The distinct
+Game1 double/Game3 five-times symbol rules remain preserved. One full-table
+review and qualified exclusions/production/app/native work remain open.
+November11 release deadline unchanged.
