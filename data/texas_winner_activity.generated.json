@@ -1,10 +1,10 @@
 {
   "source": "Texas Lottery official Scratch top-prize selling-retailer reports",
   "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/all.html",
-  "updatedAt": "2026-11-09T22:42:00.268Z",
+  "updatedAt": "2026-11-10T07:38:55.559Z",
   "sourceLastUpdated": "2026-11-08T12:00:00.000Z",
   "latestClaimDate": "2026-11-08T12:00:00.000Z",
-  "coverage": "8452 exact physical retailer-level 2026 Texas Scratch top-prize claims. Every record joins one official dated selling-store address to the official statewide retailer roster; unmatched or ungeocoded rows are excluded.",
+  "coverage": "8451 exact physical retailer-level 2026 Texas Scratch top-prize claims. Every record joins one official dated selling-store address to the official statewide retailer roster; unmatched or ungeocoded rows are excluded.",
   "activities": [
     {
       "id": "tx-claim-3c146282fa838f70753cbfd8bf82e72be0ef1f50d5f9b00a33325d49e1db92cd",
@@ -6642,24 +6642,6 @@
       "retailerName": "FOOD TOWN #12",
       "retailerAddress": "7121 Broadway St, Pearland, TX 77581",
       "coordinateSource": "U.S. Census Geocoder exact address match",
-      "drawDate": "2026-05-25T12:00:00.000Z",
-      "winningTickets": 1,
-      "prizeAmount": 200,
-      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/retailerswhosoldtopprizes.html_252698740.html",
-      "sourceLabel": "Official Texas Lottery top-prize selling retailer · Game 2715 · claimed 05/25/26 · report as of 2026-11-08"
-    },
-    {
-      "id": "tx-claim-1ff78bb02040845f9b78dda4abb9011f7e4c1ef76f49f198c0f2eaeaf12424b4",
-      "latitude": 30.918680984981,
-      "longitude": -94.05174167857,
-      "city": "Jasper",
-      "county": "Jasper",
-      "state": "TX",
-      "game": "scratch-off",
-      "gameName": "Find $200",
-      "retailerName": "QUICK TRACK #122",
-      "retailerAddress": "2209 Texas State Highway 63 W, Jasper, TX 75951",
-      "coordinateSource": "ArcGIS World Geocoder verified numbered street address",
       "drawDate": "2026-05-25T12:00:00.000Z",
       "winningTickets": 1,
       "prizeAmount": 200,
@@ -153913,6 +153895,16 @@
       "city": "CROWLEY",
       "postalCode": "76036",
       "reason": "No exact geocoded official retailer row matched"
+    },
+    {
+      "gameId": "2715",
+      "gameName": "Find $200",
+      "date": "05/25/26",
+      "retailerName": "QUICK TRACK #122",
+      "retailerAddress": "2209 TEXAS STATE HIGHWAY 63 W",
+      "city": "JASPER",
+      "postalCode": "75951",
+      "reason": "Multiple exact official retailer rows matched"
     },
     {
       "gameId": "2715",
