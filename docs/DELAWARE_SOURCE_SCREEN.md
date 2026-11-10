@@ -1184,3 +1184,17 @@ No unmarked counts or inferred footnote meaning were promoted. Game518 remains
 outside the 32 composed structures/927 rows pending qualified handling, alongside
 game425's isolated combination conflict. Five other full-table reviews and
 production/app/native acceptance remain open; November11 deadline unchanged.
+
+### November10 — Game Show Experience game528 full private audit
+
+All 30 rows visually transcribed against the retained image hash, preserving
+main-prize and Golden Buzzer bonus columns. The 29 Scratch rows total 99,521
+prizes/$1,282,250; the separate trip row adds one/$75,000. The printed summary
+count excludes that trip while its $1,357,250 value includes it. This confirms
+the already identified mixed scope; no promotion dates or eligibility inferred.
+
+Additional source conflict: row23 prints `$100 x 4`, a blank bonus cell, WIN $500,
+five winners and $2,500 value. The combination implies $400. No invented bonus
+or corrected payout is substituted. The table stays outside the 32 composed
+structures/927 rows, alongside isolated425/518. Four other full-table reviews
+and production/app/native acceptance remain open; November11 deadline unchanged.
