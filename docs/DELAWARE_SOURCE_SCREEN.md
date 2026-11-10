@@ -1198,3 +1198,17 @@ five winners and $2,500 value. The combination implies $400. No invented bonus
 or corrected payout is substituted. The table stays outside the 32 composed
 structures/927 rows, alongside isolated425/518. Four other full-table reviews
 and production/app/native acceptance remain open; November11 deadline unchanged.
+
+### November10 — 50th Anniversary game443 full private audit
+
+All 28 rows transcribed against the retained image hash. WIN/count arithmetic
+and totals reconcile to 119,588 prizes/$17,517,500. Source rows9 and11 repeat the
+same `$50 x 20` combination, each with WIN $1,000, 150 winners and $150,000 value;
+both remain in the private transcription with source-row identity. No source row
+was silently deduplicated or relabeled to bypass the standard duplicate check.
+
+The top row's $1,000,000 ($50K/YR/20YRS) face label remains distinct from printed
+WIN $640,000 and two/$1,280,000 valuation. No payment election or actual payout
+is inferred. Table443 awaits qualified handling outside the 32 composed
+structures/927 rows. Three other full-table reviews and production/app/native
+acceptance remain open; November11 deadline unchanged.
