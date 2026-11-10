@@ -1188,3 +1188,15 @@ WIN $640,000 and two/$1,280,000 valuation. No payment election or actual payout
 is inferred. Table443 awaits qualified handling outside the 32 composed
 structures/927 rows. Three other full-table reviews and production/app/native
 acceptance remain open; November11 deadline unchanged.
+
+### November10 — $1 Million Vault game501 full private audit
+
+All 23 rows visually transcribed against the retained image hash, preserving
+main and bonus columns. Counts sum to 135,334 and printed values to $17,428,750.
+All ordinary row products reconcile. The annuity row prints face/WIN $1,000,000
+($50K/YR/20YRS), two winners and $1,280,000 value; its WIN/count product differs
+from that value. No $640,000 replacement WIN or payment election is inferred.
+
+Table501 remains outside the 32 composed structures/927 rows pending qualified
+handling; strict product validation is unchanged. Two other full-table reviews
+and production/app/native acceptance remain open. November11 deadline unchanged.
