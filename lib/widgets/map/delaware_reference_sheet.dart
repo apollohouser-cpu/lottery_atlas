@@ -119,7 +119,7 @@ class DelawareReferenceDetail extends StatelessWidget {
         ...render(item.key.toString(), item.value),
   ];
   List<Widget> render(String key, dynamic value) {
-    if (value is Map)
+    if (value is Map) {
       return [
         text(label(key)),
         Card(
@@ -132,7 +132,8 @@ class DelawareReferenceDetail extends StatelessWidget {
           ),
         ),
       ];
-    if (value is List)
+    }
+    if (value is List) {
       return [
         text(label(key)),
         for (final item in value)
@@ -155,6 +156,7 @@ class DelawareReferenceDetail extends StatelessWidget {
                   : item.toString(),
             ),
       ];
+    }
     return [text('${label(key)}: ${value ?? 'Unavailable'}')];
   }
 
@@ -172,10 +174,11 @@ class DelawareReferenceDetail extends StatelessWidget {
                 launchUrl(uri, mode: LaunchMode.externalApplication));
       } catch (_) {}
     }
-    if (!ok && context.mounted)
+    if (!ok && context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Could not open the official source.')),
       );
+    }
   }
 
   @override
