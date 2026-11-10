@@ -1242,3 +1242,19 @@ transcription limitation now describes the completed screen and qualifications.
 excluded structures account for all39 detail identities. No conflicted values
 were promoted. Production integration/publication/native acceptance remain open;
 November11 deadline unchanged.
+
+## November 10 — app-facing instant detail composition
+
+All39 catalog products now join their exact retained image, reviewed instructions,
+and one explicit tier disposition into an app-facing detail contract:33 reviewed
+structures and six excluded structures. Top-prize inventory, printed run quantities,
+annuity face values and exclusion explanations remain separate. The historical
+instruction-only screen's incomplete-tier label is omitted from this composed
+view; its original evidence is preserved. Missing, duplicate, overlapping or
+provenance-mismatched joins fail before candidate output.71 focused tests pass;
+the retained-source candidate rebuild succeeds with original acquisition dates.
+
+This is private integration preparation, not a public feed, app route, native
+verification or acceptance. Production publication and native evidence remain
+open. The November11 12:48EST release deadline is unchanged; with roughly one day
+remaining, those outstanding integration and verification steps put it at risk.

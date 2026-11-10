@@ -9,6 +9,7 @@ from tooling.build_delaware_rule_candidate import build as build_rules
 from tooling.build_delaware_report_candidate import build as build_reports
 from tooling.validate_delaware_instant_evidence import validate as validate_images
 from tooling.delaware_instant_instructions import compose as compose_instructions
+from tooling.delaware_product_details import compose as compose_product_details
 from tooling.delaware_instant_tiers import compose as compose_tiers, compose_exclusions
 from tooling.import_delaware_scratch_catalog import parse_catalog, parse_report, parse_closeouts, join
 
@@ -46,6 +47,8 @@ def build(root):
     draws, rules = build_draws(root), build_rules(root)
     tiers = compose_tiers(images)
     exclusions = compose_exclusions(images, tiers)
+    instructions = compose_instructions(
+        json.loads((root / 'instant-instruction-screen-index.json').read_text()), images)
     return {
         'stateCode': 'DE', 'schemaVersion': 1, 'productionReady': False,
         'recordType': 'incomplete-development-candidate',
@@ -54,8 +57,9 @@ def build(root):
         'productEvidence': evidence, 'detailImages': images,
         'reviewedInstantPrizeStructures': tiers,
         'instantPrizeStructureExclusions': exclusions,
-        'instantInstructions': compose_instructions(
-            json.loads((root / 'instant-instruction-screen-index.json').read_text()), images),
+        'instantInstructions': instructions,
+        'instantProductDetails': compose_product_details(
+            products, images, instructions, tiers, exclusions),
         'closeouts': [{'gameId': gid, 'dateLaunched': value['start'].isoformat(),
                       'announcedEndOfSales': value['end'].isoformat()}
                      for gid, value in sorted(closeouts.items(), key=lambda item: int(item[0]))],
