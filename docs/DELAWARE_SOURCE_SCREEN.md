@@ -1158,3 +1158,15 @@ claims or remaining inventory.
 
 Game425 stays isolated; seven other full-table reviews and production/app/native
 acceptance remain open. No new public feed/build or November11 deadline change.
+
+### November10 — Mystery Multiplier game521 full printed table
+
+All 31 rows visually transcribed against the retained image hash. Row products
+and totals reconcile to 88,759 prizes/$4,305,000 across 300,000 ordered $20 tickets.
+The mystery multiplier applies to TOTAL prize won; coin wins the shown prize.
+Thirty-two reviewed structures now compose privately, 927 rows total, retaining
+source dates and odds. 64 focused tests and candidate replay pass. Printed run
+counts are not claims or remaining inventory.
+
+Game425 stays isolated; six other full-table reviews and production/app/native
+acceptance remain open. No new public feed/build or November11 deadline change.
