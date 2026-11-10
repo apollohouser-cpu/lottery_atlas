@@ -1110,3 +1110,15 @@ qualified conflict handling is implemented; its private transcription is retaine
 The 27 composed structures/768 rows are unchanged. This is a source inconsistency,
 not evidence of actual claims or inventory. Remaining audit and production/native
 work stay open; November11 deadline unchanged.
+
+### November10 — Loaded Cash Explosion game505 full printed table
+
+All 31 rows visually transcribed against the retained image hash. Row products
+and printed totals reconcile to 87,359 prizes/$4,310,000 across 300,000 ordered
+$20 tickets. Match numbers; $200 STARBURST pays $200. Twenty-eight reviewed
+structures now compose privately, 799 rows total, retaining source dates and odds.
+
+64 focused tests and retained candidate replay pass. Printed run counts are not
+claims or remaining inventory. Game425 remains isolated for its source conflict;
+ten other full-table reviews and production/app/native acceptance remain open.
+No new public feed/build or November11 deadline change.
