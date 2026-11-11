@@ -2,6 +2,13 @@
 
 Status: **ACTIVE — not accepted**.
 
+Current checkpoint — November10 evening: reviewed release published and exact
+live/bundle equality verified; ordinary routes connected; signed iOS build ready.
+All39 instant images screened (33 validated structures, six explicit exclusions).
+77 focused Python tests pass. Physical installation/UI/cache verification awaits
+the already-requested owner-phone reconnection. No deadline extension or state
+acceptance. Historical entries below retain the original evidence sequence.
+
 ## Activation — November 6, 2026 at12:48EST
 
 Delaware is the sole active state after Arizona supported acceptance.22 states
