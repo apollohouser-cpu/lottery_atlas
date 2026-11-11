@@ -1,3 +1,5 @@
+import '../../services/delaware_coverage_loader.dart';
+import 'delaware_coverage_view.dart';
 import '../../services/arizona_coverage_loader.dart';
 import 'arizona_coverage_view.dart';
 import 'nebraska_scratch_catalog_sheet.dart';
@@ -456,6 +458,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     if (!mounted) return;
     setState(() {});
     _restartHeatBubbleAnimation();
+  }
+
+  void _openDelawareCoverage({bool products = false}) {
+    Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => Scaffold(body: DelawareCoverageView(loader: DelawareCoverageLoader.published(), products: products))));
   }
 
   void _openArizonaCoverage({bool products = false}) {
@@ -5046,6 +5052,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   );
                 },
                 onDrawings: () {
+                  if (_selectedStateName == 'Delaware') {
+                    _openDelawareCoverage();
+                    return;
+                  }
                   if (_selectedStateName == 'Arizona') {
                     _openArizonaCoverage();
                     return;
@@ -5083,7 +5093,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 },
                 onScratch: () {
                   final state = _selectedStateName;
-                  if (state == 'Arizona') {
+                  if (state == 'Delaware') {
+                    _openDelawareCoverage(products: true);
+                  } else if (state == 'Arizona') {
                     _openArizonaCoverage(products: true);
                   } else if (state == 'South Carolina') {
                     _openSouthCarolinaScratchOffPicker();

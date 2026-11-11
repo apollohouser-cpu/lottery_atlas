@@ -1,3 +1,5 @@
+import '../../services/delaware_coverage_loader.dart';
+import '../../widgets/map/delaware_coverage_view.dart';
 import '../../services/arizona_coverage_loader.dart';
 import '../../widgets/map/arizona_coverage_view.dart';
 import '../../widgets/map/montana_product_sheet.dart';
@@ -73,6 +75,13 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Delaware') ...[
+            for (final products in [false, true]) ListTile(
+              title: Text(products ? 'Delaware instant games and notices' : 'Delaware results and schedules'),
+              subtitle: Text(products ? 'Retained catalog, illustrated rules and closeouts' : 'Observed results, prize schedules and qualified reports'),
+              onTap: () => Navigator.push(context, MaterialPageRoute<void>(builder: (_) => Scaffold(body: DelawareCoverageView(loader: DelawareCoverageLoader.published(), products: products)))),
+            ),
+          ],
           if (source.stateName == 'Arizona') ...[
             for (final products in [false, true]) ListTile(
               title: Text(products ? 'Arizona instant games and notices' : 'Arizona results and schedules'),

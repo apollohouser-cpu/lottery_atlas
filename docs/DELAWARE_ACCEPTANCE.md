@@ -1379,3 +1379,10 @@ Publication is being submitted; live deployed equality is not yet verified.
 Production marker describes artifact format, not state acceptance or new source
 collection. Ordinary map routes, signed native build and physical verification
 remain open. All mobile beta gates remain open; deadline unchanged.
+
+Ordinary Delaware source-screen and map Drawings/Scratch actions now select the
+release-only loader. A route test exercises both released-bundle fallbacks with
+failed remote refresh and returns to the source screen; passes. Targeted route
+analysis passes. No geographic activity is created. Publisher run42935145822
+was still in progress at the initial check; the public URL returned404, so live
+publication is not yet verified. Signed build/physical verification remain open.
