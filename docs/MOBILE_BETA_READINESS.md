@@ -1217,3 +1217,10 @@ same-artifact replacement installation, and removal/restart. It is not a physica
 phone check, version migration, signed distribution update, backup/restore test,
 or saved-ticket/game-favorite acceptance. All four beta prerequisites remain open.
 No Arizona scope, acceptance, publication or release deadline changed.
+
+Signed ordinary iOS release build completed in49.1s (92.8MB). Deep/strict signature
+verification passes and the embedded Delaware release exactly matches reviewed
+live bytes. Personal provisioning expires November14. The paired owner phone is
+disconnected, so installation and physical UI/cache evidence remain pending.
+Prepared install is ready; owner reconnection is needed for that verification.
+No simulator/Android launch, data uninstall, paid enrollment or attestation.

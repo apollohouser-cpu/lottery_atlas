@@ -1411,3 +1411,20 @@ analysis reports one pre-existing curly-braces style notice in map geometry
 handling; no new route errors. No geographic activity is created. Publisher run42935145822
 was still in progress at the initial check; the public URL returned404, so live
 publication is not yet verified. Signed build/physical verification remain open.
+
+## November 10 evening — live release equality verified
+
+Publisher42935145822 completed successfully. Independent HTTPS retrieval of
+`delaware_coverage.json` returns940,658 bytes and SHA256
+`e36c696497328a752c1731498d8713e8963c99c2e8898389d0efe6b45841eab6`,
+exactly equal to the reviewed bundled release. This closes the earlier404/pending
+publication observation. Original source dates remain unchanged; no new agency
+collection or acceptance is claimed. Signed iOS build and physical verification
+are being prepared; all four broader mobile gates remain open.
+
+Signed ordinary iOS release build completed in49.1s (92.8MB). Deep/strict signature
+verification passes and the embedded Delaware release exactly matches reviewed
+live bytes. Personal provisioning expires November14. The paired owner phone is
+disconnected, so installation and physical UI/cache evidence remain pending.
+Prepared install is ready; owner reconnection is needed for that verification.
+No simulator/Android launch, data uninstall, paid enrollment or attestation.
