@@ -1428,3 +1428,14 @@ live bytes. Personal provisioning expires November14. The paired owner phone is
 disconnected, so installation and physical UI/cache evidence remain pending.
 Prepared install is ready; owner reconnection is needed for that verification.
 No simulator/Android launch, data uninstall, paid enrollment or attestation.
+
+## November 11 — release deadline missed
+
+The fixed November11 12:48EST (17:48UTC) supported-release deadline passed
+without completed physical installation/UI/cache evidence. At the18:29UTC check,
+no paired device was connected. The reviewed release remains published and the
+signed ordinary iOS build is prepared; those results do not establish native
+acceptance. Delaware remains the sole active state, not accepted. The deadline
+was missed and is not extended. Twenty-two states remain accepted;23 unfinished.
+The already-requested phone reconnection remains pending; no repeated request,
+new state activation, or broader mobile readiness claim is made.

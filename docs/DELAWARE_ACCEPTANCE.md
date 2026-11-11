@@ -1,13 +1,24 @@
 # Delaware supported coverage acceptance
 
-Status: **ACTIVE — not accepted**.
+Status: **ACTIVE — not accepted; November11 release deadline missed, no extension**.
 
-Current checkpoint — November10 evening: reviewed release published and exact
+Pre-deadline checkpoint — November10 evening: reviewed release published and exact
 live/bundle equality verified; ordinary routes connected; signed iOS build ready.
 All39 instant images screened (33 validated structures, six explicit exclusions).
 77 focused Python tests pass. Physical installation/UI/cache verification awaits
 the already-requested owner-phone reconnection. No deadline extension or state
 acceptance. Historical entries below retain the original evidence sequence.
+
+## November 11 — release deadline missed
+
+The fixed November11 12:48EST (17:48UTC) supported-release deadline passed
+without completed physical installation/UI/cache evidence. At the18:29UTC check,
+no paired device was connected. The reviewed release remains published and the
+signed ordinary iOS build is prepared; those results do not establish native
+acceptance. Delaware remains the sole active state, not accepted. The deadline
+was missed and is not extended. Twenty-two states remain accepted;23 unfinished.
+The already-requested phone reconnection remains pending; no repeated request,
+new state activation, or broader mobile readiness claim is made.
 
 ## Activation — November 6, 2026 at12:48EST
 

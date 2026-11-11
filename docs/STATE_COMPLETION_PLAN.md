@@ -3,6 +3,14 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
+## November 11 deadline outcome
+
+Delaware missed its fixed November11 12:48EST (17:48UTC) supported-release
+deadline. Reviewed bytes are published and the signed build is ready, but required
+physical installation/UI/cache verification remains incomplete. No extension or
+acceptance: Delaware remains the sole active state;22 accepted and23 unfinished.
+See DELAWARE_ACCEPTANCE.md for the retained evidence and pending native checks.
+
 ## Current decision — November 6, 2026
 
 Montana supported coverage is ACCEPTED November1 at08:15EST, before its22:30EST
