@@ -1,7 +1,7 @@
 {
   "source": "Virginia Lottery official statewide retailer finder",
-  "retrievedAt": "2026-11-10T19:56:29.375Z",
-  "coverage": "Queried all 135 county/city options in the official Virginia Lottery finder. It returned 5393 unique retailers; 5328 received exact Census or verified ArcGIS address coordinates. 65 unresolved addresses were excluded from the map rather than estimated.",
+  "retrievedAt": "2026-11-11T19:47:57.988Z",
+  "coverage": "Queried all 135 county/city options in the official Virginia Lottery finder. It returned 5391 unique retailers; 5327 received exact Census or verified ArcGIS address coordinates. 64 unresolved addresses were excluded from the map rather than estimated.",
   "directories": [
     {
       "state": "Virginia",
@@ -11435,17 +11435,6 @@
           "latitude": 37.364112619633,
           "longitude": -78.846411523679,
           "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "va-347b1d28611282b1",
-          "name": "FANCY GAP KOA",
-          "address": "47 Fox Trail Loop",
-          "city": "Fancy Gap",
-          "postalCode": "24328",
-          "county": "Carroll",
-          "latitude": 36.665504051682,
-          "longitude": -80.696846163225,
-          "coordinateSource": "ArcGIS World Geocoder verified point address"
         },
         {
           "id": "va-3481ea2840a12e0f",
@@ -24084,17 +24073,6 @@
           "county": "Henrico",
           "latitude": 37.5855010737,
           "longitude": -77.42308717633,
-          "coordinateSource": "U.S. Census Geocoder exact address match"
-        },
-        {
-          "id": "va-6ae5ce70217c01ec",
-          "name": "SUGAR GROVE FOOD MART",
-          "address": "5225 Sugar Grove Hwy",
-          "city": "Sugar Grove",
-          "postalCode": "24375",
-          "county": "Smyth",
-          "latitude": 36.779449131738,
-          "longitude": -81.407673770842,
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
@@ -57021,6 +56999,17 @@
           "coordinateSource": "U.S. Census Geocoder exact address match"
         },
         {
+          "id": "va-f89293921f187d8a",
+          "name": "HDN FOOD MART",
+          "address": "5225 Sugar Grove Hwy",
+          "city": "Sugar Grove",
+          "postalCode": "24375",
+          "county": "Smyth",
+          "latitude": 36.779445427039,
+          "longitude": -81.407673125516,
+          "coordinateSource": "U.S. Census Geocoder exact address match"
+        },
+        {
           "id": "va-f8a5d3734c1e9a98",
           "name": "SKIPPERS MART",
           "address": "13633 Warwick Blvd.",
@@ -59095,14 +59084,6 @@
           "city": "Lynch Station",
           "postalCode": "24571",
           "county": "Campbell",
-          "reason": "No precise address-level coordinate passed verification"
-        },
-        {
-          "name": "VIRGINIA HILLBILLY",
-          "address": "4172 Stoney Ridge Road",
-          "city": "Bandy",
-          "postalCode": "24602",
-          "county": "Tazewell",
           "reason": "No precise address-level coordinate passed verification"
         },
         {
