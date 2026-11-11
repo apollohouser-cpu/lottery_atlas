@@ -6,6 +6,33 @@ import 'package:lottery_atlas/services/delaware_coverage_loader.dart';
 void main() {
   final raw = File('data/delaware_coverage.candidate.json').readAsStringSync();
   test(
+    'release loader rejects candidate refresh and retains released data',
+    () async {
+      final released = File(
+        'data/delaware_coverage.generated.json',
+      ).readAsStringSync();
+      var writes = 0;
+      final loader = DelawareCoverageLoader(
+        releaseOnly: true,
+        readBundle: () async => released,
+        readCache: () async => raw,
+        writeCache: (_) async {
+          writes++;
+        },
+        fetchRemote: () async => raw,
+      );
+      final result = await loader.load();
+      expect(result.origin, 'bundle');
+      expect(result.refreshFailed, isTrue);
+      expect(result.data, jsonDecode(released));
+      expect(writes, 0);
+      expect(
+        () => DelawareCoverageLoader.decode('$released '),
+        throwsFormatException,
+      );
+    },
+  );
+  test(
     'reviewed artifact retains distinct supported and excluded structures',
     () {
       final data = DelawareCoverageLoader.decode(raw);

@@ -1387,3 +1387,19 @@ unchanged; only promotions were added. New reviewed candidate SHA256:
 73 focused Python tests and eight affected Flutter tests pass; targeted analysis
 passes. Original acquisition dates retained. Production packaging, ordinary
 routes/publication and native verification remain open; deadline unchanged.
+
+## November 10 — immutable release packaging and publication checks
+
+Prepared the reviewed candidate as a940,658-byte supported-coverage artifact,
+SHA256 `e36c696497328a752c1731498d8713e8963c99c2e8898389d0efe6b45841eab6`.
+Only top-level artifact identity changes; source content/dates remain exact.
+Packaging rejects unreviewed inputs and preserves existing bytes on replacement
+failure. CI now checks candidate digest, deterministic release bytes and bundled/
+public-file equality. The release-only loader uses a separate cache key and
+rejects development candidates even on refresh, preserving released fallback.
+77 Python tests and ten affected Flutter checks pass; targeted analysis passes.
+
+Publication is being submitted; live deployed equality is not yet verified.
+Production marker describes artifact format, not state acceptance or new source
+collection. Ordinary map routes, signed native build and physical verification
+remain open. All mobile beta gates remain open; deadline unchanged.

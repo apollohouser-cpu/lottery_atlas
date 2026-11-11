@@ -11,6 +11,7 @@ on:
       - 'data/**'
       - 'docs/arizona_coverage.candidate.json'
       - 'docs/arizona_coverage.json'
+      - 'docs/delaware_coverage.json'
       - 'tooling/**'
       - 'test/tooling/**'
       - '.github/workflows/publish-activity-feed.yml'
@@ -72,6 +73,9 @@ jobs:
           cp data/idaho_coverage.generated.json docs/idaho_coverage.json
           cp data/oklahoma_coverage.generated.json docs/oklahoma_coverage.json
           cp data/new_mexico_coverage.generated.json docs/new_mexico_coverage.json
+          python3 -m tooling.validate_delaware_candidate data/delaware_coverage.candidate.json
+          python3 -m tooling.package_delaware_release --candidate data/delaware_coverage.candidate.json --output data/delaware_coverage.generated.json --check
+          cmp data/delaware_coverage.generated.json docs/delaware_coverage.json
           python3 -m tooling.validate_arizona_candidate data/arizona_coverage.candidate.json
           cmp data/arizona_coverage.candidate.json docs/arizona_coverage.candidate.json
           python3 -m tooling.package_arizona_release --candidate data/arizona_coverage.candidate.json --output data/arizona_coverage.generated.json --check
