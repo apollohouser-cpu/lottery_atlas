@@ -1,6 +1,6 @@
 {
   "source": "Texas Lottery official draw-specific Where Sold tables",
-  "updatedAt": "2026-11-11T19:55:39.767Z",
+  "updatedAt": "2026-11-12T07:33:31.877Z",
   "sourceLastUpdated": "2026-11-11T12:00:00.000Z",
   "coverage": "2026 draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.",
   "activities": [
@@ -2955,6 +2955,24 @@
       "prizeAmount": 3000000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Mega_Millions/Winning_Numbers/details.html_1158401828.html",
       "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-11-10"
+    },
+    {
+      "id": "tx-draw-4c7cf87fdd003c125039a9cf",
+      "latitude": 29.147175890912,
+      "longitude": -95.658522173101,
+      "city": "WEST COLUMBIA",
+      "county": "Brazoria",
+      "state": "TX",
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "retailerName": "COLUMBIA STOP",
+      "retailerAddress": "811 W BRAZOS AVE, WEST COLUMBIA, TX 77486",
+      "coordinateSource": "U.S. Census Geocoder exact address match",
+      "drawDate": "2026-11-11T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 25000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401829.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-11-11"
     }
   ],
   "excluded": [
@@ -4212,6 +4230,14 @@
       "gameName": "Powerball",
       "date": "2026-11-09",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158401806.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "powerball",
+      "gameName": "Powerball",
+      "date": "2026-11-11",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/Winning_Numbers/details.html_1158401829.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -6004,6 +6030,14 @@
       "gameName": "Lotto Texas",
       "date": "2026-11-09",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Lotto_Texas/Winning_Numbers/details.html_1158401806.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Lotto Texas",
+      "date": "2026-11-11",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Lotto_Texas/Winning_Numbers/details.html_1158401829.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -8878,6 +8912,14 @@
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401828.html",
       "sourceRows": 0,
       "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "date": "2026-11-11",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401829.html",
+      "sourceRows": 1,
+      "mappedRows": 1
     },
     {
       "game": "state-draw",
@@ -17492,6 +17534,22 @@
       "gameName": "All or Nothing",
       "date": "2026-11-11",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_113267145.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-11-11",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1466084365.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-11-11",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_815103395.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
