@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T07:24:43.203Z",
+  "updatedAt": "2026-11-12T20:06:50.437Z",
   "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
   "endpoint": "https://www.kylottery.com/webhandlers/WinningNumbers.xhtml",
   "coverage": "Latest returned Kentucky draw per reviewed game/session. Power Play is a subset; Double Play and Cash Ball EZ stay separate. Includes both Pick 3 and Pick 4 sessions. Keno, Cash Pop and instant-game layouts are not included. No retailer locations or complete historical claims archive. Source publication dates unavailable. Refresh attempted every six hours; agency publication cadence unconfirmed.",
@@ -731,19 +731,19 @@
     {
       "gameNumber": 16,
       "gameName": "Pick 3",
-      "drawId": 22703,
+      "drawId": 22705,
       "drawingSession": "MIDDAY",
-      "drawDate": "2026-11-11",
+      "drawDate": "2026-11-12",
       "sourcePublicationDate": null,
-      "reportedWinners": 1443,
-      "reportedPayout": 129780,
+      "reportedWinners": 1016,
+      "reportedPayout": 137350,
       "prizeBasis": "Source-listed tier amounts; not verified cash claims or retailer locations.",
       "tiers": [
         [
           "FRONT PAIR",
           "$30",
-          "1",
-          "$30"
+          "0",
+          "$0"
         ],
         [
           "BACK PAIR",
@@ -754,20 +754,20 @@
         [
           "SPLIT PAIR",
           "$30",
-          "5",
-          "$150"
+          "0",
+          "$0"
         ],
         [
           "STRAIGHT",
           "$300",
-          "87",
-          "$26,100"
+          "100",
+          "$30,000"
         ],
         [
           "BOX 6",
           "$50",
-          "1,225",
-          "$61,250"
+          "706",
+          "$35,300"
         ],
         [
           "BOX 3",
@@ -778,8 +778,8 @@
         [
           "STRAIGHT/BOX 6",
           "$350",
-          "95",
-          "$33,250"
+          "181",
+          "$63,350"
         ],
         [
           "STRAIGHT/BOX 3",
@@ -790,8 +790,8 @@
         [
           "SUPER STRAIGHT 6",
           "$300",
-          "30",
-          "$9,000"
+          "29",
+          "$8,700"
         ],
         [
           "SUPER STRAIGHT 3",
@@ -811,8 +811,8 @@
       "reportedTotals": [
         "Total",
         "",
-        "1,443",
-        "$129,780"
+        "1,016",
+        "$137,350"
       ],
       "tableNote": "Source-listed tier amounts; not verified cash claims or retailer locations."
     },
@@ -907,31 +907,31 @@
     {
       "gameNumber": 17,
       "gameName": "Pick 4",
-      "drawId": 21131,
+      "drawId": 21133,
       "drawingSession": "MIDDAY",
-      "drawDate": "2026-11-11",
+      "drawDate": "2026-11-12",
       "sourcePublicationDate": null,
-      "reportedWinners": 70,
-      "reportedPayout": 16800,
+      "reportedWinners": 146,
+      "reportedPayout": 36500,
       "prizeBasis": "Source-listed tier amounts; not verified cash claims or retailer locations.",
       "tiers": [
         [
           "STRAIGHT",
           "$2,500",
-          "2",
-          "$5,000"
+          "1",
+          "$2,500"
         ],
         [
           "BOX 24",
           "$100",
-          "66",
-          "$6,600"
+          "0",
+          "$0"
         ],
         [
           "BOX 12",
           "$200",
-          "0",
-          "$0"
+          "143",
+          "$28,600"
         ],
         [
           "BOX 6",
@@ -948,14 +948,14 @@
         [
           "STRAIGHT/BOX 24",
           "$2,600",
-          "2",
-          "$5,200"
+          "0",
+          "$0"
         ],
         [
           "STRAIGHT/BOX 12",
           "$2,700",
-          "0",
-          "$0"
+          "2",
+          "$5,400"
         ],
         [
           "STRAIGHT/BOX 6",
@@ -981,8 +981,8 @@
       "reportedTotals": [
         "Total",
         "",
-        "70",
-        "$16,800"
+        "146",
+        "$36,500"
       ],
       "tableNote": "Source-listed tier amounts; not verified cash claims or retailer locations."
     },
@@ -1944,13 +1944,13 @@
       "GAME_NUMBER": [
         16
       ],
-      "DRAW_ID": 22703,
+      "DRAW_ID": 22705,
       "PAYOUT": "$0",
       "TIER_LIST": [
         [
           {
             "TIER_ID": 1,
-            "TIER_WINNER_COUNT": 1,
+            "TIER_WINNER_COUNT": 0,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 30,
             "TIER_DESCRIPTION": "FRONT PAIR"
@@ -1964,21 +1964,21 @@
           },
           {
             "TIER_ID": 3,
-            "TIER_WINNER_COUNT": 5,
+            "TIER_WINNER_COUNT": 0,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 30,
             "TIER_DESCRIPTION": "SPLIT PAIR"
           },
           {
             "TIER_ID": 4,
-            "TIER_WINNER_COUNT": 87,
+            "TIER_WINNER_COUNT": 100,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 300,
             "TIER_DESCRIPTION": "STRAIGHT"
           },
           {
             "TIER_ID": 5,
-            "TIER_WINNER_COUNT": 1225,
+            "TIER_WINNER_COUNT": 706,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 50,
             "TIER_DESCRIPTION": "BOX 6"
@@ -1992,7 +1992,7 @@
           },
           {
             "TIER_ID": 7,
-            "TIER_WINNER_COUNT": 95,
+            "TIER_WINNER_COUNT": 181,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 350,
             "TIER_DESCRIPTION": "STRAIGHT/BOX 6"
@@ -2006,7 +2006,7 @@
           },
           {
             "TIER_ID": 9,
-            "TIER_WINNER_COUNT": 30,
+            "TIER_WINNER_COUNT": 29,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 300,
             "TIER_DESCRIPTION": "SUPER STRAIGHT 6"
@@ -2023,22 +2023,22 @@
       "DRAW_VALUES": [
         {
           "DRAW_NUMBER_POSITION": 1,
-          "DRAW_VALUE": 2
-        },
-        {
-          "DRAW_NUMBER_POSITION": 2,
           "DRAW_VALUE": 7
         },
         {
+          "DRAW_NUMBER_POSITION": 2,
+          "DRAW_VALUE": 2
+        },
+        {
           "DRAW_NUMBER_POSITION": 3,
-          "DRAW_VALUE": 5
+          "DRAW_VALUE": 0
         }
       ],
       "SPECIAL_ARGS": {
-        "TOTAL_WINNERS": 1443,
-        "TOTAL_PRIZE": "$   129,780"
+        "TOTAL_WINNERS": 1016,
+        "TOTAL_PRIZE": "$   137,350"
       },
-      "DRAW_DATE": 1794373200000,
+      "DRAW_DATE": 1794459600000,
       "GAME_NAME": [
         "PICK3"
       ]
@@ -2152,27 +2152,27 @@
       "GAME_NUMBER": [
         17
       ],
-      "DRAW_ID": 21131,
+      "DRAW_ID": 21133,
       "PAYOUT": "$0",
       "TIER_LIST": [
         [
           {
             "TIER_ID": 1,
-            "TIER_WINNER_COUNT": 2,
+            "TIER_WINNER_COUNT": 1,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 2500,
             "TIER_DESCRIPTION": "STRAIGHT"
           },
           {
             "TIER_ID": 2,
-            "TIER_WINNER_COUNT": 66,
+            "TIER_WINNER_COUNT": 0,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 100,
             "TIER_DESCRIPTION": "BOX 24"
           },
           {
             "TIER_ID": 3,
-            "TIER_WINNER_COUNT": 0,
+            "TIER_WINNER_COUNT": 143,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 200,
             "TIER_DESCRIPTION": "BOX 12"
@@ -2193,14 +2193,14 @@
           },
           {
             "TIER_ID": 6,
-            "TIER_WINNER_COUNT": 2,
+            "TIER_WINNER_COUNT": 0,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 2600,
             "TIER_DESCRIPTION": "STRAIGHT/BOX 24"
           },
           {
             "TIER_ID": 7,
-            "TIER_WINNER_COUNT": 0,
+            "TIER_WINNER_COUNT": 2,
             "TIER_SPECIAL_DRAW": 0,
             "TIER_JACKPOT": 2700,
             "TIER_DESCRIPTION": "STRAIGHT/BOX 12"
@@ -2224,15 +2224,15 @@
       "DRAW_VALUES": [
         {
           "DRAW_NUMBER_POSITION": 1,
-          "DRAW_VALUE": 3
-        },
-        {
-          "DRAW_NUMBER_POSITION": 2,
           "DRAW_VALUE": 9
         },
         {
+          "DRAW_NUMBER_POSITION": 2,
+          "DRAW_VALUE": 2
+        },
+        {
           "DRAW_NUMBER_POSITION": 3,
-          "DRAW_VALUE": 7
+          "DRAW_VALUE": 1
         },
         {
           "DRAW_NUMBER_POSITION": 4,
@@ -2240,10 +2240,10 @@
         }
       ],
       "SPECIAL_ARGS": {
-        "TOTAL_WINNERS": 70,
-        "TOTAL_PRIZE": "$    16,800"
+        "TOTAL_WINNERS": 146,
+        "TOTAL_PRIZE": "$    36,500"
       },
-      "DRAW_DATE": 1794373200000,
+      "DRAW_DATE": 1794459600000,
       "GAME_NAME": [
         "PICK4"
       ]
@@ -2351,31 +2351,31 @@
     }
   ],
   "aggregateSnapshot": {
-    "updatedAt": "2026-11-12T07:24:43.203Z",
+    "updatedAt": "2026-11-12T20:06:50.437Z",
     "sourceUrl": "https://www.kylottery.com/apps/draw_games/pastwinning.html",
     "cadence": "Atlas refresh attempts every six hours; not a live four-minute results service. Agency publication cadence unconfirmed.",
     "reports": [
       {
         "gameNumber": 22,
         "gameName": "Keno",
-        "drawId": 1432009,
-        "drawDate": "2026-11-11",
+        "drawId": 1432160,
+        "drawDate": "2026-11-12",
         "drawTime": null,
         "sourcePublicationDate": null,
-        "reportedWinners": 2,
-        "reportedPayout": 10,
+        "reportedWinners": 40,
+        "reportedPayout": 953,
         "tiers": null,
         "coverage": "Source-reported totals for this draw only. Prize tiers, exact draw time and retailer locations are unavailable in this response. These totals cannot be independently reconciled against tiers. Not a daily total, complete history or live feed."
       },
       {
         "gameNumber": 19,
         "gameName": "Cash Pop",
-        "drawId": 763402,
-        "drawDate": "2026-11-11",
+        "drawId": 763552,
+        "drawDate": "2026-11-12",
         "drawTime": null,
         "sourcePublicationDate": null,
-        "reportedWinners": 0,
-        "reportedPayout": 0,
+        "reportedWinners": 3,
+        "reportedPayout": 29,
         "tiers": null,
         "coverage": "Source-reported totals for this draw only. Prize tiers, exact draw time and retailer locations are unavailable in this response. These totals cannot be independently reconciled against tiers. Not a daily total, complete history or live feed."
       }
@@ -2385,34 +2385,34 @@
         "GAME_NUMBER": [
           22
         ],
-        "DRAW_ID": 1432009,
+        "DRAW_ID": 1432160,
         "TIER_LIST": [
           []
         ],
         "DRAW_VALUES": [
           {
             "DRAW_NUMBER_POSITION": 1,
-            "DRAW_VALUE": 4
+            "DRAW_VALUE": 2
           },
           {
             "DRAW_NUMBER_POSITION": 2,
-            "DRAW_VALUE": 12
+            "DRAW_VALUE": 10
           },
           {
             "DRAW_NUMBER_POSITION": 3,
-            "DRAW_VALUE": 13
+            "DRAW_VALUE": 15
           },
           {
             "DRAW_NUMBER_POSITION": 4,
-            "DRAW_VALUE": 27
+            "DRAW_VALUE": 18
           },
           {
             "DRAW_NUMBER_POSITION": 5,
-            "DRAW_VALUE": 35
+            "DRAW_VALUE": 20
           },
           {
             "DRAW_NUMBER_POSITION": 6,
-            "DRAW_VALUE": 36
+            "DRAW_VALUE": 38
           },
           {
             "DRAW_NUMBER_POSITION": 7,
@@ -2424,35 +2424,35 @@
           },
           {
             "DRAW_NUMBER_POSITION": 9,
-            "DRAW_VALUE": 48
-          },
-          {
-            "DRAW_NUMBER_POSITION": 10,
-            "DRAW_VALUE": 50
-          },
-          {
-            "DRAW_NUMBER_POSITION": 11,
             "DRAW_VALUE": 51
           },
           {
-            "DRAW_NUMBER_POSITION": 12,
-            "DRAW_VALUE": 57
+            "DRAW_NUMBER_POSITION": 10,
+            "DRAW_VALUE": 54
           },
           {
-            "DRAW_NUMBER_POSITION": 13,
+            "DRAW_NUMBER_POSITION": 11,
             "DRAW_VALUE": 58
           },
           {
-            "DRAW_NUMBER_POSITION": 14,
+            "DRAW_NUMBER_POSITION": 12,
             "DRAW_VALUE": 59
           },
           {
+            "DRAW_NUMBER_POSITION": 13,
+            "DRAW_VALUE": 60
+          },
+          {
+            "DRAW_NUMBER_POSITION": 14,
+            "DRAW_VALUE": 62
+          },
+          {
             "DRAW_NUMBER_POSITION": 15,
-            "DRAW_VALUE": 66
+            "DRAW_VALUE": 64
           },
           {
             "DRAW_NUMBER_POSITION": 16,
-            "DRAW_VALUE": 70
+            "DRAW_VALUE": 66
           },
           {
             "DRAW_NUMBER_POSITION": 17,
@@ -2464,19 +2464,19 @@
           },
           {
             "DRAW_NUMBER_POSITION": 19,
-            "DRAW_VALUE": 78
+            "DRAW_VALUE": 77
           },
           {
             "DRAW_NUMBER_POSITION": 20,
-            "DRAW_VALUE": 79
+            "DRAW_VALUE": 80
           }
         ],
-        "DRAW_DATE": 1794373200000,
+        "DRAW_DATE": 1794459600000,
         "SPECIAL_ARGS": {
           "MULTIPLIER": 1,
-          "BULLSEYE": 51,
-          "TOTAL_WINNERS": 2,
-          "TOTAL_PRIZE": "$     10.00"
+          "BULLSEYE": 62,
+          "TOTAL_WINNERS": 40,
+          "TOTAL_PRIZE": "$    953.00"
         },
         "GAME_NAME": [
           "KENO"
@@ -2486,21 +2486,21 @@
         "GAME_NUMBER": [
           19
         ],
-        "DRAW_ID": 763402,
+        "DRAW_ID": 763552,
         "TIER_LIST": [
           []
         ],
         "DRAW_VALUES": [
           {
             "DRAW_NUMBER_POSITION": 1,
-            "DRAW_VALUE": 12
+            "DRAW_VALUE": 9
           }
         ],
         "SPECIAL_ARGS": {
-          "TOTAL_WINNERS": 0,
-          "TOTAL_PRIZE": "$      0.00"
+          "TOTAL_WINNERS": 3,
+          "TOTAL_PRIZE": "$     29.00"
         },
-        "DRAW_DATE": 1794373200000,
+        "DRAW_DATE": 1794459600000,
         "GAME_NAME": [
           "CASHPOP"
         ]
