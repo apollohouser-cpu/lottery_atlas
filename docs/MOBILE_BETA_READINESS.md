@@ -1246,3 +1246,15 @@ Runner.app preparation; private evidence is in work/owner_iphone.
 Phone disconnected: this UI update has not been installed or physically verified.
 All four beta gates remain open, Delaware remains unaccepted, and its missed
 November11 deadline is unchanged. No simulator or Android was started.
+
+## November12 — owner-phone UI update installed
+
+After the owner reported reconnection, the prepared signed UI update installed
+in place successfully and devicectl confirmed ordinary app launch. No uninstall
+or app-data deletion was performed. Initial device inventory showed a disconnected
+tunnel despite wired pairing; the install command established usable connectivity.
+Physical screen controls were unavailable in the current CUA inventory, so visual
+confirmation of the three UI changes and Delaware UI/cache checks remain pending.
+This supersedes the disconnected/not-installed status above. All four broader
+beta gates remain open; no state acceptance or deadline change is claimed.
+Private install/launch results are retained under work/owner_iphone.
