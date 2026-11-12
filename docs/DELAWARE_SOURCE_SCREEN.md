@@ -1439,3 +1439,18 @@ acceptance. Delaware remains the sole active state, not accepted. The deadline
 was missed and is not extended. Twenty-two states remain accepted;23 unfinished.
 The already-requested phone reconnection remains pending; no repeated request,
 new state activation, or broader mobile readiness claim is made.
+
+## November12 — physical release evidence supersedes disconnected status
+
+The ordinary signed release was installed in place and launched on the owner
+phone. Owner confirmed Delaware Drawings/Scratch content, separate Double Play,
+Play3/4/5 DAY/NIGHT groups, Rules/Reports, official-source returns, and
+Scratch443/504/528 detail scrolling and coverage/closeouts navigation without
+reported clipping. Private device preferences contain the exact940,658-byte
+reviewed release, SHA256
+`e36c696497328a752c1731498d8713e8963c99c2e8898389d0efe6b45841eab6`.
+This is release-use evidence, not newer source acquisition. Source dates and
+exclusions remain unchanged. The owner deferred the offline check before a Mac
+update; landscape and actual iOS enlarged-text checks also remain pending.
+After resumption, PNY and Xcode paths are accessible. Delaware stays active and
+unaccepted with the original missed deadline unchanged.

@@ -1287,3 +1287,12 @@ Live, repository and installed-build bundle bytes match; no source dates advance
 Detail/source/layout and physical offline retention checks remain pending.
 Evidence is private under work/owner_iphone/delaware_20261112. No acceptance,
 deadline extension or beta readiness is inferred from these bounded checks.
+
+## November12 — resumed after owner Mac update
+
+PNY is mounted and the existing Xcode developer path is accessible. Owner
+Delaware detail/source confirmations are recorded in DELAWARE_ACCEPTANCE.md.
+Offline restart was explicitly deferred by the owner before shutdown; no failed
+app behavior is inferred. Landscape/actual iOS enlarged-text observations remain
+pending. Do not repeat the completed map UI or Delaware basic-route checks.
+All four broader beta gates remain open.
