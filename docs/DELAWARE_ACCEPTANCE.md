@@ -7,8 +7,10 @@ owner phone. The owner confirmed Delaware Drawings and Scratch both display
 Delaware content. A private app-preferences export after those visits contains
 the exact reviewed940,658-byte release, matching SHA256
 `e36c696497328a752c1731498d8713e8963c99c2e8898389d0efe6b45841eab6`.
-Independent live/bundle checks match again. Detail/source/layout and offline
-failure-retention observations remain pending. No acceptance or deadline extension.
+Independent live/bundle checks match again. Owner also confirms separate Double Play, Play3/4/5 DAY/NIGHT groups,
+Rules/Reports, official-source returns, Scratch443/504/528 detail scrolling,
+and coverage/closeouts without reported clipping/navigation problems. Landscape,
+actual iOS enlarged text and offline failure-retention observations remain pending. No acceptance or deadline extension.
 Historical disconnected/prepared-only entries below are superseded by this
 checkpoint and retained as evidence history.
 
@@ -1426,3 +1428,17 @@ live bytes. Personal provisioning expires November14. The paired owner phone is
 disconnected, so installation and physical UI/cache evidence remain pending.
 Prepared install is ready; owner reconnection is needed for that verification.
 No simulator/Android launch, data uninstall, paid enrollment or attestation.
+
+## November12 — owner detail and official-source confirmations
+
+Owner confirmed on the physical phone: Double Play remains separate from
+Powerball; Play3/4/5 DAY/NIGHT groups display; Rules/Reports open; an official
+draw source opens and returns correctly. Owner also confirmed searching/opening
+Scratch443,504,528, scrolling their details, opening/returning from official
+sources, and opening coverage/closeouts, without reported clipping/navigation
+problems. This is owner-reported physical evidence, not an agent screenshot
+review or a new source-semantic audit. The previously reviewed exclusions and
+source dates remain unchanged. Offline restart/retention and landscape/actual
+iOS enlarged-text checks have been requested and remain pending. No acceptance
+or deadline extension. Private structured observation record is retained under
+work/owner_iphone/delaware_20261112.
