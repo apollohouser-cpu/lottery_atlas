@@ -1224,3 +1224,25 @@ live bytes. Personal provisioning expires November14. The paired owner phone is
 disconnected, so installation and physical UI/cache evidence remain pending.
 Prepared install is ready; owner reconnection is needed for that verification.
 No simulator/Android launch, data uninstall, paid enrollment or attestation.
+
+## November12 — owner-requested map UI changes prepared
+
+The national game menu is unchanged. State views now limit game categories to
+state offerings and retained category evidence, independently of the timeline;
+an incompatible inherited selection resets to All Games. Map rotation is disabled
+while panning and pinch zoom remain enabled. Rankings reserve five row slots,
+including the honest empty-results message, so changes from five to two to zero
+results do not reduce page scroll extent. No placeholder winners are added.
+
+Twenty-four focused and existing regression tests pass, including state filters,
+national menu preservation, map gesture flags, timeline controls, and stable
+scroll offsets at normal and explicit2x text for state and county rankings.
+Targeted analysis of new service/card/tests is clean; broader touched-map analysis
+retains five existing style/deprecation notices. Signed ordinary iOS release build
+completed in55.6s (92.8MB), deep/strict signature verified, and embedded Delaware
+release bytes remain unchanged. This prepared build supersedes the prior local
+Runner.app preparation; private evidence is in work/owner_iphone.
+
+Phone disconnected: this UI update has not been installed or physically verified.
+All four beta gates remain open, Delaware remains unaccepted, and its missed
+November11 deadline is unchanged. No simulator or Android was started.

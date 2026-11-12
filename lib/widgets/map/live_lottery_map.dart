@@ -33,6 +33,7 @@ import '../../services/lottery_activity_feed_service.dart';
 import '../../services/lottery_activity_repository.dart';
 import '../../services/map_focus_service.dart';
 import '../../services/map_ranking_service.dart';
+import '../../services/state_game_filter_service.dart';
 import 'north_carolina_scratch_catalog_sheet.dart';
 import '../../services/south_carolina_lottery_map_filter_service.dart';
 import '../../services/south_carolina_scratch_catalog.dart';
@@ -461,7 +462,16 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   }
 
   void _openDelawareCoverage({bool products = false}) {
-    Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => Scaffold(body: DelawareCoverageView(loader: DelawareCoverageLoader.published(), products: products))));
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => Scaffold(
+          body: DelawareCoverageView(
+            loader: DelawareCoverageLoader.published(),
+            products: products,
+          ),
+        ),
+      ),
+    );
   }
 
   void _openArizonaCoverage({bool products = false}) {
@@ -4618,6 +4628,16 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
   @override
   Widget build(BuildContext context) {
+    // State changes can arrive from map taps, search, favorites or rankings.
+    // Normalize once before computing any visible activity for the new state.
+    final game = StateGameFilterService.normalize(
+      _selectedStateName,
+      _filterState.game,
+    );
+    if (game != _filterState.game) {
+      _filterState = _filterState.copyWith(game: game);
+      _selectedStateActivityGameName = null;
+    }
     final phoneLayout =
         MediaQuery.sizeOf(context).width < 600 ||
         MediaQuery.sizeOf(context).height < 500;
@@ -4734,7 +4754,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   });
                 },
                 interactionOptions: const InteractionOptions(
-                  flags: InteractiveFlag.all,
+                  flags: InteractiveFlag.all & ~InteractiveFlag.rotate,
                 ),
                 onPointerHover: (_, point) =>
                     _updateHoveredStateFromMapPoint(point),

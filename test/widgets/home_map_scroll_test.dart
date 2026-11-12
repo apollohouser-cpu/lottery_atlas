@@ -3,6 +3,7 @@ import 'dart:ui' show PointerDeviceKind;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter_map/flutter_map.dart';
 import 'package:lottery_atlas/main.dart';
 import 'package:shared_preferences_platform_interface/in_memory_shared_preferences_async.dart';
 import 'package:shared_preferences_platform_interface/shared_preferences_async_platform_interface.dart';
@@ -27,6 +28,16 @@ void main() {
     addTearDown(() => tester.binding.setSurfaceSize(null));
     await tester.pumpWidget(const LotteryAtlasApp());
     await tester.pump(const Duration(seconds: 2));
+    final map = tester.widget<FlutterMap>(find.byType(FlutterMap));
+    expect(map.options.interactionOptions.flags & InteractiveFlag.rotate, 0);
+    expect(
+      map.options.interactionOptions.flags & InteractiveFlag.pinchZoom,
+      InteractiveFlag.pinchZoom,
+    );
+    expect(
+      map.options.interactionOptions.flags & InteractiveFlag.drag,
+      InteractiveFlag.drag,
+    );
     final mouse = await tester.createGesture(kind: PointerDeviceKind.mouse);
     await mouse.addPointer(location: Offset.zero);
     await mouse.moveTo(const Offset(400, 350));

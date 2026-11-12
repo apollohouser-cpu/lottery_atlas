@@ -18,6 +18,11 @@ class MostWinningStateCard extends StatelessWidget {
       valueListenable: MapRankingService.snapshot,
       builder: (context, snapshot, _) {
         final rankings = MapRankingService.rankings(snapshot);
+        // Reserve all five slots even when a timeline frame has no results.
+        // Otherwise the home ListView clamps its offset as this card shrinks.
+        final scaler = MediaQuery.textScalerOf(context);
+        final rowHeight = (scaler.scale(16) * 1.5 + scaler.scale(10) * 1.5 + 22)
+            .clamp(64.0, double.infinity);
         return Container(
           margin: const EdgeInsets.symmetric(horizontal: 16),
           padding: const EdgeInsets.fromLTRB(14, 14, 14, 10),
@@ -124,31 +129,50 @@ class MostWinningStateCard extends StatelessWidget {
                     valueListenable: StateWinningTicketTotalService.totals,
                     builder: (context, totals, _) => _officialTotals(totals),
                   ),
-                if (rankings.isEmpty)
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 24),
-                    child: Row(
-                      children: [
-                        Icon(Icons.info_outline_rounded, color: Colors.white38),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Text(
-                            'No verified activity matches the current map and timeline filters.',
-                            style: TextStyle(color: Colors.white60),
+                SizedBox(
+                  key: const ValueKey('ranking-slots'),
+                  height: rowHeight * 5,
+                  child: rankings.isEmpty
+                      ? const Align(
+                          alignment: Alignment.topLeft,
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(vertical: 24),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.info_outline_rounded,
+                                  color: Colors.white38,
+                                ),
+                                SizedBox(width: 10),
+                                Expanded(
+                                  child: Text(
+                                    'No verified activity matches the current map and timeline filters.',
+                                    style: TextStyle(color: Colors.white60),
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
+                        )
+                      : Column(
+                          children: rankings.indexed
+                              .map(
+                                (ranked) => SizedBox(
+                                  height: rowHeight,
+                                  child: Center(
+                                    child: _rankingRow(
+                                      snapshot: snapshot,
+                                      rank: ranked.$1 + 1,
+                                      entry: ranked.$2,
+                                      showDivider:
+                                          ranked.$1 < rankings.length - 1,
+                                    ),
+                                  ),
+                                ),
+                              )
+                              .toList(),
                         ),
-                      ],
-                    ),
-                  )
-                else
-                  ...rankings.indexed.map(
-                    (ranked) => _rankingRow(
-                      snapshot: snapshot,
-                      rank: ranked.$1 + 1,
-                      entry: ranked.$2,
-                      showDivider: ranked.$1 < rankings.length - 1,
-                    ),
-                  ),
+                ),
               ],
             ),
           ),

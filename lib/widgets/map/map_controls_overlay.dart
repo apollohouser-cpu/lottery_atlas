@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:latlong2/latlong.dart';
 
 import '../../models/state_model.dart';
+import '../../services/state_game_filter_service.dart';
 import '../../services/lottery_activity_repository.dart';
 import 'horizontal_heat_legend.dart';
 import 'map_detail_mode.dart';
@@ -220,7 +221,13 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
   }
 
   Future<void> _selectGame() async {
-    var selectedGame = _filterState.game;
+    final availableGames = StateGameFilterService.forState(
+      widget.selectedStateName,
+    );
+    var selectedGame = StateGameFilterService.normalize(
+      widget.selectedStateName,
+      _filterState.game,
+    );
     var selectedActivityScope = _filterState.activityScope;
     final highestPublishedPrize = LotteryActivityRepository.activity.fold<int>(
       1,
@@ -268,7 +275,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
                   child: SingleChildScrollView(
                     child: Column(
                       children: [
-                        ...LotteryGame.values.map((game) {
+                        ...availableGames.map((game) {
                           final isSelected = game == selectedGame;
                           return ListTile(
                             shape: RoundedRectangleBorder(
