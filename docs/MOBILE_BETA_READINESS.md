@@ -1274,3 +1274,16 @@ ordinary launch on the owner phone succeeded; no uninstall or data deletion.
 Private build/install/launch evidence: work/owner_iphone/games_state_*_20261112.
 Owner visual confirmation remains pending. No state acceptance or broader beta
 gate is claimed by this UI fix.
+
+## November12 — owner UI confirmation and Delaware phone cache
+
+Owner confirms the requested map UI changes and corrected bottom Games state
+selection meet requirements. This closes that specific owner UI review, not the
+four broader beta gates. Owner also confirms Delaware map Drawings and Scratch
+open Delaware content. A private read-only app-preferences export confirms the
+released Delaware cache is940,658 bytes with exact reviewed release SHA256
+`e36c696497328a752c1731498d8713e8963c99c2e8898389d0efe6b45841eab6`.
+Live, repository and installed-build bundle bytes match; no source dates advanced.
+Detail/source/layout and physical offline retention checks remain pending.
+Evidence is private under work/owner_iphone/delaware_20261112. No acceptance,
+deadline extension or beta readiness is inferred from these bounded checks.

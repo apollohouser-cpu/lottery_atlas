@@ -2,12 +2,15 @@
 
 Status: **ACTIVE — not accepted; November11 release deadline missed, no extension**.
 
-Pre-deadline checkpoint — November10 evening: reviewed release published and exact
-live/bundle equality verified; ordinary routes connected; signed iOS build ready.
-All39 instant images screened (33 validated structures, six explicit exclusions).
-77 focused Python tests pass. Physical installation/UI/cache verification awaits
-the already-requested owner-phone reconnection. No deadline extension or state
-acceptance. Historical entries below retain the original evidence sequence.
+Current checkpoint — November12: the signed ordinary app is installed on the
+owner phone. The owner confirmed Delaware Drawings and Scratch both display
+Delaware content. A private app-preferences export after those visits contains
+the exact reviewed940,658-byte release, matching SHA256
+`e36c696497328a752c1731498d8713e8963c99c2e8898389d0efe6b45841eab6`.
+Independent live/bundle checks match again. Detail/source/layout and offline
+failure-retention observations remain pending. No acceptance or deadline extension.
+Historical disconnected/prepared-only entries below are superseded by this
+checkpoint and retained as evidence history.
 
 ## November 11 — release deadline missed
 
@@ -63,14 +66,15 @@ The prior agency inquiry remains separate. No new message, fee, or attestation.
 ## Acceptance gates
 
 - [x] Full current/retired/add-on/history scope and explicit gaps fixed November6 at15:49EST.
-- [ ] Repeatable permitted acquisition and strict semantic parsing.
-- [ ] Coupled publication, exact provenance and retained bytes/dates on failure.
-- [ ] Ordinary app results/products/rules and unavailable-feature disclosures.
+- [x] Repeatable permitted acquisition and strict semantic parsing; reviewed bounded release with explicit exclusions.
+- [x] Coupled publication, exact provenance and validated publication-failure retention; physical cache-failure check tracked separately below.
+- [x] Ordinary app integration for results/products/rules and unavailable-feature disclosures; owner confirms primary Drawings/Scratch routes, detail observations pending below.
 - [ ] Bounded native paths/layout/source returns and real-cache failure evidence.
 - [ ] Tests, live-byte equality, ordinary app restoration and final decision.
 
-No Delaware draw feed/build/acceptance claimed. iPhone17e ordinary app remains
-running, Android stopped. All four mobile beta prerequisites remain open.
+Reviewed Delaware release is published and installed; acceptance is not yet
+claimed. Simulator and Android stay stopped. All four mobile beta prerequisites
+remain open.
 
 ## November 6 — linked source capture and current catalog validation
 
