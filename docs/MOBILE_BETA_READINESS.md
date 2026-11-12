@@ -1258,3 +1258,19 @@ confirmation of the three UI changes and Delaware UI/cache checks remain pending
 This supersedes the disconnected/not-installed status above. All four broader
 beta gates remain open; no state acceptance or deadline change is claimed.
 Private install/launch results are retained under work/owner_iphone.
+
+## November12 — Games tab preserves selected state
+
+Fixed the bottom Games route losing the map's selected state and displaying
+nationwide activity (including Texas after selecting South Carolina). The route
+now carries the current map state; activity, search and category choices remain
+scoped to it. The national map retains nationwide Games behavior. States without
+matching mapped activity show an empty result, not another state's records.
+
+Seven widget tests passed, including Texas → South Carolina → empty Delaware →
+national navigation and the existing map UI regressions. Targeted analysis and
+signed release build passed. Signature verification, in-place installation and
+ordinary launch on the owner phone succeeded; no uninstall or data deletion.
+Private build/install/launch evidence: work/owner_iphone/games_state_*_20261112.
+Owner visual confirmation remains pending. No state acceptance or broader beta
+gate is claimed by this UI fix.

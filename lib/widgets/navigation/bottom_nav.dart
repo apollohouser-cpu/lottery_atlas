@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../screens/favorites/favorites_screen.dart';
 import '../../screens/games/games_screen.dart';
+import '../../services/map_ranking_service.dart';
 import '../../screens/stats/stats_screen.dart';
 import '../../screens/settings/settings_screen.dart';
 
@@ -48,9 +49,13 @@ class _BottomNavState extends State<BottomNav> {
         _activeIndex = 1;
       });
 
-      await Navigator.of(
-        context,
-      ).push(MaterialPageRoute(builder: (_) => const GamesScreen()));
+      await Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (_) => GamesScreen(
+            stateName: MapRankingService.snapshot.value.stateName,
+          ),
+        ),
+      );
 
       if (!mounted) {
         return;

@@ -5,15 +5,19 @@ import '../../models/favorite_lottery_game.dart';
 import '../../models/lottery_activity.dart';
 import '../../services/favorite_games_service.dart';
 import '../../services/lottery_activity_repository.dart';
+import '../../services/state_game_filter_service.dart';
+import '../../services/state_navigation_service.dart';
 import '../../widgets/map/map_filter_state.dart';
 
 class GamesScreen extends StatefulWidget {
   const GamesScreen({
     super.key,
     this.initialGame = LotteryGame.allGames,
+    this.stateName,
   });
 
   final LotteryGame initialGame;
+  final String? stateName;
 
   @override
   State<GamesScreen> createState() => _GamesScreenState();
@@ -29,7 +33,10 @@ class _GamesScreenState extends State<GamesScreen> {
   @override
   void initState() {
     super.initState();
-    _selectedGame = widget.initialGame;
+    _selectedGame = StateGameFilterService.normalize(
+      widget.stateName,
+      widget.initialGame,
+    );
     _loadFavorites();
     FavoriteGamesService.load();
     _searchController.addListener(_refresh);
@@ -93,7 +100,13 @@ class _GamesScreenState extends State<GamesScreen> {
 
   List<LotteryActivity> get _visibleActivity {
     final query = _searchController.text.trim().toLowerCase();
+    final state = widget.stateName == null
+        ? null
+        : StateNavigationService.getStateByName(widget.stateName!);
     final activity = LotteryActivityRepository.activity.where((item) {
+      if (widget.stateName != null && item.state != state?.abbreviation) {
+        return false;
+      }
       final matchesGame =
           _selectedGame == LotteryGame.allGames || item.game == _selectedGame;
       final text =
@@ -202,7 +215,11 @@ class _GamesScreenState extends State<GamesScreen> {
       appBar: AppBar(
         backgroundColor: const Color(0xFF071827),
         foregroundColor: Colors.white,
-        title: const Text('Lottery Activity'),
+        title: Text(
+          widget.stateName == null
+              ? 'Lottery Activity'
+              : '${widget.stateName} Lottery Activity',
+        ),
       ),
       body: Column(
         children: [
@@ -233,7 +250,9 @@ class _GamesScreenState extends State<GamesScreen> {
             child: ListView(
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              children: LotteryGame.values.map((game) {
+              children: StateGameFilterService.forState(widget.stateName).map((
+                game,
+              ) {
                 final selected = game == _selectedGame;
                 return Padding(
                   padding: const EdgeInsets.only(right: 8),
