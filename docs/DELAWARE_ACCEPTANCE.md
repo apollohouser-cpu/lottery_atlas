@@ -1442,3 +1442,18 @@ source dates remain unchanged. Offline restart/retention and landscape/actual
 iOS enlarged-text checks have been requested and remain pending. No acceptance
 or deadline extension. Private structured observation record is retained under
 work/owner_iphone/delaware_20261112.
+
+## November14 — signed update and owner launch confirmation
+
+Rebuilt the ordinary iOS release and verified its signature. Installed in place
+on the owner phone. Initial launch was blocked by iOS developer trust; the owner
+explicitly trusted the developer, subsequent CLI launch succeeded, and the owner
+confirmed the app works. Renewed Personal Team provisioning expires November21
+at20:32:38UTC. Private build/install/launch evidence is retained under
+work/owner_iphone/update_20261114; no private identifiers are published.
+
+Owner selected landscape and actual iOS larger-text verification and received
+the instructions; observations remain pending. Offline restart/retention remains
+deferred. This update does not close Delaware acceptance or any broader beta
+gate, and does not extend the missed release deadline. Do not repeat completed
+trust or launch checks.
