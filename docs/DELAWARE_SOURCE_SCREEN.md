@@ -1454,3 +1454,15 @@ exclusions remain unchanged. The owner deferred the offline check before a Mac
 update; landscape and actual iOS enlarged-text checks also remain pending.
 After resumption, PNY and Xcode paths are accessible. Delaware stays active and
 unaccepted with the original missed deadline unchanged.
+
+## November14 — owner confirms landscape and iOS larger text
+
+Owner confirmed all three steps of the requested layout check: landscape on
+Delaware Drawings, Rules/Reports and Scratch detail; actual iOS Larger Text on
+those screens; readable text, scrolling and accessible Back/Close controls.
+This is owner-reported physical evidence, not an agent screenshot review.
+Do not repeat these completed checks. The response follows the layout checklist
+and does not establish the separately deferred offline restart/failure-retention
+check. That check remains pending; Delaware remains unaccepted with its original
+missed deadline unchanged. Broader mobile beta gates are not closed by this
+bounded layout confirmation.
