@@ -50,3 +50,18 @@ developed state. The September 16 APRA request remains pending.
 Six regression tests cover valid zero remaining, missing and malformed
 counts, impossible inventory, duplicate games, invalid/future dates, changed
 columns, pagination and unsupported prize labels.
+
+## November16 — amendment notice and fee estimate
+
+The agency sent an APRA amendment/clarification notice and estimated $50 for
+two hours of processing for a nonresident request. It says processing will
+begin after payment. The generic notice asks for narrowing but does not
+identify specific record categories to narrow. No records, attachment or
+specific delivery date were supplied. This supersedes the pending-response
+status above; it is not a records delivery or a denial determination.
+
+No fees are authorized. Paid processing remains on hold; no payment, portal
+resubmission or reply was made. Existing public-source coverage remains
+unchanged. The complete notification thread is retained privately under
+work/agency_email_checks/indiana_20261116; private portal links and identifiers
+are not published.
