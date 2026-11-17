@@ -1357,3 +1357,14 @@ remain open. Private build/device evidence: work/owner_iphone/map_regions_202611
 Signed ordinary iOS release build completed (93.0MB); deep/strict signature
 verification passed. All14 focused tests passed and targeted analysis reports
 no issues. Build is ready for an in-place install when the owner phone reconnects.
+
+## November17 — geographic heat update installed
+
+After the owner reconnected the iPhone, deep/strict signature verification
+passed again. The prepared geographic heat and Top Five update installed
+in place successfully and ordinary CLI launch succeeded. No uninstall or
+data deletion. Private install/launch evidence remains under
+work/owner_iphone/map_regions_20261117. Owner visual review of the new map
+and ranking controls remains pending; CLI launch is not screenshot or
+interaction evidence. Delaware offline verification and broader beta gates
+remain open. No repeat developer-trust or sign-in request was needed.
