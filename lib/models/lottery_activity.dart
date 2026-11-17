@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'south_carolina_claim_identity.dart';
 import 'package:crypto/crypto.dart';
 import 'package:latlong2/latlong.dart';
 
@@ -66,7 +67,9 @@ class LotteryActivity {
     final rawId = json['id']?.toString().trim() ?? '';
     // Normalize old bundled/cache IDs so migration neither exposes ticket
     // identifiers nor double-counts the same records beside the new feed.
-    final id = normalizeRecordId(rawId);
+    final id = rawId.startsWith('sc-winners-') || rawId.startsWith('sc-claim-')
+        ? southCarolinaClaimId(json)
+        : normalizeRecordId(rawId);
     final city = json['city']?.toString().trim() ?? '';
     final county = json['county']?.toString().trim() ?? '';
     final state = json['state']?.toString().trim().toUpperCase() ?? '';

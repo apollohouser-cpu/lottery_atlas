@@ -172,3 +172,25 @@ records using the known cashing-retailer, cancelled-ticket and Pick 3/4 unit
 limitations; do not infer missing tiers, dates, correction rules or selling
 locations. No further compilation was requested, and accepted supported-app
 coverage and public data remain unchanged.
+
+## November17 — rolling-report history retention defect
+
+Owner reported sparse January–August map activity after the geographic heat UI
+update. Audit found the Winners Report importer replaced the entire snapshot on
+each refresh. Earlier verified June–August claims aged out of the rolling report.
+Recovered from 122 repository snapshots, replayed chronologically: each snapshot
+replaces overlapping dates, while earlier dates are retained. Private source
+commit/hash audit: work/sc_history_recovery_20261117/audit.json.
+
+The retained retailer report now contains 19,812 claim groups, June8–November13,
+including June3,314, July3,397 and August3,738 (8,963 restored groups overall).
+These remain partial $500-plus geocoded claims, not all prizes or unique people.
+January–May geographic coverage is still sparse; no complete 2026 archive was
+established. Statewide draw reports are not geographic claim records.
+
+Importer now preserves earlier claims, replaces overlap (including removals),
+rejects missing/regressed source dates, and uses semantic claim-group identity
+instead of rolling row numbers. App normalizes older bundle/cache IDs to prevent
+migration duplicates. Original claim days and per-record snapshot dates remain;
+restoration does not claim a new official observation. No unrelated state records
+changed. Existing Xs and Os classification also applies to retained claims.

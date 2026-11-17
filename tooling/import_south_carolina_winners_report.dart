@@ -6,6 +6,9 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'source_http_fetch.dart';
+// Standalone Dart importer also runs without Flutter/package resolution in CI.
+// ignore: avoid_relative_lib_imports
+import '../lib/models/south_carolina_claim_identity.dart';
 
 const _reportUrl = 'https://www.sceducationlottery.com/Games/WinnersReport';
 const _censusBatchUrl =
@@ -339,6 +342,34 @@ Future<Map<String, dynamic>?> _readExisting(File file) async {
   return decoded is Map ? Map<String, dynamic>.from(decoded) : null;
 }
 
+/// Keep only records outside the new report window. Inside it, the source is
+/// authoritative, including corrections, removals and geocode exclusions.
+List<Map<String, dynamic>> retainSouthCarolinaHistory(
+  List<Map<String, dynamic>> previous,
+  List<Map<String, dynamic>> current,
+  DateTime reportStart,
+) {
+  if (current.isEmpty) throw const FormatException('Empty SC refresh');
+  final rows = <String, Map<String, dynamic>>{};
+  for (final row in [
+    ...previous.where(
+      (r) => DateTime.parse(r['drawDate']).isBefore(reportStart),
+    ),
+    ...current,
+  ]) {
+    final id = southCarolinaClaimId(row);
+    rows[id] = {
+      ...row,
+      'id': id,
+      'game': southCarolinaGameType(row['gameName'] as String),
+    };
+  }
+  return rows.values.toList()..sort((a, b) {
+    final date = a['drawDate'].toString().compareTo(b['drawDate'].toString());
+    return date != 0 ? date : a['id'].toString().compareTo(b['id'].toString());
+  });
+}
+
 Future<void> main(List<String> arguments) async {
   try {
     final options = _arguments(arguments);
@@ -356,6 +387,14 @@ Future<void> main(List<String> arguments) async {
       caseSensitive: false,
     ).firstMatch(report)?.group(1);
     final sourceDate = dateText == null ? null : _claimDate(dateText);
+    final previousSourceDate = DateTime.tryParse(
+      existing?['sourceLastUpdated']?.toString() ?? '',
+    );
+    if (sourceDate == null ||
+        (previousSourceDate != null &&
+            sourceDate.isBefore(previousSourceDate))) {
+      _fail('Missing or regressed SC source date; preserving saved report.');
+    }
     final activities = <Map<String, Object>>[];
     var skipped = 0;
     for (var index = 0; index < claims.length; index += 1) {
@@ -382,22 +421,37 @@ Future<void> main(List<String> arguments) async {
         'prizeAmount': claim.prize,
         'sourceUrl': _reportUrl,
         'sourceLabel': _sourceLabel,
+        'sourceSnapshotDate': sourceDate.toIso8601String(),
       });
     }
     if (activities.isEmpty) _fail('No SC claims could be exactly geocoded.');
+    final reportStart = claims
+        .map((c) => c.date)
+        .reduce((a, b) => a.isBefore(b) ? a : b);
+    final retained = retainSouthCarolinaHistory(
+      [
+        for (final row in (existing?['activities'] as List? ?? []))
+          Map<String, dynamic>.from(row),
+      ],
+      activities.map((r) => Map<String, dynamic>.from(r)).toList(),
+      reportStart,
+    );
     final sortedCoordinates = coordinates.keys.toList()..sort();
     final geocodeCache = <String, Object>{
       for (final key in sortedCoordinates) key: coordinates[key]!,
     };
     final rendered = <String, Object>{
       'source': _sourceLabel,
-      'updatedAt': (sourceDate ?? DateTime.now().toUtc()).toIso8601String(),
-      if (sourceDate != null) 'sourceLastUpdated': sourceDate.toIso8601String(),
+      'updatedAt': sourceDate.toIso8601String(),
+      'sourceLastUpdated': sourceDate.toIso8601String(),
       'coverage':
-          'Current claimed SC Lottery prizes of \$500 and above from the official Winners Report. '
-          '${activities.length} mapped claim groups are included; $skipped claims were excluded because their official retailer address did not receive an exact U.S. Census geocode.',
+          'Retained published SC Lottery claims and the current rolling report: prizes of \$500 and above from the official Winners Report. '
+          '${retained.length} mapped claim groups are included (${activities.length} in the current report); $skipped current-report claims were excluded because their official retailer address did not receive an exact U.S. Census geocode.',
       'geocodeCache': geocodeCache,
-      'activities': activities,
+      'activities': retained,
+      'currentReportStart': reportStart.toIso8601String(),
+      'historyPolicy':
+          'Previously published records before the rolling report start are retained. Claim dates are not draw dates; missing periods are not zero wins.',
     };
     const encoder = JsonEncoder.withIndent('  ');
     final next = '${encoder.convert(rendered)}\n';

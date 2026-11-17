@@ -550,3 +550,16 @@ All existing release checklist items are reconciled to evidence above. No agency
 record, new geocoding or enhancement prerequisite was added. South Carolina closes
 before its October 3 deadline. Routine polish is backlog work; reopen only for an
 actual defect or meaningful verified data. Virginia activates after this decision.
+
+## November17 — named retention defect repaired
+
+The owner identified missing earlier map activity. Rolling-report refreshes had
+removed previously verified claims as they aged out. Repository-history recovery
+restores8,963 groups, bringing the retailer report to19,812 groups fromJune8
+throughNovember13. See SOUTH_CAROLINA_SOURCE_SCREEN.md for month counts and audit.
+The importer retains out-of-window history and replaces overlaps without summing
+snapshots; stable identities prevent bundled/remote migration duplicates.
+Eight focused retention/model/classification tests pass, and feed validation
+passes with other-state records unchanged. January–May remains sparse and is
+not described as complete. This repairs a named defect in supported SC coverage;
+Delaware remains the sole active/unaccepted state, with no deadline extension.

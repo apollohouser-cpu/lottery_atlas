@@ -1368,3 +1368,15 @@ work/owner_iphone/map_regions_20261117. Owner visual review of the new map
 and ranking controls remains pending; CLI launch is not screenshot or
 interaction evidence. Delaware offline verification and broader beta gates
 remain open. No repeat developer-trust or sign-in request was needed.
+
+## November17 — SC retained-history correction
+
+Owner feedback identified rolling-report retention loss. Restored8,963 previously
+published geocoded SC claim groups from repository history; original claim dates
+and snapshot dates retained. No complete January–May claim coverage inferred.
+App normalizes old SC row-number IDs to semantic group identities so an older
+bundle/cache cannot double-count the restored feed. Eight focused tests pass,
+including all restored IDs versus app normalization; targeted analysis is clean.
+Phone install/launch evidence will be recorded privately under
+work/sc_history_recovery_20261117. This change does not close physical offline
+verification, Delaware acceptance or any broader beta gate.
