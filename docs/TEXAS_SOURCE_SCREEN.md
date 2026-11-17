@@ -306,3 +306,29 @@ validating locations, or correction cadence. No counts, joins or public feeds
 were promoted. Texas acceptance remains closed and North Carolina remains the
 sole active state. Preserve this source-review backlog without claiming that
 Pick 3/Daily 4 summary reports are unavailable.
+
+## November17 — closed-game claim retention defect
+
+The cross-state history audit confirms a named importer defect: current-catalog
+refreshes discarded previously verified Scratch claims when games left that
+catalog. Eight archived selling-retailer reports remain publicly accessible.
+Fresh private captures verify all154 affected records by original claim date,
+exact selling address/city/ZIP and source-row multiplicity. The current catalog's
+85 exact game links omit these eight reports. These are historical claims, not
+current inventory or evidence that closed games are still on sale.
+
+Restored154 claims (8,849 retained Scratch records overall) with original
+coordinates, claim dates, prizes and report dates; appended an archived-report
+source label. Legacy IDs use the existing SHA256 normalization, never public
+pack/ticket identifiers. All prior public records remain byte-equivalent.
+Two other removed records belonging to still-listed reports were not restored:
+current-report corrections and location exclusions must remain authoritative.
+Private source hashes, transitions and bounded audit are retained under
+work/texas_history_audit_20261117; raw source identifiers stay private.
+
+Importer now retains previously verified claims for reports absent from the
+current catalog, replaces active-report records, and rejects incomplete catalogs
+or malformed archives. Two focused tests and8,849-record idempotence checks pass;
+public publisher validates36,128 records. No new phone install is necessary for
+the remote-feed restoration; device receipt/visual verification is not inferred.
+This fixes a named accepted-scope defect. Delaware remains sole active/unaccepted.

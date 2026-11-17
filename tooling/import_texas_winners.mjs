@@ -1,6 +1,7 @@
 /* Imports exact 2026 Texas Scratch top-prize selling retailers. */
 import {readFile, writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
+import {retainTexasRetiredClaims} from './texas_retired_claim_history.mjs';
 
 const catalogPath = process.argv[2];
 const directoryPath = process.argv[3];
@@ -32,13 +33,17 @@ if (!catalogPath || !directoryPath || !outputPath) {
     const key = `${canonical(retailer.address)}|${canonical(retailer.city)}|${retailer.postalCode}`;
     const list = byAddress.get(key) ?? []; list.push(retailer); byAddress.set(key, list);
   }
-  const currentHtml = await (await fetch(
+  const catalogResponse = await fetch(
     'https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/all.html',
     {headers: {'user-agent': 'LotteryAtlasOfficialDataBot/1.0'}},
-  )).text();
+  );
+  if (!catalogResponse.ok) throw Error(`Texas current catalog HTTP ${catalogResponse.status}`);
+  const currentHtml = await catalogResponse.text();
   const detailsByGame = new Map([...currentHtml.matchAll(
     /href="([^"]*details\.html_([^"]+))"[^>]*>(\d+)<\/a>/gi,
   )].map((match) => [match[3], match[1].replace('details.html_', 'retailerswhosoldtopprizes.html_')]));
+  if (detailsByGame.size < 70) throw Error('Incomplete Texas current catalog; preserve saved feed');
+  const currentReportUrls = new Set([...detailsByGame.values()].map(path => new URL(path,base).toString()));
   const activities = []; const excluded = []; const reportDates = [];
   let next = 0;
   const worker = async () => {
@@ -91,8 +96,9 @@ if (!catalogPath || !directoryPath || !outputPath) {
   excluded.sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b)));
   if (unique.length < 100) throw new Error(`Only ${unique.length} exact 2026 Texas winners qualified`);
   let previous = null;
-  try { previous = JSON.parse(await readFile(outputPath, 'utf8')); } catch (_) {}
-  const changed = JSON.stringify(previous?.activities) !== JSON.stringify(unique) ||
+  try { previous = JSON.parse(await readFile(outputPath, 'utf8')); } catch (error) { if (error.code !== 'ENOENT') throw error; }
+  const retained = retainTexasRetiredClaims(previous, unique, currentReportUrls);
+  const changed = JSON.stringify(previous?.activities) !== JSON.stringify(retained) ||
     JSON.stringify(previous?.excluded) !== JSON.stringify(excluded);
   const updatedAt = changed ? new Date().toISOString() : previous?.updatedAt ?? new Date().toISOString();
   await writeFile(outputPath, `${JSON.stringify({
@@ -100,8 +106,8 @@ if (!catalogPath || !directoryPath || !outputPath) {
     sourceUrl: 'https://www.texaslottery.com/export/sites/lottery/Games/Scratch_Offs/all.html',
     updatedAt, sourceLastUpdated: reportDates.sort().at(-1) ?? unique.at(-1).drawDate,
     latestClaimDate: unique.at(-1).drawDate,
-    coverage: `${unique.length} exact physical retailer-level 2026 Texas Scratch top-prize claims. Every record joins one official dated selling-store address to the official statewide retailer roster; unmatched or ungeocoded rows are excluded.`,
-    activities: unique, excluded,
+    coverage: `${retained.length} exact physical retailer-level 2026 Texas Scratch top-prize claims, including retained verified closed-game reports. Every record joins one official dated selling-store address to the official statewide retailer roster; unmatched or ungeocoded rows are excluded.`,
+    activities: retained, excluded,
   }, null, 2)}\n`);
   console.log(`Imported ${unique.length} Texas winner locations; excluded ${excluded.length}.`);
 } catch (error) {
