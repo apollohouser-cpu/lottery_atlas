@@ -1399,3 +1399,15 @@ warnings during this test; these do not establish a physical map failure.
 No device-refresh, visual or offline observation is inferred. Texas historical
 omissions remain under investigation; no blanket restoration is authorized by
 an absent record alone, because source corrections and exclusions must survive.
+
+## November17 — Texas retention correction published
+
+The Texas closed-game audit is resolved for the identified154 claims: correction
+1eff8cf retains eight archived-game reports after verifying their source rows.
+Two removed active-game records remain excluded because their retailer joins are
+ambiguous. Publisher44123851172 completed successfully; independent live download
+matches the reviewed feed SHA256
+9d79c7d2ffd347dfe3e16b70f1f418ae70d6274bd06cadcfc55f363a75b1dc74.
+Private deployment evidence is under work/texas_history_audit_20261117.
+No phone reinstall is needed; physical refresh/visual/offline evidence remains
+unverified. Delaware acceptance and all broader beta gates stay open.
