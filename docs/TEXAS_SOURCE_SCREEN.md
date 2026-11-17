@@ -322,7 +322,8 @@ coordinates, claim dates, prizes and report dates; appended an archived-report
 source label. Legacy IDs use the existing SHA256 normalization, never public
 pack/ticket identifiers. All prior public records remain byte-equivalent.
 Two other removed records belonging to still-listed reports were not restored:
-current-report corrections and location exclusions must remain authoritative.
+both match current exclusions for multiple exact retailer rows (ambiguous joins).
+Current-report corrections and location exclusions remain authoritative.
 Private source hashes, transitions and bounded audit are retained under
 work/texas_history_audit_20261117; raw source identifiers stay private.
 
