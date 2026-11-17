@@ -1380,3 +1380,9 @@ including all restored IDs versus app normalization; targeted analysis is clean.
 Phone install/launch evidence will be recorded privately under
 work/sc_history_recovery_20261117. This change does not close physical offline
 verification, Delaware acceptance or any broader beta gate.
+
+The signed corrected build passed deep/strict signature verification, installed
+in place, and launched successfully. Private device preferences export confirms
+19,814 SC cached records: 19,812 retained report groups plus two existing 2026
+news records. June/July/August cache counts are3,314/3,397/3,738 respectively.
+This is cache evidence, not a physical visual or offline-restart observation.
