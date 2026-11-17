@@ -67,6 +67,77 @@ void main() {
     },
   );
 
+  testWidgets('Top five switches category, product kind and actual game name', (
+    tester,
+  ) async {
+    MapRankingService.snapshot.value = MapRankingSnapshot(
+      records: [
+        LotteryActivity(
+          id: 'draw',
+          location: const LatLng(34, -81),
+          city: 'Spartanburg',
+          county: 'Spartanburg',
+          state: 'SC',
+          game: LotteryGame.powerball,
+          gameName: 'Powerball',
+          drawDate: DateTime(2026, 11, 1),
+          winningTickets: 8,
+          prizeAmount: 100,
+          retailerName: 'Draw store',
+        ),
+        LotteryActivity(
+          id: 'scratch',
+          location: const LatLng(34, -81),
+          city: 'Spartanburg',
+          county: 'Spartanburg',
+          state: 'SC',
+          game: LotteryGame.scratchOff,
+          gameName: 'Carolina Gold',
+          drawDate: DateTime(2026, 11, 1),
+          winningTickets: 3,
+          prizeAmount: 100,
+          retailerName: 'Scratch store',
+        ),
+      ],
+      dateRangeStart: DateTime(2026, 11, 1),
+      dateRangeEnd: DateTime(2026, 11, 2),
+      countyIds: const {},
+      stateName: 'South Carolina',
+      stateAbbreviation: 'SC',
+    );
+    await tester.pumpWidget(
+      const MaterialApp(
+        home: Scaffold(
+          body: SingleChildScrollView(child: MostWinningStateCard()),
+        ),
+      ),
+    );
+    await tester.tap(find.byKey(const ValueKey('ranking-category')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Games').last);
+    await tester.pumpAndSettle();
+    expect(find.text('MOST WINNING GAMES · South Carolina'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('ranking-game-kind')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Scratch-Offs').last);
+    await tester.pumpAndSettle();
+    final names = tester.widget<DropdownButton<String>>(
+      find.byKey(const ValueKey('ranking-game-name')),
+    );
+    expect(names.items!.map((e) => e.value), [null, 'Carolina Gold']);
+    await tester.tap(find.byKey(const ValueKey('ranking-game-name')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Carolina Gold').last);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('ranking-category')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Retailers').last);
+    await tester.pumpAndSettle();
+    expect(find.text('Scratch store'), findsOneWidget);
+    expect(find.text('Draw store'), findsNothing);
+    expect(tester.takeException(), isNull);
+  });
+
   for (final scale in [1.0, 2.0]) {
     for (final county in [false, true]) {
       testWidgets(

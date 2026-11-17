@@ -1,22 +1,52 @@
+import '../map/map_filter_state.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-import '../../models/state_winning_ticket_total.dart';
 import '../../services/map_focus_service.dart';
 import '../../services/map_ranking_service.dart';
-import '../../services/state_navigation_service.dart';
-import '../../services/state_winning_ticket_total_service.dart';
 
 /// Timeline-aware top-five rankings for the exact activity visible on the map.
 /// The same card drills from states to counties, cities, retailers, and games.
-class MostWinningStateCard extends StatelessWidget {
+class MostWinningStateCard extends StatefulWidget {
   const MostWinningStateCard({super.key});
 
+  @override
+  State<MostWinningStateCard> createState() => _MostWinningStateCardState();
+}
+
+class _MostWinningStateCardState extends State<MostWinningStateCard> {
+  MapRankingLevel? _level;
+  RankingGameKind _kind = RankingGameKind.all;
+  String? _gameName;
+  String? _state;
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<MapRankingSnapshot>(
       valueListenable: MapRankingService.snapshot,
-      builder: (context, snapshot, _) {
+      builder: (context, source, _) {
+        if (_state != source.stateName) {
+          _state = source.stateName;
+          _level = null;
+          _kind = RankingGameKind.all;
+          _gameName = null;
+        }
+        final level = source.stateName == null
+            ? MapRankingLevel.state
+            : (_level ?? source.level);
+        final snapshot =
+            _level == null && _kind == RankingGameKind.all && _gameName == null
+            ? source
+            : source.forRanking(level, kind: _kind, gameName: _gameName);
+        final available =
+            source
+                .forRanking(level, kind: _kind)
+                .records
+                .map((r) => r.gameName ?? r.game.label)
+                .toSet()
+                .toList()
+              ..sort();
+        if (_gameName != null && !available.contains(_gameName)) {
+          available.add(_gameName!);
+        }
         final rankings = MapRankingService.rankings(snapshot);
         // Reserve all five slots even when a timeline frame has no results.
         // Otherwise the home ListView clamps its offset as this card shrinks.
@@ -124,11 +154,97 @@ class MostWinningStateCard extends StatelessWidget {
                       style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
                     ),
                   ),
-                if (snapshot.level == MapRankingLevel.state)
-                  ValueListenableBuilder<List<StateWinningTicketTotal>>(
-                    valueListenable: StateWinningTicketTotalService.totals,
-                    builder: (context, totals, _) => _officialTotals(totals),
+                if (source.stateName != null)
+                  Wrap(
+                    spacing: 12,
+                    runSpacing: 8,
+                    children: [
+                      DropdownButton<MapRankingLevel>(
+                        key: const ValueKey('ranking-category'),
+                        isExpanded: true,
+                        itemHeight: null,
+                        value: level,
+                        dropdownColor: const Color(0xFF0B1D2C),
+                        items: const [
+                          DropdownMenuItem(
+                            value: MapRankingLevel.county,
+                            child: Text('Counties'),
+                          ),
+                          DropdownMenuItem(
+                            value: MapRankingLevel.city,
+                            child: Text('Cities / towns'),
+                          ),
+                          DropdownMenuItem(
+                            value: MapRankingLevel.game,
+                            child: Text('Games'),
+                          ),
+                          DropdownMenuItem(
+                            value: MapRankingLevel.retailer,
+                            child: Text('Retailers'),
+                          ),
+                        ],
+                        onChanged: (v) => setState(() => _level = v),
+                      ),
+                      DropdownButton<RankingGameKind>(
+                        key: const ValueKey('ranking-game-kind'),
+                        isExpanded: true,
+                        itemHeight: null,
+                        value: _kind,
+                        dropdownColor: const Color(0xFF0B1D2C),
+                        items: const [
+                          DropdownMenuItem(
+                            value: RankingGameKind.all,
+                            child: Text('All games'),
+                          ),
+                          DropdownMenuItem(
+                            value: RankingGameKind.drawings,
+                            child: Text('Drawings'),
+                          ),
+                          DropdownMenuItem(
+                            value: RankingGameKind.scratchOff,
+                            child: Text('Scratch-Offs'),
+                          ),
+                        ],
+                        onChanged: (v) => setState(() {
+                          _level = level;
+                          _kind = v!;
+                          _gameName = null;
+                        }),
+                      ),
+                      SizedBox(
+                        width: 240,
+                        child: DropdownButton<String>(
+                          key: const ValueKey('ranking-game-name'),
+                          isExpanded: true,
+                          value: available.contains(_gameName)
+                              ? _gameName
+                              : null,
+                          hint: const Text('All matching game names'),
+                          dropdownColor: const Color(0xFF0B1D2C),
+                          items: [
+                            const DropdownMenuItem<String>(
+                              value: null,
+                              child: Text('All matching game names'),
+                            ),
+                            ...available.map(
+                              (g) => DropdownMenuItem(
+                                value: g,
+                                child: Text(g, overflow: TextOverflow.ellipsis),
+                              ),
+                            ),
+                          ],
+                          onChanged: (v) => setState(() {
+                            _level = level;
+                            _gameName = v;
+                          }),
+                        ),
+                      ),
+                    ],
                   ),
+                const Text(
+                  'Verified published activity in the selected timeline; coverage varies. Missing data is not zero wins.',
+                  style: TextStyle(color: Colors.white60, fontSize: 11),
+                ),
                 SizedBox(
                   key: const ValueKey('ranking-slots'),
                   height: rowHeight * 5,
@@ -178,63 +294,6 @@ class MostWinningStateCard extends StatelessWidget {
           ),
         );
       },
-    );
-  }
-
-  Widget _officialTotals(List<StateWinningTicketTotal> totals) {
-    if (totals.isEmpty) {
-      return const Padding(
-        padding: EdgeInsets.only(bottom: 10),
-        child: Text(
-          'Statewide winning-ticket totals are awaiting verified official feeds. Retailer locations cannot be inferred from game counts.',
-          style: TextStyle(color: Color(0xFFFDE68A), fontSize: 11),
-        ),
-      );
-    }
-    final sorted = [...totals]..sort((a, b) => b.count.compareTo(a.count));
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const Text(
-          'OFFICIAL STATE TOTALS · SOURCE PERIODS VARY',
-          style: TextStyle(
-            color: Color(0xFFFDE68A),
-            fontSize: 10,
-            fontWeight: FontWeight.w800,
-          ),
-        ),
-        const SizedBox(height: 4),
-        const Text(
-          'Counts include only the games and prize tiers each source reports. Rankings may not be directly comparable. Retailer locations are not verified by these totals.',
-          style: TextStyle(color: Colors.white60, fontSize: 10),
-        ),
-        const SizedBox(height: 7),
-        for (final total in sorted.take(5))
-          ListTile(
-            dense: true,
-            contentPadding: EdgeInsets.zero,
-            title: Text(
-              '${StateNavigationService.getStateByAbbreviation(total.state)?.name ?? total.state}  ·  ${_numberText(total.count)}',
-              style: const TextStyle(color: Colors.white, fontSize: 12),
-            ),
-            subtitle: Text(
-              '${total.coverage} · through ${_month(total.periodEnd.month)} ${total.periodEnd.day}, ${total.periodEnd.year} · source ${_month(total.sourceDate.month)} ${total.sourceDate.day}',
-              style: const TextStyle(color: Colors.white54, fontSize: 10),
-            ),
-            trailing: const Icon(
-              Icons.open_in_new,
-              size: 15,
-              color: Colors.white54,
-            ),
-            onTap: () => launchUrl(Uri.parse(total.sourceUrl)),
-          ),
-        const Divider(color: Colors.white24),
-        const Text(
-          'LOCATION-VERIFIED RANKINGS',
-          style: TextStyle(color: Color(0xFF93C5FD), fontSize: 10),
-        ),
-        const SizedBox(height: 6),
-      ],
     );
   }
 
@@ -399,11 +458,11 @@ class MostWinningStateCard extends StatelessWidget {
         MapRankingLevel.county =>
           'TOP COUNTIES BY PUBLISHED RECORDS · ${snapshot.stateName}',
         MapRankingLevel.city =>
-          'TOP CITIES BY PUBLISHED RECORDS · ${snapshot.countyName}',
+          'TOP CITIES BY PUBLISHED RECORDS · ${snapshot.countyName ?? snapshot.stateName}',
         MapRankingLevel.retailer =>
-          'TOP RETAILERS BY PUBLISHED RECORDS · ${snapshot.cityName}',
+          'TOP RETAILERS BY PUBLISHED RECORDS · ${snapshot.cityName ?? snapshot.stateName}',
         MapRankingLevel.game =>
-          'GAMES BY PUBLISHED RECORDS · ${snapshot.retailerName}',
+          'GAMES BY PUBLISHED RECORDS · ${snapshot.retailerName ?? snapshot.stateName}',
         MapRankingLevel.state => 'TOP 5 WINNING STATES',
       };
     }
@@ -412,10 +471,11 @@ class MostWinningStateCard extends StatelessWidget {
       MapRankingLevel.county =>
         'TOP 5 WINNING COUNTIES · ${snapshot.stateName}',
       MapRankingLevel.city =>
-        'TOP 5 WINNING CITIES / TOWNS · ${snapshot.countyName}',
+        'TOP 5 WINNING CITIES / TOWNS · ${snapshot.countyName ?? snapshot.stateName}',
       MapRankingLevel.retailer =>
-        'TOP 5 WINNING RETAILERS · ${snapshot.cityName}',
-      MapRankingLevel.game => 'MOST WINNING GAMES · ${snapshot.retailerName}',
+        'TOP 5 WINNING RETAILERS · ${snapshot.cityName ?? snapshot.stateName}',
+      MapRankingLevel.game =>
+        'MOST WINNING GAMES · ${snapshot.retailerName ?? snapshot.stateName}',
     };
   }
 

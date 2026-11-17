@@ -84,6 +84,46 @@ void main() {
     ),
   ];
 
+  test(
+    'independent state categories preserve timeline and named game scope',
+    () {
+      final source = _snapshot(
+        records,
+        stateName: 'New York',
+        stateAbbreviation: 'NY',
+        countyName: 'Beta',
+      );
+      final cities = MapRankingService.rankings(
+        source.forRanking(MapRankingLevel.city),
+      );
+      expect(cities.single.label, 'Albany');
+      expect(cities.single.countyId, 'county-1');
+      final drawings = MapRankingService.rankings(
+        source.forRanking(MapRankingLevel.game, kind: RankingGameKind.drawings),
+      );
+      expect(drawings.single.label, 'Powerball');
+      expect(drawings.single.winningTickets, 8);
+      final scratch = MapRankingService.rankings(
+        source.forRanking(
+          MapRankingLevel.game,
+          kind: RankingGameKind.scratchOff,
+        ),
+      );
+      expect(scratch.single.label, 'Scratch Gold');
+      final named = MapRankingService.rankings(
+        source.forRanking(MapRankingLevel.retailer, gameName: 'Scratch Gold'),
+      );
+      expect(named.single.label, 'Market Two');
+      final empty = MapRankingSnapshot(
+        records: records,
+        dateRangeStart: DateTime(2027),
+        dateRangeEnd: DateTime(2028),
+        countyIds: const {},
+      );
+      expect(MapRankingService.rankings(empty), isEmpty);
+    },
+  );
+
   test('national rankings order states by winning-ticket total', () {
     final rankings = MapRankingService.rankings(_snapshot(records));
     expect(rankings.map((entry) => entry.label), <String>[

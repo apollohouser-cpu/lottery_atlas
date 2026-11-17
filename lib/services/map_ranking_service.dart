@@ -7,12 +7,15 @@ import '../widgets/map/map_filter_state.dart';
 
 enum MapRankingLevel { state, county, city, retailer, game }
 
+enum RankingGameKind { all, drawings, scratchOff }
+
 class MapRankingSnapshot {
   const MapRankingSnapshot({
     required this.records,
     required this.dateRangeStart,
     required this.dateRangeEnd,
     required this.countyIds,
+    this.rankingLevel,
     this.stateName,
     this.stateAbbreviation,
     this.countyName,
@@ -32,6 +35,7 @@ class MapRankingSnapshot {
     );
   }
 
+  final MapRankingLevel? rankingLevel;
   final List<LotteryActivity> records;
   final DateTime dateRangeStart;
   final DateTime dateRangeEnd;
@@ -45,12 +49,40 @@ class MapRankingSnapshot {
   final String? retailerAddress;
 
   MapRankingLevel get level {
+    if (rankingLevel != null) return rankingLevel!;
     if (retailerName != null) return MapRankingLevel.game;
     if (cityName != null) return MapRankingLevel.retailer;
     if (countyName != null) return MapRankingLevel.city;
     if (stateName != null) return MapRankingLevel.county;
     return MapRankingLevel.state;
   }
+
+  MapRankingSnapshot forRanking(
+    MapRankingLevel selected, {
+    RankingGameKind kind = RankingGameKind.all,
+    String? gameName,
+  }) => MapRankingSnapshot(
+    records: records
+        .where(
+          (r) =>
+              (kind == RankingGameKind.all ||
+                  (kind == RankingGameKind.scratchOff
+                      ? r.game == LotteryGame.scratchOff
+                      : [
+                          LotteryGame.powerball,
+                          LotteryGame.megaMillions,
+                          LotteryGame.stateDraw,
+                        ].contains(r.game))) &&
+              (gameName == null || (r.gameName ?? r.game.label) == gameName),
+        )
+        .toList(),
+    dateRangeStart: dateRangeStart,
+    dateRangeEnd: dateRangeEnd,
+    countyIds: countyIds,
+    stateName: stateName,
+    stateAbbreviation: stateAbbreviation,
+    rankingLevel: stateName == null ? MapRankingLevel.state : selected,
+  );
 
   String get signature {
     final recordSignature = records.map((record) => record.id).toList()..sort();
@@ -108,8 +140,15 @@ class MapRankingService {
     snapshot.value = next;
   }
 
-  static List<MapRankingEntry> rankings(MapRankingSnapshot source) {
+  static List<MapRankingEntry> rankings(
+    MapRankingSnapshot source, {
+    int? limit = 5,
+  }) {
     final scopedRecords = source.records.where((record) {
+      if (record.drawDate.isBefore(source.dateRangeStart) ||
+          record.drawDate.isAfter(source.dateRangeEnd)) {
+        return false;
+      }
       if (source.stateAbbreviation != null &&
           record.state != source.stateAbbreviation) {
         return false;
@@ -135,12 +174,17 @@ class MapRankingService {
 
     final groups = <String, List<LotteryActivity>>{};
     for (final record in scopedRecords) {
+      if (source.level == MapRankingLevel.retailer &&
+          (record.retailerName?.trim().isEmpty ?? true)) {
+        continue;
+      }
       final key = switch (source.level) {
         MapRankingLevel.state => record.state,
         MapRankingLevel.county => _normalize(record.county),
-        MapRankingLevel.city => _normalize(record.city),
+        MapRankingLevel.city =>
+          '${record.state}|${_normalize(record.county)}|${_normalize(record.city)}',
         MapRankingLevel.retailer =>
-          '${_normalize(record.retailerName ?? '')}|${_normalize(record.retailerAddress ?? '')}',
+          '${record.state}|${_normalize(record.city)}|${_normalize(record.retailerName ?? '')}|${_normalize(record.retailerAddress ?? '')}',
         MapRankingLevel.game => _normalize(
           record.gameName ?? record.game.label,
         ),
@@ -190,7 +234,9 @@ class MapRankingService {
         gameBreakdown: Map<String, int>.fromEntries(sortedGames),
         location: LatLng(latitude / records.length, longitude / records.length),
         stateName: stateName,
-        countyId: source.level == MapRankingLevel.county
+        countyId:
+            source.level == MapRankingLevel.county ||
+                source.level == MapRankingLevel.city
             ? source.countyIds[_normalize(first.county)]
             : source.countyId,
         retailerActivityId: source.level == MapRankingLevel.retailer
@@ -207,7 +253,9 @@ class MapRankingService {
       );
       return prizeOrder != 0 ? prizeOrder : left.label.compareTo(right.label);
     });
-    return entries.take(5).toList(growable: false);
+    return (limit == null ? entries : entries.take(limit)).toList(
+      growable: false,
+    );
   }
 
   static String _normalize(String value) => value

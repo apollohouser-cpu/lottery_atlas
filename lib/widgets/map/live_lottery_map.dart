@@ -1,3 +1,4 @@
+import 'county_heat_layer.dart';
 import '../../services/delaware_coverage_loader.dart';
 import 'delaware_coverage_view.dart';
 import '../../services/arizona_coverage_loader.dart';
@@ -96,10 +97,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   ModalRoute<dynamic>? _hostingRoute;
   final SharedPreferencesAsync _preferences = SharedPreferencesAsync();
   late final AnimationController _cameraAnimationController;
-  late final AnimationController _heatBubbleAnimationController;
-  late final AnimationController _countyFocusAnimationController;
   late final AnimationController _retailerFocusAnimationController;
-  final Map<String, Color> _previousCountyHeatColors = <String, Color>{};
 
   LatLng? _cameraAnimationStart;
   LatLng? _cameraAnimationEnd;
@@ -137,7 +135,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   String? _hoveredCountyId;
   String? _selectedCountyId;
   String? _selectedCityName;
-  String? _focusedHeatCountyKey;
   String? _focusedRetailerId;
   StateRetailer? _focusedDirectoryRetailer;
   bool _rankingUpdateQueued = false;
@@ -206,14 +203,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       vsync: this,
       duration: const Duration(milliseconds: 560),
     )..addListener(_advanceCameraAnimation);
-    _heatBubbleAnimationController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1300),
-    )..addListener(_advanceHeatBubbleAnimation);
-    _countyFocusAnimationController = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 780),
-    )..addListener(_advanceCountyFocusAnimation);
     _retailerFocusAnimationController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 680),
@@ -251,7 +240,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     _mapGeometryFuture = _loadMapGeometry().then((geometry) {
       _stateShapes = geometry.states;
       _countyShapes = geometry.counties;
-      if (mounted) _restartHeatBubbleAnimation();
       return geometry;
     });
 
@@ -266,10 +254,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       (_) => unawaited(_refreshPublishedLotteryData()),
     );
     AppPreferences.changes.addListener(_loadMapPreferences);
-
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted) _restartHeatBubbleAnimation();
-    });
   }
 
   Size? _lastViewportSize;
@@ -290,13 +274,14 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
               .where((shape) => shape.name == _selectedStateName)
               .expand((shape) => shape.points)
               .toList();
-          if (points.isNotEmpty)
+          if (points.isNotEmpty) {
             _animateCameraFit(
               CameraFit.bounds(
                 bounds: LatLngBounds.fromPoints(points),
                 padding: _stateCameraPadding(_selectedStateName),
               ),
             );
+          }
         }
       });
     }
@@ -338,12 +323,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     _publishedDataRefreshTimer?.cancel();
     _cameraAnimationController
       ..removeListener(_advanceCameraAnimation)
-      ..dispose();
-    _heatBubbleAnimationController
-      ..removeListener(_advanceHeatBubbleAnimation)
-      ..dispose();
-    _countyFocusAnimationController
-      ..removeListener(_advanceCountyFocusAnimation)
       ..dispose();
     _retailerFocusAnimationController
       ..removeListener(_advanceRetailerFocusAnimation)
@@ -458,7 +437,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   void _onActivityFeedChanged() {
     if (!mounted) return;
     setState(() {});
-    _restartHeatBubbleAnimation();
   }
 
   void _openDelawareCoverage({bool products = false}) {
@@ -524,7 +502,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
           _selectedCountyId = request.countyId;
           _selectedCityName = request.city;
           _hoveredCountyId = null;
-          _focusedHeatCountyKey = null;
           _focusedRetailerId = null;
           _focusedDirectoryRetailer = null;
         });
@@ -573,7 +550,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedCityName = null;
       _hoveredCountyId = null;
     });
-    _restartHeatBubbleAnimation();
     _mapController.move(_southCarolinaCenter, 6.4);
   }
 
@@ -593,7 +569,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedCityName = null;
       _hoveredCountyId = null;
     });
-    _restartHeatBubbleAnimation();
     _mapController.move(_southCarolinaCenter, 6.4);
   }
 
@@ -887,7 +862,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _filterState = _filterState.copyWith(game: LotteryGame.scratchOff);
       _showStateGames = false;
     });
-    _restartHeatBubbleAnimation();
   }
 
   Widget _southCarolinaGamePickerTile({
@@ -1198,138 +1172,14 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     return 15 + 21 * math.sqrt(intensity.clamp(0.0, 1.0));
   }
 
-  String _countyHeatKey(_CountyActivitySummary county) =>
-      '${county.state.toUpperCase()}|${_normalizedCountyName(county.county)}';
-
-  Map<String, int> _highestCountyTotalsByState(
-    List<_CountyActivitySummary> countyActivity,
-  ) {
-    final totals = <String, int>{};
-    for (final county in countyActivity) {
-      final state = county.state.toUpperCase();
-      totals[state] = math.max(totals[state] ?? 0, county.totalWinningTickets);
-    }
-    return totals;
-  }
-
-  int _highestCountyTotalFor(
-    _CountyActivitySummary county,
-    Map<String, int> totalsByState,
-  ) => totalsByState[county.state.toUpperCase()] ?? 0;
-
-  Map<String, Color> _countyHeatColorsFor(
-    List<_CountyActivitySummary> countyActivity,
-  ) {
-    final totalsByState = _highestCountyTotalsByState(countyActivity);
-
-    return <String, Color>{
-      for (final county in countyActivity)
-        _countyHeatKey(county): _countyHeatColor(
-          county.totalWinningTickets,
-          _highestCountyTotalFor(county, totalsByState),
-        ),
-    };
-  }
-
   void _onMapFilterChanged(MapFilterState filterState) {
-    final currentColors = _countyHeatColorsFor(
-      _countyActivitySummaries(_visibleActivity()),
-    );
-
     setState(() {
-      _previousCountyHeatColors
-        ..clear()
-        ..addAll(currentColors);
       if (_filterState.game != filterState.game) {
         _selectedStateActivityGameName = null;
       }
       _filterState = filterState;
     });
-    _restartHeatBubbleAnimation();
   }
-
-  Color _animatedCountyHeatColor(
-    _CountyActivitySummary county,
-    Color currentColor,
-  ) {
-    final previousColor =
-        _previousCountyHeatColors[_countyHeatKey(county)] ??
-        currentColor.withValues(alpha: 0);
-    final progress = Curves.easeOutCubic.transform(
-      _heatBubbleAnimationController.value,
-    );
-    return Color.lerp(previousColor, currentColor, progress) ?? currentColor;
-  }
-
-  double _heatBubbleScale(int index) {
-    // County entries are collected nationwide. Using their raw list index as
-    // an animation delay meant entries after NC's large history (including SC
-    // and GA) never progressed beyond their tiny starting dot. Recycle a
-    // short stagger sequence so every bubble reaches its full bloom.
-    final staggerDelay = (index % 12) * 0.025;
-    final staggeredProgress =
-        ((_heatBubbleAnimationController.value - staggerDelay) /
-                (1 - staggerDelay))
-            .clamp(0.0, 1.0);
-    final bloom = Curves.easeOutBack.transform(staggeredProgress);
-    final wiggle = staggeredProgress > 0.68
-        ? math.sin((staggeredProgress - 0.68) * math.pi * 10) *
-              (1 - staggeredProgress) *
-              0.12
-        : 0.0;
-    return (0.05 + bloom * 0.95 + wiggle).clamp(0.05, 1.18);
-  }
-
-  void _restartHeatBubbleAnimation() {
-    _heatBubbleAnimationController
-      ..stop()
-      ..forward(from: 0);
-  }
-
-  /// Replays heat bubbles once the state zoom settles. Starting the animation
-  /// a second time here makes the bloom visible instead of letting it finish
-  /// while the camera is still traveling into the selected state.
-  void _replayHeatBubblesAfterStateZoom() {
-    _restartHeatBubbleAnimation();
-    Future<void>.delayed(const Duration(milliseconds: 620), () {
-      if (mounted) _restartHeatBubbleAnimation();
-    });
-  }
-
-  void _advanceHeatBubbleAnimation() {
-    if (mounted) setState(() {});
-  }
-
-  void _focusCountyHeatBubble(_CountyActivitySummary countyActivity) {
-    final stateName = StateNavigationService.getStateByAbbreviation(
-      countyActivity.state,
-    )?.name;
-    final stateFips = stateName == null ? null : _stateFipsByName[stateName];
-    final matchingCounty = _countyShapes.where(
-      (county) =>
-          county.stateFips == stateFips &&
-          _normalizedCountyName(county.name) ==
-              _normalizedCountyName(countyActivity.county),
-    );
-    setState(() {
-      _focusedHeatCountyKey = _countyHeatKey(countyActivity);
-      _selectedCountyId = matchingCounty.isEmpty
-          ? _selectedCountyId
-          : matchingCounty.first.id;
-      _selectedCityName = null;
-      _focusedRetailerId = null;
-      _focusedDirectoryRetailer = null;
-    });
-    _countyFocusAnimationController.forward(from: 0);
-    unawaited(_showCountyActivityDetails(countyActivity));
-  }
-
-  void _advanceCountyFocusAnimation() {
-    if (mounted) setState(() {});
-  }
-
-  double _countyFocusProgress() =>
-      Curves.easeOutCubic.transform(_countyFocusAnimationController.value);
 
   void _advanceRetailerFocusAnimation() {
     if (mounted) setState(() {});
@@ -2038,7 +1888,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
           : matchingCounties.first.id;
       _selectedCityName = retailer.city;
       _hoveredCountyId = null;
-      _focusedHeatCountyKey = null;
     });
     _retailerFocusAnimationController.forward(from: 0);
     _animateMapTo(retailer.location, 14.5);
@@ -2067,7 +1916,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
           : matchingCounties.first.id;
       _selectedCityName = activity.city;
       _hoveredCountyId = null;
-      _focusedHeatCountyKey = null;
       _focusedRetailerId = activity.id;
       _focusedDirectoryRetailer = null;
     });
@@ -2081,7 +1929,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     setState(() {
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
-      _focusedHeatCountyKey = null;
       _selectedCityName = null;
     });
 
@@ -2098,7 +1945,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
     setState(() {
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
-      _focusedHeatCountyKey = null;
     });
     if (cityName == null) {
       _returnToCountyFromRetailer();
@@ -2133,7 +1979,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _selectedCityName = null;
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
-      _focusedHeatCountyKey = null;
     });
     if (countyId != null) {
       _focusCountyById(countyId);
@@ -3532,11 +3377,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         _hoveredCountyId = null;
         _focusedRetailerId = null;
         _focusedDirectoryRetailer = null;
-        _focusedHeatCountyKey = null;
         _selectedStateActivityGameName = null;
         _showStateGames = false;
       });
-      _replayHeatBubblesAfterStateZoom();
 
       _animateMapTo(_alaskaCenter, 4.4);
       return;
@@ -3558,11 +3401,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _hoveredCountyId = null;
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
-      _focusedHeatCountyKey = null;
       _selectedStateActivityGameName = null;
       _showStateGames = false;
     });
-    _replayHeatBubblesAfterStateZoom();
 
     _animateCameraFit(
       CameraFit.bounds(
@@ -4083,7 +3924,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
         _hoveredCountyId = null;
         _focusedRetailerId = null;
         _focusedDirectoryRetailer = null;
-        _focusedHeatCountyKey = null;
       });
       _mapController.move(result.location, result.zoom);
       return;
@@ -4096,7 +3936,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _hoveredCountyId = null;
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
-      _focusedHeatCountyKey = null;
     });
 
     if (stateName == 'Alaska') {
@@ -4418,7 +4257,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _hoveredCountyId = null;
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
-      _focusedHeatCountyKey = null;
       _selectedStateActivityGameName = null;
       _showStateGames = false;
     });
@@ -4457,7 +4295,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _hoveredCountyId = null;
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
-      _focusedHeatCountyKey = null;
       _showNextDrawings = false;
       _showScratchOffs = false;
       _showStateGames = false;
@@ -4534,7 +4371,6 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
       _hoveredCountyId = null;
       _focusedRetailerId = null;
       _focusedDirectoryRetailer = null;
-      _focusedHeatCountyKey = null;
     });
 
     if (stateName == 'Alaska') {
@@ -4687,9 +4523,61 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
               .toList(growable: false);
     final shouldShowEmptyStateNotice =
         selectedState != null && visibleActivity.isEmpty;
-    final countyActivity = _countyActivitySummaries(visibleActivity);
-    final highestCountyTotalsByState = _highestCountyTotalsByState(
-      countyActivity,
+    final stateTotals = <String, int>{};
+    for (final r in visibleActivity) {
+      stateTotals[r.state] = (stateTotals[r.state] ?? 0) + r.winningTickets;
+    }
+    final statePeak = stateTotals.values.fold<int>(0, math.max);
+    final siteTotals = <String, int>{};
+    for (final r in visibleActivity) {
+      final key = '${r.county}|${r.location.latitude}|${r.location.longitude}';
+      siteTotals[key] = (siteTotals[key] ?? 0) + r.winningTickets;
+    }
+    final sitePeak = siteTotals.values.fold<int>(0, math.max);
+    final countyRegions = <CountyHeatRegion>[];
+    for (final shape in visibleCounties) {
+      final records = visibleActivity.where(
+        (r) =>
+            _normalizedCountyName(r.county) ==
+            _normalizedCountyName(shape.name),
+      );
+      final sites = <String, (LatLng, int)>{};
+      for (final r in records) {
+        final key = '${r.location.latitude}|${r.location.longitude}';
+        sites[key] = (r.location, (sites[key]?.$2 ?? 0) + r.winningTickets);
+      }
+      countyRegions.add(
+        CountyHeatRegion(
+          shape.points,
+          shape.holePoints,
+          sites.values
+              .map((v) => (v.$1, _countyHeatColor(v.$2, sitePeak)))
+              .toList(),
+        ),
+      );
+    }
+    final detailSnapshot = MapRankingSnapshot(
+      records: visibleActivity,
+      dateRangeStart: _filterState.dateRange.start,
+      dateRangeEnd: _filterState.dateRange.end,
+      countyIds: {
+        for (final c in visibleCounties) _normalizedCountyName(c.name): c.id,
+      },
+      stateName: selectedState?.name,
+      stateAbbreviation: selectedState?.abbreviation,
+      countyName: selectedCounty?.name,
+      countyId: selectedCounty?.id,
+      cityName: _selectedCityName,
+      rankingLevel: _selectedCityName == null
+          ? MapRankingLevel.city
+          : MapRankingLevel.retailer,
+    );
+    final detailEntries = selectedCounty == null
+        ? <MapRankingEntry>[]
+        : MapRankingService.rankings(detailSnapshot, limit: null);
+    final detailPeak = detailEntries.fold<int>(
+      0,
+      (a, b) => math.max(a, b.winningTickets),
     );
     final activeScratchFilter =
         SouthCarolinaScratchMapFilterService.selection.value;
@@ -4796,29 +4684,18 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                             : _mapDetailMode == MapDetailMode.standard
                             ? const Color(0x8A26343E)
                             : const Color(0x142196F3);
-                        // Official state counts may color the state only.
-                        // They never create county or retailer heat points.
-                        final stateTotal = StateWinningTicketTotalService
-                            .totals
-                            .value
-                            .where(
-                              (total) =>
-                                  total.state ==
-                                  StateNavigationService.getStateByName(
-                                    shape.name,
-                                  )?.abbreviation,
-                            )
-                            .firstOrNull;
-                        final stateFillColor = stateTotal == null
+                        final abbreviation =
+                            StateNavigationService.getStateByName(
+                              shape.name,
+                            )?.abbreviation;
+                        final total = stateTotals[abbreviation];
+                        final stateFillColor =
+                            total == null || selectedState != null
                             ? defaultStateFillColor
-                            : Color.lerp(
-                                const Color(0x4426365A),
-                                const Color(0xBBF97316),
-                                (math.log(stateTotal.count + 1) / 15).clamp(
-                                  0.0,
-                                  1.0,
-                                ),
-                              )!;
+                            : _countyHeatColor(
+                                total,
+                                statePeak,
+                              ).withValues(alpha: 0.65);
 
                         return Polygon<String>(
                           points: shape.points,
@@ -4846,6 +4723,8 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   MarkerLayer(markers: _buildStateLabels(stateShapes)),
                 if (_showTimeZones && _selectedStateName == null)
                   const TimeZoneClockMarkers(),
+                if (selectedStateFips != null)
+                  CountyHeatLayer(regions: countyRegions),
                 if (selectedStateFips != null)
                   MouseRegion(
                     cursor: SystemMouseCursors.click,
@@ -4881,7 +4760,13 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                                 ? const Color(0x664ADE80)
                                 : isHovered
                                 ? const Color(0x66FBBF24)
-                                : defaultCountyFillColor,
+                                : (visibleActivity.any(
+                                        (r) =>
+                                            _normalizedCountyName(r.county) ==
+                                            _normalizedCountyName(county.name),
+                                      )
+                                      ? Colors.transparent
+                                      : defaultCountyFillColor),
                             borderColor: isSelected
                                 ? const Color(0xFF22C55E)
                                 : isHovered
@@ -4897,134 +4782,84 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   ),
                 if (selectedStateFips != null)
                   MarkerLayer(markers: _buildCountyLabels(visibleCounties)),
-                CircleLayer(
-                  circles: countyActivity.asMap().entries.map((entry) {
-                    final county = entry.value;
-                    final statePeak = _highestCountyTotalFor(
-                      county,
-                      highestCountyTotalsByState,
-                    );
-                    final color = _animatedCountyHeatColor(
-                      county,
-                      _countyHeatColor(county.totalWinningTickets, statePeak),
-                    );
-                    final scale = _heatBubbleScale(entry.key);
-                    final baseRadius = _countyHeatRadius(
-                      county.totalWinningTickets,
-                      statePeak,
-                    );
-                    return CircleMarker(
-                      point: county.location,
-                      radius: (baseRadius + 13) * scale,
-                      color: color.withValues(alpha: 0.08 + 0.12 * scale),
-                      borderColor: Colors.transparent,
-                      borderStrokeWidth: 0,
-                    );
-                  }).toList(),
-                ),
-                CircleLayer(
-                  circles: countyActivity.asMap().entries.map((entry) {
-                    final county = entry.value;
-                    final statePeak = _highestCountyTotalFor(
-                      county,
-                      highestCountyTotalsByState,
-                    );
-                    final color = _animatedCountyHeatColor(
-                      county,
-                      _countyHeatColor(county.totalWinningTickets, statePeak),
-                    );
-                    final scale = _heatBubbleScale(entry.key);
-                    final radius =
-                        _countyHeatRadius(
-                          county.totalWinningTickets,
-                          statePeak,
-                        ) *
-                        scale;
-                    return CircleMarker(
-                      point: county.location,
-                      radius: radius,
-                      color: color.withValues(alpha: 0.28 + 0.32 * scale),
-                      borderColor: color,
-                      borderStrokeWidth: 1 + scale,
-                    );
-                  }).toList(),
-                ),
-                if (_focusedHeatCountyKey != null)
+                if (selectedCounty != null)
                   CircleLayer(
-                    circles: countyActivity
-                        .where(
-                          (county) =>
-                              _countyHeatKey(county) == _focusedHeatCountyKey,
-                        )
-                        .map((county) {
-                          final statePeak = _highestCountyTotalFor(
-                            county,
-                            highestCountyTotalsByState,
-                          );
-                          final progress = _countyFocusProgress();
-                          final color = _countyHeatColor(
-                            county.totalWinningTickets,
-                            statePeak,
-                          );
-                          final radius =
-                              _countyHeatRadius(
-                                county.totalWinningTickets,
-                                statePeak,
-                              ) +
-                              10 +
-                              34 * progress;
-                          return CircleMarker(
-                            point: county.location,
-                            radius: radius,
-                            color: Colors.transparent,
-                            borderColor: color.withValues(
-                              alpha: 0.85 * (1 - progress),
+                    circles: detailEntries
+                        .map(
+                          (entry) => CircleMarker(
+                            point: entry.location,
+                            radius: _countyHeatRadius(
+                              entry.winningTickets,
+                              detailPeak,
                             ),
-                            borderStrokeWidth: 3 * (1 - progress) + 0.5,
-                          );
-                        })
-                        .toList(growable: false),
-                  ),
-                MarkerLayer(
-                  markers: countyActivity.map((county) {
-                    final statePeak = _highestCountyTotalFor(
-                      county,
-                      highestCountyTotalsByState,
-                    );
-                    final markerSize =
-                        _countyHeatRadius(
-                              county.totalWinningTickets,
-                              statePeak,
-                            ) *
-                            2 +
-                        28;
-                    return Marker(
-                      point: county.location,
-                      width: markerSize,
-                      height: markerSize,
-                      alignment: Alignment.center,
-                      child: MouseRegion(
-                        cursor: SystemMouseCursors.click,
-                        child: GestureDetector(
-                          behavior: HitTestBehavior.opaque,
-                          onTap: () => _focusCountyHeatBubble(county),
-                          child: Semantics(
-                            button: true,
-                            label: '${county.county} County heat activity',
-                            child: const SizedBox.expand(),
+                            color: _countyHeatColor(
+                              entry.winningTickets,
+                              detailPeak,
+                            ).withValues(alpha: 0.55),
+                            borderColor: _countyHeatColor(
+                              entry.winningTickets,
+                              detailPeak,
+                            ),
+                            borderStrokeWidth: 2,
                           ),
-                        ),
-                      ),
-                    );
-                  }).toList(),
-                ),
-                if (showSouthCarolinaRetailers)
+                        )
+                        .toList(),
+                  ),
+                if (selectedCounty != null)
+                  MarkerLayer(
+                    markers: detailEntries
+                        .map(
+                          (entry) => Marker(
+                            point: entry.location,
+                            width: 88,
+                            height: 64,
+                            child: GestureDetector(
+                              behavior: HitTestBehavior.opaque,
+                              onTap: () {
+                                if (_selectedCityName == null) {
+                                  MapFocusService.focusCity(
+                                    stateName: selectedState!.name,
+                                    city: entry.label,
+                                    location: entry.location,
+                                    countyId: entry.countyId,
+                                  );
+                                } else if (entry.retailerActivityId != null) {
+                                  MapFocusService.focusRetailer(
+                                    stateName: selectedState!.name,
+                                    retailerId: entry.retailerActivityId!,
+                                  );
+                                }
+                              },
+                              child: Center(
+                                child: Text(
+                                  entry.label,
+                                  maxLines: 2,
+                                  textAlign: TextAlign.center,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 10,
+                                    shadows: [
+                                      Shadow(
+                                        blurRadius: 3,
+                                        color: Colors.black,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        )
+                        .toList(),
+                  ),
+                if (showSouthCarolinaRetailers && selectedCounty != null)
                   MarkerLayer(
                     markers: visibleSouthCarolinaRetailers
                         .map(_buildRetailerMarker)
                         .toList(growable: false),
                   ),
-                if (_focusedDirectoryRetailer != null)
+                if (_focusedDirectoryRetailer != null && selectedCounty != null)
                   MarkerLayer(
                     markers: [
                       _buildDirectoryRetailerMarker(_focusedDirectoryRetailer!),

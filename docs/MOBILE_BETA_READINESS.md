@@ -1323,3 +1323,37 @@ and does not establish the separately deferred offline restart/failure-retention
 check. That check remains pending; Delaware remains unaccepted with its original
 missed deadline unchanged. Broader mobile beta gates are not closed by this
 bounded layout confirmation.
+
+## November17 — geographic heat areas and selectable rankings
+
+At the owner's request, national view now colors state polygons using the
+currently filtered/timeline activity. State view uses mixed heat colors clipped
+to county outlines and holes, with boundaries drawn above the fill. County
+subareas use nearest published location display cells, not official town
+boundaries or inferred missing wins. The heat legend explains this distinction.
+No-activity counties remain neutral. County/state bloom circles were removed;
+selecting a county reveals city/town bubbles, and selecting a city reveals
+retailer bubbles using the available reported location precision.
+
+Top Five adds state-scoped counties, cities/towns, games and retailers selectors,
+Drawings/Scratch-Off filters and actual published game names. Timeline and map
+filters still constrain all rankings. National rankings use the selected period;
+the separate source-period totals no longer appear as a competing Top Five.
+No agency data, acceptance decision or source dates were changed.
+
+Focused service/widget checks cover date and named-game filtering, category
+selection, stable five-slot scrolling at normal/2x text, mixed-color clipping
+and polygon holes, and national → state → county → city bubble visibility with
+empty-state isolation. The old Kentucky map-flow test stops before these flows
+because its hard-coded August record is absent from the current bundled feed;
+a deterministic isolated map-flow test covers this change without altering
+production records. Tests are not physical iPhone acceptance.
+
+The owner phone was unavailable in the device inventory during preparation.
+Installation and physical review of this UI change remain pending. Delaware's
+separate offline restart/failure-retention check and all broader beta gates
+remain open. Private build/device evidence: work/owner_iphone/map_regions_20261117.
+
+Signed ordinary iOS release build completed (93.0MB); deep/strict signature
+verification passed. All14 focused tests passed and targeted analysis reports
+no issues. Build is ready for an in-place install when the owner phone reconnects.

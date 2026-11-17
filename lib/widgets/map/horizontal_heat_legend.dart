@@ -22,13 +22,17 @@ class HorizontalHeatLegend extends StatelessWidget {
       ),
       child: LayoutBuilder(
         builder: (context, constraints) {
-          const title = Text(
-            'HEAT INDEX',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 11,
-              fontWeight: FontWeight.w800,
-              letterSpacing: 0.7,
+          const title = Tooltip(
+            message:
+                'Relative published activity for the selected timeline. County color areas follow the nearest reported location; they are not town boundaries. Gray means no matching data. Colors do not predict future wins.',
+            child: Text(
+              'HEAT INDEX',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 11,
+                fontWeight: FontWeight.w800,
+                letterSpacing: 0.7,
+              ),
             ),
           );
           const scale = <Widget>[
