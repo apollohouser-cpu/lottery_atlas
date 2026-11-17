@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "state": "Colorado",
-  "retrievedAt": "2026-11-17T08:08:32.194Z",
+  "retrievedAt": "2026-11-17T21:08:15.196Z",
   "cadence": "Two recent complete published reports per family; Cash 5 skips dates with wholly unpublished EZ Match sections within eight official linked dates. Displayed draw dates remain the actual selected dates. Pick 3 keeps the newest Midday and Evening reports. Scheduled refresh, not a live feed.",
   "coverage": "Colorado source-reported tier winners across six current draw families, separate variants and wager units. EZ Match players and dollars remain separate. No distinct-ticket aggregate or retailer allocation.",
   "reports": [
@@ -1326,6 +1326,46 @@
       "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
     },
     {
+      "id": "co-cash5-2026-11-16",
+      "game": "Cash 5",
+      "drawDate": "2026-11-16",
+      "sourceUrl": "https://www.coloradolottery.com/en/games/cash5/drawings/2026-11-16/",
+      "tiers": [
+        {
+          "match": "5 of 5",
+          "variant": "Base",
+          "reportedWinners": 0,
+          "prizeLabel": "$20,000"
+        },
+        {
+          "match": "4 of 5",
+          "variant": "Base",
+          "reportedWinners": 12,
+          "prizeLabel": "$200"
+        },
+        {
+          "match": "3 of 5",
+          "variant": "Base",
+          "reportedWinners": 563,
+          "prizeLabel": "$10"
+        },
+        {
+          "match": "2 of 5",
+          "variant": "Base",
+          "reportedWinners": 4517,
+          "prizeLabel": "$1"
+        }
+      ],
+      "ezMatch": {
+        "date": "2026-11-16",
+        "reportedPlayers": 944,
+        "publishedPayoutDollars": 3021,
+        "periodLabel": "4:30 AM–11:59 PM on draw date"
+      },
+      "prizeNotes": [],
+      "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
+    },
+    {
       "id": "co-cash5-2026-11-15",
       "game": "Cash 5",
       "drawDate": "2026-11-15",
@@ -1366,57 +1406,17 @@
       "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
     },
     {
-      "id": "co-cash5-2026-11-14",
-      "game": "Cash 5",
-      "drawDate": "2026-11-14",
-      "sourceUrl": "https://www.coloradolottery.com/en/games/cash5/drawings/2026-11-14/",
-      "tiers": [
-        {
-          "match": "5 of 5",
-          "variant": "Base",
-          "reportedWinners": 0,
-          "prizeLabel": "$20,000"
-        },
-        {
-          "match": "4 of 5",
-          "variant": "Base",
-          "reportedWinners": 13,
-          "prizeLabel": "$200"
-        },
-        {
-          "match": "3 of 5",
-          "variant": "Base",
-          "reportedWinners": 607,
-          "prizeLabel": "$10"
-        },
-        {
-          "match": "2 of 5",
-          "variant": "Base",
-          "reportedWinners": 4992,
-          "prizeLabel": "$1"
-        }
-      ],
-      "ezMatch": {
-        "date": "2026-11-14",
-        "reportedPlayers": 1138,
-        "publishedPayoutDollars": 3455,
-        "periodLabel": "4:30 AM–11:59 PM on draw date"
-      },
-      "prizeNotes": [],
-      "limitations": "Source-reported winners, not verified distinct tickets. Variants are separate; no combined total or retailer allocation. Draw date has no verified event time. EZ Match players and dollars are separate from Cash 5 draw tiers."
-    },
-    {
-      "id": "co-pick3-2026-11-16-MD",
+      "id": "co-pick3-2026-11-17-MD",
       "game": "Pick 3",
-      "drawDate": "2026-11-16",
+      "drawDate": "2026-11-17",
       "drawingSession": "Midday",
-      "sourceUrl": "https://www.coloradolottery.com/en/games/pick3/drawings/2026-11-16:MD/",
+      "sourceUrl": "https://www.coloradolottery.com/en/games/pick3/drawings/2026-11-17:MD/",
       "tiers": [
         {
           "match": "Exact Order",
           "variant": "Base",
           "wagerDollars": 0.5,
-          "reportedWinners": 1,
+          "reportedWinners": 2,
           "prizeLabel": "$250",
           "available": true
         },
@@ -1424,7 +1424,7 @@
           "match": "Exact Order",
           "variant": "Base",
           "wagerDollars": 1,
-          "reportedWinners": 3,
+          "reportedWinners": 2,
           "prizeLabel": "$500",
           "available": true
         },
@@ -1448,7 +1448,7 @@
           "match": "Any Order",
           "variant": "Base",
           "wagerDollars": 0.5,
-          "reportedWinners": 11,
+          "reportedWinners": 10,
           "prizeLabel": "$40",
           "available": true
         },
@@ -1456,7 +1456,7 @@
           "match": "Any Order",
           "variant": "Base",
           "wagerDollars": 1,
-          "reportedWinners": 5,
+          "reportedWinners": 6,
           "prizeLabel": "$80",
           "available": true
         },
@@ -1464,7 +1464,7 @@
           "match": "Any Order",
           "variant": "Base",
           "wagerDollars": 2,
-          "reportedWinners": 1,
+          "reportedWinners": 2,
           "prizeLabel": "$160",
           "available": true
         },
@@ -1472,7 +1472,7 @@
           "match": "Any Order",
           "variant": "Base",
           "wagerDollars": 5,
-          "reportedWinners": 1,
+          "reportedWinners": 2,
           "prizeLabel": "$400",
           "available": true
         },
@@ -1496,7 +1496,7 @@
           "match": "Combined Exact Order",
           "variant": "Base",
           "wagerDollars": 2,
-          "reportedWinners": 0,
+          "reportedWinners": 2,
           "prizeLabel": "$580",
           "available": true
         },
@@ -1520,7 +1520,7 @@
           "match": "Combined Any Order",
           "variant": "Base",
           "wagerDollars": 1,
-          "reportedWinners": 42,
+          "reportedWinners": 32,
           "prizeLabel": "$40",
           "available": true
         },
@@ -1528,7 +1528,7 @@
           "match": "Combined Any Order",
           "variant": "Base",
           "wagerDollars": 2,
-          "reportedWinners": 17,
+          "reportedWinners": 2,
           "prizeLabel": "$80",
           "available": true
         },
@@ -1536,7 +1536,7 @@
           "match": "Combined Any Order",
           "variant": "Base",
           "wagerDollars": 5,
-          "reportedWinners": 3,
+          "reportedWinners": 1,
           "prizeLabel": "$200",
           "available": true
         },
@@ -1544,7 +1544,7 @@
           "match": "Front Pair",
           "variant": "Base",
           "wagerDollars": 0.5,
-          "reportedWinners": 0,
+          "reportedWinners": 2,
           "prizeLabel": "$30",
           "available": true
         },
@@ -1552,7 +1552,7 @@
           "match": "Front Pair",
           "variant": "Base",
           "wagerDollars": 1,
-          "reportedWinners": 1,
+          "reportedWinners": 0,
           "prizeLabel": "$60",
           "available": true
         },
@@ -1576,7 +1576,7 @@
           "match": "Back Pair",
           "variant": "Base",
           "wagerDollars": 0.5,
-          "reportedWinners": 1,
+          "reportedWinners": 4,
           "prizeLabel": "$30",
           "available": true
         },
@@ -1592,7 +1592,7 @@
           "match": "Back Pair",
           "variant": "Base",
           "wagerDollars": 2,
-          "reportedWinners": 1,
+          "reportedWinners": 0,
           "prizeLabel": "$120",
           "available": true
         },
