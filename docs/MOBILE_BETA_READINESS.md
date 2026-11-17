@@ -1386,3 +1386,16 @@ in place, and launched successfully. Private device preferences export confirms
 19,814 SC cached records: 19,812 retained report groups plus two existing 2026
 news records. June/July/August cache counts are3,314/3,397/3,738 respectively.
 This is cache evidence, not a physical visual or offline-restart observation.
+
+## November17 — Kentucky historical notices restored
+
+The named rolling-feed defect is repaired in79459c0. Restored89 previously
+verified notices with unchanged IDs, dates and coordinates, compatible with the
+installed app's ordinary remote feed. No new phone install is required for this
+restoration. Two retention/failure checks and115-record idempotence validation
+pass. Both existing Kentucky map-flow widget tests now pass: the previously
+missing August fixture is present again. Mocked network tile requests emit400
+warnings during this test; these do not establish a physical map failure.
+No device-refresh, visual or offline observation is inferred. Texas historical
+omissions remain under investigation; no blanket restoration is authorized by
+an absent record alone, because source corrections and exclusions must survive.

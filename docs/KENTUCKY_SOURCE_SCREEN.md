@@ -402,17 +402,17 @@ visual acceptance remains open; see the completion plan for release evidence.
 
 Cross-state audit after the SC owner report found that the current-winner
 importer replaced older notices as the official rolling page advanced.
-Replayed31 saved repository snapshots chronologically, replacing overlapping
-notice dates rather than summing snapshots. Restored89 previously verified
-notices; the retained file now has115 (August20, September37, October43,
-November15). Original IDs, coordinates, notice dates, source labels and URLs
-are unchanged. The current26 records and all other public records are unchanged.
+Replayed 31 saved repository snapshots chronologically, replacing overlapping
+notice dates rather than summing snapshots. Restored 89 previously verified
+notices; the retained file now has 115 (August: 20; September: 37; October: 43;
+November: 15). Original IDs, coordinates, notice dates, source labels and URLs
+are unchanged. The current 26 records and all other public records are unchanged.
 Private commit/hash evidence: work/kentucky_history_recovery_20261117/audit.json.
 
 Importer now retains notices before the earliest date in the fetched page,
 replaces overlap, and rejects empty/regressed or invalid refreshes. Two focused
-retention/failure checks and115-record idempotence validation pass. Publisher
-validates35,974 total records. This repairs a named defect in accepted scope;
+retention/failure checks and 115-record idempotence validation pass. Publisher
+validates 35,974 total records. This repairs a named defect in accepted scope;
 it does not establish complete historical claims or activate a second state.
 The normal remote feed can deliver the restoration without a phone install.
 Device refresh and visual confirmation are not inferred from publication.
