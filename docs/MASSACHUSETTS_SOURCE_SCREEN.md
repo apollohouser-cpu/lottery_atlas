@@ -201,3 +201,20 @@ The afternoon thread check confirms no substantive decision, records, fee,
 question or promised response date. No acknowledgment reply or duplicate request
 was sent. Await the substantive response. Evidence and administrative identifiers
 remain private; no public dataset or state acceptance changed.
+
+## November17 — no responsive field-definition document
+
+The Lottery responded to the narrowed November2 request and states that it has
+no responsive document. The requested scope was existing documentation for
+prizeAmount, prizeDescription, paidPrizes and prizesRemaining at the public
+instant-game-prizes endpoint. No field definitions, schema or dataset were
+delivered. The one-page response letter includes general review-rights language;
+no fee, clarification question or promised follow-up date was supplied.
+
+The original request remains Sent-confirmed; its acknowledgment and this separate
+response thread were checked. Original PDF bytes were privately saved and
+size/SHA256 verified, with complete one-page text extracted. No visual audit is
+claimed. Evidence: work/agency_email_checks/massachusetts_20261117. No duplicate
+request, reply, appeal or paid work was initiated. This resolves the awaited
+response for that narrow inquiry; it does not establish field semantics or
+change app data, state acceptance or implementation scope.
