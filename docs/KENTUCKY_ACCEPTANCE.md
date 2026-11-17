@@ -710,3 +710,11 @@ proof. Sandbox harness failures remain separately documented. No new release
 prerequisite or deadline extension was added. Kentucky's original and extended
 deadlines were missed; this is actual late acceptance. Development now closes
 for this scope. South Carolina may activate; Virginia stays behind it.
+
+## November17 — named history-retention correction
+
+Restored89 verified older rolling-page notices from repository history and
+protected subsequent refreshes from aging them out. See SOURCE_SCREEN for
+provenance and bounded validation. Existing records and original dates are
+unchanged. Acceptance scope stays closed otherwise; Delaware remains the sole
+active/unaccepted state, and its missed deadline is unchanged.

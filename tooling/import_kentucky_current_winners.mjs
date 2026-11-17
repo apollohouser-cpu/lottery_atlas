@@ -11,6 +11,7 @@
  * publishes a complete historic retailer-level winner source.
  */
 import {readFile, writeFile} from 'node:fs/promises';
+import {retainKentuckyNotices} from './kentucky_notice_history.mjs';
 
 const winnersUrl = 'https://www.kylottery.com/apps/winners/index.html';
 const outputPath = process.argv[2];
@@ -83,7 +84,14 @@ if (!outputPath || !retailerDirectoryPath) {
     return notices;
   };
   try {
+    let previous;
+    try { previous = JSON.parse(await readFile(outputPath, 'utf8')); }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
     const notices = noticesFrom(await responseText(winnersUrl));
+    if (!notices.length) throw Error('Empty Kentucky notice page; retain saved feed');
+    const noticeDates = notices.map(n => n.date.toISOString()).sort();
+    const reportStart = noticeDates[0];
+    const reportEnd = noticeDates.at(-1);
     const directory = JSON.parse(await readFile(retailerDirectoryPath, 'utf8'));
     const verifiedRetailers = directory.directories?.find(
       (entry) => entry.state === 'Kentucky',
@@ -141,12 +149,14 @@ if (!outputPath || !retailerDirectoryPath) {
     }
     activities.sort((left, right) => left.id.localeCompare(right.id));
     const latest = activities.map((activity) => activity.drawDate).sort().at(-1) ?? null;
+    const retained = retainKentuckyNotices(previous, activities, reportStart, reportEnd);
     const output = {
       source: 'Kentucky Lottery official current winner notices and retailer finder',
       updatedAt: latest,
-      sourceLastUpdated: latest,
-      coverage: `Current rolling Kentucky Lottery retailer-level winner notices. ${activities.length} notices were matched to one official retailer listing with a previously verified precise coordinate. ${skipped.size} published retailer notices were excluded because an exact unique official retailer and coordinate could not be verified. This source does not represent a complete historic Kentucky winner archive.`,
-      activities,
+      sourceLastUpdated: reportEnd,
+      currentReportStart: reportStart,
+      coverage: `Retained verified Kentucky Lottery retailer-level winner notices plus the current rolling report. ${retained.length} retained notices (${activities.length} current) were matched to one official retailer listing with a previously verified precise coordinate. ${skipped.size} published retailer notices were excluded because an exact unique official retailer and coordinate could not be verified. This source does not represent a complete historic Kentucky winner archive.`,
+      activities: retained,
     };
     await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`);
     console.log(`Imported ${activities.length} Kentucky current winner notices; ${skipped.size} notices were excluded.`);
