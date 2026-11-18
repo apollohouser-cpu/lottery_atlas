@@ -1425,3 +1425,10 @@ sources, using whole-day records without inventing hourly precision.
 Twenty-one focused ranking/timeline tests pass. Targeted analysis reports only
 four existing Radio groupValue/onChanged deprecation notices. Physical review of
 this change remains pending; no Delaware acceptance or beta gate closure inferred.
+
+November18 installation follow-up: owner reconnected the physical iPhone. The
+prepared county/timeline build passed deep/strict signature verification, installed
+in place and launched successfully through the device CLI. No trust/sign-in step
+was needed. Private install/launch evidence is in
+work/owner_iphone/county_timeline_20261118. Physical interaction review remains
+pending; installation does not close Delaware offline or broader beta gates.
