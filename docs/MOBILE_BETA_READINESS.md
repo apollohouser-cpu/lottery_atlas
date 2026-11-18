@@ -1432,3 +1432,11 @@ in place and launched successfully through the device CLI. No trust/sign-in step
 was needed. Private install/launch evidence is in
 work/owner_iphone/county_timeline_20261118. Physical interaction review remains
 pending; installation does not close Delaware offline or broader beta gates.
+
+November18 owner confirmation supersedes the pending interaction review above:
+the owner confirmed county-scoped Top Five cities/towns, retailers and games,
+and the chosen timeline mode remaining selected across map views on the iPhone.
+This is owner-reported physical evidence for these two refinements; do not repeat
+those checks. Delaware offline restart/failure retention and the separate broader
+beta prerequisites remain unverified. Private confirmation is recorded in
+work/owner_iphone/county_timeline_20261118/status.json.
