@@ -65,6 +65,9 @@ class MapRankingSnapshot {
     records: records
         .where(
           (r) =>
+              (countyName == null ||
+                  MapRankingService._normalize(r.county) ==
+                      MapRankingService._normalize(countyName!)) &&
               (kind == RankingGameKind.all ||
                   (kind == RankingGameKind.scratchOff
                       ? r.game == LotteryGame.scratchOff
@@ -81,6 +84,8 @@ class MapRankingSnapshot {
     countyIds: countyIds,
     stateName: stateName,
     stateAbbreviation: stateAbbreviation,
+    countyName: countyName,
+    countyId: countyId,
     rankingLevel: stateName == null ? MapRankingLevel.state : selected,
   );
 

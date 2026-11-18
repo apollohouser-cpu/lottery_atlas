@@ -18,6 +18,7 @@ class _MostWinningStateCardState extends State<MostWinningStateCard> {
   RankingGameKind _kind = RankingGameKind.all;
   String? _gameName;
   String? _state;
+  String? _county;
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<MapRankingSnapshot>(
@@ -27,6 +28,11 @@ class _MostWinningStateCardState extends State<MostWinningStateCard> {
           _state = source.stateName;
           _level = null;
           _kind = RankingGameKind.all;
+          _gameName = null;
+        }
+        if (_county != source.countyId) {
+          _county = source.countyId;
+          _level = null;
           _gameName = null;
         }
         final level = source.stateName == null
@@ -165,11 +171,12 @@ class _MostWinningStateCardState extends State<MostWinningStateCard> {
                         itemHeight: null,
                         value: level,
                         dropdownColor: const Color(0xFF0B1D2C),
-                        items: const [
-                          DropdownMenuItem(
-                            value: MapRankingLevel.county,
-                            child: Text('Counties'),
-                          ),
+                        items: [
+                          if (source.countyName == null)
+                            const DropdownMenuItem(
+                              value: MapRankingLevel.county,
+                              child: Text('Counties'),
+                            ),
                           DropdownMenuItem(
                             value: MapRankingLevel.city,
                             child: Text('Cities / towns'),
@@ -460,9 +467,9 @@ class _MostWinningStateCardState extends State<MostWinningStateCard> {
         MapRankingLevel.city =>
           'TOP CITIES BY PUBLISHED RECORDS · ${snapshot.countyName ?? snapshot.stateName}',
         MapRankingLevel.retailer =>
-          'TOP RETAILERS BY PUBLISHED RECORDS · ${snapshot.cityName ?? snapshot.stateName}',
+          'TOP RETAILERS BY PUBLISHED RECORDS · ${snapshot.cityName ?? snapshot.countyName ?? snapshot.stateName}',
         MapRankingLevel.game =>
-          'GAMES BY PUBLISHED RECORDS · ${snapshot.retailerName ?? snapshot.stateName}',
+          'GAMES BY PUBLISHED RECORDS · ${snapshot.retailerName ?? snapshot.countyName ?? snapshot.stateName}',
         MapRankingLevel.state => 'TOP 5 WINNING STATES',
       };
     }
@@ -473,9 +480,9 @@ class _MostWinningStateCardState extends State<MostWinningStateCard> {
       MapRankingLevel.city =>
         'TOP 5 WINNING CITIES / TOWNS · ${snapshot.countyName ?? snapshot.stateName}',
       MapRankingLevel.retailer =>
-        'TOP 5 WINNING RETAILERS · ${snapshot.cityName ?? snapshot.stateName}',
+        'TOP 5 WINNING RETAILERS · ${snapshot.cityName ?? snapshot.countyName ?? snapshot.stateName}',
       MapRankingLevel.game =>
-        'MOST WINNING GAMES · ${snapshot.retailerName ?? snapshot.stateName}',
+        'MOST WINNING GAMES · ${snapshot.retailerName ?? snapshot.countyName ?? snapshot.stateName}',
     };
   }
 

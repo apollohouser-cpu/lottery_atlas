@@ -6,6 +6,40 @@ import 'package:lottery_atlas/widgets/map/map_controls_overlay.dart';
 import 'package:lottery_atlas/widgets/map/map_filter_state.dart';
 
 void main() {
+  for (final mode in ['Day', 'Week', 'Year']) {
+    testWidgets('$mode survives national and state view changes', (
+      tester,
+    ) async {
+      tester.view.physicalSize = const Size(1200, 1000);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      Widget view(String? state, bool dateOnly) => MaterialApp(
+        home: Scaffold(
+          body: MapControlsOverlay(
+            key: const ValueKey('map-controls'),
+            selectedStateName: state,
+            dayOnlyActivity: dateOnly,
+          ),
+        ),
+      );
+      await tester.pumpWidget(view(null, false));
+      await tester.pumpAndSettle();
+      await tester.tap(find.widgetWithText(ChoiceChip, mode));
+      await tester.pumpAndSettle();
+      for (final state in ['South Carolina', 'Kentucky', null]) {
+        await tester.pumpWidget(view(state, state != null));
+        await tester.pumpAndSettle();
+        expect(
+          tester
+              .widget<ChoiceChip>(find.widgetWithText(ChoiceChip, mode))
+              .selected,
+          isTrue,
+        );
+      }
+    });
+  }
+
   for (final size in [const Size(390, 844), const Size(844, 390)]) {
     testWidgets('map scrubber changes date directly at $size', (tester) async {
       tester.view.devicePixelRatio = 1;

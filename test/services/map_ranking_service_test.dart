@@ -84,6 +84,40 @@ void main() {
     ),
   ];
 
+  test('county filters exclude other counties for every ranking category', () {
+    final other = _activity(
+      id: 'outside',
+      state: 'NY',
+      county: 'Beta',
+      city: 'Outside Town',
+      retailer: 'Outside Store',
+      game: 'Outside Game',
+      tickets: 999,
+      prize: 999999,
+    );
+    final source = _snapshot(
+      [...records, other],
+      stateName: 'New York',
+      stateAbbreviation: 'NY',
+      countyName: 'Alpha',
+    );
+    for (final level in [
+      MapRankingLevel.city,
+      MapRankingLevel.retailer,
+      MapRankingLevel.game,
+    ]) {
+      final filtered = source.forRanking(level);
+      expect(filtered.countyName, 'Alpha');
+      expect(filtered.records.any((r) => r.id == 'outside'), isFalse);
+      expect(
+        MapRankingService.rankings(
+          filtered,
+        ).any((r) => r.label.startsWith('Outside')),
+        isFalse,
+      );
+    }
+  });
+
   test(
     'independent state categories preserve timeline and named game scope',
     () {
@@ -91,7 +125,7 @@ void main() {
         records,
         stateName: 'New York',
         stateAbbreviation: 'NY',
-        countyName: 'Beta',
+        countyName: 'Alpha',
       );
       final cities = MapRankingService.rankings(
         source.forRanking(MapRankingLevel.city),

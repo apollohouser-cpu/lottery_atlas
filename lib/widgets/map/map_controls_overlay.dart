@@ -168,6 +168,7 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
   // The map opens in a practical "right now" view. Historical scales remain
   // one tap away when the user wants to explore older activity.
   TimelineGranularity _timelineGranularity = TimelineGranularity.day;
+  bool _hasChosenTimelineMode = false;
   late DateTime _timelineAnchor;
   Timer? _timelinePlaybackTimer;
   Timer? _timelineLoopPauseTimer;
@@ -201,7 +202,9 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
       return;
     }
     _stopTimelinePlayback();
-    _timelineGranularity = TimelineGranularity.week;
+    if (!_hasChosenTimelineMode) {
+      _timelineGranularity = TimelineGranularity.week;
+    }
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted || !widget.dayOnlyActivity) return;
       _setTimelineValue(_initialTimelineValue());
@@ -1472,7 +1475,10 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
 
   void _setGranularity(TimelineGranularity granularity) {
     _stopTimelinePlayback();
-    setState(() => _timelineGranularity = granularity);
+    setState(() {
+      _hasChosenTimelineMode = true;
+      _timelineGranularity = granularity;
+    });
     _setTimelineValue(_initialTimelineValue());
   }
 
@@ -1632,6 +1638,12 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
         end = start
             .add(const Duration(hours: 1))
             .subtract(const Duration(milliseconds: 1));
+        if (widget.dayOnlyActivity) {
+          start = DateTime(start.year, start.month, start.day);
+          end = start
+              .add(const Duration(days: 1))
+              .subtract(const Duration(milliseconds: 1));
+        }
         nextAnchor = start;
       case TimelineGranularity.week:
         final weekStart = _timelineAnchor.subtract(
@@ -1724,7 +1736,9 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
     if (_timelineGranularity == TimelineGranularity.year) {
       return 'Week ${_yearWeekIndex(range.start) + 1} · ${range.start.year}';
     }
-    if (_timelineGranularity == TimelineGranularity.month) {
+    if (_timelineGranularity == TimelineGranularity.month ||
+        (_timelineGranularity == TimelineGranularity.day &&
+            widget.dayOnlyActivity)) {
       return '${months[range.start.month - 1]} ${range.start.day}';
     }
     if (_timelineGranularity == TimelineGranularity.day) {
@@ -1923,7 +1937,9 @@ class _MapControlsOverlayState extends State<MapControlsOverlay> {
           children: [
             for (final mode in TimelineGranularity.values.where(
               (mode) =>
-                  !widget.dayOnlyActivity || mode != TimelineGranularity.day,
+                  !widget.dayOnlyActivity ||
+                  mode != TimelineGranularity.day ||
+                  _timelineGranularity == TimelineGranularity.day,
             ))
               Expanded(
                 child: Padding(

@@ -1411,3 +1411,17 @@ matches the reviewed feed SHA256
 Private deployment evidence is under work/texas_history_audit_20261117.
 No phone reinstall is needed; physical refresh/visual/offline evidence remains
 unverified. Delaware acceptance and all broader beta gates stay open.
+
+## November18 — county rankings and timeline navigation
+
+Owner requested county-scoped Top Five cities/towns, retailers and games, and
+preservation of the chosen timeline mode between map views. Ranking filters now
+retain the selected county, including named-game choices; county navigation resets
+the category to its local default and headings retain county context. Map controls
+keep a stable identity across state/game navigation so the selected mode, anchor
+and playback controls are retained. Explicit Day selection remains Day on date-only
+sources, using whole-day records without inventing hourly precision.
+
+Twenty-one focused ranking/timeline tests pass. Targeted analysis reports only
+four existing Radio groupValue/onChanged deprecation notices. Physical review of
+this change remains pending; no Delaware acceptance or beta gate closure inferred.

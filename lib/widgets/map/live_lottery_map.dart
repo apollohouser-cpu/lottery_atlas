@@ -4883,9 +4883,7 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
 
             Positioned.fill(
               child: MapControlsOverlay(
-                key: ValueKey(
-                  '$_selectedStateName:$_selectedStateActivityGameName',
-                ),
+                key: const ValueKey('map-controls'),
                 selectedStateName: _selectedStateName,
                 onNationalMap: _returnToNationalMap,
                 onSources: () {
