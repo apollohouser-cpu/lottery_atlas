@@ -102,6 +102,217 @@
       "coverage": "North Carolina prizes and Wins only. Jackpot sharing and possible pari-mutuel lower prizes apply. Labels are not calculated total payouts or distinct-person counts; no retailer joins or map positions."
     },
     {
+      "id": "powerball-2026-11-18",
+      "game": "Powerball",
+      "session": "Drawing",
+      "drawDate": "2026-11-18",
+      "reportType": "tier-report",
+      "variants": [
+        {
+          "name": "Powerball",
+          "winningNumbers": [
+            18,
+            31,
+            43,
+            51,
+            62
+          ],
+          "powerball": 12,
+          "tiers": [
+            {
+              "matchLabel": "5+PB",
+              "sourceMatchLabel": "5+PB",
+              "prizeLabel": "$93,200,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "5",
+              "sourceMatchLabel": "5",
+              "prizeLabel": "$1,000,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4+PB",
+              "sourceMatchLabel": "4+PB",
+              "prizeLabel": "$50,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4",
+              "sourceMatchLabel": "4",
+              "prizeLabel": "$100",
+              "reportedWins": 4
+            },
+            {
+              "matchLabel": "3+PB",
+              "sourceMatchLabel": "3+PB",
+              "prizeLabel": "$100",
+              "reportedWins": 16
+            },
+            {
+              "matchLabel": "3",
+              "sourceMatchLabel": "3",
+              "prizeLabel": "$7",
+              "reportedWins": 307
+            },
+            {
+              "matchLabel": "2+PB",
+              "sourceMatchLabel": "2+PB",
+              "prizeLabel": "$7",
+              "reportedWins": 247
+            },
+            {
+              "matchLabel": "1+PB",
+              "sourceMatchLabel": "1+PB",
+              "prizeLabel": "$4",
+              "reportedWins": 2045
+            },
+            {
+              "matchLabel": "PB",
+              "sourceMatchLabel": "PB",
+              "prizeLabel": "$4",
+              "reportedWins": 5063
+            }
+          ],
+          "notes": [
+            "This table shows North Carolina wins. Powerball jackpots won outside the state of North Carolina are not shown."
+          ]
+        },
+        {
+          "name": "Power Play",
+          "multiplierLabel": "POWER PLAY 2x",
+          "tiers": [
+            {
+              "matchLabel": "5",
+              "sourceMatchLabel": "5",
+              "prizeLabel": "$2,000,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4+PB",
+              "sourceMatchLabel": "4+PB",
+              "prizeLabel": "$100,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4",
+              "sourceMatchLabel": "4",
+              "prizeLabel": "$200",
+              "reportedWins": 4
+            },
+            {
+              "matchLabel": "3+PB",
+              "sourceMatchLabel": "3+PB",
+              "prizeLabel": "$200",
+              "reportedWins": 5
+            },
+            {
+              "matchLabel": "3",
+              "sourceMatchLabel": "3",
+              "prizeLabel": "$14",
+              "reportedWins": 144
+            },
+            {
+              "matchLabel": "2+PB",
+              "sourceMatchLabel": "2+PB",
+              "prizeLabel": "$14",
+              "reportedWins": 129
+            },
+            {
+              "matchLabel": "1+PB",
+              "sourceMatchLabel": "1+PB",
+              "prizeLabel": "$8",
+              "reportedWins": 1033
+            },
+            {
+              "matchLabel": "PB",
+              "sourceMatchLabel": "PB",
+              "prizeLabel": "$8",
+              "reportedWins": 2670
+            }
+          ],
+          "notes": [
+            "The jackpot row is shared with the base table; no separate Power Play jackpot count is printed."
+          ]
+        },
+        {
+          "name": "Double Play",
+          "winningNumbers": [
+            4,
+            6,
+            8,
+            48,
+            55
+          ],
+          "powerball": 19,
+          "tiers": [
+            {
+              "matchLabel": "5+PB",
+              "sourceMatchLabel": "5+PB",
+              "prizeLabel": "$10,000,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "5",
+              "sourceMatchLabel": "5",
+              "prizeLabel": "$500,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4+PB",
+              "sourceMatchLabel": "4+PB",
+              "prizeLabel": "$50,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4",
+              "sourceMatchLabel": "4+PB",
+              "prizeLabel": "$500",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "3+PB",
+              "sourceMatchLabel": "3+PB",
+              "prizeLabel": "$500",
+              "reportedWins": 5
+            },
+            {
+              "matchLabel": "3",
+              "sourceMatchLabel": "3",
+              "prizeLabel": "$20",
+              "reportedWins": 111
+            },
+            {
+              "matchLabel": "2+PB",
+              "sourceMatchLabel": "2+PB",
+              "prizeLabel": "$20",
+              "reportedWins": 69
+            },
+            {
+              "matchLabel": "1+PB",
+              "sourceMatchLabel": "1+PB",
+              "prizeLabel": "$10",
+              "reportedWins": 478
+            },
+            {
+              "matchLabel": "PB",
+              "sourceMatchLabel": "PB",
+              "prizeLabel": "$7",
+              "reportedWins": 1046
+            }
+          ],
+          "notes": [
+            "This table shows North Carolina wins."
+          ]
+        }
+      ],
+      "sourceWarnings": [
+        "Double Play four-white-ball row displays four white balls without a Powerball, but its source accessibility label says 4+PB. Both source labels are retained; no counts are reassigned."
+      ],
+      "sourceUrl": "https://nclottery.com/powerball?dd=11/18/2026",
+      "coverage": "North Carolina Wins only. Base, Power Play and Double Play counts remain separate; no distinct-person, total-payout, cash-option or retailer-location inference."
+    },
+    {
       "id": "powerball-2026-11-16",
       "game": "Powerball",
       "session": "Drawing",
@@ -313,234 +524,23 @@
       "coverage": "North Carolina Wins only. Base, Power Play and Double Play counts remain separate; no distinct-person, total-payout, cash-option or retailer-location inference."
     },
     {
-      "id": "powerball-2026-11-14",
-      "game": "Powerball",
-      "session": "Drawing",
-      "drawDate": "2026-11-14",
-      "reportType": "tier-report",
-      "variants": [
-        {
-          "name": "Powerball",
-          "winningNumbers": [
-            9,
-            44,
-            49,
-            51,
-            68
-          ],
-          "powerball": 4,
-          "tiers": [
-            {
-              "matchLabel": "5+PB",
-              "sourceMatchLabel": "5+PB",
-              "prizeLabel": "$65,900,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "5",
-              "sourceMatchLabel": "5",
-              "prizeLabel": "$1,000,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4+PB",
-              "sourceMatchLabel": "4+PB",
-              "prizeLabel": "$50,000",
-              "reportedWins": 1
-            },
-            {
-              "matchLabel": "4",
-              "sourceMatchLabel": "4",
-              "prizeLabel": "$100",
-              "reportedWins": 3
-            },
-            {
-              "matchLabel": "3+PB",
-              "sourceMatchLabel": "3+PB",
-              "prizeLabel": "$100",
-              "reportedWins": 12
-            },
-            {
-              "matchLabel": "3",
-              "sourceMatchLabel": "3",
-              "prizeLabel": "$7",
-              "reportedWins": 356
-            },
-            {
-              "matchLabel": "2+PB",
-              "sourceMatchLabel": "2+PB",
-              "prizeLabel": "$7",
-              "reportedWins": 369
-            },
-            {
-              "matchLabel": "1+PB",
-              "sourceMatchLabel": "1+PB",
-              "prizeLabel": "$4",
-              "reportedWins": 2820
-            },
-            {
-              "matchLabel": "PB",
-              "sourceMatchLabel": "PB",
-              "prizeLabel": "$4",
-              "reportedWins": 7041
-            }
-          ],
-          "notes": [
-            "This table shows North Carolina wins. Powerball jackpots won outside the state of North Carolina are not shown."
-          ]
-        },
-        {
-          "name": "Power Play",
-          "multiplierLabel": "POWER PLAY 2x",
-          "tiers": [
-            {
-              "matchLabel": "5",
-              "sourceMatchLabel": "5",
-              "prizeLabel": "$2,000,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4+PB",
-              "sourceMatchLabel": "4+PB",
-              "prizeLabel": "$100,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4",
-              "sourceMatchLabel": "4",
-              "prizeLabel": "$200",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "3+PB",
-              "sourceMatchLabel": "3+PB",
-              "prizeLabel": "$200",
-              "reportedWins": 10
-            },
-            {
-              "matchLabel": "3",
-              "sourceMatchLabel": "3",
-              "prizeLabel": "$14",
-              "reportedWins": 161
-            },
-            {
-              "matchLabel": "2+PB",
-              "sourceMatchLabel": "2+PB",
-              "prizeLabel": "$14",
-              "reportedWins": 144
-            },
-            {
-              "matchLabel": "1+PB",
-              "sourceMatchLabel": "1+PB",
-              "prizeLabel": "$8",
-              "reportedWins": 1295
-            },
-            {
-              "matchLabel": "PB",
-              "sourceMatchLabel": "PB",
-              "prizeLabel": "$8",
-              "reportedWins": 3258
-            }
-          ],
-          "notes": [
-            "The jackpot row is shared with the base table; no separate Power Play jackpot count is printed."
-          ]
-        },
-        {
-          "name": "Double Play",
-          "winningNumbers": [
-            15,
-            25,
-            30,
-            32,
-            67
-          ],
-          "powerball": 1,
-          "tiers": [
-            {
-              "matchLabel": "5+PB",
-              "sourceMatchLabel": "5+PB",
-              "prizeLabel": "$10,000,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "5",
-              "sourceMatchLabel": "5",
-              "prizeLabel": "$500,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4+PB",
-              "sourceMatchLabel": "4+PB",
-              "prizeLabel": "$50,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4",
-              "sourceMatchLabel": "4+PB",
-              "prizeLabel": "$500",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "3+PB",
-              "sourceMatchLabel": "3+PB",
-              "prizeLabel": "$500",
-              "reportedWins": 3
-            },
-            {
-              "matchLabel": "3",
-              "sourceMatchLabel": "3",
-              "prizeLabel": "$20",
-              "reportedWins": 105
-            },
-            {
-              "matchLabel": "2+PB",
-              "sourceMatchLabel": "2+PB",
-              "prizeLabel": "$20",
-              "reportedWins": 56
-            },
-            {
-              "matchLabel": "1+PB",
-              "sourceMatchLabel": "1+PB",
-              "prizeLabel": "$10",
-              "reportedWins": 542
-            },
-            {
-              "matchLabel": "PB",
-              "sourceMatchLabel": "PB",
-              "prizeLabel": "$7",
-              "reportedWins": 1194
-            }
-          ],
-          "notes": [
-            "This table shows North Carolina wins."
-          ]
-        }
-      ],
-      "sourceWarnings": [
-        "Double Play four-white-ball row displays four white balls without a Powerball, but its source accessibility label says 4+PB. Both source labels are retained; no counts are reassigned."
-      ],
-      "sourceUrl": "https://nclottery.com/powerball?dd=11/14/2026",
-      "coverage": "North Carolina Wins only. Base, Power Play and Double Play counts remain separate; no distinct-person, total-payout, cash-option or retailer-location inference."
-    },
-    {
-      "id": "pick-4-2026-11-17-evening",
+      "id": "pick-4-2026-11-18-evening",
       "game": "Pick 4",
       "session": "Evening",
-      "drawDate": "2026-11-17",
+      "drawDate": "2026-11-18",
       "reportType": "combined-summary",
       "winningDigits": [
-        "3",
         "2",
-        "6",
-        "5"
+        "3",
+        "4",
+        "1"
       ],
-      "fireball": "1",
-      "reportedWinners": 483,
-      "reportedPayoutLabel": "$186,139",
-      "reportedPayoutCents": 18613900,
-      "sourceSummaryLabel": "483 winners won a total of $186,139",
-      "sourceUrl": "https://nclottery.com/Pick4-Draw?dn=12167",
+      "fireball": "4",
+      "reportedWinners": 1377,
+      "reportedPayoutLabel": "$255,327",
+      "reportedPayoutCents": 25532700,
+      "sourceSummaryLabel": "1,377 winners won a total of $255,327",
+      "sourceUrl": "https://nclottery.com/Pick4-Draw?dn=12169",
       "coverage": "Official Total Combined Winnings summary only. The source payout schedules do not provide tier winner counts. No base/Fireball split, distinct-person total, retailer claims or map positions.",
       "payoutSchedules": [
         {
@@ -553,7 +553,7 @@
           "rows": [
             {
               "playType": "EXACT",
-              "matchLabel": "3‑2‑6‑5",
+              "matchLabel": "2‑3‑4‑1",
               "payoutLabels": [
                 "$2,500",
                 "$5,000"
@@ -561,7 +561,7 @@
             },
             {
               "playType": "ANY",
-              "matchLabel": "24-Way 3‑2‑6‑5 3‑2‑5‑6 3‑6‑2‑5 3‑6‑5‑2 3‑5‑2‑6 3‑5‑6‑2 2‑3‑6‑5 2‑3‑5‑6 2‑6‑3‑5 2‑6‑5‑3 2‑5‑3‑6 2‑5‑6‑3 6‑3‑2‑5 6‑3‑5‑2 6‑2‑3‑5 6‑2‑5‑3 6‑5‑3‑2 6‑5‑2‑3 5‑3‑2‑6 5‑3‑6‑2 5‑2‑3‑6 5‑2‑6‑3 5‑6‑3‑2 5‑6‑2‑3",
+              "matchLabel": "24-Way 2‑3‑4‑1 2‑3‑1‑4 2‑4‑3‑1 2‑4‑1‑3 2‑1‑3‑4 2‑1‑4‑3 3‑2‑4‑1 3‑2‑1‑4 3‑4‑2‑1 3‑4‑1‑2 3‑1‑2‑4 3‑1‑4‑2 4‑2‑3‑1 4‑2‑1‑3 4‑3‑2‑1 4‑3‑1‑2 4‑1‑2‑3 4‑1‑3‑2 1‑2‑3‑4 1‑2‑4‑3 1‑3‑2‑4 1‑3‑4‑2 1‑4‑2‑3 1‑4‑3‑2",
               "payoutLabels": [
                 "$100",
                 "$200"
@@ -569,7 +569,7 @@
             },
             {
               "playType": "50/50",
-              "matchLabel": "24-Way 3‑2‑6‑5 3‑2‑5‑6 3‑6‑2‑5 3‑6‑5‑2 3‑5‑2‑6 3‑5‑6‑2 2‑3‑6‑5 2‑3‑5‑6 2‑6‑3‑5 2‑6‑5‑3 2‑5‑3‑6 2‑5‑6‑3 6‑3‑2‑5 6‑3‑5‑2 6‑2‑3‑5 6‑2‑5‑3 6‑5‑3‑2 6‑5‑2‑3 5‑3‑2‑6 5‑3‑6‑2 5‑2‑3‑6 5‑2‑6‑3 5‑6‑3‑2 5‑6‑2‑3",
+              "matchLabel": "24-Way 2‑3‑4‑1 2‑3‑1‑4 2‑4‑3‑1 2‑4‑1‑3 2‑1‑3‑4 2‑1‑4‑3 3‑2‑4‑1 3‑2‑1‑4 3‑4‑2‑1 3‑4‑1‑2 3‑1‑2‑4 3‑1‑4‑2 4‑2‑3‑1 4‑2‑1‑3 4‑3‑2‑1 4‑3‑1‑2 4‑1‑2‑3 4‑1‑3‑2 1‑2‑3‑4 1‑2‑4‑3 1‑3‑2‑4 1‑3‑4‑2 1‑4‑2‑3 1‑4‑3‑2",
               "payoutLabels": [
                 "N/A",
                 "Exact+Any $2,600 Any $100"
@@ -577,7 +577,7 @@
             },
             {
               "playType": "COMBO",
-              "matchLabel": "24-Way 3‑2‑6‑5 3‑2‑5‑6 3‑6‑2‑5 3‑6‑5‑2 3‑5‑2‑6 3‑5‑6‑2 2‑3‑6‑5 2‑3‑5‑6 2‑6‑3‑5 2‑6‑5‑3 2‑5‑3‑6 2‑5‑6‑3 6‑3‑2‑5 6‑3‑5‑2 6‑2‑3‑5 6‑2‑5‑3 6‑5‑3‑2 6‑5‑2‑3 5‑3‑2‑6 5‑3‑6‑2 5‑2‑3‑6 5‑2‑6‑3 5‑6‑3‑2 5‑6‑2‑3",
+              "matchLabel": "24-Way 2‑3‑4‑1 2‑3‑1‑4 2‑4‑3‑1 2‑4‑1‑3 2‑1‑3‑4 2‑1‑4‑3 3‑2‑4‑1 3‑2‑1‑4 3‑4‑2‑1 3‑4‑1‑2 3‑1‑2‑4 3‑1‑4‑2 4‑2‑3‑1 4‑2‑1‑3 4‑3‑2‑1 4‑3‑1‑2 4‑1‑2‑3 4‑1‑3‑2 1‑2‑3‑4 1‑2‑4‑3 1‑3‑2‑4 1‑3‑4‑2 1‑4‑2‑3 1‑4‑3‑2",
               "payoutLabels": [
                 "$12 Play $2,500",
                 "$24 Play $5,000"
@@ -585,7 +585,7 @@
             },
             {
               "playType": "PAIR",
-              "matchLabel": "3‑2 Front | 6‑5 Back",
+              "matchLabel": "2‑3 Front | 4‑1 Back",
               "payoutLabels": [
                 "$25",
                 "$50"
@@ -724,23 +724,23 @@
       ]
     },
     {
-      "id": "pick-4-2026-11-16-evening",
+      "id": "pick-4-2026-11-17-evening",
       "game": "Pick 4",
       "session": "Evening",
-      "drawDate": "2026-11-16",
+      "drawDate": "2026-11-17",
       "reportType": "combined-summary",
       "winningDigits": [
+        "3",
+        "2",
         "6",
-        "1",
-        "6",
-        "9"
+        "5"
       ],
       "fireball": "1",
-      "reportedWinners": 629,
-      "reportedPayoutLabel": "$186,239",
-      "reportedPayoutCents": 18623900,
-      "sourceSummaryLabel": "629 winners won a total of $186,239",
-      "sourceUrl": "https://nclottery.com/Pick4-Draw?dn=12165",
+      "reportedWinners": 483,
+      "reportedPayoutLabel": "$186,139",
+      "reportedPayoutCents": 18613900,
+      "sourceSummaryLabel": "483 winners won a total of $186,139",
+      "sourceUrl": "https://nclottery.com/Pick4-Draw?dn=12167",
       "coverage": "Official Total Combined Winnings summary only. The source payout schedules do not provide tier winner counts. No base/Fireball split, distinct-person total, retailer claims or map positions.",
       "payoutSchedules": [
         {
@@ -753,7 +753,7 @@
           "rows": [
             {
               "playType": "EXACT",
-              "matchLabel": "6‑1‑6‑9",
+              "matchLabel": "3‑2‑6‑5",
               "payoutLabels": [
                 "$2,500",
                 "$5,000"
@@ -761,31 +761,31 @@
             },
             {
               "playType": "ANY",
-              "matchLabel": "12-Way 6‑1‑6‑9 6‑1‑9‑6 6‑6‑1‑9 6‑6‑9‑1 6‑9‑1‑6 6‑9‑6‑1 1‑6‑6‑9 1‑6‑9‑6 1‑9‑6‑6 9‑6‑1‑6 9‑6‑6‑1 9‑1‑6‑6",
+              "matchLabel": "24-Way 3‑2‑6‑5 3‑2‑5‑6 3‑6‑2‑5 3‑6‑5‑2 3‑5‑2‑6 3‑5‑6‑2 2‑3‑6‑5 2‑3‑5‑6 2‑6‑3‑5 2‑6‑5‑3 2‑5‑3‑6 2‑5‑6‑3 6‑3‑2‑5 6‑3‑5‑2 6‑2‑3‑5 6‑2‑5‑3 6‑5‑3‑2 6‑5‑2‑3 5‑3‑2‑6 5‑3‑6‑2 5‑2‑3‑6 5‑2‑6‑3 5‑6‑3‑2 5‑6‑2‑3",
               "payoutLabels": [
-                "$200",
-                "$400"
+                "$100",
+                "$200"
               ]
             },
             {
               "playType": "50/50",
-              "matchLabel": "12-Way 6‑1‑6‑9 6‑1‑9‑6 6‑6‑1‑9 6‑6‑9‑1 6‑9‑1‑6 6‑9‑6‑1 1‑6‑6‑9 1‑6‑9‑6 1‑9‑6‑6 9‑6‑1‑6 9‑6‑6‑1 9‑1‑6‑6",
+              "matchLabel": "24-Way 3‑2‑6‑5 3‑2‑5‑6 3‑6‑2‑5 3‑6‑5‑2 3‑5‑2‑6 3‑5‑6‑2 2‑3‑6‑5 2‑3‑5‑6 2‑6‑3‑5 2‑6‑5‑3 2‑5‑3‑6 2‑5‑6‑3 6‑3‑2‑5 6‑3‑5‑2 6‑2‑3‑5 6‑2‑5‑3 6‑5‑3‑2 6‑5‑2‑3 5‑3‑2‑6 5‑3‑6‑2 5‑2‑3‑6 5‑2‑6‑3 5‑6‑3‑2 5‑6‑2‑3",
               "payoutLabels": [
                 "N/A",
-                "Exact+Any $2,700 Any $200"
+                "Exact+Any $2,600 Any $100"
               ]
             },
             {
               "playType": "COMBO",
-              "matchLabel": "12-Way 6‑1‑6‑9 6‑1‑9‑6 6‑6‑1‑9 6‑6‑9‑1 6‑9‑1‑6 6‑9‑6‑1 1‑6‑6‑9 1‑6‑9‑6 1‑9‑6‑6 9‑6‑1‑6 9‑6‑6‑1 9‑1‑6‑6",
+              "matchLabel": "24-Way 3‑2‑6‑5 3‑2‑5‑6 3‑6‑2‑5 3‑6‑5‑2 3‑5‑2‑6 3‑5‑6‑2 2‑3‑6‑5 2‑3‑5‑6 2‑6‑3‑5 2‑6‑5‑3 2‑5‑3‑6 2‑5‑6‑3 6‑3‑2‑5 6‑3‑5‑2 6‑2‑3‑5 6‑2‑5‑3 6‑5‑3‑2 6‑5‑2‑3 5‑3‑2‑6 5‑3‑6‑2 5‑2‑3‑6 5‑2‑6‑3 5‑6‑3‑2 5‑6‑2‑3",
               "payoutLabels": [
-                "$6 Play $2,500",
-                "$12 Play $5,000"
+                "$12 Play $2,500",
+                "$24 Play $5,000"
               ]
             },
             {
               "playType": "PAIR",
-              "matchLabel": "6‑1 Front | 6‑9 Back",
+              "matchLabel": "3‑2 Front | 6‑5 Back",
               "payoutLabels": [
                 "$25",
                 "$50"
@@ -1324,22 +1324,22 @@
       ]
     },
     {
-      "id": "pick-3-2026-11-17-evening",
+      "id": "pick-3-2026-11-18-evening",
       "game": "Pick 3",
       "session": "Evening",
-      "drawDate": "2026-11-17",
+      "drawDate": "2026-11-18",
       "reportType": "combined-summary",
       "winningDigits": [
-        "6",
-        "6",
-        "2"
+        "5",
+        "0",
+        "1"
       ],
-      "fireball": "3",
-      "reportedWinners": 883,
-      "reportedPayoutLabel": "$156,619",
-      "reportedPayoutCents": 15661900,
-      "sourceSummaryLabel": "883 winners won a total of $156,619",
-      "sourceUrl": "https://nclottery.com/Pick3-Draw?dn=14003",
+      "fireball": "7",
+      "reportedWinners": 1965,
+      "reportedPayoutLabel": "$270,133",
+      "reportedPayoutCents": 27013300,
+      "sourceSummaryLabel": "1,965 winners won a total of $270,133",
+      "sourceUrl": "https://nclottery.com/Pick3-Draw?dn=14005",
       "coverage": "Official Total Combined Winnings summary only. The source payout schedules do not provide tier winner counts. No base/Fireball split, distinct-person total, retailer claims or map positions.",
       "payoutSchedules": [
         {
@@ -1352,7 +1352,7 @@
           "rows": [
             {
               "playType": "EXACT",
-              "matchLabel": "6‑6‑2",
+              "matchLabel": "5‑0‑1",
               "payoutLabels": [
                 "$250",
                 "$500"
@@ -1360,31 +1360,31 @@
             },
             {
               "playType": "ANY",
-              "matchLabel": "3-Way 6-6-2 6-2-6 2-6-6",
+              "matchLabel": "6-Way 5‑0‑1 5‑1‑0 0‑5‑1 0‑1‑5 1‑5‑0 1‑0‑5",
               "payoutLabels": [
-                "$80",
-                "$160"
+                "$40",
+                "$80"
               ]
             },
             {
               "playType": "50/50",
-              "matchLabel": "3-Way 6-6-2 6-2-6 2-6-6",
+              "matchLabel": "6-Way 5‑0‑1 5‑1‑0 0‑5‑1 0‑1‑5 1‑5‑0 1‑0‑5",
               "payoutLabels": [
                 "N/A",
-                "Exact+Any $330 Any $80"
+                "Exact+Any $290 Any $40"
               ]
             },
             {
               "playType": "COMBO",
-              "matchLabel": "3-Way 6-6-2 6-2-6 2-6-6",
+              "matchLabel": "6-Way 5‑0‑1 5‑1‑0 0‑5‑1 0‑1‑5 1‑5‑0 1‑0‑5",
               "payoutLabels": [
-                "$1.50 Play $250",
-                "$3 Play $500"
+                "$3 Play $250",
+                "$6 Play $500"
               ]
             },
             {
               "playType": "PAIR",
-              "matchLabel": "6‑6 Front | 6‑2 Back",
+              "matchLabel": "5‑0 Front | 0‑1 Back",
               "payoutLabels": [
                 "$25",
                 "$50"
@@ -1475,22 +1475,22 @@
       ]
     },
     {
-      "id": "pick-3-2026-11-16-evening",
+      "id": "pick-3-2026-11-17-evening",
       "game": "Pick 3",
       "session": "Evening",
-      "drawDate": "2026-11-16",
+      "drawDate": "2026-11-17",
       "reportType": "combined-summary",
       "winningDigits": [
-        "2",
-        "8",
-        "3"
+        "6",
+        "6",
+        "2"
       ],
-      "fireball": "9",
-      "reportedWinners": 1389,
-      "reportedPayoutLabel": "$161,975",
-      "reportedPayoutCents": 16197500,
-      "sourceSummaryLabel": "1,389 winners won a total of $161,975",
-      "sourceUrl": "https://nclottery.com/Pick3-Draw?dn=14001",
+      "fireball": "3",
+      "reportedWinners": 883,
+      "reportedPayoutLabel": "$156,619",
+      "reportedPayoutCents": 15661900,
+      "sourceSummaryLabel": "883 winners won a total of $156,619",
+      "sourceUrl": "https://nclottery.com/Pick3-Draw?dn=14003",
       "coverage": "Official Total Combined Winnings summary only. The source payout schedules do not provide tier winner counts. No base/Fireball split, distinct-person total, retailer claims or map positions.",
       "payoutSchedules": [
         {
@@ -1503,7 +1503,7 @@
           "rows": [
             {
               "playType": "EXACT",
-              "matchLabel": "2‑8‑3",
+              "matchLabel": "6‑6‑2",
               "payoutLabels": [
                 "$250",
                 "$500"
@@ -1511,31 +1511,31 @@
             },
             {
               "playType": "ANY",
-              "matchLabel": "6-Way 2‑8‑3 2‑3‑8 8‑2‑3 8‑3‑2 3‑2‑8 3‑8‑2",
+              "matchLabel": "3-Way 6-6-2 6-2-6 2-6-6",
               "payoutLabels": [
-                "$40",
-                "$80"
+                "$80",
+                "$160"
               ]
             },
             {
               "playType": "50/50",
-              "matchLabel": "6-Way 2‑8‑3 2‑3‑8 8‑2‑3 8‑3‑2 3‑2‑8 3‑8‑2",
+              "matchLabel": "3-Way 6-6-2 6-2-6 2-6-6",
               "payoutLabels": [
                 "N/A",
-                "Exact+Any $290 Any $40"
+                "Exact+Any $330 Any $80"
               ]
             },
             {
               "playType": "COMBO",
-              "matchLabel": "6-Way 2‑8‑3 2‑3‑8 8‑2‑3 8‑3‑2 3‑2‑8 3‑8‑2",
+              "matchLabel": "3-Way 6-6-2 6-2-6 2-6-6",
               "payoutLabels": [
-                "$3 Play $250",
-                "$6 Play $500"
+                "$1.50 Play $250",
+                "$3 Play $500"
               ]
             },
             {
               "playType": "PAIR",
-              "matchLabel": "2‑8 Front | 8‑3 Back",
+              "matchLabel": "6‑6 Front | 6‑2 Back",
               "payoutLabels": [
                 "$25",
                 "$50"
@@ -1928,6 +1928,73 @@
       ]
     },
     {
+      "id": "millionaire-for-life-2026-11-18",
+      "game": "Millionaire for Life",
+      "session": "Daily",
+      "drawDate": "2026-11-18",
+      "reportType": "tier-report",
+      "winningNumbers": [
+        9,
+        18,
+        38,
+        54,
+        57
+      ],
+      "millionaireBall": 3,
+      "tiers": [
+        {
+          "matchLabel": "5+MB",
+          "prizeLabel": "$1 Million/year for life",
+          "reportedWins": 0
+        },
+        {
+          "matchLabel": "5",
+          "prizeLabel": "$100,000/year for life",
+          "reportedWins": 0
+        },
+        {
+          "matchLabel": "4+MB",
+          "prizeLabel": "$7,500",
+          "reportedWins": 0
+        },
+        {
+          "matchLabel": "4",
+          "prizeLabel": "$500",
+          "reportedWins": 0
+        },
+        {
+          "matchLabel": "3+MB",
+          "prizeLabel": "$250",
+          "reportedWins": 11
+        },
+        {
+          "matchLabel": "3",
+          "prizeLabel": "$50",
+          "reportedWins": 34
+        },
+        {
+          "matchLabel": "2+MB",
+          "prizeLabel": "$25",
+          "reportedWins": 178
+        },
+        {
+          "matchLabel": "2",
+          "prizeLabel": "$8",
+          "reportedWins": 571
+        },
+        {
+          "matchLabel": "1+MB",
+          "prizeLabel": "$8",
+          "reportedWins": 1101
+        }
+      ],
+      "notes": [
+        "This table shows North Carolina wins. Millionaire For Life jackpots won outside the state of North Carolina are not shown."
+      ],
+      "sourceUrl": "https://nclottery.com/millionaire-for-life?dd=11/18/2026",
+      "coverage": "North Carolina Wins only, not distinct people or nationwide jackpot counts. Annual-for-life prizes remain literal; no cash-option conversion, total-payout calculation or retailer joins."
+    },
+    {
       "id": "millionaire-for-life-2026-11-17",
       "game": "Millionaire for Life",
       "session": "Daily",
@@ -1992,73 +2059,6 @@
         "This table shows North Carolina wins. Millionaire For Life jackpots won outside the state of North Carolina are not shown."
       ],
       "sourceUrl": "https://nclottery.com/millionaire-for-life?dd=11/17/2026",
-      "coverage": "North Carolina Wins only, not distinct people or nationwide jackpot counts. Annual-for-life prizes remain literal; no cash-option conversion, total-payout calculation or retailer joins."
-    },
-    {
-      "id": "millionaire-for-life-2026-11-16",
-      "game": "Millionaire for Life",
-      "session": "Daily",
-      "drawDate": "2026-11-16",
-      "reportType": "tier-report",
-      "winningNumbers": [
-        9,
-        17,
-        26,
-        33,
-        35
-      ],
-      "millionaireBall": 5,
-      "tiers": [
-        {
-          "matchLabel": "5+MB",
-          "prizeLabel": "$1 Million/year for life",
-          "reportedWins": 0
-        },
-        {
-          "matchLabel": "5",
-          "prizeLabel": "$100,000/year for life",
-          "reportedWins": 0
-        },
-        {
-          "matchLabel": "4+MB",
-          "prizeLabel": "$7,500",
-          "reportedWins": 0
-        },
-        {
-          "matchLabel": "4",
-          "prizeLabel": "$500",
-          "reportedWins": 0
-        },
-        {
-          "matchLabel": "3+MB",
-          "prizeLabel": "$250",
-          "reportedWins": 11
-        },
-        {
-          "matchLabel": "3",
-          "prizeLabel": "$50",
-          "reportedWins": 44
-        },
-        {
-          "matchLabel": "2+MB",
-          "prizeLabel": "$25",
-          "reportedWins": 189
-        },
-        {
-          "matchLabel": "2",
-          "prizeLabel": "$8",
-          "reportedWins": 741
-        },
-        {
-          "matchLabel": "1+MB",
-          "prizeLabel": "$8",
-          "reportedWins": 1144
-        }
-      ],
-      "notes": [
-        "This table shows North Carolina wins. Millionaire For Life jackpots won outside the state of North Carolina are not shown."
-      ],
-      "sourceUrl": "https://nclottery.com/millionaire-for-life?dd=11/16/2026",
       "coverage": "North Carolina Wins only, not distinct people or nationwide jackpot counts. Annual-for-life prizes remain literal; no cash-option conversion, total-payout calculation or retailer joins."
     },
     {
@@ -2688,6 +2688,20 @@
       "coverage": "North Carolina source Wins by printed multiplier only. Jackpot has no multiplier. No distinct-person total, paid-total calculation, cash-option conversion or retailer joins."
     },
     {
+      "id": "cash-pop-2026-11-18-primetime-pop",
+      "game": "Cash Pop",
+      "session": "Primetime Pop",
+      "sessionTimeLabel": "8:00 PM",
+      "drawDate": "2026-11-18",
+      "reportType": "session-summary",
+      "pop": 15,
+      "reportedWinners": 780,
+      "reportedPayoutLabel": "$26,507",
+      "reportedPayoutCents": 2650700,
+      "sourceUrl": "https://nclottery.com/cash-pop#CashPopPast",
+      "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
+    },
+    {
       "id": "cash-pop-2026-11-17-primetime-pop",
       "game": "Cash Pop",
       "session": "Primetime Pop",
@@ -2698,20 +2712,6 @@
       "reportedWinners": 1075,
       "reportedPayoutLabel": "$39,186",
       "reportedPayoutCents": 3918600,
-      "sourceUrl": "https://nclottery.com/cash-pop#CashPopPast",
-      "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
-    },
-    {
-      "id": "cash-pop-2026-11-16-primetime-pop",
-      "game": "Cash Pop",
-      "session": "Primetime Pop",
-      "sessionTimeLabel": "8:00 PM",
-      "drawDate": "2026-11-16",
-      "reportType": "session-summary",
-      "pop": 13,
-      "reportedWinners": 855,
-      "reportedPayoutLabel": "$29,061",
-      "reportedPayoutCents": 2906100,
       "sourceUrl": "https://nclottery.com/cash-pop#CashPopPast",
       "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
     },
@@ -2744,6 +2744,20 @@
       "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
     },
     {
+      "id": "cash-pop-2026-11-18-midnight-money",
+      "game": "Cash Pop",
+      "session": "Midnight Money",
+      "sessionTimeLabel": "11:59 PM",
+      "drawDate": "2026-11-18",
+      "reportType": "session-summary",
+      "pop": 8,
+      "reportedWinners": 551,
+      "reportedPayoutLabel": "$21,547",
+      "reportedPayoutCents": 2154700,
+      "sourceUrl": "https://nclottery.com/cash-pop#CashPopPast",
+      "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
+    },
+    {
       "id": "cash-pop-2026-11-17-midnight-money",
       "game": "Cash Pop",
       "session": "Midnight Money",
@@ -2754,20 +2768,6 @@
       "reportedWinners": 563,
       "reportedPayoutLabel": "$17,257",
       "reportedPayoutCents": 1725700,
-      "sourceUrl": "https://nclottery.com/cash-pop#CashPopPast",
-      "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
-    },
-    {
-      "id": "cash-pop-2026-11-16-midnight-money",
-      "game": "Cash Pop",
-      "session": "Midnight Money",
-      "sessionTimeLabel": "11:59 PM",
-      "drawDate": "2026-11-16",
-      "reportType": "session-summary",
-      "pop": 5,
-      "reportedWinners": 526,
-      "reportedPayoutLabel": "$22,663",
-      "reportedPayoutCents": 2266300,
       "sourceUrl": "https://nclottery.com/cash-pop#CashPopPast",
       "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
     },
@@ -2800,6 +2800,20 @@
       "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
     },
     {
+      "id": "cash-pop-2026-11-18-clock-out-cash",
+      "game": "Cash Pop",
+      "session": "Clock Out Cash",
+      "sessionTimeLabel": "5:00 PM",
+      "drawDate": "2026-11-18",
+      "reportType": "session-summary",
+      "pop": 10,
+      "reportedWinners": 969,
+      "reportedPayoutLabel": "$30,301",
+      "reportedPayoutCents": 3030100,
+      "sourceUrl": "https://nclottery.com/cash-pop#CashPopPast",
+      "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
+    },
+    {
       "id": "cash-pop-2026-11-17-clock-out-cash",
       "game": "Cash Pop",
       "session": "Clock Out Cash",
@@ -2814,18 +2828,83 @@
       "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
     },
     {
-      "id": "cash-pop-2026-11-16-clock-out-cash",
-      "game": "Cash Pop",
-      "session": "Clock Out Cash",
-      "sessionTimeLabel": "5:00 PM",
-      "drawDate": "2026-11-16",
-      "reportType": "session-summary",
-      "pop": 13,
-      "reportedWinners": 868,
-      "reportedPayoutLabel": "$30,287",
-      "reportedPayoutCents": 3028700,
-      "sourceUrl": "https://nclottery.com/cash-pop#CashPopPast",
-      "coverage": "Official aggregate session winners and payout only. No per-tier winner counts, distinct-person total, retailer claims or map positions. Watch is an animated drawing simulation."
+      "id": "cash-5-2026-11-18",
+      "game": "Cash 5",
+      "session": "Daily",
+      "drawDate": "2026-11-18",
+      "reportType": "tier-report",
+      "sourceUrl": "https://nclottery.com/cash5?dd=11/18/2026",
+      "variants": [
+        {
+          "name": "Cash 5",
+          "winningNumbers": [
+            8,
+            16,
+            27,
+            33,
+            41
+          ],
+          "tiers": [
+            {
+              "matchLabel": "5 of 5",
+              "prizeLabel": "$533,000*",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4 of 5",
+              "prizeLabel": "$250",
+              "reportedWins": 48
+            },
+            {
+              "matchLabel": "3 of 5",
+              "prizeLabel": "$5",
+              "reportedWins": 1560
+            },
+            {
+              "matchLabel": "2 of 5",
+              "prizeLabel": "$1",
+              "reportedWins": 18489
+            }
+          ],
+          "notes": [
+            "*Rollover Advertised Jackpot estimate at time of draw: $533,000."
+          ]
+        },
+        {
+          "name": "Double Play",
+          "winningNumbers": [
+            2,
+            22,
+            34,
+            36,
+            42
+          ],
+          "tiers": [
+            {
+              "matchLabel": "5 of 5",
+              "prizeLabel": "$50,000",
+              "reportedWins": 0
+            },
+            {
+              "matchLabel": "4 of 5",
+              "prizeLabel": "$500",
+              "reportedWins": 4
+            },
+            {
+              "matchLabel": "3 of 5",
+              "prizeLabel": "$12",
+              "reportedWins": 142
+            },
+            {
+              "matchLabel": "2 of 5",
+              "prizeLabel": "$3",
+              "reportedWins": 1734
+            }
+          ],
+          "notes": []
+        }
+      ],
+      "coverage": "Official dated Cash 5 and Double Play prize-distribution tables. Wins are the source units, not distinct people. Advertised jackpot estimates and prize labels are not total amounts paid. No retailer joins or map positions."
     },
     {
       "id": "cash-5-2026-11-17",
@@ -2905,86 +2984,7 @@
         }
       ],
       "coverage": "Official dated Cash 5 and Double Play prize-distribution tables. Wins are the source units, not distinct people. Advertised jackpot estimates and prize labels are not total amounts paid. No retailer joins or map positions."
-    },
-    {
-      "id": "cash-5-2026-11-16",
-      "game": "Cash 5",
-      "session": "Daily",
-      "drawDate": "2026-11-16",
-      "reportType": "tier-report",
-      "sourceUrl": "https://nclottery.com/cash5?dd=11/16/2026",
-      "variants": [
-        {
-          "name": "Cash 5",
-          "winningNumbers": [
-            4,
-            9,
-            16,
-            21,
-            31
-          ],
-          "tiers": [
-            {
-              "matchLabel": "5 of 5",
-              "prizeLabel": "$401,000*",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4 of 5",
-              "prizeLabel": "$250",
-              "reportedWins": 35
-            },
-            {
-              "matchLabel": "3 of 5",
-              "prizeLabel": "$5",
-              "reportedWins": 1448
-            },
-            {
-              "matchLabel": "2 of 5",
-              "prizeLabel": "$1",
-              "reportedWins": 16047
-            }
-          ],
-          "notes": [
-            "*Rollover Advertised Jackpot estimate at time of draw: $401,000."
-          ]
-        },
-        {
-          "name": "Double Play",
-          "winningNumbers": [
-            12,
-            23,
-            28,
-            31,
-            41
-          ],
-          "tiers": [
-            {
-              "matchLabel": "5 of 5",
-              "prizeLabel": "$50,000",
-              "reportedWins": 0
-            },
-            {
-              "matchLabel": "4 of 5",
-              "prizeLabel": "$500",
-              "reportedWins": 3
-            },
-            {
-              "matchLabel": "3 of 5",
-              "prizeLabel": "$12",
-              "reportedWins": 149
-            },
-            {
-              "matchLabel": "2 of 5",
-              "prizeLabel": "$3",
-              "reportedWins": 1938
-            }
-          ],
-          "notes": []
-        }
-      ],
-      "coverage": "Official dated Cash 5 and Double Play prize-distribution tables. Wins are the source units, not distinct people. Advertised jackpot estimates and prize labels are not total amounts paid. No retailer joins or map positions."
     }
   ],
-  "updatedAt": "2026-11-18T20:41:51.444467+00:00"
+  "updatedAt": "2026-11-19T07:36:56.874535+00:00"
 }
