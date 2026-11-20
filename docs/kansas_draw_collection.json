@@ -1,8 +1,55 @@
 {
   "schemaVersion": 1,
   "state": "KS",
-  "retrievedAt": "2026-11-19T20:40:57.591973+00:00",
+  "retrievedAt": "2026-11-20T07:20:41.446733+00:00",
   "reports": [
+    {
+      "id": "2by2:46632e47-9973-45bd-805f-ebb56f2eddc3",
+      "family": "2by2",
+      "group": "2by2",
+      "session": "Drawing",
+      "drawNumber": null,
+      "sourceExternalId": "46632e47-9973-45bd-805f-ebb56f2eddc3",
+      "multiplier": null,
+      "sourceDrawTimestamp": "2026-11-20T03:15:00Z",
+      "sourceDrawingDate": "2026-11-20",
+      "drawDate": "2026-11-19",
+      "drawTimeZone": "America/Chicago",
+      "numbers": [
+        "10",
+        "11"
+      ],
+      "specialNumbers": [
+        "4",
+        "18"
+      ],
+      "sourceWarnings": [
+        "Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp.",
+        "Tuesday doubling applies only to qualifying consecutive-day plays; the result multiplier is not a universal payout."
+      ],
+      "sourceNumberOrder": [
+        {
+          "value": "10",
+          "type": "NORMAL"
+        },
+        {
+          "value": "11",
+          "type": "NORMAL"
+        },
+        {
+          "value": "4",
+          "type": "SPECIAL"
+        },
+        {
+          "value": "18",
+          "type": "SPECIAL"
+        }
+      ],
+      "teams": [],
+      "sourceUrl": "https://playonkansas.com/games/draw-games/2-by-2",
+      "coverage": "Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.",
+      "scheduleKey": "2-by-2"
+    },
     {
       "id": "2by2:da925fd6-403d-4788-a54a-20955463e1bd",
       "family": "2by2",
@@ -51,87 +98,40 @@
       "scheduleKey": "2-by-2"
     },
     {
-      "id": "2by2:79a85960-d880-4960-83dc-2e24f75ac159",
-      "family": "2by2",
-      "group": "2by2",
-      "session": "Drawing",
-      "drawNumber": null,
-      "sourceExternalId": "79a85960-d880-4960-83dc-2e24f75ac159",
-      "multiplier": 2,
-      "sourceDrawTimestamp": "2026-11-18T03:15:00Z",
-      "sourceDrawingDate": "2026-11-18",
-      "drawDate": "2026-11-17",
-      "drawTimeZone": "America/Chicago",
-      "numbers": [
-        "20",
-        "23"
-      ],
-      "specialNumbers": [
-        "2",
-        "15"
-      ],
-      "sourceWarnings": [
-        "Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp.",
-        "Tuesday doubling applies only to qualifying consecutive-day plays; the result multiplier is not a universal payout."
-      ],
-      "sourceNumberOrder": [
-        {
-          "value": "20",
-          "type": "NORMAL"
-        },
-        {
-          "value": "23",
-          "type": "NORMAL"
-        },
-        {
-          "value": "2",
-          "type": "SPECIAL"
-        },
-        {
-          "value": "15",
-          "type": "SPECIAL"
-        }
-      ],
-      "teams": [],
-      "sourceUrl": "https://playonkansas.com/games/draw-games/2-by-2",
-      "coverage": "Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.",
-      "scheduleKey": "2-by-2"
-    },
-    {
-      "id": "keno:3717696",
+      "id": "keno:3717854",
       "family": "Keno",
       "group": "keno",
       "session": "Frequent",
-      "drawNumber": "3717696",
-      "sourceExternalId": "3717696",
+      "drawNumber": "3717854",
+      "sourceExternalId": "3717854",
       "multiplier": null,
-      "sourceDrawTimestamp": "2026-11-19T20:24:00Z",
-      "sourceDrawingDate": "2026-11-19",
-      "drawDate": "2026-11-19",
+      "sourceDrawTimestamp": "2026-11-20T06:56:00Z",
+      "sourceDrawingDate": "2026-11-20",
+      "drawDate": "2026-11-20",
       "drawTimeZone": "America/Chicago",
       "numbers": [
         "1",
-        "5",
-        "11",
-        "13",
+        "3",
+        "4",
         "16",
-        "20",
+        "17",
+        "18",
+        "19",
+        "23",
         "26",
-        "31",
         "34",
-        "37",
-        "52",
-        "54",
-        "55",
+        "35",
+        "44",
+        "49",
+        "50",
+        "51",
         "57",
-        "58",
-        "61",
-        "62",
+        "71",
         "77",
-        "79"
+        "78"
       ],
       "specialNumbers": [
-        "49"
+        "39"
       ],
       "sourceWarnings": [],
       "sourceNumberOrder": [
@@ -140,15 +140,11 @@
           "type": "NORMAL"
         },
         {
-          "value": "5",
+          "value": "3",
           "type": "NORMAL"
         },
         {
-          "value": "11",
-          "type": "NORMAL"
-        },
-        {
-          "value": "13",
+          "value": "4",
           "type": "NORMAL"
         },
         {
@@ -156,12 +152,144 @@
           "type": "NORMAL"
         },
         {
-          "value": "20",
+          "value": "17",
+          "type": "NORMAL"
+        },
+        {
+          "value": "18",
+          "type": "NORMAL"
+        },
+        {
+          "value": "19",
+          "type": "NORMAL"
+        },
+        {
+          "value": "23",
           "type": "NORMAL"
         },
         {
           "value": "26",
           "type": "NORMAL"
+        },
+        {
+          "value": "34",
+          "type": "NORMAL"
+        },
+        {
+          "value": "35",
+          "type": "NORMAL"
+        },
+        {
+          "value": "39",
+          "type": "SPECIAL"
+        },
+        {
+          "value": "44",
+          "type": "NORMAL"
+        },
+        {
+          "value": "49",
+          "type": "NORMAL"
+        },
+        {
+          "value": "50",
+          "type": "NORMAL"
+        },
+        {
+          "value": "51",
+          "type": "NORMAL"
+        },
+        {
+          "value": "57",
+          "type": "NORMAL"
+        },
+        {
+          "value": "71",
+          "type": "NORMAL"
+        },
+        {
+          "value": "77",
+          "type": "NORMAL"
+        },
+        {
+          "value": "78",
+          "type": "NORMAL"
+        }
+      ],
+      "teams": [],
+      "sourceUrl": "https://playonkansas.com/games/draw-games/keno",
+      "coverage": "Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.",
+      "scheduleKey": "keno"
+    },
+    {
+      "id": "keno:3717853",
+      "family": "Keno",
+      "group": "keno",
+      "session": "Frequent",
+      "drawNumber": "3717853",
+      "sourceExternalId": "3717853",
+      "multiplier": null,
+      "sourceDrawTimestamp": "2026-11-20T06:52:00Z",
+      "sourceDrawingDate": "2026-11-20",
+      "drawDate": "2026-11-20",
+      "drawTimeZone": "America/Chicago",
+      "numbers": [
+        "5",
+        "7",
+        "8",
+        "10",
+        "16",
+        "19",
+        "25",
+        "31",
+        "34",
+        "37",
+        "39",
+        "41",
+        "45",
+        "51",
+        "53",
+        "56",
+        "61",
+        "65",
+        "73"
+      ],
+      "specialNumbers": [
+        "29"
+      ],
+      "sourceWarnings": [],
+      "sourceNumberOrder": [
+        {
+          "value": "5",
+          "type": "NORMAL"
+        },
+        {
+          "value": "7",
+          "type": "NORMAL"
+        },
+        {
+          "value": "8",
+          "type": "NORMAL"
+        },
+        {
+          "value": "10",
+          "type": "NORMAL"
+        },
+        {
+          "value": "16",
+          "type": "NORMAL"
+        },
+        {
+          "value": "19",
+          "type": "NORMAL"
+        },
+        {
+          "value": "25",
+          "type": "NORMAL"
+        },
+        {
+          "value": "29",
+          "type": "SPECIAL"
         },
         {
           "value": "31",
@@ -176,147 +304,23 @@
           "type": "NORMAL"
         },
         {
-          "value": "49",
-          "type": "SPECIAL"
-        },
-        {
-          "value": "52",
+          "value": "39",
           "type": "NORMAL"
         },
         {
-          "value": "54",
+          "value": "41",
           "type": "NORMAL"
-        },
-        {
-          "value": "55",
-          "type": "NORMAL"
-        },
-        {
-          "value": "57",
-          "type": "NORMAL"
-        },
-        {
-          "value": "58",
-          "type": "NORMAL"
-        },
-        {
-          "value": "61",
-          "type": "NORMAL"
-        },
-        {
-          "value": "62",
-          "type": "NORMAL"
-        },
-        {
-          "value": "77",
-          "type": "NORMAL"
-        },
-        {
-          "value": "79",
-          "type": "NORMAL"
-        }
-      ],
-      "teams": [],
-      "sourceUrl": "https://playonkansas.com/games/draw-games/keno",
-      "coverage": "Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.",
-      "scheduleKey": "keno"
-    },
-    {
-      "id": "keno:3717695",
-      "family": "Keno",
-      "group": "keno",
-      "session": "Frequent",
-      "drawNumber": "3717695",
-      "sourceExternalId": "3717695",
-      "multiplier": null,
-      "sourceDrawTimestamp": "2026-11-19T20:20:00Z",
-      "sourceDrawingDate": "2026-11-19",
-      "drawDate": "2026-11-19",
-      "drawTimeZone": "America/Chicago",
-      "numbers": [
-        "1",
-        "3",
-        "8",
-        "10",
-        "19",
-        "23",
-        "24",
-        "28",
-        "34",
-        "36",
-        "37",
-        "45",
-        "49",
-        "54",
-        "56",
-        "58",
-        "68",
-        "76",
-        "77"
-      ],
-      "specialNumbers": [
-        "40"
-      ],
-      "sourceWarnings": [],
-      "sourceNumberOrder": [
-        {
-          "value": "1",
-          "type": "NORMAL"
-        },
-        {
-          "value": "3",
-          "type": "NORMAL"
-        },
-        {
-          "value": "8",
-          "type": "NORMAL"
-        },
-        {
-          "value": "10",
-          "type": "NORMAL"
-        },
-        {
-          "value": "19",
-          "type": "NORMAL"
-        },
-        {
-          "value": "23",
-          "type": "NORMAL"
-        },
-        {
-          "value": "24",
-          "type": "NORMAL"
-        },
-        {
-          "value": "28",
-          "type": "NORMAL"
-        },
-        {
-          "value": "34",
-          "type": "NORMAL"
-        },
-        {
-          "value": "36",
-          "type": "NORMAL"
-        },
-        {
-          "value": "37",
-          "type": "NORMAL"
-        },
-        {
-          "value": "40",
-          "type": "SPECIAL"
         },
         {
           "value": "45",
           "type": "NORMAL"
         },
         {
-          "value": "49",
+          "value": "51",
           "type": "NORMAL"
         },
         {
-          "value": "54",
+          "value": "53",
           "type": "NORMAL"
         },
         {
@@ -324,19 +328,15 @@
           "type": "NORMAL"
         },
         {
-          "value": "58",
+          "value": "61",
           "type": "NORMAL"
         },
         {
-          "value": "68",
+          "value": "65",
           "type": "NORMAL"
         },
         {
-          "value": "76",
-          "type": "NORMAL"
-        },
-        {
-          "value": "77",
+          "value": "73",
           "type": "NORMAL"
         }
       ],
@@ -570,6 +570,62 @@
       "scheduleKey": "megamillions"
     },
     {
+      "id": "millionaire-for-life:416d356e-0e9c-4f03-b7b6-b7d6c6766c2c",
+      "family": "Millionaire for Life",
+      "group": "millionaire-for-life",
+      "session": "Drawing",
+      "drawNumber": null,
+      "sourceExternalId": "416d356e-0e9c-4f03-b7b6-b7d6c6766c2c",
+      "multiplier": null,
+      "sourceDrawTimestamp": "2026-11-20T04:15:00Z",
+      "sourceDrawingDate": "2026-11-20",
+      "drawDate": "2026-11-19",
+      "drawTimeZone": "America/Chicago",
+      "numbers": [
+        "1",
+        "15",
+        "27",
+        "28",
+        "41"
+      ],
+      "specialNumbers": [
+        "5"
+      ],
+      "sourceWarnings": [
+        "Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp."
+      ],
+      "sourceNumberOrder": [
+        {
+          "value": "1",
+          "type": "NORMAL"
+        },
+        {
+          "value": "15",
+          "type": "NORMAL"
+        },
+        {
+          "value": "27",
+          "type": "NORMAL"
+        },
+        {
+          "value": "28",
+          "type": "NORMAL"
+        },
+        {
+          "value": "41",
+          "type": "NORMAL"
+        },
+        {
+          "value": "5",
+          "type": "SPECIAL"
+        }
+      ],
+      "teams": [],
+      "sourceUrl": "https://playonkansas.com/games/draw-games/millionaire-for-life",
+      "coverage": "Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.",
+      "scheduleKey": "millionaire-for-life"
+    },
+    {
       "id": "millionaire-for-life:2bff5ee2-4fff-4817-8344-a0d937078c5d",
       "family": "Millionaire for Life",
       "group": "millionaire-for-life",
@@ -626,60 +682,44 @@
       "scheduleKey": "millionaire-for-life"
     },
     {
-      "id": "millionaire-for-life:14710708-a558-4220-a767-a0a8621ea315",
-      "family": "Millionaire for Life",
-      "group": "millionaire-for-life",
-      "session": "Drawing",
-      "drawNumber": null,
-      "sourceExternalId": "14710708-a558-4220-a767-a0a8621ea315",
+      "id": "pick3-evening:16271",
+      "family": "Pick 3",
+      "group": "pick3-evening",
+      "session": "Evening",
+      "drawNumber": "16271",
+      "sourceExternalId": "16271",
       "multiplier": null,
-      "sourceDrawTimestamp": "2026-11-18T04:15:00Z",
-      "sourceDrawingDate": "2026-11-18",
-      "drawDate": "2026-11-17",
+      "sourceDrawTimestamp": "2026-11-20T03:10:00Z",
+      "sourceDrawingDate": "2026-11-20",
+      "drawDate": "2026-11-19",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "15",
-        "22",
-        "28",
-        "31",
-        "37"
+        "6",
+        "6",
+        "0"
       ],
-      "specialNumbers": [
-        "1"
-      ],
+      "specialNumbers": [],
       "sourceWarnings": [
         "Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp."
       ],
       "sourceNumberOrder": [
         {
-          "value": "15",
+          "value": "6",
           "type": "NORMAL"
         },
         {
-          "value": "22",
+          "value": "6",
           "type": "NORMAL"
         },
         {
-          "value": "28",
+          "value": "0",
           "type": "NORMAL"
-        },
-        {
-          "value": "31",
-          "type": "NORMAL"
-        },
-        {
-          "value": "37",
-          "type": "NORMAL"
-        },
-        {
-          "value": "1",
-          "type": "SPECIAL"
         }
       ],
       "teams": [],
-      "sourceUrl": "https://playonkansas.com/games/draw-games/millionaire-for-life",
+      "sourceUrl": "https://playonkansas.com/games/draw-games/pick-3",
       "coverage": "Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.",
-      "scheduleKey": "millionaire-for-life"
+      "scheduleKey": "pick-3"
     },
     {
       "id": "pick3-evening:16269",
@@ -713,46 +753,6 @@
         },
         {
           "value": "8",
-          "type": "NORMAL"
-        }
-      ],
-      "teams": [],
-      "sourceUrl": "https://playonkansas.com/games/draw-games/pick-3",
-      "coverage": "Drawn numbers only. Kansas winner counts and actual payouts are not established by this source; prize schedules are separate.",
-      "scheduleKey": "pick-3"
-    },
-    {
-      "id": "pick3-evening:16267",
-      "family": "Pick 3",
-      "group": "pick3-evening",
-      "session": "Evening",
-      "drawNumber": "16267",
-      "sourceExternalId": "16267",
-      "multiplier": null,
-      "sourceDrawTimestamp": "2026-11-18T03:10:00Z",
-      "sourceDrawingDate": "2026-11-18",
-      "drawDate": "2026-11-17",
-      "drawTimeZone": "America/Chicago",
-      "numbers": [
-        "8",
-        "4",
-        "5"
-      ],
-      "specialNumbers": [],
-      "sourceWarnings": [
-        "Source drawingDate uses the UTC date; local draw date is derived in America/Chicago from the preserved timestamp."
-      ],
-      "sourceNumberOrder": [
-        {
-          "value": "8",
-          "type": "NORMAL"
-        },
-        {
-          "value": "4",
-          "type": "NORMAL"
-        },
-        {
-          "value": "5",
           "type": "NORMAL"
         }
       ],
@@ -1062,40 +1062,40 @@
       "scheduleKey": "powerball"
     },
     {
-      "id": "racetrax:859156",
+      "id": "racetrax:859296",
       "family": "Racetrax",
       "group": "racetrax",
       "session": "Frequent",
-      "drawNumber": "859156",
-      "sourceExternalId": "859156",
-      "multiplier": 3,
-      "sourceDrawTimestamp": "2026-11-19T20:26:00Z",
-      "sourceDrawingDate": "2026-11-19",
-      "drawDate": "2026-11-19",
+      "drawNumber": "859296",
+      "sourceExternalId": "859296",
+      "multiplier": 1,
+      "sourceDrawTimestamp": "2026-11-20T06:56:00Z",
+      "sourceDrawingDate": "2026-11-20",
+      "drawDate": "2026-11-20",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "3",
-        "10",
-        "6",
-        "1"
+        "2",
+        "4",
+        "1",
+        "10"
       ],
       "specialNumbers": [],
       "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "3",
+          "value": "2",
           "type": "FIRST"
         },
         {
-          "value": "10",
+          "value": "4",
           "type": "SECOND"
         },
         {
-          "value": "6",
+          "value": "1",
           "type": "THIRD"
         },
         {
-          "value": "1",
+          "value": "10",
           "type": "FOURTH"
         }
       ],
@@ -1105,40 +1105,40 @@
       "scheduleKey": "racetrax"
     },
     {
-      "id": "racetrax:859155",
+      "id": "racetrax:859295",
       "family": "Racetrax",
       "group": "racetrax",
       "session": "Frequent",
-      "drawNumber": "859155",
-      "sourceExternalId": "859155",
+      "drawNumber": "859295",
+      "sourceExternalId": "859295",
       "multiplier": 1,
-      "sourceDrawTimestamp": "2026-11-19T20:21:00Z",
-      "sourceDrawingDate": "2026-11-19",
-      "drawDate": "2026-11-19",
+      "sourceDrawTimestamp": "2026-11-20T06:51:00Z",
+      "sourceDrawingDate": "2026-11-20",
+      "drawDate": "2026-11-20",
       "drawTimeZone": "America/Chicago",
       "numbers": [
-        "1",
-        "3",
-        "4",
-        "2"
+        "2",
+        "8",
+        "7",
+        "4"
       ],
       "specialNumbers": [],
       "sourceWarnings": [],
       "sourceNumberOrder": [
         {
-          "value": "1",
+          "value": "2",
           "type": "FIRST"
         },
         {
-          "value": "3",
+          "value": "8",
           "type": "SECOND"
         },
         {
-          "value": "4",
+          "value": "7",
           "type": "THIRD"
         },
         {
-          "value": "2",
+          "value": "4",
           "type": "FOURTH"
         }
       ],
