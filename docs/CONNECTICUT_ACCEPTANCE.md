@@ -17,7 +17,7 @@ https://ctlottery.com/ and exposes results/source routes for Powerball and separ
 Double Play, Powerball Xs & Os, Mega Millions, Millionaire for Life, Lotto!, Keno,
 Cash5, and Play3/Play4 DAY/NIGHT. Payout controls are visible for several games;
 button presence is not proof of audited count semantics or a working importer.
-Play3/Play4 detail routes were opened. Fireball/combination fields need explicit
+Play3/Play4 detail routes were opened. Wild Ball/combination fields need explicit
 classification; no exact event times or counts are inferred from displayed digits.
 Full scope remains pending reconciliation by the scope deadline, including
 historical/ended products, add-ons, rules and report units.
@@ -51,3 +51,25 @@ breadth comparison. Connecticut does not yet match either benchmark. No full-yea
 history, all-tier statewide claims or complete geographic coverage is claimed.
 Agency correspondence remains with its separate automation; no duplicate requests,
 fees or new human attestations. Mobile beta gates remain independently open.
+
+## November22 — reproducible structured source inventory
+
+Added tooling/connecticut_source_inventory.py to extract the single embedded
+nine-product draw inventory from captured Next.js stream chunks, rejecting
+missing/duplicate/changed product sets, ambiguous inventories and unexpected
+source routes. Four focused tests pass; the saved official homepage extracts
+successfully into private draw_inventory.json. This is reconnaissance tooling,
+not a validated result/count importer or public feed.
+
+Observed product identifiers: powerball, xsandos, megamillions, mfl, lotto,
+keno, cash5, play3, play4. Play3/Play4 explicitly label the additional digit
+Wild Ball, not Fireball; DAY and NIGHT have distinct dates in the same capture.
+Generic payout payloads put that digit in fields named powerPlayMultiplier and
+multiplier: those keys must not be interpreted as actual prize multipliers.
+Cash5 advertises Kicker, requiring separate rule reconciliation. Double Play
+is nested under Powerball; its display date is empty and React references remain
+unresolved, so do not invent an independent date from that display object.
+Xs & Os numbers require verified team mapping. Keno includes a game number and
+bonus but no payout rows in this snapshot; this is not proof of zero winners.
+The current matrix remains provisional until rules, report units and historical
+products are reconciled. Scope and release deadlines are unchanged.

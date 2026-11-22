@@ -185,3 +185,12 @@ The local scheduled Scratch catalog contains82 games. Existing source dates,
 game1725 exclusion and cash/annuity limitations remain authoritative. Agency
 correspondence and absent geographic joins do not block bounded public-source
 implementation; no new mail or fees were authorized.
+
+
+November22 structured-source follow-up: private homepage extraction confirms nine
+product objects with separate Play3/Play4 DAY/NIGHT results, Wild Ball labels,
+nested Double Play, Cash5 Kicker branding and a Keno game number/bonus. Generic
+API multiplier fields are overloaded for Wild Ball; do not interpret them as
+payout multipliers. React references and missing display dates remain unresolved.
+The tested inventory extractor preserves source values but publishes no results,
+counts or geographic activity. See CONNECTICUT_ACCEPTANCE.md for pending audits.
