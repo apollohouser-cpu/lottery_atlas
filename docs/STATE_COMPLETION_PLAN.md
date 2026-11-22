@@ -3,6 +3,18 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
+## Current decision — November22,2026
+
+Delaware supported coverage is ACCEPTED late following owner confirmation of
+renewed-app launch recovery and physical offline restart/failure retention.
+See DELAWARE_ACCEPTANCE.md for retained source exclusions and evidence. The
+November11 deadline remains missed without extension.23 states accepted;22
+unfinished. No next state is activated in this confirmation record; its fresh
+72/120-hour deadline must be set at explicit activation. The23-state routine
+forecast review is now due; prior estimates are not new commitments. All four
+broader beta prerequisites remain open. Earlier active/pending entries below
+are historical and superseded by this decision.
+
 ## November 11 deadline outcome
 
 Delaware missed its fixed November11 12:48EST (17:48UTC) supported-release

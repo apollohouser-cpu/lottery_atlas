@@ -1,18 +1,10 @@
 # Delaware supported coverage acceptance
 
-Status: **ACTIVE — not accepted; November11 release deadline missed, no extension**.
+Status: **ACCEPTED November22,2026 — supported coverage; late, original deadline missed without extension**.
 
-Current checkpoint — November12: the signed ordinary app is installed on the
-owner phone. The owner confirmed Delaware Drawings and Scratch both display
-Delaware content. A private app-preferences export after those visits contains
-the exact reviewed940,658-byte release, matching SHA256
-`e36c696497328a752c1731498d8713e8963c99c2e8898389d0efe6b45841eab6`.
-Independent live/bundle checks match again. Owner also confirms separate Double Play, Play3/4/5 DAY/NIGHT groups,
-Rules/Reports, official-source returns, Scratch443/504/528 detail scrolling,
-and coverage/closeouts without reported clipping/navigation problems. Landscape,
-actual iOS enlarged text and offline failure-retention observations remain pending. No acceptance or deadline extension.
-Historical disconnected/prepared-only entries below are superseded by this
-checkpoint and retained as evidence history.
+Current checkpoint: owner-reported physical offline restart/failure retention and
+renewed-app launch recovery close the final bounded gates. See the November22
+entry below; historical pending entries are retained as history and superseded.
 
 ## November 11 — release deadline missed
 
@@ -71,11 +63,10 @@ The prior agency inquiry remains separate. No new message, fee, or attestation.
 - [x] Repeatable permitted acquisition and strict semantic parsing; reviewed bounded release with explicit exclusions.
 - [x] Coupled publication, exact provenance and validated publication-failure retention; physical cache-failure check tracked separately below.
 - [x] Ordinary app integration for results/products/rules and unavailable-feature disclosures; owner confirms primary Drawings/Scratch routes, detail observations pending below.
-- [ ] Bounded native paths/layout/source returns and real-cache failure evidence.
-- [ ] Tests, live-byte equality, ordinary app restoration and final decision.
+- [x] Bounded native paths/layout/source returns and real-cache failure evidence.
+- [x] Tests, live-byte equality, ordinary app restoration and final decision.
 
-Reviewed Delaware release is published and installed; acceptance is not yet
-claimed. Simulator and Android stay stopped. All four mobile beta prerequisites
+Reviewed Delaware release is published, installed and accepted for its bounded supported scope. Simulator and Android stay stopped. All four mobile beta prerequisites
 remain open.
 
 ## November 6 — linked source capture and current catalog validation
@@ -1469,3 +1460,22 @@ and does not establish the separately deferred offline restart/failure-retention
 check. That check remains pending; Delaware remains unaccepted with its original
 missed deadline unchanged. Broader mobile beta gates are not closed by this
 bounded layout confirmation.
+
+## November22 — owner launch recovery and offline acceptance
+
+Owner reported the renewed installation displayed an Untrusted Developer warning,
+then confirmed Lottery Atlas opens after the trust instructions. Owner subsequently
+confirmed "content survives" in response to the Delaware Drawings/Scratch checklist
+covering Airplane Mode with Wi-Fi off, app-switcher close/reopen and failed-refresh
+retention. Record this as owner-reported physical evidence, not an agent screenshot
+or a fresh device-cache export. Prior landscape, actual iOS Larger Text, source
+returns and detail-navigation confirmations remain valid and are not repeated.
+
+Together with the retained reviewed release/live/bundle/cache equality and passing
+focused tests, this closes the remaining bounded Delaware acceptance gates.
+Delaware supported coverage is ACCEPTED November22,2026, late. The original
+November11 12:48EST deadline was missed and is never extended. All original source
+dates and six structure exclusions425/443/501/509/518/528 remain. No geographic
+activity, complete history, retailer inventory or statewide claims total is inferred.
+There are23 accepted states and22 unfinished. No successor is activated by this
+record. All four broader mobile beta gates remain open.

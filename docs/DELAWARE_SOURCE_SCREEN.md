@@ -1466,3 +1466,22 @@ and does not establish the separately deferred offline restart/failure-retention
 check. That check remains pending; Delaware remains unaccepted with its original
 missed deadline unchanged. Broader mobile beta gates are not closed by this
 bounded layout confirmation.
+
+## November22 — owner launch recovery and offline acceptance
+
+Owner reported the renewed installation displayed an Untrusted Developer warning,
+then confirmed Lottery Atlas opens after the trust instructions. Owner subsequently
+confirmed "content survives" in response to the Delaware Drawings/Scratch checklist
+covering Airplane Mode with Wi-Fi off, app-switcher close/reopen and failed-refresh
+retention. Record this as owner-reported physical evidence, not an agent screenshot
+or a fresh device-cache export. Prior landscape, actual iOS Larger Text, source
+returns and detail-navigation confirmations remain valid and are not repeated.
+
+Together with the retained reviewed release/live/bundle/cache equality and passing
+focused tests, this closes the remaining bounded Delaware acceptance gates.
+Delaware supported coverage is ACCEPTED November22,2026, late. The original
+November11 12:48EST deadline was missed and is never extended. All original source
+dates and six structure exclusions425/443/501/509/518/528 remain. No geographic
+activity, complete history, retailer inventory or statewide claims total is inferred.
+There are23 accepted states and22 unfinished. No successor is activated by this
+record. All four broader mobile beta gates remain open.

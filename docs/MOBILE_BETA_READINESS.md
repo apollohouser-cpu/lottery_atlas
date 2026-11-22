@@ -1440,3 +1440,25 @@ This is owner-reported physical evidence for these two refinements; do not repea
 those checks. Delaware offline restart/failure retention and the separate broader
 beta prerequisites remain unverified. Private confirmation is recorded in
 work/owner_iphone/county_timeline_20261118/status.json.
+
+## November22 — renewed signing installed; launch blocked
+
+The November21 renewed ordinary release passed deep/strict signature verification;
+its Personal Team profile expires November28 at21:08:17UTC. On November22 the
+connected owner iPhone received the update in place successfully. CLI launch was
+rejected by iOS with a security error naming signature, entitlements or profile
+trust as possible causes; the specific cause is not established. Earlier owner
+trust remains recorded and no repeated trust/sign-in request was made. Private
+build/install/launch evidence: work/owner_iphone/update_20261121. Installation
+does not establish launch recovery, Delaware offline retention or beta readiness.
+
+## November22 — owner confirms launch recovery and Delaware offline retention
+
+Owner identified the launch warning as Untrusted Developer and then confirmed
+the app opens after trust instructions. This supersedes the unresolved launch
+status above. Owner also confirmed content survives the Delaware Drawings/Scratch
+offline restart and failed-refresh checklist. This is owner-reported physical
+evidence; no automated launch success or fresh cache export is inferred.
+Delaware supported acceptance is closed late; all four broader beta gates remain
+open, including favorites/ticket lifecycle and runtime privacy/backup/deletion.
+Private confirmation: work/owner_iphone/update_20261121/status.json.
