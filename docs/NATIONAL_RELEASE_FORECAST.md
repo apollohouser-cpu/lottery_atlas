@@ -1,4 +1,33 @@
-# National coverage readiness and forecast — October 26 reforecast
+# National coverage readiness and forecast — November 22 reforecast
+
+## Current forecast — November 22, 2026, 23 accepted
+
+Delaware acceptance brings the total to 23 accepted and 22 unfinished states.
+The previous October26 range is superseded. Retaining the explicit planning
+assumption of 2–3 elapsed days per remaining state gives 44–66 days from
+November22: **January 5–27, 2027** for national supported-coverage engineering.
+A five-day-per-state capacity scenario gives 110 days: **March 12, 2027**.
+These are conditional scenarios, not launch commitments or assigned deadlines.
+
+The five acceptances since October26 took about 27 elapsed days, including device,
+signing and physical acceptance delays. The 2–3-day scenario therefore requires
+faster progress than that latest checkpoint; even the five-day scenario is not
+an upper bound if comparable delays recur. No statistical confidence is claimed.
+Do not silently treat the earlier December19–January15 range as current.
+
+All four broader mobile beta gates remain open. National public release still
+requires every lottery state accepted plus mobile/distribution readiness; store
+approval is separate. Existing activation rules remain fresh 72/120 elapsed-hour
+windows with scope fixed within 24 hours and no extensions. No successor is
+activated by this forecast. Reforecast at 28 accepted states or a material blocker.
+Texas is the working-coverage benchmark; New York is separately the 12-month
+breadth benchmark, with their documented limitations unchanged.
+
+## Historical forecasts and readiness ledger
+
+The dated ledger and estimates below are historical snapshots, not current
+acceptance counts or deadlines. Current acceptance is governed by
+STATE_COMPLETION_PLAN.md and each state's acceptance record.
 
 Full public release requires usable accepted coverage in every lottery state;
 limited-state iOS/Android beta can proceed earlier. NASPL currently identifies

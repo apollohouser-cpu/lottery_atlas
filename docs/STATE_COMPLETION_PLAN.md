@@ -32,7 +32,10 @@ See DELAWARE_ACCEPTANCE.md for retained source exclusions and evidence. The
 November11 deadline remains missed without extension.23 states accepted;22
 unfinished. No next state is activated in this confirmation record; its fresh
 72/120-hour deadline must be set at explicit activation. The23-state routine
-forecast review is now due; prior estimates are not new commitments. All four
+forecast review is complete: January5–27,2027 conditional supported-engineering
+range at2–3days/state; March12 five-day scenario. Recent slower throughput is
+explicitly disclosed in NATIONAL_RELEASE_FORECAST.md; these are not commitments.
+Next routine review at28 accepted or a material blocker. All four
 broader beta prerequisites remain open. Earlier active/pending entries below
 are historical and superseded by this decision.
 
@@ -110,7 +113,7 @@ an evidenced release decision; it never permits skipping checks or inventing dat
 
 | State | Release-decision deadline | Current gate |
 | --- | --- | --- |
-| Delaware | November11,2026 at12:48EST | Sole active November6 at12:48EST; scope fixed November6 at15:49EST before November7 deadline; fresh120elapsed hours, no extension. |
+| Delaware | November11,2026 at12:48EST — missed | ACCEPTED November22 for supported coverage, late without extension; see DELAWARE_ACCEPTANCE.md. |
 | Arizona | November6,2026 at09:15EST | ACCEPTED November6 at11:48EST, late; deadline missed without extension. See ARIZONA_ACCEPTANCE.md. |
 | Montana | November1,2026 at22:30EST | ACCEPTED November1 at08:15EST, early without extension; see MONTANA_ACCEPTANCE.md. |
 | North Dakota | November1,2026 at10:29AM EST | ACCEPTED October27 at22:34EDT, early without extension; see NORTH_DAKOTA_ACCEPTANCE.md. |
