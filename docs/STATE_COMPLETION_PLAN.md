@@ -3,6 +3,27 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
+## Comparison benchmarks — owner approved November 22, 2026
+
+Continue the existing rollout schedule and supported-coverage acceptance rules.
+For future state comparisons, use **Texas as the working-coverage benchmark**:
+usable mapped activity with verified selling-address matches, draw and Scratch
+features, source/date disclosures, and retained history. Texas remains partial
+coverage, not a complete all-tier or full-year dataset.
+
+Use **New York as a separate benchmark for 12-month breadth**. Its privately
+audited agency workbook covers September 1, 2025 through August 31, 2026, with
+159,140 supplied rows across all 365 dates for prizes of at least $600. This is
+not a published claims map or a verified distinct-ticket count. Historical
+selling-location joins, Scratch game identifiers and below-$600 coverage remain
+gaps; preserve the limitations in NEW_YORK_SOURCE_SCREEN.md.
+
+Compare time span, game coverage, prize tiers, verified selling locations,
+counting semantics and update/history retention separately. Do not infer overall
+completeness from row volume or invent a completion percentage without known
+coverage denominators. These benchmarks do not reopen accepted states, activate
+a successor, change deadlines, authorize fees or replace the acceptance standard.
+
 ## Current decision — November22,2026
 
 Delaware supported coverage is ACCEPTED late following owner confirmation of
