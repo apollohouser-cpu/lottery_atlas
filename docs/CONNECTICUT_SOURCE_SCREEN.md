@@ -194,3 +194,15 @@ API multiplier fields are overloaded for Wild Ball; do not interpret them as
 payout multipliers. React references and missing display dates remain unresolved.
 The tested inventory extractor preserves source values but publishes no results,
 counts or geographic activity. See CONNECTICUT_ACCEPTANCE.md for pending audits.
+
+
+## November22 — scope fixed and detail captures retained
+
+All nine draw detail pages were captured and hashed in the private opening audit.
+Visible source sections distinguish Cash5 Kicker (player-selected additional
+number), Play3/Play4 Wild Ball and sessions, life prizes, variable payouts and
+Keno Bonus. The official https://ctlottery.com/lottery-rules index additionally
+links Fast Play general rules; this establishes a rules route, not current game
+availability or results. The complete bounded release matrix is fixed in
+CONNECTICUT_ACCEPTANCE.md before the scope deadline. Result/count parsers and
+app integration remain unfinished; no public feed or geographic data changed.

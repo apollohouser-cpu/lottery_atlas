@@ -29,7 +29,7 @@ importer was found in the opening tooling inventory.
 
 ## Required acceptance work
 
-- [ ] Fix full product/game scope and supported/unavailable matrix within24hours.
+- [x] Fix full product/game scope and supported/unavailable matrix within24hours.
 - [ ] Audit structured results, prize/count definitions, dates, sessions and rules.
 - [ ] Integrate validated supported draws/reports with source links and disclosures.
 - [ ] Reconcile Scratch detail/tier presentation and retained source exclusions.
@@ -73,3 +73,39 @@ Xs & Os numbers require verified team mapping. Keno includes a game number and
 bonus but no payout rows in this snapshot; this is not proof of zero winners.
 The current matrix remains provisional until rules, report units and historical
 products are reconciled. Scope and release deadlines are unchanged.
+
+## Supported scope fixed — November22,2026
+
+Scope fixed before November23 15:36EST. Release remains November27 15:36EST.
+All nine current draw detail pages were captured successfully and hashed privately;
+visible schedules, prize/rule sections and game-specific official PDF links were
+inspected. This fixes the release scope, not acceptance of parsers or completeness.
+
+| Product | Bounded release scope | Required distinctions / unavailable coverage |
+| --- | --- | --- |
+| Powerball / Power Play | Dated results, separate add-on label, audited prize/rule information and source links | Multiplier is not a winning-ticket count; jackpot advertisement is not payout |
+| Double Play | Separate dated result group and prize/rule source | Resolve explicit parent draw association; do not borrow an undated display object's date silently |
+| Powerball Xs & Os | Dated team results, prize/rule information and promotion source | Verify numeric team mapping before display; promotion awards separate |
+| Mega Millions | Dated results and multiplier-aware prize/rule information | Distinguish advertised base amounts from applicable multipliers and actual counts |
+| Millionaire for Life | Dated results, literal life-prize labels and rules | Annual amount is not lifetime total or cash payout |
+| Lotto! | Dated results, prize/rule information and sources | Preserve variable-prize qualifications |
+| Cash5 / Kicker | Dated base results; separately labeled Kicker rules/prizes | Kicker is a player-selected additional number, not an independent drawn bonus; payouts may vary |
+| Play3 DAY/NIGHT | Separate latest dated sessions, Wild Ball, wager-specific rules/prize tables | Preserve digit order and leading zeroes; generic multiplier fields actually carry Wild Ball |
+| Play4 DAY/NIGHT | Separate latest dated sessions, Wild Ball, wager-specific rules/prize tables | Preserve digit order and leading zeroes; do not combine session dates |
+| Keno / Bonus | Bounded dated/game-numbered snapshot, bonus and spot/wager rules | Not a live four-minute service; do not synthesize draw time or ticket counts |
+| Scratch | Existing validated catalog plus audited available tier/detail presentation, dates, closeouts and sources | Keep1725 exclusion, annuity/cash checks, TBD omissions; remaining prizes are not retailer stock |
+| Fast Play | Explicit bounded rules/source entry from official rules index | Current product inventory/results not established; do not infer active games from retained general rules |
+| Historical/ended games | Explicit historical coverage limitation and official source routes where verified | No complete archive or current recurring schedule invented for old products |
+| Second Chance / promotions | Separate official routes and scoped explanation | Do not count entries, promotional prizes or sports betting as retail lottery draw activity |
+
+Dated statewide payout reports are included where their source fields and units
+validate. Otherwise show a specific unavailable-count explanation alongside the
+validated results and prize/rule table; a static prize chart never becomes an
+actual winner report. Integration must preserve exact sources, observed dates,
+source-versus-retrieval distinctions, and last-good bytes on failure. No full-year
+history, complete all-tier retailer joins or new geographic layer is in scope.
+
+Next implementation work: validated result normalization and source reconciliation,
+then payout/report endpoint and units audit, bundle/cache/UI integration, and the
+existing bounded native/publication acceptance checklist. No agency wait or paid
+record request is added as a release prerequisite.
