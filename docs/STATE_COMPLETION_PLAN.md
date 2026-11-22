@@ -24,6 +24,16 @@ completeness from row volume or invent a completion percentage without known
 coverage denominators. These benchmarks do not reopen accepted states, activate
 a successor, change deadlines, authorize fees or replace the acceptance standard.
 
+## Connecticut activation — November22,2026 at15:36EST
+
+Connecticut is the sole active state following Delaware acceptance. Its existing
+Scratch catalog supplies a foundation, but state draw/report integration needs
+substantial implementation: fresh120elapsed hours. Scope is due November23 at
+15:36EST (20:36UTC); release decision is due November27 at15:36EST (20:36UTC).
+No inherited deadline or extension. See CONNECTICUT_ACCEPTANCE.md.23 accepted,
+22 unfinished. All accepted states remain closed absent a named defect or new
+meaningful evidence; broader mobile beta gates remain open.
+
 ## Current decision — November22,2026
 
 Delaware supported coverage is ACCEPTED late following owner confirmation of

@@ -170,3 +170,18 @@ implied.
 ## September 23 agency response — reviewed September 24
 
 Jeff Yue replied September 23: no requested public download/API; draw/game/tier counts and Scratch prize inventory are on ctlottery.com. CLC says it has no existing records in the requested form tracing draw or Scratch winners to selling retailers and maintains no retailer coordinates. It referred to https://elicense.ct.gov/Lookup/GenerateRoster.aspx (Gaming licenses → Lottery Sales Agents) for a downloadable roster. This is a substantive response with unavailable fields and public-source referrals, not a verified data delivery or blanket refusal of all public data.
+
+
+## November22 — supported-coverage activation and source reconnaissance
+
+Connecticut is sole active after Delaware acceptance, with scope due November23
+15:36EST and release decision due November27 15:36EST; fresh120elapsed hours,
+no extension. See CONNECTICUT_ACCEPTANCE.md. The official homepage redirects to
+https://ctlottery.com/ and presents national/state results, separate Double Play,
+Xs & Os, Keno and Play3/Play4 DAY/NIGHT routes. Detail and payout semantics remain
+to be audited before integration. A private homepage capture is retained under
+work/connecticut_acceptance_20261122; no unvalidated source data was published.
+The local scheduled Scratch catalog contains82 games. Existing source dates,
+game1725 exclusion and cash/annuity limitations remain authoritative. Agency
+correspondence and absent geographic joins do not block bounded public-source
+implementation; no new mail or fees were authorized.
