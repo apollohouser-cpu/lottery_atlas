@@ -109,3 +109,23 @@ Next implementation work: validated result normalization and source reconciliati
 then payout/report endpoint and units audit, bundle/cache/UI integration, and the
 existing bounded native/publication acceptance checklist. No agency wait or paid
 record request is added as a release prerequisite.
+
+
+## November22 — initial validated result normalization
+
+Implemented tooling/connecticut_draw_results.py for Powerball, Mega Millions,
+Millionaire for Life, Lotto!, Cash5, Keno and separate Play3/Play4 DAY/NIGHT
+snapshots. Number pools were checked against retained official detail-page text.
+The private homepage replay produces10 result rows, preserving each session's
+explicit source date, ordered digits/zeroes, Wild Ball, Power Play and Keno
+identity/bonus. Non-Keno rows reconcile visible results with their explicit
+API payload dates and numbers; overloaded Wild Ball fields never become payout
+multipliers. Missing dates/sessions, future dates, invalid ranges, duplicate
+pool numbers and source/payload disagreement fail closed.
+
+Nine focused inventory/result tests pass. Private results_candidate.json remains
+unpublished and unintegrated; no current freshness or native display is claimed.
+Double Play reference/date resolution and Xs & Os team mapping remain separate
+unfinished result requirements. Actual payout reports/units, rules integration,
+production packaging and UI/cache/native checks remain open. This adds no claims,
+retailer activity, winner counts or full-history coverage; deadline unchanged.
