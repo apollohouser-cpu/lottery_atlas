@@ -202,3 +202,26 @@ response bytes. This is a reproducible development artifact, not a published
 release or device evidence. Remaining work includes other report/prize rules,
 production schema/loader/UI, bundle/cache retention and physical acceptance.
 No source scope or November27 deadline changed.
+
+
+## November22 — Lotto, Xs & Os and life-prize report audit
+
+Captured three additional payout responses using the opening result IDs/dates;
+private manifest records request URLs, retrieval times, sizes and SHA256. The
+official client explicitly maps four Lotto tiers, five Xs & Os team tiers and
+nine Millionaire for Life tiers. A strict parser preserves literal source counts,
+Lotto variable prizes and state-specific count headings, with no geographic
+allocation or derived distinct-ticket totals. Three focused tests pass; private
+replay yields18 report rows across the three products.
+
+Millionaire for Life's API top amounts are18000000 and2200000, while the official
+client displays annual life-prize labels. Their numerical meaning is not verified:
+parser withholds those two numeric prize fields and retains the literal annual
+labels, never presenting them as cash payouts or lifetime totals. Raw amounts
+remain only in private source evidence. Other rows preserve dated reported prizes;
+Lotto's actual report amounts differ from static advertised prizes as expected
+under its variable-prize qualification. Counts/zeroes remain literal.
+
+These candidates remain unintegrated and unpublished. Evidence-bound packaging
+of the additional reports, Powerball/Mega Millions/Play3/Play4 report semantics,
+prize/rule integration and native acceptance remain open. Deadline unchanged.
