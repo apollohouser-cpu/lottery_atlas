@@ -184,3 +184,21 @@ report produces seven private candidate rows. Response echoes draw ID but no
 date; the output explicitly attributes date to the audited result/request pair.
 No report has been integrated or published. Other game reports, production
 packaging, rules, UI/cache and physical acceptance remain open. Deadline unchanged.
+
+
+## November22 — reproducible evidence-bound candidate builder
+
+Added tooling/build_connecticut_candidate.py. It verifies original homepage and
+Cash5 report byte counts/SHA256 before parsing, requires all12 unique result
+session groups, and binds the payout request's exact game/draw/date parameters
+to the captured result payload. Output is explicitly productionReady=false and
+created exclusively, preserving any earlier candidate. No fresh source date is
+inferred from replay time; the opening observed date remains November22.
+
+22 focused Connecticut tests pass. The original captures build a private
+coverage_candidate_v1.json with12 result groups and one seven-tier Cash5 report.
+Additional replay probes correctly reject a changed request draw ID and changed
+response bytes. This is a reproducible development artifact, not a published
+release or device evidence. Remaining work includes other report/prize rules,
+production schema/loader/UI, bundle/cache retention and physical acceptance.
+No source scope or November27 deadline changed.
