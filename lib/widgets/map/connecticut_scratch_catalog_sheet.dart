@@ -1,3 +1,4 @@
+import 'connecticut_coverage_limits.dart';
 import 'package:flutter/material.dart';
 import 'connecticut_scratch_detail.dart';
 
@@ -17,7 +18,22 @@ class ConnecticutScratchCatalogSheet extends StatelessWidget {
         .where((game) => game['id'].toString() != '1725')
         .toList();
     return Scaffold(
-      appBar: AppBar(title: const Text('Connecticut Scratch')),
+      appBar: AppBar(
+        title: const Text('Connecticut Scratch'),
+        actions: [
+          IconButton(
+            tooltip: 'Coverage and exclusions',
+            icon: const Icon(Icons.info_outline),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(
+                builder: (_) =>
+                    ConnecticutCoverageLimits(openSource: openSource),
+              ),
+            ),
+          ),
+        ],
+      ),
       body: SafeArea(
         child: ListView.builder(
           padding: const EdgeInsets.all(16),

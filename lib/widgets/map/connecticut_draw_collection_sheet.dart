@@ -1,3 +1,4 @@
+import 'connecticut_coverage_limits.dart';
 import 'connecticut_report_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -69,7 +70,22 @@ class _ConnecticutDrawCollectionSheetState
         ? selected
         : (groups.isEmpty ? null : groups.first);
     return Scaffold(
-      appBar: AppBar(title: const Text('Connecticut Drawings')),
+      appBar: AppBar(
+        title: const Text('Connecticut Drawings'),
+        actions: [
+          IconButton(
+            tooltip: 'Coverage and exclusions',
+            icon: const Icon(Icons.info_outline),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute<void>(
+                builder: (_) =>
+                    ConnecticutCoverageLimits(openSource: widget.openSource),
+              ),
+            ),
+          ),
+        ],
+      ),
       body: SafeArea(
         child: ListView(
           padding: const EdgeInsets.all(16),

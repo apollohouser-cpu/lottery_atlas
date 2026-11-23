@@ -423,3 +423,18 @@ This checks initial layout and one scroll, not every scroll position or visual
 screenshot correctness. It is not physical landscape, actual iOS Dynamic Type,
 source-return, persistence or offline-lifecycle evidence. Production packaging,
 remaining rule/prize scope and native verification remain open; deadline unchanged.
+
+## November23 — coverage, exclusions and ancillary source routes
+
+Added a shared coverage screen reachable from Drawings and Scratch. It discloses
+snapshot/date limitations, absent complete claims/geography/history, overlapping
+play counts, Scratch1725, unresolved Mega Millions counts and life-prize amounts.
+Fast Play is explicitly bounded to the official rules index; no current inventory
+or results are implied. Second Chance and promotions have separate verified
+source routes and are not counted as draw or map activity. External-source
+failure leaves the page intact and visible.
+
+Eight focused coverage/draw/navigation widget tests pass; targeted analysis has
+no issues. Production wiring, full remaining prize-table reconciliation and
+physical verification remain pending. No acceptance or beta gate is closed and
+the fixed November27 deadline is unchanged.
