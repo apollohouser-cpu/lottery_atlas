@@ -378,3 +378,19 @@ failure), with no targeted analysis issues. Synthetic fixtures establish widget
 and loader behavior only, not physical lifecycle evidence. Actual source artifact
 packaging, remaining rule/prize reconciliation and physical acceptance are still
 pending under the unchanged November27 deadline.
+
+## November23 — combined private coverage artifact
+
+Private v5 now includes12 result groups, nine reports, nine official rule links
+and82 games from the existing detail-verified Scratch catalog. Packaging requires
+an explicit SHA256 match, preserves all original fields/source dates, and rejects
+1725, duplicate IDs, future inventory dates, impossible remaining counts, missing
+annuity labels and mismatched game-source URLs. This is packaging validation of
+the existing catalog, not a fresh audit of upstream HTML or rule PDF contents.
+
+The retained Scratch input digest is
+70faf960a1502e88717efe8dee57e9641f14eff0d8fceb1fc4c12e2096a46c7d.
+38 focused Python tests pass. The combined artifact remains private and marked
+productionReady=false; no release loader bypass, publication or physical
+acceptance is inferred. Rule/prize reconciliation, release review and production
+wiring remain unfinished under the unchanged November27 deadline.

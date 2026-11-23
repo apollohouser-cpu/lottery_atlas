@@ -13,6 +13,7 @@ from tooling.connecticut_state_reports import parse as state_report
 from tooling.connecticut_powerball_report import parse as powerball_report
 from tooling.connecticut_play_reports import parse as play_report
 from tooling.connecticut_rule_links import RULE_NAMES, extract as rule_links
+from tooling.connecticut_scratch_package import package as package_scratch
 
 
 def verified_capture(root, filename, manifest):
@@ -38,7 +39,7 @@ def verify_report_request(manifest, game, source_draw):
     return int(draw_id), draw_date
 
 
-def build(root, observed_date):
+def build(root, observed_date, scratch_raw=None, scratch_sha256=None):
     manifest = json.loads((root / 'capture.json').read_text())
     if manifest.get('url') != 'https://ctlottery.com/':
         raise ValueError('Unexpected result source')
@@ -94,7 +95,7 @@ def build(root, observed_date):
         references.append(dict(rule_links(html, game),
                                observedOnSourceUrl=expected_url,
                                sourceCaptureSha256=detail['sha256']))
-    return {'schemaVersion': 1, 'stateCode': 'CT', 'productionReady': False,
+    candidate = {'schemaVersion': 1, 'stateCode': 'CT', 'productionReady': False,
             'recordType': 'private development candidate',
             'observedDate': observed_date.isoformat(), 'draws': results,
             'reports': reports, 'ruleReferences': references,
@@ -105,14 +106,21 @@ def build(root, observed_date):
                 'Prize/rule integration remains unfinished.',
                 'No geographic activity or statewide distinct-ticket totals inferred.']}
 
+    if scratch_raw is not None or scratch_sha256 is not None:
+        candidate['scratchCatalog'] = package_scratch(scratch_raw, scratch_sha256, observed_date)
+        candidate['scratchCatalogSha256'] = scratch_sha256
+    return candidate
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--evidence', type=Path, required=True)
     parser.add_argument('--observed-date', type=date.fromisoformat, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--scratch-catalog', type=Path, required=True)
+    parser.add_argument('--scratch-sha256', required=True)
     args = parser.parse_args()
-    candidate = build(args.evidence, args.observed_date)
+    candidate = build(args.evidence, args.observed_date, args.scratch_catalog.read_bytes(), args.scratch_sha256)
     # Exclusive creation prevents accidental replacement of prior reviewed bytes.
     with args.output.open('x') as stream:
         json.dump(candidate, stream, indent=2, allow_nan=False)
