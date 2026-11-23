@@ -302,3 +302,18 @@ These use synthetic transport fixtures, not source validation or physical offlin
 lifecycle evidence. No production hash, endpoint, bundle or UI route is enabled
 by this groundwork. Source packaging, rule presentation, app integration and
 native acceptance remain pending; release deadline is unchanged.
+
+## November23 — draw snapshot presentation
+
+Implemented the Connecticut Drawings sheet for the reviewed candidate shape:
+separate game/session selectors, preserved digit order/leading zeros and Wild
+Ball, separate Double Play, reviewed Xs & Os team labels, and Keno game number
+without an invented draw time. Dates and snapshot limitations remain visible;
+Mega Millions payout withholding is disclosed. Official-source opening failures
+leave results visible and show an error. No result creates mapped activity.
+
+Five focused widget tests pass; targeted analysis has no issues. Fixtures are
+synthetic presentation cases, not additional source or physical-phone evidence.
+The sheet is not yet wired to production navigation or a published CT artifact.
+Reports/rules presentation, packaging, integration and native acceptance remain
+open. The November27 release deadline is unchanged.
