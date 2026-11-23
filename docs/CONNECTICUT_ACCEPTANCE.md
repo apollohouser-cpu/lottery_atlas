@@ -467,3 +467,18 @@ initial-layout/scroll harness passes. Expanded-table visual review and physical
 evidence are still pending. Powerball, Xs & Os and digit-game reference tables
 remain unfinished, as do production release review/wiring and native acceptance.
 The fixed scope and November27 release deadline remain unchanged.
+
+## November23 — Powerball reference prize columns
+
+Private v9 preserves nine Powerball/Double Play reference rows in separate prize
+columns. Power Play has seven multiplier rows plus separately labeled source
+cells spanning all multipliers: the jackpot is not multiplied and the five-white-
+ball prize is fixed. The10X eligibility qualification remains explicit. UI now
+renders every source column, including four/six-column references, instead of
+assuming three columns. No reference prize becomes a payment or winning count.
+
+Five focused Python tests, targeted Dart analysis and the actual-v9 initial-layout/
+scroll harness pass. Expanded-table visual review remains pending, as do Xs & Os
+and digit-game tables, production review/wiring and physical acceptance. Scope
+was fixed on time November22; neither the elapsed scope deadline nor the fixed
+November27 release deadline is extended.

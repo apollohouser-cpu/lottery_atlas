@@ -128,7 +128,10 @@ class _ConnecticutDrawCollectionSheetState
                       line(table['basis'] as String),
                       for (final values in (table['rows'] as List).skip(1))
                         line(
-                          '${table['rows'][0][0]}: ${values[0]} · ${table['rows'][0][1]}: ${values[1]} · ${table['rows'][0][2]}: ${values[2]}',
+                          [
+                            for (var i = 0; i < (values as List).length; i++)
+                              '${table['rows'][0][i]}: ${values[i]}',
+                          ].join(' · '),
                         ),
                     ],
                   ),

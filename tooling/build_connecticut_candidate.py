@@ -15,6 +15,7 @@ from tooling.connecticut_play_reports import parse as play_report
 from tooling.connecticut_rule_links import RULE_NAMES, extract as rule_links
 from tooling.connecticut_scratch_package import package as package_scratch
 from tooling.connecticut_keno_prizes import parse as keno_prizes
+from tooling.connecticut_powerball_prizes import parse as powerball_prizes
 from tooling.connecticut_prize_references import CONFIG as PRIZE_GAMES, parse as prize_references
 
 
@@ -101,7 +102,8 @@ def build(root, observed_date, scratch_raw=None, scratch_sha256=None):
             raise ValueError('Rule summary requires review against changed source')
         references.append(dict(rule_links(html, game),
                                notes=summary['notes'],
-                               prizeTables=(keno_prizes(html) if game == 'keno' else
+                               prizeTables=(powerball_prizes(html) if game == 'powerball' else
+                                            keno_prizes(html) if game == 'keno' else
                                             prize_references(html, game) if game in PRIZE_GAMES else []),
                                observedOnSourceUrl=expected_url,
                                sourceCaptureSha256=detail['sha256']))
