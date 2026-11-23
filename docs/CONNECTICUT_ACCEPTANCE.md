@@ -165,3 +165,22 @@ unaudited. Actual returned amounts differ from advertised combined Kicker prize
 figures, so do not map numeric tiers or sum/add-on counts by assumption. The
 endpoint discovery unlocks the next report audit without claiming publication.
 Production packaging, rules/reports, UI/cache and native checks remain open.
+
+
+## November22 — Cash5 payout tier audit
+
+Official client Cash5 configuration explicitly maps source tiers1–7 to5,4,3,
+4+Kicker,3+Kicker,2+Kicker,1+Kicker, under the label Winning Tickets. Its payout
+chart uses separate Kicker amounts4350/65, while the detail's advertised combined
+figures are4650/75. Preserve literal report amounts; do not silently substitute
+advertised figures, add prizes together or sum base/Kicker counts into a unique
+statewide ticket total. The footnote endpoint supplies general result/expiry text
+but no additional payout-unit definition.
+
+Added strict cash5 report parser and four passing focused tests: source draw/game
+identity, draw-found flag, exact tier keys, nonnegative finite amounts/integer
+counts, zero retention and separate Kicker semantics. The captured November21
+report produces seven private candidate rows. Response echoes draw ID but no
+date; the output explicitly attributes date to the audited result/request pair.
+No report has been integrated or published. Other game reports, production
+packaging, rules, UI/cache and physical acceptance remain open. Deadline unchanged.

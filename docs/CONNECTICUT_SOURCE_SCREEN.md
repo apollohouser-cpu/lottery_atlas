@@ -206,3 +206,11 @@ links Fast Play general rules; this establishes a rules route, not current game
 availability or results. The complete bounded release matrix is fixed in
 CONNECTICUT_ACCEPTANCE.md before the scope deadline. Result/count parsers and
 app integration remain unfinished; no public feed or geographic data changed.
+
+
+November22 Cash5 report audit: the official client tier mapping and captured payout
+endpoint reconcile seven literal Winning Tickets rows, including separate Kicker
+prizes. Private source/candidate evidence is retained; no distinct-ticket sum or
+retailer map is inferred. The report echoes draw ID, not date; dated result/request
+provenance is retained explicitly. Four focused parser tests pass; public app
+integration remains pending. See CONNECTICUT_ACCEPTANCE.md.
