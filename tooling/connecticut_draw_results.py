@@ -1,5 +1,7 @@
 """Normalize bounded CT result snapshots; no payouts, claims or geography."""
 from datetime import date
+import json
+from pathlib import Path
 import re
 
 # Audited game-detail number pools; these are not prize-count definitions.
@@ -7,7 +9,7 @@ POOLS = {'powerball': (5, 69, 26, 'Powerball'),
          'megamillions': (5, 70, 24, 'Mega Ball'),
          'mfl': (5, 58, 5, 'Millionaire Ball'),
          'lotto': (6, 44, None, ''), 'cash5': (5, 35, None, ''),
-         'keno': (20, 80, None, '')}
+         'keno': (20, 80, None, ''), 'xsandos': (8, 32, None, '')}
 
 
 def integer(value, low, high):
@@ -22,7 +24,7 @@ def normalize(game, observed_date):
     if slug not in POOLS and slug not in {'play3', 'play4'}:
         raise ValueError('Product requires separate semantic audit')
     route = game['detailsUrl']
-    expected_route = '/games/draw-games/' + ('millionaireforlife' if slug == 'mfl' else slug)
+    expected_route = '/games/draw-games/' + {'mfl': 'millionaireforlife', 'xsandos': 'xo'}.get(slug, slug)
     if route != expected_route:
         raise ValueError('Game/source mismatch')
     digit_game = slug in {'play3', 'play4'}
@@ -96,6 +98,12 @@ def normalize(game, observed_date):
             if bonus not in {'No Bonus', '2X', '3X', '4X', '5X', '10X'}:
                 raise ValueError('Unknown Keno bonus')
             row.update(gameNumber=number, bonus=bonus)
+        if slug == 'xsandos':
+            mapping = json.loads(Path(__file__).with_name('connecticut_xsos_teams.json').read_text())['teams']
+            if len(mapping) != 32 or {t['number'] for t in mapping} != set(range(1, 33)):
+                raise ValueError('Incomplete reviewed team map')
+            by_number = {t['number']: t['name'] for t in mapping}
+            row['teams'] = [by_number[n] for n in balls]
         result.append(row)
     return result
 

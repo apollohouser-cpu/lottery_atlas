@@ -53,7 +53,7 @@ class ResultsTest(unittest.TestCase):
         with self.assertRaises(ValueError): normalize(game, date(2026, 11, 22))
 
     def test_unreviewed_product_rejected(self):
-        game = play3(); game['apiSlug'] = 'xsandos'
+        game = play3(); game['apiSlug'] = 'unknown'
         with self.assertRaises(ValueError): normalize(game, date(2026, 11, 22))
 
 

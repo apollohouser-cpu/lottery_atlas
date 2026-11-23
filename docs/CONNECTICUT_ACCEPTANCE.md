@@ -143,3 +143,25 @@ association, bad references, inline mismatch and missing/conflicting data;13
 Connecticut tests pass overall. Private opening replay now produces11 rows.
 Xs & Os team mapping, actual reports/units, production integration and native
 acceptance remain open. No public feed changed; deadline remains November27.
+
+
+## November22 — Xs & Os mapping and payout endpoint discovery
+
+Captured22 official script chunks privately with source hashes. The official
+client's explicit32-team mapping is retained in tooling/connecticut_xsos_teams.json
+with source URL/hash. Xs & Os normalization checks eight distinct valid IDs,
+explicit date and API/display agreement, then maps IDs to reviewed team names.
+All eight opening result names independently match the rendered homepage image
+labels. Three new tests cover mapping, invalid/duplicate IDs and payload mismatch;
+16 focused Connecticut tests pass. Private replay now has12 result rows across
+all current draw/session groups including separate Double Play. No public feed
+or app UI changed, and no team logos were copied into the app.
+
+The official client exposes /api/winning-payouts with game, draw and date
+parameters. A bounded Cash5 request for the captured November21 draw returned
+numeric tier keys, counts, amounts and generic multiplier objects. Original bytes
+and hash are private; tier mapping, Kicker/base meaning and count units remain
+unaudited. Actual returned amounts differ from advertised combined Kicker prize
+figures, so do not map numeric tiers or sum/add-on counts by assumption. The
+endpoint discovery unlocks the next report audit without claiming publication.
+Production packaging, rules/reports, UI/cache and native checks remain open.
