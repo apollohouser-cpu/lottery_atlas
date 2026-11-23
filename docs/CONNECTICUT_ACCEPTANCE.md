@@ -363,3 +363,18 @@ Three focused widget tests pass, including scrolling to prize tiers; targeted
 analysis reports no issues. These are synthetic UI checks, not a renewed source
 audit or physical acceptance. Catalog navigation/production coverage packaging
 and integrated phone verification remain pending. The release deadline is unchanged.
+
+## November23 — integrated loader and Scratch navigation boundary
+
+Connected the reviewed-release loader to draw presentation and a separate Scratch
+catalog/detail navigation path. Catalog entries retain per-game inventory dates
+and ended status, exclude1725, and preserve Back navigation. Loader failure is
+visible with Retry/Close; retained observations show a refresh-failure disclosure.
+This integration requires an explicitly provided reviewed release and does not
+enable a production hash, bundle, endpoint or map route.
+
+Two integration widget tests pass (offline catalog/detail/Back and no-valid-data
+failure), with no targeted analysis issues. Synthetic fixtures establish widget
+and loader behavior only, not physical lifecycle evidence. Actual source artifact
+packaging, remaining rule/prize reconciliation and physical acceptance are still
+pending under the unchanged November27 deadline.
