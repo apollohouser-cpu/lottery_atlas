@@ -409,3 +409,17 @@ rule links. Six focused Python checks and five existing draw widget tests pass;
 targeted analysis has no issues. These notes are not complete wager/prize tables
 or a review of all linked PDF contents. Remaining scope reconciliation, production
 release packaging and physical verification remain open; deadline unchanged.
+
+## November23 — actual-candidate presentation audit
+
+Added an opt-in local presentation test using the exact private v6 artifact,
+without committing its source payload. All12 result groups, nine reports and82
+Scratch details rendered and completed one scroll at390×844 and844×390 with an
+explicit2x text scale:206 presentation cases passed without Flutter exceptions.
+Targeted analysis passes. Evidence and candidate SHA256 are retained privately in
+work/connecticut_acceptance_20261122/presentation_v6.json.
+
+This checks initial layout and one scroll, not every scroll position or visual
+screenshot correctness. It is not physical landscape, actual iOS Dynamic Type,
+source-return, persistence or offline-lifecycle evidence. Production packaging,
+remaining rule/prize scope and native verification remain open; deadline unchanged.
