@@ -93,6 +93,25 @@ class _ConnecticutDrawCollectionSheetState
             if (groups.isEmpty) line('No reviewed result snapshots available.'),
             for (final row in rows.where((row) => group(row) == current)) ...[
               line('Draw date: ${row['drawDate']}'),
+              for (final reference
+                  in (widget.coverage['ruleReferences'] as List? ?? [])
+                      .cast<Map<String, dynamic>>()
+                      .where(
+                        (reference) =>
+                            reference['game'] ==
+                            (row['game'] == 'doubleplay'
+                                ? 'powerball'
+                                : row['game']),
+                      )) ...[
+                TextButton(
+                  onPressed: () => open(reference['sourceUrl'] as String),
+                  child: const Text('Official game rules (external PDF)'),
+                ),
+                line(
+                  'Rule link retained from the source page; PDF content is not available offline.',
+                ),
+              ],
+
               for (final report
                   in (widget.coverage['reports'] as List? ?? [])
                       .cast<Map<String, dynamic>>()

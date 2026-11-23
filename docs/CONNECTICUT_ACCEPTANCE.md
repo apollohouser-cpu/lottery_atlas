@@ -332,3 +332,19 @@ Tests use synthetic fixtures; physical review and source packaging remain open.
 These sheets still have no production app entry or published CT coverage feed.
 Rules, Scratch detail integration and release acceptance remain pending; the
 November27 deadline is unchanged.
+
+## November23 — rule-source provenance and navigation
+
+The private candidate builder now verifies all nine captured detail-page hashes
+and game/source bindings before extracting one official game-rule PDF link per
+product. Duplicate navigation links collapse; missing, ambiguous or foreign-host
+rule links fail. Private v4 retains12 result groups, nine reports and nine rule
+references. Link extraction establishes source routes only, not PDF-content
+validation, current rule freshness or an offline rule/prize implementation.
+
+Draw presentation now offers the matching external rule PDF and discloses its
+offline limitation; Double Play uses the captured parent Powerball rule route.
+Six focused Python checks and five draw widget tests pass; targeted Dart analysis
+has no issues. Rules/prize content reconciliation, Scratch integration, production
+packaging and physical acceptance remain open. No public CT artifact or new app
+entry was enabled; the fixed release deadline is unchanged.

@@ -12,6 +12,7 @@ from tooling.connecticut_cash5_report import parse as cash5_report
 from tooling.connecticut_state_reports import parse as state_report
 from tooling.connecticut_powerball_report import parse as powerball_report
 from tooling.connecticut_play_reports import parse as play_report
+from tooling.connecticut_rule_links import RULE_NAMES, extract as rule_links
 
 
 def verified_capture(root, filename, manifest):
@@ -79,10 +80,25 @@ def build(root, observed_date):
         elif game.startswith(('play3', 'play4')): report = play_report(payload, game=game, **kwargs)
         else: report = state_report(payload, game=game, **kwargs)
         reports.append(report)
+    details = json.loads((root / 'detail_captures.json').read_text())
+    if (not isinstance(details, list) or len(details) != len(RULE_NAMES) or
+            {d.get('game') for d in details} != set(RULE_NAMES)):
+        raise ValueError('Incomplete rule-link source evidence')
+    references = []
+    for detail in details:
+        game = detail['game']
+        expected_url = next(r['sourceUrl'] for r in results if r['game'] == game)
+        if detail.get('ok') is not True or detail.get('url') != expected_url:
+            raise ValueError('Rule-link source does not match game')
+        html = verified_capture(root, game + '.html', detail).decode('utf-8')
+        references.append(dict(rule_links(html, game),
+                               observedOnSourceUrl=expected_url,
+                               sourceCaptureSha256=detail['sha256']))
     return {'schemaVersion': 1, 'stateCode': 'CT', 'productionReady': False,
             'recordType': 'private development candidate',
             'observedDate': observed_date.isoformat(), 'draws': results,
-            'reports': reports, 'evidence': [manifest] + report_manifests,
+            'reports': reports, 'ruleReferences': references,
+            'evidence': [manifest] + report_manifests + details,
             'limitations': ['Captured snapshots, not a current live feed or complete history.',
                 'Not yet packaged, bundled, cached or verified in the physical app.',
                 'Mega Millions payout counts withheld: aggregate/multiplier discrepancy unresolved.',
