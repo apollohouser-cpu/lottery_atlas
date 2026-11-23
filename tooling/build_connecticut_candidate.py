@@ -9,6 +9,7 @@ from urllib.parse import parse_qs, urlsplit
 from tooling.connecticut_source_inventory import draw_inventory
 from tooling.connecticut_draw_results import normalize, normalize_double_play
 from tooling.connecticut_cash5_report import parse as cash5_report
+from tooling.connecticut_state_reports import parse as state_report
 
 
 def verified_capture(root, filename, manifest):
@@ -16,6 +17,22 @@ def verified_capture(root, filename, manifest):
     if not raw or len(raw) != manifest.get('bytes') or hashlib.sha256(raw).hexdigest() != manifest.get('sha256'):
         raise ValueError('Source capture size/hash mismatch: ' + filename)
     return raw
+
+
+def verify_report_request(manifest, game, source_draw):
+    draw_id = source_draw.get('drawId')
+    if not isinstance(draw_id, str) or not draw_id.isdigit() or int(draw_id) <= 0:
+        raise ValueError('Invalid captured draw ID')
+    draw_date = source_draw.get('drawDate')
+    if not isinstance(draw_date, str):
+        raise ValueError('Missing source draw date')
+    url = urlsplit(manifest.get('url', ''))
+    expected = {'game': [game], 'draw': [draw_id], 'date': [draw_date]}
+    if (url.scheme != 'https' or url.netloc != 'ctlottery.com' or
+            url.path != '/api/winning-payouts' or url.fragment or
+            parse_qs(url.query, strict_parsing=True) != expected):
+        raise ValueError('Payout request does not match captured result')
+    return int(draw_id), draw_date
 
 
 def build(root, observed_date):
@@ -32,25 +49,25 @@ def build(root, observed_date):
     identities = [(r['game'], r.get('session', '')) for r in results]
     if len(results) != 12 or len(set(identities)) != 12:
         raise ValueError('Incomplete or duplicate result groups')
-    source_game = next(g for g in games if g['apiSlug'] == 'cash5')
-    source_draw = source_game['payouts'][0]['draw']
-    draw_id = source_draw.get('drawId')
-    if not isinstance(draw_id, str) or not draw_id.isdigit() or int(draw_id) <= 0:
-        raise ValueError('Invalid captured Cash5 draw ID')
-    report_manifest = json.loads((root / 'cash5_payout_manifest.json').read_text())
-    url = urlsplit(report_manifest.get('url', ''))
-    expected = {'game': ['cash5'], 'draw': [draw_id], 'date': [source_draw['drawDate']]}
-    if (url.scheme != 'https' or url.netloc != 'ctlottery.com' or
-            url.path != '/api/winning-payouts' or url.fragment or
-            parse_qs(url.query, strict_parsing=True) != expected):
-        raise ValueError('Payout request does not match captured result')
-    report_raw = verified_capture(root, 'cash5_payout.json', report_manifest)
-    report = cash5_report(json.loads(report_raw), draw_id=int(draw_id),
-                          draw_date=source_draw['drawDate'], observed_date=observed_date)
+    report_manifests = [dict(json.loads((root / 'cash5_payout_manifest.json').read_text()), game='cash5')]
+    extra = json.loads((root / 'additional_payout_manifest.json').read_text())
+    if not isinstance(extra, list) or len(extra) != 3 or {m.get('game') for m in extra} != {'lotto', 'mfl', 'xsandos'}:
+        raise ValueError('Incomplete or duplicate additional report evidence')
+    report_manifests.extend(extra)
+    reports = []
+    for report_manifest in report_manifests:
+        game = report_manifest['game']
+        source_game = next(g for g in games if g['apiSlug'] == game)
+        source_draw = source_game['payouts'][0]['draw']
+        draw_id, draw_date = verify_report_request(report_manifest, game, source_draw)
+        report_raw = verified_capture(root, game + '_payout.json', report_manifest)
+        kwargs = dict(draw_id=draw_id, draw_date=draw_date, observed_date=observed_date)
+        reports.append(cash5_report(json.loads(report_raw), **kwargs) if game == 'cash5'
+                       else state_report(json.loads(report_raw), game=game, **kwargs))
     return {'schemaVersion': 1, 'stateCode': 'CT', 'productionReady': False,
             'recordType': 'private development candidate',
             'observedDate': observed_date.isoformat(), 'draws': results,
-            'reports': [report], 'evidence': [manifest, report_manifest],
+            'reports': reports, 'evidence': [manifest] + report_manifests,
             'limitations': ['Captured snapshots, not a current live feed or complete history.',
                 'Not yet packaged, bundled, cached or verified in the physical app.',
                 'Other payout reports and prize/rule integration remain unfinished.',

@@ -225,3 +225,22 @@ under its variable-prize qualification. Counts/zeroes remain literal.
 These candidates remain unintegrated and unpublished. Evidence-bound packaging
 of the additional reports, Powerball/Mega Millions/Play3/Play4 report semantics,
 prize/rule integration and native acceptance remain open. Deadline unchanged.
+
+
+## November23 — four-report evidence package and remaining captures
+
+The candidate builder now requires and verifies all four audited report captures:
+Cash5, Lotto!, Millionaire for Life and Xs & Os. Every request's game, draw ID and
+date must match its captured result; duplicate/missing manifests, wrong origins,
+extra query parameters and hash/size changes fail closed. The private v2 candidate
+contains12 result groups and four reports (25 literal tier rows). Earlier v1 bytes
+remain preserved.26 focused Connecticut tests pass, including request binding.
+
+Six additional official endpoint responses were captured privately with hashes
+and retrieval times: Powerball (18 source count keys), Mega Millions (9), Play4
+DAY/NIGHT (40 each), Play3 DAY/NIGHT (24 each). All report drawFound=true. These
+key counts describe source schema only, not winner totals or accepted tiers.
+Power Play/Double Play, Mega Millions multiplier partitions and digit-game
+wager/Wild Ball semantics still require audit before normalization. Captures are
+not promoted. No current freshness, app integration or physical acceptance is
+claimed; fixed November27 release deadline and completed scope remain unchanged.
