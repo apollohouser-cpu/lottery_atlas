@@ -98,3 +98,54 @@ def normalize(game, observed_date):
             row.update(gameNumber=number, bonus=bonus)
         result.append(row)
     return result
+
+
+def normalize_double_play(game, observed_date, *, inventory_index):
+    """Use the explicitly dated Powerball API draw's nested Double Play object.
+
+Resolve only its narrow, same-product/same-display white-ball reference. Never
+substitute the retrieval date or follow an arbitrary React Flight reference.
+"""
+    if game.get('apiSlug') != 'powerball' or type(inventory_index) is not int or inventory_index < 0:
+        raise ValueError('Wrong Double Play parent')
+    parent = normalize(game, observed_date)[0]
+    displays = game.get('draws')
+    if not isinstance(displays, list) or len(displays) != 2:
+        raise ValueError('Missing separate Double Play display')
+    display = displays[1]
+    if not isinstance(display, dict) or display.get('sectionLabel') != 'Double Play®':
+        raise ValueError('Double Play display identity changed')
+    if display.get('specialLabel') != 'Powerball':
+        raise ValueError('Double Play bonus identity changed')
+    balls = display.get('white')
+    if not isinstance(balls, list) or len(balls) != 5:
+        raise ValueError('Invalid Double Play number count')
+    balls = [integer(n, 1, 69) for n in balls]
+    if len(set(balls)) != 5:
+        raise ValueError('Duplicate Double Play numbers')
+    bonus = integer(display.get('special'), 1, 26)
+    # Parent's explicit date was already reconciled against its visible result.
+    raw = game['payouts'][0]['draw']
+    nested = raw.get('doublePlay')
+    if not isinstance(nested, dict):
+        raise ValueError('Missing dated nested Double Play result')
+    raw_balls = nested.get('whiteBalls')
+    if isinstance(raw_balls, str):
+        suffix = f':props:data:games:{inventory_index}:draws:1:white'
+        if not re.fullmatch(r'\$[0-9a-f]+' + re.escape(suffix), raw_balls):
+            raise ValueError('Unresolved or cross-product Double Play reference')
+        root = raw_balls.split(':', 1)[0]
+        if displays[0] != f'{root}:props:data:games:{inventory_index}:latest':
+            raise ValueError('Double Play reference root differs from parent')
+    elif (not isinstance(raw_balls, list) or
+          any(type(n) is not int for n in raw_balls) or raw_balls != balls):
+        raise ValueError('Double Play display/API mismatch')
+    if type(nested.get('powerball')) is not int or nested['powerball'] != bonus:
+        raise ValueError('Double Play bonus mismatch')
+    if display.get('isoDate') not in (None, '', parent['drawDate']):
+        raise ValueError('Conflicting Double Play date')
+    return {'game': 'doubleplay', 'drawDate': parent['drawDate'], 'numbers': balls,
+            'special': {'label': 'Powerball', 'number': bonus},
+            'sourceUrl': parent['sourceUrl'], 'datePrecision': 'day',
+            'dateEvidence': 'Nested Double Play in explicitly dated Powerball API draw',
+            'coverage': parent['coverage']}

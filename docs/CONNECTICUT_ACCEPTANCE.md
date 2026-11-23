@@ -129,3 +129,17 @@ Double Play reference/date resolution and Xs & Os team mapping remain separate
 unfinished result requirements. Actual payout reports/units, rules integration,
 production packaging and UI/cache/native checks remain open. This adds no claims,
 retailer activity, winner counts or full-history coverage; deadline unchanged.
+
+
+## November22 — Double Play date/reference validation
+
+Double Play now has a separate normalizer using the explicit date on the API
+draw that contains its nested result. A missing display date is not replaced by
+retrieval time. The only supported Flight reference must target the same product,
+display slot and root as the parent; arbitrary/cross-product references fail.
+Inline arrays, bonus numbers, ranges and conflicting explicit dates are checked.
+Power Play is never copied onto Double Play. Four new focused tests cover dated
+association, bad references, inline mismatch and missing/conflicting data;13
+Connecticut tests pass overall. Private opening replay now produces11 rows.
+Xs & Os team mapping, actual reports/units, production integration and native
+acceptance remain open. No public feed changed; deadline remains November27.
