@@ -121,6 +121,18 @@ class _ConnecticutDrawCollectionSheetState
                       )) ...[
                 for (final note in reference['notes'] as List? ?? [])
                   line('$note'),
+                for (final table in reference['prizeTables'] as List? ?? [])
+                  ExpansionTile(
+                    title: Text(table['title'] as String),
+                    children: [
+                      line(table['basis'] as String),
+                      for (final values in (table['rows'] as List).skip(1))
+                        line(
+                          'Match ${values[0]} · Prize ${values[1]} · Odds ${values[2]}',
+                        ),
+                    ],
+                  ),
+
                 TextButton(
                   onPressed: () => open(reference['sourceUrl'] as String),
                   child: const Text('Official game rules (external PDF)'),

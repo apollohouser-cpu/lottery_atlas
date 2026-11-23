@@ -438,3 +438,17 @@ Eight focused coverage/draw/navigation widget tests pass; targeted analysis has
 no issues. Production wiring, full remaining prize-table reconciliation and
 physical verification remain pending. No acceptance or beta gate is closed and
 the fixed November27 deadline is unchanged.
+
+## November23 — Keno spot prize references
+
+Parsed all ten official Keno spot tables from the hash-verified captured detail
+page:37 literal prize/odds rows. Packaging validates unique spot coverage, headers,
+match ranges, prize notation and odds notation. Values retain their $1/no-Bonus
+basis and are not converted into actual payouts or winner counts. Private v7
+includes the tables, displayed as expandable spot sections beside retained Keno
+qualifications and the official rules link. Bonus odds are not yet packaged.
+
+Five focused parser/candidate tests pass. The actual-v7 presentation harness and
+targeted Dart analysis pass; the harness tests initial/scroll layout, not expanded
+table visual review or physical device behavior. Remaining prize schedules,
+production review/wiring and native acceptance remain pending; deadline unchanged.

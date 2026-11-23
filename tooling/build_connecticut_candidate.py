@@ -14,6 +14,7 @@ from tooling.connecticut_powerball_report import parse as powerball_report
 from tooling.connecticut_play_reports import parse as play_report
 from tooling.connecticut_rule_links import RULE_NAMES, extract as rule_links
 from tooling.connecticut_scratch_package import package as package_scratch
+from tooling.connecticut_keno_prizes import parse as keno_prizes
 
 
 def verified_capture(root, filename, manifest):
@@ -99,6 +100,7 @@ def build(root, observed_date, scratch_raw=None, scratch_sha256=None):
             raise ValueError('Rule summary requires review against changed source')
         references.append(dict(rule_links(html, game),
                                notes=summary['notes'],
+                               prizeTables=keno_prizes(html) if game == 'keno' else [],
                                observedOnSourceUrl=expected_url,
                                sourceCaptureSha256=detail['sha256']))
     candidate = {'schemaVersion': 1, 'stateCode': 'CT', 'productionReady': False,
