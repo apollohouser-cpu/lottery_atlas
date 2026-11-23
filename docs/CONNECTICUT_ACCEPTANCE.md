@@ -482,3 +482,17 @@ scroll harness pass. Expanded-table visual review remains pending, as do Xs & Os
 and digit-game tables, production review/wiring and physical acceptance. Scope
 was fixed on time November22; neither the elapsed scope deadline nor the fixed
 November27 release deadline is extended.
+
+## November23 — team prizes and multiplier reference odds
+
+Private v10 adds five Xs & Os team-match prize references, six Keno Bonus outcomes
+and five Mega Millions multiplier-frequency rows from the verified detail pages.
+The No Bonus outcome stays explicit. Frequencies/odds are reference distributions,
+not counts of winning tickets. Xs & Os jackpot and reduction qualifications remain
+separate from promotional awards; unresolved Mega Millions payout counts remain
+withheld despite the supported reference multiplier table.
+
+Five focused Python tests and the actual-v10 initial-layout/scroll harness pass.
+Expanded-table review, digit-game wager matrices, production release wiring and
+physical acceptance remain pending. Source dates, exclusions and the fixed
+November27 release deadline are unchanged.
