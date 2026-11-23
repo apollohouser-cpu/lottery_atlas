@@ -266,3 +266,24 @@ Do not force equality, invent missing multiplier winners, or use a sum as a
 verified complete statewide total. Validated winning numbers remain independent.
 Play3/Play4 units, report packaging and production/native integration remain open.
 The fixed release deadline is unchanged; no agency message or paid work initiated.
+
+
+## November23 — digit-game winning-play semantics and nine-report candidate
+
+Audited the official client's Play3/Play4 display grouping. The heading is
+Winning Plays, not tickets; source tiers overlap across Straight/Box combinations.
+Parser preserves the exact reviewed groups and minimum-wager prize labels and
+never produces a distinct-ticket total. Four separately dated DAY/NIGHT source
+responses yield64 presentation rows. Source tier IDs, labels and grouping are
+retained with official client URL/hash in connecticut_play_report_tiers.json.
+Three focused tests cover overlaps, all four sessions and invalid/missing counts.
+
+Candidate builder now binds and hashes Powerball plus four digit-session reports
+alongside the prior four reports. Private v3 contains12 result groups and nine
+reports; Double Play remains a separate section of the Powerball report. MM
+payout counts remain explicitly withheld, not silently replaced or forced to
+reconcile.32 focused draw/report/candidate tests pass. A broader discovery attempt
+also selected the unchanged Scratch suite, which could not import lxml in the
+system Python environment; no Scratch validation pass is claimed for this session.
+No production feed/UI changed; packaging, rule presentation and native acceptance
+remain open with the original deadline unchanged.

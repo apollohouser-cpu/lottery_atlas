@@ -10,6 +10,8 @@ from tooling.connecticut_source_inventory import draw_inventory
 from tooling.connecticut_draw_results import normalize, normalize_double_play
 from tooling.connecticut_cash5_report import parse as cash5_report
 from tooling.connecticut_state_reports import parse as state_report
+from tooling.connecticut_powerball_report import parse as powerball_report
+from tooling.connecticut_play_reports import parse as play_report
 
 
 def verified_capture(root, filename, manifest):
@@ -54,23 +56,37 @@ def build(root, observed_date):
     if not isinstance(extra, list) or len(extra) != 3 or {m.get('game') for m in extra} != {'lotto', 'mfl', 'xsandos'}:
         raise ValueError('Incomplete or duplicate additional report evidence')
     report_manifests.extend(extra)
+    remaining = json.loads((root / 'remaining_payout_manifest.json').read_text())
+    expected_remaining = {'powerball', 'megamillions', 'play3day', 'play3night', 'play4day', 'play4night'}
+    if (not isinstance(remaining, list) or len(remaining) != 6 or
+            {m.get('game') for m in remaining} != expected_remaining or
+            any(m.get('ok') is not True for m in remaining)):
+        raise ValueError('Incomplete remaining report evidence')
+    report_manifests.extend(m for m in remaining if m['game'] != 'megamillions')
     reports = []
     for report_manifest in report_manifests:
         game = report_manifest['game']
-        source_game = next(g for g in games if g['apiSlug'] == game)
-        source_draw = source_game['payouts'][0]['draw']
+        matches = [p['draw'] for g in games for p in g.get('payouts', []) if p.get('apiGame') == game]
+        if len(matches) != 1:
+            raise ValueError('Missing or ambiguous report result binding')
+        source_draw = matches[0]
         draw_id, draw_date = verify_report_request(report_manifest, game, source_draw)
         report_raw = verified_capture(root, game + '_payout.json', report_manifest)
         kwargs = dict(draw_id=draw_id, draw_date=draw_date, observed_date=observed_date)
-        reports.append(cash5_report(json.loads(report_raw), **kwargs) if game == 'cash5'
-                       else state_report(json.loads(report_raw), game=game, **kwargs))
+        payload = json.loads(report_raw)
+        if game == 'cash5': report = cash5_report(payload, **kwargs)
+        elif game == 'powerball': report = powerball_report(payload, **kwargs)
+        elif game.startswith(('play3', 'play4')): report = play_report(payload, game=game, **kwargs)
+        else: report = state_report(payload, game=game, **kwargs)
+        reports.append(report)
     return {'schemaVersion': 1, 'stateCode': 'CT', 'productionReady': False,
             'recordType': 'private development candidate',
             'observedDate': observed_date.isoformat(), 'draws': results,
             'reports': reports, 'evidence': [manifest] + report_manifests,
             'limitations': ['Captured snapshots, not a current live feed or complete history.',
                 'Not yet packaged, bundled, cached or verified in the physical app.',
-                'Other payout reports and prize/rule integration remain unfinished.',
+                'Mega Millions payout counts withheld: aggregate/multiplier discrepancy unresolved.',
+                'Prize/rule integration remains unfinished.',
                 'No geographic activity or statewide distinct-ticket totals inferred.']}
 
 
