@@ -287,3 +287,18 @@ also selected the unchanged Scratch suite, which could not import lxml in the
 system Python environment; no Scratch validation pass is claimed for this session.
 No production feed/UI changed; packaging, rule presentation and native acceptance
 remain open with the original deadline unchanged.
+
+## November23 — release transport groundwork
+
+Added the Connecticut release loader with an explicit reviewed SHA256 requirement
+and supported-release identity check. Private candidates remain rejected even
+when their hash is supplied. Failed/unreviewed refreshes retain the reviewed cache
+or bundle and original source dates; valid remote bytes are cached verbatim.
+Storage failures are reported separately from refresh failures; no valid source
+fails explicitly instead of manufacturing coverage.
+
+Six focused Flutter transport tests pass and targeted analysis reports no issues.
+These use synthetic transport fixtures, not source validation or physical offline
+lifecycle evidence. No production hash, endpoint, bundle or UI route is enabled
+by this groundwork. Source packaging, rule presentation, app integration and
+native acceptance remain pending; release deadline is unchanged.
