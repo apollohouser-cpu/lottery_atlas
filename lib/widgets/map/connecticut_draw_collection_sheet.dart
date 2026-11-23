@@ -128,7 +128,7 @@ class _ConnecticutDrawCollectionSheetState
                       line(table['basis'] as String),
                       for (final values in (table['rows'] as List).skip(1))
                         line(
-                          'Match ${values[0]} · Prize ${values[1]} · Odds ${values[2]}',
+                          '${table['rows'][0][0]}: ${values[0]} · ${table['rows'][0][1]}: ${values[1]} · ${table['rows'][0][2]}: ${values[2]}',
                         ),
                     ],
                   ),

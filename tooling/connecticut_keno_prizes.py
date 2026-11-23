@@ -26,7 +26,7 @@ class Tables(HTMLParser):
             if self.row is not None:
                 raise ValueError('Nested row')
             self.row = dict(cells=[], depth=self.depth)
-        elif self.row is not None and role in {'cell', 'columnheader'}:
+        elif self.row is not None and role in {'cell', 'columnheader', 'rowheader'}:
             if self.cell is not None:
                 raise ValueError('Nested cell')
             self.cell = dict(text=[], depth=self.depth)

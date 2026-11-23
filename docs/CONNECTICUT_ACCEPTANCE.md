@@ -452,3 +452,18 @@ Five focused parser/candidate tests pass. The actual-v7 presentation harness and
 targeted Dart analysis pass; the harness tests initial/scroll layout, not expanded
 table visual review or physical device behavior. Remaining prize schedules,
 production review/wiring and native acceptance remain pending; deadline unchanged.
+
+## November23 — additional reference prize schedules
+
+Private v8 adds29 literal advertised prize/odds rows across Cash5 base/Kicker,
+Lotto, Millionaire for Life and Mega Millions. Source row headers are now read
+explicitly; jackpot labels, stars, annual amounts and base-prize headings remain
+unchanged. Each table carries its variable-prize, annuity or multiplier basis.
+Cash5 advertised combined Kicker prizes remain separate from dated report amounts.
+Presentation uses source column headings instead of assuming every table is Keno.
+
+Seven focused Python tests pass, targeted Dart analysis is clean and the actual-v8
+initial-layout/scroll harness passes. Expanded-table visual review and physical
+evidence are still pending. Powerball, Xs & Os and digit-game reference tables
+remain unfinished, as do production release review/wiring and native acceptance.
+The fixed scope and November27 release deadline remain unchanged.
