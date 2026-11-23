@@ -244,3 +244,25 @@ Power Play/Double Play, Mega Millions multiplier partitions and digit-game
 wager/Wild Ball semantics still require audit before normalization. Captures are
 not promoted. No current freshness, app integration or physical acceptance is
 claimed; fixed November27 release deadline and completed scope remain unchanged.
+
+
+## November23 — Powerball report separation; Mega Millions reconciliation hold
+
+The official client treats Powerball source counts as base counts and adds a
+separate powerplay bucket for its combined display. New parser instead retains
+both measures separately and leaves absent Power Play fields unknown. Source
+tiers10–18 map exclusively to Double Play; no Power Play is applied. The jackpot
+is labeled without presenting its API amount as an individual payment. Three
+focused tests pass and the private replay yields18 separate tier rows. No public
+report or statewide total has been published.
+
+Mega Millions requires additional reconciliation: for the captured November20
+draw, source tier4 counts=8 while its five explicit multiplier buckets sum to3.
+Other tiers also differ. The official client uses multiplier sums for its display,
+but this alone does not establish why aggregate counts differ. Preserve both
+source measures privately and hold normalized MM payout counts until the
+source semantics are resolved or disclose a bounded supported representation.
+Do not force equality, invent missing multiplier winners, or use a sum as a
+verified complete statewide total. Validated winning numbers remain independent.
+Play3/Play4 units, report packaging and production/native integration remain open.
+The fixed release deadline is unchanged; no agency message or paid work initiated.
