@@ -5,7 +5,7 @@ import 'package:lottery_atlas/widgets/map/connecticut_draw_collection_sheet.dart
 void main() {
   Map<String, dynamic> row(String game, {String? session}) => {
     'game': game,
-    if (session != null) 'session': session,
+    'session': ?session,
     'drawDate': '2026-11-22',
     'numbers': [0, 0, 7],
     'sourceUrl': 'https://ctlottery.com/games/draw-games/play3',
