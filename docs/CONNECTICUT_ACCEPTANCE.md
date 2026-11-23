@@ -496,3 +496,18 @@ Five focused Python tests and the actual-v10 initial-layout/scroll harness pass.
 Expanded-table review, digit-game wager matrices, production release wiring and
 physical acceptance remain pending. Source dates, exclusions and the fixed
 November27 release deadline are unchanged.
+
+## November23 — digit-game wager matrices
+
+Private v11 now retains all four captured Play3 and all four Play4 reference
+matrices: base and Combo, with and without Wild Ball.72 rows below the first
+header include the additional Wild Ball wager headers. Source row/column spans
+are expanded without calculating new prize values; dashes remain dashes, and
+base/Wild Ball/total-wager distinctions and example combinations are preserved.
+Changed matrix inventory, wager columns, ragged rows and unfinished spans fail.
+
+Five focused Python tests and the actual-v11 initial-layout/scroll harness pass.
+All nine draw products now have reference prize material, but expanded-table
+review and final source/release reconciliation remain required. Production
+publication/wiring and physical acceptance are not inferred from this private
+candidate. The November27 deadline remains unchanged.
