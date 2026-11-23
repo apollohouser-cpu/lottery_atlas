@@ -348,3 +348,18 @@ Six focused Python checks and five draw widget tests pass; targeted Dart analysi
 has no issues. Rules/prize content reconciliation, Scratch integration, production
 packaging and physical acceptance remain open. No public CT artifact or new app
 entry was enabled; the fixed release deadline is unchanged.
+
+## November23 — Scratch detail presentation
+
+Implemented a dedicated Scratch detail screen using the existing detail-verified
+catalog schema. It displays original inventory dates, sales/claim dates with
+explicit unknown/TBD values, original and unclaimed prize tiers, and separate
+annuity labels versus verified cash options. Ended games remain labeled sales
+ended. Game1725 is blocked defensively even if passed directly to the screen;
+its conflicting cash amount cannot appear. Source opening is restricted to the
+official hosts and failures preserve the displayed inventory.
+
+Three focused widget tests pass, including scrolling to prize tiers; targeted
+analysis reports no issues. These are synthetic UI checks, not a renewed source
+audit or physical acceptance. Catalog navigation/production coverage packaging
+and integrated phone verification remain pending. The release deadline is unchanged.
