@@ -394,3 +394,18 @@ The retained Scratch input digest is
 productionReady=false; no release loader bypass, publication or physical
 acceptance is inferred. Rule/prize reconciliation, release review and production
 wiring remain unfinished under the unchanged November27 deadline.
+
+## November23 — source-bound rule qualifications
+
+Reviewed the captured official detail-page prize and play explanations and added
+bounded paraphrased notes for all nine products. Notes distinguish Power Play
+from Double Play, ticket-specific Mega Millions multipliers, annual life-prize
+labels, variable Lotto/Cash5 prizes, ticket-selected Kicker, Keno spot/wager/Bonus
+qualifications, and digit-game wager/overlap semantics. Each summary is pinned to
+its exact detail-page SHA256 and URL; changed captures require another review.
+
+Private v6 includes the notes and draw presentation renders them beside official
+rule links. Six focused Python checks and five existing draw widget tests pass;
+targeted analysis has no issues. These notes are not complete wager/prize tables
+or a review of all linked PDF contents. Remaining scope reconciliation, production
+release packaging and physical verification remain open; deadline unchanged.

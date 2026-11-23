@@ -103,6 +103,8 @@ class _ConnecticutDrawCollectionSheetState
                                 ? 'powerball'
                                 : row['game']),
                       )) ...[
+                for (final note in reference['notes'] as List? ?? [])
+                  line('$note'),
                 TextButton(
                   onPressed: () => open(reference['sourceUrl'] as String),
                   child: const Text('Official game rules (external PDF)'),

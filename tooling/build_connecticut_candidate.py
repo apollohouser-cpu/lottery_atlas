@@ -85,6 +85,7 @@ def build(root, observed_date, scratch_raw=None, scratch_sha256=None):
     if (not isinstance(details, list) or len(details) != len(RULE_NAMES) or
             {d.get('game') for d in details} != set(RULE_NAMES)):
         raise ValueError('Incomplete rule-link source evidence')
+    summaries = json.loads(Path(__file__).with_name('connecticut_rule_summaries.json').read_text())
     references = []
     for detail in details:
         game = detail['game']
@@ -92,7 +93,12 @@ def build(root, observed_date, scratch_raw=None, scratch_sha256=None):
         if detail.get('ok') is not True or detail.get('url') != expected_url:
             raise ValueError('Rule-link source does not match game')
         html = verified_capture(root, game + '.html', detail).decode('utf-8')
+        summary = summaries[game]
+        if (summary['sourceCaptureSha256'] != detail['sha256'] or
+                summary['sourceUrl'] != expected_url):
+            raise ValueError('Rule summary requires review against changed source')
         references.append(dict(rule_links(html, game),
+                               notes=summary['notes'],
                                observedOnSourceUrl=expected_url,
                                sourceCaptureSha256=detail['sha256']))
     candidate = {'schemaVersion': 1, 'stateCode': 'CT', 'productionReady': False,

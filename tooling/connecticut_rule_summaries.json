@@ -1,0 +1,77 @@
+{
+  "powerball": {
+    "sourceUrl": "https://ctlottery.com/games/draw-games/powerball",
+    "sourceCaptureSha256": "59e7aba2c47c5df88d4eecf512d56bf49acaa6908db9472d4e24dec17d8a503e",
+    "notes": [
+      "Power Play applies to non-jackpot Powerball prizes. Matching five white balls with Power Play pays a fixed $2 million; the jackpot is not multiplied.",
+      "Double Play is a separate drawing using the selected numbers. Its prize schedule is separate from Powerball and Power Play."
+    ]
+  },
+  "xsandos": {
+    "sourceUrl": "https://ctlottery.com/games/draw-games/xo",
+    "sourceCaptureSha256": "c067a6d1bbd39e83ac179a85f5c196dfe1ef2d9ce583764313598f93d76b8622",
+    "notes": [
+      "Players select eight of 32 teams. The draw uses team symbols; it is not a wager on the outcome of an NFL game.",
+      "The jackpot depends on sales. Published prizes can be reduced under the official rules; promotional awards are separate."
+    ]
+  },
+  "megamillions": {
+    "sourceUrl": "https://ctlottery.com/games/draw-games/megamillions",
+    "sourceCaptureSha256": "bf9ae4aa3faa13861f05f1c8e0271d18232d59f7e98b2977f46a2c1f60a81819",
+    "notes": [
+      "Every play has a ticket-specific multiplier of 2X, 3X, 4X, 5X or 10X. Published non-jackpot base prizes must be multiplied by that play’s multiplier.",
+      "A base-prize table is not a record of actual payments. Snapshot payout counts remain withheld because the source aggregates and multiplier breakdown do not reconcile."
+    ]
+  },
+  "mfl": {
+    "sourceUrl": "https://ctlottery.com/games/draw-games/millionaireforlife",
+    "sourceCaptureSha256": "e2c9495e723da52b787e860f9a353a4472ea3378736cc2b02d0eccffcacc0969",
+    "notes": [
+      "The top two prize labels describe annual payments for life, with a minimum guarantee of 20 annual payments. They are not cash amounts or lifetime totals.",
+      "Cash selection and claimant circumstances affect payment options. Consult the official rules; the unresolved numeric life-prize API amounts are withheld."
+    ]
+  },
+  "lotto": {
+    "sourceUrl": "https://ctlottery.com/games/draw-games/lotto",
+    "sourceCaptureSha256": "9648d5f0b8138eb462cce82c0cd37c29b7968c0499840ae8d0dc9fdd75f8e311",
+    "notes": [
+      "Some published prize amounts depend on the prize pool and number of winners. Actual drawing payouts can differ from the reference schedule.",
+      "A displayed jackpot is not evidence of a claimant payment."
+    ]
+  },
+  "cash5": {
+    "sourceUrl": "https://ctlottery.com/games/draw-games/cash5",
+    "sourceCaptureSha256": "2ef208be5cf643e9c36d510520b369cadf20e6b9a9ec8ea110a27ea493d4f2be",
+    "notes": [
+      "Kicker is an extra number selected for the ticket, not a separately drawn bonus number. When activated, it must match one of the winning numbers for Kicker prizes.",
+      "Actual prizes can be lower than the advertised schedule. The report’s Kicker amounts are separate from advertised combined prizes; do not replace or add them to create a ticket total."
+    ]
+  },
+  "keno": {
+    "sourceUrl": "https://ctlottery.com/games/draw-games/keno",
+    "sourceCaptureSha256": "49d7cc83cfb64782494499a2f12d5a3e4328d10221d1025509a3e9a87697a7ec",
+    "notes": [
+      "Reference prizes use a $1 play without Bonus. Prize values depend on the number of spots and wager. Adding Bonus doubles the ticket cost.",
+      "The published maximum is $100,000 without Bonus and $1 million with Bonus. The $1 million prize is subject to split-prize liability and can be reduced.",
+      "The saved result is one numbered game with a source date; it is not a live four-minute feed."
+    ]
+  },
+  "play3": {
+    "sourceUrl": "https://ctlottery.com/games/draw-games/play3",
+    "sourceCaptureSha256": "4eee19e6227894c1b6c7387c9e2ead613dfa6ed387b6c532a5bb58a07b78cd76",
+    "notes": [
+      "Prize schedules depend on wager amount and the selected Straight, Box, pair or combination play. Digit order and repeated digits matter.",
+      "Straight/Box splits the wager equally between Straight and Box. A straight win pays both portions. Wild Ball has a separate additional wager and prize schedule.",
+      "Report groups overlap. Winning Plays must not be summed into distinct tickets or combined across DAY and NIGHT."
+    ]
+  },
+  "play4": {
+    "sourceUrl": "https://ctlottery.com/games/draw-games/play4",
+    "sourceCaptureSha256": "42203472bb98da15aa035507320411f61b3d2523d9441cf3a41e41554982611b",
+    "notes": [
+      "Prize schedules depend on wager amount and the selected Straight, Box, pair or combination play. Digit order and repeated digits matter.",
+      "Straight/Box splits the wager equally between Straight and Box. A straight win pays both portions. Wild Ball has a separate additional wager and prize schedule.",
+      "Report groups overlap. Winning Plays must not be summed into distinct tickets or combined across DAY and NIGHT."
+    ]
+  }
+}
