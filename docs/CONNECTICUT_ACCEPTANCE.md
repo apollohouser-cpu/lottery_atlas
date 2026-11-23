@@ -317,3 +317,18 @@ synthetic presentation cases, not additional source or physical-phone evidence.
 The sheet is not yet wired to production navigation or a published CT artifact.
 Reports/rules presentation, packaging, integration and native acceptance remain
 open. The November27 release deadline is unchanged.
+
+## November23 — dated report presentation
+
+Added report navigation from matching game/session/date snapshots, including the
+separate Double Play section of the Powerball report. Presentation preserves
+Winning Plays versus ticket labels, overlapping-group limitations, separate
+Power Play counts (missing remains Not supplied), minimum-wager reference prizes
+and life-prize numeric withholding. Dates and request/response provenance are
+visible; no total, individual cash payment or selling location is inferred.
+
+Nine draw/report widget tests pass and targeted analysis reports no issues.
+Tests use synthetic fixtures; physical review and source packaging remain open.
+These sheets still have no production app entry or published CT coverage feed.
+Rules, Scratch detail integration and release acceptance remain pending; the
+November27 deadline is unchanged.

@@ -1,3 +1,4 @@
+import 'connecticut_report_sheet.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -92,6 +93,35 @@ class _ConnecticutDrawCollectionSheetState
             if (groups.isEmpty) line('No reviewed result snapshots available.'),
             for (final row in rows.where((row) => group(row) == current)) ...[
               line('Draw date: ${row['drawDate']}'),
+              for (final report
+                  in (widget.coverage['reports'] as List? ?? [])
+                      .cast<Map<String, dynamic>>()
+                      .where(
+                        (report) =>
+                            report['game'] ==
+                                (row['game'] == 'doubleplay'
+                                    ? 'powerball'
+                                    : row['game']) &&
+                            report['session'] == row['session'] &&
+                            report['drawDate'] == row['drawDate'],
+                      ))
+                TextButton(
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute<void>(
+                      builder: (_) => ConnecticutReportSheet(
+                        report: report,
+                        openSource: widget.openSource,
+                      ),
+                    ),
+                  ),
+                  child: Text(
+                    row['game'] == 'doubleplay'
+                        ? 'Powerball / Double Play count report'
+                        : 'Dated count report',
+                  ),
+                ),
+
               if (row['gameNumber'] != null)
                 line('Game number: ${row['gameNumber']}'),
               if (row['teams'] is List)
