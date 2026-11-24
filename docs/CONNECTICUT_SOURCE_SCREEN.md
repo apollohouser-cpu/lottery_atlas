@@ -214,3 +214,14 @@ prizes. Private source/candidate evidence is retained; no distinct-ticket sum or
 retailer map is inferred. The report echoes draw ID, not date; dated result/request
 provenance is retained explicitly. Four focused parser tests pass; public app
 integration remains pending. See CONNECTICUT_ACCEPTANCE.md.
+
+## November23 — supported release evidence consolidated
+
+The bounded results/reports, reference prize tables, rules links and retained
+Scratch catalog are now published in the reviewed supported-coverage artifact.
+See CONNECTICUT_ACCEPTANCE.md for source reconciliation, exact release digest,
+publication verification and signed-build evidence. Earlier pending-integration
+notes describe their historical checkpoints. Original source dates, game1725
+exclusion, annuity/cash qualifications and withheld Mega Millions report counts
+remain in force. Physical installation and acceptance are still pending; no
+retailer-linked claims or geographic win activity has been added.

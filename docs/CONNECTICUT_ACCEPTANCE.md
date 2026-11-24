@@ -30,13 +30,13 @@ importer was found in the opening tooling inventory.
 ## Required acceptance work
 
 - [x] Fix full product/game scope and supported/unavailable matrix within24hours.
-- [ ] Audit structured results, prize/count definitions, dates, sessions and rules.
-- [ ] Integrate validated supported draws/reports with source links and disclosures.
-- [ ] Reconcile Scratch detail/tier presentation and retained source exclusions.
+- [x] Audit structured results, prize/count definitions, dates, sessions and rules.
+- [x] Integrate validated supported draws/reports with source links and disclosures.
+- [x] Reconcile Scratch detail/tier presentation and retained source exclusions.
 - [ ] Validate bundle/cache/remote adoption and byte/date retention on failure.
 - [ ] Verify compact/landscape/enlarged-text navigation, details and source returns.
 - [ ] Verify integrated physical offline behavior; automated tests alone do not close it.
-- [ ] Run proportional tests, build, publish and independently verify live bytes.
+- [x] Run proportional tests, build, publish and independently verify live bytes.
 - [ ] Record evidenced acceptance or concrete unfinished gates by fixed deadline.
 
 ## Boundaries and comparison benchmarks
@@ -572,3 +572,29 @@ The owner iPhone is disconnected; this prepared update has not been installed.
 Connecticut physical navigation, source-return, layout and offline checks remain
 pending. No acceptance or broader beta gate is closed; the fixed November27
 15:36EST release deadline is unchanged.
+
+## Prepared physical review — November23
+
+The checked items above reflect the bounded source audit, production wiring and
+verified publication/build evidence already recorded. They do not imply installed
+or physical verification. The prepared build remains uninstalled while the phone
+is disconnected; the existing connection request remains pending.
+
+After installation, verify these Connecticut-specific flows on the physical phone:
+
+- Open Drawings and Scratch from the Connecticut map and state-source routes.
+  Switch Play3/Play4 DAY/NIGHT; keep Double Play separate from Powerball.
+- Open reports and expanded prize tables, scroll to their final rows, then return.
+  Check literal Winning Plays versus Winning Tickets labels and the withheld
+  Mega Millions counts explanation; do not interpret reference prizes as payments.
+- Open Scratch details, inspect tiers/dates and annuity-versus-cash labels, and
+  confirm the disclosed game1725 exclusion. Follow an official source and return.
+- Check portrait, landscape and actual iOS Larger Text for readable content,
+  scrolling and reachable Back/Close controls in these Connecticut screens.
+- After online loading, restart offline and try refreshing Drawings and Scratch.
+  Verify retained content and original source dates remain visible; restore
+  connectivity afterward. Record each observed outcome separately.
+
+Native cache-byte evidence, owner observations and any failed checks must be
+recorded without substituting automated layout tests for physical results.
+No repeat Delaware checks or broader beta gate closure is implied.
