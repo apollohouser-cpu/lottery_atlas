@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "state": "New York",
-  "retrievedAt": "2026-11-24T00:05:06.520Z",
+  "retrievedAt": "2026-11-24T10:04:58.739Z",
   "sourcePublicationDate": null,
   "cadence": "Recent per-draw official reports; scheduled app refresh, not a live four-minute feed.",
   "additionalSources": [
@@ -1454,6 +1454,164 @@
     },
     {
       "gameName": "Powerball",
+      "drawDate": "2026-11-23",
+      "drawNumber": "2029",
+      "multiplier": "02",
+      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=21",
+      "sourcePublicationDate": null,
+      "jurisdiction": "New York",
+      "countUnit": "Source-reported NY winners; distinct tickets not established",
+      "limitation": "Statewide report, not retailer claims. National winner counts and locations are excluded. Prize labels are preserved; no aggregate payout inferred. Zero jackpot prize label does not establish jackpot value.",
+      "tables": [
+        {
+          "variant": "Base",
+          "tiers": [
+            {
+              "tier": "Jackpot",
+              "reportedWinners": 0,
+              "prizeLabel": "0"
+            },
+            {
+              "tier": "Second",
+              "reportedWinners": 0,
+              "prizeLabel": "1000000"
+            },
+            {
+              "tier": "Third",
+              "reportedWinners": 0,
+              "prizeLabel": "50000"
+            },
+            {
+              "tier": "Fourth",
+              "reportedWinners": 15,
+              "prizeLabel": "100"
+            },
+            {
+              "tier": "Fifth",
+              "reportedWinners": 31,
+              "prizeLabel": "100"
+            },
+            {
+              "tier": "Sixth",
+              "reportedWinners": 892,
+              "prizeLabel": "7"
+            },
+            {
+              "tier": "Seventh",
+              "reportedWinners": 711,
+              "prizeLabel": "7"
+            },
+            {
+              "tier": "Eighth",
+              "reportedWinners": 5009,
+              "prizeLabel": "4"
+            },
+            {
+              "tier": "Ninth",
+              "reportedWinners": 10533,
+              "prizeLabel": "4"
+            }
+          ]
+        },
+        {
+          "variant": "Power Play",
+          "tiers": [
+            {
+              "tier": "Second - Powerplay",
+              "reportedWinners": 0,
+              "prizeLabel": "2000000"
+            },
+            {
+              "tier": "Third - Powerplay",
+              "reportedWinners": 0,
+              "prizeLabel": "100000"
+            },
+            {
+              "tier": "Fourth - Powerplay",
+              "reportedWinners": 1,
+              "prizeLabel": "200"
+            },
+            {
+              "tier": "Fifth - Powerplay",
+              "reportedWinners": 8,
+              "prizeLabel": "200"
+            },
+            {
+              "tier": "Sixth - Powerplay",
+              "reportedWinners": 239,
+              "prizeLabel": "14"
+            },
+            {
+              "tier": "Seventh - Powerplay",
+              "reportedWinners": 148,
+              "prizeLabel": "14"
+            },
+            {
+              "tier": "Eighth - Powerplay",
+              "reportedWinners": 1049,
+              "prizeLabel": "8"
+            },
+            {
+              "tier": "Ninth - Powerplay",
+              "reportedWinners": 2279,
+              "prizeLabel": "8"
+            }
+          ]
+        },
+        {
+          "variant": "Double Play",
+          "tiers": [
+            {
+              "tier": "Jackpot - Double Play",
+              "reportedWinners": 0,
+              "prizeLabel": "10000000"
+            },
+            {
+              "tier": "Second - Double Play",
+              "reportedWinners": 0,
+              "prizeLabel": "500000"
+            },
+            {
+              "tier": "Third - Double Play",
+              "reportedWinners": 0,
+              "prizeLabel": "50000"
+            },
+            {
+              "tier": "Fourth - Double Play",
+              "reportedWinners": 2,
+              "prizeLabel": "500"
+            },
+            {
+              "tier": "Fifth - Double Play",
+              "reportedWinners": 5,
+              "prizeLabel": "500"
+            },
+            {
+              "tier": "Sixth - Double Play",
+              "reportedWinners": 70,
+              "prizeLabel": "20"
+            },
+            {
+              "tier": "Seventh - Double Play",
+              "reportedWinners": 93,
+              "prizeLabel": "20"
+            },
+            {
+              "tier": "Eighth - Double Play",
+              "reportedWinners": 669,
+              "prizeLabel": "10"
+            },
+            {
+              "tier": "Ninth - Double Play",
+              "reportedWinners": 2116,
+              "prizeLabel": "7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gameName": "Powerball",
       "drawDate": "2026-11-21",
       "drawNumber": "2028",
       "multiplier": "02",
@@ -2085,164 +2243,6 @@
       ]
     },
     {
-      "gameName": "Powerball",
-      "drawDate": "2026-11-11",
-      "drawNumber": "2024",
-      "multiplier": "03",
-      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=21",
-      "sourcePublicationDate": null,
-      "jurisdiction": "New York",
-      "countUnit": "Source-reported NY winners; distinct tickets not established",
-      "limitation": "Statewide report, not retailer claims. National winner counts and locations are excluded. Prize labels are preserved; no aggregate payout inferred. Zero jackpot prize label does not establish jackpot value.",
-      "tables": [
-        {
-          "variant": "Base",
-          "tiers": [
-            {
-              "tier": "Jackpot",
-              "reportedWinners": 0,
-              "prizeLabel": "0"
-            },
-            {
-              "tier": "Second",
-              "reportedWinners": 0,
-              "prizeLabel": "1000000"
-            },
-            {
-              "tier": "Third",
-              "reportedWinners": 0,
-              "prizeLabel": "50000"
-            },
-            {
-              "tier": "Fourth",
-              "reportedWinners": 16,
-              "prizeLabel": "100"
-            },
-            {
-              "tier": "Fifth",
-              "reportedWinners": 24,
-              "prizeLabel": "100"
-            },
-            {
-              "tier": "Sixth",
-              "reportedWinners": 852,
-              "prizeLabel": "7"
-            },
-            {
-              "tier": "Seventh",
-              "reportedWinners": 720,
-              "prizeLabel": "7"
-            },
-            {
-              "tier": "Eighth",
-              "reportedWinners": 5653,
-              "prizeLabel": "4"
-            },
-            {
-              "tier": "Ninth",
-              "reportedWinners": 14584,
-              "prizeLabel": "4"
-            }
-          ]
-        },
-        {
-          "variant": "Power Play",
-          "tiers": [
-            {
-              "tier": "Second - Powerplay",
-              "reportedWinners": 0,
-              "prizeLabel": "2000000"
-            },
-            {
-              "tier": "Third - Powerplay",
-              "reportedWinners": 0,
-              "prizeLabel": "150000"
-            },
-            {
-              "tier": "Fourth - Powerplay",
-              "reportedWinners": 1,
-              "prizeLabel": "300"
-            },
-            {
-              "tier": "Fifth - Powerplay",
-              "reportedWinners": 6,
-              "prizeLabel": "300"
-            },
-            {
-              "tier": "Sixth - Powerplay",
-              "reportedWinners": 175,
-              "prizeLabel": "21"
-            },
-            {
-              "tier": "Seventh - Powerplay",
-              "reportedWinners": 138,
-              "prizeLabel": "21"
-            },
-            {
-              "tier": "Eighth - Powerplay",
-              "reportedWinners": 1266,
-              "prizeLabel": "12"
-            },
-            {
-              "tier": "Ninth - Powerplay",
-              "reportedWinners": 3115,
-              "prizeLabel": "12"
-            }
-          ]
-        },
-        {
-          "variant": "Double Play",
-          "tiers": [
-            {
-              "tier": "Jackpot - Double Play",
-              "reportedWinners": 0,
-              "prizeLabel": "10000000"
-            },
-            {
-              "tier": "Second - Double Play",
-              "reportedWinners": 0,
-              "prizeLabel": "500000"
-            },
-            {
-              "tier": "Third - Double Play",
-              "reportedWinners": 0,
-              "prizeLabel": "50000"
-            },
-            {
-              "tier": "Fourth - Double Play",
-              "reportedWinners": 1,
-              "prizeLabel": "500"
-            },
-            {
-              "tier": "Fifth - Double Play",
-              "reportedWinners": 7,
-              "prizeLabel": "500"
-            },
-            {
-              "tier": "Sixth - Double Play",
-              "reportedWinners": 113,
-              "prizeLabel": "20"
-            },
-            {
-              "tier": "Seventh - Double Play",
-              "reportedWinners": 93,
-              "prizeLabel": "20"
-            },
-            {
-              "tier": "Eighth - Double Play",
-              "reportedWinners": 816,
-              "prizeLabel": "10"
-            },
-            {
-              "tier": "Ninth - Double Play",
-              "reportedWinners": 2040,
-              "prizeLabel": "7"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "gameName": "LOTTO",
       "drawDate": "2026-11-21",
       "drawNumber": "4111",
@@ -2460,6 +2460,44 @@
     {
       "gameName": "Take 5",
       "drawDate": "2026-11-23",
+      "drawNumber": "12771",
+      "drawingSession": "Evening",
+      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=36",
+      "sourcePublicationDate": null,
+      "jurisdiction": "New York",
+      "countUnit": "Source-reported NY winners; distinct tickets not established",
+      "limitation": "Statewide report, not retailer claims. Literal source prize labels retain free plays and annual payments. Zero jackpot label is not jackpot value; no aggregate payout inferred. National summary fields excluded.",
+      "tables": [
+        {
+          "variant": "Base",
+          "tiers": [
+            {
+              "tier": "First",
+              "reportedWinners": 0,
+              "prizeLabel": "0"
+            },
+            {
+              "tier": "Second",
+              "reportedWinners": 103,
+              "prizeLabel": "735.5"
+            },
+            {
+              "tier": "Third",
+              "reportedWinners": 3656,
+              "prizeLabel": "20.5"
+            },
+            {
+              "tier": "Fourth",
+              "reportedWinners": 38060,
+              "prizeLabel": "FREE PLAY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gameName": "Take 5",
+      "drawDate": "2026-11-23",
       "drawNumber": "12770",
       "drawingSession": "Midday",
       "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=36",
@@ -2610,38 +2648,61 @@
       ]
     },
     {
-      "gameName": "Take 5",
-      "drawDate": "2026-11-21",
-      "drawNumber": "12766",
-      "drawingSession": "Midday",
-      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=36",
-      "sourcePublicationDate": null,
+      "gameName": "NUMBERS",
+      "drawDate": "2026-11-23",
+      "drawNumber": "23483",
+      "drawingSession": "Evening",
       "jurisdiction": "New York",
-      "countUnit": "Source-reported NY winners; distinct tickets not established",
-      "limitation": "Statewide report, not retailer claims. Literal source prize labels retain free plays and annual payments. Zero jackpot label is not jackpot value; no aggregate payout inferred. National summary fields excluded.",
+      "sourcePublicationDate": null,
+      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=41",
+      "countUnit": "NY winning shares based on $1 and $0.50 wagers; not distinct tickets",
+      "reportedTotalPrizes": 809480,
+      "limitation": "Published dollars shared across prize levels; not derived from counts. Blank/zero tier prize placeholders are unavailable, not zero payouts. No retailer allocation or inferred per-tier payout.",
       "tables": [
         {
           "variant": "Base",
           "tiers": [
             {
-              "tier": "First",
-              "reportedWinners": 1,
-              "prizeLabel": "19421"
+              "tier": "Straight Play",
+              "reportedWinners": null,
+              "reportedShares": 1382,
+              "prizeLabel": null,
+              "sourcePrizeLabel": "0"
             },
             {
-              "tier": "Second",
-              "reportedWinners": 75,
-              "prizeLabel": "388"
+              "tier": "Box Play",
+              "reportedWinners": null,
+              "reportedShares": 1622,
+              "prizeLabel": null,
+              "sourcePrizeLabel": "0"
             },
             {
-              "tier": "Third",
-              "reportedWinners": 2326,
-              "prizeLabel": "20.5"
+              "tier": "Pair Play — Front Pair",
+              "reportedWinners": null,
+              "reportedShares": 12,
+              "prizeLabel": null,
+              "sourcePrizeLabel": "0"
             },
             {
-              "tier": "Fourth",
-              "reportedWinners": 25345,
-              "prizeLabel": "FREE PLAY"
+              "tier": "Pair Play — Back Pair",
+              "reportedWinners": null,
+              "reportedShares": 124,
+              "prizeLabel": null,
+              "sourcePrizeLabel": "0"
+            },
+            {
+              "tier": "Straight/Box",
+              "reportedWinners": null,
+              "reportedShares": 504,
+              "prizeLabel": null,
+              "sourcePrizeLabel": "0"
+            },
+            {
+              "tier": "Combination",
+              "reportedWinners": null,
+              "reportedShares": 658,
+              "prizeLabel": null,
+              "sourcePrizeLabel": "0"
             }
           ]
         }
@@ -2892,15 +2953,15 @@
       ]
     },
     {
-      "gameName": "NUMBERS",
-      "drawDate": "2026-11-21",
-      "drawNumber": "23478",
-      "drawingSession": "Midday",
+      "gameName": "Win4",
+      "drawDate": "2026-11-23",
+      "drawNumber": "23483",
+      "drawingSession": "Evening",
       "jurisdiction": "New York",
       "sourcePublicationDate": null,
-      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=41",
+      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=46",
       "countUnit": "NY winning shares based on $1 and $0.50 wagers; not distinct tickets",
-      "reportedTotalPrizes": 190175,
+      "reportedTotalPrizes": 227350,
       "limitation": "Published dollars shared across prize levels; not derived from counts. Blank/zero tier prize placeholders are unavailable, not zero payouts. No retailer allocation or inferred per-tier payout.",
       "tables": [
         {
@@ -2909,44 +2970,37 @@
             {
               "tier": "Straight Play",
               "reportedWinners": null,
-              "reportedShares": 272,
+              "reportedShares": 48,
               "prizeLabel": null,
-              "sourcePrizeLabel": "0"
+              "sourcePrizeLabel": ""
             },
             {
               "tier": "Box Play",
               "reportedWinners": null,
-              "reportedShares": 1781,
+              "reportedShares": 1070,
               "prizeLabel": null,
-              "sourcePrizeLabel": "0"
+              "sourcePrizeLabel": ""
             },
             {
               "tier": "Pair Play — Front Pair",
               "reportedWinners": null,
-              "reportedShares": 25,
+              "reportedShares": 4,
               "prizeLabel": null,
-              "sourcePrizeLabel": "0"
+              "sourcePrizeLabel": ""
             },
             {
               "tier": "Pair Play — Back Pair",
               "reportedWinners": null,
-              "reportedShares": 32,
+              "reportedShares": 10,
               "prizeLabel": null,
-              "sourcePrizeLabel": "0"
-            },
-            {
-              "tier": "Straight/Box",
-              "reportedWinners": null,
-              "reportedShares": 94,
-              "prizeLabel": null,
-              "sourcePrizeLabel": "0"
+              "sourcePrizeLabel": ""
             },
             {
               "tier": "Combination",
               "reportedWinners": null,
-              "reportedShares": 89,
+              "reportedShares": 0,
               "prizeLabel": null,
-              "sourcePrizeLabel": "0"
+              "sourcePrizeLabel": ""
             }
           ]
         }
@@ -3169,52 +3223,59 @@
       ]
     },
     {
-      "gameName": "Win4",
-      "drawDate": "2026-11-21",
-      "drawNumber": "23478",
-      "drawingSession": "Midday",
+      "gameName": "Pick 10",
+      "drawDate": "2026-11-23",
+      "drawNumber": "14370",
+      "drawingSession": null,
       "jurisdiction": "New York",
       "sourcePublicationDate": null,
-      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=46",
-      "countUnit": "NY winning shares based on $1 and $0.50 wagers; not distinct tickets",
-      "reportedTotalPrizes": 1703500,
+      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=56",
+      "countUnit": "Source-reported NY winners; distinct tickets not established",
+      "reportedTotalPrizes": 37930,
       "limitation": "Published dollars shared across prize levels; not derived from counts. Blank/zero tier prize placeholders are unavailable, not zero payouts. No retailer allocation or inferred per-tier payout.",
       "tables": [
         {
           "variant": "Base",
           "tiers": [
             {
-              "tier": "Straight Play",
-              "reportedWinners": null,
-              "reportedShares": 548,
+              "tier": "First",
+              "reportedWinners": 0,
+              "reportedShares": null,
               "prizeLabel": null,
               "sourcePrizeLabel": ""
             },
             {
-              "tier": "Box Play",
-              "reportedWinners": null,
-              "reportedShares": 1590,
+              "tier": "Second",
+              "reportedWinners": 1,
+              "reportedShares": null,
               "prizeLabel": null,
               "sourcePrizeLabel": ""
             },
             {
-              "tier": "Pair Play — Front Pair",
-              "reportedWinners": null,
-              "reportedShares": 3,
+              "tier": "Third",
+              "reportedWinners": 4,
+              "reportedShares": null,
               "prizeLabel": null,
               "sourcePrizeLabel": ""
             },
             {
-              "tier": "Pair Play — Back Pair",
-              "reportedWinners": null,
-              "reportedShares": 17,
+              "tier": "Fourth",
+              "reportedWinners": 89,
+              "reportedShares": null,
               "prizeLabel": null,
               "sourcePrizeLabel": ""
             },
             {
-              "tier": "Combination",
-              "reportedWinners": null,
-              "reportedShares": 6,
+              "tier": "Fifth",
+              "reportedWinners": 783,
+              "reportedShares": null,
+              "prizeLabel": null,
+              "sourcePrizeLabel": ""
+            },
+            {
+              "tier": "Sixth",
+              "reportedWinners": 4835,
+              "reportedShares": null,
               "prizeLabel": null,
               "sourcePrizeLabel": ""
             }
@@ -3467,71 +3528,10 @@
       ]
     },
     {
-      "gameName": "Pick 10",
-      "drawDate": "2026-11-18",
-      "drawNumber": "14365",
-      "drawingSession": null,
-      "jurisdiction": "New York",
-      "sourcePublicationDate": null,
-      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=56",
-      "countUnit": "Source-reported NY winners; distinct tickets not established",
-      "reportedTotalPrizes": 31884,
-      "limitation": "Published dollars shared across prize levels; not derived from counts. Blank/zero tier prize placeholders are unavailable, not zero payouts. No retailer allocation or inferred per-tier payout.",
-      "tables": [
-        {
-          "variant": "Base",
-          "tiers": [
-            {
-              "tier": "First",
-              "reportedWinners": 0,
-              "reportedShares": null,
-              "prizeLabel": null,
-              "sourcePrizeLabel": ""
-            },
-            {
-              "tier": "Second",
-              "reportedWinners": 0,
-              "reportedShares": null,
-              "prizeLabel": null,
-              "sourcePrizeLabel": ""
-            },
-            {
-              "tier": "Third",
-              "reportedWinners": 9,
-              "reportedShares": null,
-              "prizeLabel": null,
-              "sourcePrizeLabel": ""
-            },
-            {
-              "tier": "Fourth",
-              "reportedWinners": 107,
-              "reportedShares": null,
-              "prizeLabel": null,
-              "sourcePrizeLabel": ""
-            },
-            {
-              "tier": "Fifth",
-              "reportedWinners": 976,
-              "reportedShares": null,
-              "prizeLabel": null,
-              "sourcePrizeLabel": ""
-            },
-            {
-              "tier": "Sixth",
-              "reportedWinners": 3786,
-              "reportedShares": null,
-              "prizeLabel": null,
-              "sourcePrizeLabel": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
       "gameName": "Quick Draw / Money Dots",
-      "drawDate": "2026-11-23",
-      "drawNumber": "3034135",
-      "drawingSession": "19:00:00",
+      "drawDate": "2026-11-24",
+      "drawNumber": "3034275",
+      "drawingSession": "04:56:00",
       "sourcePublicationDate": null,
       "jurisdiction": "New York",
       "multiplier": "01",
@@ -3541,53 +3541,53 @@
       "tables": [
         {
           "variant": "Quick Draw",
-          "reportedTotalPrizes": 2585,
+          "reportedTotalPrizes": 44,
           "tiers": [],
           "reportedWinners": null
         },
         {
           "variant": "Money Dots",
-          "reportedTotalPrizes": 35,
+          "reportedTotalPrizes": 0,
           "tiers": [],
           "reportedWinners": null,
-          "drawnNumber": "67",
-          "drawnPrizeLabel": "5"
+          "drawnNumber": "60",
+          "drawnPrizeLabel": "50"
         }
       ]
     },
     {
       "gameName": "Quick Draw / Money Dots",
-      "drawDate": "2026-11-23",
-      "drawNumber": "3034134",
-      "drawingSession": "18:56:00",
+      "drawDate": "2026-11-24",
+      "drawNumber": "3034274",
+      "drawingSession": "04:52:04",
       "sourcePublicationDate": null,
       "jurisdiction": "New York",
-      "multiplier": "05",
+      "multiplier": "01",
       "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=400",
       "countUnit": "Winner and ticket counts unavailable",
       "limitation": "Local draw time as published. Reported dollars shared across prize levels, not winner counts. Money Dots is separate; no count inferred by dividing payout by prize value. Multiplier is preserved without inferred EXTRA payout or separate EXTRA count.",
       "tables": [
         {
           "variant": "Quick Draw",
-          "reportedTotalPrizes": 2529,
+          "reportedTotalPrizes": 3,
           "tiers": [],
           "reportedWinners": null
         },
         {
           "variant": "Money Dots",
-          "reportedTotalPrizes": 30,
+          "reportedTotalPrizes": 0,
           "tiers": [],
           "reportedWinners": null,
-          "drawnNumber": "22",
-          "drawnPrizeLabel": "5"
+          "drawnNumber": "71",
+          "drawnPrizeLabel": "0"
         }
       ]
     },
     {
       "gameName": "Quick Draw / Money Dots",
-      "drawDate": "2026-11-23",
-      "drawNumber": "3034133",
-      "drawingSession": "18:52:00",
+      "drawDate": "2026-11-24",
+      "drawNumber": "3034273",
+      "drawingSession": "04:48:00",
       "sourcePublicationDate": null,
       "jurisdiction": "New York",
       "multiplier": "02",
@@ -3597,35 +3597,7 @@
       "tables": [
         {
           "variant": "Quick Draw",
-          "reportedTotalPrizes": 1573,
-          "tiers": [],
-          "reportedWinners": null
-        },
-        {
-          "variant": "Money Dots",
-          "reportedTotalPrizes": 45,
-          "tiers": [],
-          "reportedWinners": null,
-          "drawnNumber": "44",
-          "drawnPrizeLabel": "5"
-        }
-      ]
-    },
-    {
-      "gameName": "Quick Draw / Money Dots",
-      "drawDate": "2026-11-23",
-      "drawNumber": "3034132",
-      "drawingSession": "18:48:00",
-      "sourcePublicationDate": null,
-      "jurisdiction": "New York",
-      "multiplier": "01",
-      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=400",
-      "countUnit": "Winner and ticket counts unavailable",
-      "limitation": "Local draw time as published. Reported dollars shared across prize levels, not winner counts. Money Dots is separate; no count inferred by dividing payout by prize value. Multiplier is preserved without inferred EXTRA payout or separate EXTRA count.",
-      "tables": [
-        {
-          "variant": "Quick Draw",
-          "reportedTotalPrizes": 1887,
+          "reportedTotalPrizes": 27,
           "tiers": [],
           "reportedWinners": null
         },
@@ -3634,26 +3606,54 @@
           "reportedTotalPrizes": 0,
           "tiers": [],
           "reportedWinners": null,
-          "drawnNumber": "34",
-          "drawnPrizeLabel": "0"
+          "drawnNumber": "41",
+          "drawnPrizeLabel": "5"
         }
       ]
     },
     {
       "gameName": "Quick Draw / Money Dots",
-      "drawDate": "2026-11-23",
-      "drawNumber": "3034131",
-      "drawingSession": "18:44:00",
+      "drawDate": "2026-11-24",
+      "drawNumber": "3034272",
+      "drawingSession": "04:44:00",
       "sourcePublicationDate": null,
       "jurisdiction": "New York",
-      "multiplier": "01",
+      "multiplier": "02",
       "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=400",
       "countUnit": "Winner and ticket counts unavailable",
       "limitation": "Local draw time as published. Reported dollars shared across prize levels, not winner counts. Money Dots is separate; no count inferred by dividing payout by prize value. Multiplier is preserved without inferred EXTRA payout or separate EXTRA count.",
       "tables": [
         {
           "variant": "Quick Draw",
-          "reportedTotalPrizes": 2384,
+          "reportedTotalPrizes": 43,
+          "tiers": [],
+          "reportedWinners": null
+        },
+        {
+          "variant": "Money Dots",
+          "reportedTotalPrizes": 0,
+          "tiers": [],
+          "reportedWinners": null,
+          "drawnNumber": "25",
+          "drawnPrizeLabel": "5"
+        }
+      ]
+    },
+    {
+      "gameName": "Quick Draw / Money Dots",
+      "drawDate": "2026-11-24",
+      "drawNumber": "3034271",
+      "drawingSession": "04:40:00",
+      "sourcePublicationDate": null,
+      "jurisdiction": "New York",
+      "multiplier": "02",
+      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=400",
+      "countUnit": "Winner and ticket counts unavailable",
+      "limitation": "Local draw time as published. Reported dollars shared across prize levels, not winner counts. Money Dots is separate; no count inferred by dividing payout by prize value. Multiplier is preserved without inferred EXTRA payout or separate EXTRA count.",
+      "tables": [
+        {
+          "variant": "Quick Draw",
+          "reportedTotalPrizes": 27,
           "tiers": [],
           "reportedWinners": null
         },
@@ -3662,8 +3662,71 @@
           "reportedTotalPrizes": 5,
           "tiers": [],
           "reportedWinners": null,
-          "drawnNumber": "25",
+          "drawnNumber": "12",
           "drawnPrizeLabel": "5"
+        }
+      ]
+    },
+    {
+      "gameName": "Millionaire For Life",
+      "drawDate": "2026-11-23",
+      "drawNumber": "275",
+      "drawingSession": null,
+      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=374901",
+      "sourcePublicationDate": null,
+      "jurisdiction": "New York",
+      "countUnit": "Source-reported NY winners; distinct tickets not established",
+      "limitation": "Statewide report, not retailer claims. Literal source prize labels retain free plays and annual payments. Zero jackpot label is not jackpot value; no aggregate payout inferred. National summary fields excluded.",
+      "tables": [
+        {
+          "variant": "Base",
+          "tiers": [
+            {
+              "tier": "First",
+              "reportedWinners": 0,
+              "prizeLabel": "$1 Million a Year for Life"
+            },
+            {
+              "tier": "Second",
+              "reportedWinners": 0,
+              "prizeLabel": "$100,000 a Year for Life"
+            },
+            {
+              "tier": "Third",
+              "reportedWinners": 1,
+              "prizeLabel": "7500"
+            },
+            {
+              "tier": "Fourth",
+              "reportedWinners": 4,
+              "prizeLabel": "500"
+            },
+            {
+              "tier": "Fifth",
+              "reportedWinners": 46,
+              "prizeLabel": "250"
+            },
+            {
+              "tier": "Sixth",
+              "reportedWinners": 251,
+              "prizeLabel": "50"
+            },
+            {
+              "tier": "Seventh",
+              "reportedWinners": 644,
+              "prizeLabel": "25"
+            },
+            {
+              "tier": "Eighth",
+              "reportedWinners": 3003,
+              "prizeLabel": "8"
+            },
+            {
+              "tier": "Ninth",
+              "reportedWinners": 3515,
+              "prizeLabel": "8"
+            }
+          ]
         }
       ]
     },
@@ -3913,69 +3976,6 @@
             {
               "tier": "Ninth",
               "reportedWinners": 4004,
-              "prizeLabel": "8"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "gameName": "Millionaire For Life",
-      "drawDate": "2026-11-18",
-      "drawNumber": "270",
-      "drawingSession": null,
-      "sourceUrl": "https://nylottery.ny.gov/all-winning-numbers/?nid=374901",
-      "sourcePublicationDate": null,
-      "jurisdiction": "New York",
-      "countUnit": "Source-reported NY winners; distinct tickets not established",
-      "limitation": "Statewide report, not retailer claims. Literal source prize labels retain free plays and annual payments. Zero jackpot label is not jackpot value; no aggregate payout inferred. National summary fields excluded.",
-      "tables": [
-        {
-          "variant": "Base",
-          "tiers": [
-            {
-              "tier": "First",
-              "reportedWinners": 0,
-              "prizeLabel": "$1 Million a Year for Life"
-            },
-            {
-              "tier": "Second",
-              "reportedWinners": 0,
-              "prizeLabel": "$100,000 a Year for Life"
-            },
-            {
-              "tier": "Third",
-              "reportedWinners": 1,
-              "prizeLabel": "7500"
-            },
-            {
-              "tier": "Fourth",
-              "reportedWinners": 0,
-              "prizeLabel": "500"
-            },
-            {
-              "tier": "Fifth",
-              "reportedWinners": 35,
-              "prizeLabel": "250"
-            },
-            {
-              "tier": "Sixth",
-              "reportedWinners": 118,
-              "prizeLabel": "50"
-            },
-            {
-              "tier": "Seventh",
-              "reportedWinners": 655,
-              "prizeLabel": "25"
-            },
-            {
-              "tier": "Eighth",
-              "reportedWinners": 2204,
-              "prizeLabel": "8"
-            },
-            {
-              "tier": "Ninth",
-              "reportedWinners": 3925,
               "prizeLabel": "8"
             }
           ]
