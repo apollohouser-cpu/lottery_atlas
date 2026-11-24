@@ -84,3 +84,29 @@ The August scope, all-tier aggregate request and prohibition on paid work remain
 unchanged. No duplicate reply was sent. Await the update and audit any eventual
 delivery privately before integration. Original request-date discrepancy remains
 recorded above; no California activation or engineering deadline change.
+
+## November 23 — records delivery received; private audit pending
+
+California supplied a secure download containing ten Excel workbooks: an August
+2026 active-retailer workbook, a Scratchers workbook labeled August 2026, and
+eight draw-game workbooks (Daily 3, Daily 4, Daily Derby, Fantasy 5, Hot Spot,
+Mega Millions, Powerball and Super Lotto Plus). The original 175,537,816-byte
+ZIP was saved privately; SHA-256 and archive CRC checks passed. Workbook contents,
+actual date spans, prize-tier coverage and retailer joins remain unaudited.
+Private acquisition and thread evidence is retained under
+`work/agency_email_checks/california_20261123`.
+
+The agency describes Scratchers data as **claim counts** by date, retailer ID,
+game name and prize amount. It describes ordinary draw data as winning-ticket
+counts by draw date and prize tier, with selling retailer IDs on a separate tab;
+that description does not establish a safe row-level join or count allocation.
+Hot Spot is described separately as counts by draw date, prize tier and selling
+retailer ID, sourced from a different system. Preserve these distinctions during
+audit; do not equate claim counts with distinct tickets or infer selling locations
+before verifying joins against the retailer workbook.
+
+This delivery resolves the November 20 further-information wait. The secure link
+expires December 7, but the original archive has already been retained. No fee or
+new question accompanied delivery. The original thread and both September 16
+Sent scope clarifications were verified; no duplicate reply was sent. This is a
+received, unaudited delivery, not public integration, state activation or acceptance.
