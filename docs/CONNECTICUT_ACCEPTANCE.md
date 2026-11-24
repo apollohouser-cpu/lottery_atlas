@@ -557,3 +557,18 @@ initializes preferences lazily, allowing digest validation independently of the
 platform store. Publication/live-byte verification and the signed native build,
 installation and physical acceptance are still pending. No state or beta gate
 is closed; the fixed November27 deadline remains unchanged.
+
+## November23 — publication verified and signed iPhone update prepared
+
+Publication run45309751050 succeeded. Independent live download matches the
+reviewed268733-byte release SHA256
+10ca4859d574887366c2fd027266dfabd50ec916e1c3d804ab7ff8a084c538dd.
+The102.8MB signed iOS release built successfully, passed deep/strict signature
+verification and contains exactly those reviewed Connecticut bundle bytes.
+Private deployment/build/signature evidence is under
+work/owner_iphone/connecticut_20261123.
+
+The owner iPhone is disconnected; this prepared update has not been installed.
+Connecticut physical navigation, source-return, layout and offline checks remain
+pending. No acceptance or broader beta gate is closed; the fixed November27
+15:36EST release deadline is unchanged.

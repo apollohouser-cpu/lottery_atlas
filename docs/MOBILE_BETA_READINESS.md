@@ -1462,3 +1462,18 @@ evidence; no automated launch success or fresh cache export is inferred.
 Delaware supported acceptance is closed late; all four broader beta gates remain
 open, including favorites/ticket lifecycle and runtime privacy/backup/deletion.
 Private confirmation: work/owner_iphone/update_20261121/status.json.
+
+## November23 — publication verified and signed iPhone update prepared
+
+Publication run45309751050 succeeded. Independent live download matches the
+reviewed268733-byte release SHA256
+10ca4859d574887366c2fd027266dfabd50ec916e1c3d804ab7ff8a084c538dd.
+The102.8MB signed iOS release built successfully, passed deep/strict signature
+verification and contains exactly those reviewed Connecticut bundle bytes.
+Private deployment/build/signature evidence is under
+work/owner_iphone/connecticut_20261123.
+
+The owner iPhone is disconnected; this prepared update has not been installed.
+Connecticut physical navigation, source-return, layout and offline checks remain
+pending. No acceptance or broader beta gate is closed; the fixed November27
+15:36EST release deadline is unchanged.
