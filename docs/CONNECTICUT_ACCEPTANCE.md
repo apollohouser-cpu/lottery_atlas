@@ -542,3 +542,18 @@ layout cases. Private file: work/connecticut_acceptance_20261122/coverage_releas
 Remaining work is final release review, production loader/navigation wiring,
 publication/live-byte verification, signed build and physical acceptance. The
 fixed November27 deadline is unchanged.
+
+## November23 — production artifact and navigation wiring
+
+Reviewed the prepared artifact identity, scope, exclusions and source-only fields;
+added identical268733-byte release files to data/docs and pinned the published
+loader to SHA25610ca4859d574887366c2fd027266dfabd50ec916e1c3d804ab7ff8a084c538dd.
+Direct Connecticut map Drawings/Scratch and state-source routes now use the
+reviewed loader. The bundle is registered; publication CI verifies exact digest
+and bundle/public byte equality before deployment. Source dates remain unchanged.
+
+22 focused Flutter tests pass; targeted analysis is clean. The release factory
+initializes preferences lazily, allowing digest validation independently of the
+platform store. Publication/live-byte verification and the signed native build,
+installation and physical acceptance are still pending. No state or beta gate
+is closed; the fixed November27 deadline remains unchanged.

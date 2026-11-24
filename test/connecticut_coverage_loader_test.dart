@@ -1,10 +1,29 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:crypto/crypto.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lottery_atlas/services/connecticut_coverage_loader.dart';
 
 void main() {
+  test(
+    'published loader accepts exact bundled release and rejects altered bytes',
+    () {
+      final raw = File(
+        'data/connecticut_coverage.generated.json',
+      ).readAsStringSync();
+      final loader = ConnecticutCoverageLoader.published();
+      final data = loader.decode(raw);
+      expect(data['draws'], hasLength(12));
+      expect(data['reports'], hasLength(9));
+      expect(
+        (data['scratchCatalog']['games'] as List).any((g) => g['id'] == '1725'),
+        isFalse,
+      );
+      expect(() => loader.decode('$raw '), throwsFormatException);
+    },
+  );
+
   // Synthetic transport fixture only; no Connecticut source claims or release.
   final raw = jsonEncode({
     'schemaVersion': 1,

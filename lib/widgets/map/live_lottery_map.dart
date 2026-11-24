@@ -1,3 +1,5 @@
+import '../../services/connecticut_coverage_loader.dart';
+import 'connecticut_coverage_view.dart';
 import 'county_heat_layer.dart';
 import '../../services/delaware_coverage_loader.dart';
 import 'delaware_coverage_view.dart';
@@ -437,6 +439,12 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
   void _onActivityFeedChanged() {
     if (!mounted) return;
     setState(() {});
+  }
+
+  void _openConnecticutCoverage({bool scratch = false}) {
+    Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => Scaffold(
+      body: ConnecticutCoverageView(loader: ConnecticutCoverageLoader.published(), scratch: scratch),
+    )));
   }
 
   void _openDelawareCoverage({bool products = false}) {
@@ -4905,6 +4913,10 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                   );
                 },
                 onDrawings: () {
+                  if (_selectedStateName == 'Connecticut') {
+                    _openConnecticutCoverage();
+                    return;
+                  }
                   if (_selectedStateName == 'Delaware') {
                     _openDelawareCoverage();
                     return;
@@ -4946,7 +4958,9 @@ class _LiveLotteryMapState extends State<LiveLotteryMap>
                 },
                 onScratch: () {
                   final state = _selectedStateName;
-                  if (state == 'Delaware') {
+                  if (state == 'Connecticut') {
+                    _openConnecticutCoverage(scratch: true);
+                  } else if (state == 'Delaware') {
                     _openDelawareCoverage(products: true);
                   } else if (state == 'Arizona') {
                     _openArizonaCoverage(products: true);

@@ -1,3 +1,5 @@
+import '../../services/connecticut_coverage_loader.dart';
+import '../../widgets/map/connecticut_coverage_view.dart';
 import '../../services/delaware_coverage_loader.dart';
 import '../../widgets/map/delaware_coverage_view.dart';
 import '../../services/arizona_coverage_loader.dart';
@@ -75,6 +77,14 @@ class StateLotterySourceScreen extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         children: [
+          if (source.stateName == 'Connecticut') ...[
+            for (final scratch in [false, true]) ListTile(
+              title: Text(scratch ? 'Connecticut Scratch inventory' : 'Connecticut results and schedules'),
+              subtitle: const Text('Retained observations, original source dates and coverage limits'),
+              onTap: () => Navigator.push(context, MaterialPageRoute<void>(builder: (_) => Scaffold(
+                body: ConnecticutCoverageView(loader: ConnecticutCoverageLoader.published(), scratch: scratch)))),
+            ),
+          ],
           if (source.stateName == 'Delaware') ...[
             for (final products in [false, true]) ListTile(
               title: Text(products ? 'Delaware instant games and notices' : 'Delaware results and schedules'),

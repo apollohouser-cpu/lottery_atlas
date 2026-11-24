@@ -1,4 +1,7 @@
 import 'dart:convert';
+import 'package:flutter/services.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:http/http.dart' as http;
 
 import 'package:crypto/crypto.dart';
 
@@ -12,6 +15,29 @@ class ConnecticutCoverageLoader {
     required this.writeCache,
     required this.fetchRemote,
   });
+
+  static const releasedSha256 =
+      '10ca4859d574887366c2fd027266dfabd50ec916e1c3d804ab7ff8a084c538dd';
+  static const releasedUrl =
+      'https://apollohouser-cpu.github.io/lottery_atlas/connecticut_coverage.json';
+  factory ConnecticutCoverageLoader.published() {
+    late final prefs = SharedPreferencesAsync();
+    return ConnecticutCoverageLoader(
+      reviewedSha256: releasedSha256,
+      readBundle: () =>
+          rootBundle.loadString('data/connecticut_coverage.generated.json'),
+      readCache: () => prefs.getString('connecticut_supported_coverage_v1'),
+      writeCache: (raw) =>
+          prefs.setString('connecticut_supported_coverage_v1', raw),
+      fetchRemote: () async {
+        final response = await http.get(Uri.parse(releasedUrl));
+        if (response.statusCode != 200) {
+          throw StateError('Connecticut coverage HTTP ${response.statusCode}');
+        }
+        return utf8.decode(response.bodyBytes);
+      },
+    );
+  }
 
   final String reviewedSha256;
   final Future<String> Function() readBundle;
