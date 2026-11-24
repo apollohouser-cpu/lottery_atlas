@@ -511,3 +511,17 @@ All nine draw products now have reference prize material, but expanded-table
 review and final source/release reconciliation remain required. Production
 publication/wiring and physical acceptance are not inferred from this private
 candidate. The November27 deadline remains unchanged.
+
+## November23 — expanded-table and reproducibility checks
+
+Rebuilding from the retained captures and Scratch bytes produces a semantically
+identical v11 candidate. Added explicit expansion/scroll checks for all29 reference
+tables at390×844 and844×390 with2x harness text scaling:58 expanded-table cases
+reach the final source row without Flutter exceptions. The206 initial-layout/
+scroll cases also pass. An initial harness attempt tapped before scrolling settled;
+awaiting settle fixed the test timing without changing production UI.
+
+Private evidence: work/connecticut_acceptance_20261122/presentation_v11.json.
+This establishes automated reachability, not screenshot correctness, physical
+iOS Larger Text, source-return or offline lifecycle. Source/release reconciliation,
+production wiring, publication and native acceptance remain open. Deadline unchanged.
