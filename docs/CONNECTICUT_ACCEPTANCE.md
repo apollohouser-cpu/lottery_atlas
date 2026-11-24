@@ -525,3 +525,20 @@ Private evidence: work/connecticut_acceptance_20261122/presentation_v11.json.
 This establishes automated reachability, not screenshot correctness, physical
 iOS Larger Text, source-return or offline lifecycle. Source/release reconciliation,
 production wiring, publication and native acceptance remain open. Deadline unchanged.
+
+## November23 — prepared release projection
+
+Prepared268733-byte supported-coverage artifact privately from exact v11 bytes,
+SHA25610ca4859d574887366c2fd027266dfabd50ec916e1c3d804ab7ff8a084c538dd.
+Packaging requires the reviewed candidate digest, omits private capture manifests,
+replaces development-only limitations with bounded public disclosures, preserves
+original observations and rejects nested private fields/local paths/nonofficial
+source hosts. The artifact is release-shaped but is not published, bundled or
+installed; state acceptance is unchanged.
+
+50 focused Python tests pass (the unchanged lxml-dependent Scratch importer suite
+was not rerun). The prepared artifact passes the264 automated initial/expanded
+layout cases. Private file: work/connecticut_acceptance_20261122/coverage_release_review.json.
+Remaining work is final release review, production loader/navigation wiring,
+publication/live-byte verification, signed build and physical acceptance. The
+fixed November27 deadline is unchanged.
