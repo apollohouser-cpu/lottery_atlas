@@ -1,9 +1,9 @@
 {
   "source": "Ohio Lottery official press release API and active retailer directory",
   "sourceUrl": "https://www.ohiolottery.com/about/media-center/press-releases",
-  "updatedAt": "2026-11-21T07:22:00.360Z",
-  "sourceLastUpdated": "2026-11-19T14:42:03.000Z",
-  "coverage": "155 physical retailer-level Ohio Lottery winner releases from January 1, 2026 through the current official publication date, each matched to exactly one active official retailer address. Dates are release publication dates, not verified draw or claim dates; publication times do not establish when tickets won.",
+  "updatedAt": "2026-11-24T00:05:22.832Z",
+  "sourceLastUpdated": "2026-11-23T09:23:54.000Z",
+  "coverage": "156 physical retailer-level Ohio Lottery winner releases from January 1, 2026 through the current official publication date, each matched to exactly one active official retailer address. Dates are release publication dates, not verified draw or claim dates; publication times do not establish when tickets won.",
   "activities": [
     {
       "id": "oh-2026-01-05-14477-oh-028109",
@@ -2794,6 +2794,24 @@
       "prizeAmount": 100000,
       "sourceUrl": "https://www.ohiolottery.com/about/media-center/press-releases/A-Trip-to-Walmart-Changes-Local-Man’s-Life",
       "sourceLabel": "Official Ohio Lottery winner release · A Trip to Walmart Changes Local Man’s Life · Nov 19, 2026"
+    },
+    {
+      "id": "oh-2026-11-23-14872-oh-049314",
+      "latitude": 39.851797,
+      "longitude": -82.828515,
+      "city": "Canal Winchester",
+      "county": "Franklin",
+      "state": "OH",
+      "game": "state-draw",
+      "gameName": "KENO",
+      "retailerName": "MASSEYS PIZZA",
+      "retailerAddress": "6394 Gender Rd, Canal Winchester, OH 43110",
+      "coordinateSource": "Ohio Lottery published retailer coordinate",
+      "drawDate": "2026-11-23T09:23:54.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 15000,
+      "sourceUrl": "https://www.ohiolottery.com/about/media-center/press-releases",
+      "sourceLabel": "Official Ohio Lottery winner release · Truck Driver Stops for Pizza in Ohio and Hits it Big Playing KENO · Nov 23, 2026"
     }
   ],
   "excluded": [
@@ -3156,6 +3174,11 @@
       "articleID": 14869,
       "title": "Friday Night Mega Millions Jackpot hits $629 Million",
       "reason": "No exact official retailer address matched"
+    },
+    {
+      "articleID": 14871,
+      "title": "Cash Explosion® Donates to SE Ohio Foodbank",
+      "reason": "Not a mappable winner release"
     }
   ]
 }
