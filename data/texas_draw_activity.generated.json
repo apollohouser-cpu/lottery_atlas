@@ -1,6 +1,6 @@
 {
   "source": "Texas Lottery official draw-specific Where Sold tables",
-  "updatedAt": "2026-11-24T22:44:54.556Z",
+  "updatedAt": "2026-11-25T08:54:36.449Z",
   "sourceLastUpdated": "2026-11-24T12:00:00.000Z",
   "coverage": "2026 draw pages inspected through the latest source date. Only published Where Sold rows with one exact verified address join are mapped. Other prize tiers and unmatched locations are not mapped; no complete statewide retailer winner count is implied. Dates are draw dates, not claim dates. Prizes are source-listed amounts, not verified cash payouts.",
   "activities": [
@@ -3063,6 +3063,24 @@
       "prizeAmount": 25000,
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401862.html",
       "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-11-23"
+    },
+    {
+      "id": "tx-draw-a91227a152eeeef709a03244",
+      "latitude": 32.311459487449,
+      "longitude": -95.301143673854,
+      "city": "TYLER",
+      "county": "Smith",
+      "state": "TX",
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "retailerName": "PASSPORT #14",
+      "retailerAddress": "3401 S BROADWAY, TYLER, TX 75701",
+      "coordinateSource": "ArcGIS World Geocoder verified point address",
+      "drawDate": "2026-11-24T12:00:00.000Z",
+      "winningTickets": 1,
+      "prizeAmount": 25000,
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401863.html",
+      "sourceLabel": "Official Texas Lottery Where Sold · 5 of 5 · draw 2026-11-24"
     }
   ],
   "excluded": [
@@ -5112,6 +5130,14 @@
       "gameName": "Mega Millions",
       "date": "2026-11-20",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Mega_Millions/Winning_Numbers/details.html_1158401859.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "mega-millions",
+      "gameName": "Mega Millions",
+      "date": "2026-11-24",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Mega_Millions/Winning_Numbers/details.html_1158401863.html",
       "sourceRows": 0,
       "mappedRows": 0
     },
@@ -9226,6 +9252,14 @@
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401862.html",
       "sourceRows": 2,
       "mappedRows": 2
+    },
+    {
+      "game": "state-draw",
+      "gameName": "Cash Five",
+      "date": "2026-11-24",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/Cash_Five/Winning_Numbers/details.html_1158401863.html",
+      "sourceRows": 1,
+      "mappedRows": 1
     },
     {
       "game": "state-draw",
@@ -18200,6 +18234,22 @@
       "gameName": "All or Nothing",
       "date": "2026-11-24",
       "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_1737190787.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-11-24",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_492693231.html",
+      "sourceRows": 0,
+      "mappedRows": 0
+    },
+    {
+      "game": "state-draw",
+      "gameName": "All or Nothing",
+      "date": "2026-11-24",
+      "sourceUrl": "https://www.texaslottery.com/export/sites/lottery/Games/All_or_Nothing/Winning_Numbers/details.html_58887359.html",
       "sourceRows": 0,
       "mappedRows": 0
     }
