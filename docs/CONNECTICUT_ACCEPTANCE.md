@@ -598,3 +598,15 @@ After installation, verify these Connecticut-specific flows on the physical phon
 Native cache-byte evidence, owner observations and any failed checks must be
 recorded without substituting automated layout tests for physical results.
 No repeat Delaware checks or broader beta gate closure is implied.
+
+## November26 — Connecticut update installed and launched
+
+The owner iPhone became available. The prepared release passed deep/strict
+signature verification again and its bundled Connecticut bytes matched the
+reviewed digest. In-place installation and CLI launch both succeeded. Private
+install/launch evidence is under work/owner_iphone/connecticut_20261123.
+No repeat trust or sign-in was needed. This supersedes the pending-install status;
+the owner may disconnect. Connecticut physical navigation, source-return, actual
+iOS text/layout and offline checks remain pending, as does native cache evidence.
+No state acceptance or broader beta gate closure is inferred. The November27
+15:36EST release deadline remains unchanged.

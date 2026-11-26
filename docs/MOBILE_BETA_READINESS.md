@@ -1477,3 +1477,15 @@ The owner iPhone is disconnected; this prepared update has not been installed.
 Connecticut physical navigation, source-return, layout and offline checks remain
 pending. No acceptance or broader beta gate is closed; the fixed November27
 15:36EST release deadline is unchanged.
+
+## November26 — Connecticut update installed and launched
+
+The owner iPhone became available. The prepared release passed deep/strict
+signature verification again and its bundled Connecticut bytes matched the
+reviewed digest. In-place installation and CLI launch both succeeded. Private
+install/launch evidence is under work/owner_iphone/connecticut_20261123.
+No repeat trust or sign-in was needed. This supersedes the pending-install status;
+the owner may disconnect. Connecticut physical navigation, source-return, actual
+iOS text/layout and offline checks remain pending, as does native cache evidence.
+No state acceptance or broader beta gate closure is inferred. The November27
+15:36EST release deadline remains unchanged.
