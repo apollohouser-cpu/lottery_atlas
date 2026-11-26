@@ -225,3 +225,16 @@ notes describe their historical checkpoints. Original source dates, game1725
 exclusion, annuity/cash qualifications and withheld Mega Millions report counts
 remain in force. Physical installation and acceptance are still pending; no
 retailer-linked claims or geographic win activity has been added.
+
+## November26 — installed Trending build retains Connecticut release
+
+The owner-authorized Trending update was installed in place and CLI-launched
+successfully. Its Connecticut bundle byte-matches the reviewed supported release;
+source dates, exclusions and counting limitations remain unchanged. Private
+evidence: work/owner_iphone/trending_20261126. The existing signing profile expires
+November28 at21:08:17UTC; this installation did not renew that expiration.
+
+Installation is complete; no repeated connection, trust or sign-in request is
+needed. Physical Connecticut navigation/source-return, actual iOS text/layout
+and offline-retention observations remain pending. No acceptance or broader
+beta gate is closed. The November27 15:36EST deadline remains fixed.

@@ -29,6 +29,7 @@ frequency tie-breaking, sparse and one-day periods, geographic identity/scope,
 all categories, absent retailers, navigation, snapshot updates, and a landscape
 2x text harness. Targeted analysis is clean. Harness results do not establish
 physical iOS Larger Text or native lifecycle acceptance. The signed 103.2MB iPhone release built successfully and passed deep/strict
-signature verification. It is ready for installation; the owner phone was
-disconnected at the preparation check. No physical review is claimed. Private
-build and device evidence is under work/owner_iphone/trending_20261126.
+signature verification. After the owner connected the phone, in-place installation
+and CLI launch succeeded on November26. The owner was told the update is installed
+and may disconnect. Physical interaction review remains pending. Private build
+and device evidence is under work/owner_iphone/trending_20261126.
