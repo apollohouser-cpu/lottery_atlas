@@ -28,5 +28,7 @@ Validation: 12 focused Flutter tests pass, covering sustained lower placement,
 frequency tie-breaking, sparse and one-day periods, geographic identity/scope,
 all categories, absent retailers, navigation, snapshot updates, and a landscape
 2x text harness. Targeted analysis is clean. Harness results do not establish
-physical iOS Larger Text or native lifecycle acceptance. A signed iPhone build
-is being prepared; no physical review is claimed.
+physical iOS Larger Text or native lifecycle acceptance. The signed 103.2MB iPhone release built successfully and passed deep/strict
+signature verification. It is ready for installation; the owner phone was
+disconnected at the preparation check. No physical review is claimed. Private
+build and device evidence is under work/owner_iphone/trending_20261126.
