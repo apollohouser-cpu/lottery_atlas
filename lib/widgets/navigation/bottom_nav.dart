@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../screens/favorites/favorites_screen.dart';
 import '../../screens/games/games_screen.dart';
 import '../../services/map_ranking_service.dart';
-import '../../screens/stats/stats_screen.dart';
+import '../../screens/trending/trending_screen.dart';
 import '../../screens/settings/settings_screen.dart';
 
 class BottomNav extends StatefulWidget {
@@ -75,7 +75,7 @@ class _BottomNavState extends State<BottomNav> {
 
       await Navigator.of(
         context,
-      ).push(MaterialPageRoute(builder: (_) => const StatsScreen()));
+      ).push(MaterialPageRoute(builder: (_) => const TrendingScreen()));
 
       if (!mounted) {
         return;
@@ -112,7 +112,7 @@ class _BottomNavState extends State<BottomNav> {
       _activeIndex = index;
     });
 
-    final labels = ['Map', 'Games', 'Stats', 'Favorites', 'Settings'];
+    final labels = ['Map', 'Games', 'Trending', 'Favorites', 'Settings'];
 
     ScaffoldMessenger.of(
       context,
@@ -129,9 +129,9 @@ class _BottomNavState extends State<BottomNav> {
         activeIcon: Icons.casino,
       ),
       _NavItem(
-        label: 'Stats',
-        icon: Icons.bar_chart_outlined,
-        activeIcon: Icons.bar_chart,
+        label: 'Trending',
+        icon: Icons.trending_up,
+        activeIcon: Icons.trending_up,
       ),
       _NavItem(
         label: 'Favorites',
@@ -148,7 +148,7 @@ class _BottomNavState extends State<BottomNav> {
     return SafeArea(
       top: false,
       child: Container(
-        height: 78,
+        height: 52 + MediaQuery.textScalerOf(context).scale(26.4),
         decoration: const BoxDecoration(
           color: Color(0xF2071827),
           border: Border(top: BorderSide(color: Color(0xFF263C4F))),
@@ -176,11 +176,13 @@ class _BottomNavState extends State<BottomNav> {
                       const SizedBox(height: 4),
                       Text(
                         item.label,
+                        textAlign: TextAlign.center,
                         style: TextStyle(
                           color: isActive
                               ? const Color(0xFF1478FF)
                               : Colors.white60,
                           fontSize: 11,
+                          height: 1.2,
                           fontWeight: isActive
                               ? FontWeight.w700
                               : FontWeight.w500,

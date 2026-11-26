@@ -148,6 +148,7 @@ class MapRankingService {
   static List<MapRankingEntry> rankings(
     MapRankingSnapshot source, {
     int? limit = 5,
+    bool qualifyLocations = false,
   }) {
     final scopedRecords = source.records.where((record) {
       if (record.drawDate.isBefore(source.dateRangeStart) ||
@@ -185,7 +186,10 @@ class MapRankingService {
       }
       final key = switch (source.level) {
         MapRankingLevel.state => record.state,
-        MapRankingLevel.county => _normalize(record.county),
+        MapRankingLevel.county =>
+          qualifyLocations
+              ? '${record.state}|${_normalize(record.county)}'
+              : _normalize(record.county),
         MapRankingLevel.city =>
           '${record.state}|${_normalize(record.county)}|${_normalize(record.city)}',
         MapRankingLevel.retailer =>
@@ -224,9 +228,16 @@ class MapRankingService {
           : source.stateName;
       final label = switch (source.level) {
         MapRankingLevel.state => stateName ?? first.state,
-        MapRankingLevel.county => first.county,
-        MapRankingLevel.city => first.city,
-        MapRankingLevel.retailer => first.retailerName ?? first.city,
+        MapRankingLevel.county =>
+          qualifyLocations ? '${first.county}, ${first.state}' : first.county,
+        MapRankingLevel.city =>
+          qualifyLocations
+              ? '${first.city}, ${first.county}, ${first.state}'
+              : first.city,
+        MapRankingLevel.retailer =>
+          qualifyLocations
+              ? '${first.retailerName ?? first.city} • ${first.city}, ${first.state}${first.retailerAddress == null ? '' : ' • ${first.retailerAddress}'}'
+              : first.retailerName ?? first.city,
         MapRankingLevel.game => first.gameName ?? first.game.label,
       };
 
