@@ -1,5 +1,20 @@
 # National coverage readiness and forecast — November 22 reforecast
 
+## November27 material blocker review
+
+Connecticut missed its fixed November27 15:36EST acceptance deadline because
+physical navigation/layout/source-return and offline-retention evidence remains
+unavailable. Published scope and installation are complete; no successor is
+activated and no deadline is extended. Counts remain23 accepted/22 unfinished.
+
+The November22 January5–27 and March12 scenarios below are retained as dated
+conditional arithmetic, not reaffirmed current completion dates. No defensible
+replacement calendar range is assigned while the physical acceptance delay has
+no known end. At resolution, recalculate the remaining-state scenarios from the
+actual checkpoint and measured throughput. National public release also remains
+conditional on the four open mobile/distribution gates. This material-blocker
+review does not wait for the routine28-accepted checkpoint.
+
 ## Current forecast — November 22, 2026, 23 accepted
 
 Delaware acceptance brings the total to 23 accepted and 22 unfinished states.

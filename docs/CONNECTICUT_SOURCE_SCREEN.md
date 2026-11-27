@@ -238,3 +238,20 @@ Installation is complete; no repeated connection, trust or sign-in request is
 needed. Physical Connecticut navigation/source-return, actual iOS text/layout
 and offline-retention observations remain pending. No acceptance or broader
 beta gate is closed. The November27 15:36EST deadline remains fixed.
+
+## November27 deadline outcome — not accepted, no extension
+
+Connecticut missed its November27,2026 15:36EST (20:36UTC) release-decision
+deadline. The supported artifact is published, and the installed Trending build
+retains the exact reviewed Connecticut bytes. Installation and CLI launch passed.
+The unfinished gate is physical acceptance evidence: Connecticut navigation,
+source-return, portrait/landscape and actual iOS Larger Text, plus offline restart
+and failed-refresh retention with original source dates. Native cache evidence
+also remains incomplete. No new app defect or missing agency record is asserted.
+
+No extension or replacement deadline is assigned. Connecticut remains the sole
+active state, not accepted;23 states remain accepted and22 unfinished. Required
+intervention is actual physical checklist observations or an available authorized
+physical UI control path. The existing checklist in CONNECTICUT_ACCEPTANCE.md
+remains authoritative; do not repeat installation, trust, Delaware checks or
+activate a successor. All four broader beta gates remain open.

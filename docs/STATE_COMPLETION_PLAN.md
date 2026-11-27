@@ -3,6 +3,23 @@
 Approved by the user September 24, 2026. This plan controls development priority;
 state source-screen documents retain the detailed evidence and request history.
 
+## November27 deadline outcome — not accepted, no extension
+
+Connecticut missed its November27,2026 15:36EST (20:36UTC) release-decision
+deadline. The supported artifact is published, and the installed Trending build
+retains the exact reviewed Connecticut bytes. Installation and CLI launch passed.
+The unfinished gate is physical acceptance evidence: Connecticut navigation,
+source-return, portrait/landscape and actual iOS Larger Text, plus offline restart
+and failed-refresh retention with original source dates. Native cache evidence
+also remains incomplete. No new app defect or missing agency record is asserted.
+
+No extension or replacement deadline is assigned. Connecticut remains the sole
+active state, not accepted;23 states remain accepted and22 unfinished. Required
+intervention is actual physical checklist observations or an available authorized
+physical UI control path. The existing checklist in CONNECTICUT_ACCEPTANCE.md
+remains authoritative; do not repeat installation, trust, Delaware checks or
+activate a successor. All four broader beta gates remain open.
+
 ## Comparison benchmarks — owner approved November 22, 2026
 
 Continue the existing rollout schedule and supported-coverage acceptance rules.
